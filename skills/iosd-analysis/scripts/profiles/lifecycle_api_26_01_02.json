@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "Reviewed registration API semantics for iosd 26.01.02",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "address_space": "rva",
+  "apis": [
+    {"rva":"0xDEF7870","role":"register_table","table_arg":0,"evidence":"16-byte key/root pairs; DEF70B0 consumer; sentinel ends table"},
+    {"rva":"0xDEF7000","role":"register_fragment","key_arg":0,"root_arg":1,"confidence":"caller_signature_candidate","evidence":"Key/root caller signature observed in saved DEADC50; wrapper body pending acquisition; role remains a candidate"},
+    {"rva":"0xDEF7BB0","role":"create_link","type":1,"key_arg":0,"root_arg":2,"evidence":"56-byte Parser Linkage; key+8, root+24, type+32; allocation and insertion in dynamic list"},
+    {"rva":"0xDEF7D10","role":"create_link","type":1,"key_arg":0,"root_arg":1,"evidence":"56-byte Parser Linkage; key+8, root+24, type+32; allocation and insertion in dynamic list"},
+    {"rva":"0xDEF7E60","role":"create_link","type":2,"key_arg":0,"root_arg":2,"evidence":"56-byte Parser Linkage; key+8, root+24, type+32; allocation and insertion in dynamic list"},
+    {"rva":"0xD716260","role":"register_callback","function_arg":0,"registry_arg":1,"evidence":"Reviewed registry_add_list behavior; membership is a candidate, not a parser registration"}
+  ],
+  "selector_field": {"argument":0,"offset":9364,"width":4,"encoding":"big"},
+  "runtime": {
+    "link_sentinel_rva":"0x3CB665C8",
+    "lists":[
+      {"name":"dynamic_parser_linkage","head_rva":"0x3CB561E0","record_size":56,"pointer_encoding":"swap_then_mask","next_offset":0,"fields":[{"name":"key","offset":8,"kind":"pointer"},{"name":"anchor","offset":24,"kind":"pointer"},{"name":"type","offset":32,"size":4,"encoding":"big"},{"name":"registration_source","offset":48,"kind":"pointer"}]},
+      {"name":"pending_parser_bindings","head_rva":"0x3CB561E8","record_size":56,"pointer_encoding":"swap_then_mask","next_offset":0,"fields":[{"name":"key","offset":8,"kind":"pointer"},{"name":"fragment","offset":24,"kind":"pointer"},{"name":"flags","offset":40,"size":4,"encoding":"big"},{"name":"registration_source","offset":48,"kind":"pointer"}]}
+    ],
+    "states":[
+      {"name":"service internal enabled","rva":"0x37B1B5F8","size":4,"encoding":"big","evidence":"runtime-comparison-20261029/function-de9a730.json selector 20; function-e38e8d0.json direct keyword gate"},
+      {"name":"service internal first-enable helper attempted","rva":"0x3CB54594","size":1,"encoding":"big","evidence":"runtime-comparison-20261029/function-de9a730.json; service-first-enable-helper.json"}
+    ],
+    "keyword_privilege_gates":[
+      {"name":"service internal direct keyword rejection gate","descriptor_native_u64_mask":"0x100","variable_rva":"0x37B1B5F8","variable_size":4,"variable_encoding":"big","when_zero":"reject","consumer_rva":"0xE38E8D0","scope":"Only this direct mask check is evaluated; other privilege/context checks remain unresolved","evidence":"runtime-comparison-20261029/function-e38e8d0.json"}
+    ]
+  },
+  "limits": {"max_xrefs_per_api":5000,"max_expressions_per_function":2000,"max_function_instructions":5000,"max_depth":4,"max_relations":20000},
+  "notes": ["Only API identities/layouts are sample-specific; business names, handlers, state variables and command strings are not rules.","Collector operates on RVAs and records actual IDB base; legacy grammar extraction profiles remain separately pinned.","Indirect targets and state dependencies are candidates; ancestor conditions are not a complete CFG proof."]
+}

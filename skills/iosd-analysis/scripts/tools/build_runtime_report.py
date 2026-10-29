@@ -1,0 +1,92 @@
+"""Build a Chinese runtime/static comparison reader from saved evidence only."""
+import argparse
+from collections import Counter
+from html import escape
+import json
+from pathlib import Path
+
+
+def main():
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('directory');a=ap.parse_args()
+    root=Path(a.directory);tree=root/'tree'
+    summary=json.loads((tree/'summary.json').read_text(encoding='utf-8'))
+    paths=[json.loads(s) for s in (tree/'paths.jsonl').open(encoding='utf-8')]
+    states=json.loads((root/'states.json').read_text(encoding='utf-8'))['states']+json.loads((root/'service-states.json').read_text(encoding='utf-8'))['states']
+    chains=json.loads((root/'service-descriptor-lists.json').read_text(encoding='utf-8'))['lists']
+    descriptors=[]
+    for chain in chains:
+        for node in chain['nodes']:
+            raw=bytes.fromhex(node['raw_hex']);text=raw[16:272].split(b'\0',1)[0].decode('utf-8','replace')
+            descriptors.append({'list':chain['name'],'address':node['address'],'mode_va':node['fields']['mode']['value'],
+                'command_text_as_stored':text,'descriptor_updated':node['fields']['descriptor_updated']['value'],
+                'meaning':'Command description entry, not proof of a newly registered command','raw_hex':node['raw_hex']})
+    (root/'service-command-descriptors.json').write_text(json.dumps(descriptors,ensure_ascii=False,indent=2),encoding='utf-8')
+    comparisons=[json.loads(s) for s in (tree/'static-registration-comparison.jsonl').open(encoding='utf-8')]
+    vpdn=[r for r in comparisons if r['link_key']==0x37B07D14 and r['root']==0x3570F680]
+    (root/'vpdn-runtime-comparison.json').write_text(json.dumps(vpdn,ensure_ascii=False,indent=2),encoding='utf-8')
+    service_paths=[p for p in paths if p.get('eol_rva')==0x340C2258]
+    (root/'service-internal-runtime-paths.json').write_text(json.dumps(service_paths,ensure_ascii=False,indent=2),encoding='utf-8')
+    gated=[p for p in paths if p['availability']=='blocked_by_observed_keyword_gate']
+    with (tree/'service-internal-gated-paths.jsonl').open('w',encoding='utf-8') as f:
+        for row in gated:f.write(json.dumps(row,ensure_ascii=False)+'\n')
+    compact=[{'mode':p['mode'],'syntax':p['syntax_candidate'],'handler':hex(p['handler_rva']) if p['handler_rva'] is not None else hex(p['handler']),
+        'selector':p['selector_candidate'],'status':p['syntax_status'],'gate':p['availability'],'eol':hex(p['eol_node'])} for p in paths]
+    data=json.dumps(compact,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
+    def table(headers,rows):
+        return '<table><thead><tr>'+''.join('<th>'+escape(h)+'</th>' for h in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+escape(str(c))+'</td>' for c in r)+'</tr>' for r in rows)+'</tbody></table>'
+    mode_table=table(['模式','连接图投影中的 EOL 节点','未知或未读节点'],[(m['mode'],m['terminal_nodes'],m['unknown_or_unread_nodes']) for m in summary['modes']])
+    state_table=table(['状态','RVA','快照值'],[(s['semantic_name'],hex(s['rva']),s.get('value',s.get('error'))) for s in states])
+    descriptor_table=table(['描述链','原始命令字符串','描述更新标志'],[(d['list'].rsplit('_',1)[-1],d['command_text_as_stored'],d['descriptor_updated']) for d in descriptors])
+    vpdn_note='；'.join('直接绑定证据 %d 条，模式投影 %s，状态 %s'%(len(r['observed_binding_evidence']),','.join(r['connected_modes']) or '未观察到',r['runtime_status']) for r in vpdn) or '未在已取得的静态注册记录中找到该对；保留未知。'
+    html=HTML.replace('__DATA__',data).replace('__MODES__',mode_table).replace('__STATES__',state_table).replace('__DESCRIPTORS__',descriptor_table)
+    values={'__NODES__':summary['runtime_nodes'],'__EDGES__':summary['runtime_edges'],'__UNKNOWN__':summary['unknown_nodes_retained'],
+        '__MISSING__':summary['missing_pages'],'__BINDINGS__':summary['static_registrations_with_direct_binding_evidence'],
+        '__PATHS__':len(paths),'__GATED__':len(gated),'__VPDN__':escape(vpdn_note)}
+    for token,value in values.items():html=html.replace(token,str(value))
+    if (root/'refinement/index.html').exists():
+        html=html.replace('<main><h1>','<main><aside id="refinement-notice" class="note">本页保留上一轮结果。<a href="refinement/index.html">最新补读与 config 语法恢复报告</a>已将原缺页范围及后续引用补齐，并修正回调的 RVA/VA 匹配。</aside><h1>',1)
+    (root/'index.html').write_text(html,encoding='utf-8')
+    (root/'report-metrics.json').write_text(json.dumps({'paths':len(paths),'gate_rejected_witnesses':len(gated),'service_descriptor_records':len(descriptors),
+        'unique_service_descriptor_strings':len({d['command_text_as_stored'] for d in descriptors}),'descriptor_update_values':dict(Counter(d['descriptor_updated'] for d in descriptors)),
+        'vpdn':vpdn,'service_paths':[{k:p[k] for k in ('mode','syntax_candidate','syntax_status','handler_rva','selector_candidate')} for p in service_paths]},ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps({'runtime_nodes':summary['runtime_nodes'],'paths':len(paths),'gated_witnesses':len(gated),'direct_bindings':summary['static_registrations_with_direct_binding_evidence'],'vpdn':vpdn_note},ensure_ascii=True))
+
+
+HTML='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iosd 运行时命令图与静态对照</title>
+<style>body{margin:0;background:#f3f6fa;color:#192839;font:16px/1.75 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1200px;margin:auto;padding:32px 24px}h1{font-size:30px}h2{margin-top:36px}section{background:white;border:1px solid #dae2ec;border-radius:12px;padding:24px;margin:20px 0}a{color:#075ba9}code{background:#edf2f7;padding:2px 5px;border-radius:3px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;border-bottom:1px solid #dae2ec;padding:8px;overflow-wrap:anywhere}th{background:#f0f5fa}.note{border-left:4px solid #b77918;padding:12px 18px;background:#fff6e6}.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}input,select,button{font:inherit;padding:7px;border:1px solid #a9b8ca;border-radius:5px}input{flex:1;min-width:200px}details{margin:5px 0 5px 18px}summary{cursor:pointer}summary:hover{color:#075ba9}.leaf{font-size:13px;background:#edf4fa;padding:5px 10px;margin-left:18px}.muted{color:#53657a}.stats{display:flex;gap:22px;flex-wrap:wrap}.stats b{font-size:24px;display:block}#tree{max-height:700px;overflow:auto;border:1px solid #dce5ef;padding:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#edf2f7;padding:14px}</style>
+<main><h1>iosd 运行时命令图与静态对照</h1><p class="muted">C8000v 26.01.02 · IDA 9.1 · 2026-10-29 · MD5 9eccfd46caadfff9c18557e2a446e19b<br>基址 0x555555554000；所有目标操作均为读取，没有执行设备命令、调用目标函数或修改内存。</p>
+<div class="note">这里导出的是<strong>当前连接图及其带条件的语法投影</strong>。看见路径，说明读取到相应连接；能否执行，还取决于权限、解析上下文、状态和 handler。没有看见的静态候选继续保留。各批次均核验暂停状态与映射，但没有记录 resume/re-stop 事件序列，因此不能称为原子快照。</div>
+<section><h2>先看懂本次结果</h2><div class="stats"><div><b>1,783</b>动态链接槽记录</div><div><b>245</b>待绑定记录</div><div><b>__BINDINGS__</b>静态注册记录有直接绑定证据</div><div><b>__PATHS__</b>有界语法路径示例</div></div>
+<p>两个链表都已读到 NULL，没有把超时当成空链。动态槽记录数、待绑定记录数、EOL 数和语法示例数含义不同，不能相加或统称“命令总数”。</p>
+<p>当前图保留 <strong>__NODES__ 个节点、__EDGES__ 条结构边、__UNKNOWN__ 个未知或不完整节点</strong>；另有 __MISSING__ 个待补读页位置，见原始图和读取请求。静态注册记录逐项保留，既记录同 key/root 的槽链证据，也单独记录片段根是否出现在某个模式投影里。</p>__MODES__
+<p>模式投影保留未求值的条件和不透明分支，因此 EOL 计数也不能解释为“当前可执行命令数”。同一个 handler 可能服务多个 selector，同一个 EOL 也可能有多种语法。</p></section>
+<section><h2>浏览命令路径示例树</h2><p>搜索覆盖所有 __PATHS__ 条示例；树形视图每次展示前 500 条匹配结果。这个显示上限不裁剪底层节点、边或未知定义。完整循环与条件请查看图文件；本树只呈现每个 EOL/上下文的一条示例。</p>
+<div class="toolbar"><select id="mode" aria-label="模式"><option value="configure">configure</option><option value="exec">exec</option><option value="interface">interface</option><option value="subinterface">subinterface</option><option value="null-interface">null-interface</option><option value="line">line</option><option value="">所有模式</option></select><input id="query" placeholder="搜索，例如 service internal、vpdn、show ip"><select id="gate" aria-label="状态"><option value="">所有条件状态</option><option value="blocked_by_observed_keyword_gate">已观察到直接门控拒绝</option></select><button id="search">筛选</button></div>
+<p id="count" class="muted"></p><div id="tree"></div><p><a href="tree/syntax.html">打开完整可搜索路径表（条件、参数与 handler）</a> · <a href="tree/commands.txt">命令路径文本</a></p></section>
+<section><h2>service internal：本样本观察到了什么</h2><p>已经恢复 <code>(config)# service internal &lt;cr&gt;</code>：关键词 internal 的 RVA 为 <code>0x340C1FD8</code>，EOL 为 <code>0x340C2258</code>，handler 为 <code>0xDE9A730</code>，selector 为 <code>20</code>。路径中其余回调效果仍有未解析内容，见完整证据。</p>
+<ol><li>handler 的普通 CLI 分支使用全局变量 <code>RVA 0x37B1B5F8</code> 保存启用状态；本次值为 0。</li><li>关键词访问检查 <code>RVA 0xE38E8D0</code> 对部分权限描述检查 native-u64 mask <code>0x100</code>。该位成立且上述变量为 0 时，检查直接拒绝。没有调用目标谓词来验证这件事。</li><li>首次正向启用且非 NVGEN 时，还会执行 <code>0xDF440B0 → 0xDF441B0</code>。它遍历两张已有命令描述链，按命令字符串解析并修改所匹配的权限/可见性描述标志，随后置首次初始化标志 <code>0x3CB54594</code>。</li><li>已审查的这条辅助路径没有出现 Parser Linkage 创建/注册调用；service handler 还有共享回调分发，尚未逐个验证其传递效果。</li></ol>
+<p><strong>因此，本例已证实的是“状态门控＋描述标志更新”。不能仅凭运行后出现更多命令，就认定发生了延迟注册。</strong>真正的延迟/按需注册，需要看到新增槽、链接指针改写、注册调用或待绑定项被消化等证据。</p>
+<p>本次保留 __GATED__ 条受到所配置直接门控拒绝的路径示例，<a href="tree/service-internal-gated-paths.jsonl">另存 JSONL</a>，没有从图里删除。这不是完整受影响命令清单。</p>
+<p>Cisco 在部分 IOS XE 发布说明中区分 EXEC 隐藏命令与配置模式隐藏命令：前者需要 service internal，后者不一定需要。该资料描述的是相应产品版本的行为；本页实现结论以当前样本的代码证据为准。<a href="https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9200/software/release/17-9/release_notes/ol-17-9-9200/important_notes.pdf">Cisco 官方说明，Accessing Hidden Commands</a>。</p>
+<details><summary>展开 77 条原始命令描述（59＋18；保留重复项与原始拼写）</summary><p>这些是待处理或已处理的描述条目，不是“首次启用会新增 77 条命令”。更新标志非零不证明由本次 service internal 触发；当前首次启用标志仍为 0。字符串 <code>show vdpn</code> 按内存原文保留。</p>__DESCRIPTORS__</details>
+<p><a href="service-command-descriptors.json">描述条目原始数据</a> · <a href="service-internal-runtime-paths.json">service internal 完整路径证据</a> · <a href="function-de9a730.json">handler</a> · <a href="function-e38e8d0.json">访问检查</a> · <a href="service-first-enable-helper.json">首次启用遍历</a> · <a href="service-install-helper.json">描述标志改写</a></p></section>
+<section><h2>与 VPDN 静态案例对照</h2><p>VPDN 启用 E、测试注册尝试 R、跟踪初始化 T 和共享 SSS 初始化 S，本次均为 0；链接重试标志为 1。已审查的 test vpdn key/root 对在本次结果中：__VPDN__。</p><p>这与静态分析中的“正向 vpdn enable 可触发测试注册例程”一致，但当前快照没有执行该触发步骤，也没有用状态标志代替链路证据。</p><p><a href="vpdn-runtime-comparison.json">查看该注册对的动态证据</a> · <a href="../vpdn-activation-20261029/index.html">之前的 VPDN 静态案例</a></p>__STATES__</section>
+<section><h2>完整导出与复核入口</h2><p>命令解析器含共享后缀、分支和循环，真实结构是图。这里同时提供图文件和便于阅读的树形示例，不把候选集合缩小成一次运行中可见的命令。</p><ul>
+<li><a href="tree/nodes.jsonl">全部已取得节点，含原始 runtime 字节、VA/RVA、条件与 handler</a>；<a href="tree/edges.jsonl">全部已取得结构边</a>；<a href="tree/unknown-nodes.jsonl">未知和不完整节点</a></li>
+<li><a href="tree/static-registration-comparison.jsonl">全部 4,564 条静态注册记录的对照</a>；<a href="tree/observed-slot-bindings.jsonl">当前槽及其实际 alternate 链</a></li>
+<li><a href="tree/dynamic-slots.jsonl">1,783 条动态槽原始记录</a>；<a href="tree/pending-records.jsonl">245 条待绑定原始记录</a>；<a href="linkage-complete/lists.json">完整链表与分批来源</a></li>
+<li><a href="tree/paths.jsonl">全部有界语法路径及边轨迹</a>；<a href="tree/summary.json">身份、范围、未解析覆盖与输入文件哈希</a>；<a href="tree/request-missing-pages.json">待补读位置</a></li></ul>
+<p>“没有直接绑定证据”“未观察到某模式连接”和“命令不存在”不是同一结论。静态图中未见到的动态定义、外部注册、尚未解释的动作以及未来状态，都可能继续扩大候选空间。</p></section></main>
+<script id="path-data" type="application/json">__DATA__</script><script>
+const rows=JSON.parse(document.getElementById('path-data').textContent),byId=x=>document.getElementById(x);
+function draw(){const mode=byId('mode').value,q=byId('query').value.trim().toLowerCase(),gate=byId('gate').value;
+const matches=rows.filter(r=>(!mode||r.mode===mode)&&(!gate||r.gate===gate)&&(!q||(r.syntax+' '+r.handler).toLowerCase().includes(q)));
+byId('count').textContent=`匹配 ${matches.length} 条路径示例；当前树展示 ${Math.min(500,matches.length)} 条。展开关键词可查看后续分支及 handler。`;
+const root={children:new Map(),ends:[]};for(const r of matches.slice(0,500)){let n=root;for(const word of [r.mode,...(r.syntax.match(/<[^>]*>|\\S+/g)||[])]){if(!n.children.has(word))n.children.set(word,{children:new Map(),ends:[]});n=n.children.get(word)}n.ends.push(r)}
+function append(parent,node){for(const [word,next] of node.children){const d=document.createElement('details'),s=document.createElement('summary');s.textContent=word;d.append(s);let loaded=false;d.addEventListener('toggle',()=>{if(d.open&&!loaded){loaded=true;append(d,next)}});parent.append(d)}for(const r of node.ends){const e=document.createElement('div');e.className='leaf';e.textContent=`handler RVA/VA ${r.handler} · selector ${r.selector} · ${r.status} · ${r.gate==='blocked_by_observed_keyword_gate'?'当前直接门控拒绝':'其他条件未完全验证'}`;parent.append(e)}}
+byId('tree').replaceChildren();append(byId('tree'),root)}
+byId('search').addEventListener('click',draw);byId('mode').addEventListener('change',draw);byId('gate').addEventListener('change',draw);byId('query').addEventListener('keydown',e=>{if(e.key==='Enter')draw()});draw();
+</script></html>'''
+
+
+if __name__=='__main__':main()

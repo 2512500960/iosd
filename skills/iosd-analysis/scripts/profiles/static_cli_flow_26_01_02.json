@@ -1,0 +1,25 @@
+{
+  "name": "flow parser registration tables 26.01.02 experimental",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "idb_imagebase": "0x0",
+  "sentinel": "0x37B04568",
+  "max_registration_entries": 64,
+  "max_nodes": 400,
+  "stop_addresses": ["0x3CB665C8"],
+  "action_registry": {"address": "0x3409EC00", "count": 314},
+  "registration_tables": [
+    {"address": "0x339E3200", "owner_candidate": "flow_exp_ios_code_parse_chain", "conditions": ["Registration call at 0xC1542A0 on non-simulation path; further extension registration is conditional."]},
+    {"address": "0x339FAE20", "owner_candidate": "flow_exp_ios_parse_chain", "conditions": ["Registration call at 0xC1E5A6A on non-simulation path."]},
+    {"address": "0x339FAE50", "owner_candidate": "flow_exp_ios_parse_chain", "conditions": ["Call at 0xC1E5A8A only if sub_C126250(table 0x339FAE20) returns nonzero."]}
+  ],
+  "node_layout": {
+    "size": 40,
+    "pointer_mode": "little",
+    "opcode_order": "big",
+    "opcode_offset": 16,
+    "accept_offset": 0,
+    "alternate_offset": 8,
+    "payload_offset": 24,
+    "keyword_candidate_opcode": 69
+  }
+}

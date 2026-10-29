@@ -1,0 +1,31 @@
+{
+  "name": "VPDN indirect SSS tracing registration supplement 26.01.02",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "idb_imagebase": "0x0",
+  "sentinel": "0x37B04568",
+  "max_registration_entries": 128,
+  "max_nodes": 10000,
+  "stop_addresses": ["0x3CB665C8"],
+  "action_registry": {"address": "0x3409EC00", "count": 314},
+  "dynamic_link_definitions": [
+    {"key":"0x37B1A66D","root":"0x33DF8A60","type":1,"creator":"0xD2D0A40","evidence":"DEF7BB0(key,0,anchor); shared trace once guard 3C8066AC and D2D0B70(1) result; allocation result ignored"},
+    {"key":"0x37B1A66E","root":"0x33DF8A88","type":2,"creator":"0xD2D0A40","evidence":"DEF7E60(key,0,return); shared trace initialization; allocation result ignored"},
+    {"key":"0x37B1A671","root":"0x33DF8AB0","type":1,"creator":"0xD2D0A40","evidence":"DEF7BB0(key,0,anchor); shared trace initialization; allocation result ignored"},
+    {"key":"0x37B1A672","root":"0x33DF8AD8","type":2,"creator":"0xD2D0A40","evidence":"DEF7E60(key,0,return); shared trace initialization; allocation result ignored"},
+    {"key":"0x37B1A66F","root":"0x33DF8B00","type":1,"creator":"0xD2D0A40","evidence":"DEF7BB0(key,0,anchor); shared trace initialization; allocation result ignored"},
+    {"key":"0x37B1A670","root":"0x33DF8B28","type":2,"creator":"0xD2D0A40","evidence":"DEF7E60(key,0,return); shared trace initialization; allocation result ignored"},
+    {"key":"0x38120B48","root":"0x341D1F90","type":1,"creator":"0xE07E180","evidence":"DEF7BB0(key,0,anchor); shared parent event-trace parser initializer; allocation result ignored"},
+    {"key":"0x38120B4A","root":"0x341D1FB8","type":1,"creator":"0xE07E180","evidence":"DEF7BB0(key,0,anchor); shared parent event-trace parser initializer; allocation result ignored"},
+    {"key":"0x38120B49","root":"0x341D1FE0","type":1,"creator":"0xE07E180","evidence":"DEF7BB0(key,0,anchor); shared parent event-trace parser initializer; allocation result ignored"}
+  ],
+  "registration_tables": [{
+    "address": "0x34C49EC0", "owner_candidate": "sub_1098D6F0",
+    "conditions": ["Via callback slot returned by 109FB180, assigned 10973010 in 10973430; requires first-enable tracing guards and actual runtime slot binding; shared by other features"]
+  }, {
+    "address": "0x33DF8B50", "owner_candidate": "sub_D2D0A40",
+    "conditions": ["Shared tracing linkage initialization, byte_3C8066AC once guard; D2D0B70(1) must return nonzero; individual dynamic linkage allocation results ignored"]
+  }, {
+    "address": "0x341D2030", "owner_candidate": "sub_E07E180",
+    "conditions": ["Shared parent event-trace parser initializer; independent of a proof of VPDN command execution"]
+  }]
+}

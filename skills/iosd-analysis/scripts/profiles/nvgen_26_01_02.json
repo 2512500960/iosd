@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "address_space": "rva",
+  "scope": "Reviewed normal-path implementation and saved descriptors; no target callback execution or live state assertions",
+  "csb_fields": {"nvgen":9636,"sense":9328,"selector":9364,"nvgen_selector_copy":9356,"nv_command_text":10481,"mode":11536,"interface":9656,"iterator_object":3984},
+  "apis": {
+    "show_running_handler":"0xDFE9DB0", "show_common":"0xDFE8DD0",
+    "write_memory_handler":"0xDFEA900", "write_common":"0xDFEA390",
+    "generation_request":"0xE0D6470", "generation_engine":"0xE0DE210",
+    "enqueue_node":"0xDEE5040", "walk_queued_nodes":"0xDEE5E30", "dispatch_action":"0xDEFF7A0",
+    "nvgens_action":"0xE39D8F0", "nvgen_callback_gate":"0xE39D9B0",
+    "mode_root":"0xDF3CA50", "nv_write_wrapper":"0xE0D9CD0", "nv_write_internal":"0xE0D8B20"
+  },
+  "interface_cache": {
+    "command_handler":"0xDEF9650", "enable_variable":"0x381C05B0", "eligibility":"0xDEF9790",
+    "stored_text_offset":544,"stored_pointer_encoding":"swap_then_mask",
+    "reuse_wrappers":["0xDEF99C0"], "capture_wrappers":["0xDEF9740"],
+    "interface_handlers":["0xE3FC690","0xE406010"], "emit_cached_text":"0xDEF9A20",
+    "save_generated_slice":"0xE3FC1B0", "copy_generated_slice":"0xE0D5E90",
+    "capture_end_nodes":["0x342BE680","0x342BE950"],
+    "disable_allocation_and_walk":"0xDF331E0", "disable_walk_root":"0x340A86A0",
+    "disable_iterator":"0xDF2D060", "disable_free_one":"0xDF34330",
+    "live_enabled_state":"not_read", "all_change_triggers":"not_exhaustively_recovered"
+  },
+  "examples": [
+    {"name":"hostname","cli_and_nvgen_callback":"0xE0E6A00","selector":0,"nvgen_node":"0x34147FF8","eol_node":"0x34148098"},
+    {"name":"interface description","cli_and_nvgen_callback":"0xE40C850","implementation":"0xE400E90","selector":3,"nvgen_node":"0x34149080","eol_node":"0x34149120"}
+  ],
+  "unresolved": [
+    "Complete membership and effects of registry hooks before/after generation and within handlers",
+    "All state changes which invalidate interface caches, including cross-component effects",
+    "Current target cache enable value and cached interface contents",
+    "Reachability of every NVGEN definition and complete generated configuration coverage",
+    "Older cached string-search coordinates require revalidation after rebase"
+  ]
+}

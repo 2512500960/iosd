@@ -1,0 +1,55 @@
+{
+  "name": "Reviewed VPDN activation evidence, normal IOS CLI branch",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "idb_imagebase": 0,
+  "trigger_handler": "0x11D48420",
+  "trigger_selector": 28,
+  "trigger_eol": "0x356DFE50",
+  "test_fragment": "0x3570F680",
+  "test_table": "0x3570F660",
+  "test_link_key": "0x37B07D14",
+  "test_handler": "0x11DE2030",
+  "states": [
+    {"name":"VPDN 启用状态 E","address":"0x38B11478","encoding":"BE32","meaning":"11DB94C0 读取；正向 enable 写逻辑 1，负向写 0","proof":"vpdn-handler-full.json / vpdn-enabled-getter.json"},
+    {"name":"测试注册尝试标志 R","address":"0x3E441564","encoding":"byte","meaning":"R=0 才调用 11DE2440；返回后置 1，未检查注册或进程创建结果；负向 enable 分支不清除","proof":"vpdn-handler-full.json / vpdn-state-xrefs.json"},
+    {"name":"VPDN 首次跟踪初始化 T","address":"0x3E441560","encoding":"byte","meaning":"T=0 时执行 11DC95A0 和 109FB180 返回槽中的函数；返回后置 1","proof":"vpdn-handler-full.json"},
+    {"name":"共享 SSS 初始化 S","address":"0x3DD464A0","encoding":"byte","meaning":"10973010 在 S=0 时调用 1098D6F0 等；随后置 1；其他功能可先触发","proof":"vpdn-first-enable-callback-target.json"},
+    {"name":"VPDN test PID P","address":"0x38B15798","encoding":"BE32","meaning":"11DE2440 在 P=0 时尝试创建 11DE26B0 工作进程；结果可能为 0","proof":"trigger-vpdn_registration.json"},
+    {"name":"scalability 批处理状态 B","address":"0x3E44BA9C","encoding":"byte","meaning":"11DE4A00 遇到 B=1 拒绝再次构造 selector 11 请求","proof":"vpdn-callee-11de4a00.json"},
+    {"name":"动态链接表头","address":"0x3CB561E0","encoding":"tagged BE pointer at runtime","meaning":"DEF7BB0/DEF7E60 分配 56 字节 Parser Linkage 记录并挂入；不是 IDB 静态槽数组","proof":"vpdn-dynamic-slot-api-1.json / vpdn-dynamic-slot-api-3.json"},
+    {"name":"待绑定片段表头","address":"0x3CB561E8","encoding":"tagged BE pointer at runtime","meaning":"key 暂不存在时 DEF70B0 可排入待绑定表并返回 1；不等于已经安装","proof":"vpdn-callee-def70b0.json"},
+    {"name":"链接重试状态","address":"0x3CB561C8","encoding":"byte","meaning":"创建动态槽时清 0；DEE9E10 看到 0 时重试待绑定记录，成功者移除，随后置 1","proof":"vpdn-dynamic-slot-api-1.json / vpdn-deferred-resolution-owner.json"}
+  ],
+  "transitions": [
+    {"operation":"(config)# vpdn enable","condition":"非 simulation 分支；普通命令 NVGEN=0、selector=28、sense!=0；资源列表中没有活动回调返回非零；执行流正常返回","effect":"若 T=0，尝试跟踪初始化及共享 SSS 回调；E=1；调用 11D98530；若 R=0，调用 11DE2440 后 R=1","limits":"输入语法上的模式谓词、权限以及初始化内部结果另有约束；不能从 R=1 推出注册成功"},
+    {"operation":"(config)# vpdn enable，资源回调否决","condition":"1E7CD760 返回的列表中，某个未停用成员 node+16 函数返回非零","effect":"错误 203：VPDN not enabled due to insufficient resources；本分支不写 E，也不执行测试注册例程","limits":"不把 E 强制改为 0；若先前已启用，旧状态不由这个失败分支清除"},
+    {"operation":"(config)# no vpdn enable / default vpdn enable","condition":"普通命令 selector=28、sense=0；default 路径在当前图中也设置 sense=0","effect":"E=0；提示重载/主备切换后 VPDN 配置会丢失；已审查分支不复位 R/T，也不调用注销函数","limits":"仅说明该分支；不据此证明进程和所有回调在任意环境中永不清理"},
+    {"operation":"再次 vpdn enable","condition":"无资源否决，R=1","effect":"E=1；跳过 11DE2440，不重新尝试创建其工作进程","limits":"前次失败也可能留下 R=1；已审查调用方没有成功性回滚"},
+    {"operation":"同一 handler 的其他 VPDN 配置","condition":"普通命令 selector!=28，E=0","effect":"分派 selector 前返回错误 201，要求先 vpdn enable","limits":"定义可能一直存在；这是 handler 拒绝，不证明 parser 把命令隐藏或未注册"},
+    {"operation":"test vpn / test vpdn，selector 0..8、11、12","condition":"语法已安装、权限/参数满足；消息目标 P 有效、发送成功；selector 6/11 还需分配请求成功","effect":"11DE2030 向 P 发送 message 3855；11DE26B0 按 selector 分派","limits":"handler/worker 及已读首层 helper 未见直接 E 检查；更深层操作仍有对象、会话与资源依赖"},
+    {"operation":"test vpdn scalability domain ...","condition":"selector=11，B!=1；请求分配成功，消息发送成功","effect":"11DE4A00 构造请求；若 B=1 打印 already in batch mode, wait 并返回","limits":"后续计时器、批处理对象和会话创建仍可能失败"},
+    {"operation":"test vpdn l2tp disconnect cause inject ...","condition":"selector=9 只接受 handler 列出的 RADIUS code；selector=10 为 none","effect":"直接调用 11DACD40 设置 3E4434C0/3E4434C4；不经 test PID","limits":"语法范围 0..65535 比 handler 接受集合宽；不等于每个数字都能成功"},
+    {"operation":"test vpdn l2tp reset sequence ...","condition":"selector=13，目标对象查找有效","effect":"直接经 11E75AD0 调用查找及重置函数；不经 test PID","limits":"目标不存在时不完成对象重置"},
+    {"operation":"动态槽晚于片段注册才创建","condition":"片段先排入 3CB561E8；随后创建槽将 3CB561C8 清 0；进入 DEE9E10 重试块","effect":"调用 DEF70B0(...,a3=1,...) 重试，成功记录移出待绑定表","limits":"可以没有第二条显式 enable 命令才出现；具体时刻/分配成功需运行时验证"}
+  ],
+  "chains": [
+    {"name":"VPDN 测试命令直接挂接","chain":"11D48420(selector 28) @11D49196 → 11DE2440 @11DE2489 → DEF7870(table 3570F660) → DEF70B0 → core key 37B07D14 / root 3412CDA8 → fragment 3570F680","meaning":"核心静态槽上的按需安装；不是新分配槽","proof":"vpdn-handler-full.json / trigger-vpdn_registration.json / static-cli-config-graph.json"},
+    {"name":"共享 SSS 间接注册","chain":"11D48420 @11D4915A → 109FB180 槽 → 候选 10973010 → 1098D6F0 → DEF7870(table 34C49EC0)","meaning":"T=0、实际槽绑定为 10973010、S=0 时可提交 6 个 subscriber 跟踪片段；其他功能也可先触发","proof":"vpdn-first-enable-callback-getter.json / vpdn-first-enable-callback-owner.json / vpdn-first-enable-callback-target.json / vpdn-sss-1098d6f0.json"},
+    {"name":"间接槽绑定来源","chain":"10973430 在 dword_3DD464B8 非零或其初始化成功后，向 BEdecode(off_34C5CA90)+5520 写入 10973010","meaning":"静态已知赋值候选；不是运行时已确认函数指针值","proof":"vpdn-first-enable-callback-owner.json"},
+    {"name":"共享动态槽及父级","chain":"D2CE380 → D2D0A40 → DEF7BB0/DEF7E60；E07E180 → DEF7BB0；DEF7870 安装父表 33DF8B50 / 341D2030","meaning":"9 个已审查槽定义；实际堆地址未知；分配、顺序及待绑定重试均保留","proof":"vpdn-dynamic-slot-creator.json / vpdn-parent-slot-creator.json / vpdn-dynamic-slot-api-1.json / vpdn-dynamic-slot-api-3.json"},
+    {"name":"资源否决列表中的已知成员","chain":"11DCE980 → 1E7CD760 → D716260(11DDE8E0, registry)","meaning":"11DDE8E0 正常分支最终返回 0，自身不否决；实际列表可能还有其他成员","proof":"vpdn-resource-check-callsite.json / vpdn-resource-veto-callback.json / vpdn-callback-registration-api.json"},
+    {"name":"另一个已解析回调","chain":"11DE2440 @11DE24AA → 1E7CD8F0 返回槽 → 写入 11DE2500；11D467B0(selector 38) 读取槽并调用","meaning":"测试请求/会话清理回调；不是 CLI 注册函数。selector 38 对应输入语法尚未绑定","proof":"trigger-vpdn_registration.json / vpdn-callback-getter.json / vpdn-indirect-callback.json / vpdn-cleanup-dispatch.json"},
+    {"name":"运行初始化内另一个间接调用","chain":"11D98530 → 1E7F7DA0 槽；17D2EAC0 写入候选 17D2E9E0","meaning":"已审查候选涉及 L2TP pw_hwidb 创建；未直接见 CLI 注册；实际绑定及更深依赖未穷尽","proof":"vpdn-enable-init-full.json / vpdn-second-callback-owner.json / vpdn-second-callback-target.json"}
+  ],
+  "radius_codes": [2,21,40,41,42,43,45,47,48,63,102,151,170,600,604,606],
+  "gaps": [
+    "本报告限定匹配 MD5、imagebase=0、普通非 simulation 分支；simulation 镜像函数不合并解释。",
+    "资源回调真实成员、函数指针槽实际绑定、注册顺序、内存分配及工作进程状态无 dump 验证。",
+    "配置入口 DFFFEF0/DFFFE80/DFFF8A0 的 false 分支被保留；它们比较 parser 链状态，不应臆称为 VPDN enable 谓词。",
+    "权限描述符与参数 flags 没有全部解释；出现 <cr> 只表示模型走到 EOL，不证明运行时成功。",
+    "共享 trace 的循环、日期时间、whitespace 等动作未完全解释；只展示候选示例，完整定义以补充图和动态槽证据保存。",
+    "11D467B0 selector 38 的清理回调消费已确认，具体 CLI 语法尚未从本图绑定。",
+    "默认路径示例可能遗漏别名/可选词；本轮 test 片段另枚举全部已建模无环路径，其他区域仍以原图为准。",
+    "隐藏、官方文档未收录及 undocumented 属性均未判定；内部 test 字样不能单独作为判据。"
+  ]
+}

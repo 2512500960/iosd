@@ -1,0 +1,121 @@
+{
+  "title": "iosd 程序架构与分析指南",
+  "as_of": "2026-10-29",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "source": "D:\\cisco\\iosd_helper\\docs\\iosd逆向分析教程.md",
+  "output": "D:\\cisco\\iosd_helper\\docs\\iosd逆向分析教程.html",
+  "chapter_count": 16,
+  "appendix_count": 6,
+  "headings": [
+    {
+      "id": "introduction",
+      "title": "导读 结构与阅读路径"
+    },
+    {
+      "id": "ch01",
+      "title": "1 系统边界与组织方式"
+    },
+    {
+      "id": "ch02",
+      "title": "2 地址与内存表示"
+    },
+    {
+      "id": "ch03",
+      "title": "3 子系统与模块元数据"
+    },
+    {
+      "id": "ch04",
+      "title": "4 启动与初始化架构"
+    },
+    {
+      "id": "ch05",
+      "title": "5 CLI 语法图与执行入口"
+    },
+    {
+      "id": "ch06",
+      "title": "6 解析上下文 条件与配置生成"
+    },
+    {
+      "id": "ch07",
+      "title": "7 命令片段注册与链接"
+    },
+    {
+      "id": "ch08",
+      "title": "8 间接调用与状态依赖"
+    },
+    {
+      "id": "ch09",
+      "title": "9 配置树 diff 与 CDL"
+    },
+    {
+      "id": "ch10",
+      "title": "10 消息 数据模型与转发接口"
+    },
+    {
+      "id": "ch11",
+      "title": "11 静态证据与覆盖范围"
+    },
+    {
+      "id": "ch12",
+      "title": "12 VPDN 注册与状态案例"
+    },
+    {
+      "id": "ch13",
+      "title": "13 通用分析结果与证据关系"
+    },
+    {
+      "id": "ch14",
+      "title": "14 rebase 调试器与 core"
+    },
+    {
+      "id": "ch15",
+      "title": "15 插件与离线工具使用"
+    },
+    {
+      "id": "ch16",
+      "title": "16 潜在未公开命令的研究方法"
+    },
+    {
+      "id": "appendix-a",
+      "title": "附录A 结构速查"
+    },
+    {
+      "id": "appendix-b",
+      "title": "附录B 当前样本的地址索引"
+    },
+    {
+      "id": "appendix-c",
+      "title": "附录C 怎样比较不同版本的统计"
+    },
+    {
+      "id": "appendix-d",
+      "title": "附录D 已合并处理的旧结论勘误"
+    },
+    {
+      "id": "appendix-e",
+      "title": "附录E 术语表"
+    },
+    {
+      "id": "appendix-f",
+      "title": "附录F 原始材料与主题对应"
+    }
+  ],
+  "answer_blocks": 0,
+  "source_characters": 44773,
+  "handbook_sha256": "d4f396fb20d2eb03b0757a39cdd20f1c5110f9500175b529e3f59231b60f40d4",
+  "source_documents_sha256": {
+    "D:\\cisco\\iosd_helper\\README.md": "2be1abf3f7c5b90a69f0b4bb20ed913deab248370495931eeaef5f64f76e35ad",
+    "D:\\cisco\\iosd_helper\\iosd二进制文件结构描述.md": "3fef29ab299319696b0d9aae3a43fa5132fa1e15ea5690028ea3e72e8084ec50",
+    "D:\\cisco\\iosd_helper\\docs\\iosd模块与子系统.md": "e3c8ad697e79bea3a1a4f6b0844ea719ea635d0ed9169582ff923870530aaf80",
+    "D:\\cisco\\iosd_helper\\docs\\iosd的NVGEN与接口配置缓存.md": "ae2b630d2267b47eda6efbf493961cd6224576051c2fac7a22ae88493ceffed1",
+    "D:\\cisco\\iosd_helper\\docs\\iosd的EHSA心跳与主备状态机.md": "a06a189877b219b7c402668da36a63daee5129488160847733f96426099bdfca",
+    "D:\\cisco\\iosd_helper\\docs\\iosd的线程与level.md": "f1dfc871a371e5efa9a338723fa891546aeaef40d11818cf459c75bc852ad34d",
+    "D:\\cisco\\iosd_helper\\docs\\整数显示与字节序.md": "4ac9ff3137ef4a454d670450183d289452dad21582f16d843c6de80765a277ab",
+    "D:\\cisco\\iosd_helper\\docs\\iosd架构与术语说明.md": "7f402fccf2300fc09dd430cba2f697213c3f848f3ee4e7e21dd8df385212172d",
+    "D:\\cisco\\iosd_helper\\docs\\通用注册分析与调试接入.md": "681cf6925dc9e1c9bef89509afe9dd60fd842da027158af4260f1da6f667d089"
+  },
+  "ida_access": false,
+  "mcp_access": false,
+  "network_access": false,
+  "note": "Architecture guide built from local documents; original evidence and errata remain linked. Building this reader does not access IDA."
+}

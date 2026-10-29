@@ -1,0 +1,23 @@
+{
+  "name": "core configuration modes and static registration candidates 26.01.02",
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "idb_imagebase": "0x0",
+  "sentinel": "0x37B04568",
+  "max_registration_entries": 128,
+  "max_nodes": 200000,
+  "stop_addresses": ["0x3CB665C8"],
+  "action_registry": {"address": "0x3409EC00", "count": 314},
+  "link_registry": {"address": "0x341146E0", "max_entries": 512},
+  "discovery": {"consumer": "0xDEF7870", "max_call_sites": 5000, "max_tables": 3000},
+  "registration_tables": [],
+  "mode_definitions": [
+    {"name": "exec", "prompt": "exec", "root": "0x341168D0", "parent": null, "evidence_call": "0xDFF1D84"},
+    {"name": "configure", "prompt": "config", "root": "0x341168F8", "parent": null, "evidence_call": "0xDFF1EF3"},
+    {"name": "interface", "prompt": "config-if", "root": "0x34116920", "parent": "configure", "evidence_call": "0xDFF1F5E"},
+    {"name": "subinterface", "prompt": "config-subif", "root": "0x34116920", "parent": "configure", "evidence_call": "0xDFF1FB8"},
+    {"name": "null-interface", "prompt": "config-if", "root": "0x34116948", "parent": "configure", "evidence_call": "0xDFF2011"},
+    {"name": "line", "prompt": "config-line", "root": "0x34116970", "parent": "configure", "evidence_call": "0xDFF2078"}
+  ],
+  "mode_evidence": {"initializer": "0xDFF1CF0", "factory": "0xDF3BC00", "allocator": "0xDF3B9B0", "root_argument": 9, "mode_root_field": "0x50", "note": "Root argument and mode names verified from calls; no runtime mode object read"},
+  "path_analysis": {"initial_normal_cli_state": [1, 0, 0], "reviewed_normal_cli_callbacks": ["0xDFFFFE0", "0xDF35FB0"], "evidence": "Normal positive-sense CLI starting context is an explicit analysis assumption; noprefix field offsets verified at E39DDB6/E39DDDA/E39DDE8. DFFFFE0 and DF35FB0 have no normal-CLI token consumption or sense/default assignments; other state effects remain outside this model."}
+}

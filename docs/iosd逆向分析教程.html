@@ -1,0 +1,2036 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>iosd 程序架构与分析指南</title>
+<style>
+:root{--reading-size:18px;--bg:#f4f2ed;--paper:#fffefb;--text:#242e37;--muted:#5a6670;--border:#deded6;--accent:#135f6c;--code:#f0f3f3;--note:#eaf4f4}
+:root[data-theme=dark]{--bg:#141b20;--paper:#1b252c;--text:#e5ecee;--muted:#a7b7bf;--border:#3a4a53;--accent:#82d2d8;--code:#24323b;--note:#20383e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--border);border-radius:7px;background:var(--paper);color:var(--text);padding:7px 11px}button:hover{border-color:var(--accent)}
+aside{position:fixed;inset:0 auto 0 0;width:288px;overflow:auto;border-right:1px solid var(--border);background:var(--paper);padding:28px 18px;z-index:20}aside .label{font-size:12px;letter-spacing:.16em;color:var(--muted)}aside h2{font-size:21px;margin:8px 8px 18px}nav ol{list-style:none;padding:0;margin:0}nav a{display:block;font-size:14px;text-decoration:none;color:var(--text);padding:9px 10px;border-radius:6px;line-height:1.55}nav a:hover{background:var(--note)}aside footer{font-size:13px;color:var(--muted);line-height:1.8;padding:18px 10px}
+.workspace{margin-left:288px}.toolbar{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;z-index:10}.toolbar input{min-width:180px;flex:1;max-width:520px;background:var(--bg);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:7px;font-size:14px}.toolbar #result-count{font-size:12px;color:var(--muted)}#menu{display:none}
+main{max-width:1020px;margin:30px auto 80px;padding:0 36px}.cover,.chapter{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:42px 48px;margin:0 0 28px;box-shadow:0 5px 18px #00000004;font-size:var(--reading-size);line-height:1.95;overflow-wrap:anywhere}.cover{border-top:5px solid var(--accent)}.cover h1{font-size:2.1em;margin:0 0 8px;line-height:1.35}.cover>p:first-of-type{font-size:1.15em;color:var(--accent);margin-top:5px}.chapter h2{font-size:1.45em;line-height:1.55;border-bottom:1px solid var(--border);padding-bottom:15px;margin:0 0 26px}.chapter h3{font-size:1.1em;margin:32px 0 12px;color:var(--accent)}p{margin:16px 0}li{margin:8px 0}blockquote{margin:24px 0;padding:1px 18px;background:var(--note);border-left:4px solid var(--accent);font-size:.94em}pre{background:var(--code);border:1px solid var(--border);padding:18px 20px;border-radius:8px;overflow:auto;white-space:pre;line-height:1.7;font-size:.83em}code{font-family:Consolas,"SFMono-Regular",monospace;font-size:.87em;background:var(--code);border-radius:3px;padding:1px 4px}pre code{font-size:1em;background:none;padding:0}.table-wrap{overflow:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:.85em;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:10px 12px;border:1px solid var(--border);min-width:90px}th{background:var(--note);font-weight:600}td code{white-space:normal}details{background:var(--note);border:1px solid var(--border);border-radius:8px;padding:12px 18px;margin:18px 0}summary{cursor:pointer;font-size:.93em;color:var(--accent);font-weight:600}details p{margin-bottom:6px}section[hidden],li[hidden]{display:none!important}.bottom-note{color:var(--muted);font-size:13px;text-align:center;line-height:1.8}.back-top{position:fixed;right:20px;bottom:18px;z-index:30}
+@media(max-width:1100px){main{padding:0 22px}.cover,.chapter{padding:32px}}
+@media(max-width:850px){aside{transform:translateX(-100%);box-shadow:5px 0 24px #0003;transition:transform .15s}body.nav-open aside{transform:translateX(0)}.workspace{margin-left:0}#menu{display:inline-block}.toolbar{padding:10px 12px;gap:6px}.toolbar #result-count{width:100%}main{margin-top:18px;padding:0 12px}.cover,.chapter{padding:24px 20px}.cover h1{font-size:1.7em}pre{padding:14px;font-size:.75em}.back-top{right:12px;bottom:12px}}
+@media print{aside,.toolbar,.back-top,.bottom-note{display:none}.workspace{margin:0}main{max-width:none;margin:0;padding:0}.cover,.chapter{border:0;box-shadow:none;border-radius:0;padding:0;margin:0 0 30px;font-size:11pt;line-height:1.8}.chapter{break-before:page}section[hidden]{display:block!important}pre{white-space:pre-wrap}tr{break-inside:avoid}a{color:#222}h2,h3{break-after:avoid}}
+</style></head><body>
+<aside id="sidebar"><div class="label">IOSD HELPER · 程序架构</div><h2>阅读目录</h2><nav aria-label="主题目录"><ol><li data-nav="introduction"><a href="#introduction">导读 结构与阅读路径</a></li>
+<li data-nav="ch01"><a href="#ch01">1 系统边界与组织方式</a></li>
+<li data-nav="ch02"><a href="#ch02">2 地址与内存表示</a></li>
+<li data-nav="ch03"><a href="#ch03">3 子系统与模块元数据</a></li>
+<li data-nav="ch04"><a href="#ch04">4 启动与初始化架构</a></li>
+<li data-nav="ch05"><a href="#ch05">5 CLI 语法图与执行入口</a></li>
+<li data-nav="ch06"><a href="#ch06">6 解析上下文 条件与配置生成</a></li>
+<li data-nav="ch07"><a href="#ch07">7 命令片段注册与链接</a></li>
+<li data-nav="ch08"><a href="#ch08">8 间接调用与状态依赖</a></li>
+<li data-nav="ch09"><a href="#ch09">9 配置树 diff 与 CDL</a></li>
+<li data-nav="ch10"><a href="#ch10">10 消息 数据模型与转发接口</a></li>
+<li data-nav="ch11"><a href="#ch11">11 静态证据与覆盖范围</a></li>
+<li data-nav="ch12"><a href="#ch12">12 VPDN 注册与状态案例</a></li>
+<li data-nav="ch13"><a href="#ch13">13 通用分析结果与证据关系</a></li>
+<li data-nav="ch14"><a href="#ch14">14 rebase 调试器与 core</a></li>
+<li data-nav="ch15"><a href="#ch15">15 插件与离线工具使用</a></li>
+<li data-nav="ch16"><a href="#ch16">16 潜在未公开命令的研究方法</a></li>
+<li data-nav="appendix-a"><a href="#appendix-a">附录A 结构速查</a></li>
+<li data-nav="appendix-b"><a href="#appendix-b">附录B 当前样本的地址索引</a></li>
+<li data-nav="appendix-c"><a href="#appendix-c">附录C 怎样比较不同版本的统计</a></li>
+<li data-nav="appendix-d"><a href="#appendix-d">附录D 已合并处理的旧结论勘误</a></li>
+<li data-nav="appendix-e"><a href="#appendix-e">附录E 术语表</a></li>
+<li data-nav="appendix-f"><a href="#appendix-f">附录F 原始材料与主题对应</a></li></ol></nav><footer>2026 年 10 月 29 日整理<br>架构 · 初始化 · 接口 · 分析案例<br><a href="iosd逆向分析教程.md">查看 Markdown 源稿</a></footer></aside>
+<div class="workspace"><div class="toolbar"><button id="menu" aria-expanded="false">目录</button><input id="search" type="search" aria-label="按关键词筛选主题" placeholder="搜索架构、结构与接口"><button id="clear">全部主题</button><button id="smaller" aria-label="缩小字体">A−</button><button id="larger" aria-label="放大字体">A＋</button><button id="theme">深色</button><span id="result-count" role="status">按主题阅读，或搜索具体结构与接口。</span></div>
+<main><header class="cover"><h1 id="book-title">iosd 程序架构与分析指南</h1>
+<p>系统边界 初始化机制 功能注册与运行时验证</p>
+<p>iosd 的规模来自大量业务功能、公共设施、注册元数据与运行时对象共同组成的程序。理解它需要先分清文件和进程边界，再沿启动编排、subsystem、module 分组及注册接口进入具体功能。CLI 是其中一种入口，消息、协议报文和数据模型同样需要单独分析。</p>
+<p>本文围绕当前 C8000v 26.01.02 样本说明已有代码证据支持的架构关系，并保留地址、结构和复现方法作为查阅材料。输入 MD5 为 <code>9eccfd46caadfff9c18557e2a446e19b</code>，使用 IDA 9.1；项目浏览入口已更新至 0.6.1。旧静态材料的 imagebase 为 0，文中相应样本地址按 RVA 理解，rebase 后加当前基址；堆 VA 不能照此换算。</p>
+</header><section class="chapter" data-chapter="introduction"><h2 id="introduction">导读 结构与阅读路径</h2>
+<p>整体架构可从第1、3、4、10部分连贯阅读；地址表示见第2部分；CLI 注册与条件见第5至9部分。VPDN 是注册和状态依赖的具体案例，不代表其完整网络协议解析路径。插件、调试与结果使用方式放在后半部分。</p>
+<p>这里使用三种说法标记结论的强度：</p>
+<table>
+<thead>
+<tr>
+<th>标记</th>
+<th>含义</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已核对</td>
+<td>现有字节、消费代码或保存的路径直接支持该局部关系</td>
+<td>某 EOL 描述符包含一个 handler 指针</td>
+</tr>
+<tr>
+<td>候选</td>
+<td>有具体线索，但身份、控制流或运行条件还有缺口</td>
+<td>一个 handler 可能通过间接调用提交某张表</td>
+</tr>
+<tr>
+<td>未知</td>
+<td>目前不足以解释；保留原始内容和缺口</td>
+<td>某节点指向静态 IDB 未初始化的地址</td>
+</tr>
+</tbody>
+</table>
+<p>“已核对”也有范围。确认代码中存在一个调用，并不等于确认这个调用在设备上执行过。每个结论都要带着它的对象、输入身份和成立条件来读。</p>
+<p>文中“示意”用于解释结构或算法，“样本案例”对应实际保存的分析结果。出现 <code>&lt;string&gt;</code>、<code>&lt;number&gt;</code>、<code>&lt;cr&gt;</code> 的文字是语法模板，不是让你原样输入设备的操作指令。</p>
+</section>
+<section class="chapter" data-chapter="ch01"><h2 id="ch01">1 系统边界与组织方式</h2>
+<h3 id="ch01-s01">1.1 IOS XE 与 iosd</h3>
+<p>可以把 IOS XE 理解为一个包含 Linux 和多个用户态程序的系统。iosd 是其中承载大量 IOS 控制面功能的程序；研究这一份 iosd 文件，可以看到很多命令解析、配置处理、协议和平台控制相关代码。</p>
+<p>但 iosd 文件并不包含整个设备的全部实现。已有资料中还出现 <code>pman</code>、<code>cmand</code>、<code>fman_rp</code>、<code>fman_fp</code>、<code>confd</code>、<code>nginx</code>、<code>wsman</code>、<code>vtyc</code> 等进程或组件名称。某次功能操作可能经过多个边界，也可能只在 iosd 内部完成。名称和进程关系要在对应平台、版本中核对。</p>
+<pre><code class="language-text">IOS XE 系统
+├─ Linux 与进程管理设施
+├─ iosd
+│  ├─ CLI 解析与配置相关代码
+│  ├─ 协议和平台相关代码
+│  └─ 消息、注册、调度等公共设施
+└─ 其他用户态进程与服务
+   └─ 与 iosd 的关系要沿实际接口分析
+</code></pre>
+<p>因此，“分析 iosd 的结构”至少包含两种工作：一是整理文件里面的代码和元数据；二是理解它与运行时对象、其他进程和设备状态的联系。</p>
+<h3 id="ch01-s02">1.2 这些名词不在同一层</h3>
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>比较容易理解的含义</th>
+<th>它不能直接告诉你的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>进程</td>
+<td>正在运行的一份程序及其地址空间</td>
+<td>一个进程内部只有一个功能模块</td>
+</tr>
+<tr>
+<td>线程</td>
+<td>操作系统调度的执行实体之一</td>
+<td>一个 subsystem 必须对应一条线程</td>
+</tr>
+<tr>
+<td>子系统 subsystem</td>
+<td>带名称、初始化入口和属性的注册实体</td>
+<td>这个实体拥有一段连续、独占的全部代码</td>
+</tr>
+<tr>
+<td>module header/link</td>
+<td>编译或初始化组织留下的元数据</td>
+<td>一定是“子系统下面的业务模块”</td>
+</tr>
+<tr>
+<td>component</td>
+<td>源码组织中的组件标签</td>
+<td>与运行时 subsystem 一一对应</td>
+</tr>
+<tr>
+<td>编译单元</td>
+<td>编译源文件时形成的组织单位</td>
+<td>看到一个 <code>.c</code> 路径就恢复了该单元的全部函数</td>
+</tr>
+<tr>
+<td>函数</td>
+<td>一段可调用代码</td>
+<td>这个函数只处理一个命令或一种消息</td>
+</tr>
+<tr>
+<td>handler</td>
+<td>在某个分派场景中被调用的处理函数</td>
+<td>名称含 handler 就一定是 CLI handler</td>
+</tr>
+</tbody>
+</table>
+<p>“模块”在口语里容易同时指源码目录、ELF 元数据、共享库、功能组或子系统。阅读报告时，最好说清楚“module header 记录”“源码 component”或“某个子系统”，不要全叫模块。</p>
+<h3 id="ch01-s03">1.3 为什么它不像一棵文件夹目录树</h3>
+<p>一个公共函数可以被多个协议调用；一个注册中心可以服务多个子系统；同一 CLI handler 可以处理多个 selector；多个语法路径还可以共享一个终结点。</p>
+<p>所以，最终更合理的表示是关系图：</p>
+<pre><code class="language-text">源码路径 ──直接引用线索──→ 函数
+子系统记录 ──初始化入口──→ 函数
+语法终结点 ──处理函数──→ 同一个函数
+消息分派表 ──消息回调──→ 另一个函数
+</code></pre>
+<p>每条边只表达一种关系。不要因为两条边都指向某函数，就把它们合成“这就是这个子系统全部代码”的结论。</p>
+<h3 id="ch01-s04">1.4 从上到下理解程序</h3>
+<p>可以按“系统环境 → ELF 与共享库边界 → 启动编排 → 初始化实体 → 注册接口 → 业务处理路径”阅读。各层回答的问题不同：文件视角定位实现在哪里；启动视角解释何时准备；subsystem 和 module 元数据提供组织线索；接口与回调连接输入和业务处理。</p>
+<pre><code class="language-text">iosd 主 ELF 与外部文件、进程的边界
+  → 启动入口及初始化阶段
+    ├─ subsystem 类别、实体及 init
+    └─ module 分组、依赖及回调节点
+      → CLI / 消息 / registry / 协议入口
+        → 缓冲区解析、状态对象、定时器及后续调用
+</code></pre>
+<p>这条阅读路径不表示所有对象都有唯一父级。公共 registry、调度和消息设施会被多个实体使用。当前还没有恢复所有功能的报文处理路径，也没有完整的跨库归属；名称、直接调用、注册、分派和数据流应作为不同关系保存。</p>
+<p>从已有实现可归纳出元数据驱动初始化、分阶段准备、注册与间接分派连接功能等特点。这里说明的是样本呈现的组织方式，不将推断写成厂商的设计意图。</p>
+</section>
+<section class="chapter" data-chapter="ch02"><h2 id="ch02">2 地址与内存表示</h2>
+<h3 id="ch02-s01">2.1 先理解字段偏移</h3>
+<p>假设一个记录从地址 <code>0x1000</code> 开始，文档说“名称指针在 <code>+24</code>”。它的意思是：名称指针这个字段存放在 <code>0x1018</code>，因为十进制 24 等于十六进制 <code>0x18</code>。</p>
+<p>你还需要读取该字段，才得到名称字符串所在地址。下面三个对象要分开：</p>
+<pre><code class="language-text">记录地址         0x1000
+名称指针字段地址 0x1000 + 24 = 0x1018
+字段中保存的值   例如 0x5000，指向字符串
+</code></pre>
+<p>“槽地址”和“槽里的指针”也是这个区别。把槽地址直接当成节点地址，会从错误的位置开始解释结构。</p>
+<h3 id="ch02-s02">2.2 文件偏移不是内存地址</h3>
+<p>文件偏移表示字节在磁盘文件中的位置。VA 表示虚拟地址空间中的位置。ELF 的装载描述决定文件中的哪些字节映射到哪些地址；不能默认二者相等。</p>
+<p>IDB 或 <code>.i64</code> 是 IDA 的分析数据库，包含反汇编、名称、交叉引用和分析状态。它也不等于原始 ELF。运行时内存中还会出现文件里没有直接存放的堆对象和初始化结果。</p>
+<h3 id="ch02-s03">2.3 EA RVA 与运行时 VA</h3>
+<p>用一张表记住四个量：</p>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>旧 EA</td>
+<td>当时静态报告中的 IDA 地址</td>
+</tr>
+<tr>
+<td>旧基址</td>
+<td>这次报告采集时的 imagebase</td>
+</tr>
+<tr>
+<td>RVA</td>
+<td>对同一映像基准的相对位置：<code>旧 EA - 旧基址</code></td>
+</tr>
+<tr>
+<td>当前 EA / 运行时 VA</td>
+<td>分别把 RVA 加到当前 IDB 基址或运行时同一映像基址</td>
+</tr>
+</tbody>
+</table>
+<p>例如，这是一个<strong>示意基址</strong>，不是当前设备的真实值：</p>
+<pre><code class="language-text">旧基址 = 0
+旧 EA  = 0x00123400
+RVA    = 0x00123400
+
+新 IDB 基址 = 0x70000000
+当前 EA     = 0x70123400
+
+运行时基址 = 0x70000000
+运行时 VA  = 0x70123400
+</code></pre>
+<p>IDA 已经移到运行时位置时，EA 与 VA 可以相等。再加一次 <code>0x70000000</code> 就错了。</p>
+<p>另一个方向也成立：IDA 可以保持旧基址，运行时另有加载基址。此时必须通过 RVA 转换，不能直接把静态 EA 交给 debugger 读取。</p>
+<h3 id="ch02-s04">2.4 堆地址为什么不能照样换算</h3>
+<p>模块内的全局变量通常可以用模块 RVA 标识。某个变量里保存的指针，却可能指向动态分配的堆节点。堆节点的位置不由静态映像中的一个固定偏移决定。</p>
+<p>因此，应当先定位全局槽，再读槽中的运行时指针，再按布局读堆节点。不能把“堆 VA 减去 iosd 基址”得到的整数随意称为有效映像 RVA。</p>
+<h3 id="ch02-s05">2.5 大端 小端与 tagged pointer</h3>
+<p>字节序描述多字节数值怎样存放。用数字 <code>0x12345678</code> 举例：</p>
+<pre><code class="language-text">大端：12 34 56 78
+小端：78 56 34 12
+</code></pre>
+<p>本样本的静态 CLI 数据里有小端指针，同时某些编号用大端保存；运行时又可以出现带标记位的大端指针。因此不能对整个文件统一 byteswap。</p>
+<p>tagged pointer 是在指针表示中附带标记。下面是结构示意：</p>
+<pre><code class="language-text">原始字节：80 00 00 00 00 12 34 56
+按大端读：0x8000000000123456
+清最高标记位：0x0000000000123456
+</code></pre>
+<p>若先按小端装载，得到的是 <code>0x5634120000000080</code>。此时标记位在原始整数中的位置已经不同。源码里先掩码再 byteswap 的写法，也可能正确，但掩码必须与这种表示配对。不能把两个看起来相似的掩码互换。</p>
+<p>插件提供 <code>little</code>、<code>big</code>、<code>mask_then_swap</code>、<code>swap_then_mask</code> 四种解码选项。它们是四种明确的解释方式，不是四个任选其一、总会正确的开关。应当以消费代码和已知对象核对。</p>
+<h3 id="ch02-s06">2.6 原始数值与逻辑数值</h3>
+<p>VPDN 的 selector 28 按大端保存时，字节可以是 <code>00 00 00 1C</code>。在某些小端装载的反编译表达式中，这会表现成 <code>0x1C000000</code>，十进制是 469,762,048。</p>
+<p>因此，看到很大的比较常量，先检查字节序。它可能只是逻辑编号 28 的存储表示，也可能确实是一个大标志值；解释必须结合读取方式。</p>
+</section>
+<section class="chapter" data-chapter="ch03"><h2 id="ch03">3 子系统与模块元数据</h2>
+<h3 id="ch03-s01">3.1 四种组织视角</h3>
+<p>第一种是文件和装载布局：代码、只读数据、可写数据、导入表等。第二种是初始化元数据：subsystem、module header 和 link。第三种是源码路径与保留名称。第四种是实际调用、引用和数据流。</p>
+<p>这四种视角互相补充。例如，名称提示某函数属于许可功能，源码路径又提供了 component 标签；但只有进一步检查调用和引用，才能知道它参与哪个具体流程。</p>
+<p>ELF 的 section、装载用 program segment 和 IDA 显示的 segment 也要区分。名称相似不代表它们逐项对应。</p>
+<h3 id="ch03-s02">3.2 子系统记录</h3>
+<p>当前样本保存的扫描结果有 5,692 条子系统候选、5,678 个不同名称。消费代码支持按 96 字节步长处理相关子系统记录。插件扫描还使用双 magic 定位候选，再尝试读取名称和初始化入口。</p>
+<p>这两句话分别说明“消费代码的步长”和“扫描器的定位方法”。扫描器不应仅因预想记录大小，就跳过所有不符合预想对齐的区域。</p>
+<p>元数据可以告诉你某个实体的名称和 init 入口，但不能自动给出它所有函数的地址区间。把 init 入口往外扩一大段当成模块边界，可能把公共函数和其他实体混进去。</p>
+<h3 id="ch03-s03">3.3 module header 与 link</h3>
+<p>module 与 subsystem 是两套初始化组织机制。当前 32 字节的 module header 共 15 条：14 个 <code>level_*</code> 分组和一个带回调的 <code>memtest</code>。24 字节 module link 共 11 条，其中 10 条表达前置依赖，1 条把 <code>memtest</code> 放入 <code>level_protocol</code> 分组。这些关系来自新核对的消费者，不能把 module 分组当作 subsystem 的父目录。</p>
+<p><code>sub_D772690</code> 根据 header 的 <code>+0x10</code> 是否非零，分别建立带回调节点或含列表的分组节点；<code>sub_D7715A0</code> 调用前者的初始化回调。<code>level_*</code> 的相应字段均为零；<code>memtest</code> 的第一回调为 RVA <code>0xD79CF90</code>。第二回调的完整消费尚未核对，保留原始字段，不直接命名为退出或析构函数。</p>
+<p>原始 link tag 小端值 <code>0xDFEADFEA</code> 由 <code>sub_D7705B0</code> 处理，将端点 B 加入端点 A 的前置依赖列表。<code>0xABEFABEF</code> 由 <code>sub_D7703A0</code> 处理，将 A 的分组设为 B。例如 <code>level_protocol</code> 依赖 <code>level_driver</code>，而 <code>memtest</code> 归入 <code>level_protocol</code>。依赖边与分组边表达不同事实。</p>
+<p>subsystem 则读取自己的类别和属性，由 <code>sub_D710240</code>、<code>sub_D710BC0</code> 等组织分类及依赖。启动的后续路径中存在 <code>sub_D711090(4)</code> 与初始化 <code>level_protocol</code> module 分组相继执行的例子；这是启动编排的配合，不能据此断言所有 Protocol subsystem 都是该 module 的子节点。</p>
+<p>模块还可能指功能集合，或主 ELF/共享库这样的文件容器。文件归属、初始化归属和业务关联必须分开记录。完整结构、设计解释与原始函数证据见 <a href="iosd%E6%A8%A1%E5%9D%97%E4%B8%8E%E5%AD%90%E7%B3%BB%E7%BB%9F.md">iosd 模块 子系统与初始化架构</a>。</p>
+<h3 id="ch03-s04">3.4 源码路径能帮到什么程度</h3>
+<p>已有样本中可以找到这类路径：</p>
+<pre><code class="language-text">../VIEW_ROOT/cisco.comp/parser/src/parser_chunk_malloc.c
+../VIEW_ROOT/cisco.comp/fnf/config/model/field_spec/src/fnf_cm_field_spec.c
+</code></pre>
+<p>它们可以帮助识别 <code>parser</code>、<code>fnf</code> 等源码组织标签。当前扫描取得过 3,542 条路径线索。</p>
+<p>但一个函数引用某个路径，可能是日志、断言或共享辅助代码。合理记录方式是“这个函数直接引用该路径字符串”，再把组件归属记为候选，而不是声称已恢复完整编译单元。</p>
+<h3 id="ch03-s05">3.5 符号和日志的使用方法</h3>
+<p><code>_message_handler</code>、<code>mqipc_*</code>、<code>tbl_*</code>、<code>__be_*</code>、<code>vty_*</code> 等名称可以分类检索。IDA 名称还可能是以前人工添加的；<code>sub_XXXX</code> 中的数字通常反映地址，不是跨构建稳定的语义名称。</p>
+<p>日志里的 <code>__func__</code> 字符串可以提供更好的函数名线索。例如日志格式含函数名参数和行号参数时，应当恢复实际参数值，再核对调用位置。只看见格式串附近一个名字，不能保证它就是引用函数的名字。</p>
+<p><code>.btrace_*</code>、GUID、计数器和追踪 ID 则是另一类证据。它们有助于关联诊断设施，但没有自动变成源码函数名。<code>CRFT_func</code> 的精确运行时布局仍未确认。</p>
+</section>
+<section class="chapter" data-chapter="ch04"><h2 id="ch04">4 启动与初始化架构</h2>
+<h3 id="ch04-s01">4.1 从入口到应用代码</h3>
+<p>本样本已核对的局部启动关系是：</p>
+<pre><code class="language-text">ELF start
+  → 从 main 指针槽取得函数地址
+  → libc 调用 main 包装器
+  → 包装器把应用回调交给运行时代理
+  → 应用回调执行环境准备
+  → 进入系统初始化路径
+</code></pre>
+<p>“指针槽叫 main”和“某函数就是 main”不是同一个判断。当前真正的 main 包装器对应旧地址 <code>0xB246530</code>；旧文档把 <code>0xD710460</code> 称为 main，已被后续复核纠正。</p>
+<p>运行时代理接收回调，不等于代理内部所有调度过程都已经分析完。画图时应保留“传入回调”这种边的含义，不能伪装成一条已确认的普通直接调用。</p>
+<h3 id="ch04-s02">4.2 子系统准备与执行初始化</h3>
+<p>子系统准备阶段会建立分类和 Pending 等容器，遍历元数据，读取名称、类别、属性和依赖顺序，把实体放到相应位置。随后其他路径按条件推进初始化。</p>
+<p>这很像先编排任务清单，再执行任务。把一条记录放入清单，既不等于已经调用 init，也不等于创建了 Linux 线程。</p>
+<p>同样，某个函数尾部调用了清理函数，就不能因为它处在初始化末尾而称它为“进入主调度循环”。已有复核发现旧文档所说的那个尾调用实际涉及 chunk 清理，初始化例程会返回。</p>
+<h3 id="ch04-s03">4.3 十三个类别</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>阅读提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Kernel</td>
+<td>IOS 内部类别，不直接等同于 Linux 内核</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Library</td>
+<td>公共库相关类别</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Driver</td>
+<td>驱动相关类别</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Protocol</td>
+<td>协议相关类别</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Management</td>
+<td>管理相关类别</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Registry</td>
+<td>注册与回调设施相关类别</td>
+</tr>
+<tr>
+<td>7</td>
+<td>SystemInit</td>
+<td>系统初始化类别</td>
+</tr>
+<tr>
+<td>8</td>
+<td>EHSA</td>
+<td>高可用相关初始化类别；不是所有成员都直接处理心跳</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Pre-Driver</td>
+<td>驱动前置类别</td>
+</tr>
+<tr>
+<td>10</td>
+<td>IFS</td>
+<td>文件系统相关类别名称，边界待逐项确认</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Microcode</td>
+<td>微码相关类别</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Pre-EHSA</td>
+<td>EHSA 前置类别</td>
+</tr>
+<tr>
+<td>13</td>
+<td>License</td>
+<td>许可相关类别</td>
+</tr>
+</tbody>
+</table>
+<p>编号不等于执行顺序。已有代码会读取另外的顺序映射。13 个类别也不能直接与 14 个 <code>level_*</code> module 记录配成同一张表。</p>
+<h3 id="ch04-s04">4.4 线程 调度对象与消息循环</h3>
+<p>已有资料中同时出现 pthread、IOS 内部进程/任务名称、调度队列和定时器等线索。这些对象可能处在不同抽象层。</p>
+<p>分析时可以分别问：谁分配任务对象？谁把任务放入队列？谁执行回调？谁调用线程 API？哪个循环实际取消息？把每一环对应到消费代码，比根据 Pending 或 process 等单词直接下结论更可靠。</p>
+<p>当前现场已核对七条 Linux 线程：IOS 主线程、Fastpath、Packet、Auxiliary、Sim Aux 和两个 Worker。系统初始化 <code>D7B7690 → 1583D9A0</code> 调用外部 <code>__be_mcp_spawn_threads</code>；本次绑定在 <code>libiosd_crb_vxe_unix.so</code>。它登记现有主线程并创建其他执行环境，Worker 的线程池创建继续进入 <code>libthpool.so</code>。这条创建路径早于此处的 module 发现和 subsystem 分类推进。</p>
+<p>Fastpath 和 Packet 的已审查入口使用 epoll 和回调分派；Auxiliary 消费辅助请求队列；Sim Aux 有另一套配置模拟相关请求；Worker 消费通用工作队列。业务归属需要继续关联提交者和具体回调，不能按七个线程名划分七个 subsystem。</p>
+<p><code>level_*</code> module 分组与 <code>*_thread_level</code> 的数字属于不同对象。后者经 <code>D714C40 → D714A10</code> 分配 Interrupt Stack 并登记执行上下文，例如 Packet level 2、Fastpath level 3；不是把线程优先级或 subsystem 类别填进同一张表。七个 TID、库内入口、线程表索引及更多解释见 <a href="iosd%E7%9A%84%E7%BA%BF%E7%A8%8B%E4%B8%8Elevel.md">iosd 的线程 任务与 level</a>。</p>
+<h3 id="ch04-s05">4.5 EHSA 怎样把心跳 状态机与平台连接起来</h3>
+<p>当前样本已经追到一个具体例子：<code>ehsa_background_monitor</code> 的 init <code>D511200</code> 创建 peer monitor 任务；<code>ehsa_fsm</code> 的 init <code>D519D30</code> 创建 FSM 任务和队列；<code>platform_ehsa</code> 的 init <code>D52C3A0</code> 安装平台策略与故障回调。它们是多个有明确初始化入口的实体，通过消息、队列和 registry 协作。</p>
+<p>心跳发送经 <code>D51CE00</code> 封装类型 30 <code>KEEPALIVE</code>；接收分派 <code>D51E0E0</code> 经按类型注册的回调进入 <code>D512810</code>，刷新监测。peer monitor <code>D510B80</code> 的定时器或计数器分支可产生 <code>KEEPALIVE_FAILURE</code>，随后经过事件过滤和平台策略，再排入 FSM。超时检测、事件提交与切换完成是不同步骤。</p>
+<p>FSM 由当前状态和 major/minor 事件索引动作表。本轮取得 14 个状态、224 个完整事件槽、19 个不同动作回调；状态 7 的名称以及部分事件来源仍未知，全部保留。<code>D51AF30</code> 动作可进入 <code>D5156E0</code> 的 Standby→Active 编排，准备不足时还有 reload 分支。队列消费者另有直接状态写入，不能把表内边当成全部状态变化。</p>
+<p>核心函数体在 iosd 主 ELF 中。少量 GOT 读取与已加载模块范围对照表明，Chasfs 导入绑定到 <code>libchasfs.so</code>，能力查询 <code>cyan_get_boolean</code> 绑定到 <code>libcyan.so</code>，两项 MCP 平台接口绑定到 <code>libiosd_crb_vxe_unix.so</code>。平台能力允许时，故障路径中的回调会发布 <code>notification/stby-request-swo</code> 属性；消费该请求的外部进程和最终动作仍未闭合。</p>
+<p>这个例子体现了初始化实体、内部任务、状态表、业务函数和进程边界之间的差别。完整说明、函数 RVA、条件与未知关系见 <a href="iosd%E7%9A%84EHSA%E5%BF%83%E8%B7%B3%E4%B8%8E%E4%B8%BB%E5%A4%87%E7%8A%B6%E6%80%81%E6%9C%BA.md">iosd 的 EHSA 心跳与主备状态机</a>，全部表项可在 <a href="../reports/ehsa-implementation-20261029/index.html">EHSA 证据目录</a> 检索。module 的阶段依赖仍按独立机制记录，不把类别 8 自动当成 <code>level_ehsa</code> 的成员表。</p>
+</section>
+<section class="chapter" data-chapter="ch05"><h2 id="ch05">5 CLI 语法图与执行入口</h2>
+<h3 id="ch05-s01">5.1 从一条简单命令开始</h3>
+<p>考虑已经恢复过的配置语法：</p>
+<pre><code class="language-text">hostname &lt;string&gt; &lt;cr&gt;
+</code></pre>
+<p><code>hostname</code> 是要匹配的关键词；<code>&lt;string&gt;</code> 表示参数；<code>&lt;cr&gt;</code> 表示到达输入结束位置。解析器沿着相应动作，检查输入并把参数写入上下文，最后才进入终结处理。</p>
+<p>因此，一个关键词节点一般不是一条完整命令。把全文件的关键词去重后连在一起，也不能恢复命令。</p>
+<h3 id="ch05-s02">5.2 accept 与 alternate</h3>
+<p>下面是结构示意：</p>
+<pre><code class="language-text">入口
+ ├─ 匹配 alpha → EOL
+ └─ 尝试 beta  → EOL
+</code></pre>
+<p>若当前节点是 <code>alpha</code>，其 accept 代表匹配成功后的继续位置；alternate 可以代表不匹配时改试其他选择。沿 alternate 不应把失败的 <code>alpha</code> 附加到命令里。</p>
+<p>正确结果可以是 <code>alpha &lt;cr&gt;</code> 和 <code>beta &lt;cr&gt;</code>。错误的遍历会把它们拼成 <code>alpha beta &lt;cr&gt;</code>。边的“是否消耗输入”必须由动作语义决定，不能只看有几条指针。</p>
+<h3 id="ch05-s03">5.3 EOL handler 与 selector</h3>
+<p>EOL 是语法终结点。某些已解释的 EOL 描述符包含 handler 地址，并附带 selector。selector 可以理解成“同一个处理函数中的功能编号”。</p>
+<pre><code class="language-text">路径 A → EOL，handler H，selector 1
+路径 B → EOL，handler H，selector 2
+</code></pre>
+<p>这里有两个命令定义，却只有一个 handler。反过来，同一个 EOL 也可能被多个路径共享。因此 handler 数、EOL 数、路径数和命令字符串数不相等。</p>
+<p>VPDN 的 enable 分支对应 selector 28。这个 28 是业务分派参数，不是 parser 动作表中的 opcode。</p>
+<h3 id="ch05-s04">5.4 opcode 与动作表</h3>
+<p>动作编号描述“当前解析步骤如何工作”，例如匹配关键词、读取数字、检查条件或处理输入结束。当前样本的动作表有 314 个有名称槽位。</p>
+<p>某些回调在静态数据中有值，另一些需要继续追踪运行时注册。空回调只说明当前静态表示缺少它的执行入口，不说明对应语法定义不存在。</p>
+<p>当前提取器能解释部分 keyword、number、string、address、predicate、comparison、state assignment 和 EOL 等动作。未知动作继续作为不透明步骤保存。</p>
+<h3 id="ch05-s05">5.5 共享后缀与循环</h3>
+<pre><code class="language-text">路径 A ─┐
+        ├→ 公共后缀 → EOL
+路径 B ─┘
+</code></pre>
+<p>如果为了避免重复访问而在全局标记“公共后缀已访问”，就可能只输出路径 A，漏掉路径 B。枚举路径时，检测当前路径中的环，与对整个图去重，是不同操作。</p>
+<p>当图中有循环时，不能声称用一份有限字符串清单列出了全部可能输入。更合适的保留方式是保存图、循环边、参数规则和枚举停止位置。</p>
+</section>
+<section class="chapter" data-chapter="ch06"><h2 id="ch06">6 解析上下文 条件与配置生成</h2>
+<h3 id="ch06-s01">6.1 CSB 是处理一次解析所需的上下文</h3>
+<p>解析器需要记住：正在处理哪一种输入、用户给了哪些参数、当前模式是什么、最终交给 handler 的 selector 是多少。项目把这类上下文称为 CSB；不需要先猜出该缩写的完整厂商定义，才能分析它的读写。</p>
+<p>当前路径模型只明确跟踪本样本的 sense、default、NVGEN 三个字段，其他状态仍可能影响行为。字段偏移只是本样本已经复核的局部知识，不是通用 C 结构定义。</p>
+<h3 id="ch06-s02">6.2 正向 no 与 default</h3>
+<p>配置输入里，正向、<code>no</code> 和 <code>default</code> 可能走不同路径。例如：</p>
+<pre><code class="language-text">hostname &lt;string&gt; &lt;cr&gt;
+no hostname &lt;cr&gt;
+default hostname &lt;cr&gt;
+</code></pre>
+<p>后两条可能省略正向所需的参数，因为上下文告诉 handler 这是撤销或恢复默认的请求。不能简单给正向字符串前面加一个 <code>no</code>，也不能认定所有命令都支持 <code>default</code>。</p>
+<p>本样本路径模型的普通正向初始假设是 <code>[sense=1, default=0, NVGEN=0]</code>。这是用于生成一类示例的显式假设；候选定义池不使用它删除其他分支。</p>
+<h3 id="ch06-s03">6.3 条件可以出现在多个阶段</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>可能遇到的条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>注册前</td>
+<td>平台、初始化阶段、资源检查、回调结果</td>
+</tr>
+<tr>
+<td>匹配语法时</td>
+<td>模式、权限、参数范围、谓词、状态比较</td>
+</tr>
+<tr>
+<td>handler 内</td>
+<td>功能启用状态、已有对象、配置组合是否合法</td>
+</tr>
+<tr>
+<td>消息或工作进程中</td>
+<td>目标任务、队列、会话、内存与进一步业务条件</td>
+</tr>
+</tbody>
+</table>
+<p>所以，“关键词能被匹配”只说明走过了一部分检查。即使到达 EOL，后面的 handler 或异步处理仍可能拒绝或失败。</p>
+<h3 id="ch06-s04">6.4 NVGEN 的方向与输入解析不同</h3>
+<p>普通 CLI 解析通常从输入文字走向参数和处理函数；NVGEN 关注从当前配置状态生成配置文字。</p>
+<pre><code class="language-text">输入解析：用户文字 → 解析上下文 → handler → 状态
+配置生成：当前状态 → 生成回调 → 配置文字
+</code></pre>
+<p>某个函数同时参与两条方向，不能把它的 NVGEN 分支当作用户输入时一定执行的逻辑。配置生成得到的行，也不会自动列出所有隐藏、测试或尚未启用的命令。</p>
+<p>当前样本的 <code>show running-config</code> 路径经 <code>0xDFE9DB0 → 0xDFE8DD0</code> 进入生成请求设施，核心 <code>0xE0DE210</code> 创建 <code>NV Parser CSB</code>，设置 NVGEN=1、模式和输出目标。普通生成分支通过 mode 对象 <code>+0x50</code> 取得语法起点，排入节点并调用遍历器；指定筛选回调时有另一条分支。生成前后的 registry 钩子还提供其他参与入口。</p>
+<p>因此，“收集各组件配置”在这条路径中体现为沿配置语法和对象迭代进入回调，<strong>不是重新调用每个 subsystem 的 init</strong>。业务回调负责解释自己的状态，公共输出函数负责缩进、格式化和写入输出目标。全局槽 <code>0x381E2E30</code> 保存生成中的 CSB 上下文，不是所有组件状态的统一存储。</p>
+<p><code>nvgens_action</code> 的消费者 <code>0xE39D8F0</code> 从载荷读取回调与 selector，经过 <code>0xE39D9B0</code> 的状态门控后调用业务函数。例如 hostname 的 NVGEN 节点和 EOL 节点共用 <code>0xE0E6A00</code>、selector 0；接口 description 共用 <code>0xE40C850</code>、selector 3。函数在普通路径更新状态，在生成分支读取状态并输出。</p>
+<p>当前还确认接口配置文本缓存：命令 <code>parser config cache interface</code> 的 handler 为 <code>0xDEF9650</code>，开关变量为 RVA <code>0x381C05B0</code>。接口生成路径在已有缓存且资格检查通过时复用文本；否则生成片段，并通过回调保存到接口对象 <code>+544</code>。禁用路径创建专用生成上下文，遍历接口并释放缓存。当前开关值、各接口缓存内容和普通配置更新的全部失效触发点尚未验证。</p>
+<p>保存图中的 5,099 个已解码 nvgens 节点，有 4,174 个与已解码 CLI EOL 同时共用函数和 selector。这个数表示描述符关联，不能换算成组件或命令数量，也不证明所有分支在目标上可达。</p>
+<p>完整调用链、状态实例、缓存流程与原始证据见 <a href="iosd%E7%9A%84NVGEN%E4%B8%8E%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE%E7%BC%93%E5%AD%98.md">iosd 的 NVGEN 与接口配置缓存</a>。接口生成缓存、输入匹配用的 parser cache、ICM/diff 配置文本结构分别记录，不因名称相近而合并。</p>
+<h3 id="ch06-s05">6.5 条件未求值意味着什么</h3>
+<p>报告中的 <code>evaluated=false</code> 表示没有执行目标谓词或确认条件真值。某些 <code>evaluated=true</code> 则只针对局部符号常量，例如路径中明确把 sense 设为 0 后进行比较。</p>
+<p>不能把局部符号比较成立，理解成设备状态已经确认。报告没有 <code>&lt;?&gt;</code> 也只说明未经过已标记的不透明步骤，权限和参数 flags 仍可能未解释。</p>
+</section>
+<section class="chapter" data-chapter="ch07"><h2 id="ch07">7 命令片段注册与链接</h2>
+<h3 id="ch07-s01">7.1 从完整命令拆成片段</h3>
+<p>大型程序不必把所有命令一次写成一张固定大表。一个公共模块可以提供前缀，另一个模块提供后续片段，在初始化或某个业务动作中把它们接起来。</p>
+<p>结构示意：</p>
+<pre><code class="language-text">公共部分：show → [链接位置 A]
+特性部分：statistics → &lt;cr&gt;
+
+把特性片段安装到 A 后：show statistics &lt;cr&gt;
+</code></pre>
+<p>本项目把片段入口叫 root，把用来匹配安装位置的标识叫 link key。key 的具体表示由消费代码决定；当前样本中有地址形式的 key，它不是用户输入的关键词，也不是 selector。</p>
+<h3 id="ch07-s02">7.2 注册表与链接槽是两件东西</h3>
+<p>注册表描述“哪个片段想接到哪个 key”；链接槽描述“这个 key 对应的实际连接位置”。</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>示意表示</th>
+<th>你能从中得到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>注册记录</td>
+<td><code>key A → fragment R</code></td>
+<td>某片段要提交到 A</td>
+</tr>
+<tr>
+<td>链接定义</td>
+<td><code>key A → anchor S，type 1</code></td>
+<td>A 的入口连接位置是 S</td>
+</tr>
+<tr>
+<td>安装行为</td>
+<td>修改相应链接，把 R 接到 S</td>
+<td>运行时树或链发生变化</td>
+</tr>
+</tbody>
+</table>
+<p>所以，找到注册记录不等于读到了安装后的内存结构。静态分析器可以增加一条“候选安装边”，表达这种可能连接，而不修改 IDB 或调用目标注册函数。</p>
+<h3 id="ch07-s03">7.3 当前样本的三种记录</h3>
+<table>
+<thead>
+<tr>
+<th>记录</th>
+<th style="text-align:right">大小</th>
+<th>相对记录起点的重要字段</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静态注册项</td>
+<td style="text-align:right">16 字节</td>
+<td>key <code>+0</code>，片段 root <code>+8</code></td>
+<td>提交哪个片段</td>
+</tr>
+<tr>
+<td>核心静态链接槽</td>
+<td style="text-align:right">48 字节</td>
+<td>key <code>+0</code>，anchor <code>+16</code>，type <code>+24</code></td>
+<td>已在静态表中定义的连接位置</td>
+</tr>
+<tr>
+<td>动态链接记录</td>
+<td style="text-align:right">56 字节</td>
+<td>next <code>+0</code>，key <code>+8</code>，anchor <code>+24</code>，type <code>+32</code></td>
+<td>运行时分配并挂入链表的槽</td>
+</tr>
+</tbody>
+</table>
+<p>动态记录前面多了 next 字段，相同概念的字段因此相差 8 字节。看到代码以“动态记录加 8”作为内部视图时，要先确认这个起点变化，避免把两种偏移混用。</p>
+<p>这里的大小与字段都是当前样本的局部布局。跨构建仍需验证；静态指针与运行时 tagged BE 指针也不能用同一种读取规则糊在一起。</p>
+<h3 id="ch07-s04">7.4 入口链接与返回链接</h3>
+<p>当前消费代码区分 type 1 和 type 2。为便于理解，可以把它们分别看成入口方向的片段安装和返回方向的连接。</p>
+<pre><code class="language-text">公共前缀 → [入口槽] → 特性片段 → [返回连接] → 公共后缀 → EOL
+</code></pre>
+<p>只找到片段的开头，可能还不能拼出完整命令。只有把返回连接、公共后缀和模式入口一起考虑，才知道关键词前后还有什么内容。</p>
+<p>type 1 的已核对安装路径涉及 alternate 链；type 2 的建模还有特定链接占位值的前提。这是消费代码的行为，不是“任意两条指针都可随意连接”的通用图规则。</p>
+<h3 id="ch07-s05">7.5 动态槽什么时候出现</h3>
+<p>创建槽通常涉及分配记录、写入 key/anchor/type、挂到表头。程序可以在系统初始化、功能首次使用或其他共享初始化路径中执行这件事。</p>
+<p>动态槽的<strong>创建代码</strong>可以静态分析，动态槽的<strong>堆地址与当前内容</strong>要从运行时观察。两种知识并不矛盾：没有 dump，也可以知道“哪些代码可能创建它”；有 dump，才能知道“这次运行创建到了哪里”。</p>
+<h3 id="ch07-s06">7.6 找不到槽时不一定失败</h3>
+<p>当前样本存在待绑定队列。某次注册找不到 key 对应的槽时，可以先保存请求，返回值仍可能表示请求已被接受。之后创建槽会改变重试状态，解析入口再尝试绑定这些记录。</p>
+<pre><code class="language-text">提交片段
+  ├─ 槽已存在 → 尝试安装
+  └─ 槽不存在 → 进入待绑定队列
+                         ↓
+              后续创建槽，触发重试
+                         ↓
+                  再次尝试安装
+</code></pre>
+<p>因此，应分别记“提交成功”“排队成功”“安装成功”。用户观察到后续命令过一段流程才出现，不一定意味着第二条用户命令专门执行了注册；也可能是之前排队的请求终于有了安装位置。</p>
+</section>
+<section class="chapter" data-chapter="ch08"><h2 id="ch08">8 间接调用与状态依赖</h2>
+<h3 id="ch08-s01">8.1 直接调用与间接调用</h3>
+<p>直接调用的目标写在指令或已解析表达式中。间接调用先取得一个函数指针，再调用这个指针。</p>
+<pre><code class="language-c">/* 结构示意 */
+slot = get_callback_slot();
+fn = decode_pointer(*slot);
+fn();
+</code></pre>
+<p>只收集 <code>call 某地址</code> 会漏掉后者。接下来要找：谁向这个槽写过函数地址？写入发生在什么条件下？调用时读取的是不是同一个槽？</p>
+<h3 id="ch08-s02">8.2 getter 帮助识别槽</h3>
+<p>某些短函数返回“某个全局对象的固定偏移处”，相当于取得一个回调槽的位置。它们常被称为 getter。</p>
+<p>如果一个函数向 <code>get_slot()</code> 返回的位置写入 <code>init_feature</code>，另一个函数从相同 getter 返回的位置取函数指针，就形成一条候选绑定关系。</p>
+<pre><code class="language-text">写入者 W → 槽 S ← 消费者 C
+           │
+           └─ 候选目标：init_feature
+
+据此建立 C → init_feature 的候选间接调用边
+</code></pre>
+<p>称为候选，是因为 getter 可能有环境分支、对象可能重建、后面还可能有覆盖写入。静态找到一处赋值，不能当成每次运行的实际槽值。</p>
+<h3 id="ch08-s03">8.3 局部变量的多个来源</h3>
+<p>反编译中经常看到 <code>v1</code>、<code>v2</code> 这类局部变量。变量可能在不同分支被多次赋值。</p>
+<pre><code class="language-c">/* 结构示意 */
+if (condition)
+    p = slot_a;
+else
+    p = slot_b;
+call_through(p);
+</code></pre>
+<p>正确的候选分析应保留两个来源及条件。按文本只取“最后一次赋值”，可能漏掉 A；把两个来源都判成必然执行，则又过强。goto、循环和早返回还会使单纯按文本顺序的分析更不可靠。</p>
+<h3 id="ch08-s04">8.4 状态依赖怎样建立</h3>
+<p>最基本的状态依赖是一处写入和另一处读取指向同一个变量：</p>
+<pre><code class="language-text">命令 A 的某个分支 → 写变量 X
+命令 B 的解析或执行路径 → 检查变量 X
+</code></pre>
+<p>这表明 A 可能改变 B 的条件。要说“执行 A 一定放行 B”，还需要证明写入值、检查关系、控制流和其他条件。</p>
+<p>通用分析器因此先把 X 叫作未分类状态变量，而不自动命名为 enabled、hidden 或 initialized。名字要由消费代码和上下文逐步确认。</p>
+<h3 id="ch08-s05">8.5 四种容易混淆的前置关系</h3>
+<table>
+<thead>
+<tr>
+<th>A 做了什么</th>
+<th>B 后来为什么可能可用</th>
+<th>静态分析应找什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建动态槽</td>
+<td>之前的片段有了安装位置</td>
+<td>创建 API、key、anchor、待绑定队列</td>
+</tr>
+<tr>
+<td>注册新片段</td>
+<td>解析器增加了可达语法</td>
+<td>注册表、入口与返回连接</td>
+</tr>
+<tr>
+<td>改状态变量</td>
+<td>已有语法的谓词或 handler 检查通过</td>
+<td>写入者、读取者、比较关系</td>
+</tr>
+<tr>
+<td>创建工作进程或对象</td>
+<td>命令能分派，但执行终于具备依赖</td>
+<td>PID、队列、对象查找和失败路径</td>
+</tr>
+</tbody>
+</table>
+<p>真实案例还可能把这几种关系组合起来。不能因为现象都是“后来可用了”，就把所有原因统称为“隐藏命令注册”。</p>
+<h3 id="ch08-s06">8.6 静态分析为什么有价值</h3>
+<p>一次运行快照只显示某个时刻、某个平台状态中的对象。静态文件还能保留尚未触发的创建代码、未安装的片段和当前条件为假的分支。</p>
+<p>不过，静态分析也不是无所不能：计算生成的数据、外部库、复杂间接调用和未知动作可能仍然缺失。合理的目标是把潜在定义和条件保存下来，用动态观察补充，而不是让其中一方删除另一方的证据。</p>
+</section>
+<section class="chapter" data-chapter="ch09"><h2 id="ch09">9 配置树 diff 与 CDL</h2>
+<h3 id="ch09-s01">9.1 语法树与配置文本树</h3>
+<p>语法定义描述可以输入什么；配置文本树保存某组配置行及其层次。</p>
+<pre><code class="language-text">语法定义：description &lt;string&gt;
+配置文本：description branch-office
+</code></pre>
+<p>前者是一条规则，后者是带具体值的一行文字。配置文本可能只覆盖已经配置、已经生成或参与比较的内容，不能反推出所有可输入规则。</p>
+<h3 id="ch09-s02">9.2 ICM 的已核对观察</h3>
+<p>现有 ICM 相关消费路径处理 72 字节节点、配置文字、层级和差异。节点的 <code>+0</code> 用于向下遍历，<code>+16</code> 用于回溯，<code>+24</code> 用于同级遍历，<code>+8</code> 参与树链维护。<strong>没有在这套节点中确认 <code>+8</code> 为 handler。</strong></p>
+<p>文本通常涉及 <code>+48</code> 以及 flags、索引和缓冲区。某些路径把 <code>+60</code> 当作开始偏移，把 <code>+64</code> 当作结束偏移，读取长度为：</p>
+<pre><code class="language-text">长度 = 结束偏移 - 开始偏移 - 1
+</code></pre>
+<p>还存在通过根对象的数组间接取得缓冲区的路径，不能永远把节点 <code>+48</code> 当作可直接读取的字符串地址。</p>
+<p>这些字段与 40 字节静态 transition 不同。把两种结构的偏移表混起来，会读到看起来像地址、实际意义却完全不同的值。</p>
+<h3 id="ch09-s03">9.3 diff 树用来表示什么</h3>
+<p>diff 可以理解为两份配置之间的差异处理。结构示意：</p>
+<pre><code class="language-text">旧配置                         新配置
+interface GigabitEthernet1     interface GigabitEthernet1
+ description old               description new
+ mtu 1500                      mtu 1500
+</code></pre>
+<p>两份文本里 MTU 相同，description 不同。差异结果还需要知道 description 属于哪个接口上下文。</p>
+<p>已有代码观察支持比较节点层级和文字、设置匹配标记，再按 old/new 方向生成差异输出。具体怎样形成撤销命令和执行顺序，需要继续看消费路径；这个例子本身不证明自动生成什么设备命令。</p>
+<p>旧笔记中的 diff 临时根不能当作全系统 CLI 主根。也没有充分依据断言整个程序只有一棵命令树。</p>
+<h3 id="ch09-s04">9.4 CDL XML 是另一份命令描述来源</h3>
+<p>当前 <code>cdl.xml</code> 的文件头把它标为 BinOS Command Set。它有 keyword、value、EOL、filter、request 以及带注解的边。</p>
+<p>它与 iosd 静态语法图在“都有关键词和分支”这一点上相似，但对象相似不等于集合相同。项目没有证明 iosd 自身直接加载这份 CDL，更没有证明它完整覆盖 IOS 配置模式。</p>
+<p>已有资料把 CDL 与 Shell Manager 一侧的命令描述联系起来。Shell Manager 可以先理解成系统中的命令管理或路由边界；精确加载流程及其与 iosd 的接口仍需对相应二进制核实，不能由名字补出一条完整调用链。</p>
+<h3 id="ch09-s05">9.5 为什么旧 CDL 遍历会漏路径</h3>
+<p>CDL 存在共享后缀。旧 C++ 遍历规则对全图使用了屏蔽已访问节点的方式，可能在第一条路径之后不再沿共享后缀输出其他路径。</p>
+<p>新遍历器区分图中节点去重、当前路径中的环检测、路径计数和示例输出，并保留边上的 <code>filter-ref</code>、<code>set</code>、<code>set-tdl</code> 等注解。过滤器不直接出现在显式边端点，并不表示它没有影响。</p>
+<p>内部 <code>name</code> 与用户输入关键词也不相同。当前文件中输入文本通常看 <code>str</code>；按 <code>name=&quot;interface&quot;</code> 的次数判断有没有接口命令，是不可靠的。</p>
+<h3 id="ch09-s06">9.6 应该怎样使用 CDL 结果</h3>
+<p>当前主根显式图有 4,372 个可达 EOL，结构路径计数为 652,569,212。默认只输出 4,772 条有边界的示例。路径数既没有展开参数的全部取值，也没有求出过滤条件的真值，所以不是六亿多条可执行命令。</p>
+<p><code>config</code> 子图取得的两条完整路径是 <code>config hw-obfl dummy &lt;cr&gt;</code> 与 <code>config sdm dummy &lt;cr&gt;</code>。这不是通常 <code>(config)#</code> 下所有命令的列表，也不证明这两个模板在设备上可用。</p>
+<p>CDL 适合用来比对相同文本、发现差集和提供额外上下文。差集本身仍不能证明某命令 undocumented：版本、平台、模式和描述来源都可能不同。</p>
+</section>
+<section class="chapter" data-chapter="ch10"><h2 id="ch10">10 消息 数据模型与转发接口</h2>
+<h3 id="ch10-s01">10.1 三种不同的 handler</h3>
+<p>CLI handler 处理解析后的上下文；消息 handler 处理某类消息；事件或 registry 回调处理某个事件或查询。它们都可以是函数指针目标，但入口语义不同。</p>
+<p>一个名字带 <code>_message_handler</code> 的函数不应直接当作 CLI 命令终点。若 CLI handler 先发消息，真正的业务动作可能在另一个工作进程的消息分支中完成。</p>
+<h3 id="ch10-s02">10.2 消息命名线索</h3>
+<p>已有材料中出现 <code>_message_handler</code>、<code>_message_dispatch</code>、<code>_message_dispatch_init</code>、<code>_message_create</code>、<code>_message_destroy</code> 等命名族。</p>
+<p>这些名称可帮助找入口、分派和生命周期。确认注册关系仍需看谁把消息编号与哪个函数关联起来，分派时如何查找，以及数据怎样编码。</p>
+<p>消息驱动是重要的交互方式，但不是说 iosd 没有普通直接函数调用。两条途径可以同时存在。</p>
+<h3 id="ch10-s03">10.3 MQIPC 与进程边界</h3>
+<p>MQIPC 是项目中一组消息队列 IPC 接口名称。<code>mqipc_enqueue</code>、<code>__be_iosd_write_one_mqipc_msg</code> 等可以帮助定位跨进程通信线索。</p>
+<p>跨进程消息与进程内消息可以都承担分派职责，但不能据名字相近就认定它们共享同一套结构、编号或序列化格式。</p>
+<h3 id="ch10-s04">10.4 VTY 与 Web 管理入口</h3>
+<p>已有符号中可见 VTY 请求消息及处理函数，提示某些 CLI 输入会经过会话和消息封装。分析应从实际会话入口追到解析器，而不是假设每种 console、SSH 或 Telnet 路径都完全一致。</p>
+<p>已有笔记还记录了 WSMA、wsman、nginx、Lua 脚本以及 <code>WSMAGetData</code>、<code>WSMAApplyCmd</code> 等线索。它们可以用来研究部分管理请求怎样转换为 CLI 或配置操作。这里不把“所有 Web 操作最终都走同一 CLI 路径”作为已确认事实。</p>
+<h3 id="ch10-s05">10.5 数据模型与 tbl 接口</h3>
+<p><code>tbl_*</code> 名称可以提供特性、表或字段访问线索，例如协议状态和许可状态相关名称。但完整名称中可能含多个层次，不能只按下划线机械切出表名与字段。</p>
+<p>也不能仅由前缀认定它必然由某份 YANG 生成、必然属于 confd 的某个库，或者与 CLI 定义一一对应。要看参数、对象布局、调用者和返回值的实际使用。</p>
+<h3 id="ch10-s06">10.6 控制面与转发面</h3>
+<p>路由计算、配置控制等可以与实际报文转发处在不同路径。FMAN-RP、FMAN-FP、QFP、CEF、RIB、FIB、punt 等术语有助于辨认这一边界。</p>
+<p>当前材料提示通过转发管理相关接口交换状态和控制消息。物理或虚拟实现依平台而异，不能把整个转发面说成某一个普通进程，也不能假设所有数据面交互只经过同一条固定通道。</p>
+</section>
+<section class="chapter" data-chapter="ch11"><h2 id="ch11">11 静态证据与覆盖范围</h2>
+<h3 id="ch11-s01">11.1 从线索走向消费代码</h3>
+<p>一个实用顺序是：先用段名、名称、字符串或 magic 找到候选，再看读取这些数据的代码，确认字段和动作语义，最后编写提取规则。</p>
+<p>例如，有一个日志字符串写着 parser_add_command。它可能出现在上层包装器或错误处理分支。只有找到实际读取 key/root 记录并安装链接的消费者，才能建立相应解析器。</p>
+<h3 id="ch11-s02">11.2 保留原始层与解释层</h3>
+<p>原始层保存输入身份、地址、字节、调用点和读取失败。解释层保存关键词、参数范围、条件、候选 handler、注册边和状态关系。</p>
+<p>解释层可以逐步修订；原始层让你能够回查修订依据。未知动作不能因为暂时不能显示漂亮命令，就从原始图里删除。</p>
+<h3 id="ch11-s03">11.3 定义池与路径示例</h3>
+<p>候选定义池保存已经取得的节点、边、注册片段和未知项。路径示例从图里选一条或多条可读路线，帮助人理解结构。</p>
+<pre><code class="language-text">图和定义池：保留全部已取得的分支与循环
+路径示例：为了显示，选择有限路线
+</code></pre>
+<p>当前普通路径恢复偏好较少不透明步骤、较少输入 token、较少边。这会显示较简单的例子，却可能省略可选词和别名。VPDN 的小片段后来另行枚举，才把这些形式显出来。</p>
+<h3 id="ch11-s04">11.4 没有 dump 也能做什么</h3>
+<p>可以发现静态描述符，解释部分动作，关联 EOL 与 handler，查注册代码、动态槽创建代码、函数指针写入和状态读写。对许多命令来说，这已经能得到很有价值的语法与依赖候选。</p>
+<p>不能仅凭这些信息保证设备上一定可用，也不能承诺已经覆盖全二进制。静态未知链接、计算生成的数据和外部代码仍可能需要运行时材料。</p>
+<p>所以，“完整分析是否必须有内存”应该分对象回答：恢复某些静态定义不必须；确认某次运行的堆对象、真实槽值和当前状态，则通常需要相应运行时证据。</p>
+<h3 id="ch11-s05">11.5 四种不同的覆盖问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>应看的内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>起点是否取全</td>
+<td>已发现 root、未选 root、未解析调用、其他注册方式</td>
+</tr>
+<tr>
+<td>图是否走完</td>
+<td>pending 节点、数量限制、环、读取失败</td>
+</tr>
+<tr>
+<td>语义是否解释全</td>
+<td>未知 opcode、载荷错误、不透明动作、参数 flags</td>
+</tr>
+<tr>
+<td>条件是否在运行中成立</td>
+<td>模式、权限、实际注册、状态、对象和资源</td>
+</tr>
+</tbody>
+</table>
+<p><code>completed</code> 表示某扫描步骤执行结束；<code>complete_for_configured_edges</code> 表示配置起点和已知边的遍历结束。它们都没有同时回答上面四个问题。</p>
+<h3 id="ch11-s06">11.6 去重时保留什么身份</h3>
+<p>同一关键词可以出现在不同模式和片段中；同一个 handler 有多个 selector；同一个 EOL 有多个路径。合理记录至少包括来源、模式候选、root、EOL、handler、selector 和条件。</p>
+<p>候选间接调用也应保留是哪一处槽写入、哪一处消费，以及两侧各自的条件。不能只把两个函数地址连起来，就忘掉为什么曾认为它们有关。</p>
+</section>
+<section class="chapter" data-chapter="ch12"><h2 id="ch12">12 VPDN 注册与状态案例</h2>
+<h3 id="ch12-s01">12.1 先提出一个可以验证的问题</h3>
+<p>问题不是笼统地问“VPDN 有多少命令”，而是：哪条输入会到达某个注册分支？这个分支提交什么表？表接到哪里？同一输入是否还修改了别的状态？</p>
+<p>现有静态案例已经把直接触发分支定位到 <code>(config)# vpdn enable</code>，对应 selector 28。以下结论限定于当前样本已审查的普通非 simulation 分支。</p>
+<h3 id="ch12-s02">12.2 第一步 进入 enable 分支</h3>
+<p>简化后的逻辑如下。它是逻辑摘要，省略了其他业务初始化，不是目标源码或设备脚本：</p>
+<pre><code class="language-text">若正在 NVGEN：走配置生成分支，返回
+
+若 selector 为 28：
+    若为正向 sense：
+        执行资源回调检查
+        若有活动回调否决：报告错误，本分支不写启用状态
+        否则：
+            若首次跟踪初始化尚未尝试：尝试相关初始化和共享回调
+            写 VPDN 启用状态
+            调用运行初始化辅助函数
+            若测试初始化尚未尝试：
+                调用测试初始化例程
+                设置测试初始化尝试标志
+    否则：
+        清 VPDN 启用状态
+    返回
+
+其他 selector：
+    若未启用 VPDN：在业务分派前返回错误
+    否则继续处理各 selector
+</code></pre>
+<p>资源检查是一个回调列表。未停用成员中，任意回调返回非零，都可能否决本次正向请求。已找到的一名具体成员在正常返回时给出 0，但这不能代替运行时完整成员列表。</p>
+<h3 id="ch12-s03">12.3 第二步 区分几个独立状态</h3>
+<table>
+<thead>
+<tr>
+<th>书中简称</th>
+<th>意义</th>
+<th>不能由它直接推出什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E</td>
+<td>VPDN 业务启用状态</td>
+<td>所有相关片段已经安装成功</td>
+</tr>
+<tr>
+<td>T</td>
+<td>首次跟踪初始化尝试标志</td>
+<td>共享回调本次一定完成全部工作</td>
+</tr>
+<tr>
+<td>R</td>
+<td>测试初始化尝试标志</td>
+<td>注册、内存分配和工作进程都成功</td>
+</tr>
+<tr>
+<td>S</td>
+<td>共享 SSS 首次初始化标志</td>
+<td>它只可能由 VPDN 触发</td>
+</tr>
+<tr>
+<td>P</td>
+<td>VPDN test 工作进程标识</td>
+<td>进程仍存活且消息一定能完成</td>
+</tr>
+<tr>
+<td>B</td>
+<td>scalability 批处理状态</td>
+<td>所有其他测试命令都被同样限制</td>
+</tr>
+</tbody>
+</table>
+<p>这些称呼来自各变量的具体消费代码。通用分析器不能看见一个 byte 就自行给它起这样的业务名称。</p>
+<h3 id="ch12-s04">12.4 第三步 跟到直接注册片段</h3>
+<p>测试初始化例程提交一张 key/root 表。对应 key 在核心静态槽表中已有定义，片段接到 EXEC 的 <code>test</code> 前缀下。这一支是“已有槽上的按需安装”，不能称为新分配了动态槽。</p>
+<p>片段有 58 个已取得地址，14 个 EOL，对应 19 条已建模无环语法模板：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">selector</th>
+<th>模板</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">0</td>
+<td><code>test vpn author request &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td><code>test vpn author request cancel &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td><code>test vpdn call request &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td><code>test vpdn call request disconnect &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td><code>test vpdn call client disconnect &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td><code>test vpdn call server disconnect &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td><code>test vpdn mgr request &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td><code>test vpdn mgr request regen &lt;string&gt; &lt;string&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td><code>test vpdn mgr request regen &lt;string&gt; &lt;string&gt; &lt;string&gt; &lt;number:1..65535&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td><code>test vpdn mgr request disconnect &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">8</td>
+<td><code>test vpdn mgr disconnect &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">9</td>
+<td><code>test vpdn l2tp disconnect cause inject &lt;number:0..65535&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">10</td>
+<td><code>test vpdn l2tp disconnect cause inject none &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td><code>test vpdn scalability domain &lt;string&gt; session &lt;number:1..32000&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td><code>test vpdn scalability domain &lt;string&gt; session &lt;number:1..32000&gt; up &lt;number:1..32000&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td><code>test vpdn scalability domain &lt;string&gt; session &lt;number:1..32000&gt; drop &lt;number:0..32000&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">11</td>
+<td><code>test vpdn scalability domain &lt;string&gt; session &lt;number:1..32000&gt; up &lt;number:1..32000&gt; drop &lt;number:0..32000&gt; &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">12</td>
+<td><code>test vpdn scalability cancel &lt;cr&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:right">13</td>
+<td><code>test vpdn l2tp reset sequence &lt;number:0..65535&gt; &lt;cr&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>相同 selector 的不同形式说明最短路径会遗漏可选参数。参数取值、权限和业务结果仍需分别核对。例如 selector 9 的语法范围是 0..65535，但 handler 又限制可支持的 RADIUS code；不是范围内每个数字都有效。</p>
+<p>片段还有 25 条边界路线，其中 24 条指向 IDB 未初始化地址，1 条是 parser stop。报告保留了这些路线，没有把它们算成完整命令，也没有因不完整而删除。</p>
+<h3 id="ch12-s05">12.5 第四步 注册之后还要怎样执行</h3>
+<p>部分 selector 把消息 3855 投递给 VPDN test 工作进程，工作进程再按 selector 分派。因此它们依赖 P 和消息发送结果，有些还要分配请求对象。</p>
+<p>这里的 P 指代码中用于消息投递的工作进程标识；尚不能直接把它当作 Linux <code>ps</code> 显示的 PID。第1章所说的执行实体层次，在这里同样适用。</p>
+<p>selector 9、10 直接设置测试状态；selector 13 直接调用查找和重置相关函数，不经过相同的 test 消息队列。selector 11 还有“已处于批处理状态则等待”的检查。</p>
+<p>所以，不能用一条“VPDN 已启用”边代表所有测试命令的执行条件。</p>
+<h3 id="ch12-s06">12.6 第五步 跟到间接 SSS 分支</h3>
+<p>首次跟踪初始化还会调用某个 getter 返回槽中的函数。静态找到的一处赋值候选把该槽指向共享 SSS 初始化函数；它在首次分支里进一步提交另一张注册表。</p>
+<p>这张表有 6 个 subscriber 跟踪片段，涉及相关动态链接定义及公共父级。例如恢复出的候选示例包括：</p>
+<pre><code class="language-text">EXEC:
+  show monitor event-trace subscriber vpdn event &lt;cr&gt;
+  monitor event-trace subscriber vpdn error enable &lt;cr&gt;
+
+configure:
+  monitor event-trace subscriber vpdn event size &lt;number:1..1000000&gt; &lt;cr&gt;
+</code></pre>
+<p>这条链涉及 9 个已审查的相关动态槽定义，但共享初始化并不专属于 VPDN。其他功能可以先触发它；实际槽绑定、创建成功与顺序仍要用运行时证据核验。</p>
+<h3 id="ch12-s07">12.7 第六步 检查关闭与再次启用</h3>
+<p>已审查的 <code>no/default vpdn enable</code> 分支只清 E，没有复位 R/T，也没有在该分支调用注销测试片段的函数。</p>
+<p>这带来几个重要区别：</p>
+<ul>
+<li>同一配置 handler 的其他 selector 会因为 E=0 被拒绝；定义却可能一直存在。</li>
+<li>测试片段可能仍保留在解析结构中；测试 handler 没有同样的直接 E 检查，但进一步操作仍可能失败。</li>
+<li>再次启用时若 R 已为 1，测试初始化例程会被跳过；前一次初始化的某些失败未必自动重试。</li>
+</ul>
+<p>资源回调否决的分支，也没有把既有 E 强制清零。因此不能把“一次 enable 失败”直接记成“状态一定为未启用”。</p>
+<h3 id="ch12-s08">12.8 从案例抽出通用研究模板</h3>
+<p>研究任何类似线索，都可以依次记录：触发 handler 和 selector、入口条件、状态写入、直接注册、间接槽写入与消费、片段的入口和返回、业务分派、失败与撤销路径。</p>
+<p>这是一组应调查的问题，不是要求所有命令都遵守 VPDN 的固定状态机。</p>
+<p>案例原始证据与完整条件见 <a href="../reports/vpdn-activation-20261029/index.html">VPDN 激活链报告</a>。</p>
+</section>
+<section class="chapter" data-chapter="ch13"><h2 id="ch13">13 通用分析结果与证据关系</h2>
+<h3 id="ch13-s01">13.1 通用指什么</h3>
+<p>通用分析核心根据 API 角色、参数表达式、调用关系、函数指针绑定和状态访问工作。业务 handler、命令名称和状态变量地址不写死在算法中。</p>
+<p>但 API 的地址、参数位置和结构布局仍需要样本 profile。当前 profile 绑定已知输入 MD5，保存的是 API RVA。<strong>算法不依赖 VPDN，不等于已经适配所有架构、版本和构建。</strong></p>
+<h3 id="ch13-s02">13.2 两种证据来源</h3>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>得到什么</th>
+<th>使用时的边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结构化 ctree 采集</td>
+<td>从反编译表达式取得调用、赋值和部分条件，尽量保留指令位置</td>
+<td>仍是有界采集，不是完整 CFG 可行性证明；本轮完整实机采集尚未验证</td>
+</tr>
+<tr>
+<td>缓存反编译文本导入</td>
+<td>IDA 不可用时，离线取得有限表达式和调用候选</td>
+<td>只识别文本子集，字符位置不是指令地址；未知原文继续保存</td>
+</tr>
+</tbody>
+</table>
+<p>ctree 可以理解成反编译器提供的表达式与语句结构；IR 是分析器保存的中间表示。例如它把一条赋值保存成左侧、右侧、所在函数和条件等字段，方便离线关联。</p>
+<p>两种来源都没有执行目标 handler 或谓词。文本中明确看不到的字段不能自动补出；没有独立样本身份的缓存也要标记，不能与已核对输入的材料说成同一种强度。</p>
+<h3 id="ch13-s03">13.3 先看摘要再看候选组</h3>
+<p>先看 <code>identity</code> 确认输入，再看 <code>scope</code>、采集来源、数量限制和未知项。然后选一个 handler，查看其命令定义组和通向注册事件的调用链。</p>
+<p>通用报告里的候选组往往有多个 selector。它表达“这个 handler 中存在到注册事件的关系线索”，不表达“该组所有命令都会执行这条注册”。VPDN 的手工深入分析之所以有价值，就是把候选组进一步缩到了 selector 28。</p>
+<h3 id="ch13-s04">13.4 看动态槽表时问三个问题</h3>
+<p>第一，key 和 anchor 是从具体参数恢复，还是仍是未知表达式？第二，创建代码在什么条件下执行，返回值有没有检查？第三，实际堆地址是否已经观察到？</p>
+<p>“创建调用证据”不是“已经分配的槽数”。同一调用还可能同时有直接引用和文本来源，统计记录可能重复表达一个实际事件。</p>
+<h3 id="ch13-s05">13.5 看间接调用和状态表时问什么</h3>
+<p>间接调用要看写入与消费是否指向同一个候选槽、是否可能被覆盖、编码是否一致。状态依赖则看写入和读取的对象是否相同、读取是不是判断条件、关联到哪些 selector。</p>
+<p><code>write_may_affect_guard</code> 的含义是“写入可能影响某个条件判断”，其中 may 不能省掉。若只是影响普通读取，报告使用另一种关系，不应一概称为解锁。</p>
+<h3 id="ch13-s06">13.6 当前结果应该怎样解释</h3>
+<p>保存的通用结果包含 10,479 条新取得的直接 API 引用，结合 132 个缓存函数形成 61 组触发候选，涉及 31 个 handler。缓存中 59 个附带匹配身份，73 个缺少独立身份字段并保留标记。</p>
+<p>候选中可见 <code>segment-routing mpls</code>、<code>metadata flow</code>，以及 <code>bulkstat</code> 等经过公共模式创建链的线索。共享链可能是模式设施的公共工作，不一定给每条业务命令安装一组专属新命令。</p>
+<p>结构化采集在接口兼容修正后的请求发生超时，之后停止派发新请求。本文使用的是已保存材料和离线结果，没有把未返回的采集当作成功。</p>
+<p>阅读入口：<a href="../reports/lifecycle-candidates-20261029/index.html">通用注册与状态依赖候选</a>。</p>
+</section>
+<section class="chapter" data-chapter="ch14"><h2 id="ch14">14 rebase 调试器与 core</h2>
+<h3 id="ch14-s01">14.1 rebase 期间的数据边界</h3>
+<p>IDA 正在 rebase 或 attach 时，可以处理已有 HTML 和 JSON；扫描、批量反编译与动态采集应等数据库恢复响应、地址基准稳定后进行。</p>
+<p>这既避免给 IDA 增加工作，也避免把重定位前后的地址混入同一次采集。先前某个请求超时，只能说明客户端没取得完整结果，不能证明服务端立即停止，更不能证明某个函数不存在。</p>
+<h3 id="ch14-s02">14.2 rebase 与地址映射不是同一个动作</h3>
+<p>rebase 改变 IDA 数据库中映像的坐标。地址映射则告诉插件，当前 IDB 与运行时内存怎样对应。</p>
+<p>一个数据库可以已经 rebase，但仍然需要确认它是否与当前进程使用同一个映像基准。映像再次装载或换一份 core 后，也要重新核验映射。</p>
+<pre><code class="language-text">旧报告 EA ──减旧基址──→ RVA
+                          ├─ 加当前 IDB 基址 → 当前 EA
+                          └─ 加运行时映像基址 → 运行时 VA
+</code></pre>
+<p>不要把旧 JSON 中所有整数统一加偏移。原始字节、字段偏移、selector、opcode、参数范围和 flags 都应保持各自含义。</p>
+<h3 id="ch14-s03">14.3 旧 profile 与新 RVA profile</h3>
+<p>旧静态语法 profile 使用与 MD5、imagebase=0 绑定的地址。它在 rebased IDB 中拒绝运行，是为了防止访问旧位置。只改 <code>idb_imagebase</code> 或删校验，并没有自动修正其他地址和字节表示。</p>
+<p>新生命周期 API profile 用 RVA 定位 API，因此可以在当前基址上计算对应 EA；旧语法报告仍保留自己的采集身份，用 RVA 关联。rebase 前的采集检查点不直接 <code>--resume</code> 到新基址，应该使用新的采集文件。</p>
+<h3 id="ch14-s04">14.4 第一次真实内存读取的顺序</h3>
+<p><strong>以下步骤只在 rebase 完成、界面恢复后进行。</strong></p>
+<ol>
+<li>确认目标暂停，记录当前输入 MD5、IDA imagebase 和运行时映像基址。</li>
+<li>重新运行 <code>dev_load.py</code>，关闭旧会话窗口并建立新的插件实例。已导出的旧报告继续保留。</li>
+<li>选择 debugger 数据源，重新设置并核验映射。</li>
+<li>用已知、稳定且没有重定位或动态修改影响的字节检查一个小锚点。</li>
+<li>先读取一个模块内全局槽，确认原始字节和指针编码。</li>
+<li>再读槽指向的一个运行时节点，核对字段和 next。</li>
+<li>最后才做带上限的链表遍历，导出来源、基址、原始字节、错误和边界。</li>
+</ol>
+<p>一个锚点一致，只证明这个局部位置对得上，不是整个 core 或进程身份的充分证明。不要选会改变的业务状态当作恒定字节锚点。</p>
+<h3 id="ch14-s05">14.5 动态槽链表要怎样读</h3>
+<p>新运行时入口按 profile 读取动态链接和待绑定链表。基本顺序是：</p>
+<pre><code class="language-text">head 的 RVA
+  → 换成运行时 head VA
+  → 读 head 槽的 8 字节
+  → 解码得到第一个堆节点 VA
+  → 读记录、保存字段、取得 next
+  → 重复，直到 NULL、循环、错误或数量上限
+</code></pre>
+<p>head 地址与第一个节点地址不能互换。重复 key 也不自动去重，因为它们可能代表多次创建、不同记录或不同阶段。</p>
+<p>字段指针落入已确认模块映射时，可以附带 RVA；堆节点本身仍保存运行时 VA。未知内存读取失败会形成边界记录，不自动改读 IDB。</p>
+<h3 id="ch14-s06">14.6 core 的特点</h3>
+<p>core 是某次采集的内存材料，不是一份新的源代码或语法全集。当前插件只支持相应的未压缩 ELF64 x86-64 ET_CORE 和 PT_LOAD 读取；压缩文件先在外部解压，厂商私有格式不默认兼容。</p>
+<p>若 PT_LOAD 的内存范围大于实际收录的文件字节，剩余页面是“未捕获”，不能按普通可执行文件 BSS 的习惯补零。旧笔记中记录过设备侧 dump 手段，但它们的可用性、权限和具体语法依环境而异；本文的操作从匹配的既有 core 开始。</p>
+<p>IDA 可以继续打开对应 iosd 的 IDB，由插件另外读取 core。这样，静态代码与运行时页面是两个来源，关系由映射明确建立。</p>
+<h3 id="ch14-s07">14.7 为什么当前读取不叫原子快照</h3>
+<p>插件每次读取检查映射，debugger 后端检查目标暂停；但当前没有跟踪一次 resume 后再次 stop 的事件世代，也不能把多次网络读取说成一个瞬间完成。</p>
+<p>因此读取期间保持目标暂停，分别保存每次采集。报告中的 <code>atomic_snapshot=false</code> 是对一致性范围的说明，不是让你把缺失状态补成“应该如此”。</p>
+<h3 id="ch14-s08">14.8 首次暂停现场：从候选图走到实际连接图</h3>
+<p>本轮 attach、rebase 和暂停后，已对真正的 iosd 主模块核验三个不可变字符串锚点。一个实际遇到的错误是：IDB 打开 iosd，但调试器 attach 到启动管理程序 pman。此时 IDB 字节正常，调试地址读取失败。重新 attach 到 iosd 并核对模块与锚点后，才继续读取动态链表。不能用数据库 MD5 代替调试进程身份核验。</p>
+<p><a href="../reports/runtime-comparison-20261029/index.html">运行时命令图与静态对照</a> 保存了本次结果：动态链接槽 1,783 条，待绑定记录 245 条，两张链都读到 NULL。报告同时导出模式路径示例树、已取得的实际连接图、全部静态注册对照和未知节点。槽记录数与示例路径数都不是命令总数；某个片段已挂接，也不等于权限、条件和 handler 一定允许执行。</p>
+<p><code>service internal</code> 是第二个状态依赖案例。当前样本恢复到配置模式 handler RVA <code>0xDE9A730</code>、selector 20。启用变量 RVA <code>0x37B1B5F8</code> 当前为 0；部分关键词的访问检查直接读取它，值为 0 时拒绝。首次启用还遍历两张已有命令描述链，按字符串定位权限描述并修改标志。两张链的 77 条原始条目全部保留；它们不是“新注册了 77 条命令”的证据。</p>
+<p>因此，运行一条命令后出现更多命令，可能来自链接注册，也可能来自状态门控或权限描述变化。必须看实际写入、注册 API 和连接关系再分类。当前已审查的 service internal 辅助链支持后两种解释，共享回调的后续效果仍保留未知。方法和离线复现见 <a href="%E8%BF%90%E8%A1%8C%E6%97%B6%E5%91%BD%E4%BB%A4%E5%9B%BE%E5%AF%BC%E5%87%BA%E8%AF%B4%E6%98%8E.md">运行时命令图导出说明</a>。</p>
+<p>后续 <a href="../reports/runtime-comparison-20261029/refinement/index.html">config 模式补读与恢复</a> 已读回原来的 26 个缺页范围，并沿新引用继续补读。当前已知图的缺页队列为 0，但仍有未解释的动作和条件。“取得字节”和“理解语义”是两个不同进度。本轮也修正了已审查公共回调的 RVA/VA 比较，重新区分正向、<code>no</code>、<code>default</code> 上下文；旧路径数与新路径数不能直接解释为设备增加了多少命令。</p>
+<p>再往后，关键词选项表和间接分支提供了另一类线索。一个节点可能包含整个选项集合；有些集合由生成器临时构造，而非以持久链表保存。应分别保存每个词、取值、状态效果和条件。优先路径示例只选一个词时，其他词仍须保留在条件图中。两类消费代码及阅读方法见 <a href="config%E5%85%B3%E9%94%AE%E8%AF%8D%E9%80%89%E9%A1%B9%E4%B8%8E%E6%9D%A1%E4%BB%B6%E5%9B%9E%E8%B0%83.md">config 关键词选项与条件回调</a> 和 <a href="../reports/runtime-comparison-20261029/options/index.html">本轮报告</a>。</p>
+</section>
+<section class="chapter" data-chapter="ch15"><h2 id="ch15">15 插件与离线工具使用</h2>
+<h3 id="ch15-s01">15.1 先认识三个入口</h3>
+<table>
+<thead>
+<tr>
+<th>入口</th>
+<th>用途</th>
+<th>是否需要接触 IDA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML 报告</td>
+<td>阅读、搜索已保存结果</td>
+<td>不需要</td>
+</tr>
+<tr>
+<td>命令行离线工具</td>
+<td>重建报告、处理已保存 JSON/XML</td>
+<td>对下表的离线命令不需要</td>
+</tr>
+<tr>
+<td>IDA 插件或 MCP 采集工具</td>
+<td>取得新 IDB/反编译/运行时材料</td>
+<td>需要；采集前确认数据库及目标状态</td>
+</tr>
+</tbody>
+</table>
+<p>MCP 是分析工具与 IDA 通信的一条通道，不是设备上的命令解析器。插件核心和普通界面不要求把 MCP 或模型服务作为运行依赖；结构化反编译采集另需相应 Hex-Rays 能力。</p>
+<h3 id="ch15-s02">15.2 已有结果的阅读入口</h3>
+<table>
+<thead>
+<tr>
+<th>想回答的问题</th>
+<th>打开哪个结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>图里有哪些已取得定义，包括未知模式</td>
+<td><a href="../reports/iosd-candidate-space-20261029/index.html">候选定义池</a></td>
+</tr>
+<tr>
+<td>config/config-if 的示例路径</td>
+<td><a href="../reports/iosd-config-paths-20261029/index.html">配置模式路径</a></td>
+</tr>
+<tr>
+<td>VPDN 的触发、注册和状态</td>
+<td><a href="../reports/vpdn-activation-20261029/index.html">VPDN 案例</a></td>
+</tr>
+<tr>
+<td>其他注册和状态关系候选</td>
+<td><a href="../reports/lifecycle-candidates-20261029/index.html">通用关系</a></td>
+</tr>
+<tr>
+<td>CDL 的显式图和路径示例</td>
+<td><a href="../reports/cdl-walk-20261029/index.html">CDL 结果</a></td>
+</tr>
+<tr>
+<td>关键词、参数、EOL 等较早的静态目录</td>
+<td><a href="../reports/static-cli-catalogue.html">静态证据目录</a></td>
+</tr>
+</tbody>
+</table>
+<p>这些页面不属于同一次扫描。比较数量前先看附录中的统计范围。</p>
+<h3 id="ch15-s03">15.3 怎样读 JSON 与 JSONL</h3>
+<p>JSON 通常保存一个完整对象；JSONL 是一行一个 JSON 记录，适合大量节点、边或路径。看某条路径时重点找：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>要回答的问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>identity</code></td>
+<td>这是哪份输入、哪个采集基址？</td>
+</tr>
+<tr>
+<td><code>syntax_candidate</code></td>
+<td>当前显示的候选文字是什么？</td>
+</tr>
+<tr>
+<td><code>handler</code>、<code>selector_candidate</code>、<code>eol_node</code></td>
+<td>交给谁处理，哪个分支，哪个终结点？</td>
+</tr>
+<tr>
+<td><code>edge_trace</code>、<code>node_addresses</code></td>
+<td>这串文字怎样从图里得来？</td>
+</tr>
+<tr>
+<td><code>conditions</code>、<code>state_effects</code></td>
+<td>要经过什么条件，会写什么状态？</td>
+</tr>
+<tr>
+<td><code>registration_candidates</code></td>
+<td>路径依赖哪些候选安装关系？</td>
+</tr>
+<tr>
+<td><code>gaps</code>、<code>frontiers</code>、<code>unknown</code></td>
+<td>哪里尚未解释或采集？</td>
+</tr>
+<tr>
+<td><code>coverage</code>、<code>stop_reason</code></td>
+<td>是完成、达到上限、取消还是部分失败？</td>
+</tr>
+<tr>
+<td><code>raw_hex</code>、源码哈希</td>
+<td>怎样回查原始字节与解释规则？</td>
+</tr>
+</tbody>
+</table>
+<p>不同报告字段不完全相同，不能只挑一个名字相似的计数比较。先确认该文件描述节点、路径还是关系。</p>
+<h3 id="ch15-s04">15.4 rebase 后加载开发版</h3>
+<p>IDA 界面恢复响应后，用 File → Script file，通常是 Alt+F7，运行项目 <code>dev_load.py</code>。它会热加载代码，关闭旧结果窗口并重置开发会话，所以有需要的结果应先导出为文件。</p>
+<p>不改代码而只重新打开菜单时，可在相应开发会话的 IDA Python 控制台使用：</p>
+<pre><code class="language-python">import builtins
+builtins._iosd_helper_dev.menu()
+</code></pre>
+<p>不要把开发热加载和普通安装入口同时使用。普通插件需把入口脚本和整个包放到 IDA 用户 plugins 目录；阅读离线文档不需要安装或重启 IDA。</p>
+<h3 id="ch15-s05">15.5 主要菜单与数据来源</h3>
+<table>
+<thead>
+<tr>
+<th>菜单类别</th>
+<th>它做什么</th>
+<th>当前主要边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>打开保存的初始化组织地图，分别浏览类别、实体、分组和依赖</td>
+<td>不生成 module 与 subsystem 的同名包含关系；不是完整业务归属图</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>打开保存的分析项目、建索引、分页浏览证据</td>
+<td>使用历史快照，不把旧条件值当作当前目标状态</td>
+</tr>
+<tr>
+<td>overview / subsystem / module / source</td>
+<td>浏览顶层证据</td>
+<td>不自动恢复完整代码归属</td>
+</tr>
+<tr>
+<td>Static CLI graph / Recover syntax / Build pool</td>
+<td>提取图、恢复示例、保留定义池</td>
+<td>旧 profile 固定采集基址；语义与注册方式仍不完整</td>
+</tr>
+<tr>
+<td>Analyze saved registration / state evidence</td>
+<td>用保存的采集、语法图和 API profile 分析关系</td>
+<td>这一路不触发新反编译，selector 可能仍是候选组</td>
+</tr>
+<tr>
+<td>memory source / mapping / runtime linkage / ICM</td>
+<td>选择 IDB、debugger 或 core，读取相应对象</td>
+<td>数据源和布局必须明确；本轮已验证暂停 iosd 的动态链与状态读取，详见第14.8节</td>
+</tr>
+</tbody>
+</table>
+<p>新运行时动态链表入口与旧 ICM 遍历入口读的是不同对象。前者按动态记录链表布局读槽和待绑定项，后者检查 72 字节配置文本节点。</p>
+<h3 id="ch15-s06">15.6 两条现在可用的离线命令</h3>
+<p>以下命令只读取保存的材料，不连接 IDA。它们会在指定目录写出报告：</p>
+<pre><code class="language-powershell">python tools/import_cached_lifecycle.py reports/vpdn-full-graph.json --audit reports/registration-trigger-audit.json --api-capture reports/lifecycle-capture-20261029.json --output reports/lifecycle-offline-capture-20261029.json
+python tools/analyze_lifecycle.py reports/lifecycle-offline-capture-20261029.json reports/vpdn-full-graph.json --syntax-paths reports/iosd-config-paths-20261029/paths.jsonl --output reports/lifecycle-candidates-20261029
+</code></pre>
+<p>它们重建现有关系解释，不表示又发现了新的 IDB 内容。输入与解释源码哈希保存在输出摘要中。</p>
+<p>CDL 可用 <code>tools/walk_cdl.py</code> 离线处理。本项目默认对大图做计数和有界示例输出，完整节点、边和注解另存，不能把示例条数当成全部路径。</p>
+<h3 id="ch15-s07">15.7 结构化采集与检查点</h3>
+<p><code>tools/collect_lifecycle_evidence.py</code> 是新表达式材料的采集入口。当前完整实机流程仍待复核。恢复后先用新的输出文件、一次一个函数确认，再考虑增加批次。</p>
+<p><code>--resume</code> 只用于同一输入、同一采集基址的检查点；<code>--retry-errors</code> 保留旧失败后重新排队。客户端超时不自动重发或往服务端追加清理请求。rebase 后不要直接接着旧检查点跑。</p>
+<p>这条入口与上节的离线命令不同。即使命令都在 PowerShell 中运行，也不能据此判断它是否访问 IDA；要看工具是否接收 MCP URL 和是否发起采集。</p>
+<h3 id="ch15-s08">15.8 如何理解测试通过</h3>
+<p>单元测试覆盖合成 ELF/core、地址和字节序、图遍历、条件保留、注册证据、局部多来源、间接绑定候选、运行时链表边界、项目索引和架构映射等。报告页搜索也有检查。</p>
+<p>你可以在不连接 IDA 的情况下运行：</p>
+<pre><code class="language-powershell">python -m unittest discover -s tests -q
+</code></pre>
+<p>它证明这些测试条件下的实现行为，不证明 Cisco 目标上的所有结构已经确认。实际 debugger 链表与语法采集已有样本验证，真实 core 的完整采集流程和结构化 ctree 全流程仍需分别验证。</p>
+<p>合成 fixture 用于分层验证：生成微型 ELF/core，先检查地址映射，再读一个节点，再触及未捕获页面。它让你区分“读取器有问题”和“真实 iosd 布局还没理解”的两类错误。</p>
+<p>完全离线的验证命令：</p>
+<pre><code class="language-powershell">python tools/make_fixtures.py
+python tools/inspect_core.py tests/fixtures/generated/fixture-iosd.core 0x555555564000 --layout profiles/icm_conservative.json
+</code></pre>
+<p>这里的地址属于合成 fixture，不是真实 iosd。它的验证基准是 IDB 映像基址 <code>0x400000</code>、运行时基址 <code>0x555555554000</code>、节点运行时地址 <code>0x555555564000</code>。你应能看见示例配置文字，handler 保持未解析；若读取到未收录页面，应报告缺失而非补零。</p>
+<p>合成 fixture 可用于比较 IDA 的段、内存视图与 Python 输出，无需切换或修改真实 iosd 分析现场。</p>
+<h3 id="ch15-s09">15.9 初始化组织地图</h3>
+<p><a href="../reports/iosd-architecture-20261029/index.html">初始化组织地图</a> 将 subsystem 和 module 分开浏览，保留完整候选记录与原始证据。在 IDA 重新加载开发版后，选择 <strong>Architecture: browse saved subsystem/module organization map</strong>，打开 <code>reports/iosd-architecture-20261029/architecture.json</code>。</p>
+<p>类别列表进入对应 subsystem 候选，module 列表区分 <code>group_node</code> 与 <code>callback_node</code>；链接中的 <code>prerequisite</code> 表示 A 的前置依赖含 B，<code>member_of</code> 表示 A 归入 B 分组。双击记录可查看证据并跳转当前 IDB 中的地址。这里没有把某个 init 的全部可达函数判为它的私有代码，也没有恢复所有协议的收包和解析路径。</p>
+</section>
+<section class="chapter" data-chapter="ch16"><h2 id="ch16">16 潜在未公开命令的研究方法</h2>
+<h3 id="ch16-s01">16.1 不要用是否漂亮决定是否保留</h3>
+<p>一条候选路径含未知动作、没有已知模式、暂时找不到 EOL、尚未安装或当前条件为假，都可能仍有分析价值。用户关心的命令恰好可能藏在这些区域。</p>
+<p>保留不等于认定有效。可同时保存“定义存在的证据”和“尚未解释的部分”，把未知变成可继续调查的位置。</p>
+<h3 id="ch16-s02">16.2 一个可重复的研究流程</h3>
+<ol>
+<li>记录输入身份、采集基址、数据源与工具版本。</li>
+<li>从定义池挑一个候选，明确它来自哪个注册表或未知调用。</li>
+<li>解释关键词、参数、入口、返回链接和 EOL，保存所有相关分支。</li>
+<li>关联模式、handler 与 selector，区分匹配与业务处理。</li>
+<li>追注册调用者、间接槽、状态写入与读取者，建立有条件的关系。</li>
+<li>设计需要观察的槽、变量或对象，等合适的运行时材料验证。</li>
+<li>对同版本、同平台、同模式范围的资料做对比，再讨论文档覆盖。</li>
+</ol>
+<p>这个流程中的每一步都能形成独立结果，不必等拿到完整内存才保存前面的工作。</p>
+<h3 id="ch16-s03">16.3 对照实验应记录什么</h3>
+<p>如果后续需要观察某个功能前后的变化，先明确观察对象：是动态链接记录增加、某条 next 改变、某个状态值改变，还是工作进程出现。</p>
+<p>对照前后保存独立快照和同一映像身份。设备操作由研究者在合适环境中控制；本插件读取证据，不自行执行目标命令或改写目标内存。</p>
+<p>一次快照没有对象，可能是时机、条件或页面未收录；也可能确实未创建。把这些解释都保留为待区分的假设，比直接写“没有这条命令”更有帮助。</p>
+<h3 id="ch16-s04">16.4 undocumented 是一个后续判断</h3>
+<p>“内部 test”“帮助不显示”“CDL 没有”“官方某一页没写”“静态定义存在”分别是不同观察。讨论 undocumented 时，应说清参照的文档范围和具体版本，并确认模式、权限和路径没有解释错。</p>
+<p>本项目目前没有自动判定 hidden/undocumented。它首先做的是尽可能保留和组织潜在定义，使后续比较有依据。</p>
+<h3 id="ch16-s05">16.5 建议采用的发现记录</h3>
+<pre><code class="language-text">输入身份与采集来源：
+模式或模式未知：
+语法模板与不完整部分：
+注册表 / key / 入口 / 返回连接：
+EOL / handler / selector：
+条件与状态写读：
+运行时观察与未观察内容：
+文档对比范围：
+仍需核验的问题：
+</code></pre>
+<p>其中“模式未知”和“仍需核验”是合法内容，不必为了填满表格编造答案。</p>
+</section>
+<section class="chapter" data-chapter="appendix-a"><h2 id="appendix-a">附录A 结构速查</h2>
+<p>本附录是当前样本的偏移参考，不是其他版本的通用 ABI。静态表字段中哪些是小端指针、哪些是大端编号，按各自布局读取。</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th style="text-align:right">大小或步长</th>
+<th>已核对字段与注意点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>子系统记录消费步长</td>
+<td style="text-align:right">96 字节</td>
+<td>当前消费者的遍历规则；扫描器另按双 magic 找候选</td>
+</tr>
+<tr>
+<td>子系统 magic 视图</td>
+<td style="text-align:right">相对 magic 起点</td>
+<td>当前扫描器取名称指针 <code>+24</code>、init 候选 <code>+32</code>；不能与其他“记录起点”混用</td>
+</tr>
+<tr>
+<td>module header</td>
+<td style="text-align:right">32 字节</td>
+<td>名称、初始化回调或分组标记；第二回调语义未完整核对</td>
+</tr>
+<tr>
+<td>module link</td>
+<td style="text-align:right">24 字节</td>
+<td>端点 A/B；已核对两种 tag 分别表示 A 依赖 B、A 归入 B 分组</td>
+</tr>
+<tr>
+<td>静态注册记录</td>
+<td style="text-align:right">16 字节</td>
+<td>key <code>+0</code>，root <code>+8</code>，哨兵结束</td>
+</tr>
+<tr>
+<td>静态 transition</td>
+<td style="text-align:right">40 字节</td>
+<td>accept <code>+0</code>、alternate <code>+8</code>、大端 opcode <code>+16</code>、payload <code>+24</code></td>
+</tr>
+<tr>
+<td>动作表记录</td>
+<td style="text-align:right">24 字节</td>
+<td>静态函数指针 <code>+0</code>、名称指针 <code>+8</code>、大端编号 <code>+16</code></td>
+</tr>
+<tr>
+<td>核心静态链接槽</td>
+<td style="text-align:right">48 字节</td>
+<td>key <code>+0</code>、anchor <code>+16</code>、大端 type <code>+24</code></td>
+</tr>
+<tr>
+<td>动态链接记录</td>
+<td style="text-align:right">56 字节</td>
+<td>next <code>+0</code>、key <code>+8</code>、anchor <code>+24</code>、type <code>+32</code>、来源 <code>+48</code></td>
+</tr>
+<tr>
+<td>待绑定记录</td>
+<td style="text-align:right">56 字节</td>
+<td>next <code>+0</code>、key <code>+8</code>、fragment <code>+24</code>、flags <code>+40</code>、来源 <code>+48</code></td>
+</tr>
+<tr>
+<td>ICM 配置文本节点</td>
+<td style="text-align:right">72 字节</td>
+<td>树链 <code>+0/+8/+16/+24/+32</code>，层级候选 <code>+40</code>，文本相关 <code>+48</code>，flags <code>+56</code>，起止偏移 <code>+60/+64</code>，索引 <code>+68</code></td>
+</tr>
+</tbody>
+</table>
+<p>ICM 的 <code>+64</code> 在已核对的缓冲区分支是结束偏移，不是无条件的字符串长度；<code>+8</code> 不作为已确认 handler 使用。EOL handler 来自另一套静态语法描述符，不从 ICM 的树链猜出。</p>
+<p>标记值也应分开：子系统扫描使用双 <code>0x15055CC1</code> 的字节线索；module header 的已观察标记对是 <code>0x15055CC1 / 0xAFECAFEC</code>；module link 的原始小端标签包括 <code>0xDFEADFEA</code> 和 <code>0xABEFABEF</code>。消费者做字节序变换后，代码中的常量显示可能不同。标记、长度和偏移都不是要随 rebase 平移的地址。</p>
+<p>本样本的解析上下文已用字段包括 sense 9328、default 9332、selector 9364、NVGEN 9636。它们是结构内偏移，<strong>rebase 时不加基址</strong>。</p>
+<p>阅读大端字段时，0.6.2 可通过右键 <code>iosd Helper → Integer display / BE interpretation...</code> 选择数值显示：数据/汇编视图使用原生格式，Hex-Rays 为选中的常量追加解码注解。例如 <code>dd 12000000h</code> 可以显示为 <code>dd BE32(18)</code>。这项操作不改原始字节，也不证明所选字段一定应按大端或 tagged 指针解释；格式、恢复与临时注解的说明见 <a href="%E6%95%B4%E6%95%B0%E6%98%BE%E7%A4%BA%E4%B8%8E%E5%AD%97%E8%8A%82%E5%BA%8F.md">整数显示与字节序</a>。</p>
+</section>
+<section class="chapter" data-chapter="appendix-b"><h2 id="appendix-b">附录B 当前样本的地址索引</h2>
+<p>以下地址来自 imagebase=0 的旧采集，在同一映像下也可作为相应 RVA 阅读。rebase 后访问映像对象时应加当前基址；不同构建不得照搬。</p>
+<table>
+<thead>
+<tr>
+<th>对象或函数</th>
+<th>旧地址 / 相应 RVA</th>
+<th>当前认识</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ELF start</td>
+<td><code>0xB2463A0</code></td>
+<td>启动入口</td>
+</tr>
+<tr>
+<td>main 指针槽</td>
+<td><code>0x37A93818</code></td>
+<td>保存 main 包装器指针的槽</td>
+</tr>
+<tr>
+<td>main 包装器</td>
+<td><code>0xB246530</code></td>
+<td>经运行时代理传入应用回调</td>
+</tr>
+<tr>
+<td>应用回调</td>
+<td><code>0xB2464A0</code></td>
+<td>环境准备后进入系统初始化</td>
+</tr>
+<tr>
+<td>系统初始化路径</td>
+<td><code>0xD7B7690</code></td>
+<td>进一步调用子系统准备和分类初始化</td>
+</tr>
+<tr>
+<td>子系统准备</td>
+<td><code>0xD710460</code></td>
+<td>不是 ELF main</td>
+</tr>
+<tr>
+<td>元数据遍历</td>
+<td><code>0xD7127D0</code></td>
+<td>子系统、header 和 link 相关消费</td>
+</tr>
+<tr>
+<td>分类初始化</td>
+<td><code>0xD711090</code></td>
+<td>类别和顺序处理</td>
+</tr>
+<tr>
+<td>静态表注册消费者</td>
+<td><code>0xDEF7870</code></td>
+<td>读取 key/root 记录并交给安装函数</td>
+</tr>
+<tr>
+<td>链接安装消费者</td>
+<td><code>0xDEF70B0</code></td>
+<td>处理静态/动态槽和待绑定行为</td>
+</tr>
+<tr>
+<td>动作表</td>
+<td><code>0x3409EC00</code></td>
+<td>314 个名称槽</td>
+</tr>
+<tr>
+<td>核心链接表</td>
+<td><code>0x341146E0</code></td>
+<td>180 个有效静态槽</td>
+</tr>
+<tr>
+<td>动态链接表头槽</td>
+<td><code>0x3CB561E0</code></td>
+<td>槽内的运行时指针再指向堆链表</td>
+</tr>
+<tr>
+<td>待绑定表头槽</td>
+<td><code>0x3CB561E8</code></td>
+<td>等待安装位置的片段记录</td>
+</tr>
+<tr>
+<td>链接重试状态</td>
+<td><code>0x3CB561C8</code></td>
+<td>动态创建与 parser 重试相关</td>
+</tr>
+<tr>
+<td>type 1 创建 API</td>
+<td><code>0xDEF7BB0</code>、<code>0xDEF7D10</code></td>
+<td>已审查的不同参数形式</td>
+</tr>
+<tr>
+<td>type 2 创建 API</td>
+<td><code>0xDEF7E60</code></td>
+<td>已审查的返回链接定义</td>
+</tr>
+<tr>
+<td>key/root 包装入口候选</td>
+<td><code>0xDEF7000</code></td>
+<td>调用方参数形式已有线索，包装体仍待采集</td>
+</tr>
+<tr>
+<td>回调列表注册 API</td>
+<td><code>0xD716260</code></td>
+<td>注册回调成员，不自动当作 CLI 片段注册</td>
+</tr>
+<tr>
+<td>ICM 打印 / 入树相关</td>
+<td><code>0xC2F7B50</code>、<code>0xC2FA1D0</code></td>
+<td>配置文本树的消费证据</td>
+</tr>
+<tr>
+<td>diff 临时根相关槽</td>
+<td><code>0x37B5323C</code></td>
+<td>不能默认当作 CLI 全局主根</td>
+</tr>
+</tbody>
+</table>
+<p>模式入口参考：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>提示符部分</th>
+<th>root</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exec</td>
+<td>EXEC</td>
+<td><code>0x341168D0</code></td>
+</tr>
+<tr>
+<td>configure</td>
+<td>config</td>
+<td><code>0x341168F8</code></td>
+</tr>
+<tr>
+<td>interface</td>
+<td>config-if</td>
+<td><code>0x34116920</code></td>
+</tr>
+<tr>
+<td>subinterface</td>
+<td>config-subif</td>
+<td><code>0x34116920</code></td>
+</tr>
+<tr>
+<td>null-interface</td>
+<td>config-if</td>
+<td><code>0x34116948</code></td>
+</tr>
+<tr>
+<td>line</td>
+<td>config-line</td>
+<td><code>0x34116970</code></td>
+</tr>
+</tbody>
+</table>
+<p>两个模式可以共享 root，语法中还有上下文和条件；同一 root 不表示两个模式完全等价。配置路径经过 <code>do-exec</code> 到达 EXEC 命令时，也不能把它重新标成原生配置命令。</p>
+<p>VPDN 案例参考：</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>旧地址 / 相应 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主配置 handler / selector</td>
+<td><code>0x11D48420</code> / 28</td>
+</tr>
+<tr>
+<td>enable EOL</td>
+<td><code>0x356DFE50</code></td>
+</tr>
+<tr>
+<td>E 启用状态</td>
+<td><code>0x38B11478</code></td>
+</tr>
+<tr>
+<td>R 测试初始化尝试标志</td>
+<td><code>0x3E441564</code></td>
+</tr>
+<tr>
+<td>T 跟踪初始化尝试标志</td>
+<td><code>0x3E441560</code></td>
+</tr>
+<tr>
+<td>P 工作进程标识</td>
+<td><code>0x38B15798</code></td>
+</tr>
+<tr>
+<td>测试初始化例程</td>
+<td><code>0x11DE2440</code></td>
+</tr>
+<tr>
+<td>测试注册表 / 片段</td>
+<td><code>0x3570F660</code> / <code>0x3570F680</code></td>
+</tr>
+<tr>
+<td>测试处理函数 / 工作进程函数</td>
+<td><code>0x11DE2030</code> / <code>0x11DE26B0</code></td>
+</tr>
+<tr>
+<td>共享回调 getter / 已知目标候选</td>
+<td><code>0x109FB180</code> / <code>0x10973010</code></td>
+</tr>
+<tr>
+<td>subscriber 跟踪表提交者 / 表</td>
+<td><code>0x1098D6F0</code> / <code>0x34C49EC0</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="chapter" data-chapter="appendix-c"><h2 id="appendix-c">附录C 怎样比较不同版本的统计</h2>
+<p>这些数字描述项目采集范围的演进，不是设备命令数量随插件版本变化。</p>
+<table>
+<thead>
+<tr>
+<th>结果阶段</th>
+<th>主要数字</th>
+<th>正确读法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初期顶层扫描</td>
+<td>13,163 个 IDA 段、5,692 条子系统候选、3,542 条源码路径</td>
+<td>一次具体扫描的证据数量</td>
+</tr>
+<tr>
+<td>flow 小图</td>
+<td>6 条注册、70 节点、102 边、14 EOL、11 handler 候选</td>
+<td>用于验证字段与动作的小范围案例</td>
+</tr>
+<tr>
+<td>前 100 个 root</td>
+<td>2,847 节点、299 EOL、126 handler 候选</td>
+<td>仍有大量已发现 root 没选入</td>
+</tr>
+<tr>
+<td>0.3.1 全部已发现注册 root</td>
+<td>4,508 root、101,521 节点、169,625 边、15,049 EOL</td>
+<td>已知入口遍历扩大，不是二进制全覆盖</td>
+</tr>
+<tr>
+<td>0.4.1 配置入口与候选池基线</td>
+<td>113,280 节点、197,384 结构边、4,555 注册记录</td>
+<td>包括模式入口等额外证据</td>
+</tr>
+<tr>
+<td>配置模式路径示例</td>
+<td>config 19,056，config-if 2,357，合计 21,413</td>
+<td>有界优先示例；不同上下文和共享终点不能当作唯一命令计数</td>
+</tr>
+<tr>
+<td>VPDN 补充后的 0.4.2 图</td>
+<td>113,523 节点、197,858 结构边、4,564 注册记录</td>
+<td>加入补充定义和入口；仍有未知语义</td>
+</tr>
+<tr>
+<td>VPDN 小片段枚举</td>
+<td>14 EOL、19 模板、25 边界路线</td>
+<td>该小片段已建模无环投影的结果</td>
+</tr>
+<tr>
+<td>0.5.0 通用关系</td>
+<td>10,479 API 引用、61 关系候选、31 handler</td>
+<td>关系与证据记录，不是新命令数</td>
+</tr>
+<tr>
+<td>当前 CDL 文件</td>
+<td>78,381 GUID 节点、152,098 显式边、4,372 可达 EOL</td>
+<td>另一来源；不与 iosd 节点直接相减</td>
+</tr>
+</tbody>
+</table>
+<p>0.4.1 基线还保留过 3,199 条未匹配核心静态槽的注册、9,294 个模式未知的已知 handler 定义，以及 378 处未解析注册调用。这些是该阶段的缺口统计；动态槽补充后不能不加说明地继续当作最新缺口数量。</p>
+<p>早期笔记还记录过百万级 IDA 函数、不同版本文件大小等规模观察。这些受样本、符号和 IDA 分析状态影响，不能据此估算有效业务函数数，更不能以每个自动名称代表一个独立实现。带点前缀的名称也需要结合 thunk 标志和代码核实。</p>
+</section>
+<section class="chapter" data-chapter="appendix-d"><h2 id="appendix-d">附录D 已合并处理的旧结论勘误</h2>
+<table>
+<thead>
+<tr>
+<th>旧说法或容易发生的推断</th>
+<th>本文采用的解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sub_D710460</code> 就是 main</td>
+<td>它负责子系统准备；main 包装器另有入口</td>
+</tr>
+<tr>
+<td>Pending 记录逐个创建线程</td>
+<td>已核对路径涉及依赖和顺序，线程创建另查</td>
+</tr>
+<tr>
+<td>初始化末尾 <code>sub_D767810</code> 进入常驻循环</td>
+<td>已核对为 chunk 清理相关，例程会返回</td>
+</tr>
+<tr>
+<td><code>.init_array</code> 为空就证明所有初始化都由 module 表替代</td>
+<td>单一区域观察不足以穷尽主程序、共享库和运行时代理的全部初始化机制</td>
+</tr>
+<tr>
+<td>13 个类别编号就是固定执行顺序</td>
+<td>存在另外的顺序映射；编号和顺序分开</td>
+</tr>
+<tr>
+<td>15 个 module header 就是 15 个业务模块</td>
+<td>名称实际为 <code>level_*</code> 与 <code>memtest</code></td>
+</tr>
+<tr>
+<td>subsystem/module/link 必然给出完整层级和代码区间</td>
+<td>元数据语义与代码归属需要分别确认</td>
+</tr>
+<tr>
+<td>72 字节节点 <code>+0</code> 是命令串、<code>+8</code> 是 handler</td>
+<td>这些位置参与树链；文本另在 <code>+48</code> 等路径，handler 未确认</td>
+</tr>
+<tr>
+<td>ICM <code>+64</code> 无条件表示字符串长度</td>
+<td>在已核对缓冲区路径中是结束偏移，长度还要计算</td>
+</tr>
+<tr>
+<td>整个 iosd 只有一棵命令树</td>
+<td>已有材料不足以作这种全局断言，应区分不同结构</td>
+</tr>
+<tr>
+<td>有 parser_add_command 错误串就找到了通用注册函数</td>
+<td>可能是 FRR 初始化、包装器或语言绑定，应查实际消费者</td>
+</tr>
+<tr>
+<td>所有 <code>tbl_*</code> 都来自某份 YANG/confd 生成</td>
+<td>前缀只提供线索，来源和结构仍需核实</td>
+</tr>
+<tr>
+<td>所有内部和跨进程消息是同一种布局</td>
+<td>接口、消息编号与编码分别确认</td>
+</tr>
+<tr>
+<td>源码 component 与 runtime subsystem 一一对应</td>
+<td>只是不同组织视角，可以多对多关联</td>
+</tr>
+<tr>
+<td>CDL 就是 iosd 全部命令的 XML 版本</td>
+<td>当前没有加载和覆盖证据支持这一结论</td>
+</tr>
+<tr>
+<td>静态为零就说明没有对象</td>
+<td>可能尚未初始化或运行时另行分配</td>
+</tr>
+<tr>
+<td><code>runtime = 固定常数 + IDB地址</code> 永久适用</td>
+<td>只可能是一次旧基址为零的观察，通用换算用 RVA</td>
+</tr>
+<tr>
+<td>一次性标志为 1 就表示注册成功</td>
+<td>可能只表示尝试，返回成功还可能只是排队</td>
+</tr>
+<tr>
+<td>单元测试通过就证明设备上已验证全部结构</td>
+<td>合成测试、IDB 复核和真实运行时验证是不同层次</td>
+</tr>
+</tbody>
+</table>
+<p>原始文档保留用于追溯；旧正文里即使写过“完全确认”“实锤”，也不覆盖后续消费代码支持的修正。</p>
+</section>
+<section class="chapter" data-chapter="appendix-e"><h2 id="appendix-e">附录E 术语表</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>本文中的解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>accept / alternate</td>
+<td>当前解析动作的不同继续边；是否消耗输入由动作语义决定</td>
+</tr>
+<tr>
+<td>ABI</td>
+<td>调用或数据表示约定，例如参数位置、字段布局与字节序</td>
+</tr>
+<tr>
+<td>API</td>
+<td>调用接口；本文常指注册、创建槽或回调列表接口</td>
+</tr>
+<tr>
+<td>ASLR</td>
+<td>运行时地址布局随机化；同一构建的 RVA 可用于关联，实际基址需核实</td>
+</tr>
+<tr>
+<td>BSS</td>
+<td>未初始化或零初始化全局对象相关区域；运行后可能写入对象</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>经接口登记或传递、以后被调用的回调函数</td>
+</tr>
+<tr>
+<td>candidate</td>
+<td>带具体依据但条件或语义尚不完整的候选</td>
+</tr>
+<tr>
+<td>CDL</td>
+<td>当前文件头命令描述来源名称的一部分；按文件和加载方分别研究</td>
+</tr>
+<tr>
+<td>CEF</td>
+<td>转发机制相关术语；不对应一个唯一函数</td>
+</tr>
+<tr>
+<td>CFG</td>
+<td>控制流图；用来描述分支、跳转、返回等执行关系</td>
+</tr>
+<tr>
+<td>component</td>
+<td>源码组织标签，不自动等同于一个运行时子系统</td>
+</tr>
+<tr>
+<td>core / ET_CORE</td>
+<td>某次进程内存转储的文件类型；页面可能不完整</td>
+</tr>
+<tr>
+<td>CRFT</td>
+<td>当前段名 <code>CRFT_func</code> 中的名称；精确展开与运行格式待核实</td>
+</tr>
+<tr>
+<td>CSB</td>
+<td>解析上下文的常见命名；本项目只解释了部分字段</td>
+</tr>
+<tr>
+<td>ctree</td>
+<td>Hex-Rays 提供的表达式和语句结构</td>
+</tr>
+<tr>
+<td>descriptor / payload</td>
+<td>动作附带的数据描述符或载荷，必须按具体动作解释</td>
+</tr>
+<tr>
+<td>dispatch</td>
+<td>按编号、表或条件把请求交给处理函数的分派</td>
+</tr>
+<tr>
+<td>DMI</td>
+<td>既有资料中称 Data Model Interface；本样本具体接口边界按回调核实</td>
+</tr>
+<tr>
+<td>EA</td>
+<td>IDA 数据库当前坐标中的地址</td>
+</tr>
+<tr>
+<td>ELF</td>
+<td>可执行与链接文件格式；section 和装载 segment 是不同视角</td>
+</tr>
+<tr>
+<td>EOL / <code>&lt;cr&gt;</code></td>
+<td>语法终结与输入结束位置，不保证业务执行成功</td>
+</tr>
+<tr>
+<td>EXEC / configure</td>
+<td>CLI 模式概念；不同模式可能共享底层图入口</td>
+</tr>
+<tr>
+<td>FIB / RIB</td>
+<td>转发信息与路由信息相关数据结构概念，不能与单一组件等同</td>
+</tr>
+<tr>
+<td>FMAN-RP / FMAN-FP</td>
+<td>控制侧和转发侧管理相关命名，实际进程边界依环境核实</td>
+</tr>
+<tr>
+<td>getter / setter</td>
+<td>取得对象或槽、设置值的一类接口称呼</td>
+</tr>
+<tr>
+<td>GOT / PLT</td>
+<td>ELF 导入和间接调用相关设施；跳板不当成独立业务实现</td>
+</tr>
+<tr>
+<td>GUID</td>
+<td>标识符；不是天然的函数名或命令文字</td>
+</tr>
+<tr>
+<td>handler</td>
+<td>被某种分派调用的处理函数，需注明 CLI、消息或事件场景</td>
+</tr>
+<tr>
+<td>heap VA</td>
+<td>堆对象的运行时地址，不随意转换成静态映像 RVA</td>
+</tr>
+<tr>
+<td>IDB / i64</td>
+<td>IDA 分析数据库及常见扩展名，不是原始 ELF</td>
+</tr>
+<tr>
+<td>imagebase</td>
+<td>当前讨论的映像地址基准；必须注明属于哪次采集或进程</td>
+</tr>
+<tr>
+<td>IPC / MQIPC</td>
+<td>进程间通信及项目中的消息队列接口命名族</td>
+</tr>
+<tr>
+<td>IR</td>
+<td>为离线分析保存的中间表示，仍有来源和覆盖边界</td>
+</tr>
+<tr>
+<td>key / root / anchor</td>
+<td>安装标识、片段入口、连接位置，三者不互换</td>
+</tr>
+<tr>
+<td>KRON</td>
+<td>既有命令调用包装路径中的功能名称，不是通用 parser 的充分标识</td>
+</tr>
+<tr>
+<td>magic / sentinel</td>
+<td>识别记录的标记、结束遍历的哨兵，二者职责不同</td>
+</tr>
+<tr>
+<td>liData / liDummy</td>
+<td>早期材料中出现的小段名称；具体对象布局和功能仍需相应消费者核实</td>
+</tr>
+<tr>
+<td>MCP</td>
+<td>工具调用 IDA 能力的通信方式，不是 iosd 的 CLI 机制</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>CLI 解析模式，如 exec、configure、interface</td>
+</tr>
+<tr>
+<td>NVGEN</td>
+<td>配置状态生成相关过程；不等同于普通用户输入解析或每次写入非易失存储</td>
+</tr>
+<tr>
+<td>opcode</td>
+<td>parser 动作类型编号，与业务 selector 分开</td>
+</tr>
+<tr>
+<td>PIE</td>
+<td>位置无关可执行映像；不同加载基址可以通过适当相对坐标关联</td>
+</tr>
+<tr>
+<td>predicate</td>
+<td>返回或表达条件的判断逻辑；静态保留不等于执行求值</td>
+</tr>
+<tr>
+<td>profile</td>
+<td>输入身份、定位方式、API 与布局的配置，不是跨版本自动适配证明</td>
+</tr>
+<tr>
+<td>PT_LOAD</td>
+<td>ELF 中描述装载范围的记录；core 实际收录字节可能少于内存范围</td>
+</tr>
+<tr>
+<td>punt</td>
+<td>报文或处理上送控制面相关术语，具体路径按平台核实</td>
+</tr>
+<tr>
+<td>QFP</td>
+<td>Quantum Flow Processor，物理或虚拟转发实现依平台而异</td>
+</tr>
+<tr>
+<td>rebase</td>
+<td>改变 IDA 映像地址坐标，不是自动核实所有运行时映射</td>
+</tr>
+<tr>
+<td>registry</td>
+<td>注册、查询和回调分派设施，不必然是业务模块或线程</td>
+</tr>
+<tr>
+<td>RP</td>
+<td>Route Processor，平台角色，不等于某个固定进程</td>
+</tr>
+<tr>
+<td>RVA</td>
+<td>对相同映像基准的相对地址，适用于已确认属于该映像的对象</td>
+</tr>
+<tr>
+<td>selector</td>
+<td>handler 内区分业务分支的编号</td>
+</tr>
+<tr>
+<td>Shell Manager</td>
+<td>命令管理边界的名称；当前未证明与 iosd/CDL 的完整加载关系</td>
+</tr>
+<tr>
+<td>snapshot</td>
+<td>带来源和时机的采集材料，多次读取不自动具备原子一致性</td>
+</tr>
+<tr>
+<td>tagged pointer</td>
+<td>编码中附带标记的指针，去标记与字节序转换要匹配</td>
+</tr>
+<tr>
+<td>tbl / YANG / confd</td>
+<td>接口命名、建模语言、配置相关组件概念，不能只由名字互相等同</td>
+</tr>
+<tr>
+<td>thunk</td>
+<td>转发或适配的小入口；结合 IDA 标志和代码识别</td>
+</tr>
+<tr>
+<td>token</td>
+<td>输入中的关键词或参数单位；不是地址或节点数量</td>
+</tr>
+<tr>
+<td>transition</td>
+<td>语法动作之间的转换记录，当前静态结构为 40 字节候选</td>
+</tr>
+<tr>
+<td>VA / VTY / WSMA</td>
+<td>虚拟地址、虚拟终端相关术语、Web Services Management Agent，属于不同层次</td>
+</tr>
+<tr>
+<td>witness</td>
+<td>图中用于说明某个终点或关系的一条示例路线，不是全集</td>
+</tr>
+<tr>
+<td>EHSA</td>
+<td>Enhanced High System Availability；当前样本中涉及心跳、主备协商与平台适配，详细证据见专门说明</td>
+</tr>
+<tr>
+<td>CDB、DBAL、TDL、VXE、CRB、NGC、pcohort、vtcp、SSS</td>
+<td>保留厂商内部名称和出处；完整展开、对象层次与职责按证据核实，不凭缩写补全</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="chapter" data-chapter="appendix-f"><h2 id="appendix-f">附录F 原始材料与主题对应</h2>
+<table>
+<thead>
+<tr>
+<th>原始材料</th>
+<th>合并到本文的内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../iosd%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E6%8F%8F%E8%BF%B0.md">初始二进制结构笔记</a></td>
+<td>顶层组织、源码路径、运行约定、消息、模型、VTY/Web、转发交互、诊断与早期假设；与后续复核冲突处已修正</td>
+</tr>
+<tr>
+<td><a href="iosd%E6%A8%A1%E5%9D%97%E4%B8%8E%E5%AD%90%E7%B3%BB%E7%BB%9F.md">模块与子系统</a></td>
+<td>两套初始化机制、module 分组与前置依赖、启动编排、文件与功能归属区别</td>
+</tr>
+<tr>
+<td><a href="iosd%E6%9E%B6%E6%9E%84%E4%B8%8E%E6%9C%AF%E8%AF%AD%E8%AF%B4%E6%98%8E.md">架构与术语说明</a></td>
+<td>已核对启动链、概念层次、静态动作、ICM/diff 区别及术语边界</td>
+</tr>
+<tr>
+<td><a href="%E9%80%9A%E7%94%A8%E6%B3%A8%E5%86%8C%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E8%AF%95%E6%8E%A5%E5%85%A5.md">通用注册分析与调试接入</a></td>
+<td>通用关系模型、RVA、采集与未知项、rebase、运行时验证及一致性范围</td>
+</tr>
+<tr>
+<td><a href="../README.md">项目 README</a></td>
+<td>功能状态、插件入口、离线工具、测试、安装及各阶段统计</td>
+</tr>
+<tr>
+<td><a href="../reports/cdl-walk-20261029/summary.json">CDL 摘要</a></td>
+<td>XML 图规模、注解、可达 EOL、路径计数和输出范围</td>
+</tr>
+<tr>
+<td><a href="../reports/vpdn-activation-20261029/reviewed-lifecycle.json">VPDN 审查结果</a></td>
+<td>触发分支、资源回调、状态、间接注册和工作进程依赖</td>
+</tr>
+<tr>
+<td><a href="../reports/vpdn-activation-20261029/test-paths.jsonl">VPDN 路径清单</a></td>
+<td>19 条模板、14 个终结点及路径证据</td>
+</tr>
+<tr>
+<td><a href="../reports/vpdn-activation-20261029/ida-verification.json">VPDN IDA 复核</a></td>
+<td>相应采集范围、路径边与终结点关联复核，未做设备执行验证</td>
+</tr>
+<tr>
+<td><a href="../reports/lifecycle-candidates-20261029/summary.json">通用关系摘要</a></td>
+<td>当前样本统计、证据来源、哈希与局限</td>
+</tr>
+</tbody>
+</table>
+<p>本文是当前推荐的连续阅读入口。原文件保留为资料和复现记录，不按它们出现的先后顺序重复学习；出现分歧时回到具体输入身份、原始字节和消费代码。</p>
+</section><p class="bottom-note">本页从项目架构指南生成，完全离线。全文定位可按 Ctrl＋F；筛选后点“全部主题”恢复。</p></main></div>
+<button class="back-top" id="top">回到顶部 ↑</button>
+<script>
+'use strict';
+const sections=Array.from(document.querySelectorAll('section.chapter'));
+const navigation=Array.from(document.querySelectorAll('li[data-nav]'));
+const search=document.getElementById('search');
+const count=document.getElementById('result-count');
+const root=document.documentElement;
+let size=18;
+function filterChapters(){const query=search.value.trim().toLowerCase();let matches=0;for(let i=0;i<sections.length;i++){const match=!query||sections[i].textContent.toLowerCase().includes(query);sections[i].hidden=!match;navigation[i].hidden=!match;if(match)matches++;}count.textContent=query?'找到 '+matches+' 个相关主题 / 共 '+sections.length+' 个主题与附录':'按主题阅读，或搜索具体结构与接口。';}
+search.addEventListener('input',filterChapters);
+document.getElementById('clear').addEventListener('click',()=>{search.value='';filterChapters();});
+function resize(value){size=Math.max(14,Math.min(24,value));root.style.setProperty('--reading-size',size+'px');try{localStorage.setItem('iosd-handbook-size',String(size));}catch{}}
+document.getElementById('smaller').addEventListener('click',()=>resize(size-1));
+document.getElementById('larger').addEventListener('click',()=>resize(size+1));
+const theme=document.getElementById('theme');
+function setTheme(value){root.dataset.theme=value;theme.textContent=value==='dark'?'浅色':'深色';try{localStorage.setItem('iosd-handbook-theme',value);}catch{}}
+theme.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
+document.getElementById('menu').addEventListener('click',()=>{const expanded=document.body.classList.toggle('nav-open');document.getElementById('menu').setAttribute('aria-expanded',String(expanded));});
+document.getElementById('sidebar').addEventListener('click',event=>{if(event.target.closest('a'))document.body.classList.remove('nav-open');});
+document.getElementById('top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+try{const saved=Number(localStorage.getItem('iosd-handbook-size'));if(Number.isFinite(saved)&&saved>=14&&saved<=24)resize(saved);const savedTheme=localStorage.getItem('iosd-handbook-theme');if(savedTheme==='dark')setTheme('dark');}catch{}
+// Keep tables readable on narrow screens without shrinking the body text.
+for(const table of document.querySelectorAll('table')){const wrapper=document.createElement('div');wrapper.className='table-wrap';table.parentNode.insertBefore(wrapper,table);wrapper.appendChild(table);}
+</script></body></html>
