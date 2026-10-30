@@ -148,6 +148,11 @@ def parser():
             q.add_argument('--request',required=True,help='JSON with source, ranges, and for debugger runtime_base + anchors')
     c=sub.add_parser('core-read',help='Offline ELF core ranges; never connects to MCP')
     c.add_argument('--core',required=True);c.add_argument('--request',required=True);c.add_argument('--output',required=True)
+    i=sub.add_parser('components',help='Offline architecture/protocol search facets; never connects to MCP')
+    i.add_argument('--index',default=str(ROOT/'profiles/subsystems_26_01_02.json'))
+    i.add_argument('--md5',help='Expected input MD5; does not imply current IDB verification')
+    i.add_argument('--query');i.add_argument('--category');i.add_argument('--match',choices=('token','contains'),default='token')
+    i.add_argument('--output',required=True)
     return p
 
 
@@ -158,7 +163,13 @@ def main(argv=None):
         client=McpClient(args.url,timeout=8);init=client.initialize();result=discover_tools(client)
         atomic_json(args.output,{'initialize':init,'result':result})
         print(json.dumps({'server':init.get('serverInfo'),'tools':[t['name'] for t in result['tools']]}));return 0
-    if args.operation=='core-read':
+    if args.operation=='components':
+        from iosd_helper.component_inventory import build_component_inventory
+        path=Path(args.index);raw=path.read_bytes()
+        result=build_component_inventory(json.loads(raw),args.md5,args.query,args.category,args.match)
+        result['source_index_sha256']=hashlib.sha256(raw).hexdigest()
+        atomic_json(args.output,result)
+    elif args.operation=='core-read':
         req=json.loads(Path(args.request).read_text(encoding='utf-8'))
         result=core_read(args.core,req['ranges']);atomic_json(args.output,result)
     else:
@@ -195,8 +206,10 @@ def main(argv=None):
             # Request files cannot substitute the session identity or select another operation.
             request['operation']=args.operation;request['identity']=session['identity']
         result=invoke(args.url,request,getattr(args,'session',None),args.output,getattr(args,'confirm_idle',False))
-    print(json.dumps({'saved':str(Path(args.output).resolve()),'kind':result.get('kind',result.get('source')),
-                      'gaps':len(result.get('gaps',[]))},ensure_ascii=True))
+    summary={'saved':str(Path(args.output).resolve()),'kind':result.get('kind',result.get('source')),
+             'gaps':len(result.get('gaps',[]))}
+    if 'unknown' in result:summary['unknown_items']=len(result['unknown'])
+    print(json.dumps(summary,ensure_ascii=True))
     return 0
 
 

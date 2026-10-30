@@ -30,6 +30,8 @@ skill 可使用宿主已经连接的 MCP 工具；它不自行创建连接、凭
 
 详细的历史分析文档在各参考页链接的 `references/library/` 中。它们记录的是特定样本上的证据及经验；不默认将函数地址、布局和推论推广到其他版本。按当前任务查阅，不一次载入整套文档。
 
+需要先了解有哪些业务入口时，用 `scripts/iosd_mcp.py components --output <work>/components.json` 离线建立保存元数据的类别/词元目录。它保留同名记录和未知项，过滤只选择 ID，不创建组件包含或协议数据流关系。
+
 ## 使用随附入口
 
 `scripts/iosd_mcp.py` 使用 Python 3.10+ 和标准库，通过 Streamable HTTP MCP 传输临时采集代码；IDA 主机无需看到客户端脚本路径。主入口需要 MCP 允许 `py_eval`，只使用类型化接口的 MCP 按参考页适配。

@@ -172,4 +172,4 @@ hostname、description 等路径调用 `sub_E0D9CD0`。该封装在输出条件�
 python tools/analyze_nvgen_bindings.py reports/runtime-comparison-20261029/options/tree --output reports/nvgen-implementation-20261029
 ```
 
-规则配置为 当前样本的 NVGEN profile（历史材料路径：`../profiles/nvgen_26_01_02.json`）。它保存已经审查的入口、字段和明确缺口，不是可执行的 NVGEN 模拟器，也不提供跨构建自动定位。
+规则配置为 [当前样本的 NVGEN profile](../../../scripts/profiles/nvgen_26_01_02.json)。它保存已经审查的入口、字段和明确缺口，不是可执行的 NVGEN 模拟器，也不提供跨构建自动定位。

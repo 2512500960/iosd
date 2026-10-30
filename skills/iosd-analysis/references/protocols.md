@@ -4,6 +4,8 @@
 
 ## 入口与跟进
 
+尚不知道要调查哪个协议时，先用不连接 MCP 的 `components` 命令查看已保存组件目录，再按名称词元或类别选择入口。该目录支持任何输入索引中的名称，不限 CDP/BGP；词元命中只表示搜索相关，不能替代报文处理关系证明。用 `--match contains` 扩大名称搜索时同时保留可能误匹配的候选。
+
 ```text
 python <skill>/scripts/iosd_mcp.py --url <url> protocol --session <work>/session.json --query bgp --output <work>/bgp.json
 python <skill>/scripts/iosd_mcp.py --url <url> relationships --session <work>/session.json --rva <function-rva> --output <work>/refs.json

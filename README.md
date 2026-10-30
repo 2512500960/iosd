@@ -36,6 +36,8 @@ python skills/iosd-analysis/scripts/iosd_mcp.py --url <mcp-url> protocol --sessi
 
 主入口还支持 `read`、`function`、`relationships`、`subsystems` 和 `core-read`。读取格式见 [运行时与 core](skills/iosd-analysis/references/runtime-and-core.md)。大规模命令图、注册与状态分析继续复用 [脚本目录](skills/iosd-analysis/references/script-catalogue.md) 中的工具。
 
+`components --output <文件.json>` 完全离线建立保存元数据的组件目录，提供类别、名称词元、同名记录和未知项检索。可用 `--query ospf` 等任意名称选择调查入口，不限某种协议。默认索引保留 5,692 条记录，包括 15 条同名 `cerrno_init` 和 8 条未记录 init RVA 的实体；不会按名字覆盖记录或把历史 metadata 当成当前运行状态。说明见 [组件索引与协议调查入口](docs/iosd组件索引与协议调查入口.md)。
+
 协议线索扫描支持 `protocol --resume <上一页.json>`，可在名称索引和字符串窗口内部继续，保留各页结果、限额与未读范围。它不会因为反复扫描前面的范围而把后面的协议线索遗漏掉。继续方式及“初始化图为何不同于报文处理图”的说明见 [协议调查](skills/iosd-analysis/references/protocols.md)。
 
 IDA 正在 rebase、attach 或执行其他脚本时先处理离线材料。新 IDB 或 rebase 后重新采集 session，不沿用旧 EA。客户端超时不会自动取消 IDA 工作，入口会保留 pending 记录并阻止同一 session 的自动重试。
@@ -61,6 +63,6 @@ python -X utf8 tools/build_skill_release.py
 python -m unittest discover -s tests -q
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.1.1.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.1.2.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
 
 当前新 skill 入口完成离线验证；新加载、正在 rebase 的干净 IDB 尚未做本轮实机复测。此前采集记录和插件验证不能替代这项复测。插件原型的历史说明保存在 [历史文档](docs/IDA插件历史说明.md)，不作为本次 skill 的必需安装步骤。

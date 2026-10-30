@@ -24,6 +24,10 @@
 
 `scripts/iosd_mcp.py subsystems --pointer-mode <encoding>` 采集观察布局下的候选；显式选择编码，失败记录继续保留。`scripts/profiles/subsystems_26_01_02.json` 是历史 metadata 搜索索引，不是当前运行激活表。
 
+IDA 忙碌或不可连接时，可先用 `scripts/iosd_mcp.py components --output <work>/components.json` 建立离线目录；用 `--query`、`--category` 和 `--match token|contains` 选择调查入口。目录保留每条记录、原始字段和未知项，过滤仅选择实体 ID。词元不是协议分类，也不生成 module/subsystem/线程的包含关系。
+
+已保存索引中有 15 条不同记录同名 `cerrno_init`，因此名称不能用作实体唯一键。相关统计、协议搜索入口和证据解释见 [组件索引与协议调查入口](library/docs/iosd组件索引与协议调查入口.md)。
+
 按问题选择详细资料：
 
 - [模块与子系统](library/docs/iosd模块与子系统.md)

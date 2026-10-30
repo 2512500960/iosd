@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.1.1'
+VERSION='0.1.2'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -47,8 +47,9 @@ def assemble():
             target=match[3].strip('<>');parts=urlsplit(target)
             if parts.scheme in ('http','https','mailto') or target.startswith('#'):return match[0]
             path=(source.parent/unquote(parts.path)).resolve()
-            if path in docs:
-                relative=Path(os.path.relpath(docs[path],destination.parent)).as_posix()
+            targets={**copies,**docs}
+            if path in targets:
+                relative=Path(os.path.relpath(targets[path],destination.parent)).as_posix()
                 if parts.fragment:relative+='#'+parts.fragment
                 return match[1]+'['+match[2]+']('+relative+')'
             return match[2]+'（历史材料路径：`'+target+'`）'
