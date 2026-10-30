@@ -242,7 +242,7 @@ iosd 的启动依赖平台初始化、进程管理和其他组件。本教程在
 
 对于 C8000v、CSR1000v 等虚拟设备，使用前面准备的底层 Linux 网络接口连接分析主机。将与 IDA 版本及目标架构对应的 Linux 远程调试服务端 `linux_server` 放到设备上，例如 `/bootflash/ida/`。
 
-截图中的实验环境还在同一目录放置了 `libthread_db.so.1`。它是线程调试辅助库，使用时记录架构、文件摘要和实际加载路径；下面一节说明检查方法。该实验所用库的具体发行版来源尚待核对。
+截图中的实验环境还在同一目录放置了线程调试辅助库 `libthread_db.so.1`，下一节记录这次使用文件的构建线索。
 
 ```sh
 cd /bootflash/ida
@@ -258,48 +258,13 @@ LD_LIBRARY_PATH=. ./linux_server
 
 ![IDA 远程进程列表中的 iosd 相关进程](assets/如何调试iosd/image-12.png)
 
-### 10.2 检查 libthread_db.so.1 的来源与兼容性
+### 10.2 本次使用的 libthread_db.so.1
 
-先查看实际文件、架构、摘要和构建标识。以下命令在装有 `file`、`readelf` 等工具的 Linux 分析机或 WSL 中执行，路径替换为正在使用的库：
+本次实验使用的 `libthread_db.so.1` 已配合调试服务端完成连接。截图显示，目标环境中存在 `/lib64/ld-2.23.so`，库中保留了 `glibc-2.23` 构建路径和 `GCC 5.3.0` 字符串。这些信息描述本次使用环境和文件的构建线索。
 
-```sh
-readlink -f ./libthread_db.so.1
-file ./libthread_db.so.1
-sha256sum ./libthread_db.so.1
-readelf -h ./libthread_db.so.1
-readelf -n ./libthread_db.so.1
-readelf -p .comment ./libthread_db.so.1
-readelf -V ./libthread_db.so.1
-strings -a ./libthread_db.so.1 | grep -Ei 'GNU C|glibc|Ubuntu|Debian|Red Hat|GCC:'
-```
+替换辅助库时，按目标架构选择文件，并通过服务端启动、线程列表和调用栈读取检查实际兼容性。
 
-| 信息 | 用途 |
-|---|---|
-| `file`、ELF Header | 确认位宽、字节序和处理器架构 |
-| SHA256、Build ID | 标识具体文件，便于与来源软件包逐一比对 |
-| `.comment` | 查看保留的编译器信息；有些库会移除这个节 |
-| Version info、字符串 | 查看符号版本及发行版/构建线索 |
-
-`GLIBC_2.x` 符号版本描述 ABI 需求或定义；发行版名称和完整软件包版本还需要包记录或文件比对。Build ID 也需要与对应包或调试符号索引关联。`readelf` 参数见 [GNU Binutils 文档](https://sourceware.org/binutils/docs/binutils/readelf.html)。
-
-如果还能访问最初取得库的系统，可查询包归属：
-
-```sh
-# Debian / Ubuntu：在来源系统查询库的实际路径
-dpkg-query -S /实际路径/libthread_db.so.1
-
-# RPM 系统：在来源系统查询
-rpm -qf /实际路径/libthread_db.so.1
-```
-
-复制到自建目录的文件，其来源通常需要回到源系统或软件包中比对。选库时同时核对调试服务端的运行环境和目标进程的线程库；[GDB 线程调试说明](https://sourceware.org/gdb/download/onlinedocs/gdb.html/Threads.html) 记录了 `libthread_db` 与目标线程库版本不匹配时的初始化问题。IDA 的实际兼容性结合服务端日志和线程枚举结果确认。
-
-还可以在调试服务端运行时检查其映射，确认当时加载的库路径。下面的 `12345` 替换为 **linux_server 的 PID**：
-
-```sh
-SERVER_PID=12345
-awk '/libthread_db/ {print $NF}' "/proc/$SERVER_PID/maps" | sort -u
-```
+![目标动态链接器路径及 libthread_db 中的 glibc 2.23、GCC 5.3.0 构建线索](assets/如何调试iosd/image-20.png)
 
 ### 10.3 暂停后的定时信号处理
 
@@ -348,9 +313,33 @@ Linux 的常规 interval timer 中，`SIGALRM` 对应实时时间，`SIGVTALRM` 
 
 ![直接启动 frpc 与通过 global 网络环境启动的连接结果](assets/如何调试iosd/image-17.png)
 
+接着在设备上启动调试服务端。本节截图使用 GDB remote 服务端 `gdbserver9`，在 IDA 中选择 **Remote GDB debugger**。服务端文件名沿用该实验中的名称，启动方式如下：
+
+```sh
+mcp_chvrf.sh global ./gdbserver9 --multi 0.0.0.0:23946
+```
+
+![在 global 网络环境中启动 gdbserver9 并监听 23946 端口](assets/如何调试iosd/image-18.png)
+
+使用 frp 时，连接方向为：
+
+```text
+IDA → frp 服务端的代理端口 → frp 通道 → 设备上的调试服务端端口
+```
+
+IDA 填写 frp 代理对外提供的地址与端口；frpc 的本地转发目标填写设备上可达的调试服务端地址与端口。本例中设备的调试服务端监听 23946，代理对外提供的端口由 frp 配置确定。frpc 登录 frp 服务端所用的控制连接端口单独配置。
+
+当分析主机到设备出口地址的路由可达，且调试服务端在对应网络环境中监听可达地址时，也可以直接连接设备上的服务端端口。
+
+连接后在 IDA 中选择目标 PID。下面的截图展示了按 `qfp` 筛选出的 `qfp-ucode-utah` 数据平面进程，可用于数据平面代码调查；调试 iosd 时，按照前面记录的 iosd PID 与可执行文件路径选择相应进程。GDB 后端连接方式见 [IDA Remote GDB 文档](https://docs.hex-rays.com/9.1/user-guide/debugger/remote-debugging/remote-gdb-debugger)。
+
+![IDA 进程列表中按 qfp 筛选数据平面进程](assets/如何调试iosd/image-19.png)
+
 脚本的可用选项按设备上的使用说明核对。网络命名空间与 VRF 的具体切换方式由该版本脚本实现确定。下面两张截图展示了不同实验环境中的选项差异。
 
 ![提供 global 选项的 mcp_chvrf.sh 使用说明](assets/如何调试iosd/image-13.png)
+
+第一张截图列出 `eobc`、`management`、`liin`、`fwd`、`contdev`、`global` 六个选项；另一环境列出 `eobc`、`management`、`liin`、`fwd` 四个选项。根据设备实际提供的网络环境选择调试通道，串口和 USB 网卡等方式见前两节。
 
 ![另一实验环境中的 mcp_chvrf.sh 选项与文件系统信息](assets/如何调试iosd/image-14.png)
 
