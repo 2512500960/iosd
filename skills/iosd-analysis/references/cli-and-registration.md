@@ -12,6 +12,8 @@
 
 CDL/XML 提供另一组命令线索，不是 iosd parser 的完整替代。CLI handler 和网络收包 handler 也不同。
 
+本样本新复核的 `generic_prefix_action` 保留动态地址族及边界，输出 `<prefix:dynamic>`；`deprecated_action` 是标记后继续 accept，不能删除；`whitespace_action` 区分输入检查与 NVGEN bypass，不产生虚假的命令单词。历史 config 清单有 325 个相关节点，本轮只重新读取并验证其中 12 个，不能换算为恢复了 325 条命令。详见 [语法动作与实测范围](library/docs/iosd协议处理链与CLI新会话验证.md)。
+
 ## 注册与状态
 
 复用 `ida_lifecycle.acquire_batch` 采集调用、赋值和条件 IR，由 `lifecycle.analyze_lifecycle` 离线关联。API 角色由 profile 声明，不把 VPDN 特例写进通用推理。

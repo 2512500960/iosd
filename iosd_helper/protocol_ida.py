@@ -15,7 +15,7 @@ import idautils
 import idc
 
 from .ida_adapter import IDBMemory, identity, segments
-from .protocols import protocol_query, match_kind, subsystem_seeds, investigation_plan
+from .protocols import protocol_query, match_kind, subsystem_seeds, investigation_plan, reviewed_protocol_paths
 from .protocol_scan import literal_windows
 
 
@@ -40,8 +40,9 @@ def location(ea, base):
 
 
 def collect_protocol(query, model=None, cancelled=lambda: False, max_names=1_000_000,
-                     max_bytes=64*1024*1024, max_hits=2000, cursor=None):
+                     max_bytes=64*1024*1024, max_hits=2000, cursor=None, reviewed_model=None):
     query = protocol_query(query);current = identity();base = current['imagebase']
+    prior_paths = reviewed_protocol_paths(reviewed_model, current, query)
     if not (1 <= max_names <= 2_000_000 and 0 <= max_bytes <= 512*1024*1024 and 1 <= max_hits <= 10000):
         raise ValueError('Protocol scan limits out of range')
     model = model if model is not None else default_subsystems(current)
@@ -114,7 +115,8 @@ def collect_protocol(query, model=None, cancelled=lambda: False, max_names=1_000
     coverage['has_more']=state is not None
     return {'schema_version': 1, 'kind': 'protocol_investigation', 'identity': current, 'protocol': query,
             'source': 'saved_idb_only', 'subsystems': seeds, 'candidates': rows, 'coverage': coverage,
-            'cursor':state,'faults': faults, 'plan': investigation_plan(query), 'packet_path_verified': False}
+            'cursor':state,'faults': faults, 'plan': investigation_plan(query), 'packet_path_verified': False,
+            'prior_reviewed_paths': prior_paths}
 
 
 def relationships(ea, cancelled=lambda: False, max_items=20000, max_refs=2000):

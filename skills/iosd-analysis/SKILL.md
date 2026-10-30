@@ -62,4 +62,6 @@ MCP 请求在同一 IDA 实例上串行执行，并与用户交互脚本协调�
 
 暂停状态不自动等于原子快照；说明采集时间段、模块映射、锚点及未追踪的 resume/re-stop 周期。缺页保持缺失，不补零；无法验证映射时先解决映射问题。
 
+暂停链表与状态读取可使用主入口的 `linkage`，按 [运行时与 core](references/runtime-and-core.md) 设置独立锚点、profile 和小批次。协议研究可从 [已复核处理链](references/library/docs/iosd协议处理链与CLI新会话验证.md) 及随附定位摘要继续；保留每条关系的适用样本和未知边界。
+
 报告结构与未知项记录见 [证据与输出](references/evidence.md)。

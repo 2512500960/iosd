@@ -30,6 +30,7 @@ IDA 忙碌或不可连接时，可先用 `scripts/iosd_mcp.py components --outpu
 
 按问题选择详细资料：
 
+- [协议处理链与新会话验证](library/docs/iosd协议处理链与CLI新会话验证.md)：通过多种机制解释 init、registry、队列、task 与报文字段处理的关系，保留外部边界和设计推断。
 - [模块与子系统](library/docs/iosd模块与子系统.md)
 - [架构与术语](library/docs/iosd架构与术语说明.md)
 - [线程与 level](library/docs/iosd的线程与level.md)

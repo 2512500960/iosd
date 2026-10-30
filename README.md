@@ -34,7 +34,7 @@ python skills/iosd-analysis/scripts/iosd_mcp.py --url <mcp-url> protocol --sessi
 | 已暂停的调试进程 | 动态槽、链表、堆节点、状态及实际库绑定 | 核对身份、运行时基址、不变锚点；不自动暂停或继续 |
 | ELF core | 离线读取已捕获映射，复用结构解析 | 当前支持未压缩 ELF64 x86-64；缺页不补零，身份和坐标需独立确认 |
 
-主入口还支持 `read`、`function`、`relationships`、`subsystems` 和 `core-read`。读取格式见 [运行时与 core](skills/iosd-analysis/references/runtime-and-core.md)。大规模命令图、注册与状态分析继续复用 [脚本目录](skills/iosd-analysis/references/script-catalogue.md) 中的工具。
+主入口还支持 `read`、`function`、`relationships`、`subsystems`、`linkage` 和 `core-read`。`linkage` 复用现有解码器，分批读取暂停进程中的动态槽、待绑定链表和状态，保留限额、缺页及续读位置。读取格式见 [运行时与 core](skills/iosd-analysis/references/runtime-and-core.md)。大规模命令图、注册与状态分析继续复用 [脚本目录](skills/iosd-analysis/references/script-catalogue.md) 中的工具。
 
 `components --output <文件.json>` 完全离线建立保存元数据的组件目录，提供类别、名称词元、同名记录和未知项检索。可用 `--query ospf` 等任意名称选择调查入口，不限某种协议。默认索引保留 5,692 条记录，包括 15 条同名 `cerrno_init` 和 8 条未记录 init RVA 的实体；不会按名字覆盖记录或把历史 metadata 当成当前运行状态。说明见 [组件索引与协议调查入口](docs/iosd组件索引与协议调查入口.md)。
 
@@ -63,6 +63,8 @@ python -X utf8 tools/build_skill_release.py
 python -m unittest discover -s tests -q
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.1.2.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.1.3.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
 
-当前新 skill 入口完成离线验证；新加载、正在 rebase 的干净 IDB 尚未做本轮实机复测。此前采集记录和插件验证不能替代这项复测。插件原型的历史说明保存在 [历史文档](docs/IDA插件历史说明.md)，不作为本次 skill 的必需安装步骤。
+2026-10-30 已在完成 rebase 的 IDA 9.1 新 IDB 上保存数据库并建立新会话，实测通过 saved-IDB 字节、带原始 ELF 锚点的暂停内存、函数/引用与两批动态链表读取。重新验证了 12 个 CLI 节点及三类动作，补充 CDP、BGP、OSPF、UDP 的局部处理链；LLDP、IS-IS 保留线索和未知项。详见 [协议处理链与 CLI 新会话验证](docs/iosd协议处理链与CLI新会话验证.md)，定位摘要在 [协议证据索引](profiles/protocol_paths_26_01_02.json)。
+
+完整命令路径尚未重新统计，链表仍有 frontiers，模块枚举达到 512 上限。最后的子系统扫描触发客户端超时，已保留 pending 并停止继续调用；逐候选预算检查的修复仅完成离线验证，尚需实机复测。插件原型的历史说明保存在 [历史文档](docs/IDA插件历史说明.md)，不作为本次 skill 的必需安装步骤。

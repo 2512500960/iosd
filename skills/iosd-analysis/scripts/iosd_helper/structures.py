@@ -157,6 +157,8 @@ def scan_subsystems(memory, start, end, pointer_mode="little", cancelled=lambda:
             continue
         pos = data.find(magic)
         while pos >= 0 and pos < chunk_size:
+            if cancelled():
+                return rows, errors, True
             address = block + pos
             try:
                 raw = memory.read(address, 56)

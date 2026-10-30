@@ -6,6 +6,34 @@ from test_modules import SparseMemory
 
 
 class SemanticsTests(unittest.TestCase):
+    def test_deprecated_marks_accept_even_without_descriptor(self):
+        row = {"payload": 0}
+        decode_action_payload(SparseMemory({}), row,
+                              {"name": "deprecated_action", "function": 0x9000, "address": 0x8000})
+        self.assertEqual(row['path_semantics'], 'epsilon_accept')
+        self.assertEqual(row['effects'][0]['field_offset'], 0x301c)
+        self.assertEqual(row['effects'][0]['value_raw_hex'], '00000001')
+        self.assertFalse(row['effects'][0]['consumes_input'])
+
+    def test_prefix_preserves_signed_offsets_unknown_family_and_missing_help(self):
+        raw = struct.pack('>hhI', -32, 120, 0) + struct.pack('<Q', 0xdead) + struct.pack('>II', 7, 0x1234)
+        row = self.decode('generic_prefix_action', raw)
+        self.assertEqual(row['parameter']['storage_offset'], -32)
+        self.assertEqual(row['parameter']['prefix_length_storage_offset'], 120)
+        self.assertEqual(row['parameter']['address_type_candidate'], 7)
+        self.assertEqual(row['parameter']['flags_raw_hex'], '00001234')
+        self.assertFalse(row['parameter_condition']['evaluated'])
+        self.assertIn('parameter_gap', row)
+        self.assertIn('help_error', row)
+
+    def test_whitespace_is_input_dependent_and_has_no_payload(self):
+        row = {"payload": 0}
+        decode_action_payload(SparseMemory({}), row,
+                              {"name": "whitespace_action", "function": 0x9000, "address": 0x8000})
+        self.assertEqual(row['path_semantics'], 'whitespace')
+        self.assertEqual(row['whitespace']['boundary_codes'], [0, 33, 59])
+        self.assertNotIn('keyword_candidate', row)
+
     def decode(self, name, raw, blocks=None):
         memory = SparseMemory({0x1000: raw, **(blocks or {})})
         row = {"payload": 0x1000, "handler_candidate": None}

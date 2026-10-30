@@ -19,6 +19,37 @@ cli=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(cli)
 
 
 class RuntimeTests(unittest.TestCase):
+    def test_linkage_reads_exact_paused_records_with_heap_addresses_and_frontiers(self):
+        import struct
+        segments = ModuleType('ida_segment');segments.SFL_DEBUG = 16
+        segment = NS(start_ea=0x1000, end_ea=0x2000, flags=0)
+        segments.get_first_seg=lambda:segment;segments.get_next_seg=lambda ea:None
+        segments.get_segm_name=lambda seg:'.bss'
+        pointer=lambda value:struct.pack('>Q', value | (1 << 63))
+        record=pointer(0xa000)+pointer(0x8100)+bytes(40)
+        self.idd.dbg_read_memory.side_effect=lambda ea,size: {
+            (0x8020,4):b'ABCD',(0x8100,8):pointer(0x9000),(0x9000,56):record}.get((ea,size))
+        request=self.request()
+        request.update(max_nodes=1,profile={'input_md5':'abc','runtime':{'lists':[
+            {'name':'test','head_rva':'0x100','record_size':56,
+             'fields':[{'name':'key','offset':8,'kind':'pointer'}]}]}})
+        with patch.dict(sys.modules, {'ida_segment':segments}):
+            result=runtime.linkage(request,self.identity)
+        chain=result['lists'][0]
+        self.assertEqual(chain['nodes'][0]['address'],0x9000)
+        self.assertEqual(chain['nodes'][0]['fields']['key']['reference']['rva'],0x100)
+        self.assertEqual(chain['frontiers'][0],{'address':0xa000,'reason':'node_limit'})
+        self.assertFalse(result['target_execution_changed'])
+        self.memory.read.assert_called_once_with(0x1020,4)
+
+    def test_linkage_rejects_wrong_profile_or_bad_bound_before_memory(self):
+        request=self.request();request['profile']={'input_md5':'wrong'}
+        with patch.dict(sys.modules, {'ida_segment':ModuleType('ida_segment')}):
+            with self.assertRaisesRegex(ValueError,'MD5'):runtime.linkage(request,self.identity)
+            request.update(profile={'input_md5':'abc'},max_nodes=129)
+            with self.assertRaisesRegex(ValueError,'bounds'):runtime.linkage(request,self.identity)
+        self.idd.dbg_read_memory.assert_not_called()
+
     def setUp(self):
         self.identity={'input_md5':'abc','imagebase':0x1000,'idb_path':'test.i64','input_path':'/bin/iosd',
                        'processor':'metapc','bits':64,'byteorder':'little','ida_pid':1,'dbctx_id':0}

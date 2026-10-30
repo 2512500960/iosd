@@ -22,6 +22,22 @@ class BufferMemory:
 
 
 class AnalysisTests(unittest.TestCase):
+    def test_subsystem_budget_is_checked_between_records_in_same_block(self):
+        data=bytearray(256)
+        for offset in (0,56):
+            data[offset:offset+8]=bytes.fromhex('c15c0515c15c0515')
+            struct.pack_into('<QQ',data,offset+24,0x10c0,0x1100)
+        data[192:197]=b'test\0'
+        checks=[]
+        def cancelled():
+            checks.append(True)
+            return len(checks)>=3  # block, first candidate, second candidate
+        rows,errors,partial=scan_subsystems(BufferMemory(data),0x1000,0x1100,cancelled=cancelled)
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]['name'],'test')
+        self.assertTrue(partial)
+        self.assertFalse(errors)
+
     def test_pointer_modes_order_matters(self):
         data = bytes.fromhex("0102030405060788")
         self.assertEqual(decode_pointer(data, "little"), 0x8807060504030201)

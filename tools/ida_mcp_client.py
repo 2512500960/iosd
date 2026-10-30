@@ -3,6 +3,8 @@ import argparse
 import json
 from pathlib import Path
 import urllib.request
+from urllib.parse import urlsplit
+import re
 
 
 class McpClient:
@@ -10,6 +12,26 @@ class McpClient:
         self.url, self.timeout = url, timeout
         self.headers = {"Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
         self.sequence = 0
+
+    def download_output(self, url, output_id):
+        """Retrieve an already-completed tool result, without reissuing IDA work."""
+        origin=urlsplit(self.url);target=urlsplit(url)
+        if (target.scheme,target.hostname,target.port)!=(origin.scheme,origin.hostname,origin.port):
+            raise ValueError('MCP output download must stay on the connected server origin')
+        if (not re.fullmatch(r'[a-f0-9-]{1,64}',output_id) or
+                target.path!='/output/'+output_id+'.json' or target.query or target.fragment or target.username):
+            raise ValueError('Invalid MCP cached-output URL')
+        class NoRedirect(urllib.request.HTTPRedirectHandler):
+            def redirect_request(self,*args,**kwargs):return None
+        opener=urllib.request.build_opener(NoRedirect())
+        request=urllib.request.Request(url,headers={'Accept':'application/json'})
+        with opener.open(request,timeout=self.timeout) as response:
+            raw=response.read(16*1024*1024+1)
+            if len(raw)>16*1024*1024:raise ValueError('MCP cached output exceeds 16 MiB')
+            result=json.loads(raw)
+        if not isinstance(result,dict) or result.get('_output_truncated'):
+            raise ValueError('Cached Python output is not a complete object')
+        return result
 
     def send(self, method, params=None, notification=False):
         payload = {"jsonrpc": "2.0", "method": method}

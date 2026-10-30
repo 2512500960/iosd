@@ -25,6 +25,15 @@ def capture_runtime_linkage(memory, coordinates, module_ranges, specs, states=()
         return {"space":"runtime_only","runtime_va":va,"rva":None,"current_ea":None}
 
     try:
+        # Probe small state values first, so a long list cannot consume their budget.
+        for spec in states:
+            size=spec.get("size",4)
+            if not 1<=size<=32:raise ValueError("Invalid state probe size")
+            row={"rva":spec["rva"],"runtime_va":coordinates.runtime_va(spec["rva"]),"semantic_name":spec.get("name","unclassified")}
+            try:
+                raw=read(row["runtime_va"],size);row.update(raw_hex=raw.hex(),value=int.from_bytes(raw,spec.get("encoding","big")))
+            except MemoryReadError as exc:row["error"]=str(exc)
+            result["states"].append(row)
         for spec in specs:
             head=coordinates.runtime_va(spec["head_rva"])
             chain={"name":spec["name"],"head_rva":spec["head_rva"],"head_va":head,"nodes":[],"frontiers":[]}
@@ -66,14 +75,6 @@ def capture_runtime_linkage(memory, coordinates, module_ranges, specs, states=()
                                                    "reference":reference(value) if field.get("kind")=="pointer" and value else None}
                 current=decode_pointer(raw[spec.get("next_offset",0):spec.get("next_offset",0)+8],encoding)
             chain["terminated_at_null"]=current==0
-        for spec in states:
-            size=spec.get("size",4)
-            if not 1<=size<=32:raise ValueError("Invalid state probe size")
-            row={"rva":spec["rva"],"runtime_va":coordinates.runtime_va(spec["rva"]),"semantic_name":spec.get("name","unclassified")}
-            try:
-                raw=read(row["runtime_va"],size);row.update(raw_hex=raw.hex(),value=int.from_bytes(raw,spec.get("encoding","big")))
-            except MemoryReadError as exc:row["error"]=str(exc)
-            result["states"].append(row)
         session_guard()
     except ValueError as exc:
         result["stop_reason"]="session_or_layout_invalid"

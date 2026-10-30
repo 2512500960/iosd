@@ -6,10 +6,25 @@ from types import ModuleType, SimpleNamespace as NS
 import unittest
 from unittest.mock import Mock, patch
 
-from iosd_helper.protocols import protocol_query, match_kind, subsystem_seeds, investigation_plan
+from iosd_helper.protocols import protocol_query, match_kind, subsystem_seeds, investigation_plan, reviewed_protocol_paths
 
 
 class ProtocolModelTests(unittest.TestCase):
+    def test_prior_paths_are_sample_bound_and_do_not_become_live_execution(self):
+        model={'input_md5':'abc','address_space':'rva','protocols':[
+            {'name':'cdp','facts':[{'function_rva':'0x100','role':'queue'}],'unknown':['ingress']},
+            {'name':'bgp','facts':[],'unknown':['stream']}]}
+        for base in (0,0x55555000):
+            result=reviewed_protocol_paths(model,{'input_md5':'ABC','imagebase':base},'CDP')
+            self.assertFalse(result['verified_in_this_capture'])
+            self.assertFalse(result['runtime_execution_proven'])
+            self.assertEqual(result['protocols'][0]['facts'][0]['function_rva'],'0x100')
+            result['protocols'][0]['unknown'].append('another gap')
+        self.assertEqual(model['protocols'][0]['unknown'],['ingress'])
+        self.assertEqual(reviewed_protocol_paths(model,{'input_md5':'abc'},'ospf')['protocols'],[])
+        with self.assertRaisesRegex(ValueError,'different binary'):
+            reviewed_protocol_paths(model,{'input_md5':'wrong'},'cdp')
+
     def test_matches_are_clues_and_false_positive_substrings_are_retained(self):
         self.assertEqual(protocol_query(' BGP '),'bgp')
         self.assertEqual(match_kind('ipcdp','cdp'),'substring_candidate')

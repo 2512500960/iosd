@@ -2,6 +2,10 @@
 
 先回答“从哪里开始看”，再逐条确认处理链。不要凭协议名、日志或 subsystem init 给函数指定报文解析角色。
 
+当前样本的复核摘要在 [协议处理链与新会话验证](library/docs/iosd协议处理链与CLI新会话验证.md)，机器可读定位在 `scripts/profiles/protocol_paths_26_01_02.json`。先核对 MD5，再复核 RVA；这是局部静态证据，不是当前运行轨迹。CDP 已核对队列、内部 task、头/TLV 与缓存处理；BGP、OSPF、UDP 的部分分发/处理已核对；LLDP、IS-IS 保留入口与缺口。不要把这些覆盖范围扩写成全部协议已分析完成。
+
+主入口在样本匹配时随 `protocol` 结果附上 `prior_reviewed_paths`，与本次候选分开，明确 `verified_in_this_capture=false`、`runtime_execution_proven=false`。未收录某协议只表示索引尚缺，不表示实现不存在。此附带逻辑完成离线边界测试，新增索引尚未做超时之后的实机重跑。
+
 ## 入口与跟进
 
 尚不知道要调查哪个协议时，先用不连接 MCP 的 `components` 命令查看已保存组件目录，再按名称词元或类别选择入口。该目录支持任何输入索引中的名称，不限 CDP/BGP；词元命中只表示搜索相关，不能替代报文处理关系证明。用 `--match contains` 扩大名称搜索时同时保留可能误匹配的候选。
@@ -36,7 +40,7 @@ python <skill>/scripts/iosd_mcp.py --url <url> protocol --session <work>/session
 
 从 `bgp`、地址族 subsystem 和 TCP 读入线索出发：会话/字节流 → 消息组装与头校验 → OPEN/UPDATE/KEEPALIVE/NOTIFICATION 分发 → 属性解析 → 邻居状态、策略与 RIB 更新。不要把 `router bgp` CLI handler 当成 UPDATE 解析器。
 
-这些路线来自协议知识和组织线索，不表示当前样本已完成整条链验证。协议规范帮助解释字段，具体实现仍需函数和字节证据。
+这些路线给出完整调查目标，本轮已验证的局部关系及尚缺环节按上述复核摘要判断。协议规范帮助解释字段，具体实现仍需函数和字节证据。
 
 ## 初始化图与报文处理图
 

@@ -53,6 +53,21 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
         row["path_semantics"] = control[name]
     if name in ("NONE_action", "NOP_action", "link_point_action", "link_point_error_action", "link_trans_action"):
         row["semantic_role"] = "link_or_control"
+    if name == "deprecated_action":
+        row.update(path_semantics="epsilon_accept", semantic_role="parser_state_marker",
+                   effects=[{"kind": "parser_state_assignment", "field_offset": 0x301c,
+                             "width_candidate": 4, "operation": "assign", "value_raw_hex": "00000001",
+                             "consumes_input": False}],
+                   semantic_status="Reviewed normal CLI consumer E38D8A0: mark state and accept; downstream use of marker unresolved")
+        return
+    if name == "whitespace_action":
+        row.update(path_semantics="whitespace", semantic_role="input_separator",
+                   whitespace={"nvgen_field": 9636, "input_offset_field": 12124,
+                               "character_table_rva": 0x7a139e0, "class_mask": 8,
+                               "boundary_codes": [0, 33, 59], "boundary_requires_field_zero": 11960,
+                               "consumption": "DEF4DC0 temporarily advances input offset while scheduling accept"},
+                   semantic_status="Reviewed E393260/DEF4DC0 normal CLI: alternate first; NVGEN bypass or input-dependent accept")
+        return
     if not payload:
         return
     def ptr(raw, off=0):
@@ -168,6 +183,23 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
             if help_ptr:
                 try:
                     row["help_candidate"] = read_cstring(memory, help_ptr, 512)
+                except MemoryReadError as exc:
+                    row["help_error"] = str(exc)
+        elif name == "generic_prefix_action":
+            raw = memory.read(payload, 24)
+            row.update(semantic_role="prefix_parameter", path_semantics="parameter", descriptor_raw_hex=raw.hex(),
+                       parameter={"kind": "prefix_dynamic", "storage_offset": int.from_bytes(raw[:2], "big", signed=True),
+                                  "prefix_length_storage_offset": int.from_bytes(raw[2:4], "big", signed=True),
+                                  "address_type_candidate": int.from_bytes(raw[16:20], "big"),
+                                  "flags_raw_hex": raw[20:24].hex(), "separator": "/",
+                                  "address_registry_rva": 0x3cb56200},
+                       parameter_condition={"kind": "registered_address_parser_and_prefix_length", "evaluated": False,
+                                            "registry_rva": 0x3cb56200, "address_type_candidate": int.from_bytes(raw[16:20], "big")},
+                       parameter_gap="Address-family registry, parser callback, prefix bound and input/context gates remain unresolved",
+                       semantic_status="Reviewed E3A5E90 normal CLI descriptor and slash/length consumer; address family not inferred")
+            if ptr(raw, 8):
+                try:
+                    row["help_candidate"] = read_cstring(memory, ptr(raw, 8), 512)
                 except MemoryReadError as exc:
                     row["help_error"] = str(exc)
         elif name in ("generic_addr_action", "generic_addr_noflag_action"):

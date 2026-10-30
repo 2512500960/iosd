@@ -39,6 +39,16 @@ Debugger 请求在目标已经暂停、运行时基址独立确认后使用：
 
 ## 链表与命令图
 
+主入口的 `linkage` 命令通过临时 MCP 模块复用 `runtime_linkage.capture_runtime_linkage`，无需在 IDA 主机上访问客户端文件。与 `read` 使用相同的独立锚点和 `runtime_base` 请求文件，profile 必须匹配 MD5：
+
+```text
+python <skill>/scripts/iosd_mcp.py --url <url> linkage --session <work>/session.json --request <work>/runtime.json --profile <skill>/scripts/profiles/lifecycle_api_26_01_02.json --max-nodes 16 --output <work>/linkage-1.json
+```
+
+每条链最多 1..128 个节点，约 5 秒读取预算，先采集小状态值。输出保留堆 VA、映像 RVA、字段原文、frontiers、state errors 与 `complete_requested_lists`。预算包含多少记录取决于调试器延迟；不要将命令成功退出等同链表到 null。
+
+续读时复制 profile 到工作目录，在对应 list 中设置 `start_runtime_va` 为上批 frontier 地址、`expected_head_raw_hex` 为上批 head 原文。仍重新读取并核对 head，变化时拒绝续读；始终保留每批输出。head 不变也不能证明中间节点未变，跨 resume/re-stop 应重采，不合并成原子快照。当前没有自动全链遍历或命令可执行性判定。
+
 先核对头、记录大小、next 字段和编码，再使用 `scripts/tools/capture_debugger_memory.py`、`collect_runtime_linkage.py`、`collect_runtime_pages.py` 和离线 `export_runtime_grammar.py`。这些旧采集器的锚点、当前 IDB 基址、主模块顺序和文件系统要求按其参数检查，不将它们当作通用远程接口。
 
 复用 `runtime_linkage.capture_runtime_linkage`、`runtime_grammar.CapturedPages` 和 `reconstruct_runtime_graph`。保留 accept/alternate、动态 slot、pending record、未绑定静态定义及所有 frontiers。链表到 null 只表示本次模型下完成该链。

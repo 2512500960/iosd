@@ -36,6 +36,8 @@ python <skill>/scripts/iosd_mcp.py --url <url> status --output <work>/session.js
 
 ## 请求失败
 
+部分 IDA MCP 会对已完成但超过直接返回上限的结果提供 `_output_id` 和 `_download_url`。helper 只从同一服务器 origin 的 `/output/<id>.json` 下载完整 JSON，限制大小且不跟随重定向；这是取回已完成结果，不是重新执行 IDA 请求。它与客户端超时不同，不能用下载恢复逻辑自动重试超时工作。
+
 主入口为同一 session 文件建立 `.pending.json`。成功落盘后删除；异常时保留，阻止同一会话继续派发。该锁不覆盖其他客户端或交互脚本，因此仍需协调。
 
 客户端超时后确认 IDA 空闲，再显式运行：

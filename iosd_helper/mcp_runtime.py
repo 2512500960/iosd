@@ -160,6 +160,67 @@ def function(request, expected):
     return row
 
 
+def linkage(request, expected):
+    """Reuse the typed linkage decoder with exact paused reads and a short budget."""
+    import ida_idd, ida_segment
+    from .addressing import ImageCoordinates
+    from .runtime_linkage import capture_runtime_linkage
+    profile = request['profile']
+    if profile.get('input_md5') != expected['input_md5']:
+        raise ValueError('Linkage profile MD5 mismatch')
+    runtime = profile.get('runtime', {})
+    specs = [dict(s) for s in runtime.get('lists', [])]
+    states = [dict(s) for s in runtime.get('states', [])]
+    count = integer(request.get('max_nodes', 32))
+    if not 1 <= count <= 128 or not 1 <= len(specs) <= 8 or len(states) > 32:
+        raise ValueError('Invalid linkage batch bounds')
+    for spec in specs:
+        spec['head_rva'] = integer(spec['head_rva'])
+        size = integer(spec['record_size']);offset = integer(spec.get('next_offset', 0))
+        if not 8 <= size <= 512 or not 0 <= offset <= size-8 or spec['head_rva'] < 0:
+            raise ValueError('Invalid linkage record/head layout')
+        spec.update(record_size=size, next_offset=offset)
+        if 'start_runtime_va' in spec:
+            spec['start_runtime_va'] = integer(spec['start_runtime_va'])
+            if not 0 < spec['start_runtime_va'] < 1 << 64:
+                raise ValueError('Invalid continuation runtime VA')
+    for spec in states:
+        spec['rva'] = integer(spec['rva'])
+        spec['size'] = integer(spec.get('size', 4))
+        if spec['rva'] < 0 or not 1 <= spec['size'] <= 32:
+            raise ValueError('Invalid linkage state layout')
+    base, modules, anchors = debugger_mapping(request, expected)
+    deadline = time.monotonic()+5
+    class Memory:
+        source = 'debugger-suspended'
+        def read(self, address, size):
+            guard(expected, True)
+            if time.monotonic() >= deadline:raise MemoryReadError('time_budget')
+            raw = ida_idd.dbg_read_memory(address, size)
+            guard(expected, True)
+            if raw is None or len(raw) != size:raise MemoryReadError('Debugger record unreadable or incomplete')
+            return bytes(raw)
+    # Main module.size can exclude BSS; classify against non-debug IDB sections.
+    ranges = [];seg = ida_segment.get_first_seg()
+    while seg is not None:
+        flags = getattr(ida_segment, 'SFL_DEBUG', None)
+        if flags is not None and not seg.flags & flags and ida_segment.get_segm_name(seg) != 'extern' and seg.start_ea >= expected['imagebase']:
+            ranges.append((seg.start_ea-expected['imagebase'], seg.end_ea-expected['imagebase']))
+        seg = ida_segment.get_next_seg(seg.start_ea)
+    coordinates = ImageCoordinates(expected['input_md5'], 0, expected['imagebase'], base)
+    result = capture_runtime_linkage(Memory(), coordinates, ranges, specs, states, count,
+                                     lambda: guard(expected, True))
+    result.update(verified_anchors=anchors, runtime_base=base,
+                  target_execution_changed=False,
+                  scope='Observed records and state only; registration is distinct from condition permission and command execution',
+                  classification_basis='Non-debug IDB sections, excluding extern; not ownership of all external mappings')
+    result['gaps'] = [{'list': s['name'], **f} for s in result['lists'] for f in s['frontiers']]
+    result['gaps'].extend({'state_rva': s['rva'], 'reason': s['error']} for s in result['states'] if 'error' in s)
+    result['gaps'].extend({'reason': e} for e in result['errors'])
+    result['complete_requested_lists'] = not result['gaps'] and all(s.get('terminated_at_null') for s in result['lists'])
+    return result
+
+
 def run(request):
     op = request.get('operation')
     if op=='status':return status()
@@ -167,12 +228,14 @@ def run(request):
     started = utc()
     if op=='read':result = read_ranges(request,expected)
     elif op=='function':result = function(request,expected)
+    elif op=='linkage':result = linkage(request,expected)
     elif op=='protocol':
         from .protocol_ida import collect_protocol
         deadline = time.monotonic()+5
         result = collect_protocol(request['query'],model=request.get('subsystem_model'),cancelled=lambda:time.monotonic()>deadline,
             max_names=integer(request.get('max_names',200000)),max_bytes=integer(request.get('max_bytes',8*1024*1024)),
-            max_hits=integer(request.get('max_hits',500)),cursor=request.get('cursor'))
+            max_hits=integer(request.get('max_hits',500)),cursor=request.get('cursor'),
+            reviewed_model=request.get('reviewed_protocol_model'))
     elif op=='relationships':
         from .protocol_ida import relationships
         deadline = time.monotonic()+5

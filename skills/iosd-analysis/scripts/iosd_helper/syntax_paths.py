@@ -32,7 +32,8 @@ def parameter_label(parameter):
     kind=parameter.get('kind')
     if kind=='unsigned_number':return '<number:%s..%s>'%(parameter['min'],parameter['max'])
     return {'unsigned_number_dynamic':'<number:dynamic>','address':'<address>','string':'<string>',
-            'interface':'<interface>','interface_type':'<interface-type>'}.get(kind,'<parameter:unresolved>')
+            'interface':'<interface>','interface_type':'<interface-type>',
+            'prefix_dynamic':'<prefix:dynamic>'}.get(kind,'<parameter:unresolved>')
 
 
 def registration_overlays(graph, nodes):
@@ -148,6 +149,15 @@ def semantic_options(node, state, graph):
         label=parameter_label(parameter)
         add(accept, "parameter_match", label, effects=True,condition=node.get('parameter_condition'),gap=node.get('parameter_gap'))
         add(alternate, "parameter_alternative")
+    elif kind == 'whitespace':
+        add(alternate, 'whitespace_alternative')
+        if state[2] != 1:
+            add(accept, 'whitespace_input_match', condition={"kind": "whitespace_or_input_boundary",
+                **node.get('whitespace', {}), "expected_nvgen": 0, "evaluated": False},
+                gap='Input characters, separator length and boundary context have not been evaluated')
+        if state[2] != 0:
+            add(accept, 'whitespace_nvgen_bypass', condition={"kind": "whitespace_nvgen_gate",
+                "expected_nvgen": 1, "evaluated": state[2] == 1})
     elif kind=='literal_character':
         token=node.get('literal_character') or '<char:%#x>'%node['literal_character_code']
         add(accept,'literal_character_match',token,condition={'kind':'exact_input_character','code':node['literal_character_code'],

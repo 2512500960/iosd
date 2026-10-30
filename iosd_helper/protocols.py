@@ -1,5 +1,21 @@
 """Protocol investigation plans and evidence candidates, independent of IDA."""
 import re
+from copy import deepcopy
+
+
+def reviewed_protocol_paths(model, identity, query):
+    """Return sample-bound prior knowledge separately from this capture's facts."""
+    if model is None:return None
+    if model.get('input_md5', '').lower() != identity['input_md5'].lower():
+        raise ValueError('Reviewed protocol paths belong to a different binary')
+    if model.get('address_space') != 'rva':raise ValueError('Reviewed protocol paths require RVAs')
+    query = protocol_query(query)
+    selected = [deepcopy(row) for row in model.get('protocols', []) if row['name'].lower() == query]
+    return {'source_kind': model.get('source_kind'), 'review_date': model.get('review_date'),
+            'input_md5': model['input_md5'], 'address_space': 'rva', 'protocols': selected,
+            'verified_in_this_capture': False, 'runtime_execution_proven': False,
+            'limits': model.get('limits', []),
+            'scope': 'Prior reviewed local relations to re-check; absent entry means unindexed, not absent implementation'}
 
 
 def protocol_query(query):

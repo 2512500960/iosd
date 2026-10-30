@@ -21,6 +21,30 @@ def terminal(ea=0x2000):
 
 
 class SyntaxPathTests(unittest.TestCase):
+    def test_whitespace_keeps_alternate_and_separates_cli_from_nvgen(self):
+        n = node(0x1000, 'whitespace', 0x2000, 0x3000)
+        normal = semantic_options(n, (1, 0, 0), {})
+        self.assertEqual([e['kind'] for e in normal], ['whitespace_alternative', 'whitespace_input_match'])
+        self.assertIn('gap', normal[1])
+        self.assertNotIn('token', normal[1])
+        nvgen = semantic_options(n, (1, 0, 1), {})
+        self.assertEqual(nvgen[1]['kind'], 'whitespace_nvgen_bypass')
+        self.assertTrue(nvgen[1]['condition']['evaluated'])
+        self.assertNotIn('gap', nvgen[1])
+        unknown = semantic_options(n, (1, 0, None), {})
+        self.assertEqual(len(unknown), 3)
+        self.assertFalse(unknown[1]['condition']['evaluated'])
+        self.assertFalse(unknown[2]['condition']['evaluated'])
+
+    def test_prefix_stays_symbolic_with_runtime_family_condition(self):
+        g = graph([node(0x1000, 'parameter', 0x2000, parameter={'kind': 'prefix_dynamic'},
+                        parameter_condition={'kind': 'registered_address_parser_and_prefix_length', 'evaluated': False},
+                        parameter_gap='Family unresolved'), terminal()])
+        p = recover_paths(g, ['configure'])['paths'][0]
+        self.assertEqual(p['syntax_candidate'], '<prefix:dynamic> <cr>')
+        self.assertTrue(p['gaps'])
+        self.assertFalse(p['conditions'][0]['evaluated'])
+
     def test_ortest_rejects_known_repeated_bit_but_keeps_unresolved_branch(self):
         n=node(0x1000,'keyword',0x2000,0x3000,keyword_candidate='x',
                keyword_state_precondition={'field_offset':9328,'mask_raw_hex':'01','kind':'parser_state_mask_zero'})

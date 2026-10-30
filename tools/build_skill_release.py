@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.1.2'
+VERSION='0.1.3'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}

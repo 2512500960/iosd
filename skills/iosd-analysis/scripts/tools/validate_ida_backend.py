@@ -17,6 +17,8 @@ def tool_result(client, code):
     structured = result.get("structuredContent")
     if structured is None:
         structured = json.loads(result["content"][0]["text"])
+    if structured.get('_output_truncated') and not result.get('isError'):
+        structured=client.download_output(structured['_download_url'],structured['_output_id'])
     if result.get("isError") or structured.get("stderr") or structured.get("_output_truncated"):
         raise RuntimeError(json.dumps(structured, ensure_ascii=False)[:4000])
     return structured.get("stdout", "")

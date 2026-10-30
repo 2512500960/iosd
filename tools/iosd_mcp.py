@@ -135,7 +135,7 @@ def parser():
     d=sub.add_parser('discover',help='List MCP capabilities; does not request IDA analysis');d.add_argument('--output',required=True)
     s=sub.add_parser('status',help='Capture a fresh image/base/debugger session after IDA is ready')
     s.add_argument('--output',required=True);s.add_argument('--confirm-idle',action='store_true')
-    for name in ('read','function','protocol','relationships','subsystems'):
+    for name in ('read','function','protocol','relationships','subsystems','linkage'):
         q=sub.add_parser(name);q.add_argument('--session',required=True);q.add_argument('--output',required=True)
         if name in ('function','relationships'):q.add_argument('--rva',required=True,type=integer)
         if name=='function':q.add_argument('--max-size',type=int,default=16384)
@@ -146,6 +146,10 @@ def parser():
         if name=='subsystems':q.add_argument('--pointer-mode',required=True,choices=('little','big','mask_then_swap','swap_then_mask'))
         if name=='read':
             q.add_argument('--request',required=True,help='JSON with source, ranges, and for debugger runtime_base + anchors')
+        if name=='linkage':
+            q.add_argument('--request',required=True,help='JSON with runtime_base and independently sourced immutable anchors')
+            q.add_argument('--profile',default=str(ROOT/'profiles/lifecycle_api_26_01_02.json'))
+            q.add_argument('--max-nodes',type=int,default=32,help='Per-list bound, 1..128; retained frontiers can be continued explicitly')
     c=sub.add_parser('core-read',help='Offline ELF core ranges; never connects to MCP')
     c.add_argument('--core',required=True);c.add_argument('--request',required=True);c.add_argument('--output',required=True)
     i=sub.add_parser('components',help='Offline architecture/protocol search facets; never connects to MCP')
@@ -177,9 +181,13 @@ def main(argv=None):
         if args.operation!='status':
             session=json.loads(Path(args.session).read_text(encoding='utf-8'))
             if session.get('kind')!='iosd_mcp_session':raise ValueError('Use a status capture as --session')
-            if args.operation=='read':
+            if args.operation in ('read','linkage'):
                 request.update(json.loads(Path(args.request).read_text(encoding='utf-8')))
+            if args.operation=='read':
                 request['ranges']=validated_ranges(request['ranges'])
+            if args.operation=='linkage':
+                request['profile']=json.loads(Path(args.profile).read_text(encoding='utf-8'))
+                request['max_nodes']=args.max_nodes
             for key in ('rva','max_size','query','max_names','max_bytes','max_hits','pointer_mode'):
                 if hasattr(args,key):request[key]=getattr(args,key)
             if args.operation=='protocol':
@@ -203,11 +211,17 @@ def main(argv=None):
                     if model['input_md5']==session['identity']['input_md5']:
                         model['subsystems']=[r for r in model['subsystems'] if match_kind(r['name'],args.query)]
                         request['subsystem_model']=model
+                path=ROOT/'profiles/protocol_paths_26_01_02.json'
+                if path.is_file():
+                    model=json.loads(path.read_text(encoding='utf-8'))
+                    if model['input_md5']==session['identity']['input_md5']:
+                        model['protocols']=[r for r in model['protocols'] if r['name']==request['query']]
+                        request['reviewed_protocol_model']=model
             # Request files cannot substitute the session identity or select another operation.
             request['operation']=args.operation;request['identity']=session['identity']
         result=invoke(args.url,request,getattr(args,'session',None),args.output,getattr(args,'confirm_idle',False))
     summary={'saved':str(Path(args.output).resolve()),'kind':result.get('kind',result.get('source')),
-             'gaps':len(result.get('gaps',[]))}
+             'gaps':len(result.get('gaps',[]))+len(result.get('result',{}).get('gaps',[]))}
     if 'unknown' in result:summary['unknown_items']=len(result['unknown'])
     print(json.dumps(summary,ensure_ascii=True))
     return 0
