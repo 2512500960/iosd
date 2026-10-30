@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.2.0",
   "generated": {
     "scripts/iosd_mcp.py": {
       "source": "tools/iosd_mcp.py",
@@ -45,6 +45,11 @@
       "source": "iosd_helper/component_inventory.py",
       "source_sha256": "618bff64f6d981dd7b925e10dee4ad6ed3aaf6c54058a16aed3b83c5d72c0f15",
       "sha256": "618bff64f6d981dd7b925e10dee4ad6ed3aaf6c54058a16aed3b83c5d72c0f15"
+    },
+    "scripts/iosd_helper/elf_layout.py": {
+      "source": "iosd_helper/elf_layout.py",
+      "source_sha256": "5dfbee0713ac913984c8af02fc49171664bda205013d559a21e911ae7daff925",
+      "sha256": "5dfbee0713ac913984c8af02fc49171664bda205013d559a21e911ae7daff925"
     },
     "scripts/iosd_helper/fragment_paths.py": {
       "source": "iosd_helper/fragment_paths.py",
@@ -181,6 +186,11 @@
       "source_sha256": "495c9725d10540d923fcd7048ae2b57ff38216643954aaece2ecb62fda366a09",
       "sha256": "495c9725d10540d923fcd7048ae2b57ff38216643954aaece2ecb62fda366a09"
     },
+    "scripts/tools/build_architecture_atlas.py": {
+      "source": "tools/build_architecture_atlas.py",
+      "source_sha256": "5322bae6c9502e58f6d8bdc7ef343c9796437e8737816adb9d272de8deb454be",
+      "sha256": "5322bae6c9502e58f6d8bdc7ef343c9796437e8737816adb9d272de8deb454be"
+    },
     "scripts/tools/build_architecture_map.py": {
       "source": "tools/build_architecture_map.py",
       "source_sha256": "cc0501e4a28b27a70d444791a585585c4a3713b6083cc10c4e1afecd7328d257",
@@ -301,6 +311,11 @@
       "source_sha256": "1dccb8862d7e3d26cd2eecc93ae8aa47c1f1d4972639d4dae8913226dde19db1",
       "sha256": "1dccb8862d7e3d26cd2eecc93ae8aa47c1f1d4972639d4dae8913226dde19db1"
     },
+    "scripts/tools/inspect_elf_layout.py": {
+      "source": "tools/inspect_elf_layout.py",
+      "source_sha256": "ccaaa111225fc8acae0d7324339ccdd7932ac8436f90e97187d7e3782ad3bb94",
+      "sha256": "ccaaa111225fc8acae0d7324339ccdd7932ac8436f90e97187d7e3782ad3bb94"
+    },
     "scripts/tools/make_fixtures.py": {
       "source": "tools/make_fixtures.py",
       "source_sha256": "992bf55aa08d32c79cff90fec5284ec20f07a2b1db82b58908e38ead05e859c0",
@@ -351,6 +366,11 @@
       "source_sha256": "570c41ff6208178a7a65057c4284bdfc967644dd09649c8ce99ac22f5b57d83e",
       "sha256": "570c41ff6208178a7a65057c4284bdfc967644dd09649c8ce99ac22f5b57d83e"
     },
+    "scripts/profiles/elf_layout_26_01_02.json": {
+      "source": "profiles/elf_layout_26_01_02.json",
+      "source_sha256": "2941361df1920171d316ae305405fd8ed7375d7073434a076971e4a9159c84c0",
+      "sha256": "2941361df1920171d316ae305405fd8ed7375d7073434a076971e4a9159c84c0"
+    },
     "scripts/profiles/icm_conservative.json": {
       "source": "profiles/icm_conservative.json",
       "source_sha256": "9b006bf53d51effde03c1eec71d4f5473d232ef9d5af5c4034d290400f632519",
@@ -378,8 +398,8 @@
     },
     "scripts/profiles/protocol_paths_26_01_02.json": {
       "source": "profiles/protocol_paths_26_01_02.json",
-      "source_sha256": "230477931dd5b056eabf67cd26f0922060c54fba349a6016f08e0b4b852b72ca",
-      "sha256": "230477931dd5b056eabf67cd26f0922060c54fba349a6016f08e0b4b852b72ca"
+      "source_sha256": "f55f5777fde1d72f61f7af352784ca4663379cd5ddeb2ee671455e3f57ed4e1a",
+      "sha256": "f55f5777fde1d72f61f7af352784ca4663379cd5ddeb2ee671455e3f57ed4e1a"
     },
     "scripts/profiles/static_cli_all_discovered_26_01_02.json": {
       "source": "profiles/static_cli_all_discovered_26_01_02.json",
@@ -416,6 +436,51 @@
       "source_sha256": "f697bb6c8f1122fe6c6eb26ef4561427561fba5df4a3a95fbec75970f2a18df0",
       "sha256": "f697bb6c8f1122fe6c6eb26ef4561427561fba5df4a3a95fbec75970f2a18df0"
     },
+    "references/library/docs/assets/iosd-atlas/01-elf-layout.svg": {
+      "source": "docs/assets/iosd-atlas/01-elf-layout.svg",
+      "source_sha256": "9da454ebbffd043f2f38ef3ff51a41b0904ebb2cd6d2cf411310a0b5da20e6d4",
+      "sha256": "9da454ebbffd043f2f38ef3ff51a41b0904ebb2cd6d2cf411310a0b5da20e6d4"
+    },
+    "references/library/docs/assets/iosd-atlas/02-architecture-views.svg": {
+      "source": "docs/assets/iosd-atlas/02-architecture-views.svg",
+      "source_sha256": "933ab634c35f25c284827868ed1fbdb328e8ca2be9552ca49cd8dcfc279d9491",
+      "sha256": "933ab634c35f25c284827868ed1fbdb328e8ca2be9552ca49cd8dcfc279d9491"
+    },
+    "references/library/docs/assets/iosd-atlas/03-initialization.svg": {
+      "source": "docs/assets/iosd-atlas/03-initialization.svg",
+      "source_sha256": "795b8b3a0630b811accc998de4f97f323dfff05c7cb859eb33bebce762ac0e1d",
+      "sha256": "795b8b3a0630b811accc998de4f97f323dfff05c7cb859eb33bebce762ac0e1d"
+    },
+    "references/library/docs/assets/iosd-atlas/04-registration-and-input.svg": {
+      "source": "docs/assets/iosd-atlas/04-registration-and-input.svg",
+      "source_sha256": "51e58351db54870a5444022922d5c6161c6466c761a6c556bf3a7d29edf098a1",
+      "sha256": "51e58351db54870a5444022922d5c6161c6466c761a6c556bf3a7d29edf098a1"
+    },
+    "references/library/docs/assets/iosd-atlas/05-cdp-path.svg": {
+      "source": "docs/assets/iosd-atlas/05-cdp-path.svg",
+      "source_sha256": "e2b45e69ba0f5ece55266d8f73f79fd3908689969936c857b7669c558fab3537",
+      "sha256": "e2b45e69ba0f5ece55266d8f73f79fd3908689969936c857b7669c558fab3537"
+    },
+    "references/library/docs/assets/iosd-atlas/06-cli-and-nvgen.svg": {
+      "source": "docs/assets/iosd-atlas/06-cli-and-nvgen.svg",
+      "source_sha256": "637bd3562af2292ca0d0da44712b1124883e5c41c916f9ef70bbb0a0054957f1",
+      "sha256": "637bd3562af2292ca0d0da44712b1124883e5c41c916f9ef70bbb0a0054957f1"
+    },
+    "references/library/docs/assets/iosd-atlas/07-execution-contexts.svg": {
+      "source": "docs/assets/iosd-atlas/07-execution-contexts.svg",
+      "source_sha256": "d5e81cfd40f9b671882d7adbce8997b9b5830f365a8da1c4e74402dcc27431b0",
+      "sha256": "d5e81cfd40f9b671882d7adbce8997b9b5830f365a8da1c4e74402dcc27431b0"
+    },
+    "references/library/docs/assets/iosd-atlas/08-ehsa-boundaries.svg": {
+      "source": "docs/assets/iosd-atlas/08-ehsa-boundaries.svg",
+      "source_sha256": "96121e66fe1bc63a4eedc9537623c739bd115afcf9d27c2127c6981952f86b91",
+      "sha256": "96121e66fe1bc63a4eedc9537623c739bd115afcf9d27c2127c6981952f86b91"
+    },
+    "references/library/docs/iosd架构图解.html": {
+      "source": "docs/iosd架构图解.html",
+      "source_sha256": "6f5ed37a8a313d9c6820c9f07144c5ae35944d0ba9ffbc4737373d542335db5c",
+      "sha256": "0560a2da42f2d0f1d18049f8de3312eed9fd2417e8ca0c55b8addd8d4896c909"
+    },
     "references/library/docs/config关键词选项与条件回调.md": {
       "source": "docs/config关键词选项与条件回调.md",
       "source_sha256": "e10c216f8f2823c7e9e108e9515f5886e820ef15b6bd897417f98fed460a2a6f",
@@ -426,10 +491,15 @@
       "source_sha256": "63595f5a08bde463dd6c0b61d022547f637497cadf2ffe841d2e5e3b113cb9d2",
       "sha256": "4c67ad3e15cc82811e3963f07c786d00b418e265a0bb712423ee3bcd4e4b74f1"
     },
+    "references/library/docs/iosd从大ELF到运行机制.md": {
+      "source": "docs/iosd从大ELF到运行机制.md",
+      "source_sha256": "aba0949155c48c5f83348b521720f135e07e94054107cf67efaf62c967f8bd55",
+      "sha256": "4c957b2b5bf8f57a78142201fd7376acab4b95356e75dade56392be7369da714"
+    },
     "references/library/docs/iosd协议处理链与CLI新会话验证.md": {
       "source": "docs/iosd协议处理链与CLI新会话验证.md",
-      "source_sha256": "d506b466afe4322538b4c270e3f191cf66639056b6b59d4a446ee2aaac253370",
-      "sha256": "3ce3b9a213ce2da8dce33876170ce489f97d3040eeffbf048fb1cf655d722112"
+      "source_sha256": "36abb93986c44099a0e4ee44fb9b7110ad0082d56a9b13debf4791ac223b7de0",
+      "sha256": "9627c18fff4ddc06a4eaa07506d7b7ef6250e63b64a9d82ba75e666f1f007e67"
     },
     "references/library/docs/iosd架构与术语说明.md": {
       "source": "docs/iosd架构与术语说明.md",
@@ -463,8 +533,8 @@
     },
     "references/library/docs/iosd逆向分析教程.md": {
       "source": "docs/iosd逆向分析教程.md",
-      "source_sha256": "47e6edc3fb80b0a4f644bfe305abd178558a438330367a4aecffca816f8c0c65",
-      "sha256": "e43f8c6cd58f9ead8eeaa9ef7f0233a4dd5c0be8018628ddd38410aa4828a07d"
+      "source_sha256": "d9c2f9e35d4d609d5867dc2b180f2c56e31faa8d427ade2804edb94297a39368",
+      "sha256": "01a7732af39d42840c9d4db01475565bc9163a169d6de61265b3d87cda6bf0da"
     },
     "references/library/docs/整数显示与字节序.md": {
       "source": "docs/整数显示与字节序.md",

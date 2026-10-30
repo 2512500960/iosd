@@ -4,7 +4,7 @@
 
 当前样本的复核摘要在 [协议处理链与新会话验证](library/docs/iosd协议处理链与CLI新会话验证.md)，机器可读定位在 `scripts/profiles/protocol_paths_26_01_02.json`。先核对 MD5，再复核 RVA；这是局部静态证据，不是当前运行轨迹。CDP 已核对队列、内部 task、头/TLV 与缓存处理；BGP、OSPF、UDP 的部分分发/处理已核对；LLDP、IS-IS 保留入口与缺口。不要把这些覆盖范围扩写成全部协议已分析完成。
 
-主入口在样本匹配时随 `protocol` 结果附上 `prior_reviewed_paths`，与本次候选分开，明确 `verified_in_this_capture=false`、`runtime_execution_proven=false`。未收录某协议只表示索引尚缺，不表示实现不存在。此附带逻辑完成离线边界测试，新增索引尚未做超时之后的实机重跑。
+主入口在样本匹配时随 `protocol` 结果附上 `prior_reviewed_paths`，与本次候选分开，明确 `verified_in_this_capture=false`、`runtime_execution_proven=false`。未收录某协议只表示索引尚缺，不表示实现不存在。此附带逻辑完成离线边界测试，并在用户确认 IDA 空闲后完成有界实机复测；索引中的每条关系仍是待按问题重新复核的历史局部证据。
 
 ## 入口与跟进
 

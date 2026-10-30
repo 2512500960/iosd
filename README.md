@@ -4,6 +4,8 @@
 
 **主要入口：[iosd-analysis skill](skills/iosd-analysis/SKILL.md)。** 不需要安装 iosd Helper 的 IDA 界面插件；IDA 侧需要运行 MCP 服务，AI 客户端需要连接该服务。skill 提供调查流程、经验模式和资料，Python 核心负责确定性解析，MCP 提供当前 IDB/调试数据。
 
+想先读懂这个大 ELF，可直接打开 [iosd 架构图解](docs/iosd架构图解.html) 或 [配套正文](docs/iosd从大ELF到运行机制.md)。八张图分别解释文件构成、四种结构视角、启动机制、登记与消费、CDP、CLI/NVGEN、线程/task 和 EHSA。支持离线搜索、主题筛选与隐藏地址细节；无需连接 IDA。图和解释区分示意、样本局部证据及未知边界。
+
 ## 安装与使用
 
 将整个 `skills/iosd-analysis` 文件夹复制到客户端支持的 skills 目录，保持 `SKILL.md`、`references`、`scripts` 和 `agents` 的相对位置。也可由支持从仓库安装 skill 的客户端安装这个子目录。MCP 连接按客户端配置，地址不写死在 skill 中。
@@ -63,8 +65,10 @@ python -X utf8 tools/build_skill_release.py
 python -m unittest discover -s tests -q
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.1.3.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.2.0.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。构建过程不连接 IDA。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
+
+新增 `inspect_elf_layout.py` 可离线解析原始 ELF64 的节、装载段、文件占用与 NOBITS。当前样本的文件布局已独立校验 MD5/SHA256，并整理为 [布局摘要](profiles/elf_layout_26_01_02.json)。大小和节名只用于容器导航，不自动赋予协议或组件所有权。图解先复用既有局部证据；用户确认 IDA 空闲后，已安全恢复 MCP，并补查 OSPF 类型取得、BGP UPDATE 入口和 UDP 入队/通知路径。
 
 2026-10-30 已在完成 rebase 的 IDA 9.1 新 IDB 上保存数据库并建立新会话，实测通过 saved-IDB 字节、带原始 ELF 锚点的暂停内存、函数/引用与两批动态链表读取。重新验证了 12 个 CLI 节点及三类动作，补充 CDP、BGP、OSPF、UDP 的局部处理链；LLDP、IS-IS 保留线索和未知项。详见 [协议处理链与 CLI 新会话验证](docs/iosd协议处理链与CLI新会话验证.md)，定位摘要在 [协议证据索引](profiles/protocol_paths_26_01_02.json)。
 
-完整命令路径尚未重新统计，链表仍有 frontiers，模块枚举达到 512 上限。最后的子系统扫描触发客户端超时，已保留 pending 并停止继续调用；逐候选预算检查的修复仅完成离线验证，尚需实机复测。插件原型的历史说明保存在 [历史文档](docs/IDA插件历史说明.md)，不作为本次 skill 的必需安装步骤。
+完整命令路径尚未重新统计，链表仍有 frontiers，模块枚举达到 512 上限。先前子系统扫描超时后已停止调用；本轮经用户确认空闲恢复，修复复测返回 683 条记录并明确标记 partial，协议历史摘要附带逻辑也通过实机复测。目标在运行时仅查 IDB，没有自动暂停或读取运行中的目标内存。插件原型的历史说明保存在 [历史文档](docs/IDA插件历史说明.md)，不作为本次 skill 的必需安装步骤。

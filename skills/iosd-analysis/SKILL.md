@@ -1,6 +1,6 @@
 ---
 name: iosd-analysis
-description: Investigate Cisco IOS XE iosd architecture, CLI definitions, protocol handlers and runtime state through IDA MCP or compatible analysis MCP tools, reusing evidence parsers and preserving unresolved branches. Supports saved IDB, paused debugger memory and ELF core evidence.
+description: Explain and investigate Cisco IOS XE iosd architecture, CLI definitions, protocol processing and runtime state using evidence-backed diagrams, reusable parsers and IDA MCP. Supports saved IDB, paused debugger memory and ELF core evidence while preserving unresolved branches.
 ---
 
 # iosd analysis
@@ -23,6 +23,7 @@ skill 可使用宿主已经连接的 MCP 工具；它不自行创建连接、凭
 | 用户想了解什么 | 按需阅读 |
 |---|---|
 | 顶层架构、模块与子系统、线程、初始化类别 | [架构与经验模式](references/architecture.md) |
+| 文件太大、想从整体读懂 iosd 或需要图解 | [讲解与图解](references/explaining-iosd.md) |
 | 隐藏命令、config 语法、参数、条件、handler、NVGEN | [CLI 与状态依赖](references/cli-and-registration.md) |
 | 暂停内存、动态链接槽、待注册链表、共享库绑定或 core | [运行时与 core](references/runtime-and-core.md) |
 | CDP、BGP 等协议的收包、解析和处理归属 | [协议调查](references/protocols.md) |

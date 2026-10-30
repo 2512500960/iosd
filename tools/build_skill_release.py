@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.1.3'
+VERSION='0.2.0'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -28,6 +28,11 @@ def assemble():
     for source in (ROOT/'tools').glob('*.py'):
         if source.name not in NO_TOOLS:copies[source]=SKILL/'scripts/tools'/source.name
     for source in (ROOT/'profiles').glob('*.json'):copies[source]=SKILL/'scripts/profiles'/source.name
+    # Diagram sources and the self-contained reader are part of the architecture experience.
+    for source in (ROOT/'docs/assets/iosd-atlas').glob('*.svg'):
+        copies[source]=SKILL/'references/library/docs/assets/iosd-atlas'/source.name
+    atlas=ROOT/'docs/iosd架构图解.html'
+    if atlas.exists():copies[atlas]=SKILL/'references/library/docs'/atlas.name
     docs={p:SKILL/'references/library/docs'/p.name for p in (ROOT/'docs').glob('*.md')}
     docs[ROOT/'iosd二进制文件结构描述.md']=SKILL/'references/library/iosd二进制文件结构描述.md'
     allowed=set(copies.values())|set(docs.values())
@@ -39,7 +44,20 @@ def assemble():
             target.relative_to(SKILL.resolve())
             if target not in allowed and target.is_file():target.unlink()
     for source,destination in copies.items():
-        destination.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,destination)
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        if source.suffix=='.html':
+            targets={**copies,**docs}
+            def html_link(match):
+                parts=urlsplit(match[2])
+                if parts.scheme or parts.netloc or match[2].startswith('#'):return match[0]
+                target=(source.parent/unquote(parts.path)).resolve()
+                if target not in targets:raise ValueError('HTML link not bundled: '+str(target))
+                relative=Path(os.path.relpath(targets[target],destination.parent)).as_posix()
+                if parts.fragment:relative+='#'+parts.fragment
+                return match[1]+relative+match[3]
+            text=re.sub(r'(href=")([^"\n]+)(")',html_link,source.read_text(encoding='utf-8'))
+            destination.write_text(text,encoding='utf-8',newline='\n')
+        else:shutil.copyfile(source,destination)
     links=re.compile(r'(!?)\[([^\]]+)\]\(([^)\n]+)\)')
     for source,destination in docs.items():
         text=source.read_text(encoding='utf-8')

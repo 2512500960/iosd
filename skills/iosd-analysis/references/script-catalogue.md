@@ -27,6 +27,7 @@
 | `analyze_nvgen_bindings.py` | Compare saved NVGEN descriptors and CLI terminals, without executing callbacks. |
 | `analyze_vpdn.py` | Rebuild the pinned VPDN activation case from saved static evidence. |
 | `audit_registration_triggers.py` | Read bounded direct-call ancestry of registration callers from a matching IDA. |
+| `build_architecture_atlas.py` | Build eight evidence-scoped SVG diagrams and an offline iosd architecture reader. |
 | `build_architecture_map.py` | Generate the saved initialization organization map; no IDA access. |
 | `build_candidate_space.py` | Export the acquired definition pool independently of bounded path witnesses. |
 | `build_config_refinement_report.py` | Compare saved config witnesses, separating new terminals from clearer syntax. |
@@ -51,6 +52,7 @@
 | `ida_mcp_client.py` | Small Streamable HTTP MCP client for local IDA validation (Python stdlib). |
 | `import_cached_lifecycle.py` | Import saved decompilations as explicitly heuristic, offline lifecycle IR. |
 | `inspect_core.py` | Inspect one candidate node outside IDA, useful for debugging parser logic. |
+| `inspect_elf_layout.py` | Measure an original ELF64 file offline; export layout metadata, not Cisco code or memory. |
 | `make_fixtures.py` | Generate a tiny ELF executable + matching core for IDA integration testing. |
 | `probe_ida_debug_state.py` | Read IDA identity/base/debugger state only; never read target memory or pause. |
 | `probe_runtime_mapping.py` | Compare saved immutable anchors with IDB and paused debugger bytes. |

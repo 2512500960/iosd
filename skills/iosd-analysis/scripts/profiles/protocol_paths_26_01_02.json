@@ -10,66 +10,219 @@
       "name": "cdp",
       "init_rva": "0xCD878F0",
       "facts": [
-        {"function_rva": "0xCD894C0", "role": "task_creation", "target_rva": "0xCD89F00", "evidence": "D792920 receives CDP Protocol name and entry, guarded by task-ID state"},
-        {"function_rva": "0xCD89F00", "role": "queue_event_loop", "target_rva": "0xCD8AB90", "evidence": "Creates CDP packets queue; D73DDF0 registers key 65 and callback"},
-        {"function_rva": "0xCD8AB90", "role": "receive_gate_and_enqueue", "evidence": "Interface/enable/queue capacity checks, then E43F710(queue,packet) or rejection paths"},
-        {"function_rva": "0xCD89F00", "role": "dequeue_and_direct_call", "target_rva": "0xCD8AF90", "evidence": "D789490 obtains packet; context checks precede direct parser call"},
-        {"function_rva": "0xCD8AF90", "role": "header_tlv_and_neighbor_state", "evidence": "Minimum header, version, checksum, TLV lengths, Device ID, neighbor lookup/allocation and TTL"},
-        {"function_rva": "0xCDAB1A0", "role": "registry_postprocessing", "evidence": "Iterates registered callbacks with packet argument"},
-        {"function_rva": "0xCD9AE70", "role": "interface_neighbor_cleanup", "evidence": "Traverses neighbor buckets and removes records matching interface; not receive parsing"}
+        {
+          "function_rva": "0xCD894C0",
+          "role": "task_creation",
+          "target_rva": "0xCD89F00",
+          "evidence": "D792920 receives CDP Protocol name and entry, guarded by task-ID state"
+        },
+        {
+          "function_rva": "0xCD89F00",
+          "role": "queue_event_loop",
+          "target_rva": "0xCD8AB90",
+          "evidence": "Creates CDP packets queue; D73DDF0 registers key 65 and callback"
+        },
+        {
+          "function_rva": "0xCD8AB90",
+          "role": "receive_gate_and_enqueue",
+          "evidence": "Interface/enable/queue capacity checks, then E43F710(queue,packet) or rejection paths"
+        },
+        {
+          "function_rva": "0xCD89F00",
+          "role": "dequeue_and_direct_call",
+          "target_rva": "0xCD8AF90",
+          "evidence": "D789490 obtains packet; context checks precede direct parser call"
+        },
+        {
+          "function_rva": "0xCD8AF90",
+          "role": "header_tlv_and_neighbor_state",
+          "evidence": "Minimum header, version, checksum, TLV lengths, Device ID, neighbor lookup/allocation and TTL"
+        },
+        {
+          "function_rva": "0xCDAB1A0",
+          "role": "registry_postprocessing",
+          "evidence": "Iterates registered callbacks with packet argument"
+        },
+        {
+          "function_rva": "0xCD9AE70",
+          "role": "interface_neighbor_cleanup",
+          "evidence": "Traverses neighbor buckets and removes records matching interface; not receive parsing"
+        }
       ],
-      "unknown": ["All consumers of registry key 65", "All TLV extension callbacks", "Platform ingress and external boundaries"]
+      "unknown": [
+        "All consumers of registry key 65",
+        "All TLV extension callbacks",
+        "Platform ingress and external boundaries"
+      ]
     },
     {
       "name": "bgp",
       "init_rva": "0xEFF3370",
       "facts": [
-        {"function_rva": "0xEFCCF10", "role": "message_dispatch_and_state_gate", "evidence": "Message type branches, UPDATE state rejection, KEEPALIVE/NOTIFICATION and error handling"},
-        {"function_rva": "0xEFCCF10", "role": "type_1_direct_call", "target_rva": "0xEFCFCE0", "evidence": "Direct call in type 1 branch"},
-        {"function_rva": "0xEFCCF10", "role": "type_2_conditional_call", "target_rva": "0xF20A5E0", "evidence": "UPDATE branch passes payload under internal session-state condition"},
-        {"function_rva": "0xF12F8F0", "role": "dispatch_caller", "target_rva": "0xEFCCF10", "evidence": "Direct call with processing budget 0x32 and flag 1; session lifecycle code nearby"},
-        {"function_rva": "0xEFE4980", "role": "dispatch_caller", "target_rva": "0xEFCCF10", "evidence": "Two incoming direct-code references"}
+        {
+          "function_rva": "0xEFCCF10",
+          "role": "message_dispatch_and_state_gate",
+          "evidence": "Message type branches, UPDATE state rejection, KEEPALIVE/NOTIFICATION and error handling"
+        },
+        {
+          "function_rva": "0xEFCCF10",
+          "role": "type_1_direct_call",
+          "target_rva": "0xEFCFCE0",
+          "evidence": "Direct call in type 1 branch"
+        },
+        {
+          "function_rva": "0xEFCCF10",
+          "role": "type_2_conditional_call",
+          "target_rva": "0xF20A5E0",
+          "evidence": "UPDATE branch passes payload under internal session-state condition"
+        },
+        {
+          "function_rva": "0xF12F8F0",
+          "role": "dispatch_caller",
+          "target_rva": "0xEFCCF10",
+          "evidence": "Direct call with processing budget 0x32 and flag 1; session lifecycle code nearby"
+        },
+        {
+          "function_rva": "0xEFE4980",
+          "role": "dispatch_caller",
+          "target_rva": "0xEFCCF10",
+          "evidence": "Two incoming direct-code references"
+        },
+        {
+          "function_rva": "0xF20A5E0",
+          "role": "update_payload_processing",
+          "evidence": "Size failures, buffer setup F20C7E0, F1F8D10 call followed by Bad attributes rejection, NLRI accounting and downstream dispatch"
+        },
+        {
+          "function_rva": "0xF20A5E0",
+          "role": "attribute_processing_call",
+          "target_rva": "0xF1F8D10",
+          "evidence": "Actual call and failure branch reviewed; target is 57547 bytes and exceeds this batch decompilation bound of 16384 bytes"
+        }
       ],
-      "unknown": ["TCP stream assembly to dispatch", "Complete UPDATE attributes and RIB flow", "CF95270(179,F138190) registry consumer: callback is not proven message parser"]
+      "unknown": [
+        "TCP stream assembly to dispatch",
+        "Complete UPDATE attributes and RIB flow",
+        "CF95270(179,F138190) registry consumer: callback is not proven message parser",
+        "F1F8D10 internals retained at function_size_limit; individual attributes and downstream RIB effects not fully recovered"
+      ]
     },
     {
       "name": "ospf",
       "init_rva": "0xFC6ECD0",
       "facts": [
-        {"function_rva": "0xFBE9060", "role": "queue_and_message_dispatch", "target_rva": "0xFC05800", "evidence": "Dequeues packets, derives message position after IP header, sends type 4 to target"},
-        {"function_rva": "0xFC05800", "role": "ls_update_processing", "evidence": "LSA/MaxAge paths and neighbor/database related calls"},
-        {"function_rva": "0xCF3FA80", "role": "protocol_byte_table_append", "evidence": "Stores byte and resets table counter; not a receive callback registration"},
-        {"function_rva": "0xFC71740", "role": "interface_state_callback", "evidence": "Interface related objects/state; not established as packet parser"}
+        {
+          "function_rva": "0xFBE9060",
+          "role": "queue_and_message_dispatch",
+          "target_rva": "0xFC05800",
+          "evidence": "Dequeues packets, derives message position after IP header, sends type 4 to target"
+        },
+        {
+          "function_rva": "0xFC05800",
+          "role": "ls_update_processing",
+          "evidence": "LSA/MaxAge paths and neighbor/database related calls"
+        },
+        {
+          "function_rva": "0xCF3FA80",
+          "role": "protocol_byte_table_append",
+          "evidence": "Stores byte and resets table counter; not a receive callback registration"
+        },
+        {
+          "function_rva": "0xFC71740",
+          "role": "interface_state_callback",
+          "evidence": "Interface related objects/state; not established as packet parser"
+        },
+        {
+          "function_rva": "0xFC2A190",
+          "role": "message_type_extraction",
+          "evidence": "Normal a2=1 path derives header length (4*first_IP_byte)&0x3c, reads next-header byte +1, returns values below 6 else 0; caller FBE9060 dispatches 4 to FC05800"
+        }
       ],
-      "unknown": ["Receive/authentication/area selection to queues", "All LSA validation and LSDB updates"]
+      "unknown": [
+        "Receive/authentication/area selection to queues",
+        "All LSA validation and LSDB updates"
+      ]
     },
     {
       "name": "udp",
       "init_rva": "0xCE41EF0",
       "facts": [
-        {"function_rva": "0xCF79030", "role": "registration_wrapper", "target_rva": "0xCF90920", "evidence": "Forwards protocol key and callback"},
-        {"function_rva": "0xCF90920", "role": "registration_wrapper", "registry_rva": "0x381109B8", "evidence": "D717190 key/callback/registry; UDP init supplies key 17 and CE3DE20"},
-        {"function_rva": "0xCE3DE20", "role": "receive_validation_and_socket_delivery", "evidence": "Length/checksum diagnostics, socket lookup and queue full handling"}
+        {
+          "function_rva": "0xCF79030",
+          "role": "registration_wrapper",
+          "target_rva": "0xCF90920",
+          "evidence": "Forwards protocol key and callback"
+        },
+        {
+          "function_rva": "0xCF90920",
+          "role": "registration_wrapper",
+          "registry_rva": "0x381109B8",
+          "evidence": "D717190 key/callback/registry; UDP init supplies key 17 and CE3DE20"
+        },
+        {
+          "function_rva": "0xCE3DE20",
+          "role": "receive_validation_and_socket_delivery",
+          "evidence": "Length/checksum diagnostics, socket lookup and queue full handling"
+        },
+        {
+          "function_rva": "0xCE451D0",
+          "role": "socket_queue_admission",
+          "evidence": "Capacity and optional length checks; one branch calls CE44F10, other enqueues; updates queue count and watermark"
+        },
+        {
+          "function_rva": "0xCE44F10",
+          "role": "broadcast_gate_queue_and_notification",
+          "evidence": "SOCK_BROADCAST rejection path; otherwise E43F710 enqueue, then optional list traversal and registry lookup D7175B0(17, CF834D0()) followed by notification callback"
+        }
       ],
-      "unknown": ["All registry dispatch consumers", "Application handlers after socket delivery"]
+      "unknown": [
+        "All registry dispatch consumers",
+        "Application handlers after socket delivery",
+        "The notification lookup is not established as the application payload parser; consumers still need separate proof"
+      ]
     },
     {
       "name": "lldp",
       "init_rva": "0x15896EE0",
       "facts": [
-        {"function_rva": "0x15897860", "role": "event_notification", "evidence": "Event value 204 can signal Resume LLDP process object"},
-        {"function_rva": "0x15896050", "role": "interface_related_state_walk", "evidence": "Walks objects and updates state, not established as TLV parser"}
+        {
+          "function_rva": "0x15897860",
+          "role": "event_notification",
+          "evidence": "Event value 204 can signal Resume LLDP process object"
+        },
+        {
+          "function_rva": "0x15896050",
+          "role": "interface_related_state_walk",
+          "evidence": "Walks objects and updates state, not established as TLV parser"
+        }
       ],
-      "unknown": ["Receive path", "TLV validation", "Neighbor updates"]
+      "unknown": [
+        "Receive path",
+        "TLV validation",
+        "Neighbor updates"
+      ]
     },
     {
       "name": "isis",
       "init_rva": "0x106BEAD0",
       "facts": [
-        {"function_rva": "0x10710720", "role": "indexed_object_field_comparison", "evidence": "Indexed object lookup and 16-bit comparison; exact API role unresolved"}
+        {
+          "function_rva": "0x10710720",
+          "role": "indexed_object_field_comparison",
+          "evidence": "Indexed object lookup and 16-bit comparison; exact API role unresolved"
+        }
       ],
-      "unknown": ["Registry consumer roles", "PDU receive/parser", "Protocol state machine"]
+      "unknown": [
+        "Registry consumer roles",
+        "PDU receive/parser",
+        "Protocol state machine"
+      ]
     }
   ],
-  "limits": ["Only reviewed local relations", "Function roles are scoped summaries, not whole-function ownership", "No transitive assignment of helpers to protocols", "No external so/process ownership inferred from names"]
+  "limits": [
+    "Only reviewed local relations",
+    "Function roles are scoped summaries, not whole-function ownership",
+    "No transitive assignment of helpers to protocols",
+    "No external so/process ownership inferred from names"
+  ]
 }

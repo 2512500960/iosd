@@ -6,6 +6,13 @@ from pathlib import Path
 import re
 from urllib.parse import unquote,urlsplit
 import zipfile
+from html.parser import HTMLParser
+
+
+class DocumentLinks(HTMLParser):
+    def __init__(self):super().__init__();self.links=[]
+    def handle_starttag(self,tag,attrs):
+        self.links.extend(v for k,v in attrs if k in ('href','src') and v)
 
 
 def main():
@@ -21,7 +28,7 @@ def main():
     links=0
     for path in skill.rglob('*.md'):
         text=path.read_text(encoding='utf-8')
-        for match in re.finditer(r'(?<!!)\[[^\]]+\]\(([^)\n]+)\)',text):
+        for match in re.finditer(r'!?\[[^\]]+\]\(([^)\n]+)\)',text):
             target=match[1].strip('<>');parts=urlsplit(target)
             if parts.scheme or parts.netloc or target.startswith('#'):continue
             resolved=(path.parent/unquote(parts.path)).resolve()
@@ -30,6 +37,14 @@ def main():
             links+=1
     for name in ('ui.py','integer_ui.py','project_ui.py','protocol_ui.py','graph_view.py'):
         assert not (skill/'scripts/iosd_helper'/name).exists(),'GUI dependency bundled'
+    for path in skill.rglob('*.html'):
+        document=DocumentLinks();document.feed(path.read_text(encoding='utf-8'))
+        for target in document.links:
+            parts=urlsplit(target)
+            if parts.scheme or parts.netloc or target.startswith('#'):continue
+            resolved=(path.parent/unquote(parts.path)).resolve();resolved.relative_to(skill.resolve())
+            assert resolved.is_file(),f'Missing HTML reference: {path}: {target}'
+            links+=1
     assert '172.16.' not in (skill/'SKILL.md').read_text(encoding='utf-8')
     archive=root/'dist'/('iosd-analysis-skill-'+manifest['version']+'.zip')
     with zipfile.ZipFile(archive) as package:
