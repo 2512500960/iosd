@@ -176,8 +176,8 @@ sudo umount /mnt/csr-boot
 
 两张截图中，这端配置为服务器，另一端配置为应用程序。主机上的终端程序连接对应管道；与前面引导参数配合时，第一路串口使用 9600 波特率、8 数据位、无校验、1 停止位。
 之后可以通过同主机的的终端程序连接两路串口，观察启动输出和进入这个虚拟设备的底层 shell。
-alt text（历史材料路径：`assets/如何调试iosd/image-5.png`）
-alt text（历史材料路径：`assets/如何调试iosd/image-6.png`）
+![alt text](assets/如何调试iosd/image-5.png)
+![alt text](assets/如何调试iosd/image-6.png)
 
 ## 8 准备底层 Linux 的网络通道
 
@@ -196,7 +196,7 @@ ethernet2.virtualDev = "e1000"
 调试网卡连接到主机可以到达的虚拟网络。路由器启动后，通过串口进入底层 shell，查看这块网卡的实际接口名，为它配置地址并启用接口，再从主机验证连通性。
 
 原文还记录了较早 CSR1000v 版本使用的办法：在启动阶段先通过底层 shell 为一块接口配置地址并启用，使该接口作为 Linux 通信通道。网卡类型、接管时机和启动行为随镜像版本核对，实验记录中同时保留这些条件。
-alt text（历史材料路径：`assets/如何调试iosd/image-10.png`）
+![alt text](assets/如何调试iosd/image-10.png)
 串口用于观察启动和访问底层环境，可以作为初步的命令通道，可以在这个串口上启动预留好的底层网络接口并配置合适的网络地址与路由，之后便可以在外部通过网络访问设备的底层环境，进行文件传输及远程调试通信。原文提到的 telnet 访问需要目标侧已有相应服务；也可以按实验环境使用已有的其他远程访问方式。
 
 ## 9 恢复路由器启动并取得 iosd 文件
@@ -205,7 +205,7 @@ alt text（历史材料路径：`assets/如何调试iosd/image-10.png`）
 
 在底层环境中找到 iosd 进程及其可执行文件，记录 PID、进程路径和映像映射。Linux 的 `/proc/<PID>/exe` 与 `/proc/<PID>/maps` 可以分别提供进程可执行文件和地址映射线索；其中 `<PID>` 使用本次实际进程号。
 或者也可以通过binwalk解包，或者直接在底层找到对应文件然后取出，iosd的ELF文件通常在/usr/binos/bin/下挂载
-alt text（历史材料路径：`assets/如何调试iosd/image-7.png`）
+![alt text](assets/如何调试iosd/image-7.png)
 
 将对应文件复制到分析主机，并计算摘要。例如在 Windows PowerShell 中：
 
@@ -236,28 +236,28 @@ IDA 地址   = 当前 IDB 基址 + RVA
 需要观察链表、对象或状态时，在调试器中手动暂停目标；读取时记录暂停阶段。继续运行由实验操作者控制。core 文件提供另一个离线观察入口，分析范围由实际捕获的映射和页面决定。
 如果想使用IDA或者其他调试器去调试iosd进程，建议只attach而不是启动，因为iosd的启动非常之复杂，而且作为critical process，如果关闭了进程，通常会触发整个系统重启。
 对于虚拟设备（例如c8kv csr1kv等）来说，由于其运行在虚拟化环境下，我们可以根据之前的步骤将一个不受数据平面接管的网卡接入到宿主机上，然后在宿主机上使用IDA的远程调试功能去attach到iosd进程上。这里以IDA自带的dbgsrv为例，将IDA配套的dbgsrv传到设备的/bootflash目录下后，找一个其他系统的（比如ubuntu或者centos）libthread_db.so.1过来和dbgsrv放在一起，然后启动监听23946端口。
-alt text（历史材料路径：`assets/如何调试iosd/image-11.png`）
+![alt text](assets/如何调试iosd/image-11.png)
 之后在IDA中配置好远程调试的参数并选择目标就可以成功attach到iosd进程上了。需要注意的是，iosd进程在启动时会有很多的初始化工作，如果在iosd启动过程中attach到进程上，可能会导致iosd进程崩溃，所以建议在iosd启动完成后再attach。
-alt text（历史材料路径：`assets/如何调试iosd/image-12.png`）
+![alt text](assets/如何调试iosd/image-12.png)
 成功连接到调试器之后需要注意，IOSD程序通过倒计时timer机制来进行某种心跳机制，没过一段时间会由系统向IOSD发送一个信号，如果IOSD没有在规定时间内重置这个timer，IOSD进程间就会收到这个信号，从而触发崩溃突出。
-alt text（历史材料路径：`assets/如何调试iosd/image-9.png`）
+![alt text](assets/如何调试iosd/image-9.png)
 
 我们需要在调试器中设置对收到信号的处理方式：不暂停应用，不将信号传递给应用，制作记录，这样就可以避免IOSD进程崩溃了。
 
 
-alt text（历史材料路径：`assets/如何调试iosd/image-8.png`）
+![alt text](assets/如何调试iosd/image-8.png)
 
 ## 11 ISR4321为例的调试
 基于Cisco XE系统的实体设备通常和虚拟设备共用代码，但是仍然会有很大的区别，想在实体设备上调试不是一个简单的事情，首先就是获取到底层的root权限，这一步通常需要用到漏洞，也就决定了需要用到历史漏洞，而且往往只能在特定的版本上才能使用。
 假设我们使用公开的漏洞获取到了实体设备的root权限，如何给调试器提供通信渠道也是个麻烦事儿，通常需要考虑建立一个独立于被调试对象以外的通道。这里列举三种可能的手段：
 1. 用实体设备的串口，
 2. 给实体设备增加一个USB网卡，新增加的USB网卡独属于底层Linux系统，和IOSD进程无关，也和数据平面无关，使用这个网卡作为调试器和IOSD进程的通信通道。好在某些设备幸好上，usbnet网卡和相关的驱动没有完全剪裁掉。
-alt text（历史材料路径：`assets/如何调试iosd/image-15.png`）
+![alt text](assets/如何调试iosd/image-15.png)
 3. 使用mcp_chvrf.sh
    在较新的Cisco XE系统中，mcp_chvrf.sh增加了一个global VRF空间，可以从底层访问设备以外的网络。
-   alt text（历史材料路径：`assets/如何调试iosd/image-13.png`）
+   ![alt text](assets/如何调试iosd/image-13.png)
     不过在一些老版本中，mcp_chvrf.sh并没有global VRF空间，这时候就需要其他方法了。
- （历史材料路径：`assets/如何调试iosd/image-14.png`）
+![ ](assets/如何调试iosd/image-14.png)
 ## 11 用 skill 辅助分析
 
 仓库中的 [iosd-analysis skill](../../SKILL.md) 复用了字节读取、CLI 图恢复、注册分析和协议调查脚本。IDA MCP 提供当前数据库和调试接口，skill 组织调查过程及解释资料。

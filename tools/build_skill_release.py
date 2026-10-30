@@ -33,8 +33,14 @@ def assemble():
         copies[source]=SKILL/'references/library/docs/assets/iosd-atlas'/source.name
     atlas=ROOT/'docs/iosd架构图解.html'
     if atlas.exists():copies[atlas]=SKILL/'references/library/docs'/atlas.name
-    for source in (ROOT/'assets/如何调试iosd').glob('source-*.png'):
-        copies[source]=SKILL/'references/library/assets/如何调试iosd'/source.name
+    tutorial=ROOT/'如何调试iosd.md'
+    for target in re.findall(r'!\[[^\]]*\]\(([^)\n]+)\)',tutorial.read_text(encoding='utf-8')):
+        parts=urlsplit(target.strip('<>'))
+        if parts.scheme or parts.netloc:continue
+        source=(ROOT/unquote(parts.path)).resolve()
+        source.relative_to((ROOT/'assets').resolve())
+        if not source.is_file():raise ValueError('Tutorial image missing: '+str(source))
+        copies[source]=SKILL/'references/library'/source.relative_to(ROOT)
     for source in (ROOT/'analysis/c8000v-26.01.02/cli').iterdir():
         if source.is_file():copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02/cli'/source.name
     docs={p:SKILL/'references/library/docs'/p.name for p in (ROOT/'docs').glob('*.md')}
