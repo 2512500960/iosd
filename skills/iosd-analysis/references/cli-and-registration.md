@@ -20,6 +20,8 @@ CDL/XML 提供另一组命令线索，不是 iosd parser 的完整替代。CLI h
 
 随 skill 的样本目录位于 `references/library/analysis/c8000v-26.01.02/cli/`。可先用 `scripts/tools/query_cli_catalogue.py` 查询它，再根据缺口安排 IDA 请求。2026-10-30 的离线细化解释了 1,771 个原未知节点，config 剩余 482 个；73,159 条记录表示六模式的路径见证。具体范围见 [版本结果](library/analysis/c8000v-26.01.02/README.md)，算法和输入见 [CLI 方法](library/docs/iosd的CLI挖掘方法.md)。
 
+回答“有多少命令”时，分别报告已取得定义、地址去重的终止节点、EOL/上下文见证和模式/模板文字。当前取得图包含 23,145 个终止定义候选，六模式覆盖 13,690 个不同 EOL；共享 EOL 和 handler 的多条路径分别保存。复算工具为 `scripts/tools/count_cli_catalogue.py`，样本统计见 [CLI 计数](library/analysis/c8000v-26.01.02/cli-counts.json)。整个 ELF 的总量按尚未覆盖的模式、未绑定候选、未知动作与别名范围说明。
+
 ## 注册与状态
 
 复用 `ida_lifecycle.acquire_batch` 采集调用、赋值和条件 IR，由 `lifecycle.analyze_lifecycle` 离线关联。API 角色由 profile 声明，不把 VPDN 特例写进通用推理。

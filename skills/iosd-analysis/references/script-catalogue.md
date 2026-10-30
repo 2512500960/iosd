@@ -46,6 +46,7 @@
 | `collect_lifecycle_evidence.py` | Collect checkpointed read-only registration IR from IDA, in short batches. |
 | `collect_runtime_linkage.py` | Collect reviewed runtime lists in bounded batches, preserving every frontier. |
 | `collect_runtime_pages.py` | Read explicit image/heap pages in short batches for offline grammar export. |
+| `count_cli_catalogue.py` | Count acquired CLI definitions, EOL/context witnesses and distinct template text. |
 | `expand_option_witnesses.py` | Replay a saved prefix, select each known option, and re-solve a bounded suffix. |
 | `export_cli_analysis.py` | Publish derived CLI metadata from saved analysis without captured bytes or code. |
 | `export_cli_catalogue.py` | Build a standalone searchable HTML inventory from a saved static CLI report. |

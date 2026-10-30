@@ -9,6 +9,17 @@ CSR1000v 和 C8000v 是思科提供的 IOS XE 虚拟路由器平台，Catalyst 9
 
 调试环境准备好以后，可以提取 iosd 文件建立静态数据库，再连接运行中的进程，查看命令注册、协议状态和动态对象。本仓库的具体分析案例来自 **C8000v IOS XE 26.01.02**，版本相关地址、结构和统计集中在 [该版本分析结果](analysis/c8000v-26.01.02/README.md)。
 
+本文同时作为仓库的完整使用说明：前半部分准备调试环境，后半部分介绍 skill 安装、MCP 使用、程序结构与 CLI 分析，最后说明源码和文档的维护方式。
+
+| 阅读入口 | 内容 |
+|---|---|
+| 本文 | 调试教程、skill 安装使用与仓库维护 |
+| [iosd-analysis skill](skills/iosd-analysis/SKILL.md) | 调查流程、经验模式、解析工具与按需参考知识 |
+| [版本分析结果](analysis/c8000v-26.01.02/README.md) | 当前样本的架构证据、协议处理链、CLI 数据与覆盖范围 |
+| [架构图解](docs/iosd架构图解.html) | 八张关系图与离线阅读页，支持搜索、主题筛选和地址细节显示 |
+
+IDA MCP 提供当前 IDB 和调试数据，Python 核心执行结构解析，skill 组织调查和讲解。已有本地报告及捕获可直接复用，未知和不完整分支继续保留。
+
 ## 1 环境与操作顺序
 
 环境中有两种启动方式：安装后的 CSR1000v 从虚拟硬盘启动；Ubuntu Live 从 ISO 启动，用于查看和修改同一块虚拟硬盘。
@@ -347,20 +358,63 @@ IDA 填写 frp 代理对外提供的地址与端口；frpc 的本地转发目标
 
 仓库中的 [iosd-analysis skill](skills/iosd-analysis/SKILL.md) 复用了字节读取、CLI 图恢复、注册分析和协议调查脚本。IDA MCP 提供当前数据库和调试接口，skill 组织调查过程及解释资料。
 
-在当前项目对话中可以这样开始：
+### 12.1 安装与提出问题
+
+将整个 `skills/iosd-analysis` 文件夹复制到客户端支持的 skills 目录，保持 `SKILL.md`、`references`、`scripts` 和 `agents` 的相对位置。也可以由支持从仓库安装 skill 的客户端安装这个子目录。
+
+按客户端配置连接实际的 IDA MCP 服务。连接地址由本次运行环境提供，skill 随附代码支持 Python 3.10+。在支持该 skill 的客户端中，可以这样提出问题：
+
+> 使用 $iosd-analysis，从初始化入口解释当前 iosd 的组织方式，说明 subsystem、module、registry 和执行上下文之间已经取得的关系。
+
+> 使用 $iosd-analysis，分析当前 iosd 的 CDP 报文处理入口，关联子系统、登记回调和解析函数，保留未知分支。
+
+> 使用 $iosd-analysis，对照 CLI 定义和暂停进程中的链接槽，解释 config 模式下命令的注册关系与状态条件。
+
+在当前仓库对话中，也可以直接要求读取入口文件：
 
 > 读取 skills/iosd-analysis/SKILL.md。先核对当前样本身份与 IDA 会话，再从初始化入口解释这个 iosd 的组织方式，列出本次使用的证据和已经取得的处理关系。
 
-Python 入口也可以直接使用。以下命令在仓库根目录运行，`<MCP地址>` 替换为当前 IDA 实例实际显示的地址：
+### 12.2 使用 MCP 入口
+
+以下命令在仓库根目录运行，`<MCP地址>` 替换为当前 IDA 实例实际显示的地址：
 
 ```text
 python tools/iosd_mcp.py --url <MCP地址> discover --output reports/session/capabilities.json
 python tools/iosd_mcp.py --url <MCP地址> status --output reports/session/session.json
+python tools/iosd_mcp.py --url <MCP地址> protocol --session reports/session/session.json --query cdp --output reports/session/cdp.json
 ```
 
-`status` 保存数据库身份、当前基址、自动分析与调试状态。后续调用引用这个 session；重新加载 IDB、rebase 或重启 IDA 后重新建立对应记录。
+`discover` 取得工具能力，`status` 保存数据库身份、当前基址、自动分析与调试状态。后续调用引用这个 session；重新加载 IDB、rebase 或重启 IDA 后重新建立对应记录。也可用 `IOSD_IDA_MCP_URL` 环境变量配置地址。
+
+随附入口通过 MCP 的 `py_eval` 运行短采集脚本；其他 MCP 提供的类型化接口按其实际 schema 适配。完整参数见 `--help` 和 [MCP 会话说明](skills/iosd-analysis/references/mcp-and-session.md)。独立安装 skill 后，同一入口位于 `<skill>/scripts/iosd_mcp.py`。
+
+### 12.3 数据来源和常用功能
+
+| 数据源 | 主要用途 | 解释范围 |
+|---|---|---|
+| saved IDB | 字节、函数、引用、组织结构与语法候选 | 保存字节的来源随会话记录，其中可能包括历史运行时数据 |
+| 已暂停的调试进程 | 动态槽、链表、堆对象、状态及实际库绑定 | 核对样本、运行时基址和独立锚点，按采集阶段解释 |
+| ELF core | 离线读取已经捕获的映射和页面 | 当前支持未压缩 ELF64 x86-64；缺失页面保留为缺口 |
+
+入口还提供 `read`、`function`、`relationships`、`subsystems`、`linkage` 和 `core-read`。`linkage` 分批读取动态槽、待绑定链表与状态，保存限额、缺页及续读位置。
+
+离线组件目录入口为：
+
+```text
+python tools/iosd_mcp.py components --query ospf --output reports/session/components-ospf.json
+```
+
+组件索引按类别、名称词元和记录 ID 查找入口，保留同名记录及未知项。当前样本索引包含 5,692 条记录，含 15 条同名 `cerrno_init` 和 8 条未记录 init RVA 的实体。详情见 [组件索引与协议调查入口](docs/iosd组件索引与协议调查入口.md)。
+
+协议线索扫描可通过 `protocol --resume <上一页.json>` 继续前一次名称或字符串扫描，保留各页结果和未读范围。继续方式及处理链调查方法见 [协议调查](skills/iosd-analysis/references/protocols.md)。
 
 调试读取、动态链接槽和 core 的请求格式见 [运行时与 core](skills/iosd-analysis/references/runtime-and-core.md)。
+
+### 12.4 协调 IDA 操作
+
+IDA 执行 rebase、attach 或其他交互脚本期间，先处理已有的本地材料，待界面恢复后继续采集。MCP 请求在同一实例上串行执行；客户端超时后保留 pending 记录，确认 IDA 空闲后恢复。
+
+目标暂停与继续由实验操作者控制。结果中分别记录定义、观察到的连接、条件求值和执行证据，并注明本次读取的数据来源。
 
 ## 13 阅读 iosd 的内容与结构
 
@@ -395,6 +449,33 @@ CLI 分析从动作分发表、语法节点、模式入口和注册接口展开�
 
 CLI 的具体方法、脚本入口和本版本恢复进度见 [CLI 挖掘方法](docs/iosd的CLI挖掘方法.md) 与 [C8000v 26.01.02 分析结果](analysis/c8000v-26.01.02/README.md)。
 
+### 14.1 当前样本恢复了多少命令
+
+当前取得的图包含 **23,145 个已识别的命令终止定义候选**。其中 22,724 个位于主映像的地址范围，421 个位于捕获的其他运行时地址；这些数字按已取得记录的位置分类。
+
+六种模式的路径目录覆盖 **13,690 个不同终止节点**，保存 **73,159 条 EOL/上下文代表路径**，关联 **5,146 个不同 handler 地址**。下面按模式列出终止节点和路径规模：
+
+| 模式 | 覆盖的不同命令终止节点 | 代表路径 |
+|---|---:|---:|
+| exec | 9,234 | 25,423 |
+| configure | 11,985 | 37,815 |
+| interface | 1,702 | 4,806 |
+| subinterface | 1,702 | 4,806 |
+| null-interface | 5 | 11 |
+| line | 103 | 298 |
+
+一个终止节点是解析器调用 handler 的入口。同一节点可能由多条语法路径或多个模式共用；普通、`no`、`default` 等上下文也会分别保存路径。全模式的 13,690 是按节点地址去重后的统计，各模式的数值因此存在交集。
+
+另有 **9,455 个终止定义候选尚未归入这六种模式的候选集合**。取得的完整图还有 1,215 个未知/未读节点，其中 config 模式关联 482 个。继续解释这些动作、模式与注册关系，可以扩大路径覆盖。
+
+以上记录的是当前恢复规模。**整个 ELF 的精确命令总数仍待收敛**：其他模式、别名、共享片段的不同写法和状态依赖分支继续保留在图中。按“模式＋语法模板文字”去重，目前有 72,437 组文字记录，文字相同而条件不同的路径合并到同一文字组。参数的具体取值另按参数规则解释。
+
+统计摘要见 [CLI 计数](analysis/c8000v-26.01.02/cli-counts.json)。可在本地查询已有路径：
+
+```text
+python tools/query_cli_catalogue.py analysis/c8000v-26.01.02/cli/catalogue.jsonl.gz --mode configure --contains "service internal" --limit 10 --json
+```
+
 ## 15 协议处理与配置生成
 
 协议调查可以从相关 subsystem init 和登记回调进入，再沿输入缓冲区、队列消费者、字段解析、错误处理和状态更新追踪。文件归属通过实际函数位置、导入绑定和外部消费端逐段确定。
@@ -402,3 +483,51 @@ CLI 的具体方法、脚本入口和本版本恢复进度见 [CLI 挖掘方法]
 现有案例中，CDP 展示接收回调、队列、内部 task、头与 TLV 检查以及邻居缓存；BGP 展示消息类型与会话状态参与的分发；OSPF 展示取包后的消息类型处理；EHSA 展示心跳、事件过滤、状态机和平台回调的协作。
 
 配置生成沿另一个方向工作：业务回调读取组件状态，经 NVGEN 公共输出设施形成配置文本。hostname 和接口 description 已有 CLI 与生成回调的关联案例，详见 [NVGEN 与接口配置缓存](docs/iosd的NVGEN与接口配置缓存.md)。
+
+## 16 仓库结构与维护
+
+### 16.1 源码和参考资料
+
+| 位置 | 维护内容 |
+|---|---|
+| `如何调试iosd.md` | 本教程与完整使用说明的主文件 |
+| `skills/iosd-analysis/` | 可独立复制安装的 skill、参考副本、工具和 profile |
+| `iosd_helper/` | 结构解析和分析核心；保留的 UI 原型按历史用途使用 |
+| `tools/` | MCP 采集、离线解析、统计、构建与检查工具 |
+| `profiles/` | 带样本身份约束的布局、入口和语义 |
+| `analysis/c8000v-26.01.02/` | 特定版本的分析结果、CLI 元数据和缺口 |
+| `docs/` | 架构、机制和调查方法的详细说明 |
+
+常用参考包括 [文件结构与运行机制](docs/iosd从大ELF到运行机制.md)、[模块与子系统](docs/iosd模块与子系统.md)、[NVGEN](docs/iosd的NVGEN与接口配置缓存.md)、[EHSA](docs/iosd的EHSA心跳与主备状态机.md)、[线程与 level](docs/iosd的线程与level.md)。插件原型记录在 [历史说明](docs/IDA插件历史说明.md)。
+
+原始 ELF、IDB、core、页面捕获和完整反编译保存在本地；仓库分发派生元数据、工具和解释文档。引用历史材料时，按资料中的样本、来源和采集条件复核。当前入口的实测状态及限制见 [版本结果](analysis/c8000v-26.01.02/README.md)。
+
+### 16.2 构建和校验
+
+修改主教程、核心、工具、profile 或参考文档后，从仓库根目录重建 skill 中的生成副本：
+
+```text
+python -X utf8 tools/build_skill_release.py
+python -X utf8 tools/check_skill_release.py
+python -X utf8 tools/check_tutorial_assets.py --bundle
+```
+
+构建产物在 `dist/iosd-analysis-skill-0.3.3.zip`，生成来源与 SHA256 记录在 skill 的 `build-manifest.json`。主入口及核心使用 Python 标准库；部分 HTML 文档工具需要 `pip install -r requirements-docs.txt`。
+
+解析代码发生变化时，运行相应单元测试；完整测试入口为 `python -m unittest discover -s tests -q`。
+
+新增截图时，将正文与图片一同提交。fetch/push 后可使用下列命令检查远端跟踪提交中的图片字节及 skill 副本：
+
+```text
+python -X utf8 tools/check_tutorial_assets.py --git-ref origin/main --bundle
+```
+
+### 16.3 复算 CLI 计数
+
+`count_cli_catalogue.py` 校验输入摘要后，分别统计终止定义、地址去重的 EOL、路径见证和语法模板文字：
+
+```text
+python tools/count_cli_catalogue.py --catalogue analysis/c8000v-26.01.02/cli/catalogue.jsonl.gz --nodes analysis/c8000v-26.01.02/cli/nodes.jsonl.gz --identity analysis/c8000v-26.01.02/cli/summary.json --output analysis/c8000v-26.01.02/cli-counts.json
+```
+
+原始 ELF 的节、装载段、文件占用与 NOBITS 可通过 `inspect_elf_layout.py` 离线测量。当前文件布局已经校验 MD5/SHA256，摘要见 [ELF 布局](profiles/elf_layout_26_01_02.json)。

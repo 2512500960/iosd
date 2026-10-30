@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+    "imagebase": 93824992231424,
+    "source": "saved paused debugger memory"
+  },
+  "capture_utc_range": [
+    "2026-10-29T06:27:08.359974+00:00",
+    "2026-10-29T09:15:38.711732+00:00"
+  ],
+  "scope": "Acquired graph and six-mode preferred witnesses from saved capture series; whole ELF command total remains undetermined",
+  "definitions": {
+    "acquired_nodes": 194435,
+    "opaque_or_unread_nodes": 1215,
+    "recognized_terminal_candidates": 23145,
+    "terminal_candidates_without_selected_mode_membership": 9455,
+    "terminal_coordinate_spaces": {
+      "image": 22724,
+      "captured_runtime": 421
+    },
+    "terminal_semantics": {
+      "parameter_terminal": 574,
+      "terminal": 22571
+    },
+    "terminal_mode_membership_from_source_graph": {
+      "configure": 11985,
+      "exec": 9234,
+      "interface": 1702,
+      "subinterface": 1702,
+      "null-interface": 5,
+      "line": 103
+    }
+  },
+  "catalogue": {
+    "witness_records": 73159,
+    "records_with_gaps": 16838,
+    "unique_eol_nodes_across_modes": 13690,
+    "unique_handler_references": 5146,
+    "distinct_mode_template_text_pairs": 72437,
+    "modes": {
+      "exec": {
+        "witness_records": 25423,
+        "unique_eol_nodes": 9234,
+        "unique_handler_references": 3430,
+        "distinct_template_texts": 25225
+      },
+      "configure": {
+        "witness_records": 37815,
+        "unique_eol_nodes": 11985,
+        "unique_handler_references": 4614,
+        "distinct_template_texts": 37437
+      },
+      "interface": {
+        "witness_records": 4806,
+        "unique_eol_nodes": 1702,
+        "unique_handler_references": 554,
+        "distinct_template_texts": 4733
+      },
+      "subinterface": {
+        "witness_records": 4806,
+        "unique_eol_nodes": 1702,
+        "unique_handler_references": 554,
+        "distinct_template_texts": 4733
+      },
+      "null-interface": {
+        "witness_records": 11,
+        "unique_eol_nodes": 5,
+        "unique_handler_references": 5,
+        "distinct_template_texts": 11
+      },
+      "line": {
+        "witness_records": 298,
+        "unique_eol_nodes": 103,
+        "unique_handler_references": 31,
+        "distinct_template_texts": 298
+      }
+    }
+  },
+  "input_sha256": {
+    "catalogue.jsonl.gz": "05975599dbb412f11a3d3e5c405147138a2c7fde770591f986551e997a5e3179",
+    "nodes.jsonl.gz": "0f3d48cba776c885db9daf8a628f39ef56f8f3aafd7683d4dfa11e7633435d3b"
+  },
+  "counting_rules": [
+    "Terminal means recognized terminal/parameter_terminal action, with no descriptor decode error.",
+    "Global EOL and handler counts deduplicate address-space-qualified references across modes.",
+    "Text counts use exact mode/template text; parameter values, aliases and unselected graph variants are not enumerated.",
+    "Mode membership on nodes is inherited from the source graph; path counts follow the symbolic state model.",
+    "Nodes, definitions, template text and actual executable command availability are separate measures."
+  ]
+}

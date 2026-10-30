@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.3.2'
+VERSION='0.3.3'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','check_tutorial_assets.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -43,6 +43,8 @@ def assemble():
         copies[source]=SKILL/'references/library'/source.relative_to(ROOT)
     for source in (ROOT/'analysis/c8000v-26.01.02/cli').iterdir():
         if source.is_file():copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02/cli'/source.name
+    for source in (ROOT/'analysis/c8000v-26.01.02').glob('*.json'):
+        copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02'/source.name
     docs={p:SKILL/'references/library/docs'/p.name for p in (ROOT/'docs').glob('*.md')}
     docs[ROOT/'iosd二进制文件结构描述.md']=SKILL/'references/library/iosd二进制文件结构描述.md'
     docs[ROOT/'如何调试iosd.md']=SKILL/'references/library/如何调试iosd.md'
