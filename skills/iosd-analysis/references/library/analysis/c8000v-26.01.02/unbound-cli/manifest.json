@@ -1,0 +1,94 @@
+{
+  "identity": {
+    "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+    "imagebase": 93824992231424,
+    "source": "saved paused debugger memory"
+  },
+  "verified_cohort": 9455,
+  "categories": {
+    "additional_config_mode_root": 3057,
+    "no_acquired_mode_or_registration_path": 314,
+    "config_static_slot_creation_candidate": 1479,
+    "config_candidate_registration_edge": 3556,
+    "registration_fragment_without_acquired_mode_path": 928,
+    "bound_fragment_without_acquired_mode_path": 16,
+    "pending_fragment_without_mode_path": 92,
+    "additional_other_mode_root": 13
+  },
+  "models": {
+    "observed_connections": {
+      "records": 9880,
+      "covered_eols": 3057,
+      "target_eols": 3057,
+      "stop_reasons": {
+        "exhausted_modeled_states": 207
+      },
+      "dropped_records": 0,
+      "unprocessed_roots": 0
+    },
+    "static_slot_creation_candidates": {
+      "records": 4622,
+      "covered_eols": 1479,
+      "target_eols": 1479,
+      "stop_reasons": {
+        "exhausted_modeled_states": 70
+      },
+      "dropped_records": 0,
+      "unprocessed_roots": 0
+    },
+    "conditional_registration_candidates": {
+      "records": 11138,
+      "covered_eols": 3556,
+      "target_eols": 3556,
+      "stop_reasons": {
+        "exhausted_modeled_states": 23
+      },
+      "dropped_records": 0,
+      "unprocessed_roots": 0
+    },
+    "other_mode_connections": {
+      "records": 13,
+      "covered_eols": 13,
+      "target_eols": 13,
+      "stop_reasons": {
+        "exhausted_modeled_states": 7
+      },
+      "dropped_records": 0,
+      "unprocessed_roots": 0
+    }
+  },
+  "covered_original_cohort_eols": 8105,
+  "cohort_without_mode_local_witness": 1350,
+  "artifact_sha256": {
+    "parser-modes.json": "1132a0c4a126948ad0d2715ac9be4193072c38c80a190ef8fe04a764753c22bb",
+    "unbound-cli/conditional_registration_candidates.jsonl.gz": "0d46722ecd2d555788194dcac1ee13e76cf311331ffd553c4e6f25d3c61e85c8",
+    "unbound-cli/diagnostics.json": "16877fc645897577da2ce0b3ffd3a75d05bc098b307b76e936480f7b5073eff5",
+    "unbound-cli/extra-nodes.jsonl.gz": "0c9dddddc643c063dcf795cc6751ad76d0406d9d597197cb2073b1f98cb0060d",
+    "unbound-cli/mode-coverage.json": "f89dccd311d275cf91191b99742ae6fd3b1360337a577ce8ec8b83c950859bd3",
+    "unbound-cli/observed_connections.jsonl.gz": "62ecda59d087567158e56b715458fa1e4d99494dbcc6c92bef59e78f959b4be1",
+    "unbound-cli/other_mode_connections.jsonl.gz": "fb44c4f7bb7754570508fa235ba3810d2a9fb7840d6ff05db2ace88c676d6b5b",
+    "unbound-cli/path-frontiers.jsonl.gz": "a4ef638d93ba8a12ee8e3d3f70380e354f892b63b24d9d0b8edb2758ad8d5196",
+    "unbound-cli/path-summary.json": "a8a24c3ec325328d87581f27a4a983e91c503312ffd449a85e871fc6435f23b6",
+    "unbound-cli/registration-gaps.json": "e75394d7bdc7b0621658ce22c07b47c2f55607e40d23b7a00de8df81b7e4cdcb",
+    "unbound-cli/slots.json.gz": "2cf4d58ecfc545fd1da167d34c479c0bb2dff7720c808d2e9a6132161706e0b9",
+    "unbound-cli/static-link-gaps.json": "1fdc9f78ea1c78bebb9e656c9f3f2af774e908cbc041725bc4bba3ecce73e0d4",
+    "unbound-cli/static_slot_creation_candidates.jsonl.gz": "ea3002cee598178fd58ac2e74ef3dfc63c17ac021ab22bdebbbe909be63c2739",
+    "unbound-cli/summary.json": "1e514f45d5aaa2db7d57cffe40fc3401a5e58d6bd06d73895c011b5a4392c237",
+    "unbound-cli/terminals.jsonl.gz": "0996f2cd1824c863f644147822cc7adc0f1d0ecf872a52d8cac6d89a04a6f6a3"
+  },
+  "interpretation_source_sha256": {
+    "iosd_helper/parser_modes.py": "9856fac4abc26adb8d12b27f7716daf77334f3ec363722ad63dd66f2dba06621",
+    "iosd_helper/unbound_cli.py": "8ad98aa910d8216072f53878c568e702d83d8845094a927816231e37caa15bd2",
+    "iosd_helper/ida_lifecycle.py": "bd5bf4b69f486390ffd8d6549e84b02e517143f52d43ece3f57f6c2622658802",
+    "iosd_helper/runtime_grammar.py": "958f30d1ad2c5d3f6a2ee404f6466d5d336221770215dda5f6057c08546cc316",
+    "iosd_helper/grammar_semantics.py": "31066b426e08e8b09e58ada7e11777193812816ebea425fa1240a8caf0c62e9a",
+    "iosd_helper/syntax_paths.py": "6b6db03f31de5d2b4b6cb6373cd75e37822f645fd14eac6bfde1e51d3952dfe9",
+    "tools/recover_parser_modes.py": "d7de91188514a7835c1fe3de50c033c9fdcbbcb8825509baaf1376ad2282f5f3",
+    "tools/extend_saved_mode_roots.py": "f905bf2fb64fcfdd415b5f2ce744ffd83b0fb9049630e19850ddfa7e47410947",
+    "tools/analyze_unbound_cli.py": "f8f797e1acd971a75079f080abf96ac17173072ee7863e039a587ee30d8555be",
+    "tools/recover_unbound_paths.py": "89ebcc10717ea2ce4660d5c0569bd00949f727a422079a9d27c69479c1376a75",
+    "tools/finalize_cli_investigation.py": "88ade98eae77c9237ab22526acff043f4808f85648c0e2dcfa9aa96fbffb16d8",
+    "profiles/parser_modes_26_01_02.json": "a78d9016d41ec21376b08fe838c5ede1f2d5f1ca2a4e5c375f5c0c8196320f7c"
+  },
+  "scope": "Source/hash and exact cohort/count checks; conditions and target code were not executed"
+}

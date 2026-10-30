@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+    "imagebase": 93824992231424,
+    "source": "saved paused debugger memory"
+  },
+  "unresolved_registration_subgroups": {
+    "static_key_creation_seen_without_mode_path": 69,
+    "key_creation_not_in_this_mode_caller_acquisition": 859
+  },
+  "other_mode_candidates": [
+    {
+      "name": "filter",
+      "prompt": null,
+      "parent": null,
+      "cohort_eols": 7
+    },
+    {
+      "name": "pm-delay-profile-advertisement-accelerated",
+      "prompt": "config-pm-dm-intf-adv-acc",
+      "parent": null,
+      "cohort_eols": 1
+    },
+    {
+      "name": "pm-delay-profile-advertisement-periodic",
+      "prompt": "config-pm-dm-intf-adv-per",
+      "parent": null,
+      "cohort_eols": 1
+    },
+    {
+      "name": "pm-delay-profile-srpol-probe",
+      "prompt": "config-pm-dm-srpol-probe",
+      "parent": null,
+      "cohort_eols": 1
+    },
+    {
+      "name": "delay-profile-srpol-probe-protocol",
+      "prompt": "config-pm-dm-srpol-probe-protocol",
+      "parent": "pm-delay-profile-srpol-probe",
+      "cohort_eols": 1
+    },
+    {
+      "name": "delay-profile-srpol-probe-sweep",
+      "prompt": "config-pm-dm-srpol-probe-sweep",
+      "parent": "pm-delay-profile-srpol-probe",
+      "cohort_eols": 1
+    },
+    {
+      "name": "delay-profile-srpol-liveness",
+      "prompt": "config-pm-dm-srpol-live",
+      "parent": null,
+      "cohort_eols": 1
+    }
+  ],
+  "notes": [
+    "These are cohort subgroup counts, not the total runtime pending list or actual availability.",
+    "Static creation sites are limited to the acquired mode-factory callers; other callers remain uninspected."
+  ]
+}

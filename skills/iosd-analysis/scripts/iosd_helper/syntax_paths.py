@@ -237,7 +237,8 @@ def semantic_options(node, state, graph):
 
 
 def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled, record_sink=None):
-    nodes = {node["address"]: node for node in graph["nodes"]}
+    nodes = graph.get('_nodes_by_address')
+    if nodes is None:nodes = {node["address"]: node for node in graph["nodes"]}
     settings = graph.get("path_analysis", {})
     initial = tuple(settings.get("initial_normal_cli_state", [1, 0, 0]))
     root = number(definition["root"])

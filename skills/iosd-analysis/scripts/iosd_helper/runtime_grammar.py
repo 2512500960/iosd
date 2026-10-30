@@ -40,7 +40,7 @@ class CapturedPages:
         return b''.join(chunks)
 
 
-def reconstruct_runtime_graph(memory,static_graph,base,linkage,max_nodes=250000,keyword_gates=(),option_getters=None,predicate_models=None):
+def reconstruct_runtime_graph(memory,static_graph,base,linkage,max_nodes=250000,keyword_gates=(),option_getters=None,predicate_models=None,stop_node_addresses=()):
     actions={a['opcode']:{**a,'address':base+a['address'],'function':base+a['function'] if a['function'] else 0}
              for a in static_graph['action_registry']}
     dispatch=[]
@@ -64,9 +64,13 @@ def reconstruct_runtime_graph(memory,static_graph,base,linkage,max_nodes=250000,
             field='anchor' if chain['name']=='dynamic_parser_linkage' else 'fragment'
             target=record['fields'][field]['value']
             if target and target not in queued:queue.append(target);queued.add(target)
-    nodes=[];edges=[]
+    nodes=[];edges=[];stops=set(stop_node_addresses);reused=set()
     while queue and len(nodes)<max_nodes:
-        ea=queue.popleft();row={'address':ea,'status':'unresolved','handler_candidate':None,'source':'saved-debugger-pages'}
+        ea=queue.popleft()
+        if ea in stops:
+            reused.add(ea)
+            continue
+        row={'address':ea,'status':'unresolved','handler_candidate':None,'source':'saved-debugger-pages'}
         if 0<=ea-base<0x50000000:row['image_rva']=ea-base
         nodes.append(row)
         try:raw=memory.read(ea,40)
@@ -138,6 +142,7 @@ def reconstruct_runtime_graph(memory,static_graph,base,linkage,max_nodes=250000,
             'mode_evidence':static_graph.get('mode_evidence',{}),'path_analysis':settings,
             'stop_reason':'node_limit' if queue else 'exhausted_acquired_structural_targets',
             'pending_addresses':list(queue),'warning':'Observed connections plus symbolic conditions; not a list of commands guaranteed executable',
+            'reused_existing_node_addresses':sorted(reused),
             'runtime_action_dispatch':dispatch,
             'pointer_serialization':'runtime_raw_hex is original; raw_hex has only accept/alternate converted to little-endian VA for symbolic interpretation'}
 

@@ -22,6 +22,18 @@ CDL/XML 提供另一组命令线索，不是 iosd parser 的完整替代。CLI h
 
 回答“有多少命令”时，分别报告已取得定义、地址去重的终止节点、EOL/上下文见证和模式/模板文字。当前取得图包含 23,145 个终止定义候选，六模式覆盖 13,690 个不同 EOL；共享 EOL 和 handler 的多条路径分别保存。复算工具为 `scripts/tools/count_cli_catalogue.py`，样本统计见 [CLI 计数](library/analysis/c8000v-26.01.02/cli-counts.json)。整个 ELF 的总量按尚未覆盖的模式、未绑定候选、未知动作与别名范围说明。
 
+## 未关联候选与额外模式入口
+
+基础六模式只覆盖公共入口。调查未关联 EOL 时，先固定候选集合，再从模式 factory 的消费字段和直接调用者恢复 name、prompt、parent、root；相同名称的不同根与未知名称分别保留。名称未知而 parent 已知时，仍使用明确的 parent 关系查找配置家族。
+
+复用 `parser_modes` 解释调用 IR，`runtime_grammar.reconstruct_runtime_graph(..., stop_node_addresses=...)` 从同一历史页面补根并复用旧节点。`unbound_cli` 分别计算历史连接、已捕获槽位上的候选注册、静态槽位创建调用后的候选注册。type-2 安装继续核对 sentinel；缺页保留，历史源与新会话数据按 RVA 和身份对齐。
+
+本样本续查固定的 9,455 个原候选，取得 1,220 条模式定义候选。分模型路径覆盖 8,105 个 EOL，其中 config 三模型分别覆盖 3,057、3,556、1,479 个；1,350 个仍缺模式路径。新数据在 `references/library/analysis/c8000v-26.01.02/unbound-cli/`，详见 [方法与发现](library/docs/iosd未关联命令与配置子模式.md)。
+
+`recover_parser_modes.py`、`extend_saved_mode_roots.py`、`analyze_unbound_cli.py`、`recover_unbound_paths.py` 和 `finalize_cli_investigation.py` 对应各阶段。模式定义在 `parser-modes.json`；各模型的 JSONL gzip 目录可用 `query_cli_catalogue.py` 查询。模式切换命令和创建接口的执行条件另按 handler/调用者证据关联，parent 名称表示模式组织关系。
+
+采集复用 `ida_lifecycle.acquire_batch` 的 factory API 配置。只调查模式调用者时可设置 `collect_small_getter_followups=false`，避免扩展到本次问题以外的 getter；空 ctree parent 记录为未知条件。小批次、独立限额与失败记录沿用当前 MCP 会话规则。
+
 ## 注册与状态
 
 复用 `ida_lifecycle.acquire_batch` 采集调用、赋值和条件 IR，由 `lifecycle.analyze_lifecycle` 离线关联。API 角色由 profile 声明，不把 VPDN 特例写进通用推理。

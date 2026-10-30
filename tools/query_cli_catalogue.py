@@ -8,7 +8,7 @@ def iter_matches(path,mode=None,contains=None):
     with opener(path,'rt',encoding='utf-8') as stream:
         for line in stream:
             row=json.loads(line)
-            if mode and row.get('mode')!=mode:continue
+            if mode and row.get('mode')!=mode and mode not in row.get('mode_aliases',[]):continue
             if contains and contains.lower() not in row.get('syntax_candidate','').lower():continue
             yield row
 

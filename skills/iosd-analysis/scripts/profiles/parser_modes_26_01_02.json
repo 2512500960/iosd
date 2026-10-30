@@ -1,0 +1,13 @@
+{
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "factory_rvas": ["0xDF3BC00", "0xDF3B9B0"],
+  "arguments": {"name": 0, "prompt": 1, "description": 2, "parent": 5, "root": 8},
+  "root_field_offset": "0x50",
+  "link_creation_apis": [
+    {"rva":"0xDEF7BB0","type":1,"key_arg":0,"root_arg":2},
+    {"rva":"0xDEF7D10","type":1,"key_arg":0,"root_arg":1},
+    {"rva":"0xDEF7E60","type":2,"key_arg":0,"root_arg":2}
+  ],
+  "evidence": "Reviewed DF3BC00 factory, DF3B9B0 112-byte allocator and DFF1CF0 core initialization; arguments are zero-based",
+  "scope": "Direct factory call candidates; variable roots, indirect callers, call conditions and current activation remain explicit gaps"
+}

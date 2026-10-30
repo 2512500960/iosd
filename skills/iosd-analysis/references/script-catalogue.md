@@ -8,6 +8,7 @@
 - 注册与状态：`audit_registration_triggers.py` → `collect_lifecycle_evidence.py` → `analyze_lifecycle.py`。ctree 采集与缓存文本导入的证据强度不同。
 - 动态命令图：`probe_ida_debug_state.py` → `probe_runtime_mapping.py` → `capture_debugger_memory.py` / `collect_runtime_pages.py` → `export_runtime_grammar.py` → 选项与报告工具。
 - 保存图的语义细化：`refine_cli_semantics.py` → `recover_saved_cli.py` → `export_cli_analysis.py`；查询现有目录使用 `query_cli_catalogue.py`。
+- 未关联 EOL：`recover_parser_modes.py` → `extend_saved_mode_roots.py` → `analyze_unbound_cli.py` → `recover_unbound_paths.py` → `finalize_cli_investigation.py`；按模式入口、历史连接、候选安装和静态建槽分别保留证据。
 - core：`inspect_core.py`；与实时内存来源分开。
 - 架构：`build_architecture_map.py`；NVGEN：`analyze_nvgen_bindings.py`；EHSA：`build_ehsa_report.py`。这些使用已保存的输入，不能用缺失的历史路径冒充实机结果。
 - CDL：`walk_cdl.py`；作为独立数据源对照，不证明 iosd 命令完整。
@@ -26,6 +27,7 @@
 |---|---|
 | `analyze_lifecycle.py` | Build generic registration/state dependency inventories from saved IR. |
 | `analyze_nvgen_bindings.py` | Compare saved NVGEN descriptors and CLI terminals, without executing callbacks. |
+| `analyze_unbound_cli.py` | Classify a fixed unassigned-EOL cohort using additional mode roots and registration evidence. |
 | `analyze_vpdn.py` | Rebuild the pinned VPDN activation case from saved static evidence. |
 | `audit_registration_triggers.py` | Read bounded direct-call ancestry of registration callers from a matching IDA. |
 | `build_architecture_atlas.py` | Build eight evidence-scoped SVG diagrams and an offline iosd architecture reader. |
@@ -51,7 +53,9 @@
 | `export_cli_analysis.py` | Publish derived CLI metadata from saved analysis without captured bytes or code. |
 | `export_cli_catalogue.py` | Build a standalone searchable HTML inventory from a saved static CLI report. |
 | `export_runtime_grammar.py` | Export observed runtime grammar, static comparison and unresolved frontiers. |
+| `extend_saved_mode_roots.py` | Decode new mode roots from the original saved pages, stopping at known nodes. |
 | `fill_runtime_frontiers.py` | Follow newly discovered missing grammar pages, retaining limits and failures. |
+| `finalize_cli_investigation.py` | Verify a retained-cohort investigation and record derived diagnostics and hashes. |
 | `ida_mcp_client.py` | Small Streamable HTTP MCP client for local IDA validation (Python stdlib). |
 | `import_cached_lifecycle.py` | Import saved decompilations as explicitly heuristic, offline lifecycle IR. |
 | `inspect_core.py` | Inspect one candidate node outside IDA, useful for debugging parser logic. |
@@ -63,7 +67,9 @@
 | `query_cli_catalogue.py` | Query a versioned CLI evidence catalogue without IDA or original Cisco files. |
 | `read_ida_function.py` | Read a complete decompilation through bounded compressed MCP transfers. |
 | `recover_iosd_syntax.py` | Recover mode-scoped syntax witnesses from a saved iosd static graph. |
+| `recover_parser_modes.py` | Recover static mode candidates from saved ctree batches and a verified ELF. |
 | `recover_saved_cli.py` | Recover saved CLI witnesses as a stream and export a compact evidence catalogue. |
+| `recover_unbound_paths.py` | Recover mode-local witnesses for the retained EOL cohort; candidate installations stay separate. |
 | `refine_cli_semantics.py` | Refine a saved CLI graph using hash-verified capture pages; runs entirely offline. |
 | `validate_ida_backend.py` | Run current read-only extraction code in IDA via MCP and retrieve bounded chunks. |
 | `walk_cdl.py` | Audit CDL and export bounded candidate paths, exact DAG counts and raw graph. |

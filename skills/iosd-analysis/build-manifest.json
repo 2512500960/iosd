@@ -1,5 +1,5 @@
 {
-  "version": "0.3.3",
+  "version": "0.4.0",
   "generated": {
     "scripts/iosd_mcp.py": {
       "source": "tools/iosd_mcp.py",
@@ -83,8 +83,8 @@
     },
     "scripts/iosd_helper/ida_lifecycle.py": {
       "source": "iosd_helper/ida_lifecycle.py",
-      "source_sha256": "dac436824832f575bbbb47bf34473cee4ebe2964164ba29dc6d4e9108108a1de",
-      "sha256": "dac436824832f575bbbb47bf34473cee4ebe2964164ba29dc6d4e9108108a1de"
+      "source_sha256": "bd5bf4b69f486390ffd8d6549e84b02e517143f52d43ece3f57f6c2622658802",
+      "sha256": "bd5bf4b69f486390ffd8d6549e84b02e517143f52d43ece3f57f6c2622658802"
     },
     "scripts/iosd_helper/integer_display.py": {
       "source": "iosd_helper/integer_display.py",
@@ -116,6 +116,11 @@
       "source_sha256": "1a55b1577bbb8759532895048192deca64933608d8b4b13cb70eca29a2019cb7",
       "sha256": "1a55b1577bbb8759532895048192deca64933608d8b4b13cb70eca29a2019cb7"
     },
+    "scripts/iosd_helper/parser_modes.py": {
+      "source": "iosd_helper/parser_modes.py",
+      "source_sha256": "9856fac4abc26adb8d12b27f7716daf77334f3ec363722ad63dd66f2dba06621",
+      "sha256": "9856fac4abc26adb8d12b27f7716daf77334f3ec363722ad63dd66f2dba06621"
+    },
     "scripts/iosd_helper/project.py": {
       "source": "iosd_helper/project.py",
       "source_sha256": "7ec9ad322c63a6ce1d31acc65d0f7ff68549434485bada438feab916b49a2e90",
@@ -143,8 +148,8 @@
     },
     "scripts/iosd_helper/runtime_grammar.py": {
       "source": "iosd_helper/runtime_grammar.py",
-      "source_sha256": "8f8ff8d49f3d1cf2773e81110eba577d9919f0a2294158baf2096be195e90922",
-      "sha256": "8f8ff8d49f3d1cf2773e81110eba577d9919f0a2294158baf2096be195e90922"
+      "source_sha256": "958f30d1ad2c5d3f6a2ee404f6466d5d336221770215dda5f6057c08546cc316",
+      "sha256": "958f30d1ad2c5d3f6a2ee404f6466d5d336221770215dda5f6057c08546cc316"
     },
     "scripts/iosd_helper/runtime_linkage.py": {
       "source": "iosd_helper/runtime_linkage.py",
@@ -158,13 +163,18 @@
     },
     "scripts/iosd_helper/syntax_paths.py": {
       "source": "iosd_helper/syntax_paths.py",
-      "source_sha256": "89b0d62f656dc22a91681fe3db6c764d72430b422c93d967874d48039d7e4463",
-      "sha256": "89b0d62f656dc22a91681fe3db6c764d72430b422c93d967874d48039d7e4463"
+      "source_sha256": "6b6db03f31de5d2b4b6cb6373cd75e37822f645fd14eac6bfde1e51d3952dfe9",
+      "sha256": "6b6db03f31de5d2b4b6cb6373cd75e37822f645fd14eac6bfde1e51d3952dfe9"
     },
     "scripts/iosd_helper/syntax_view.py": {
       "source": "iosd_helper/syntax_view.py",
       "source_sha256": "9846ad56fdc610846df1bd4db2a60d5d0b749acb6099f6dbbdcbfae177e09f8c",
       "sha256": "9846ad56fdc610846df1bd4db2a60d5d0b749acb6099f6dbbdcbfae177e09f8c"
+    },
+    "scripts/iosd_helper/unbound_cli.py": {
+      "source": "iosd_helper/unbound_cli.py",
+      "source_sha256": "8ad98aa910d8216072f53878c568e702d83d8845094a927816231e37caa15bd2",
+      "sha256": "8ad98aa910d8216072f53878c568e702d83d8845094a927816231e37caa15bd2"
     },
     "scripts/iosd_helper/__init__.py": {
       "source": "iosd_helper/__init__.py",
@@ -180,6 +190,11 @@
       "source": "tools/analyze_nvgen_bindings.py",
       "source_sha256": "363be74e9af14644f49d02db9ef711a11f8ef57f654570371f6b2329f59e41e6",
       "sha256": "363be74e9af14644f49d02db9ef711a11f8ef57f654570371f6b2329f59e41e6"
+    },
+    "scripts/tools/analyze_unbound_cli.py": {
+      "source": "tools/analyze_unbound_cli.py",
+      "source_sha256": "f8f797e1acd971a75079f080abf96ac17173072ee7863e039a587ee30d8555be",
+      "sha256": "f8f797e1acd971a75079f080abf96ac17173072ee7863e039a587ee30d8555be"
     },
     "scripts/tools/analyze_vpdn.py": {
       "source": "tools/analyze_vpdn.py",
@@ -306,10 +321,20 @@
       "source_sha256": "ec04a27b31e27dcb76e65dae6e078ac9dbe510ebcbbab0db53a4d2bb01455777",
       "sha256": "ec04a27b31e27dcb76e65dae6e078ac9dbe510ebcbbab0db53a4d2bb01455777"
     },
+    "scripts/tools/extend_saved_mode_roots.py": {
+      "source": "tools/extend_saved_mode_roots.py",
+      "source_sha256": "f905bf2fb64fcfdd415b5f2ce744ffd83b0fb9049630e19850ddfa7e47410947",
+      "sha256": "f905bf2fb64fcfdd415b5f2ce744ffd83b0fb9049630e19850ddfa7e47410947"
+    },
     "scripts/tools/fill_runtime_frontiers.py": {
       "source": "tools/fill_runtime_frontiers.py",
       "source_sha256": "eb98486abbaf72e522ef233d8c3eeb15990bf853705846ef2d96a61a3a2a7ee8",
       "sha256": "eb98486abbaf72e522ef233d8c3eeb15990bf853705846ef2d96a61a3a2a7ee8"
+    },
+    "scripts/tools/finalize_cli_investigation.py": {
+      "source": "tools/finalize_cli_investigation.py",
+      "source_sha256": "88ade98eae77c9237ab22526acff043f4808f85648c0e2dcfa9aa96fbffb16d8",
+      "sha256": "88ade98eae77c9237ab22526acff043f4808f85648c0e2dcfa9aa96fbffb16d8"
     },
     "scripts/tools/ida_mcp_client.py": {
       "source": "tools/ida_mcp_client.py",
@@ -353,8 +378,8 @@
     },
     "scripts/tools/query_cli_catalogue.py": {
       "source": "tools/query_cli_catalogue.py",
-      "source_sha256": "8ed5ffce985eaff5ae4809af166a6b6a7c2f415e3dab40fac801e5eaf1acbed4",
-      "sha256": "8ed5ffce985eaff5ae4809af166a6b6a7c2f415e3dab40fac801e5eaf1acbed4"
+      "source_sha256": "3121e953bdead2fa00ab7ef76e3901997603ac1b3db6a79a08c6e96706663434",
+      "sha256": "3121e953bdead2fa00ab7ef76e3901997603ac1b3db6a79a08c6e96706663434"
     },
     "scripts/tools/read_ida_function.py": {
       "source": "tools/read_ida_function.py",
@@ -366,10 +391,20 @@
       "source_sha256": "fb632acf1650e53ca6134348c1402047fb7acd47a03993809e288447a3d4677d",
       "sha256": "fb632acf1650e53ca6134348c1402047fb7acd47a03993809e288447a3d4677d"
     },
+    "scripts/tools/recover_parser_modes.py": {
+      "source": "tools/recover_parser_modes.py",
+      "source_sha256": "d7de91188514a7835c1fe3de50c033c9fdcbbcb8825509baaf1376ad2282f5f3",
+      "sha256": "d7de91188514a7835c1fe3de50c033c9fdcbbcb8825509baaf1376ad2282f5f3"
+    },
     "scripts/tools/recover_saved_cli.py": {
       "source": "tools/recover_saved_cli.py",
       "source_sha256": "68ceeae58e5810a9284c00fb10e7bb7be6098f52250e3ecb4d16e75d335d4198",
       "sha256": "68ceeae58e5810a9284c00fb10e7bb7be6098f52250e3ecb4d16e75d335d4198"
+    },
+    "scripts/tools/recover_unbound_paths.py": {
+      "source": "tools/recover_unbound_paths.py",
+      "source_sha256": "89ebcc10717ea2ce4660d5c0569bd00949f727a422079a9d27c69479c1376a75",
+      "sha256": "89ebcc10717ea2ce4660d5c0569bd00949f727a422079a9d27c69479c1376a75"
     },
     "scripts/tools/refine_cli_semantics.py": {
       "source": "tools/refine_cli_semantics.py",
@@ -430,6 +465,11 @@
       "source": "profiles/nvgen_26_01_02.json",
       "source_sha256": "9606d7ba1831becaad795a79d353e9dd991c56cf08736e25fc641a8908a4ea10",
       "sha256": "9606d7ba1831becaad795a79d353e9dd991c56cf08736e25fc641a8908a4ea10"
+    },
+    "scripts/profiles/parser_modes_26_01_02.json": {
+      "source": "profiles/parser_modes_26_01_02.json",
+      "source_sha256": "a78d9016d41ec21376b08fe838c5ede1f2d5f1ca2a4e5c375f5c0c8196320f7c",
+      "sha256": "a78d9016d41ec21376b08fe838c5ede1f2d5f1ca2a4e5c375f5c0c8196320f7c"
     },
     "scripts/profiles/protocol_paths_26_01_02.json": {
       "source": "profiles/protocol_paths_26_01_02.json",
@@ -681,6 +721,86 @@
       "source_sha256": "6a27a468ba603beea8c2895873447527a5c918569f9a10855e7e36d52a243a99",
       "sha256": "6a27a468ba603beea8c2895873447527a5c918569f9a10855e7e36d52a243a99"
     },
+    "references/library/analysis/c8000v-26.01.02/parser-modes.json": {
+      "source": "analysis/c8000v-26.01.02/parser-modes.json",
+      "source_sha256": "1132a0c4a126948ad0d2715ac9be4193072c38c80a190ef8fe04a764753c22bb",
+      "sha256": "1132a0c4a126948ad0d2715ac9be4193072c38c80a190ef8fe04a764753c22bb"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/conditional_registration_candidates.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/conditional_registration_candidates.jsonl.gz",
+      "source_sha256": "0d46722ecd2d555788194dcac1ee13e76cf311331ffd553c4e6f25d3c61e85c8",
+      "sha256": "0d46722ecd2d555788194dcac1ee13e76cf311331ffd553c4e6f25d3c61e85c8"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/diagnostics.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/diagnostics.json",
+      "source_sha256": "16877fc645897577da2ce0b3ffd3a75d05bc098b307b76e936480f7b5073eff5",
+      "sha256": "16877fc645897577da2ce0b3ffd3a75d05bc098b307b76e936480f7b5073eff5"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/extra-nodes.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/extra-nodes.jsonl.gz",
+      "source_sha256": "0c9dddddc643c063dcf795cc6751ad76d0406d9d597197cb2073b1f98cb0060d",
+      "sha256": "0c9dddddc643c063dcf795cc6751ad76d0406d9d597197cb2073b1f98cb0060d"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/manifest.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/manifest.json",
+      "source_sha256": "6c6303691930c6eabac7f46259029ee6c9f6f86acbc996d87ada12ffcc7bf76b",
+      "sha256": "6c6303691930c6eabac7f46259029ee6c9f6f86acbc996d87ada12ffcc7bf76b"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/mode-coverage.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/mode-coverage.json",
+      "source_sha256": "f89dccd311d275cf91191b99742ae6fd3b1360337a577ce8ec8b83c950859bd3",
+      "sha256": "f89dccd311d275cf91191b99742ae6fd3b1360337a577ce8ec8b83c950859bd3"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/observed_connections.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/observed_connections.jsonl.gz",
+      "source_sha256": "62ecda59d087567158e56b715458fa1e4d99494dbcc6c92bef59e78f959b4be1",
+      "sha256": "62ecda59d087567158e56b715458fa1e4d99494dbcc6c92bef59e78f959b4be1"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/other_mode_connections.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/other_mode_connections.jsonl.gz",
+      "source_sha256": "fb44c4f7bb7754570508fa235ba3810d2a9fb7840d6ff05db2ace88c676d6b5b",
+      "sha256": "fb44c4f7bb7754570508fa235ba3810d2a9fb7840d6ff05db2ace88c676d6b5b"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/path-frontiers.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/path-frontiers.jsonl.gz",
+      "source_sha256": "a4ef638d93ba8a12ee8e3d3f70380e354f892b63b24d9d0b8edb2758ad8d5196",
+      "sha256": "a4ef638d93ba8a12ee8e3d3f70380e354f892b63b24d9d0b8edb2758ad8d5196"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/path-summary.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/path-summary.json",
+      "source_sha256": "a8a24c3ec325328d87581f27a4a983e91c503312ffd449a85e871fc6435f23b6",
+      "sha256": "a8a24c3ec325328d87581f27a4a983e91c503312ffd449a85e871fc6435f23b6"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/registration-gaps.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/registration-gaps.json",
+      "source_sha256": "e75394d7bdc7b0621658ce22c07b47c2f55607e40d23b7a00de8df81b7e4cdcb",
+      "sha256": "e75394d7bdc7b0621658ce22c07b47c2f55607e40d23b7a00de8df81b7e4cdcb"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/slots.json.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/slots.json.gz",
+      "source_sha256": "2cf4d58ecfc545fd1da167d34c479c0bb2dff7720c808d2e9a6132161706e0b9",
+      "sha256": "2cf4d58ecfc545fd1da167d34c479c0bb2dff7720c808d2e9a6132161706e0b9"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/static-link-gaps.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/static-link-gaps.json",
+      "source_sha256": "1fdc9f78ea1c78bebb9e656c9f3f2af774e908cbc041725bc4bba3ecce73e0d4",
+      "sha256": "1fdc9f78ea1c78bebb9e656c9f3f2af774e908cbc041725bc4bba3ecce73e0d4"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/static_slot_creation_candidates.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/static_slot_creation_candidates.jsonl.gz",
+      "source_sha256": "ea3002cee598178fd58ac2e74ef3dfc63c17ac021ab22bdebbbe909be63c2739",
+      "sha256": "ea3002cee598178fd58ac2e74ef3dfc63c17ac021ab22bdebbbe909be63c2739"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/summary.json": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/summary.json",
+      "source_sha256": "1e514f45d5aaa2db7d57cffe40fc3401a5e58d6bd06d73895c011b5a4392c237",
+      "sha256": "1e514f45d5aaa2db7d57cffe40fc3401a5e58d6bd06d73895c011b5a4392c237"
+    },
+    "references/library/analysis/c8000v-26.01.02/unbound-cli/terminals.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/unbound-cli/terminals.jsonl.gz",
+      "source_sha256": "0996f2cd1824c863f644147822cc7adc0f1d0ecf872a52d8cac6d89a04a6f6a3",
+      "sha256": "0996f2cd1824c863f644147822cc7adc0f1d0ecf872a52d8cac6d89a04a6f6a3"
+    },
     "references/library/docs/config关键词选项与条件回调.md": {
       "source": "docs/config关键词选项与条件回调.md",
       "source_sha256": "e10c216f8f2823c7e9e108e9515f5886e820ef15b6bd897417f98fed460a2a6f",
@@ -701,6 +821,11 @@
       "source_sha256": "36abb93986c44099a0e4ee44fb9b7110ad0082d56a9b13debf4791ac223b7de0",
       "sha256": "551f3c2e12463e554fa8180cead5946749223bb3b2228060c542008c4225f57f"
     },
+    "references/library/docs/iosd未关联命令与配置子模式.md": {
+      "source": "docs/iosd未关联命令与配置子模式.md",
+      "source_sha256": "6ab3737fda2ec7e6c50466cf5ccc3d5eb7913bf86d49bec9068586611554c624",
+      "sha256": "54f9a7a0b3a7b7609644fd823fb0938725a880dcdd64878bc821310fecb710a2"
+    },
     "references/library/docs/iosd架构与术语说明.md": {
       "source": "docs/iosd架构与术语说明.md",
       "source_sha256": "7f402fccf2300fc09dd430cba2f697213c3f848f3ee4e7e21dd8df385212172d",
@@ -713,8 +838,8 @@
     },
     "references/library/docs/iosd的CLI挖掘方法.md": {
       "source": "docs/iosd的CLI挖掘方法.md",
-      "source_sha256": "2d69755448d89fd341136dcca404c1a2c451419474a2152d2c9f94c652ec4afa",
-      "sha256": "91677a2781745299d25a59a55796c4dda8e50d37017a3928b31481d591f61e43"
+      "source_sha256": "1c478f735ea0b1f17df5bccf675f1917cb382f9ff67c6e35445dad1e2cf7dfa6",
+      "sha256": "6361bc9357b5de0fbde56ed98d6e7859d9f4e2c807a8fd0b1fe935d14f2ae496"
     },
     "references/library/docs/iosd的EHSA心跳与主备状态机.md": {
       "source": "docs/iosd的EHSA心跳与主备状态机.md",
@@ -768,13 +893,13 @@
     },
     "references/library/如何调试iosd.md": {
       "source": "如何调试iosd.md",
-      "source_sha256": "05de015756fefd8c5ebc5f84159e624484462d509a109fb3143099d0e20f7375",
-      "sha256": "6896a2d0bf628dacddb6c46fbef38b611381ae25e526c0c1ae65fa11426bd83b"
+      "source_sha256": "1c65c9f896a35ef1c3be33f24d03811937be178bd411d3ac905b22d1c4b4175c",
+      "sha256": "9272417f89f867066cccbf3bc0f77310bdb60280268073887ac140dd31d5fa92"
     },
     "references/library/analysis/c8000v-26.01.02/README.md": {
       "source": "analysis/c8000v-26.01.02/README.md",
-      "source_sha256": "3062df1424d21977c71914636781ae3978bff875c00cd3c8bb4b6810bb210e37",
-      "sha256": "9adfe601dc6fe9731a3c690f2dad33fa59bc96afe95bc5667db3ff45cc4d3b1f"
+      "source_sha256": "a0a9ba8459dafbc4f829f59ba97d8b92bab5b5d65bc56aba7da1e14f16e739c3",
+      "sha256": "d4f1f2b3cca6936db4da615ed05331a0c12d72fabfcfd7883b44d2e84cba3f39"
     }
   },
   "notes": "Generated code/docs copies; edit canonical sources and rebuild. No IDA/MCP connection is made by this build."

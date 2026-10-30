@@ -469,7 +469,11 @@ CLI 的具体方法、脚本入口和本版本恢复进度见 [CLI 挖掘方法]
 
 一个终止节点是解析器调用 handler 的入口。同一节点可能由多条语法路径或多个模式共用；普通、`no`、`default` 等上下文也会分别保存路径。全模式的 13,690 是按节点地址去重后的统计，各模式的数值因此存在交集。
 
-另有 **9,455 个终止定义候选尚未归入这六种模式的候选集合**。取得的完整图还有 1,215 个未知/未读节点，其中 config 模式关联 482 个。继续解释这些动作、模式与注册关系，可以扩大路径覆盖。
+在基础六模式统计中，另有 **9,455 个终止定义候选尚未归入所选模式的候选集合**。基础图还有 1,215 个未知/未读节点，其中 config 模式关联 482 个。
+
+这批 9,455 个候选已经继续分析：3,057 个沿新增 config 模式入口取得路径；3,556 个通过已捕获槽位上的候选注册连接；1,479 个还依赖静态槽位创建调用；13 个关联到其他模式入口。以上 8,105 个候选已分别保存模式内路径，其余 1,350 个保留未知关系。
+
+新增模式包括 router、BGP address-family 和 QoS policy-map class 等配置环境。三类 config 模型分别保存 9,880、11,138、4,622 条代表路径，附带注册候选、状态条件、handler 与未知前缀。详细解释与查询入口见 [未关联命令与配置子模式](docs/iosd未关联命令与配置子模式.md)。
 
 以上记录的是当前恢复规模。**整个 ELF 的精确命令总数仍待收敛**：其他模式、别名、共享片段的不同写法和状态依赖分支继续保留在图中。按“模式＋语法模板文字”去重，目前有 72,437 组文字记录，文字相同而条件不同的路径合并到同一文字组。参数的具体取值另按参数规则解释。
 
@@ -515,7 +519,7 @@ python -X utf8 tools/check_skill_release.py
 python -X utf8 tools/check_tutorial_assets.py --bundle
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.3.3.zip`，生成来源与 SHA256 记录在 skill 的 `build-manifest.json`。主入口及核心使用 Python 标准库；部分 HTML 文档工具需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.4.0.zip`，生成来源与 SHA256 记录在 skill 的 `build-manifest.json`。主入口及核心使用 Python 标准库；部分 HTML 文档工具需要 `pip install -r requirements-docs.txt`。
 
 解析代码发生变化时，运行相应单元测试；完整测试入口为 `python -m unittest discover -s tests -q`。
 

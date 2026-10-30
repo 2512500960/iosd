@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.3.3'
+VERSION='0.4.0'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','check_tutorial_assets.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -45,6 +45,9 @@ def assemble():
         if source.is_file():copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02/cli'/source.name
     for source in (ROOT/'analysis/c8000v-26.01.02').glob('*.json'):
         copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02'/source.name
+    for source in (ROOT/'analysis/c8000v-26.01.02/unbound-cli').glob('*'):
+        if source.is_file() and source.suffix in ('.json','.gz'):
+            copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02/unbound-cli'/source.name
     docs={p:SKILL/'references/library/docs'/p.name for p in (ROOT/'docs').glob('*.md')}
     docs[ROOT/'iosd二进制文件结构描述.md']=SKILL/'references/library/iosd二进制文件结构描述.md'
     docs[ROOT/'如何调试iosd.md']=SKILL/'references/library/如何调试iosd.md'
@@ -102,6 +105,7 @@ def assemble():
                '- 注册与状态：`audit_registration_triggers.py` → `collect_lifecycle_evidence.py` → `analyze_lifecycle.py`。ctree 采集与缓存文本导入的证据强度不同。',
                '- 动态命令图：`probe_ida_debug_state.py` → `probe_runtime_mapping.py` → `capture_debugger_memory.py` / `collect_runtime_pages.py` → `export_runtime_grammar.py` → 选项与报告工具。',
                '- 保存图的语义细化：`refine_cli_semantics.py` → `recover_saved_cli.py` → `export_cli_analysis.py`；查询现有目录使用 `query_cli_catalogue.py`。',
+               '- 未关联 EOL：`recover_parser_modes.py` → `extend_saved_mode_roots.py` → `analyze_unbound_cli.py` → `recover_unbound_paths.py` → `finalize_cli_investigation.py`；按模式入口、历史连接、候选安装和静态建槽分别保留证据。',
                '- core：`inspect_core.py`；与实时内存来源分开。',
                '- 架构：`build_architecture_map.py`；NVGEN：`analyze_nvgen_bindings.py`；EHSA：`build_ehsa_report.py`。这些使用已保存的输入，不能用缺失的历史路径冒充实机结果。',
                '- CDL：`walk_cdl.py`；作为独立数据源对照，不证明 iosd 命令完整。',

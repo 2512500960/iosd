@@ -29,6 +29,8 @@ skill 可使用宿主已经连接的 MCP 工具；它不自行创建连接、凭
 | CDP、BGP 等协议的收包、解析和处理归属 | [协议调查](references/protocols.md) |
 | 选择已有采集、解析、导出或报告脚本 | [脚本目录](references/script-catalogue.md) |
 
+已识别 EOL 尚未归入模式时，沿 mode factory 的名称、父模式和根参数补充入口，再分别考察历史连接、候选安装和静态建槽。分组方法与样本结果见 [未关联候选与配置子模式](references/library/docs/iosd未关联命令与配置子模式.md)。
+
 详细的历史分析文档在各参考页链接的 `references/library/` 中。它们记录的是特定样本上的证据及经验；不默认将函数地址、布局和推论推广到其他版本。按当前任务查阅，不一次载入整套文档。
 
 环境准备与整体阅读从 [主教程](references/library/如何调试iosd.md) 进入；已有样本的查询和覆盖范围见 [C8000v 26.01.02 结果](references/library/analysis/c8000v-26.01.02/README.md)。解释对象的字段、职责和处理方向，使用客观陈述。教程保留操作与原理，研究细节按需链接。

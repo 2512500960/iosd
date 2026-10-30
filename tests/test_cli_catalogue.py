@@ -36,3 +36,13 @@ class CliCatalogueTests(unittest.TestCase):
                 for row in rows:stream.write(json.dumps(row)+'\n')
             result=list(iter_matches(path,'configure','INTERNAL'))
             self.assertEqual(result,[rows[0]])
+
+    def test_shared_root_can_be_queried_by_each_mode_alias(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'catalogue.jsonl.gz'
+            row={'mode':'router','mode_aliases':['router','router-variant'],
+                 'syntax_candidate':'priority <number> <cr>','gaps':['unknown guard']}
+            with gzip.open(path,'wt',encoding='utf-8') as stream:
+                stream.write(json.dumps(row)+'\n')
+            self.assertEqual(list(iter_matches(path,'router-variant','priority')),[row])
+            self.assertEqual(list(iter_matches(path,'unrelated')),[])

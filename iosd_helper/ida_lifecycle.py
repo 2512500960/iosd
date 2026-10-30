@@ -147,14 +147,17 @@ def acquire_batch(graph_report, profile, checkpoint=None, audit=None, batch_size
             rows = []
             try:
                 parents = [specific(p) for p in self.parents]
+                if any(p is None for p in parents):
+                    rows.append({'kind':'unknown_guard','reason':'Null ctree parent retained','evaluated':False})
                 for index, parent in enumerate(parents):
+                    if parent is None:continue
                     if parent.op == hr.cit_if:
                         branch = "unresolved"
                         if index + 1 < len(parents):
                             child = parents[index + 1]
-                            if parent.cif.ithen and child.index == parent.cif.ithen.index:
+                            if child is not None and parent.cif.ithen and child.index == parent.cif.ithen.index:
                                 branch = "then"
-                            elif parent.cif.ielse and child.index == parent.cif.ielse.index:
+                            elif child is not None and parent.cif.ielse and child.index == parent.cif.ielse.index:
                                 branch = "else"
                         rows.append({"kind": "if", "expression": serialize(parent.cif.expr), "branch": branch, "evaluated": False})
                     elif parent.op == hr.cit_switch:
@@ -188,7 +191,8 @@ def acquire_batch(graph_report, profile, checkpoint=None, audit=None, batch_size
                     return 0
                 write = bool(parent and parent.op in assignment_ops and parent.x.index == expr.index)
                 parents = [specific(p) for p in self.parents]
-                in_condition = any(p.op == hr.cit_if and
+                in_condition = any(p is not None and p.op == hr.cit_if and
+                                   (parents[i+1] if i+1<len(parents) else expr) is not None and
                                    (parents[i+1] if i+1<len(parents) else expr).index == p.cif.expr.index
                                    for i,p in enumerate(parents))
                 self.events.append({**common, "kind": "global_access", "global_rva": row["rva"], "name": row["name"],
@@ -223,7 +227,7 @@ def acquire_batch(graph_report, profile, checkpoint=None, audit=None, batch_size
                        argument_variables=[int(index) for index in cfunc.argidx])
             # Small no-argument call targets are getter candidates. Inspect
             # their direct users to find pointer stores outside CLI handlers.
-            for event in visitor.events:
+            for event in visitor.events if profile.get('collect_small_getter_followups',True) else ():
                 if event["kind"] != "call" or event.get("target") is None or event.get("args"):
                     continue
                 target = event["target"]
