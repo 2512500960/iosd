@@ -6,6 +6,56 @@ from test_modules import SparseMemory
 
 
 class SemanticsTests(unittest.TestCase):
+    def test_punctuation_and_multiword_keyword_literals_are_preserved(self):
+        for text in ('*',',','test http'):
+            row=self.decode('keyword_action',struct.pack('<QQQ',0x2000,0,0),{0x2000:text.encode()+b'\0'})
+            self.assertEqual(row['keyword_candidate'],text)
+            self.assertEqual(row['path_semantics'],'keyword')
+            self.assertFalse(row['keyword_extra_conditions'][0]['evaluated'])
+            self.assertIn('keyword_gap',row)
+        row=self.decode('keyword_action',struct.pack('<QQQ',0x2000,0,0),{0x2000:b'x\ny\0'})
+        self.assertIn('semantic_error',row)
+
+    def test_time_optional_seconds_and_total_storage(self):
+        row=self.decode('timesec_action',struct.pack('>IIII',100,104,0xffffffff,108)+bytes(8))
+        self.assertEqual(node_title(row),'<hh:mm>')
+        self.assertIsNone(row['parameter']['second_storage_offset'])
+        self.assertEqual(row['parameter']['total_seconds_storage_offset'],108)
+        row=self.decode('timesec_action',struct.pack('>IIII',100,104,108,0xffffffff)+bytes(8))
+        self.assertEqual(node_title(row),'<hh:mm:ss>')
+        self.assertIsNone(row['parameter']['total_seconds_storage_offset'])
+
+    def test_signed_bounds_and_hex_even_wrapper_remain_distinct(self):
+        raw=struct.pack('>IiiI',100,-2147483648,2147483647,0)+bytes(8)
+        row=self.decode('signed_number_action',raw)
+        self.assertEqual(row['parameter']['min'],-2147483648)
+        self.assertEqual(node_title(row),'<signed:-2147483648..2147483647>')
+        raw=struct.pack('>HHI',100,200,0)+bytes(8)+struct.pack('>II',32,0)
+        normal=self.decode('hexdata_action',raw);even=self.decode('hexdata_action_even',raw)
+        self.assertFalse(normal['parameter']['initial_character_run_even_required'])
+        self.assertTrue(even['parameter']['initial_character_run_even_required'])
+        self.assertEqual(even['parameter']['declared_limit'],32)
+        self.assertEqual(node_title(even),'<hex-string>')
+
+    def test_general_keyword_keeps_operation_and_privilege_symbolic(self):
+        raw=bytearray(48);struct.pack_into('<QQQ',raw,0,0x2000,0,0x9000)
+        struct.pack_into('>HH',raw,24,9328,4);struct.pack_into('>QII',raw,32,1,2,0x04000000)
+        row=self.decode('general_keyword_action',raw,{0x2000:b'mode\0'})
+        self.assertEqual(row['keyword_candidate'],'mode')
+        self.assertFalse(row['keyword_extra_conditions'][0]['evaluated'])
+        self.assertTrue(row['effects'][0]['effects_unresolved'])
+        self.assertEqual(row['effects'][0]['storage_offset_candidate'],9328)
+
+    def test_general_number_callback_and_url_keep_unresolved_gates(self):
+        raw=struct.pack('>I',100)+bytes(4)+struct.pack('<QQ',0x9999,0)+struct.pack('>I',8)
+        row=self.decode('gen_number_func_action',raw)
+        self.assertEqual(node_title(row),'<number:dynamic>')
+        self.assertFalse(row['parameter']['bounds_evaluated'])
+        row=self.decode('url_action',bytes(40))
+        self.assertEqual(node_title(row),'<url:dynamic>')
+        self.assertIn('parameter_gap',row)
+        self.assertFalse(row['parameter_condition']['evaluated'])
+
     def test_deprecated_marks_accept_even_without_descriptor(self):
         row = {"payload": 0}
         decode_action_payload(SparseMemory({}), row,
@@ -137,6 +187,11 @@ class SemanticsTests(unittest.TestCase):
         self.assertEqual(row['keyword_state_precondition']['field_offset'],9328)
         self.assertEqual(row['effects'][0]['operation'],'or')
         self.assertEqual(row['keyword_candidate'],'choice')
+        raw.extend((3).to_bytes(4,'big'))
+        row=self.decode('keyword_ortest_mm_action',raw,{0x2000:b'choice\0'})
+        self.assertEqual(row['minimum_match_candidate'],3)
+        self.assertEqual(row['effects'][0]['operation'],'or')
+        self.assertEqual(row['keyword_state_precondition']['field_offset'],9328)
 
     def test_dynamic_bounds_are_not_reported_as_evaluated_and_character_is_literal(self):
         row=self.decode('number_func_action',struct.pack('>I',12)+bytes(4)+struct.pack('<QQ',0x9000,0))

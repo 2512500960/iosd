@@ -1,0 +1,285 @@
+{
+  "identity": {
+    "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+    "imagebase": 93824992231424,
+    "source": "saved paused debugger memory"
+  },
+  "atomic_snapshot": false,
+  "capture_file_count": 69,
+  "captured_utc_range": [
+    "2026-10-29T06:27:08.359974+00:00",
+    "2026-10-29T09:15:38.711732+00:00"
+  ],
+  "interpretation_date": "2026-10-30",
+  "counts": {
+    "nodes": 194435,
+    "reviewed_nodes": 1778,
+    "opaque_resolved": 1771
+  },
+  "nodes_exported": 194435,
+  "edges_original_export": 342907,
+  "refinement_modes": {
+    "exec": {
+      "nodes": 90147,
+      "opaque_before": 1037,
+      "opaque_after": 344,
+      "nodes_with_uncertainty_after": 4421,
+      "reviewed_nodes": 693
+    },
+    "configure": {
+      "nodes": 114510,
+      "opaque_before": 1557,
+      "opaque_after": 482,
+      "nodes_with_uncertainty_after": 6567,
+      "reviewed_nodes": 1082
+    },
+    "interface": {
+      "nodes": 13079,
+      "opaque_before": 150,
+      "opaque_after": 77,
+      "nodes_with_uncertainty_after": 527,
+      "reviewed_nodes": 73
+    },
+    "subinterface": {
+      "nodes": 13079,
+      "opaque_before": 150,
+      "opaque_after": 77,
+      "nodes_with_uncertainty_after": 527,
+      "reviewed_nodes": 73
+    },
+    "null-interface": {
+      "nodes": 33,
+      "opaque_before": 2,
+      "opaque_after": 2,
+      "nodes_with_uncertainty_after": 2
+    },
+    "line": {
+      "nodes": 664,
+      "opaque_before": 19,
+      "opaque_after": 15,
+      "nodes_with_uncertainty_after": 29,
+      "reviewed_nodes": 4
+    }
+  },
+  "paths": {
+    "scope": "Witness per EOL/context, preferring fewer opaque steps then fewer tokens then fewer edges; not exhaustive syntax enumeration",
+    "paths": 73159,
+    "unique_handlers": 5146,
+    "mode_evidence": {},
+    "requested_modes": [
+      "exec",
+      "configure",
+      "interface",
+      "subinterface",
+      "null-interface",
+      "line"
+    ],
+    "unprocessed_modes": [],
+    "registration_overlay_edges": 0,
+    "registrations_without_static_slot": [],
+    "type2_precondition_failures": [],
+    "limits": {
+      "max_states_per_mode": 500000,
+      "max_paths": 150000
+    },
+    "tracked_fields": {
+      "9328": "sense",
+      "9332": "default",
+      "9636": "nvgen"
+    },
+    "initial_state_assumption": [
+      1,
+      0,
+      0
+    ],
+    "runtime_conditions_evaluated": false,
+    "records_streamed": true,
+    "notes": [
+      "Candidate registration edges overapproximate possible installation, not boot order or device availability.",
+      "Only local constant assignments to sense/default/NVGEN are tracked; other state remains symbolic.",
+      "Unknown actions are explicit opaque tokens; callback effects can make a path partial.",
+      "String/number flags and privilege descriptors remain unresolved even on paths without opaque steps."
+    ],
+    "identity": {
+      "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+      "imagebase": 93824992231424,
+      "source": "saved paused debugger memory"
+    },
+    "source": "Saved capture series interpreted offline",
+    "node_refinement_sha256": "1b6ee6b23851bd57c91ceff2e6b26aee74c438154767734787f9502047a6969b",
+    "catalogue_sha256": "05975599dbb412f11a3d3e5c405147138a2c7fde770591f986551e997a5e3179",
+    "handler_image_executable_rva_ranges": [
+      [
+        186934176,
+        862003808
+      ]
+    ],
+    "catalogue_records": 73159,
+    "catalogue_bytes": 7015962
+  },
+  "modes": [
+    {
+      "mode": "exec",
+      "prompt": "exec",
+      "root": 93825865787600,
+      "settled_states": 204987,
+      "discovered_states": 204987,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 25423,
+      "unique_eols": 9234,
+      "unique_handlers": 3430,
+      "syntax_candidates_without_opaque_steps": 12213,
+      "frontier_states": 12,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    },
+    {
+      "mode": "configure",
+      "prompt": "config",
+      "root": 93825865787640,
+      "settled_states": 328504,
+      "discovered_states": 328504,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 37815,
+      "unique_eols": 11985,
+      "unique_handlers": 4614,
+      "syntax_candidates_without_opaque_steps": 34852,
+      "frontier_states": 11,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    },
+    {
+      "mode": "interface",
+      "prompt": "config-if",
+      "root": 93825865787680,
+      "settled_states": 32314,
+      "discovered_states": 32314,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 4806,
+      "unique_eols": 1702,
+      "unique_handlers": 554,
+      "syntax_candidates_without_opaque_steps": 4479,
+      "frontier_states": 8,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    },
+    {
+      "mode": "subinterface",
+      "prompt": "config-subif",
+      "root": 93825865787680,
+      "settled_states": 32314,
+      "discovered_states": 32314,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 4806,
+      "unique_eols": 1702,
+      "unique_handlers": 554,
+      "syntax_candidates_without_opaque_steps": 4479,
+      "frontier_states": 8,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    },
+    {
+      "mode": "null-interface",
+      "prompt": "config-if",
+      "root": 93825865787720,
+      "settled_states": 80,
+      "discovered_states": 80,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 11,
+      "unique_eols": 5,
+      "unique_handlers": 5,
+      "syntax_candidates_without_opaque_steps": 11,
+      "frontier_states": 6,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    },
+    {
+      "mode": "line",
+      "prompt": "config-line",
+      "root": 93825865787760,
+      "settled_states": 1588,
+      "discovered_states": 1588,
+      "stop_reason": "exhausted_modeled_states",
+      "witnesses": 298,
+      "unique_eols": 103,
+      "unique_handlers": 31,
+      "syntax_candidates_without_opaque_steps": 287,
+      "frontier_states": 7,
+      "frontier_list_truncated": false,
+      "pending_modeled_states": 0
+    }
+  ],
+  "mode_roots": [
+    {
+      "name": "exec",
+      "prompt": "exec",
+      "root": "0x55558966a8d0",
+      "parent": null,
+      "evidence_call": "0x555563545d84"
+    },
+    {
+      "name": "configure",
+      "prompt": "config",
+      "root": "0x55558966a8f8",
+      "parent": null,
+      "evidence_call": "0x555563545ef3"
+    },
+    {
+      "name": "interface",
+      "prompt": "config-if",
+      "root": "0x55558966a920",
+      "parent": "configure",
+      "evidence_call": "0x555563545f5e"
+    },
+    {
+      "name": "subinterface",
+      "prompt": "config-subif",
+      "root": "0x55558966a920",
+      "parent": "configure",
+      "evidence_call": "0x555563545fb8"
+    },
+    {
+      "name": "null-interface",
+      "prompt": "config-if",
+      "root": "0x55558966a948",
+      "parent": "configure",
+      "evidence_call": "0x555563546011"
+    },
+    {
+      "name": "line",
+      "prompt": "config-line",
+      "root": "0x55558966a970",
+      "parent": "configure",
+      "evidence_call": "0x555563546078"
+    }
+  ],
+  "static_registration_status": {
+    "root_connected_conditionally": 2302,
+    "not_observed_connected": 2113,
+    "observed_pending": 149
+  },
+  "action_dispatch": {
+    "verified_entries": 314,
+    "initialized_entries": 219,
+    "newly_resolved_from_static_zero": 33
+  },
+  "provenance": {
+    "input_sha256": {
+      "nodes": "590982f3a74f8df6ce6c116bb6fc2db7e78cbefadb8b9264e4ac8c7c4bb338a9",
+      "summary": "78bc25afcbef006fc0837c774ef8da07c6a7c004ef0a0501089a559ecb7fbba3",
+      "profile": "ab229d31dceb6e5d7689ba8504b9f09362eaf56db8d68ba8dbe2d8855ce19d14"
+    },
+    "source_sha256": {
+      "iosd_helper/grammar_semantics.py": "31066b426e08e8b09e58ada7e11777193812816ebea425fa1240a8caf0c62e9a",
+      "iosd_helper/syntax_paths.py": "89b0d62f656dc22a91681fe3db6c764d72430b422c93d967874d48039d7e4463",
+      "iosd_helper/cli_refinement.py": "80d9a63183663ca6b0f210de6c33fe4d8f999dd7abc363d7a9fecc0d936d5847"
+    },
+    "registration_source_sha256": "e50d9985873c936de6647de5f779086a94656aed1bc3caf23c4df5f5711ddabc"
+  },
+  "artifact_sha256": {
+    "catalogue.jsonl.gz": "05975599dbb412f11a3d3e5c405147138a2c7fde770591f986551e997a5e3179",
+    "gaps.json": "fa6dca3979bba21d4152fa8ee9f2dda2e1644885739751e90886272be819ce7c",
+    "nodes.jsonl.gz": "0f3d48cba776c885db9daf8a628f39ef56f8f3aafd7683d4dfa11e7633435d3b",
+    "registrations.json.gz": "7408f0471dcc43ee6da189bf3120a927478d1defc6d885fdc6e8da90a0adf5c1"
+  }
+}

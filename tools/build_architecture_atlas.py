@@ -23,7 +23,7 @@ def wrapped(text,columns):
 
 
 class Diagram:
-    def __init__(self,key,title,height=520,subtitle='关系示意；箭头按文字解释，不推断全局包含或调用关系'):
+    def __init__(self,key,title,height=520,subtitle='关系示意；边上的文字说明连接方式，具体实现沿证据复核'):
         self.key=key;self.title=title;self.width=1120;self.height=height;self.nodes={};self.items=[]
         self.text(24,35,title,24,bold=True)
         self.text(24,64,subtitle,15,muted=True)
@@ -77,7 +77,7 @@ def figures(layout):
     if layout['identity']['input_md5']!=MD5 or layout['section_overlaps']:
         raise ValueError('Atlas requires matching non-overlapping ELF layout')
     result={};mib=lambda n:n/1048576
-    d=Diagram('elf','01 · 文件大小、导航元数据与内存不是同一个量',590,'原始 ELF 离线测量；MiB = 1,048,576 字节；尺寸不代表组件或协议数量')
+    d=Diagram('elf','01 · 文件构成与加载后的内存',590,'原始 ELF 离线测量；MiB = 1,048,576 字节；按各类内容统计文件占用')
     d.text(24,108,'原始文件  %.2f MiB'%mib(layout['identity']['file_size']),20,bold=True)
     colors=['#426f98','#72a5bf','#8cbbad','#bdc7d2','#e4e9ee']
     labels=['可执行节','已分配只读数据','已分配可写数据','未分配元数据','头表、对齐等']
@@ -92,13 +92,13 @@ def figures(layout):
     d.zone(24,300,520,152,'可执行内容有不同区域和变体')
     d.text(40,359,'.text 311.40 MiB  /  CRPGC_text0 331.81 MiB',16)
     d.text(40,390,'BGP 有条件进入另一代码区的具体实例。',16)
-    d.text(40,421,'不能外推为全节用途或全部函数的对应关系。',15,muted=True)
+    d.text(40,421,'其余函数的用途和对应关系沿具体入口分析。',15,muted=True)
     d.zone(570,300,526,152,'很小的元数据可以成为导航入口')
     d.text(586,359,'subsystem 区 0.52 MiB → 5,692 条记录',17)
     d.text(586,390,'module header 480 B / link 264 B',16)
-    d.text(586,421,'8,866 个 .btrace* 名称节 ≠ 8,866 个业务模块',15,muted=True)
-    d.text(24,501,'内存另算：NOBITS 没有对应大小的文件载荷；PT_LOAD p_memsz 合计约 1,109.64 MiB。',17)
-    d.text(24,535,'不是 RSS，也不包括所有后续堆、栈、共享库；core 缺页不能按 ELF 零初始化规则补齐。',15,muted=True)
+    d.text(586,421,'8,866 个 .btrace* 名称节合计约 5.54 MiB',15,muted=True)
+    d.text(24,501,'内存另算：NOBITS 按内存大小记录；PT_LOAD p_memsz 合计约 1,109.64 MiB。',17)
+    d.text(24,535,'RSS 取决于页面驻留；进程还使用堆、线程栈和共享库，core 按已捕获页面读取。',15,muted=True)
     result['01-elf-layout']=d
 
     d=Diagram('views','02 · 四个视角一起解释 iosd',624)
@@ -108,7 +108,7 @@ def figures(layout):
     d.edge('main','so',dashed=True)
     d.box('sub',588,139,'subsystem',['名字、类别、init、属性'],w=236,h=100)
     d.box('module',850,139,'module header / link',['分组、依赖、回调节点'],w=226,h=100)
-    d.text(590,278,'两套机制在启动阶段协作，不自动成为父子目录。',15,muted=True)
+    d.text(590,278,'两套机制在启动阶段协作，各有记录和消费路径。',15,muted=True)
     d.zone(24,326,520,215,'连接与执行设施')
     d.box('reg',42,373,'registry / 槽',['登记入口，分发者以后消费'],w=236,h=102)
     d.box('exec',306,373,'队列、task、pthread',['待处理对象与执行上下文'],w=220,h=102)
@@ -117,10 +117,10 @@ def figures(layout):
     d.box('input',588,373,'CLI / 报文 / 事件',['各有入口、解析与条件'],w=236,h=102)
     d.box('state',850,373,'配置与运行状态',['对象、定时器、缓存、输出'],w=226,h=102,tone='state')
     d.edge('input','state')
-    d.text(24,585,'虚线：可能跨文件或通过登记连接；不是本图已经证明的完整调用或调度关系。',15,muted=True)
+    d.text(24,585,'虚线表示跨文件或登记连接；业务输入再沿消费路径进入状态处理。',15,muted=True)
     result['02-architecture-views']=d
 
-    d=Diagram('init','03 · 启动编排分别推进两套初始化机制',690,'样本局部关系；所有地址为 RVA；类别编号不是初始化顺序')
+    d=Diagram('init','03 · 启动编排分别推进两套初始化机制',690,'样本局部关系；地址为 RVA；类别与实际初始化顺序分别记录')
     d.box('entry',24,102,'ELF / libc 启动',['从入口进入 main 包装器'],w=242,h=104,detail='B2463A0 → B246530')
     d.box('proxy',304,102,'运行时代理',['接收应用回调'],w=242,h=104,detail='__be_pcohort_main_proxy')
     d.box('system',584,102,'应用回调与系统初始化',['成功分支准备运行环境'],w=242,h=104,detail='B2464A0 → D7B7690')
@@ -133,12 +133,12 @@ def figures(layout):
     d.edge('discover','modules',side='down',via=[(705,393),(778,393)])
     d.text(154,568,'5,692 条候选记录；13 类',18,bold=True)
     d.text(598,568,'15 个 header；11 条 link',18,bold=True)
-    d.text(154,601,'分类用于安排初始化，不自动创建线程。',15,muted=True)
+    d.text(154,601,'类别用于安排初始化，init 执行具体准备工作。',15,muted=True)
     d.text(598,601,'已确认 memtest 归入 level_protocol 分组。',15,muted=True)
-    d.text(24,653,'不能添加的边：level_protocol → 包含所有 Protocol 类别 subsystem（目前没有这样的成员证据）。',15,muted=True)
+    d.text(24,653,'module 成员关系与 subsystem 分类各按本身的记录确定，并在启动路径中共同推进。',15,muted=True)
     result['03-initialization']=d
 
-    d=Diagram('registration','04 · 初始化时登记，收到输入时才消费',588,'调查模式示意，不是所有协议都经过同一队列；虚线表示保存/读取函数指针，不是直接调用')
+    d=Diagram('registration','04 · 初始化时登记，收到输入时消费',588,'关系示意；虚线表示函数指针的登记与读取，实际输入按对应接口分发')
     d.box('init',24,105,'功能 init',['准备状态与登记入口'])
     d.box('registry',304,105,'registry：key → callback',['保存实现的连接点'],w=300)
     d.edge('init','registry',label=('登记',270,135),dashed=True)
@@ -151,10 +151,10 @@ def figures(layout):
     d.box('consumer',864,464,'消费者 / 状态更新',['task、事件循环或同步调用'],w=232,tone='state')
     d.edge('callback','queue',side='down',label=('可能入队',713,433));d.edge('queue','consumer')
     d.text(24,494,'需要两端证据：谁写入登记，谁查找并调用。',17)
-    d.text(24,526,'名字和普通 xref 都不足以代替这条关系。',15,muted=True)
+    d.text(24,526,'名字与普通 xref 用于定位登记端和消费端的调查入口。',15,muted=True)
     result['04-registration-and-input']=d
 
-    d=Diagram('cdp','05 · CDP：接收与解析之间有队列和内部 task',660,'样本局部实现；虚线表示登记关系或未闭合的输入边界；不是一条当前执行轨迹')
+    d=Diagram('cdp','05 · CDP 接收 队列与内部 task',660,'样本局部实现；虚线表示登记关系；队列将接收与后续解析连接起来')
     d.box('init',24,103,'CDP 初始化',['有条件地创建内部 task'],w=246,h=104,detail='CD878F0 / CD894C0')
     d.box('task',316,103,'CDP Protocol 入口',['创建队列并登记键 65'],w=246,h=104,detail='CD89F00')
     d.box('callback',24,305,'接收回调',['接口、启用、队列容量检查'],w=246,h=104,detail='CD8AB90')
@@ -162,14 +162,14 @@ def figures(layout):
     d.box('loop',608,305,'task 事件循环取包',['取出报文后再检查上下文'],w=246,h=104,detail='CD89F00 / D789490')
     d.box('parser',608,493,'CDP 头 / TLV 检查',['版本、校验和、长度边界'],w=246,h=104,detail='CD8AF90')
     d.box('state',874,493,'邻居与计时状态',['缓存更新及扩展回调'],w=222,h=104,tone='state',detail='CD97B10 / CDAB1A0')
-    d.edge('init','task');d.edge('task','callback',side='down',dashed=True,via=[(439,253),(147,253)],label=('登记 (65, callback)，65 不是 IP 协议号',197,239))
+    d.edge('init','task');d.edge('task','callback',side='down',dashed=True,via=[(439,253),(147,253)],label=('登记键 65 与 callback',197,239))
     d.edge('callback','queue');d.edge('queue','loop');d.edge('loop','parser',side='down');d.edge('parser','state')
     d.text(24,488,'前面仍缺：平台入包到该回调的全部消费端。',16,muted=True)
     d.text(24,523,'后面仍缺：全部扩展 TLV / 后处理回调。',16,muted=True)
-    d.text(24,625,'不是每个 init 回调都收包：CD9AE70 按接口清理邻居记录，属于另一条路径。',16)
+    d.text(24,625,'另一项 init 回调 CD9AE70 按接口清理邻居记录，与接收路径共同维护邻居状态。',16)
     result['05-cdp-path']=d
 
-    d=Diagram('configuration','06 · CLI 修改状态，NVGEN 从状态生成文本',634,'关系示意 + hostname 的已核对案例；共享 handler 不代表所有命令都采用这一结构')
+    d=Diagram('configuration','06 · CLI 修改状态，NVGEN 从状态生成文本',634,'关系示意与 hostname 案例；同一 handler 根据上下文分别执行输入和生成分支')
     d.box('cli',24,112,'CLI 文本输入',['关键字与参数'])
     d.box('parse',304,112,'parser / CSB',['匹配路径、设置上下文'])
     d.box('handler',584,112,'业务 handler 输入分支',['校验并修改配置状态'],h=108,detail='hostname: E0E6A00')
@@ -180,20 +180,20 @@ def figures(layout):
     d.box('generate',584,334,'业务 handler 生成分支',['读取相关状态并决定输出'],h=108,detail='hostname 同一 handler / selector')
     d.box('text',864,334,'配置文本输出',['公共输出封装 / 句柄'],w=232,h=108,detail='E0D9CD0 → E0D8B20')
     d.edge('request','engine');d.edge('engine','generate');d.edge('generate','text')
-    d.edge('state','generate',side='down',via=[(980,278),(704,278)],label=('读取状态；不重放原始命令行',755,261))
+    d.edge('state','generate',side='down',via=[(980,278),(704,278)],label=('读取组件保存的配置状态',755,261))
     d.text(24,504,'接口缓存是有条件的生成优化：资格满足 + 命中 → 复用；否则生成并在相关路径保存。',17)
-    d.text(24,547,'生成文本 ≠ 全部命令定义；默认状态、EXEC、未登记与隐藏路径要分别保留。',17)
-    d.text(24,590,'CSB 连接解析上下文，不是装着所有组件配置状态的统一数据库。',15,muted=True)
+    d.text(24,547,'生成回调结合默认值和当前状态组织文本；命令定义、登记与门控保存在语法分析中。',17)
+    d.text(24,590,'CSB 保存本次解析或生成的上下文，业务对象保存相应配置状态。',15,muted=True)
     result['06-cli-and-nvgen']=d
 
-    d=Diagram('contexts','07 · pthread、IOS task、队列和函数是不同对象',650,'按已有创建/循环证据解释；不把某个业务 task 强行分配给一条 Linux 线程')
+    d=Diagram('contexts','07 · Linux 线程 IOS task 与队列协作',650,'按已有创建与循环证据解释执行上下文、工作对象和业务回调')
     d.zone(24,102,1072,205,'同一个 iosd Linux 进程内：线程可跨主 ELF 和共享库执行代码')
     d.box('ios',42,151,'IOS 主线程',['已有线程被登记'],w=228,h=100)
     d.box('io',300,151,'Fastpath / Packet',['库中事件循环与 I/O 分发'],w=244,h=100)
     d.box('aux',574,151,'Auxiliary / Sim Aux',['请求队列、回调、通知'],w=244,h=100)
     d.box('workers',848,151,'Worker 线程池',['工作队列 → job 函数'],w=230,h=100)
     d.zone(24,355,516,205,'IOS 内部调度设施')
-    d.box('tasks',42,404,'内部 task 的实例',['CDP Protocol / EHSA monitor','有创建证据，不等于 pthread'],w=480,h=121)
+    d.box('tasks',42,404,'内部 task 的实例',['CDP Protocol / EHSA monitor','由 IOS 内部调度设施管理'],w=480,h=121)
     d.zone(570,355,526,205,'一个已核对的跨文件协作例子')
     d.box('soloop',588,404,'so 中 Auxiliary 循环',['等待请求、取得工作'],w=228,h=121)
     d.box('maincb',846,404,'主 ELF 接口与回调',['出队接口与业务代码','可在另一个文件中'],w=230,h=121)
@@ -204,7 +204,7 @@ def figures(layout):
     d=Diagram('ehsa','08 · EHSA：检测失联、推进状态、请求切换是不同阶段',650,'样本局部实现；虚线保留跨平台/外部消费端缺口；编号按所属消息或事件空间解释')
     d.box('receive',24,111,'KEEPALIVE 接收',['类型 30 → 登记回调'],w=246,h=108,detail='D51E0E0 → D512810')
     d.box('monitor',316,111,'刷新监测 / peer monitor',['定时或计数路径'],w=246,h=108,detail='D511EE0 / D510B80')
-    d.box('filter',608,111,'失联事件过滤与策略',['raw event 7 不直接等于 FSM 索引'],w=274,h=108,detail='D50F450')
+    d.box('filter',608,111,'失联事件过滤与策略',['raw event 与 FSM major/minor 分别记录'],w=274,h=108,detail='D50F450')
     d.edge('receive','monitor');d.edge('monitor','filter',label=('超时相关分支',571,96))
     d.box('fsm',608,325,'FSM 队列与内部 task',['当前状态 + major/minor → 动作'],w=274,h=108,detail='D519FC0 / D51A800')
     d.box('platform',316,325,'平台策略回调',['由平台 init 有条件安装'],w=246,h=108,detail='D52C3A0 / D52D8D0')
@@ -213,8 +213,8 @@ def figures(layout):
     d.edge('filter','platform',side='down',via=[(745,270),(439,270)],label=('过滤器的策略 / 回调分支',452,254))
     d.edge('platform','external',side='left',dashed=True)
     d.text(24,518,'发送路径还经过传输槽与接口输出回调；部分具体运行时目标仍未恢复。',17)
-    d.text(24,558,'看到日志 ≠ 报文已发出；投递事件 ≠ 外部消费者已完成主备切换。',17)
-    d.text(24,604,'平台实现与业务状态机通过接口协作：这是有证据的局部组织方式，不是完整系统故障轨迹。',15,muted=True)
+    d.text(24,558,'发送、监测、事件投递、平台请求和切换完成，各有相应的处理与观测位置。',17)
+    d.text(24,604,'平台实现与业务状态机通过回调和事件接口协作，外部消费端继续沿属性或消息查证。',15,muted=True)
     result['08-ehsa-boundaries']=d
     return result
 
@@ -236,7 +236,7 @@ def build(document,layout_path,assets,output):
         child=tokens[index+1]
         if token.type=='paragraph_open' and child.type=='inline' and child.children and len(child.children)==1 and child.children[0].type=='image':
             token.hidden=True;tokens[index+2].hidden=True
-    topics=['file','structure','startup','structure','protocol','config','execution','ha','guide','evidence']
+    topics=['file','structure','startup','structure','protocol','config','execution','ha','evidence']
     for index,token in enumerate(tokens):
         if token.type=='heading_open' and token.tag=='h2':
             anchor='atlas-%d'%(len(entries)+1);token.attrSet('id',anchor)
@@ -262,7 +262,7 @@ PAGE='''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name
 @media(max-width:1000px){main{display:block;padding:0 14px;margin:16px auto}nav{position:static;max-height:none;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:4px}nav a{font-size:14px}article{padding:22px 18px}header{padding:22px}h1{font-size:25px}h2{font-size:22px}}
 @media print{header,nav,.controls,#count{display:none}main{display:block;margin:0;padding:0}article{padding:0}figure{break-inside:avoid}figure svg{min-width:0}section[hidden]{display:block!important}}
 </style></head><body><header><strong>看懂 iosd</strong><p>先看关系，再看函数 · 文件 / 初始化 / 执行上下文 / 输入与状态</p></header><main><nav aria-label="文档目录">__NAV__</nav><article>
-<div class="coverage">适用样本：C8000v 26.01.02。八张图结合原始 ELF 新测量与既有局部证据；不是全局组件归属图或当前执行轨迹。</div>
+<div class="coverage">适用样本：C8000v 26.01.02。八张图结合原始 ELF 测量、初始化记录和已核对的局部实现，具体覆盖范围见证据小节。</div>
 <div class="controls"><input id="search" type="search" aria-label="搜索图解内容" placeholder="搜索：队列、NVGEN、subsystem…"><button data-filter="all" aria-pressed="true">完整阅读</button><button data-filter="file" aria-pressed="false">文件大小</button><button data-filter="protocol" aria-pressed="false">协议流程</button><button data-filter="config" aria-pressed="false">配置生成</button><label><input id="details" type="checkbox" checked>显示图中地址细节</label><button id="reset">重置</button></div>
 <p id="count" role="status"></p><div id="cover">__COVER__</div><div id="chapters">__SECTIONS__</div><p id="empty" class="empty" hidden>没有匹配的内容。可清空搜索或选择完整阅读。</p>
 <footer>本页离线工作，不连接 IDA、设备或外部网络。图解用于定位和理解；具体实现按样本、条件和证据复核。</footer></article></main>

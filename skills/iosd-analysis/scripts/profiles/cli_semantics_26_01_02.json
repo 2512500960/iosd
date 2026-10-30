@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "input_md5": "9eccfd46caadfff9c18557e2a446e19b",
+  "address_space": "rva",
+  "scope": "Reviewed normal CLI consumers; interpretation of saved captures, with symbolic conditions retained",
+  "reviewed_actions": {
+    "general_keyword_action": {
+      "function_rva": "0xE38DB80"
+    },
+    "generic_prefix_action": {
+      "function_rva": "0xE3A5E90"
+    },
+    "deprecated_action": {
+      "function_rva": "0xE38D8A0"
+    },
+    "whitespace_action": {
+      "function_rva": "0xE393260"
+    },
+    "timesec_action": {
+      "function_rva": "0xE3A8BA0"
+    },
+    "signed_number_action": {
+      "function_rva": "0xE3975B0"
+    },
+    "hexdata_action": {
+      "function_rva": "0xE3A5130"
+    },
+    "hexdata_action_even": {
+      "function_rva": "0xE3A5610"
+    },
+    "gen_number_func_action": {
+      "function_rva": "0xE398350"
+    },
+    "url_action": {
+      "function_rva": "0xD65E1B0"
+    },
+    "url_exact_action": {
+      "function_rva": "0xD65DF90"
+    },
+    "keyword_action": {
+      "function_rva": "0xe38ef40",
+      "refine_when": "opaque_only"
+    },
+    "keyword_id_action": {
+      "function_rva": "0xe38fc00",
+      "refine_when": "opaque_only"
+    },
+    "keyword_id_mm_action": {
+      "function_rva": "0xe38fe70",
+      "refine_when": "opaque_only"
+    },
+    "keyword_mm_action": {
+      "function_rva": "0xe38f990",
+      "refine_when": "opaque_only"
+    },
+    "keyword_optws_action": {
+      "function_rva": "0xe38f4b0",
+      "refine_when": "opaque_only"
+    },
+    "keyword_orset_action": {
+      "function_rva": "0xe3900e0",
+      "refine_when": "opaque_only"
+    },
+    "keyword_orset_mm_action": {
+      "function_rva": "0xe390350",
+      "refine_when": "opaque_only"
+    },
+    "keyword_ortest_action": {
+      "function_rva": "0xe3905c0",
+      "refine_when": "opaque_only"
+    },
+    "keyword_ortest_mm_action": {
+      "function_rva": "0xe390830",
+      "refine_when": "opaque_only"
+    },
+    "keyword_sk_on_action": {
+      "function_rva": "0xe38f010",
+      "refine_when": "opaque_only"
+    },
+    "keyword_sk_off_action": {
+      "function_rva": "0xe38f0e0",
+      "refine_when": "opaque_only"
+    }
+  },
+  "evidence": "Consumer locations are bound to this MD5. Field layouts are implemented in grammar_semantics.py; conditions and unresolved callbacks remain in each result.",
+  "limits": [
+    "Connected modes are inherited from the source snapshot graph until path recovery is rerun",
+    "Explaining a token or field does not evaluate input, privileges, state or callback results",
+    "URL and hex helper details, generic keyword operations and dynamic bounds retain explicit gaps"
+  ]
+}

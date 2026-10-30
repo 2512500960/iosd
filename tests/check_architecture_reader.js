@@ -15,12 +15,12 @@ const get=id=>{if(!elements.has(id))elements.set(id,new Element());return elemen
 const document={querySelectorAll:selector=>selector==='section[data-topic]'?sections:selector==='button[data-filter]'?buttons:nav,
  getElementById:get,body:{classList:{toggle:(name,on)=>on?classes.add(name):classes.delete(name),remove:name=>classes.delete(name)}}};
 vm.runInNewContext(source,{document});
-assert.equal(sections.filter(s=>!s.hidden).length,10);
+assert.equal(sections.filter(s=>!s.hidden).length,9);
 buttons[2].listeners.click();assert.equal(sections.filter(s=>!s.hidden).length,1);
 assert.equal(sections.find(s=>!s.hidden).dataset.topic,'protocol');assert.equal(buttons[2].attributes['aria-pressed'],'true');
 get('search').value='never-matching-query';get('search').listeners.input();assert.ok(sections.every(s=>s.hidden));assert.equal(get('empty').hidden,false);
 get('reset').listeners.click();assert.ok(sections.every(s=>!s.hidden));assert.equal(get('cover').hidden,false);
-get('search').value='NVGEN';get('search').listeners.input();const found=sections.filter(s=>!s.hidden).length;assert.ok(found>0&&found<10);
+get('search').value='NVGEN';get('search').listeners.input();const found=sections.filter(s=>!s.hidden).length;assert.ok(found>0&&found<sections.length);
 assert.equal(nav.filter(n=>!n.hidden).length,found);
 get('details').checked=false;get('details').listeners.change();assert.ok(classes.has('hide-details'));
 get('reset').listeners.click();assert.ok(!classes.has('hide-details'));assert.ok(get('details').checked);

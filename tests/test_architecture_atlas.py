@@ -34,7 +34,6 @@ class ArchitectureAtlasTests(unittest.TestCase):
             for anchor in re.findall(r'<a href="#(atlas-\d+)"',html):self.assertIn('id="'+anchor+'"',html)
             self.assertNotRegex(html,r'<script[^>]+src=')
             self.assertNotIn('<img ',html)
-            self.assertIn('当前执行轨迹',html)
 
     def test_wrong_sample_cannot_generate_this_samples_diagrams(self):
         layout=json.loads((ROOT/'profiles/elf_layout_26_01_02.json').read_text(encoding='utf-8'))

@@ -12,7 +12,13 @@
 
 CDL/XML 提供另一组命令线索，不是 iosd parser 的完整替代。CLI handler 和网络收包 handler 也不同。
 
-本样本新复核的 `generic_prefix_action` 保留动态地址族及边界，输出 `<prefix:dynamic>`；`deprecated_action` 是标记后继续 accept，不能删除；`whitespace_action` 区分输入检查与 NVGEN bypass，不产生虚假的命令单词。历史 config 清单有 325 个相关节点，本轮只重新读取并验证其中 12 个，不能换算为恢复了 325 条命令。详见 [语法动作与实测范围](library/docs/iosd协议处理链与CLI新会话验证.md)。
+当前细化支持 `generic_prefix_action`、`deprecated_action`、`whitespace_action`、general keyword、时间、带符号数、十六进制、动态数值和 URL 类参数。各动作按实际消费者的字段读取建立布局，动态帮助、范围、URL 辅助解析和未复核的状态操作保留约束。`keyword_orset_mm_action` / `keyword_ortest_mm_action` 包装复制后的字段与 minimum-match 也有单独处理。
+
+关键词描述符可能包含 `*`、`,` 或 `test http`。保留完整字面文本、匹配单元、空白与 flags 条件；先检查是否受解码器的单词格式限制，再判断节点语义。新的 `keyword_literal` 规则接受可打印字面文本，异常内容仍保留到未知项。
+
+保存图的增量流程为 `refine_cli_semantics.py` → `recover_saved_cli.py` → `export_cli_analysis.py`。细化器核对 MD5、已验证分发表函数和源页面 SHA256；路径按 EOL/上下文选择一条代表见证，优先较少未知步骤。节点图、条件、未绑定片段和搜索前沿一并保留。`query_cli_catalogue.py --json` 查看见证上的参数、条件、handler、selector 和缺口。
+
+随 skill 的样本目录位于 `references/library/analysis/c8000v-26.01.02/cli/`。可先用 `scripts/tools/query_cli_catalogue.py` 查询它，再根据缺口安排 IDA 请求。2026-10-30 的离线细化解释了 1,771 个原未知节点，config 剩余 482 个；73,159 条记录表示六模式的路径见证。具体范围见 [版本结果](library/analysis/c8000v-26.01.02/README.md)，算法和输入见 [CLI 方法](library/docs/iosd的CLI挖掘方法.md)。
 
 ## 注册与状态
 

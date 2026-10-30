@@ -21,6 +21,25 @@ def terminal(ea=0x2000):
 
 
 class SyntaxPathTests(unittest.TestCase):
+    def test_streaming_witnesses_preserves_results_and_global_path_limit(self):
+        g=graph([node(0x1000,'keyword',0x2000,keyword_candidate='x'),terminal()])
+        expected=recover_paths(g,['configure']);emitted=[]
+        streamed=recover_paths(g,['configure'],record_sink=emitted.append)
+        self.assertEqual(emitted,expected['paths'])
+        self.assertEqual(streamed['paths'],[])
+        self.assertEqual(streamed['summary']['paths'],expected['summary']['paths'])
+        self.assertEqual(streamed['summary']['unique_handlers'],expected['summary']['unique_handlers'])
+
+    def test_keyword_uncertain_assignment_invalidates_only_affected_tracked_state(self):
+        n=node(0x1000,'keyword',0x2000,keyword_candidate='x',
+            effects=[{'kind':'general_keyword_storage','storage_offset_candidate':9328,'effects_unresolved':True}],
+            keyword_extra_conditions=[{'kind':'general_keyword_flags_and_privilege','evaluated':False}],
+            keyword_gap='Flags symbolic')
+        self.assertEqual(state_after(n,(1,0,0),{}),(None,0,0))
+        edge=semantic_options(n,(1,0,0),{})[0]
+        self.assertEqual(edge['token'],'x');self.assertEqual(edge['gap'],'Flags symbolic')
+        self.assertFalse(edge['condition']['evaluated'])
+
     def test_whitespace_keeps_alternate_and_separates_cli_from_nvgen(self):
         n = node(0x1000, 'whitespace', 0x2000, 0x3000)
         normal = semantic_options(n, (1, 0, 0), {})

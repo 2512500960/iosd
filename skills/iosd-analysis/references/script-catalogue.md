@@ -7,6 +7,7 @@
 - 静态 CLI：`validate_ida_backend.py` → `export_cli_catalogue.py` / `recover_iosd_syntax.py` → `build_candidate_space.py`。旧 profile 校验不能跳过。
 - 注册与状态：`audit_registration_triggers.py` → `collect_lifecycle_evidence.py` → `analyze_lifecycle.py`。ctree 采集与缓存文本导入的证据强度不同。
 - 动态命令图：`probe_ida_debug_state.py` → `probe_runtime_mapping.py` → `capture_debugger_memory.py` / `collect_runtime_pages.py` → `export_runtime_grammar.py` → 选项与报告工具。
+- 保存图的语义细化：`refine_cli_semantics.py` → `recover_saved_cli.py` → `export_cli_analysis.py`；查询现有目录使用 `query_cli_catalogue.py`。
 - core：`inspect_core.py`；与实时内存来源分开。
 - 架构：`build_architecture_map.py`；NVGEN：`analyze_nvgen_bindings.py`；EHSA：`build_ehsa_report.py`。这些使用已保存的输入，不能用缺失的历史路径冒充实机结果。
 - CDL：`walk_cdl.py`；作为独立数据源对照，不证明 iosd 命令完整。
@@ -46,6 +47,7 @@
 | `collect_runtime_linkage.py` | Collect reviewed runtime lists in bounded batches, preserving every frontier. |
 | `collect_runtime_pages.py` | Read explicit image/heap pages in short batches for offline grammar export. |
 | `expand_option_witnesses.py` | Replay a saved prefix, select each known option, and re-solve a bounded suffix. |
+| `export_cli_analysis.py` | Publish derived CLI metadata from saved analysis without captured bytes or code. |
 | `export_cli_catalogue.py` | Build a standalone searchable HTML inventory from a saved static CLI report. |
 | `export_runtime_grammar.py` | Export observed runtime grammar, static comparison and unresolved frontiers. |
 | `fill_runtime_frontiers.py` | Follow newly discovered missing grammar pages, retaining limits and failures. |
@@ -57,7 +59,10 @@
 | `probe_ida_debug_state.py` | Read IDA identity/base/debugger state only; never read target memory or pause. |
 | `probe_runtime_mapping.py` | Compare saved immutable anchors with IDB and paused debugger bytes. |
 | `project_worker.py` | CLI entry point for the packaged saved-evidence worker. |
+| `query_cli_catalogue.py` | Query a versioned CLI evidence catalogue without IDA or original Cisco files. |
 | `read_ida_function.py` | Read a complete decompilation through bounded compressed MCP transfers. |
 | `recover_iosd_syntax.py` | Recover mode-scoped syntax witnesses from a saved iosd static graph. |
+| `recover_saved_cli.py` | Recover saved CLI witnesses as a stream and export a compact evidence catalogue. |
+| `refine_cli_semantics.py` | Refine a saved CLI graph using hash-verified capture pages; runs entirely offline. |
 | `validate_ida_backend.py` | Run current read-only extraction code in IDA via MCP and retrieve bounded chunks. |
 | `walk_cdl.py` | Audit CDL and export bounded candidate paths, exact DAG counts and raw graph. |

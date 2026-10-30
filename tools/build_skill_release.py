@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.2.0'
+VERSION='0.3.0'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -33,8 +33,17 @@ def assemble():
         copies[source]=SKILL/'references/library/docs/assets/iosd-atlas'/source.name
     atlas=ROOT/'docs/iosd架构图解.html'
     if atlas.exists():copies[atlas]=SKILL/'references/library/docs'/atlas.name
+    for source in (ROOT/'assets/如何调试iosd').glob('source-*.png'):
+        copies[source]=SKILL/'references/library/assets/如何调试iosd'/source.name
+    for source in (ROOT/'analysis/c8000v-26.01.02/cli').iterdir():
+        if source.is_file():copies[source]=SKILL/'references/library/analysis/c8000v-26.01.02/cli'/source.name
     docs={p:SKILL/'references/library/docs'/p.name for p in (ROOT/'docs').glob('*.md')}
     docs[ROOT/'iosd二进制文件结构描述.md']=SKILL/'references/library/iosd二进制文件结构描述.md'
+    docs[ROOT/'如何调试iosd.md']=SKILL/'references/library/如何调试iosd.md'
+    docs[ROOT/'analysis/c8000v-26.01.02/README.md']=SKILL/'references/library/analysis/c8000v-26.01.02/README.md'
+    # Hand-maintained skill references already live at their final destinations.
+    link_targets={p:p for p in SKILL.rglob('*.md') if 'library' not in p.relative_to(SKILL).parts}
+    link_targets.update({**copies,**docs})
     allowed=set(copies.values())|set(docs.values())
     # Remove only obsolete generated files enumerated by the previous manifest.
     previous=SKILL/'build-manifest.json'
@@ -46,7 +55,7 @@ def assemble():
     for source,destination in copies.items():
         destination.parent.mkdir(parents=True,exist_ok=True)
         if source.suffix=='.html':
-            targets={**copies,**docs}
+            targets=link_targets
             def html_link(match):
                 parts=urlsplit(match[2])
                 if parts.scheme or parts.netloc or match[2].startswith('#'):return match[0]
@@ -65,7 +74,7 @@ def assemble():
             target=match[3].strip('<>');parts=urlsplit(target)
             if parts.scheme in ('http','https','mailto') or target.startswith('#'):return match[0]
             path=(source.parent/unquote(parts.path)).resolve()
-            targets={**copies,**docs}
+            targets=link_targets
             if path in targets:
                 relative=Path(os.path.relpath(targets[path],destination.parent)).as_posix()
                 if parts.fragment:relative+='#'+parts.fragment
@@ -73,7 +82,10 @@ def assemble():
             return match[2]+'（历史材料路径：`'+target+'`）'
         text=links.sub(replace,text)
         lines=text.splitlines()
-        lines[1:1]=['','> 历史分析资料：保留样本、条件和未知项。原始捕获及 GUI 实验不随 skill 分发；历史材料路径用于定位已有证据，不表示文件已包含。','']
+        if source.name=='如何调试iosd.md':
+            lines[1:1]=['','> 本文维护于仓库根目录；此处是随 skill 携带的参考副本。环境示例、版本结果和操作说明分别标明来源。','']
+        else:
+            lines[1:1]=['','> 样本分析资料：保留适用版本、条件和未知项。原始捕获保留在本地；标注的历史材料路径用于定位来源。','']
         destination.parent.mkdir(parents=True,exist_ok=True);destination.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     tools=sorted((SKILL/'scripts/tools').glob('*.py'))
     catalogue=['# 脚本目录','','主入口 `scripts/iosd_mcp.py` 通过 MCP 采集；旧脚本继续复用现有算法。先运行所选脚本的 `--help`，只提供本次真实存在的输入。',
@@ -81,6 +93,7 @@ def assemble():
                '- 静态 CLI：`validate_ida_backend.py` → `export_cli_catalogue.py` / `recover_iosd_syntax.py` → `build_candidate_space.py`。旧 profile 校验不能跳过。',
                '- 注册与状态：`audit_registration_triggers.py` → `collect_lifecycle_evidence.py` → `analyze_lifecycle.py`。ctree 采集与缓存文本导入的证据强度不同。',
                '- 动态命令图：`probe_ida_debug_state.py` → `probe_runtime_mapping.py` → `capture_debugger_memory.py` / `collect_runtime_pages.py` → `export_runtime_grammar.py` → 选项与报告工具。',
+               '- 保存图的语义细化：`refine_cli_semantics.py` → `recover_saved_cli.py` → `export_cli_analysis.py`；查询现有目录使用 `query_cli_catalogue.py`。',
                '- core：`inspect_core.py`；与实时内存来源分开。',
                '- 架构：`build_architecture_map.py`；NVGEN：`analyze_nvgen_bindings.py`；EHSA：`build_ehsa_report.py`。这些使用已保存的输入，不能用缺失的历史路径冒充实机结果。',
                '- CDL：`walk_cdl.py`；作为独立数据源对照，不证明 iosd 命令完整。',

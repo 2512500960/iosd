@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "generated": {
     "scripts/iosd_mcp.py": {
       "source": "tools/iosd_mcp.py",
@@ -41,6 +41,11 @@
       "source_sha256": "5be9662a32def5a8f224c2a4be0a3dd9285e6dd4c3c863e5b06d3b3cdbe80813",
       "sha256": "5be9662a32def5a8f224c2a4be0a3dd9285e6dd4c3c863e5b06d3b3cdbe80813"
     },
+    "scripts/iosd_helper/cli_refinement.py": {
+      "source": "iosd_helper/cli_refinement.py",
+      "source_sha256": "80d9a63183663ca6b0f210de6c33fe4d8f999dd7abc363d7a9fecc0d936d5847",
+      "sha256": "80d9a63183663ca6b0f210de6c33fe4d8f999dd7abc363d7a9fecc0d936d5847"
+    },
     "scripts/iosd_helper/component_inventory.py": {
       "source": "iosd_helper/component_inventory.py",
       "source_sha256": "618bff64f6d981dd7b925e10dee4ad6ed3aaf6c54058a16aed3b83c5d72c0f15",
@@ -68,8 +73,8 @@
     },
     "scripts/iosd_helper/grammar_semantics.py": {
       "source": "iosd_helper/grammar_semantics.py",
-      "source_sha256": "0a30bc4273eb41d2fc92fb0d3591dae4fea0da634ddabd8efe75cf051ed1dc4b",
-      "sha256": "0a30bc4273eb41d2fc92fb0d3591dae4fea0da634ddabd8efe75cf051ed1dc4b"
+      "source_sha256": "31066b426e08e8b09e58ada7e11777193812816ebea425fa1240a8caf0c62e9a",
+      "sha256": "31066b426e08e8b09e58ada7e11777193812816ebea425fa1240a8caf0c62e9a"
     },
     "scripts/iosd_helper/ida_adapter.py": {
       "source": "iosd_helper/ida_adapter.py",
@@ -153,8 +158,8 @@
     },
     "scripts/iosd_helper/syntax_paths.py": {
       "source": "iosd_helper/syntax_paths.py",
-      "source_sha256": "bda65bf859cc24f2aa395913626029daa880c8d71bada58cdf54d853e9453b21",
-      "sha256": "bda65bf859cc24f2aa395913626029daa880c8d71bada58cdf54d853e9453b21"
+      "source_sha256": "89b0d62f656dc22a91681fe3db6c764d72430b422c93d967874d48039d7e4463",
+      "sha256": "89b0d62f656dc22a91681fe3db6c764d72430b422c93d967874d48039d7e4463"
     },
     "scripts/iosd_helper/syntax_view.py": {
       "source": "iosd_helper/syntax_view.py",
@@ -188,8 +193,8 @@
     },
     "scripts/tools/build_architecture_atlas.py": {
       "source": "tools/build_architecture_atlas.py",
-      "source_sha256": "5322bae6c9502e58f6d8bdc7ef343c9796437e8737816adb9d272de8deb454be",
-      "sha256": "5322bae6c9502e58f6d8bdc7ef343c9796437e8737816adb9d272de8deb454be"
+      "source_sha256": "73c5be98dec1c4eacb19e17bd91a2d3f13c41335024dddc44a99f32110a20f5f",
+      "sha256": "73c5be98dec1c4eacb19e17bd91a2d3f13c41335024dddc44a99f32110a20f5f"
     },
     "scripts/tools/build_architecture_map.py": {
       "source": "tools/build_architecture_map.py",
@@ -281,6 +286,11 @@
       "source_sha256": "4564f2a271a16c1b596f8a053981be6db3b110b725878e4dfc42648ec2a70cc0",
       "sha256": "4564f2a271a16c1b596f8a053981be6db3b110b725878e4dfc42648ec2a70cc0"
     },
+    "scripts/tools/export_cli_analysis.py": {
+      "source": "tools/export_cli_analysis.py",
+      "source_sha256": "47a4b50e151e430c3b47dc8e718303e85b17c5047376ce5bbe9def94a65e824c",
+      "sha256": "47a4b50e151e430c3b47dc8e718303e85b17c5047376ce5bbe9def94a65e824c"
+    },
     "scripts/tools/export_cli_catalogue.py": {
       "source": "tools/export_cli_catalogue.py",
       "source_sha256": "4e7c11260f0a8b7e79f7955f6c6c61cc8d931258361bb05275903f15dde6f362",
@@ -336,6 +346,11 @@
       "source_sha256": "34828d9a627e96683a22c32115810cd604c4c6bd1e8ce27e6995c139512c0c7f",
       "sha256": "34828d9a627e96683a22c32115810cd604c4c6bd1e8ce27e6995c139512c0c7f"
     },
+    "scripts/tools/query_cli_catalogue.py": {
+      "source": "tools/query_cli_catalogue.py",
+      "source_sha256": "8ed5ffce985eaff5ae4809af166a6b6a7c2f415e3dab40fac801e5eaf1acbed4",
+      "sha256": "8ed5ffce985eaff5ae4809af166a6b6a7c2f415e3dab40fac801e5eaf1acbed4"
+    },
     "scripts/tools/read_ida_function.py": {
       "source": "tools/read_ida_function.py",
       "source_sha256": "4f52b7b93345efc6dddf9c4800b3ed830510ba64b0b46892d2fa3a41858b888e",
@@ -345,6 +360,16 @@
       "source": "tools/recover_iosd_syntax.py",
       "source_sha256": "fb632acf1650e53ca6134348c1402047fb7acd47a03993809e288447a3d4677d",
       "sha256": "fb632acf1650e53ca6134348c1402047fb7acd47a03993809e288447a3d4677d"
+    },
+    "scripts/tools/recover_saved_cli.py": {
+      "source": "tools/recover_saved_cli.py",
+      "source_sha256": "68ceeae58e5810a9284c00fb10e7bb7be6098f52250e3ecb4d16e75d335d4198",
+      "sha256": "68ceeae58e5810a9284c00fb10e7bb7be6098f52250e3ecb4d16e75d335d4198"
+    },
+    "scripts/tools/refine_cli_semantics.py": {
+      "source": "tools/refine_cli_semantics.py",
+      "source_sha256": "4ecb2f39ef3929ae955a204c6c42aa1c083964eb1bce644eb8650a8fc6429c28",
+      "sha256": "4ecb2f39ef3929ae955a204c6c42aa1c083964eb1bce644eb8650a8fc6429c28"
     },
     "scripts/tools/validate_ida_backend.py": {
       "source": "tools/validate_ida_backend.py",
@@ -360,6 +385,11 @@
       "source": "profiles/architecture_26_01_02.json",
       "source_sha256": "4055bb354020ce6bd64471aaa00e9b169ad926b78197e3eb57a92916ae4e277f",
       "sha256": "4055bb354020ce6bd64471aaa00e9b169ad926b78197e3eb57a92916ae4e277f"
+    },
+    "scripts/profiles/cli_semantics_26_01_02.json": {
+      "source": "profiles/cli_semantics_26_01_02.json",
+      "source_sha256": "ab229d31dceb6e5d7689ba8504b9f09362eaf56db8d68ba8dbe2d8855ce19d14",
+      "sha256": "ab229d31dceb6e5d7689ba8504b9f09362eaf56db8d68ba8dbe2d8855ce19d14"
     },
     "scripts/profiles/ehsa_26_01_02.json": {
       "source": "profiles/ehsa_26_01_02.json",
@@ -438,123 +468,218 @@
     },
     "references/library/docs/assets/iosd-atlas/01-elf-layout.svg": {
       "source": "docs/assets/iosd-atlas/01-elf-layout.svg",
-      "source_sha256": "9da454ebbffd043f2f38ef3ff51a41b0904ebb2cd6d2cf411310a0b5da20e6d4",
-      "sha256": "9da454ebbffd043f2f38ef3ff51a41b0904ebb2cd6d2cf411310a0b5da20e6d4"
+      "source_sha256": "cd2434f0c0f71c7a5d6aeb8390eeaabcf676cc21926fd460eff3004349a32d4d",
+      "sha256": "cd2434f0c0f71c7a5d6aeb8390eeaabcf676cc21926fd460eff3004349a32d4d"
     },
     "references/library/docs/assets/iosd-atlas/02-architecture-views.svg": {
       "source": "docs/assets/iosd-atlas/02-architecture-views.svg",
-      "source_sha256": "933ab634c35f25c284827868ed1fbdb328e8ca2be9552ca49cd8dcfc279d9491",
-      "sha256": "933ab634c35f25c284827868ed1fbdb328e8ca2be9552ca49cd8dcfc279d9491"
+      "source_sha256": "72a448a41900483a95b4645ec525355e16a2622bfb71e69feb8850c621d87a82",
+      "sha256": "72a448a41900483a95b4645ec525355e16a2622bfb71e69feb8850c621d87a82"
     },
     "references/library/docs/assets/iosd-atlas/03-initialization.svg": {
       "source": "docs/assets/iosd-atlas/03-initialization.svg",
-      "source_sha256": "795b8b3a0630b811accc998de4f97f323dfff05c7cb859eb33bebce762ac0e1d",
-      "sha256": "795b8b3a0630b811accc998de4f97f323dfff05c7cb859eb33bebce762ac0e1d"
+      "source_sha256": "bcba7e7306f0be276f9ec34f0f2dd4e39fba541540aa6060a08dc74986105261",
+      "sha256": "bcba7e7306f0be276f9ec34f0f2dd4e39fba541540aa6060a08dc74986105261"
     },
     "references/library/docs/assets/iosd-atlas/04-registration-and-input.svg": {
       "source": "docs/assets/iosd-atlas/04-registration-and-input.svg",
-      "source_sha256": "51e58351db54870a5444022922d5c6161c6466c761a6c556bf3a7d29edf098a1",
-      "sha256": "51e58351db54870a5444022922d5c6161c6466c761a6c556bf3a7d29edf098a1"
+      "source_sha256": "c426d4fb8ba4a9f014dee02c9f7384d8e5c0e26ab0ddfcfdd32a7c1570ad0f1e",
+      "sha256": "c426d4fb8ba4a9f014dee02c9f7384d8e5c0e26ab0ddfcfdd32a7c1570ad0f1e"
     },
     "references/library/docs/assets/iosd-atlas/05-cdp-path.svg": {
       "source": "docs/assets/iosd-atlas/05-cdp-path.svg",
-      "source_sha256": "e2b45e69ba0f5ece55266d8f73f79fd3908689969936c857b7669c558fab3537",
-      "sha256": "e2b45e69ba0f5ece55266d8f73f79fd3908689969936c857b7669c558fab3537"
+      "source_sha256": "3c5672133e2cf7966b907bd7efd6377e64ac426d6d040ccae5d321f63fa61956",
+      "sha256": "3c5672133e2cf7966b907bd7efd6377e64ac426d6d040ccae5d321f63fa61956"
     },
     "references/library/docs/assets/iosd-atlas/06-cli-and-nvgen.svg": {
       "source": "docs/assets/iosd-atlas/06-cli-and-nvgen.svg",
-      "source_sha256": "637bd3562af2292ca0d0da44712b1124883e5c41c916f9ef70bbb0a0054957f1",
-      "sha256": "637bd3562af2292ca0d0da44712b1124883e5c41c916f9ef70bbb0a0054957f1"
+      "source_sha256": "9d3c1451f70ced2bbe8cb6eb4183e08f68dcaba874050082247c014d3825127d",
+      "sha256": "9d3c1451f70ced2bbe8cb6eb4183e08f68dcaba874050082247c014d3825127d"
     },
     "references/library/docs/assets/iosd-atlas/07-execution-contexts.svg": {
       "source": "docs/assets/iosd-atlas/07-execution-contexts.svg",
-      "source_sha256": "d5e81cfd40f9b671882d7adbce8997b9b5830f365a8da1c4e74402dcc27431b0",
-      "sha256": "d5e81cfd40f9b671882d7adbce8997b9b5830f365a8da1c4e74402dcc27431b0"
+      "source_sha256": "a502198cd6e293c73de57c23a11b623ef93309bd51346331e219a94c608dcbad",
+      "sha256": "a502198cd6e293c73de57c23a11b623ef93309bd51346331e219a94c608dcbad"
     },
     "references/library/docs/assets/iosd-atlas/08-ehsa-boundaries.svg": {
       "source": "docs/assets/iosd-atlas/08-ehsa-boundaries.svg",
-      "source_sha256": "96121e66fe1bc63a4eedc9537623c739bd115afcf9d27c2127c6981952f86b91",
-      "sha256": "96121e66fe1bc63a4eedc9537623c739bd115afcf9d27c2127c6981952f86b91"
+      "source_sha256": "85fdfffb2d953a5d542b2ae2a00877f112789fdf03c9d0a9f8dbb89fe0a0fff0",
+      "sha256": "85fdfffb2d953a5d542b2ae2a00877f112789fdf03c9d0a9f8dbb89fe0a0fff0"
     },
     "references/library/docs/iosd架构图解.html": {
       "source": "docs/iosd架构图解.html",
-      "source_sha256": "6f5ed37a8a313d9c6820c9f07144c5ae35944d0ba9ffbc4737373d542335db5c",
-      "sha256": "0560a2da42f2d0f1d18049f8de3312eed9fd2417e8ca0c55b8addd8d4896c909"
+      "source_sha256": "cbaa8dbf9e86481cac18f88d690b6e58d943acd0df24c9979ec958a6ae7ff975",
+      "sha256": "410fea97f5e4184d153c1853073ea09bf000633d1917f664688ef0bbb98c11b4"
+    },
+    "references/library/assets/如何调试iosd/source-bios-boot.png": {
+      "source": "assets/如何调试iosd/source-bios-boot.png",
+      "source_sha256": "f10d1b1b6dc2ee0e4722438e4e03370e9b9a3d2b11aba76fc9066198a6e46a52",
+      "sha256": "f10d1b1b6dc2ee0e4722438e4e03370e9b9a3d2b11aba76fc9066198a6e46a52"
+    },
+    "references/library/assets/如何调试iosd/source-firmware-menu.png": {
+      "source": "assets/如何调试iosd/source-firmware-menu.png",
+      "source_sha256": "0d8429f82727a5fab34c6b8fc6a76f9fdb3f70076e35b9d9c72ff85762f703ba",
+      "sha256": "0d8429f82727a5fab34c6b8fc6a76f9fdb3f70076e35b9d9c72ff85762f703ba"
+    },
+    "references/library/assets/如何调试iosd/source-first-boot.png": {
+      "source": "assets/如何调试iosd/source-first-boot.png",
+      "source_sha256": "8927d13de927b7b6954fcca06a3513834ca8f1e0269fb6443b15d8428a562525",
+      "sha256": "8927d13de927b7b6954fcca06a3513834ca8f1e0269fb6443b15d8428a562525"
+    },
+    "references/library/assets/如何调试iosd/source-grub-menu.png": {
+      "source": "assets/如何调试iosd/source-grub-menu.png",
+      "source_sha256": "5418f17a5134017e584d32f66adb7c390abb3dab0719884d04721210da7732a7",
+      "sha256": "5418f17a5134017e584d32f66adb7c390abb3dab0719884d04721210da7732a7"
+    },
+    "references/library/assets/如何调试iosd/source-import.png": {
+      "source": "assets/如何调试iosd/source-import.png",
+      "source_sha256": "acab89e642145468241eb20e765af102446061e98534f89e5745c8c46efceabb",
+      "sha256": "acab89e642145468241eb20e765af102446061e98534f89e5745c8c46efceabb"
+    },
+    "references/library/assets/如何调试iosd/source-live-cdrom.png": {
+      "source": "assets/如何调试iosd/source-live-cdrom.png",
+      "source_sha256": "32fe2a49bda11474b71c844780c41ca5bdf7cd4a6a2857fc75ac3fc188616a87",
+      "sha256": "32fe2a49bda11474b71c844780c41ca5bdf7cd4a6a2857fc75ac3fc188616a87"
+    },
+    "references/library/assets/如何调试iosd/source-ova.png": {
+      "source": "assets/如何调试iosd/source-ova.png",
+      "source_sha256": "1cb761d0ef556138239c9626b98431e3dbeca4ba5767d995bc72ddce54de544f",
+      "sha256": "1cb761d0ef556138239c9626b98431e3dbeca4ba5767d995bc72ddce54de544f"
+    },
+    "references/library/assets/如何调试iosd/source-partitions.png": {
+      "source": "assets/如何调试iosd/source-partitions.png",
+      "source_sha256": "8b0bae9453102332ea4d1107451342ec5f38bd6cf2a6a3304a12415a944e6860",
+      "sha256": "8b0bae9453102332ea4d1107451342ec5f38bd6cf2a6a3304a12415a944e6860"
+    },
+    "references/library/assets/如何调试iosd/source-serial-0.png": {
+      "source": "assets/如何调试iosd/source-serial-0.png",
+      "source_sha256": "728b0b76ec253d21d2e01045f676959e25ddb104063f81e57a4e3d16630f9a17",
+      "sha256": "728b0b76ec253d21d2e01045f676959e25ddb104063f81e57a4e3d16630f9a17"
+    },
+    "references/library/assets/如何调试iosd/source-serial-1.png": {
+      "source": "assets/如何调试iosd/source-serial-1.png",
+      "source_sha256": "c3ee1cf60e1319cca675b7ceb83eab6ae00cf014c25604839b3d31fe7d5f7119",
+      "sha256": "c3ee1cf60e1319cca675b7ceb83eab6ae00cf014c25604839b3d31fe7d5f7119"
+    },
+    "references/library/assets/如何调试iosd/source-vmx-network.png": {
+      "source": "assets/如何调试iosd/source-vmx-network.png",
+      "source_sha256": "19f850b1aab612b5c14fe19e8367e4f9e3edbf250fd5177d5673cc1babc01943",
+      "sha256": "19f850b1aab612b5c14fe19e8367e4f9e3edbf250fd5177d5673cc1babc01943"
+    },
+    "references/library/analysis/c8000v-26.01.02/cli/catalogue.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/cli/catalogue.jsonl.gz",
+      "source_sha256": "05975599dbb412f11a3d3e5c405147138a2c7fde770591f986551e997a5e3179",
+      "sha256": "05975599dbb412f11a3d3e5c405147138a2c7fde770591f986551e997a5e3179"
+    },
+    "references/library/analysis/c8000v-26.01.02/cli/gaps.json": {
+      "source": "analysis/c8000v-26.01.02/cli/gaps.json",
+      "source_sha256": "fa6dca3979bba21d4152fa8ee9f2dda2e1644885739751e90886272be819ce7c",
+      "sha256": "fa6dca3979bba21d4152fa8ee9f2dda2e1644885739751e90886272be819ce7c"
+    },
+    "references/library/analysis/c8000v-26.01.02/cli/nodes.jsonl.gz": {
+      "source": "analysis/c8000v-26.01.02/cli/nodes.jsonl.gz",
+      "source_sha256": "0f3d48cba776c885db9daf8a628f39ef56f8f3aafd7683d4dfa11e7633435d3b",
+      "sha256": "0f3d48cba776c885db9daf8a628f39ef56f8f3aafd7683d4dfa11e7633435d3b"
+    },
+    "references/library/analysis/c8000v-26.01.02/cli/registrations.json.gz": {
+      "source": "analysis/c8000v-26.01.02/cli/registrations.json.gz",
+      "source_sha256": "7408f0471dcc43ee6da189bf3120a927478d1defc6d885fdc6e8da90a0adf5c1",
+      "sha256": "7408f0471dcc43ee6da189bf3120a927478d1defc6d885fdc6e8da90a0adf5c1"
+    },
+    "references/library/analysis/c8000v-26.01.02/cli/summary.json": {
+      "source": "analysis/c8000v-26.01.02/cli/summary.json",
+      "source_sha256": "e24cf218b853c3534bd87e3a7cc95ce2a940498a538c6248a36cd4fee5d14fc4",
+      "sha256": "e24cf218b853c3534bd87e3a7cc95ce2a940498a538c6248a36cd4fee5d14fc4"
     },
     "references/library/docs/config关键词选项与条件回调.md": {
       "source": "docs/config关键词选项与条件回调.md",
       "source_sha256": "e10c216f8f2823c7e9e108e9515f5886e820ef15b6bd897417f98fed460a2a6f",
-      "sha256": "12f28a382788c669c4c0d659a509f28767bfb712bd85d02653185e70390daa62"
+      "sha256": "3c78f29d76c3853416110e40acbec1241e8f767d55dc911d63f2d3a8c2d1d756"
     },
     "references/library/docs/IDA插件历史说明.md": {
       "source": "docs/IDA插件历史说明.md",
       "source_sha256": "63595f5a08bde463dd6c0b61d022547f637497cadf2ffe841d2e5e3b113cb9d2",
-      "sha256": "4c67ad3e15cc82811e3963f07c786d00b418e265a0bb712423ee3bcd4e4b74f1"
+      "sha256": "c0e6535e9499aefc70651caac554295041c7701c5bb21ba462983af30a2e6152"
     },
     "references/library/docs/iosd从大ELF到运行机制.md": {
       "source": "docs/iosd从大ELF到运行机制.md",
-      "source_sha256": "aba0949155c48c5f83348b521720f135e07e94054107cf67efaf62c967f8bd55",
-      "sha256": "4c957b2b5bf8f57a78142201fd7376acab4b95356e75dade56392be7369da714"
+      "source_sha256": "218b831db46c0bab78e702a892c3d04dc56dc3862ae2d77f60abfebd37a952d7",
+      "sha256": "90915e88770cca7e8d07c58c3178bd28c5673b1f006c8551274de993b965dc29"
     },
     "references/library/docs/iosd协议处理链与CLI新会话验证.md": {
       "source": "docs/iosd协议处理链与CLI新会话验证.md",
       "source_sha256": "36abb93986c44099a0e4ee44fb9b7110ad0082d56a9b13debf4791ac223b7de0",
-      "sha256": "9627c18fff4ddc06a4eaa07506d7b7ef6250e63b64a9d82ba75e666f1f007e67"
+      "sha256": "551f3c2e12463e554fa8180cead5946749223bb3b2228060c542008c4225f57f"
     },
     "references/library/docs/iosd架构与术语说明.md": {
       "source": "docs/iosd架构与术语说明.md",
       "source_sha256": "7f402fccf2300fc09dd430cba2f697213c3f848f3ee4e7e21dd8df385212172d",
-      "sha256": "7eecdacb4cb51d3700c2e9f63ce8cb38fff572ea91bb76244794c428c2b76328"
+      "sha256": "739fad6cf4b5bc75bd01b71d1c287a59de5918b4b0fddd546fa4a7398fee0900"
     },
     "references/library/docs/iosd模块与子系统.md": {
       "source": "docs/iosd模块与子系统.md",
       "source_sha256": "e3c8ad697e79bea3a1a4f6b0844ea719ea635d0ed9169582ff923870530aaf80",
-      "sha256": "4c78e9559e1097802762716d52ae720ae5bf39da38b703835604ca86dc0b08d8"
+      "sha256": "18b7b1721c422692372b5418e3d90da948b03d92b9a03eeda9a05cc4cc77fe85"
+    },
+    "references/library/docs/iosd的CLI挖掘方法.md": {
+      "source": "docs/iosd的CLI挖掘方法.md",
+      "source_sha256": "2d69755448d89fd341136dcca404c1a2c451419474a2152d2c9f94c652ec4afa",
+      "sha256": "91677a2781745299d25a59a55796c4dda8e50d37017a3928b31481d591f61e43"
     },
     "references/library/docs/iosd的EHSA心跳与主备状态机.md": {
       "source": "docs/iosd的EHSA心跳与主备状态机.md",
       "source_sha256": "a06a189877b219b7c402668da36a63daee5129488160847733f96426099bdfca",
-      "sha256": "2b34c57c440ba52110b2a77f1e2e9c8f0a415bff53ce750443fb4cd0d3877f3e"
+      "sha256": "7c036274eb8eabd9c89ce7faa3390794ae30bca3dfe6c97ac9d48d4bd90868a9"
     },
     "references/library/docs/iosd的NVGEN与接口配置缓存.md": {
       "source": "docs/iosd的NVGEN与接口配置缓存.md",
       "source_sha256": "ae2b630d2267b47eda6efbf493961cd6224576051c2fac7a22ae88493ceffed1",
-      "sha256": "fc1767312809b551492da80f712a001e95c5aeb148ce02e51d2f89a37b2caeb1"
+      "sha256": "a80ed9b87675cdba3005cbf67447319d961a9726d193f27d1bad84072f7c7f94"
     },
     "references/library/docs/iosd的线程与level.md": {
       "source": "docs/iosd的线程与level.md",
       "source_sha256": "f1dfc871a371e5efa9a338723fa891546aeaef40d11818cf459c75bc852ad34d",
-      "sha256": "56ff1f02fad361e98e421c5e5b7da7dd149c3075adfd1b9c0ff1b1313b3e197d"
+      "sha256": "9e4472112c8934bc07fa40abedcb492f7ee61dc9e010fe0ff5510ac2948e3be2"
     },
     "references/library/docs/iosd组件索引与协议调查入口.md": {
       "source": "docs/iosd组件索引与协议调查入口.md",
       "source_sha256": "17c1f33cc76e5cc17505f50668fe8e2f0dcd310f7d35a3c1f1c13e0a9886fba8",
-      "sha256": "89dc47c312d8cba4c21ec6012f2a6a866544e47fb25c4e3e50651c154c47aeee"
+      "sha256": "2150fbd779d45d527983484d64534c1fd21be6db0868f70ac681d688d31b8366"
     },
     "references/library/docs/iosd逆向分析教程.md": {
       "source": "docs/iosd逆向分析教程.md",
       "source_sha256": "d9c2f9e35d4d609d5867dc2b180f2c56e31faa8d427ade2804edb94297a39368",
-      "sha256": "01a7732af39d42840c9d4db01475565bc9163a169d6de61265b3d87cda6bf0da"
+      "sha256": "b192ace5ef68b7ef8efc078704fcdc5458e603fcd601c1e14ee663c90c41e676"
     },
     "references/library/docs/整数显示与字节序.md": {
       "source": "docs/整数显示与字节序.md",
       "source_sha256": "4ac9ff3137ef4a454d670450183d289452dad21582f16d843c6de80765a277ab",
-      "sha256": "d28fcfbcef8357c89e805da0aa36d3c7a4cbc4f8032b56d67efe3f40fd19cbbd"
+      "sha256": "3b70ef036dc6b4891ec36d1ba2f7c14caba1871ef186c126ac9c7729b0e0c432"
     },
     "references/library/docs/运行时命令图导出说明.md": {
       "source": "docs/运行时命令图导出说明.md",
       "source_sha256": "b5bed10482216d821b5c3baeeea4c431345e4ceb5b2fb409e08cd35a6af589d3",
-      "sha256": "796698aaaf160ef6c165bdcd6cd8071bc3e4a43161ec9f4df8560426127e3c6c"
+      "sha256": "019179f8bb2b18fe3e46d45300e3097cbc1591fd7c7b3f77532debaaa504ac90"
     },
     "references/library/docs/通用注册分析与调试接入.md": {
       "source": "docs/通用注册分析与调试接入.md",
       "source_sha256": "681cf6925dc9e1c9bef89509afe9dd60fd842da027158af4260f1da6f667d089",
-      "sha256": "a0baf4fd2f47613a7c12e443b16a740fa6fac63f97e94b5021a745821baa08b4"
+      "sha256": "4be3b5e51a1b859b4156b7f5d9fed92bdba96eb7a5052a55f3884db2c9f0dbdc"
     },
     "references/library/iosd二进制文件结构描述.md": {
       "source": "iosd二进制文件结构描述.md",
       "source_sha256": "3fef29ab299319696b0d9aae3a43fa5132fa1e15ea5690028ea3e72e8084ec50",
-      "sha256": "b577e7ad0c161e9e03a5ebba59e7aabc47af6c8ceaa3cc6550757c5d4b57f934"
+      "sha256": "e9b757516fecd2990e2840b4e53646da1e0ae76b3cfe904edb3a9d83ab93314d"
+    },
+    "references/library/如何调试iosd.md": {
+      "source": "如何调试iosd.md",
+      "source_sha256": "b47a004b504b7c25313051fc87903bbd411585e462c22b06ba44627d839aa189",
+      "sha256": "448477834f567e462cf400d9bbd4243cc1005e1fb6c1bebbedd498dd45918559"
+    },
+    "references/library/analysis/c8000v-26.01.02/README.md": {
+      "source": "analysis/c8000v-26.01.02/README.md",
+      "source_sha256": "eb93f4832e0155b3474a8a49f1f7828bd03d390bc34a9a32717a905c059a807c",
+      "sha256": "8d09e0988c231dc528260c42e933b4fd5d19b64e9ca4e904393639578dc180a4"
     }
   },
   "notes": "Generated code/docs copies; edit canonical sources and rebuild. No IDA/MCP connection is made by this build."

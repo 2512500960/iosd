@@ -31,9 +31,11 @@ def flatten_conditions(conditions):
 def parameter_label(parameter):
     kind=parameter.get('kind')
     if kind=='unsigned_number':return '<number:%s..%s>'%(parameter['min'],parameter['max'])
+    if kind=='signed_number':return '<signed:%s..%s>'%(parameter['min'],parameter['max'])
     return {'unsigned_number_dynamic':'<number:dynamic>','address':'<address>','string':'<string>',
             'interface':'<interface>','interface_type':'<interface-type>',
-            'prefix_dynamic':'<prefix:dynamic>'}.get(kind,'<parameter:unresolved>')
+            'prefix_dynamic':'<prefix:dynamic>','time_hm':'<hh:mm>','time_hms':'<hh:mm:ss>',
+            'hexstring':'<hex-string>','hexdata':'<hex-data>','url_dynamic':'<url:dynamic>'}.get(kind,'<parameter:unresolved>')
 
 
 def registration_overlays(graph, nodes):
@@ -73,6 +75,9 @@ def registration_overlays(graph, nodes):
 def state_after(node, state, profile):
     state = list(state)
     for effect in node.get("effects", []):
+        if effect.get('effects_unresolved') and effect.get('storage_offset_candidate') in TRACKED_FIELDS:
+            state[TRACKED_FIELDS.index(effect['storage_offset_candidate'])]=None
+            continue
         offset = effect.get("field_offset")
         if offset in TRACKED_FIELDS:
             value = int(effect.get("value_raw_hex") or "0", 16)
@@ -109,6 +114,7 @@ def semantic_options(node, state, graph):
     if kind == "keyword":
         gates=node.get("keyword_access_gates")
         constraints=[]
+        constraints.extend(node.get('keyword_extra_conditions',[]))
         if gates:constraints.append({"kind":"keyword_access_gates","gates":gates,"snapshot_only":True,
                        "evaluated":all(g.get('evaluated') for g in gates)})
         pre=node.get('keyword_state_precondition');allowed=True
@@ -118,7 +124,7 @@ def semantic_options(node, state, graph):
             allowed=known is None or known&mask==0
             constraints.append({**pre,'evaluated':known is not None,'known_value':known,'required':'value & mask == 0'})
         condition=constraints[0] if len(constraints)==1 else ({'kind':'keyword_constraints','constraints':constraints} if constraints else None)
-        if allowed:add(accept,"keyword_match",node['keyword_candidate'],effects=True,condition=condition)
+        if allowed:add(accept,"keyword_match",node['keyword_candidate'],effects=True,condition=condition,gap=node.get('keyword_gap'))
         add(alternate, "keyword_alternative")
     elif kind=='keyword_options':
         wrapper=node.get('option_wrapper_condition')
@@ -230,7 +236,7 @@ def semantic_options(node, state, graph):
     return options
 
 
-def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled):
+def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled, record_sink=None):
     nodes = {node["address"]: node for node in graph["nodes"]}
     settings = graph.get("path_analysis", {})
     initial = tuple(settings.get("initial_normal_cli_state", [1, 0, 0]))
@@ -285,7 +291,14 @@ def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled):
                 distances[next_key] = cost
                 previous[next_key] = (key, {"source": ea, **edge})
                 heapq.heappush(heap, (*cost, next(serial), next_key))
-    records = []
+    pending_states=len(distances)-len(settled)
+    if stop!='exhausted_modeled_states':
+        for pending_key in distances:
+            if pending_key in settled:continue
+            frontier_count+=1
+            if len(frontiers)<1000:
+                frontiers.append({'address':pending_key[0],'tracked_state':list(pending_key[1]),'reason':stop})
+    records = [];witness_count=0;unique_eols=set();unique_handlers=set();without_gaps=0
     for terminal in terminals:
         trace, chain, key = [], [], terminal
         while key != first:
@@ -332,7 +345,7 @@ def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled):
             if terminal[1][0] is None and terminal_node.get("omit_parameter_when_negative"):
                 gaps.append({"node": terminal[0], "reason": "Parameter omission depends on unresolved sense state"})
         tokens.append("<cr>")
-        records.append({"mode": definition["name"], "prompt": definition["prompt"], "mode_root": root,
+        record={"mode": definition["name"], "prompt": definition["prompt"], "mode_root": root,
                         "mode_evidence_call": definition.get("evidence_call"),
                         "syntax_candidate": " ".join(tokens), "parameters": parameters,
                         "conditions": conditions, "state_effects": effects,
@@ -341,20 +354,24 @@ def recover_mode(graph, definition, overlays, max_states, max_paths, cancelled):
                         "final_tracked_state": list(terminal[1]), "registration_candidates": registrations,
                         "node_addresses": [entry[0] for entry in chain], "edge_trace": trace,
                         "gaps": gaps, "syntax_status": "partial_syntax_candidate" if gaps else "syntax_candidate",
-                        "availability": "runtime registration, privilege and predicate gates unverified"})
+                        "availability": "runtime registration, privilege and predicate gates unverified"}
+        witness_count+=1;unique_eols.add(record['eol_node']);unique_handlers.add(record['handler']);without_gaps+=not gaps
+        if record_sink is None:records.append(record)
+        else:record_sink(record)
     summary = {"mode": definition["name"], "prompt": definition["prompt"], "root": root,
                "settled_states": len(settled), "discovered_states": len(distances),
-               "stop_reason": stop, "witnesses": len(records),
-               "unique_eols": len({r["eol_node"] for r in records}),
-               "unique_handlers": len({r["handler"] for r in records}),
-               "syntax_candidates_without_opaque_steps": sum(not r["gaps"] for r in records),
+               "stop_reason": stop, "witnesses": witness_count,
+               "unique_eols": len(unique_eols),
+               "unique_handlers": len(unique_handlers),
+               "syntax_candidates_without_opaque_steps": without_gaps,
                "frontier_states": frontier_count, "frontier_list_truncated": frontier_count > len(frontiers),
+               "pending_modeled_states":pending_states,
                "frontiers": frontiers}
     return summary, records
 
 
 def recover_paths(graph, mode_names=("configure", "interface"), max_states_per_mode=250000,
-                  max_paths=30000, cancelled=lambda: False):
+                  max_paths=30000, cancelled=lambda: False, record_sink=None):
     if not 1 <= max_states_per_mode <= 1000000 or not 1 <= max_paths <= 200000:
         raise ValueError("Invalid syntax recovery bounds")
     if graph.get("link_registry_errors"):
@@ -365,18 +382,22 @@ def recover_paths(graph, mode_names=("configure", "interface"), max_states_per_m
     missing = set(mode_names) - {mode["name"] for mode in definitions}
     if missing:
         raise ValueError("Mode definitions missing: " + ", ".join(sorted(missing)))
-    records, summaries = [], []
+    records, summaries = [], [];witness_total=0;handlers=set()
+    def emit(record):
+        handlers.add(record['handler'])
+        if record_sink is None:records.append(record)
+        else:record_sink(record)
     for definition in definitions:
-        if len(records) >= max_paths or cancelled():
+        if witness_total >= max_paths or cancelled():
             break
         summary, paths = recover_mode(graph, definition, overlays, max_states_per_mode,
-                                       max_paths - len(records), cancelled)
+                                       max_paths - witness_total, cancelled, emit)
         summaries.append(summary)
-        records.extend(paths)
+        witness_total+=summary['witnesses']
         if summary["stop_reason"] == "cancelled":
             break
     summary = {"scope": "Witness per EOL/context, preferring fewer opaque steps then fewer tokens then fewer edges; not exhaustive syntax enumeration",
-               "modes": summaries, "paths": len(records), "unique_handlers": len({r["handler"] for r in records}),
+               "modes": summaries, "paths": witness_total, "unique_handlers": len(handlers),
                "mode_roots": graph.get("mode_definitions", []), "mode_evidence": graph.get("mode_evidence", {}),
                "requested_modes": list(mode_names), "unprocessed_modes": sorted(set(mode_names) - {s["mode"] for s in summaries}),
                "registration_overlay_edges": sum(map(len, overlays.values())),
@@ -386,6 +407,7 @@ def recover_paths(graph, mode_names=("configure", "interface"), max_states_per_m
                "tracked_fields": dict(zip(map(str, TRACKED_FIELDS), ("sense", "default", "nvgen"))),
                "initial_state_assumption": graph.get("path_analysis", {}).get("initial_normal_cli_state", [1, 0, 0]),
                "runtime_conditions_evaluated": False,
+               "records_streamed":record_sink is not None,
                "notes": ["Candidate registration edges overapproximate possible installation, not boot order or device availability.",
                          "Only local constant assignments to sense/default/NVGEN are tracked; other state remains symbolic.",
                          "Unknown actions are explicit opaque tokens; callback effects can make a path partial.",

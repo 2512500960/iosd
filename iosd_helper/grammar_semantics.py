@@ -3,6 +3,20 @@ import re
 from .memory import MemoryReadError, decode_pointer, read_cstring
 
 
+def keyword_literal(row,text):
+    """Retain printable descriptor strings, including punctuation and embedded spaces."""
+    if not 1<=len(text)<=80 or not text.strip() or not all(32<=ord(c)<127 for c in text):
+        row['keyword_text_unparsed']=text
+        raise MemoryReadError('Keyword descriptor exceeds printable literal bounds')
+    row['keyword_match_unit']='descriptor_literal'
+    if not re.fullmatch(r'[A-Za-z0-9_.:/+<>-]{1,80}',text):
+        row['keyword_literal_shape']='punctuation_or_embedded_space'
+        row.setdefault('keyword_extra_conditions',[]).append({'kind':'descriptor_literal_matching',
+            'literal':text,'wrapper_whitespace_and_match_flags_symbolic':True,'evaluated':False})
+        row['keyword_gap']='Descriptor literal retained; whitespace and matching flags remain symbolic'
+    return text
+
+
 def read_action_registry(memory, base, count):
     if not 1 <= count <= 1024:
         raise ValueError("Invalid action registry count")
@@ -40,11 +54,11 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
             "behavior":"Copies the first 24 descriptor bytes into keyword_core; assignment offset is 0xffff; wrapper flags remain uninterpreted",
             "evidence":"Reviewed 26.01.02 wrapper named in action registry; normal CLI branch copies keyword descriptor"}
         name="keyword_action"
-    elif name in ("keyword_orset_action", "keyword_ortest_action"):
+    elif name in ("keyword_orset_action", "keyword_ortest_action", "keyword_orset_mm_action", "keyword_ortest_mm_action"):
         row["reviewed_keyword_wrapper"]={"name":name,
             "behavior":"Copies keyword/id descriptor; OR assignment, with an additional zero-mask precondition for ortest",
             "evidence":"Reviewed 26.01.02 ORSET/ORTEST wrappers and E38DB80 consumer; exact wrapper address retained in action registry"}
-        name="keyword_id_action"
+        name="keyword_id_mm_action" if '_mm_' in name else "keyword_id_action"
     control = {"NONE_action": "stop", "NOP_action": "epsilon_both",
                "link_point_action": "epsilon_both", "link_trans_action": "epsilon_links",
                "help_action": "epsilon_alternate", "link_point_error_action": "stop",
@@ -78,15 +92,33 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
         if name == "link_trans_action" and payload < (1 << 47):
             row["semantic_edges"] = [{"target": payload, "kind": "link_extra_candidate",
                                       "field_address": row["address"] + 24}]
-        if name in ("keyword_action", "keyword_id_action", "keyword_mm_action", "keyword_id_mm_action"):
+        if name == 'general_keyword_action':
+            raw=memory.read(payload,48);keyword=read_cstring(memory,ptr(raw),96)
+            keyword_literal(row,keyword)
+            row.update(path_semantics='keyword',semantic_role='keyword',keyword_candidate=keyword,
+                keyword_address=ptr(raw),descriptor_raw_hex=raw.hex(),
+                privilege_descriptor_address=ptr(raw,16),minimum_match_candidate=int.from_bytes(raw[40:44],'big'),
+                keyword_flags_raw_hex=raw[44:48].hex(),
+                keyword_extra_conditions=row.get('keyword_extra_conditions',[])+[{'kind':'general_keyword_flags_and_privilege','evaluated':False,
+                    'flags_raw_hex':raw[44:48].hex(),'privilege_descriptor_address':ptr(raw,16),
+                    'minimum_match_candidate':int.from_bytes(raw[40:44],'big')}],
+                keyword_gap='General keyword flags, access gates and state operation remain symbolic',
+                semantic_status='Reviewed E38DB80 keyword fields and control branches; flags and effects retained')
+            offset=int.from_bytes(raw[24:26],'big')
+            if offset!=0xffff:
+                row['effects']=[{'kind':'general_keyword_storage','storage_offset_candidate':offset,
+                    'width_candidate':int.from_bytes(raw[26:28],'big'),'value_raw_hex':raw[32:40].hex(),
+                    'operation':'controlled_by_flags','effects_unresolved':True}]
+            if ptr(raw,8):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,8),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
+        elif name in ("keyword_action", "keyword_id_action", "keyword_mm_action", "keyword_id_mm_action"):
             size = {"keyword_action": 24, "keyword_id_action": 40,
                     "keyword_mm_action": 28, "keyword_id_mm_action": 44}[name]
             raw = memory.read(payload, size)
             row["descriptor_raw_hex"] = raw.hex()
             keyword = read_cstring(memory, ptr(raw), 96)
-            if not re.fullmatch(r"[A-Za-z0-9_.:/+<>-]{1,80}", keyword):
-                row["keyword_text_unparsed"] = keyword
-                raise MemoryReadError("Keyword descriptor is not a simple token")
+            keyword_literal(row,keyword)
             row.update(keyword_candidate=keyword, keyword_address=ptr(raw),
                        path_semantics="keyword",
                        descriptor_raw_hex=raw.hex(), semantic_role="keyword",
@@ -99,9 +131,9 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
                 row["effects"] = [{"kind": "keyword_state_assignment", "field_offset": int.from_bytes(raw[24:26], "big"),
                                    "width_candidate": int.from_bytes(raw[26:28], "big"),
                                    "value_raw_hex": raw[32:40].hex(), "evaluated": False}]
-                if action['name'] in ('keyword_orset_action','keyword_ortest_action'):
+                if action['name'] in ('keyword_orset_action','keyword_ortest_action','keyword_orset_mm_action','keyword_ortest_mm_action'):
                     row['effects'][0]['operation']='or'
-                if action['name']=='keyword_ortest_action':
+                if action['name'] in ('keyword_ortest_action','keyword_ortest_mm_action'):
                     row['keyword_state_precondition']={'kind':'parser_state_mask_zero',
                         'field_offset':int.from_bytes(raw[24:26],'big'),'width_candidate':int.from_bytes(raw[26:28],'big'),
                         'mask_raw_hex':raw[32:40].hex(),'evaluated':False}
@@ -129,6 +161,70 @@ def decode_action_payload(memory, row, action, pointer_mode="little", function_r
                        path_semantics="epsilon_accept",
                        nvgen_callback_metadata=function(callback), descriptor_raw_hex=raw.hex(),
                        semantic_status="consumer-validated NVGEN callback; not a command terminal")
+        elif name == 'timesec_action':
+            raw=memory.read(payload,24);second=int.from_bytes(raw[8:12],'big');total=int.from_bytes(raw[12:16],'big')
+            row.update(path_semantics='parameter',semantic_role='time_parameter',descriptor_raw_hex=raw.hex(),
+                parameter={'kind':'time_hm' if second==0xffffffff else 'time_hms',
+                    'hour_storage_offset':int.from_bytes(raw[:4],'big'),'minute_storage_offset':int.from_bytes(raw[4:8],'big'),
+                    'second_storage_offset':None if second==0xffffffff else second,
+                    'total_seconds_storage_offset':None if total==0xffffffff else total,
+                    'hours':[0,23],'minutes':[0,59],'seconds':[0,59],'separator':':'},
+                parameter_condition={'kind':'time_input_and_context','evaluated':False},
+                parameter_gap='Input boundary/help context and time matching are symbolic',
+                semantic_status='Reviewed E3A8BA0 hour/minute/optional-second fields and optional seconds-total assignment')
+            if ptr(raw,16):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,16),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
+        elif name == 'signed_number_action':
+            raw=memory.read(payload,24);bounds=[int.from_bytes(raw[i:i+4],'big',signed=True) for i in (4,8)]
+            row.update(path_semantics='parameter',semantic_role='signed_number_parameter',descriptor_raw_hex=raw.hex(),
+                parameter={'kind':'signed_number','storage_offset':int.from_bytes(raw[:4],'big'),
+                    'min':min(bounds),'max':max(bounds),'declared_bounds':bounds,'storage_width':4},
+                parameter_condition={'kind':'signed_decimal_input_and_boundary','evaluated':False},
+                semantic_status='Reviewed E3975B0 signed decimal bounds, overflow checks and four-byte storage')
+            if ptr(raw,16):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,16),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
+        elif name in ('hexdata_action','hexdata_action_even'):
+            raw=memory.read(payload,24);mode=int.from_bytes(raw[20:24],'big')
+            row.update(path_semantics='parameter',semantic_role='hex_parameter',descriptor_raw_hex=raw.hex(),
+                parameter={'kind':'hexstring' if mode==0 else 'hexdata',
+                    'storage_offset':int.from_bytes(raw[:2],'big'),'length_storage_offset':int.from_bytes(raw[2:4],'big'),
+                    'declared_limit':int.from_bytes(raw[16:20],'big'),'mode_raw_hex':raw[20:24].hex(),
+                    'initial_character_run_even_required':name=='hexdata_action_even'},
+                parameter_condition={'kind':'hex_parse_and_boundary','parser_rva':0xe3a4ef0,
+                    'even_initial_run':name=='hexdata_action_even','character_class_mask':0x44,'evaluated':False},
+                parameter_gap='Hex parser mode, size unit and input/context validation retained for further review',
+                semantic_status='Reviewed E3A5130 descriptor and E3A5610 parity wrapper; helper validation retained')
+            if ptr(raw,8):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,8),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
+        elif name == 'gen_number_func_action':
+            raw=memory.read(payload,28);callback=ptr(raw,8)
+            row.update(path_semantics='parameter',semantic_role='number_parameter',descriptor_raw_hex=raw.hex(),
+                parameter={'kind':'unsigned_number_dynamic' if callback else 'unsigned_number',
+                    'storage_offset':int.from_bytes(raw[:4],'big'),'min':0,'max':0xffffffff,
+                    'bounds_callback':callback,'bounds_evaluated':not bool(callback),'default_bounds_only':bool(callback),
+                    'flags_raw_hex':raw[24:28].hex()},
+                parameter_condition={'kind':'general_number_callback_and_context','callback':callback,
+                    'callback_gate_fields':[0x2ebc,0x2ec0,0x3510],'evaluated':False},
+                parameter_gap='Callback-provided numeric bounds and general-number flags remain symbolic',
+                semantic_status='Reviewed E398350 default bounds and conditional callback before E395CC0')
+            if ptr(raw,16):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,16),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
+        elif name in ('url_action','url_exact_action'):
+            raw=memory.read(payload,40 if name=='url_action' else 32)
+            row.update(path_semantics='parameter',semantic_role='url_parameter',descriptor_raw_hex=raw.hex(),
+                parameter={'kind':'url_dynamic','storage_offset':int.from_bytes(raw[:2],'big',signed=True),
+                    'descriptor_fields_raw_hex':raw[:24].hex(),'exact_wrapper':name=='url_exact_action'},
+                parameter_condition={'kind':'url_registry_mode_and_input','mode_gate_rva':0xd651810,
+                    'parser_rva':0xd65d690,'registry_getter_rva':0xd72c550,'evaluated':False},
+                parameter_gap='URL scheme selection, registry callbacks, descriptor flags and additional paths remain symbolic',
+                semantic_status='Reviewed D65E1B0/D65DF90 descriptor use and gate; URL grammar is a conditional parameter candidate')
+            if ptr(raw,24):
+                try:row['help_candidate']=read_cstring(memory,ptr(raw,24),512)
+                except MemoryReadError as exc:row['help_error']=str(exc)
         elif name == "general_number_action":
             raw = memory.read(payload, 28)
             minimum, maximum = int.from_bytes(raw[4:8], "big"), int.from_bytes(raw[8:12], "big")
@@ -372,6 +468,9 @@ def summarize_graph(graph):
 
 def node_title(row):
     role = row.get("semantic_role")
+    if role in ('time_parameter','hex_parameter','url_parameter','signed_number_parameter','prefix_parameter'):
+        from .syntax_paths import parameter_label
+        return parameter_label(row['parameter'])
     if role == "command_terminal":
         handler = row.get("handler_candidate")
         return "<cr> -> " + (hex(handler) if handler else "unresolved handler")
