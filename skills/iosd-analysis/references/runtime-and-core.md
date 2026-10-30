@@ -2,6 +2,12 @@
 
 运行时读取用于验证当前链接槽、链表、状态、模块绑定和语法节点。它补充静态证据，不代表所有配置状态下的命令都已注册。
 
+## 调试信号与辅助库
+
+收到定时信号时，分别记录信号编号、线程停止范围、pending 状态、发送来源、IDA 的 Suspend/Passed to/Report 设置和进程退出结果。本样本已复核 `IOSXE heartbeat process` 以及 watchdog、hogcheck 调用和主动崩溃分支；信号发送到现场退出的完整关联仍待确认。用户记录的 No/Debugger/Log 属于特定实验设置，调查中保留其适用环境；由调试器消费信号会影响程序的信号路径。具体证据见 [调试信号与心跳](library/docs/iosd调试信号与心跳.md)。
+
+检查 `libthread_db.so.1` 时，保存实际加载路径、架构、SHA256、Build ID 和来源包信息。`GLIBC_2.x` 符号版本作为 ABI 线索，发行版来源通过包归属或文件比对确认。检查命令及服务端启动示例见 [主教程](library/如何调试iosd.md)。
+
 ## 精确读取
 
 saved IDB 请求 `read.json`：

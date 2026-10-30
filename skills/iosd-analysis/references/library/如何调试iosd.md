@@ -6,9 +6,9 @@
 ## 序言
 
 思科的 IOS XE 系统中，iosd 进程是核心的用户态守护进程。它负责管理 CLI、协议处理、配置生成和状态维护等关键功能。调试 iosd 可以帮助开发者和研究人员理解其内部工作机制，分析问题，并进行安全研究。
-CSR1000v和C8000v是思科提供的虚拟路由器平台（VNF类），代号都叫做VXE，类似的还有Wireless Controller C9800v等等。本文以 CSR1000v 和 C8000v 为例，介绍如何在虚拟化环境中调试 iosd。
+CSR1000v 和 C8000v 是思科提供的 IOS XE 虚拟路由器平台，Catalyst 9800-CL 则是运行 IOS XE 的虚拟无线控制器。本文以 CSR1000v 和 C8000v 为例，介绍如何在虚拟化环境中调试 iosd。当前分析样本的文件名中包含 `vxe` 平台标记。
 
-环境准备部分以 **CSR1000v 16.09.06、VMware Workstation 和 Ubuntu Live** 为例
+环境准备部分以 **CSR1000v 16.09.06、VMware Workstation 和 Ubuntu Live** 为例。
 
 调试环境准备好以后，可以提取 iosd 文件建立静态数据库，再连接运行中的进程，查看命令注册、协议状态和动态对象。本仓库的具体分析案例来自 **C8000v IOS XE 26.01.02**，版本相关地址、结构和统计集中在 [该版本分析结果](analysis/c8000v-26.01.02/README.md)。
 
@@ -42,13 +42,13 @@ CSR1000v和C8000v是思科提供的虚拟路由器平台（VNF类），代号都
 
 在 VMware Workstation 中打开 OVA 文件，进入导入向导。
 
-![原始示例使用的 CSR1000v 16.09.06 OVA 文件](assets/如何调试iosd/source-ova.png)
+![CSR1000v 16.09.06 OVA 文件](assets/如何调试iosd/source-ova.png)
 
 填写虚拟机名称和本地存储位置，继续完成导入。
 
 ![设置虚拟机名称和存储位置](assets/如何调试iosd/source-import.png)
 
-启动虚拟机，让安装程序将系统安装到虚拟磁盘。原文记录的初次启动界面如下。
+启动虚拟机，让安装程序将系统安装到虚拟磁盘。初次启动界面如下。
 
 ![CSR1000v 初次启动时的控制台界面](assets/如何调试iosd/source-first-boot.png)
 
@@ -72,13 +72,13 @@ Ubuntu 启动后选择 Live 会话，在这个会话中挂载 CSR1000v 的磁盘
 
 ## 4 查看分区并挂载启动文件所在分区
 
-虚拟磁盘被划分为 9 个分区。Ubuntu 文件管理器可以看到文件系统卷和加密分区。
+Ubuntu 文件管理器可以看到路由器磁盘中的文件系统卷和加密分区。分区数量、编号和用途随镜像版本核对，下面列出示例环境中的主要分区。
 
 ![Ubuntu Live 中看到的 CSR1000v 磁盘分区](assets/如何调试iosd/source-partitions.png)
 
 主要分区用途如下。
 
-| 分区 | 加密标记 | 路由器侧挂载点 | 原文记录的内容 |
+| 分区 | 加密标记 | 路由器侧挂载点 | 主要内容 |
 |---|---|---|---|
 | `/dev/sda1` | 无 | `/bootflash` | bootflash 文件 |
 | `/dev/sda2` | LUKS | `/nvram` | NVRAM |
@@ -103,7 +103,7 @@ ls -la /mnt/csr-boot
 
 ## 5 设置 rommon_vars 和调试配置路径
 
-在启动文件所在分区的根目录创建 `rommon_vars`。原文内容如下：
+在启动文件所在分区的根目录创建 `rommon_vars`，写入以下内容：
 
 ```ini
 SR_INIT_SHELL=aux_do_system_shell
@@ -113,7 +113,7 @@ SR_NOWATCHDOG=1
 DEBUG_CONF=/bootflash/debug.conf
 ```
 
-这些变量供该示例版本的启动流程使用。`DEBUG_CONF` 指定可选调试配置文件的路径，原始文档记录了路径和开关；`debug.conf` 的具体配置内容可以在后续实验中补充。
+这些变量供该示例版本的启动流程使用。`DEBUG_CONF` 指定调试配置文件路径；`debug.conf` 的具体内容和读取行为随后结合对应版本的启动代码补充。
 
 在当前挂载示例中，文件位置为：
 
@@ -123,11 +123,11 @@ DEBUG_CONF=/bootflash/debug.conf
 
 ## 6 调整 GRUB 引导参数
 
-先在挂载分区内定位现有引导配置。原文列出了 GRUB 2 的 `grub.cfg` 和 GRUB 1 的 `menu.lst` 两种情况，截图展示的是 `menu.lst`。
+先在挂载分区内定位现有引导配置。GRUB 2 使用 `grub.cfg`，GRUB Legacy 使用 `menu.lst`；下面的示例为 `menu.lst`。
 
-![原文记录的 GRUB menu.lst 配置](assets/如何调试iosd/source-grub-menu.png)
+![GRUB menu.lst 配置](assets/如何调试iosd/source-grub-menu.png)
 
-截图中的主要配置如下，路径和启动项保留原示例写法：
+主要配置如下，路径和启动项对应本节示例环境：
 
 ```text
 default 0
@@ -146,7 +146,7 @@ title CSR1000v - GOLDEN IMAGE
     kernel /packages.conf rw root=/dev/ram console=ttyS0,9600 norandmaps max_loop=64 HARDWARE=virtual SR_BOOT=boot:packages.conf
 ```
 
-原文的修改包括：移除 `VMCONSOLE`，加入 `console=ttyS0,9600`，并加入 `norandmaps`。串口参数用于将启动控制台接到第一路串口；`norandmaps` 用于该实验中的地址随机化设置，便于后续核对映像地址。
+修改包括：移除 `VMCONSOLE`，加入 `console=ttyS0,9600`，并加入 `norandmaps`。串口参数将启动控制台接到第一路串口；`norandmaps` 关闭用户态地址空间随机化，便于核对映像地址。参数含义见 [Linux 内核文档](https://www.kernel.org/doc/html/v4.17/admin-guide/kernel-parameters.html)。
 
 重新启动后，通过目标进程的映射确认实际加载位置。地址记录同时保存文件身份和加载基址，后续 IDA rebase 与调试读取都使用这份对应关系。
 
@@ -159,7 +159,7 @@ sudo umount /mnt/csr-boot
 
 ## 7 配置两路虚拟串口
 
-为虚拟机增加两个串口，连接方式选择命名管道。原文使用的管道名为：
+为虚拟机增加两个串口，连接方式选择命名管道。示例管道名为：
 
 ```text
 \\.\pipe\csr1000v0
@@ -175,15 +175,17 @@ sudo umount /mnt/csr-boot
 ![第二路串口连接到 csr1000v1 命名管道](assets/如何调试iosd/source-serial-1.png)
 
 两张截图中，这端配置为服务器，另一端配置为应用程序。主机上的终端程序连接对应管道；与前面引导参数配合时，第一路串口使用 9600 波特率、8 数据位、无校验、1 停止位。
-之后可以通过同主机的的终端程序连接两路串口，观察启动输出和进入这个虚拟设备的底层 shell。
-![alt text](assets/如何调试iosd/image-5.png)
-![alt text](assets/如何调试iosd/image-6.png)
+之后通过宿主机上的终端程序连接两路串口，观察启动输出并进入虚拟设备的底层 shell。
+
+![CSR1000v 17.03.04a 底层 shell 的内核和文件系统信息](assets/如何调试iosd/image-5.png)
+
+![CSR1000v 16.09.06 底层 shell 的文件系统和启动参数](assets/如何调试iosd/image-6.png)
 
 ## 8 准备底层 Linux 的网络通道
 
 环境中的转发设施会接管部分虚拟网卡。实验保留 vmxnet3 网卡用于路由器功能，并将其中一块网卡调整为 e1000，使其由底层 Linux 驱动使用。
 
-关闭虚拟机后，用文本编辑器打开 `.vmx` 配置文件。原文截图中的网卡配置为：
+关闭虚拟机后，用文本编辑器打开 `.vmx` 配置文件。网卡配置示例如下：
 
 ```ini
 ethernet0.virtualDev = "vmxnet3"
@@ -191,21 +193,24 @@ ethernet1.virtualDev = "vmxnet3"
 ethernet2.virtualDev = "e1000"
 ```
 
-![原文中将 ethernet2 调整为 e1000 的 VMX 配置](assets/如何调试iosd/source-vmx-network.png)
+![将 ethernet2 调整为 e1000 的 VMX 配置](assets/如何调试iosd/source-vmx-network.png)
 
 调试网卡连接到主机可以到达的虚拟网络。路由器启动后，通过串口进入底层 shell，查看这块网卡的实际接口名，为它配置地址并启用接口，再从主机验证连通性。
 
-原文还记录了较早 CSR1000v 版本使用的办法：在启动阶段先通过底层 shell 为一块接口配置地址并启用，使该接口作为 Linux 通信通道。网卡类型、接管时机和启动行为随镜像版本核对，实验记录中同时保留这些条件。
-![alt text](assets/如何调试iosd/image-10.png)
-串口用于观察启动和访问底层环境，可以作为初步的命令通道，可以在这个串口上启动预留好的底层网络接口并配置合适的网络地址与路由，之后便可以在外部通过网络访问设备的底层环境，进行文件传输及远程调试通信。原文提到的 telnet 访问需要目标侧已有相应服务；也可以按实验环境使用已有的其他远程访问方式。
+较早的部分 CSR1000v 环境还可以在启动阶段通过底层 shell 为接口配置地址并启用，将其保留为 Linux 通信通道。网卡类型、接管时机和启动行为按镜像版本记录。
+
+![通过网络访问 C8000v 底层 Linux 并查看挂载信息](assets/如何调试iosd/image-10.png)
+
+串口用于观察启动和访问底层环境。通过串口为预留接口配置地址与路由，确认连通性后，便可使用网络进行文件传输和远程调试。截图中的 telnet 连接使用目标侧已经运行的服务，实际环境也可使用已有的其他远程访问方式。
 
 ## 9 恢复路由器启动并取得 iosd 文件
 
 退出 Ubuntu Live，将启动顺序恢复为路由器虚拟硬盘优先，或断开 Live ISO。连接串口后启动 CSR1000v，观察引导输出以及底层环境是否按配置启动。
 
 在底层环境中找到 iosd 进程及其可执行文件，记录 PID、进程路径和映像映射。Linux 的 `/proc/<PID>/exe` 与 `/proc/<PID>/maps` 可以分别提供进程可执行文件和地址映射线索；其中 `<PID>` 使用本次实际进程号。
-或者也可以通过binwalk解包，或者直接在底层找到对应文件然后取出，iosd的ELF文件通常在/usr/binos/bin/下挂载
-![alt text](assets/如何调试iosd/image-7.png)
+另一种方式是解包对应系统镜像，再定位 iosd ELF；binwalk 可以辅助识别和提取镜像中的文件系统。运行中的系统通常在 `/usr/binos/bin/` 下提供程序入口，其中部分是指向已挂载软件包的符号链接。使用 `readlink -f` 确认实际文件位置，并与 `/proc/<PID>/exe` 对照。
+
+![程序入口通过符号链接指向已挂载软件包中的 iosd 文件](assets/如何调试iosd/image-7.png)
 
 将对应文件复制到分析主机，并计算摘要。例如在 Windows PowerShell 中：
 
@@ -234,31 +239,125 @@ IDA 地址   = 当前 IDB 基址 + RVA
 在 IDA 中根据已核对的映射执行 rebase，等待处理完成后保存 IDB。随后选择少量代码或只读数据作为锚点，复核文件、数据库和目标映射的对应关系。
 
 需要观察链表、对象或状态时，在调试器中手动暂停目标；读取时记录暂停阶段。继续运行由实验操作者控制。core 文件提供另一个离线观察入口，分析范围由实际捕获的映射和页面决定。
-如果想使用IDA或者其他调试器去调试iosd进程，建议只attach而不是启动，因为iosd的启动非常之复杂，而且作为critical process，如果关闭了进程，通常会触发整个系统重启。
-对于虚拟设备（例如c8kv csr1kv等）来说，由于其运行在虚拟化环境下，我们可以根据之前的步骤将一个不受数据平面接管的网卡接入到宿主机上，然后在宿主机上使用IDA的远程调试功能去attach到iosd进程上。这里以IDA自带的dbgsrv为例，将IDA配套的dbgsrv传到设备的/bootflash目录下后，找一个其他系统的（比如ubuntu或者centos）libthread_db.so.1过来和dbgsrv放在一起，然后启动监听23946端口。
-![alt text](assets/如何调试iosd/image-11.png)
-之后在IDA中配置好远程调试的参数并选择目标就可以成功attach到iosd进程上了。需要注意的是，iosd进程在启动时会有很多的初始化工作，如果在iosd启动过程中attach到进程上，可能会导致iosd进程崩溃，所以建议在iosd启动完成后再attach。
-![alt text](assets/如何调试iosd/image-12.png)
-成功连接到调试器之后需要注意，IOSD程序通过倒计时timer机制来进行某种心跳机制，没过一段时间会由系统向IOSD发送一个信号，如果IOSD没有在规定时间内重置这个timer，IOSD进程间就会收到这个信号，从而触发崩溃突出。
-![alt text](assets/如何调试iosd/image-9.png)
+### 10.1 启动远程调试服务端并 attach
 
-我们需要在调试器中设置对收到信号的处理方式：不暂停应用，不将信号传递给应用，制作记录，这样就可以避免IOSD进程崩溃了。
+iosd 的启动依赖平台初始化、进程管理和其他组件。本教程在系统启动完成后 attach 到已有进程。iosd 属于系统关键进程，其退出会触发平台的故障处理；具体恢复或重启行为由平台策略决定。
 
+对于 C8000v、CSR1000v 等虚拟设备，使用前面准备的底层 Linux 网络接口连接分析主机。将与 IDA 版本及目标架构对应的 Linux 远程调试服务端 `linux_server` 放到设备上，例如 `/bootflash/ida/`。
 
-![alt text](assets/如何调试iosd/image-8.png)
+截图中的实验环境还在同一目录放置了 `libthread_db.so.1`。它是线程调试辅助库，使用时记录架构、文件摘要和实际加载路径；下面一节说明检查方法。该实验所用库的具体发行版来源尚待核对。
 
-## 11 ISR4321为例的调试
-基于Cisco XE系统的实体设备通常和虚拟设备共用代码，但是仍然会有很大的区别，想在实体设备上调试不是一个简单的事情，首先就是获取到底层的root权限，这一步通常需要用到漏洞，也就决定了需要用到历史漏洞，而且往往只能在特定的版本上才能使用。
-假设我们使用公开的漏洞获取到了实体设备的root权限，如何给调试器提供通信渠道也是个麻烦事儿，通常需要考虑建立一个独立于被调试对象以外的通道。这里列举三种可能的手段：
-1. 用实体设备的串口，
-2. 给实体设备增加一个USB网卡，新增加的USB网卡独属于底层Linux系统，和IOSD进程无关，也和数据平面无关，使用这个网卡作为调试器和IOSD进程的通信通道。好在某些设备幸好上，usbnet网卡和相关的驱动没有完全剪裁掉。
-![alt text](assets/如何调试iosd/image-15.png)
-3. 使用mcp_chvrf.sh
-   在较新的Cisco XE系统中，mcp_chvrf.sh增加了一个global VRF空间，可以从底层访问设备以外的网络。
-   ![alt text](assets/如何调试iosd/image-13.png)
-    不过在一些老版本中，mcp_chvrf.sh并没有global VRF空间，这时候就需要其他方法了。
-![ ](assets/如何调试iosd/image-14.png)
-## 11 用 skill 辅助分析
+```sh
+cd /bootflash/ida
+chmod +x ./linux_server
+LD_LIBRARY_PATH=. ./linux_server
+```
+
+示例服务端监听 23946 端口，以实际启动输出为准。
+
+![IDA Linux 远程调试服务端的启动命令与监听地址](assets/如何调试iosd/image-11.png)
+
+在 IDA 中配置远程主机和端口，打开进程列表，依据 PID、命令行及可执行文件路径选择本次目标。截图中的进程名包含 `linux_iosd-image`；对当前样本使用 `/proc/<PID>/exe` 核对它与提取的 ELF 的对应关系。
+
+![IDA 远程进程列表中的 iosd 相关进程](assets/如何调试iosd/image-12.png)
+
+### 10.2 检查 libthread_db.so.1 的来源与兼容性
+
+先查看实际文件、架构、摘要和构建标识。以下命令在装有 `file`、`readelf` 等工具的 Linux 分析机或 WSL 中执行，路径替换为正在使用的库：
+
+```sh
+readlink -f ./libthread_db.so.1
+file ./libthread_db.so.1
+sha256sum ./libthread_db.so.1
+readelf -h ./libthread_db.so.1
+readelf -n ./libthread_db.so.1
+readelf -p .comment ./libthread_db.so.1
+readelf -V ./libthread_db.so.1
+strings -a ./libthread_db.so.1 | grep -Ei 'GNU C|glibc|Ubuntu|Debian|Red Hat|GCC:'
+```
+
+| 信息 | 用途 |
+|---|---|
+| `file`、ELF Header | 确认位宽、字节序和处理器架构 |
+| SHA256、Build ID | 标识具体文件，便于与来源软件包逐一比对 |
+| `.comment` | 查看保留的编译器信息；有些库会移除这个节 |
+| Version info、字符串 | 查看符号版本及发行版/构建线索 |
+
+`GLIBC_2.x` 符号版本描述 ABI 需求或定义；发行版名称和完整软件包版本还需要包记录或文件比对。Build ID 也需要与对应包或调试符号索引关联。`readelf` 参数见 [GNU Binutils 文档](https://sourceware.org/binutils/docs/binutils/readelf.html)。
+
+如果还能访问最初取得库的系统，可查询包归属：
+
+```sh
+# Debian / Ubuntu：在来源系统查询库的实际路径
+dpkg-query -S /实际路径/libthread_db.so.1
+
+# RPM 系统：在来源系统查询
+rpm -qf /实际路径/libthread_db.so.1
+```
+
+复制到自建目录的文件，其来源通常需要回到源系统或软件包中比对。选库时同时核对调试服务端的运行环境和目标进程的线程库；[GDB 线程调试说明](https://sourceware.org/gdb/download/onlinedocs/gdb.html/Threads.html) 记录了 `libthread_db` 与目标线程库版本不匹配时的初始化问题。IDA 的实际兼容性结合服务端日志和线程枚举结果确认。
+
+还可以在调试服务端运行时检查其映射，确认当时加载的库路径。下面的 `12345` 替换为 **linux_server 的 PID**：
+
+```sh
+SERVER_PID=12345
+awk '/libthread_db/ {print $NF}' "/proc/$SERVER_PID/maps" | sort -u
+```
+
+### 10.3 暂停后的定时信号处理
+
+本次实验的现场记录是：手动暂停 iosd 一段时间后，IDA 出现定时信号提示。操作者回忆，选择 `Pass to program` 将信号传递给 iosd 后，进程曾崩溃退出。对应截图记录了 `SIGVTALRM`；该现象的具体触发条件与退出路径仍需结合信号处理入口或退出现场核对。
+
+![IDA 输出窗口中的 SIGVTALRM 信号记录](assets/如何调试iosd/image-9.png)
+
+本实验采用截图中的处理方式：
+
+| 信号 | Suspend | Passed to | Report |
+|---|---|---|---|
+| `SIGALRM` | No | Debugger | Log |
+| `SIGVTALRM` | No | Debugger | Log |
+
+即由调试器处理这两个信号并记录日志。出现相应提示时保持这一策略，避免在该实验中选择 `Pass to program`。这是本次现场采用的设置；其他信号按各自的处理职责配置。IDA 将“收到信号时是否暂停”和“是否交给程序”作为独立选项，详见 [IDA 异常处理说明](https://docs.hex-rays.com/9.0/user-guide/user-interface/menu-bar/debugger/exceptions)。
+
+![将 SIGALRM 和 SIGVTALRM 配置为 No、Debugger、Log](assets/如何调试iosd/image-8.png)
+
+Linux 的常规 interval timer 中，`SIGALRM` 对应实时时间，`SIGVTALRM` 对应进程消耗的用户态 CPU 时间。分析暂停期间的信号时，同时核对未处理信号、线程停止范围和发送者。一般计时器语义见 [GNU C Library 文档](https://sourceware.org/glibc/manual/2.24/html_node/Setting-an-Alarm.html)。
+
+当前 C8000v 26.01.02 样本已确认创建 `IOSXE heartbeat process`，任务内调用 `__be_mcp_emit_heartbeat`，并存在通向 `_be_crashdump` 的失败分支；它还调用 `__be_unix_start_hogcheck_periodic`。这些关系说明了心跳与监测入口，定时信号的发送、处理及现场退出之间的关联继续保留为待核对关系。具体函数与范围见 [调试信号与心跳代码复核](docs/iosd调试信号与心跳.md)。
+
+## 11 以 ISR4321 为例调试实体设备
+
+实体设备与虚拟设备共享部分 IOS XE 实现，硬件驱动、数据平面和底层访问方式则随平台变化。本节以已经取得设备底层 root shell 的实验环境为前提，重点讨论调试通信通道。
+
+调试通道由底层环境维持，便于在 iosd 暂停时继续通信。可以结合设备条件选择以下方式。
+
+### 11.1 串口
+
+串口用于进入底层 shell、观察日志和准备调试环境。使用串口承载远程调试协议时，还需要匹配相应调试后端的传输能力。
+
+### 11.2 USB 网卡
+
+可以给设备接入由底层 Linux 驱动管理的 USB 网卡，建立独立调试链路。截图显示某个实验镜像保留了 `usbnet` 与 AX88179 相关驱动文件；接入后继续核对 USB 设备识别、驱动绑定、网络接口和通信结果。
+
+![镜像中保留的 usbnet 与 AX88179 驱动文件](assets/如何调试iosd/image-15.png)
+
+### 11.3 使用 mcp_chvrf.sh 提供的网络环境
+
+部分版本的 `mcp_chvrf.sh` 提供 `global` 选项，允许在对应网络环境中启动命令。实验中通过这一方式下载工具，并启动 frpc 连接分析主机上的 frp 服务端。
+
+![通过 mcp_chvrf.sh global 执行下载命令](assets/如何调试iosd/image-16.png)
+
+截图显示直接运行 frpc 时出现 `network is unreachable`；通过 `mcp_chvrf.sh global` 启动后，成功登录服务端并建立代理。随后按 frp 配置将连接转发到设备上的调试服务端端口。
+
+![直接启动 frpc 与通过 global 网络环境启动的连接结果](assets/如何调试iosd/image-17.png)
+
+脚本的可用选项按设备上的使用说明核对。网络命名空间与 VRF 的具体切换方式由该版本脚本实现确定。下面两张截图展示了不同实验环境中的选项差异。
+
+![提供 global 选项的 mcp_chvrf.sh 使用说明](assets/如何调试iosd/image-13.png)
+
+![另一实验环境中的 mcp_chvrf.sh 选项与文件系统信息](assets/如何调试iosd/image-14.png)
+
+## 12 用 skill 辅助分析
 
 仓库中的 [iosd-analysis skill](../../SKILL.md) 复用了字节读取、CLI 图恢复、注册分析和协议调查脚本。IDA MCP 提供当前数据库和调试接口，skill 组织调查过程及解释资料。
 
@@ -277,7 +376,7 @@ python tools/iosd_mcp.py --url <MCP地址> status --output reports/session/sessi
 
 调试读取、动态链接槽和 core 的请求格式见 [运行时与 core](../runtime-and-core.md)。
 
-## 12 阅读 iosd 的内容与结构
+## 13 阅读 iosd 的内容与结构
 
 开始阅读时，可以先看四组关系：
 
@@ -292,7 +391,7 @@ python tools/iosd_mcp.py --url <MCP地址> status --output reports/session/sessi
 
 配图及具体实现见 [iosd 架构图解](docs/iosd架构图解.html) 和 [从大 ELF 到运行机制](docs/iosd从大ELF到运行机制.md)。
 
-## 13 CLI 挖掘的基本过程
+## 14 CLI 挖掘的基本过程
 
 CLI 分析从动作分发表、语法节点、模式入口和注册接口展开。先恢复节点之间的 accept、alternate 和动态链接关系，再沿路径关联关键词、参数、条件、handler 与 selector。
 
@@ -310,7 +409,7 @@ CLI 分析从动作分发表、语法节点、模式入口和注册接口展开�
 
 CLI 的具体方法、脚本入口和本版本恢复进度见 [CLI 挖掘方法](docs/iosd的CLI挖掘方法.md) 与 [C8000v 26.01.02 分析结果](analysis/c8000v-26.01.02/README.md)。
 
-## 14 协议处理与配置生成
+## 15 协议处理与配置生成
 
 协议调查可以从相关 subsystem init 和登记回调进入，再沿输入缓冲区、队列消费者、字段解析、错误处理和状态更新追踪。文件归属通过实际函数位置、导入绑定和外部消费端逐段确定。
 

@@ -36,6 +36,7 @@ ELF 包含 8,906 个节。其中 8,866 个 `.btrace*` 命名节合计约 5.54 Mi
 | 配置生成 | CLI、NVGEN、hostname/description、接口缓存入口 | [NVGEN](../../docs/iosd的NVGEN与接口配置缓存.md) |
 | 主备 | 心跳、超时、状态事件、EHSA 与平台边界 | [EHSA](../../docs/iosd的EHSA心跳与主备状态机.md) |
 | 执行环境 | pthread、IOS task、调度及 level 的具体语境 | [线程与 level](../../docs/iosd的线程与level.md) |
+| 调试信号与心跳 | 心跳任务、watchdog/hogcheck 接口、崩溃分支与信号现场记录 | [代码复核](../../docs/iosd调试信号与心跳.md) |
 
 各处理链保留函数、RVA、调用或字段证据，以及外部绑定和中间数据流的待确认部分。设计意图中的推断在正文单独标明。
 

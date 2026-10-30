@@ -73,7 +73,7 @@ python -X utf8 tools/build_skill_release.py
 python -m unittest discover -s tests -q
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.3.0.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。主教程在仓库根目录维护，构建时复制到 skill；原文件保留供继续编辑。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.3.1.zip`，生成来源和 SHA256 记录在 skill 的 `build-manifest.json`。主教程在仓库根目录维护，构建时复制到 skill；原文件保留供继续编辑。主入口和核心只用标准库；部分 HTML 报告工具及对应测试需要 `pip install -r requirements-docs.txt`。
 
 新增 `inspect_elf_layout.py` 可离线解析原始 ELF64 的节、装载段、文件占用与 NOBITS。当前样本的文件布局已独立校验 MD5/SHA256，并整理为 [布局摘要](profiles/elf_layout_26_01_02.json)。大小和节名只用于容器导航，不自动赋予协议或组件所有权。图解先复用既有局部证据；用户确认 IDA 空闲后，已安全恢复 MCP，并补查 OSPF 类型取得、BGP UPDATE 入口和 UDP 入队/通知路径。
 
