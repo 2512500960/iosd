@@ -81,6 +81,26 @@ class RuntimeTests(unittest.TestCase):
 
 
 class ClientTests(unittest.TestCase):
+    def test_protocol_cli_resume_preserves_session_and_parent_capture_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);session=root/'session.json';previous=root/'page1.json';output=root/'page2.json'
+            identity={'input_md5':'fixture','imagebase':0x1000}
+            session.write_text(json.dumps({'kind':'iosd_mcp_session','identity':identity}))
+            cursor={'schema_version':1,'phase':'names','name_index':10}
+            previous.write_text(json.dumps({'operation':'protocol','identity':identity,'identity_stable':True,
+                                           'result':{'protocol':'bgp','cursor':cursor}}))
+            args=['--url','http://fixture/mcp','protocol','--session',str(session),'--query','BGP',
+                  '--resume',str(previous),'--output',str(output)]
+            with patch.object(cli,'invoke',return_value={'kind':'iosd_mcp_capture'}) as invoke,redirect_stdout(io.StringIO()):
+                self.assertEqual(cli.main(args),0)
+                request=invoke.call_args.args[1]
+                self.assertEqual(request['cursor'],cursor);self.assertEqual(request['query'],'bgp')
+                self.assertEqual(request['identity'],identity)
+                self.assertEqual(request['continuation_from_sha256'],cli.hashlib.sha256(previous.read_bytes()).hexdigest())
+            with patch.object(cli,'invoke') as invoke:
+                with self.assertRaisesRegex(ValueError,'new output'):cli.main(args[:-1]+[str(previous)])
+                invoke.assert_not_called()
+
     def test_capability_discovery_includes_later_pages_and_detects_repeated_cursor(self):
         client=Mock();client.send.side_effect=[{'tools':[{'name':'first'}],'nextCursor':'next'},
                                               {'tools':[{'name':'py_eval'}]}]

@@ -142,6 +142,7 @@ def parser():
         if name=='protocol':
             q.add_argument('--query',required=True);q.add_argument('--max-names',type=int,default=200000)
             q.add_argument('--max-bytes',type=int,default=8*1024*1024);q.add_argument('--max-hits',type=int,default=500)
+            q.add_argument('--resume',help='Previous protocol capture; continue without overwriting it')
         if name=='subsystems':q.add_argument('--pointer-mode',required=True,choices=('little','big','mask_then_swap','swap_then_mask'))
         if name=='read':
             q.add_argument('--request',required=True,help='JSON with source, ranges, and for debugger runtime_base + anchors')
@@ -171,7 +172,20 @@ def main(argv=None):
             for key in ('rva','max_size','query','max_names','max_bytes','max_hits','pointer_mode'):
                 if hasattr(args,key):request[key]=getattr(args,key)
             if args.operation=='protocol':
-                from iosd_helper.protocols import match_kind
+                from iosd_helper.protocols import match_kind,protocol_query
+                request['query']=protocol_query(args.query)
+                if args.resume:
+                    previous_path=Path(args.resume)
+                    if previous_path.resolve()==Path(args.output).resolve():raise ValueError('Write resumed protocol evidence to a new output file')
+                    previous=json.loads(previous_path.read_text(encoding='utf-8'))
+                    if (previous.get('operation')!='protocol' or not previous.get('identity_stable') or
+                            previous.get('identity')!=session['identity']):
+                        raise ValueError('Protocol continuation requires the same verified IDA session')
+                    page=previous['result']
+                    if page.get('protocol')!=args.query.strip().lower() or not page.get('cursor'):
+                        raise ValueError('Previous protocol scan is complete or belongs to another query')
+                    request['cursor']=page['cursor']
+                    request['continuation_from_sha256']=hashlib.sha256(previous_path.read_bytes()).hexdigest()
                 path=ROOT/'profiles/subsystems_26_01_02.json'
                 if path.is_file():
                     model=json.loads(path.read_text(encoding='utf-8'))

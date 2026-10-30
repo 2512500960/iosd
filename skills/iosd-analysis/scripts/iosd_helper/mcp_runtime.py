@@ -172,7 +172,7 @@ def run(request):
         deadline = time.monotonic()+5
         result = collect_protocol(request['query'],model=request.get('subsystem_model'),cancelled=lambda:time.monotonic()>deadline,
             max_names=integer(request.get('max_names',200000)),max_bytes=integer(request.get('max_bytes',8*1024*1024)),
-            max_hits=integer(request.get('max_hits',500)))
+            max_hits=integer(request.get('max_hits',500)),cursor=request.get('cursor'))
     elif op=='relationships':
         from .protocol_ida import relationships
         deadline = time.monotonic()+5
@@ -196,4 +196,5 @@ def run(request):
     except ValueError as exc:final_gaps.append({'reason':'session_changed_after_capture','detail':str(exc)})
     return {'schema_version':1,'kind':'iosd_mcp_capture','identity':expected,'operation':op,
             'started_utc':started,'finished_utc':utc(),'result':result,'gaps':final_gaps,
+            'continuation_from_sha256':request.get('continuation_from_sha256'),
             'identity_stable':not final_gaps,'target_execution_changed':False}

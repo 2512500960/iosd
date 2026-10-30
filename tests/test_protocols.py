@@ -85,10 +85,47 @@ class ProtocolBoundaryTests(unittest.TestCase):
     def test_limits_and_cancel_are_reported(self):
         result=self.api.collect_protocol('cdp',max_names=1,max_bytes=0)
         self.assertTrue(result['coverage']['name_limit_reached'])
-        self.assertTrue(result['coverage']['byte_limit_reached'])
+        self.assertEqual(result['cursor']['phase'],'names')
+        self.assertTrue(result['coverage']['has_more'])
         result=self.api.collect_protocol('cdp',cancelled=lambda:True)
         self.assertTrue(result['coverage']['cancelled'])
         self.read.assert_not_called()
+
+    def test_resumed_name_and_literal_pages_equal_one_full_scan_without_duplicates(self):
+        full=self.api.collect_protocol('cdp',max_bytes=4096)
+        pages=[];cursor=None
+        for _ in range(10):
+            page=self.api.collect_protocol('cdp',max_names=1,max_bytes=4096,max_hits=1,cursor=cursor)
+            pages.extend(page['candidates']);cursor=json.loads(json.dumps(page['cursor']))
+            if cursor is None:break
+        self.assertIsNone(cursor)
+        key=lambda r:(r['ea'],r['name'],r['kind'])
+        self.assertEqual([key(r) for r in pages],[key(r) for r in full['candidates']])
+        self.assertEqual(len({key(r) for r in pages}),len(pages))
+
+    def test_cursor_rejects_rebase_query_and_name_boundary_changes(self):
+        page=self.api.collect_protocol('cdp',max_names=1,max_bytes=0)
+        with self.assertRaisesRegex(ValueError,'query'):self.api.collect_protocol('bgp',cursor=page['cursor'])
+        self.mods['idautils'].Names=lambda:iter([(0x1100,'renamed'),(0x4000,'bgp_import')])
+        with self.assertRaisesRegex(ValueError,'boundary'):self.api.collect_protocol('cdp',cursor=page['cursor'])
+        self.mods['iosd_helper.ida_adapter'].identity=lambda:{'input_md5':'fixture','imagebase':0x2000}
+        # The module retains the imported identity callable; patch that actual boundary.
+        self.api.identity=lambda:{'input_md5':'fixture','imagebase':0x2000}
+        with self.assertRaisesRegex(ValueError,'IDB/base'):self.api.collect_protocol('cdp',cursor=page['cursor'])
+
+    def test_indexed_name_resume_skips_directly_and_rejects_count_changes(self):
+        rows=[(0x1100,'cdp_read'),(0x4000,'bgp_import'),(0x5000,'cdp_runtime')]
+        names=self.mods['ida_name'];names.get_nlist_size=lambda:len(rows)
+        names.get_nlist_ea=lambda i:rows[i][0];names.get_nlist_name=lambda i:rows[i][1]
+        self.mods['idautils'].Names=Mock(side_effect=AssertionError('Indexed scans must not enumerate from zero'))
+        first=self.api.collect_protocol('cdp',max_names=1,max_bytes=0)
+        second=self.api.collect_protocol('cdp',max_names=1,max_bytes=0,cursor=first['cursor'])
+        self.assertEqual(second['coverage']['name_start_index'],1)
+        self.assertEqual(second['coverage']['names_seen'],1)
+        self.assertFalse(second['candidates'])
+        rows.append((0x5100,'cdp_added'))
+        with self.assertRaisesRegex(ValueError,'name table changed'):
+            self.api.collect_protocol('cdp',cursor=second['cursor'])
 
     def test_call_pointer_and_slot_relationships_remain_distinct(self):
         result=self.api.relationships(0x1100)

@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 SKILL=ROOT/'skills/iosd-analysis'
-VERSION='0.1.0'
+VERSION='0.1.1'
 NO_UI={'ui','integer_ui','project_ui','protocol_ui','graph_view'}
 NO_TOOLS={'build_skill_release.py','check_skill_release.py','build_plugin_release.py','build_iosd_handbook.py','check_iosd_handbook.py',
           'preview_ida_graph.py','preview_ida_catalogue.py','iosd_mcp.py'}
@@ -55,7 +55,7 @@ def assemble():
         text=links.sub(replace,text)
         lines=text.splitlines()
         lines[1:1]=['','> 历史分析资料：保留样本、条件和未知项。原始捕获及 GUI 实验不随 skill 分发；历史材料路径用于定位已有证据，不表示文件已包含。','']
-        destination.parent.mkdir(parents=True,exist_ok=True);destination.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+        destination.parent.mkdir(parents=True,exist_ok=True);destination.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     tools=sorted((SKILL/'scripts/tools').glob('*.py'))
     catalogue=['# 脚本目录','','主入口 `scripts/iosd_mcp.py` 通过 MCP 采集；旧脚本继续复用现有算法。先运行所选脚本的 `--help`，只提供本次真实存在的输入。',
                '', '## 常用路线','',
@@ -73,11 +73,11 @@ def assemble():
     for path in tools:
         description=(ast.get_docstring(ast.parse(path.read_text(encoding='utf-8'))) or path.stem).splitlines()[0]
         catalogue.append('| `'+path.name+'` | '+description.replace('|','/')+' |')
-    (SKILL/'references/script-catalogue.md').write_text('\n'.join(catalogue)+'\n',encoding='utf-8')
+    (SKILL/'references/script-catalogue.md').write_text('\n'.join(catalogue)+'\n',encoding='utf-8',newline='\n')
     generated={dest.relative_to(SKILL).as_posix():{'source':src.relative_to(ROOT).as_posix(),'source_sha256':sha(src),'sha256':sha(dest)}
                for src,dest in {**copies,**docs}.items()}
     manifest={'version':VERSION,'generated':generated,'notes':'Generated code/docs copies; edit canonical sources and rebuild. No IDA/MCP connection is made by this build.'}
-    previous.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+    previous.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     files=sorted(p for p in SKILL.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc')
     destination=ROOT/'dist'/('iosd-analysis-skill-'+VERSION+'.zip');destination.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(destination,'w',zipfile.ZIP_DEFLATED) as archive:

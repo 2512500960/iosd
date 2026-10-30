@@ -1,7 +1,7 @@
 """Bounded IDB-only protocol clues and one-hop relationships. No target execution."""
 import json
+import hashlib
 from pathlib import Path
-import re
 
 import ida_bytes
 import ida_funcs
@@ -15,8 +15,8 @@ import idautils
 import idc
 
 from .ida_adapter import IDBMemory, identity, segments
-from .memory import MemoryReadError
 from .protocols import protocol_query, match_kind, subsystem_seeds, investigation_plan
+from .protocol_scan import literal_windows
 
 
 def default_subsystems(current):
@@ -40,58 +40,81 @@ def location(ea, base):
 
 
 def collect_protocol(query, model=None, cancelled=lambda: False, max_names=1_000_000,
-                     max_bytes=64*1024*1024, max_hits=2000):
+                     max_bytes=64*1024*1024, max_hits=2000, cursor=None):
     query = protocol_query(query);current = identity();base = current['imagebase']
     if not (1 <= max_names <= 2_000_000 and 0 <= max_bytes <= 512*1024*1024 and 1 <= max_hits <= 10000):
         raise ValueError('Protocol scan limits out of range')
     model = model if model is not None else default_subsystems(current)
     seeds = subsystem_seeds(model, current, query) if model else []
-    rows = [];faults = [];coverage = {'names_seen': 0, 'bytes_attempted': 0, 'bytes_read': 0,
+    selected = [s for s in segments() if not s['permissions'] & (ida_segment.SEGPERM_EXEC | ida_segment.SEGPERM_WRITE)
+                and location(s['address'],base)['location']=='idb_image_data']
+    signature = hashlib.sha256(json.dumps(selected,sort_keys=True).encode()).hexdigest()
+    keys = ('input_md5','imagebase','idb_path')
+    indexed = all(callable(getattr(ida_name,name,None)) for name in ('get_nlist_size','get_nlist_ea','get_nlist_name'))
+    total = ida_name.get_nlist_size() if indexed else None
+    if cursor:
+        if (cursor.get('schema_version')!=1 or cursor.get('query')!=query or
+                cursor.get('segment_signature')!=signature or
+                any(cursor['identity'].get(k)!=current.get(k) for k in keys)):
+            raise ValueError('Protocol cursor belongs to a different query/IDB/base/segment layout')
+        state = dict(cursor)
+        if indexed and state.get('names_total') is not None and state['names_total']!=total:
+            raise ValueError('IDA name table changed; begin a fresh protocol scan')
+    else:
+        state = {'schema_version':1,'query':query,'identity':{k:current.get(k) for k in keys},
+                 'segment_signature':signature,'phase':'names','name_index':0,'names_total':total,
+                 'names_boundary':None,'literal':None}
+    if state['phase'] not in ('names','literals') or state['name_index']<0:
+        raise ValueError('Invalid protocol cursor phase/index')
+    rows = [];faults = [];coverage = {'names_seen': 0, 'name_start_index':state['name_index'], 'bytes_attempted': 0, 'bytes_read': 0,
         'name_limit_reached': False, 'byte_limit_reached': False, 'hit_limit_reached': False,
         'cancelled': False, 'scanned_ranges': [], 'subsystem_index_loaded': model is not None}
-    for i, (ea, name) in enumerate(idautils.Names()):
-        if i >= max_names:coverage['name_limit_reached'] = True;break
-        if i % 256 == 0 and cancelled():coverage['cancelled'] = True;break
-        coverage['names_seen'] += 1
-        kind = match_kind(name, query)
-        if not kind:continue
-        func = ida_funcs.get_func(ea)
-        rows.append({'kind': 'function_name' if func and func.start_ea == ea else 'data_or_import_name',
-                     'name': name, 'match': kind, **location(ea, base),
-                     'evidence': 'IDA name; may be analyst-assigned; packet role unverified'})
-        if len(rows) >= max_hits:coverage['hit_limit_reached'] = True;break
-    memory = IDBMemory();printable = re.compile(rb'[\x20-\x7e]{3,2048}\x00')
-    needle = query.encode('ascii')
-    for segment in segments():
-        if coverage['cancelled'] or coverage['hit_limit_reached']:break
-        if segment['permissions'] & (ida_segment.SEGPERM_EXEC | ida_segment.SEGPERM_WRITE):continue
-        if location(segment['address'], base)['location'] != 'idb_image_data':continue
-        for start in range(segment['address'], segment['end'], 65536):
-            if cancelled():coverage['cancelled'] = True;break
-            budget = max_bytes-coverage['bytes_attempted']
-            size = min(65536+2048, segment['end']-start, budget)
-            if size <= 0:coverage['byte_limit_reached'] = True;break
-            coverage['bytes_attempted'] += size
-            try:data = memory.read(start, size)
-            except MemoryReadError as exc:
-                faults.append({'ea': start, 'size': size, 'error': str(exc)});continue
-            coverage['bytes_read'] += len(data)
-            ranges = coverage['scanned_ranges']
-            if ranges and ranges[-1]['end_ea'] >= start and ranges[-1]['segment'] == segment['name']:
-                ranges[-1]['end_ea'] = max(ranges[-1]['end_ea'], start+size)
-            else:ranges.append({'start_ea': start, 'end_ea': start+size, 'segment': segment['name']})
-            for match in printable.finditer(data):
-                if match.start() >= 65536 or needle not in match[0].lower():continue
-                text = match[0][:-1].decode('ascii')
-                rows.append({'kind': 'source_path_literal' if ('/' in text or '\\' in text) and '.c' in text else 'literal',
-                             'name': text, 'match': match_kind(text, query), **location(start+match.start(), base),
-                             'evidence': 'bounded NUL-terminated printable fragment in saved IDB; not compilation-unit ownership'})
-                if len(rows) >= max_hits:coverage['hit_limit_reached'] = True;break
-            if coverage['hit_limit_reached']:break
-        if coverage['byte_limit_reached']:break
+    if state['phase']=='names':
+        start = state['name_index'];boundary = state.get('names_boundary')
+        boundary_checked = not boundary
+        if indexed:
+            if start>total:raise ValueError('Protocol name cursor exceeds current table')
+            if boundary and start==0:raise ValueError('Protocol cursor has an invalid name boundary')
+            if boundary and [ida_name.get_nlist_ea(start-1),ida_name.get_nlist_name(start-1)]!=boundary:
+                raise ValueError('IDA name table boundary changed; begin a fresh scan')
+            boundary_checked=True
+            iterator = ((i,ida_name.get_nlist_ea(i),ida_name.get_nlist_name(i)) for i in range(start,total))
+        else:
+            iterator = ((i,ea,name) for i,(ea,name) in enumerate(idautils.Names()))
+        for i,ea,name in iterator:
+            if i<start:
+                if i==start-1 and boundary and [ea,name]!=boundary:raise ValueError('IDA name cursor boundary changed')
+                if i==start-1:boundary_checked=True
+                if i%256==0 and cancelled():coverage['cancelled']=True;break
+                continue
+            if coverage['names_seen']>=max_names:coverage['name_limit_reached']=True;break
+            if coverage['names_seen']%256==0 and cancelled():coverage['cancelled']=True;break
+            coverage['names_seen']+=1;state['name_index']=i+1;state['names_boundary']=[ea,name]
+            kind = match_kind(name,query)
+            if kind:
+                func = ida_funcs.get_func(ea)
+                rows.append({'kind':'function_name' if func and func.start_ea==ea else 'data_or_import_name',
+                             'name':name,'match':kind,**location(ea,base),
+                             'evidence':'IDA name; may be analyst-assigned; packet role unverified'})
+                if len(rows)>=max_hits:coverage['hit_limit_reached']=True;break
+        else:
+            if not boundary_checked:raise ValueError('IDA name cursor no longer exists')
+            state['phase']='literals'
+        if indexed and state['name_index']==total:state['phase']='literals'
+    if state['phase']=='literals' and not coverage['cancelled'] and not coverage['hit_limit_reached']:
+        scanned = literal_windows(IDBMemory().read,selected,query,state['literal'],max_bytes,max_hits-len(rows),cancelled)
+        faults.extend(scanned['faults']);coverage.update(scanned['coverage']);state['literal']=scanned['cursor']
+        for row in scanned['rows']:
+            text = row['text']
+            rows.append({'kind':'source_path_literal' if ('/' in text or '\\' in text) and '.c' in text else 'literal',
+                         'name':text,'match':match_kind(text,query),**location(row['ea'],base),
+                         'evidence':'bounded NUL-terminated printable string in saved IDB; not compilation-unit ownership'})
+        coverage['literal_scope']=scanned['scope']
+        if scanned['cursor'] is None:state=None
+    coverage['has_more']=state is not None
     return {'schema_version': 1, 'kind': 'protocol_investigation', 'identity': current, 'protocol': query,
             'source': 'saved_idb_only', 'subsystems': seeds, 'candidates': rows, 'coverage': coverage,
-            'faults': faults, 'plan': investigation_plan(query), 'packet_path_verified': False}
+            'cursor':state,'faults': faults, 'plan': investigation_plan(query), 'packet_path_verified': False}
 
 
 def relationships(ea, cancelled=lambda: False, max_items=20000, max_refs=2000):
