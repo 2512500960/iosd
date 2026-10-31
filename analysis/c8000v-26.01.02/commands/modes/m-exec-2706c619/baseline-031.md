@@ -4483,4 +4483,3 @@ Handler ` RVA 0xFA38D50 `；selector ` 0 `；EOL ` RVA 0x347DDF38 `。
 参数提示：` string ` Pool name。
 
 [条件 C-5f0173fb2c325d8c](../../evidence/conditions-sets-037.md#c-5f0173fb2c325d8c) · [缺口 G-96f4196304222449](../../evidence/gaps-sets-006.md#g-96f4196304222449) · [参数 P-2fc9437051580fb2](../../evidence/parameters-sets-004.md#p-2fc9437051580fb2) · [状态效果 S-3417c1d210a6b0dd](../../evidence/state_effects-sets-012.md#s-3417c1d210a6b0dd)
-

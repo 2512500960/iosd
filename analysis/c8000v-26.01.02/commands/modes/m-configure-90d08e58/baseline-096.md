@@ -1553,4 +1553,3 @@ Handler ` RVA 0xF4C85C0 `；selector ` 2 `；EOL ` RVA 0x34667640 `。
 参数提示：` unsigned_number ` Dialer group number。
 
 [条件 C-a6daa9534bad401c](../../evidence/conditions-sets-064.md#c-a6daa9534bad401c) · [缺口 G-63eda40e9deb2468](../../evidence/gaps-sets-004.md#g-63eda40e9deb2468) · [参数 P-710e6120e4abc011](../../evidence/parameters-sets-009.md#p-710e6120e4abc011) · [状态效果 S-0b6baeb3880a8941](../../evidence/state_effects-sets-003.md#s-0b6baeb3880a8941)
-

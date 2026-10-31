@@ -55,4 +55,3 @@ Handler ` RVA 0xBD016B0 `；selector ` 0 `；EOL ` RVA 0x338B0448 `。
 参数提示：` unsigned_number ` enter Attribute id。
 
 [条件 C-6c6492f321723de5](../../evidence/conditions-sets-042.md#c-6c6492f321723de5) · [参数 P-838498d645f851b5](../../evidence/parameters-sets-010.md#p-838498d645f851b5) · [状态效果 S-de0b8efd46d4a347](../../evidence/state_effects-sets-047.md#s-de0b8efd46d4a347)
-

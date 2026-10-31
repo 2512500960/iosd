@@ -4873,4 +4873,3 @@ Handler ` RVA 0xE002120 `；selector ` 1 `；EOL ` RVA 0x34CC80E8 `。
 语法状态 ` syntax_candidate `；跟踪状态 ` [1,0,0] `。
 
 [条件 C-c6ae9c1b3845cab6](../../evidence/conditions-sets-077.md#c-c6ae9c1b3845cab6) · [状态效果 S-50a4c8db0c6b1973](../../evidence/state_effects-sets-018.md#s-50a4c8db0c6b1973)
-

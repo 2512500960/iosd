@@ -4593,4 +4593,3 @@ Handler ` RVA 0xE053D10 `；selector ` 0 `；EOL ` RVA 0x3417C908 `。
 参数提示：` string ` Name of registry to clear。
 
 [条件 C-0e029b59c347a5ce](../../evidence/conditions-sets-006.md#c-0e029b59c347a5ce) · [缺口 G-96f4196304222449](../../evidence/gaps-sets-006.md#g-96f4196304222449) · [参数 P-c295d3e16bad0234](../../evidence/parameters-sets-015.md#p-c295d3e16bad0234) · [状态效果 S-3417c1d210a6b0dd](../../evidence/state_effects-sets-012.md#s-3417c1d210a6b0dd)
-

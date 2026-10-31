@@ -223,4 +223,3 @@ Handler ` RVA 0xD513970 `；selector ` 0 `；EOL ` RVA 0x33E73CA8 `。
 参数提示：` unsigned_number_dynamic ` Number of PXF restarts before a switchover；` unsigned_number_dynamic ` Interval (in hours) over which restart count is accumulated。
 
 [条件 C-3338602186f7c8e7](../../evidence/conditions-sets-020.md#c-3338602186f7c8e7) · [缺口 G-0bd1f4628bbe396c](../../evidence/gaps-sets-001.md#g-0bd1f4628bbe396c) · [参数 P-62b98721f8f221a9](../../evidence/parameters-sets-008.md#p-62b98721f8f221a9) · [状态效果 S-dcde5634427c8054](../../evidence/state_effects-sets-047.md#s-dcde5634427c8054)
-

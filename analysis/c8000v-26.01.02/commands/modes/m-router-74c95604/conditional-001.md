@@ -1145,4 +1145,3 @@ Handler ` RVA 0x1B0895B0 `；selector ` 0 `；EOL ` RVA 0x36EF1430 `。
 参数提示：` unsigned_number ` Acknowledgement delay timer value in milliseconds。
 
 [候选注册 R-a35e0cffd52c649f](../../evidence/conditional_registrations-sets-002.md#r-a35e0cffd52c649f) · [条件 C-3f1bccdd53e9f8fd](../../evidence/conditions-sets-024.md#c-3f1bccdd53e9f8fd) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-7647b41b27b6ba45](../../evidence/parameters-sets-009.md#p-7647b41b27b6ba45) · [状态效果 S-a9c0e06fe058214b](../../evidence/state_effects-sets-036.md#s-a9c0e06fe058214b)
-

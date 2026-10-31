@@ -3331,4 +3331,3 @@ Handler ` RVA 0x1AB41D00 `；selector ` 7 `；EOL ` RVA 0x36D9F798 `。
 参数提示：` unsigned_number ` routes；` unsigned_number ` IPX network to start with；` unsigned_number ` IPX network as route next hop；` unsigned_number ` servers。
 
 [候选注册 R-9664c4513a989dc9](../../evidence/conditional_registrations-sets-002.md#r-9664c4513a989dc9) · [条件 C-8e9e3683fbe587ea](../../evidence/conditions-sets-055.md#c-8e9e3683fbe587ea) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-990ab9d96cf8b9ec](../../evidence/parameters-sets-012.md#p-990ab9d96cf8b9ec) · [状态效果 S-99288bf621c2aa4c](../../evidence/state_effects-sets-033.md#s-99288bf621c2aa4c)
-

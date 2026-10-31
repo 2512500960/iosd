@@ -573,4 +573,3 @@ Handler ` RVA 0x12527D00 `；selector ` 0 `；EOL ` RVA 0x35892738 `。
 参数提示：` prefix_dynamic ` Shared multicast group ipv4 address prefix。
 
 [条件 C-d2893c457bada8a4](../../evidence/conditions-sets-081.md#c-d2893c457bada8a4) · [缺口 G-6bc5abd9349c47ff](../../evidence/gaps-sets-004.md#g-6bc5abd9349c47ff) · [参数 P-65a75be7f013418b](../../evidence/parameters-sets-008.md#p-65a75be7f013418b) · [状态效果 S-d6ecf7620410f1d0](../../evidence/state_effects-sets-046.md#s-d6ecf7620410f1d0)
-

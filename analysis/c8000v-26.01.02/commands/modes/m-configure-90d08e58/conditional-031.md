@@ -3399,4 +3399,3 @@ Handler ` RVA 0x1D61BE10 `；selector ` 0 `；EOL ` RVA 0x3757DB00 `。
 参数提示：` string ` SBC name。
 
 [候选注册 R-b2c9d5944548c11a](../../evidence/conditional_registrations-sets-002.md#r-b2c9d5944548c11a) · [条件 C-53e399babec987cc](../../evidence/conditions-sets-033.md#c-53e399babec987cc) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-d069f5479a838733](../../evidence/parameters-sets-016.md#p-d069f5479a838733) · [状态效果 S-371cc526d24b92b2](../../evidence/state_effects-sets-012.md#s-371cc526d24b92b2)
-

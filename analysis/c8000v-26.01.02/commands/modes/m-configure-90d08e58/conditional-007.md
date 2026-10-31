@@ -3391,4 +3391,3 @@ Handler ` RVA 0x1D621E10 `；selector ` 140 `；EOL ` RVA 0x3758EBE8 `。
 参数提示：` string ` SBC name；` string ` Display a specific media policy table。
 
 [候选注册 R-b2c9d5944548c11a](../../evidence/conditional_registrations-sets-002.md#r-b2c9d5944548c11a) · [条件 C-5142668dc36ec0a0](../../evidence/conditions-sets-032.md#c-5142668dc36ec0a0) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-23af3e105457b45f](../../evidence/parameters-sets-003.md#p-23af3e105457b45f) · [状态效果 S-1967cc1f85524ce6](../../evidence/state_effects-sets-006.md#s-1967cc1f85524ce6)
-

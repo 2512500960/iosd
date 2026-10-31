@@ -4973,4 +4973,3 @@ Handler ` RVA 0xD584480 `；selector ` 5 `；EOL ` RVA 0x33E8AB70 `。
 参数提示：` unsigned_number ` Day of the month；` unsigned_number ` Year；` time_hms ` Local Time (hh:mm:ss)。
 
 [条件 C-2821397a8e0db15c](../../evidence/conditions-sets-016.md#c-2821397a8e0db15c) · [缺口 G-f1ee4ce37c3c3dd5](../../evidence/gaps-sets-008.md#g-f1ee4ce37c3c3dd5) · [参数 P-dceba5cc76543538](../../evidence/parameters-sets-017.md#p-dceba5cc76543538) · [状态效果 S-4e4178d8a4be311e](../../evidence/state_effects-sets-017.md#s-4e4178d8a4be311e)
-

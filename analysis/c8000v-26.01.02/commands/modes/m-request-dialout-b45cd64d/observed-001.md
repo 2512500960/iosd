@@ -175,4 +175,3 @@ Handler ` RVA 0x11D4F780 `；selector ` 105 `；EOL ` RVA 0x356FC9E8 `。
 参数提示：` unsigned_number_dynamic ` Virtual Template interface number。
 
 [条件 C-cde931d77f354b74](../../evidence/conditions-sets-079.md#c-cde931d77f354b74) · [缺口 G-1d181ef4ef2d9323](../../evidence/gaps-sets-001.md#g-1d181ef4ef2d9323) · [参数 P-0c62e8cf5ccda37b](../../evidence/parameters-sets-001.md#p-0c62e8cf5ccda37b)
-

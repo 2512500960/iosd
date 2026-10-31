@@ -4701,4 +4701,3 @@ Handler ` RVA 0x15FFD8E0 `；selector ` 4 `；EOL ` RVA 0x35EDCFB8 `。
 参数提示：` unsigned_number_dynamic ` Slot number。
 
 [条件 C-edadaf6ee05ed42a](../../evidence/conditions-sets-092.md#c-edadaf6ee05ed42a) · [缺口 G-afba395f0659b4cd](../../evidence/gaps-sets-006.md#g-afba395f0659b4cd) · [参数 P-0328915490ed50f1](../../evidence/parameters-sets-001.md#p-0328915490ed50f1) · [状态效果 S-433297f154b97a7a](../../evidence/state_effects-sets-015.md#s-433297f154b97a7a)
-

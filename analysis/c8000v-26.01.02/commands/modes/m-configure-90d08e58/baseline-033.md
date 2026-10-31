@@ -4963,4 +4963,3 @@ Handler ` RVA 0xF6E5A70 `；selector ` 0 `；EOL ` RVA 0x3476DD10 `。
 参数提示：` string ` Routing topology instance name；` unsigned_number ` Multicast topology tid。
 
 [条件 C-f28b29958d89287a](../../evidence/conditions-sets-094.md#c-f28b29958d89287a) · [参数 P-6d52f90c21ef643f](../../evidence/parameters-sets-009.md#p-6d52f90c21ef643f) · [状态效果 S-a7d44d11aa9ce480](../../evidence/state_effects-sets-035.md#s-a7d44d11aa9ce480)
-

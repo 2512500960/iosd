@@ -127,4 +127,3 @@ Handler ` RVA 0x1AA49650 `；selector ` 0 `；EOL ` RVA 0x36D55888 `。
 参数提示：` string ` Enter VFI name (Max Size 31)。
 
 [候选注册 R-518ead6b02d23417](../../evidence/conditional_registrations-sets-001.md#r-518ead6b02d23417) · [条件 C-431b0e687e41e6f9](../../evidence/conditions-sets-026.md#c-431b0e687e41e6f9) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-6ecc23bd93d2351f](../../evidence/parameters-sets-009.md#p-6ecc23bd93d2351f) · [状态效果 S-975f6a3b23df2d3b](../../evidence/state_effects-sets-032.md#s-975f6a3b23df2d3b)
-

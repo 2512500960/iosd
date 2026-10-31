@@ -169,4 +169,3 @@ Handler ` RVA 0xF578A40 `；selector ` 3 `；EOL ` RVA 0x3547CBE8 `。
 参数提示：` unsigned_number ` Autonomous System。
 
 [条件 C-025a4540662a0f9e](../../evidence/conditions-sets-001.md#c-025a4540662a0f9e) · [参数 P-2894af4a08a0dbb5](../../evidence/parameters-sets-003.md#p-2894af4a08a0dbb5) · [状态效果 S-99b29e816ae66955](../../evidence/state_effects-sets-033.md#s-99b29e816ae66955)
-

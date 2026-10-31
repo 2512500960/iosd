@@ -4833,4 +4833,3 @@ Handler ` RVA 0x11F19FB0 `；selector ` 7 `；EOL ` RVA 0x3574B4B8 `。
 参数提示：` string ` Trustpoint label to associate certificate or pkcs-12 file with；` string ` Passphrase used to protect the private key。
 
 [条件 C-a4590b8464270854](../../evidence/conditions-sets-063.md#c-a4590b8464270854) · [缺口 G-be41b65ed32ae3d3](../../evidence/gaps-sets-007.md#g-be41b65ed32ae3d3) · [参数 P-1a901362f502e8b3](../../evidence/parameters-sets-002.md#p-1a901362f502e8b3) · [状态效果 S-d605b7d83e8f0030](../../evidence/state_effects-sets-045.md#s-d605b7d83e8f0030)
-

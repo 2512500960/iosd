@@ -27,4 +27,3 @@ Handler ` RVA 0x1A6C9470 `；selector ` 0 `；EOL ` RVA 0x36CA46E8 `。
 参数提示：` string ` Lable name；` unsigned_number ` bandwidth ratio value。
 
 [参数 P-47962e727f26e8b9](../../evidence/parameters-sets-006.md#p-47962e727f26e8b9) · [状态效果 S-196201e042b60175](../../evidence/state_effects-sets-006.md#s-196201e042b60175)
-

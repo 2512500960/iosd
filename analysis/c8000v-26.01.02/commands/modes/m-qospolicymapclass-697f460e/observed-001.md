@@ -1545,4 +1545,3 @@ Handler ` RVA 0xDA0D370 `；selector ` 17 `；EOL ` RVA 0x33FAB770 `。
 模式根 ` RVA 0x33F17F70 `；语法状态 ` partial_syntax_candidate `；跟踪状态 ` [null,null,0] `。
 
 [条件 C-e7e59b134312e137](../../evidence/conditions-sets-090.md#c-e7e59b134312e137) · [缺口 G-71bc8ebb22d611c2](../../evidence/gaps-sets-004.md#g-71bc8ebb22d611c2) · [状态效果 S-b2173f3af1304dd3](../../evidence/state_effects-sets-038.md#s-b2173f3af1304dd3)
-

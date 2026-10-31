@@ -387,4 +387,3 @@ Handler ` RVA 0x1AA3B390 `；selector ` 2 `；EOL ` RVA 0x36D4DC68 `。
 参数提示：` unsigned_number ` VPN id value。
 
 [候选注册 R-fa3e3b684ff5492e](../../evidence/conditional_registrations-sets-003.md#r-fa3e3b684ff5492e) · [条件 C-d8512f54cef2ac44](../../evidence/conditions-sets-083.md#c-d8512f54cef2ac44) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-1ced6523ee633a81](../../evidence/parameters-sets-003.md#p-1ced6523ee633a81)
-

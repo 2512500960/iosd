@@ -3359,4 +3359,3 @@ Handler ` RVA 0xE002120 `；selector ` 6 `；EOL ` RVA 0x367E5470 `。
 模式根 ` RVA 0x341168F8 `；语法状态 ` partial_syntax_candidate `；跟踪状态 ` [0,0,0] `。
 
 [候选注册 R-fed28630a0504d6b](../../evidence/conditional_registrations-sets-003.md#r-fed28630a0504d6b) · [条件 C-feb174c9c48060c2](../../evidence/conditions-sets-098.md#c-feb174c9c48060c2) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [状态效果 S-c583bf54b24e3049](../../evidence/state_effects-sets-042.md#s-c583bf54b24e3049)
-

@@ -269,4 +269,3 @@ Handler ` RVA 0x1BD5A150 `；selector ` 0 `；EOL ` RVA 0x370B2A68 `。
 参数提示：` string ` tone signal Name。
 
 [候选注册 R-ab26b1700832d4a7](../../evidence/conditional_registrations-sets-002.md#r-ab26b1700832d4a7) · [条件 C-7f8e11a96d2b8a38](../../evidence/conditions-sets-049.md#c-7f8e11a96d2b8a38) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-3eb9475a1595737b](../../evidence/parameters-sets-005.md#p-3eb9475a1595737b)
-

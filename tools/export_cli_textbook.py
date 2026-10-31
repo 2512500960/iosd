@@ -114,7 +114,7 @@ def build_book(version,output,max_bytes=196608):
     old=json.loads(previous.read_text(encoding='utf-8')).get('artifact_sha256',{}) if previous.exists() else {}
     def write(relative,text):
         path=output/relative;path.resolve().relative_to(output)
-        path.parent.mkdir(parents=True,exist_ok=True);data=text.encode('utf-8')
+        path.parent.mkdir(parents=True,exist_ok=True);data=(text.rstrip()+'\n').encode('utf-8')
         if len(data)>max_bytes:raise ValueError('Generated page too large: '+relative)
         path.write_bytes(data);written[relative]=digest(data)
     with tempfile.TemporaryDirectory(prefix='iosd-cli-text-') as temporary:

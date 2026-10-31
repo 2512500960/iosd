@@ -3451,4 +3451,3 @@ Handler ` RVA 0x16AD3B10 `；selector ` 0 `；EOL ` RVA 0x360BC3B0 `。
 参数提示：` string ` User selected string identifying the policy。
 
 [候选注册 R-fd2b91f78db93ec0](../../evidence/conditional_registrations-sets-003.md#r-fd2b91f78db93ec0) · [条件 C-cf0a4b23fc0eb281](../../evidence/conditions-sets-080.md#c-cf0a4b23fc0eb281) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-507d1d982735af3f](../../evidence/parameters-sets-007.md#p-507d1d982735af3f) · [状态效果 S-111c9a6e5266b334](../../evidence/state_effects-sets-004.md#s-111c9a6e5266b334)
-

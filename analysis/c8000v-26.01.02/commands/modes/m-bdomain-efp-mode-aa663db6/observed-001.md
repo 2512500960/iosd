@@ -51,4 +51,3 @@ Handler ` RVA 0xBF84130 `；selector ` 1 `；EOL ` RVA 0x3395BB10 `。
 参数提示：` unsigned_number_dynamic ` Remote circuit ID。
 
 [条件 C-45fd9cc46c90dca1](../../evidence/conditions-sets-027.md#c-45fd9cc46c90dca1) · [缺口 G-7fd4d45756b556d9](../../evidence/gaps-sets-005.md#g-7fd4d45756b556d9) · [参数 P-c07f2b539051de22](../../evidence/parameters-sets-015.md#p-c07f2b539051de22) · [状态效果 S-18f004676e434f0d](../../evidence/state_effects-sets-006.md#s-18f004676e434f0d)
-

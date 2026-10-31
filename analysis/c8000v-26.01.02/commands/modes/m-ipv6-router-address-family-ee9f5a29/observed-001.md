@@ -589,4 +589,3 @@ Handler ` RVA 0x11BC2D20 `；selector ` 38 `；EOL ` RVA 0x3567F5B0 `。
 参数提示：` unsigned_number ` Delay between receiving a change to SPF calculation in milliseconds；` unsigned_number ` Delay between first and second SPF calculation in milliseconds；` unsigned_number ` Maximum wait time in milliseconds for SPF calculations。
 
 [条件 C-df677ece7b77c76c](../../evidence/conditions-sets-086.md#c-df677ece7b77c76c) · [参数 P-ca419c83cd2c2169](../../evidence/parameters-sets-015.md#p-ca419c83cd2c2169)
-

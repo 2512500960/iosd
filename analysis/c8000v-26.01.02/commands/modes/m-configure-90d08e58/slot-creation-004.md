@@ -3455,4 +3455,3 @@ Handler ` RVA 0x1CEA7410 `；selector ` 0 `；EOL ` RVA 0x37551798 `。
 参数提示：` unsigned_number ` iad correlator。
 
 [候选注册 R-246783fba16bc8a1](../../evidence/conditional_registrations-sets-001.md#r-246783fba16bc8a1) · [条件 C-ad55c29aef494ae4](../../evidence/conditions-sets-067.md#c-ad55c29aef494ae4) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-16d8209b9b716d43](../../evidence/parameters-sets-002.md#p-16d8209b9b716d43) · [状态效果 S-433297f154b97a7a](../../evidence/state_effects-sets-015.md#s-433297f154b97a7a)
-

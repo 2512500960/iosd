@@ -3461,4 +3461,3 @@ Handler ` RVA 0x1C145E00 `；selector ` 0 `；EOL ` RVA 0x3721EAF8 `。
 参数提示：` string ` Name of the ruleset。
 
 [候选注册 R-ffc64f9bdbb73ba5](../../evidence/conditional_registrations-sets-003.md#r-ffc64f9bdbb73ba5) · [条件 C-c571bc9acf057bfc](../../evidence/conditions-sets-076.md#c-c571bc9acf057bfc) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-b761d3cc5da0cf59](../../evidence/parameters-sets-014.md#p-b761d3cc5da0cf59) · [状态效果 S-0109722c766f661b](../../evidence/state_effects-sets-001.md#s-0109722c766f661b)
-

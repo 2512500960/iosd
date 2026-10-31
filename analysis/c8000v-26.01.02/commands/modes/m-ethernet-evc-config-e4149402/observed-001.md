@@ -111,4 +111,3 @@ Handler ` RVA 0xBFFE9D0 `；selector ` 1 `；EOL ` RVA 0x33974BC0 `。
 参数提示：` unsigned_number ` UNI COUNT required, range 2 - 1024。
 
 [条件 C-9a413a729cbf86ae](../../evidence/conditions-sets-060.md#c-9a413a729cbf86ae) · [参数 P-45d1a12da5026b17](../../evidence/parameters-sets-006.md#p-45d1a12da5026b17)
-

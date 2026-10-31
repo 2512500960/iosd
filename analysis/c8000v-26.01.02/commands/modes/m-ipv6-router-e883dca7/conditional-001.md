@@ -1169,4 +1169,3 @@ Handler ` RVA 0x1854F3F0 `；selector ` 17 `；EOL ` RVA 0x3677B4F8 `。
 参数提示：` unsigned_number ` &lt;redundancy-count&gt;。
 
 [候选注册 R-ae1ed84ce4a3799c](../../evidence/conditional_registrations-sets-002.md#r-ae1ed84ce4a3799c) · [条件 C-62b225f5ad7c206d](../../evidence/conditions-sets-038.md#c-62b225f5ad7c206d) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-1ad04a6edce27c5c](../../evidence/parameters-sets-003.md#p-1ad04a6edce27c5c)
-

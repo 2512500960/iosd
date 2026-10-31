@@ -4991,4 +4991,3 @@ Handler ` RVA 0xE010010 `；selector ` 0 `；EOL ` RVA 0x3415B4A8 `。
 参数提示：` string ` Ping destination address or hostname。
 
 [条件 C-5cb5e155361a695f](../../evidence/conditions-sets-036.md#c-5cb5e155361a695f) · [缺口 G-c79ecab04063565b](../../evidence/gaps-sets-007.md#g-c79ecab04063565b) · [参数 P-a03400ef01ab2dba](../../evidence/parameters-sets-012.md#p-a03400ef01ab2dba) · [状态效果 S-7efd7d0a33dc0c8f](../../evidence/state_effects-sets-027.md#s-7efd7d0a33dc0c8f)
-

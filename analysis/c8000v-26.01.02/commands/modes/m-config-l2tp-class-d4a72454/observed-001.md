@@ -685,4 +685,3 @@ Handler ` RVA 0x11E25EF0 `；selector ` 16 `；EOL ` RVA 0x3572AAD0 `。
 参数提示：` unsigned_number ` Seconds。
 
 [条件 C-b3399278e2644a25](../../evidence/conditions-sets-069.md#c-b3399278e2644a25) · [参数 P-2e57ed807b286d2a](../../evidence/parameters-sets-004.md#p-2e57ed807b286d2a)
-

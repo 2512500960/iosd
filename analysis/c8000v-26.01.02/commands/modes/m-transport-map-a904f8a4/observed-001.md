@@ -275,4 +275,3 @@ Handler ` RVA 0xDBDC9A0 `；selector ` 0 `；EOL ` RVA 0x34006AB8 `。
 参数提示：` unsigned_number ` GigabitEthernet interface number。
 
 [条件 C-b45db15832225708](../../evidence/conditions-sets-070.md#c-b45db15832225708) · [缺口 G-65bcc2b9ceb047f4](../../evidence/gaps-sets-004.md#g-65bcc2b9ceb047f4) · [参数 P-9c3be231d9a10b68](../../evidence/parameters-sets-012.md#p-9c3be231d9a10b68) · [状态效果 S-5a0ed14dc2fbfcd1](../../evidence/state_effects-sets-019.md#s-5a0ed14dc2fbfcd1)
-

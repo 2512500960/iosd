@@ -447,4 +447,3 @@ Handler ` RVA 0xD527C80 `；selector ` 0 `；EOL ` RVA 0x33E7ADE8 `。
 参数提示：` unsigned_number_dynamic ` Delay value in seconds。
 
 [条件 C-17e0d4b379c2aa2c](../../evidence/conditions-sets-009.md#c-17e0d4b379c2aa2c) · [缺口 G-d3feebce5e67945f](../../evidence/gaps-sets-007.md#g-d3feebce5e67945f) · [参数 P-b6f4c104b9f24eba](../../evidence/parameters-sets-014.md#p-b6f4c104b9f24eba)
-

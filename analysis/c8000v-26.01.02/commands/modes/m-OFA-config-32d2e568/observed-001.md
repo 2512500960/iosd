@@ -37,4 +37,3 @@ Handler ` RVA 0xC488F90 `；selector ` 0 `；EOL ` RVA 0x33A960D0 `。
 模式根 ` RVA 0x33A92B10 `；语法状态 ` syntax_candidate `；跟踪状态 ` [1,0,0] `。
 
 该路径记录的参数、条件、状态效果和缺口列表均为空。
-

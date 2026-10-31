@@ -5047,4 +5047,3 @@ Handler ` RVA 0xF17E380 `；selector ` 11 `；EOL ` RVA 0x34502620 `。
 参数提示：` string ` extcommunity-list name。
 
 [条件 C-cc3977db09fd86fa](../../evidence/conditions-sets-079.md#c-cc3977db09fd86fa) · [缺口 G-def948e72b71ee7f](../../evidence/gaps-sets-008.md#g-def948e72b71ee7f) · [参数 P-16c46cd5a4132de6](../../evidence/parameters-sets-002.md#p-16c46cd5a4132de6) · [状态效果 S-d2cfbc9b94ff930e](../../evidence/state_effects-sets-045.md#s-d2cfbc9b94ff930e)
-

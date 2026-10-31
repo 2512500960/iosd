@@ -5105,4 +5105,3 @@ Handler ` RVA 0xF17E380 `；selector ` 10 `；EOL ` RVA 0x34502278 `。
 参数提示：` unsigned_number ` community-list number。
 
 [条件 C-9b305abbaac9a019](../../evidence/conditions-sets-060.md#c-9b305abbaac9a019) · [参数 P-73dcc5a2cab3ca61](../../evidence/parameters-sets-009.md#p-73dcc5a2cab3ca61) · [状态效果 S-ba89b633700ca70a](../../evidence/state_effects-sets-039.md#s-ba89b633700ca70a)
-

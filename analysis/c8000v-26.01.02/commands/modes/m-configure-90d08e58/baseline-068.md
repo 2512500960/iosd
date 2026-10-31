@@ -4831,4 +4831,3 @@ Handler ` RVA 0xD4B36C0 `；selector ` 30 `；EOL ` RVA 0x33E59970 `。
 参数提示：` unsigned_number ` enter ISSU client ID；` unsigned_number ` enter ISSU entity ID；` unsigned_number ` enter ISSU msg type。
 
 [条件 C-1029e358db25f92e](../../evidence/conditions-sets-006.md#c-1029e358db25f92e) · [参数 P-1b01713fc4e3e718](../../evidence/parameters-sets-003.md#p-1b01713fc4e3e718) · [状态效果 S-16bae039e10ce313](../../evidence/state_effects-sets-005.md#s-16bae039e10ce313)
-

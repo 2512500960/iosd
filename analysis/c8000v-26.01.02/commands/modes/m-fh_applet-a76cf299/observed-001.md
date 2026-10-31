@@ -1275,4 +1275,3 @@ Handler ` RVA 0xC0CBFD0 `；selector ` 39 `；EOL ` RVA 0x339B0A90 `。
 参数提示：` unsigned_number ` Enter seconds\[.milliseconds\] value。
 
 [条件 C-6b0e6a64036fc693](../../evidence/conditions-sets-041.md#c-6b0e6a64036fc693) · [缺口 G-c97b6911276f519a](../../evidence/gaps-sets-007.md#g-c97b6911276f519a) · [参数 P-b3152f996a9fc881](../../evidence/parameters-sets-014.md#p-b3152f996a9fc881) · [状态效果 S-e8bd4178c1f6884a](../../evidence/state_effects-sets-049.md#s-e8bd4178c1f6884a)
-

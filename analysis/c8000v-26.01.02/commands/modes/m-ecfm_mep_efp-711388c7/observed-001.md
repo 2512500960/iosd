@@ -313,4 +313,3 @@ Handler ` RVA 0xBDCFC00 `；selector ` 0 `；EOL ` RVA 0x339093D0 `。
 参数提示：` unsigned_number ` Identifier value。
 
 [条件 C-561f764b8c97b009](../../evidence/conditions-sets-034.md#c-561f764b8c97b009) · [参数 P-f3acb620b94c6777](../../evidence/parameters-sets-018.md#p-f3acb620b94c6777)
-

@@ -4897,4 +4897,3 @@ Handler ` RVA 0xFC68900 `；selector ` 13 `；EOL ` RVA 0x34887940 `。
 模式根 ` RVA 0x3422CD00 `；语法状态 ` syntax_candidate `；跟踪状态 ` [0,0,0] `。
 
 [条件 C-3f7fda91dc4bffe5](../../evidence/conditions-sets-025.md#c-3f7fda91dc4bffe5) · [状态效果 S-e1bf441bd38a393c](../../evidence/state_effects-sets-048.md#s-e1bf441bd38a393c)
-

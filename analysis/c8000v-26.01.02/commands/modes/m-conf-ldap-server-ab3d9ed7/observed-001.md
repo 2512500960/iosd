@@ -451,4 +451,3 @@ Handler ` RVA 0x11ABE670 `；selector ` 12 `；EOL ` RVA 0x3560F7E0 `。
 参数提示：` unsigned_number ` Port Number。
 
 [条件 C-0a6418a509827bf5](../../evidence/conditions-sets-004.md#c-0a6418a509827bf5) · [参数 P-4c9cf543aa0087f1](../../evidence/parameters-sets-006.md#p-4c9cf543aa0087f1)
-

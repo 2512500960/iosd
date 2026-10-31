@@ -523,4 +523,3 @@ Handler ` RVA 0x1A2257D0 `；selector ` 7 `；EOL ` RVA 0x36BE5060 `。
 参数提示：` unsigned_number ` Time in seconds to wait before restoring from protect to working。
 
 [候选注册 R-a63924eb00a64b50](../../evidence/conditional_registrations-sets-002.md#r-a63924eb00a64b50) · [条件 C-e82b12477eac4a03](../../evidence/conditions-sets-090.md#c-e82b12477eac4a03) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-662e643ad013f3cc](../../evidence/parameters-sets-008.md#p-662e643ad013f3cc)
-

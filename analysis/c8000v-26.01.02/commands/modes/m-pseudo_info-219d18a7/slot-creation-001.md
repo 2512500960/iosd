@@ -135,4 +135,3 @@ Handler ` RVA 0x174A4E20 `；selector ` 1 `；EOL ` RVA 0x363F9848 `。
 参数提示：` unsigned_number ` config the remote pseudo-info ID paired with this pseudo ID。
 
 [候选注册 R-0778f1ad10c8b037](../../evidence/conditional_registrations-sets-001.md#r-0778f1ad10c8b037) · [条件 C-82e810a75100e4f3](../../evidence/conditions-sets-051.md#c-82e810a75100e4f3) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-c87e26d6ff7e2520](../../evidence/parameters-sets-015.md#p-c87e26d6ff7e2520)
-

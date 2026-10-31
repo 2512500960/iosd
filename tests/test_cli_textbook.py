@@ -47,6 +47,8 @@ class CliTextbookTests(unittest.TestCase):
             self.assertIn('[1,0,0]',detail);self.assertIn('[1,1,0]',detail)
             self.assertEqual(check_book(version,version/'commands')['witness_records_verified'],10)
             first_hashes=result['artifact_sha256']
+            for relative in first_hashes:
+                self.assertFalse((version/'commands'/relative).read_bytes().endswith(b'\n\n'))
             with contextlib.redirect_stdout(io.StringIO()):second=build_book(version,version/'commands')
             self.assertEqual(first_hashes,second['artifact_sha256'])
 

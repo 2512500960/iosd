@@ -3995,4 +3995,3 @@
   "reason": "Descriptor literal retained; whitespace and matching flags remain symbolic"
 }
 ```
-

@@ -1343,4 +1343,3 @@ Handler ` RVA 0xEC62F30 `；selector ` 36 `；EOL ` RVA 0x369BC5D8 `。
 参数提示：` unsigned_number ` VCCI value。
 
 [候选注册 R-8ea22db328f15ced](../../evidence/conditional_registrations-sets-002.md#r-8ea22db328f15ced) · [条件 C-3861c4cb13c80a57](../../evidence/conditions-sets-022.md#c-3861c4cb13c80a57) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-831b19a2a4735d57](../../evidence/parameters-sets-010.md#p-831b19a2a4735d57)
-

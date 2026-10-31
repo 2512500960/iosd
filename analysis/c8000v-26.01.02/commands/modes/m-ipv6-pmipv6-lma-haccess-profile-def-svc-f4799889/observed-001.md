@@ -25,4 +25,3 @@ Handler ` RVA 0x1A6C9470 `；selector ` 0 `；EOL ` RVA 0x36CA46E8 `。
 模式根 ` RVA 0x36CA1980 `；语法状态 ` syntax_candidate `；跟踪状态 ` [0,0,0] `。
 
 [状态效果 S-b7afcaea527d5bfc](../../evidence/state_effects-sets-039.md#s-b7afcaea527d5bfc)
-

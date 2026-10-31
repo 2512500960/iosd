@@ -1601,4 +1601,3 @@
 ### S-d20f2ea220a6730a
 
 [Sa-fa8d610c24feac61](state_effects-items-023.md#sa-fa8d610c24feac61) → [Sa-1bc2e43fd559e2ae](state_effects-items-003.md#sa-1bc2e43fd559e2ae) → [Sa-dac2723fa52088dd](state_effects-items-020.md#sa-dac2723fa52088dd)
-

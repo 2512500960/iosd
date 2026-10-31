@@ -1555,4 +1555,3 @@ Handler ` RVA 0xFB4F020 `；selector ` 0 `；EOL ` RVA 0x344EC5E8 `。
 参数提示：` unsigned_number ` rip version 1 or 2。
 
 [条件 C-b9114fade3a00434](../../evidence/conditions-sets-071.md#c-b9114fade3a00434) · [缺口 G-c310642ed2073d18](../../evidence/gaps-sets-007.md#g-c310642ed2073d18) · [参数 P-cd04afd216b634a6](../../evidence/parameters-sets-016.md#p-cd04afd216b634a6) · [状态效果 S-9422574c0010a7d3](../../evidence/state_effects-sets-031.md#s-9422574c0010a7d3)
-

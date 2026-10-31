@@ -4949,4 +4949,3 @@ Handler ` RVA 0xFFD0280 `；selector ` 1 `；EOL ` RVA 0x3494F478 `。
 语法状态 ` syntax_candidate `；跟踪状态 ` [0,0,0] `。
 
 [条件 C-1f799e8f14bdb1e2](../../evidence/conditions-sets-012.md#c-1f799e8f14bdb1e2) · [状态效果 S-e2ca9dc74e28470a](../../evidence/state_effects-sets-048.md#s-e2ca9dc74e28470a)
-

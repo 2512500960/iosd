@@ -81,4 +81,3 @@ Handler ` RVA 0x12174540 `；selector ` 0 `；EOL ` RVA 0x357AE008 `。
 参数提示：` unsigned_number ` Sequence number for this entry。
 
 [条件 C-6e55d8f2572ff691](../../evidence/conditions-sets-043.md#c-6e55d8f2572ff691) · [缺口 G-3053e94208f8c958](../../evidence/gaps-sets-002.md#g-3053e94208f8c958) · [参数 P-529ec0dc89ac5618](../../evidence/parameters-sets-007.md#p-529ec0dc89ac5618)
-

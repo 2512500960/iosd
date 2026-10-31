@@ -4867,4 +4867,3 @@ Handler ` RVA 0xC0CC800 `；selector ` 0 `；EOL ` RVA 0x339A4670 `。
 参数提示：` unsigned_number_dynamic ` Maximum entries。
 
 [条件 C-441f2671a7fc9158](../../evidence/conditions-sets-027.md#c-441f2671a7fc9158) · [缺口 G-8212eb4e829d00b1](../../evidence/gaps-sets-005.md#g-8212eb4e829d00b1) · [参数 P-7ca9e9d7e7f11953](../../evidence/parameters-sets-010.md#p-7ca9e9d7e7f11953) · [状态效果 S-c9ee10bf04360387](../../evidence/state_effects-sets-043.md#s-c9ee10bf04360387)
-

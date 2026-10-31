@@ -39,4 +39,3 @@ Handler ` RVA 0x1A6CC180 `；selector ` 0 `；EOL ` RVA 0x36CAC060 `。
 参数提示：` string ` MOBILE MAP name。
 
 [参数 P-5fd1aaebabfb9ced](../../evidence/parameters-sets-008.md#p-5fd1aaebabfb9ced) · [状态效果 S-03e98f2aa14035dd](../../evidence/state_effects-sets-001.md#s-03e98f2aa14035dd)
-

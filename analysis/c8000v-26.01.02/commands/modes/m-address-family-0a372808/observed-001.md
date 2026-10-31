@@ -5053,4 +5053,3 @@ Handler ` RVA 0x11BBFB00 `；selector ` 7 `；EOL ` RVA 0x356576E8 `。
 参数提示：` unsigned_number ` OSPF area ID as a decimal value。
 
 [条件 C-b31591444cb6622f](../../evidence/conditions-sets-069.md#c-b31591444cb6622f) · [参数 P-c94ae0b4e794f02b](../../evidence/parameters-sets-015.md#p-c94ae0b4e794f02b) · [状态效果 S-c0c869d04d0ad5c6](../../evidence/state_effects-sets-041.md#s-c0c869d04d0ad5c6)
-

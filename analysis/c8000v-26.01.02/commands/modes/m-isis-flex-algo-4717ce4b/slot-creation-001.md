@@ -255,4 +255,3 @@ Handler ` RVA 0x196AC270 `；selector ` 126 `；EOL ` RVA 0x36A43618 `。
 参数提示：` unsigned_number ` Value。
 
 [候选注册 R-ca87d406d6f88244](../../evidence/conditional_registrations-sets-002.md#r-ca87d406d6f88244) · [条件 C-04fb0fe8f7c830dd](../../evidence/conditions-sets-002.md#c-04fb0fe8f7c830dd) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-46c3dfbc84f24777](../../evidence/parameters-sets-006.md#p-46c3dfbc84f24777)
-

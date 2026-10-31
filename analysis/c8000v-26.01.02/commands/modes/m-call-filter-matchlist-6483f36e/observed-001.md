@@ -1153,4 +1153,3 @@ Handler ` RVA 0x1698AA50 `；selector ` 21 `；EOL ` RVA 0x36062660 `。
 参数提示：` string ` A sequence of char representing a trunk group label。
 
 [条件 C-a28035317ee91cc9](../../evidence/conditions-sets-063.md#c-a28035317ee91cc9) · [参数 P-3fdbe48983aeeb6d](../../evidence/parameters-sets-005.md#p-3fdbe48983aeeb6d)
-

@@ -239,4 +239,3 @@ Handler ` RVA 0xEF2B0B0 `；selector ` 1 `；EOL ` RVA 0x3447E568 `。
 参数提示：` string ` Name of the X.25 profile。
 
 [条件 C-ac7fcce6b5d766d6](../../evidence/conditions-sets-067.md#c-ac7fcce6b5d766d6) · [参数 P-39674fe2c4d39631](../../evidence/parameters-sets-005.md#p-39674fe2c4d39631)
-

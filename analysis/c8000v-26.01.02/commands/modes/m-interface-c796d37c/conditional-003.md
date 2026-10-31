@@ -3473,4 +3473,3 @@ Handler ` RVA 0x17704200 `；selector ` 0 `；EOL ` RVA 0x36467A18 `。
 参数提示：` string ` Name of zone defined。
 
 [候选注册 R-e6b39d5db22ad398](../../evidence/conditional_registrations-sets-002.md#r-e6b39d5db22ad398) · [条件 C-6e978b6ad22e7bf0](../../evidence/conditions-sets-043.md#c-6e978b6ad22e7bf0) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-e012bcd31e574fda](../../evidence/parameters-sets-017.md#p-e012bcd31e574fda) · [状态效果 S-e823ef4c9f4fa0d7](../../evidence/state_effects-sets-049.md#s-e823ef4c9f4fa0d7)
-

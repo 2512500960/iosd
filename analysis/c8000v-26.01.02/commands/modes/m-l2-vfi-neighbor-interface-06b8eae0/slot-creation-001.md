@@ -99,4 +99,3 @@ Handler ` RVA 0x1AA4B260 `；selector ` 1 `；EOL ` RVA 0x36D5B9E8 `。
 参数提示：` string ` TLV template name string。
 
 [候选注册 R-b4ed8203a456f6e0](../../evidence/conditional_registrations-sets-002.md#r-b4ed8203a456f6e0) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-cc4cb7b220780111](../../evidence/parameters-sets-015.md#p-cc4cb7b220780111)
-

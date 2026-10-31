@@ -4603,4 +4603,3 @@ Handler ` RVA 0xE002120 `；selector ` 5 `；EOL ` RVA 0x34318700 `。
 语法状态 ` partial_syntax_candidate `；跟踪状态 ` [0,null,0] `。
 
 [条件 C-fb8ddb0c42b71c7c](../../evidence/conditions-sets-097.md#c-fb8ddb0c42b71c7c) · [缺口 G-96f4196304222449](../../evidence/gaps-sets-006.md#g-96f4196304222449) · [状态效果 S-c43037a8979c945b](../../evidence/state_effects-sets-042.md#s-c43037a8979c945b)
-

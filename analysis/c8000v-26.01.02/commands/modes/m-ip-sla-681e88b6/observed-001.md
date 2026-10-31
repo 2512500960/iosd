@@ -819,4 +819,3 @@ Handler ` RVA 0x10307C70 `；selector ` 0 `；EOL ` RVA 0x34AAE428 `。
 参数提示：` string ` Destination IP/IPv6 address or hostname；` unsigned_number ` Port Number. Recommended ports greater than 1023. For codec options recommended port range is an Even Port range between 16384-32767 or 49152-65535。
 
 [条件 C-b7ea163e5ed8c4dc](../../evidence/conditions-sets-071.md#c-b7ea163e5ed8c4dc) · [参数 P-70adabcddc7d4553](../../evidence/parameters-sets-009.md#p-70adabcddc7d4553)
-

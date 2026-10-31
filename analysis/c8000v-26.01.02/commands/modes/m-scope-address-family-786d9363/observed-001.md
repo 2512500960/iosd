@@ -4887,4 +4887,3 @@ Handler ` RVA 0xF1B9300 `；selector ` 74 `；EOL ` RVA 0x34542E68 `。
 参数提示：` unsigned_number ` Delay in seconds。
 
 [条件 C-a4057e89490d6056](../../evidence/conditions-sets-063.md#c-a4057e89490d6056) · [参数 P-06d763f31c291b7c](../../evidence/parameters-sets-001.md#p-06d763f31c291b7c) · [状态效果 S-de1630aa53bddf28](../../evidence/state_effects-sets-047.md#s-de1630aa53bddf28)
-

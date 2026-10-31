@@ -4901,4 +4901,3 @@ Handler ` RVA 0x123158A0 `；selector ` 0 `；EOL ` RVA 0x357F6A38 `。
 参数提示：` unsigned_number ` Time (seconds)。
 
 [条件 C-c669ba313d2e75c3](../../evidence/conditions-sets-076.md#c-c669ba313d2e75c3) · [参数 P-d3108a7c0d06de87](../../evidence/parameters-sets-016.md#p-d3108a7c0d06de87) · [状态效果 S-0109722c766f661b](../../evidence/state_effects-sets-001.md#s-0109722c766f661b)
-

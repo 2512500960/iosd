@@ -27,4 +27,3 @@ Handler ` RVA 0x1A6C9470 `；selector ` 0 `；EOL ` RVA 0x36CA46E8 `。
 参数提示：` string ` Customer identifier；` string ` VRF name for this Customer。
 
 [参数 P-1058208f50df2e7f](../../evidence/parameters-sets-002.md#p-1058208f50df2e7f) · [状态效果 S-3e5447d57c82ebae](../../evidence/state_effects-sets-014.md#s-3e5447d57c82ebae)
-

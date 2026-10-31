@@ -3365,4 +3365,3 @@ Handler ` RVA 0x177C2DE0 `；selector ` 27 `；EOL ` RVA 0x3647D970 `。
 模式根 ` RVA 0x341168F8 `；语法状态 ` partial_syntax_candidate `；跟踪状态 ` [null,null,0] `。
 
 [候选注册 R-baad57e211debf49](../../evidence/conditional_registrations-sets-002.md#r-baad57e211debf49) · [条件 C-8246f8b85ee07dc6](../../evidence/conditions-sets-050.md#c-8246f8b85ee07dc6) · [缺口 G-241b3aca3eb2e085](../../evidence/gaps-sets-002.md#g-241b3aca3eb2e085) · [状态效果 S-0fbef734423d15b1](../../evidence/state_effects-sets-004.md#s-0fbef734423d15b1)
-

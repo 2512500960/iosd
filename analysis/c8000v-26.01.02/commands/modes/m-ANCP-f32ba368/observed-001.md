@@ -783,4 +783,3 @@ Handler ` RVA 0xB25F6B0 `；selector ` 11 `；EOL ` RVA 0x336E2F78 `。
 参数提示：` unsigned_number ` Minimum Low Power Data Rate Upstream (kbps)。
 
 [条件 C-6a532cd9d03aedfa](../../evidence/conditions-sets-041.md#c-6a532cd9d03aedfa) · [参数 P-ec887cacb0bd963c](../../evidence/parameters-sets-018.md#p-ec887cacb0bd963c) · [状态效果 S-45f69076ef331c76](../../evidence/state_effects-sets-015.md#s-45f69076ef331c76)
-

@@ -189,4 +189,3 @@ Handler ` RVA 0x1A4510F0 `；selector ` 5 `；EOL ` RVA 0x36C68DD8 `。
 参数提示：` unsigned_number ` TTL, default is 1。
 
 [候选注册 R-9da0bc775972f7c6](../../evidence/conditional_registrations-sets-002.md#r-9da0bc775972f7c6) · [条件 C-fad9d9c540a9239e](../../evidence/conditions-sets-097.md#c-fad9d9c540a9239e) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-daeb4e098811adde](../../evidence/parameters-sets-016.md#p-daeb4e098811adde)
-

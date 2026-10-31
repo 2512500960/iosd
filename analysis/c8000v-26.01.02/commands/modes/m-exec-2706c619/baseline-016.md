@@ -4729,4 +4729,3 @@ Handler ` RVA 0xE002120 `；selector ` 37 `；EOL ` RVA 0x34D06138 `。
 语法状态 ` partial_syntax_candidate `；跟踪状态 ` [1,null,0] `。
 
 [条件 C-c6ae9c1b3845cab6](../../evidence/conditions-sets-077.md#c-c6ae9c1b3845cab6) · [缺口 G-96f4196304222449](../../evidence/gaps-sets-006.md#g-96f4196304222449) · [状态效果 S-13b2eedc44fc8aa1](../../evidence/state_effects-sets-005.md#s-13b2eedc44fc8aa1)
-

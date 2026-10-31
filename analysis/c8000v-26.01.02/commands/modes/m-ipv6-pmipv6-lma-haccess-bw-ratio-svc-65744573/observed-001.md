@@ -27,4 +27,3 @@ Handler ` RVA 0x1A6C9470 `；selector ` 0 `；EOL ` RVA 0x36CA46E8 `。
 参数提示：` string ` mag identifier。
 
 [参数 P-2a4abfa21e207364](../../evidence/parameters-sets-004.md#p-2a4abfa21e207364) · [状态效果 S-822d22be032b9023](../../evidence/state_effects-sets-028.md#s-822d22be032b9023)
-

@@ -4939,4 +4939,3 @@ Handler ` RVA 0xF1B9300 `；selector ` 53 `；EOL ` RVA 0x344937E0 `。
 参数提示：` unsigned_number ` Timer value in milliseconds；` unsigned_number ` Batch Size。
 
 [条件 C-e27560d5ee3533f0](../../evidence/conditions-sets-087.md#c-e27560d5ee3533f0) · [参数 P-af331c78273510e6](../../evidence/parameters-sets-013.md#p-af331c78273510e6) · [状态效果 S-5a471470eabbe594](../../evidence/state_effects-sets-019.md#s-5a471470eabbe594)
-

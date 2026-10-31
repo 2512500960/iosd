@@ -15,4 +15,3 @@ Handler ` RVA 0x1AF5A590 `；selector ` 3 `；EOL ` RVA 0x36E8EB50 `。
 参数提示：` address ` Local virtual DECnet address；` unsigned_number ` Remote ATG network number；` address ` Remote real DECnet address。
 
 [参数 P-4da90cb7e540713c](../../evidence/parameters-sets-006.md#p-4da90cb7e540713c)
-

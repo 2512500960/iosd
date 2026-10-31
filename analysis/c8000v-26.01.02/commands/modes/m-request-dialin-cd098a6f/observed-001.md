@@ -251,4 +251,3 @@ Handler ` RVA 0x11D4F780 `；selector ` 106 `；EOL ` RVA 0x356FE210 `。
 参数提示：` unsigned_number ` Dialer Rotary group number。
 
 [条件 C-5ac15868eb23c9e5](../../evidence/conditions-sets-036.md#c-5ac15868eb23c9e5) · [参数 P-dae2d201d070b1d5](../../evidence/parameters-sets-016.md#p-dae2d201d070b1d5)
-

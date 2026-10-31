@@ -4819,4 +4819,3 @@ Handler ` RVA 0x1023A630 `；selector ` 0 `；EOL ` RVA 0x34A79100 `。
 参数提示：` unsigned_number ` Session Identifier。
 
 [条件 C-a7e992b2c3fb2eba](../../evidence/conditions-sets-065.md#c-a7e992b2c3fb2eba) · [参数 P-36c953fa952bb229](../../evidence/parameters-sets-005.md#p-36c953fa952bb229) · [状态效果 S-62ef205f7b5f4e73](../../evidence/state_effects-sets-021.md#s-62ef205f7b5f4e73)
-

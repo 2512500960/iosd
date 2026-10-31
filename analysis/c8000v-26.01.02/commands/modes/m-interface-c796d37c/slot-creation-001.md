@@ -661,4 +661,3 @@ Handler ` RVA 0x16B806A0 `；selector ` 15 `；EOL ` RVA 0x361151D0 `。
 参数提示：` unsigned_number ` Delay between retransmitted LSPs (milliseconds)。
 
 [候选注册 R-1af9cd743aa46bfc](../../evidence/conditional_registrations-sets-001.md#r-1af9cd743aa46bfc) · [条件 C-a47e04b30138fe02](../../evidence/conditions-sets-063.md#c-a47e04b30138fe02) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-cf5654999156e23e](../../evidence/parameters-sets-016.md#p-cf5654999156e23e) · [状态效果 S-a84a8b25d3111eb7](../../evidence/state_effects-sets-036.md#s-a84a8b25d3111eb7)
-

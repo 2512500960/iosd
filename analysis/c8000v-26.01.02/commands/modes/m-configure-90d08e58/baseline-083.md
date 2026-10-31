@@ -4907,4 +4907,3 @@ Handler ` RVA 0xD407F10 `；selector ` 0 `；EOL ` RVA 0x33E42F18 `。
 参数提示：` unsigned_number ` group id。
 
 [条件 C-8246f8b85ee07dc6](../../evidence/conditions-sets-050.md#c-8246f8b85ee07dc6) · [参数 P-6d276200dc0ed569](../../evidence/parameters-sets-009.md#p-6d276200dc0ed569) · [状态效果 S-371cc526d24b92b2](../../evidence/state_effects-sets-012.md#s-371cc526d24b92b2)
-

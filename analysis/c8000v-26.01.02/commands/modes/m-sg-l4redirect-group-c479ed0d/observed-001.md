@@ -55,4 +55,3 @@ Handler ` RVA 0x11AA6D50 `；selector ` 6 `；EOL ` RVA 0x355E2F50 `。
 参数提示：` address ` IPv4 address。
 
 [参数 P-d977217eeb57c25e](../../evidence/parameters-sets-016.md#p-d977217eeb57c25e)
-

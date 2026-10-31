@@ -3997,4 +3997,3 @@
   "reason": "URL scheme selection, registry callbacks, descriptor flags and additional paths remain symbolic"
 }
 ```
-

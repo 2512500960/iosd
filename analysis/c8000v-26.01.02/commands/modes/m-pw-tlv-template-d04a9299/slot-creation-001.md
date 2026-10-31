@@ -57,4 +57,3 @@ Handler ` RVA 0x1AA1F600 `；selector ` 1 `；EOL ` RVA 0x36D492D8 `。
 参数提示：` unsigned_number ` TLV type in hex format；` unsigned_number ` TLV length；` hexstring ` TLV value in hex string format。
 
 [候选注册 R-d9b50ed2abf3f302](../../evidence/conditional_registrations-sets-002.md#r-d9b50ed2abf3f302) · [条件 C-c6b3275ca3f4406e](../../evidence/conditions-sets-077.md#c-c6b3275ca3f4406e) · [缺口 G-e990f4293950e9c2](../../evidence/gaps-sets-008.md#g-e990f4293950e9c2) · [参数 P-2fee98b3ae912a33](../../evidence/parameters-sets-004.md#p-2fee98b3ae912a33) · [状态效果 S-f7ca0388b5ebfc7b](../../evidence/state_effects-sets-052.md#s-f7ca0388b5ebfc7b)
-

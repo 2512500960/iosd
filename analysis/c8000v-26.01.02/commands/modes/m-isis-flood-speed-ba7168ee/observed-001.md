@@ -113,4 +113,3 @@ Handler ` RVA 0x1070B130 `；selector ` 60 `；EOL ` RVA 0x34BE01A8 `。
 参数提示：` unsigned_number ` Remote PSNP delay in msec。
 
 [条件 C-6590ab896984a6c6](../../evidence/conditions-sets-039.md#c-6590ab896984a6c6) · [参数 P-78e2978dfb11b144](../../evidence/parameters-sets-009.md#p-78e2978dfb11b144)
-

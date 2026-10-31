@@ -1463,4 +1463,3 @@ Handler ` RVA 0xF575390 `；selector ` 39 `；EOL ` RVA 0x346E2590 `。
 参数提示：` unsigned_number ` Metric variance multiplier。
 
 [条件 C-32f3520bff0bcd8d](../../evidence/conditions-sets-020.md#c-32f3520bff0bcd8d) · [参数 P-5a91a60637246b0d](../../evidence/parameters-sets-007.md#p-5a91a60637246b0d)
-

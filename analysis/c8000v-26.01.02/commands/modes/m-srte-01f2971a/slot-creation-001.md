@@ -397,4 +397,3 @@ Handler ` RVA 0x1ADFB070 `；selector ` 0 `；EOL ` RVA 0x36E21140 `。
 参数提示：` string ` Identifying name for segment-list。
 
 [候选注册 R-9a72133f20e9fd6c](../../evidence/conditional_registrations-sets-002.md#r-9a72133f20e9fd6c) · [条件 C-33228c276b6e4533](../../evidence/conditions-sets-020.md#c-33228c276b6e4533) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-c921478a10357012](../../evidence/parameters-sets-015.md#p-c921478a10357012) · [状态效果 S-51b34a52339c0db8](../../evidence/state_effects-sets-018.md#s-51b34a52339c0db8)
-

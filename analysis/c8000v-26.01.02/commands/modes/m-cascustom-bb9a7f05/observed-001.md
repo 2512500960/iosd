@@ -113,4 +113,3 @@ Handler ` RVA 0x1E138840 `；selector ` 116 `；EOL ` RVA 0x378E3CF8 `。
 参数提示：` unsigned_number ` A bit value；` unsigned_number ` B bit value；` unsigned_number ` C bit value；` unsigned_number ` D bit value。
 
 [条件 C-62266caeb948f889](../../evidence/conditions-sets-038.md#c-62266caeb948f889) · [缺口 G-d0a3f6bf8ef4046e](../../evidence/gaps-sets-007.md#g-d0a3f6bf8ef4046e) · [参数 P-7afd08846ff062a5](../../evidence/parameters-sets-010.md#p-7afd08846ff062a5) · [状态效果 S-f771939ebed9d2d5](../../evidence/state_effects-sets-052.md#s-f771939ebed9d2d5)
-

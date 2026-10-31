@@ -4867,4 +4867,3 @@ Handler ` RVA 0xDF978A0 `；selector ` 0 `；EOL ` 历史 VA 0x7FFFBAEBFE38 `。
 语法状态 ` partial_syntax_candidate `；跟踪状态 ` [null,null,0] `。
 
 [条件 C-c31d087063601ab9](../../evidence/conditions-sets-075.md#c-c31d087063601ab9) · [缺口 G-dd2c3288ccbcc219](../../evidence/gaps-sets-008.md#g-dd2c3288ccbcc219) · [状态效果 S-7f1ed72fbabfc335](../../evidence/state_effects-sets-027.md#s-7f1ed72fbabfc335)
-

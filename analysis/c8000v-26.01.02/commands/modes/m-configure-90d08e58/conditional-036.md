@@ -767,4 +767,3 @@ Handler ` RVA 0x17702C70 `；selector ` 0 `；EOL ` RVA 0x36466E08 `。
 参数提示：` string ` Name of security zone。
 
 [候选注册 R-c6e15d82898f919b](../../evidence/conditional_registrations-sets-002.md#r-c6e15d82898f919b) · [条件 C-b66b6905226f8885](../../evidence/conditions-sets-071.md#c-b66b6905226f8885) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-22eacd62f200bf20](../../evidence/parameters-sets-003.md#p-22eacd62f200bf20) · [状态效果 S-bbbb684a3adaeae6](../../evidence/state_effects-sets-040.md#s-bbbb684a3adaeae6)
-

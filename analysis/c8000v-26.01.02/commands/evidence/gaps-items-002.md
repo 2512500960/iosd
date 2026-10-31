@@ -3998,4 +3998,3 @@
   "reason": "Interface registry/type/number validation and context effects remain unresolved"
 }
 ```
-

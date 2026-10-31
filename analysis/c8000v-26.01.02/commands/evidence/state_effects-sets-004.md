@@ -1601,4 +1601,3 @@
 ### S-1338afb1f0f9b543
 
 [Sa-fa8d610c24feac61](state_effects-items-023.md#sa-fa8d610c24feac61) → [Sa-1bc2e43fd559e2ae](state_effects-items-003.md#sa-1bc2e43fd559e2ae) → [Sa-02a811ad6e3137e5](state_effects-items-001.md#sa-02a811ad6e3137e5)
-

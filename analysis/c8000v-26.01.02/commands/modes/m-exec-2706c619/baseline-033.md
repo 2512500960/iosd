@@ -4103,4 +4103,3 @@ Handler ` RVA 0xB51A690 `；selector ` 9 `；EOL ` RVA 0x33796C50 `。
 参数提示：` unsigned_number ` Tunnel-to test handle identifier。
 
 [条件 C-8c48dfc36479b2a5](../../evidence/conditions-sets-054.md#c-8c48dfc36479b2a5) · [缺口 G-96f4196304222449](../../evidence/gaps-sets-006.md#g-96f4196304222449) · [参数 P-695815f3b54ec526](../../evidence/parameters-sets-008.md#p-695815f3b54ec526) · [状态效果 S-b73c4a3a62cee5ae](../../evidence/state_effects-sets-039.md#s-b73c4a3a62cee5ae)
-

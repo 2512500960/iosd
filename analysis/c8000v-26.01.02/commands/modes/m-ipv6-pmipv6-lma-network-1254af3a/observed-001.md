@@ -27,4 +27,3 @@ Handler ` RVA 0x1A6C9470 `；selector ` 0 `；EOL ` RVA 0x36CA46E8 `。
 参数提示：` address ` Primary DNS ip。
 
 [参数 P-26b720d642e6bb2f](../../evidence/parameters-sets-003.md#p-26b720d642e6bb2f) · [状态效果 S-7254143e94b699fb](../../evidence/state_effects-sets-024.md#s-7254143e94b699fb)
-

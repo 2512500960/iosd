@@ -123,4 +123,3 @@ Handler ` RVA 0xCBD6D90 `；selector ` 0 `；EOL ` RVA 0x33C137A8 `。
 参数提示：` unsigned_number ` RG Protocol Id。
 
 [条件 C-01051b17b3d84b74](../../evidence/conditions-sets-001.md#c-01051b17b3d84b74) · [参数 P-05f422a9388f033b](../../evidence/parameters-sets-001.md#p-05f422a9388f033b)
-

@@ -5173,4 +5173,3 @@ Handler ` RVA 0x11213450 `；selector ` 0 `；EOL ` RVA 0x3541D688 `。
 参数提示：` unsigned_number ` Host HLD Number；` unsigned_number ` Host-link identifier number。
 
 [条件 C-d1fccaa4aac6a927](../../evidence/conditions-sets-081.md#c-d1fccaa4aac6a927) · [参数 P-05eb6bb78df80933](../../evidence/parameters-sets-001.md#p-05eb6bb78df80933) · [状态效果 S-61ec1fedf1c13634](../../evidence/state_effects-sets-021.md#s-61ec1fedf1c13634)
-

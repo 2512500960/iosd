@@ -3671,4 +3671,3 @@ Handler ` RVA 0xFE728D0 `；selector ` 27 `；EOL ` RVA 0x34901A18 `。
 参数提示：` unsigned_number ` Local CUG number；` unsigned_number ` Network CUG number。
 
 [条件 C-dcad178e0d48499f](../../evidence/conditions-sets-085.md#c-dcad178e0d48499f) · [参数 P-89c39e0c723031cb](../../evidence/parameters-sets-011.md#p-89c39e0c723031cb)
-

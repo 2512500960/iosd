@@ -65,4 +65,3 @@ Handler ` RVA 0x10616A70 `；selector ` 0 `；EOL ` RVA 0x34BCCB10 `。
 参数提示：` address ` Address of remote XOT host。
 
 [条件 C-63d73479f94307d5](../../evidence/conditions-sets-039.md#c-63d73479f94307d5) · [参数 P-c5b6786074d20b54](../../evidence/parameters-sets-015.md#p-c5b6786074d20b54) · [状态效果 S-1326fb97d24eea5b](../../evidence/state_effects-sets-004.md#s-1326fb97d24eea5b)
-

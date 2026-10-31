@@ -1989,4 +1989,3 @@ Handler ` RVA 0xF26E860 `；selector ` 0 `；EOL ` RVA 0x344E2730 `。
 参数提示：` unsigned_number ` Weight value。
 
 [条件 C-bea8dd910514fc9d](../../evidence/conditions-sets-074.md#c-bea8dd910514fc9d) · [参数 P-ae458a0ed4e2d061](../../evidence/parameters-sets-013.md#p-ae458a0ed4e2d061)
-

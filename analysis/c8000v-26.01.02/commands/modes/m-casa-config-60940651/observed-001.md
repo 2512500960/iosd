@@ -43,4 +43,3 @@ Handler ` RVA 0x1132EC70 `；selector ` 0 `；EOL ` RVA 0x354999D8 `。
 参数提示：` string ` name of wildcard。
 
 [参数 P-9fd185c3e7025bd7](../../evidence/parameters-sets-012.md#p-9fd185c3e7025bd7) · [状态效果 S-dcaa22955fa5dbc3](../../evidence/state_effects-sets-047.md#s-dcaa22955fa5dbc3)
-

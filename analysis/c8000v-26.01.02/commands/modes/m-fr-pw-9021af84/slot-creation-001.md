@@ -143,4 +143,3 @@ Handler ` RVA 0x1A9E4100 `；selector ` 1 `；EOL ` RVA 0x369A3D98 `。
 参数提示：` string ` VFI name。
 
 [候选注册 R-394fe22338668d25](../../evidence/conditional_registrations-sets-001.md#r-394fe22338668d25) · [条件 C-24c8992f96229e79](../../evidence/conditions-sets-014.md#c-24c8992f96229e79) · [缺口 G-b44198d32133d73f](../../evidence/gaps-sets-006.md#g-b44198d32133d73f) · [参数 P-0d9f20d5c6cb1467](../../evidence/parameters-sets-001.md#p-0d9f20d5c6cb1467)
-

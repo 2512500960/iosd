@@ -1577,4 +1577,3 @@ Handler ` RVA 0xF6505A0 `；selector ` 4 `；EOL ` RVA 0x3471DA48 `。
 参数提示：` string ` policy name。
 
 [条件 C-49d00128f60fa309](../../evidence/conditions-sets-029.md#c-49d00128f60fa309) · [参数 P-1c3e3dfc783a5b5b](../../evidence/parameters-sets-003.md#p-1c3e3dfc783a5b5b) · [状态效果 S-82fce12db83710d8](../../evidence/state_effects-sets-028.md#s-82fce12db83710d8)
-

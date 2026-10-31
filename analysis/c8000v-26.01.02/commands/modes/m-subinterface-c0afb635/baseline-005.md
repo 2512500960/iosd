@@ -5121,4 +5121,3 @@ Handler ` RVA 0xF9FF470 `；selector ` 1 `；EOL ` RVA 0x347BAA08 `。
 参数提示：` unsigned_number ` IP access list (standard or extended)。
 
 [条件 C-27e2d5a53acf1efe](../../evidence/conditions-sets-016.md#c-27e2d5a53acf1efe) · [参数 P-15045331e5cbe6cb](../../evidence/parameters-sets-002.md#p-15045331e5cbe6cb) · [状态效果 S-fe6f64081291cc14](../../evidence/state_effects-sets-054.md#s-fe6f64081291cc14)
-

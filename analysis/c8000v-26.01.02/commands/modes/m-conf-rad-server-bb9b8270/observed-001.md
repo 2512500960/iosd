@@ -385,4 +385,3 @@ Handler ` RVA 0x100440B0 `；selector ` 142 `；EOL ` RVA 0x349699C8 `。
 模式根 ` RVA 0x34944F00 `；语法状态 ` syntax_candidate `；跟踪状态 ` [1,0,0] `。
 
 [状态效果 S-37a20d4586935419](../../evidence/state_effects-sets-012.md#s-37a20d4586935419)
-

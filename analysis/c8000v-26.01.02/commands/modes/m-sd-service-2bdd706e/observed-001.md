@@ -63,4 +63,3 @@ Handler ` RVA 0x10F34980 `；selector ` 26 `；EOL ` RVA 0x3525EDB0 `。
 参数提示：` string ` Enter a segment name. Max - 63 chars。
 
 [条件 C-bbb3ae996fb5ef75](../../evidence/conditions-sets-072.md#c-bbb3ae996fb5ef75) · [参数 P-27ff632f4cd3a8e2](../../evidence/parameters-sets-003.md#p-27ff632f4cd3a8e2) · [状态效果 S-cfd904e7b512cbc3](../../evidence/state_effects-sets-044.md#s-cfd904e7b512cbc3)
-

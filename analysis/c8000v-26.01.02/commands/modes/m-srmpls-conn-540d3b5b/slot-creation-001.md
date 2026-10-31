@@ -27,4 +27,3 @@ Handler ` RVA 0x1969C600 `；selector ` 0 `；EOL ` RVA 0x36A411E8 `。
 参数提示：` unsigned_number ` Algorithm number。
 
 [候选注册 R-177ea24a658f17ea](../../evidence/conditional_registrations-sets-001.md#r-177ea24a658f17ea) · [条件 C-3182d882e58b6ce6](../../evidence/conditions-sets-019.md#c-3182d882e58b6ce6) · [缺口 G-0acf8711ffaf4813](../../evidence/gaps-sets-001.md#g-0acf8711ffaf4813) · [参数 P-b05eb51dadbca198](../../evidence/parameters-sets-013.md#p-b05eb51dadbca198) · [状态效果 S-9a2b39c758eed917](../../evidence/state_effects-sets-033.md#s-9a2b39c758eed917)
-
