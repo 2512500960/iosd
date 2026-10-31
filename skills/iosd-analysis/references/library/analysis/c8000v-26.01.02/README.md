@@ -117,6 +117,14 @@ python tools/query_cli_catalogue.py analysis/c8000v-26.01.02/unbound-cli/static_
 
 ## 基础图查询和文件格式
 
+### 在 GitHub 直接阅读命令
+
+[命令文本总索引](https://github.com/2512500960/iosd/tree/main/analysis/c8000v-26.01.02/commands) 按 287 个模式主名称整理了 98,812 条路径见证，跨模式覆盖 21,795 个不同 EOL。模式页的 `.txt` 直接列命令，`.md` 给出参数提示、handler/selector、来源编号以及条件、状态效果和缺口链接。每个命令分片最多 400 条，UTF-8 文本上限 192 KiB。
+
+五种来源模型分别保存，1,350 个尚缺模式路径的候选另列。文本中的路径记录、不同 EOL 和实际可执行命令按各自范围解释。条件参考页保存已取得字段；命令与来源编号可以回到下方 gzip 数据中继续查询。
+
+### 查询派生数据
+
 在仓库根目录运行：
 
 ```text

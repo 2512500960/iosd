@@ -1,0 +1,85 @@
+# 模式 policymap-service；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-service-policymap)# aaa attribute list <string> <cr>    # observed_connections-007119
+(config-service-policymap)# authenticate aaa list <string> <cr>    # observed_connections-007070
+(config-service-policymap)# class type traffic <string> <cr>    # observed_connections-007085
+(config-service-policymap)# class type traffic default input <cr>    # observed_connections-007110
+(config-service-policymap)# classname <string> <cr>    # observed_connections-007060
+(config-service-policymap)# default authenticate <cr>    # observed_connections-007042
+(config-service-policymap)# default class type traffic <string> <cr>    # observed_connections-007111
+(config-service-policymap)# default class type traffic default <cr>    # observed_connections-007112
+(config-service-policymap)# default classname <cr>    # observed_connections-007059
+(config-service-policymap)# default ip access-group in <cr>    # observed_connections-007094
+(config-service-policymap)# default ip access-group out <cr>    # observed_connections-007096
+(config-service-policymap)# default ip address peer <cr>    # observed_connections-007072
+(config-service-policymap)# default ip address pool <cr>    # observed_connections-007078
+(config-service-policymap)# default ip portbundle <cr>    # observed_connections-007062
+(config-service-policymap)# default ip unnumbered <cr>    # observed_connections-007064
+(config-service-policymap)# default ip vrf forwarding <cr>    # observed_connections-007083
+(config-service-policymap)# default ipv6 traffic-filter <string> in <cr>    # observed_connections-007100
+(config-service-policymap)# default ipv6 traffic-filter <string> out <cr>    # observed_connections-007108
+(config-service-policymap)# default keepalive <cr>    # observed_connections-007054
+(config-service-policymap)# default mac access-group <string> in <cr>    # observed_connections-007113
+(config-service-policymap)# default policy-name <cr>    # observed_connections-007052
+(config-service-policymap)# default pppoe service <string> <cr>    # observed_connections-007091
+(config-service-policymap)# default service-monitor <cr>    # observed_connections-007056
+(config-service-policymap)# default service-policy input <string> <cr>    # observed_connections-007079
+(config-service-policymap)# default service-policy output <string> <cr>    # observed_connections-007084
+(config-service-policymap)# default sg-service-group <cr>    # observed_connections-007045
+(config-service-policymap)# default sg-service-type <cr>    # observed_connections-007048
+(config-service-policymap)# default sub testing <string> <cr>    # observed_connections-007093
+(config-service-policymap)# default traffic class input access-group <cr>    # observed_connections-007099
+(config-service-policymap)# default traffic class input default <cr>    # observed_connections-007107
+(config-service-policymap)# exit <cr>    # observed_connections-007039
+(config-service-policymap)# ip access-group <number:1..199> in <cr>    # observed_connections-007086
+(config-service-policymap)# ip access-group <number:1..199> out <cr>    # observed_connections-007092
+(config-service-policymap)# ip address peer <address> <cr>    # observed_connections-007071
+(config-service-policymap)# ip address pool <string> <cr>    # observed_connections-007075
+(config-service-policymap)# ip portbundle <cr>    # observed_connections-007044
+(config-service-policymap)# ip unnumbered <interface> <cr>    # observed_connections-007114
+(config-service-policymap)# ip vrf forwarding <string> <cr>    # observed_connections-007081
+(config-service-policymap)# ipv6 traffic-filter <string> in <cr>    # observed_connections-007076
+(config-service-policymap)# ipv6 traffic-filter <string> out <cr>    # observed_connections-007082
+(config-service-policymap)# keepalive <?option@55558ac1dff0> <?number_help_func_action@55558ac1e0f0> <cr>    # observed_connections-007118
+(config-service-policymap)# keepalive <cr>    # observed_connections-007040
+(config-service-policymap)# mac access-group <string> in <cr>    # observed_connections-007088
+(config-service-policymap)# no authenticate <cr>    # observed_connections-007041
+(config-service-policymap)# no class type traffic <string> <cr>    # observed_connections-007104
+(config-service-policymap)# no class type traffic default <cr>    # observed_connections-007106
+(config-service-policymap)# no classname <cr>    # observed_connections-007057
+(config-service-policymap)# no ip access-group in <cr>    # observed_connections-007090
+(config-service-policymap)# no ip access-group out <cr>    # observed_connections-007095
+(config-service-policymap)# no ip address peer <cr>    # observed_connections-007069
+(config-service-policymap)# no ip address pool <cr>    # observed_connections-007073
+(config-service-policymap)# no ip portbundle <cr>    # observed_connections-007061
+(config-service-policymap)# no ip unnumbered <cr>    # observed_connections-007063
+(config-service-policymap)# no ip vrf forwarding <cr>    # observed_connections-007077
+(config-service-policymap)# no ipv6 traffic-filter <string> in <cr>    # observed_connections-007098
+(config-service-policymap)# no ipv6 traffic-filter <string> out <cr>    # observed_connections-007102
+(config-service-policymap)# no keepalive <cr>    # observed_connections-007050
+(config-service-policymap)# no mac access-group <string> in <cr>    # observed_connections-007109
+(config-service-policymap)# no policy-name <cr>    # observed_connections-007049
+(config-service-policymap)# no pppoe service <string> <cr>    # observed_connections-007087
+(config-service-policymap)# no service-monitor <cr>    # observed_connections-007053
+(config-service-policymap)# no service-policy input <string> <cr>    # observed_connections-007074
+(config-service-policymap)# no service-policy output <string> <cr>    # observed_connections-007080
+(config-service-policymap)# no sg-service-group <cr>    # observed_connections-007043
+(config-service-policymap)# no sg-service-type <cr>    # observed_connections-007046
+(config-service-policymap)# no sub testing <string> <cr>    # observed_connections-007089
+(config-service-policymap)# no traffic class input access-group <cr>    # observed_connections-007097
+(config-service-policymap)# no traffic class input default <cr>    # observed_connections-007101
+(config-service-policymap)# policy-name <string> <cr>    # observed_connections-007055
+(config-service-policymap)# pppoe service <string> <cr>    # observed_connections-007067
+(config-service-policymap)# service local <cr>    # observed_connections-007115
+(config-service-policymap)# service none <string> <cr>    # observed_connections-007117
+(config-service-policymap)# service vpdn <cr>    # observed_connections-007116
+(config-service-policymap)# service-monitor enable <cr>    # observed_connections-007058
+(config-service-policymap)# service-policy input <string> <cr>    # observed_connections-007065
+(config-service-policymap)# service-policy output <string> <cr>    # observed_connections-007066
+(config-service-policymap)# sg-service-group <string> <cr>    # observed_connections-007047
+(config-service-policymap)# sg-service-type primary <cr>    # observed_connections-007051
+(config-service-policymap)# sub testing <string> <cr>    # observed_connections-007068
+(config-service-policymap)# traffic class input access-group <number:1..2799> <cr>    # observed_connections-007105
+(config-service-policymap)# traffic class input default drop <cr>    # observed_connections-007103

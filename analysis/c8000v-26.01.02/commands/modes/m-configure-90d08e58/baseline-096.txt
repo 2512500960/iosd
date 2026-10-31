@@ -1,0 +1,125 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-096.md
+
+(config)# vlan group <string> vlan-list <string> <cr>    # path-062774
+(config)# vlan internal allocation policy ascending <cr>    # path-034112
+(config)# vlan-autoconfig authorize list default password <string> <cr>    # path-044724
+(config)# vlan-autoconfig identifier nas-port <cr>    # path-063013
+(config)# vpdn aaa attribute class tunnel-class <cr>    # path-037183
+(config)# vpdn aaa attribute nas-ip-address vpdn-nas <cr>    # path-037043
+(config)# vpdn aaa attribute nas-ip-address vpdn-tunnel-client <cr>    # path-037094
+(config)# vpdn aaa attribute nas-port physical-channel-id <cr>    # path-037233
+(config)# vpdn aaa attribute username gateway <cr>    # path-037140
+(config)# vpdn aaa override-server <string> <cr>    # path-030423
+(config)# vpdn aaa untagged default <cr>    # path-030472
+(config)# vpdn authen-before-forward <cr>    # path-025904
+(config)# vpdn authorize directed-request <cr>    # path-027461
+(config)# vpdn authorize domain <cr>    # path-027466
+(config)# vpdn domain-delimiter <cr>    # path-060314
+(config)# vpdn enable <cr>    # path-025893
+(config)# vpdn history failure <cr>    # path-027458
+(config)# vpdn incoming <string> <string> virtual-template <number:dynamic> <cr>    # path-061407
+(config)# vpdn ip udp ignore checksum <cr>    # path-037471
+(config)# vpdn l2tp attribute clid mask-method remove <cr>    # path-046741
+(config)# vpdn l2tp attribute initial-received-lcp-confreq <cr>    # path-030502
+(config)# vpdn l2tp attribute physical-channel-id <cr>    # path-030476
+(config)# vpdn l2tp cac enable <cr>    # path-030473
+(config)# vpdn l2tp nas-port-type map all virtual <cr>    # path-046310
+(config)# vpdn l2tp nas-port-type map digital-async v110 <cr>    # path-046369
+(config)# vpdn l2tp session refuse <number:0..12> <cr>    # path-037111
+(config)# vpdn l2tp session refuse icrp <cr>    # path-037000
+(config)# vpdn l2tp tunnel refuse <number:0..11> <cr>    # path-036947
+(config)# vpdn logging <cr>    # path-025931
+(config)# vpdn multihop <cr>    # path-025922
+(config)# vpdn outgoing <string> <string> ip <address> <cr>    # path-046904
+(config)# vpdn pmtu <cr>    # path-025957
+(config)# vpdn pmtu minimum <number:dynamic> <cr>    # path-060676
+(config)# vpdn pptp tcp listen-queue <number:32..128> <cr>    # path-027340
+(config)# vpdn pptp tcp window-size <number:256..4096> <cr>    # path-027350
+(config)# vpdn queuesize-alert <number:10..16384> <cr>    # path-027306
+(config)# vpdn redirect <cr>    # path-025945
+(config)# vpdn search-order <cr>    # path-060319
+(config)# vpdn session accounting network default <cr>    # path-037344
+(config)# vpdn session accounting suppress multihop inbound <cr>    # path-046856
+(config)# vpdn session rate compute <cr>    # path-030576
+(config)# vpdn session-limit <number:dynamic> <cr>    # path-060422
+(config)# vpdn softshut <cr>    # path-025941
+(config)# vpdn source-ip <address> <cr>    # path-027395
+(config)# vpdn tunnel accounting network default <cr>    # path-037267
+(config)# vpdn tunnel authorization network default <cr>    # path-037306
+(config)# vpdn tunnel authorization password <string> <cr>    # path-037486
+(config)# vpdn tunnel authorization virtual-template <number:dynamic> <cr>    # path-060912
+(config)# vpdn-group <string> <cr>    # path-025900
+(config)# vpdn-template <cr>    # path-025476
+(config)# vrf definition <cr>    # path-025534
+(config)# vrf definition <string> <cr>    # path-060371
+(config)# vrf list <cr>    # path-025558
+(config)# vrf list <string> <cr>    # path-060373
+(config)# vrf rd-auto <cr>    # path-025522
+(config)# vrf selection source <address> <address> vrf <string> <cr>    # path-052066
+(config)# vrf upgrade-cli multi-af-mode non-common-policies <cr>    # path-027881
+(config)# vrf upgrade-cli multi-af-mode non-common-policies vrf <?option@555589566280> <cr>    # path-062810
+(config)# vrrp match-address-limit <number:0..8> <cr>    # path-025455
+(config)# vrrp sso <cr>    # path-062707
+(config)# vrrs <string> <cr>    # path-025712
+(config)# vtp domain <string> <cr>    # path-026962
+(config)# vtp file <string> <cr>    # path-026884
+(config)# vtp if-id <interface> <cr>    # path-060401
+(config)# vtp if-id <interface> only <cr>    # path-060588
+(config)# vtp mode <cr>    # path-025827
+(config)# vtp password <string> <cr>    # path-027049
+(config)# vtp pruning <cr>    # path-025806
+(config)# vtp server primary <cr>    # path-027026
+(config)# vtp trunk <string> <cr>    # path-026929
+(config)# vtp version <number:dynamic> <cr>    # path-060404
+(config)# wrr-queue bandwidth <cr>    # path-025667
+(config)# wrr-queue cos-map <number:1..8> <number:0..7> <cr>    # path-028536
+(config)# wsma agent config <cr>    # path-060472
+(config)# wsma agent exec <cr>    # path-060471
+(config)# wsma agent filesys <cr>    # path-060475
+(config)# wsma agent mgmt <cr>    # path-060469
+(config)# wsma agent notify <cr>    # path-060480
+(config)# wsma dhcp <cr>    # path-060351
+(config)# wsma id <cr>    # path-060344
+(config)# wsma profile initiator <string> <cr>    # path-060690
+(config)# wsma profile listener <string> <cr>    # path-060688
+(config)# x25 call-record <cr>    # path-025937
+(config)# x25 host <string> <address> <cr>    # path-029900
+(config)# x25 hunt-group <string> rotary <cr>    # path-029723
+(config)# x25 profile <string> <cr>    # path-027450
+(config)# x25 roa <string> <cr>    # path-027447
+(config)# x25 roa <string> <number:0..9999> <cr>    # path-060669
+(config)# x25 rotary <number:1..99> <address> <cr>    # path-029943
+(config)# x25 route <string> <cr>    # path-027346
+(config)# x25 route input-interface <interface> <cr>    # path-060642
+(config)# x25 routing <cr>    # path-025940
+(config)# xdr multicast-group internal issu-slots-split <cr>    # path-029334
+(config)# xdr multicast-group internal split threshold <number:1000..60000> <cr>    # path-045061
+(config)# xdr multicast-group mode individual <cr>    # path-029245
+(config)# xot access-group <number:1..99> <cr>    # path-026109
+(config)# yang-interfaces aaa accounting disable <cr>    # path-063107
+(config)# yang-interfaces aaa accounting disable <cr>    # path-063108
+(config)# yang-interfaces aaa authentication method-list <cr>    # path-063123
+(config)# yang-interfaces aaa authentication method-list <string> <cr>    # path-063147
+(config)# yang-interfaces aaa authentication method-list <string> <cr>    # path-063148
+(config)# yang-interfaces aaa authorization method-list <cr>    # path-063125
+(config)# yang-interfaces aaa authorization method-list <string> <cr>    # path-063152
+(config)# yang-interfaces aaa authorization method-list <string> <cr>    # path-063153
+(config)# yang-interfaces feature atomic-config <cr>    # path-063042
+(config)# yang-interfaces feature atomic-config <cr>    # path-063043
+(config)# yang-interfaces feature deprecated disable <cr>    # path-063116
+(config)# yang-interfaces feature deprecated disable <cr>    # path-063117
+(config)# yang-interfaces feature deprecated enable <cr>    # path-063121
+(config)# yang-interfaces feature deprecated enable <cr>    # path-063122
+(config)# yang-interfaces high-scale-paths <number:0..4294967295> <cr>    # path-063036
+(config)# yang-interfaces high-scale-paths <number:0..4294967295> <cr>    # path-063037
+(config)# <?dumper_command_func@555589e561d0> x29 access-list <number:1..500> <cr>    # path-060629
+(config)# <?dumper_command_func@555589e561d0> x29 inviteclear-time <number:5..2147483> <cr>    # path-060627
+(config)# <?dumper_command_func@555589e561d0> x29 profile default <cr>    # path-060636
+(config)# <?test_subsys_action@555589bbb158> dialer clid group <string> <cr>    # path-060794
+(config)# <?test_subsys_action@555589bbb158> dialer dnis group <string> <cr>    # path-060790
+(config)# <?test_subsys_action@555589bbb158> dialer watch-list <number:1..255> <cr>    # path-060554
+(config)# <?test_subsys_action@555589bbb158> dialer-list <number:1..128> <cr>    # path-060391
+(config)# <?test_subsys_action@555589bbb158> dialer-list <number:1..128> protocol ip <cr>    # path-060798
+(config)# <?test_subsys_action@555589bbb158> dialer-list <number:1..128> protocol ip deny <cr>    # path-061253

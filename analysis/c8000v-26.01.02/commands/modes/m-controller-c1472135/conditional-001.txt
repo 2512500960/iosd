@@ -1,0 +1,13 @@
+# 模式 controller；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-controller)# default mpls uni lmp data-link <cr>    # conditional_registration_candidates-011104
+(config-controller)# default mpls uni lmp data-link adjacency <cr>    # conditional_registration_candidates-011107
+(config-controller)# default mpls uni lmp ipcc transport sdcc <cr>    # conditional_registration_candidates-011109
+(config-controller)# mpls uni lmp data-link <cr>    # conditional_registration_candidates-011101
+(config-controller)# mpls uni lmp data-link adjacency <cr>    # conditional_registration_candidates-011102
+(config-controller)# mpls uni lmp ipcc transport sdcc <cr>    # conditional_registration_candidates-011106
+(config-controller)# no mpls uni lmp data-link <cr>    # conditional_registration_candidates-011103
+(config-controller)# no mpls uni lmp data-link adjacency <cr>    # conditional_registration_candidates-011105
+(config-controller)# no mpls uni lmp ipcc transport sdcc <cr>    # conditional_registration_candidates-011108

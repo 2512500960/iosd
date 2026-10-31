@@ -1,0 +1,14 @@
+# 模式 pseudo_info；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-pseudo)# abort <cr>    # static_slot_creation_candidates-004236
+(config-pseudo)# mst <string> cost <number:0..200000000> <cr>    # static_slot_creation_candidates-004240
+(config-pseudo)# mst <string> root <number:0..61440> <address> <cr>    # static_slot_creation_candidates-004242
+(config-pseudo)# mst <string> root mac-address <address> <cr>    # static_slot_creation_candidates-004243
+(config-pseudo)# mst <string> root priority <number:0..61440> <cr>    # static_slot_creation_candidates-004244
+(config-pseudo)# mst region-id <number:0..255> <cr>    # static_slot_creation_candidates-004237
+(config-pseudo)# no mst <string> <cr>    # static_slot_creation_candidates-004241
+(config-pseudo)# no mst region-id <cr>    # static_slot_creation_candidates-004239
+(config-pseudo)# no remote-id <cr>    # static_slot_creation_candidates-004238
+(config-pseudo)# remote-id <number:1..256> <cr>    # static_slot_creation_candidates-004235

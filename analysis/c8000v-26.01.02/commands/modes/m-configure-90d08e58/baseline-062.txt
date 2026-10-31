@@ -1,0 +1,366 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-062.md
+
+(config)# do-exec test ipc bundle status seat <number:0..4294967295> seat-level on <cr>    # path-059470
+(config)# do-exec test ipc bundle status session <number:0..4294967295> <number:0..65535> on <cr>    # path-059473
+(config)# do-exec test ipc callback <cr>    # path-031568
+(config)# do-exec test ipc diag <cr>    # path-031708
+(config)# do-exec test ipc driver stop <cr>    # path-038858
+(config)# do-exec test ipc drop <number:0..9999> <cr>    # path-038992
+(config)# do-exec test ipc drop ack <number:65540..4294967295> <number:0..65535> <number:0..65535> <cr>    # path-058143
+(config)# do-exec test ipc drop next <cr>    # path-039051
+(config)# do-exec test ipc mcast appclass subscribe <string> <number:0..15> <cr>    # path-058088
+(config)# do-exec test ipc mcast group close <number:0..4294967295> <number:0..65535> <cr>    # path-058158
+(config)# do-exec test ipc mcast group create <string> <string> <number:0..15> <cr>    # path-059421
+(config)# do-exec test ipc mcast group locate <string> <number:0..15> <cr>    # path-058114
+(config)# do-exec test ipc mcast group member add <number:0..4294967295> <number:0..4294967295> <cr>    # path-059431
+(config)# do-exec test ipc mcast group open <number:0..4294967295> <number:1..2> <cr>    # path-058182
+(config)# do-exec test ipc mcast group remove <number:0..4294967295> <cr>    # path-054697
+(config)# do-exec test ipc mcast group reserve <string> <number:0..15> <cr>    # path-058099
+(config)# do-exec test ipc mcast group subscribe <string> <string> <number:0..15> <cr>    # path-059426
+(config)# do-exec test ipc mcast group unreserve <string> <number:0..15> <cr>    # path-058107
+(config)# do-exec test ipc mcast platform emulation <number:0..4294967295> disable <cr>    # path-058109
+(config)# do-exec test ipc mcast platform emulation <number:0..4294967295> enable <cr>    # path-058100
+(config)# do-exec test ipc mcast platform max-groups <number:0..15> <number:0..65535> <cr>    # path-058091
+(config)# do-exec test ipc mcast platform registries <cr>    # path-047778
+(config)# do-exec test ipc misc <cr>    # path-031641
+(config)# do-exec test ipc ping <number:0..4294967295> <cr>    # path-039784
+(config)# do-exec test ipc port close <number:0..4294967295> <number:0..65535> <cr>    # path-055182
+(config)# do-exec test ipc port create <string> <number:1..3> <cr>    # path-055247
+(config)# do-exec test ipc port free <number:0..4294967295> <number:1..1000000> <cr>    # path-055333
+(config)# do-exec test ipc port msend <number:0..4294967295> <number:0..65535> <number:0..65535> <number:1..1000000> <number:1..4064> <cr>    # path-059896
+(config)# do-exec test ipc port notify enable <cr>    # path-049028
+(config)# do-exec test ipc port open <number:0..4294967295> <number:1..3> <cr>    # path-055285
+(config)# do-exec test ipc port remove <number:0..4294967295> <cr>    # path-049036
+(config)# do-exec test ipc port send header <cr>    # path-049110
+(config)# do-exec test ipc port send header <number:0..4294967295> <cr>    # path-062890
+(config)# do-exec test ipc queue <cr>    # path-031541
+(config)# do-exec test ipc retry-period <number:0..50000> <cr>    # path-039886
+(config)# do-exec test ipc rpc <cr>    # path-031649
+(config)# do-exec test ipc ru create <string> <number:1..15> conf <cr>    # path-058089
+(config)# do-exec test ipc ru remove <string> <cr>    # path-047865
+(config)# do-exec test ipc ru tune-thresh <string> <number:1..6> rising major <number:0..10000> <cr>    # path-059873
+(config)# do-exec test ipc seat-fc <number:0..1024> <cr>    # path-038857
+(config)# do-exec test ipc size <number:0..100000> <number:0..1000> <cr>    # path-048690
+(config)# do-exec test ipc slavecore <cr>    # path-031476
+(config)# do-exec test ipc slavelog <cr>    # path-031518
+(config)# do-exec test ipc speed <cr>    # path-031621
+(config)# do-exec test ipc split-init <cr>    # path-031666
+(config)# do-exec test ipc task-pool <cr>    # path-031590
+(config)# do-exec test ipc toggle-mask-error <cr>    # path-031378
+(config)# do-exec test ipc traffic <number:0..4294967295> <number:1..2147483647> <number:1..5> <number:1..50000> <cr>    # path-058123
+(config)# do-exec test ipc traffic abort <number:0..2147483647> <cr>    # path-047736
+(config)# do-exec test ipc watermark callback <cr>    # path-039614
+(config)# do-exec test ipc window-size <number:32..1024> <cr>    # path-038709
+(config)# do-exec test ipc zone seat2slave <number:2..15> <cr>    # path-048522
+(config)# do-exec test iphc context lifetime <number:dynamic> <cr>    # path-061289
+(config)# do-exec test iphc context lifetime default <cr>    # path-045150
+(config)# do-exec test ipv6 access-list common enable <cr>    # path-046072
+(config)# do-exec test ipv6 dhcp-client autoinstall <interface> test-case <number:1..65535> <cr>    # path-062297
+(config)# do-exec test ipv6 dhcp-client lease-query address <address> <cr>    # path-053510
+(config)# do-exec test ipv6 dhcp-client lease-query address <address> out-intf <interface> <cr>    # path-062500
+(config)# do-exec test ipv6 dhcp-relay bulk-lease-query <cr>    # path-036578
+(config)# do-exec test ipv6 dhcp-relay ldra <cr>    # path-036699
+(config)# do-exec test ipv6 dhcp-server hostnum <number:0..4294967295> <cr>    # path-046031
+(config)# do-exec test ipv6 nd cache populate <interface> <address> <number:1..1000000> <address> <cr>    # path-062607
+(config)# do-exec test ipv6 nd cache stale-traffic <interface> <address> <number:1..1000000> <cr>    # path-062508
+(config)# do-exec test ipv6 nd client del <number:0..15> <cr>    # path-053633
+(config)# do-exec test ipv6 nd client pfx-adv-ctrl <number:0..15> <interface> enable <cr>    # path-062504
+(config)# do-exec test ipv6 nd client sendra <number:0..15> <interface> <address> <cr>    # path-062509
+(config)# do-exec test ipv6 nd db populate <interface> <address> <number:1..262144> <address> add <cr>    # path-062642
+(config)# do-exec test ipv6 nd ha <interface> <number:0..1> <cr>    # path-061954
+(config)# do-exec test ipv6 nd mip_rmg <interface> <number:0..1> <cr>    # path-061942
+(config)# do-exec test ipv6 nd pd-limit <number:0..2147483647> <cr>    # path-045989
+(config)# do-exec test ipv6 nd repopulate queue-size <number:1..512> <cr>    # path-053480
+(config)# do-exec test ipv6 nd router number <number:0..70000> <interface> <cr>    # path-062285
+(config)# do-exec test ipv6 nd session create <interface> <number:1..65535> <cr>    # path-062312
+(config)# do-exec test ipv6 nd session delete <interface> <number:1..65535> <number:1..65535> <cr>    # path-062518
+(config)# do-exec test ipv6 nd session mac <interface> <number:1..65535> <number:1..65535> <address> <cr>    # path-062611
+(config)# do-exec test ipv6 nd session prefix <interface> <number:1..65535> <number:1..65535> <prefix:dynamic> <cr>    # path-062924
+(config)# do-exec test ipv6 nd session set <interface> <number:0..1> <cr>    # path-062311
+(config)# do-exec test ipv6 nd session start <interface> <number:1..65535> <number:1..65535> <cr>    # path-062514
+(config)# do-exec test ipv6 nd session stop <interface> <number:1..65535> <number:1..65535> <cr>    # path-062516
+(config)# do-exec test ipv6 nd test-evpn-entry add <address> <interface> <address> <cr>    # path-062499
+(config)# do-exec test ipv6 nd test-nsf <cr>    # path-036475
+(config)# do-exec test ipv6 rib multicast add <cr>    # path-046165
+(config)# do-exec test ipv6 rib multicast add <interface> <cr>    # path-061940
+(config)# do-exec test ipv6 rib path add clone <prefix:dynamic> <address> <interface> <interface> <cr>    # path-062999
+(config)# do-exec test ipv6 rib path add foreign <number:1..16> <prefix:dynamic> <address> <interface> <cr>    # path-062927
+(config)# do-exec test ipv6 rib path add primary <number:1..16> <prefix:dynamic> <address> <interface> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-063002
+(config)# do-exec test ipv6 rib path add repair <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-062936
+(config)# do-exec test ipv6 rib path add tilfa-primary <number:1..16> <prefix:dynamic> <address> <interface> <number:16777217..33554430> <number:1..255> <number:1..255> <cr>    # path-062940
+(config)# do-exec test ipv6 rib path add tilfa-repair <number:1..16> <prefix:dynamic> <number:16777217..33554430> <number:1..255> <number:1..255> <cr>    # path-062668
+(config)# do-exec test ipv6 rib path del foreign <number:1..16> <prefix:dynamic> <address> <interface> <cr>    # path-062928
+(config)# do-exec test ipv6 rib path del primary <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-062935
+(config)# do-exec test ipv6 rib pdb add <number:1..16> <number:1..255> <number:0..1> <cr>    # path-059190
+(config)# do-exec test ipv6 rib pdb del <number:1..16> <cr>    # path-053393
+(config)# do-exec test ipv6 rib prefix add <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <number:1..32000> <cr>    # path-062937
+(config)# do-exec test ipv6 rib prefix del <number:1..16> <prefix:dynamic> <address> <cr>    # path-062507
+(config)# do-exec test ipv6 rib queue start <cr>    # path-045776
+(config)# do-exec test ipv6 rib suspend start <cr>    # path-045835
+(config)# do-exec test ipv6 rmap associate <string> <interface> <cr>    # path-061968
+(config)# do-exec test ipv6 rmap associate <string> local <cr>    # path-053855
+(config)# do-exec test ipv6 rmap create <number:1..7> <string> <cr>    # path-053631
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> <cr>    # path-053873
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-059802
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-060050
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> set global <cr>    # path-059279
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> set interface <interface> <cr>    # path-062616
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-059809
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> set precedence <number:0..7> <cr>    # path-059818
+(config)# do-exec test ipv6 rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-059824
+(config)# do-exec test ipv6 rmap delete <string> permit <cr>    # path-053781
+(config)# do-exec test ipv6 rmap register <number:1..7> <cr>    # path-046119
+(config)# do-exec test ipv6 rmap remove <string> <number:1..7> <cr>    # path-053663
+(config)# do-exec test ipv6 static limit <number:0..32> <cr>    # path-045887
+(config)# do-exec test ipv6 static policy <cr>    # path-036406
+(config)# do-exec test isis case <number:0..4294967295> <cr>    # path-037827
+(config)# do-exec test isis case <number:0..4294967295> <interface> <cr>    # path-061445
+(config)# do-exec test isis clear counters <cr>    # path-037515
+(config)# do-exec test isis debug <cr>    # path-030696
+(config)# do-exec test isis ip address <cr>    # path-037541
+(config)# do-exec test isis lsp advertise lan-adj-sid <number:1..255> <cr>    # path-054298
+(config)# do-exec test isis lsp build <cr>    # path-038070
+(config)# do-exec test isis lsp id <cr>    # path-037817
+(config)# do-exec test isis lsp non_pn_delay on <cr>    # path-047236
+(config)# do-exec test isis lsp pn_delay on <cr>    # path-047215
+(config)# do-exec test isis lsp purge <cr>    # path-038153
+(config)# do-exec test isis lsp purge dr <cr>    # path-047346
+(config)# do-exec test isis lsp purge dr <interface> <cr>    # path-062042
+(config)# do-exec test isis lsp refresh <cr>    # path-037970
+(config)# do-exec test isis nsap <cr>    # path-030726
+(config)# do-exec test isis show counters <cr>    # path-037550
+(config)# do-exec test isis spf <cr>    # path-030871
+(config)# do-exec test isis telemetry enable <cr>    # path-037578
+(config)# do-exec test issu capability entry register <number:1..4294967295> <number:0..100> <string> <cr>    # path-058945
+(config)# do-exec test issu capability group register <number:1..4294967295> <number:1..100> <number:0..1> <string> <cr>    # path-059660
+(config)# do-exec test issu capability type-list register <number:1..4294967295> <string> <cr>    # path-056889
+(config)# do-exec test issu client <number:1..9999> bits enable <cr>    # path-052305
+(config)# do-exec test issu client register <cr>    # path-034555
+(config)# do-exec test issu distributed show <cr>    # path-034426
+(config)# do-exec test issu divc no-test <cr>    # path-035042
+(config)# do-exec test issu entity register <number:0..4294967295> <cr>    # path-044371
+(config)# do-exec test issu injected calc_mtu <number:0..4294967295> <number:1..100> <number:1..100> <cr>    # path-057000
+(config)# do-exec test issu injected capability <number:0..4294967295> <number:1..100> <cr>    # path-052492
+(config)# do-exec test issu injected comp_result <number:0..4294967295> <number:1..2> <cr>    # path-052513
+(config)# do-exec test issu injected message <number:0..4294967295> <number:1..100> <number:1..100> <number:1..100> <cr>    # path-058968
+(config)# do-exec test issu injected register <number:0..4294967295> <cr>    # path-044464
+(config)# do-exec test issu lossless session setup <cr>    # path-044431
+(config)# do-exec test issu message group register <number:1..4294967295> <number:1..100> <string> <cr>    # path-058943
+(config)# do-exec test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <cr>    # path-059652
+(config)# do-exec test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <string> <cr>    # path-059954
+(config)# do-exec test issu negative on <cr>    # path-034880
+(config)# do-exec test issu nego-version config <number:1..4294967295> <number:1..100> <number:1..100> <cr>    # path-056987
+(config)# do-exec test issu negotiate <number:1..4294967295> <number:0..1> <cr>    # path-044497
+(config)# do-exec test issu policy off <cr>    # path-034994
+(config)# do-exec test issu session ipc <cr>    # path-034776
+(config)# do-exec test issu shared message_session unregister <number:1..4294967295> <number:0..1> <cr>    # path-056938
+(config)# do-exec test issu shared nego_session register <cr>    # path-044521
+(config)# do-exec test issu shared negotiate <number:1..4294967295> <number:1..4294967295> <number:0..1> <cr>    # path-056952
+(config)# do-exec test issu transform <number:1..4294967295> <number:1..100> <number:0..1> <cr>    # path-052491
+(config)# do-exec test l2protocol-forward <cr>    # path-027616
+(config)# do-exec test l2protocol-forward <interface> <cr>    # path-060713
+(config)# do-exec test l2protocol-tunnel <cr>    # path-027614
+(config)# do-exec test l2protocol-tunnel <interface> <cr>    # path-060712
+(config)# do-exec test lacp disable insert-seq-num <cr>    # path-040000
+(config)# do-exec test lacp disable recv <cr>    # path-039946
+(config)# do-exec test lacp disable send <cr>    # path-039883
+(config)# do-exec test lacp enable insert-seq-num <cr>    # path-040045
+(config)# do-exec test lacp enable recv <cr>    # path-039996
+(config)# do-exec test lacp enable send <cr>    # path-039941
+(config)# do-exec test lacp multi-chassis iccp-version <number:0..65535> <cr>    # path-048958
+(config)# do-exec test lacp sync-bit set <interface> <cr>    # path-061560
+(config)# do-exec test lacp sync-bit switch <interface> <interface> <cr>    # path-062889
+(config)# do-exec test lacp timer wait fast default <cr>    # path-055249
+(config)# do-exec test license smart factory-reset clear all <cr>    # path-061246
+(config)# do-exec test license smart tech-support <cr>    # path-035379
+(config)# do-exec test lim proximity-db enable <cr>    # path-035016
+(config)# do-exec test mac-table-mibs get-addr-info vlan <number:dynamic> <address> <cr>    # path-062018
+(config)# do-exec test mac-table-mibs get-aging vlan <number:dynamic> <cr>    # path-061450
+(config)# do-exec test mac-table-mibs get-igmp-status vlan <number:dynamic> <cr>    # path-061471
+(config)# do-exec test mac-table-mibs get-learned-discards vlan <number:dynamic> <cr>    # path-061468
+(config)# do-exec test mac-table-mibs get-next-addr vlan <number:dynamic> <cr>    # path-061455
+(config)# do-exec test mac-table-mibs get-next-staticaddr vlan <number:dynamic> port <number:0..128> <cr>    # path-062347
+(config)# do-exec test mac-table-mibs set-aging vlan <number:dynamic> aging-time <number:0..1000000> <cr>    # path-062341
+(config)# do-exec test mac-table-mibs set-cpu-addr <address> vlan <number:dynamic> <number:1..2> <cr>    # path-062355
+(config)# do-exec test mac-table-mibs set-delete-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-062531
+(config)# do-exec test mac-table-mibs set-invalid-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-062532
+(config)# do-exec test mac-table-mibs set-permanent-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-062530
+(config)# do-exec test mdns browse regtype <string> domain <string> periodicity <number:0..4294967295> interface <number:0..4294967295> <cr>    # path-060165
+(config)# do-exec test mdns browse stop <number:1..4294967295> <cr>    # path-046122
+(config)# do-exec test mdns cache <cr>    # path-030444
+(config)# do-exec test mdns intf-wdraw <interface> <cr>    # path-060874
+(config)# do-exec test mdns resolve host <string> interface <number:0..4294967295> <cr>    # path-057590
+(config)# do-exec test mdns resolve service <string> regtype <string> domain <string> interface <number:0..4294967295> <cr>    # path-060166
+(config)# do-exec test mdns resync <cr>    # path-030073
+(config)# do-exec test mdns srv-enum <number:0..1> <cr>    # path-036401
+(config)# do-exec test mdns start <cr>    # path-030149
+(config)# do-exec test mdns stop <cr>    # path-030181
+(config)# do-exec test mdns update bssid <address> client-mac <address> <cr>    # path-057558
+(config)# do-exec test mdns update query-pak bssid-mac <address> <cr>    # path-053662
+(config)# do-exec test memory <cr>    # path-026618
+(config)# do-exec test memory allocate processor <number:0..4294967294> <number:0..4294967294> <number:0..4294967294> <cr>    # path-057013
+(config)# do-exec test memory chunk lock <?general_pointer_number_action@55558943eb28> <cr>    # path-061267
+(config)# do-exec test memory chunk refcount <?general_pointer_number_action@55558943ee20> <cr>    # path-061270
+(config)# do-exec test memory create dangling-reference <cr>    # path-034942
+(config)# do-exec test memory create leak type1 <number:28..4294967295> <number:1..4294967295> <cr>    # path-057027
+(config)# do-exec test memory create leak type1 chunk <?general_pointer_number_action@55558943d098> <number:1..4294967295> <cr>    # path-062475
+(config)# do-exec test memory delay-sibling-free <?general_pointer_number_action@55558943d778> <number:0..1> <number:0..1> <cr>    # path-061868
+(config)# do-exec test memory destroy chunk <?general_pointer_number_action@55558943dc08> <cr>    # path-061255
+(config)# do-exec test memory destroy dangling-reference <?general_pointer_number_action@55558943db68> <cr>    # path-061254
+(config)# do-exec test memory history <number:1..60> <cr>    # path-035144
+(config)# do-exec test memory nvram-multibus <cr>    # path-028615
+(config)# do-exec test memory overflow <?general_pointer_number_action@55558943dfe8> <number:0..4294967294> <number:0..4294967294> <cr>    # path-061874
+(config)# do-exec test memory transfer <?general_pointer_number_action@55558943c6e0> <cr>    # path-060799
+(config)# do-exec test mfib cb-support IPv4 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-060221
+(config)# do-exec test mfib cb-support IPv6 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-060222
+(config)# do-exec test mfib channel <cr>    # path-030924
+(config)# do-exec test mfib channel <number:dynamic> <cr>    # path-060942
+(config)# do-exec test mfib enable <cr>    # path-030742
+(config)# do-exec test mfib epoch new <?option@55558aafa690> <cr>    # path-061454
+(config)# do-exec test mfib epoch new <cr>    # path-037862
+(config)# do-exec test mfib mrib <cr>    # path-030875
+(config)# do-exec test mfib mrib <number:dynamic> <cr>    # path-060931
+(config)# do-exec test mfib reload <cr>    # path-030948
+(config)# do-exec test mfib reload <number:dynamic> <cr>    # path-060941
+(config)# do-exec test mgd-timer watch <cr>    # path-029637
+(config)# do-exec test mka linksec start interface <interface> preshared <cr>    # path-062394
+(config)# do-exec test mka macsec-sim off <cr>    # path-039987
+(config)# do-exec test mka message-number initial-value <number:1..4294967295> <cr>    # path-049072
+(config)# do-exec test mka message-number window-size <number:0..4294967295> <cr>    # path-049113
+(config)# do-exec test mka packet-number initial-value <number:0..4294967295> <cr>    # path-049156
+(config)# do-exec test mka sak-rekey ckn <hex-string> interface <interface> <cr>    # path-062909
+(config)# do-exec test mock btrace <cr>    # path-031362
+(config)# do-exec test mock chasfs <cr>    # path-031413
+(config)# do-exec test mock chassis <cr>    # path-031382
+(config)# do-exec test mock crypto <cr>    # path-031477
+(config)# do-exec test mock cyan <cr>    # path-031427
+(config)# do-exec test mock ei <cr>    # path-031338
+(config)# do-exec test mock infra enqueue <cr>    # path-038390
+(config)# do-exec test mock ipc <cr>    # path-031292
+(config)# do-exec test mock mcp <cr>    # path-031266
+(config)# do-exec test mock misc <cr>    # path-031319
+(config)# do-exec test mock overlayfs system-call <cr>    # path-039047
+(config)# do-exec test mock real <cr>    # path-031458
+(config)# do-exec test mock system <cr>    # path-031239
+(config)# do-exec test mock tdl <cr>    # path-031445
+(config)# do-exec test mock vaarg <cr>    # path-031498
+(config)# do-exec test monitor clear config lock <cr>    # path-048158
+(config)# do-exec test mrib disable <cr>    # path-030806
+(config)# do-exec test mrib ip set <prefix:dynamic> <cr>    # path-061482
+(config)# do-exec test mrib ip stop <cr>    # path-037912
+(config)# do-exec test mrib ipv6 set <prefix:dynamic> <cr>    # path-061478
+(config)# do-exec test mrib ipv6 stop <cr>    # path-037878
+(config)# do-exec test mvpn ipv4 leaf-ad-recv add <address> <address> <address> <cr>    # path-059319
+(config)# do-exec test mvpn ipv4 spt-only disable <cr>    # path-046948
+(config)# do-exec test mvpn ipv4 spt-only enable <cr>    # path-046910
+(config)# do-exec test mvpn ipv6 leaf-ad-recv add <address> <address> <address> <cr>    # path-059327
+(config)# do-exec test mvpn ipv6 spt-only disable <cr>    # path-046970
+(config)# do-exec test mvpn ipv6 spt-only enable <cr>    # path-046939
+(config)# do-exec test mvrp enable <number:0..1> <cr>    # path-035138
+(config)# do-exec test mvrp joinin <number:1..4094> <number:1..4094> <cr>    # path-044806
+(config)# do-exec test mvrp new <number:1..4094> <number:1..4094> <cr>    # path-044764
+(config)# do-exec test natmode suppress <cr>    # path-029317
+(config)# do-exec test netconf-agent history <cr>    # path-031652
+(config)# do-exec test netconf-agent summary <cr>    # path-031678
+(config)# do-exec test ngdns config <cr>    # path-030641
+(config)# do-exec test ngdns lookup <string> <cr>    # path-037174
+(config)# do-exec test ngdns periodic dump <cr>    # path-037013
+(config)# do-exec test ngdns periodic register fqdn-name <string> type both module-id <number:1..3> <cr>    # path-060052
+(config)# do-exec test ngiosd process-isolation start <cr>    # path-039779
+(config)# do-exec test ngiosd simulation prepare-failure enable <cr>    # path-048826
+(config)# do-exec test ngiosd simulation prepare-pass enable <cr>    # path-048896
+(config)# do-exec test ngiosd simulation start <cr>    # path-039718
+(config)# do-exec test nhrp event <number:0..1500> <cr>    # path-027373
+(config)# do-exec test nhrp redirect interface <interface> <?ipv4orv6_addr_action@55558a13efe0> <prefix:dynamic> <cr>    # path-062986
+(config)# do-exec test notify <string> <cr>    # path-031900
+(config)# do-exec test nvram <string> clear remote-lock <cr>    # path-047863
+(config)# do-exec test nvram <string> explicit-lock <cr>    # path-038856
+(config)# do-exec test nvram <string> initialize <cr>    # path-038898
+(config)# do-exec test odb client <number:1..256> add-static-tlv type <number:0..65535> <cr>    # path-058039
+(config)# do-exec test odb client <number:1..256> deregister <cr>    # path-047532
+(config)# do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> add-tlv type <number:0..65535> value <string> <cr>    # path-060206
+(config)# do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> delete <cr>    # path-059379
+(config)# do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> notify subscribe change <cr>    # path-060076
+(config)# do-exec test odb client <number:1..256> table <number:1..65534> add-row type <number:0..65535> value <string> <cr>    # path-060177
+(config)# do-exec test odb client <number:1..256> table <number:1..65534> delete <cr>    # path-058048
+(config)# do-exec test odb client <number:1..256> table <number:1..65534> notify subscribe add <cr>    # path-059862
+(config)# do-exec test odb client <number:1..256> table create <cr>    # path-054513
+(config)# do-exec test odb client register <string> <cr>    # path-047489
+(config)# do-exec test onep cli uninstall <string> <cr>    # path-047584
+(config)# do-exec test onep ctx_reg <cr>    # path-031384
+(config)# do-exec test onep if_ctx_event enable <cr>    # path-038807
+(config)# do-exec test onep internal enable <cr>    # path-038470
+(config)# do-exec test onep thrift list <cr>    # path-038612
+(config)# do-exec test onep timing api <?option@55558b1ff1d0> <cr>    # path-061494
+(config)# do-exec test onep version disable <cr>    # path-038684
+(config)# do-exec test onep version disable exact <cr>    # path-047699
+(config)# do-exec test onep version enable <cr>    # path-038660
+(config)# do-exec test onep xdt_buginf <cr>    # path-031363
+(config)# do-exec test opflex agent ha <cr>    # path-038048
+(config)# do-exec test opflex agent service vxlan-evpn create <string> <cr>    # path-058034
+(config)# do-exec test opflex agent service vxlan-evpn create <string> rt-add ipv4 import <?bgp_extcomm_action@555588feb7b0> <cr>    # path-062669
+(config)# do-exec test opflex agent service vxlan-evpn state <cr>    # path-054444
+(config)# do-exec test opssl nonblockingsession server dtls stop <cr>    # path-054599
+(config)# do-exec test ospf debug <cr>    # path-030486
+(config)# do-exec test ospf nsr cf error <number:0..65535> <cr>    # path-054026
+(config)# do-exec test ospf nsr cf flow-off <cr>    # path-046635
+(config)# do-exec test ospf nsr cf flow-on <cr>    # path-046573
+(config)# do-exec test ospf nsr cp clear <number:0..65535> <cr>    # path-054022
+(config)# do-exec test ospf nsr cp interface <cr>    # path-046871
+(config)# do-exec test ospf nsr cp interface <interface> <cr>    # path-061992
+(config)# do-exec test ospf nsr cp lsa <cr>    # path-046863
+(config)# do-exec test ospf nsr cp neighbor <cr>    # path-046901
+(config)# do-exec test ospf nsr cp neighbor <interface> <cr>    # path-061995
+(config)# do-exec test ospf nsr cp nop <cr>    # path-046625
+(config)# do-exec test ospf nsr cp router-id <cr>    # path-046773
+(config)# do-exec test ospf nsr cp sync <number:0..65535> <cr>    # path-054063
+(config)# do-exec test ospf nsr recovery delay <number:0..255> <cr>    # path-054020
+(config)# do-exec test ospf nsr unsynchronize <cr>    # path-037274
+(config)# do-exec test ospfv3 crimson <cr>    # path-030982
+(config)# do-exec test ospfv3 interface <interface> filter hello <cr>    # path-062033
+(config)# do-exec test ospfv3 interface <interface> filter none <cr>    # path-062036
+(config)# do-exec test ospfv3 interface <interface> neighbor <address> down <cr>    # path-062352
+(config)# do-exec test ospfv3 interface <interface> neighbor <address> up <cr>    # path-062351
+(config)# do-exec test ospfv3 vrf * crimson <cr>    # path-061466
+(config)# do-exec test parser afs <cr>    # path-028268
+(config)# do-exec test parser chainfunc recursion <?call_action@555589600a20> <cr>    # path-061220
+(config)# do-exec test parser configure buffer <cr>    # path-034516
+(config)# do-exec test parser configure file <url:dynamic> <cr>    # path-061235
+(config)# do-exec test parser consume-memory <number:0..2147483647> <cr>    # path-034299
+(config)# do-exec test parser gmd <cr>    # path-028181
+(config)# do-exec test parser green-fe <cr>    # path-028755
+(config)# do-exec test parser ngios native-green enable <cr>    # path-044231
+(config)# do-exec test parser ngios side-effect per-batch <cr>    # path-044266
+(config)# do-exec test parser ngios validation enable <cr>    # path-044297
+(config)# do-exec test parser ngios-meta path disable <cr>    # path-044335
+(config)# do-exec test parser ngios-meta path enable <url:dynamic> <cr>    # path-061854
+(config)# do-exec test parser opt list dyn <?option@555589609530> <cr>    # path-061840
+(config)# do-exec test parser opt list norm <?keyword_option_list_mm_action@555589609880> <cr>    # path-061841
+(config)# do-exec test parser pipeline <string> <cr>    # path-060767
+(config)# do-exec test parser rc errno <number:0..2147483647> <cr>    # path-044270
+(config)# do-exec test parser rc failure <number:11..211> <number:1..2> <cr>    # path-052181
+(config)# do-exec test parser rc invalid <cr>    # path-034441
+(config)# do-exec test parser rc success <number:1..3> <number:1..4> <cr>    # path-052206
+(config)# do-exec test parser redirect small <cr>    # path-034384
+(config)# do-exec test parser session-lock <number:0..1200> <cr>    # path-034244
+(config)# do-exec test parser session-lock exit <cr>    # path-034277
+(config)# do-exec test parser session-lock lock-break <cr>    # path-034351
+(config)# do-exec test parser shell <cr>    # path-028330
+(config)# do-exec test parser syntax exclude display <cr>    # path-044309
+(config)# do-exec test parser syntax exclude mode <string> <cr>    # path-052232
+(config)# do-exec test pbr unset <number:1..7> color adjacency <?general_pointer_number_action@555589d59438> <cr>    # path-062328
+(config)# do-exec test persistent variable api delete default <string> <cr>    # path-056801
+(config)# do-exec test persistent variable api flush default <cr>    # path-052186
+(config)# do-exec test persistent variable api get default <string> <cr>    # path-056791
+(config)# do-exec test persistent variable api isset default <string> <cr>    # path-056786
+(config)# do-exec test persistent variable api set default <string> <cr>    # path-056783
+(config)# do-exec test persistent variable error <string> <cr>    # path-044141
+(config)# do-exec test persistent variable media-delete <string> <cr>    # path-044111
+(config)# do-exec test persistent variable show cache <cr>    # path-044084
+(config)# do-exec test pimv6 join group <address> <interface> <cr>    # path-062004
+(config)# do-exec test platform hardware interface <interface> plim egress max-fill hp <number:0..245760> <cr>    # path-062632
+(config)# do-exec test platform hardware poe cfg crit-limit <number:5000..15000> <cr>    # path-056800
+(config)# do-exec test platform hardware poe cfg warn-limit <number:3000..8000> <cr>    # path-056814
+(config)# do-exec test platform hardware poe get <number:dynamic> global <cr>    # path-062233

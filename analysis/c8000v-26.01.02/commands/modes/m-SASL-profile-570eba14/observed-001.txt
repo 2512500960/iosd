@@ -1,0 +1,13 @@
+# 模式 SASL-profile；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-SASL-profile)# client user <string> password <string> <cr>    # observed_connections-009258
+(config-SASL-profile)# exit <cr>    # observed_connections-009253
+(config-SASL-profile)# mechanism anonymous <cr>    # observed_connections-009255
+(config-SASL-profile)# mechanism digest-md5 <cr>    # observed_connections-009254
+(config-SASL-profile)# no client user <string> password <string> <cr>    # observed_connections-009260
+(config-SASL-profile)# no mechanism anonymous <cr>    # observed_connections-009257
+(config-SASL-profile)# no mechanism digest-md5 <cr>    # observed_connections-009256
+(config-SASL-profile)# no server user <string> password <string> <cr>    # observed_connections-009261
+(config-SASL-profile)# server user <string> password <string> <cr>    # observed_connections-009259

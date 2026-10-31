@@ -1,0 +1,53 @@
+# 模式 ethernet-mac-tunnel-config；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-tunnel-minm)# bridge-domain <number:dynamic> <cr>    # observed_connections-007735
+(config-tunnel-minm)# bridge-domain from-encapsulation <cr>    # observed_connections-007701
+(config-tunnel-minm)# bvlan dot1ad <number:1..4094> <cr>    # observed_connections-007706
+(config-tunnel-minm)# default bridge-domain from-encapsulation <cr>    # observed_connections-007708
+(config-tunnel-minm)# default bvlan dot1ad <number:1..4094> <cr>    # observed_connections-007714
+(config-tunnel-minm)# default description <cr>    # observed_connections-007700
+(config-tunnel-minm)# default ethernet egress-filter <cr>    # observed_connections-007712
+(config-tunnel-minm)# default exit <cr>    # observed_connections-007697
+(config-tunnel-minm)# default ip access-group in <cr>    # observed_connections-007723
+(config-tunnel-minm)# default ip access-group out <cr>    # observed_connections-007726
+(config-tunnel-minm)# default ipv6 traffic-filter <string> in <cr>    # observed_connections-007728
+(config-tunnel-minm)# default ipv6 traffic-filter <string> out <cr>    # observed_connections-007730
+(config-tunnel-minm)# default mac access-group <string> in <cr>    # observed_connections-007732
+(config-tunnel-minm)# default mac access-group <string> out <cr>    # observed_connections-007734
+(config-tunnel-minm)# default storm-control action shutdown <cr>    # observed_connections-007720
+(config-tunnel-minm)# default transparent-cfm <cr>    # observed_connections-007703
+(config-tunnel-minm)# default untagged-cfm <cr>    # observed_connections-007705
+(config-tunnel-minm)# description <string> <cr>    # observed_connections-007699
+(config-tunnel-minm)# ethernet egress-filter disable <cr>    # observed_connections-007711
+(config-tunnel-minm)# exit <cr>    # observed_connections-007693
+(config-tunnel-minm)# ip access-group <number:1..199> in <cr>    # observed_connections-007716
+(config-tunnel-minm)# ip access-group <number:1..199> out <cr>    # observed_connections-007719
+(config-tunnel-minm)# ip flow monitor <?option@555588f5efa0> sampler <cr>    # observed_connections-007740
+(config-tunnel-minm)# ip flow monitor <cr>    # observed_connections-007737
+(config-tunnel-minm)# ipv6 flow monitor <?option@555588f60368> sampler <cr>    # observed_connections-007741
+(config-tunnel-minm)# ipv6 flow monitor <cr>    # observed_connections-007738
+(config-tunnel-minm)# ipv6 traffic-filter <string> in <cr>    # observed_connections-007715
+(config-tunnel-minm)# ipv6 traffic-filter <string> out <cr>    # observed_connections-007717
+(config-tunnel-minm)# mac access-group <string> in <cr>    # observed_connections-007722
+(config-tunnel-minm)# mac access-group <string> out <cr>    # observed_connections-007725
+(config-tunnel-minm)# no bridge-domain from-encapsulation <cr>    # observed_connections-007707
+(config-tunnel-minm)# no bvlan dot1ad <number:1..4094> <cr>    # observed_connections-007713
+(config-tunnel-minm)# no description <cr>    # observed_connections-007698
+(config-tunnel-minm)# no ethernet egress-filter <cr>    # observed_connections-007710
+(config-tunnel-minm)# no exit <cr>    # observed_connections-007696
+(config-tunnel-minm)# no ip access-group in <cr>    # observed_connections-007721
+(config-tunnel-minm)# no ip access-group out <cr>    # observed_connections-007724
+(config-tunnel-minm)# no ipv6 traffic-filter <string> in <cr>    # observed_connections-007727
+(config-tunnel-minm)# no ipv6 traffic-filter <string> out <cr>    # observed_connections-007729
+(config-tunnel-minm)# no mac access-group <string> in <cr>    # observed_connections-007731
+(config-tunnel-minm)# no mac access-group <string> out <cr>    # observed_connections-007733
+(config-tunnel-minm)# no storm-control action shutdown <cr>    # observed_connections-007718
+(config-tunnel-minm)# no transparent-cfm <cr>    # observed_connections-007702
+(config-tunnel-minm)# no untagged-cfm <cr>    # observed_connections-007704
+(config-tunnel-minm)# service instance <number:dynamic> <cr>    # observed_connections-007736
+(config-tunnel-minm)# storm-control action shutdown <cr>    # observed_connections-007709
+(config-tunnel-minm)# storm-control unicast cir <?general_to_number_func_action@555588ee10a0> <cr>    # observed_connections-007739
+(config-tunnel-minm)# transparent-cfm <cr>    # observed_connections-007694
+(config-tunnel-minm)# untagged-cfm <cr>    # observed_connections-007695

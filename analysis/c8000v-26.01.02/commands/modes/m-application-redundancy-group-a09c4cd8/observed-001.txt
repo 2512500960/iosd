@@ -1,0 +1,13 @@
+# 模式 application-redundancy-group；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-red-app)# dampening <number:dynamic> <cr>    # observed_connections-009555
+(config-red-app)# default dampening <cr>    # observed_connections-009548
+(config-red-app)# default group <number:1..2> <cr>    # observed_connections-009552
+(config-red-app)# default protocol <number:1..8> <cr>    # observed_connections-009554
+(config-red-app)# group <number:1..2> <cr>    # observed_connections-009549
+(config-red-app)# no dampening <cr>    # observed_connections-009547
+(config-red-app)# no group <number:1..2> <cr>    # observed_connections-009551
+(config-red-app)# no protocol <number:1..8> <cr>    # observed_connections-009553
+(config-red-app)# protocol <number:1..8> <cr>    # observed_connections-009550

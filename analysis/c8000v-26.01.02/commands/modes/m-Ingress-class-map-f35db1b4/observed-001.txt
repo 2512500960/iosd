@@ -1,0 +1,11 @@
+# 模式 Ingress-class-map；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-ing-class-map)# default exit <cr>    # observed_connections-009728
+(config-ing-class-map)# default map ip precedence-based <cr>    # observed_connections-009731
+(config-ing-class-map)# exit <cr>    # observed_connections-009726
+(config-ing-class-map)# map ip precedence-based <cr>    # observed_connections-009729
+(config-ing-class-map)# map ipv6 tc <?common_dscp_value_action@5555898a08e8> <?common_dscp_value_action@5555898a0980> queue 0 <cr>    # observed_connections-009732
+(config-ing-class-map)# no exit <cr>    # observed_connections-009727
+(config-ing-class-map)# no map ip precedence-based <cr>    # observed_connections-009730

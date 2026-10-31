@@ -1,0 +1,249 @@
+# 模式 configure；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-010.md
+
+(config)# no performance monitor context <string> <cr>    # static_slot_creation_candidates-000310
+(config)# no performance monitor observation-point encrypted-text <cr>    # static_slot_creation_candidates-000305
+(config)# no performance monitor per-vpn-metric <cr>    # static_slot_creation_candidates-000114
+(config)# no performance monitor sampling-rate <cr>    # static_slot_creation_candidates-000117
+(config)# no sbc h248 bac <cr>    # static_slot_creation_candidates-000289
+(config)# no segment-routing srv6 <cr>    # static_slot_creation_candidates-000078
+(config)# no segment-routing srv6 <cr>    # static_slot_creation_candidates-000079
+(config)# no segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000072
+(config)# no segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000073
+(config)# no voice cause-code <cr>    # static_slot_creation_candidates-000042
+(config)# no voice class aaa <cr>    # static_slot_creation_candidates-000230
+(config)# no voice class busyout <cr>    # static_slot_creation_candidates-000204
+(config)# no voice class called number inbound <cr>    # static_slot_creation_candidates-001520
+(config)# no voice class called number outbound <cr>    # static_slot_creation_candidates-001557
+(config)# no voice class called number pool <cr>    # static_slot_creation_candidates-001589
+(config)# no voice class cause-code <number:1..64> <cr>    # static_slot_creation_candidates-000509
+(config)# no voice class codec <cr>    # static_slot_creation_candidates-000164
+(config)# no voice class dial-peer provision-policy <cr>    # static_slot_creation_candidates-000743
+(config)# no voice class dpg <cr>    # static_slot_creation_candidates-000242
+(config)# no voice class dscp-profile <cr>    # static_slot_creation_candidates-000218
+(config)# no voice class dualtone-detect-params <cr>    # static_slot_creation_candidates-000209
+(config)# no voice class e164-pattern-map <cr>    # static_slot_creation_candidates-000231
+(config)# no voice class e164-translation <cr>    # static_slot_creation_candidates-000237
+(config)# no voice class h323 <cr>    # static_slot_creation_candidates-000184
+(config)# no voice class media <cr>    # static_slot_creation_candidates-000156
+(config)# no voice class mlpp <cr>    # static_slot_creation_candidates-000268
+(config)# no voice class permanent <cr>    # static_slot_creation_candidates-000178
+(config)# no voice class resource-group <cr>    # static_slot_creation_candidates-000174
+(config)# no voice class route-string <cr>    # static_slot_creation_candidates-000150
+(config)# no voice class saf <cr>    # static_slot_creation_candidates-000274
+(config)# no voice class server-group <cr>    # static_slot_creation_candidates-000248
+(config)# no voice class sip-copylist <cr>    # static_slot_creation_candidates-000199
+(config)# no voice class sip-event-list <cr>    # static_slot_creation_candidates-000186
+(config)# no voice class sip-hdr-passthrulist <cr>    # static_slot_creation_candidates-000192
+(config)# no voice class sip-options-keepalive <cr>    # static_slot_creation_candidates-000252
+(config)# no voice class sip-profiles <cr>    # static_slot_creation_candidates-000188
+(config)# no voice class srtp-crypto <cr>    # static_slot_creation_candidates-000287
+(config)# no voice class stun-usage <cr>    # static_slot_creation_candidates-000177
+(config)# no voice class tenant <cr>    # static_slot_creation_candidates-000282
+(config)# no voice class tls-cipher <cr>    # static_slot_creation_candidates-000291
+(config)# no voice class tls-profile <cr>    # static_slot_creation_candidates-000294
+(config)# no voice class uri <cr>    # static_slot_creation_candidates-000162
+(config)# no voice class uri sip preference <cr>    # static_slot_creation_candidates-000932
+(config)# no voice dnis-map <string> <cr>    # static_slot_creation_candidates-000130
+(config)# no voice dsp crash-dump destination <cr>    # static_slot_creation_candidates-000344
+(config)# no voice dsp crash-dump file-limit <cr>    # static_slot_creation_candidates-000333
+(config)# no voice emergency response location <cr>    # static_slot_creation_candidates-000335
+(config)# no voice emergency response settings <cr>    # static_slot_creation_candidates-000315
+(config)# no voice emergency response zone <cr>    # static_slot_creation_candidates-000348
+(config)# no voice enum-match-table <number:1..15> <cr>    # static_slot_creation_candidates-000126
+(config)# no voice logout-profile <number:1..2000> <cr>    # static_slot_creation_candidates-000012
+(config)# no voice lpcor call-block cause <cr>    # static_slot_creation_candidates-000319
+(config)# no voice lpcor custom <cr>    # static_slot_creation_candidates-000144
+(config)# no voice lpcor enable <cr>    # static_slot_creation_candidates-000131
+(config)# no voice lpcor ip-phone mobility incoming <cr>    # static_slot_creation_candidates-000951
+(config)# no voice lpcor ip-phone subnet incoming <cr>    # static_slot_creation_candidates-000941
+(config)# no voice lpcor ip-trunk subnet incoming <cr>    # static_slot_creation_candidates-000931
+(config)# no voice lpcor policy <string> <cr>    # static_slot_creation_candidates-000332
+(config)# no voice mlpp <cr>    # static_slot_creation_candidates-000046
+(config)# no voice moh-group <cr>    # static_slot_creation_candidates-000058
+(config)# no voice register global <cr>    # static_slot_creation_candidates-000124
+(config)# no voice register pool-type <cr>    # static_slot_creation_candidates-000151
+(config)# no voice source-group <string> <cr>    # static_slot_creation_candidates-000129
+(config)# no voice statistics accounting method <string> <cr>    # static_slot_creation_candidates-000907
+(config)# no voice statistics display-format separator <cr>    # static_slot_creation_candidates-000341
+(config)# no voice statistics field-params lost-packet <cr>    # static_slot_creation_candidates-000364
+(config)# no voice statistics field-params mcd <cr>    # static_slot_creation_candidates-000356
+(config)# no voice statistics field-params packet-jitter <cr>    # static_slot_creation_candidates-000412
+(config)# no voice statistics field-params packet-latency <cr>    # static_slot_creation_candidates-000388
+(config)# no voice statistics max-storage-duration <cr>    # static_slot_creation_candidates-000148
+(config)# no voice statistics push ftp max-file-size <cr>    # static_slot_creation_candidates-001005
+(config)# no voice statistics push ftp url <string> <cr>    # static_slot_creation_candidates-001783
+(config)# no voice statistics push syslog <cr>    # static_slot_creation_candidates-000386
+(config)# no voice statistics time-range periodic <cr>    # static_slot_creation_candidates-000345
+(config)# no voice statistics time-range since-reset <cr>    # static_slot_creation_candidates-000316
+(config)# no voice statistics time-range specific <cr>    # static_slot_creation_candidates-000334
+(config)# no voice statistics type iec <cr>    # static_slot_creation_candidates-000317
+(config)# no voice translation-profile <string> <cr>    # static_slot_creation_candidates-000127
+(config)# no voice translation-rule <number:1..1073741823> <cr>    # static_slot_creation_candidates-000128
+(config)# no voice user-profile <number:1..6000> <cr>    # static_slot_creation_candidates-000013
+(config)# no voice vad-time <cr>    # static_slot_creation_candidates-000014
+(config)# no voip trunk group <cr>    # static_slot_creation_candidates-000272
+(config)# no voip-incoming translation-profile <cr>    # static_slot_creation_candidates-000029
+(config)# no vxlan route-profile <string> <cr>    # static_slot_creation_candidates-000232
+(config)# no vxlan static-route <cr>    # static_slot_creation_candidates-000094
+(config)# no vxlan static-route accounting-policing bind p2p-tunnel <cr>    # static_slot_creation_candidates-001356
+(config)# no vxlan static-route auto-tunnel range <cr>    # static_slot_creation_candidates-000716
+(config)# no vxlan static-route policy output <cr>    # static_slot_creation_candidates-000667
+(config)# novell <?dumper_command_func@55558c2dcc58> access-list extended <string> <cr>    # static_slot_creation_candidates-002625
+(config)# novell <?dumper_command_func@55558c2dcc58> access-list sap <string> <cr>    # static_slot_creation_candidates-002627
+(config)# novell <?dumper_command_func@55558c2dcc58> access-list standard <string> <cr>    # static_slot_creation_candidates-002623
+(config)# novell <?dumper_command_func@55558c2dcc58> access-list summary <string> <cr>    # static_slot_creation_candidates-002628
+(config)# otv isis <interface> <cr>    # static_slot_creation_candidates-002570
+(config)# otv isis site <cr>    # static_slot_creation_candidates-000041
+(config)# otv site-identifier <address> <cr>    # static_slot_creation_candidates-000040
+(config)# performance monitor apply <?option@55558bba2f60> sdwan-sig <cr>    # static_slot_creation_candidates-002617
+(config)# performance monitor apply <cr>    # static_slot_creation_candidates-000038
+(config)# performance monitor context <string> <cr>    # static_slot_creation_candidates-000118
+(config)# performance monitor context <string> profile <?option@55558bba2b68> <cr>    # static_slot_creation_candidates-002632
+(config)# performance monitor observation-point encrypted-text <cr>    # static_slot_creation_candidates-000111
+(config)# performance monitor per-vpn-metric <cr>    # static_slot_creation_candidates-000033
+(config)# performance monitor profile load <url:dynamic> <cr>    # static_slot_creation_candidates-002616
+(config)# performance monitor profile load <url:dynamic> force <cr>    # static_slot_creation_candidates-002631
+(config)# performance monitor sampling-rate <number:2..32768> <cr>    # static_slot_creation_candidates-000120
+(config)# sbc h248 bac <cr>    # static_slot_creation_candidates-000103
+(config)# segment-routing srv6 <cr>    # static_slot_creation_candidates-000023
+(config)# segment-routing srv6 <cr>    # static_slot_creation_candidates-000024
+(config)# segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000021
+(config)# segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000022
+(config)# voice cause-code <cr>    # static_slot_creation_candidates-000015
+(config)# voice class aaa <?voiceclass_cmd@55558c6668a0> <cr>    # static_slot_creation_candidates-002603
+(config)# voice class aaa <cr>    # static_slot_creation_candidates-000089
+(config)# voice class busyout <?voiceclass_cmd@55558c6655d0> <cr>    # static_slot_creation_candidates-002600
+(config)# voice class busyout <cr>    # static_slot_creation_candidates-000085
+(config)# voice class called number inbound <?voiceclass_cmd@55558c668938> <cr>    # static_slot_creation_candidates-002647
+(config)# voice class called number inbound <cr>    # static_slot_creation_candidates-000806
+(config)# voice class called number outbound <?voiceclass_cmd@55558c668d20> <cr>    # static_slot_creation_candidates-002651
+(config)# voice class called number outbound <cr>    # static_slot_creation_candidates-000828
+(config)# voice class called number pool <?voiceclass_cmd@55558c6690e0> <cr>    # static_slot_creation_candidates-002654
+(config)# voice class called number pool <cr>    # static_slot_creation_candidates-000839
+(config)# voice class cause-code <number:1..64> <cr>    # static_slot_creation_candidates-000216
+(config)# voice class codec <?voiceclass_cmd@55558c6632a0> <cr>    # static_slot_creation_candidates-002586
+(config)# voice class codec <cr>    # static_slot_creation_candidates-000065
+(config)# voice class custom-cptone <?voiceclass_string_cmd@55558c665e30> <string> <cr>    # static_slot_creation_candidates-002622
+(config)# voice class dial-peer provision-policy <?voiceclass_cmd@55558c668070> <cr>    # static_slot_creation_candidates-002624
+(config)# voice class dial-peer provision-policy <cr>    # static_slot_creation_candidates-000263
+(config)# voice class dpg <?voiceclass_cmd@55558c667468> <cr>    # static_slot_creation_candidates-002606
+(config)# voice class dpg <cr>    # static_slot_creation_candidates-000093
+(config)# voice class dscp-profile <?voiceclass_cmd@55558c665da0> <cr>    # static_slot_creation_candidates-002602
+(config)# voice class dscp-profile <cr>    # static_slot_creation_candidates-000087
+(config)# voice class dualtone-detect-params <?voiceclass_cmd@55558c6659b8> <cr>    # static_slot_creation_candidates-002601
+(config)# voice class dualtone-detect-params <cr>    # static_slot_creation_candidates-000086
+(config)# voice class e164-pattern-map <?voiceclass_cmd@55558c666c90> <cr>    # static_slot_creation_candidates-002604
+(config)# voice class e164-pattern-map <cr>    # static_slot_creation_candidates-000090
+(config)# voice class e164-translation <?voiceclass_cmd@55558c667080> <cr>    # static_slot_creation_candidates-002605
+(config)# voice class e164-translation <cr>    # static_slot_creation_candidates-000092
+(config)# voice class h323 <?voiceclass_cmd@55558c6642c0> <cr>    # static_slot_creation_candidates-002595
+(config)# voice class h323 <cr>    # static_slot_creation_candidates-000071
+(config)# voice class media <?voiceclass_cmd@55558c662eb8> <cr>    # static_slot_creation_candidates-002580
+(config)# voice class media <cr>    # static_slot_creation_candidates-000063
+(config)# voice class mlpp <?voiceclass_cmd@55558c669900> <cr>    # static_slot_creation_candidates-002609
+(config)# voice class mlpp <cr>    # static_slot_creation_candidates-000098
+(config)# voice class permanent <?voiceclass_cmd@55558c663ed8> <cr>    # static_slot_creation_candidates-002594
+(config)# voice class permanent <cr>    # static_slot_creation_candidates-000070
+(config)# voice class resource-group <?voiceclass_cmd@55558c6636c8> <cr>    # static_slot_creation_candidates-002592
+(config)# voice class resource-group <cr>    # static_slot_creation_candidates-000067
+(config)# voice class route-string <?voiceclass_cmd@55558c662af0> <cr>    # static_slot_creation_candidates-002579
+(config)# voice class route-string <cr>    # static_slot_creation_candidates-000060
+(config)# voice class saf <?voiceclass_cmd@55558c6694f8> <cr>    # static_slot_creation_candidates-002610
+(config)# voice class saf <cr>    # static_slot_creation_candidates-000100
+(config)# voice class server-group <?voiceclass_cmd@55558c667850> <cr>    # static_slot_creation_candidates-002607
+(config)# voice class server-group <cr>    # static_slot_creation_candidates-000095
+(config)# voice class sip-copylist <?voiceclass_cmd@55558c6651e8> <cr>    # static_slot_creation_candidates-002599
+(config)# voice class sip-copylist <cr>    # static_slot_creation_candidates-000084
+(config)# voice class sip-event-list <?voiceclass_cmd@55558c664a68> <cr>    # static_slot_creation_candidates-002596
+(config)# voice class sip-event-list <cr>    # static_slot_creation_candidates-000074
+(config)# voice class sip-hdr-passthrulist <?voiceclass_cmd@55558c664e28> <cr>    # static_slot_creation_candidates-002598
+(config)# voice class sip-hdr-passthrulist <cr>    # static_slot_creation_candidates-000081
+(config)# voice class sip-options-keepalive <?voiceclass_cmd@55558c667c40> <cr>    # static_slot_creation_candidates-002608
+(config)# voice class sip-options-keepalive <cr>    # static_slot_creation_candidates-000097
+(config)# voice class sip-profiles <?voiceclass_cmd@55558c6646a8> <cr>    # static_slot_creation_candidates-002597
+(config)# voice class sip-profiles <cr>    # static_slot_creation_candidates-000075
+(config)# voice class srtp-crypto <?voiceclass_cmd@55558c66a0d0> <cr>    # static_slot_creation_candidates-002612
+(config)# voice class srtp-crypto <cr>    # static_slot_creation_candidates-000102
+(config)# voice class stun-usage <?voiceclass_cmd@55558c663af0> <cr>    # static_slot_creation_candidates-002593
+(config)# voice class stun-usage <cr>    # static_slot_creation_candidates-000069
+(config)# voice class tenant <?voiceclass_cmd@55558c669ce8> <cr>    # static_slot_creation_candidates-002611
+(config)# voice class tenant <cr>    # static_slot_creation_candidates-000101
+(config)# voice class tls-cipher <?voiceclass_cmd@55558c66a4b8> <cr>    # static_slot_creation_candidates-002613
+(config)# voice class tls-cipher <cr>    # static_slot_creation_candidates-000104
+(config)# voice class tls-profile <?voiceclass_cmd@55558c66a878> <cr>    # static_slot_creation_candidates-002614
+(config)# voice class tls-profile <cr>    # static_slot_creation_candidates-000105
+(config)# voice class tone-signal <?voiceclass_string_cmd@55558c668150> <string> <cr>    # static_slot_creation_candidates-002626
+(config)# voice class uri <?vuri_class_cmd@55558bd343c8> <cr>    # static_slot_creation_candidates-002584
+(config)# voice class uri <?vuri_class_cmd@55558bd343c8> sip preference <cr>    # static_slot_creation_candidates-002634
+(config)# voice class uri <cr>    # static_slot_creation_candidates-000066
+(config)# voice class uri sip preference <cr>    # static_slot_creation_candidates-000431
+(config)# voice dnis-map <string> <cr>    # static_slot_creation_candidates-000056
+(config)# voice dnis-map <string> <cr>    # static_slot_creation_candidates-000057
+(config)# voice dnis-map <string> <string> <cr>    # static_slot_creation_candidates-000141
+(config)# voice dsp crash-dump destination <string> <cr>    # static_slot_creation_candidates-000350
+(config)# voice dsp crash-dump file-limit <number:0..99> <cr>    # static_slot_creation_candidates-000336
+(config)# voice emergency response location <cr>    # static_slot_creation_candidates-000154
+(config)# voice emergency response settings <cr>    # static_slot_creation_candidates-000138
+(config)# voice emergency response zone <cr>    # static_slot_creation_candidates-000160
+(config)# voice enum-match-table <number:1..15> <cr>    # static_slot_creation_candidates-000064
+(config)# voice hunt-group <?voice_huntgrp_cmd@55558bb161d0> <cr>    # static_slot_creation_candidates-002572
+(config)# voice hunt-group <?voice_huntgrp_cmd@55558bb161d0> <cr>    # static_slot_creation_candidates-002577
+(config)# voice hunt-group <?voice_huntgrp_cmd@55558bb161d0> longest-idle <cr>    # static_slot_creation_candidates-002587
+(config)# voice hunt-group <?voice_huntgrp_cmd@55558bb161d0> parallel <cr>    # static_slot_creation_candidates-002589
+(config)# voice hunt-group <?voice_huntgrp_cmd@55558bb161d0> peer <cr>    # static_slot_creation_candidates-002585
+(config)# voice logout-profile <number:1..2000> <cr>    # static_slot_creation_candidates-000003
+(config)# voice lpcor call-block cause <?cause_code_action@55558b88fbc0> <cr>    # static_slot_creation_candidates-002618
+(config)# voice lpcor custom <cr>    # static_slot_creation_candidates-000055
+(config)# voice lpcor enable <cr>    # static_slot_creation_candidates-000051
+(config)# voice lpcor ip-phone mobility incoming <string> <cr>    # static_slot_creation_candidates-000971
+(config)# voice lpcor ip-phone subnet incoming <cr>    # static_slot_creation_candidates-000362
+(config)# voice lpcor ip-trunk subnet incoming <cr>    # static_slot_creation_candidates-000354
+(config)# voice lpcor policy <string> <cr>    # static_slot_creation_candidates-000152
+(config)# voice mlpp <cr>    # static_slot_creation_candidates-000019
+(config)# voice moh-group <cr>    # static_slot_creation_candidates-000020
+(config)# voice moh-group <number:1..5> <cr>    # static_slot_creation_candidates-002571
+(config)# voice register dialplan <?voice_register_dialplan_action@55558bb156d8> <cr>    # static_slot_creation_candidates-002590
+(config)# voice register dn <?voice_register_dn_action@55558bb14f88> <cr>    # static_slot_creation_candidates-002583
+(config)# voice register global <cr>    # static_slot_creation_candidates-000044
+(config)# voice register pool <?voice_register_pool_action@55558bb15a18> <cr>    # static_slot_creation_candidates-002591
+(config)# voice register pool-type <cr>    # static_slot_creation_candidates-000062
+(config)# voice register pool-type <string> <cr>    # static_slot_creation_candidates-002581
+(config)# voice register session-server <?voice_register_fs_action@55558bb14c20> <cr>    # static_slot_creation_candidates-002582
+(config)# voice register template <?voice_register_temp_action@55558bb15330> <cr>    # static_slot_creation_candidates-002588
+(config)# voice service pots <cr>    # static_slot_creation_candidates-002573
+(config)# voice service voatm <cr>    # static_slot_creation_candidates-002575
+(config)# voice service vofr <cr>    # static_slot_creation_candidates-002576
+(config)# voice service voip <cr>    # static_slot_creation_candidates-002574
+(config)# voice source-group <string> <cr>    # static_slot_creation_candidates-000050
+(config)# voice statistics accounting method <string> pass start-interim-stop <cr>    # static_slot_creation_candidates-001775
+(config)# voice statistics display-format separator <cr>    # static_slot_creation_candidates-000179
+(config)# voice statistics display-format separator char <string> <cr>    # static_slot_creation_candidates-000981
+(config)# voice statistics display-format separator new-line <cr>    # static_slot_creation_candidates-000376
+(config)# voice statistics display-format separator space <cr>    # static_slot_creation_candidates-000349
+(config)# voice statistics display-format separator tab <cr>    # static_slot_creation_candidates-000361
+(config)# voice statistics field-params lost-packet <cr>    # static_slot_creation_candidates-000175
+(config)# voice statistics field-params mcd <cr>    # static_slot_creation_candidates-000173
+(config)# voice statistics field-params packet-jitter <cr>    # static_slot_creation_candidates-000185
+(config)# voice statistics field-params packet-latency <cr>    # static_slot_creation_candidates-000181
+(config)# voice statistics max-storage-duration <cr>    # static_slot_creation_candidates-000068
+(config)# voice statistics push ftp max-file-size <cr>    # static_slot_creation_candidates-000429
+(config)# voice statistics push ftp url <string> <cr>    # static_slot_creation_candidates-000945
+(config)# voice statistics push syslog <cr>    # static_slot_creation_candidates-000180
+(config)# voice statistics time-range periodic 5minutes <cr>    # static_slot_creation_candidates-000476
+(config)# voice statistics time-range periodic 5minutes start <hh:mm> <cr>    # static_slot_creation_candidates-002679
+(config)# voice statistics time-range since-reset <cr>    # static_slot_creation_candidates-000142
+(config)# voice statistics time-range specific start <hh:mm> end <hh:mm> <cr>    # static_slot_creation_candidates-002731
+(config)# voice statistics type iec <cr>    # static_slot_creation_candidates-000143
+(config)# voice translation-profile <string> <cr>    # static_slot_creation_candidates-000048
+(config)# voice translation-rule <number:1..1073741823> <cr>    # static_slot_creation_candidates-000049
+(config)# voice user-profile <number:1..6000> <cr>    # static_slot_creation_candidates-000004
+(config)# voice vad-time <number:250..65536> <cr>    # static_slot_creation_candidates-000005
+(config)# voip trunk group <cr>    # static_slot_creation_candidates-000099
+(config)# voip-incoming translation-profile <string> <cr>    # static_slot_creation_candidates-000030
+(config)# vxlan route-profile <string> <cr>    # static_slot_creation_candidates-000091
+(config)# vxlan static-route <cr>    # static_slot_creation_candidates-000025
+(config)# vxlan static-route accounting-policing bind p2p-tunnel <cr>    # static_slot_creation_candidates-000685
+(config)# vxlan static-route auto-tunnel range <number:0..2147483647> <number:dynamic> <cr>    # static_slot_creation_candidates-002636
+(config)# vxlan static-route policy output <cr>    # static_slot_creation_candidates-000246

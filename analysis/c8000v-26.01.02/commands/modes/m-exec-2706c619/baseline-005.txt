@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-005.md
+
+(exec)# debug dmvpn condition <cr>    # path-003799
+(exec)# debug dmvpn condition interface <interface> <cr>    # path-020326
+(exec)# debug dmvpn error <cr>    # path-003819
+(exec)# debug dmvpn error <cr>    # path-003830
+(exec)# debug dmvpn error <cr>    # path-003839
+(exec)# debug dmvpn error <cr>    # path-003847
+(exec)# debug dmvpn error <cr>    # path-003856
+(exec)# debug dns-proxy all <cr>    # path-003167
+(exec)# debug dns-proxy debug <cr>    # path-003132
+(exec)# debug dns-proxy error <cr>    # path-003151
+(exec)# debug dnsix dmdp <cr>    # path-002576
+(exec)# debug dnsix dnssec <cr>    # path-002599
+(exec)# debug dnsix nat <cr>    # path-002587
+(exec)# debug domain <cr>    # path-000330
+(exec)# debug dot1x all <cr>    # path-003522
+(exec)# debug dot1x errors <cr>    # path-003489
+(exec)# debug dot1x events <cr>    # path-003502
+(exec)# debug dot1x packets <cr>    # path-003513
+(exec)# debug dot1x redundancy <cr>    # path-003546
+(exec)# debug dot1x registry <cr>    # path-003538
+(exec)# debug dot1x state-machine <cr>    # path-003530
+(exec)# debug drip event <cr>    # path-003775
+(exec)# debug drip packet <cr>    # path-003792
+(exec)# debug dspfarm all <cr>    # path-000550
+(exec)# debug dspfarm errors <cr>    # path-000535
+(exec)# debug dspfarm events <cr>    # path-000530
+(exec)# debug dtp aggregation <cr>    # path-002285
+(exec)# debug dtp all <cr>    # path-002302
+(exec)# debug dtp decision <cr>    # path-002238
+(exec)# debug dtp events <cr>    # path-002146
+(exec)# debug dtp oserrs <cr>    # path-002207
+(exec)# debug dtp packets <cr>    # path-002222
+(exec)# debug dtp queue <cr>    # path-002261
+(exec)# debug dtp states <cr>    # path-002169
+(exec)# debug dtp timers <cr>    # path-002189
+(exec)# debug dwnld_mgr error <cr>    # path-001758
+(exec)# debug dwnld_mgr event <cr>    # path-001734
+(exec)# debug dxi events <cr>    # path-001631
+(exec)# debug dxi packet <cr>    # path-001651
+(exec)# debug eap all <cr>    # path-001419
+(exec)# debug ehsa alarms <cr>    # path-004046
+(exec)# debug ehsa all <cr>    # path-004055
+(exec)# debug ehsa configsync <cr>    # path-004029
+(exec)# debug ehsa fsm <cr>    # path-004009
+(exec)# debug ehsa keepalive <cr>    # path-003985
+(exec)# debug ehsa peer-monitor <cr>    # path-003998
+(exec)# debug ehsa services <cr>    # path-004038
+(exec)# debug ehsa timesync <cr>    # path-004019
+(exec)# debug eigrp address-family ipv4 <cr>    # path-007039
+(exec)# debug eigrp address-family ipv6 <cr>    # path-007029
+(exec)# debug eigrp address-family ipv6 topology <prefix:dynamic> <cr>    # path-022714
+(exec)# debug eigrp crimson <cr>    # path-002835
+(exec)# debug eigrp frr <cr>    # path-002728
+(exec)# debug eigrp fsm <cr>    # path-002667
+(exec)# debug eigrp neighbors <cr>    # path-002745
+(exec)# debug eigrp nsf <cr>    # path-002693
+(exec)# debug eigrp packets <cr>    # path-003037
+(exec)# debug eigrp packets <number:1..99> <cr>    # path-015368
+(exec)# debug eigrp parser <cr>    # path-002841
+(exec)# debug eigrp parser verbose <cr>    # path-015235
+(exec)# debug eigrp plugin <cr>    # path-002758
+(exec)# debug eigrp process <cr>    # path-002805
+(exec)# debug eigrp service-family api <cr>    # path-006905
+(exec)# debug eigrp service-family external-client messages <cr>    # path-009901
+(exec)# debug eigrp service-family ipv4 <cr>    # path-007053
+(exec)# debug eigrp service-family ipv4 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-012203
+(exec)# debug eigrp service-family ipv4 client <string> <cr>    # path-011438
+(exec)# debug eigrp service-family ipv4 neighbor <cr>    # path-009946
+(exec)# debug eigrp service-family ipv4 notifications <cr>    # path-009939
+(exec)# debug eigrp service-family ipv4 topology <cr>    # path-009951
+(exec)# debug eigrp service-family ipv6 <cr>    # path-007063
+(exec)# debug eigrp service-family ipv6 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-012204
+(exec)# debug eigrp service-family ipv6 neighbor <cr>    # path-009958
+(exec)# debug eigrp service-family ipv6 notifications <cr>    # path-009956
+(exec)# debug eigrp service-family ipv6 topology <cr>    # path-009962
+(exec)# debug eigrp spath <cr>    # path-002713
+(exec)# debug eigrp timers <cr>    # path-002680
+(exec)# debug eigrp transmit <cr>    # path-002951
+(exec)# debug eigrp transmit ack <cr>    # path-015351
+(exec)# debug eigrp upgrade-cli <cr>    # path-002821
+(exec)# debug elog call-admission <cr>    # path-003422
+(exec)# debug elog clock-tick-pc <cr>    # path-003059
+(exec)# debug elog function-bracket <cr>    # path-003075
+(exec)# debug elog ppp-cps <cr>    # path-003154
+(exec)# debug elog ppp-detail <cr>    # path-003139
+(exec)# debug elog ppp-keep <cr>    # path-003114
+(exec)# debug elog ppp-neg <cr>    # path-003094
+(exec)# debug elog pppoa-all <cr>    # path-003311
+(exec)# debug elog pppoa-detail <cr>    # path-003298
+(exec)# debug elog pppoa-event <cr>    # path-003239
+(exec)# debug elog pppoa-periodic <cr>    # path-003255
+(exec)# debug elog pppoa-ppp <cr>    # path-003268
+(exec)# debug elog pppoa-sss <cr>    # path-003283
+(exec)# debug elog pppoe <cr>    # path-003228
+(exec)# debug elog registry-service <cr>    # path-003046
+(exec)# debug elog ssm-cm <cr>    # path-003170
+(exec)# debug elog subscriber-feature-mgr <cr>    # path-003206
+(exec)# debug elog subscriber-policy-mgr <cr>    # path-003219
+(exec)# debug elog subscriber-session-mgr <cr>    # path-003185
+(exec)# debug elog subscriber-sip-api <cr>    # path-003198
+(exec)# debug elog vpdn-ctrl <cr>    # path-003324
+(exec)# debug elog vpdn-ctrl <cr>    # path-003353
+(exec)# debug elog vpdn-pkt <cr>    # path-003335
+(exec)# debug elog vpdn-pkt <cr>    # path-003362
+(exec)# debug elog vpdn-session <cr>    # path-003344
+(exec)# debug elog vpdn-session <cr>    # path-003372
+(exec)# debug elog vtempl-clone <cr>    # path-003398
+(exec)# debug elog vtempl-create <cr>    # path-003389
+(exec)# debug elog vtempl-free <cr>    # path-003412
+(exec)# debug elog vtempl-request <cr>    # path-003380
+(exec)# debug entry <cr>    # path-000239
+(exec)# debug environment location <string> <cr>    # path-007542
+(exec)# debug environment override <cr>    # path-003659
+(exec)# debug environment platform <cr>    # path-003641
+(exec)# debug environment reminder <cr>    # path-003630
+(exec)# debug environment sensor <string> <cr>    # path-007537
+(exec)# debug environment virtual <signed:-200..500> <cr>    # path-007557
+(exec)# debug epbr api <cr>    # path-003906
+(exec)# debug epbr error <cr>    # path-003917
+(exec)# debug epbr provision <cr>    # path-003898
+(exec)# debug epc capture-point <cr>    # path-001124
+(exec)# debug epc provision <cr>    # path-001106
+(exec)# debug epm HA Error <cr>    # path-006469
+(exec)# debug epm HA Events <cr>    # path-006505
+(exec)# debug epm all <cr>    # path-002390
+(exec)# debug epm api <cr>    # path-002408
+(exec)# debug epm error <cr>    # path-002433
+(exec)# debug epm error detail <cr>    # path-006333
+(exec)# debug epm error fsm <cr>    # path-006417
+(exec)# debug epm error fsm details <cr>    # path-009460
+(exec)# debug epm error packet <cr>    # path-006453
+(exec)# debug epm error packet details <cr>    # path-009484
+(exec)# debug epm error session <cr>    # path-006349
+(exec)# debug epm error session details <cr>    # path-009419
+(exec)# debug epm events <cr>    # path-002449
+(exec)# debug epm events detail <cr>    # path-006370
+(exec)# debug epm events fsm <cr>    # path-006452
+(exec)# debug epm events fsm details <cr>    # path-009481
+(exec)# debug epm events packet <cr>    # path-006491
+(exec)# debug epm events packet details <cr>    # path-009501
+(exec)# debug epm events session <cr>    # path-006385
+(exec)# debug epm events session details <cr>    # path-009436
+(exec)# debug epm plugin QOS all <cr>    # path-009651
+(exec)# debug epm plugin QOS errors <cr>    # path-009599
+(exec)# debug epm plugin QOS events <cr>    # path-009622
+(exec)# debug epm plugin acl all <cr>    # path-009573
+(exec)# debug epm plugin acl detail <cr>    # path-009554
+(exec)# debug epm plugin acl error <cr>    # path-009498
+(exec)# debug epm plugin acl event <cr>    # path-009531
+(exec)# debug epm plugin cts errors <cr>    # path-009691
+(exec)# debug epm plugin cts events <cr>    # path-009711
+(exec)# debug epm plugin fqdn all <cr>    # path-009570
+(exec)# debug epm plugin fqdn error <cr>    # path-009525
+(exec)# debug epm plugin fqdn event <cr>    # path-009549
+(exec)# debug epm plugin iaf all <cr>    # path-009605
+(exec)# debug epm plugin iaf errors <cr>    # path-009565
+(exec)# debug epm plugin iaf events <cr>    # path-009583
+(exec)# debug epm plugin ial all <cr>    # path-009757
+(exec)# debug epm plugin ial errors <cr>    # path-009729
+(exec)# debug epm plugin ial events <cr>    # path-009745
+(exec)# debug epm plugin linksec all <cr>    # path-009713
+(exec)# debug epm plugin linksec errors <cr>    # path-009666
+(exec)# debug epm plugin linksec events <cr>    # path-009693
+(exec)# debug epm plugin redirect all <cr>    # path-009608
+(exec)# debug epm plugin redirect detail <cr>    # path-009587
+(exec)# debug epm plugin redirect error <cr>    # path-009546
+(exec)# debug epm plugin redirect event <cr>    # path-009569
+(exec)# debug epm plugin template all <cr>    # path-009625
+(exec)# debug epm plugin template errors <cr>    # path-009580
+(exec)# debug epm plugin template events <cr>    # path-009603
+(exec)# debug epm plugin tunnel errors <cr>    # path-009708
+(exec)# debug epm plugin tunnel events <cr>    # path-009731
+(exec)# debug epm plugin vlan-group all <cr>    # path-009673
+(exec)# debug epm plugin vlan-group error <cr>    # path-009648
+(exec)# debug epm plugin vlan-group event <cr>    # path-009620
+(exec)# debug epm plugin voice-vlan all <cr>    # path-009696
+(exec)# debug epm plugin voice-vlan error <cr>    # path-009669
+(exec)# debug epm plugin voice-vlan event <cr>    # path-009644
+(exec)# debug ethernet cfm ipc <cr>    # path-004549
+(exec)# debug ethernet cfm pm diagnostic <cr>    # path-008283
+(exec)# debug ethernet etherchannel events <cr>    # path-004471
+(exec)# debug ethernet etherchannel misc <cr>    # path-004496
+(exec)# debug ethernet interface <cr>    # path-000891
+(exec)# debug ethernet interface device <cr>    # path-004572
+(exec)# debug ethernet interface error <cr>    # path-004478
+(exec)# debug ethernet interface oir <cr>    # path-004518
+(exec)# debug ethernet interface periodic <cr>    # path-004553
+(exec)# debug ethernet interface plugin <cr>    # path-004457
+(exec)# debug ethernet interface ptp error <cr>    # path-008363
+(exec)# debug ethernet interface ptp events <cr>    # path-008321
+(exec)# debug ethernet interface ptp stats <cr>    # path-008343
+(exec)# debug ethernet interface recovery <cr>    # path-004595
+(exec)# debug ethernet interface show <cr>    # path-004537
+(exec)# debug ethernet interface trace <cr>    # path-004500
+(exec)# debug ethernet lb events <cr>    # path-004546
+(exec)# debug ethernet lmi ha <cr>    # path-004520
+(exec)# debug ethernet lmi ha interface <interface> <cr>    # path-020948
+(exec)# debug ethernet oam all <cr>    # path-004637
+(exec)# debug ethernet oam assert <cr>    # path-004615
+(exec)# debug ethernet oam config <cr>    # path-004491
+(exec)# debug ethernet oam ha <cr>    # path-004512
+(exec)# debug ethernet oam link-monitor <cr>    # path-004552
+(exec)# debug ethernet oam loopback <cr>    # path-004533
+(exec)# debug ethernet oam packet decode <cr>    # path-008293
+(exec)# debug ethernet oam packet rx <cr>    # path-008309
+(exec)# debug ethernet oam packet tx <cr>    # path-008330
+(exec)# debug ethernet oam rfi <cr>    # path-004626
+(exec)# debug ethernet oam sm <cr>    # path-004594
+(exec)# debug ethernet service evc <cr>    # path-006350
+(exec)# debug ethernet service ipc errors <cr>    # path-009439
+(exec)# debug ethernet service l2ctrl errors <cr>    # path-008696
+(exec)# debug ethernet service port interface <interface> <cr>    # path-022270
+(exec)# debug event manager action cli <cr>    # path-010360
+(exec)# debug event manager action cns <cr>    # path-010358
+(exec)# debug event manager action mail <cr>    # path-010365
+(exec)# debug event manager all <cr>    # path-007880
+(exec)# debug event manager api calls <cr>    # path-010342
+(exec)# debug event manager api errors <cr>    # path-010346
+(exec)# debug event manager common <cr>    # path-007832
+(exec)# debug event manager detector all <cr>    # path-010354
+(exec)# debug event manager detector application <cr>    # path-010384
+(exec)# debug event manager detector cli <cr>    # path-010423
+(exec)# debug event manager detector config <cr>    # path-010429
+(exec)# debug event manager detector counter <cr>    # path-010421
+(exec)# debug event manager detector env <cr>    # path-010427
+(exec)# debug event manager detector generic <cr>    # path-010389
+(exec)# debug event manager detector gold <cr>    # path-010426
+(exec)# debug event manager detector interface <cr>    # path-010419
+(exec)# debug event manager detector ioswdsysmon <cr>    # path-010417
+(exec)# debug event manager detector mat <cr>    # path-010375
+(exec)# debug event manager detector neighbor-discovery <cr>    # path-010370
+(exec)# debug event manager detector nhrp <cr>    # path-010387
+(exec)# debug event manager detector none <cr>    # path-010415
+(exec)# debug event manager detector oir <cr>    # path-010412
+(exec)# debug event manager detector resource <cr>    # path-010366
+(exec)# debug event manager detector rf <cr>    # path-010408
+(exec)# debug event manager detector routing <cr>    # path-010380
+(exec)# debug event manager detector rpc <cr>    # path-010359
+(exec)# debug event manager detector snmp <cr>    # path-010404
+(exec)# debug event manager detector snmp-notification <cr>    # path-010396
+(exec)# debug event manager detector snmp-object <cr>    # path-010400
+(exec)# debug event manager detector syslog <cr>    # path-010393
+(exec)# debug event manager detector test <cr>    # path-010431
+(exec)# debug event manager detector timer <cr>    # path-010386
+(exec)# debug event manager detector track <cr>    # path-010361
+(exec)# debug event manager multi-lang action <cr>    # path-010364
+(exec)# debug event manager multi-lang cli <cr>    # path-010369
+(exec)# debug event manager multi-lang common <cr>    # path-010383
+(exec)# debug event manager multi-lang event <cr>    # path-010374
+(exec)# debug event manager multi-lang msg <cr>    # path-010379
+(exec)# debug event manager policydir <cr>    # path-007855
+(exec)# debug event manager server ISSU <cr>    # path-010353
+(exec)# debug event manager server events <cr>    # path-010349
+(exec)# debug event manager server scheduling <cr>    # path-010345
+(exec)# debug event manager tcl cli_library <cr>    # path-010368
+(exec)# debug event manager tcl commands <cr>    # path-010378
+(exec)# debug event manager tcl smtp_library <cr>    # path-010373
+(exec)# debug event manager xml parser <cr>    # path-010352
+(exec)# debug event-manager <cr>    # path-000366
+(exec)# debug facility-alarm <cr>    # path-000100
+(exec)# debug facility-alarm telcordia <cr>    # path-000587
+(exec)# debug fastblk <cr>    # path-000385
+(exec)# debug fh_fd_rpc all <cr>    # path-003473
+(exec)# debug fh_fd_rpc error <cr>    # path-003464
+(exec)# debug fhrp all <cr>    # path-002007
+(exec)# debug fhrp interface <interface> <cr>    # path-014501
+(exec)# debug filesystem <url:dynamic> <cr>    # path-012728
+(exec)# debug flow exporter <?option@555588f37ef0> <cr>    # path-013752
+(exec)# debug flow exporter <cr>    # path-001383
+(exec)# debug flow monitor <?option@555588f424f0> <cr>    # path-025300
+(exec)# debug flow monitor <cr>    # path-001410
+(exec)# debug flow record <cr>    # path-001356
+(exec)# debug flow record <cr>    # path-012521
+(exec)# debug flow rpc <cr>    # path-001350
+(exec)# debug flowspec all <cr>    # path-003940
+(exec)# debug flowspec error <cr>    # path-003931
+(exec)# debug flowspec event <cr>    # path-003923
+(exec)# debug flowspec internal client <cr>    # path-007849
+(exec)# debug flowspec internal config <cr>    # path-007844
+(exec)# debug flowspec internal ha <cr>    # path-007837
+(exec)# debug flowspec internal ipc <cr>    # path-007829
+(exec)# debug flowspec internal policy-client <cr>    # path-007820
+(exec)# debug flowspec internal route-target <cr>    # path-007814
+(exec)# debug flowspec internal ui <cr>    # path-007805
+(exec)# debug flowspec internal xos <cr>    # path-007797
+(exec)# debug flowspec table <cr>    # path-003904
+(exec)# debug fmm errors all <cr>    # path-004582
+(exec)# debug fmm errors db <cr>    # path-004612
+(exec)# debug fmm trace all <cr>    # path-004558
+(exec)# debug fmm trace db <cr>    # path-004587
+(exec)# debug format all <cr>    # path-003732
+(exec)# debug format error <cr>    # path-003717
+(exec)# debug fpm event <cr>    # path-000620
+(exec)# debug fqdn all <cr>    # path-003024
+(exec)# debug fqdn error <cr>    # path-002989
+(exec)# debug fqdn event <cr>    # path-002971
+(exec)# debug fqdn packet <cr>    # path-003005
+(exec)# debug fqdn verbose <cr>    # path-002952
+(exec)# debug frame-relay adjacency pvc <cr>    # path-006873
+(exec)# debug frame-relay cllm <cr>    # path-002604
+(exec)# debug frame-relay dlsw <cr>    # path-002516
+(exec)# debug frame-relay end-to-end keepalive events <cr>    # path-009739
+(exec)# debug frame-relay end-to-end keepalive packet <cr>    # path-009774
+(exec)# debug frame-relay end-to-end keepalive packet interface <interface> <cr>    # path-024299
+(exec)# debug frame-relay events <cr>    # path-002437
+(exec)# debug frame-relay fast-restart <cr>    # path-002671
+(exec)# debug frame-relay foresight <cr>    # path-002592
+(exec)# debug frame-relay fragment event <cr>    # path-006794
+(exec)# debug frame-relay fragment packet <cr>    # path-006824
+(exec)# debug frame-relay fragment packet interface <interface> <number:16..1007> <cr>    # path-024308
+(exec)# debug frame-relay hpr <cr>    # path-002485
+(exec)# debug frame-relay ip tcp <cr>    # path-006687
+(exec)# debug frame-relay ipc <cr>    # path-002593
+(exec)# debug frame-relay llc2 <cr>    # path-002502
+(exec)# debug frame-relay lmi <cr>    # path-002474
+(exec)# debug frame-relay lmi interface <interface> <cr>    # path-019072
+(exec)# debug frame-relay multilink <cr>    # path-002673
+(exec)# debug frame-relay multilink control <cr>    # path-006847
+(exec)# debug frame-relay multilink control <interface> <cr>    # path-019406
+(exec)# debug frame-relay packet <cr>    # path-002490
+(exec)# debug frame-relay packet interface <interface> <cr>    # path-019133
+(exec)# debug frame-relay ppp <cr>    # path-002625
+(exec)# debug frame-relay redundancy <cr>    # path-002683
+(exec)# debug frame-relay rsrb <cr>    # path-002536
+(exec)# debug frame-relay switching interface <interface> <number:16..1007> <cr>    # path-022641
+(exec)# debug frame-relay verbose <cr>    # path-002416
+(exec)# debug fras error <cr>    # path-004066
+(exec)# debug fras message <cr>    # path-004044
+(exec)# debug fras state <cr>    # path-004054
+(exec)# debug fras-host activation <cr>    # path-002782
+(exec)# debug fras-host error <cr>    # path-002764
+(exec)# debug fras-host packet <cr>    # path-002815
+(exec)# debug fras-host snmp <cr>    # path-002798
+(exec)# debug gbic <cr>    # path-000198
+(exec)# debug gbic all <cr>    # path-001066
+(exec)# debug glbp <cr>    # path-000336
+(exec)# debug glbp errors <cr>    # path-002622
+(exec)# debug glbp events <cr>    # path-002749
+(exec)# debug glbp events all <cr>    # path-015153
+(exec)# debug glbp internal <cr>    # path-002674
+(exec)# debug glbp internal verbose <cr>    # path-015057
+(exec)# debug glbp packets <cr>    # path-002688
+(exec)# debug glbp packets all <cr>    # path-015074
+(exec)# debug glbp terse <cr>    # path-012627
+(exec)# debug gssapi <cr>    # path-000363
+(exec)# debug gx-monitoring-DB detail <cr>    # path-002076
+(exec)# debug gx-monitoring-DB error <cr>    # path-002065
+(exec)# debug gx-monitoring-DB event <cr>    # path-002046
+(exec)# debug ha-infra <?option@555589243bd0> <?option@555589243c10> <cr>    # path-025293
+(exec)# debug ha-infra <?option@555589243bd0> prefix-str <string> <cr>    # path-017095
+(exec)# debug hqf <cr>    # path-000359
+(exec)# debug hqf admission-control <cr>    # path-002840
+(exec)# debug hqf admission-control error <cr>    # path-006933
+(exec)# debug hqf admission-control event <cr>    # path-006918
+(exec)# debug hqf client <cr>    # path-002817
+(exec)# debug hqf development <cr>    # path-002833
+(exec)# debug hqf dp <cr>    # path-002849
+(exec)# debug hqf feature bandwidth <cr>    # path-006948
+(exec)# debug hqf feature bandwidth error <cr>    # path-009887
+(exec)# debug hqf feature bandwidth event <cr>    # path-009876
+(exec)# debug hqf feature priority <cr>    # path-006939
+(exec)# debug hqf feature priority error <cr>    # path-009879
+(exec)# debug hqf feature priority event <cr>    # path-009867
+(exec)# debug hqf feature queue-limit <cr>    # path-006925
+(exec)# debug hqf feature queue-limit error <cr>    # path-009872
+(exec)# debug hqf feature queue-limit event <cr>    # path-009860
+(exec)# debug hqf feature wred <cr>    # path-006974
+(exec)# debug hqf feature wred detail <cr>    # path-009893
+(exec)# debug hqf feature wred error <cr>    # path-009900
+(exec)# debug hqf feature wred event <cr>    # path-009886
+(exec)# debug hqf infra hierarchy <cr>    # path-007002
+(exec)# debug hqf infra hierarchy error <cr>    # path-009920
+(exec)# debug hqf infra hierarchy event <cr>    # path-009906
+(exec)# debug hqf infra internal <cr>    # path-006967
+(exec)# debug hqf infra registry <cr>    # path-006930
+(exec)# debug hqf infra timer <cr>    # path-006943
+(exec)# debug hqf queuing-api <cr>    # path-002857
+(exec)# debug hqf queuing-api create <cr>    # path-006907
+(exec)# debug hqf queuing-api remove <cr>    # path-006934
+(exec)# debug hqf queuing-api reparent <cr>    # path-006945
+(exec)# debug hqf queuing-api update <cr>    # path-006919
+(exec)# debug hqf service-group <cr>    # path-002806
+(exec)# debug hqf service-group error <cr>    # path-006908
+(exec)# debug hqf service-group event <cr>    # path-006899
+(exec)# debug hqf target Cable-BG <cr>    # path-006909
+(exec)# debug hqf target dialer <cr>    # path-006920
+(exec)# debug hqf target dynamic <cr>    # path-006912
+(exec)# debug hqf target dynamic error <cr>    # path-009863
+(exec)# debug hqf target dynamic event <cr>    # path-009857
+(exec)# debug hqf target gec <cr>    # path-006935
+(exec)# debug hqf target l2vpn-pw <cr>    # path-006901
+(exec)# debug hqf target tunnel <cr>    # path-006891
+(exec)# debug hw-module all environment <cr>    # path-005076
+(exec)# debug hw-module all errors <cr>    # path-005065
+(exec)# debug hw-module all errors <cr>    # path-025299
+(exec)# debug hw-module all ipcshim <number:0..15> <number:0..255> <cr>    # path-010826
+(exec)# debug hw-module all oir entity <cr>    # path-008753
+(exec)# debug hw-module all oir error <cr>    # path-008754
+(exec)# debug hw-module all oir failure <cr>    # path-008771
+(exec)# debug hw-module all oir message <cr>    # path-008737

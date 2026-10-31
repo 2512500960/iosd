@@ -1,0 +1,10 @@
+# 模式 control-plane；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-cp)# exit <cr>    # observed_connections-009569
+(config-cp)# ip flow ingress <cr>    # observed_connections-009571
+(config-cp)# no exit <cr>    # observed_connections-009570
+(config-cp)# no ip flow ingress <cr>    # observed_connections-009573
+(config-cp)# no service-policy input <string> <cr>    # observed_connections-009574
+(config-cp)# service-policy input <string> <cr>    # observed_connections-009572

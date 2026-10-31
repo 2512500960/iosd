@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-054.md
+
+(config)# do-exec show ip mrm interface <cr>    # path-040106
+(config)# do-exec show ip mrm interface <interface> <cr>    # path-061558
+(config)# do-exec show ip mrm manager <cr>    # path-040022
+(config)# do-exec show ip mrm status-report <cr>    # path-040101
+(config)# do-exec show ip mroute <cr>    # path-032009
+(config)# do-exec show ip mroute <prefix:dynamic> <cr>    # path-061037
+(config)# do-exec show ip msdp count <cr>    # path-039648
+(config)# do-exec show ip msdp peer <address> accepted-SAs <cr>    # path-054939
+(config)# do-exec show ip msdp peer <address> advertised-SAs <cr>    # path-054904
+(config)# do-exec show ip msdp peer <cr>    # path-039587
+(config)# do-exec show ip msdp rpf-peer <address> <cr>    # path-048586
+(config)# do-exec show ip msdp sa-cache <cr>    # path-039658
+(config)# do-exec show ip msdp summary <cr>    # path-039392
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> count <cr>    # path-062057
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> peer <address> accepted-SAs <cr>    # path-062537
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> peer <address> advertised-SAs <cr>    # path-062536
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> peer <cr>    # path-062055
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> rpf-peer <address> <cr>    # path-062359
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> sa-cache <cr>    # path-062058
+(config)# do-exec show ip msdp vrf <?option@555589c8f7f0> summary <cr>    # path-062050
+(config)# do-exec show ip multicast <cr>    # path-031816
+(config)# do-exec show ip multicast gir clients <cr>    # path-048284
+(config)# do-exec show ip multicast interface <cr>    # path-039538
+(config)# do-exec show ip multicast interface <interface> <cr>    # path-061514
+(config)# do-exec show ip multicast limit <cr>    # path-039595
+(config)# do-exec show ip multicast limit <interface> <cr>    # path-061519
+(config)# do-exec show ip multicast lisp-rloc-state <cr>    # path-039575
+(config)# do-exec show ip multicast mpls mrib-client ipv4 <cr>    # path-054815
+(config)# do-exec show ip multicast mpls mrib-client ipv6 <cr>    # path-054862
+(config)# do-exec show ip multicast mpls vif <cr>    # path-048382
+(config)# do-exec show ip multicast overlay-mapping lisp <address> <cr>    # path-055093
+(config)# do-exec show ip multicast overlay-mapping lisp <address> interface <interface> <cr>    # path-062538
+(config)# do-exec show ip multicast redundancy ole <cr>    # path-049304
+(config)# do-exec show ip multicast redundancy reachability <?ipv4orv6_addr_action@5555893a5f60> <cr>    # path-062081
+(config)# do-exec show ip multicast redundancy reachability summary <cr>    # path-055290
+(config)# do-exec show ip multicast redundancy state <cr>    # path-049060
+(config)# do-exec show ip multicast redundancy statistics <cr>    # path-049040
+(config)# do-exec show ip multicast rpf monitored <cr>    # path-048274
+(config)# do-exec show ip multicast snooping limit vlan <number:1..4095> <cr>    # path-058301
+(config)# do-exec show ip multicast snooping summary <cr>    # path-049007
+(config)# do-exec show ip multicast snooping summary vlan <number:1..4095> <cr>    # path-058320
+(config)# do-exec show ip multicast timer <cr>    # path-039691
+(config)# do-exec show ip multicast topology <cr>    # path-039824
+(config)# do-exec show ip name-servers <cr>    # path-031159
+(config)# do-exec show ip nat aggregation top-100-allocator <cr>    # path-049383
+(config)# do-exec show ip nat alias-usecount <cr>    # path-040537
+(config)# do-exec show ip nat bpa <cr>    # path-040264
+(config)# do-exec show ip nat dia track <cr>    # path-049620
+(config)# do-exec show ip nat entry-static <cr>    # path-040505
+(config)# do-exec show ip nat ha <cr>    # path-040601
+(config)# do-exec show ip nat ha inside destination <cr>    # path-055663
+(config)# do-exec show ip nat ha inside destination list <number:1..2699> <cr>    # path-059508
+(config)# do-exec show ip nat ha inside source <cr>    # path-055641
+(config)# do-exec show ip nat ha inside source <cr>    # path-055688
+(config)# do-exec show ip nat ha inside source static <address> <address> <cr>    # path-059916
+(config)# do-exec show ip nat ha inside source static <address> interface <interface> <cr>    # path-062649
+(config)# do-exec show ip nat ha inside source static network <address> <address> <?ipmask_action@55558a23a380> <cr>    # path-062672
+(config)# do-exec show ip nat ha mappings <cr>    # path-049748
+(config)# do-exec show ip nat ha outside source <cr>    # path-055700
+(config)# do-exec show ip nat ha outside source list <number:1..2699> <cr>    # path-059510
+(config)# do-exec show ip nat ha outside source static <address> <address> <cr>    # path-059915
+(config)# do-exec show ip nat ha outside source static network <address> <address> <?ipmask_action@55558a23be68> <cr>    # path-062671
+(config)# do-exec show ip nat ha pool <cr>    # path-049637
+(config)# do-exec show ip nat ha pool <string> <cr>    # path-055555
+(config)# do-exec show ip nat limits all-host <cr>    # path-049475
+(config)# do-exec show ip nat map <cr>    # path-040420
+(config)# do-exec show ip nat platform <cr>    # path-040152
+(config)# do-exec show ip nat pool platform <cr>    # path-049438
+(config)# do-exec show ip nat portblock dynamic interface <interface> <cr>    # path-062392
+(config)# do-exec show ip nat portblock pat <cr>    # path-049246
+(config)# do-exec show ip nat route-dia <cr>    # path-040448
+(config)# do-exec show ip nat statistics <cr>    # path-040233
+(config)# do-exec show ip nat status <cr>    # path-040728
+(config)# do-exec show ip nat translations <cr>    # path-040520
+(config)# do-exec show ip nat translations interface <interface> <cr>    # path-062105
+(config)# do-exec show ip nbar attribute <?option@55558a79a9e0> <?option@55558a79ab48> <?option@55558a79ac48> <?option@55558a79ad48> <cr>    # path-063019
+(config)# do-exec show ip nbar attribute <?option@55558a79a9e0> <?signed_number_func_action@55558a79b578> <cr>    # path-062888
+(config)# do-exec show ip nbar attribute <?option@55558a79a9e0> <cr>    # path-061548
+(config)# do-exec show ip nbar attribute <cr>    # path-039817
+(config)# do-exec show ip nbar attribute-custom <cr>    # path-040015
+(config)# do-exec show ip nbar attribute-map <cr>    # path-040024
+(config)# do-exec show ip nbar attribute-map <string> <cr>    # path-048969
+(config)# do-exec show ip nbar classification cache sync export format table <cr>    # path-059902
+(config)# do-exec show ip nbar classification cache sync export format table attribute <?option@55558a797e00> <?option@55558a797f10> <cr>    # path-062938
+(config)# do-exec show ip nbar classification cache sync import last <cr>    # path-059455
+(config)# do-exec show ip nbar classification dns learning <cr>    # path-055057
+(config)# do-exec show ip nbar classification dns learning cache <number:1..100000> <cr>    # path-059458
+(config)# do-exec show ip nbar classification dns learning cache <number:1..100000> protocol <?option@55558a796510> <cr>    # path-062646
+(config)# do-exec show ip nbar classification dns learning cache <number:1..100000> unclassified <cr>    # path-059887
+(config)# do-exec show ip nbar classification dns learning cache clients-servers <number:1..100000> <cr>    # path-059892
+(config)# do-exec show ip nbar classification dns learning cache clients-servers <number:1..100000> protocol <?option@55558a796e50> <cr>    # path-062670
+(config)# do-exec show ip nbar classification dns learning cache ip-address <address> <cr>    # path-059891
+(config)# do-exec show ip nbar classification dns learning stats <cr>    # path-058262
+(config)# do-exec show ip nbar classification granularity <cr>    # path-048624
+(config)# do-exec show ip nbar classification granularity protocol <?option@55558a795b48> <cr>    # path-062362
+(config)# do-exec show ip nbar classification granularity protocol <cr>    # path-054982
+(config)# do-exec show ip nbar classification socket-cache <number:1..100000> <cr>    # path-055029
+(config)# do-exec show ip nbar classification socket-cache pl-sockets <cr>    # path-055124
+(config)# do-exec show ip nbar control-plane <cr>    # path-039448
+(config)# do-exec show ip nbar function <string> <cr>    # path-048675
+(config)# do-exec show ip nbar link-age <?option@55558a79bf48> <cr>    # path-061546
+(config)# do-exec show ip nbar link-age <cr>    # path-039924
+(config)# do-exec show ip nbar npc detail <cr>    # path-048472
+(config)# do-exec show ip nbar npc summary <cr>    # path-048539
+(config)# do-exec show ip nbar parameter extraction <?option@55558a799320> <cr>    # path-062065
+(config)# do-exec show ip nbar parameter extraction <?option@55558a799320> activated <cr>    # path-062365
+(config)# do-exec show ip nbar parameter extraction <cr>    # path-048810
+(config)# do-exec show ip nbar parameter extraction activated <cr>    # path-055034
+(config)# do-exec show ip nbar parameter subclassification <?option@55558a799e80> <cr>    # path-062072
+(config)# do-exec show ip nbar parameter subclassification <?option@55558a799e80> activated <cr>    # path-062368
+(config)# do-exec show ip nbar parameter subclassification <cr>    # path-048880
+(config)# do-exec show ip nbar parameter subclassification activated <cr>    # path-055070
+(config)# do-exec show ip nbar protocol-attribute <?option@55558a79b948> <cr>    # path-061539
+(config)# do-exec show ip nbar protocol-attribute <cr>    # path-039871
+(config)# do-exec show ip nbar protocol-discovery <cr>    # path-040578
+(config)# do-exec show ip nbar protocol-discovery interface <interface> <cr>    # path-062115
+(config)# do-exec show ip nbar protocol-id <?option@55558a79f970> <cr>    # path-061564
+(config)# do-exec show ip nbar protocol-id <cr>    # path-040148
+(config)# do-exec show ip nbar protocol-pack <string> <cr>    # path-049312
+(config)# do-exec show ip nbar protocol-pack <string> detail <cr>    # path-055326
+(config)# do-exec show ip nbar protocol-pack <string> taxonomy <cr>    # path-055370
+(config)# do-exec show ip nbar protocol-pack active <cr>    # path-049104
+(config)# do-exec show ip nbar protocol-pack active detail <cr>    # path-055179
+(config)# do-exec show ip nbar protocol-pack active taxonomy <cr>    # path-055226
+(config)# do-exec show ip nbar protocol-pack inactive <cr>    # path-049149
+(config)# do-exec show ip nbar protocol-pack inactive detail <cr>    # path-055221
+(config)# do-exec show ip nbar protocol-pack inactive taxonomy <cr>    # path-055308
+(config)# do-exec show ip nbar protocol-pack inactive taxonomy <string> <cr>    # path-058366
+(config)# do-exec show ip nbar protocol-pack loaded <cr>    # path-049196
+(config)# do-exec show ip nbar protocol-pack loaded detail <cr>    # path-055255
+(config)# do-exec show ip nbar protocol-pack loaded taxonomy <cr>    # path-055347
+(config)# do-exec show ip nbar protocol-pack loaded taxonomy <string> <cr>    # path-058382
+(config)# do-exec show ip nbar resources <cr>    # path-040278
+(config)# do-exec show ip nbar resources flow <cr>    # path-049266
+(config)# do-exec show ip nbar resources status <cr>    # path-049472
+(config)# do-exec show ip nbar resources status <number:10..86400> <cr>    # path-055507
+(config)# do-exec show ip nbar resources status <number:10..86400> <number:1..50> <cr>    # path-058438
+(config)# do-exec show ip nbar resources status fadebucket <cr>    # path-055479
+(config)# do-exec show ip nbar resources status fadebucket <number:1..50> <cr>    # path-058427
+(config)# do-exec show ip nbar resources status freebucket <cr>    # path-055448
+(config)# do-exec show ip nbar resources status freebucket <number:1..50> <cr>    # path-058418
+(config)# do-exec show ip nbar statistics <cr>    # path-040095
+(config)# do-exec show ip nbar version <cr>    # path-040016
+(config)# do-exec show ip nhrp <cr>    # path-032258
+(config)# do-exec show ip nhrp <interface> <cr>    # path-061036
+(config)# do-exec show ip nhrp attribute <cr>    # path-040298
+(config)# do-exec show ip nhrp instances <cr>    # path-040389
+(config)# do-exec show ip nhrp map <cr>    # path-040353
+(config)# do-exec show ip nhrp map <interface> <cr>    # path-061577
+(config)# do-exec show ip nhrp multicast <cr>    # path-040431
+(config)# do-exec show ip nhrp multicast <interface> <cr>    # path-061581
+(config)# do-exec show ip nhrp nhs <cr>    # path-040360
+(config)# do-exec show ip nhrp nhs <interface> <cr>    # path-061582
+(config)# do-exec show ip nhrp nhs <interface> redundancy <cr>    # path-062097
+(config)# do-exec show ip nhrp nhs <interface> redundancy cluster <number:0..10> <cr>    # path-062544
+(config)# do-exec show ip nhrp nhs <interface> redundancy preempted <cr>    # path-062399
+(config)# do-exec show ip nhrp nhs <interface> redundancy running <cr>    # path-062393
+(config)# do-exec show ip nhrp nhs <interface> redundancy waiting <cr>    # path-062401
+(config)# do-exec show ip nhrp nhs redundancy <cr>    # path-049608
+(config)# do-exec show ip nhrp nhs redundancy cluster <number:0..10> <cr>    # path-058447
+(config)# do-exec show ip nhrp nhs redundancy preempted <cr>    # path-055524
+(config)# do-exec show ip nhrp nhs redundancy running <cr>    # path-055462
+(config)# do-exec show ip nhrp nhs redundancy waiting <cr>    # path-055546
+(config)# do-exec show ip nhrp purge <cr>    # path-040132
+(config)# do-exec show ip nhrp rd <?vrf_rd_action@555589d4a310> redirect <cr>    # path-062104
+(config)# do-exec show ip nhrp rd <?vrf_rd_action@555589d4a310> redirect statistics <cr>    # path-062408
+(config)# do-exec show ip nhrp rd <?vrf_rd_action@555589d4a310> shortcut <cr>    # path-062102
+(config)# do-exec show ip nhrp redirect <cr>    # path-040511
+(config)# do-exec show ip nhrp redirect statistics <cr>    # path-049619
+(config)# do-exec show ip nhrp shortcut <cr>    # path-040504
+(config)# do-exec show ip nhrp stats <cr>    # path-040364
+(config)# do-exec show ip nhrp stats <interface> <cr>    # path-061583
+(config)# do-exec show ip nhrp traffic <cr>    # path-040196
+(config)# do-exec show ip nhrp traffic interface <interface> <cr>    # path-062084
+(config)# do-exec show ip ospf <cr>    # path-032259
+(config)# do-exec show ip ospf bad-checksum <cr>    # path-039839
+(config)# do-exec show ip ospf border-routers <cr>    # path-040358
+(config)# do-exec show ip ospf database <cr>    # path-041012
+(config)# do-exec show ip ospf database database-summary <cr>    # path-050007
+(config)# do-exec show ip ospf database database-summary detail <cr>    # path-055832
+(config)# do-exec show ip ospf database opaque-link prefix <prefix:dynamic> <cr>    # path-062433
+(config)# do-exec show ip ospf delete-list <cr>    # path-040546
+(config)# do-exec show ip ospf events <?option@555589dca990> <cr>    # path-061551
+(config)# do-exec show ip ospf events <cr>    # path-039974
+(config)# do-exec show ip ospf flood-list <cr>    # path-040755
+(config)# do-exec show ip ospf flood-list <interface> <cr>    # path-061639
+(config)# do-exec show ip ospf interface <cr>    # path-040788
+(config)# do-exec show ip ospf interface <interface> <cr>    # path-061638
+(config)# do-exec show ip ospf internal forwarding-addresses <cr>    # path-049973
+(config)# do-exec show ip ospf internal memory cache <cr>    # path-055767
+(config)# do-exec show ip ospf max-metric <cr>    # path-040424
+(config)# do-exec show ip ospf maxage-list <cr>    # path-040381
+(config)# do-exec show ip ospf mpls ldp interface <interface> <cr>    # path-062421
+(config)# do-exec show ip ospf mpls traffic-eng link <cr>    # path-055691
+(config)# do-exec show ip ospf multi-area <cr>    # path-040091
+(config)# do-exec show ip ospf neighbor <cr>    # path-040970
+(config)# do-exec show ip ospf neighbor <interface> <cr>    # path-061657
+(config)# do-exec show ip ospf nsf <cr>    # path-040147
+(config)# do-exec show ip ospf nsr <cr>    # path-040570
+(config)# do-exec show ip ospf nsr objects <cr>    # path-049658
+(config)# do-exec show ip ospf nsr statistics <cr>    # path-049706
+(config)# do-exec show ip ospf request-list <cr>    # path-040873
+(config)# do-exec show ip ospf request-list <interface> <cr>    # path-061648
+(config)# do-exec show ip ospf retransmission-list <cr>    # path-040842
+(config)# do-exec show ip ospf retransmission-list <interface> <cr>    # path-061647
+(config)# do-exec show ip ospf rib <cr>    # path-040488
+(config)# do-exec show ip ospf rib <cr>    # path-040489
+(config)# do-exec show ip ospf sham-links <cr>    # path-040007
+(config)# do-exec show ip ospf statistics <cr>    # path-040428
+(config)# do-exec show ip ospf summary-address <cr>    # path-040283
+(config)# do-exec show ip ospf timers lsa-group <cr>    # path-049162
+(config)# do-exec show ip ospf timers rate-limit <cr>    # path-049222
+(config)# do-exec show ip ospf topology-info <cr>    # path-040484
+(config)# do-exec show ip ospf traffic <cr>    # path-040758
+(config)# do-exec show ip ospf traffic <interface> <cr>    # path-061640
+(config)# do-exec show ip ospf virtual-links <cr>    # path-040068
+(config)# do-exec show ip pim autorp <cr>    # path-039797
+(config)# do-exec show ip pim bfd neighbor <interface> inactive <cr>    # path-062403
+(config)# do-exec show ip pim bfd neighbor inactive <cr>    # path-055566
+(config)# do-exec show ip pim boundary <interface> <address> <address> in <cr>    # path-062540
+(config)# do-exec show ip pim bsr-router <cr>    # path-039848
+(config)# do-exec show ip pim drlb gdr-candidates <cr>    # path-049148
+(config)# do-exec show ip pim drlb gdr-candidates <interface> <cr>    # path-062078
+(config)# do-exec show ip pim gir <cr>    # path-040267
+(config)# do-exec show ip pim interface <cr>    # path-040467
+(config)# do-exec show ip pim interface <interface> <cr>    # path-061603
+(config)# do-exec show ip pim interface <interface> bfd <cr>    # path-062110
+(config)# do-exec show ip pim interface <interface> detail <cr>    # path-062087
+(config)# do-exec show ip pim interface <interface> traffic <cr>    # path-062083
+(config)# do-exec show ip pim interface bfd <cr>    # path-049727
+(config)# do-exec show ip pim interface detail <cr>    # path-049340
+(config)# do-exec show ip pim interface traffic <cr>    # path-049277
+(config)# do-exec show ip pim mdt <cr>    # path-040631
+(config)# do-exec show ip pim mdt bgp <cr>    # path-049837
+(config)# do-exec show ip pim mdt bgp c-mroutes <cr>    # path-055685
+(config)# do-exec show ip pim mdt history interval <number:1..71582> <cr>    # path-058482
+(config)# do-exec show ip pim mdt internal bier <cr>    # path-055694
+(config)# do-exec show ip pim mdt internal crt <cr>    # path-055737
+(config)# do-exec show ip pim mdt internal gre <cr>    # path-055677
+(config)# do-exec show ip pim mdt internal ir <cr>    # path-055708
+(config)# do-exec show ip pim mdt internal leaf-ad <cr>    # path-055720
+(config)# do-exec show ip pim mdt internal mldp <cr>    # path-055730
+(config)# do-exec show ip pim mdt internal pe <cr>    # path-055787
+(config)# do-exec show ip pim mdt internal pe all <cr>    # path-058576
+(config)# do-exec show ip pim mdt internal replication <cr>    # path-055749
+(config)# do-exec show ip pim mdt internal tdb <cr>    # path-055784
+(config)# do-exec show ip pim mdt internal vxlan <cr>    # path-055649
+(config)# do-exec show ip pim mdt receive <cr>    # path-049681
+(config)# do-exec show ip pim mdt receive detail <cr>    # path-055577
+(config)# do-exec show ip pim mdt send <cr>    # path-049588
+(config)# do-exec show ip pim mvpn <cr>    # path-040248
+(config)# do-exec show ip pim mvpn bier <cr>    # path-049185
+(config)# do-exec show ip pim mvpn crt <cr>    # path-048847
+(config)# do-exec show ip pim mvpn gre <cr>    # path-049137
+(config)# do-exec show ip pim mvpn ir <cr>    # path-049096
+(config)# do-exec show ip pim mvpn leaf-ad <cr>    # path-048987
+(config)# do-exec show ip pim mvpn mldp <cr>    # path-048703
+(config)# do-exec show ip pim mvpn pe <cr>    # path-048775
+(config)# do-exec show ip pim mvpn replication <cr>    # path-048920
+(config)# do-exec show ip pim mvpn srv6 <cr>    # path-049053
+(config)# do-exec show ip pim mvpn tdb <cr>    # path-049238
+(config)# do-exec show ip pim mvpn vxlan <cr>    # path-048639
+(config)# do-exec show ip pim neighbor <cr>    # path-039931
+(config)# do-exec show ip pim neighbor <interface> <cr>    # path-061540
+(config)# do-exec show ip pim pfp-sa announcements <cr>    # path-048967
+(config)# do-exec show ip pim pfp-sa cache <cr>    # path-049089
+(config)# do-exec show ip pim pfp-sa originator <cr>    # path-049038
+(config)# do-exec show ip pim rp <cr>    # path-040245
+(config)# do-exec show ip pim rp-hash <address> <cr>    # path-049116
+(config)# do-exec show ip pim tunnel <cr>    # path-040242
+(config)# do-exec show ip pim tunnel <interface> <cr>    # path-061569
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> autorp <cr>    # path-062061
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> bsr-router <cr>    # path-062063
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> gir <cr>    # path-062088
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt <cr>    # path-062125
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt bgp <cr>    # path-062419
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt bgp c-mroutes <cr>    # path-062551
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt history interval <number:1..71582> <cr>    # path-062624
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal bier <cr>    # path-062552
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal crt <cr>    # path-062559
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal gre <cr>    # path-062550
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal ir <cr>    # path-062553
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal leaf-ad <cr>    # path-062554
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal mldp <cr>    # path-062558
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal pe <cr>    # path-062562
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal pe all <cr>    # path-062627
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal replication <cr>    # path-062560
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal tdb <cr>    # path-062561
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt internal vxlan <cr>    # path-062549
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt receive <cr>    # path-062411
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt receive detail <cr>    # path-062548
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mdt send <cr>    # path-062404
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn <cr>    # path-062086
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn bier <cr>    # path-062390
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn crt <cr>    # path-062369
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn gre <cr>    # path-062386
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn ir <cr>    # path-062382
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn leaf-ad <cr>    # path-062375
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn mldp <cr>    # path-062363
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn pe <cr>    # path-062366
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn replication <cr>    # path-062371
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn srv6 <cr>    # path-062378
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn tdb <cr>    # path-062391
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> mvpn vxlan <cr>    # path-062361
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> pfp-sa announcements <cr>    # path-062374
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> pfp-sa cache <cr>    # path-062381
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> pfp-sa originator <cr>    # path-062377
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> rp <cr>    # path-062085
+(config)# do-exec show ip pim vrf <?option@555589ca4f08> rp-hash <address> <cr>    # path-062385
+(config)# do-exec show ip policy <cr>    # path-031925
+(config)# do-exec show ip policy adj-subblock <cr>    # path-040076
+(config)# do-exec show ip policy-list <cr>    # path-031593
+(config)# do-exec show ip portbundle ip <address> bundle <number:1..65535> <cr>    # path-058105
+(config)# do-exec show ip portbundle status <cr>    # path-038928
+(config)# do-exec show ip portbundle status free <cr>    # path-047864
+(config)# do-exec show ip ports all <cr>    # path-039052
+(config)# do-exec show ip ports ephemeral-max <cr>    # path-038995
+(config)# do-exec show ip ports reservation <cr>    # path-039108
+(config)# do-exec show ip prefix-list <cr>    # path-032126
+(config)# do-exec show ip prefix-list <string> <prefix:dynamic> <cr>    # path-061636
+(config)# do-exec show ip prefix-list <string> seq <number:1..4294967295> <cr>    # path-055672
+(config)# do-exec show ip prefix-list detail <cr>    # path-040564
+(config)# do-exec show ip prefix-list summary <cr>    # path-040541
+(config)# do-exec show ip protocols <cr>    # path-031611
+(config)# do-exec show ip protocols summary <cr>    # path-039216
+(config)# do-exec show ip reassembly <interface> <cr>    # path-061014
+(config)# do-exec show ip redirects <cr>    # path-031072
+(config)# do-exec show ip rib database <cr>    # path-039276
+(config)# do-exec show ip rib route <?router_action_proc_vpn@555589783268> <cr>    # path-061507
+(config)# do-exec show ip rip database <cr>    # path-040281
+(config)# do-exec show ip rip neighbors <cr>    # path-040260
+(config)# do-exec show ip rip timers <cr>    # path-040125
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> <address> getnext <cr>    # path-062978
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> <address> getprev <cr>    # path-062979
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> <address> longer-prefixes <cr>    # path-062980
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> <address> resolve <cr>    # path-062977
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> <cr>    # path-062954
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> cidr <cr>    # path-062964
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> dhcp <cr>    # path-062965
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> download <cr>    # path-062961
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> loops <cr>    # path-061522
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> majornets-only <cr>    # path-062962
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> profile <cr>    # path-061520
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> replicate <cr>    # path-061534
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> static-table <cr>    # path-061531
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> summary <cr>    # path-061526
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> supernets-only <cr>    # path-062963
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> track-table <cr>    # path-061530
+(config)# do-exec show ip route list <number:1..199> <cr>    # path-048326
+(config)# do-exec show ip route omp-tag <number:0..4294967295> <cr>    # path-048428
+(config)# do-exec show ip route tag <address> <cr>    # path-062849
+(config)# do-exec show ip route tag <number:0..4294967295> <cr>    # path-048427
+(config)# do-exec show ip route tree <address> <address> <cr>    # path-054818
+(config)# do-exec show ip route tree <cr>    # path-039437
+(config)# do-exec show ip route tree summary <cr>    # path-048285
+(config)# do-exec show ip rpf <address> <address> rd <?vrf_rd_action@555589ca4700> <cr>    # path-062388
+(config)# do-exec show ip rpf queued <cr>    # path-039586
+(config)# do-exec show ip rsvp <cr>    # path-032316
+(config)# do-exec show ip rsvp aggregation ip <cr>    # path-049607
+(config)# do-exec show ip rsvp aggregation ip endpoints <cr>    # path-055670
+(config)# do-exec show ip rsvp aggregation ip endpoints dscp <?common_dscp_value_action@555589fbded0> <cr>    # path-062556
+(config)# do-exec show ip rsvp aggregation ip interface <cr>    # path-055595
+(config)# do-exec show ip rsvp aggregation ip interface <interface> <cr>    # path-062402
+(config)# do-exec show ip rsvp aggregation ip map <cr>    # path-055504
+(config)# do-exec show ip rsvp aggregation ip map dscp <?common_dscp_value_action@555589fbd190> <cr>    # path-062543
+(config)# do-exec show ip rsvp aggregation ip reservation <cr>    # path-055530
+(config)# do-exec show ip rsvp aggregation ip reservation dscp <?common_dscp_value_action@555589fbd4d0> <cr>    # path-062545
+(config)# do-exec show ip rsvp atm-peak-rate-limit <cr>    # path-040841
+(config)# do-exec show ip rsvp atm-peak-rate-limit <interface> <cr>    # path-061646
+(config)# do-exec show ip rsvp authentication <cr>    # path-040427
+(config)# do-exec show ip rsvp counters <cr>    # path-041010
+(config)# do-exec show ip rsvp counters interface <interface> <cr>    # path-062143
+(config)# do-exec show ip rsvp handles <cr>    # path-040751
+(config)# do-exec show ip rsvp hello <cr>    # path-041083
+(config)# do-exec show ip rsvp hello bfd nbr <cr>    # path-055931
+(config)# do-exec show ip rsvp hello bfd nbr detail <cr>    # path-058648
+(config)# do-exec show ip rsvp hello client lsp detail <cr>    # path-058661
+(config)# do-exec show ip rsvp hello client lsp summary <cr>    # path-058658
+(config)# do-exec show ip rsvp hello client nbr <cr>    # path-055941
+(config)# do-exec show ip rsvp hello client nbr detail <cr>    # path-058654
+(config)# do-exec show ip rsvp hello graceful-restart <cr>    # path-050164
+(config)# do-exec show ip rsvp hello instance internal <cr>    # path-055870
+(config)# do-exec show ip rsvp hello instance summary <cr>    # path-055893
+(config)# do-exec show ip rsvp hello statistics <cr>    # path-050069
+(config)# do-exec show ip rsvp host receivers <cr>    # path-050083
+(config)# do-exec show ip rsvp host senders <cr>    # path-050053
+(config)# do-exec show ip rsvp host vrf * receivers <cr>    # path-062436
+(config)# do-exec show ip rsvp host vrf * senders <cr>    # path-062432
+(config)# do-exec show ip rsvp installed <cr>    # path-040816
+(config)# do-exec show ip rsvp installed <interface> <cr>    # path-061643
+(config)# do-exec show ip rsvp interface <cr>    # path-040760
+(config)# do-exec show ip rsvp interface <interface> <cr>    # path-061644
+(config)# do-exec show ip rsvp listeners <address> <cr>    # path-050085
+(config)# do-exec show ip rsvp listeners <address> <number:0..255> <cr>    # path-055838
+(config)# do-exec show ip rsvp listeners <address> <number:0..255> <number:0..65535> <cr>    # path-058585
+(config)# do-exec show ip rsvp listeners <cr>    # path-040906
+(config)# do-exec show ip rsvp listeners vrf * <address> <cr>    # path-062437
+(config)# do-exec show ip rsvp listeners vrf * <address> <number:0..255> <cr>    # path-062567
+(config)# do-exec show ip rsvp listeners vrf * <address> <number:0..255> <number:0..65535> <cr>    # path-062629
+(config)# do-exec show ip rsvp listeners vrf * <cr>    # path-062146

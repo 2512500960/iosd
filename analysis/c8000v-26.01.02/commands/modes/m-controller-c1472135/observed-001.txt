@@ -1,0 +1,258 @@
+# 模式 controller；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-controller)# ais-core-failure <cr>    # observed_connections-004318
+(config-controller)# ais-core-failure <cr>    # observed_connections-004321
+(config-controller)# ais-shut <cr>    # observed_connections-004317
+(config-controller)# ais-shut <cr>    # observed_connections-004319
+(config-controller)# alarm-trigger blue <number:0..23> <cr>    # observed_connections-004546
+(config-controller)# alarm-trigger blue <number:0..23> <cr>    # observed_connections-004549
+(config-controller)# atm <cr>    # observed_connections-004335
+(config-controller)# atm <cr>    # observed_connections-004337
+(config-controller)# attach profile <string> <cr>    # observed_connections-004471
+(config-controller)# attach profile <string> <cr>    # observed_connections-004474
+(config-controller)# bert errors <cr>    # observed_connections-004452
+(config-controller)# bert errors <cr>    # observed_connections-004456
+(config-controller)# bert pattern <?option@55558b441cb0> interval <number:1..14400> <cr>    # observed_connections-004564
+(config-controller)# bert pattern <?option@55558b44cc20> interval <number:1..14400> <cr>    # observed_connections-004563
+(config-controller)# bitswap <cr>    # observed_connections-004328
+(config-controller)# cablelength short 550ft <cr>    # observed_connections-004489
+(config-controller)# cablelength short <?option@55558b43bc20> <cr>    # observed_connections-004545
+(config-controller)# cas <cr>    # observed_connections-004325
+(config-controller)# cas-custom <number:0..23> <cr>    # observed_connections-004455
+(config-controller)# cas-custom <number:0..30> <cr>    # observed_connections-004441
+(config-controller)# cas-group <number:0..23> timeslots <number:1..24> <cr>    # observed_connections-004569
+(config-controller)# cas-group <number:0..30> timeslots <number:1..31> <cr>    # observed_connections-004567
+(config-controller)# channel-group <number:dynamic> <cr>    # observed_connections-004543
+(config-controller)# channel-group <number:dynamic> <cr>    # observed_connections-004544
+(config-controller)# clock source internal <cr>    # observed_connections-004485
+(config-controller)# clock source internal <cr>    # observed_connections-004487
+(config-controller)# clock source recovered <number:dynamic> <cr>    # observed_connections-004555
+(config-controller)# clock source recovered <number:dynamic> <cr>    # observed_connections-004556
+(config-controller)# compand a-law <cr>    # observed_connections-004422
+(config-controller)# debug-state-change <cr>    # observed_connections-004322
+(config-controller)# default ais-core-failure <cr>    # observed_connections-004345
+(config-controller)# default ais-core-failure <cr>    # observed_connections-004353
+(config-controller)# default ais-shut <cr>    # observed_connections-004340
+(config-controller)# default ais-shut <cr>    # observed_connections-004346
+(config-controller)# default alarm-trigger <cr>    # observed_connections-004439
+(config-controller)# default alarm-trigger <cr>    # observed_connections-004453
+(config-controller)# default atm <cr>    # observed_connections-004443
+(config-controller)# default atm <cr>    # observed_connections-004451
+(config-controller)# default attach profile <string> <cr>    # observed_connections-004532
+(config-controller)# default attach profile <string> <cr>    # observed_connections-004535
+(config-controller)# default bert <cr>    # observed_connections-004431
+(config-controller)# default bert <cr>    # observed_connections-004444
+(config-controller)# default bitswap <cr>    # observed_connections-004399
+(config-controller)# default cablelength short 550ft <cr>    # observed_connections-004537
+(config-controller)# default cas <cr>    # observed_connections-004371
+(config-controller)# default cas-custom <number:0..23> <cr>    # observed_connections-004523
+(config-controller)# default cas-custom <number:0..30> <cr>    # observed_connections-004513
+(config-controller)# default cas-group <number:0..23> <cr>    # observed_connections-004521
+(config-controller)# default cas-group <number:0..30> <cr>    # observed_connections-004510
+(config-controller)# default clock source <cr>    # observed_connections-004488
+(config-controller)# default clock source <cr>    # observed_connections-004490
+(config-controller)# default compand <cr>    # observed_connections-004425
+(config-controller)# default debug-state-change <cr>    # observed_connections-004357
+(config-controller)# default description <cr>    # observed_connections-004349
+(config-controller)# default detect <cr>    # observed_connections-004423
+(config-controller)# default detect <cr>    # observed_connections-004429
+(config-controller)# default diagnostics <cr>    # observed_connections-004383
+(config-controller)# default ds0-group <number:0..23> <cr>    # observed_connections-004509
+(config-controller)# default ds0-group <number:0..30> <cr>    # observed_connections-004498
+(config-controller)# default dsl-group auto <cr>    # observed_connections-004482
+(config-controller)# default fdl <cr>    # observed_connections-004397
+(config-controller)# default firmware phy <cr>    # observed_connections-004461
+(config-controller)# default firmware phy filename <cr>    # observed_connections-004534
+(config-controller)# default forward-alarm ais <cr>    # observed_connections-004514
+(config-controller)# default forward-alarm ais <cr>    # observed_connections-004517
+(config-controller)# default forward-alarms <cr>    # observed_connections-004432
+(config-controller)# default forward-alarms <cr>    # observed_connections-004445
+(config-controller)# default framing <cr>    # observed_connections-004375
+(config-controller)# default framing <cr>    # observed_connections-004387
+(config-controller)# default interface-default-mtu <cr>    # observed_connections-004370
+(config-controller)# default interface-default-mtu <cr>    # observed_connections-004382
+(config-controller)# default line-mode bonding <cr>    # observed_connections-004469
+(config-controller)# default line-termination <cr>    # observed_connections-004410
+(config-controller)# default linecode <cr>    # observed_connections-004405
+(config-controller)# default linecode <cr>    # observed_connections-004406
+(config-controller)# default linestate <cr>    # observed_connections-004446
+(config-controller)# default logging-events <cr>    # observed_connections-004419
+(config-controller)# default logging-events <cr>    # observed_connections-004426
+(config-controller)# default loopback <cr>    # observed_connections-004417
+(config-controller)# default loopback <cr>    # observed_connections-004421
+(config-controller)# default mode <cr>    # observed_connections-004364
+(config-controller)# default modem <string> <cr>    # observed_connections-004475
+(config-controller)# default national reserve <cr>    # observed_connections-004525
+(config-controller)# default operating mode <cr>    # observed_connections-004467
+(config-controller)# default pri-group <cr>    # observed_connections-004454
+(config-controller)# default rem-loop-detect-disable <cr>    # observed_connections-004409
+(config-controller)# default scrambling cell-payload <cr>    # observed_connections-004512
+(config-controller)# default scrambling cell-payload <cr>    # observed_connections-004516
+(config-controller)# default secondary-admin-state maintenance <cr>    # observed_connections-004480
+(config-controller)# default secondary-admin-state maintenance <cr>    # observed_connections-004483
+(config-controller)# default service-type <cr>    # observed_connections-004386
+(config-controller)# default service-type <cr>    # observed_connections-004398
+(config-controller)# default shutdown <cr>    # observed_connections-004352
+(config-controller)# default shutdown <cr>    # observed_connections-004361
+(config-controller)# default shutdown <cr>    # observed_connections-004388
+(config-controller)# default snmp trap link-status <cr>    # observed_connections-004527
+(config-controller)# default sra <cr>    # observed_connections-004395
+(config-controller)# default sync interval <cr>    # observed_connections-004367
+(config-controller)# default sync mode <cr>    # observed_connections-004479
+(config-controller)# default tdm-group <number:0..23> <cr>    # observed_connections-004519
+(config-controller)# default tdm-group <number:0..30> <cr>    # observed_connections-004506
+(config-controller)# default termination <cr>    # observed_connections-004363
+(config-controller)# default threshold sd-ber <cr>    # observed_connections-004465
+(config-controller)# default threshold sd-ber <cr>    # observed_connections-004470
+(config-controller)# default training log filename <cr>    # observed_connections-004531
+(config-controller)# default vcat-group <number:1..255> <cr>    # observed_connections-004493
+(config-controller)# default vcat-group <number:1..255> <cr>    # observed_connections-004494
+(config-controller)# default yellow generation <cr>    # observed_connections-004497
+(config-controller)# description <string> <cr>    # observed_connections-004344
+(config-controller)# detect v54 channel-group <number:dynamic> <cr>    # observed_connections-004558
+(config-controller)# detect v54 channel-group <number:dynamic> <cr>    # observed_connections-004560
+(config-controller)# diagnostics DELT <cr>    # observed_connections-004374
+(config-controller)# ds0 busyout <number:1..24> <cr>    # observed_connections-004550
+(config-controller)# ds0 busyout <number:1..31> <cr>    # observed_connections-004547
+(config-controller)# ds0-group <number:0..23> timeslots <number:1..24> <cr>    # observed_connections-004568
+(config-controller)# ds0-group <number:0..30> timeslots <number:1..31> <cr>    # observed_connections-004566
+(config-controller)# dsl-group <number:dynamic> <cr>    # observed_connections-004539
+(config-controller)# dsl-group <number:dynamic> <cr>    # observed_connections-004541
+(config-controller)# dsl-group auto <cr>    # observed_connections-004385
+(config-controller)# exit <cr>    # observed_connections-004316
+(config-controller)# fdl att <cr>    # observed_connections-004392
+(config-controller)# firmware phy <cr>    # observed_connections-004351
+(config-controller)# firmware phy filename <url:dynamic> <cr>    # observed_connections-004551
+(config-controller)# firmware phy filename <url:dynamic> <cr>    # observed_connections-004554
+(config-controller)# forward-alarm ais <cr>    # observed_connections-004442
+(config-controller)# forward-alarm ais <cr>    # observed_connections-004450
+(config-controller)# forward-alarms <cr>    # observed_connections-004333
+(config-controller)# forward-alarms <cr>    # observed_connections-004336
+(config-controller)# framing no-crc4 <cr>    # observed_connections-004394
+(config-controller)# framing unframed <cr>    # observed_connections-004381
+(config-controller)# interface-default-mtu <number:dynamic> <cr>    # observed_connections-004540
+(config-controller)# interface-default-mtu <number:dynamic> <cr>    # observed_connections-004542
+(config-controller)# line-mode bonding <cr>    # observed_connections-004359
+(config-controller)# line-termination 75-ohm <cr>    # observed_connections-004408
+(config-controller)# linecode ami <cr>    # observed_connections-004402
+(config-controller)# linecode ami <cr>    # observed_connections-004403
+(config-controller)# linestate debounce <number:1..1000> <cr>    # observed_connections-004502
+(config-controller)# logging-events <cr>    # observed_connections-004330
+(config-controller)# logging-events <cr>    # observed_connections-004331
+(config-controller)# loopback <cr>    # observed_connections-004332
+(config-controller)# loopback <cr>    # observed_connections-004334
+(config-controller)# loopback local timeslots <number:1..24> <cr>    # observed_connections-004559
+(config-controller)# loopback local timeslots <number:1..31> <cr>    # observed_connections-004557
+(config-controller)# mode efm <cr>    # observed_connections-004360
+(config-controller)# modem <string> <cr>    # observed_connections-004369
+(config-controller)# national reserve <number:0..1> <number:0..1> <number:0..1> <number:0..1> <number:0..1> <number:0..1> <cr>    # observed_connections-004538
+(config-controller)# no ais-core-failure <cr>    # observed_connections-004341
+(config-controller)# no ais-core-failure <cr>    # observed_connections-004348
+(config-controller)# no ais-shut <cr>    # observed_connections-004339
+(config-controller)# no ais-shut <cr>    # observed_connections-004342
+(config-controller)# no alarm-trigger <cr>    # observed_connections-004433
+(config-controller)# no alarm-trigger <cr>    # observed_connections-004447
+(config-controller)# no atm <cr>    # observed_connections-004434
+(config-controller)# no atm <cr>    # observed_connections-004438
+(config-controller)# no attach profile <string> <cr>    # observed_connections-004529
+(config-controller)# no attach profile <string> <cr>    # observed_connections-004533
+(config-controller)# no bert <cr>    # observed_connections-004428
+(config-controller)# no bert <cr>    # observed_connections-004435
+(config-controller)# no bitswap <cr>    # observed_connections-004391
+(config-controller)# no cablelength short 550ft <cr>    # observed_connections-004536
+(config-controller)# no cas <cr>    # observed_connections-004366
+(config-controller)# no cas-custom <number:0..23> <cr>    # observed_connections-004518
+(config-controller)# no cas-custom <number:0..30> <cr>    # observed_connections-004504
+(config-controller)# no cas-group <number:0..23> <cr>    # observed_connections-004515
+(config-controller)# no cas-group <number:0..30> <cr>    # observed_connections-004501
+(config-controller)# no clock source <cr>    # observed_connections-004484
+(config-controller)# no clock source <cr>    # observed_connections-004486
+(config-controller)# no compand <cr>    # observed_connections-004418
+(config-controller)# no debug-state-change <cr>    # observed_connections-004350
+(config-controller)# no description <cr>    # observed_connections-004343
+(config-controller)# no detect <cr>    # observed_connections-004416
+(config-controller)# no detect <cr>    # observed_connections-004424
+(config-controller)# no diagnostics <cr>    # observed_connections-004373
+(config-controller)# no ds0-group <number:0..23> <cr>    # observed_connections-004500
+(config-controller)# no ds0-group <number:0..30> <cr>    # observed_connections-004496
+(config-controller)# no dsl-group auto <cr>    # observed_connections-004478
+(config-controller)# no fdl <cr>    # observed_connections-004389
+(config-controller)# no firmware phy <cr>    # observed_connections-004457
+(config-controller)# no firmware phy filename <cr>    # observed_connections-004530
+(config-controller)# no forward-alarm ais <cr>    # observed_connections-004505
+(config-controller)# no forward-alarm ais <cr>    # observed_connections-004508
+(config-controller)# no forward-alarms <cr>    # observed_connections-004430
+(config-controller)# no forward-alarms <cr>    # observed_connections-004436
+(config-controller)# no framing <cr>    # observed_connections-004368
+(config-controller)# no framing <cr>    # observed_connections-004377
+(config-controller)# no interface-default-mtu <cr>    # observed_connections-004365
+(config-controller)# no interface-default-mtu <cr>    # observed_connections-004372
+(config-controller)# no line-mode bonding <cr>    # observed_connections-004463
+(config-controller)# no line-termination <cr>    # observed_connections-004407
+(config-controller)# no linecode <cr>    # observed_connections-004400
+(config-controller)# no linecode <cr>    # observed_connections-004401
+(config-controller)# no linestate <cr>    # observed_connections-004437
+(config-controller)# no logging-events <cr>    # observed_connections-004414
+(config-controller)# no logging-events <cr>    # observed_connections-004420
+(config-controller)# no loopback <cr>    # observed_connections-004411
+(config-controller)# no loopback <cr>    # observed_connections-004415
+(config-controller)# no mode <cr>    # observed_connections-004358
+(config-controller)# no modem <string> <cr>    # observed_connections-004472
+(config-controller)# no national reserve <cr>    # observed_connections-004522
+(config-controller)# no operating mode <cr>    # observed_connections-004459
+(config-controller)# no pri-group <cr>    # observed_connections-004448
+(config-controller)# no rem-loop-detect-disable <cr>    # observed_connections-004404
+(config-controller)# no scrambling cell-payload <cr>    # observed_connections-004503
+(config-controller)# no scrambling cell-payload <cr>    # observed_connections-004507
+(config-controller)# no secondary-admin-state maintenance <cr>    # observed_connections-004477
+(config-controller)# no secondary-admin-state maintenance <cr>    # observed_connections-004481
+(config-controller)# no service-type <cr>    # observed_connections-004376
+(config-controller)# no service-type <cr>    # observed_connections-004390
+(config-controller)# no shutdown <cr>    # observed_connections-004347
+(config-controller)# no shutdown <cr>    # observed_connections-004354
+(config-controller)# no shutdown <cr>    # observed_connections-004378
+(config-controller)# no snmp trap link-status <cr>    # observed_connections-004526
+(config-controller)# no sra <cr>    # observed_connections-004384
+(config-controller)# no sync interval <cr>    # observed_connections-004362
+(config-controller)# no sync mode <cr>    # observed_connections-004473
+(config-controller)# no tdm-group <number:0..23> <cr>    # observed_connections-004511
+(config-controller)# no tdm-group <number:0..30> <cr>    # observed_connections-004499
+(config-controller)# no termination <cr>    # observed_connections-004355
+(config-controller)# no threshold sd-ber <cr>    # observed_connections-004458
+(config-controller)# no threshold sd-ber <cr>    # observed_connections-004466
+(config-controller)# no training log filename <cr>    # observed_connections-004528
+(config-controller)# no vcat-group <number:1..255> <cr>    # observed_connections-004491
+(config-controller)# no vcat-group <number:1..255> <cr>    # observed_connections-004492
+(config-controller)# no yellow generation <cr>    # observed_connections-004495
+(config-controller)# operating mode adsl1 <cr>    # observed_connections-004464
+(config-controller)# operating mode auto <?option@55558adc3330> <cr>    # observed_connections-004552
+(config-controller)# pri-group <cr>    # observed_connections-004338
+(config-controller)# pri-group <cr>    # observed_connections-004565
+(config-controller)# pri-group timeslots <number:1..31> <cr>    # observed_connections-004548
+(config-controller)# rem-loop-detect-disable <cr>    # observed_connections-004329
+(config-controller)# scrambling cell-payload <cr>    # observed_connections-004440
+(config-controller)# scrambling cell-payload <cr>    # observed_connections-004449
+(config-controller)# secondary-admin-state maintenance <cr>    # observed_connections-004379
+(config-controller)# secondary-admin-state maintenance <cr>    # observed_connections-004393
+(config-controller)# service-type cas-data <cr>    # observed_connections-004396
+(config-controller)# service-type ccs-voice <cr>    # observed_connections-004380
+(config-controller)# shutdown <cr>    # observed_connections-004320
+(config-controller)# shutdown <cr>    # observed_connections-004323
+(config-controller)# shutdown <cr>    # observed_connections-004326
+(config-controller)# snmp trap link-status <cr>    # observed_connections-004460
+(config-controller)# sra <cr>    # observed_connections-004327
+(config-controller)# sync interval <number:0..360> <cr>    # observed_connections-004324
+(config-controller)# sync mode none <cr>    # observed_connections-004476
+(config-controller)# tdm-group <number:0..23> timeslots <number:1..24> <cr>    # observed_connections-004562
+(config-controller)# tdm-group <number:0..23> unstructured <cr>    # observed_connections-004524
+(config-controller)# tdm-group <number:0..30> timeslots <number:1..31> <cr>    # observed_connections-004561
+(config-controller)# tdm-group <number:0..30> unstructured <cr>    # observed_connections-004520
+(config-controller)# termination co <cr>    # observed_connections-004356
+(config-controller)# threshold sd-ber <number:5..8> <cr>    # observed_connections-004468
+(config-controller)# threshold sd-ber <number:5..9> <cr>    # observed_connections-004462
+(config-controller)# training log filename <url:dynamic> <cr>    # observed_connections-004553
+(config-controller)# vcat-group <number:1..255> <cr>    # observed_connections-004412
+(config-controller)# vcat-group <number:1..255> <cr>    # observed_connections-004413
+(config-controller)# yellow generation <cr>    # observed_connections-004427

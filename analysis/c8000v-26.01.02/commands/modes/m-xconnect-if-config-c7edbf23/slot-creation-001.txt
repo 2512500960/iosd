@@ -1,0 +1,26 @@
+# 模式 xconnect-if-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-if-xconn)# backup delay <number:0..180> <number:0..180> <cr>    # static_slot_creation_candidates-004260
+(config-if-xconn)# backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004259
+(config-if-xconn)# default <cr>    # static_slot_creation_candidates-004247
+(config-if-xconn)# default backup delay <cr>    # static_slot_creation_candidates-004255
+(config-if-xconn)# default backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004264
+(config-if-xconn)# default match protocol ipv6 <cr>    # static_slot_creation_candidates-004257
+(config-if-xconn)# default mtu <cr>    # static_slot_creation_candidates-004249
+(config-if-xconn)# default redundancy all-active <cr>    # static_slot_creation_candidates-004253
+(config-if-xconn)# default remote link failure notification <cr>    # static_slot_creation_candidates-004262
+(config-if-xconn)# match protocol ipv6 <cr>    # static_slot_creation_candidates-004250
+(config-if-xconn)# mtu <?number_help_func_action@55558c277a78> <cr>    # static_slot_creation_candidates-004265
+(config-if-xconn)# no <cr>    # static_slot_creation_candidates-004246
+(config-if-xconn)# no backup delay <cr>    # static_slot_creation_candidates-004254
+(config-if-xconn)# no backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004263
+(config-if-xconn)# no match protocol ipv6 <cr>    # static_slot_creation_candidates-004256
+(config-if-xconn)# no mtu <cr>    # static_slot_creation_candidates-004248
+(config-if-xconn)# no redundancy all-active <cr>    # static_slot_creation_candidates-004251
+(config-if-xconn)# no remote link failure notification <cr>    # static_slot_creation_candidates-004261
+(config-if-xconn)# redundancy all-active replicate <cr>    # static_slot_creation_candidates-004252
+(config-if-xconn)# remote circuit id <number:dynamic> <cr>    # static_slot_creation_candidates-004266
+(config-if-xconn)# remote link failure notification <cr>    # static_slot_creation_candidates-004258
+(config-if-xconn)# <cr>    # static_slot_creation_candidates-004245

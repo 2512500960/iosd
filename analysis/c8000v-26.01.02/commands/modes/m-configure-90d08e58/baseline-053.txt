@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-053.md
+
+(config)# do-exec show event manager history traps <cr>    # path-052008
+(config)# do-exec show event manager policy pending <cr>    # path-051996
+(config)# do-exec show event manager policy pending class range A - A <cr>    # path-063001
+(config)# do-exec show event manager scheduler thread <cr>    # path-052010
+(config)# do-exec show event manager session cli username <cr>    # path-056731
+(config)# do-exec show event manager statistics server <cr>    # path-052005
+(config)# do-exec show event manager trace <cr>    # path-043727
+(config)# do-exec show event manager version <cr>    # path-043722
+(config)# do-exec show event-manager consumers <cr>    # path-032863
+(config)# do-exec show exception <cr>    # path-026365
+(config)# do-exec show exception dumpfile <cr>    # path-028156
+(config)# do-exec show exception dumphost <cr>    # path-028117
+(config)# do-exec show facility-ains card <cr>    # path-029197
+(config)# do-exec show facility-ains ports <cr>    # path-029264
+(config)# do-exec show facility-ains status <cr>    # path-029142
+(config)# do-exec show facility-ains transceiver <cr>    # path-029306
+(config)# do-exec show facility-alarm relay minor <cr>    # path-035305
+(config)# do-exec show facility-alarm status <cr>    # path-029176
+(config)# do-exec show facility-condition status <cr>    # path-029251
+(config)# do-exec show facility-protocols status <cr>    # path-029332
+(config)# do-exec show fallback profile <cr>    # path-033256
+(config)# do-exec show fast-reroute database <cr>    # path-031919
+(config)# do-exec show fastblk <cr>    # path-027719
+(config)# do-exec show fhrp <cr>    # path-027617
+(config)# do-exec show fhrp <interface> <cr>    # path-060714
+(config)# do-exec show file descriptors <cr>    # path-033310
+(config)# do-exec show file information <url:dynamic> <cr>    # path-061171
+(config)# do-exec show file systems <cr>    # path-033280
+(config)# do-exec show flooding-suppression <cr>    # path-027688
+(config)# do-exec show flow config log <cr>    # path-037880
+(config)# do-exec show flow config state <cr>    # path-060938
+(config)# do-exec show flow config transactions <cr>    # path-037787
+(config)# do-exec show flow exporter <?option@555588f39878> <cr>    # path-060948
+(config)# do-exec show flow exporter <?option@555588f39878> statistics <cr>    # path-061459
+(config)# do-exec show flow exporter <?option@555588f39878> templates <cr>    # path-061462
+(config)# do-exec show flow exporter <?option@555588f39878> templates details <cr>    # path-062027
+(config)# do-exec show flow exporter <cr>    # path-030969
+(config)# do-exec show flow exporter broker <cr>    # path-037823
+(config)# do-exec show flow exporter export-ids <?option@555588f38100> <cr>    # path-061442
+(config)# do-exec show flow exporter option application engines <cr>    # path-054322
+(config)# do-exec show flow exporter option application table <cr>    # path-054303
+(config)# do-exec show flow exporter statistics <cr>    # path-037753
+(config)# do-exec show flow exporter templates <cr>    # path-037864
+(config)# do-exec show flow exporter templates details <cr>    # path-047131
+(config)# do-exec show flow interface <cr>    # path-030874
+(config)# do-exec show flow interface <interface> <cr>    # path-060927
+(config)# do-exec show flow internal <cr>    # path-030783
+(config)# do-exec show flow internal field <?option@555588f36bf0> <cr>    # path-061428
+(config)# do-exec show flow monitor <?option@555588f3f338> <cr>    # path-062807
+(config)# do-exec show flow monitor <cr>    # path-031045
+(config)# do-exec show flow monitor all <cr>    # path-037735
+(config)# do-exec show flow monitor broker <cr>    # path-038076
+(config)# do-exec show flow record <cr>    # path-030951
+(config)# do-exec show flow record <cr>    # path-060686
+(config)# do-exec show flow record broker <cr>    # path-037774
+(config)# do-exec show flow service instance id <number:1..16384> interface <interface> <cr>    # path-062526
+(config)# do-exec show flowcontrol <cr>    # path-027810
+(config)# do-exec show flowcontrol interface <interface> <cr>    # path-061195
+(config)# do-exec show flowcontrol module <number:dynamic> <cr>    # path-061197
+(config)# do-exec show flowcontrol switch <number:dynamic> <cr>    # path-061198
+(config)# do-exec show flowspec afi-all <cr>    # path-033883
+(config)# do-exec show flowspec afi-all nlri <hex-data> <cr>    # path-061803
+(config)# do-exec show flowspec client <cr>    # path-033848
+(config)# do-exec show flowspec summary <cr>    # path-033854
+(config)# do-exec show fmm db alarm <cr>    # path-036602
+(config)# do-exec show fmm db condition conditions <cr>    # path-045898
+(config)# do-exec show fmm db condition profiles <cr>    # path-045841
+(config)# do-exec show fmm db flow data basic <cr>    # path-053229
+(config)# do-exec show fmm db flow data ip <cr>    # path-053331
+(config)# do-exec show fmm db flow data l2vlan <cr>    # path-053284
+(config)# do-exec show fmm db flow data rtp <cr>    # path-053464
+(config)# do-exec show fmm db flow data tcp <cr>    # path-053420
+(config)# do-exec show fmm db flow data udp <cr>    # path-053374
+(config)# do-exec show fmm db flow metrics common <cr>    # path-053275
+(config)# do-exec show fmm db flow metrics ipcbr <cr>    # path-053416
+(config)# do-exec show fmm db flow metrics mdi <cr>    # path-053324
+(config)# do-exec show fmm db flow metrics rtp <cr>    # path-053369
+(config)# do-exec show fmm db groups <cr>    # path-036485
+(config)# do-exec show fmm db interval common <cr>    # path-045784
+(config)# do-exec show fmm db interval ipcbr <cr>    # path-045961
+(config)# do-exec show fmm db interval mdi <cr>    # path-045855
+(config)# do-exec show fmm db interval rtp <cr>    # path-045907
+(config)# do-exec show fmm db monitor <cr>    # path-036216
+(config)# do-exec show fmm db set flows <cr>    # path-045995
+(config)# do-exec show fmm db set sets <cr>    # path-045940
+(config)# do-exec show format <cr>    # path-027784
+(config)# do-exec show format <url:dynamic> <cr>    # path-060747
+(config)# do-exec show format <url:dynamic> validate <cr>    # path-061184
+(config)# do-exec show format validate <cr>    # path-033632
+(config)# do-exec show fqdn <cr>    # path-027699
+(config)# do-exec show frame-relay end-to-end keepalive <cr>    # path-041006
+(config)# do-exec show frame-relay end-to-end keepalive interface <interface> <cr>    # path-062152
+(config)# do-exec show frame-relay fragment <cr>    # path-032365
+(config)# do-exec show frame-relay fragment <interface> <cr>    # path-061057
+(config)# do-exec show frame-relay ip rtp header-compression <cr>    # path-050177
+(config)# do-exec show frame-relay ip rtp header-compression <interface> <cr>    # path-062151
+(config)# do-exec show frame-relay ip tcp header-compression <cr>    # path-050144
+(config)# do-exec show frame-relay ip tcp header-compression <interface> <cr>    # path-062149
+(config)# do-exec show frame-relay lmi <cr>    # path-032193
+(config)# do-exec show frame-relay lmi <interface> <cr>    # path-061022
+(config)# do-exec show frame-relay map <cr>    # path-032153
+(config)# do-exec show frame-relay map <interface> <cr>    # path-061016
+(config)# do-exec show frame-relay multilink <cr>    # path-032379
+(config)# do-exec show frame-relay multilink <interface> <cr>    # path-061063
+(config)# do-exec show frame-relay pvc <cr>    # path-032209
+(config)# do-exec show frame-relay pvc <interface> <cr>    # path-061029
+(config)# do-exec show frame-relay qos-autosense <cr>    # path-032207
+(config)# do-exec show frame-relay qos-autosense <interface> <cr>    # path-061027
+(config)# do-exec show frame-relay route <cr>    # path-032203
+(config)# do-exec show frame-relay traffic <cr>    # path-032113
+(config)# do-exec show frame-relay vofr <cr>    # path-032176
+(config)# do-exec show frame-relay vofr <interface> <cr>    # path-061024
+(config)# do-exec show fras <cr>    # path-027814
+(config)# do-exec show fras-host <cr>    # path-027682
+(config)# do-exec show fras-host <interface> <cr>    # path-060730
+(config)# do-exec show glbp <cr>    # path-027668
+(config)# do-exec show glbp capability <cr>    # path-032364
+(config)# do-exec show glbp capability <interface> <cr>    # path-061054
+(config)# do-exec show glbp internal <cr>    # path-032347
+(config)# do-exec show glbp internal <interface> <cr>    # path-061056
+(config)# do-exec show glbp network <cr>    # path-060728
+(config)# do-exec show hardware <cr>    # path-026803
+(config)# do-exec show hdd-devices summary <cr>    # path-033869
+(config)# do-exec show history <cr>    # path-026626
+(config)# do-exec show history all <cr>    # path-028516
+(config)# do-exec show hosts <cr>    # path-060499
+(config)# do-exec show hosts summary <cr>    # path-032285
+(config)# do-exec show hqf full-qos <cr>    # path-032603
+(config)# do-exec show hqf interface <cr>    # path-032619
+(config)# do-exec show hqf interface <interface> <cr>    # path-061086
+(config)# do-exec show hqf size <cr>    # path-032546
+(config)# do-exec show hqf sub-interface <cr>    # path-032613
+(config)# do-exec show hqf sub-interface <string> dlci <number:16..1007> <cr>    # path-056008
+(config)# do-exec show hqf sub-interface <string> vcd <number:0..8191> <cr>    # path-056017
+(config)# do-exec show html module command <string> <cr>    # path-050129
+(config)# do-exec show html module count <cr>    # path-040982
+(config)# do-exec show html module names <cr>    # path-040947
+(config)# do-exec show html module options <cr>    # path-040878
+(config)# do-exec show html module ports <cr>    # path-040959
+(config)# do-exec show html port command <string> <cr>    # path-050205
+(config)# do-exec show html port count <cr>    # path-041101
+(config)# do-exec show html port names <cr>    # path-041027
+(config)# do-exec show html port options <cr>    # path-040984
+(config)# do-exec show html port shortnames <cr>    # path-041068
+(config)# do-exec show hw-module all attribute <cr>    # path-037457
+(config)# do-exec show hw-module all entity <cr>    # path-037538
+(config)# do-exec show hw-module all module <cr>    # path-037537
+(config)# do-exec show hw-module all oir <cr>    # path-037686
+(config)# do-exec show hw-module all sensors <cr>    # path-037770
+(config)# do-exec show hw-module all subblock <cr>    # path-037595
+(config)# do-exec show hw-module all tech-support <cr>    # path-037680
+(config)# do-exec show hw-module all transceiver <number:dynamic> status <cr>    # path-062007
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all attribute <cr>    # path-062006
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all entity <cr>    # path-062012
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all module <cr>    # path-062011
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all oir <cr>    # path-062022
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all sensors <cr>    # path-062030
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all subblock <cr>    # path-062015
+(config)# do-exec show hw-module subslot <?slotcard_func_action@5555899c0dc8> all tech-support <cr>    # path-062021
+(config)# do-exec show icm stats <cr>    # path-032073
+(config)# do-exec show id-manager traceback <cr>    # path-033511
+(config)# do-exec show idb <cr>    # path-027757
+(config)# do-exec show idb <interface> <cr>    # path-060745
+(config)# do-exec show idb <interface> bits <cr>    # path-061174
+(config)# do-exec show idb bits <cr>    # path-033586
+(config)# do-exec show idb ifnum <cr>    # path-033524
+(config)# do-exec show idb pointers <cr>    # path-033527
+(config)# do-exec show identity policy <cr>    # path-033257
+(config)# do-exec show identity profile <cr>    # path-033259
+(config)# do-exec show idmgr memory <cr>    # path-033013
+(config)# do-exec show idmgr session key session-handle <hex-data> <cr>    # path-062205
+(config)# do-exec show idmgr statistics <cr>    # path-032955
+(config)# do-exec show if-mgr <cr>    # path-027356
+(config)# do-exec show if-mgr db ifStack <cr>    # path-037014
+(config)# do-exec show if-mgr db interface brief <cr>    # path-046371
+(config)# do-exec show if-mgr db interface ifIndex <number:0..4294967295> <cr>    # path-053867
+(config)# do-exec show if-mgr db interface ifIndex <number:0..4294967295> ifStack <cr>    # path-057652
+(config)# do-exec show if-mgr db interface ifName <cr>    # path-046557
+(config)# do-exec show if-mgr db interface ifName <string> <cr>    # path-053841
+(config)# do-exec show if-mgr hash <cr>    # path-030465
+(config)# do-exec show if-mgr hash brief <cr>    # path-037008
+(config)# do-exec show ifnum list <cr>    # path-028378
+(config)# do-exec show ifnum statistics <cr>    # path-028416
+(config)# do-exec show interfaces <cr>    # path-060390
+(config)# do-exec show interfaces <interface> counters protocol status <cr>    # path-061869
+(config)# do-exec show interfaces <interface> flowcontrol <cr>    # path-060787
+(config)# do-exec show interfaces <interface> history <cr>    # path-060810
+(config)# do-exec show interfaces <interface> switchport <cr>    # path-060769
+(config)# do-exec show interfaces counters protocol status <cr>    # path-044595
+(config)# do-exec show interfaces dampening <cr>    # path-028297
+(config)# do-exec show interfaces flowcontrol <cr>    # path-028640
+(config)# do-exec show interfaces history <cr>    # path-028960
+(config)# do-exec show inventory <cr>    # path-027754
+(config)# do-exec show iosp-server status <cr>    # path-033145
+(config)# do-exec show iox-service <cr>    # path-027811
+(config)# do-exec show iox-service detail <cr>    # path-033895
+(config)# do-exec show ip access-lists <cr>    # path-031435
+(config)# do-exec show ip access-lists <number:1..199> dump-og-database <cr>    # path-047840
+(config)# do-exec show ip access-lists <number:1..199> dump-reflexive <cr>    # path-047923
+(config)# do-exec show ip access-lists <number:1..199> expanded <cr>    # path-047764
+(config)# do-exec show ip access-lists interface <interface> <cr>    # path-061500
+(config)# do-exec show ip accounting <cr>    # path-032177
+(config)# do-exec show ip aliases <cr>    # path-031848
+(config)# do-exec show ip amt tunnel <cr>    # path-039565
+(config)# do-exec show ip arp <address> <cr>    # path-038263
+(config)# do-exec show ip arp <address> <cr>    # path-038366
+(config)# do-exec show ip arp <cr>    # path-031214
+(config)# do-exec show ip arp <interface> <cr>    # path-060959
+(config)# do-exec show ip arp garpretry <cr>    # path-038175
+(config)# do-exec show ip arp incomplete <cr>    # path-038135
+(config)# do-exec show ip arp poll <cr>    # path-038041
+(config)# do-exec show ip arp summary <cr>    # path-038029
+(config)# do-exec show ip as-path-access-list <cr>    # path-031671
+(config)# do-exec show ip cache <cr>    # path-031506
+(config)# do-exec show ip cache <interface> <cr>    # path-060982
+(config)# do-exec show ip cache <interface> flow <cr>    # path-061504
+(config)# do-exec show ip cache flow <cr>    # path-039137
+(config)# do-exec show ip cache policy <cr>    # path-038820
+(config)# do-exec show ip casa oper <cr>    # path-040322
+(config)# do-exec show ip casa wildcard <cr>    # path-040545
+(config)# do-exec show ip cef <cr>    # path-032624
+(config)# do-exec show ip cef <interface> <cr>    # path-061085
+(config)# do-exec show ip cef events <cr>    # path-041168
+(config)# do-exec show ip cef inconsistency <cr>    # path-041000
+(config)# do-exec show ip cef label-table <cr>    # path-041045
+(config)# do-exec show ip cef protocol-discard <cr>    # path-040678
+(config)# do-exec show ip cef summary <cr>    # path-040738
+(config)# do-exec show ip cef switching statistics <cr>    # path-050027
+(config)# do-exec show ip cef traffic prefix-length <cr>    # path-050094
+(config)# do-exec show ip cef tree <cr>    # path-040872
+(config)# do-exec show ip cef vrf <?option@555588d09300> events <cr>    # path-062158
+(config)# do-exec show ip cef vrf <?option@555588d09300> inconsistency <cr>    # path-062150
+(config)# do-exec show ip cef vrf <?option@555588d09300> label-table <cr>    # path-062153
+(config)# do-exec show ip cef vrf <?option@555588d09300> summary <cr>    # path-062140
+(config)# do-exec show ip cef vrf <?option@555588d09300> switching statistics <cr>    # path-062431
+(config)# do-exec show ip cef vrf <?option@555588d09300> traffic prefix-length <cr>    # path-062440
+(config)# do-exec show ip cef vrf <?option@555588d09300> tree <cr>    # path-062144
+(config)# do-exec show ip community-list <cr>    # path-031692
+(config)# do-exec show ip ddns update <cr>    # path-040629
+(config)# do-exec show ip ddns update <interface> <cr>    # path-061620
+(config)# do-exec show ip ddns update method <cr>    # path-049719
+(config)# do-exec show ip default-gateway <cr>    # path-031153
+(config)# do-exec show ip dfp <cr>    # path-032046
+(config)# do-exec show ip dhcp binding <address> <cr>    # path-050141
+(config)# do-exec show ip dhcp binding <cr>    # path-041047
+(config)# do-exec show ip dhcp conflict <cr>    # path-040962
+(config)# do-exec show ip dhcp database <cr>    # path-040782
+(config)# do-exec show ip dhcp database <string> <cr>    # path-049903
+(config)# do-exec show ip dhcp excluded-addresses all <cr>    # path-049878
+(config)# do-exec show ip dhcp excluded-addresses pool <string> <cr>    # path-055752
+(config)# do-exec show ip dhcp excluded-addresses vrf <string> <cr>    # path-055742
+(config)# do-exec show ip dhcp hash find-index <number:0..65535> <hex-string> <cr>    # path-062442
+(config)# do-exec show ip dhcp hash global client-id <hex-string> dump <cr>    # path-062579
+(config)# do-exec show ip dhcp hash global client-id <hex-string> statistics <cr>    # path-062578
+(config)# do-exec show ip dhcp hash global dump <cr>    # path-055983
+(config)# do-exec show ip dhcp hash global statistics <cr>    # path-055974
+(config)# do-exec show ip dhcp import <cr>    # path-040991
+(config)# do-exec show ip dhcp limit lease <cr>    # path-050237
+(config)# do-exec show ip dhcp limit lease <interface> <cr>    # path-062156
+(config)# do-exec show ip dhcp packet statistics <cr>    # path-050062
+(config)# do-exec show ip dhcp pool <cr>    # path-041108
+(config)# do-exec show ip dhcp relay information trusted-sources <cr>    # path-055725
+(config)# do-exec show ip dhcp server odap-statistics <cr>    # path-050158
+(config)# do-exec show ip dhcp server statistics <cr>    # path-050197
+(config)# do-exec show ip dhcp server statistics <interface> <cr>    # path-062154
+(config)# do-exec show ip dhcp sip session <cr>    # path-050116
+(config)# do-exec show ip dhcp sip statistics <cr>    # path-050143
+(config)# do-exec show ip dhcp snooping <cr>    # path-041009
+(config)# do-exec show ip dhcp snooping binding <cr>    # path-050243
+(config)# do-exec show ip dhcp snooping binding <interface> <cr>    # path-062159
+(config)# do-exec show ip dhcp snooping database <cr>    # path-050113
+(config)# do-exec show ip dhcp snooping multi-chassis <cr>    # path-050074
+(config)# do-exec show ip dhcp snooping statistics <cr>    # path-050114
+(config)# do-exec show ip dhcp snooping track host <cr>    # path-055826
+(config)# do-exec show ip dhcp vrf <string> binding * <cr>    # path-062434
+(config)# do-exec show ip dhcp vrf <string> binding <address> <cr>    # path-058638
+(config)# do-exec show ip dhcp vrf <string> binding assigned <cr>    # path-058605
+(config)# do-exec show ip dns name-list <cr>    # path-039866
+(config)# do-exec show ip dns primary <cr>    # path-039922
+(config)# do-exec show ip dns servers <cr>    # path-039958
+(config)# do-exec show ip dns statistics <cr>    # path-039901
+(config)# do-exec show ip dns view <cr>    # path-039933
+(config)# do-exec show ip dns view-list <cr>    # path-039815
+(config)# do-exec show ip domain-name <cr>    # path-031176
+(config)# do-exec show ip drp <cr>    # path-031386
+(config)# do-exec show ip eigrp accounting <cr>    # path-040337
+(config)# do-exec show ip eigrp interfaces <cr>    # path-040317
+(config)# do-exec show ip eigrp interfaces <interface> <cr>    # path-061576
+(config)# do-exec show ip eigrp neighbors <cr>    # path-040363
+(config)# do-exec show ip eigrp neighbors <interface> <cr>    # path-061579
+(config)# do-exec show ip eigrp sia-event <cr>    # path-040422
+(config)# do-exec show ip eigrp sia-statistics <cr>    # path-040483
+(config)# do-exec show ip eigrp timers <cr>    # path-040223
+(config)# do-exec show ip eigrp topology <cr>    # path-040658
+(config)# do-exec show ip eigrp topology <prefix:dynamic> <cr>    # path-061600
+(config)# do-exec show ip eigrp traffic <cr>    # path-040266
+(config)# do-exec show ip extcommunity-list <cr>    # path-031626
+(config)# do-exec show ip ftp-password <cr>    # path-031765
+(config)# do-exec show ip ftp-username <cr>    # path-031745
+(config)# do-exec show ip helper-address <cr>    # path-031257
+(config)# do-exec show ip helper-address <interface> <cr>    # path-060965
+(config)# do-exec show ip host-list <cr>    # path-032091
+(config)# do-exec show ip http client all <cr>    # path-048656
+(config)# do-exec show ip http client cache <cr>    # path-048942
+(config)# do-exec show ip http client cache brief <cr>    # path-055106
+(config)# do-exec show ip http client connection <cr>    # path-048784
+(config)# do-exec show ip http client cookie summary <cr>    # path-055283
+(config)# do-exec show ip http client cookie summary domain <string> <cr>    # path-059474
+(config)# do-exec show ip http client cookie summary name <string> <cr>    # path-059476
+(config)# do-exec show ip http client cookie summary session <string> <cr>    # path-059471
+(config)# do-exec show ip http client history <cr>    # path-048597
+(config)# do-exec show ip http client secure status <cr>    # path-055259
+(config)# do-exec show ip http client session-module <cr>    # path-048526
+(config)# do-exec show ip http client statistics <cr>    # path-048712
+(config)# do-exec show ip http server all <cr>    # path-048470
+(config)# do-exec show ip http server connection <cr>    # path-048716
+(config)# do-exec show ip http server external registration <cr>    # path-055088
+(config)# do-exec show ip http server external registration <string> <cr>    # path-058253
+(config)# do-exec show ip http server external statistics data <cr>    # path-058312
+(config)# do-exec show ip http server external statistics registration <cr>    # path-058289
+(config)# do-exec show ip http server external statistics summary <cr>    # path-058271
+(config)# do-exec show ip http server help-path <cr>    # path-048925
+(config)# do-exec show ip http server history <cr>    # path-048852
+(config)# do-exec show ip http server secure status <cr>    # path-055261
+(config)# do-exec show ip http server session-module <cr>    # path-048748
+(config)# do-exec show ip http server session-module <string> <cr>    # path-054961
+(config)# do-exec show ip http server statistics <cr>    # path-048786
+(config)# do-exec show ip http server status <cr>    # path-048538
+(config)# do-exec show ip icmp rate-limit <cr>    # path-038109
+(config)# do-exec show ip icmp rate-limit <interface> <cr>    # path-061465
+(config)# do-exec show ip igmp filter <cr>    # path-040019
+(config)# do-exec show ip igmp gir <cr>    # path-039804
+(config)# do-exec show ip igmp groups <cr>    # path-039714
+(config)# do-exec show ip igmp groups <interface> <cr>    # path-061523
+(config)# do-exec show ip igmp groups <interface> detail <cr>    # path-062054
+(config)# do-exec show ip igmp groups detail <cr>    # path-048610
+(config)# do-exec show ip igmp interface <cr>    # path-039486
+(config)# do-exec show ip igmp interface <interface> <cr>    # path-061512
+(config)# do-exec show ip igmp membership <cr>    # path-039823
+(config)# do-exec show ip igmp profile <cr>    # path-040025
+(config)# do-exec show ip igmp profile <number:1..4294967295> <cr>    # path-048970
+(config)# do-exec show ip igmp snooping <cr>    # path-040247
+(config)# do-exec show ip igmp snooping bd <number:1006..4094> <cr>    # path-055275
+(config)# do-exec show ip igmp snooping bd <number:1006..4094> forced <cr>    # path-058373
+(config)# do-exec show ip igmp snooping bd <number:dynamic> <cr>    # path-062076
+(config)# do-exec show ip igmp snooping bd <number:dynamic> forced <cr>    # path-062376
+(config)# do-exec show ip igmp snooping counters <cr>    # path-049144
+(config)# do-exec show ip igmp snooping counters bd <number:1006..4094> <cr>    # path-058405
+(config)# do-exec show ip igmp snooping counters bd <number:dynamic> <cr>    # path-062383
+(config)# do-exec show ip igmp snooping filter BD <number:1006..4094> <cr>    # path-058390
+(config)# do-exec show ip igmp snooping filter BD <number:dynamic> <cr>    # path-062379
+(config)# do-exec show ip igmp snooping filter et <cr>    # path-055351
+(config)# do-exec show ip igmp snooping filter et BD <number:dynamic> <cr>    # path-062539
+(config)# do-exec show ip igmp snooping filter interface <interface> <cr>    # path-062396
+(config)# do-exec show ip igmp snooping filter interface <interface> statistics <cr>    # path-062542
+(config)# do-exec show ip igmp snooping groups <cr>    # path-049369
+(config)# do-exec show ip igmp snooping groups bd <number:dynamic> <cr>    # path-062398
+(config)# do-exec show ip igmp snooping groups bd <number:dynamic> count <cr>    # path-062541
+(config)# do-exec show ip igmp snooping groups count <cr>    # path-055329
+(config)# do-exec show ip igmp snooping membership <cr>    # path-049565
+(config)# do-exec show ip igmp snooping membership interface <interface> <cr>    # path-062406
+(config)# do-exec show ip igmp snooping mrouter <cr>    # path-049191
+(config)# do-exec show ip igmp snooping mrouter bd <number:1006..4094> <cr>    # path-058416
+(config)# do-exec show ip igmp snooping mrouter bd <number:dynamic> <cr>    # path-062389
+(config)# do-exec show ip igmp snooping querier <cr>    # path-049152
+(config)# do-exec show ip igmp snooping querier bd <number:dynamic> <cr>    # path-062387
+(config)# do-exec show ip igmp ssm-mapping <cr>    # path-039588
+(config)# do-exec show ip igmp static-group class-map <cr>    # path-048733
+(config)# do-exec show ip igmp static-group class-map interface <interface> <cr>    # path-062364
+(config)# do-exec show ip igmp udlr <cr>    # path-039706
+(config)# do-exec show ip igmp udlr interface <interface> <cr>    # path-062060
+(config)# do-exec show ip igmp virtual-group-cache <cr>    # path-039530
+(config)# do-exec show ip interface address <cr>    # path-038114
+(config)# do-exec show ip interface address <interface> <cr>    # path-061476
+(config)# do-exec show ip interface address <interface> stats <cr>    # path-062039
+(config)# do-exec show ip interface address <interface> topology base stats <cr>    # path-062533
+(config)# do-exec show ip irdp <cr>    # path-031482
+(config)# do-exec show ip irdp <interface> <cr>    # path-060979
+(config)# do-exec show ip largecommunity-list <cr>    # path-031672
+(config)# do-exec show ip local policy <cr>    # path-038483
+(config)# do-exec show ip local pool <cr>    # path-038700
+(config)# do-exec show ip masks <cr>    # path-031523
+(config)# do-exec show ip mcache <cr>    # path-031731
+(config)# do-exec show ip mfib <cr>    # path-032332
+(config)# do-exec show ip mfib <prefix:dynamic> <cr>    # path-061061
+(config)# do-exec show ip mfib cable <cr>    # path-040516
+(config)# do-exec show ip mfib instance <?option@55558ab098e8> rate-list <cr>    # path-062117
+(config)# do-exec show ip mfib interface <cr>    # path-040573
+(config)# do-exec show ip mfib interface <interface> <cr>    # path-061621
+(config)# do-exec show ip mfib internal fibidb <cr>    # path-049487
+(config)# do-exec show ip mfib internal mem <cr>    # path-049793
+(config)# do-exec show ip mfib rate-list <cr>    # path-040620
+(config)# do-exec show ip mfib status <cr>    # path-040403
+(config)# do-exec show ip mpacket <cr>    # path-031813
+(config)# do-exec show ip mrib client <cr>    # path-040456
+(config)# do-exec show ip mrib route * <cr>    # path-061623
+(config)# do-exec show ip mrib route <address> <address> <cr>    # path-055664
+(config)# do-exec show ip mrib route <cr>    # path-040579
+(config)# do-exec show ip mrib route <prefix:dynamic> <cr>    # path-061616
+(config)# do-exec show ip mrib route summary <cr>    # path-049433

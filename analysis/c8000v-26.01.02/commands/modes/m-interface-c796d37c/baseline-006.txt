@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-006.md
+
+(config-if)# ip access-group common <number:1..199> <number:1..199> in <cr>    # path-067297
+(config-if)# ip access-group common <number:1..199> <number:1..199> out <cr>    # path-067299
+(config-if)# ip access-group common <number:1..199> in <cr>    # path-066678
+(config-if)# ip access-group common <number:1..199> out <cr>    # path-066679
+(config-if)# ip accounting <cr>    # path-063507
+(config-if)# ip address <address> <address> <cr>    # path-065527
+(config-if)# ip address dhcp client-id <interface> <cr>    # path-067836
+(config-if)# ip address docsis <cr>    # path-064108
+(config-if)# ip address slarp retry <number:1..60> <cr>    # path-066902
+(config-if)# ip auth-proxy <string> <cr>    # path-064522
+(config-if)# ip authentication key-chain eigrp <number:1..65535> <string> <cr>    # path-067362
+(config-if)# ip authentication mode eigrp <number:1..65535> md5 <cr>    # path-067354
+(config-if)# ip bandwidth-percent eigrp <number:1..65535> <number:1..999999> <cr>    # path-066789
+(config-if)# ip bgp fast-external-fallover permit <cr>    # path-065519
+(config-if)# ip broadcast-address <address> <cr>    # path-064132
+(config-if)# ip cef accounting non-recursive internal <cr>    # path-066926
+(config-if)# ip cgmp <cr>    # path-063479
+(config-if)# ip cgmp batch-joins <cr>    # path-064188
+(config-if)# ip cgmp process-leaves <cr>    # path-064182
+(config-if)# ip clear-dont-fragment <cr>    # path-063440
+(config-if)# ip dampening-change eigrp <number:1..65535> <cr>    # path-065816
+(config-if)# ip dampening-interval eigrp <number:1..65535> <cr>    # path-065841
+(config-if)# ip ddns update <string> <cr>    # path-065524
+(config-if)# ip ddns update hostname <string> <cr>    # path-066684
+(config-if)# ip dhcp client authentication key-chain <string> <cr>    # path-067344
+(config-if)# ip dhcp client broadcast-flag set <cr>    # path-066715
+(config-if)# ip dhcp client class-id <string> <cr>    # path-066732
+(config-if)# ip dhcp client class-id hex <hex-string> <cr>    # path-067880
+(config-if)# ip dhcp client client-id <interface> <cr>    # path-067840
+(config-if)# ip dhcp client client-id ascii <string> <cr>    # path-067325
+(config-if)# ip dhcp client default-router distance <number:1..255> <cr>    # path-067331
+(config-if)# ip dhcp client hostname <string> <cr>    # path-066730
+(config-if)# ip dhcp client lease <number:0..365> <cr>    # path-066740
+(config-if)# ip dhcp client option <number:1..254> hex <hex-string> <cr>    # path-067896
+(config-if)# ip dhcp client option <number:1..254> ip <address> <cr>    # path-067585
+(config-if)# ip dhcp client process-requested-options-only <cr>    # path-065623
+(config-if)# ip dhcp client request <cr>    # path-065642
+(config-if)# ip dhcp client request option <number:1..254> <cr>    # path-067882
+(config-if)# ip dhcp client route distance <number:0..254> <cr>    # path-067339
+(config-if)# ip dhcp client route track <number:1..32767> <cr>    # path-067335
+(config-if)# ip dhcp client update dns <cr>    # path-066742
+(config-if)# ip dhcp client vendor-class ascii <string> <cr>    # path-067330
+(config-if)# ip dhcp client vendor-class disable <cr>    # path-066720
+(config-if)# ip dhcp client vendor-class hex <hex-string> <cr>    # path-067881
+(config-if)# ip dhcp client vendor-class mac-address <cr>    # path-066723
+(config-if)# ip dhcp limit lease <number:1..65535> <cr>    # path-066693
+(config-if)# ip dhcp relay information check-reply <cr>    # path-066710
+(config-if)# ip dhcp relay information option server-id-override <cr>    # path-067300
+(config-if)# ip dhcp relay information option subscriber-id <string> <cr>    # path-067580
+(config-if)# ip dhcp relay information option vpn-id <cr>    # path-067316
+(config-if)# ip dhcp relay information option-insert <cr>    # path-066708
+(config-if)# ip dhcp relay information policy-action drop <cr>    # path-067314
+(config-if)# ip dhcp relay information trusted <cr>    # path-066687
+(config-if)# ip dhcp relay short-lease <number:60..3600> <cr>    # path-066701
+(config-if)# ip dhcp relay source-interface <interface> <cr>    # path-067837
+(config-if)# ip dhcp restrict-next-hop cdp <cr>    # path-065520
+(config-if)# ip dhcp server use hardware-address client-id <cr>    # path-067306
+(config-if)# ip dhcp server use subscriber-id client-id <cr>    # path-067302
+(config-if)# ip dhcp snooping bridge-domain <number:dynamic> information option format-type circuit-id string <cr>    # path-068036
+(config-if)# ip dhcp snooping information option allow-untrusted <cr>    # path-067887
+(config-if)# ip dhcp snooping limit rate <cr>    # path-067855
+(config-if)# ip dhcp snooping limit rate <number:1..4294967294> <cr>    # path-067319
+(config-if)# ip dhcp snooping packets <cr>    # path-065528
+(config-if)# ip dhcp snooping trust <cr>    # path-067813
+(config-if)# ip directed-broadcast <cr>    # path-063465
+(config-if)# ip dlep set heartbeat-threshold <number:2..8> <cr>    # path-066896
+(config-if)# ip dlep set nbr-down-ack-timeout <number:1..50> <cr>    # path-066923
+(config-if)# ip dlep set peer-description <string> <cr>    # path-066946
+(config-if)# ip dlep set peer-discovery-interval <number:1..60> <cr>    # path-066939
+(config-if)# ip dlep set peer-discovery-mode ipv6 <cr>    # path-066943
+(config-if)# ip dlep set peer-heartbeat-interval <number:1..60> <cr>    # path-066935
+(config-if)# ip dlep set peer-init-ack-timeout <number:1..60> <cr>    # path-066932
+(config-if)# ip dlep set peer-terminate-ack-timeout <number:1..50> <cr>    # path-066912
+(config-if)# ip dlep vtemplate <number:1..4096> <cr>    # path-065980
+(config-if)# ip dns view-group <string> <cr>    # path-065688
+(config-if)# ip flow monitor <?option@555588f5d9c8> sampler <cr>    # path-068010
+(config-if)# ip flow monitor <cr>    # path-067741
+(config-if)# ip flowspec disable <cr>    # path-064574
+(config-if)# ip header-compression disable-feedback <cr>    # path-064582
+(config-if)# ip hello-interval eigrp <number:1..65535> <number:1..65535> <cr>    # path-066823
+(config-if)# ip helper-address <address> <cr>    # path-064153
+(config-if)# ip helper-address global <address> <cr>    # path-065496
+(config-if)# ip helper-address vrf <string> <address> <cr>    # path-066681
+(config-if)# ip hold-time eigrp <number:1..65535> <number:1..65535> <cr>    # path-066841
+(config-if)# ip idle-group <number:1..199> in <cr>    # path-065492
+(config-if)# ip idle-group <number:1..199> out <cr>    # path-065497
+(config-if)# ip igmp access-group <number:1..199> <cr>    # path-065595
+(config-if)# ip igmp explicit-tracking <cr>    # path-064259
+(config-if)# ip igmp filter <number:1..4294967295> <cr>    # path-065939
+(config-if)# ip igmp helper-address <address> <cr>    # path-065560
+(config-if)# ip igmp helper-address udl <interface> <cr>    # path-067839
+(config-if)# ip igmp iif-starg <cr>    # path-064223
+(config-if)# ip igmp immediate-leave group-list <number:1..99> <cr>    # path-066736
+(config-if)# ip igmp join-group <address> <cr>    # path-065557
+(config-if)# ip igmp last-member-query-count <number:1..7> <cr>    # path-065546
+(config-if)# ip igmp last-member-query-interval <number:100..25500> <cr>    # path-065538
+(config-if)# ip igmp limit <number:1..64000> <cr>    # path-065709
+(config-if)# ip igmp mroute-proxy <interface> <cr>    # path-067804
+(config-if)# ip igmp proxy-report-interval <number:1..18000> <cr>    # path-065658
+(config-if)# ip igmp proxy-service <cr>    # path-064332
+(config-if)# ip igmp querier-timeout <number:60..300> <cr>    # path-065675
+(config-if)# ip igmp query-interval <number:1..18000> <cr>    # path-065645
+(config-if)# ip igmp query-max-response-time <number:1..25> <cr>    # path-065578
+(config-if)# ip igmp robustness-variable <number:1..7> <cr>    # path-065537
+(config-if)# ip igmp snooping access-group <number:1..199> <cr>    # path-066883
+(config-if)# ip igmp snooping limit <cr>    # path-065993
+(config-if)# ip igmp snooping tcn flood <cr>    # path-066854
+(config-if)# ip igmp static-group * <cr>    # path-067800
+(config-if)# ip igmp static-group <address> <cr>    # path-065561
+(config-if)# ip igmp tcn query count <number:1..10> <cr>    # path-067364
+(config-if)# ip igmp tcn query interval <number:1..255> <cr>    # path-067371
+(config-if)# ip igmp unidirectional-link <cr>    # path-064298
+(config-if)# ip igmp upstream-proxy <string> <cr>    # path-065567
+(config-if)# ip igmp v3-query-max-response-time <number:1..3175> <cr>    # path-065587
+(config-if)# ip igmp v3lite <cr>    # path-064383
+(config-if)# ip igmp version <number:1..3> <cr>    # path-065620
+(config-if)# ip information-reply <cr>    # path-063434
+(config-if)# ip irdp <cr>    # path-063505
+(config-if)# ip irdp address <address> <signed:-2147483648..2147483647> <cr>    # path-066762
+(config-if)# ip irdp holdtime <number:4..9000> <cr>    # path-063517
+(config-if)# ip irdp maxadvertinterval <number:4..1800> <cr>    # path-065674
+(config-if)# ip irdp minadvertinterval <number:3..1800> <cr>    # path-063510
+(config-if)# ip irdp multicast <cr>    # path-064274
+(config-if)# ip irdp preference <signed:-2147483648..2147483647> <cr>    # path-065703
+(config-if)# ip load-sharing <?option@555588d17fb0> <cr>    # path-067761
+(config-if)# ip load-sharing <cr>    # path-063681
+(config-if)# ip local-proxy-arp <cr>    # path-063462
+(config-if)# ip mask-reply <cr>    # path-063430
+(config-if)# ip mfib cef input <cr>    # path-065847
+(config-if)# ip mfib cef output <cr>    # path-065880
+(config-if)# ip mfib forwarding <cr>    # path-064570
+(config-if)# ip mfib forwarding input <cr>    # path-065818
+(config-if)# ip mfib forwarding output <cr>    # path-065851
+(config-if)# ip mfib test adjacency <cr>    # path-065926
+(config-if)# ip mfib test headless <cr>    # path-065942
+(config-if)# ip mfib test macfilter <cr>    # path-065899
+(config-if)# ip mfib test mask <cr>    # path-065875
+(config-if)# ip mrm test-sender <cr>    # path-064378
+(config-if)# ip mroute-cache <cr>    # path-063478
+(config-if)# ip mtu <number:dynamic> <cr>    # path-067749
+(config-if)# ip multicast boundary <cr>    # path-064571
+(config-if)# ip multicast boundary block source <cr>    # path-066792
+(config-if)# ip multicast boundary filter-autorp <number:1..99> <cr>    # path-066795
+(config-if)# ip multicast boundary filter-autorp <number:1..99> <cr>    # path-066807
+(config-if)# ip multicast cca test <cr>    # path-065798
+(config-if)# ip multicast helper-map broadcast <address> <number:2000..2699> <cr>    # path-067376
+(config-if)# ip multicast limit <number:1..199> <number:0..2147483647> <cr>    # path-066824
+(config-if)# ip multicast rate-limit in <cr>    # path-065817
+(config-if)# ip multicast ttl-threshold <number:0..255> <cr>    # path-063527
+(config-if)# ip multicast ttl-threshold <number:0..255> <cr>    # path-063528
+(config-if)# ip multicast use-functional <cr>    # path-064417
+(config-if)# ip nat allow-static-host <cr>    # path-064497
+(config-if)# ip nat enable <cr>    # path-064454
+(config-if)# ip nat inside <cr>    # path-064409
+(config-if)# ip nat outside <cr>    # path-064369
+(config-if)# ip nat stick <cr>    # path-064437
+(config-if)# ip nbar collect-dhcpv6-data <cr>    # path-064299
+(config-if)# ip nbar protocol-discovery <cr>    # path-064398
+(config-if)# ip network-broadcast <cr>    # path-063458
+(config-if)# ip next-hop-self eigrp <number:1..65535> <cr>    # path-065856
+(config-if)# ip nhrp attribute group <cr>    # path-067986
+(config-if)# ip nhrp attribute set <string> <string> <cr>    # path-068023
+(config-if)# ip nhrp authentication <cr>    # path-067945
+(config-if)# ip nhrp bfd strict-mode <cr>    # path-067988
+(config-if)# ip nhrp block-next-hop-override <cr>    # path-067957
+(config-if)# ip nhrp cache bgp-sync <cr>    # path-067990
+(config-if)# ip nhrp cache next-hop route-validate <cr>    # path-068016
+(config-if)# ip nhrp cache non-authoritative <cr>    # path-067992
+(config-if)# ip nhrp connect <number:1..65535> <cr>    # path-067984
+(config-if)# ip nhrp holdtime <number:1..65535> <cr>    # path-067920
+(config-if)# ip nhrp interest <cr>    # path-067946
+(config-if)# ip nhrp map multicast dynamic <cr>    # path-068011
+(config-if)# ip nhrp max-send <cr>    # path-067952
+(config-if)# ip nhrp multicast batch-size <cr>    # path-067989
+(config-if)# ip nhrp network-id <number:1..4294967295> <cr>    # path-067919
+(config-if)# ip nhrp nhs <address> <cr>    # path-067987
+(config-if)# ip nhrp nhs cluster <number:0..10> max-connections <number:0..255> <cr>    # path-068033
+(config-if)# ip nhrp nhs fallback <number:0..60> <cr>    # path-068014
+(config-if)# ip nhrp path preference <cr>    # path-067996
+(config-if)# ip nhrp process-delay <cr>    # path-067950
+(config-if)# ip nhrp record <cr>    # path-067948
+(config-if)# ip nhrp redirect <cr>    # path-067958
+(config-if)# ip nhrp registration delay <number:0..10> <cr>    # path-067953
+(config-if)# ip nhrp registration differential <cr>    # path-067993
+(config-if)# ip nhrp registration no-unique <cr>    # path-067991
+(config-if)# ip nhrp registration req-def-map <cr>    # path-067994
+(config-if)# ip nhrp registration timeout <number:1..65535> <cr>    # path-067955
+(config-if)# ip nhrp reject <number:1..65535> <cr>    # path-067985
+(config-if)# ip nhrp resolution refresh base <number:1..65535> <cr>    # path-068026
+(config-if)# ip nhrp responder default-originate <cr>    # path-067983
+(config-if)# ip nhrp role hub <cr>    # path-067982
+(config-if)# ip nhrp send-routed <cr>    # path-067954
+(config-if)# ip nhrp server-only <cr>    # path-067951
+(config-if)# ip nhrp shortcut <cr>    # path-067956
+(config-if)# ip nhrp summary-map <address> <address> <cr>    # path-068012
+(config-if)# ip nhrp trigger-svc <cr>    # path-067947
+(config-if)# ip nhrp use <number:1..65535> <cr>    # path-067921
+(config-if)# ip ospf <number:1..65535> area <address> <cr>    # path-066862
+(config-if)# ip ospf adjacency stagger disable <cr>    # path-066778
+(config-if)# ip ospf authentication <cr>    # path-064212
+(config-if)# ip ospf authentication-key <string> <cr>    # path-065553
+(config-if)# ip ospf bfd <cr>    # path-064430
+(config-if)# ip ospf cost <number:1..65535> <cr>    # path-063625
+(config-if)# ip ospf database-filter all out <cr>    # path-066753
+(config-if)# ip ospf dead-interval <number:1..65535> <cr>    # path-065572
+(config-if)# ip ospf delay normalize interval <number:1..16777215> <cr>    # path-067393
+(config-if)# ip ospf demand-circuit <cr>    # path-064292
+(config-if)# ip ospf flood-reduction <cr>    # path-064279
+(config-if)# ip ospf hello-interval <number:1..65535> <cr>    # path-063486
+(config-if)# ip ospf interface-retry <number:1..65535> <cr>    # path-063475
+(config-if)# ip ospf lls <cr>    # path-064280
+(config-if)# ip ospf message-digest-key <number:1..255> md5 <string> <cr>    # path-067322
+(config-if)# ip ospf mtu-ignore <cr>    # path-064291
+(config-if)# ip ospf multi-area <address> <cr>    # path-065868
+(config-if)# ip ospf multi-area <address> cost <number:1..65535> <cr>    # path-065791
+(config-if)# ip ospf multi-area <address> delay normalize interval <number:1..16777215> <cr>    # path-067692
+(config-if)# ip ospf network broadcast <cr>    # path-065552
+(config-if)# ip ospf packet-size <number:576..10000> <cr>    # path-063464
+(config-if)# ip ospf prefix-suppression <cr>    # path-064364
+(config-if)# ip ospf priority <number:0..255> <cr>    # path-063491
+(config-if)# ip ospf resync-timeout <number:1..65535> <cr>    # path-063470
+(config-if)# ip ospf retransmit-interval <number:1..65535> <cr>    # path-063495
+(config-if)# ip ospf shutdown <cr>    # path-064429
+(config-if)# ip ospf transmit-delay <number:1..65535> <cr>    # path-063499
+(config-if)# ip ospf ttl-security <cr>    # path-064447
+(config-if)# ip ospf vnet area <address> <cr>    # path-066810
+(config-if)# ip pim bfd <cr>    # path-064420
+(config-if)# ip pim bidir-neighbor-filter <number:1..99> <cr>    # path-065778
+(config-if)# ip pim bsr-border <cr>    # path-064529
+(config-if)# ip pim dr-priority <number:0..4294967294> <cr>    # path-065779
+(config-if)# ip pim drlb <cr>    # path-064556
+(config-if)# ip pim join-prune-interval <number:10..600> <cr>    # path-065691
+(config-if)# ip pim lisp core-group-range <address> <number:1..1000> <cr>    # path-067363
+(config-if)# ip pim lisp transit-core-group-range <address> <number:1..1000> <cr>    # path-067370
+(config-if)# ip pim lisp transport unicast <cr>    # path-066797
+(config-if)# ip pim nbma-mode <cr>    # path-064498
+(config-if)# ip pim neighbor-filter <number:1..99> <cr>    # path-065740
+(config-if)# ip pim non-dr-join <cr>    # path-064458
+(config-if)# ip pim passive <cr>    # path-064351
+(config-if)# ip pim pfp-sa border <cr>    # path-065922
+(config-if)# ip pim query-interval <number:1..65535> <cr>    # path-065907
+(config-if)# ip pim redundancy <string> dr-priority <number:0..4294967294> <cr>    # path-067400
+(config-if)# ip pim sparse-mode encap-helper <interface> <cr>    # path-067847
+(config-if)# ip pim state-refresh origination-interval <cr>    # path-065978
+(config-if)# ip policy route-map <string> <cr>    # path-065545
+(config-if)# ip portbundle outside <cr>    # path-064267
+(config-if)# ip probe proxy <cr>    # path-064206
+(config-if)# ip proxy-arp <cr>    # path-063461
+(config-if)# ip rarp-server <address> <cr>    # path-064142
+(config-if)# ip reassembly <cr>    # path-063680
+(config-if)# ip reassembly percentage <number:1..100> dscp <?common_dscp_value_action@55558903efd0> <cr>    # path-068024
+(config-if)# ip reassembly percentage <number:1..100> dscp <?common_dscp_value_action@55558903efd0> <cr>    # path-068025
+(config-if)# ip redirects <cr>    # path-063444
+(config-if)# ip rgmp <cr>    # path-063460
+(config-if)# ip rip advertise <number:0..4294966> <cr>    # path-063618
+(config-if)# ip rip advertise-default <number:1..15> <number:0..65535> <cr>    # path-066839
+(config-if)# ip rip authentication key-chain <string> <cr>    # path-066927
+(config-if)# ip rip authentication mode text <cr>    # path-066915
+(config-if)# ip rip initial-delay <number:0..1800> <cr>    # path-063602
+(config-if)# ip rip receive version <cr>    # path-065948
+(config-if)# ip rip send version <cr>    # path-065933
+(config-if)# ip rip triggered <cr>    # path-064434
+(config-if)# ip rip v2-broadcast <cr>    # path-064453
+(config-if)# ip route-cache <cr>    # path-063431
+(config-if)# ip route-cache same-interface <cr>    # path-064114
+(config-if)# ip router isis <cr>    # path-064500
+(config-if)# ip rsvp aggregation ip role interior <cr>    # path-067434
+(config-if)# ip rsvp atm-peak-rate-limit <number:1..2139095> <cr>    # path-063736
+(config-if)# ip rsvp authentication <cr>    # path-065085
+(config-if)# ip rsvp authentication challenge <cr>    # path-066341
+(config-if)# ip rsvp authentication exception fast-reroute <cr>    # path-067115
+(config-if)# ip rsvp authentication key <string> <cr>    # path-067042
+(config-if)# ip rsvp authentication key-chain <string> <cr>    # path-067055
+(config-if)# ip rsvp authentication lifetime <hh:mm:ss> <cr>    # path-067864
+(config-if)# ip rsvp authentication type <cr>    # path-066347
+(config-if)# ip rsvp authentication window-size <number:1..64> <cr>    # path-067085
+(config-if)# ip rsvp bandwidth <cr>    # path-064638
+(config-if)# ip rsvp burst policing <cr>    # path-066146
+(config-if)# ip rsvp data-packet classification none <cr>    # path-066983
+(config-if)# ip rsvp dsbm candidate <cr>    # path-066261
+(config-if)# ip rsvp dsbm non-resv-send-limit burst <number:1..2147483> <cr>    # path-067505
+(config-if)# ip rsvp dsbm non-resv-send-limit max-unit <number:1..2147483647> <cr>    # path-067518
+(config-if)# ip rsvp dsbm non-resv-send-limit min-unit <number:1..2147483647> <cr>    # path-067514
+(config-if)# ip rsvp dsbm non-resv-send-limit peak <number:1..2147483> <cr>    # path-067510
+(config-if)# ip rsvp dsbm non-resv-send-limit rate <number:1..2147483> <cr>    # path-067501
+(config-if)# ip rsvp dsbm-candidate <cr>    # path-064861
+(config-if)# ip rsvp flow-assist <cr>    # path-064655
+(config-if)# ip rsvp listener outbound reply <cr>    # path-066961
+(config-if)# ip rsvp neighbor <cr>    # path-064645
+(config-if)# ip rsvp policy <?test_subsys_action@555589fa15e0> local default <cr>    # path-067885
+(config-if)# ip rsvp precedence <cr>    # path-064958
+(config-if)# ip rsvp resource-provider none <cr>    # path-066141
+(config-if)# ip rsvp resource-provider wfq interface <cr>    # path-067019
+(config-if)# ip rsvp resource-provider wfq pvc <cr>    # path-067030
+(config-if)# ip rsvp signalling blockade <number:1..65536> <cr>    # path-066955
+(config-if)# ip rsvp signalling dscp <number:0..63> <cr>    # path-066949
+(config-if)# ip rsvp signalling fast-local-repair wait-time <number:0..5000> <cr>    # path-067452
+(config-if)# ip rsvp signalling hello <cr>    # path-066165
+(config-if)# ip rsvp signalling hello bfd <cr>    # path-066965
+(config-if)# ip rsvp signalling hello dscp <number:0..63> <cr>    # path-067484
+(config-if)# ip rsvp signalling hello graceful-restart <cr>    # path-067025
+(config-if)# ip rsvp signalling hello refresh interval <number:10..30000> <cr>    # path-067649
+(config-if)# ip rsvp signalling hello refresh misses <number:4..10> <cr>    # path-067653
+(config-if)# ip rsvp signalling hello reroute dscp <number:0..63> <cr>    # path-067645
+(config-if)# ip rsvp signalling hello reroute refresh interval <number:1000..30000> <cr>    # path-067695
+(config-if)# ip rsvp signalling hello reroute refresh misses <number:4..10> <cr>    # path-067698
+(config-if)# ip rsvp source address <address> <cr>    # path-067054
+(config-if)# ip rsvp source interface <interface> <cr>    # path-067862
+(config-if)# ip rsvp svc-required <cr>    # path-064686
+(config-if)# ip rsvp tos <cr>    # path-064845
+(config-if)# ip rsvp tunnel overhead-percent <cr>    # path-065997
+(config-if)# ip rsvp udp-multicasts <cr>    # path-064628
+(config-if)# ip rtp compression-connections <number:dynamic> <cr>    # path-067807
+(config-if)# ip rtp header-compression <cr>    # path-064585
+(config-if)# ip sap listen <cr>    # path-064215
+(config-if)# ip security add <cr>    # path-064228
+(config-if)# ip security dedicated <cr>    # path-064344
+(config-if)# ip security dedicated Reserved1 <cr>    # path-065671
+(config-if)# ip security dedicated Reserved1 <cr>    # path-065685
+(config-if)# ip security dedicated Reserved1 to <cr>    # path-067851
+(config-if)# ip security dedicated Reserved1 to Reserved1 <cr>    # path-067883
+(config-if)# ip security dedicated Reserved1 to Reserved1 <cr>    # path-067884
+(config-if)# ip security eso-min <number:0..255> <hex-data> <cr>    # path-067845
+(config-if)# ip security extended-allowed <cr>    # path-064236
+(config-if)# ip security extended-ignored <cr>    # path-064246
+(config-if)# ip security first <cr>    # path-064258
+(config-if)# ip security ignore-authorities <cr>    # path-064265
+(config-if)# ip security ignore-cipso <cr>    # path-064276
+(config-if)# ip security reserved-allowed <cr>    # path-064253
+(config-if)# ip security strip <cr>    # path-064288
+(config-if)# ip split-horizon <cr>    # path-063441
+(config-if)# ip split-horizon eigrp <number:1..65535> <cr>    # path-065512
+(config-if)# ip sticky-arp <cr>    # path-063463
+(config-if)# ip subscriber routed <cr>    # path-064590
+(config-if)# ip summary-address <?router_action_proc_vpn@555589d79118> <address> <address> <cr>    # path-067838
+(config-if)# ip summary-address eigrp <number:1..65535> <address> <address> <cr>    # path-067879
+(config-if)# ip tcp adjust-mss <number:500..1460> <cr>    # path-063438
+(config-if)# ip tcp compression-connections <number:1..256> <cr>    # path-063442
+(config-if)# ip tcp header-compression <cr>    # path-064205
+(config-if)# ip topology-accounting <cr>    # path-063501
+(config-if)# ip trigger-authentication <cr>    # path-063613
+(config-if)# ip unnumbered <interface> <cr>    # path-067737
+(config-if)# ip unreachables <cr>    # path-063447
+(config-if)# ip urd <cr>    # path-063494
+(config-if)# ip verify unicast notification threshold <number:0..4294967295> <cr>    # path-067442
+(config-if)# ip verify unicast reverse-path <?option@555588d1dd40> <cr>    # path-067858
+(config-if)# ip verify unicast reverse-path <cr>    # path-066052
+(config-if)# ip virtual-reassembly <cr>    # path-063665
+(config-if)# ip vrf autoclassify source <cr>    # path-067796
+(config-if)# ip vrf receive <string> <cr>    # path-067799
+(config-if)# ip vrf select source <cr>    # path-067797
+(config-if)# ip vrf sitemap <cr>    # path-067739
+(config-if)# ip wccp redirect exclude in <cr>    # path-066745
+(config-if)# ip wccp web-cache <cr>    # path-064399
+(config-if)# ip wccp web-cache group-listen <cr>    # path-065705
+(config-if)# ip wccp web-cache redirect in <cr>    # path-066765
+(config-if)# ip wccp web-cache redirect out <cr>    # path-066754
+(config-if)# ipv6 address <address> link-local <cr>    # path-066127
+(config-if)# ipv6 address <cr>    # path-063880
+(config-if)# ipv6 address <prefix:dynamic> <cr>    # path-067781
+(config-if)# ipv6 address autoconfig <cr>    # path-064746
+(config-if)# ipv6 address dhcp <cr>    # path-064802
+(config-if)# ipv6 authentication key-chain eigrp <number:1..65535> <string> <cr>    # path-067494
+(config-if)# ipv6 authentication mode eigrp <number:1..65535> md5 <cr>    # path-067483
+(config-if)# ipv6 bandwidth-percent eigrp <number:1..65535> <number:1..999999> <cr>    # path-067029
+(config-if)# ipv6 cef <cr>    # path-063877
+(config-if)# ipv6 dampening-change eigrp <number:1..65535> <cr>    # path-066281
+(config-if)# ipv6 dampening-interval eigrp <number:1..65535> <cr>    # path-066302
+(config-if)# ipv6 destination-guard <cr>    # path-063783
+(config-if)# ipv6 dhcp client information refresh minimum <number:60..3600> <cr>    # path-067642
+(config-if)# ipv6 dhcp client pd <string> <cr>    # path-067024
+(config-if)# ipv6 dhcp client pd hint <prefix:dynamic> <cr>    # path-067890
+(config-if)# ipv6 dhcp client request vendor <cr>    # path-066970
+(config-if)# ipv6 dhcp client vendor-class ascii <string> <cr>    # path-067473
+(config-if)# ipv6 dhcp client vendor-class disable <cr>    # path-067008
+(config-if)# ipv6 dhcp client vendor-class hex <hex-string> <cr>    # path-067892
+(config-if)# ipv6 dhcp client vendor-class mac-address <cr>    # path-066974
+(config-if)# ipv6 dhcp framed password <string> <cr>    # path-067154
+(config-if)# ipv6 dhcp relay destination <address> <cr>    # path-067170
+(config-if)# ipv6 dhcp relay destination <address> <interface> <cr>    # path-067893
+(config-if)# ipv6 dhcp relay option vpn <cr>    # path-067143
+(config-if)# ipv6 dhcp relay short-lease <number:60..3600> <cr>    # path-067136
+(config-if)# ipv6 dhcp relay source-interface <interface> <cr>    # path-067869
+(config-if)# ipv6 dhcp relay trust <cr>    # path-066392
+(config-if)# ipv6 dhcp server <cr>    # path-065140
+(config-if)# ipv6 eigrp <number:1..65535> <cr>    # path-064808
+(config-if)# ipv6 enable <cr>    # path-063784
+(config-if)# ipv6 flow monitor <?option@555588f619a8> sampler <cr>    # path-068015
+(config-if)# ipv6 flow monitor <cr>    # path-067774
+(config-if)# ipv6 hello-interval eigrp <number:1..65535> <number:1..65535> <cr>    # path-067070
+(config-if)# ipv6 hold-time eigrp <number:1..65535> <number:1..65535> <cr>    # path-067084
+(config-if)# ipv6 mfib cef input <cr>    # path-066117
+(config-if)# ipv6 mfib cef output <cr>    # path-066138
+(config-if)# ipv6 mfib forwarding <cr>    # path-064843
+(config-if)# ipv6 mfib forwarding input <cr>    # path-066098
+(config-if)# ipv6 mfib forwarding output <cr>    # path-066120
+(config-if)# ipv6 mfib test adjacency <cr>    # path-066172
+(config-if)# ipv6 mfib test headless <cr>    # path-066195
+(config-if)# ipv6 mfib test macfilter <cr>    # path-066149
+(config-if)# ipv6 mfib test mask <cr>    # path-066133

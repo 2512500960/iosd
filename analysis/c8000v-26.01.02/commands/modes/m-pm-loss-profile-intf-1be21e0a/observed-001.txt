@@ -1,0 +1,42 @@
+# 模式 pm-loss-profile-intf；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-pm-lm-intf)# advertisement <cr>    # observed_connections-008284
+(config-pm-lm-intf)# advertisement anomaly-check <cr>    # observed_connections-008290
+(config-pm-lm-intf)# advertisement anomaly-check lower-bound <?fixed_number_action@55558c319278> <cr>    # observed_connections-008317
+(config-pm-lm-intf)# advertisement periodic <cr>    # observed_connections-008288
+(config-pm-lm-intf)# advertisement periodic interval <number:30..3600> <cr>    # observed_connections-008302
+(config-pm-lm-intf)# advertisement periodic minimum-change <?fixed_number_action@55558c3189d0> <cr>    # observed_connections-008316
+(config-pm-lm-intf)# advertisement periodic threshold <?fixed_number_action@55558c3186d8> <cr>    # observed_connections-008315
+(config-pm-lm-intf)# default <cr>    # observed_connections-008285
+(config-pm-lm-intf)# default advertisement <cr>    # observed_connections-008289
+(config-pm-lm-intf)# default advertisement anomaly-check <cr>    # observed_connections-008298
+(config-pm-lm-intf)# default advertisement periodic <cr>    # observed_connections-008297
+(config-pm-lm-intf)# default advertisement periodic interval <number:30..3600> <cr>    # observed_connections-008309
+(config-pm-lm-intf)# default probe <cr>    # observed_connections-008293
+(config-pm-lm-intf)# default probe color-type <cr>    # observed_connections-008301
+(config-pm-lm-intf)# default probe color-type dual-color gre <cr>    # observed_connections-008312
+(config-pm-lm-intf)# default probe color-type single-color <cr>    # observed_connections-008307
+(config-pm-lm-intf)# default probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-008314
+(config-pm-lm-intf)# default probe tx-interval <number:10..1000> <cr>    # observed_connections-008305
+(config-pm-lm-intf)# exit <cr>    # observed_connections-008282
+(config-pm-lm-intf)# no <cr>    # observed_connections-008283
+(config-pm-lm-intf)# no advertisement <cr>    # observed_connections-008287
+(config-pm-lm-intf)# no advertisement anomaly-check <cr>    # observed_connections-008296
+(config-pm-lm-intf)# no advertisement periodic <cr>    # observed_connections-008294
+(config-pm-lm-intf)# no advertisement periodic interval <number:30..3600> <cr>    # observed_connections-008308
+(config-pm-lm-intf)# no probe <cr>    # observed_connections-008291
+(config-pm-lm-intf)# no probe color-type <cr>    # observed_connections-008299
+(config-pm-lm-intf)# no probe color-type dual-color gre <cr>    # observed_connections-008310
+(config-pm-lm-intf)# no probe color-type single-color <cr>    # observed_connections-008306
+(config-pm-lm-intf)# no probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-008313
+(config-pm-lm-intf)# no probe tx-interval <number:10..1000> <cr>    # observed_connections-008303
+(config-pm-lm-intf)# probe <cr>    # observed_connections-008286
+(config-pm-lm-intf)# probe color-type <cr>    # observed_connections-008292
+(config-pm-lm-intf)# probe color-type dual-color gre <cr>    # observed_connections-008304
+(config-pm-lm-intf)# probe color-type single-color <cr>    # observed_connections-008300
+(config-pm-lm-intf)# probe color-type single-color accuracy <?fixed_number_action@55558c319a48> <cr>    # observed_connections-008318
+(config-pm-lm-intf)# probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-008311
+(config-pm-lm-intf)# probe tx-interval <number:10..1000> <cr>    # observed_connections-008295
+(config-pm-lm-intf)# <cr>    # observed_connections-008281

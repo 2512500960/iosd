@@ -1,0 +1,117 @@
+# 模式 bba-group；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-bba-group)# ac name <string> <cr>    # observed_connections-006435
+(config-bba-group)# control-packets vlan cos <number:0..7> <cr>    # observed_connections-006458
+(config-bba-group)# default ac name <cr>    # observed_connections-006436
+(config-bba-group)# default control-packets vlan cos <cr>    # observed_connections-006459
+(config-bba-group)# default limit pado service-name <cr>    # observed_connections-006444
+(config-bba-group)# default mac-address <cr>    # observed_connections-006417
+(config-bba-group)# default nas-port-id format c <cr>    # observed_connections-006461
+(config-bba-group)# default pado delay <number:0..9999> <cr>    # observed_connections-006464
+(config-bba-group)# default pado delay circuit-id <number:0..9999> <cr>    # observed_connections-006499
+(config-bba-group)# default pado delay remote-id <number:0..9999> <cr>    # observed_connections-006501
+(config-bba-group)# default pppoe disable-credit <cr>    # observed_connections-006441
+(config-bba-group)# default pppoe server circuit-id string <string> <cr>    # observed_connections-006510
+(config-bba-group)# default pppoe server remote-id string <string> <cr>    # observed_connections-006512
+(config-bba-group)# default service name <cr>    # observed_connections-006433
+(config-bba-group)# default service profile <cr>    # observed_connections-006434
+(config-bba-group)# default sessions auto cleanup <cr>    # observed_connections-006483
+(config-bba-group)# default sessions max limit <cr>    # observed_connections-006484
+(config-bba-group)# default sessions per-mac iwf <cr>    # observed_connections-006470
+(config-bba-group)# default sessions per-mac limit <cr>    # observed_connections-006476
+(config-bba-group)# default sessions per-mac throttle <cr>    # observed_connections-006482
+(config-bba-group)# default sessions per-vc limit <cr>    # observed_connections-006465
+(config-bba-group)# default sessions per-vc throttle <cr>    # observed_connections-006472
+(config-bba-group)# default sessions per-vlan limit <cr>    # observed_connections-006475
+(config-bba-group)# default sessions per-vlan throttle <cr>    # observed_connections-006481
+(config-bba-group)# default sessions pre-auth limit ignore <cr>    # observed_connections-006504
+(config-bba-group)# default sessions threshold percent <cr>    # observed_connections-006487
+(config-bba-group)# default tag ppp-max-payload deny <cr>    # observed_connections-006446
+(config-bba-group)# default tag ppp-max-payload minimum <cr>    # observed_connections-006452
+(config-bba-group)# default test tag <number:0..65535> <cr>    # observed_connections-006454
+(config-bba-group)# default test vendor-tag circuit-id client <cr>    # observed_connections-006489
+(config-bba-group)# default test vendor-tag circuit-id string <cr>    # observed_connections-006494
+(config-bba-group)# default test vendor-tag remote-id client <cr>    # observed_connections-006491
+(config-bba-group)# default test vendor-tag remote-id string <cr>    # observed_connections-006497
+(config-bba-group)# default vendor-tag circuit-id service <cr>    # observed_connections-006449
+(config-bba-group)# default vendor-tag dsl-sync-rate <cr>    # observed_connections-006425
+(config-bba-group)# default vendor-tag remote-id service <cr>    # observed_connections-006456
+(config-bba-group)# default vendor-tag strip <cr>    # observed_connections-006428
+(config-bba-group)# default virtual-template <cr>    # observed_connections-006413
+(config-bba-group)# exit <cr>    # observed_connections-006411
+(config-bba-group)# limit pado service-name <cr>    # observed_connections-006419
+(config-bba-group)# mac-address autoselect <cr>    # observed_connections-006416
+(config-bba-group)# nas-port format d <number:0..8> / <?number_func_nows_action@55558a98bc70> / <number:dynamic> <cr>    # observed_connections-006523
+(config-bba-group)# nas-port-id format c <cr>    # observed_connections-006429
+(config-bba-group)# no ac name <cr>    # observed_connections-006432
+(config-bba-group)# no control-packets vlan cos <cr>    # observed_connections-006455
+(config-bba-group)# no limit pado service-name <cr>    # observed_connections-006443
+(config-bba-group)# no mac-address <cr>    # observed_connections-006415
+(config-bba-group)# no nas-port-id format c <cr>    # observed_connections-006460
+(config-bba-group)# no pado delay <number:0..9999> <cr>    # observed_connections-006462
+(config-bba-group)# no pado delay circuit-id <number:0..9999> <cr>    # observed_connections-006498
+(config-bba-group)# no pado delay remote-id <number:0..9999> <cr>    # observed_connections-006500
+(config-bba-group)# no pppoe disable-credit <cr>    # observed_connections-006440
+(config-bba-group)# no pppoe server circuit-id string <string> <cr>    # observed_connections-006509
+(config-bba-group)# no pppoe server remote-id string <string> <cr>    # observed_connections-006511
+(config-bba-group)# no service name <cr>    # observed_connections-006430
+(config-bba-group)# no service profile <cr>    # observed_connections-006431
+(config-bba-group)# no sessions auto cleanup <cr>    # observed_connections-006479
+(config-bba-group)# no sessions max limit <cr>    # observed_connections-006480
+(config-bba-group)# no sessions per-mac iwf <cr>    # observed_connections-006466
+(config-bba-group)# no sessions per-mac limit <cr>    # observed_connections-006473
+(config-bba-group)# no sessions per-mac throttle <cr>    # observed_connections-006478
+(config-bba-group)# no sessions per-vc limit <cr>    # observed_connections-006463
+(config-bba-group)# no sessions per-vc throttle <cr>    # observed_connections-006468
+(config-bba-group)# no sessions per-vlan limit <cr>    # observed_connections-006471
+(config-bba-group)# no sessions per-vlan throttle <cr>    # observed_connections-006477
+(config-bba-group)# no sessions pre-auth limit ignore <cr>    # observed_connections-006502
+(config-bba-group)# no sessions threshold percent <cr>    # observed_connections-006486
+(config-bba-group)# no tag ppp-max-payload deny <cr>    # observed_connections-006445
+(config-bba-group)# no tag ppp-max-payload minimum <cr>    # observed_connections-006448
+(config-bba-group)# no test tag <number:0..65535> <cr>    # observed_connections-006450
+(config-bba-group)# no test vendor-tag circuit-id client <cr>    # observed_connections-006488
+(config-bba-group)# no test vendor-tag circuit-id string <cr>    # observed_connections-006492
+(config-bba-group)# no test vendor-tag remote-id client <cr>    # observed_connections-006490
+(config-bba-group)# no test vendor-tag remote-id string <cr>    # observed_connections-006495
+(config-bba-group)# no vendor-tag circuit-id service <cr>    # observed_connections-006447
+(config-bba-group)# no vendor-tag dsl-sync-rate <cr>    # observed_connections-006424
+(config-bba-group)# no vendor-tag remote-id service <cr>    # observed_connections-006451
+(config-bba-group)# no vendor-tag strip <cr>    # observed_connections-006426
+(config-bba-group)# no virtual-template <cr>    # observed_connections-006412
+(config-bba-group)# pado delay <number:0..9999> <cr>    # observed_connections-006439
+(config-bba-group)# pado delay circuit-id <number:0..9999> <cr>    # observed_connections-006469
+(config-bba-group)# pado delay remote-id <number:0..9999> <cr>    # observed_connections-006474
+(config-bba-group)# pppoe disable-credit <cr>    # observed_connections-006418
+(config-bba-group)# pppoe server circuit-id string <string> <cr>    # observed_connections-006503
+(config-bba-group)# pppoe server remote-id string <string> <cr>    # observed_connections-006505
+(config-bba-group)# service name contains <string> <cr>    # observed_connections-006467
+(config-bba-group)# service name match <cr>    # observed_connections-006437
+(config-bba-group)# service profile <string> <cr>    # observed_connections-006438
+(config-bba-group)# sessions auto cleanup <cr>    # observed_connections-006442
+(config-bba-group)# sessions max limit <number:dynamic> <cr>    # observed_connections-006520
+(config-bba-group)# sessions per-mac iwf limit <number:dynamic> <cr>    # observed_connections-006521
+(config-bba-group)# sessions per-mac limit <number:dynamic> <cr>    # observed_connections-006518
+(config-bba-group)# sessions per-mac throttle <number:1..100000> <number:1..3600> <number:0..3600> <cr>    # observed_connections-006508
+(config-bba-group)# sessions per-vc limit <number:dynamic> <cr>    # observed_connections-006517
+(config-bba-group)# sessions per-vc throttle <number:1..100000> <number:1..3600> <number:0..3600> <cr>    # observed_connections-006506
+(config-bba-group)# sessions per-vlan limit <number:dynamic> <cr>    # observed_connections-006519
+(config-bba-group)# sessions per-vlan throttle <number:1..100000> <number:1..3600> <number:0..3600> <cr>    # observed_connections-006507
+(config-bba-group)# sessions pre-auth limit ignore <cr>    # observed_connections-006485
+(config-bba-group)# sessions threshold <number:dynamic> <cr>    # observed_connections-006515
+(config-bba-group)# sessions threshold percent <number:0..100> interval <number:1..3600> <cr>    # observed_connections-006513
+(config-bba-group)# tag ppp-max-payload deny <cr>    # observed_connections-006420
+(config-bba-group)# tag ppp-max-payload minimum <number:dynamic> maximum <number:dynamic> <cr>    # observed_connections-006522
+(config-bba-group)# test tag <number:0..65535> <cr>    # observed_connections-006422
+(config-bba-group)# test tag <number:0..65535> <hex-string> <cr>    # observed_connections-006516
+(config-bba-group)# test vendor-tag circuit-id client <cr>    # observed_connections-006453
+(config-bba-group)# test vendor-tag circuit-id string <string> <cr>    # observed_connections-006493
+(config-bba-group)# test vendor-tag remote-id client <cr>    # observed_connections-006457
+(config-bba-group)# test vendor-tag remote-id string <string> <cr>    # observed_connections-006496
+(config-bba-group)# vendor-tag circuit-id service <cr>    # observed_connections-006421
+(config-bba-group)# vendor-tag dsl-sync-rate service <cr>    # observed_connections-006427
+(config-bba-group)# vendor-tag remote-id service <cr>    # observed_connections-006423
+(config-bba-group)# vendor-tag strip <cr>    # observed_connections-006414
+(config-bba-group)# virtual-template <number:dynamic> <cr>    # observed_connections-006514

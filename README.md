@@ -23,6 +23,7 @@ skill 组织调查流程和经验知识，IDA MCP 提供数据库与调试接口
 | [完整教程与使用说明](如何调试iosd.md) | 虚拟与实体设备调试、MCP、skill 安装使用、源码与文档维护 |
 | [iosd-analysis skill](skills/iosd-analysis/SKILL.md) | 给支持 skill 的客户端使用的调查入口 |
 | [当前版本分析结果](analysis/c8000v-26.01.02/README.md) | 样本身份、已取得处理链、CLI 数据与覆盖范围 |
+| [直接阅读命令文本](analysis/c8000v-26.01.02/commands/README.md) | 按模式拆分的 txt 命令列表，以及参数、handler、条件和缺口参考 |
 | [CLI 挖掘方法](docs/iosd的CLI挖掘方法.md) | 动作消费者、语法图、模式、条件与注册分析 |
 | [架构图解](docs/iosd架构图解.html) | 下载后可离线打开的八张图解，支持搜索与主题筛选 |
 
@@ -50,7 +51,9 @@ python tools/iosd_mcp.py --url <mcp-url> status --output reports/session/session
 
 `<mcp-url>` 替换为当前 IDA 实例的实际地址。Python 入口使用 MCP 的 `py_eval`；其他类型化接口由 skill 按实际能力适配。详细示例见 [MCP 会话说明](skills/iosd-analysis/references/mcp-and-session.md)。
 
-已有样本数据也可完全离线查询：
+已有样本数据可在 GitHub 直接阅读：[命令文本总索引](analysis/c8000v-26.01.02/commands/README.md) 将 98,812 条路径见证按 287 个模式主名称编排，每页提供简明 `.txt` 与详细 `.md`。基础连接、补充模式和条件安装分别列出；另外保留 1,350 个尚缺完整路径的候选。
+
+也可在本地通过命令行查询：
 
 ```text
 python tools/query_cli_catalogue.py analysis/c8000v-26.01.02/cli/catalogue.jsonl.gz --mode configure --contains "service internal" --limit 10 --json

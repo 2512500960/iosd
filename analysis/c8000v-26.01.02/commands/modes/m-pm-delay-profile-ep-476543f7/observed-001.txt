@@ -1,0 +1,77 @@
+# 模式 pm-delay-profile-ep；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-pm-dm-ep)# advertisement <cr>    # observed_connections-007290
+(config-pm-dm-ep)# advertisement accelerated <cr>    # observed_connections-007300
+(config-pm-dm-ep)# advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007326
+(config-pm-dm-ep)# advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007332
+(config-pm-dm-ep)# advertisement periodic <cr>    # observed_connections-007302
+(config-pm-dm-ep)# advertisement periodic disabled <cr>    # observed_connections-007318
+(config-pm-dm-ep)# advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007340
+(config-pm-dm-ep)# advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007329
+(config-pm-dm-ep)# advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007336
+(config-pm-dm-ep)# advertisement threshold-check <cr>    # observed_connections-007298
+(config-pm-dm-ep)# advertisement threshold-check average-delay <cr>    # observed_connections-007303
+(config-pm-dm-ep)# advertisement threshold-check maximum-delay <cr>    # observed_connections-007304
+(config-pm-dm-ep)# advertisement threshold-check minimum-delay <cr>    # observed_connections-007305
+(config-pm-dm-ep)# default <cr>    # observed_connections-007291
+(config-pm-dm-ep)# default advertisement <cr>    # observed_connections-007296
+(config-pm-dm-ep)# default advertisement accelerated <cr>    # observed_connections-007313
+(config-pm-dm-ep)# default advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007351
+(config-pm-dm-ep)# default advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007355
+(config-pm-dm-ep)# default advertisement periodic <cr>    # observed_connections-007316
+(config-pm-dm-ep)# default advertisement periodic disabled <cr>    # observed_connections-007346
+(config-pm-dm-ep)# default advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007359
+(config-pm-dm-ep)# default advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007353
+(config-pm-dm-ep)# default advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007357
+(config-pm-dm-ep)# default advertisement threshold-check <cr>    # observed_connections-007309
+(config-pm-dm-ep)# default advertisement threshold-check average-delay <cr>    # observed_connections-007322
+(config-pm-dm-ep)# default advertisement threshold-check maximum-delay <cr>    # observed_connections-007324
+(config-pm-dm-ep)# default advertisement threshold-check minimum-delay <cr>    # observed_connections-007328
+(config-pm-dm-ep)# default liveness-detection <cr>    # observed_connections-007301
+(config-pm-dm-ep)# default liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007335
+(config-pm-dm-ep)# default probe <cr>    # observed_connections-007297
+(config-pm-dm-ep)# default probe burst-interval <number:30..15000> <cr>    # observed_connections-007330
+(config-pm-dm-ep)# default probe computation-interval <number:3..3600> <cr>    # observed_connections-007339
+(config-pm-dm-ep)# default probe measurement-mode loopback <cr>    # observed_connections-007349
+(config-pm-dm-ep)# default probe measurement-mode one-way <cr>    # observed_connections-007344
+(config-pm-dm-ep)# default probe measurement-mode two-way <cr>    # observed_connections-007347
+(config-pm-dm-ep)# default probe padding-size <number:0..8000> <cr>    # observed_connections-007337
+(config-pm-dm-ep)# default probe tos-dscp <number:0..63> <cr>    # observed_connections-007341
+(config-pm-dm-ep)# exit <cr>    # observed_connections-007288
+(config-pm-dm-ep)# liveness-detection <cr>    # observed_connections-007293
+(config-pm-dm-ep)# liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007310
+(config-pm-dm-ep)# no <cr>    # observed_connections-007289
+(config-pm-dm-ep)# no advertisement <cr>    # observed_connections-007294
+(config-pm-dm-ep)# no advertisement accelerated <cr>    # observed_connections-007308
+(config-pm-dm-ep)# no advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007350
+(config-pm-dm-ep)# no advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007354
+(config-pm-dm-ep)# no advertisement periodic <cr>    # observed_connections-007314
+(config-pm-dm-ep)# no advertisement periodic disabled <cr>    # observed_connections-007343
+(config-pm-dm-ep)# no advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007358
+(config-pm-dm-ep)# no advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007352
+(config-pm-dm-ep)# no advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007356
+(config-pm-dm-ep)# no advertisement threshold-check <cr>    # observed_connections-007307
+(config-pm-dm-ep)# no advertisement threshold-check average-delay <cr>    # observed_connections-007321
+(config-pm-dm-ep)# no advertisement threshold-check maximum-delay <cr>    # observed_connections-007323
+(config-pm-dm-ep)# no advertisement threshold-check minimum-delay <cr>    # observed_connections-007325
+(config-pm-dm-ep)# no liveness-detection <cr>    # observed_connections-007299
+(config-pm-dm-ep)# no liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007331
+(config-pm-dm-ep)# no probe <cr>    # observed_connections-007295
+(config-pm-dm-ep)# no probe burst-interval <number:30..15000> <cr>    # observed_connections-007327
+(config-pm-dm-ep)# no probe computation-interval <number:3..3600> <cr>    # observed_connections-007334
+(config-pm-dm-ep)# no probe measurement-mode loopback <cr>    # observed_connections-007348
+(config-pm-dm-ep)# no probe measurement-mode one-way <cr>    # observed_connections-007342
+(config-pm-dm-ep)# no probe measurement-mode two-way <cr>    # observed_connections-007345
+(config-pm-dm-ep)# no probe padding-size <number:0..8000> <cr>    # observed_connections-007333
+(config-pm-dm-ep)# no probe tos-dscp <number:0..63> <cr>    # observed_connections-007338
+(config-pm-dm-ep)# probe <cr>    # observed_connections-007292
+(config-pm-dm-ep)# probe burst-interval <number:30..15000> <cr>    # observed_connections-007306
+(config-pm-dm-ep)# probe computation-interval <number:3..3600> <cr>    # observed_connections-007312
+(config-pm-dm-ep)# probe measurement-mode loopback <cr>    # observed_connections-007320
+(config-pm-dm-ep)# probe measurement-mode one-way <cr>    # observed_connections-007317
+(config-pm-dm-ep)# probe measurement-mode two-way <cr>    # observed_connections-007319
+(config-pm-dm-ep)# probe padding-size <number:0..8000> <cr>    # observed_connections-007311
+(config-pm-dm-ep)# probe tos-dscp <number:0..63> <cr>    # observed_connections-007315
+(config-pm-dm-ep)# <cr>    # observed_connections-007287

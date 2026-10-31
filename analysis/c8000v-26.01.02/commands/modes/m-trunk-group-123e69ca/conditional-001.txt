@@ -1,0 +1,10 @@
+# 模式 trunk-group；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-trunk-group)# default lpcor incoming <cr>    # conditional_registration_candidates-011118
+(config-trunk-group)# default lpcor outgoing <cr>    # conditional_registration_candidates-011121
+(config-trunk-group)# lpcor incoming <string> <cr>    # conditional_registration_candidates-011117
+(config-trunk-group)# lpcor outgoing <string> <cr>    # conditional_registration_candidates-011120
+(config-trunk-group)# no lpcor incoming <cr>    # conditional_registration_candidates-011116
+(config-trunk-group)# no lpcor outgoing <cr>    # conditional_registration_candidates-011119

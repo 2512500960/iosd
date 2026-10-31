@@ -1,0 +1,34 @@
+# 模式 conf-rad-server；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-radius-server)# address ipv4 <address> alias <cr>    # observed_connections-008341
+(config-radius-server)# attribute policy-name <string> include-in-access-req <cr>    # observed_connections-008342
+(config-radius-server)# automate-tester username <string> <cr>    # observed_connections-008339
+(config-radius-server)# backoff exponential <cr>    # observed_connections-008334
+(config-radius-server)# dscp acct <number:1..63> <cr>    # observed_connections-008340
+(config-radius-server)# dtls <cr>    # observed_connections-008324
+(config-radius-server)# dtls ip radius source-interface <interface> <cr>    # observed_connections-008348
+(config-radius-server)# exit <cr>    # observed_connections-008319
+(config-radius-server)# ignore-acct-authenticator <cr>    # observed_connections-008321
+(config-radius-server)# key <string> <cr>    # observed_connections-008336
+(config-radius-server)# key-wrap encryption-key <string> message-auth-code-key <string> <cr>    # observed_connections-008347
+(config-radius-server)# no address ipv4 <address> alias <cr>    # observed_connections-008345
+(config-radius-server)# no attribute policy-name <string> include-in-access-req <cr>    # observed_connections-008346
+(config-radius-server)# no automate-tester username <string> <cr>    # observed_connections-008343
+(config-radius-server)# no backoff exponential <cr>    # observed_connections-008338
+(config-radius-server)# no dscp acct <number:1..63> <cr>    # observed_connections-008344
+(config-radius-server)# no dtls <cr>    # observed_connections-008337
+(config-radius-server)# no ignore-acct-authenticator <cr>    # observed_connections-008330
+(config-radius-server)# no key <cr>    # observed_connections-008335
+(config-radius-server)# no key-wrap <cr>    # observed_connections-008333
+(config-radius-server)# no non-standard <cr>    # observed_connections-008328
+(config-radius-server)# no retransmit <cr>    # observed_connections-008329
+(config-radius-server)# no send-ma <cr>    # observed_connections-008331
+(config-radius-server)# no timeout <cr>    # observed_connections-008326
+(config-radius-server)# no validate-ma <cr>    # observed_connections-008332
+(config-radius-server)# non-standard <cr>    # observed_connections-008320
+(config-radius-server)# retransmit <number:0..100> <cr>    # observed_connections-008327
+(config-radius-server)# send-ma <cr>    # observed_connections-008322
+(config-radius-server)# timeout <number:1..1000> <cr>    # observed_connections-008325
+(config-radius-server)# validate-ma <cr>    # observed_connections-008323

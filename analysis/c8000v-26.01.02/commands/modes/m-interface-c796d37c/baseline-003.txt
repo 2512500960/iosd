@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-003.md
+
+(config-if)# default ip pim bfd <cr>    # path-065764
+(config-if)# default ip pim bidir-neighbor-filter <cr>    # path-065786
+(config-if)# default ip pim bsr-border <cr>    # path-065855
+(config-if)# default ip pim dr-priority <cr>    # path-065787
+(config-if)# default ip pim drlb <cr>    # path-065815
+(config-if)# default ip pim join-prune-interval <cr>    # path-065697
+(config-if)# default ip pim lisp core-group-range <cr>    # path-066784
+(config-if)# default ip pim lisp transit-core-group-range <cr>    # path-066798
+(config-if)# default ip pim lisp transport <cr>    # path-066770
+(config-if)# default ip pim nbma-mode <cr>    # path-065824
+(config-if)# default ip pim neighbor-filter <cr>    # path-065745
+(config-if)# default ip pim non-dr-join <cr>    # path-065795
+(config-if)# default ip pim pfp-sa border <cr>    # path-066897
+(config-if)# default ip pim query-interval <cr>    # path-065867
+(config-if)# default ip pim redundancy <string> <cr>    # path-066847
+(config-if)# default ip pim state-refresh origination-interval <cr>    # path-066929
+(config-if)# default ip policy route-map <cr>    # path-065554
+(config-if)# default ip portbundle outside <cr>    # path-065625
+(config-if)# default ip probe proxy <cr>    # path-065551
+(config-if)# default ip proxy-arp <cr>    # path-064190
+(config-if)# default ip rarp-server <cr>    # path-064150
+(config-if)# default ip redirects <cr>    # path-064162
+(config-if)# default ip rgmp <cr>    # path-064189
+(config-if)# default ip rip advertise <cr>    # path-064514
+(config-if)# default ip rip advertise-default <cr>    # path-065838
+(config-if)# default ip rip authentication key-chain <cr>    # path-066930
+(config-if)# default ip rip authentication mode <cr>    # path-066919
+(config-if)# default ip rip initial-delay <cr>    # path-064485
+(config-if)# default ip rip receive version <cr>    # path-066908
+(config-if)# default ip rip send version <cr>    # path-066886
+(config-if)# default ip rip triggered <cr>    # path-065775
+(config-if)# default ip rip v2-broadcast <cr>    # path-065793
+(config-if)# default ip route-cache <cr>    # path-064137
+(config-if)# default ip route-cache same-interface <cr>    # path-065481
+(config-if)# default ip router isis <cr>    # path-065829
+(config-if)# default ip rsvp aggregation ip role interior <cr>    # path-067621
+(config-if)# default ip rsvp atm-peak-rate-limit <cr>    # path-064698
+(config-if)# default ip rsvp authentication <cr>    # path-066379
+(config-if)# default ip rsvp authentication challenge <cr>    # path-067108
+(config-if)# default ip rsvp authentication exception fast-reroute <cr>    # path-067525
+(config-if)# default ip rsvp authentication key <cr>    # path-067049
+(config-if)# default ip rsvp authentication key-chain <cr>    # path-067063
+(config-if)# default ip rsvp authentication lifetime <cr>    # path-067101
+(config-if)# default ip rsvp authentication type <cr>    # path-067109
+(config-if)# default ip rsvp authentication window-size <cr>    # path-067092
+(config-if)# default ip rsvp bandwidth <cr>    # path-065992
+(config-if)# default ip rsvp burst policing <cr>    # path-066999
+(config-if)# default ip rsvp data-packet classification <cr>    # path-066986
+(config-if)# default ip rsvp dsbm candidate <cr>    # path-067064
+(config-if)# default ip rsvp dsbm non-resv-send-limit burst <cr>    # path-067507
+(config-if)# default ip rsvp dsbm non-resv-send-limit max-unit <cr>    # path-067521
+(config-if)# default ip rsvp dsbm non-resv-send-limit min-unit <cr>    # path-067515
+(config-if)# default ip rsvp dsbm non-resv-send-limit peak <cr>    # path-067511
+(config-if)# default ip rsvp dsbm non-resv-send-limit rate <cr>    # path-067503
+(config-if)# default ip rsvp dsbm-candidate <cr>    # path-066185
+(config-if)# default ip rsvp flow-assist <cr>    # path-066007
+(config-if)# default ip rsvp listener outbound reply <cr>    # path-067464
+(config-if)# default ip rsvp neighbor <cr>    # path-066002
+(config-if)# default ip rsvp precedence <cr>    # path-066186
+(config-if)# default ip rsvp resource-provider <cr>    # path-066145
+(config-if)# default ip rsvp signalling blockade <cr>    # path-066959
+(config-if)# default ip rsvp signalling dscp <cr>    # path-066953
+(config-if)# default ip rsvp signalling fast-local-repair wait-time <cr>    # path-067454
+(config-if)# default ip rsvp signalling hello <cr>    # path-067017
+(config-if)# default ip rsvp signalling hello bfd <cr>    # path-067467
+(config-if)# default ip rsvp signalling hello dscp <cr>    # path-067486
+(config-if)# default ip rsvp signalling hello graceful-restart <cr>    # path-067492
+(config-if)# default ip rsvp signalling hello refresh interval <cr>    # path-067650
+(config-if)# default ip rsvp signalling hello refresh misses <cr>    # path-067654
+(config-if)# default ip rsvp signalling hello reroute dscp <cr>    # path-067647
+(config-if)# default ip rsvp signalling hello reroute refresh interval <cr>    # path-067696
+(config-if)# default ip rsvp signalling hello reroute refresh misses <cr>    # path-067699
+(config-if)# default ip rsvp source <cr>    # path-066228
+(config-if)# default ip rsvp svc-required <cr>    # path-066029
+(config-if)# default ip rsvp tos <cr>    # path-066115
+(config-if)# default ip rsvp tunnel overhead-percent <cr>    # path-066945
+(config-if)# default ip rsvp udp-multicasts <cr>    # path-065976
+(config-if)# default ip rtp compression-connections <cr>    # path-065865
+(config-if)# default ip rtp header-compression <cr>    # path-065833
+(config-if)# default ip sap listen <cr>    # path-065556
+(config-if)# default ip security <cr>    # path-064400
+(config-if)# default ip security add <cr>    # path-065571
+(config-if)# default ip security eso-min <number:0..255> <cr>    # path-066756
+(config-if)# default ip security extended-allowed <cr>    # path-065579
+(config-if)# default ip security extended-ignored <cr>    # path-065588
+(config-if)# default ip security first <cr>    # path-065605
+(config-if)# default ip security ignore-authorities <cr>    # path-065621
+(config-if)# default ip security ignore-cipso <cr>    # path-065635
+(config-if)# default ip security implicit-labelling <cr>    # path-065871
+(config-if)# default ip security implicit-labelling Reserved1 <cr>    # path-066820
+(config-if)# default ip security implicit-labelling Reserved1 <cr>    # path-066835
+(config-if)# default ip security reserved-allowed <cr>    # path-065596
+(config-if)# default ip security strip <cr>    # path-065659
+(config-if)# default ip split-horizon <cr>    # path-064158
+(config-if)# default ip split-horizon eigrp <number:1..65535> <cr>    # path-066700
+(config-if)# default ip sticky-arp <cr>    # path-064202
+(config-if)# default ip subscriber routed <cr>    # path-065944
+(config-if)# default ip tcp adjust-mss <cr>    # path-064154
+(config-if)# default ip tcp compression-connections <cr>    # path-064161
+(config-if)# default ip tcp header-compression <cr>    # path-065511
+(config-if)# default ip topology-accounting <cr>    # path-064254
+(config-if)# default ip trigger-authentication <cr>    # path-064511
+(config-if)# default ip unnumbered <cr>    # path-064127
+(config-if)# default ip unreachables <cr>    # path-064169
+(config-if)# default ip urd <cr>    # path-064240
+(config-if)# default ip verify unicast <cr>    # path-065968
+(config-if)# default ip virtual-reassembly <cr>    # path-064609
+(config-if)# default ip virtual-reassembly percentage <number:1..100> precedence <number:0..7> <cr>    # path-067656
+(config-if)# default ip wccp redirect exclude in <cr>    # path-067348
+(config-if)# default ip wccp web-cache <cr>    # path-065750
+(config-if)# default ip wccp web-cache group-listen <cr>    # path-066755
+(config-if)# default ip wccp web-cache redirect in <cr>    # path-067356
+(config-if)# default ip wccp web-cache redirect out <cr>    # path-067351
+(config-if)# default ipv6 address <address> link-local <cr>    # path-066998
+(config-if)# default ipv6 address <cr>    # path-064987
+(config-if)# default ipv6 address autoconfig <cr>    # path-066086
+(config-if)# default ipv6 address dhcp <cr>    # path-066112
+(config-if)# default ipv6 authentication key-chain eigrp <number:1..65535> <cr>    # path-067496
+(config-if)# default ipv6 authentication mode eigrp <number:1..65535> md5 <cr>    # path-067652
+(config-if)# default ipv6 bandwidth-percent eigrp <number:1..65535> <cr>    # path-067034
+(config-if)# default ipv6 cef <cr>    # path-064978
+(config-if)# default ipv6 dampening-change eigrp <number:1..65535> <cr>    # path-067045
+(config-if)# default ipv6 dampening-interval eigrp <number:1..65535> <cr>    # path-067059
+(config-if)# default ipv6 destination-guard <cr>    # path-064774
+(config-if)# default ipv6 dhcp client information refresh minimum <cr>    # path-067643
+(config-if)# default ipv6 dhcp client pd <cr>    # path-067016
+(config-if)# default ipv6 dhcp client request vendor <cr>    # path-067466
+(config-if)# default ipv6 dhcp client vendor-class ascii <cr>    # path-067474
+(config-if)# default ipv6 dhcp client vendor-class disable <cr>    # path-067481
+(config-if)# default ipv6 dhcp client vendor-class hex <cr>    # path-067477
+(config-if)# default ipv6 dhcp client vendor-class mac-address <cr>    # path-067470
+(config-if)# default ipv6 dhcp framed password <cr>    # path-067147
+(config-if)# default ipv6 dhcp relay destination <address> <cr>    # path-067541
+(config-if)# default ipv6 dhcp relay option vpn <cr>    # path-067533
+(config-if)# default ipv6 dhcp relay short-lease <number:60..3600> <cr>    # path-067531
+(config-if)# default ipv6 dhcp relay source-interface <cr>    # path-067140
+(config-if)# default ipv6 dhcp relay trust <cr>    # path-067137
+(config-if)# default ipv6 dhcp server <cr>    # path-066400
+(config-if)# default ipv6 eigrp <number:1..65535> <cr>    # path-066139
+(config-if)# default ipv6 enable <cr>    # path-064750
+(config-if)# default ipv6 hello-interval eigrp <number:1..65535> <cr>    # path-067073
+(config-if)# default ipv6 hold-time eigrp <number:1..65535> <cr>    # path-067086
+(config-if)# default ipv6 mfib cef input <cr>    # path-066990
+(config-if)# default ipv6 mfib cef output <cr>    # path-067005
+(config-if)# default ipv6 mfib forwarding <cr>    # path-066162
+(config-if)# default ipv6 mfib forwarding input <cr>    # path-066978
+(config-if)# default ipv6 mfib forwarding output <cr>    # path-066996
+(config-if)# default ipv6 mfib test adjacency <cr>    # path-067020
+(config-if)# default ipv6 mfib test headless <cr>    # path-067031
+(config-if)# default ipv6 mfib test macfilter <cr>    # path-067012
+(config-if)# default ipv6 mfib test mask <cr>    # path-067001
+(config-if)# default ipv6 mfib-cef <cr>    # path-064793
+(config-if)# default ipv6 mld access-group <cr>    # path-066412
+(config-if)# default ipv6 mld explicit-tracking <cr>    # path-066378
+(config-if)# default ipv6 mld join-group <address> <cr>    # path-067129
+(config-if)# default ipv6 mld limit <cr>    # path-066424
+(config-if)# default ipv6 mld query-interval <cr>    # path-066343
+(config-if)# default ipv6 mld query-max-response-time <cr>    # path-066277
+(config-if)# default ipv6 mld query-timeout <cr>    # path-066299
+(config-if)# default ipv6 mld robustness-variable <cr>    # path-066342
+(config-if)# default ipv6 mld router <cr>    # path-066364
+(config-if)# default ipv6 mld static-group <address> <cr>    # path-067138
+(config-if)# default ipv6 mld v2-report-type <cr>    # path-066442
+(config-if)# default ipv6 mld version <cr>    # path-066257
+(config-if)# default ipv6 mode host unicast <cr>    # path-066989
+(config-if)# default ipv6 mtu <cr>    # path-064797
+(config-if)# default ipv6 multicast aaa accounting receive <cr>    # path-067524
+(config-if)# default ipv6 multicast boundary scope <cr>    # path-067047
+(config-if)# default ipv6 multicast limit <string> <cr>    # path-067106
+(config-if)# default ipv6 nd advertisement-interval <cr>    # path-066396
+(config-if)# default ipv6 nd autoconfig default-route <cr>    # path-067013
+(config-if)# default ipv6 nd autoconfig prefix <cr>    # path-067002
+(config-if)# default ipv6 nd cache expire <cr>    # path-067077
+(config-if)# default ipv6 nd cache interface-limit <cr>    # path-067061
+(config-if)# default ipv6 nd dad attempts <cr>    # path-066055
+(config-if)# default ipv6 nd dad loopback detect <cr>    # path-067472
+(config-if)# default ipv6 nd dad time <cr>    # path-066087
+(config-if)# default ipv6 nd dad-proxy <cr>    # path-066079
+(config-if)# default ipv6 nd destination-guard <cr>    # path-066080
+(config-if)# default ipv6 nd managed-config-flag <cr>    # path-066355
+(config-if)# default ipv6 nd na glean <cr>    # path-066992
+(config-if)# default ipv6 nd ns-interval <cr>    # path-064715
+(config-if)# default ipv6 nd nud igp <cr>    # path-067146
+(config-if)# default ipv6 nd nud retry <cr>    # path-067161
+(config-if)# default ipv6 nd other-config-flag <cr>    # path-066372
+(config-if)# default ipv6 nd packet-priority <cr>    # path-066104
+(config-if)# default ipv6 nd prefix default <cr>    # path-067125
+(config-if)# default ipv6 nd prefix framed-ipv6-prefix <cr>    # path-067083
+(config-if)# default ipv6 nd ra dns server <address> <cr>    # path-067672
+(config-if)# default ipv6 nd ra dns-search-list domain <string> <cr>    # path-067669
+(config-if)# default ipv6 nd ra hop-limit unspecified <cr>    # path-067536
+(config-if)# default ipv6 nd ra initial <cr>    # path-067244
+(config-if)# default ipv6 nd ra interval <cr>    # path-067211
+(config-if)# default ipv6 nd ra lifetime <cr>    # path-067201
+(config-if)# default ipv6 nd ra mtu suppress <cr>    # path-067534
+(config-if)# default ipv6 nd ra solicited unicast <cr>    # path-067538
+(config-if)# default ipv6 nd ra suppress <cr>    # path-067190
+(config-if)# default ipv6 nd ra-interval <cr>    # path-066300
+(config-if)# default ipv6 nd ra-lifetime <cr>    # path-066323
+(config-if)# default ipv6 nd reachable-time <cr>    # path-064685
+(config-if)# default ipv6 nd router-preference <cr>    # path-066414
+(config-if)# default ipv6 nd suppress <cr>    # path-066131
+(config-if)# default ipv6 nd suppress-ra <cr>    # path-066332
+(config-if)# default ipv6 next-hop-self eigrp <number:1..65535> <cr>    # path-067097
+(config-if)# default ipv6 pim <cr>    # path-065010
+(config-if)# default ipv6 pim bfd <cr>    # path-066395
+(config-if)# default ipv6 pim bsr border <cr>    # path-067110
+(config-if)# default ipv6 pim dr-priority <cr>    # path-065033
+(config-if)# default ipv6 pim drlb <cr>    # path-066344
+(config-if)# default ipv6 pim hello-interval <cr>    # path-064983
+(config-if)# default ipv6 pim join-prune-interval <cr>    # path-064921
+(config-if)# default ipv6 pim lisp core-group-range <cr>    # path-067117
+(config-if)# default ipv6 pim lisp transport <cr>    # path-067100
+(config-if)# default ipv6 pim non-dr-join <cr>    # path-066247
+(config-if)# default ipv6 pim passive <cr>    # path-066246
+(config-if)# default ipv6 pim pfp-sa border <cr>    # path-067145
+(config-if)# default ipv6 pim redundancy <string> <cr>    # path-067130
+(config-if)# default ipv6 policy route-map <cr>    # path-066229
+(config-if)# default ipv6 reassembly <cr>    # path-064839
+(config-if)# default ipv6 redirects <cr>    # path-064850
+(config-if)# default ipv6 rip <string> default-information originate <cr>    # path-067506
+(config-if)# default ipv6 rip <string> enable <cr>    # path-067040
+(config-if)# default ipv6 rip <string> metric-offset <cr>    # path-067098
+(config-if)# default ipv6 router isis <cr>    # path-066295
+(config-if)# default ipv6 snooping attach-policy <string> <cr>    # path-066984
+(config-if)# default ipv6 source-guard <cr>    # path-064826
+(config-if)# default ipv6 split-horizon eigrp <number:1..65535> <cr>    # path-067094
+(config-if)# default ipv6 tcp adjust-mss <cr>    # path-066111
+(config-if)# default ipv6 traffic-filter in <cr>    # path-066140
+(config-if)# default ipv6 unnumbered <cr>    # path-064754
+(config-if)# default ipv6 unreachables <cr>    # path-064872
+(config-if)# default ipv6 verify unicast <cr>    # path-066273
+(config-if)# default ipv6 virtual-reassembly percentage <number:1..100> precedence <number:0..7> <cr>    # path-067671
+(config-if)# default isdn N200 <cr>    # path-065379
+(config-if)# default isdn T-Activate <cr>    # path-065362
+(config-if)# default isdn T200 <cr>    # path-065382
+(config-if)# default isdn T203 <cr>    # path-065386
+(config-if)# default isdn T303 <cr>    # path-065376
+(config-if)# default isdn T306 <cr>    # path-065389
+(config-if)# default isdn T307 <cr>    # path-065401
+(config-if)# default isdn T309 <cr>    # path-065372
+(config-if)# default isdn T309-enable <cr>    # path-065333
+(config-if)# default isdn T310 <cr>    # path-065394
+(config-if)# default isdn T321 <cr>    # path-065368
+(config-if)# default isdn T3OOS <cr>    # path-065365
+(config-if)# default isdn answer1 <cr>    # path-065280
+(config-if)# default isdn answer2 <cr>    # path-065292
+(config-if)# default isdn autodetect <cr>    # path-065277
+(config-if)# default isdn bcac service audit <cr>    # path-067288
+(config-if)# default isdn bcac service audit interface <cr>    # path-067568
+(config-if)# default isdn bcac service audit trigger <number:1..6> <cr>    # path-067685
+(config-if)# default isdn bcac service retry in-serv-on-fail <cr>    # path-067562
+(config-if)# default isdn bcac service retry max <cr>    # path-067564
+(config-if)# default isdn bcac service timer <cr>    # path-067284
+(config-if)# default isdn bcac service update linkup <cr>    # path-067561
+(config-if)# default isdn bcac service update provision <cr>    # path-067565
+(config-if)# default isdn bchan-number-order <cr>    # path-065421
+(config-if)# default isdn bind-l3 q931 <cr>    # path-066664
+(config-if)# default isdn busy b_channel <number:0..24> - <number:0..24> <cr>    # path-067687
+(config-if)# default isdn caller <string> <cr>    # path-066551
+(config-if)# default isdn calling-number <cr>    # path-065315
+(config-if)# default isdn calling-party-num <cr>    # path-065336
+(config-if)# default isdn cause-location <cr>    # path-065410
+(config-if)# default isdn cc-pattern <cr>    # path-065432
+(config-if)# default isdn channel-id invert extend-bit <cr>    # path-067293
+(config-if)# default isdn datetime <cr>    # path-065435
+(config-if)# default isdn disconnect-cause <cr>    # path-065414
+(config-if)# default isdn fast-rollover-delay <cr>    # path-063994
+(config-if)# default isdn flip-chan-flag <cr>    # path-065375
+(config-if)# default isdn guard-timer <cr>    # path-065253
+(config-if)# default isdn incoming alerting add-PI <cr>    # path-067290
+(config-if)# default isdn incoming ie channel-id accept-qsig-variant <cr>    # path-067572
+(config-if)# default isdn incoming progress <cr>    # path-066671
+(config-if)# default isdn incoming-voice data <cr>    # path-066562
+(config-if)# default isdn incoming-voice modem <cr>    # path-066582
+(config-if)# default isdn incoming-voice voice <cr>    # path-066592
+(config-if)# default isdn k <number:1..7> <cr>    # path-066658
+(config-if)# default isdn layer1-emulate <cr>    # path-065281
+(config-if)# default isdn layer2-flap STATUS-ENQ <cr>    # path-066675
+(config-if)# default isdn map address <cr>    # path-066644
+(config-if)# default isdn max-restart-tries <cr>    # path-065411
+(config-if)# default isdn negotiate-bchan <cr>    # path-065406
+(config-if)# default isdn network <cr>    # path-065358
+(config-if)# default isdn nfas-channel_id <cr>    # path-065426
+(config-if)# default isdn nfas-order <cr>    # path-065420
+(config-if)# default isdn not-end-to-end <cr>    # path-065191
+(config-if)# default isdn nsf-service <cr>    # path-065446
+(config-if)# default isdn number called enbloc <cr>    # path-067265
+(config-if)# default isdn number called setup <cr>    # path-067270
+(config-if)# default isdn outgoing display-ie <cr>    # path-066666
+(config-if)# default isdn overlap-receiving <cr>    # path-065180
+(config-if)# default isdn overlap-receiving T302 <number:500..20000> <cr>    # path-067162
+(config-if)# default isdn point-to-point-setup <cr>    # path-065244
+(config-if)# default isdn protocol-emulate <cr>    # path-065215
+(config-if)# default isdn reject v110 <cr>    # path-066670
+(config-if)# default isdn reverse-charging-indicator <cr>    # path-065427
+(config-if)# default isdn send-alerting <cr>    # path-065404
+(config-if)# default isdn send-status-enquiry <cr>    # path-065400
+(config-if)# default isdn sending-complete <cr>    # path-065429
+(config-if)# default isdn service b_channel <number:0..24> - <number:0..24> state <number:0..2> <cr>    # path-067715
+(config-if)# default isdn setup-delay-timer <cr>    # path-065265
+(config-if)# default isdn skip-async-callerid-check <cr>    # path-065419
+(config-if)# default isdn skipsend-idverify <cr>    # path-065452
+(config-if)# default isdn snmp busyout b-channel <cr>    # path-067148
+(config-if)# default isdn spc <cr>    # path-065448
+(config-if)# default isdn spc deactivate <cr>    # path-065438
+(config-if)# default isdn spc reactivate <cr>    # path-065443
+(config-if)# default isdn spid1 <cr>    # path-065266
+(config-if)# default isdn spid2 <cr>    # path-065282
+(config-if)# default isdn spoofing <cr>    # path-065447
+(config-if)# default isdn static-tei <cr>    # path-064059
+(config-if)# default isdn supp-service callRerouteing <cr>    # path-066653
+(config-if)# default isdn switch-type <cr>    # path-065145
+(config-if)# default isdn tei-negotiation <cr>    # path-065285
+(config-if)# default isdn timeout-signaling <cr>    # path-065449
+(config-if)# default isdn timer T-Activate <cr>    # path-066574
+(config-if)# default isdn timer T200 <cr>    # path-066453
+(config-if)# default isdn timer T203 <cr>    # path-066475
+(config-if)# default isdn timer T301 <cr>    # path-066493
+(config-if)# default isdn timer T303 <cr>    # path-066503
+(config-if)# default isdn timer T306 <cr>    # path-066518
+(config-if)# default isdn timer T307 <cr>    # path-066542
+(config-if)# default isdn timer T309 <cr>    # path-066541
+(config-if)# default isdn timer T310 <cr>    # path-066552
+(config-if)# default isdn timer T321 <cr>    # path-066563
+(config-if)# default isdn timer T3OOS <cr>    # path-066584
+(config-if)# default isdn transition-delay <cr>    # path-063963
+(config-if)# default isdn twait-disable <cr>    # path-065197
+(config-if)# default isis adjacency-filter <cr>    # path-065132
+(config-if)# default isis advertise prefix <cr>    # path-066224
+(config-if)# default isis authentication key-chain <string> <cr>    # path-067052
+(config-if)# default isis authentication mode md5 <cr>    # path-067038
+(config-if)# default isis authentication send-only <cr>    # path-066262
+(config-if)# default isis bfd <cr>    # path-065165
+(config-if)# default isis campus-lisp <string> <cr>    # path-066121
+(config-if)# default isis circuit-type <cr>    # path-064713
+(config-if)# default isis csnp-interval <cr>    # path-065127
+(config-if)# default isis hello padding <cr>    # path-066316
+(config-if)# default isis hello-interval <cr>    # path-065051
+(config-if)# default isis hello-multiplier <cr>    # path-065009
+(config-if)# default isis ipv6 bfd <cr>    # path-066528
+(config-if)# default isis ipv6 metric <cr>    # path-066566
+(config-if)# default isis ipv6 tag <cr>    # path-066540
+(config-if)# default isis lsp-interval <cr>    # path-063923
+(config-if)# default isis mesh-group <cr>    # path-065123
+(config-if)# default isis metric <cr>    # path-064959
+(config-if)# default isis network point-to-point <cr>    # path-066058
+(config-if)# default isis password <string> <cr>    # path-066236
+(config-if)# default isis prefix-attributes n-flag-clear <cr>    # path-066325
+(config-if)# default isis priority <cr>    # path-064984
+(config-if)# default isis protocol shutdown <cr>    # path-066419
+(config-if)# default isis remote-psnp-delay <cr>    # path-065146
+(config-if)# default isis retransmit-interval <cr>    # path-063914
+(config-if)# default isis retransmit-throttle-interval <cr>    # path-063904
+(config-if)# default isis tag <number:1..4294967295> <cr>    # path-066309
+(config-if)# default isis te-metric flex-algo <number:1..16777214> <cr>    # path-067015
+(config-if)# default isis three-way-handshake <cr>    # path-065004
+(config-if)# default iso-igrp adjacency-filter <cr>    # path-064738
+(config-if)# default itu channel <cr>    # path-064177
+(config-if)# default keepalive <cr>    # path-063533
+(config-if)# default l2protocol forward <cr>    # path-065396
+(config-if)# default l2protocol forward drop-threshold <cr>    # path-066662
+(config-if)# default l2protocol forward shutdown-threshold <cr>    # path-066660
+(config-if)# default l2protocol-tunnel <cr>    # path-064047
+(config-if)# default l2protocol-tunnel drop-threshold <cr>    # path-065353
+(config-if)# default l2protocol-tunnel shutdown-threshold <cr>    # path-065346
+(config-if)# default lacp device-id <cr>    # path-065066
+(config-if)# default lacp direct-loadswap <cr>    # path-065027
+(config-if)# default lacp failover non-revertive <cr>    # path-066214
+(config-if)# default lacp fast-switchover <cr>    # path-064941
+(config-if)# default lacp fast-switchover dampening <cr>    # path-064898
+(config-if)# default lacp max-bundle <cr>    # path-065001
+(config-if)# default lacp min-bundle <cr>    # path-065047
+(config-if)# default lacp port-priority <cr>    # path-064882
+(config-if)# default lacp rate <cr>    # path-064946
+(config-if)# default lan-name <cr>    # path-063585
+(config-if)# default lapb N1 <cr>    # path-064595
+(config-if)# default lapb N2 <cr>    # path-063652
+(config-if)# default lapb T1 <cr>    # path-063592
+(config-if)# default lapb T2 <cr>    # path-063600
+(config-if)# default lapb T4 <cr>    # path-063630
+(config-if)# default lapb interface-outage <cr>    # path-063615
+(config-if)# default lapb k <cr>    # path-063658
+(config-if)# default lapb modulo <cr>    # path-064480
+(config-if)# default link <cr>    # path-064015
+(config-if)# default link debounce <cr>    # path-065262
+(config-if)# default linksec-shim <cr>    # path-063700
+(config-if)# default llc2 N2 <cr>    # path-063921
+(config-if)# default llc2 ack-delay-time <cr>    # path-063891
+(config-if)# default llc2 ack-max <cr>    # path-063875
+(config-if)# default llc2 adm-timer-value <cr>    # path-063966
+(config-if)# default llc2 akdelay-time <cr>    # path-063883
+(config-if)# default llc2 akmax <cr>    # path-063864
+(config-if)# default llc2 dynwind <cr>    # path-065226
+(config-if)# default llc2 idle-time <cr>    # path-063902
+(config-if)# default llc2 local-window <cr>    # path-063912
+(config-if)# default llc2 t1-time <cr>    # path-063929
+(config-if)# default llc2 tbusy-time <cr>    # path-063936
+(config-if)# default llc2 tpf-time <cr>    # path-063945
+(config-if)# default llc2 trej-time <cr>    # path-063941

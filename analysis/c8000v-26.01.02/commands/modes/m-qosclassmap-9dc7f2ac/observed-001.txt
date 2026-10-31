@@ -1,0 +1,53 @@
+# 模式 qosclassmap；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> access-group <number:1..2799> <cr>    # observed_connections-005893
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> access-group name <string> <cr>    # observed_connections-005895
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> any <cr>    # observed_connections-005892
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> discard-class <number:dynamic> <cr>    # observed_connections-005901
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> input-interface <interface> <cr>    # observed_connections-005914
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> <?option@55558a8c3320> <cr>    # observed_connections-005911
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> <cr>    # observed_connections-005899
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> attribute <?option@55558a8c3cf8> <?signed_number_func_action@55558a8c44f0> <?option@55558a8c3ef0> <cr>    # observed_connections-005916
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> attribute <?option@55558a8c3cf8> <?signed_number_func_action@55558a8c44f0> <cr>    # observed_connections-005915
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> dot11-mgmt <cr>    # observed_connections-005906
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> ethernet-oam <cr>    # observed_connections-005905
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> protocol <?protoname_action@555589463ee0> vofr <cr>    # observed_connections-005907
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> qos-group <number:dynamic> <cr>    # observed_connections-005900
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match <?sync_force_action@555589463098> traffic-class <number:dynamic> <cr>    # observed_connections-005902
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match atm clp <cr>    # observed_connections-005874
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match atm-vci <number:dynamic> <cr>    # observed_connections-005909
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match class-map <string> <cr>    # observed_connections-005877
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match cos <number:0..7> <cr>    # observed_connections-005878
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match cos inner <number:0..7> <cr>    # observed_connections-005887
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match dscp <?common_dscp_value_action@555589459170> <?common_dscp_value_action@5555894591a8> <cr>    # observed_connections-005904
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match field <?protocol_field_action@55558935a548> <?fpm_op_action@55558935a5b0> <string> <cr>    # observed_connections-005908
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match field <?protocol_field_action@55558935a548> <?fpm_op_action@55558935a5b0> <string> next <?fpm_protocol_action@55558935a6c0> <cr>    # observed_connections-005913
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match flow ip destination-address <cr>    # observed_connections-005881
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match fr-de <cr>    # observed_connections-005870
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match fr-dlci <number:16..1007> <cr>    # observed_connections-005897
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match group-object security destination <string> <cr>    # observed_connections-005889
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match input vlan <number:1..4095> <cr>    # observed_connections-005903
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match ip protocol <number:1..255> <cr>    # observed_connections-005886
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match ip rtp <number:2000..65535> <number:0..16383> <cr>    # observed_connections-005891
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match l2 dst-mac miss <cr>    # observed_connections-005884
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match l2 miss <cr>    # observed_connections-005875
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match l2 src-mac miss <cr>    # observed_connections-005883
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match mpls experimental <number:0..7> <cr>    # observed_connections-005888
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match mpls ttl <cr>    # observed_connections-005879
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match non-client-nrt <cr>    # observed_connections-005869
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match packet length <cr>    # observed_connections-005876
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match packet-tag <number:dynamic> <number:0..65535> <number:0..65535> <cr>    # observed_connections-005894
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match precedence <number:0..7> <cr>    # observed_connections-005880
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match security-group source tag <number:1..65533> <cr>    # observed_connections-005890
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match service instance ethernet <number:dynamic> <cr>    # observed_connections-005912
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match source-address mac <address> <cr>    # observed_connections-005885
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match start l2-start offset <number:0..255> size <number:1..32> <?fpm_op_action@55558935b0e8> <string> <cr>    # observed_connections-005896
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match subscriber access <cr>    # observed_connections-005873
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match traffic-category allow <cr>    # observed_connections-005872
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match traffic-category optimize <cr>    # observed_connections-005871
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match vlan <number:1..4094> <cr>    # observed_connections-005898
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match vlan inner <number:1..4095> <cr>    # observed_connections-005910
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> match wlan user-priority <number:0..7> <cr>    # observed_connections-005882
+(config-cmap)# <?dumper_command_func@55558946b3f8> <?sync_force_action@55558946b458> stack-start <cr>    # observed_connections-005868

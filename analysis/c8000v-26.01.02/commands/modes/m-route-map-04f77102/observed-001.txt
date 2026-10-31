@@ -1,0 +1,162 @@
+# 模式 route-map；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-route-map)# continue <cr>    # observed_connections-005474
+(config-route-map)# continue <cr>    # observed_connections-005610
+(config-route-map)# default continue <cr>    # observed_connections-005476
+(config-route-map)# default match as-path <cr>    # observed_connections-005506
+(config-route-map)# default match as-path <cr>    # observed_connections-005512
+(config-route-map)# default match community <cr>    # observed_connections-005520
+(config-route-map)# default match community <cr>    # observed_connections-005550
+(config-route-map)# default match evpn route-type 1 <cr>    # observed_connections-005575
+(config-route-map)# default match evpn route-type <cr>    # observed_connections-005559
+(config-route-map)# default match extcommunity <cr>    # observed_connections-005527
+(config-route-map)# default match extcommunity <cr>    # observed_connections-005546
+(config-route-map)# default match ip flowspec dest-pfx <cr>    # observed_connections-005588
+(config-route-map)# default match ipv6 address <cr>    # observed_connections-005561
+(config-route-map)# default match large-community <cr>    # observed_connections-005514
+(config-route-map)# default match large-community <cr>    # observed_connections-005547
+(config-route-map)# default match local-preference <cr>    # observed_connections-005539
+(config-route-map)# default match mdt-group <cr>    # observed_connections-005529
+(config-route-map)# default match mdt-group <cr>    # observed_connections-005530
+(config-route-map)# default match mpls-label <cr>    # observed_connections-005502
+(config-route-map)# default match policy-list <cr>    # observed_connections-005534
+(config-route-map)# default match track <number:1..1000> <cr>    # observed_connections-005557
+(config-route-map)# default set aigp-metric <cr>    # observed_connections-005497
+(config-route-map)# default set as-path prepend last-as <cr>    # observed_connections-005593
+(config-route-map)# default set as-path replace any <cr>    # observed_connections-005595
+(config-route-map)# default set as-path tag <cr>    # observed_connections-005571
+(config-route-map)# default set attribute-set <cr>    # observed_connections-005518
+(config-route-map)# default set comm-list <cr>    # observed_connections-005540
+(config-route-map)# default set community <cr>    # observed_connections-005537
+(config-route-map)# default set dampening <cr>    # observed_connections-005549
+(config-route-map)# default set evpn gateway-ip use-nexthop <cr>    # observed_connections-005581
+(config-route-map)# default set extcomm-list <number:1..99> delete <cr>    # observed_connections-005589
+(config-route-map)# default set extcommunity <cr>    # observed_connections-005553
+(config-route-map)# default set ip address prefix-list <string> <cr>    # observed_connections-005601
+(config-route-map)# default set ip default next-hop recursive <address> <cr>    # observed_connections-005609
+(config-route-map)# default set ip default next-hop verify-availability <cr>    # observed_connections-005604
+(config-route-map)# default set ip next-hop verify-availability <cr>    # observed_connections-005590
+(config-route-map)# default set ip precedence <number:0..7> <cr>    # observed_connections-005580
+(config-route-map)# default set ip qos-group <number:0..99> <cr>    # observed_connections-005577
+(config-route-map)# default set ipv6 address prefix-list <string> <cr>    # observed_connections-005598
+(config-route-map)# default set ipv6 next-hop encapsulate l3vpn <string> <cr>    # observed_connections-005607
+(config-route-map)# default set ipv6 precedence <number:0..7> <cr>    # observed_connections-005583
+(config-route-map)# default set large-community <cr>    # observed_connections-005532
+(config-route-map)# default set largecomm-list <cr>    # observed_connections-005542
+(config-route-map)# default set local-preference <cr>    # observed_connections-005496
+(config-route-map)# default set mpls-label <cr>    # observed_connections-005501
+(config-route-map)# default set nlri <cr>    # observed_connections-005489
+(config-route-map)# default set origin <cr>    # observed_connections-005525
+(config-route-map)# default set overlay-summary <cr>    # observed_connections-005513
+(config-route-map)# default set traffic-index <cr>    # observed_connections-005510
+(config-route-map)# default set weight <cr>    # observed_connections-005503
+(config-route-map)# match as-path <cr>    # observed_connections-005480
+(config-route-map)# match as-path <number:1..500> <cr>    # observed_connections-005613
+(config-route-map)# match community <cr>    # observed_connections-005487
+(config-route-map)# match community <number:100..500> <cr>    # observed_connections-005618
+(config-route-map)# match evpn route-type 1 <cr>    # observed_connections-005555
+(config-route-map)# match extcommunity <cr>    # observed_connections-005485
+(config-route-map)# match extcommunity <number:100..500> <cr>    # observed_connections-005616
+(config-route-map)# match ipv6 address <string> <cr>    # observed_connections-005563
+(config-route-map)# match large-community <cr>    # observed_connections-005482
+(config-route-map)# match large-community <cr>    # observed_connections-005486
+(config-route-map)# match large-community <number:100..500> <cr>    # observed_connections-005617
+(config-route-map)# match mdt-group <cr>    # observed_connections-005483
+(config-route-map)# match mdt-group <cr>    # observed_connections-005484
+(config-route-map)# match mdt-group <number:1..99> <cr>    # observed_connections-005614
+(config-route-map)# match mdt-group <number:1..99> <cr>    # observed_connections-005615
+(config-route-map)# match mpls-label <cr>    # observed_connections-005478
+(config-route-map)# match policy-list <cr>    # observed_connections-005612
+(config-route-map)# match security-group source tag <number:2..65519> <cr>    # observed_connections-005621
+(config-route-map)# match track <number:1..1000> <cr>    # observed_connections-005499
+(config-route-map)# no continue <cr>    # observed_connections-005475
+(config-route-map)# no match as-path <cr>    # observed_connections-005504
+(config-route-map)# no match as-path <cr>    # observed_connections-005507
+(config-route-map)# no match community <cr>    # observed_connections-005516
+(config-route-map)# no match community <cr>    # observed_connections-005548
+(config-route-map)# no match evpn route-type 1 <cr>    # observed_connections-005573
+(config-route-map)# no match evpn route-type <cr>    # observed_connections-005556
+(config-route-map)# no match extcommunity <cr>    # observed_connections-005521
+(config-route-map)# no match extcommunity <cr>    # observed_connections-005543
+(config-route-map)# no match ip address <cr>    # observed_connections-005619
+(config-route-map)# no match ip flowspec dest-pfx <cr>    # observed_connections-005585
+(config-route-map)# no match ip flowspec dest-pfx <cr>    # observed_connections-005622
+(config-route-map)# no match ipv6 address <cr>    # observed_connections-005558
+(config-route-map)# no match large-community <cr>    # observed_connections-005511
+(config-route-map)# no match large-community <cr>    # observed_connections-005544
+(config-route-map)# no match local-preference <cr>    # observed_connections-005535
+(config-route-map)# no match mdt-group <cr>    # observed_connections-005522
+(config-route-map)# no match mdt-group <cr>    # observed_connections-005523
+(config-route-map)# no match mpls-label <cr>    # observed_connections-005495
+(config-route-map)# no match policy-list <cr>    # observed_connections-005528
+(config-route-map)# no match track <number:1..1000> <cr>    # observed_connections-005554
+(config-route-map)# no set aigp-metric <cr>    # observed_connections-005491
+(config-route-map)# no set as-path prepend last-as <cr>    # observed_connections-005591
+(config-route-map)# no set as-path replace any <cr>    # observed_connections-005594
+(config-route-map)# no set as-path tag <cr>    # observed_connections-005570
+(config-route-map)# no set attribute-set <cr>    # observed_connections-005515
+(config-route-map)# no set comm-list <cr>    # observed_connections-005538
+(config-route-map)# no set community <cr>    # observed_connections-005533
+(config-route-map)# no set dampening <cr>    # observed_connections-005545
+(config-route-map)# no set evpn gateway-ip use-nexthop <cr>    # observed_connections-005579
+(config-route-map)# no set extcomm-list <number:1..99> delete <cr>    # observed_connections-005586
+(config-route-map)# no set extcommunity <cr>    # observed_connections-005552
+(config-route-map)# no set ip address prefix-list <string> <cr>    # observed_connections-005600
+(config-route-map)# no set ip default next-hop recursive <address> <cr>    # observed_connections-005608
+(config-route-map)# no set ip default next-hop verify-availability <cr>    # observed_connections-005603
+(config-route-map)# no set ip next-hop verify-availability <cr>    # observed_connections-005587
+(config-route-map)# no set ip precedence <number:0..7> <cr>    # observed_connections-005578
+(config-route-map)# no set ip qos-group <number:0..99> <cr>    # observed_connections-005576
+(config-route-map)# no set ipv6 address prefix-list <string> <cr>    # observed_connections-005597
+(config-route-map)# no set ipv6 next-hop encapsulate l3vpn <string> <cr>    # observed_connections-005606
+(config-route-map)# no set ipv6 precedence <number:0..7> <cr>    # observed_connections-005582
+(config-route-map)# no set large-community <cr>    # observed_connections-005526
+(config-route-map)# no set largecomm-list <cr>    # observed_connections-005541
+(config-route-map)# no set local-preference <cr>    # observed_connections-005490
+(config-route-map)# no set mpls-label <cr>    # observed_connections-005494
+(config-route-map)# no set nlri <cr>    # observed_connections-005488
+(config-route-map)# no set origin <cr>    # observed_connections-005519
+(config-route-map)# no set overlay-summary <cr>    # observed_connections-005509
+(config-route-map)# no set traffic-index <cr>    # observed_connections-005505
+(config-route-map)# no set weight <cr>    # observed_connections-005498
+(config-route-map)# set aigp-metric igp-metric <cr>    # observed_connections-005493
+(config-route-map)# set as-path prepend <?bgp_as4_action@555589a39f78> <?bgp_as4_action@555589a3a348> <cr>    # observed_connections-005630
+(config-route-map)# set as-path prepend last-as <number:1..10> <cr>    # observed_connections-005592
+(config-route-map)# set as-path replace <?bgp_as4_action@555589a3a988> <?bgp_as4_action@555589a3ace8> <cr>    # observed_connections-005631
+(config-route-map)# set as-path replace any <cr>    # observed_connections-005572
+(config-route-map)# set as-path tag <cr>    # observed_connections-005551
+(config-route-map)# set attribute-set <string> <cr>    # observed_connections-005517
+(config-route-map)# set comm-list <number:1..99> delete <cr>    # observed_connections-005566
+(config-route-map)# set community <?bgp_community_action@555589a38380> <cr>    # observed_connections-005627
+(config-route-map)# set community none <cr>    # observed_connections-005536
+(config-route-map)# set dampening <number:1..45> <number:1..20000> <number:1..20000> <number:1..255> <cr>    # observed_connections-005602
+(config-route-map)# set evpn gateway-ip use-nexthop <cr>    # observed_connections-005564
+(config-route-map)# set extcomm-list <number:1..99> delete <cr>    # observed_connections-005567
+(config-route-map)# set extcommunity color <number:1..4294967295> <cr>    # observed_connections-005628
+(config-route-map)# set extcommunity default-gw <cr>    # observed_connections-005626
+(config-route-map)# set extcommunity soo <?bgp_extcomm_action@555589a3bcd0> <cr>    # observed_connections-005629
+(config-route-map)# set global <cr>    # observed_connections-005611
+(config-route-map)# set ip address prefix-list <string> <cr>    # observed_connections-005584
+(config-route-map)# set ip default next-hop recursive <address> <cr>    # observed_connections-005605
+(config-route-map)# set ip default next-hop verify-availability <cr>    # observed_connections-005596
+(config-route-map)# set ip next-hop <address> force <cr>    # observed_connections-005623
+(config-route-map)# set ip next-hop recursive <address> force <cr>    # observed_connections-005624
+(config-route-map)# set ip next-hop verify-availability <cr>    # observed_connections-005569
+(config-route-map)# set ip precedence <number:0..7> <cr>    # observed_connections-005562
+(config-route-map)# set ip qos-group <number:0..99> <cr>    # observed_connections-005560
+(config-route-map)# set ipv6 address prefix-list <string> <cr>    # observed_connections-005574
+(config-route-map)# set ipv6 next-hop encapsulate l3vpn <string> <cr>    # observed_connections-005599
+(config-route-map)# set ipv6 next-hop peer-address <cr>    # observed_connections-005620
+(config-route-map)# set ipv6 precedence <number:0..7> <cr>    # observed_connections-005565
+(config-route-map)# set large-community <?bgp_lrgcomm_action@555589a37e38> <cr>    # observed_connections-005625
+(config-route-map)# set large-community none <cr>    # observed_connections-005531
+(config-route-map)# set largecomm-list <number:1..99> delete <cr>    # observed_connections-005568
+(config-route-map)# set local-preference <number:0..4294967295> <cr>    # observed_connections-005492
+(config-route-map)# set mpls-label <cr>    # observed_connections-005477
+(config-route-map)# set nlri <cr>    # observed_connections-005479
+(config-route-map)# set origin igp <cr>    # observed_connections-005524
+(config-route-map)# set overlay-summary <cr>    # observed_connections-005481
+(config-route-map)# set traffic-index <number:1..64> <cr>    # observed_connections-005508
+(config-route-map)# set weight <number:0..65535> <cr>    # observed_connections-005500

@@ -1,0 +1,16 @@
+# 模式 l2sdwan；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-l2sdwan)# default ip duplication <cr>    # static_slot_creation_candidates-004467
+(config-l2sdwan)# default ip local-learning limit per-mac ipv4 <cr>    # static_slot_creation_candidates-004474
+(config-l2sdwan)# default ip local-learning time down <cr>    # static_slot_creation_candidates-004470
+(config-l2sdwan)# default mac duplication <cr>    # static_slot_creation_candidates-004465
+(config-l2sdwan)# ip duplication limit <number:2..1000> time <number:10..36000> <cr>    # static_slot_creation_candidates-004475
+(config-l2sdwan)# ip local-learning limit per-mac ipv4 <number:0..32000> <cr>    # static_slot_creation_candidates-004473
+(config-l2sdwan)# ip local-learning time down <number:1..1440> <cr>    # static_slot_creation_candidates-004469
+(config-l2sdwan)# mac duplication limit <number:2..1000> time <number:10..36000> <cr>    # static_slot_creation_candidates-004472
+(config-l2sdwan)# no ip duplication <cr>    # static_slot_creation_candidates-004466
+(config-l2sdwan)# no ip local-learning limit per-mac ipv4 <cr>    # static_slot_creation_candidates-004471
+(config-l2sdwan)# no ip local-learning time down <cr>    # static_slot_creation_candidates-004468
+(config-l2sdwan)# no mac duplication <cr>    # static_slot_creation_candidates-004464

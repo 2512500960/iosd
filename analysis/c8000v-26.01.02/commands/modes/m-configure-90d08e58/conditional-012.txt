@@ -1,0 +1,287 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-012.md
+
+(config)# default do-exec undebug mgcp tracelevel-default <cr>    # conditional_registration_candidates-002757
+(config)# default do-exec undebug mltmgr api <cr>    # conditional_registration_candidates-002571
+(config)# default do-exec undebug mltmgr errors <cr>    # conditional_registration_candidates-002732
+(config)# default do-exec undebug mltmgr events <cr>    # conditional_registration_candidates-002652
+(config)# default do-exec undebug mltmgr packet <cr>    # conditional_registration_candidates-002814
+(config)# default do-exec undebug nid configuration <cr>    # conditional_registration_candidates-002576
+(config)# default do-exec undebug novell all <cr>    # conditional_registration_candidates-002735
+(config)# default do-exec undebug novell packet <cr>    # conditional_registration_candidates-002816
+(config)# default do-exec undebug novell private <cr>    # conditional_registration_candidates-003165
+(config)# default do-exec undebug novell redistribution <cr>    # conditional_registration_candidates-002989
+(config)# default do-exec undebug novell sap activity <cr>    # conditional_registration_candidates-005029
+(config)# default do-exec undebug novell sap events <cr>    # conditional_registration_candidates-005096
+(config)# default do-exec undebug novell spoof <cr>    # conditional_registration_candidates-003254
+(config)# default do-exec undebug novell verbose <cr>    # conditional_registration_candidates-003077
+(config)# default do-exec undebug nve all <cr>    # conditional_registration_candidates-003515
+(config)# default do-exec undebug nve database <cr>    # conditional_registration_candidates-003072
+(config)# default do-exec undebug nve dm <cr>    # conditional_registration_candidates-003342
+(config)# default do-exec undebug nve ei <cr>    # conditional_registration_candidates-002893
+(config)# default do-exec undebug nve error <cr>    # conditional_registration_candidates-002641
+(config)# default do-exec undebug nve ha <cr>    # conditional_registration_candidates-003432
+(config)# default do-exec undebug nve multicast <cr>    # conditional_registration_candidates-002722
+(config)# default do-exec undebug nve parser <cr>    # conditional_registration_candidates-003251
+(config)# default do-exec undebug nve pd <cr>    # conditional_registration_candidates-002806
+(config)# default do-exec undebug nve state <cr>    # conditional_registration_candidates-003160
+(config)# default do-exec undebug nve tunnel <cr>    # conditional_registration_candidates-002983
+(config)# default do-exec undebug opendns config <cr>    # conditional_registration_candidates-002568
+(config)# default do-exec undebug opendns device-registration <cr>    # conditional_registration_candidates-002650
+(config)# default do-exec undebug opendns dnscrypt <cr>    # conditional_registration_candidates-002729
+(config)# default do-exec undebug opendns redundancy <cr>    # conditional_registration_candidates-002813
+(config)# default do-exec undebug ospfv3 l2api <cr>    # conditional_registration_candidates-004157
+(config)# default do-exec undebug ospfv3 lsdb promiscuous <cr>    # conditional_registration_candidates-006092
+(config)# default do-exec undebug ospfv3 peering <cr>    # conditional_registration_candidates-004174
+(config)# default do-exec undebug ospfv3 peering detail <cr>    # conditional_registration_candidates-006277
+(config)# default do-exec undebug ospfv3 promiscuous acknowledgements <cr>    # conditional_registration_candidates-006281
+(config)# default do-exec undebug ospfv3 relay election <cr>    # conditional_registration_candidates-006280
+(config)# default do-exec undebug ospfv3 relay election detail <cr>    # conditional_registration_candidates-007518
+(config)# default do-exec undebug ospfv3 relay flooding <cr>    # conditional_registration_candidates-006284
+(config)# default do-exec undebug ospfv3 relay flooding detail <cr>    # conditional_registration_candidates-007521
+(config)# default do-exec undebug otv adjacency <cr>    # conditional_registration_candidates-003670
+(config)# default do-exec undebug otv aed-svr-elec <cr>    # conditional_registration_candidates-002984
+(config)# default do-exec undebug otv aed-svr-req <cr>    # conditional_registration_candidates-002894
+(config)# default do-exec undebug otv all <cr>    # conditional_registration_candidates-004117
+(config)# default do-exec undebug otv arp-nd <cr>    # conditional_registration_candidates-003343
+(config)# default do-exec undebug otv database <cr>    # conditional_registration_candidates-003944
+(config)# default do-exec undebug otv error <cr>    # conditional_registration_candidates-002642
+(config)# default do-exec undebug otv evc <cr>    # conditional_registration_candidates-003835
+(config)# default do-exec undebug otv event <cr>    # conditional_registration_candidates-003914
+(config)# default do-exec undebug otv fc <cr>    # conditional_registration_candidates-002807
+(config)# default do-exec undebug otv ha <cr>    # conditional_registration_candidates-003516
+(config)# default do-exec undebug otv igp <cr>    # conditional_registration_candidates-003732
+(config)# default do-exec undebug otv l2rib <cr>    # conditional_registration_candidates-003599
+(config)# default do-exec undebug otv l2rtgvpn <cr>    # conditional_registration_candidates-004107
+(config)# default do-exec undebug otv local-vlan-state <cr>    # conditional_registration_candidates-003161
+(config)# default do-exec undebug otv misc <cr>    # conditional_registration_candidates-004095
+(config)# default do-exec undebug otv multicast <cr>    # conditional_registration_candidates-003433
+(config)# default do-exec undebug otv overlay-state-machine <cr>    # conditional_registration_candidates-004025
+(config)# default do-exec undebug otv packet <cr>    # conditional_registration_candidates-003879
+(config)# default do-exec undebug otv partition <cr>    # conditional_registration_candidates-003252
+(config)# default do-exec undebug otv pim <cr>    # conditional_registration_candidates-004050
+(config)# default do-exec undebug otv remote-vlan-state <cr>    # conditional_registration_candidates-003073
+(config)# default do-exec undebug otv state <cr>    # conditional_registration_candidates-003998
+(config)# default do-exec undebug otv tunnel <cr>    # conditional_registration_candidates-003783
+(config)# default do-exec undebug otv ui <cr>    # conditional_registration_candidates-003977
+(config)# default do-exec undebug otv url <cr>    # conditional_registration_candidates-004073
+(config)# default do-exec undebug otv vlan-state-machine <cr>    # conditional_registration_candidates-002723
+(config)# default do-exec undebug packet-capture <cr>    # conditional_registration_candidates-001085
+(config)# default do-exec undebug performance monitor alert <cr>    # conditional_registration_candidates-005059
+(config)# default do-exec undebug performance monitor api pi-pd <cr>    # conditional_registration_candidates-006985
+(config)# default do-exec undebug performance monitor api producer <cr>    # conditional_registration_candidates-007033
+(config)# default do-exec undebug performance monitor arbitration <cr>    # conditional_registration_candidates-005316
+(config)# default do-exec undebug performance monitor c3pl <cr>    # conditional_registration_candidates-004875
+(config)# default do-exec undebug performance monitor data-plane <cr>    # conditional_registration_candidates-005685
+(config)# default do-exec undebug performance monitor database <cr>    # conditional_registration_candidates-005170
+(config)# default do-exec undebug performance monitor dynamic <cr>    # conditional_registration_candidates-004935
+(config)# default do-exec undebug performance monitor error <cr>    # conditional_registration_candidates-005496
+(config)# default do-exec undebug performance monitor export <cr>    # conditional_registration_candidates-005237
+(config)# default do-exec undebug performance monitor producer <cr>    # conditional_registration_candidates-005753
+(config)# default do-exec undebug performance monitor provision <cr>    # conditional_registration_candidates-004997
+(config)# default do-exec undebug performance monitor snmp <cr>    # conditional_registration_candidates-005113
+(config)# default do-exec undebug performance-measurement all <cr>    # conditional_registration_candidates-002573
+(config)# default do-exec undebug platform condition feature et-analytics dataplane submode <cr>    # conditional_registration_candidates-008701
+(config)# default do-exec undebug platform condition feature geo dataplane submode <cr>    # conditional_registration_candidates-008699
+(config)# default do-exec undebug platform condition feature utd controlplane submode <cr>    # conditional_registration_candidates-008700
+(config)# default do-exec undebug platform software infrastructure pi-if-addr <cr>    # conditional_registration_candidates-006687
+(config)# default do-exec undebug platform software infrastructure pi-socket-uds detail <cr>    # conditional_registration_candidates-007889
+(config)# default do-exec undebug platform software infrastructure tls_host_if conf <cr>    # conditional_registration_candidates-007887
+(config)# default do-exec undebug platform software infrastructure tls_host_if data <cr>    # conditional_registration_candidates-007903
+(config)# default do-exec undebug platform software infrastructure tlscd_if conf <cr>    # conditional_registration_candidates-007888
+(config)# default do-exec undebug platform software infrastructure tlscd_if data <cr>    # conditional_registration_candidates-007904
+(config)# default do-exec undebug platform software license metering debug <cr>    # conditional_registration_candidates-007905
+(config)# default do-exec undebug platform software license metering error <cr>    # conditional_registration_candidates-007861
+(config)# default do-exec undebug platform software license metering info <cr>    # conditional_registration_candidates-007891
+(config)# default do-exec undebug platform software license metering warning <cr>    # conditional_registration_candidates-007876
+(config)# default do-exec undebug platform software otv error <cr>    # conditional_registration_candidates-006688
+(config)# default do-exec undebug platform software otv event <cr>    # conditional_registration_candidates-006650
+(config)# default do-exec undebug platform software otv packet <cr>    # conditional_registration_candidates-006612
+(config)# default do-exec undebug platform software utd global <cr>    # conditional_registration_candidates-006651
+(config)# default do-exec undebug platform software utd interface <cr>    # conditional_registration_candidates-006613
+(config)# default do-exec undebug presence all <cr>    # conditional_registration_candidates-003162
+(config)# default do-exec undebug presence asnl <cr>    # conditional_registration_candidates-002725
+(config)# default do-exec undebug presence errors <cr>    # conditional_registration_candidates-002644
+(config)# default do-exec undebug presence event <cr>    # conditional_registration_candidates-002809
+(config)# default do-exec undebug presence info <cr>    # conditional_registration_candidates-003074
+(config)# default do-exec undebug presence timer <cr>    # conditional_registration_candidates-002896
+(config)# default do-exec undebug presence trace <cr>    # conditional_registration_candidates-002986
+(config)# default do-exec undebug presence xml <cr>    # conditional_registration_candidates-002563
+(config)# default do-exec undebug qdm <cr>    # conditional_registration_candidates-001140
+(config)# default do-exec undebug rpl <cr>    # conditional_registration_candidates-001581
+(config)# default do-exec undebug rpms-proc preauth h323 <cr>    # conditional_registration_candidates-004819
+(config)# default do-exec undebug rrr areas <cr>    # conditional_registration_candidates-002900
+(config)# default do-exec undebug rrr autoroute <cr>    # conditional_registration_candidates-002733
+(config)# default do-exec undebug rrr link-management admission-control <cr>    # conditional_registration_candidates-004925
+(config)# default do-exec undebug rrr link-management advertisements <cr>    # conditional_registration_candidates-004863
+(config)# default do-exec undebug rrr link-management bandwidth-allocation <cr>    # conditional_registration_candidates-005110
+(config)# default do-exec undebug rrr link-management events <cr>    # conditional_registration_candidates-004990
+(config)# default do-exec undebug rrr link-management igp-neighbors <cr>    # conditional_registration_candidates-005167
+(config)# default do-exec undebug rrr link-management links <cr>    # conditional_registration_candidates-005055
+(config)# default do-exec undebug rrr link-management routing <cr>    # conditional_registration_candidates-005235
+(config)# default do-exec undebug rrr load-balancing <cr>    # conditional_registration_candidates-002815
+(config)# default do-exec undebug rrr topology change <cr>    # conditional_registration_candidates-004876
+(config)# default do-exec undebug rrr topology lsa <cr>    # conditional_registration_candidates-004821
+(config)# default do-exec undebug rrr topology mesh_group <cr>    # conditional_registration_candidates-004936
+(config)# default do-exec undebug rtsp all <cr>    # conditional_registration_candidates-002985
+(config)# default do-exec undebug rtsp api <cr>    # conditional_registration_candidates-002724
+(config)# default do-exec undebug rtsp error <cr>    # conditional_registration_candidates-002895
+(config)# default do-exec undebug rtsp pmh <cr>    # conditional_registration_candidates-002808
+(config)# default do-exec undebug rtsp session <cr>    # conditional_registration_candidates-002561
+(config)# default do-exec undebug rtsp socket <cr>    # conditional_registration_candidates-002643
+(config)# default do-exec undebug sbc <string> alarm-filter blacklist-alert <cr>    # conditional_registration_candidates-007325
+(config)# default do-exec undebug sbc <string> alarm-log-level buffer <cr>    # conditional_registration_candidates-007302
+(config)# default do-exec undebug sbc <string> alarm-log-level console <cr>    # conditional_registration_candidates-007340
+(config)# default do-exec undebug sbc <string> cli <cr>    # conditional_registration_candidates-005584
+(config)# default do-exec undebug sbc <string> correlation-logs filter <cr>    # conditional_registration_candidates-007428
+(config)# default do-exec undebug sbc <string> correlation-logs filter dn <cr>    # conditional_registration_candidates-008225
+(config)# default do-exec undebug sbc <string> correlation-logs filter vrf <string> ipv4 <cr>    # conditional_registration_candidates-008953
+(config)# default do-exec undebug sbc <string> dump-on-pd <cr>    # conditional_registration_candidates-006042
+(config)# default do-exec undebug sbc <string> dump-on-pd process-name IF_ATG_SCK message-id <number:0..9999> <cr>    # conditional_registration_candidates-008947
+(config)# default do-exec undebug sbc <string> filter <cr>    # conditional_registration_candidates-006258
+(config)# default do-exec undebug sbc <string> iah <cr>    # conditional_registration_candidates-005668
+(config)# default do-exec undebug sbc <string> inttrc <cr>    # conditional_registration_candidates-005177
+(config)# default do-exec undebug sbc <string> ips <cr>    # conditional_registration_candidates-005327
+(config)# default do-exec undebug sbc <string> li cc brief <cr>    # conditional_registration_candidates-008129
+(config)# default do-exec undebug sbc <string> li cc detail <cr>    # conditional_registration_candidates-008115
+(config)# default do-exec undebug sbc <string> li cc error <cr>    # conditional_registration_candidates-008102
+(config)# default do-exec undebug sbc <string> log-level buffer <cr>    # conditional_registration_candidates-006912
+(config)# default do-exec undebug sbc <string> log-level console <cr>    # conditional_registration_candidates-006955
+(config)# default do-exec undebug sbc <string> log-level file <cr>    # conditional_registration_candidates-007005
+(config)# default do-exec undebug sbc <string> log-level filter <cr>    # conditional_registration_candidates-007055
+(config)# default do-exec undebug sbc <string> media-pool <cr>    # conditional_registration_candidates-005848
+(config)# default do-exec undebug sbc <string> mpf all <cr>    # conditional_registration_candidates-006984
+(config)# default do-exec undebug sbc <string> mpf error <cr>    # conditional_registration_candidates-007032
+(config)# default do-exec undebug sbc <string> mpf flow <cr>    # conditional_registration_candidates-007146
+(config)# default do-exec undebug sbc <string> mpf info <cr>    # conditional_registration_candidates-007088
+(config)# default do-exec undebug sbc <string> mpf packet <cr>    # conditional_registration_candidates-007190
+(config)# default do-exec undebug sbc <string> nmr <cr>    # conditional_registration_candidates-005493
+(config)# default do-exec undebug sbc <string> oam-brief <cr>    # conditional_registration_candidates-004976
+(config)# default do-exec undebug sbc <string> oam-detail <cr>    # conditional_registration_candidates-005043
+(config)# default do-exec undebug sbc <string> rpm <cr>    # conditional_registration_candidates-005799
+(config)# default do-exec undebug sccp all <cr>    # conditional_registration_candidates-003340
+(config)# default do-exec undebug sccp config all <cr>    # conditional_registration_candidates-005571
+(config)# default do-exec undebug sccp config errors <cr>    # conditional_registration_candidates-005375
+(config)# default do-exec undebug sccp config events <cr>    # conditional_registration_candidates-005273
+(config)# default do-exec undebug sccp config parser <cr>    # conditional_registration_candidates-005473
+(config)# default do-exec undebug sccp errors <cr>    # conditional_registration_candidates-002831
+(config)# default do-exec undebug sccp errors individual <number:1..1905> <cr>    # conditional_registration_candidates-006750
+(config)# default do-exec undebug sccp events <cr>    # conditional_registration_candidates-002628
+(config)# default do-exec undebug sccp keepalive <cr>    # conditional_registration_candidates-003099
+(config)# default do-exec undebug sccp keepalive identifier <number:1..65535> <cr>    # conditional_registration_candidates-006843
+(config)# default do-exec undebug sccp messages <cr>    # conditional_registration_candidates-002884
+(config)# default do-exec undebug sccp packets <cr>    # conditional_registration_candidates-002912
+(config)# default do-exec undebug sccp packets input-hex <cr>    # conditional_registration_candidates-004963
+(config)# default do-exec undebug sccp parser <cr>    # conditional_registration_candidates-003155
+(config)# default do-exec undebug sccp tls <cr>    # conditional_registration_candidates-003067
+(config)# default do-exec undebug segment-routing client <cr>    # conditional_registration_candidates-002570
+(config)# default do-exec undebug segment-routing mpls gb-lb config <cr>    # conditional_registration_candidates-006831
+(config)# default do-exec undebug segment-routing mpls gb-lb lock <cr>    # conditional_registration_candidates-006726
+(config)# default do-exec undebug segment-routing mpls gb-lb timer <cr>    # conditional_registration_candidates-006798
+(config)# default do-exec undebug segment-routing mpls gb-lb walk <cr>    # conditional_registration_candidates-006762
+(config)# default do-exec undebug segment-routing mpls local-sid <cr>    # conditional_registration_candidates-004924
+(config)# default do-exec undebug segment-routing mpls map-buffers <cr>    # conditional_registration_candidates-005109
+(config)# default do-exec undebug segment-routing mpls mfi <cr>    # conditional_registration_candidates-004989
+(config)# default do-exec undebug segment-routing mpls notification <cr>    # conditional_registration_candidates-005166
+(config)# default do-exec undebug segment-routing mpls nsf <cr>    # conditional_registration_candidates-005234
+(config)# default do-exec undebug segment-routing mpls oam <cr>    # conditional_registration_candidates-005314
+(config)# default do-exec undebug segment-routing mpls prefixsid-map <cr>    # conditional_registration_candidates-005054
+(config)# default do-exec undebug service-integration api <cr>    # conditional_registration_candidates-002739
+(config)# default do-exec undebug service-integration configuration <cr>    # conditional_registration_candidates-002579
+(config)# default do-exec undebug service-integration menu <cr>    # conditional_registration_candidates-002657
+(config)# default do-exec undebug service-integration xml <cr>    # conditional_registration_candidates-002820
+(config)# default do-exec undebug sgi GSI <cr>    # conditional_registration_candidates-002818
+(config)# default do-exec undebug sgi all <cr>    # conditional_registration_candidates-002990
+(config)# default do-exec undebug sgi error <cr>    # conditional_registration_candidates-002577
+(config)# default do-exec undebug sgi info <cr>    # conditional_registration_candidates-002655
+(config)# default do-exec undebug sgi isg-api error <cr>    # conditional_registration_candidates-005030
+(config)# default do-exec undebug sgi isg-api event <cr>    # conditional_registration_candidates-005097
+(config)# default do-exec undebug sgi xml <cr>    # conditional_registration_candidates-002737
+(config)# default do-exec undebug shared-line all <cr>    # conditional_registration_candidates-002811
+(config)# default do-exec undebug shared-line errors <cr>    # conditional_registration_candidates-002565
+(config)# default do-exec undebug shared-line events <cr>    # conditional_registration_candidates-002646
+(config)# default do-exec undebug shared-line info <cr>    # conditional_registration_candidates-002727
+(config)# default do-exec undebug site-manager all <cr>    # conditional_registration_candidates-002649
+(config)# default do-exec undebug spanning-tree ha all <cr>    # conditional_registration_candidates-006218
+(config)# default do-exec undebug spanning-tree ha bulk_sync <cr>    # conditional_registration_candidates-006095
+(config)# default do-exec undebug spanning-tree ha cf <cr>    # conditional_registration_candidates-005956
+(config)# default do-exec undebug spanning-tree ha em <cr>    # conditional_registration_candidates-005908
+(config)# default do-exec undebug spanning-tree ha errors <cr>    # conditional_registration_candidates-006028
+(config)# default do-exec undebug spanning-tree ha general <cr>    # conditional_registration_candidates-006193
+(config)# default do-exec undebug spanning-tree ha inc_sync <cr>    # conditional_registration_candidates-006056
+(config)# default do-exec undebug spanning-tree ha port-states <cr>    # conditional_registration_candidates-006205
+(config)# default do-exec undebug spanning-tree ha rf <cr>    # conditional_registration_candidates-005991
+(config)# default do-exec undebug spanning-tree ha rx_msg <cr>    # conditional_registration_candidates-006167
+(config)# default do-exec undebug spanning-tree ha tx_msg <cr>    # conditional_registration_candidates-006134
+(config)# default do-exec undebug spanning-tree mstp all <cr>    # conditional_registration_candidates-006269
+(config)# default do-exec undebug spanning-tree mstp boundary <cr>    # conditional_registration_candidates-006027
+(config)# default do-exec undebug spanning-tree mstp bpdu receive <cr>    # conditional_registration_candidates-007406
+(config)# default do-exec undebug spanning-tree mstp bpdu transmit <cr>    # conditional_registration_candidates-007436
+(config)# default do-exec undebug spanning-tree mstp cmpmsg <cr>    # conditional_registration_candidates-006261
+(config)# default do-exec undebug spanning-tree mstp dispute <cr>    # conditional_registration_candidates-006227
+(config)# default do-exec undebug spanning-tree mstp errors <cr>    # conditional_registration_candidates-006241
+(config)# default do-exec undebug spanning-tree mstp flush <cr>    # conditional_registration_candidates-006217
+(config)# default do-exec undebug spanning-tree mstp init <cr>    # conditional_registration_candidates-005990
+(config)# default do-exec undebug spanning-tree mstp migration <cr>    # conditional_registration_candidates-006133
+(config)# default do-exec undebug spanning-tree mstp proposals <cr>    # conditional_registration_candidates-006094
+(config)# default do-exec undebug spanning-tree mstp roles <cr>    # conditional_registration_candidates-006252
+(config)# default do-exec undebug spanning-tree mstp sanity_check <cr>    # conditional_registration_candidates-006192
+(config)# default do-exec undebug spanning-tree mstp state <cr>    # conditional_registration_candidates-005907
+(config)# default do-exec undebug spanning-tree mstp sync <cr>    # conditional_registration_candidates-006204
+(config)# default do-exec undebug spanning-tree mstp tc <cr>    # conditional_registration_candidates-006166
+(config)# default do-exec undebug spanning-tree mstp timers <cr>    # conditional_registration_candidates-005955
+(config)# default do-exec undebug srv6 all <cr>    # conditional_registration_candidates-002574
+(config)# default do-exec undebug subscriber feature name ffr error <cr>    # conditional_registration_candidates-008117
+(config)# default do-exec undebug subscriber feature name ffr event <cr>    # conditional_registration_candidates-008105
+(config)# default do-exec undebug subscriber feature redundancy <cr>    # conditional_registration_candidates-005583
+(config)# default do-exec undebug subscriber isg-mib detail <cr>    # conditional_registration_candidates-005098
+(config)# default do-exec undebug subscriber isg-mib errors <cr>    # conditional_registration_candidates-004962
+(config)# default do-exec undebug subscriber isg-mib events <cr>    # conditional_registration_candidates-005035
+(config)# default do-exec undebug subscriber mobility error <cr>    # conditional_registration_candidates-004972
+(config)# default do-exec undebug subscriber mobility event <cr>    # conditional_registration_candidates-004905
+(config)# default do-exec undebug subscriber redundancy <cr>    # conditional_registration_candidates-002794
+(config)# default do-exec undebug translate <cr>    # conditional_registration_candidates-001088
+(config)# default do-exec undebug translation detail <cr>    # conditional_registration_candidates-002578
+(config)# default do-exec undebug udptn <cr>    # conditional_registration_candidates-001089
+(config)# default do-exec undebug utd config <cr>    # conditional_registration_candidates-002756
+(config)# default do-exec undebug vfi error <cr>    # conditional_registration_candidates-002734
+(config)# default do-exec undebug vfi event <cr>    # conditional_registration_candidates-002653
+(config)# default do-exec undebug vfi fsm error <cr>    # conditional_registration_candidates-005038
+(config)# default do-exec undebug vfi fsm event <cr>    # conditional_registration_candidates-004967
+(config)# default do-exec undebug voip ccapi <cr>    # conditional_registration_candidates-003551
+(config)# default do-exec undebug voip ccapi all <cr>    # conditional_registration_candidates-005040
+(config)# default do-exec undebug voip ccapi default <cr>    # conditional_registration_candidates-005100
+(config)# default do-exec undebug voip ccapi detail <cr>    # conditional_registration_candidates-005159
+(config)# default do-exec undebug voip ccapi error <cr>    # conditional_registration_candidates-005759
+(config)# default do-exec undebug voip ccapi function <cr>    # conditional_registration_candidates-005229
+(config)# default do-exec undebug voip ccapi individual <number:1..168> <cr>    # conditional_registration_candidates-006983
+(config)# default do-exec undebug voip ccapi inout <cr>    # conditional_registration_candidates-004906
+(config)# default do-exec undebug voip ccapi protoheaders <cr>    # conditional_registration_candidates-004973
+(config)# default do-exec undebug voip ccapi service <cr>    # conditional_registration_candidates-005310
+(config)# default do-exec undebug voip dcapi error <cr>    # conditional_registration_candidates-005036
+(config)# default do-exec undebug voip dcapi inout <cr>    # conditional_registration_candidates-004964
+(config)# default do-exec undebug voip profile fax mail <cr>    # conditional_registration_candidates-006785
+(config)# default do-exec undebug voip profile fax relay application <cr>    # conditional_registration_candidates-007961
+(config)# default do-exec undebug voip profile fax relay signaling <cr>    # conditional_registration_candidates-007979
+(config)# default do-exec undebug voip profile help <cr>    # conditional_registration_candidates-005052
+(config)# default do-exec undebug voip profile modem pass-through signaling <cr>    # conditional_registration_candidates-007912
+(config)# default do-exec undebug voip profile modem relay signaling <cr>    # conditional_registration_candidates-007934
+(config)# default do-exec undebug voip profile voice application <cr>    # conditional_registration_candidates-006756
+(config)# default do-exec undebug voip profile voice signaling <cr>    # conditional_registration_candidates-006795
+(config)# default do-exec undebug vpdn redundancy <cr>    # conditional_registration_candidates-003004
+(config)# default do-exec undebug vpdn redundancy detail <cr>    # conditional_registration_candidates-005027
+(config)# default do-exec undebug vpm change rcv-map <number:0..15> <number:0..15> <cr>    # conditional_registration_candidates-008215
+(config)# default do-exec undebug vpm change xmt-map <number:0..15> <number:0..15> <cr>    # conditional_registration_candidates-008228
+(config)# default do-exec undebug vpm cmd <number:0..15> <cr>    # conditional_registration_candidates-005915
+(config)# default do-exec undebug vpm port <cr>    # conditional_registration_candidates-003798
+(config)# default do-exec undebug vpm rcv-map <cr>    # conditional_registration_candidates-003983
+(config)# default do-exec undebug vpm show-map <cr>    # conditional_registration_candidates-003925
+(config)# default do-exec undebug vpm spi <cr>    # conditional_registration_candidates-002580
+(config)# default do-exec undebug vpm voaal2 type1 to_dsp <cr>    # conditional_registration_candidates-007204
+(config)# default do-exec undebug vpm xmt-map <cr>    # conditional_registration_candidates-003954
+(config)# default do-exec undebug vsp all <cr>    # conditional_registration_candidates-002680
+(config)# default do-exec undebug vtsp dsp <cr>    # conditional_registration_candidates-002567
+(config)# default do-exec undebug vxlan static-route all <cr>    # conditional_registration_candidates-005233
+(config)# default do-exec undebug vxlan static-route database <cr>    # conditional_registration_candidates-004988
+(config)# default do-exec undebug vxlan static-route error <cr>    # conditional_registration_candidates-004862

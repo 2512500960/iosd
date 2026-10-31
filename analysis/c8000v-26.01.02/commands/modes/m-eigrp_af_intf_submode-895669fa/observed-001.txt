@@ -1,0 +1,62 @@
+# 模式 eigrp_af_intf_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af-interface)# add-paths <number:1..4> <cr>    # observed_connections-007614
+(config-router-af-interface)# authentication key-chain <string> <cr>    # observed_connections-007628
+(config-router-af-interface)# authentication mode hmac-sha-256 <string> <cr>    # observed_connections-007633
+(config-router-af-interface)# authentication mode md5 <cr>    # observed_connections-007624
+(config-router-af-interface)# bandwidth-percent <number:1..999999> <cr>    # observed_connections-007594
+(config-router-af-interface)# bfd <cr>    # observed_connections-007582
+(config-router-af-interface)# dampening-change <cr>    # observed_connections-007583
+(config-router-af-interface)# dampening-interval <cr>    # observed_connections-007584
+(config-router-af-interface)# default add-paths <cr>    # observed_connections-007617
+(config-router-af-interface)# default authentication key-chain <cr>    # observed_connections-007629
+(config-router-af-interface)# default authentication mode <cr>    # observed_connections-007626
+(config-router-af-interface)# default bandwidth-percent <cr>    # observed_connections-007596
+(config-router-af-interface)# default bfd <cr>    # observed_connections-007597
+(config-router-af-interface)# default dampening-change <cr>    # observed_connections-007600
+(config-router-af-interface)# default dampening-interval <cr>    # observed_connections-007604
+(config-router-af-interface)# default hello-interval <cr>    # observed_connections-007606
+(config-router-af-interface)# default hold-time <cr>    # observed_connections-007609
+(config-router-af-interface)# default next-hop-self <cr>    # observed_connections-007612
+(config-router-af-interface)# default passive-interface <cr>    # observed_connections-007615
+(config-router-af-interface)# default shutdown <cr>    # observed_connections-007618
+(config-router-af-interface)# default split-horizon <cr>    # observed_connections-007620
+(config-router-af-interface)# default stub-site wan-interface <cr>    # observed_connections-007632
+(config-router-af-interface)# default summary-address <address> <address> <cr>    # observed_connections-007635
+(config-router-af-interface)# default test-bandwidth <cr>    # observed_connections-007592
+(config-router-af-interface)# default test-delay <cr>    # observed_connections-007602
+(config-router-af-interface)# default vnet global <cr>    # observed_connections-007625
+(config-router-af-interface)# exit-af-interface <cr>    # observed_connections-007581
+(config-router-af-interface)# hello-interval <number:1..65535> <cr>    # observed_connections-007605
+(config-router-af-interface)# hold-time <number:1..65535> <cr>    # observed_connections-007608
+(config-router-af-interface)# next-hop-self <cr>    # observed_connections-007585
+(config-router-af-interface)# no add-paths <cr>    # observed_connections-007613
+(config-router-af-interface)# no authentication key-chain <cr>    # observed_connections-007627
+(config-router-af-interface)# no authentication mode <cr>    # observed_connections-007623
+(config-router-af-interface)# no bandwidth-percent <cr>    # observed_connections-007593
+(config-router-af-interface)# no bfd <cr>    # observed_connections-007595
+(config-router-af-interface)# no dampening-change <cr>    # observed_connections-007598
+(config-router-af-interface)# no dampening-interval <cr>    # observed_connections-007601
+(config-router-af-interface)# no hello-interval <cr>    # observed_connections-007603
+(config-router-af-interface)# no hold-time <cr>    # observed_connections-007607
+(config-router-af-interface)# no next-hop-self <cr>    # observed_connections-007610
+(config-router-af-interface)# no passive-interface <cr>    # observed_connections-007611
+(config-router-af-interface)# no shutdown <cr>    # observed_connections-007616
+(config-router-af-interface)# no split-horizon <cr>    # observed_connections-007619
+(config-router-af-interface)# no stub-site wan-interface <cr>    # observed_connections-007631
+(config-router-af-interface)# no summary-address <address> <address> <cr>    # observed_connections-007634
+(config-router-af-interface)# no test-bandwidth <cr>    # observed_connections-007590
+(config-router-af-interface)# no test-delay <cr>    # observed_connections-007599
+(config-router-af-interface)# no vnet global <cr>    # observed_connections-007622
+(config-router-af-interface)# passive-interface <cr>    # observed_connections-007586
+(config-router-af-interface)# shutdown <cr>    # observed_connections-007587
+(config-router-af-interface)# split-horizon <cr>    # observed_connections-007588
+(config-router-af-interface)# stub-site wan-interface <cr>    # observed_connections-007621
+(config-router-af-interface)# summary-address <address> <address> <cr>    # observed_connections-007630
+(config-router-af-interface)# summary-address <prefix:dynamic> <cr>    # observed_connections-007636
+(config-router-af-interface)# summary-address <prefix:dynamic> <cr>    # observed_connections-007638
+(config-router-af-interface)# test-bandwidth <number:1..4294967295> <cr>    # observed_connections-007591
+(config-router-af-interface)# test-delay <?general_to_number_action@555589bdcfa0> <cr>    # observed_connections-007637
+(config-router-af-interface)# vnet global <cr>    # observed_connections-007589

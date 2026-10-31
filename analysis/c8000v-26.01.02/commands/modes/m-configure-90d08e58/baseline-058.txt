@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-058.md
+
+(config)# do-exec show policy-map session brief <string> <cr>    # path-050532
+(config)# do-exec show policy-map session brief <string> timestamp <cr>    # path-056068
+(config)# do-exec show policy-map session brief <string> vrf <cr>    # path-056100
+(config)# do-exec show policy-map session brief <string> vrf <string> <cr>    # path-058699
+(config)# do-exec show policy-map session brief <string> vrf <string> timestamp <cr>    # path-059568
+(config)# do-exec show policy-map session brief <string> vrf timestamp <cr>    # path-058695
+(config)# do-exec show policy-map session brief timestamp <cr>    # path-050443
+(config)# do-exec show policy-map session brief vrfs <cr>    # path-050474
+(config)# do-exec show policy-map session brief vrfs <string> <cr>    # path-056045
+(config)# do-exec show policy-map session brief vrfs <string> timestamp <cr>    # path-058691
+(config)# do-exec show policy-map session brief vrfs timestamp <cr>    # path-056030
+(config)# do-exec show policy-map session class <string> <cr>    # path-050440
+(config)# do-exec show policy-map summary <cr>    # path-032425
+(config)# do-exec show policy-map target <cr>    # path-032663
+(config)# do-exec show policy-map target sub-interface <cr>    # path-041418
+(config)# do-exec show policy-map target vrf <string> ipv4 input <cr>    # path-058690
+(config)# do-exec show policy-map target vrf <string> type nwpi <cr>    # path-058705
+(config)# do-exec show policy-map type control <?option@555589143ca8> <cr>    # path-061692
+(config)# do-exec show port-security <cr>    # path-027805
+(config)# do-exec show port-security interface <interface> <cr>    # path-061193
+(config)# do-exec show power <cr>    # path-027427
+(config)# do-exec show power detail <cr>    # path-030691
+(config)# do-exec show power history <cr>    # path-030749
+(config)# do-exec show power inline <cr>    # path-030802
+(config)# do-exec show power inline <interface> <cr>    # path-060925
+(config)# do-exec show power inline <interface> detail <cr>    # path-061426
+(config)# do-exec show power inline allocation default <cr>    # path-062835
+(config)# do-exec show power inline consumption <cr>    # path-062797
+(config)# do-exec show power inline consumption <interface> <cr>    # path-062959
+(config)# do-exec show power inline consumption module <number:dynamic> <cr>    # path-062974
+(config)# do-exec show power inline dynamic-priority <cr>    # path-037489
+(config)# do-exec show power inline hardware poe get <number:dynamic> global <cr>    # path-062992
+(config)# do-exec show power inline hardware poe get <number:dynamic> port <cr>    # path-062993
+(config)# do-exec show power inline hardware poe get <number:dynamic> port <number:1..48> <cr>    # path-062997
+(config)# do-exec show power inline hardware pse get <number:dynamic> <number:0..24> <number:1..255> <cr>    # path-062998
+(config)# do-exec show power inline meter <cr>    # path-037509
+(config)# do-exec show power inline meter <interface> <cr>    # path-061411
+(config)# do-exec show power inline meter module <number:dynamic> <cr>    # path-061996
+(config)# do-exec show power inline module <number:dynamic> <cr>    # path-061441
+(config)# do-exec show power inline module <number:dynamic> detail <cr>    # path-062005
+(config)# do-exec show power inline police <cr>    # path-037572
+(config)# do-exec show power inline police <interface> <cr>    # path-061416
+(config)# do-exec show power inline police module <number:dynamic> <cr>    # path-061999
+(config)# do-exec show power inline priority <cr>    # path-037604
+(config)# do-exec show power inline priority <interface> <cr>    # path-061420
+(config)# do-exec show power inline priority module <number:dynamic> <cr>    # path-062001
+(config)# do-exec show power inline upoe-plus <cr>    # path-037543
+(config)# do-exec show power inline upoe-plus <interface> <cr>    # path-061414
+(config)# do-exec show power inline upoe-plus module <number:dynamic> <cr>    # path-061997
+(config)# do-exec show power usage <cr>    # path-030654
+(config)# do-exec show ppp all <cr>    # path-029767
+(config)# do-exec show ppp bap counters <cr>    # path-036984
+(config)# do-exec show ppp bap group <cr>    # path-037136
+(config)# do-exec show ppp bap group <string> <cr>    # path-046497
+(config)# do-exec show ppp bap group zap <interface> <cr>    # path-061966
+(config)# do-exec show ppp bap group zap <interface> <string> <cr>    # path-062313
+(config)# do-exec show ppp bap queues <cr>    # path-036889
+(config)# do-exec show ppp disconnect history <cr>    # path-036257
+(config)# do-exec show ppp disconnect stats <cr>    # path-036073
+(config)# do-exec show ppp id <number:1..4294967295> <cr>    # path-036219
+(config)# do-exec show ppp interface <interface> <cr>    # path-060857
+(config)# do-exec show ppp memory <cr>    # path-030225
+(config)# do-exec show ppp mppe <interface> <cr>    # path-060885
+(config)# do-exec show ppp multilink <cr>    # path-030522
+(config)# do-exec show ppp multilink interface <interface> <cr>    # path-061393
+(config)# do-exec show ppp protocols <cr>    # path-030150
+(config)# do-exec show ppp queues <cr>    # path-030078
+(config)# do-exec show ppp statistics <cr>    # path-030092
+(config)# do-exec show ppp statistics fsm <cr>    # path-036347
+(config)# do-exec show ppp subscriber statistics <cr>    # path-036673
+(config)# do-exec show ppp summary <cr>    # path-029977
+(config)# do-exec show ppp syslog statistics <cr>    # path-036408
+(config)# do-exec show ppp throttled <cr>    # path-030119
+(config)# do-exec show pppatm redundancy <cr>    # path-032627
+(config)# do-exec show pppatm session <cr>    # path-032689
+(config)# do-exec show pppatm session interface <interface> <cr>    # path-061697
+(config)# do-exec show pppatm statistics <cr>    # path-032650
+(config)# do-exec show pppatm summary <cr>    # path-032599
+(config)# do-exec show pppatm trace interface <interface> vc <string> <cr>    # path-062446
+(config)# do-exec show pppoe derived group <string> <cr>    # path-048370
+(config)# do-exec show pppoe session interface <interface> <cr>    # path-061513
+(config)# do-exec show pppoe statistics <cr>    # path-031684
+(config)# do-exec show pppoe summary <cr>    # path-031609
+(config)# do-exec show pppoe vrrs summary <cr>    # path-039551
+(config)# do-exec show privilege <cr>    # path-026387
+(config)# do-exec show processes <cr>    # path-027339
+(config)# do-exec show processes <number:1..2147483647> <cr>    # path-030346
+(config)# do-exec show processes all-events <cr>    # path-030115
+(config)# do-exec show processes bootup-init <cr>    # path-030257
+(config)# do-exec show processes bootup-time <cr>    # path-030219
+(config)# do-exec show processes cpu <cr>    # path-030421
+(config)# do-exec show processes cpu autoprofile hog <cr>    # path-046277
+(config)# do-exec show processes cpu autoprofile process <cr>    # path-046327
+(config)# do-exec show processes cpu extended <cr>    # path-037033
+(config)# do-exec show processes cpu extended accounting <cr>    # path-046387
+(config)# do-exec show processes cpu history <cr>    # path-036836
+(config)# do-exec show processes cpu history table <cr>    # path-046168
+(config)# do-exec show processes cpu monitor <cr>    # path-036873
+(config)# do-exec show processes cpu sorted <cr>    # path-036905
+(config)# do-exec show processes events <cr>    # path-030190
+(config)# do-exec show processes heapcheck <cr>    # path-030040
+(config)# do-exec show processes history <cr>    # path-030320
+(config)# do-exec show processes memory <cr>    # path-030332
+(config)# do-exec show processes memory old-header <cr>    # path-036778
+(config)# do-exec show processes memory sorted <cr>    # path-036793
+(config)# do-exec show processes timercheck <cr>    # path-030074
+(config)# do-exec show profile <cr>    # path-027753
+(config)# do-exec show protocols <cr>    # path-027626
+(config)# do-exec show protocols <interface> <cr>    # path-060715
+(config)# do-exec show protocols phdf <?fpm_protocol_action@55558935bdc0> <cr>    # path-061008
+(config)# do-exec show qbm client <cr>    # path-030454
+(config)# do-exec show qbm pool <cr>    # path-030510
+(config)# do-exec show qfp drops thresholds <cr>    # path-036624
+(config)# do-exec show qfp utilization monitor <cr>    # path-036574
+(config)# do-exec show qllc <cr>    # path-027801
+(config)# do-exec show qllc <interface> <cr>    # path-060752
+(config)# do-exec show qos adaptive db <cr>    # path-038397
+(config)# do-exec show qos adaptive multipoint <cr>    # path-038464
+(config)# do-exec show qos adaptive multipoint <interface> <cr>    # path-061489
+(config)# do-exec show qos event <cr>    # path-031254
+(config)# do-exec show qos trace <cr>    # path-031351
+(config)# do-exec show qos trace error <cr>    # path-038529
+(config)# do-exec show qos trace event <cr>    # path-038430
+(config)# do-exec show qos trace warning <cr>    # path-038478
+(config)# do-exec show radius server-group all <cr>    # path-042219
+(config)# do-exec show radius statistics <cr>    # path-033005
+(config)# do-exec show radius table attributes <cr>    # path-042220
+(config)# do-exec show radius-proxy client <address> <cr>    # path-039231
+(config)# do-exec show radius-proxy session id <number:1..4294967295> <cr>    # path-048245
+(config)# do-exec show radius-proxy statistics <cr>    # path-031600
+(config)# do-exec show rbscp state <cr>    # path-032482
+(config)# do-exec show rbscp state <interface> <cr>    # path-061068
+(config)# do-exec show redirect group <cr>    # path-031544
+(config)# do-exec show redirect translations <cr>    # path-031627
+(config)# do-exec show redundancy <cr>    # path-027393
+(config)# do-exec show redundancy application group <cr>    # path-037374
+(config)# do-exec show redundancy clients <cr>    # path-030355
+(config)# do-exec show redundancy clients domain <?option@55558952a4c8> <cr>    # path-061367
+(config)# do-exec show redundancy cloud provider <cr>    # path-037332
+(config)# do-exec show redundancy domain <?option@55558952a0f8> <cr>    # path-060898
+(config)# do-exec show redundancy history monitor <cr>    # path-037071
+(config)# do-exec show redundancy idb-sync-history <cr>    # path-030388
+(config)# do-exec show redundancy interchassis <cr>    # path-030594
+(config)# do-exec show redundancy rii <cr>    # path-030541
+(config)# do-exec show redundancy rii <number:1..65535> <cr>    # path-037142
+(config)# do-exec show redundancy switchover history <cr>    # path-037125
+(config)# do-exec show redundancy switchover history domain <?option@555589523af0> <cr>    # path-061967
+(config)# do-exec show redundancy trace main <cr>    # path-037214
+(config)# do-exec show redundancy trace main domain <?option@555589530120> <cr>    # path-061972
+(config)# do-exec show refuse-message <cr>    # path-027625
+(config)# do-exec show region <cr>    # path-027750
+(config)# do-exec show region address <?general_pointer_number_action@5555896c9640> <cr>    # path-061172
+(config)# do-exec show registry <cr>    # path-027759
+(config)# do-exec show registry calls <cr>    # path-033474
+(config)# do-exec show registry calls <string> detail fn <?general_pointer_number_action@5555896d0468> <cr>    # path-062458
+(config)# do-exec show reload <cr>    # path-026832
+(config)# do-exec show reload history <cr>    # path-029056
+(config)# do-exec show remote-management status <cr>    # path-033915
+(config)# do-exec show resource database <cr>    # path-029391
+(config)# do-exec show resource monitor all <cr>    # path-035764
+(config)# do-exec show resource notification owner all user all <cr>    # path-057160
+(config)# do-exec show resource owner all user-type all <cr>    # path-052905
+(config)# do-exec show resource policy all <cr>    # path-035655
+(config)# do-exec show resource relationship user-type all <cr>    # path-045210
+(config)# do-exec show resource user-type all <cr>    # path-035669
+(config)# do-exec show resource-group <cr>    # path-027758
+(config)# do-exec show resource-group memory <cr>    # path-033486
+(config)# do-exec show rfs issu endpoints <cr>    # path-042724
+(config)# do-exec show rhosts <cr>    # path-027517
+(config)# do-exec show rib application <cr>    # path-032352
+(config)# do-exec show rib client <cr>    # path-032317
+(config)# do-exec show rib gr <cr>    # path-032351
+(config)# do-exec show rib ut <cr>    # path-032410
+(config)# do-exec show rif <cr>    # path-027142
+(config)# do-exec show rmon <cr>    # path-027735
+(config)# do-exec show romvar <cr>    # path-027283
+(config)# do-exec show route-map <cr>    # path-027631
+(config)# do-exec show route-map all <cr>    # path-031950
+(config)# do-exec show route-map dynamic <cr>    # path-032035
+(config)# do-exec show route-map dynamic application <cr>    # path-040307
+(config)# do-exec show route-map ipc <cr>    # path-032015
+(config)# do-exec show route-tag <cr>    # path-027624
+(config)# do-exec show rsh-disable-commands <cr>    # path-027524
+(config)# do-exec show rudpv1 failures <cr>    # path-032810
+(config)# do-exec show rudpv1 parameters <cr>    # path-032824
+(config)# do-exec show rudpv1 statistics <cr>    # path-032793
+(config)# do-exec show running-config <cr>    # path-027162
+(config)# do-exec show running-config <interface> <cr>    # path-060574
+(config)# do-exec show running-config aaa <cr>    # path-030470
+(config)# do-exec show running-config bridge-domain <number:dynamic> <cr>    # path-060836
+(config)# do-exec show running-config bridge-domain parameterized vlan <cr>    # path-045219
+(config)# do-exec show running-config class-map <cr>    # path-029811
+(config)# do-exec show running-config controller <?controller_action@55558994a5f8> <cr>    # path-060835
+(config)# do-exec show running-config cts <cr>    # path-030240
+(config)# do-exec show running-config eap method profiles <cr>    # path-045767
+(config)# do-exec show running-config eap profiles <cr>    # path-036265
+(config)# do-exec show running-config ethernet cfm <cr>    # path-036719
+(config)# do-exec show running-config ethernet cfm global ais lck <cr>    # path-061350
+(config)# do-exec show running-config flow exporter <?option@555588f51338> <cr>    # path-061287
+(config)# do-exec show running-config flow exporter <cr>    # path-035719
+(config)# do-exec show running-config flow monitor <cr>    # path-035993
+(config)# do-exec show running-config flow record <cr>    # path-035920
+(config)# do-exec show running-config flow record <cr>    # path-060847
+(config)# do-exec show running-config identity policy <cr>    # path-036201
+(config)# do-exec show running-config ip dhcp pool <cr>    # path-045762
+(config)# do-exec show running-config ipv6 dhcp pool <cr>    # path-045818
+(config)# do-exec show running-config map-class <cr>    # path-029807
+(config)# do-exec show running-config mdns-sd <cr>    # path-030205
+(config)# do-exec show running-config nat <cr>    # path-029089
+(config)# do-exec show running-config nve <cr>    # path-028846
+(config)# do-exec show running-config service-group <cr>    # path-029502
+(config)# do-exec show running-config service-group <number:dynamic> <cr>    # path-060828
+(config)# do-exec show running-config switchport <cr>    # path-029860
+(config)# do-exec show running-config vc-class <cr>    # path-029864
+(config)# do-exec show running-config vlan <cr>    # path-029861
+(config)# do-exec show running-config vnet <cr>    # path-060613
+(config)# do-exec show running-config vrf <cr>    # path-028791
+(config)# do-exec show running-config yang aaa <cr>    # path-060902
+(config)# do-exec show running-config yang class-map <cr>    # path-060851
+(config)# do-exec show running-config yang cts <cr>    # path-060883
+(config)# do-exec show running-config yang eap method profiles <cr>    # path-061915
+(config)# do-exec show running-config yang eap profiles <cr>    # path-061327
+(config)# do-exec show running-config yang flow monitor <cr>    # path-061304
+(config)# do-exec show running-config yang identity policy <cr>    # path-061321
+(config)# do-exec show running-config yang ip dhcp pool <cr>    # path-061914
+(config)# do-exec show running-config yang ipv6 dhcp pool <cr>    # path-061917
+(config)# do-exec show running-config yang map-class <cr>    # path-060850
+(config)# do-exec show running-config yang mdns-sd <cr>    # path-060879
+(config)# do-exec show running-config yang nat <cr>    # path-060816
+(config)# do-exec show running-config yang nve <cr>    # path-060802
+(config)# do-exec show running-config yang switchport <cr>    # path-060854
+(config)# do-exec show running-config yang vc-class <cr>    # path-060856
+(config)# do-exec show running-config yang vlan <cr>    # path-060855
+(config)# do-exec show running-config yang vrf <cr>    # path-060797
+(config)# do-exec show rwatch <cr>    # path-027732
+(config)# do-exec show sampler <?option@555588f3c1e0> <cr>    # path-060675
+(config)# do-exec show sampler <cr>    # path-027478
+(config)# do-exec show sampler broker <cr>    # path-030820
+(config)# do-exec show sasl all <cr>    # path-033927
+(config)# do-exec show sasl context <cr>    # path-033942
+(config)# do-exec show sasl mechanisms <cr>    # path-033936
+(config)# do-exec show sasl profile <string> <cr>    # path-043821
+(config)# do-exec show sasl profile all <cr>    # path-043802
+(config)# do-exec show scalable-queue statistics <cr>    # path-030005
+(config)# do-exec show sd-card summary <cr>    # path-033874
+(config)# do-exec show sdb <cr>    # path-027746
+(config)# do-exec show sdllc <cr>    # path-027789
+(config)# do-exec show sdllc <interface> <cr>    # path-060750
+(config)# do-exec show self-diagnostics <cr>    # path-027802
+(config)# do-exec show sensor-mgr db <cr>    # path-029095
+(config)# do-exec show service-group <number:dynamic> <cr>    # path-060679
+(config)# do-exec show service-group all <cr>    # path-030872
+(config)# do-exec show service-overlay applications registered <cr>    # path-041084
+(config)# do-exec show service-overlay interface <interface> applications registered <cr>    # path-062157
+(config)# do-exec show service-overlay interface <interface> internal <cr>    # path-061665
+(config)# do-exec show service-overlay interface <interface> peer database <cr>    # path-062155
+(config)# do-exec show service-overlay interface <interface> stats <cr>    # path-061661
+(config)# do-exec show service-overlay interface <interface> summary <cr>    # path-061664
+(config)# do-exec show service-overlay internal <cr>    # path-032437
+(config)# do-exec show service-overlay stats <cr>    # path-032403
+(config)# do-exec show service-overlay summary <cr>    # path-032420
+(config)# do-exec show service-routing capabilities-manager <cr>    # path-032620
+(config)# do-exec show service-routing database <cr>    # path-032570
+(config)# do-exec show service-routing database <number:0..65535> : <number:0..65535> : <number:0..4294967295> - <number:0..65535> - <number:0..65535> - <number:0..65535> - <hex-string> <cr>    # path-062689
+(config)# do-exec show service-routing parser <cr>    # path-032559
+(config)# do-exec show service-routing plugins <cr>    # path-032577
+(config)# do-exec show service-routing registered <cr>    # path-032571
+(config)# do-exec show service-routing registered detail <cr>    # path-041401
+(config)# do-exec show service-routing subscriptions <cr>    # path-032590
+(config)# do-exec show service-routing subscriptions detail <cr>    # path-041433
+(config)# do-exec show service-routing tech-support <cr>    # path-032555
+(config)# do-exec show service-routing xmcp clients <address> <cr>    # path-061706
+(config)# do-exec show service-routing xmcp clients <cr>    # path-041605
+(config)# do-exec show service-routing xmcp server <cr>    # path-041511
+(config)# do-exec show service-routing xmcp timers <cr>    # path-041556
+(config)# do-exec show service-template <cr>    # path-027739
+(config)# do-exec show sessions <cr>    # path-026767
+(config)# do-exec show shell data-path <cr>    # path-028184
+(config)# do-exec show shell environment <cr>    # path-028123
+(config)# do-exec show shell functions <cr>    # path-060523
+(config)# do-exec show shell functions brief <cr>    # path-034133
+(config)# do-exec show shell triggers <cr>    # path-028188
+(config)# do-exec show shell-exec status <cr>    # path-033154
+(config)# do-exec show slip <cr>    # path-027665
+(config)# do-exec show smds addresses <cr>    # path-031403
+(config)# do-exec show smds map <cr>    # path-031423
+(config)# do-exec show smds traffic <cr>    # path-031443
+(config)# do-exec show smf <cr>    # path-027638
+(config)# do-exec show smf <interface> <cr>    # path-060721
+(config)# do-exec show sna <cr>    # path-027677
+(config)# do-exec show snapshot <cr>    # path-027716
+(config)# do-exec show snapshot <interface> <cr>    # path-060738
+(config)# do-exec show snmp <cr>    # path-027664
+(config)# do-exec show snmp chassis <cr>    # path-032340
+(config)# do-exec show snmp community <cr>    # path-032360
+(config)# do-exec show snmp contact <cr>    # path-032306
+(config)# do-exec show snmp context <cr>    # path-032220
+(config)# do-exec show snmp context mapping <cr>    # path-040763
+(config)# do-exec show snmp cpu-stats <cr>    # path-032189
+(config)# do-exec show snmp engineID <cr>    # path-032216
+(config)# do-exec show snmp group <cr>    # path-032248
+(config)# do-exec show snmp host <cr>    # path-032289
+(config)# do-exec show snmp location <cr>    # path-032323
+(config)# do-exec show snmp mib <cr>    # path-032256
+(config)# do-exec show snmp mib bulkstat transfer <cr>    # path-050000
+(config)# do-exec show snmp mib bulkstat transfer <string> <cr>    # path-055792
+(config)# do-exec show snmp mib context <cr>    # path-040825
+(config)# do-exec show snmp mib ifmib ifindex <cr>    # path-050033
+(config)# do-exec show snmp mib ifmib ifindex <interface> <cr>    # path-062142
+(config)# do-exec show snmp mib ifmib ifindex free-list <cr>    # path-055817
+(config)# do-exec show snmp mib ifmib traps <cr>    # path-049951
+(config)# do-exec show snmp mib nhrp status <cr>    # path-049946
+(config)# do-exec show snmp mib notification-log <cr>    # path-040870
+(config)# do-exec show snmp mib notification-log all <cr>    # path-049945
+(config)# do-exec show snmp mib notification-log default <cr>    # path-049970
+(config)# do-exec show snmp monitor response <cr>    # path-060727
+(config)# do-exec show snmp notify <cr>    # path-032231
+(config)# do-exec show snmp pending <cr>    # path-032515
+(config)# do-exec show snmp sa cache-stat <cr>    # path-041334
+(config)# do-exec show snmp sessions <cr>    # path-032519
+(config)# do-exec show snmp slot-mapping <cr>    # path-032443
+(config)# do-exec show snmp stats hosts <cr>    # path-041177
+(config)# do-exec show snmp stats oid <cr>    # path-041145
+(config)# do-exec show snmp user <cr>    # path-032295
+(config)# do-exec show snmp view <cr>    # path-032376
+(config)# do-exec show sntp <cr>    # path-027479
+(config)# do-exec show sockets <cr>    # path-027647
+(config)# do-exec show sockets <number:1..4294967295> <cr>    # path-032238
+(config)# do-exec show sockets <number:1..4294967295> events <cr>    # path-040766
+(config)# do-exec show software authenticity file <url:dynamic> <cr>    # path-061798
+(config)# do-exec show software authenticity keys <cr>    # path-043624
+(config)# do-exec show source-bridge <cr>    # path-027791
+(config)# do-exec show spanning-tree <cr>    # path-027786
+(config)# do-exec show spanning-tree <interface> <cr>    # path-060748
+(config)# do-exec show spanning-tree <interface> cost <cr>    # path-061176
+(config)# do-exec show spanning-tree <interface> inconsistency <cr>    # path-061181
+(config)# do-exec show spanning-tree <interface> portfast <cr>    # path-061182
+(config)# do-exec show spanning-tree <interface> priority <cr>    # path-061177
+(config)# do-exec show spanning-tree <interface> rootcost <cr>    # path-061180
+(config)# do-exec show spanning-tree <interface> state <cr>    # path-061178
+(config)# do-exec show spanning-tree blockedports <cr>    # path-033616
+(config)# do-exec show spanning-tree bridge <cr>    # path-033696
+(config)# do-exec show spanning-tree bridge address <cr>    # path-043272
+(config)# do-exec show spanning-tree bridge forward-time <cr>    # path-043292
+(config)# do-exec show spanning-tree bridge hello-time <cr>    # path-043314
+(config)# do-exec show spanning-tree bridge id <cr>    # path-043397
+(config)# do-exec show spanning-tree bridge max-age <cr>    # path-043336
+(config)# do-exec show spanning-tree bridge priority <cr>    # path-043378
+(config)# do-exec show spanning-tree bridge priority system-id <cr>    # path-051715
+(config)# do-exec show spanning-tree bridge protocol <cr>    # path-043375
+(config)# do-exec show spanning-tree detail <cr>    # path-060749
+(config)# do-exec show spanning-tree inconsistentports <cr>    # path-033651
+(config)# do-exec show spanning-tree instances <cr>    # path-033640
+(config)# do-exec show spanning-tree platform <cr>    # path-033626
+(config)# do-exec show spanning-tree root <cr>    # path-033719
+(config)# do-exec show spanning-tree root address <cr>    # path-043288
+(config)# do-exec show spanning-tree root cost <cr>    # path-043310
+(config)# do-exec show spanning-tree root forward-time <cr>    # path-043333
+(config)# do-exec show spanning-tree root hello-time <cr>    # path-043353
+(config)# do-exec show spanning-tree root id <cr>    # path-043431
+(config)# do-exec show spanning-tree root max-age <cr>    # path-043372
+(config)# do-exec show spanning-tree root port <cr>    # path-043395
+(config)# do-exec show spanning-tree root priority <cr>    # path-043434
+(config)# do-exec show spanning-tree root priority system-id <cr>    # path-051757
+(config)# do-exec show spanning-tree summary <cr>    # path-033677
+(config)# do-exec show sse all <cr>    # path-032129
+(config)# do-exec show ssh <?ttyline_action@55558ad7c1b0> <cr>    # path-060729
+(config)# do-exec show ssh <?ttyline_action@55558ad7c1b0> rekey <?ttyline_action@55558ad7c510> <cr>    # path-062851
+(config)# do-exec show ssm cdb <cr>    # path-031355
+(config)# do-exec show ssm group <cr>    # path-031549
+(config)# do-exec show ssm id <cr>    # path-031504
+(config)# do-exec show ssm id all <cr>    # path-038762
+(config)# do-exec show ssm memory <cr>    # path-031502
+(config)# do-exec show ssm memory chunk variable feature <cr>    # path-054653
+(config)# do-exec show ssm memory chunk variable queue <cr>    # path-054693
+(config)# do-exec show ssm memory chunk variable segment <cr>    # path-054670
+(config)# do-exec show ssm stats <cr>    # path-031475
+(config)# do-exec show stacks <cr>    # path-027184
+(config)# do-exec show standby <cr>    # path-027569
+(config)# do-exec show standby <interface> <cr>    # path-060703
+(config)# do-exec show standby capability <cr>    # path-031125
+(config)# do-exec show standby capability <interface> <cr>    # path-060953
+(config)# do-exec show standby delay <cr>    # path-031182
+(config)# do-exec show standby delay <interface> <cr>    # path-060961
+(config)# do-exec show standby internal <cr>    # path-031185
+(config)# do-exec show standby internal <interface> <cr>    # path-060964
+(config)# do-exec show standby internal <interface> summary <cr>    # path-061488
+(config)# do-exec show standby internal <interface> summary all <cr>    # path-062041
+(config)# do-exec show standby internal summary <cr>    # path-038158
+(config)# do-exec show standby neighbors <cr>    # path-031099
+(config)# do-exec show standby neighbors <interface> <cr>    # path-060952
+(config)# do-exec show standby redirect <cr>    # path-031209
+(config)# do-exec show standby redirect <interface> <cr>    # path-060962
+(config)# do-exec show starting-keyword <string> <cr>    # path-028686
+(config)# do-exec show startup-config <cr>    # path-026710
+(config)# do-exec show stun <cr>    # path-027799
+(config)# do-exec show subscriber circuits <cr>    # path-031540
+(config)# do-exec show subscriber coa statistics <cr>    # path-038991
+(config)# do-exec show subscriber default-session <cr>    # path-031588
+(config)# do-exec show subscriber disconnect history <cr>    # path-039234

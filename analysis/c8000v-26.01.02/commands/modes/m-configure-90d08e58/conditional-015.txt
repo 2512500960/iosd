@@ -1,0 +1,280 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-015.md
+
+(config)# do-exec clear ip inspect session <number:0..4294967295> <cr>    # conditional_registration_candidates-004618
+(config)# do-exec clear ip inspect session all <cr>    # conditional_registration_candidates-004696
+(config)# do-exec clear ip lisp eid-table <string> <cr>    # conditional_registration_candidates-009538
+(config)# do-exec clear ip lisp eid-table <string> <cr>    # conditional_registration_candidates-009539
+(config)# do-exec clear ip lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009554
+(config)# do-exec clear ip lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009555
+(config)# do-exec clear ip mobile binding <address> <cr>    # conditional_registration_candidates-004720
+(config)# do-exec clear ip mobile host-counters <cr>    # conditional_registration_candidates-002541
+(config)# do-exec clear ip mobile performance <cr>    # conditional_registration_candidates-002472
+(config)# do-exec clear ip mobile router agent <cr>    # conditional_registration_candidates-005007
+(config)# do-exec clear ip mobile router registration <cr>    # conditional_registration_candidates-005067
+(config)# do-exec clear ip mobile router traffic <cr>    # conditional_registration_candidates-005044
+(config)# do-exec clear ip mobile secure empty <cr>    # conditional_registration_candidates-004898
+(config)# do-exec clear ip mobile traffic <cr>    # conditional_registration_candidates-002596
+(config)# do-exec clear ip mobile visitor <cr>    # conditional_registration_candidates-002759
+(config)# do-exec clear ip rsvp high-availability counters <cr>    # conditional_registration_candidates-004734
+(config)# do-exec clear ip rsvp high-availability database <cr>    # conditional_registration_candidates-004788
+(config)# do-exec clear ipv6 lisp eid-table <string> <cr>    # conditional_registration_candidates-009536
+(config)# do-exec clear ipv6 lisp eid-table <string> <cr>    # conditional_registration_candidates-009537
+(config)# do-exec clear ipv6 lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009551
+(config)# do-exec clear ipv6 lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009552
+(config)# do-exec clear ipv6 mobile pmipv6 lma binding all <cr>    # conditional_registration_candidates-007881
+(config)# do-exec clear ipv6 mobile pmipv6 lma binding nai <string> interface <interface> <cr>    # conditional_registration_candidates-009513
+(config)# do-exec clear ipv6 mobile pmipv6 lma stats <cr>    # conditional_registration_candidates-006562
+(config)# do-exec clear l2vpn atom fsm event <cr>    # conditional_registration_candidates-004613
+(config)# do-exec clear l2vpn atom fsm state transition <cr>    # conditional_registration_candidates-006601
+(config)# do-exec clear l2vpn atom statistics ldp <cr>    # conditional_registration_candidates-004402
+(config)# do-exec clear l2vpn internal event-trace <cr>    # conditional_registration_candidates-002356
+(config)# do-exec clear l2vpn service all <cr>    # conditional_registration_candidates-002351
+(config)# do-exec clear l2vpn service all <cr>    # conditional_registration_candidates-002503
+(config)# do-exec clear l2vpn service interface <interface> <cr>    # conditional_registration_candidates-009257
+(config)# do-exec clear l2vpn service interface <interface> <cr>    # conditional_registration_candidates-009268
+(config)# do-exec clear lisp eid-table <string> <cr>    # conditional_registration_candidates-009530
+(config)# do-exec clear lisp eid-table <string> <cr>    # conditional_registration_candidates-009531
+(config)# do-exec clear lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009534
+(config)# do-exec clear lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009535
+(config)# do-exec clear mcsa bindings <cr>    # conditional_registration_candidates-000778
+(config)# do-exec clear media-proxy sessions summary history <cr>    # conditional_registration_candidates-004311
+(config)# do-exec clear metadata flow statistics <cr>    # conditional_registration_candidates-002014
+(config)# do-exec clear mgcp src-stats <cr>    # conditional_registration_candidates-000822
+(config)# do-exec clear mgcp statistics <cr>    # conditional_registration_candidates-000779
+(config)# do-exec clear novell accounting <cr>    # conditional_registration_candidates-000829
+(config)# do-exec clear novell cache <cr>    # conditional_registration_candidates-000821
+(config)# do-exec clear novell sap * <cr>    # conditional_registration_candidates-009139
+(config)# do-exec clear nve log event <cr>    # conditional_registration_candidates-001956
+(config)# do-exec clear ospfv3 nsr statistics <cr>    # conditional_registration_candidates-002313
+(config)# do-exec clear ospfv3 vrf * nsr statistics <cr>    # conditional_registration_candidates-009386
+(config)# do-exec clear otv arp-nd <cr>    # conditional_registration_candidates-000776
+(config)# do-exec clear otv internal <interface> history <cr>    # conditional_registration_candidates-009245
+(config)# do-exec clear otv internal history <cr>    # conditional_registration_candidates-002501
+(config)# do-exec clear otv internal vlan-history <cr>    # conditional_registration_candidates-002409
+(config)# do-exec clear otv statistics <cr>    # conditional_registration_candidates-000819
+(config)# do-exec clear performance-measurement delay interfaces name <interface> <cr>    # conditional_registration_candidates-009358
+(config)# do-exec clear performance-measurement errors <cr>    # conditional_registration_candidates-000743
+(config)# do-exec clear platform software infrastructure tls_host_if stat <cr>    # conditional_registration_candidates-006396
+(config)# do-exec clear platform software infrastructure tlscd_if stat <cr>    # conditional_registration_candidates-006397
+(config)# do-exec clear policy-firewall stats global <cr>    # conditional_registration_candidates-002086
+(config)# do-exec clear policy-firewall stats vrf <cr>    # conditional_registration_candidates-002026
+(config)# do-exec clear policy-firewall stats vrf <string> <cr>    # conditional_registration_candidates-004308
+(config)# do-exec clear policy-firewall stats zone <cr>    # conditional_registration_candidates-002099
+(config)# do-exec clear policy-firewall stats zone <string> <cr>    # conditional_registration_candidates-004338
+(config)# do-exec clear presence subscription all <cr>    # conditional_registration_candidates-001957
+(config)# do-exec clear presence subscription subID <number:1..1000> <cr>    # conditional_registration_candidates-004391
+(config)# do-exec clear presence subscription subID <number:1..1000> force <cr>    # conditional_registration_candidates-006388
+(config)# do-exec clear rpl <number:0..127> statistics <cr>    # conditional_registration_candidates-002027
+(config)# do-exec clear rpms-proc counters <cr>    # conditional_registration_candidates-000737
+(config)# do-exec clear sbc <string> dbe media-stats <cr>    # conditional_registration_candidates-004403
+(config)# do-exec clear sbc <string> dbe snmp <cr>    # conditional_registration_candidates-004464
+(config)# do-exec clear sbc <string> rg <cr>    # conditional_registration_candidates-002198
+(config)# do-exec clear sccp server statistics <cr>    # conditional_registration_candidates-002050
+(config)# do-exec clear sccp statistics <cr>    # conditional_registration_candidates-000825
+(config)# do-exec clear sdspfarm counters <cr>    # conditional_registration_candidates-000740
+(config)# do-exec clear segment-routing counters all <cr>    # conditional_registration_candidates-001958
+(config)# do-exec clear segment-routing counters pmtu <cr>    # conditional_registration_candidates-002225
+(config)# do-exec clear segment-routing counters policy all <cr>    # conditional_registration_candidates-004386
+(config)# do-exec clear segment-routing counters policy name <string> <cr>    # conditional_registration_candidates-006389
+(config)# do-exec clear segment-routing counters sid <address> <cr>    # conditional_registration_candidates-004470
+(config)# do-exec clear segment-routing counters sid <prefix:dynamic> <cr>    # conditional_registration_candidates-009234
+(config)# do-exec clear segment-routing counters sid all <cr>    # conditional_registration_candidates-004533
+(config)# do-exec clear segment-routing counters vpn-sid-encap <cr>    # conditional_registration_candidates-002087
+(config)# do-exec clear service-insertion statistics all <cr>    # conditional_registration_candidates-001987
+(config)# do-exec clear service-insertion statistics appnav-controller <address> <cr>    # conditional_registration_candidates-004454
+(config)# do-exec clear service-insertion statistics appnav-controller-group <cr>    # conditional_registration_candidates-002131
+(config)# do-exec clear service-insertion statistics service-context <cr>    # conditional_registration_candidates-002158
+(config)# do-exec clear service-insertion statistics service-node <cr>    # conditional_registration_candidates-002402
+(config)# do-exec clear service-insertion statistics service-node-group <cr>    # conditional_registration_candidates-002352
+(config)# do-exec clear sip-ua registration passthrough all <cr>    # conditional_registration_candidates-004483
+(config)# do-exec clear sip-ua registration passthrough call-id <number:1..2147483647> <cr>    # conditional_registration_candidates-006439
+(config)# do-exec clear sip-ua registration passthrough dial-peer <number:1..2147483647> <cr>    # conditional_registration_candidates-006415
+(config)# do-exec clear sip-ua registration passthrough dn <string> <cr>    # conditional_registration_candidates-006385
+(config)# do-exec clear sip-ua statistics <cr>    # conditional_registration_candidates-000790
+(config)# do-exec clear sip-ua statistics dial-peer <number:1..2147483647> <cr>    # conditional_registration_candidates-004309
+(config)# do-exec clear sip-ua udp connection id <number:1..2048> <cr>    # conditional_registration_candidates-006521
+(config)# do-exec clear statistics dial-peer voice <cr>    # conditional_registration_candidates-002107
+(config)# do-exec clear statistics dial-peer voice <number:1..2147483647> <cr>    # conditional_registration_candidates-004310
+(config)# do-exec clear statistics dial-peer voice busy-trigger-counter <cr>    # conditional_registration_candidates-004347
+(config)# do-exec clear telephony-service conference hardware number <string> <cr>    # conditional_registration_candidates-006411
+(config)# do-exec clear telephony-service ephone-attempted-registrations <cr>    # conditional_registration_candidates-000827
+(config)# do-exec clear telephony-service xml-event-log <cr>    # conditional_registration_candidates-000741
+(config)# do-exec clear utd engine standard cache dns <cr>    # conditional_registration_candidates-006393
+(config)# do-exec clear voip rtp port <number:1..65535> <string> <cr>    # conditional_registration_candidates-006366
+(config)# do-exec clear voip stream-service connection <number:1..2147483647> <cr>    # conditional_registration_candidates-004392
+(config)# do-exec clear voip stream-service connection <number:1..2147483647> forced <cr>    # conditional_registration_candidates-006390
+(config)# do-exec clear voip stream-service statistics <cr>    # conditional_registration_candidates-001959
+(config)# do-exec clear vsp statistics <cr>    # conditional_registration_candidates-000738
+(config)# do-exec clear vxlan static-route statistics prefix vrf <?option@55558bce88e8> all <cr>    # conditional_registration_candidates-009582
+(config)# do-exec clear vxlan static-route vni-stats all <cr>    # conditional_registration_candidates-004365
+(config)# do-exec clear xconnect all <cr>    # conditional_registration_candidates-000828
+(config)# do-exec clear xconnect all <cr>    # conditional_registration_candidates-000939
+(config)# do-exec clear xconnect interface <interface> <cr>    # conditional_registration_candidates-009147
+(config)# do-exec clear xconnect interface <interface> <cr>    # conditional_registration_candidates-009158
+(config)# do-exec clear xdr channel <cr>    # conditional_registration_candidates-000861
+(config)# do-exec clear zone-pair <string> counter <cr>    # conditional_registration_candidates-002180
+(config)# do-exec clear zone-pair <string> inspect session <cr>    # conditional_registration_candidates-004505
+(config)# do-exec clear zone-pair <string> urlfilter cache <cr>    # conditional_registration_candidates-004572
+(config)# do-exec clear zone-pair counter <cr>    # conditional_registration_candidates-000739
+(config)# do-exec clear zone-pair inspect session <cr>    # conditional_registration_candidates-001986
+(config)# do-exec clear zone-pair urlfilter cache <cr>    # conditional_registration_candidates-002055
+(config)# do-exec credential load <number:1..5> <cr>    # conditional_registration_candidates-000908
+(config)# do-exec crypto gkm gm ipsec direction both <cr>    # conditional_registration_candidates-006602
+(config)# do-exec crypto gkm gm ipsec direction inbound only <cr>    # conditional_registration_candidates-007875
+(config)# do-exec crypto gkm gm ipsec direction inbound optional <cr>    # conditional_registration_candidates-007890
+(config)# do-exec crypto gkm ks rekey <cr>    # conditional_registration_candidates-002533
+(config)# do-exec crypto ikev2 client flexvpn connect <cr>    # conditional_registration_candidates-004719
+(config)# do-exec crypto ikev2 client flexvpn connect <string> <cr>    # conditional_registration_candidates-006565
+(config)# do-exec crypto ipsec apply-policy <cr>    # conditional_registration_candidates-000972
+(config)# do-exec crypto ipsec server send-update <string> <cr>    # conditional_registration_candidates-004677
+(config)# do-exec crypto vpn anyconnect profile <string> refresh <cr>    # conditional_registration_candidates-006566
+(config)# do-exec debug acircuit detail <cr>    # conditional_registration_candidates-000835
+(config)# do-exec debug acircuit error <cr>    # conditional_registration_candidates-000877
+(config)# do-exec debug acircuit event <cr>    # conditional_registration_candidates-000916
+(config)# do-exec debug acircuit event-trace <number:0..10000> <cr>    # conditional_registration_candidates-002400
+(config)# do-exec debug aie error <cr>    # conditional_registration_candidates-000774
+(config)# do-exec debug aie event <cr>    # conditional_registration_candidates-000817
+(config)# do-exec debug appfw application http content-type <cr>    # conditional_registration_candidates-004748
+(config)# do-exec debug appfw application http default <cr>    # conditional_registration_candidates-004617
+(config)# do-exec debug appfw application http deobfuscate <cr>    # conditional_registration_candidates-004695
+(config)# do-exec debug appfw application im address-db <cr>    # conditional_registration_candidates-004792
+(config)# do-exec debug appfw application im aol <cr>    # conditional_registration_candidates-004844
+(config)# do-exec debug appfw application im dns-resolver <cr>    # conditional_registration_candidates-004743
+(config)# do-exec debug appfw application im dns-timer <cr>    # conditional_registration_candidates-004681
+(config)# do-exec debug appfw application im msn <cr>    # conditional_registration_candidates-004947
+(config)# do-exec debug appfw application im yahoo <cr>    # conditional_registration_candidates-004892
+(config)# do-exec debug appfw detailed <cr>    # conditional_registration_candidates-000920
+(config)# do-exec debug appfw events <cr>    # conditional_registration_candidates-000752
+(config)# do-exec debug appfw function-trace <cr>    # conditional_registration_candidates-000799
+(config)# do-exec debug appfw object-creation <cr>    # conditional_registration_candidates-000840
+(config)# do-exec debug appfw object-deletion <cr>    # conditional_registration_candidates-000884
+(config)# do-exec debug appfw timers <cr>    # conditional_registration_candidates-000952
+(config)# do-exec debug apple arp <cr>    # conditional_registration_candidates-000824
+(config)# do-exec debug apple arp interface <interface> <cr>    # conditional_registration_candidates-009229
+(config)# do-exec debug apple errors <cr>    # conditional_registration_candidates-000865
+(config)# do-exec debug apple errors interface <interface> <cr>    # conditional_registration_candidates-009230
+(config)# do-exec debug apple events <cr>    # conditional_registration_candidates-000902
+(config)# do-exec debug apple events interface <interface> <cr>    # conditional_registration_candidates-009232
+(config)# do-exec debug apple fs interface <interface> <cr>    # conditional_registration_candidates-009236
+(config)# do-exec debug apple load-balancing <cr>    # conditional_registration_candidates-001135
+(config)# do-exec debug apple nbp <cr>    # conditional_registration_candidates-000989
+(config)# do-exec debug apple nbp interface <interface> <cr>    # conditional_registration_candidates-009237
+(config)# do-exec debug apple packet <cr>    # conditional_registration_candidates-001031
+(config)# do-exec debug apple packet <interface> <cr>    # conditional_registration_candidates-009155
+(config)# do-exec debug apple redistribution <cr>    # conditional_registration_candidates-001095
+(config)# do-exec debug apple responder <cr>    # conditional_registration_candidates-001009
+(config)# do-exec debug apple responder interface <interface> <cr>    # conditional_registration_candidates-009240
+(config)# do-exec debug apple routing <cr>    # conditional_registration_candidates-001046
+(config)# do-exec debug apple routing interface <interface> <cr>    # conditional_registration_candidates-009251
+(config)# do-exec debug apple rtmp <cr>    # conditional_registration_candidates-001025
+(config)# do-exec debug apple rtmp interface <interface> <cr>    # conditional_registration_candidates-009247
+(config)# do-exec debug apple zip <cr>    # conditional_registration_candidates-001097
+(config)# do-exec debug apple zip interface <interface> <cr>    # conditional_registration_candidates-009258
+(config)# do-exec debug atm api <cr>    # conditional_registration_candidates-001001
+(config)# do-exec debug atm cc-error <cr>    # conditional_registration_candidates-001574
+(config)# do-exec debug atm cc-error <interface> <cr>    # conditional_registration_candidates-009190
+(config)# do-exec debug atm cc-events <cr>    # conditional_registration_candidates-001545
+(config)# do-exec debug atm cc-events <interface> <cr>    # conditional_registration_candidates-009182
+(config)# do-exec debug atm counters <cr>    # conditional_registration_candidates-001017
+(config)# do-exec debug atm errors <cr>    # conditional_registration_candidates-000795
+(config)# do-exec debug atm events <cr>    # conditional_registration_candidates-000978
+(config)# do-exec debug atm gdb-enable <cr>    # conditional_registration_candidates-000881
+(config)# do-exec debug atm lfi <cr>    # conditional_registration_candidates-000950
+(config)# do-exec debug atm memory-alloc show <cr>    # conditional_registration_candidates-002112
+(config)# do-exec debug atm multiuser <cr>    # conditional_registration_candidates-000918
+(config)# do-exec debug atm oam <cr>    # conditional_registration_candidates-001184
+(config)# do-exec debug atm oam cc <cr>    # conditional_registration_candidates-002758
+(config)# do-exec debug atm oam cc interface <interface> <cr>    # conditional_registration_candidates-009382
+(config)# do-exec debug atm oam interface <interface> <cr>    # conditional_registration_candidates-009262
+(config)# do-exec debug atm packet <cr>    # conditional_registration_candidates-000869
+(config)# do-exec debug atm packet interface <interface> <cr>    # conditional_registration_candidates-009231
+(config)# do-exec debug atm sig-all <cr>    # conditional_registration_candidates-001052
+(config)# do-exec debug atm sig-all <interface> <cr>    # conditional_registration_candidates-009156
+(config)# do-exec debug atm sig-api <cr>    # conditional_registration_candidates-001029
+(config)# do-exec debug atm sig-api <interface> <cr>    # conditional_registration_candidates-009151
+(config)# do-exec debug atm sig-callfail <cr>    # conditional_registration_candidates-001408
+(config)# do-exec debug atm sig-callfail <interface> <cr>    # conditional_registration_candidates-009166
+(config)# do-exec debug atm sig-client all <cr>    # conditional_registration_candidates-002874
+(config)# do-exec debug atm sig-client errors <cr>    # conditional_registration_candidates-002696
+(config)# do-exec debug atm sig-client events <cr>    # conditional_registration_candidates-002782
+(config)# do-exec debug atm sig-error <cr>    # conditional_registration_candidates-000967
+(config)# do-exec debug atm sig-error <interface> <cr>    # conditional_registration_candidates-009143
+(config)# do-exec debug atm sig-events <cr>    # conditional_registration_candidates-000903
+(config)# do-exec debug atm sig-events <interface> <cr>    # conditional_registration_candidates-009140
+(config)# do-exec debug atm sig-hog <cr>    # conditional_registration_candidates-001045
+(config)# do-exec debug atm sig-ie <cr>    # conditional_registration_candidates-000988
+(config)# do-exec debug atm sig-ie <interface> <cr>    # conditional_registration_candidates-009145
+(config)# do-exec debug atm sig-mibs <cr>    # conditional_registration_candidates-001338
+(config)# do-exec debug atm sig-mp2p <cr>    # conditional_registration_candidates-001389
+(config)# do-exec debug atm sig-nni <cr>    # conditional_registration_candidates-001361
+(config)# do-exec debug atm sig-nni <interface> <cr>    # conditional_registration_candidates-009164
+(config)# do-exec debug atm sig-packets <cr>    # conditional_registration_candidates-000935
+(config)# do-exec debug atm sig-packets <interface> <cr>    # conditional_registration_candidates-009142
+(config)# do-exec debug atm sig-soft <cr>    # conditional_registration_candidates-001511
+(config)# do-exec debug atm sig-soft <interface> <cr>    # conditional_registration_candidates-009175
+(config)# do-exec debug atm sig-verbose <cr>    # conditional_registration_candidates-001011
+(config)# do-exec debug atm sig-verbose <interface> <cr>    # conditional_registration_candidates-009149
+(config)# do-exec debug atm smap-all <cr>    # conditional_registration_candidates-001131
+(config)# do-exec debug atm smap-error <cr>    # conditional_registration_candidates-001037
+(config)# do-exec debug atm smap-events <cr>    # conditional_registration_candidates-001084
+(config)# do-exec debug atm state <cr>    # conditional_registration_candidates-001039
+(config)# do-exec debug atm xdr <cr>    # conditional_registration_candidates-001132
+(config)# do-exec debug bgp * lmm <cr>    # conditional_registration_candidates-009159
+(config)# do-exec debug bgp lmm <cr>    # conditional_registration_candidates-001142
+(config)# do-exec debug bridge-domain <number:dynamic> mac table errors <cr>    # conditional_registration_candidates-009377
+(config)# do-exec debug bridge-domain <number:dynamic> mac table events <cr>    # conditional_registration_candidates-009387
+(config)# do-exec debug bridge-domain <number:dynamic> route errors <cr>    # conditional_registration_candidates-009264
+(config)# do-exec debug bridge-domain <number:dynamic> route events <cr>    # conditional_registration_candidates-009267
+(config)# do-exec debug bridge-domain <number:dynamic> route messages <cr>    # conditional_registration_candidates-009271
+(config)# do-exec debug bridge-domain all mac table errors <cr>    # conditional_registration_candidates-006727
+(config)# do-exec debug bridge-domain all mac table events <cr>    # conditional_registration_candidates-006763
+(config)# do-exec debug bridge-domain all route errors <cr>    # conditional_registration_candidates-004869
+(config)# do-exec debug bridge-domain all route events <cr>    # conditional_registration_candidates-004929
+(config)# do-exec debug bridge-domain all route messages <cr>    # conditional_registration_candidates-004993
+(config)# do-exec debug c3pl events <cr>    # conditional_registration_candidates-000751
+(config)# do-exec debug c3pl object-creation <cr>    # conditional_registration_candidates-000797
+(config)# do-exec debug c3pl object-deletion <cr>    # conditional_registration_candidates-000838
+(config)# do-exec debug callmonitor all <cr>    # conditional_registration_candidates-001006
+(config)# do-exec debug callmonitor core <cr>    # conditional_registration_candidates-000847
+(config)# do-exec debug callmonitor detail <cr>    # conditional_registration_candidates-000957
+(config)# do-exec debug callmonitor errors <cr>    # conditional_registration_candidates-000758
+(config)# do-exec debug callmonitor events <cr>    # conditional_registration_candidates-000806
+(config)# do-exec debug callmonitor hwconf <cr>    # conditional_registration_candidates-000983
+(config)# do-exec debug callmonitor info <cr>    # conditional_registration_candidates-000891
+(config)# do-exec debug callmonitor xml <cr>    # conditional_registration_candidates-000926
+(config)# do-exec debug capf-server error <cr>    # conditional_registration_candidates-000773
+(config)# do-exec debug ccm-manager music-on-hold all <cr>    # conditional_registration_candidates-002190
+(config)# do-exec debug ccm-manager music-on-hold errors <cr>    # conditional_registration_candidates-002117
+(config)# do-exec debug ccm-manager music-on-hold events <cr>    # conditional_registration_candidates-002042
+(config)# do-exec debug credentials <cr>    # conditional_registration_candidates-000335
+(config)# do-exec debug crypto ace b2bha <cr>    # conditional_registration_candidates-003785
+(config)# do-exec debug crypto ace boot <cr>    # conditional_registration_candidates-002466
+(config)# do-exec debug crypto ace cfgmon <cr>    # conditional_registration_candidates-002826
+(config)# do-exec debug crypto ace dpd <cr>    # conditional_registration_candidates-003672
+(config)# do-exec debug crypto ace error <cr>    # conditional_registration_candidates-002993
+(config)# do-exec debug crypto ace haind <cr>    # conditional_registration_candidates-003734
+(config)# do-exec debug crypto ace hapi <cr>    # conditional_registration_candidates-002590
+(config)# do-exec debug crypto ace ikea <cr>    # conditional_registration_candidates-003256
+(config)# do-exec debug crypto ace invspi <cr>    # conditional_registration_candidates-002746
+(config)# do-exec debug crypto ace ipd <cr>    # conditional_registration_candidates-003837
+(config)# do-exec debug crypto ace mace <cr>    # conditional_registration_candidates-003518
+(config)# do-exec debug crypto ace pcp <cr>    # conditional_registration_candidates-002667
+(config)# do-exec debug crypto ace polo <cr>    # conditional_registration_candidates-003627
+(config)# do-exec debug crypto ace polo events <cr>    # conditional_registration_candidates-005456
+(config)# do-exec debug crypto ace polo packets <cr>    # conditional_registration_candidates-005360
+(config)# do-exec debug crypto ace polo requests <cr>    # conditional_registration_candidates-005560
+(config)# do-exec debug crypto ace propcfg <cr>    # conditional_registration_candidates-003916
+(config)# do-exec debug crypto ace rcon <cr>    # conditional_registration_candidates-003079
+(config)# do-exec debug crypto ace spi <cr>    # conditional_registration_candidates-003881
+(config)# do-exec debug crypto ace stats <cr>    # conditional_registration_candidates-003436
+(config)# do-exec debug crypto ace syslog <cr>    # conditional_registration_candidates-003167
+(config)# do-exec debug crypto ace tftp <cr>    # conditional_registration_candidates-002514
+(config)# do-exec debug crypto ace topn <cr>    # conditional_registration_candidates-003602
+(config)# do-exec debug crypto ace warning <cr>    # conditional_registration_candidates-002906
+(config)# do-exec debug crypto condition connid <number:1..4294967295> <cr>    # conditional_registration_candidates-004825
+(config)# do-exec debug crypto condition fvrf <string> <cr>    # conditional_registration_candidates-004912
+(config)# do-exec debug crypto condition ikev2 profile <string> <cr>    # conditional_registration_candidates-006966
+(config)# do-exec debug crypto condition isakmp profile <string> <cr>    # conditional_registration_candidates-006864
+(config)# do-exec debug crypto condition ivrf <string> <cr>    # conditional_registration_candidates-004969

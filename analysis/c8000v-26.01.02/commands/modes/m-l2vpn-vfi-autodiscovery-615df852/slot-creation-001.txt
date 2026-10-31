@@ -1,0 +1,15 @@
+# 模式 l2vpn-vfi-autodiscovery；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-vfi-autodiscovery)# auto-route-target <cr>    # static_slot_creation_candidates-004328
+(config-vfi-autodiscovery)# control-word include <cr>    # static_slot_creation_candidates-004333
+(config-vfi-autodiscovery)# default auto-route-target <cr>    # static_slot_creation_candidates-004330
+(config-vfi-autodiscovery)# default control-word <cr>    # static_slot_creation_candidates-004332
+(config-vfi-autodiscovery)# no auto-route-target <cr>    # static_slot_creation_candidates-004329
+(config-vfi-autodiscovery)# no control-word <cr>    # static_slot_creation_candidates-004331
+(config-vfi-autodiscovery)# rd <?vrf_rd_action@55558c2a9038> <cr>    # static_slot_creation_candidates-004336
+(config-vfi-autodiscovery)# route-target <?bgp_extcomm_action@55558c2a81e8> <cr>    # static_slot_creation_candidates-004335
+(config-vfi-autodiscovery)# ve id <cr>    # static_slot_creation_candidates-004337
+(config-vfi-autodiscovery)# ve range <cr>    # static_slot_creation_candidates-004338
+(config-vfi-autodiscovery)# vpls-id <?bgp_extcomm_action@55558c2a9388> <cr>    # static_slot_creation_candidates-004334

@@ -1,0 +1,402 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-037.md
+
+(config)# default vpdn pptp tcp window-size <cr>    # path-030436
+(config)# default vpdn queuesize-alert <cr>    # path-027314
+(config)# default vpdn redirect <cr>    # path-027448
+(config)# default vpdn search-order <cr>    # path-027371
+(config)# default vpdn session accounting network <cr>    # path-037363
+(config)# default vpdn session accounting suppress multihop <cr>    # path-046869
+(config)# default vpdn session rate compute <cr>    # path-037257
+(config)# default vpdn session-limit <cr>    # path-027325
+(config)# default vpdn softshut <cr>    # path-027438
+(config)# default vpdn source-ip <cr>    # path-027398
+(config)# default vpdn tunnel accounting network <cr>    # path-037282
+(config)# default vpdn tunnel authorization network <cr>    # path-037324
+(config)# default vpdn tunnel authorization password <cr>    # path-037401
+(config)# default vpdn tunnel authorization virtual-template <cr>    # path-037366
+(config)# default vpdn-group <string> <cr>    # path-027309
+(config)# default vpdn-template <cr>    # path-025902
+(config)# default vrf definition <cr>    # path-026079
+(config)# default vrf list <cr>    # path-026149
+(config)# default vrf rd-auto <cr>    # path-026055
+(config)# default vrf selection source <address> <address> vrf <string> <cr>    # path-056777
+(config)# default vrf upgrade-cli multi-af-mode non-common-policies <cr>    # path-034009
+(config)# default vrrp match-address-limit <cr>    # path-025765
+(config)# default vrrs <string> <cr>    # path-026631
+(config)# default vtp domain <string> <cr>    # path-029416
+(config)# default vtp file <cr>    # path-026898
+(config)# default vtp interface <cr>    # path-026922
+(config)# default vtp mode <cr>    # path-027085
+(config)# default vtp password <cr>    # path-027018
+(config)# default vtp pruning <cr>    # path-027007
+(config)# default vtp server primary <cr>    # path-029578
+(config)# default vtp trunk <string> <cr>    # path-029336
+(config)# default vtp version <cr>    # path-027037
+(config)# default wrr-queue bandwidth <cr>    # path-026360
+(config)# default wrr-queue cos-map <cr>    # path-026381
+(config)# default x25 call-record <cr>    # path-027425
+(config)# default x25 host <string> <cr>    # path-029850
+(config)# default x25 hunt-group <string> <cr>    # path-029740
+(config)# default x25 profile <string> <cr>    # path-030612
+(config)# default x25 roa <string> <cr>    # path-030657
+(config)# default x25 rotary <number:1..99> <cr>    # path-029902
+(config)# default x25 route <string> <cr>    # path-030422
+(config)# default x25 routing <cr>    # path-027433
+(config)# default xdr multicast-group internal issu-slots-split <cr>    # path-035464
+(config)# default xdr multicast-group internal split threshold <cr>    # path-045080
+(config)# default xdr multicast-group mode individual <cr>    # path-035340
+(config)# default xot access-group <number:1..99> <cr>    # path-027910
+(config)# default-value data-character-bits <number:7..8> <cr>    # path-025475
+(config)# default-value exec-character-bits <number:7..8> <cr>    # path-025470
+(config)# default-value special-character-bits <number:7..8> <cr>    # path-025473
+(config)# define interface-range <string> <interface> <cr>    # path-060517
+(config)# device-tracking <cr>    # path-025480
+(config)# device-tracking binding <prefix:dynamic> <cr>    # path-063014
+(config)# device-tracking binding logging <cr>    # path-060464
+(config)# device-tracking binding max-entries <cr>    # path-060465
+(config)# device-tracking binding reachable-lifetime <cr>    # path-060468
+(config)# device-tracking export oper-data enable <cr>    # path-030578
+(config)# device-tracking full-proxy <cr>    # path-025929
+(config)# device-tracking history ip disable <cr>    # path-030595
+(config)# device-tracking history ip length <number:10..1000> <cr>    # path-037312
+(config)# device-tracking logging <cr>    # path-025935
+(config)# device-tracking policy <string> <cr>    # path-027394
+(config)# device-tracking service-support device-tracking-layer3 <number:0..7> <cr>    # path-030666
+(config)# device-tracking tdl dhcp-stats <cr>    # path-027415
+(config)# device-tracking tdl disable dhcp-faults <cr>    # path-030660
+(config)# device-tracking tracking <cr>    # path-025927
+(config)# device-tracking tracking auto-source <cr>    # path-027402
+(config)# device-tracking tracking auto-source fallback <?ipaddrmask_action@55558b13dca0> <cr>    # path-060907
+(config)# device-tracking tracking retry-interval <number:1..3600> <cr>    # path-030527
+(config)# device-tracking unit-test association interface <interface> <address> command new <cr>    # path-062987
+(config)# device-tracking unit-test bt-add bd <number:dynamic> interface <interface> <?ipv4orv6_addr_action@55558b1374b0> <cr>    # path-063039
+(config)# device-tracking unit-test bt-mac bd <number:dynamic> interface <interface> <address> <cr>    # path-063017
+(config)# device-tracking unit-test bulk-sync <cr>    # path-027359
+(config)# device-tracking unit-test check-reach vlan <number:0..4096> <address> <cr>    # path-046749
+(config)# device-tracking unit-test clear neighbors binding <interface> vlanlist <string> <cr>    # path-062349
+(config)# device-tracking unit-test disable-cli-sync <cr>    # path-027513
+(config)# device-tracking unit-test dna interface <interface> <cr>    # path-060921
+(config)# device-tracking unit-test dna vlan <number:1..4096> <cr>    # path-037506
+(config)# device-tracking unit-test evpn-dt vlan <number:1..4096> <cr>    # path-062795
+(config)# device-tracking unit-test evpn-flood-suppr vlan <number:1..4096> <cr>    # path-062801
+(config)# device-tracking unit-test evpn-gateway-add vlan <number:1..4096> <?ipv4orv6_addr_action@55558b135f30> <cr>    # path-061440
+(config)# device-tracking unit-test evpn-remote-bt-add vlan <number:1..4096> interface <interface> <?ipv4orv6_addr_action@55558b136958> <cr>    # path-062906
+(config)# device-tracking unit-test fabric interface <interface> <address> <cr>    # path-061409
+(config)# device-tracking unit-test fault dhcp <number:0..19> <address> bdid <number:dynamic> interface <interface> <number:0..4294967295> <?ipv4orv6_addr_action@55558b1397b0> <?ipv4orv6_addr_action@55558b1397f8> <cr>    # path-063021
+(config)# device-tracking unit-test flood-suppr dhcp-flood-suppr vlan <number:1..4096> <cr>    # path-062838
+(config)# device-tracking unit-test ha-sync-msg msg-type bt-entry action enable <cr>    # path-054333
+(config)# device-tracking unit-test ip-dhcp-snooping vlan <number:1..4096> <cr>    # path-037512
+(config)# device-tracking unit-test lisp-dt vlan <number:1..4096> <cr>    # path-037597
+(config)# device-tracking unit-test lisp-dt vlan <number:1..4096> pref <number:0..1> cache guard <number:0..3> <cr>    # path-062525
+(config)# device-tracking unit-test notify register <interface> <cr>    # path-060905
+(config)# device-tracking unit-test pgm <cr>    # path-027465
+(config)# device-tracking unit-test pgm peer <?ipv4orv6_addr_action@55558b134510> <cr>    # path-060923
+(config)# device-tracking unit-test profile interface <interface> <cr>    # path-060922
+(config)# device-tracking unit-test profile vlan <number:1..4096> <cr>    # path-037436
+(config)# device-tracking unit-test reapply-filters interface <interface> <cr>    # path-060946
+(config)# device-tracking unit-test reapply-filters vlan <number:1..4096> <cr>    # path-037905
+(config)# device-tracking unit-test replace-policy interface <interface> old <string> new <string> <cr>    # path-062521
+(config)# device-tracking unit-test replace-policy vlan <number:1..4096> old <string> new <string> <cr>    # path-059298
+(config)# device-tracking unit-test transport <hex-string> <cr>    # path-060657
+(config)# device-tracking unit-test upgm <cr>    # path-027471
+(config)# device-tracking unit-test upgm interface <interface> <cr>    # path-060924
+(config)# device-tracking unlock policy <string> <cr>    # path-030647
+(config)# device-tracking upgrade-cli <cr>    # path-025925
+(config)# diagnostic cns publish <string> <cr>    # path-031315
+(config)# diagnostic event-log size <number:1..10000> <cr>    # path-031171
+(config)# diagnostic interval slot <?option@5555898dc9f0> test <?number_help_func_action@55558991b688> <string> <cr>    # path-062887
+(config)# diagnostic level complete <cr>    # path-027564
+(config)# diagnostic monitor global <cr>    # path-027573
+(config)# diagnostic monitor syslog <cr>    # path-027557
+(config)# diagnostic schedule slot <?option@5555898dc7a8> test <?number_help_func_action@5555899187d0> <string> daily <hh:mm> <cr>    # path-062994
+(config)# diagnostic slot <?option@5555898dc560> test <?number_help_func_action@55558991a5c8> <string> <cr>    # path-062848
+(config)# diagnostic soft-error recovery aggressive <cr>    # path-031147
+(config)# diagnostic threshold slot <?option@5555898dcc38> test <?number_help_func_action@55558991bc90> <string> failure count <cr>    # path-062918
+(config)# diameter attribute list <number:0..99> <cr>    # path-030107
+(config)# diameter gx retransmit <number:1..10> <cr>    # path-030341
+(config)# diameter gx subscription-id-type end-user-nai <cr>    # path-030380
+(config)# diameter gx tx-timer <number:6..1000> <cr>    # path-030362
+(config)# diameter origin host <string> <cr>    # path-030252
+(config)# diameter origin realm <string> <cr>    # path-030212
+(config)# diameter peer <string> <cr>    # path-027293
+(config)# diameter redundancy <cr>    # path-025864
+(config)# diameter source interface <interface> <cr>    # path-060641
+(config)# diameter timer connection <number:1..1000> <cr>    # path-030173
+(config)# diameter vendor supported vodafone <cr>    # path-030247
+(config)# dlsw allroute-netbios <cr>    # path-025776
+(config)# dlsw allroute-sna <cr>    # path-025772
+(config)# dlsw bgroup-list <number:1..255> bgroups <number:1..4095> <cr>    # path-060779
+(config)# dlsw bridge-group <number:1..255> <cr>    # path-026918
+(config)# dlsw cache-ignore-netbios-datagram <cr>    # path-025747
+(config)# dlsw circuit-keepalives <cr>    # path-025799
+(config)# dlsw disable <cr>    # path-025785
+(config)# dlsw duplicate-path-bias load-balance <cr>    # path-026608
+(config)# dlsw explorerQ-depth <number:10..1000> <cr>    # path-026859
+(config)# dlsw fast-hpr-support <cr>    # path-025671
+(config)# dlsw group-cache disable <cr>    # path-027105
+(config)# dlsw group-cache enable <cr>    # path-027137
+(config)# dlsw group-cache max-entries <number:0..12000> <cr>    # path-025848
+(config)# dlsw history-log <cr>    # path-025839
+(config)# dlsw icannotreach saps <number:0..254> <cr>    # path-060558
+(config)# dlsw icanreach mac-exclusive <cr>    # path-026686
+(config)# dlsw icanreach saps <number:0..254> <cr>    # path-060567
+(config)# dlsw llc2 nornr <cr>    # path-027086
+(config)# dlsw load-balance round-robin <cr>    # path-026646
+(config)# dlsw local-peer <cr>    # path-025690
+(config)# dlsw mac-addr <address> remote-peer interface <interface> <cr>    # path-062822
+(config)# dlsw mac-addr <address> remote-peer interface <interface> <cr>    # path-062823
+(config)# dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-035269
+(config)# dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-035270
+(config)# dlsw max-multiple-rifs <number:1..4> <cr>    # path-025450
+(config)# dlsw multicast <cr>    # path-025834
+(config)# dlsw netbios-cache-length <number:15..16> <cr>    # path-026461
+(config)# dlsw netbios-keepalive-filter <cr>    # path-025811
+(config)# dlsw peer-log-changes <cr>    # path-025753
+(config)# dlsw peer-on-demand-defaults lsap-output-list <number:1..100> <cr>    # path-060639
+(config)# dlsw peer-on-demand-defaults priority <cr>    # path-027117
+(config)# dlsw port-list <number:1..255> <interface> <cr>    # path-062746
+(config)# dlsw prom-peer-defaults tcp-queue-max <number:25..2000> <cr>    # path-029847
+(config)# dlsw redundant-rings <number:1..4095> <cr>    # path-060397
+(config)# dlsw remote-peer <number:0..4095> tcp <address> <cr>    # path-036065
+(config)# dlsw remote-peer <number:0..4095> tcp <address> lsap-output-list <number:1..100> <cr>    # path-061920
+(config)# dlsw ring-list <number:1..255> rings <number:1..4095> <cr>    # path-060775
+(config)# dlsw rsvp default <cr>    # path-026649
+(config)# dlsw snmp-traps-extended <cr>    # path-025659
+(config)# dlsw tbridge-maxmtu-4472 <cr>    # path-025736
+(config)# dlsw timer sna-explorer-timeout <number:1..86400> <cr>    # path-028517
+(config)# dlsw tos disable <cr>    # path-027042
+(config)# dlsw tos map high 0 <cr>    # path-036335
+(config)# dlsw tos-disable <cr>    # path-025816
+(config)# dlsw touch-timer touch-nb-cache-timeout <number:1..86400> <number:1..86400> <cr>    # path-034634
+(config)# dlsw transparent switch-support <cr>    # path-027134
+(config)# dlsw udp-disable <cr>    # path-025807
+(config)# dlsw xid-modify-tws <cr>    # path-025743
+(config)# dnsix-dmdp retries <number:0..200> <cr>    # path-026911
+(config)# dnsix-nat source <cr>    # path-025789
+(config)# do-exec <number:1..99> <cr>    # path-025635
+(config)# do-exec <string> <cr>    # path-025497
+(config)# do-exec aaa tools memleak-detection-start <cr>    # path-028316
+(config)# do-exec access-enable <cr>    # path-025758
+(config)# do-exec access-profile <cr>    # path-025767
+(config)# do-exec access-session remote-device-notification mac <address> <cr>    # path-035500
+(config)# do-exec access-template <number:100..199> <string> any any <cr>    # path-044877
+(config)# do-exec acm confirm-commit <cr>    # path-026325
+(config)# do-exec acm merge <url:dynamic> <cr>    # path-060524
+(config)# do-exec alps update-circuits <cr>    # path-027419
+(config)# do-exec analyze memory-leak <cr>    # path-027179
+(config)# do-exec analyze summary memory-leak update <cr>    # path-036384
+(config)# do-exec archive config <cr>    # path-027383
+(config)# do-exec archive log config add comment <string> <cr>    # path-054018
+(config)# do-exec archive tar /table <string> <cr>    # path-037251
+(config)# do-exec authentication display config-mode <cr>    # path-029868
+(config)# do-exec authentication display legacy <cr>    # path-029972
+(config)# do-exec auto secure <cr>    # path-026401
+(config)# do-exec beep kill session <cr>    # path-030035
+(config)# do-exec bfe enter <interface> <cr>    # path-060581
+(config)# do-exec bingd stop <cr>    # path-027272
+(config)# do-exec bingd template <string> <cr>    # path-030236
+(config)# do-exec bingng template <string> <cr>    # path-030306
+(config)# do-exec bounce interface <interface> <cr>    # path-060655
+(config)# do-exec bounce interface range <interface> - <number:dynamic> <cr>    # path-062871
+(config)# do-exec bulkstat profile <string> disable <cr>    # path-037501
+(config)# do-exec bulkstat profile <string> enable repeat <number:1..4294967294> <cr>    # path-037505
+(config)# do-exec call-home debug syslog-throttling timer <number:1..86400> <cr>    # path-044717
+(config)# do-exec call-home diagnostic-signature deinstall <number:1..99999999> <cr>    # path-035153
+(config)# do-exec call-home diagnostic-signature deinstall all <cr>    # path-035088
+(config)# do-exec call-home diagnostic-signature download <number:1..99999999> <cr>    # path-035098
+(config)# do-exec call-home diagnostic-signature download all <cr>    # path-035050
+(config)# do-exec call-home diagnostic-signature install <number:1..99999999> <cr>    # path-035137
+(config)# do-exec call-home diagnostic-signature load <string> <cr>    # path-035192
+(config)# do-exec call-home request config-sanity profile <string> <cr>    # path-044708
+(config)# do-exec call-home request registration-info <cr>    # path-029328
+(config)# do-exec call-home send <string> email <string> <cr>    # path-044754
+(config)# do-exec call-home send <string> tac-service-request <string> <cr>    # path-044999
+(config)# do-exec call-home send alert-group configuration <cr>    # path-034967
+(config)# do-exec call-home send alert-group diagnostic slot <?option@5555898dbba8> <cr>    # path-061882
+(config)# do-exec call-home test <string> profile <string> <cr>    # path-044672
+(config)# do-exec call-home test profile <string> <cr>    # path-060795
+(config)# do-exec cd <cr>    # path-025950
+(config)# do-exec cd <url:dynamic> <cr>    # path-060442
+(config)# do-exec chkflash <?url_prefix_action@55558940bb90> <cr>    # path-060446
+(config)# do-exec clear <cr>    # path-025540
+(config)# do-exec clear aaa cache filterserver acl <cr>    # path-047607
+(config)# do-exec clear aaa cache group <string> all <cr>    # path-054508
+(config)# do-exec clear aaa counters clients <cr>    # path-038459
+(config)# do-exec clear aaa counters command handler <cr>    # path-047586
+(config)# do-exec clear aaa counters requests <cr>    # path-038490
+(config)# do-exec clear aaa counters servers all <cr>    # path-047635
+(config)# do-exec clear aaa local statistics <cr>    # path-038436
+(config)# do-exec clear aaa local user blocked all <cr>    # path-054517
+(config)# do-exec clear aaa local user fail-attempts all <cr>    # path-054492
+(config)# do-exec clear aaa local user lockout all <cr>    # path-054481
+(config)# do-exec clear aaa tools memleak <cr>    # path-038429
+(config)# do-exec clear access-list counters <cr>    # path-028195
+(config)# do-exec clear access-list fqdn statistics <cr>    # path-034136
+(config)# do-exec clear access-template <number:100..199> <string> any any <cr>    # path-052818
+(config)# do-exec clear adjacency <cr>    # path-026655
+(config)# do-exec clear alps circuits <cr>    # path-031521
+(config)# do-exec clear alps counters <cr>    # path-031440
+(config)# do-exec clear ancp interface <interface> <cr>    # path-060782
+(config)# do-exec clear archive log config <cr>    # path-038503
+(config)# do-exec clear arp-cache <address> <cr>    # path-028258
+(config)# do-exec clear arp-cache <cr>    # path-026453
+(config)# do-exec clear arp-cache <interface> <cr>    # path-060522
+(config)# do-exec clear arp-cache counters ha <cr>    # path-034366
+(config)# do-exec clear avc sd-service <cr>    # path-030574
+(config)# do-exec clear avc sd-service cmds <cr>    # path-037101
+(config)# do-exec clear avc sd-service device-health <cr>    # path-037007
+(config)# do-exec clear avc sd-service device-table <cr>    # path-037154
+(config)# do-exec clear avc sd-service ent-export <cr>    # path-037053
+(config)# do-exec clear avc sd-service flow-counters <cr>    # path-036950
+(config)# do-exec clear avc sd-service telemetry-table counters <cr>    # path-046630
+(config)# do-exec clear bfd counters <cr>    # path-029958
+(config)# do-exec clear bfd counters interface <interface> <cr>    # path-061306
+(config)# do-exec clear bfd dampening <cr>    # path-029999
+(config)# do-exec clear bfd dampening interface <interface> <cr>    # path-061314
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> dampening <cr>    # path-061438
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> dampening <cr>    # path-061448
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> flap-statistics <address> <address> <cr>    # path-062333
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> flap-statistics <cr>    # path-061449
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> flap-statistics <prefix:dynamic> <cr>    # path-062884
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> flap-statistics filter-list <number:1..500> <cr>    # path-062336
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> flap-statistics regexp <string> <cr>    # path-062334
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> route-map-cache <cr>    # path-061439
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> rpki server <address> port <number:1..65535> <cr>    # path-062620
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> sso statistics <cr>    # path-062010
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> table-map <cr>    # path-061437
+(config)# do-exec clear bgp ipv4 <?bgp_as4_action@555589a05470> table-map <cr>    # path-061446
+(config)# do-exec clear bgp ipv4 <cr>    # path-030754
+(config)# do-exec clear bgp ipv4 cease <cr>    # path-037361
+(config)# do-exec clear bgp ipv4 flap-statistics <cr>    # path-037321
+(config)# do-exec clear bgp ipv4 internal <cr>    # path-037322
+(config)# do-exec clear bgp ipv4 update-group <?match_ipv6_addrinfo_action@555589a05410> <cr>    # path-061425
+(config)# do-exec clear bgp ipv4 update-group <number:1..4294967295> <cr>    # path-046880
+(config)# do-exec clear bgp ipv4 vrf <string> dampening <cr>    # path-054123
+(config)# do-exec clear bgp ipv4 vrf <string> flap-statistics <cr>    # path-054157
+(config)# do-exec clear bridge <cr>    # path-027590
+(config)# do-exec clear bridge-domain route stats <cr>    # path-034931
+(config)# do-exec clear bsc <cr>    # path-027599
+(config)# do-exec clear bstun <cr>    # path-027601
+(config)# do-exec clear call admission statistics <cr>    # path-037980
+(config)# do-exec clear call-home diagnostic-signature statistics <cr>    # path-034965
+(config)# do-exec clear call-home diagnostic-signature statistics download <cr>    # path-044587
+(config)# do-exec clear call-home smart-licensing statistics <cr>    # path-034934
+(config)# do-exec clear call-home statistics <cr>    # path-028687
+(config)# do-exec clear cdp counters <cr>    # path-029058
+(config)# do-exec clear cdp table <cr>    # path-029100
+(config)# do-exec clear cef interface <interface> policy-statistics <cr>    # path-061245
+(config)# do-exec clear cef interface policy-statistics <cr>    # path-034799
+(config)# do-exec clear cef linecard <cr>    # path-029136
+(config)# do-exec clear cef linecard <number:dynamic> <cr>    # path-060815
+(config)# do-exec clear cef linecard <number:dynamic> Adjacency <cr>    # path-061264
+(config)# do-exec clear cef linecard <number:dynamic> Interface <cr>    # path-061262
+(config)# do-exec clear cef linecard <number:dynamic> Prefix <cr>    # path-061258
+(config)# do-exec clear cef linecard Adjacency <cr>    # path-035165
+(config)# do-exec clear cef linecard Interface <cr>    # path-035110
+(config)# do-exec clear cef linecard Prefix <cr>    # path-035066
+(config)# do-exec clear cef linecard events <cr>    # path-034984
+(config)# do-exec clear cef load-balance statistics <cr>    # path-034744
+(config)# do-exec clear cef table IPv4 <cr>    # path-035083
+(config)# do-exec clear cef table IPv4 consistency-check <cr>    # path-044627
+(config)# do-exec clear cef table IPv4 vrf <?option@555588d01940> <cr>    # path-061876
+(config)# do-exec clear cft stats <cr>    # path-030041
+(config)# do-exec clear checkpoint clients <cr>    # path-028472
+(config)# do-exec clear checkpoint domain <?option@555589242028> clients <cr>    # path-061236
+(config)# do-exec clear checkpoint domain <?option@555589242028> entities <cr>    # path-061232
+(config)# do-exec clear checkpoint domain <?option@555589242028> statistics <cr>    # path-061238
+(config)# do-exec clear checkpoint entities <cr>    # path-028446
+(config)# do-exec clear checkpoint statistics <cr>    # path-028497
+(config)# do-exec clear class-map control <?option@555589144230> all <cr>    # path-061296
+(config)# do-exec clear class-map control <cr>    # path-029915
+(config)# do-exec clear clns cache <cr>    # path-030738
+(config)# do-exec clear clns es-neighbors <cr>    # path-030776
+(config)# do-exec clear clns is-neighbors <cr>    # path-030788
+(config)# do-exec clear clns neighbors <cr>    # path-030810
+(config)# do-exec clear clns route <cr>    # path-030760
+(config)# do-exec clear clns traffic <cr>    # path-030838
+(config)# do-exec clear cns config stats <cr>    # path-038847
+(config)# do-exec clear cns counters <cr>    # path-031356
+(config)# do-exec clear cns event stats <cr>    # path-038804
+(config)# do-exec clear cns image connections <cr>    # path-038948
+(config)# do-exec clear cns image status <cr>    # path-038890
+(config)# do-exec clear configuration lock <cr>    # path-028050
+(config)# do-exec clear control-plane * <cr>    # path-060706
+(config)# do-exec clear control-plane <cr>    # path-027578
+(config)# do-exec clear controller <?controller_action@55558994af58> <cr>    # path-060533
+(config)# do-exec clear controller all <cr>    # path-028252
+(config)# do-exec clear controller hw-module <?slotcard_func_action@55558994ac18> <cr>    # path-060766
+(config)# do-exec clear counters <cr>    # path-026187
+(config)# do-exec clear counters <interface> <cr>    # path-060506
+(config)# do-exec clear crypto autovpn session <cr>    # path-038378
+(config)# do-exec clear crypto autovpn session peer <number:1..2147483647> <cr>    # path-054468
+(config)# do-exec clear crypto ceal statistics <cr>    # path-038341
+(config)# do-exec clear crypto engine accelerator counter <?slotcard_func_action@55558ace60a0> <cr>    # path-062044
+(config)# do-exec clear crypto engine accelerator counter <cr>    # path-047613
+(config)# do-exec clear crypto ha statistics <cr>    # path-038391
+(config)# do-exec clear crypto pki benchmarks <cr>    # path-038294
+(config)# do-exec clear crypto pki counters <cr>    # path-038236
+(config)# do-exec clear crypto pki crl <cr>    # path-038352
+(config)# do-exec clear cts counter <interface> <cr>    # path-060967
+(config)# do-exec clear cts credentials <cr>    # path-031145
+(config)# do-exec clear cts macsec counters interface <interface> <cr>    # path-062046
+(config)# do-exec clear cts role-based counters <cr>    # path-039286
+(config)# do-exec clear device-tracking counters interface <interface> <cr>    # path-061451
+(config)# do-exec clear device-tracking database policy <string> <cr>    # path-047182
+(config)# do-exec clear device-tracking database prefix <prefix:dynamic> policy <string> <cr>    # path-062345
+(config)# do-exec clear device-tracking events <cr>    # path-030885
+(config)# do-exec clear device-tracking internal dhcp-server-stats <?ipv4orv6_addr_action@55558b12bd98> <cr>    # path-061456
+(config)# do-exec clear device-tracking messages <cr>    # path-030915
+(config)# do-exec clear dhcp-server-tracking database <cr>    # path-030832
+(config)# do-exec clear diagnostic event-log <cr>    # path-031529
+(config)# do-exec clear diagnostic event-log slot <?option@5555898dce18> <cr>    # path-061503
+(config)# do-exec clear diagnostic event-log slot all <cr>    # path-048114
+(config)# do-exec clear dialer <cr>    # path-026495
+(config)# do-exec clear dialer <interface> <cr>    # path-060530
+(config)# do-exec clear dialer dnis group <string> <cr>    # path-044295
+(config)# do-exec clear dialer dnis number <string> <cr>    # path-044228
+(config)# do-exec clear dialer dnis range <string> <string> <cr>    # path-052259
+(config)# do-exec clear dialer sessions <cr>    # path-028357
+(config)# do-exec clear diameter gx statistics <cr>    # path-039884
+(config)# do-exec clear diameter peer connection all <cr>    # path-048821
+(config)# do-exec clear diameter peer connection name <string> <cr>    # path-055139
+(config)# do-exec clear diameter peer statistics all <cr>    # path-048891
+(config)# do-exec clear diameter peer statistics name <string> <cr>    # path-055180
+(config)# do-exec clear dlep client <interface> <number:1..2147483647> <cr>    # path-061472
+(config)# do-exec clear dlep counters <cr>    # path-031162
+(config)# do-exec clear dlep counters <interface> <cr>    # path-060957
+(config)# do-exec clear dlep neighbor <interface> <number:1..2147483647> <cr>    # path-061475
+(config)# do-exec clear dlsw reachability <cr>    # path-031580
+(config)# do-exec clear dmvpn statistics <cr>    # path-031525
+(config)# do-exec clear dmvpn statistics interface <interface> <cr>    # path-061502
+(config)# do-exec clear drip counters <cr>    # path-031450
+(config)# do-exec clear dspfarm statistics <cr>    # path-027977
+(config)# do-exec clear dtp counter <cr>    # path-030246
+(config)# do-exec clear eigrp address-family ipv4 events <cr>    # path-047278
+(config)# do-exec clear eigrp address-family ipv4 logging <cr>    # path-047246
+(config)# do-exec clear eigrp address-family ipv4 neighbors <cr>    # path-047322
+(config)# do-exec clear eigrp address-family ipv4 neighbors <interface> <cr>    # path-062035
+(config)# do-exec clear eigrp address-family ipv4 perf-stats <cr>    # path-047344
+(config)# do-exec clear eigrp address-family ipv4 topology <address> <address> <cr>    # path-057983
+(config)# do-exec clear eigrp address-family ipv4 topology <prefix:dynamic> <cr>    # path-062037
+(config)# do-exec clear eigrp address-family ipv4 topology active <cr>    # path-054385
+(config)# do-exec clear eigrp address-family ipv4 traffic <cr>    # path-047311
+(config)# do-exec clear eigrp address-family ipv6 events <cr>    # path-047247
+(config)# do-exec clear eigrp address-family ipv6 logging <cr>    # path-047221
+(config)# do-exec clear eigrp address-family ipv6 neighbors <cr>    # path-047289
+(config)# do-exec clear eigrp address-family ipv6 neighbors <interface> <cr>    # path-062029
+(config)# do-exec clear eigrp address-family ipv6 perf-stats <cr>    # path-047312
+(config)# do-exec clear eigrp address-family ipv6 topology <prefix:dynamic> <cr>    # path-062031
+(config)# do-exec clear eigrp address-family ipv6 topology active <cr>    # path-054347
+(config)# do-exec clear eigrp address-family ipv6 traffic <cr>    # path-047279
+(config)# do-exec clear eigrp service-family external-client <string> <cr>    # path-047133
+(config)# do-exec clear eigrp service-family ipv4 events <cr>    # path-047277
+(config)# do-exec clear eigrp service-family ipv4 logging <cr>    # path-047245
+(config)# do-exec clear eigrp service-family ipv4 neighbors <cr>    # path-047321
+(config)# do-exec clear eigrp service-family ipv4 neighbors <interface> <cr>    # path-062034
+(config)# do-exec clear eigrp service-family ipv4 topology <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060252
+(config)# do-exec clear eigrp service-family ipv4 topology active <cr>    # path-054366
+(config)# do-exec clear eigrp service-family ipv4 traffic <cr>    # path-047310
+(config)# do-exec clear eigrp service-family ipv6 events <cr>    # path-047343
+(config)# do-exec clear eigrp service-family ipv6 logging <cr>    # path-047309

@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-054.md
+
+(exec)# test cef <?dumper_command_func@555588cac488> table signal-suppression Enable <cr>    # path-021432
+(exec)# test cef <?dumper_command_func@555588cac488> table stdby-drh <address> add <cr>    # path-023657
+(exec)# test cef <?dumper_command_func@555588cac488> table stdby-drh <address> add <cr>    # path-023674
+(exec)# test cef <?dumper_command_func@555588cac488> table stdby-drh <address> remove <cr>    # path-023677
+(exec)# test cef <?dumper_command_func@555588cac488> table stdby-drh <address> remove <cr>    # path-023696
+(exec)# test cef <?dumper_command_func@555588cac488> table subblock add prefix <address> <address> <cr>    # path-024985
+(exec)# test cef <?dumper_command_func@555588cac488> table subblock add prefix <prefix:dynamic> <cr>    # path-025363
+(exec)# test cef <?dumper_command_func@555588cac488> table trigger delete-all <cr>    # path-021375
+(exec)# test cef <?dumper_command_func@555588cac488> walks background disable <cr>    # path-021358
+(exec)# test cef <?dumper_command_func@555588cac488> walks background enable <cr>    # path-021357
+(exec)# test cef assert fail <?option@555588cac098> fatal <cr>    # path-021267
+(exec)# test cef crimson-oper-db add <cr>    # path-004738
+(exec)# test cef crimson-oper-db del <cr>    # path-004755
+(exec)# test cef crimson-oper-db disable <cr>    # path-004698
+(exec)# test cef crimson-oper-db enable <cr>    # path-004685
+(exec)# test cef crimson-oper-db oc-nh-grp-db IPv4 <cr>    # path-008463
+(exec)# test cef enable <cr>    # path-000831
+(exec)# test cef event-trace IPv4 <string> <cr>    # path-008465
+(exec)# test cef ext-lb disable <cr>    # path-004714
+(exec)# test cef ext-lb enable <cr>    # path-004713
+(exec)# test cef get-nexthop-adj IPv4 <address> <cr>    # path-008554
+(exec)# test cef hw-api fail <?option@555588cac4c8> fatal <cr>    # path-021282
+(exec)# test cef idb consistency <cr>    # path-004764
+(exec)# test cef idb decap <interface> <address> add lisp <cr>    # path-024625
+(exec)# test cef idb stats IPv4 tx <interface> <cr>    # path-023478
+(exec)# test cef lisp authc IPv4 <prefix:dynamic> enable <cr>    # path-023477
+(exec)# test cef lisp l2instance create <number:0..65520> <number:0..65520> <number:1..4094> <cr>    # path-011967
+(exec)# test cef lisp map-req IPv4 <address> <address> r-eid <cr>    # path-011970
+(exec)# test cef lisp stats IPv4 clear <cr>    # path-010589
+(exec)# test cef lisp sw-fw eid-detection enable <cr>    # path-010597
+(exec)# test cef lisp unnum-if top-id <number:0..65520> clear-v4 <cr>    # path-011653
+(exec)# test cef lisp unnum-if top-id <number:0..65520> set-v4 <interface> <cr>    # path-024608
+(exec)# test cef lisp_samecable <address> <cr>    # path-004643
+(exec)# test cef lisp_samecable <prefix:dynamic> <cr>    # path-013196
+(exec)# test cef malloc fail <?option@555588cabbc8> fatal <cr>    # path-021251
+(exec)# test cef oce-explore IPv4 <address> <cr>    # path-008540
+(exec)# test cef offset <cr>    # path-000896
+(exec)# test cef register-interest show <cr>    # path-004777
+(exec)# test cef rmi <interface> IPv4 <address> add <cr>    # path-023472
+(exec)# test cef rmi <interface> IPv4 <address> remove <cr>    # path-023482
+(exec)# test cef route-active IPv4 <prefix:dynamic> <cr>    # path-017120
+(exec)# test cef sadr-oce <address> <cr>    # path-004726
+(exec)# test cef signal-oce IPv4 <prefix:dynamic> insert <cr>    # path-021133
+(exec)# test cef subtree context test add IPv4 <?option@555588cab548> <address> <number:0..32> <number:0..1000> <cr>    # path-025200
+(exec)# test cef switching IPv4 clear <cr>    # path-008374
+(exec)# test cef track-destination IPv4 local-label <cr>    # path-008593
+(exec)# test cef user-command <number:1..255> <cr>    # path-004860
+(exec)# test cellular <interface> cdma rev-a enable <cr>    # path-021138
+(exec)# test cellular <interface> cnm-process-enqueue messages <number:0..5> <cr>    # path-021150
+(exec)# test cellular <interface> geofence-gps-periodic-timer-val <number:2..10> <cr>    # path-016993
+(exec)# test cellular <interface> gps-clear <cr>    # path-013238
+(exec)# test cellular <interface> gps-port GPS <cr>    # path-017110
+(exec)# test cellular <interface> ims-service bind-subscription <cr>    # path-017146
+(exec)# test cellular <interface> modem-at-all-admin-tech <cr>    # path-013032
+(exec)# test cellular <interface> modem-at-command <string> <cr>    # path-016957
+(exec)# test cellular <interface> modem-dmlog disable <cr>    # path-017056
+(exec)# test cellular <interface> modem-error-clear <cr>    # path-013146
+(exec)# test cellular <interface> modem-power-cycle <cr>    # path-013160
+(exec)# test cellular <interface> modem-power-off <cr>    # path-013275
+(exec)# test cellular <interface> modem-power-on <cr>    # path-013255
+(exec)# test cellular <interface> modem-reset <cr>    # path-013123
+(exec)# test cellular <interface> radio-power on <cr>    # path-017111
+(exec)# test cellular <interface> rsrp <number:0..150> <cr>    # path-017051
+(exec)# test cellular <interface> rsrq <number:0..20> <cr>    # path-017066
+(exec)# test cellular <interface> ursp-get-td <cr>    # path-013010
+(exec)# test cellular <interface> ursp-route-clear <cr>    # path-013053
+(exec)# test checkpoint add <cr>    # path-000756
+(exec)# test cisp disable <cr>    # path-000926
+(exec)# test cisp enable <cr>    # path-000927
+(exec)# test cisp intf <interface> client add mac <address> <cr>    # path-024612
+(exec)# test cisp intf <interface> stop <cr>    # path-017135
+(exec)# test cisp intf <interface> user add name <string> <cr>    # path-024614
+(exec)# test clear-nvram local-lock <cr>    # path-002126
+(exec)# test cli-agent config-accounting test-mode disable <cr>    # path-008199
+(exec)# test cli-agent config-accounting test-mode enable <cr>    # path-008180
+(exec)# test cns history <cr>    # path-002257
+(exec)# test cns inventory <cr>    # path-002300
+(exec)# test cns summary <cr>    # path-002281
+(exec)# test config_notify_cb <interface> open_access <cr>    # path-014017
+(exec)# test cops start-listen <address> <number:0..65535> <cr>    # path-008900
+(exec)# test cops stop-listen <address> <number:0..65535> <cr>    # path-008916
+(exec)# test cot set def-params <cr>    # path-004682
+(exec)# test cpuaccounting debug dump <cr>    # path-004358
+(exec)# test cpurmi hog complex <cr>    # path-004324
+(exec)# test cpurmi hog simple <number:1..5000> <cr>    # path-008080
+(exec)# test crash <cr>    # path-000132
+(exec)# test crypto kgs-test perf controller <number:1..300> <number:1..300> <number:1..10000> <number:1..300> <cr>    # path-012126
+(exec)# test crypto modexp perf-test <cr>    # path-005858
+(exec)# test crypto modexp self-test <cr>    # path-005886
+(exec)# test crypto nist-tests cfb8 <cr>    # path-005949
+(exec)# test crypto pki api <string> <cr>    # path-009386
+(exec)# test crypto pki benchmark rsa <cr>    # path-009289
+(exec)# test crypto pki benchmark validate-peer <string> <cr>    # path-011159
+(exec)# test crypto pki benchmark validate-router <string> <cr>    # path-011154
+(exec)# test crypto pki cache on <cr>    # path-009304
+(exec)# test crypto pki cert-attributes <cr>    # path-005893
+(exec)# test crypto pki config-update-notify <string> <cr>    # path-009165
+(exec)# test crypto pki crl request <string> <cr>    # path-011106
+(exec)# test crypto pki csr <string> nb <cr>    # path-011142
+(exec)# test crypto pki enrollment-proxy-api <cr>    # path-006264
+(exec)# test crypto pki expiry-alerts reset <cr>    # path-009373
+(exec)# test crypto pki expiry-alerts shrink-periodicity <cr>    # path-009354
+(exec)# test crypto pki new-cert <string> <cr>    # path-009248
+(exec)# test crypto pki ocsp-get-staple <string> chain blocking-test <cr>    # path-011823
+(exec)# test crypto pki openssl <cr>    # path-006044
+(exec)# test crypto pki pkcs7verify <cr>    # path-005817
+(exec)# test crypto pki safemode on <cr>    # path-009294
+(exec)# test crypto pki self-signed-certificate <cr>    # path-005946
+(exec)# test crypto pki session <number:1..60> <cr>    # path-009320
+(exec)# test crypto pki trustpool remove <cr>    # path-009358
+(exec)# test crypto pki trustpool reset <cr>    # path-009334
+(exec)# test crypto pki verify-certificate <cr>    # path-005913
+(exec)# test crypto replay <number:1..4294967295> <cr>    # path-005835
+(exec)# test crypto replay time <number:1..42949672> <cr>    # path-009205
+(exec)# test crypto rng-tests <cr>    # path-002001
+(exec)# test crypto self-test <cr>    # path-002040
+(exec)# test crypto wui tti petitioner <cr>    # path-009171
+(exec)# test cts enable <cr>    # path-002049
+(exec)# test cts event trace enable <cr>    # path-009277
+(exec)# test cts role-based cgc qlist sort <cr>    # path-011263
+(exec)# test cts role-based counters from <number:2..65521> to <number:2..65521> hw <cr>    # path-012134
+(exec)# test cts role-based dump ipsgt <address> <cr>    # path-011232
+(exec)# test cts role-based dump ipsgt <prefix:dynamic> <cr>    # path-022191
+(exec)# test cts role-based dump permissions <cr>    # path-009523
+(exec)# test cts role-based dump policy dynamic <cr>    # path-011269
+(exec)# test cts role-based dump sg-info <cr>    # path-009477
+(exec)# test cts role-based echo cli <string> <cr>    # path-011325
+(exec)# test cts role-based enforcement enable <cr>    # path-009616
+(exec)# test cts role-based ipm <interface> stop <cr>    # path-022158
+(exec)# test cts role-based ipsgt refresh <cr>    # path-009497
+(exec)# test cts role-based ping <cr>    # path-006394
+(exec)# test cts role-based policy close <cr>    # path-009614
+(exec)# test cts role-based rbacl save <cr>    # path-009613
+(exec)# test cts role-based sgacl-log <cr>    # path-006301
+(exec)# test cts role-based snmp mapping first <cr>    # path-011260
+(exec)# test cts role-based snmp mapping first <cr>    # path-011268
+(exec)# test cts role-based snmp mapping first <cr>    # path-011278
+(exec)# test cts role-based snmp mapping first <cr>    # path-011286
+(exec)# test cts role-based snmp mapping first <cr>    # path-011299
+(exec)# test cts role-based snmp mapping first <cr>    # path-011307
+(exec)# test cts role-based sw-dp enable <cr>    # path-009561
+(exec)# test cts role-based sw-dp feature ipv4 in punt <?number_help_func_action@55558b25ae78> add <cr>    # path-025164
+(exec)# test cts role-based sync <number:1..2147483647> <cr>    # path-009350
+(exec)# test cts sap enable <cr>    # path-006005
+(exec)# test cts slist_mib del ste <cr>    # path-009287
+(exec)# test cts sxp ipsgt action <number:0..2> <cr>    # path-011180
+(exec)# test cwoir incr_sync on <cr>    # path-004606
+(exec)# test cwoir insert <number:1..13> <number:1..99> <cr>    # path-008236
+(exec)# test cwoir iosrunning <number:1..13> <number:0..1> <number:1..99> <cr>    # path-010539
+(exec)# test cwoir ipcready <number:1..13> <number:0..1> <number:0..3> <cr>    # path-010533
+(exec)# test cwoir read <cr>    # path-000808
+(exec)# test cwoir remove <number:1..13> <cr>    # path-004544
+(exec)# test cwoir show <cr>    # path-000838
+(exec)# test data-descriptor <cr>    # path-000292
+(exec)# test dhcp ns <cr>    # path-002051
+(exec)# test dhcp release <cr>    # path-002026
+(exec)# test diagnostic simulation failure slot <?option@5555898db9d0> test <?number_help_func_action@555589917be8> <cr>    # path-025415
+(exec)# test dmtm <number:0..64> cmd <cr>    # path-005344
+(exec)# test dtp switch crash <number:0..3> <cr>    # path-008665
+(exec)# test dwnld_mgr <string> <cr>    # path-001157
+(exec)# test eci add <string> <cr>    # path-004419
+(exec)# test eci delete <string> <cr>    # path-004403
+(exec)# test eci scan <cr>    # path-000693
+(exec)# test eci set timeout <number:0..1000> <cr>    # path-008193
+(exec)# test eci show <cr>    # path-000718
+(exec)# test eem <cr>    # path-000309
+(exec)# test eigrp SIA <cr>    # path-001629
+(exec)# test eigrp address-family ipv4 ack <cr>    # path-009051
+(exec)# test eigrp address-family ipv4 error-percent <number:0..100> <cr>    # path-011082
+(exec)# test eigrp address-family ipv4 error-percent <number:0..100> <interface> <cr>    # path-024010
+(exec)# test eigrp address-family ipv6 ack <cr>    # path-009044
+(exec)# test eigrp address-family ipv6 error-percent <number:0..100> <cr>    # path-011081
+(exec)# test eigrp address-family ipv6 error-percent <number:0..100> <interface> <cr>    # path-024007
+(exec)# test eigrp crimson <cr>    # path-001530
+(exec)# test eigrp neighbor <interface> <address> <cr>    # path-017858
+(exec)# test ethernet errdisable recovery-timer unit second <cr>    # path-010906
+(exec)# test ethernet l2ctrl safe-iteration vports <interface> <cr>    # path-021058
+(exec)# test ethernet mirp-rcv isid <number:1..16777215> <cr>    # path-008806
+(exec)# test ethernet mlacp unknown interface <interface> <cr>    # path-021547
+(exec)# test ethernet mstp-tcn-enable <interface> <number:0..1> <cr>    # path-017577
+(exec)# test ethernet populate-statistics interface <interface> <number:1..16384> <cr>    # path-021532
+(exec)# test ethernet safe-iteration <number:0..5> <cr>    # path-005101
+(exec)# test ethernet stp-fwdstate <number:1..16384> <interface> disable <cr>    # path-021623
+(exec)# test ethernet stp-fwdstate <number:1..16384> <interface> forwarding <cr>    # path-021624
+(exec)# test event manager ged define <cr>    # path-009113
+(exec)# test event manager ged publish <cr>    # path-009123
+(exec)# test event manager ged subscribe <cr>    # path-009129
+(exec)# test event manager ged unsubscribe <number:0..2147483647> <cr>    # path-011087
+(exec)# test flowspec client stop <cr>    # path-006337
+(exec)# test flowspec client xos <cr>    # path-006267
+(exec)# test flowspec rt-dump <cr>    # path-002414
+(exec)# test flowspec txlist-dump <cr>    # path-002391
+(exec)# test flowspec xtf <cr>    # path-002434
+(exec)# test flowspec xtf print <cr>    # path-006303
+(exec)# test fqdn <number:0..14> <cr>    # path-001755
+(exec)# test garp_retry add <address> <cr>    # path-004740
+(exec)# test glbp redundancy events enable <cr>    # path-008855
+(exec)# test glbp transport <interface> <number:0..1023> ipv6 <address> <cr>    # path-023880
+(exec)# test gsi httpc <number:0..9> debug off <cr>    # path-011225
+(exec)# test gsi httpc <number:0..9> show <cr>    # path-009410
+(exec)# test gsi httpc <number:0..9> start <string> post <cr>    # path-011844
+(exec)# test gsi httpc <number:0..9> xml-header <cr>    # path-009449
+(exec)# test gsi httpc stop <cr>    # path-006242
+(exec)# test gsi https <number:0..9> debug off <cr>    # path-011214
+(exec)# test gsi https <number:0..9> show <cr>    # path-009397
+(exec)# test gsi https <number:0..9> start <string> encrypt post <cr>    # path-012039
+(exec)# test gsi https <number:0..9> xml-header <cr>    # path-009428
+(exec)# test gsi https stop <cr>    # path-006213
+(exec)# test gsi sshc <number:0..9> debug off <cr>    # path-011204
+(exec)# test gsi sshc <number:0..9> show <cr>    # path-009383
+(exec)# test gsi sshc <number:0..9> start <string> wsma <cr>    # path-011842
+(exec)# test gsi sshc <number:0..9> xml-header <cr>    # path-009413
+(exec)# test gsi sshc stop <cr>    # path-006186
+(exec)# test gssapi init_sec_context <string> <cr>    # path-005494
+(exec)# test gssapi token_exchange no_wrap <address> <string> <cr>    # path-011076
+(exec)# test gx access-accept service <string> <cr>    # path-009753
+(exec)# test gx access-reject <cr>    # path-002600
+(exec)# test gx create-session ip <address> mac <hex-data> vrf <string> vlan-id <string> <interface> client-handle <number:1000..2000> <cr>    # path-025383
+(exec)# test gx delete-session ip <address> <cr>    # path-009744
+(exec)# test gx enable <cr>    # path-002527
+(exec)# test gx rar-sb session-id <number:1..4294967295> install-service <string> <cr>    # path-011874
+(exec)# test gx update-session id ip <address> data <interface> client-handle <number:1000..2000> <cr>    # path-025167
+(exec)# test hsrp ha sync mac enable <cr>    # path-010593
+(exec)# test hw-module subslot <?slotcard_func_action@5555899c11b0> all async loopback enable <cr>    # path-024604
+(exec)# test hw-module subslot <?slotcard_func_action@5555899c11b0> all cwan message gsm-profile-get <cr>    # path-024615
+(exec)# test idmgr init <cr>    # path-001819
+(exec)# test idmgr req-type session-assert key-list <string> data-list <cr>    # path-011800
+(exec)# test ifs appn read <address> <string> <cr>    # path-011117
+(exec)# test ifs appn write <address> <string> <cr>    # path-011121
+(exec)# test ifs boot <string> <cr>    # path-005902
+(exec)# test ifs defaults <cr>    # path-002091
+(exec)# test ifs disk cluster <string> <cr>    # path-009278
+(exec)# test ifs disk modes <string> <cr>    # path-009291
+(exec)# test ifs disk rdwr <string> <cr>    # path-009268
+(exec)# test ifs show hidden <cr>    # path-005981
+(exec)# test ifs slot <string> <cr>    # path-006063
+(exec)# test install <string> <url:dynamic> <?url_prefix_action@55558b337468> <cr>    # path-025315
+(exec)# test interfaces <cr>    # path-000139
+(exec)# test interfaces <interface> <cr>    # path-012378
+(exec)# test ip access-list dynamic delete <number:100..199> <number:1..262144> <cr>    # path-011656
+(exec)# test ip access-list dynamic empty <number:100..199> <cr>    # path-010588
+(exec)# test ip access-list register <cr>    # path-004696
+(exec)# test ip dhcp api pool <string> <string> create <cr>    # path-011982
+(exec)# test ip dhcp query <address> <cr>    # path-008628
+(exec)# test ip dhcp terminate <address> <cr>    # path-008586
+(exec)# test ip domain apis <address> <string> <cr>    # path-010664
+(exec)# test ip domain default-domain <cr>    # path-004807
+(exec)# test ip domain get-ipv4-server <number:0..25> <cr>    # path-008546
+(exec)# test ip domain get-server <number:0..25> <cr>    # path-008533
+(exec)# test ip domain lookup <address> <cr>    # path-008650
+(exec)# test ip domain mcast-lookup <address> <cr>    # path-008613
+(exec)# test ip domain name-delete <string> <number:1..255> <number:1..4194304> <cr>    # path-011668
+(exec)# test ip multicast sync resume <cr>    # path-008485
+(exec)# test ip multicast sync suspend <cr>    # path-008466
+(exec)# test ip nat clear translations <cr>    # path-008559
+(exec)# test ip nat dump <cr>    # path-004960
+(exec)# test ip nat portmap trans_report <cr>    # path-008606
+(exec)# test ip nat show pool <string> <cr>    # path-010683
+(exec)# test ip nat show pool all <cr>    # path-010649
+(exec)# test ip nat show rule <string> <cr>    # path-010698
+(exec)# test ip nat show rule all <cr>    # path-010665
+(exec)# test ip nat-route database <cr>    # path-004852
+(exec)# test ip nbar batch-config end <cr>    # path-008567
+(exec)# test ip nbar batch-config start <cr>    # path-008547
+(exec)# test ip nbar byte-count-window disable <cr>    # path-008578
+(exec)# test ip nbar caches clear <cr>    # path-008491
+(exec)# test ip nbar caches export <string> <cr>    # path-010608
+(exec)# test ip nbar caches import <string> <cr>    # path-010599
+(exec)# test ip nbar caches show <cr>    # path-008507
+(exec)# test ip nbar cedge-simulation disable <cr>    # path-008588
+(exec)# test ip nbar cedge-simulation enable <cr>    # path-008574
+(exec)# test ip nbar config-mode async <cr>    # path-008500
+(exec)# test ip nbar config-mode sync <cr>    # path-008513
+(exec)# test ip nbar dataplane-info-monitor memory-thresholds low <number:1..100> <cr>    # path-011681
+(exec)# test ip nbar dataplane-info-monitor traffic-over-subscription-state false <cr>    # path-010707
+(exec)# test ip nbar dataplane-info-monitor traffic-over-subscription-state true <cr>    # path-010690
+(exec)# test ip nbar field-extraction disable <string> <string> <interface> <cr>    # path-024636
+(exec)# test ip nbar field-extraction enable <string> <string> <interface> <cr>    # path-024635
+(exec)# test ip nbar function <string> <cr>    # path-008529
+(exec)# test ip nbar npc disable <cr>    # path-008483
+(exec)# test ip nbar npc enable <string> <cr>    # path-010617
+(exec)# test ip nbar npc pack-mode allow <cr>    # path-010626
+(exec)# test ip nbar npc pack-mode disallow <cr>    # path-010634
+(exec)# test ip nbar npc save <cr>    # path-008504
+(exec)# test ip nbar per-txn disable <string> <interface> <cr>    # path-023537
+(exec)# test ip nbar per-txn enable <string> <interface> <cr>    # path-023524
+(exec)# test ip nbar resources flow max-session <number:dynamic> <cr>    # path-023684
+(exec)# test ip nbar resources protocol <number:1..100000000> <?option@55558a7af308> <cr>    # path-023702
+(exec)# test ip nbar set-max-protocol-id-no-cloud_ext <number:0..32767> <cr>    # path-008600
+(exec)# test ip nbar set-protocol-feature-support <number:0..255> <number:0..255> <cr>    # path-010717
+(exec)# test ip nbar show-features-activation <cr>    # path-004999
+(exec)# test ip nbar show-fib-ad-info <cr>    # path-004976
+(exec)# test ip nbar track-ip disable <cr>    # path-008502
+(exec)# test ip nbar track-ip enable <string> port <number:0..4294967295> vrf-id <number:0..4294967295> l4-proto <number:0..255> memory-size <number:0..20000> <cr>    # path-012200
+(exec)# test ip nbar track-ip flush <cr>    # path-008515
+(exec)# test ip nbar track-ip status <cr>    # path-008525
+(exec)# test ip omp flush <cr>    # path-004863
+(exec)# test ip pbr enqueue <interface> <cr>    # path-017178
+(exec)# test ip pbr ipv6 attach <cr>    # path-008433
+(exec)# test ip pbr map <string> <cr>    # path-008418
+(exec)# test ip rib api iprib_get_route <?ipaddrmask_action@55558978f690> exact_match <cr>    # path-023494
+(exec)# test ip rib api iprib_geteachroute <cr>    # path-008524
+(exec)# test ip rib api iprib_rtlookup <?ipaddrmask_action@55558978fa30> <cr>    # path-021213
+(exec)# test ip rmap <cr>    # path-001161
+(exec)# test ip rmap associate <string> <interface> <cr>    # path-021250
+(exec)# test ip rmap associate <string> local <cr>    # path-010688
+(exec)# test ip rmap batch-commit <string> <number:0..2147483647> <cr>    # path-010600
+(exec)# test ip rmap create <number:0..2147483647> <string> <cr>    # path-010618
+(exec)# test ip rmap delete <string> <number:0..4294967295> <cr>    # path-010659
+(exec)# test ip rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-012096
+(exec)# test ip rmap delete <string> <number:0..4294967295> match destination tag <number:0..1000> <cr>    # path-012161
+(exec)# test ip rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-012158
+(exec)# test ip rmap delete <string> <number:0..4294967295> match source tag <number:0..1000> <cr>    # path-012160
+(exec)# test ip rmap delete <string> <number:0..4294967295> match vrf <string> <cr>    # path-012099
+(exec)# test ip rmap delete <string> <number:0..4294967295> set color red <cr>    # path-012108
+(exec)# test ip rmap delete <string> <number:0..4294967295> set def-global-nh <address> <cr>    # path-012101
+(exec)# test ip rmap delete <string> <number:0..4294967295> set def-next-hop <address> <cr>    # path-012103
+(exec)# test ip rmap delete <string> <number:0..4294967295> set def-nh-verify <cr>    # path-011986
+(exec)# test ip rmap delete <string> <number:0..4294967295> set def-vrf-nh <string> <address> <cr>    # path-012163
+(exec)# test ip rmap delete <string> <number:0..4294967295> set default-interface <interface> <cr>    # path-025006
+(exec)# test ip rmap delete <string> <number:0..4294967295> set df <number:0..65535> <cr>    # path-012106
+(exec)# test ip rmap delete <string> <number:0..4294967295> set gateway <address> <cr>    # path-012097
+(exec)# test ip rmap delete <string> <number:0..4294967295> set global <cr>    # path-011996
+(exec)# test ip rmap delete <string> <number:0..4294967295> set gw-vrf <string> <address> <cr>    # path-012159
+(exec)# test ip rmap delete <string> <number:0..4294967295> set interface <interface> <cr>    # path-025009
+(exec)# test ip rmap delete <string> <number:0..4294967295> set ip-global-nh <address> <cr>    # path-012100
+(exec)# test ip rmap delete <string> <number:0..4294967295> set ip-vrf-nh <string> <address> <cr>    # path-012162
+(exec)# test ip rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-012098
+(exec)# test ip rmap delete <string> <number:0..4294967295> set nh-verify <cr>    # path-011981
+(exec)# test ip rmap delete <string> <number:0..4294967295> set oce <?general_pointer_number_action@55558978d3d8> next-hop <address> interface <interface> <cr>    # path-025381
+(exec)# test ip rmap delete <string> <number:0..4294967295> set precedence <number:0..65535> <cr>    # path-012105
+(exec)# test ip rmap delete <string> <number:0..4294967295> set tos <number:0..65535> <cr>    # path-012104
+(exec)# test ip rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-012107
+(exec)# test ip rmap delete <string> permit <cr>    # path-010646
+(exec)# test ip rmap register <number:0..2147483647> <cr>    # path-008432
+(exec)# test ip rmap remove <string> <number:0..2147483647> <cr>    # path-010612
+(exec)# test ip static-route add <?ipaddrmask_action@5555897e2690> <cr>    # path-017376
+(exec)# test ip subscriber create-session ip <address> mac <hex-data> vrf <string> <interface> routed <cr>    # path-025377
+(exec)# test ip subscriber enable <cr>    # path-004920
+(exec)# test ip subscriber interface association disable <cr>    # path-010731
+(exec)# test ip subscriber interface association enable <cr>    # path-010730
+(exec)# test ipam pool local alloc <cr>    # path-008479
+(exec)# test ipam pool local alloc <interface> <cr>    # path-021171
+(exec)# test ipc FC <number:1..5> <number:0..50000> <cr>    # path-009225
+(exec)# test ipc ack-drop <number:1..10000> <cr>    # path-005834
+(exec)# test ipc ack-pending <number:1..10000> <cr>    # path-005860
+(exec)# test ipc ack-timer <number:0..50000> <cr>    # path-006471
+(exec)# test ipc api <cr>    # path-002079
+(exec)# test ipc app-send <cr>    # path-002325
+(exec)# test ipc bundle mode seat on <cr>    # path-011272
+(exec)# test ipc bundle mode session on <cr>    # path-011262
+(exec)# test ipc bundle status seat <number:0..4294967295> seat-level on <cr>    # path-012045
+(exec)# test ipc bundle status session <number:0..4294967295> <number:0..65535> on <cr>    # path-012047
+(exec)# test ipc callback <cr>    # path-002179
+(exec)# test ipc diag <cr>    # path-002307
+(exec)# test ipc driver stop <cr>    # path-005884
+(exec)# test ipc drop <number:0..9999> <cr>    # path-005958
+(exec)# test ipc drop ack <number:65540..4294967295> <number:0..65535> <number:0..65535> <cr>    # path-011837
+(exec)# test ipc drop next <cr>    # path-005986
+(exec)# test ipc mcast appclass subscribe <string> <number:0..15> <cr>    # path-011821
+(exec)# test ipc mcast group close <number:0..4294967295> <number:0..65535> <cr>    # path-011838
+(exec)# test ipc mcast group create <string> <string> <number:0..15> <cr>    # path-012034
+(exec)# test ipc mcast group locate <string> <number:0..15> <cr>    # path-011833
+(exec)# test ipc mcast group member add <number:0..4294967295> <number:0..4294967295> <cr>    # path-012037
+(exec)# test ipc mcast group open <number:0..4294967295> <number:1..2> <cr>    # path-011839
+(exec)# test ipc mcast group remove <number:0..4294967295> <cr>    # path-011140
+(exec)# test ipc mcast group reserve <string> <number:0..15> <cr>    # path-011827
+(exec)# test ipc mcast group subscribe <string> <string> <number:0..15> <cr>    # path-012035
+(exec)# test ipc mcast group unreserve <string> <number:0..15> <cr>    # path-011831
+(exec)# test ipc mcast platform emulation <number:0..4294967295> disable <cr>    # path-011832
+(exec)# test ipc mcast platform emulation <number:0..4294967295> enable <cr>    # path-011828
+(exec)# test ipc mcast platform max-groups <number:0..15> <number:0..65535> <cr>    # path-011824
+(exec)# test ipc mcast platform registries <cr>    # path-009184
+(exec)# test ipc misc <cr>    # path-002243
+(exec)# test ipc ping <number:0..4294967295> <cr>    # path-006368
+(exec)# test ipc port close <number:0..4294967295> <number:0..65535> <cr>    # path-011273
+(exec)# test ipc port create <string> <number:1..3> <cr>    # path-011285
+(exec)# test ipc port free <number:0..4294967295> <number:1..1000000> <cr>    # path-011312
+(exec)# test ipc port msend <number:0..4294967295> <number:0..65535> <number:0..65535> <number:1..1000000> <number:1..4064> <cr>    # path-012131
+(exec)# test ipc port notify enable <cr>    # path-009548
+(exec)# test ipc port open <number:0..4294967295> <number:1..3> <cr>    # path-011298
+(exec)# test ipc port remove <number:0..4294967295> <cr>    # path-009551
+(exec)# test ipc port send header <cr>    # path-009578
+(exec)# test ipc queue <cr>    # path-002156
+(exec)# test ipc retry-period <number:0..50000> <cr>    # path-006435
+(exec)# test ipc rpc <cr>    # path-002251
+(exec)# test ipc ru create <string> <number:1..15> conf <cr>    # path-011822
+(exec)# test ipc ru remove <string> <cr>    # path-009209
+(exec)# test ipc ru tune-thresh <string> <number:1..6> rising major <number:0..10000> <cr>    # path-012127
+(exec)# test ipc seat-fc <number:0..1024> <cr>    # path-005883
+(exec)# test ipc size <number:0..100000> <number:0..1000> <cr>    # path-009437
+(exec)# test ipc slavecore <cr>    # path-002098
+(exec)# test ipc slavelog <cr>    # path-002136
+(exec)# test ipc speed <cr>    # path-002225
+(exec)# test ipc split-init <cr>    # path-002268
+(exec)# test ipc task-pool <cr>    # path-002198
+(exec)# test ipc toggle-mask-error <cr>    # path-002015
+(exec)# test ipc traffic <number:0..4294967295> <number:1..2147483647> <number:1..5> <number:1..50000> <cr>    # path-011835
+(exec)# test ipc traffic abort <number:0..2147483647> <cr>    # path-009172
+(exec)# test ipc watermark callback <cr>    # path-006273

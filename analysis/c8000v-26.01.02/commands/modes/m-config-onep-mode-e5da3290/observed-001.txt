@@ -1,0 +1,29 @@
+# 模式 config-onep-mode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-onep)# cpu threshold rising <number:1..100> falling <number:1..100> interval <number:5..300> <cr>    # observed_connections-008901
+(config-onep)# default cpu <cr>    # observed_connections-008888
+(config-onep)# default exit <cr>    # observed_connections-008882
+(config-onep)# default history syslog <cr>    # observed_connections-008896
+(config-onep)# default logging invalid-username <cr>    # observed_connections-008892
+(config-onep)# default session max <cr>    # observed_connections-008895
+(config-onep)# default tcp-keepalive <cr>    # observed_connections-008890
+(config-onep)# default tls <cr>    # observed_connections-008884
+(config-onep)# default transport type tcp <cr>    # observed_connections-008899
+(config-onep)# exit <cr>    # observed_connections-008879
+(config-onep)# history syslog <cr>    # observed_connections-008886
+(config-onep)# logging invalid-username <cr>    # observed_connections-008885
+(config-onep)# no cpu <cr>    # observed_connections-008887
+(config-onep)# no exit <cr>    # observed_connections-008881
+(config-onep)# no history syslog <cr>    # observed_connections-008894
+(config-onep)# no logging invalid-username <cr>    # observed_connections-008891
+(config-onep)# no session max <cr>    # observed_connections-008893
+(config-onep)# no tcp-keepalive <cr>    # observed_connections-008889
+(config-onep)# no tls <cr>    # observed_connections-008883
+(config-onep)# no transport type tcp <cr>    # observed_connections-008898
+(config-onep)# service set <?option@55558b2020c0> <cr>    # observed_connections-008903
+(config-onep)# session max <number:dynamic> <cr>    # observed_connections-008902
+(config-onep)# tcp-keepalive interval <number:1..3600> retry <number:1..100> <cr>    # observed_connections-008900
+(config-onep)# tls <cr>    # observed_connections-008880
+(config-onep)# transport type tcp <cr>    # observed_connections-008897

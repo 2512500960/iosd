@@ -24,6 +24,8 @@ CDL/XML 提供另一组命令线索，不是 iosd parser 的完整替代。CLI h
 
 ## 未关联候选与额外模式入口
 
+需要向读者展示现有命令时，可从 [GitHub 命令文本目录](https://github.com/2512500960/iosd/tree/main/analysis/c8000v-26.01.02/commands) 按模式查阅简明 txt 与详细 Markdown。`export_cli_textbook.py` 从校验哈希后的五种模型导出，保留所有来源编号并共享条件/状态参考；这些文本是已取得路径的阅读形式，执行状态按相应证据判断。
+
 基础六模式只覆盖公共入口。调查未关联 EOL 时，先固定候选集合，再从模式 factory 的消费字段和直接调用者恢复 name、prompt、parent、root；相同名称的不同根与未知名称分别保留。名称未知而 parent 已知时，仍使用明确的 parent 关系查找配置家族。
 
 复用 `parser_modes` 解释调用 IR，`runtime_grammar.reconstruct_runtime_graph(..., stop_node_addresses=...)` 从同一历史页面补根并复用旧节点。`unbound_cli` 分别计算历史连接、已捕获槽位上的候选注册、静态槽位创建调用后的候选注册。type-2 安装继续核对 sentinel；缺页保留，历史源与新会话数据按 RVA 和身份对齐。

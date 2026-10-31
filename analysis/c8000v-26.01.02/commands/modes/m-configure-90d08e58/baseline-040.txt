@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-040.md
+
+(config)# do-exec debug bgp * ipv4 updates <cr>    # path-061628
+(config)# do-exec debug bgp * ipv4 updates <cr>    # path-061651
+(config)# do-exec debug bgp * ipv4 updates events <cr>    # path-062098
+(config)# do-exec debug bgp * ipv4 updates events <cr>    # path-062138
+(config)# do-exec debug bgp telemetry enable <cr>    # path-039444
+(config)# do-exec debug bidb errors <cr>    # path-031951
+(config)# do-exec debug bidb events <cr>    # path-031934
+(config)# do-exec debug bidb verbose <cr>    # path-031973
+(config)# do-exec debug bing <cr>    # path-027676
+(config)# do-exec debug bing detail <cr>    # path-032665
+(config)# do-exec debug bridge-domain client api <cr>    # path-036582
+(config)# do-exec debug bridge-domain client errors <cr>    # path-036518
+(config)# do-exec debug bridge-domain configuration <cr>    # path-030144
+(config)# do-exec debug bridge-domain errors <cr>    # path-030178
+(config)# do-exec debug bridge-domain ipc <cr>    # path-030215
+(config)# do-exec debug bridge-domain l2fib errors <cr>    # path-036887
+(config)# do-exec debug bridge-domain l2fib events <cr>    # path-036851
+(config)# do-exec debug bridge-domain linkfault <cr>    # path-030256
+(config)# do-exec debug bridge-domain route errors <cr>    # path-036856
+(config)# do-exec debug bridge-domain route events <cr>    # path-036813
+(config)# do-exec debug bridge-domain route flow-control <cr>    # path-036926
+(config)# do-exec debug bridge-domain route messages <cr>    # path-036891
+(config)# do-exec debug bsc diagnostic <cr>    # path-033429
+(config)# do-exec debug bsc event <cr>    # path-033441
+(config)# do-exec debug bsc packet <cr>    # path-033461
+(config)# do-exec debug bstun event <cr>    # path-033440
+(config)# do-exec debug bstun packet <cr>    # path-033460
+(config)# do-exec debug buffer <cr>    # path-027736
+(config)# do-exec debug buffer failures <cr>    # path-033192
+(config)# do-exec debug bulkstat client all <cr>    # path-043261
+(config)# do-exec debug bulkstat client error <cr>    # path-043227
+(config)# do-exec debug bulkstat client info <cr>    # path-043243
+(config)# do-exec debug bulkstat file all <cr>    # path-043244
+(config)# do-exec debug bulkstat file error <cr>    # path-043207
+(config)# do-exec debug bulkstat file info <cr>    # path-043229
+(config)# do-exec debug bulkstat processing all <cr>    # path-043309
+(config)# do-exec debug bulkstat processing error <cr>    # path-043287
+(config)# do-exec debug bulkstat processing info <cr>    # path-043267
+(config)# do-exec debug caaa accounting <cr>    # path-031956
+(config)# do-exec debug caaa action handler <cr>    # path-060718
+(config)# do-exec debug caaa all <cr>    # path-032040
+(config)# do-exec debug caaa authentication <cr>    # path-031975
+(config)# do-exec debug caaa authorization <cr>    # path-031988
+(config)# do-exec debug caaa command-handler <cr>    # path-031921
+(config)# do-exec debug caaa error <cr>    # path-031998
+(config)# do-exec debug caaa ha <cr>    # path-031901
+(config)# do-exec debug caaa service <cr>    # path-031936
+(config)# do-exec debug caaa timer handler <cr>    # path-060719
+(config)# do-exec debug call filter detail <cr>    # path-041642
+(config)# do-exec debug call filter inout <cr>    # path-041612
+(config)# do-exec debug call-admission elog <cr>    # path-032979
+(config)# do-exec debug call-admission trace <cr>    # path-032992
+(config)# do-exec debug call-home all <cr>    # path-030218
+(config)# do-exec debug call-home detail <cr>    # path-030072
+(config)# do-exec debug call-home diagnostic-signature action <cr>    # path-036892
+(config)# do-exec debug call-home diagnostic-signature all <cr>    # path-037105
+(config)# do-exec debug call-home diagnostic-signature api <cr>    # path-036967
+(config)# do-exec debug call-home diagnostic-signature cli <cr>    # path-037019
+(config)# do-exec debug call-home diagnostic-signature download <cr>    # path-036927
+(config)# do-exec debug call-home diagnostic-signature error <cr>    # path-037060
+(config)# do-exec debug call-home diagnostic-signature event-registration <cr>    # path-036857
+(config)# do-exec debug call-home diagnostic-signature parsing <cr>    # path-036814
+(config)# do-exec debug call-home error <cr>    # path-030148
+(config)# do-exec debug call-home mail <cr>    # path-030112
+(config)# do-exec debug call-home message-content <cr>    # path-030294
+(config)# do-exec debug call-home message-content profile <string> <cr>    # path-046118
+(config)# do-exec debug call-home smart-licensing all <cr>    # path-036922
+(config)# do-exec debug call-home smart-licensing error <cr>    # path-036888
+(config)# do-exec debug call-home smart-licensing trace <cr>    # path-036852
+(config)# do-exec debug call-home trace <cr>    # path-030179
+(config)# do-exec debug callback <cr>    # path-027678
+(config)# do-exec debug cca <cr>    # path-026372
+(config)# do-exec debug cce cp <cr>    # path-030725
+(config)# do-exec debug cce cp filter balance <cr>    # path-046873
+(config)# do-exec debug cce cpdp <cr>    # path-030821
+(config)# do-exec debug cce cpdp elog <cr>    # path-037618
+(config)# do-exec debug cce cpdp events <cr>    # path-037639
+(config)# do-exec debug cce cpdp events detailed <cr>    # path-046980
+(config)# do-exec debug cce ha <cr>    # path-030822
+(config)# do-exec debug cce ha event <cr>    # path-037577
+(config)# do-exec debug cce ha issu <cr>    # path-037619
+(config)# do-exec debug cdapi detail <cr>    # path-032899
+(config)# do-exec debug cdapi events <cr>    # path-032889
+(config)# do-exec debug cdp adjacency <cr>    # path-030532
+(config)# do-exec debug cdp events <cr>    # path-030501
+(config)# do-exec debug cdp ilp <cr>    # path-030628
+(config)# do-exec debug cdp ip <cr>    # path-030558
+(config)# do-exec debug cdp location-server <cr>    # path-030583
+(config)# do-exec debug cdp packets <cr>    # path-030474
+(config)# do-exec debug cdp test <cr>    # path-030607
+(config)# do-exec debug cef filter fib <cr>    # path-036611
+(config)# do-exec debug cef filter fib IPv4 <prefix:dynamic> <cr>    # path-061938
+(config)# do-exec debug cef filter hardware notifications handle <?general_pointer_number_action@555588c98060> <cr>    # path-062306
+(config)# do-exec debug cef filter hardware notifications type global <cr>    # path-057501
+(config)# do-exec debug cef filter loadinfo <?general_pointer_number_action@555588c95a88> <cr>    # path-061328
+(config)# do-exec debug cef filter loadinfo map <?general_pointer_number_action@555588c95a60> <cr>    # path-061908
+(config)# do-exec debug cef filter path <cr>    # path-036716
+(config)# do-exec debug cef filter path unknown <interface> <cr>    # path-061949
+(config)# do-exec debug cef filter subtree context client <cr>    # path-053341
+(config)# do-exec debug cef filter table <cr>    # path-036654
+(config)# do-exec debug cef filter uid key <cr>    # path-045920
+(config)# do-exec debug cef filter vrf <cr>    # path-036701
+(config)# do-exec debug cef table <cr>    # path-030128
+(config)# do-exec debug cellular <interface> messages all <cr>    # path-061382
+(config)# do-exec debug cellular <interface> messages callback <cr>    # path-061349
+(config)# do-exec debug cellular <interface> messages callcontrol <cr>    # path-061363
+(config)# do-exec debug cellular <interface> messages dm event <cr>    # path-061919
+(config)# do-exec debug cellular <interface> messages dm packet <cr>    # path-061924
+(config)# do-exec debug cellular <interface> messages dualsim <cr>    # path-061359
+(config)# do-exec debug cellular <interface> messages fota <cr>    # path-061302
+(config)# do-exec debug cellular <interface> messages fw <cr>    # path-061366
+(config)# do-exec debug cellular <interface> messages gps <cr>    # path-061353
+(config)# do-exec debug cellular <interface> messages ipc <cr>    # path-061373
+(config)# do-exec debug cellular <interface> messages license <cr>    # path-061365
+(config)# do-exec debug cellular <interface> messages linkrecovery <cr>    # path-061309
+(config)# do-exec debug cellular <interface> messages management <cr>    # path-061330
+(config)# do-exec debug cellular <interface> messages nas <cr>    # path-061371
+(config)# do-exec debug cellular <interface> messages nmea <cr>    # path-061326
+(config)# do-exec debug cellular <interface> messages oma-dm <cr>    # path-061329
+(config)# do-exec debug cellular <interface> messages profile <cr>    # path-061342
+(config)# do-exec debug cellular <interface> messages sms <cr>    # path-061320
+(config)# do-exec debug cellular <interface> messages snmp <cr>    # path-061343
+(config)# do-exec debug cellular <interface> messages sp-swap <cr>    # path-061377
+(config)# do-exec debug cfgdiff <cr>    # path-026378
+(config)# do-exec debug cfgdiff timestamp <cr>    # path-028201
+(config)# do-exec debug cft <cr>    # path-027594
+(config)# do-exec debug cft ager <cr>    # path-031314
+(config)# do-exec debug cft engine <cr>    # path-031359
+(config)# do-exec debug cft fe <cr>    # path-031380
+(config)# do-exec debug cft flow <cr>    # path-031287
+(config)# do-exec debug cft l4 <cr>    # path-031410
+(config)# do-exec debug cft memory <cr>    # path-031335
+(config)# do-exec debug chat <cr>    # path-027680
+(config)# do-exec debug chat line <?ttyline_action@555589b57890> <cr>    # path-061100
+(config)# do-exec debug checkpoint timers <cr>    # path-029219
+(config)# do-exec debug clns cache <cr>    # path-032266
+(config)# do-exec debug clns esis events <cr>    # path-040674
+(config)# do-exec debug clns esis packets <cr>    # path-040702
+(config)# do-exec debug clns events <cr>    # path-032166
+(config)# do-exec debug clns filters <cr>    # path-032250
+(config)# do-exec debug clns igrp-adjacency <cr>    # path-032217
+(config)# do-exec debug clns igrp-events <cr>    # path-032183
+(config)# do-exec debug clns igrp-packets <cr>    # path-032201
+(config)# do-exec debug clns packets <cr>    # path-032233
+(config)# do-exec debug clns routing <cr>    # path-032291
+(config)# do-exec debug cls errors <cr>    # path-032244
+(config)# do-exec debug cls flow-control <cr>    # path-032320
+(config)# do-exec debug cls hpr <cr>    # path-032338
+(config)# do-exec debug cls messages <cr>    # path-032262
+(config)# do-exec debug cls sdlc <cr>    # path-032284
+(config)# do-exec debug cls state <cr>    # path-032225
+(config)# do-exec debug cls vdlc <cr>    # path-032303
+(config)# do-exec debug cns aaa <cr>    # path-033374
+(config)# do-exec debug cns all <cr>    # path-033428
+(config)# do-exec debug cns config <cr>    # path-033322
+(config)# do-exec debug cns config all <cr>    # path-042904
+(config)# do-exec debug cns config apply <cr>    # path-042836
+(config)# do-exec debug cns config decode <cr>    # path-042862
+(config)# do-exec debug cns config initial <cr>    # path-042812
+(config)# do-exec debug cns config interface <cr>    # path-042757
+(config)# do-exec debug cns config messages <cr>    # path-042885
+(config)# do-exec debug cns config notify all <cr>    # path-051556
+(config)# do-exec debug cns config notify eventing <cr>    # path-051442
+(config)# do-exec debug cns config notify expand <cr>    # path-051545
+(config)# do-exec debug cns config notify generation <cr>    # path-051491
+(config)# do-exec debug cns config notify modes <cr>    # path-051531
+(config)# do-exec debug cns config notify nvgen <cr>    # path-051468
+(config)# do-exec debug cns config notify xml <cr>    # path-051510
+(config)# do-exec debug cns config partial <cr>    # path-042787
+(config)# do-exec debug cns config retrieve <cr>    # path-042726
+(config)# do-exec debug cns event agent <cr>    # path-042734
+(config)# do-exec debug cns event all <cr>    # path-042790
+(config)# do-exec debug cns event connection <cr>    # path-042705
+(config)# do-exec debug cns event subscriber <cr>    # path-042761
+(config)# do-exec debug cns exec agent <cr>    # path-042753
+(config)# do-exec debug cns exec all <cr>    # path-042833
+(config)# do-exec debug cns exec decode <cr>    # path-042809
+(config)# do-exec debug cns exec messages <cr>    # path-042783
+(config)# do-exec debug cns format <cr>    # path-033393
+(config)# do-exec debug cns framework <cr>    # path-033359
+(config)# do-exec debug cns http <cr>    # path-033407
+(config)# do-exec debug cns image agent <cr>    # path-042805
+(config)# do-exec debug cns image all <cr>    # path-042858
+(config)# do-exec debug cns image connection <cr>    # path-042779
+(config)# do-exec debug cns image error <cr>    # path-042831
+(config)# do-exec debug cns io <cr>    # path-033305
+(config)# do-exec debug cns lock <cr>    # path-033321
+(config)# do-exec debug cns malloc <cr>    # path-060744
+(config)# do-exec debug cns management <cr>    # path-033382
+(config)# do-exec debug cns message <cr>    # path-060743
+(config)# do-exec debug cns ssl <cr>    # path-033346
+(config)# do-exec debug cns transport <cr>    # path-033337
+(config)# do-exec debug cns xml all <cr>    # path-042984
+(config)# do-exec debug cns xml decode <cr>    # path-042958
+(config)# do-exec debug cns xml dom <cr>    # path-042909
+(config)# do-exec debug cns xml parser <cr>    # path-042932
+(config)# do-exec debug compress <cr>    # path-026659
+(config)# do-exec debug compress detailed <cr>    # path-028612
+(config)# do-exec debug compress error <cr>    # path-060388
+(config)# do-exec debug condition called <string> <cr>    # path-034160
+(config)# do-exec debug condition calling <string> <cr>    # path-034192
+(config)# do-exec debug condition card <number:dynamic> <cr>    # path-060780
+(config)# do-exec debug condition cpl class-map <string> <cr>    # path-044439
+(config)# do-exec debug condition cpl policy-map <string> <cr>    # path-044470
+(config)# do-exec debug condition cts peer-id <string> <cr>    # path-044360
+(config)# do-exec debug condition domain <string> <cr>    # path-034301
+(config)# do-exec debug condition glbp <interface> <number:0..1023> <cr>    # path-061241
+(config)# do-exec debug condition interface <interface> <cr>    # path-060764
+(config)# do-exec debug condition interface <interface> dlci <number:16..1007> <cr>    # path-061844
+(config)# do-exec debug condition interface <interface> vc <?number_func_nows_action@5555896be5b8> <number:dynamic> <cr>    # path-062985
+(config)# do-exec debug condition interface <interface> vc all <cr>    # path-061843
+(config)# do-exec debug condition interface <interface> vlan-id <number:1..4294967295> <cr>    # path-061839
+(config)# do-exec debug condition ip <address> <cr>    # path-034310
+(config)# do-exec debug condition ip nat inside destination list <number:1..2699> <cr>    # path-058948
+(config)# do-exec debug condition ip nat inside source <cr>    # path-052379
+(config)# do-exec debug condition ip nat inside source static <address> <address> <cr>    # path-059682
+(config)# do-exec debug condition ip nat inside source static <address> interface <interface> <cr>    # path-062637
+(config)# do-exec debug condition ip nat inside source static network <address> <address> <?ipmask_action@555589d3fdc8> <cr>    # path-062655
+(config)# do-exec debug condition ip nat outside source list <number:1..2699> <cr>    # path-058954
+(config)# do-exec debug condition ip nat outside source static <address> <address> <cr>    # path-059676
+(config)# do-exec debug condition ip nat outside source static network <address> <address> <?ipmask_action@555589d413b0> <cr>    # path-062653
+(config)# do-exec debug condition ip nat pool <string> <cr>    # path-052330
+(config)# do-exec debug condition mac-address <address> <cr>    # path-034255
+(config)# do-exec debug condition match-list <number:1..16> exact-match <cr>    # path-044304
+(config)# do-exec debug condition match-list <number:1..16> partial-match <cr>    # path-044337
+(config)# do-exec debug condition portbundle ip <address> bundle <number:0..65536> <cr>    # path-056809
+(config)# do-exec debug condition session-id <number:1..4294967295> <cr>    # path-034335
+(config)# do-exec debug condition standby <interface> <number:dynamic> <cr>    # path-062814
+(config)# do-exec debug condition test <interface> <cr>    # path-060760
+(config)# do-exec debug condition tnlmsg <number:1..15> <cr>    # path-034394
+(config)# do-exec debug condition username <string> <cr>    # path-034137
+(config)# do-exec debug condition vcid <number:1..4294967295> <cr>    # path-034272
+(config)# do-exec debug condition vlan <number:1..4094> <cr>    # path-034578
+(config)# do-exec debug condition vrf <string> <cr>    # path-060783
+(config)# do-exec debug condition vrf default <cr>    # path-034517
+(config)# do-exec debug configuration lock <cr>    # path-028135
+(config)# do-exec debug confmodem <cr>    # path-027679
+(config)# do-exec debug conn <cr>    # path-027492
+(config)# do-exec debug cops <cr>    # path-027635
+(config)# do-exec debug cpc function-trace <cr>    # path-031083
+(config)# do-exec debug cpc subblock <cr>    # path-031065
+(config)# do-exec debug cpl <cr>    # path-027684
+(config)# do-exec debug cpl cap-xos <cr>    # path-032608
+(config)# do-exec debug cpl classification <cr>    # path-032790
+(config)# do-exec debug cpl classification client <cr>    # path-041728
+(config)# do-exec debug cpl classification dp <cr>    # path-041758
+(config)# do-exec debug cpl classification infra <cr>    # path-041700
+(config)# do-exec debug cpl concurrency delay acquire <number:0..300> <number:1..10000> <cr>    # path-058687
+(config)# do-exec debug cpl concurrency history <cr>    # path-041464
+(config)# do-exec debug cpl concurrency lock <cr>    # path-041555
+(config)# do-exec debug cpl concurrency pid <number:1..10000> <cr>    # path-050455
+(config)# do-exec debug cpl concurrency trace <cr>    # path-041510
+(config)# do-exec debug cpl filtering <cr>    # path-032711
+(config)# do-exec debug cpl function <string> <cr>    # path-041613
+(config)# do-exec debug cpl inline <cr>    # path-032550
+(config)# do-exec debug cpl pol-shim <cr>    # path-032634
+(config)# do-exec debug cpl ppcp <cr>    # path-032895
+(config)# do-exec debug cpl ppcp bind <cr>    # path-041682
+(config)# do-exec debug cpl ppcp client <cr>    # path-041960
+(config)# do-exec debug cpl ppcp client class-type <cr>    # path-050614
+(config)# do-exec debug cpl ppcp client classification <cr>    # path-050568
+(config)# do-exec debug cpl ppcp client distribution <cr>    # path-050585
+(config)# do-exec debug cpl ppcp client feature <cr>    # path-050515
+(config)# do-exec debug cpl ppcp client filter-type <cr>    # path-050638
+(config)# do-exec debug cpl ppcp client legacy-platform <cr>    # path-050661
+(config)# do-exec debug cpl ppcp client policy-type <cr>    # path-050597
+(config)# do-exec debug cpl ppcp client target <cr>    # path-050545
+(config)# do-exec debug cpl ppcp database <cr>    # path-041933
+(config)# do-exec debug cpl ppcp database runtime <cr>    # path-050633
+(config)# do-exec debug cpl ppcp database template <cr>    # path-050608
+(config)# do-exec debug cpl ppcp event <cr>    # path-042060
+(config)# do-exec debug cpl ppcp event action <cr>    # path-050743
+(config)# do-exec debug cpl ppcp event action add <cr>    # path-056171
+(config)# do-exec debug cpl ppcp event action delete <cr>    # path-056196
+(config)# do-exec debug cpl ppcp event action modify <cr>    # path-056183
+(config)# do-exec debug cpl ppcp event attribute <cr>    # path-050777
+(config)# do-exec debug cpl ppcp event attribute add <cr>    # path-056200
+(config)# do-exec debug cpl ppcp event attribute delete <cr>    # path-056209
+(config)# do-exec debug cpl ppcp event child-policy <cr>    # path-050761
+(config)# do-exec debug cpl ppcp event child-policy add <cr>    # path-056193
+(config)# do-exec debug cpl ppcp event child-policy delete <cr>    # path-056202
+(config)# do-exec debug cpl ppcp event class-to-policy <cr>    # path-050742
+(config)# do-exec debug cpl ppcp event class-to-policy add <cr>    # path-056182
+(config)# do-exec debug cpl ppcp event class-to-policy delete <cr>    # path-056195
+(config)# do-exec debug cpl ppcp event classmap <cr>    # path-050688
+(config)# do-exec debug cpl ppcp event classmap add <cr>    # path-056128
+(config)# do-exec debug cpl ppcp event classmap delete <cr>    # path-056143
+(config)# do-exec debug cpl ppcp event classmap logicalop <cr>    # path-056161
+(config)# do-exec debug cpl ppcp event filter <cr>    # path-050705
+(config)# do-exec debug cpl ppcp event filter add <cr>    # path-056156
+(config)# do-exec debug cpl ppcp event filter delete <cr>    # path-056173
+(config)# do-exec debug cpl ppcp event parameter-map <cr>    # path-050801
+(config)# do-exec debug cpl ppcp event parameter-map add <cr>    # path-056207
+(config)# do-exec debug cpl ppcp event parameter-map delete <cr>    # path-056221
+(config)# do-exec debug cpl ppcp event policymap <cr>    # path-050686
+(config)# do-exec debug cpl ppcp event policymap add <cr>    # path-056140
+(config)# do-exec debug cpl ppcp event policymap delete <cr>    # path-056159
+(config)# do-exec debug cpl ppcp event service-policy <cr>    # path-050885
+(config)# do-exec debug cpl ppcp event service-policy activate <cr>    # path-056278
+(config)# do-exec debug cpl ppcp event service-policy install <cr>    # path-056218
+(config)# do-exec debug cpl ppcp event service-policy notify <cr>    # path-056254
+(config)# do-exec debug cpl ppcp event service-policy remove <cr>    # path-056232
+(config)# do-exec debug cpl ppcp event service-policy suspend <cr>    # path-056269
+(config)# do-exec debug cpl ppcp event service-policy update <cr>    # path-056244
+(config)# do-exec debug cpl ppcp event test client <number:0..7> <cr>    # path-058706
+(config)# do-exec debug cpl ppcp event test dbtype <number:0..1> <cr>    # path-058711
+(config)# do-exec debug cpl ppcp event test event <number:0..40> <cr>    # path-058703
+(config)# do-exec debug cpl ppcp event test start <cr>    # path-056162
+(config)# do-exec debug cpl ppcp flow <cr>    # path-042037
+(config)# do-exec debug cpl ppcp flow db <cr>    # path-050735
+(config)# do-exec debug cpl ppcp flow prov <cr>    # path-050715
+(config)# do-exec debug cpl ppcp infra <cr>    # path-041659
+(config)# do-exec debug cpl ppcp ipc <cr>    # path-041761
+(config)# do-exec debug cpl ppcp level <cr>    # path-041985
+(config)# do-exec debug cpl ppcp level brief <cr>    # path-050664
+(config)# do-exec debug cpl ppcp level brief <cr>    # path-050665
+(config)# do-exec debug cpl ppcp level error <cr>    # path-050616
+(config)# do-exec debug cpl ppcp level error <cr>    # path-050617
+(config)# do-exec debug cpl ppcp level normal <cr>    # path-050683
+(config)# do-exec debug cpl ppcp level normal <cr>    # path-050684
+(config)# do-exec debug cpl ppcp level verbose <cr>    # path-050677
+(config)# do-exec debug cpl ppcp level warning <cr>    # path-050641
+(config)# do-exec debug cpl ppcp level warning <cr>    # path-050642
+(config)# do-exec debug cpl ppcp ras-dbg <cr>    # path-041946
+(config)# do-exec debug cpl ppcp ras-fc <cr>    # path-041896
+(config)# do-exec debug cpl ppcp ras-feature <cr>    # path-041870
+(config)# do-exec debug cpl ppcp ras-tc <cr>    # path-041922
+(config)# do-exec debug cpl ppcp stats <cr>    # path-041824
+(config)# do-exec debug cpl ppcp stats ipc <cr>    # path-050573
+(config)# do-exec debug cpl ppcp stats ipc ms <cr>    # path-056090
+(config)# do-exec debug cpl ppcp stats update <cr>    # path-050587
+(config)# do-exec debug cpl ppcp stats update ms <cr>    # path-056103
+(config)# do-exec debug cpl provisioning api <cr>    # path-041432
+(config)# do-exec debug cpl provisioning cce_dp_stubs <cr>    # path-041644
+(config)# do-exec debug cpl provisioning cce_for_test <cr>    # path-041620
+(config)# do-exec debug cpl provisioning db <cr>    # path-041516
+(config)# do-exec debug cpl provisioning errors <cr>    # path-041560
+(config)# do-exec debug cpl provisioning non_nvgen_client <cr>    # path-041664
+(config)# do-exec debug cpl provisioning test <cr>    # path-041593
+(config)# do-exec debug cpl provisioning ttc <cr>    # path-041472
+(config)# do-exec debug cpl show detail <cr>    # path-041638
+(config)# do-exec debug cpl vrf-target <cr>    # path-032653
+(config)# do-exec debug crm <cr>    # path-027708
+(config)# do-exec debug crm all <cr>    # path-032946
+(config)# do-exec debug crm detail <cr>    # path-032909
+(config)# do-exec debug crm error <cr>    # path-032962
+(config)# do-exec debug crm error call <cr>    # path-042126
+(config)# do-exec debug crm error call informational <cr>    # path-050824
+(config)# do-exec debug crm error software <cr>    # path-042143
+(config)# do-exec debug crm error software informational <cr>    # path-050843
+(config)# do-exec debug crm function <cr>    # path-032921
+(config)# do-exec debug crm inout <cr>    # path-032897
+(config)# do-exec debug crypto autovpn error <cr>    # path-042256
+(config)# do-exec debug crypto autovpn events <cr>    # path-042276
+(config)# do-exec debug crypto autovpn info <cr>    # path-042295
+(config)# do-exec debug crypto autovpn verbose <cr>    # path-042320
+(config)# do-exec debug crypto ber <cr>    # path-033028
+(config)# do-exec debug crypto engine <cr>    # path-032987
+(config)# do-exec debug crypto engine accelerator control <cr>    # path-050951
+(config)# do-exec debug crypto engine accelerator control detail <cr>    # path-056318
+(config)# do-exec debug crypto engine accelerator control error <cr>    # path-056321
+(config)# do-exec debug crypto engine accelerator control error mask <number:0..4294967295> <cr>    # path-059594
+(config)# do-exec debug crypto engine accelerator packet <cr>    # path-050981
+(config)# do-exec debug crypto engine accelerator packet detail <cr>    # path-056338
+(config)# do-exec debug crypto engine accelerator packet error <cr>    # path-056328
+(config)# do-exec debug crypto engine accelerator packet error mask <number:0..4294967295> <cr>    # path-059595
+(config)# do-exec debug crypto engine accelerator packet number <number:0..32767> length <number:0..32767> <cr>    # path-059930
+(config)# do-exec debug crypto engine error <cr>    # path-042108
+(config)# do-exec debug crypto engine packet <cr>    # path-042163
+(config)# do-exec debug crypto engine packet detail <cr>    # path-050859
+(config)# do-exec debug crypto engine vpn_hw all <cr>    # path-051042
+(config)# do-exec debug crypto engine vpn_hw buffer <cr>    # path-051031
+(config)# do-exec debug crypto engine vpn_hw error <cr>    # path-050994
+(config)# do-exec debug crypto engine vpn_hw high <cr>    # path-050944
+(config)# do-exec debug crypto engine vpn_hw low <cr>    # path-050976
+(config)# do-exec debug crypto engine vpn_hw medium <cr>    # path-050961
+(config)# do-exec debug crypto engine vpn_hw normal <cr>    # path-050931
+(config)# do-exec debug crypto engine vpn_hw packet <cr>    # path-050913
+(config)# do-exec debug crypto engine vpn_hw stat <cr>    # path-051015
+(config)# do-exec debug crypto est-client <cr>    # path-033038
+(config)# do-exec debug crypto pki API <cr>    # path-042298
+(config)# do-exec debug crypto pki callbacks <cr>    # path-042358
+(config)# do-exec debug crypto pki messages <cr>    # path-042259
+(config)# do-exec debug crypto pki scep <cr>    # path-042322
+(config)# do-exec debug crypto pki server <cr>    # path-042311
+(config)# do-exec debug crypto pki server performance <cr>    # path-050972
+(config)# do-exec debug crypto pki transactions <cr>    # path-042310
+(config)# do-exec debug crypto pki transactions performance <cr>    # path-050971
+(config)# do-exec debug crypto pki validation <cr>    # path-042343
+(config)# do-exec debug crypto socket <cr>    # path-032993
+(config)# do-exec debug crypto verbose <cr>    # path-033037
+(config)# do-exec debug crypto wui <cr>    # path-033053
+(config)# do-exec debug cts <cr>    # path-027618
+(config)# do-exec debug cts aaa <cr>    # path-031497
+(config)# do-exec debug cts all <cr>    # path-031808
+(config)# do-exec debug cts authentication details <cr>    # path-038859
+(config)# do-exec debug cts authentication events <cr>    # path-038805
+(config)# do-exec debug cts authorization aaa critical <cr>    # path-048308
+(config)# do-exec debug cts authorization aaa debug <cr>    # path-048091
+(config)# do-exec debug cts authorization aaa emergency <cr>    # path-048356

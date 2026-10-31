@@ -1,0 +1,324 @@
+# 模式 performance-measurement；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-perf-meas)# default <cr>    # observed_connections-003694
+(config-perf-meas)# default delay-profile endpoint <cr>    # observed_connections-003711
+(config-perf-meas)# default delay-profile endpoint advertisement <cr>    # observed_connections-003739
+(config-perf-meas)# default delay-profile endpoint advertisement accelerated <cr>    # observed_connections-003813
+(config-perf-meas)# default delay-profile endpoint advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003957
+(config-perf-meas)# default delay-profile endpoint advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003971
+(config-perf-meas)# default delay-profile endpoint advertisement periodic <cr>    # observed_connections-003819
+(config-perf-meas)# default delay-profile endpoint advertisement periodic disabled <cr>    # observed_connections-003926
+(config-perf-meas)# default delay-profile endpoint advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003984
+(config-perf-meas)# default delay-profile endpoint advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003962
+(config-perf-meas)# default delay-profile endpoint advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003978
+(config-perf-meas)# default delay-profile endpoint advertisement threshold-check <cr>    # observed_connections-003804
+(config-perf-meas)# default delay-profile endpoint advertisement threshold-check average-delay <cr>    # observed_connections-003859
+(config-perf-meas)# default delay-profile endpoint advertisement threshold-check maximum-delay <cr>    # observed_connections-003865
+(config-perf-meas)# default delay-profile endpoint advertisement threshold-check minimum-delay <cr>    # observed_connections-003874
+(config-perf-meas)# default delay-profile endpoint liveness-detection <cr>    # observed_connections-003762
+(config-perf-meas)# default delay-profile endpoint liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003899
+(config-perf-meas)# default delay-profile endpoint probe <cr>    # observed_connections-003745
+(config-perf-meas)# default delay-profile endpoint probe burst-interval <number:30..15000> <cr>    # observed_connections-003878
+(config-perf-meas)# default delay-profile endpoint probe computation-interval <number:3..3600> <cr>    # observed_connections-003903
+(config-perf-meas)# default delay-profile endpoint probe measurement-mode loopback <cr>    # observed_connections-003941
+(config-perf-meas)# default delay-profile endpoint probe measurement-mode one-way <cr>    # observed_connections-003919
+(config-perf-meas)# default delay-profile endpoint probe measurement-mode two-way <cr>    # observed_connections-003933
+(config-perf-meas)# default delay-profile endpoint probe padding-size <number:0..8000> <cr>    # observed_connections-003901
+(config-perf-meas)# default delay-profile endpoint probe tos-dscp <number:0..63> <cr>    # observed_connections-003909
+(config-perf-meas)# default delay-profile interfaces <cr>    # observed_connections-003724
+(config-perf-meas)# default delay-profile interfaces advertisement <cr>    # observed_connections-003757
+(config-perf-meas)# default delay-profile interfaces advertisement accelerated <cr>    # observed_connections-003811
+(config-perf-meas)# default delay-profile interfaces advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003956
+(config-perf-meas)# default delay-profile interfaces advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003970
+(config-perf-meas)# default delay-profile interfaces advertisement periodic <cr>    # observed_connections-003827
+(config-perf-meas)# default delay-profile interfaces advertisement periodic disabled <cr>    # observed_connections-003935
+(config-perf-meas)# default delay-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003986
+(config-perf-meas)# default delay-profile interfaces advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003968
+(config-perf-meas)# default delay-profile interfaces advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003981
+(config-perf-meas)# default delay-profile interfaces probe <cr>    # observed_connections-003761
+(config-perf-meas)# default delay-profile interfaces probe burst-interval <number:30..15000> <cr>    # observed_connections-003898
+(config-perf-meas)# default delay-profile interfaces probe computation-interval <number:3..3600> <cr>    # observed_connections-003921
+(config-perf-meas)# default delay-profile interfaces probe measurement-mode one-way <cr>    # observed_connections-003930
+(config-perf-meas)# default delay-profile interfaces probe measurement-mode two-way <cr>    # observed_connections-003931
+(config-perf-meas)# default delay-profile interfaces probe protocol <cr>    # observed_connections-003843
+(config-perf-meas)# default delay-profile interfaces probe protocol pm-mpls <cr>    # observed_connections-003946
+(config-perf-meas)# default delay-profile interfaces probe protocol twamp-light <cr>    # observed_connections-003937
+(config-perf-meas)# default delay-profile sr-policy <cr>    # observed_connections-003723
+(config-perf-meas)# default delay-profile sr-policy advertisement <cr>    # observed_connections-003756
+(config-perf-meas)# default delay-profile sr-policy advertisement accelerated <cr>    # observed_connections-003826
+(config-perf-meas)# default delay-profile sr-policy advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003967
+(config-perf-meas)# default delay-profile sr-policy advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003980
+(config-perf-meas)# default delay-profile sr-policy advertisement periodic <cr>    # observed_connections-003835
+(config-perf-meas)# default delay-profile sr-policy advertisement periodic disabled <cr>    # observed_connections-003942
+(config-perf-meas)# default delay-profile sr-policy advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003988
+(config-perf-meas)# default delay-profile sr-policy advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003975
+(config-perf-meas)# default delay-profile sr-policy advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003985
+(config-perf-meas)# default delay-profile sr-policy advertisement threshold-check <cr>    # observed_connections-003820
+(config-perf-meas)# default delay-profile sr-policy advertisement threshold-check average-delay <cr>    # observed_connections-003868
+(config-perf-meas)# default delay-profile sr-policy advertisement threshold-check maximum-delay <cr>    # observed_connections-003879
+(config-perf-meas)# default delay-profile sr-policy advertisement threshold-check minimum-delay <cr>    # observed_connections-003892
+(config-perf-meas)# default delay-profile sr-policy liveness-detection <cr>    # observed_connections-003768
+(config-perf-meas)# default delay-profile sr-policy liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003914
+(config-perf-meas)# default delay-profile sr-policy probe <cr>    # observed_connections-003760
+(config-perf-meas)# default delay-profile sr-policy probe burst-interval <number:30..15000> <cr>    # observed_connections-003897
+(config-perf-meas)# default delay-profile sr-policy probe computation-interval <number:3..3600> <cr>    # observed_connections-003920
+(config-perf-meas)# default delay-profile sr-policy probe measurement-mode loopback <cr>    # observed_connections-003949
+(config-perf-meas)# default delay-profile sr-policy probe measurement-mode one-way <cr>    # observed_connections-003943
+(config-perf-meas)# default delay-profile sr-policy probe measurement-mode two-way <cr>    # observed_connections-003944
+(config-perf-meas)# default delay-profile sr-policy probe padding-size <number:0..8000> <cr>    # observed_connections-003928
+(config-perf-meas)# default delay-profile sr-policy probe protocol <cr>    # observed_connections-003848
+(config-perf-meas)# default delay-profile sr-policy probe protocol pm-mpls <cr>    # observed_connections-003951
+(config-perf-meas)# default delay-profile sr-policy probe protocol twamp-light <cr>    # observed_connections-003948
+(config-perf-meas)# default delay-profile sr-policy probe sweep <cr>    # observed_connections-003850
+(config-perf-meas)# default delay-profile sr-policy probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-003997
+(config-perf-meas)# default delay-profile sr-policy probe tos-dscp <number:0..63> <cr>    # observed_connections-003929
+(config-perf-meas)# default dual-color gre bit-position <number:9..12> <cr>    # observed_connections-003794
+(config-perf-meas)# default endpoint <string> <cr>    # observed_connections-003719
+(config-perf-meas)# default endpoint <string> delay-measurement <cr>    # observed_connections-003731
+(config-perf-meas)# default endpoint <string> delay-measurement profile <string> <cr>    # observed_connections-003854
+(config-perf-meas)# default endpoint <string> destination-address ipv4 <address> <cr>    # observed_connections-003852
+(config-perf-meas)# default endpoint <string> segment-list <cr>    # observed_connections-003749
+(config-perf-meas)# default endpoint <string> segment-list forward-path <string> <cr>    # observed_connections-003863
+(config-perf-meas)# default endpoint <string> segment-list reverse-path <string> <cr>    # observed_connections-003872
+(config-perf-meas)# default endpoint <string> shutdown <cr>    # observed_connections-003733
+(config-perf-meas)# default endpoint <string> source-address ipv4 <address> <cr>    # observed_connections-003857
+(config-perf-meas)# default endpoint <string> vrf <string> <cr>    # observed_connections-003778
+(config-perf-meas)# default loss-profile interfaces <cr>    # observed_connections-003710
+(config-perf-meas)# default loss-profile interfaces advertisement <cr>    # observed_connections-003738
+(config-perf-meas)# default loss-profile interfaces advertisement anomaly-check <cr>    # observed_connections-003800
+(config-perf-meas)# default loss-profile interfaces advertisement periodic <cr>    # observed_connections-003792
+(config-perf-meas)# default loss-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003953
+(config-perf-meas)# default loss-profile interfaces probe <cr>    # observed_connections-003759
+(config-perf-meas)# default loss-profile interfaces probe color-type <cr>    # observed_connections-003812
+(config-perf-meas)# default loss-profile interfaces probe color-type dual-color gre <cr>    # observed_connections-003964
+(config-perf-meas)# default loss-profile interfaces probe color-type single-color <cr>    # observed_connections-003904
+(config-perf-meas)# default loss-profile interfaces probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-003990
+(config-perf-meas)# default loss-profile interfaces probe tx-interval <number:10..1000> <cr>    # observed_connections-003877
+(config-perf-meas)# default protocol sdlm-light <cr>    # observed_connections-003713
+(config-perf-meas)# default protocol sdlm-light measurement loss <cr>    # observed_connections-003798
+(config-perf-meas)# default protocol sdlm-light measurement loss unauthenticated <cr>    # observed_connections-003893
+(config-perf-meas)# default protocol sdlm-light measurement loss unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003993
+(config-perf-meas)# default protocol twamp-light <cr>    # observed_connections-003714
+(config-perf-meas)# default protocol twamp-light measurement delay <cr>    # observed_connections-003799
+(config-perf-meas)# default protocol twamp-light measurement delay unauthenticated <cr>    # observed_connections-003894
+(config-perf-meas)# default protocol twamp-light measurement delay unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003994
+(config-perf-meas)# delay-profile endpoint <cr>    # observed_connections-003696
+(config-perf-meas)# delay-profile endpoint advertisement <cr>    # observed_connections-003709
+(config-perf-meas)# delay-profile endpoint advertisement accelerated <cr>    # observed_connections-003758
+(config-perf-meas)# delay-profile endpoint advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003869
+(config-perf-meas)# delay-profile endpoint advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003889
+(config-perf-meas)# delay-profile endpoint advertisement periodic <cr>    # observed_connections-003763
+(config-perf-meas)# delay-profile endpoint advertisement periodic disabled <cr>    # observed_connections-003825
+(config-perf-meas)# delay-profile endpoint advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003908
+(config-perf-meas)# delay-profile endpoint advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003875
+(config-perf-meas)# delay-profile endpoint advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003900
+(config-perf-meas)# delay-profile endpoint advertisement threshold-check <cr>    # observed_connections-003750
+(config-perf-meas)# delay-profile endpoint advertisement threshold-check average-delay <cr>    # observed_connections-003777
+(config-perf-meas)# delay-profile endpoint advertisement threshold-check maximum-delay <cr>    # observed_connections-003780
+(config-perf-meas)# delay-profile endpoint advertisement threshold-check minimum-delay <cr>    # observed_connections-003783
+(config-perf-meas)# delay-profile endpoint liveness-detection <cr>    # observed_connections-003727
+(config-perf-meas)# delay-profile endpoint liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003807
+(config-perf-meas)# delay-profile endpoint probe <cr>    # observed_connections-003715
+(config-perf-meas)# delay-profile endpoint probe burst-interval <number:30..15000> <cr>    # observed_connections-003787
+(config-perf-meas)# delay-profile endpoint probe computation-interval <number:3..3600> <cr>    # observed_connections-003809
+(config-perf-meas)# delay-profile endpoint probe measurement-mode loopback <cr>    # observed_connections-003837
+(config-perf-meas)# delay-profile endpoint probe measurement-mode one-way <cr>    # observed_connections-003822
+(config-perf-meas)# delay-profile endpoint probe measurement-mode two-way <cr>    # observed_connections-003833
+(config-perf-meas)# delay-profile endpoint probe padding-size <number:0..8000> <cr>    # observed_connections-003808
+(config-perf-meas)# delay-profile endpoint probe tos-dscp <number:0..63> <cr>    # observed_connections-003816
+(config-perf-meas)# delay-profile interfaces <cr>    # observed_connections-003701
+(config-perf-meas)# delay-profile interfaces advertisement <cr>    # observed_connections-003721
+(config-perf-meas)# delay-profile interfaces advertisement accelerated <cr>    # observed_connections-003754
+(config-perf-meas)# delay-profile interfaces advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003867
+(config-perf-meas)# delay-profile interfaces advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003888
+(config-perf-meas)# delay-profile interfaces advertisement periodic <cr>    # observed_connections-003767
+(config-perf-meas)# delay-profile interfaces advertisement periodic disabled <cr>    # observed_connections-003834
+(config-perf-meas)# delay-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003916
+(config-perf-meas)# delay-profile interfaces advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003884
+(config-perf-meas)# delay-profile interfaces advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003907
+(config-perf-meas)# delay-profile interfaces probe <cr>    # observed_connections-003726
+(config-perf-meas)# delay-profile interfaces probe burst-interval <number:30..15000> <cr>    # observed_connections-003806
+(config-perf-meas)# delay-profile interfaces probe computation-interval <number:3..3600> <cr>    # observed_connections-003824
+(config-perf-meas)# delay-profile interfaces probe measurement-mode one-way <cr>    # observed_connections-003831
+(config-perf-meas)# delay-profile interfaces probe measurement-mode two-way <cr>    # observed_connections-003832
+(config-perf-meas)# delay-profile interfaces probe protocol <cr>    # observed_connections-003770
+(config-perf-meas)# delay-profile interfaces probe protocol pm-mpls <cr>    # observed_connections-003842
+(config-perf-meas)# delay-profile interfaces probe protocol twamp-light <cr>    # observed_connections-003836
+(config-perf-meas)# delay-profile sr-policy <cr>    # observed_connections-003700
+(config-perf-meas)# delay-profile sr-policy advertisement <cr>    # observed_connections-003720
+(config-perf-meas)# delay-profile sr-policy advertisement accelerated <cr>    # observed_connections-003766
+(config-perf-meas)# delay-profile sr-policy advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003883
+(config-perf-meas)# delay-profile sr-policy advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003906
+(config-perf-meas)# delay-profile sr-policy advertisement periodic <cr>    # observed_connections-003769
+(config-perf-meas)# delay-profile sr-policy advertisement periodic disabled <cr>    # observed_connections-003838
+(config-perf-meas)# delay-profile sr-policy advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003927
+(config-perf-meas)# delay-profile sr-policy advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003896
+(config-perf-meas)# delay-profile sr-policy advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003915
+(config-perf-meas)# delay-profile sr-policy advertisement threshold-check <cr>    # observed_connections-003764
+(config-perf-meas)# delay-profile sr-policy advertisement threshold-check average-delay <cr>    # observed_connections-003781
+(config-perf-meas)# delay-profile sr-policy advertisement threshold-check maximum-delay <cr>    # observed_connections-003788
+(config-perf-meas)# delay-profile sr-policy advertisement threshold-check minimum-delay <cr>    # observed_connections-003795
+(config-perf-meas)# delay-profile sr-policy liveness-detection <cr>    # observed_connections-003728
+(config-perf-meas)# delay-profile sr-policy liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003821
+(config-perf-meas)# delay-profile sr-policy probe <cr>    # observed_connections-003725
+(config-perf-meas)# delay-profile sr-policy probe burst-interval <number:30..15000> <cr>    # observed_connections-003805
+(config-perf-meas)# delay-profile sr-policy probe computation-interval <number:3..3600> <cr>    # observed_connections-003823
+(config-perf-meas)# delay-profile sr-policy probe measurement-mode loopback <cr>    # observed_connections-003845
+(config-perf-meas)# delay-profile sr-policy probe measurement-mode one-way <cr>    # observed_connections-003840
+(config-perf-meas)# delay-profile sr-policy probe measurement-mode two-way <cr>    # observed_connections-003841
+(config-perf-meas)# delay-profile sr-policy probe padding-size <number:0..8000> <cr>    # observed_connections-003829
+(config-perf-meas)# delay-profile sr-policy probe protocol <cr>    # observed_connections-003771
+(config-perf-meas)# delay-profile sr-policy probe protocol pm-mpls <cr>    # observed_connections-003847
+(config-perf-meas)# delay-profile sr-policy probe protocol twamp-light <cr>    # observed_connections-003844
+(config-perf-meas)# delay-profile sr-policy probe sweep <cr>    # observed_connections-003772
+(config-perf-meas)# delay-profile sr-policy probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-003995
+(config-perf-meas)# delay-profile sr-policy probe tos-dscp <number:0..63> <cr>    # observed_connections-003830
+(config-perf-meas)# dual-color gre bit-position <number:9..12> <cr>    # observed_connections-003741
+(config-perf-meas)# endpoint <string> <cr>    # observed_connections-003699
+(config-perf-meas)# endpoint <string> delay-measurement <cr>    # observed_connections-003702
+(config-perf-meas)# endpoint <string> delay-measurement profile <string> <cr>    # observed_connections-003774
+(config-perf-meas)# endpoint <string> destination-address ipv4 <address> <cr>    # observed_connections-003773
+(config-perf-meas)# endpoint <string> segment-list <cr>    # observed_connections-003716
+(config-perf-meas)# endpoint <string> segment-list forward-path <string> <cr>    # observed_connections-003779
+(config-perf-meas)# endpoint <string> segment-list reverse-path <string> <cr>    # observed_connections-003782
+(config-perf-meas)# endpoint <string> shutdown <cr>    # observed_connections-003703
+(config-perf-meas)# endpoint <string> source-address ipv4 <address> <cr>    # observed_connections-003775
+(config-perf-meas)# endpoint <string> vrf <string> <cr>    # observed_connections-003730
+(config-perf-meas)# exit <cr>    # observed_connections-003692
+(config-perf-meas)# interface <interface> <cr>    # observed_connections-004003
+(config-perf-meas)# interface <interface> delay-measurement <cr>    # observed_connections-004004
+(config-perf-meas)# interface <interface> delay-measurement advertise-delay <number:0..16777214> <cr>    # observed_connections-004006
+(config-perf-meas)# interface <interface> delay-measurement profile <string> <cr>    # observed_connections-004008
+(config-perf-meas)# interface <interface> loss-measurement <cr>    # observed_connections-004005
+(config-perf-meas)# interface <interface> loss-measurement advertise-loss <?fixed_number_action@55558c3294a8> <cr>    # observed_connections-004010
+(config-perf-meas)# interface <interface> loss-measurement profile <string> <cr>    # observed_connections-004009
+(config-perf-meas)# interface <interface> next-hop ipv4 <address> <cr>    # observed_connections-004007
+(config-perf-meas)# loss-profile interfaces <cr>    # observed_connections-003695
+(config-perf-meas)# loss-profile interfaces advertisement <cr>    # observed_connections-003708
+(config-perf-meas)# loss-profile interfaces advertisement anomaly-check <cr>    # observed_connections-003744
+(config-perf-meas)# loss-profile interfaces advertisement anomaly-check lower-bound <?fixed_number_action@55558c319278> <cr>    # observed_connections-004001
+(config-perf-meas)# loss-profile interfaces advertisement periodic <cr>    # observed_connections-003737
+(config-perf-meas)# loss-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003858
+(config-perf-meas)# loss-profile interfaces advertisement periodic minimum-change <?fixed_number_action@55558c3189d0> <cr>    # observed_connections-004000
+(config-perf-meas)# loss-profile interfaces advertisement periodic threshold <?fixed_number_action@55558c3186d8> <cr>    # observed_connections-003999
+(config-perf-meas)# loss-profile interfaces probe <cr>    # observed_connections-003722
+(config-perf-meas)# loss-profile interfaces probe color-type <cr>    # observed_connections-003755
+(config-perf-meas)# loss-profile interfaces probe color-type dual-color gre <cr>    # observed_connections-003876
+(config-perf-meas)# loss-profile interfaces probe color-type single-color <cr>    # observed_connections-003810
+(config-perf-meas)# loss-profile interfaces probe color-type single-color accuracy <?fixed_number_action@55558c319a48> <cr>    # observed_connections-004002
+(config-perf-meas)# loss-profile interfaces probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-003963
+(config-perf-meas)# loss-profile interfaces probe tx-interval <number:10..1000> <cr>    # observed_connections-003786
+(config-perf-meas)# max-pps <number:dynamic> <cr>    # observed_connections-003998
+(config-perf-meas)# no <cr>    # observed_connections-003693
+(config-perf-meas)# no delay-profile endpoint <cr>    # observed_connections-003705
+(config-perf-meas)# no delay-profile endpoint advertisement <cr>    # observed_connections-003735
+(config-perf-meas)# no delay-profile endpoint advertisement accelerated <cr>    # observed_connections-003803
+(config-perf-meas)# no delay-profile endpoint advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003955
+(config-perf-meas)# no delay-profile endpoint advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003966
+(config-perf-meas)# no delay-profile endpoint advertisement periodic <cr>    # observed_connections-003814
+(config-perf-meas)# no delay-profile endpoint advertisement periodic disabled <cr>    # observed_connections-003913
+(config-perf-meas)# no delay-profile endpoint advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003979
+(config-perf-meas)# no delay-profile endpoint advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003958
+(config-perf-meas)# no delay-profile endpoint advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003972
+(config-perf-meas)# no delay-profile endpoint advertisement threshold-check <cr>    # observed_connections-003793
+(config-perf-meas)# no delay-profile endpoint advertisement threshold-check average-delay <cr>    # observed_connections-003856
+(config-perf-meas)# no delay-profile endpoint advertisement threshold-check maximum-delay <cr>    # observed_connections-003861
+(config-perf-meas)# no delay-profile endpoint advertisement threshold-check minimum-delay <cr>    # observed_connections-003866
+(config-perf-meas)# no delay-profile endpoint liveness-detection <cr>    # observed_connections-003753
+(config-perf-meas)# no delay-profile endpoint liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003887
+(config-perf-meas)# no delay-profile endpoint probe <cr>    # observed_connections-003736
+(config-perf-meas)# no delay-profile endpoint probe burst-interval <number:30..15000> <cr>    # observed_connections-003871
+(config-perf-meas)# no delay-profile endpoint probe computation-interval <number:3..3600> <cr>    # observed_connections-003891
+(config-perf-meas)# no delay-profile endpoint probe measurement-mode loopback <cr>    # observed_connections-003934
+(config-perf-meas)# no delay-profile endpoint probe measurement-mode one-way <cr>    # observed_connections-003910
+(config-perf-meas)# no delay-profile endpoint probe measurement-mode two-way <cr>    # observed_connections-003924
+(config-perf-meas)# no delay-profile endpoint probe padding-size <number:0..8000> <cr>    # observed_connections-003890
+(config-perf-meas)# no delay-profile endpoint probe tos-dscp <number:0..63> <cr>    # observed_connections-003902
+(config-perf-meas)# no delay-profile interfaces <cr>    # observed_connections-003718
+(config-perf-meas)# no delay-profile interfaces advertisement <cr>    # observed_connections-003747
+(config-perf-meas)# no delay-profile interfaces advertisement accelerated <cr>    # observed_connections-003801
+(config-perf-meas)# no delay-profile interfaces advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003954
+(config-perf-meas)# no delay-profile interfaces advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003965
+(config-perf-meas)# no delay-profile interfaces advertisement periodic <cr>    # observed_connections-003818
+(config-perf-meas)# no delay-profile interfaces advertisement periodic disabled <cr>    # observed_connections-003925
+(config-perf-meas)# no delay-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003983
+(config-perf-meas)# no delay-profile interfaces advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003961
+(config-perf-meas)# no delay-profile interfaces advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003977
+(config-perf-meas)# no delay-profile interfaces probe <cr>    # observed_connections-003752
+(config-perf-meas)# no delay-profile interfaces probe burst-interval <number:30..15000> <cr>    # observed_connections-003886
+(config-perf-meas)# no delay-profile interfaces probe computation-interval <number:3..3600> <cr>    # observed_connections-003912
+(config-perf-meas)# no delay-profile interfaces probe measurement-mode one-way <cr>    # observed_connections-003922
+(config-perf-meas)# no delay-profile interfaces probe measurement-mode two-way <cr>    # observed_connections-003923
+(config-perf-meas)# no delay-profile interfaces probe protocol <cr>    # observed_connections-003839
+(config-perf-meas)# no delay-profile interfaces probe protocol pm-mpls <cr>    # observed_connections-003940
+(config-perf-meas)# no delay-profile interfaces probe protocol twamp-light <cr>    # observed_connections-003932
+(config-perf-meas)# no delay-profile sr-policy <cr>    # observed_connections-003717
+(config-perf-meas)# no delay-profile sr-policy advertisement <cr>    # observed_connections-003746
+(config-perf-meas)# no delay-profile sr-policy advertisement accelerated <cr>    # observed_connections-003817
+(config-perf-meas)# no delay-profile sr-policy advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-003960
+(config-perf-meas)# no delay-profile sr-policy advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-003976
+(config-perf-meas)# no delay-profile sr-policy advertisement periodic <cr>    # observed_connections-003828
+(config-perf-meas)# no delay-profile sr-policy advertisement periodic disabled <cr>    # observed_connections-003936
+(config-perf-meas)# no delay-profile sr-policy advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003987
+(config-perf-meas)# no delay-profile sr-policy advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-003969
+(config-perf-meas)# no delay-profile sr-policy advertisement periodic threshold <number:0..100> <cr>    # observed_connections-003982
+(config-perf-meas)# no delay-profile sr-policy advertisement threshold-check <cr>    # observed_connections-003815
+(config-perf-meas)# no delay-profile sr-policy advertisement threshold-check average-delay <cr>    # observed_connections-003862
+(config-perf-meas)# no delay-profile sr-policy advertisement threshold-check maximum-delay <cr>    # observed_connections-003873
+(config-perf-meas)# no delay-profile sr-policy advertisement threshold-check minimum-delay <cr>    # observed_connections-003880
+(config-perf-meas)# no delay-profile sr-policy liveness-detection <cr>    # observed_connections-003765
+(config-perf-meas)# no delay-profile sr-policy liveness-detection multiplier <number:2..10> <cr>    # observed_connections-003905
+(config-perf-meas)# no delay-profile sr-policy probe <cr>    # observed_connections-003751
+(config-perf-meas)# no delay-profile sr-policy probe burst-interval <number:30..15000> <cr>    # observed_connections-003885
+(config-perf-meas)# no delay-profile sr-policy probe computation-interval <number:3..3600> <cr>    # observed_connections-003911
+(config-perf-meas)# no delay-profile sr-policy probe measurement-mode loopback <cr>    # observed_connections-003947
+(config-perf-meas)# no delay-profile sr-policy probe measurement-mode one-way <cr>    # observed_connections-003938
+(config-perf-meas)# no delay-profile sr-policy probe measurement-mode two-way <cr>    # observed_connections-003939
+(config-perf-meas)# no delay-profile sr-policy probe padding-size <number:0..8000> <cr>    # observed_connections-003917
+(config-perf-meas)# no delay-profile sr-policy probe protocol <cr>    # observed_connections-003846
+(config-perf-meas)# no delay-profile sr-policy probe protocol pm-mpls <cr>    # observed_connections-003950
+(config-perf-meas)# no delay-profile sr-policy probe protocol twamp-light <cr>    # observed_connections-003945
+(config-perf-meas)# no delay-profile sr-policy probe sweep <cr>    # observed_connections-003849
+(config-perf-meas)# no delay-profile sr-policy probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-003996
+(config-perf-meas)# no delay-profile sr-policy probe tos-dscp <number:0..63> <cr>    # observed_connections-003918
+(config-perf-meas)# no dual-color gre bit-position <number:9..12> <cr>    # observed_connections-003785
+(config-perf-meas)# no endpoint <string> <cr>    # observed_connections-003712
+(config-perf-meas)# no endpoint <string> delay-measurement <cr>    # observed_connections-003729
+(config-perf-meas)# no endpoint <string> delay-measurement profile <string> <cr>    # observed_connections-003853
+(config-perf-meas)# no endpoint <string> destination-address ipv4 <address> <cr>    # observed_connections-003851
+(config-perf-meas)# no endpoint <string> segment-list <cr>    # observed_connections-003740
+(config-perf-meas)# no endpoint <string> segment-list forward-path <string> <cr>    # observed_connections-003860
+(config-perf-meas)# no endpoint <string> segment-list reverse-path <string> <cr>    # observed_connections-003864
+(config-perf-meas)# no endpoint <string> shutdown <cr>    # observed_connections-003732
+(config-perf-meas)# no endpoint <string> source-address ipv4 <address> <cr>    # observed_connections-003855
+(config-perf-meas)# no endpoint <string> vrf <string> <cr>    # observed_connections-003776
+(config-perf-meas)# no loss-profile interfaces <cr>    # observed_connections-003704
+(config-perf-meas)# no loss-profile interfaces advertisement <cr>    # observed_connections-003734
+(config-perf-meas)# no loss-profile interfaces advertisement anomaly-check <cr>    # observed_connections-003791
+(config-perf-meas)# no loss-profile interfaces advertisement periodic <cr>    # observed_connections-003784
+(config-perf-meas)# no loss-profile interfaces advertisement periodic interval <number:30..3600> <cr>    # observed_connections-003952
+(config-perf-meas)# no loss-profile interfaces probe <cr>    # observed_connections-003748
+(config-perf-meas)# no loss-profile interfaces probe color-type <cr>    # observed_connections-003802
+(config-perf-meas)# no loss-profile interfaces probe color-type dual-color gre <cr>    # observed_connections-003959
+(config-perf-meas)# no loss-profile interfaces probe color-type single-color <cr>    # observed_connections-003895
+(config-perf-meas)# no loss-profile interfaces probe color-type single-color max-reordering <number:100..2000> <cr>    # observed_connections-003989
+(config-perf-meas)# no loss-profile interfaces probe tx-interval <number:10..1000> <cr>    # observed_connections-003870
+(config-perf-meas)# no protocol sdlm-light <cr>    # observed_connections-003706
+(config-perf-meas)# no protocol sdlm-light measurement loss <cr>    # observed_connections-003789
+(config-perf-meas)# no protocol sdlm-light measurement loss unauthenticated <cr>    # observed_connections-003881
+(config-perf-meas)# no protocol sdlm-light measurement loss unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003991
+(config-perf-meas)# no protocol twamp-light <cr>    # observed_connections-003707
+(config-perf-meas)# no protocol twamp-light measurement delay <cr>    # observed_connections-003790
+(config-perf-meas)# no protocol twamp-light measurement delay unauthenticated <cr>    # observed_connections-003882
+(config-perf-meas)# no protocol twamp-light measurement delay unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003992
+(config-perf-meas)# protocol sdlm-light <cr>    # observed_connections-003697
+(config-perf-meas)# protocol sdlm-light measurement loss <cr>    # observed_connections-003742
+(config-perf-meas)# protocol sdlm-light measurement loss unauthenticated <cr>    # observed_connections-003796
+(config-perf-meas)# protocol sdlm-light measurement loss unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003973
+(config-perf-meas)# protocol twamp-light <cr>    # observed_connections-003698
+(config-perf-meas)# protocol twamp-light measurement delay <cr>    # observed_connections-003743
+(config-perf-meas)# protocol twamp-light measurement delay unauthenticated <cr>    # observed_connections-003797
+(config-perf-meas)# protocol twamp-light measurement delay unauthenticated querier-dst-port <number:1024..14999> <cr>    # observed_connections-003974
+(config-perf-meas)# <cr>    # observed_connections-003691

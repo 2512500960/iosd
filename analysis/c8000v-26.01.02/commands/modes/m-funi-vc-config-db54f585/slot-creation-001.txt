@@ -1,0 +1,112 @@
+# 模式 funi-vc-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-if-funi-vc)# aaa connect-info <string> <cr>    # static_slot_creation_candidates-003226
+(config-if-funi-vc)# ancp enable <cr>    # static_slot_creation_candidates-003178
+(config-if-funi-vc)# ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003254
+(config-if-funi-vc)# bre-connect <number:dynamic> <cr>    # static_slot_creation_candidates-003259
+(config-if-funi-vc)# bridge-dot1q encap <number:dynamic> <cr>    # static_slot_creation_candidates-003264
+(config-if-funi-vc)# bridge-dot1q encap priority-tag <cr>    # static_slot_creation_candidates-003221
+(config-if-funi-vc)# bridge-vlan <number:dynamic> <cr>    # static_slot_creation_candidates-003260
+(config-if-funi-vc)# broadcast <cr>    # static_slot_creation_candidates-003160
+(config-if-funi-vc)# cac_off <cr>    # static_slot_creation_candidates-003161
+(config-if-funi-vc)# class-vc <string> <cr>    # static_slot_creation_candidates-003172
+(config-if-funi-vc)# dbs enable <cr>    # static_slot_creation_candidates-003215
+(config-if-funi-vc)# default aaa connect-info <cr>    # static_slot_creation_candidates-003227
+(config-if-funi-vc)# default ancp enable <cr>    # static_slot_creation_candidates-003224
+(config-if-funi-vc)# default ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003256
+(config-if-funi-vc)# default bre-connect <cr>    # static_slot_creation_candidates-003189
+(config-if-funi-vc)# default bridge-dot1q encap <cr>    # static_slot_creation_candidates-003219
+(config-if-funi-vc)# default bridge-vlan <cr>    # static_slot_creation_candidates-003196
+(config-if-funi-vc)# default broadcast <cr>    # static_slot_creation_candidates-003173
+(config-if-funi-vc)# default cac_off <cr>    # static_slot_creation_candidates-003179
+(config-if-funi-vc)# default class-vc <string> <cr>    # static_slot_creation_candidates-003223
+(config-if-funi-vc)# default dbs enable <cr>    # static_slot_creation_candidates-003234
+(config-if-funi-vc)# default description <cr>    # static_slot_creation_candidates-003176
+(config-if-funi-vc)# default encapsulation <cr>    # static_slot_creation_candidates-003185
+(config-if-funi-vc)# default idle-timeout <cr>    # static_slot_creation_candidates-003208
+(config-if-funi-vc)# default ilmi manage <cr>    # static_slot_creation_candidates-003229
+(config-if-funi-vc)# default inarp <cr>    # static_slot_creation_candidates-003197
+(config-if-funi-vc)# default ip <cr>    # static_slot_creation_candidates-003202
+(config-if-funi-vc)# default max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003183
+(config-if-funi-vc)# default mid <cr>    # static_slot_creation_candidates-003193
+(config-if-funi-vc)# default multiqueue <cr>    # static_slot_creation_candidates-003203
+(config-if-funi-vc)# default oam ais-rdi <cr>    # static_slot_creation_candidates-003236
+(config-if-funi-vc)# default oam retry <cr>    # static_slot_creation_candidates-003238
+(config-if-funi-vc)# default oam retry cc end <cr>    # static_slot_creation_candidates-003250
+(config-if-funi-vc)# default oam retry cc segment <cr>    # static_slot_creation_candidates-003247
+(config-if-funi-vc)# default oam-pvc <cr>    # static_slot_creation_candidates-003214
+(config-if-funi-vc)# default oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003253
+(config-if-funi-vc)# default oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003251
+(config-if-funi-vc)# default pppoe max-sessions <cr>    # static_slot_creation_candidates-003232
+(config-if-funi-vc)# default radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003245
+(config-if-funi-vc)# default rx-limit <cr>    # static_slot_creation_candidates-003209
+(config-if-funi-vc)# default rx-speed <cr>    # static_slot_creation_candidates-003170
+(config-if-funi-vc)# default transmit-priority <cr>    # static_slot_creation_candidates-003198
+(config-if-funi-vc)# default tx-limit <cr>    # static_slot_creation_candidates-003205
+(config-if-funi-vc)# default tx-ring-limit <cr>    # static_slot_creation_candidates-003212
+(config-if-funi-vc)# default vcci <cr>    # static_slot_creation_candidates-003186
+(config-if-funi-vc)# description <string> <cr>    # static_slot_creation_candidates-003175
+(config-if-funi-vc)# encapsulation aal5mux <?protoname_action@55558bf10cd0> <cr>    # static_slot_creation_candidates-003265
+(config-if-funi-vc)# encapsulation aal5snap <cr>    # static_slot_creation_candidates-003188
+(config-if-funi-vc)# idle-timeout <number:0..2000000> <cr>    # static_slot_creation_candidates-003211
+(config-if-funi-vc)# idle-timeout <number:0..2000000> <number:dynamic> <cr>    # static_slot_creation_candidates-003266
+(config-if-funi-vc)# ilmi manage <cr>    # static_slot_creation_candidates-003192
+(config-if-funi-vc)# inarp <cr>    # static_slot_creation_candidates-003164
+(config-if-funi-vc)# ip addr inarp <cr>    # static_slot_creation_candidates-003230
+(config-if-funi-vc)# max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003162
+(config-if-funi-vc)# mid <cr>    # static_slot_creation_candidates-003163
+(config-if-funi-vc)# multiqueue <cr>    # static_slot_creation_candidates-003165
+(config-if-funi-vc)# no aaa connect-info <cr>    # static_slot_creation_candidates-003225
+(config-if-funi-vc)# no ancp enable <cr>    # static_slot_creation_candidates-003222
+(config-if-funi-vc)# no ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003255
+(config-if-funi-vc)# no bre-connect <cr>    # static_slot_creation_candidates-003187
+(config-if-funi-vc)# no bridge-dot1q encap <cr>    # static_slot_creation_candidates-003218
+(config-if-funi-vc)# no bridge-vlan <cr>    # static_slot_creation_candidates-003191
+(config-if-funi-vc)# no broadcast <cr>    # static_slot_creation_candidates-003171
+(config-if-funi-vc)# no cac_off <cr>    # static_slot_creation_candidates-003177
+(config-if-funi-vc)# no class-vc <string> <cr>    # static_slot_creation_candidates-003220
+(config-if-funi-vc)# no dbs enable <cr>    # static_slot_creation_candidates-003233
+(config-if-funi-vc)# no description <cr>    # static_slot_creation_candidates-003174
+(config-if-funi-vc)# no encapsulation <cr>    # static_slot_creation_candidates-003181
+(config-if-funi-vc)# no idle-timeout <cr>    # static_slot_creation_candidates-003206
+(config-if-funi-vc)# no ilmi manage <cr>    # static_slot_creation_candidates-003228
+(config-if-funi-vc)# no inarp <cr>    # static_slot_creation_candidates-003194
+(config-if-funi-vc)# no ip <cr>    # static_slot_creation_candidates-003199
+(config-if-funi-vc)# no max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003180
+(config-if-funi-vc)# no mid <cr>    # static_slot_creation_candidates-003190
+(config-if-funi-vc)# no multiqueue <cr>    # static_slot_creation_candidates-003200
+(config-if-funi-vc)# no oam ais-rdi <cr>    # static_slot_creation_candidates-003235
+(config-if-funi-vc)# no oam retry <cr>    # static_slot_creation_candidates-003237
+(config-if-funi-vc)# no oam retry cc end <cr>    # static_slot_creation_candidates-003248
+(config-if-funi-vc)# no oam retry cc segment <cr>    # static_slot_creation_candidates-003246
+(config-if-funi-vc)# no oam-pvc <cr>    # static_slot_creation_candidates-003213
+(config-if-funi-vc)# no oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003252
+(config-if-funi-vc)# no oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003249
+(config-if-funi-vc)# no pppoe max-sessions <cr>    # static_slot_creation_candidates-003231
+(config-if-funi-vc)# no radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003244
+(config-if-funi-vc)# no rx-limit <cr>    # static_slot_creation_candidates-003207
+(config-if-funi-vc)# no rx-speed <cr>    # static_slot_creation_candidates-003169
+(config-if-funi-vc)# no transmit-priority <cr>    # static_slot_creation_candidates-003195
+(config-if-funi-vc)# no tx-limit <cr>    # static_slot_creation_candidates-003204
+(config-if-funi-vc)# no tx-ring-limit <cr>    # static_slot_creation_candidates-003210
+(config-if-funi-vc)# no vcci <cr>    # static_slot_creation_candidates-003182
+(config-if-funi-vc)# oam ais-rdi <cr>    # static_slot_creation_candidates-003216
+(config-if-funi-vc)# oam retry <cr>    # static_slot_creation_candidates-003217
+(config-if-funi-vc)# oam retry cc end <cr>    # static_slot_creation_candidates-003241
+(config-if-funi-vc)# oam retry cc segment <cr>    # static_slot_creation_candidates-003240
+(config-if-funi-vc)# oam-pvc <cr>    # static_slot_creation_candidates-003168
+(config-if-funi-vc)# oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003243
+(config-if-funi-vc)# oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003242
+(config-if-funi-vc)# pppoe max-sessions <number:dynamic> <cr>    # static_slot_creation_candidates-003267
+(config-if-funi-vc)# protocol <?protoaddr_inarp_action@55558bf268a8> <cr>    # static_slot_creation_candidates-003258
+(config-if-funi-vc)# radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003239
+(config-if-funi-vc)# rx-limit <cr>    # static_slot_creation_candidates-003166
+(config-if-funi-vc)# rx-speed <number:dynamic> <cr>    # static_slot_creation_candidates-003257
+(config-if-funi-vc)# transmit-priority <number:1..4> <cr>    # static_slot_creation_candidates-003201
+(config-if-funi-vc)# transmit-priority <number:dynamic> <cr>    # static_slot_creation_candidates-003261
+(config-if-funi-vc)# tx-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003262
+(config-if-funi-vc)# tx-ring-limit <cr>    # static_slot_creation_candidates-003167
+(config-if-funi-vc)# tx-ring-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003263
+(config-if-funi-vc)# vcci <number:0..32767> <cr>    # static_slot_creation_candidates-003184

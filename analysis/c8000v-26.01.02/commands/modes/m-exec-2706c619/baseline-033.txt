@@ -1,0 +1,317 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-033.md
+
+(exec)# do-exec test parser session-lock lock-break <cr>    # path-016781
+(exec)# do-exec test parser shell <cr>    # path-012905
+(exec)# do-exec test parser syntax exclude display <cr>    # path-020858
+(exec)# do-exec test parser syntax exclude mode <string> <cr>    # path-023330
+(exec)# do-exec test persistent variable api delete default <string> <cr>    # path-024541
+(exec)# do-exec test persistent variable api flush default <cr>    # path-023320
+(exec)# do-exec test persistent variable api get default <string> <cr>    # path-024539
+(exec)# do-exec test persistent variable api isset default <string> <cr>    # path-024537
+(exec)# do-exec test persistent variable api set default <string> <cr>    # path-024536
+(exec)# do-exec test persistent variable error <string> <cr>    # path-020801
+(exec)# do-exec test persistent variable media-delete <string> <cr>    # path-020791
+(exec)# do-exec test persistent variable show cache <cr>    # path-020780
+(exec)# do-exec test platform hardware poe cfg crit-limit <number:5000..15000> <cr>    # path-024540
+(exec)# do-exec test platform hardware poe cfg warn-limit <number:3000..8000> <cr>    # path-024545
+(exec)# do-exec test platform software cef autovpn <cr>    # path-020926
+(exec)# do-exec test platform software cef bgp <cr>    # path-020864
+(exec)# do-exec test platform software cef off <cr>    # path-020908
+(exec)# do-exec test platform software cef on <cr>    # path-020894
+(exec)# do-exec test platform software cef replicate cbl_l2mc <cr>    # path-023368
+(exec)# do-exec test platform software cef replicate mpls <cr>    # path-023359
+(exec)# do-exec test platform software crimson db-write-lock <cr>    # path-021149
+(exec)# do-exec test platform software crimson initdb <cr>    # path-021167
+(exec)# do-exec test platform software crimson notification deregister <cr>    # path-023463
+(exec)# do-exec test platform software crimson notification register <cr>    # path-023458
+(exec)# do-exec test platform software crimson operational add <number:0..4294967295> idbname <string> <cr>    # path-025115
+(exec)# do-exec test platform software crimson operational disable <cr>    # path-023507
+(exec)# do-exec test platform software crimson operational disable idb <cr>    # path-024631
+(exec)# do-exec test platform software crimson operational disable idb filter <cr>    # path-024978
+(exec)# do-exec test platform software crimson operational init <cr>    # path-023467
+(exec)# do-exec test platform software crimson operational init app <cr>    # path-024613
+(exec)# do-exec test platform software crimson operational init eventq <cr>    # path-024611
+(exec)# do-exec test platform software crimson operational init idb <cr>    # path-024619
+(exec)# do-exec test platform software crimson operational init idb filter <cr>    # path-024971
+(exec)# do-exec test platform software crimson operational lock acquire <cr>    # path-024628
+(exec)# do-exec test platform software crimson operational lock acquire offload <cr>    # path-024977
+(exec)# do-exec test platform software crimson operational lock release <cr>    # path-024632
+(exec)# do-exec test platform software crimson operational lock release offload <cr>    # path-024979
+(exec)# do-exec test platform software crimson operational lock status <cr>    # path-024630
+(exec)# do-exec test platform software crimson operational offload <cr>    # path-023500
+(exec)# do-exec test platform software crimson operational offload add <number:0..4294967295> <number:0..4294967295> <cr>    # path-025118
+(exec)# do-exec test platform software crimson operational offload delete <number:0..4294967295> <number:0..4294967295> <cr>    # path-025121
+(exec)# do-exec test platform software crimson operational offload register <cr>    # path-024617
+(exec)# do-exec test platform software crimson operational offload unregister <number:0..4294967295> <cr>    # path-024976
+(exec)# do-exec test platform software crimson operational offload update <number:0..4294967295> <number:0..4294967295> <cr>    # path-025119
+(exec)# do-exec test platform software crimson operational print db <cr>    # path-024621
+(exec)# do-exec test platform software crimson operational print subblock <number:0..4294967295> <cr>    # path-024975
+(exec)# do-exec test platform software crimson operational remove <number:0..4294967295> <cr>    # path-024623
+(exec)# do-exec test platform software crimson operational remove <number:0..4294967295> update <cr>    # path-024972
+(exec)# do-exec test platform software crimson operational set <number:0..4294967295> idbstate <number:0..4294967295> <cr>    # path-025124
+(exec)# do-exec test platform software crimson operational set <number:0..4294967295> linestate <number:0..4294967295> <cr>    # path-025120
+(exec)# do-exec test platform software crimson operational set <number:0..4294967295> namestring <string> <cr>    # path-025122
+(exec)# do-exec test platform software crimson operational update <number:0..4294967295> description <cr>    # path-024973
+(exec)# do-exec test platform software crimson persist restore-once disable-del <cr>    # path-024624
+(exec)# do-exec test platform software crimson persist restore-once enable-del <cr>    # path-024626
+(exec)# do-exec test platform software crimson unreferenced <string> <cr>    # path-023481
+(exec)# do-exec test platform software dbal batch deadline <number:1..30000> <number:1..30000> <cr>    # path-024929
+(exec)# do-exec test platform software dbal batch stress <number:1..4294967295> <number:1..2> <number:1..4294967295> <number:1..2> <cr>    # path-025177
+(exec)# do-exec test platform software dbal lipc create <cr>    # path-023350
+(exec)# do-exec test platform software dbal lipc destroy <cr>    # path-023356
+(exec)# do-exec test platform software dbal ripc create <cr>    # path-023355
+(exec)# do-exec test platform software dbal scenario <number:1..6> <cr>    # path-023341
+(exec)# do-exec test platform software dbal tunnel start <cr>    # path-023325
+(exec)# do-exec test platform software dbal tunnel stop <cr>    # path-023333
+(exec)# do-exec test platform software dta enable <cr>    # path-020951
+(exec)# do-exec test platform software dvlan notification off <cr>    # path-023384
+(exec)# do-exec test platform software dvlan notification on <cr>    # path-023375
+(exec)# do-exec test platform software feature-telemetry disable <cr>    # path-021025
+(exec)# do-exec test platform software feature-telemetry enable <cr>    # path-021045
+(exec)# do-exec test platform software flow-control identifiers allocate ebfc all <cr>    # path-024932
+(exec)# do-exec test platform software infrastructure bipc clear fd <number:1..4294967295> <number:1..4294967295> <cr>    # path-025113
+(exec)# do-exec test platform software infrastructure console on <cr>    # path-023459
+(exec)# do-exec test platform software infrastructure drop-debug off <cr>    # path-023427
+(exec)# do-exec test platform software infrastructure drop-debug on <cr>    # path-023432
+(exec)# do-exec test platform software infrastructure pae-cssm send_packet <cr>    # path-023436
+(exec)# do-exec test platform software infrastructure session open <number:1..4294967295> <cr>    # path-024607
+(exec)# do-exec test platform software infrastructure watchdog off <cr>    # path-023431
+(exec)# do-exec test platform software infrastructure watchdog on <cr>    # path-023438
+(exec)# do-exec test platform software inject bd <number:1..4096> <address> <address> ipv4 <cr>    # path-025099
+(exec)# do-exec test platform software inject bd-local <number:1..4096> <address> <address> ipv4 <cr>    # path-025100
+(exec)# do-exec test platform software inject bridge_vlan <number:1..4096> <address> <address> <cr>    # path-024945
+(exec)# do-exec test platform software inject bypass <cr>    # path-020816
+(exec)# do-exec test platform software inject inject-rate <number:1..10000> <cr>    # path-023364
+(exec)# do-exec test platform software inject ipv4 arp-trigger <cr>    # path-023416
+(exec)# do-exec test platform software inject ipv4 nexthop <address> <cr>    # path-024574
+(exec)# do-exec test platform software inject ipv6 nd-trigger <cr>    # path-023413
+(exec)# do-exec test platform software inject keepalive <cr>    # path-020821
+(exec)# do-exec test platform software inject off <cr>    # path-020829
+(exec)# do-exec test platform software inject pak-priority <cr>    # path-020841
+(exec)# do-exec test platform software license expire eval <number:1..259200> <cr>    # path-024609
+(exec)# do-exec test platform software license metering reachability <cr>    # path-023448
+(exec)# do-exec test platform software lsmpi tx-fail-retry enable <cr>    # path-023349
+(exec)# do-exec test platform software macsec pattern-delete name <string> <cr>    # path-024610
+(exec)# do-exec test platform software macsec pattern-name name <string> is-control yes has-vlan-tag yes has-vlan-inner-tag yes vlan-id <number:0..65535> inner-vlan-id <number:0..65535> priority <number:0..15> header <string> header-length <number:0..65535> control-frame dmac dest-mac <address> <cr>    # path-025273
+(exec)# do-exec test platform software multicast join <cr>    # path-020944
+(exec)# do-exec test platform software multicast leave <cr>    # path-020960
+(exec)# do-exec test platform software multicast shim dynamic <cr>    # path-023386
+(exec)# do-exec test platform software multicast shim notdl <cr>    # path-023392
+(exec)# do-exec test platform software multicast shim off <cr>    # path-023367
+(exec)# do-exec test platform software multicast shim on <cr>    # path-023358
+(exec)# do-exec test platform software multicast shim sticky <cr>    # path-023376
+(exec)# do-exec test platform software multicast shim tdl <cr>    # path-023399
+(exec)# do-exec test platform software multicast start <cr>    # path-020925
+(exec)# do-exec test platform software multicast status <cr>    # path-020892
+(exec)# do-exec test platform software multicast stop <cr>    # path-020972
+(exec)# do-exec test platform software peer timeout <cr>    # path-020822
+(exec)# do-exec test platform software product-analytics fast-grace-period <cr>    # path-021029
+(exec)# do-exec test platform software product-analytics sa-notify-false <cr>    # path-020990
+(exec)# do-exec test platform software product-analytics sa-notify-true <cr>    # path-021008
+(exec)# do-exec test platform software product-analytics timer <cr>    # path-021048
+(exec)# do-exec test platform software punt-keepalive ignore-fault <cr>    # path-020812
+(exec)# do-exec test platform software punt-keepalive trigger-failure <cr>    # path-020827
+(exec)# do-exec test platform software qos statistics <number:1..50000> <number:1..100000> <number:1..100> <cr>    # path-024950
+(exec)# do-exec test platform software redundancy use-vmac <cr>    # path-020899
+(exec)# do-exec test platform software rg ar_alwys_dvrt <number:0..4> <number:0..12> <cr>    # path-024577
+(exec)# do-exec test platform software rg notify bulksync <number:0..10> <number:0..10> <cr>    # path-024954
+(exec)# do-exec test platform software rg notify transport <number:0..10> <number:1..100000> <number:0..10> <cr>    # path-025109
+(exec)# do-exec test platform software rg services parameters <number:0..10> <number:0..10> <number:0..10> <number:0..1> <number:0..1> <cr>    # path-025227
+(exec)# do-exec test platform software rg tc-req <cr>    # path-021050
+(exec)# do-exec test platform software rg transport parameters <number:1..100000> <number:0..10> <address> <address> <number:0..10> <number:0..2048> <number:0..2048> <cr>    # path-025247
+(exec)# do-exec test platform software shell command handler automore disable <cr>    # path-024964
+(exec)# do-exec test platform software shell command handler automore manual <cr>    # path-024961
+(exec)# do-exec test platform software shell command handler basic <cr>    # path-024599
+(exec)# do-exec test platform software shell command handler null <cr>    # path-024602
+(exec)# do-exec test platform software shell command handler output redirect <cr>    # path-024958
+(exec)# do-exec test platform software shell command handler space <cr>    # path-024606
+(exec)# do-exec test platform software shell command set delete <cr>    # path-024591
+(exec)# do-exec test platform software shell command set load <cr>    # path-024590
+(exec)# do-exec test platform software stdout log running-config enable <cr>    # path-024538
+(exec)# do-exec test platform software timestamp-engine oam y1731 default disable all <cr>    # path-025110
+(exec)# do-exec test platform software timestamp-engine oam y1731 default enable all <cr>    # path-025105
+(exec)# do-exec test platform software uidp batch-count <number:0..1000> <cr>    # path-023449
+(exec)# do-exec test platform software uidp binding clear <cr>    # path-023444
+(exec)# do-exec test platform software uidp binding ip-user add <address> <number:0..4294967295> <string> <cr>    # path-025192
+(exec)# do-exec test platform software uidp binding ip-user delete <address> <number:0..4294967295> <string> <cr>    # path-025193
+(exec)# do-exec test platform software uidp binding user-usergroup add <string> <cr>    # path-024966
+(exec)# do-exec test platform software uidp binding user-usergroup delete <string> <cr>    # path-024967
+(exec)# do-exec test platform software uidp dwnld-timer <number:100..2000> <cr>    # path-023452
+(exec)# do-exec test platform software uidp user <string> <cr>    # path-023435
+(exec)# do-exec test platform software uidp user-group <string> <cr>    # path-023441
+(exec)# do-exec test platform software usb slot <number:1..4294967295> usbflash0 fake-remove <cr>    # path-024970
+(exec)# do-exec test pm <string> <cr>    # path-014759
+(exec)# do-exec test policy-manager appl-event create <cr>    # path-018520
+(exec)# do-exec test policy-manager wd-timer-event create <cr>    # path-018549
+(exec)# do-exec test pppoe init-session-num <number:1..65535> <cr>    # path-017913
+(exec)# do-exec test pppoe session <number:1..20000> autogrant <cr>    # path-021858
+(exec)# do-exec test pppoe session <number:1..20000> autogrant on <cr>    # path-023982
+(exec)# do-exec test pppoe session <number:1..20000> grant-threshold <number:0..65534> <cr>    # path-023991
+(exec)# do-exec test pppoe session <number:1..20000> headDropping <cr>    # path-021839
+(exec)# do-exec test pppoe session <number:1..20000> headDropping on <cr>    # path-023974
+(exec)# do-exec test pppoe session <number:1..20000> inband-credits <cr>    # path-021846
+(exec)# do-exec test pppoe session <number:1..20000> inband-credits on <cr>    # path-023978
+(exec)# do-exec test pppoe session <number:1..20000> local-credits <number:0..65535> <cr>    # path-024002
+(exec)# do-exec test pppoe session <number:1..20000> max-grant <number:0..65535> <cr>    # path-023987
+(exec)# do-exec test pppoe session <number:1..20000> padg <number:1..65535> <cr>    # path-023993
+(exec)# do-exec test pppoe session <number:1..20000> padg off <cr>    # path-023988
+(exec)# do-exec test pppoe session <number:1..20000> padg on <cr>    # path-023984
+(exec)# do-exec test pppoe session <number:1..20000> padq receive-only <cr>    # path-024034
+(exec)# do-exec test pppoe session <number:1..20000> peer-credits <number:0..65535> <cr>    # path-023997
+(exec)# do-exec test process create <number:1..5000> <number:1..10000> <number:1..5000> <cr>    # path-023309
+(exec)# do-exec test process kill <number:1..4294967295> <cr>    # path-016767
+(exec)# do-exec test rfd <cr>    # path-012582
+(exec)# do-exec test rib application create <string> <cr>    # path-021711
+(exec)# do-exec test rib application delete <number:0..65535> <cr>    # path-021698
+(exec)# do-exec test rib client create <string> <cr>    # path-021672
+(exec)# do-exec test rib client delete <number:1..2147483647> <cr>    # path-021617
+(exec)# do-exec test rib route show <number:1..2147483647> <cr>    # path-021677
+(exec)# do-exec test rib table set forwarding-base <cr>    # path-021690
+(exec)# do-exec test rib ut <cr>    # path-013775
+(exec)# do-exec test rmi create user-type <string> <cr>    # path-022060
+(exec)# do-exec test rmi entphyind <cr>    # path-014626
+(exec)# do-exec test rmon hc-alarms <number:1..65535> Low32bitvalue <number:0..4294967295> High32bitvalue <number:0..4294967295> <cr>    # path-025052
+(exec)# do-exec test rsvp metadata forward <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-025148
+(exec)# do-exec test rsvp nsr disable <cr>    # path-017815
+(exec)# do-exec test rsvp nsr enable <cr>    # path-017804
+(exec)# do-exec test rsvp nsr incr <cr>    # path-017796
+(exec)# do-exec test rsvp nsr start <cr>    # path-017783
+(exec)# do-exec test rsvp transport send path <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..65535> <address> <number:1..65535> data <string> <cr>    # path-025258
+(exec)# do-exec test rtty <number:0..4294967295> <string> <cr>    # path-018972
+(exec)# do-exec test rtty statistics disable <cr>    # path-019047
+(exec)# do-exec test rtty statistics enable <cr>    # path-019009
+(exec)# do-exec test rtty statistics print <cr>    # path-019077
+(exec)# do-exec test sasl client ip <address> port <number:0..65535> <cr>    # path-024851
+(exec)# do-exec test sasl client ip <address> port <number:0..65535> profile <string> <cr>    # path-025165
+(exec)# do-exec test sasl server port <number:0..65535> <cr>    # path-022433
+(exec)# do-exec test sasl server port <number:0..65535> profile <string> <cr>    # path-024850
+(exec)# do-exec test sasl server stop <cr>    # path-019121
+(exec)# do-exec test save snapshot <cr>    # path-012879
+(exec)# do-exec test scheduler trash edisms <cr>    # path-017687
+(exec)# do-exec test scheduler watched-message <cr>    # path-013332
+(exec)# do-exec test sctp association create <cr>    # path-017663
+(exec)# do-exec test sctp delete <cr>    # path-013720
+(exec)# do-exec test sctp instance create <cr>    # path-017648
+(exec)# do-exec test sctp instance delete <number:1..65535> <cr>    # path-021572
+(exec)# do-exec test sctp parameters burstsize <number:1..1024> <cr>    # path-021679
+(exec)# do-exec test sctp parameters congabate <number:1..3> <number:0..65535> <cr>    # path-023958
+(exec)# do-exec test sctp parameters conglevels <number:0..3> <cr>    # path-021763
+(exec)# do-exec test sctp parameters congonset <number:1..3> <number:0..65535> <cr>    # path-023954
+(exec)# do-exec test sctp parameters delay <number:0..60000> <cr>    # path-021691
+(exec)# do-exec test sctp parameters display <cr>    # path-017877
+(exec)# do-exec test sctp parameters fixedparams <number:0..1> <cr>    # path-021605
+(exec)# do-exec test sctp parameters hbenabled <number:0..1> <cr>    # path-021700
+(exec)# do-exec test sctp parameters hbtimeout <number:0..600000> <cr>    # path-021712
+(exec)# do-exec test sctp parameters instreams <number:1..1024> <cr>    # path-021550
+(exec)# do-exec test sctp parameters maxRTO <number:300..65535> <cr>    # path-021743
+(exec)# do-exec test sctp parameters maxoutstand <number:0..1024> <cr>    # path-021662
+(exec)# do-exec test sctp parameters maxpackets <number:0..65535> <cr>    # path-021639
+(exec)# do-exec test sctp parameters maxpdusize <number:4..10000> <cr>    # path-021590
+(exec)# do-exec test sctp parameters minRTO <number:300..65535> <cr>    # path-021732
+(exec)# do-exec test sctp parameters outstreams <number:1..1024> <cr>    # path-021533
+(exec)# do-exec test sctp parameters pdusize <number:4..10000> <cr>    # path-021573
+(exec)# do-exec test sctp parameters rcvwin <number:1500..65535> <cr>    # path-021754
+(exec)# do-exec test sctp parameters testtype <number:0..1> <cr>    # path-021723
+(exec)# do-exec test sctp parameters usealladdrs <number:0..1> <cr>    # path-021619
+(exec)# do-exec test sdb add <string> <cr>    # path-018443
+(exec)# do-exec test sdb remove <string> <cr>    # path-018471
+(exec)# do-exec test sdb search <string> <cr>    # path-018497
+(exec)# do-exec test service-overlay application register <cr>    # path-017712
+(exec)# do-exec test service-routing api debug <number:0..4294967295> <number:0..4294967295> <cr>    # path-023976
+(exec)# do-exec test service-routing api publish-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <number:1..4294967295> <number:0..32768> <cr>    # path-025268
+(exec)# do-exec test service-routing api register-client <number:0..4294967295> <cr>    # path-021793
+(exec)# do-exec test service-routing api register-client <number:0..4294967295> <string> <cr>    # path-023957
+(exec)# do-exec test service-routing api subscribe-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <number:0..255> <cr>    # path-025267
+(exec)# do-exec test service-routing api unpublish-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-025263
+(exec)# do-exec test service-routing api unregister-client <number:1..4294967295> <cr>    # path-021790
+(exec)# do-exec test service-routing api unsubscribe-service <number:1..4294967295> <number:1..4294967295> <cr>    # path-023969
+(exec)# do-exec test service-routing api version <cr>    # path-017843
+(exec)# do-exec test service-routing capabilities-manager api register <string> <string> <string> <cr>    # path-025039
+(exec)# do-exec test service-routing capabilities-manager api unregister <string> <string> <cr>    # path-024758
+(exec)# do-exec test service-routing capabilities-manager api version <cr>    # path-021775
+(exec)# do-exec test service-routing xmcp client <number:0..4294967295> error-response <number:100..699> <cr>    # path-024757
+(exec)# do-exec test session-mgr acct-stats start <cr>    # path-017688
+(exec)# do-exec test session-mgr cga-remote-auth authc <number:1..4294967295> <cr>    # path-021637
+(exec)# do-exec test session-mgr crimson table mab create <cr>    # path-023908
+(exec)# do-exec test session-mgr event send async start handle <number:1..4294967295> <cr>    # path-025007
+(exec)# do-exec test session-mgr fqdn-epm-notify <number:1..4294967295> <address> <cr>    # path-021676
+(exec)# do-exec test session-mgr green create <cr>    # path-017779
+(exec)# do-exec test session-mgr identity mac <address> add ip <address> <cr>    # path-025034
+(exec)# do-exec test session-mgr sm-client register <cr>    # path-017672
+(exec)# do-exec test session-mgr test-vlan <string> <number:1..4095> <number:1..4> <number:1..1000> <cr>    # path-024736
+(exec)# do-exec test snmp cpu-stats start <cr>    # path-017562
+(exec)# do-exec test snmp trap config-copy <cr>    # path-017697
+(exec)# do-exec test ssm asynchronous throttling print <cr>    # path-021316
+(exec)# do-exec test ssm counters enable <cr>    # path-017254
+(exec)# do-exec test ssm fcdb nosupport <number:1..25> <number:0..2> <cr>    # path-023525
+(exec)# do-exec test ssm feature status <cr>    # path-017384
+(exec)# do-exec test ssm repop <number:1..14> <number:0..2> <cr>    # path-021223
+(exec)# do-exec test ssm segment lock <number:1..4294967295> <cr>    # path-021283
+(exec)# do-exec test ssm segment support enable <number:1..41> <cr>    # path-023539
+(exec)# do-exec test subscriber feature accounting accuracy throttling print <cr>    # path-024646
+(exec)# do-exec test subscriber feature timer acceleration enable <cr>    # path-023592
+(exec)# do-exec test subscriber policy account-logon session <number:0..4294967295> <cr>    # path-023725
+(exec)# do-exec test subscriber policy condition-map <string> <string> <cr>    # path-023621
+(exec)# do-exec test subscriber policy dummy <cr>    # path-017453
+(exec)# do-exec test subscriber policy epd accounting-req start session-guid <string> epd-flow-id <number:0..32> epd-ipaddress <address> <cr>    # path-025243
+(exec)# do-exec test subscriber policy epd conn_mgmt-query version <string> command <string> peer-ip <address> keepalive <number:0..3600> <cr>    # path-025250
+(exec)# do-exec test subscriber policy epd conn_mgmt-ses-test <number:1..2> <number:0..30> <string> <cr>    # path-024999
+(exec)# do-exec test subscriber policy epd handler coa-request epd-ipaddress <address> attr-list <string> <cr>    # path-025207
+(exec)# do-exec test subscriber policy epd handler disconnect-request epd-ipaddress <address> attr-list <string> <cr>    # path-025208
+(exec)# do-exec test subscriber policy epd handler stop <cr>    # path-023715
+(exec)# do-exec test subscriber policy epd session-mgmt-req activate-policy-req session-handle <number:0..4294967295> <cr>    # path-024991
+(exec)# do-exec test subscriber policy epd session-query-req session-ipaddress <address> epd-ipaddress <address> <cr>    # path-025131
+(exec)# do-exec test subscriber policy epd session-terminate-req session-handle <number:0..4294967295> <cr>    # path-024656
+(exec)# do-exec test subscriber policy insert circuit-id <string> <cr>    # path-023787
+(exec)# do-exec test subscriber policy mlplink-added session <number:0..4294967295> <cr>    # path-023670
+(exec)# do-exec test subscriber policy policy-client session <number:0..4294967295> client Radius-Proxy event start <cr>    # path-025205
+(exec)# do-exec test subscriber policy send-session-log session <number:0..4294967295> <cr>    # path-023770
+(exec)# do-exec test subscriber policy service-profile-download <string> <cr>    # path-021359
+(exec)# do-exec test subscriber policy service-start session <number:0..4294967295> name <string> <cr>    # path-025004
+(exec)# do-exec test subscriber policy service-stop session <number:0..4294967295> name <string> <cr>    # path-025003
+(exec)# do-exec test subscriber policy session-deactivated session <number:0..4294967295> <cr>    # path-023704
+(exec)# do-exec test subscriber policy tcsession-req <cr>    # path-017475
+(exec)# do-exec test subscriber policy update session <number:0..4294967295> attr-list <string> <cr>    # path-025010
+(exec)# do-exec test sw-vlan show data <cr>    # path-017417
+(exec)# do-exec test system secure db <cr>    # path-018051
+(exec)# do-exec test tcp delay <number:0..2147483647> <cr>    # path-012492
+(exec)# do-exec test tcp drop <number:0..2147483647> <cr>    # path-012488
+(exec)# do-exec test tcp line <number:0..2147483647> <cr>    # path-012494
+(exec)# do-exec test tcp random <number:0..2147483647> <cr>    # path-012496
+(exec)# do-exec test template scope global <string> bind dynamic <cr>    # path-024775
+(exec)# do-exec test template scope global <string> unbind dynamic <cr>    # path-024778
+(exec)# do-exec test template scope interface <string> bind static merge interface-global <cr>    # path-025150
+(exec)# do-exec test template scope interface <string> bind static replace interface-global <cr>    # path-025152
+(exec)# do-exec test template scope interface <string> unbind static interface-global <cr>    # path-025048
+(exec)# do-exec test template scope interface nvgen interface-global <cr>    # path-024006
+(exec)# do-exec test tenant-mgr disable-cfg <cr>    # path-013983
+(exec)# do-exec test tenant-mgr enable-cfg <cr>    # path-013965
+(exec)# do-exec test timer-wheel process create <cr>    # path-017162
+(exec)# do-exec test topology clients <cr>    # path-013385
+(exec)# do-exec test topology create ipv6 <cr>    # path-017354
+(exec)# do-exec test topology delete ipv6 <cr>    # path-017334
+(exec)# do-exec test topology lookup ipv6 <cr>    # path-017305
+(exec)# do-exec test topology walk <cr>    # path-013427
+(exec)# do-exec test track map name <string> create <cr>    # path-023540
+(exec)# do-exec test track map name <string> del <cr>    # path-023575
+(exec)# do-exec test track map name <string> get <cr>    # path-023558
+(exec)# do-exec test track map num <number:1..32767> del <cr>    # path-023573
+(exec)# do-exec test track map num <number:1..32767> get <cr>    # path-023552
+(exec)# do-exec test track service <string> up <cr>    # path-021236
+(exec)# do-exec test track white-box <cr>    # path-013359
+(exec)# do-exec test tunnel Groups wccp <number:0..9> add <cr>    # path-023881
+(exec)# do-exec test tunnel Groups wccp <number:0..9> add ipv4 V1 <cr>    # path-025024
+(exec)# do-exec test tunnel Groups wccp <number:0..9> clear <cr>    # path-023916
+(exec)# do-exec test tunnel Groups wccp <number:0..9> delete <cr>    # path-023860
+(exec)# do-exec test tunnel Groups wccp <number:0..9> df-bit set <cr>    # path-024742
+(exec)# do-exec test tunnel Groups wccp <number:0..9> endpoint <address> add <cr>    # path-025026
+(exec)# do-exec test tunnel Groups wccp <number:0..9> endpoint <address> delete <cr>    # path-025029
+(exec)# do-exec test tunnel Groups wccp <number:0..9> source <address> <cr>    # path-024731
+(exec)# do-exec test tunnel tun-to <number:0..9> add transport ipv4 none <cr>    # path-025021
+(exec)# do-exec test tunnel tun-to <number:0..9> delete <cr>    # path-021578
+(exec)# do-exec test tunnel tun-to <number:0..9> display <number:0..160> <cr>    # path-023898
+(exec)# do-exec test tunnel tun-to <number:0..9> endpoint <address> add <cr>    # path-024723
+(exec)# do-exec test tunnel tun-to <number:0..9> endpoint <address> delete <cr>    # path-024734
+(exec)# do-exec test tunnel tun-to <number:0..9> feature enable post-encap <cr>    # path-024739

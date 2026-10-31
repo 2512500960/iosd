@@ -1,0 +1,10 @@
+# 模式 l2-pw-rtg；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-l2-pw-rtg)# default switching-point vcid <cr>    # static_slot_creation_candidates-004577
+(config-l2-pw-rtg)# default terminating-pe <cr>    # static_slot_creation_candidates-004575
+(config-l2-pw-rtg)# no switching-point vcid <cr>    # static_slot_creation_candidates-004576
+(config-l2-pw-rtg)# no terminating-pe <cr>    # static_slot_creation_candidates-004573
+(config-l2-pw-rtg)# switching-point vcid <number:1..2147483647> <number:1..2147483647> <cr>    # static_slot_creation_candidates-004578
+(config-l2-pw-rtg)# terminating-pe tie-breaker <cr>    # static_slot_creation_candidates-004574

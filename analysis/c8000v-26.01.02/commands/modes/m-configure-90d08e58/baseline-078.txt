@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-078.md
+
+(config)# no cts policy-server username <cr>    # path-031042
+(config)# no cts role-based enforcement <cr>    # path-029179
+(config)# no cts role-based enforcement logging-interval <number:5..86400> <cr>    # path-044974
+(config)# no cts role-based ipv6-copy <cr>    # path-028878
+(config)# no cts role-based monitor all <cr>    # path-035092
+(config)# no cts role-based policy priority-static <cr>    # path-035272
+(config)# no cts role-based sgt-caching <cr>    # path-029184
+(config)# no cts role-based sgt-caching with-enforcement <cr>    # path-035206
+(config)# no cts role-based sgt-map <address> <cr>    # path-035282
+(config)# no cts server load-balance <cr>    # path-030799
+(config)# no cts sgt <cr>    # path-027480
+(config)# no cts sxp enable <cr>    # path-030992
+(config)# no cts sxp import-list <string> <cr>    # path-037988
+(config)# no cts sxp limit export peer-sequence-nodes <number:2..64> <cr>    # path-054421
+(config)# no cwmp agent <cr>    # path-027334
+(config)# no default-value data-character-bits <cr>    # path-025895
+(config)# no default-value exec-character-bits <cr>    # path-025881
+(config)# no default-value special-character-bits <cr>    # path-025888
+(config)# no define interface-range <string> <cr>    # path-028039
+(config)# no device-tracking <cr>    # path-025933
+(config)# no device-tracking export oper-data <cr>    # path-030566
+(config)# no device-tracking full-proxy <cr>    # path-027387
+(config)# no device-tracking history ip disable <cr>    # path-037252
+(config)# no device-tracking history ip length <cr>    # path-037292
+(config)# no device-tracking logging <cr>    # path-027416
+(config)# no device-tracking policy <string> <cr>    # path-030529
+(config)# no device-tracking service-support device-tracking-layer3 <number:0..7> <cr>    # path-037376
+(config)# no device-tracking tdl dhcp-stats <cr>    # path-030590
+(config)# no device-tracking tdl disable dhcp-faults <cr>    # path-037371
+(config)# no device-tracking tracking <cr>    # path-027377
+(config)# no device-tracking tracking auto-source <cr>    # path-030484
+(config)# no device-tracking tracking retry-interval <cr>    # path-030509
+(config)# no device-tracking unit-test bulk-sync <cr>    # path-030450
+(config)# no device-tracking unit-test check-reach vlan <number:0..4096> <address> <cr>    # path-054059
+(config)# no device-tracking unit-test disable-cli-sync <cr>    # path-030961
+(config)# no device-tracking unit-test dna vlan <number:1..4096> <cr>    # path-046900
+(config)# no device-tracking unit-test ha-sync-msg msg-type bt-entry action enable <cr>    # path-057956
+(config)# no device-tracking unit-test ip-dhcp-snooping vlan <number:1..4096> <cr>    # path-046906
+(config)# no device-tracking unit-test lisp-dt vlan <number:1..4096> <cr>    # path-046977
+(config)# no device-tracking unit-test pgm <cr>    # path-030733
+(config)# no device-tracking unit-test profile vlan <number:1..4096> <cr>    # path-046845
+(config)# no device-tracking unit-test reapply-filters vlan <number:1..4096> <cr>    # path-047178
+(config)# no device-tracking unit-test replace-policy vlan <number:1..4096> old <string> new <string> <cr>    # path-059836
+(config)# no device-tracking unit-test upgm <cr>    # path-030752
+(config)# no device-tracking unlock policy <string> <cr>    # path-037345
+(config)# no device-tracking upgrade-cli <cr>    # path-027374
+(config)# no diagnostic cns publish <cr>    # path-031277
+(config)# no diagnostic event-log size <cr>    # path-031139
+(config)# no diagnostic level <cr>    # path-027553
+(config)# no diagnostic monitor global <cr>    # path-031253
+(config)# no diagnostic monitor syslog <cr>    # path-031188
+(config)# no diagnostic soft-error recovery <cr>    # path-031120
+(config)# no diameter attribute list <number:0..99> <cr>    # path-036474
+(config)# no diameter gx retransmit <cr>    # path-030327
+(config)# no diameter gx subscription-id-type <cr>    # path-030371
+(config)# no diameter gx tx-timer <cr>    # path-030353
+(config)# no diameter origin host <cr>    # path-030232
+(config)# no diameter origin realm <cr>    # path-030195
+(config)# no diameter peer <string> <cr>    # path-030249
+(config)# no diameter redundancy <cr>    # path-027192
+(config)# no diameter timer connection <cr>    # path-030155
+(config)# no diameter vendor supported vodafone <cr>    # path-036678
+(config)# no dlsw allroute-netbios <cr>    # path-026892
+(config)# no dlsw allroute-sna <cr>    # path-026863
+(config)# no dlsw bridge-group <number:1..255> <cr>    # path-029283
+(config)# no dlsw cache-ignore-netbios-datagram <cr>    # path-026766
+(config)# no dlsw circuit-keepalives <cr>    # path-026966
+(config)# no dlsw disable <cr>    # path-026931
+(config)# no dlsw duplicate-path-bias <cr>    # path-026598
+(config)# no dlsw explorerQ-depth <number:10..1000> <cr>    # path-029153
+(config)# no dlsw fast-hpr-support <cr>    # path-026492
+(config)# no dlsw group-cache disable <cr>    # path-029766
+(config)# no dlsw group-cache enable <cr>    # path-029830
+(config)# no dlsw group-cache max-entries <cr>    # path-027147
+(config)# no dlsw history-log <cr>    # path-026993
+(config)# no dlsw icanreach mac-exclusive <cr>    # path-028701
+(config)# no dlsw llc2 nornr <cr>    # path-029721
+(config)# no dlsw load-balance <cr>    # path-026642
+(config)# no dlsw local-peer <cr>    # path-026425
+(config)# no dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-044900
+(config)# no dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-044901
+(config)# no dlsw max-multiple-rifs <cr>    # path-025727
+(config)# no dlsw multicast <cr>    # path-027099
+(config)# no dlsw netbios-cache-length <cr>    # path-026449
+(config)# no dlsw netbios-keepalive-filter <cr>    # path-027010
+(config)# no dlsw peer-log-changes <cr>    # path-026754
+(config)# no dlsw peer-on-demand-defaults <cr>    # path-026875
+(config)# no dlsw prom-peer-defaults <cr>    # path-026952
+(config)# no dlsw redundant-rings <cr>    # path-026713
+(config)# no dlsw remote-peer <number:0..4095> tcp <address> <cr>    # path-044520
+(config)# no dlsw rsvp <cr>    # path-026603
+(config)# no dlsw snmp-traps-extended <cr>    # path-026443
+(config)# no dlsw tbridge-maxmtu-4472 <cr>    # path-026722
+(config)# no dlsw timer sna-explorer-timeout <cr>    # path-028505
+(config)# no dlsw tos disable <cr>    # path-029579
+(config)# no dlsw tos map <cr>    # path-029748
+(config)# no dlsw tos-disable <cr>    # path-027046
+(config)# no dlsw touch-timer touch-nb-cache-timeout <cr>    # path-028532
+(config)# no dlsw transparent switch-support <cr>    # path-029820
+(config)# no dlsw udp-disable <cr>    # path-026989
+(config)# no dlsw xid-modify-tws <cr>    # path-026743
+(config)# no dnsix-dmdp retries <cr>    # path-026899
+(config)# no dnsix-nat source <cr>    # path-026921
+(config)# no do-exec <number:1..99> <cr>    # path-026358
+(config)# no do-exec <string> <cr>    # path-025994
+(config)# no do-exec aaa tools memleak-detection-start <cr>    # path-034329
+(config)# no do-exec access-enable <cr>    # path-026807
+(config)# no do-exec access-profile <cr>    # path-026834
+(config)# no do-exec access-session remote-device-notification mac <address> <cr>    # path-045046
+(config)# no do-exec access-template <number:100..199> <string> any any <cr>    # path-052676
+(config)# no do-exec acm confirm-commit <cr>    # path-028136
+(config)# no do-exec alps update-circuits <cr>    # path-030611
+(config)# no do-exec archive config <cr>    # path-030504
+(config)# no do-exec archive log config add comment <string> <cr>    # path-057769
+(config)# no do-exec archive tar /table <string> <cr>    # path-046659
+(config)# no do-exec authentication display config-mode <cr>    # path-036068
+(config)# no do-exec authentication display legacy <cr>    # path-036229
+(config)# no do-exec auto secure <cr>    # path-028243
+(config)# no do-exec beep kill session <cr>    # path-036344
+(config)# no do-exec bingd stop <cr>    # path-030189
+(config)# no do-exec bingd template <string> <cr>    # path-036663
+(config)# no do-exec bingng template <string> <cr>    # path-036759
+(config)# no do-exec bulkstat profile <string> disable <cr>    # path-046897
+(config)# no do-exec bulkstat profile <string> enable repeat <number:1..4294967294> <cr>    # path-046899
+(config)# no do-exec call-home debug syslog-throttling timer <number:1..86400> <cr>    # path-052583
+(config)# no do-exec call-home diagnostic-signature deinstall <number:1..99999999> <cr>    # path-044826
+(config)# no do-exec call-home diagnostic-signature deinstall all <cr>    # path-044770
+(config)# no do-exec call-home diagnostic-signature download <number:1..99999999> <cr>    # path-044779
+(config)# no do-exec call-home diagnostic-signature download all <cr>    # path-044720
+(config)# no do-exec call-home diagnostic-signature install <number:1..99999999> <cr>    # path-044814
+(config)# no do-exec call-home diagnostic-signature load <string> <cr>    # path-044854
+(config)# no do-exec call-home request config-sanity profile <string> <cr>    # path-052577
+(config)# no do-exec call-home request registration-info <cr>    # path-035396
+(config)# no do-exec call-home send <string> email <string> <cr>    # path-052612
+(config)# no do-exec call-home send <string> tac-service-request <string> <cr>    # path-052748
+(config)# no do-exec call-home send alert-group configuration <cr>    # path-044622
+(config)# no do-exec call-home test <string> profile <string> <cr>    # path-052557
+(config)# no do-exec cd <cr>    # path-027443
+(config)# no do-exec clear <cr>    # path-026078
+(config)# no do-exec clear aaa cache filterserver acl <cr>    # path-054488
+(config)# no do-exec clear aaa cache group <string> all <cr>    # path-058045
+(config)# no do-exec clear aaa counters clients <cr>    # path-047577
+(config)# no do-exec clear aaa counters command handler <cr>    # path-054484
+(config)# no do-exec clear aaa counters requests <cr>    # path-047600
+(config)# no do-exec clear aaa counters servers all <cr>    # path-054499
+(config)# no do-exec clear aaa local statistics <cr>    # path-047567
+(config)# no do-exec clear aaa local user blocked all <cr>    # path-058049
+(config)# no do-exec clear aaa local user fail-attempts all <cr>    # path-058040
+(config)# no do-exec clear aaa local user lockout all <cr>    # path-058035
+(config)# no do-exec clear aaa tools memleak <cr>    # path-047562
+(config)# no do-exec clear access-list counters <cr>    # path-034213
+(config)# no do-exec clear access-list fqdn statistics <cr>    # path-043965
+(config)# no do-exec clear access-template <number:100..199> <string> any any <cr>    # path-057104
+(config)# no do-exec clear adjacency <cr>    # path-028630
+(config)# no do-exec clear alps circuits <cr>    # path-039034
+(config)# no do-exec clear alps counters <cr>    # path-038809
+(config)# no do-exec clear archive log config <cr>    # path-047608
+(config)# no do-exec clear arp-cache <address> <cr>    # path-034283
+(config)# no do-exec clear arp-cache <cr>    # path-028314
+(config)# no do-exec clear arp-cache counters ha <cr>    # path-044142
+(config)# no do-exec clear avc sd-service <cr>    # path-037217
+(config)# no do-exec clear avc sd-service cmds <cr>    # path-046493
+(config)# no do-exec clear avc sd-service device-health <cr>    # path-046384
+(config)# no do-exec clear avc sd-service device-table <cr>    # path-046547
+(config)# no do-exec clear avc sd-service ent-export <cr>    # path-046444
+(config)# no do-exec clear avc sd-service flow-counters <cr>    # path-046314
+(config)# no do-exec clear avc sd-service telemetry-table counters <cr>    # path-053937
+(config)# no do-exec clear bfd counters <cr>    # path-036213
+(config)# no do-exec clear bfd dampening <cr>    # path-036277
+(config)# no do-exec clear bgp ipv4 <cr>    # path-037511
+(config)# no do-exec clear bgp ipv4 cease <cr>    # path-046778
+(config)# no do-exec clear bgp ipv4 flap-statistics <cr>    # path-046728
+(config)# no do-exec clear bgp ipv4 internal <cr>    # path-046729
+(config)# no do-exec clear bgp ipv4 update-group <number:1..4294967295> <cr>    # path-054161
+(config)# no do-exec clear bgp ipv4 vrf <string> dampening <cr>    # path-057843
+(config)# no do-exec clear bgp ipv4 vrf <string> flap-statistics <cr>    # path-057866
+(config)# no do-exec clear bridge <cr>    # path-031396
+(config)# no do-exec clear bridge-domain route stats <cr>    # path-044594
+(config)# no do-exec clear bsc <cr>    # path-031520
+(config)# no do-exec clear bstun <cr>    # path-031552
+(config)# no do-exec clear call admission statistics <cr>    # path-047212
+(config)# no do-exec clear call-home diagnostic-signature statistics <cr>    # path-044621
+(config)# no do-exec clear call-home diagnostic-signature statistics download <cr>    # path-052512
+(config)# no do-exec clear call-home smart-licensing statistics <cr>    # path-044597
+(config)# no do-exec clear call-home statistics <cr>    # path-034754
+(config)# no do-exec clear cdp counters <cr>    # path-035097
+(config)# no do-exec clear cdp table <cr>    # path-035159
+(config)# no do-exec clear cef interface policy-statistics <cr>    # path-044512
+(config)# no do-exec clear cef linecard <cr>    # path-035188
+(config)# no do-exec clear cef linecard Adjacency <cr>    # path-044839
+(config)# no do-exec clear cef linecard Interface <cr>    # path-044790
+(config)# no do-exec clear cef linecard Prefix <cr>    # path-044741
+(config)# no do-exec clear cef linecard events <cr>    # path-044638
+(config)# no do-exec clear cef load-balance statistics <cr>    # path-044469
+(config)# no do-exec clear cef table IPv4 <cr>    # path-044760
+(config)# no do-exec clear cef table IPv4 consistency-check <cr>    # path-052538
+(config)# no do-exec clear cft stats <cr>    # path-036353
+(config)# no do-exec clear checkpoint clients <cr>    # path-034528
+(config)# no do-exec clear checkpoint entities <cr>    # path-034480
+(config)# no do-exec clear checkpoint statistics <cr>    # path-034562
+(config)# no do-exec clear class-map control <cr>    # path-036140
+(config)# no do-exec clear clns cache <cr>    # path-037476
+(config)# no do-exec clear clns es-neighbors <cr>    # path-037562
+(config)# no do-exec clear clns is-neighbors <cr>    # path-037589
+(config)# no do-exec clear clns neighbors <cr>    # path-037631
+(config)# no do-exec clear clns route <cr>    # path-037524
+(config)# no do-exec clear clns traffic <cr>    # path-037674
+(config)# no do-exec clear cns config stats <cr>    # path-047868
+(config)# no do-exec clear cns counters <cr>    # path-038610
+(config)# no do-exec clear cns event stats <cr>    # path-047820
+(config)# no do-exec clear cns image connections <cr>    # path-047957
+(config)# no do-exec clear cns image status <cr>    # path-047904
+(config)# no do-exec clear configuration lock <cr>    # path-034099
+(config)# no do-exec clear control-plane <cr>    # path-031308
+(config)# no do-exec clear controller all <cr>    # path-034273
+(config)# no do-exec clear counters <cr>    # path-027961
+(config)# no do-exec clear crypto autovpn session <cr>    # path-047523
+(config)# no do-exec clear crypto autovpn session peer <number:1..2147483647> <cr>    # path-058024
+(config)# no do-exec clear crypto ceal statistics <cr>    # path-047493
+(config)# no do-exec clear crypto engine accelerator counter <cr>    # path-054489
+(config)# no do-exec clear crypto ha statistics <cr>    # path-047536
+(config)# no do-exec clear crypto pki benchmarks <cr>    # path-047460
+(config)# no do-exec clear crypto pki counters <cr>    # path-047411
+(config)# no do-exec clear crypto pki crl <cr>    # path-047505
+(config)# no do-exec clear cts credentials <cr>    # path-038200
+(config)# no do-exec clear cts role-based counters <cr>    # path-048244
+(config)# no do-exec clear device-tracking database policy <string> <cr>    # path-054320
+(config)# no do-exec clear device-tracking events <cr>    # path-037752
+(config)# no do-exec clear device-tracking messages <cr>    # path-037805
+(config)# no do-exec clear dhcp-server-tracking database <cr>    # path-037659
+(config)# no do-exec clear diagnostic event-log <cr>    # path-039041
+(config)# no do-exec clear diagnostic event-log slot all <cr>    # path-054679
+(config)# no do-exec clear dialer <cr>    # path-028370
+(config)# no do-exec clear dialer dnis group <string> <cr>    # path-052264
+(config)# no do-exec clear dialer dnis number <string> <cr>    # path-052208
+(config)# no do-exec clear dialer dnis range <string> <string> <cr>    # path-056834
+(config)# no do-exec clear dialer sessions <cr>    # path-034375
+(config)# no do-exec clear diameter gx statistics <cr>    # path-048825
+(config)# no do-exec clear diameter peer connection all <cr>    # path-055062
+(config)# no do-exec clear diameter peer connection name <string> <cr>    # path-058307
+(config)# no do-exec clear diameter peer statistics all <cr>    # path-055099
+(config)# no do-exec clear diameter peer statistics name <string> <cr>    # path-058325
+(config)# no do-exec clear dlep counters <cr>    # path-038231
+(config)# no do-exec clear dlsw reachability <cr>    # path-039157
+(config)# no do-exec clear dmvpn statistics <cr>    # path-039038
+(config)# no do-exec clear drip counters <cr>    # path-038855
+(config)# no do-exec clear dspfarm statistics <cr>    # path-034046
+(config)# no do-exec clear dtp counter <cr>    # path-036677
+(config)# no do-exec clear eigrp address-family ipv4 events <cr>    # path-054372
+(config)# no do-exec clear eigrp address-family ipv4 logging <cr>    # path-054352
+(config)# no do-exec clear eigrp address-family ipv4 neighbors <cr>    # path-054397
+(config)# no do-exec clear eigrp address-family ipv4 perf-stats <cr>    # path-054413
+(config)# no do-exec clear eigrp address-family ipv4 topology <address> <address> <cr>    # path-059344
+(config)# no do-exec clear eigrp address-family ipv4 topology active <cr>    # path-057982
+(config)# no do-exec clear eigrp address-family ipv4 traffic <cr>    # path-054392
+(config)# no do-exec clear eigrp address-family ipv6 events <cr>    # path-054353
+(config)# no do-exec clear eigrp address-family ipv6 logging <cr>    # path-054339
+(config)# no do-exec clear eigrp address-family ipv6 neighbors <cr>    # path-054376
+(config)# no do-exec clear eigrp address-family ipv6 perf-stats <cr>    # path-054393
+(config)# no do-exec clear eigrp address-family ipv6 topology active <cr>    # path-057967
+(config)# no do-exec clear eigrp address-family ipv6 traffic <cr>    # path-054373
+(config)# no do-exec clear eigrp service-family external-client <string> <cr>    # path-054290
+(config)# no do-exec clear eigrp service-family ipv4 events <cr>    # path-054371
+(config)# no do-exec clear eigrp service-family ipv4 logging <cr>    # path-054351
+(config)# no do-exec clear eigrp service-family ipv4 neighbors <cr>    # path-054396
+(config)# no do-exec clear eigrp service-family ipv4 topology <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060261
+(config)# no do-exec clear eigrp service-family ipv4 topology active <cr>    # path-057974
+(config)# no do-exec clear eigrp service-family ipv4 traffic <cr>    # path-054391
+(config)# no do-exec clear eigrp service-family ipv6 events <cr>    # path-054409
+(config)# no do-exec clear eigrp service-family ipv6 logging <cr>    # path-054387
+(config)# no do-exec clear eigrp service-family ipv6 neighbors <cr>    # path-054429
+(config)# no do-exec clear eigrp service-family ipv6 topology <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060263
+(config)# no do-exec clear eigrp service-family ipv6 topology active <cr>    # path-057988
+(config)# no do-exec clear eigrp service-family ipv6 traffic <cr>    # path-054425
+(config)# no do-exec clear entry <number:0..256> <cr>    # path-035096
+(config)# no do-exec clear environment counters <cr>    # path-038435
+(config)# no do-exec clear eobc counters <cr>    # path-034473
+(config)# no do-exec clear eobc interface <cr>    # path-034525
+(config)# no do-exec clear ethernet cfm ais domain <string> mpid <number:1..8191> port <cr>    # path-059970
+(config)# no do-exec clear ethernet cfm ccm-learning-database <cr>    # path-044669
+(config)# no do-exec clear ethernet cfm errors <cr>    # path-044496
+(config)# no do-exec clear ethernet cfm fast-timeout statistics <cr>    # path-052413
+(config)# no do-exec clear ethernet cfm latching-loopback discover-phase mep <cr>    # path-056899
+(config)# no do-exec clear ethernet cfm latching-loopback discover-phase mip <cr>    # path-056894
+(config)# no do-exec clear ethernet cfm maintenance-points remote <cr>    # path-052277
+(config)# no do-exec clear ethernet cfm maintenance-points remote domain <string> <cr>    # path-058921
+(config)# no do-exec clear ethernet cfm pm session db <number:0..8000> <cr>    # path-058931
+(config)# no do-exec clear ethernet cfm statistics <cr>    # path-044343
+(config)# no do-exec clear ethernet cfm traceroute-cache <cr>    # path-044275
+(config)# no do-exec clear ethernet lmi statistics <cr>    # path-044258
+(config)# no do-exec clear ethernet oam statistics <cr>    # path-044255
+(config)# no do-exec clear ethernet service instance id <number:1..16384> mac-tunnel <cr>    # path-058959
+(config)# no do-exec clear ethernet service instance id <number:1..16384> mac-tunnel errdisable <cr>    # path-059671
+(config)# no do-exec clear ethernet service internal back-trace <cr>    # path-052306
+(config)# no do-exec clear ethernet service ipc statistics <cr>    # path-052329
+(config)# no do-exec clear event manager detector counters <cr>    # path-054908
+(config)# no do-exec clear event manager detector rpc counters <cr>    # path-058257
+(config)# no do-exec clear event manager detector rpc sessions <cr>    # path-058278
+(config)# no do-exec clear event manager server counters <cr>    # path-054880
+(config)# no do-exec clear facility-alarm <cr>    # path-028282
+(config)# no do-exec clear facility-alarm critical <cr>    # path-034140
+(config)# no do-exec clear flow exporter statistics <cr>    # path-044634
+(config)# no do-exec clear flowspec afi-all <cr>    # path-039537
+(config)# no do-exec clear flowspec counters afi-all <cr>    # path-048390
+(config)# no do-exec clear flowspec counters internal <cr>    # path-048281
+(config)# no do-exec clear fqdn packet statistics <cr>    # path-047099
+(config)# no do-exec clear frame-relay counter <cr>    # path-037161
+(config)# no do-exec clear frame-relay inarp <cr>    # path-037205
+(config)# no do-exec clear host <string> <cr>    # path-037430
+(config)# no do-exec clear icm statistics <cr>    # path-036956
+(config)# no do-exec clear iox <cr>    # path-031746
+(config)# no do-exec clear ip access-list counters <cr>    # path-045324
+(config)# no do-exec clear ip accounting <cr>    # path-037119
+(config)# no do-exec clear ip arp <address> <cr>    # path-044919
+(config)# no do-exec clear ip arp poll statistics <cr>    # path-052730
+(config)# no do-exec clear ip cache <cr>    # path-036564
+(config)# no do-exec clear ip casa counters <cr>    # path-046281
+(config)# no do-exec clear ip cef event-log <cr>    # path-046596
+(config)# no do-exec clear ip cef inconsistency <cr>    # path-046533
+(config)# no do-exec clear ip cef prefix-statistics <cr>    # path-046925
+(config)# no do-exec clear ip cgmp <cr>    # path-036571
+(config)# no do-exec clear ip dhcp binding <address> <cr>    # path-054206
+(config)# no do-exec clear ip dhcp conflict <address> <cr>    # path-054236
+(config)# no do-exec clear ip dhcp limit lease <cr>    # path-054264
+(config)# no do-exec clear ip dhcp server odap-statistics <cr>    # path-054115
+(config)# no do-exec clear ip dhcp server statistics <cr>    # path-054147
+(config)# no do-exec clear ip dhcp snooping binding <address> <cr>    # path-057851
+(config)# no do-exec clear ip dhcp snooping binding bridge-domain <string> <cr>    # path-059328
+(config)# no do-exec clear ip dhcp snooping database statistics <cr>    # path-057847
+(config)# no do-exec clear ip dhcp snooping statistics <cr>    # path-054141
+(config)# no do-exec clear ip dhcp subnet <address> <cr>    # path-054232
+(config)# no do-exec clear ip dns servers <address> <cr>    # path-053360
+(config)# no do-exec clear ip drp <cr>    # path-035758
+(config)# no do-exec clear ip eigrp events <cr>    # path-046341
+(config)# no do-exec clear ip eigrp logging <cr>    # path-046294
+(config)# no do-exec clear ip eigrp neighbors <cr>    # path-046422
+(config)# no do-exec clear ip eigrp topology <address> <cr>    # path-053719
+(config)# no do-exec clear ip http client cache all <cr>    # path-057394
+(config)# no do-exec clear ip http client cache session <string> <cr>    # path-059143
+(config)# no do-exec clear ip http client cache url <string> <cr>    # path-059133
+(config)# no do-exec clear ip http client cookie <cr>    # path-053436
+(config)# no do-exec clear ip http client cookie domain <string> <cr>    # path-059150
+(config)# no do-exec clear ip http client cookie name <string> <cr>    # path-059161
+(config)# no do-exec clear ip http client cookie session <string> <cr>    # path-059142
+(config)# no do-exec clear ip icmp rate-limit <cr>    # path-044998
+(config)# no do-exec clear ip igmp group <cr>    # path-046206
+(config)# no do-exec clear ip mfib counters <cr>    # path-046512
+(config)# no do-exec clear ip mrm status-report <cr>    # path-046099
+(config)# no do-exec clear ip mroute <address> <cr>    # path-046110
+(config)# no do-exec clear ip msdp peer <address> <cr>    # path-053183
+(config)# no do-exec clear ip msdp sa-cache <cr>    # path-045820
+(config)# no do-exec clear ip msdp statistics <cr>    # path-045875
+(config)# no do-exec clear ip multicast limit <cr>    # path-045980
+(config)# no do-exec clear ip multicast redundancy statistics <cr>    # path-053487
+(config)# no do-exec clear ip multicast rsvp <cr>    # path-045933
+(config)# no do-exec clear ip multicast snooping limit vlan <number:1..4095> statistics <cr>    # path-059773
+(config)# no do-exec clear ip nat statistics <cr>    # path-046132
+(config)# no do-exec clear ip nat translation <cr>    # path-046474
+(config)# no do-exec clear ip nbar <cr>    # path-036513
+(config)# no do-exec clear ip nbar classification auto-learn top-hosts restart <cr>    # path-059153
+(config)# no do-exec clear ip nbar classification auto-learn top-hosts statistics <cr>    # path-059141
+(config)# no do-exec clear ip nbar classification cache sync <cr>    # path-057387
+(config)# no do-exec clear ip nbar classification dns learning cache <cr>    # path-059156
+(config)# no do-exec clear ip nbar classification dns learning statistics <cr>    # path-059175
+(config)# no do-exec clear ip nbar classification socket-cache <cr>    # path-053417
+(config)# no do-exec clear ip nbar protocol-discovery <cr>    # path-045882
+(config)# no do-exec clear ip nbar statistics <cr>    # path-045910
+(config)# no do-exec clear ip nhrp <cr>    # path-037085
+(config)# no do-exec clear ip nhrp counters <cr>    # path-046464
+(config)# no do-exec clear ip nhrp shortcut <cr>    # path-046356
+(config)# no do-exec clear ip nhrp stats <cr>    # path-046705
+(config)# no do-exec clear ip ospf counters <cr>    # path-046305
+(config)# no do-exec clear ip ospf events <cr>    # path-046344
+(config)# no do-exec clear ip ospf force-spf <cr>    # path-046196
+(config)# no do-exec clear ip ospf lsa router <address> self <cr>    # path-059228
+(config)# no do-exec clear ip ospf nsr statistics <cr>    # path-053523
+(config)# no do-exec clear ip ospf process <cr>    # path-046090
+(config)# no do-exec clear ip ospf redistribution <cr>    # path-046044
+(config)# no do-exec clear ip ospf rib <cr>    # path-046147
+(config)# no do-exec clear ip ospf traffic <cr>    # path-046363
+(config)# no do-exec clear ip pim df <cr>    # path-045935
+(config)# no do-exec clear ip pim interface count <cr>    # path-053413
+(config)# no do-exec clear ip pim pfp-sa cache <cr>    # path-053408
+(config)# no do-exec clear ip pim pfp-sa originator <cr>    # path-053356
+(config)# no do-exec clear ip pim rp-mapping <cr>    # path-045819
+(config)# no do-exec clear ip prefix-list <cr>    # path-037078
+(config)# no do-exec clear ip redirect <cr>    # path-035314
+(config)# no do-exec clear ip reflexive-list <string> <cr>    # path-046601
+(config)# no do-exec clear ip route <address> <cr>    # path-045773
+(config)# no do-exec clear ip route dhcp <address> <cr>    # path-053191
+(config)# no do-exec clear ip route download <address> <address> <cr>    # path-057415
+(config)# no do-exec clear ip route download reload <cr>    # path-053414
+(config)# no do-exec clear ip rsvp authentication <cr>    # path-046615
+(config)# no do-exec clear ip rsvp counters <cr>    # path-046335
+(config)# no do-exec clear ip rsvp hello bfd lost-cnt <cr>    # path-057687
+(config)# no do-exec clear ip rsvp hello bfd nbr-lost <cr>    # path-057729
+(config)# no do-exec clear ip rsvp hello instance counters <cr>    # path-057693
+(config)# no do-exec clear ip rsvp hello instance statistics <cr>    # path-057656
+(config)# no do-exec clear ip rsvp hello statistics <cr>    # path-053771
+(config)# no do-exec clear ip rsvp metadata interface <cr>    # path-053893

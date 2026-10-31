@@ -1,0 +1,89 @@
+# 模式 template_pw；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-template)# bandwidth <number:1..10000000> <cr>    # conditional_registration_candidates-010898
+(config-template)# control-word include <cr>    # conditional_registration_candidates-010885
+(config-template)# default bandwidth <cr>    # conditional_registration_candidates-010894
+(config-template)# default control-word <cr>    # conditional_registration_candidates-010884
+(config-template)# default encapsulation <cr>    # conditional_registration_candidates-010876
+(config-template)# default label <cr>    # conditional_registration_candidates-010887
+(config-template)# default load-balance flow <cr>    # conditional_registration_candidates-010910
+(config-template)# default load-balance flow-label <cr>    # conditional_registration_candidates-010913
+(config-template)# default monitor peer bfd <cr>    # conditional_registration_candidates-010934
+(config-template)# default mtu <cr>    # conditional_registration_candidates-010881
+(config-template)# default neighbor <cr>    # conditional_registration_candidates-010879
+(config-template)# default preferred-path <cr>    # conditional_registration_candidates-010889
+(config-template)# default pseudowire type <cr>    # conditional_registration_candidates-010915
+(config-template)# default sequencing <cr>    # conditional_registration_candidates-010895
+(config-template)# default sequencing resync <cr>    # conditional_registration_candidates-010919
+(config-template)# default signaling protocol <cr>    # conditional_registration_candidates-010903
+(config-template)# default status <cr>    # conditional_registration_candidates-010901
+(config-template)# default status control-plane route-watch <cr>    # conditional_registration_candidates-010936
+(config-template)# default status decoupled <cr>    # conditional_registration_candidates-010923
+(config-template)# default status peer topology dual-homed <cr>    # conditional_registration_candidates-010947
+(config-template)# default status protocol notification static <cr>    # conditional_registration_candidates-010949
+(config-template)# default status redundancy master <cr>    # conditional_registration_candidates-010941
+(config-template)# default status suppress standby <cr>    # conditional_registration_candidates-010943
+(config-template)# default switching tlv <cr>    # conditional_registration_candidates-010925
+(config-template)# default tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # conditional_registration_candidates-010952
+(config-template)# default tlv template <cr>    # conditional_registration_candidates-010930
+(config-template)# default vc type <cr>    # conditional_registration_candidates-010907
+(config-template)# default vccv bfd template <cr>    # conditional_registration_candidates-010940
+(config-template)# default vccv control-word <cr>    # conditional_registration_candidates-010927
+(config-template)# encapsulation udp <cr>    # conditional_registration_candidates-010877
+(config-template)# label <number:dynamic> <number:16..1048575> <cr>    # conditional_registration_candidates-010953
+(config-template)# load-balance flow <cr>    # conditional_registration_candidates-010891
+(config-template)# load-balance flow-label both <cr>    # conditional_registration_candidates-010918
+(config-template)# monitor peer bfd <cr>    # conditional_registration_candidates-010914
+(config-template)# monitor peer bfd local interface <interface> <cr>    # conditional_registration_candidates-010957
+(config-template)# mtu <number:64..65535> <cr>    # conditional_registration_candidates-010882
+(config-template)# neighbor <address> <number:1..4294967295> <cr>    # conditional_registration_candidates-010906
+(config-template)# no bandwidth <cr>    # conditional_registration_candidates-010890
+(config-template)# no control-word <cr>    # conditional_registration_candidates-010883
+(config-template)# no encapsulation <cr>    # conditional_registration_candidates-010875
+(config-template)# no label <cr>    # conditional_registration_candidates-010886
+(config-template)# no load-balance flow <cr>    # conditional_registration_candidates-010909
+(config-template)# no load-balance flow-label <cr>    # conditional_registration_candidates-010911
+(config-template)# no monitor peer bfd <cr>    # conditional_registration_candidates-010933
+(config-template)# no mtu <cr>    # conditional_registration_candidates-010880
+(config-template)# no neighbor <cr>    # conditional_registration_candidates-010878
+(config-template)# no preferred-path <cr>    # conditional_registration_candidates-010888
+(config-template)# no pseudowire type <cr>    # conditional_registration_candidates-010912
+(config-template)# no sequencing <cr>    # conditional_registration_candidates-010892
+(config-template)# no sequencing resync <cr>    # conditional_registration_candidates-010916
+(config-template)# no signaling protocol <cr>    # conditional_registration_candidates-010902
+(config-template)# no status <cr>    # conditional_registration_candidates-010900
+(config-template)# no status control-plane route-watch <cr>    # conditional_registration_candidates-010935
+(config-template)# no status decoupled <cr>    # conditional_registration_candidates-010921
+(config-template)# no status peer topology dual-homed <cr>    # conditional_registration_candidates-010946
+(config-template)# no status protocol notification static <cr>    # conditional_registration_candidates-010948
+(config-template)# no status redundancy master <cr>    # conditional_registration_candidates-010939
+(config-template)# no status suppress standby <cr>    # conditional_registration_candidates-010942
+(config-template)# no switching tlv <cr>    # conditional_registration_candidates-010922
+(config-template)# no tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # conditional_registration_candidates-010951
+(config-template)# no tlv template <cr>    # conditional_registration_candidates-010929
+(config-template)# no vc type <cr>    # conditional_registration_candidates-010905
+(config-template)# no vccv bfd template <cr>    # conditional_registration_candidates-010938
+(config-template)# no vccv control-word <cr>    # conditional_registration_candidates-010924
+(config-template)# preferred-path interface <interface> <cr>    # conditional_registration_candidates-010954
+(config-template)# preferred-path peer <address> <cr>    # conditional_registration_candidates-010926
+(config-template)# pseudowire type <number:1..4097> <cr>    # conditional_registration_candidates-010917
+(config-template)# sequencing <cr>    # conditional_registration_candidates-010873
+(config-template)# sequencing resync <cr>    # conditional_registration_candidates-010893
+(config-template)# signaling protocol none <cr>    # conditional_registration_candidates-010904
+(config-template)# status <cr>    # conditional_registration_candidates-010874
+(config-template)# status control-plane route-watch <cr>    # conditional_registration_candidates-010920
+(config-template)# status decoupled <cr>    # conditional_registration_candidates-010896
+(config-template)# status peer topology dual-homed <cr>    # conditional_registration_candidates-010937
+(config-template)# status protocol notification static <string> <cr>    # conditional_registration_candidates-010950
+(config-template)# status redundancy master <cr>    # conditional_registration_candidates-010928
+(config-template)# status suppress standby <cr>    # conditional_registration_candidates-010931
+(config-template)# switching tlv <cr>    # conditional_registration_candidates-010897
+(config-template)# tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # conditional_registration_candidates-010945
+(config-template)# tlv <number:1..64> <number:1..255> hexstr <hex-string> <cr>    # conditional_registration_candidates-010956
+(config-template)# tlv template <string> <cr>    # conditional_registration_candidates-010932
+(config-template)# vc type ethernet <cr>    # conditional_registration_candidates-010908
+(config-template)# vccv bfd status signaling <cr>    # conditional_registration_candidates-010955
+(config-template)# vccv bfd template <string> <cr>    # conditional_registration_candidates-010944
+(config-template)# vccv control-word <cr>    # conditional_registration_candidates-010899

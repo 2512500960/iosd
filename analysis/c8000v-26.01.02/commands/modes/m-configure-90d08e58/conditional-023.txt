@@ -1,0 +1,260 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-023.md
+
+(config)# do-exec show utd multi-tenancy <cr>    # conditional_registration_candidates-001378
+(config)# do-exec show vc-group <cr>    # conditional_registration_candidates-000413
+(config)# do-exec show vfi <cr>    # conditional_registration_candidates-000452
+(config)# do-exec show vfi memory <cr>    # conditional_registration_candidates-001395
+(config)# do-exec show vfi memory detail <cr>    # conditional_registration_candidates-003016
+(config)# do-exec show video monitor-channels <cr>    # conditional_registration_candidates-001315
+(config)# do-exec show voice busyout <cr>    # conditional_registration_candidates-001568
+(config)# do-exec show voice busyout all <cr>    # conditional_registration_candidates-003561
+(config)# do-exec show voice cable-status <?voice_action@55558c6d5d08> <cr>    # conditional_registration_candidates-009211
+(config)# do-exec show voice cable-status <cr>    # conditional_registration_candidates-001692
+(config)# do-exec show voice cable-status all <cr>    # conditional_registration_candidates-003814
+(config)# do-exec show voice cable-status summary <cr>    # conditional_registration_candidates-003756
+(config)# do-exec show voice call <?voice_action@55558c6d4178> <cr>    # conditional_registration_candidates-009185
+(config)# do-exec show voice call <?voice_action@55558c6d4178> rate <cr>    # conditional_registration_candidates-009301
+(config)# do-exec show voice call <?voice_action@55558c6d4178> summary <cr>    # conditional_registration_candidates-009290
+(config)# do-exec show voice call <cr>    # conditional_registration_candidates-001547
+(config)# do-exec show voice call rate <cr>    # conditional_registration_candidates-003610
+(config)# do-exec show voice call summary <cr>    # conditional_registration_candidates-003406
+(config)# do-exec show voice connectivity summary <cr>    # conditional_registration_candidates-003634
+(config)# do-exec show voice dnis-map <cr>    # conditional_registration_candidates-001404
+(config)# do-exec show voice dnis-map <string> <cr>    # conditional_registration_candidates-003127
+(config)# do-exec show voice dnis-map summary <cr>    # conditional_registration_candidates-002926
+(config)# do-exec show voice dsp <cr>    # conditional_registration_candidates-001741
+(config)# do-exec show voice dsp capabilities <cr>    # conditional_registration_candidates-003849
+(config)# do-exec show voice dsp capabilities slot <?slotcard_func_action@55558c71e0f8> <cr>    # conditional_registration_candidates-009412
+(config)# do-exec show voice dsp cpu-load slot <number:0..8> dsp <number:dynamic> <cr>    # conditional_registration_candidates-009505
+(config)# do-exec show voice dsp detailed slot <?slotcard_func_action@55558c71f218> <cr>    # conditional_registration_candidates-009417
+(config)# do-exec show voice dsp error <cr>    # conditional_registration_candidates-004046
+(config)# do-exec show voice dsp group <cr>    # conditional_registration_candidates-003387
+(config)# do-exec show voice dsp group <cr>    # conditional_registration_candidates-003800
+(config)# do-exec show voice dsp group slot <?slotcard_func_action@55558c71d328> <cr>    # conditional_registration_candidates-009407
+(config)# do-exec show voice dsp oversubscribed-voiceports <cr>    # conditional_registration_candidates-003868
+(config)# do-exec show voice dsp sorted-list slot <?slotcard_func_action@55558c71e5c0> <cr>    # conditional_registration_candidates-009410
+(config)# do-exec show voice dsp sorted-list slot <number:0..8> <cr>    # conditional_registration_candidates-007236
+(config)# do-exec show voice dsp statistics ack <cr>    # conditional_registration_candidates-005697
+(config)# do-exec show voice dsp statistics gige-device slot <number:0..8> dsp <number:dynamic> <cr>    # conditional_registration_candidates-009511
+(config)# do-exec show voice media-recording license <cr>    # conditional_registration_candidates-003859
+(config)# do-exec show voice media-recording list <cr>    # conditional_registration_candidates-003900
+(config)# do-exec show voice monitor-channels <cr>    # conditional_registration_candidates-001270
+(config)# do-exec show voice port <?voice_action@55558c6d3178> <cr>    # conditional_registration_candidates-009174
+(config)# do-exec show voice port <?voice_action@55558c6d3178> summary <cr>    # conditional_registration_candidates-009283
+(config)# do-exec show voice port <cr>    # conditional_registration_candidates-001483
+(config)# do-exec show voice port summary <cr>    # conditional_registration_candidates-003221
+(config)# do-exec show voice ren-measurement <cr>    # conditional_registration_candidates-001606
+(config)# do-exec show voice sip license stats <cr>    # conditional_registration_candidates-005413
+(config)# do-exec show voice sip license status <cr>    # conditional_registration_candidates-005277
+(config)# do-exec show voice source-group <?sipg_show_name_cmd@55558bd0e090> <cr>    # conditional_registration_candidates-009163
+(config)# do-exec show voice source-group <?sipg_show_name_cmd@55558bd0e090> <cr>    # conditional_registration_candidates-009168
+(config)# do-exec show voice source-group <?sipg_show_name_cmd@55558bd0e090> sort ascending <cr>    # conditional_registration_candidates-009397
+(config)# do-exec show voice trace <?voice_action@55558c6d4ec8> <cr>    # conditional_registration_candidates-009205
+(config)# do-exec show voice trace <cr>    # conditional_registration_candidates-001652
+(config)# do-exec show voice trunk-conditioning signaling <?voice_action@55558cd3b728> <cr>    # conditional_registration_candidates-009289
+(config)# do-exec show voice trunk-conditioning signaling <?voice_action@55558cd3b728> summary <cr>    # conditional_registration_candidates-009400
+(config)# do-exec show voice trunk-conditioning signaling <cr>    # conditional_registration_candidates-003377
+(config)# do-exec show voice trunk-conditioning signaling summary <cr>    # conditional_registration_candidates-005298
+(config)# do-exec show voice trunk-conditioning supervisory <?voice_action@55558cd3b0d8> <cr>    # conditional_registration_candidates-009286
+(config)# do-exec show voice trunk-conditioning supervisory <?voice_action@55558cd3b0d8> summary <cr>    # conditional_registration_candidates-009399
+(config)# do-exec show voice trunk-conditioning supervisory <cr>    # conditional_registration_candidates-003287
+(config)# do-exec show voice trunk-conditioning supervisory summary <cr>    # conditional_registration_candidates-005212
+(config)# do-exec show voip call-quality <cr>    # conditional_registration_candidates-001326
+(config)# do-exec show voip rtp connections <cr>    # conditional_registration_candidates-003286
+(config)# do-exec show voip rtp connections callid <number:1..2147483647> <cr>    # conditional_registration_candidates-006865
+(config)# do-exec show voip rtp connections detail <cr>    # conditional_registration_candidates-005333
+(config)# do-exec show voip rtp connections detail callid <number:1..2147483647> <cr>    # conditional_registration_candidates-007971
+(config)# do-exec show voip rtp connections detail mpss <cr>    # conditional_registration_candidates-006873
+(config)# do-exec show voip rtp connections detail type h323 <cr>    # conditional_registration_candidates-008003
+(config)# do-exec show voip rtp connections type h323 <cr>    # conditional_registration_candidates-006893
+(config)# do-exec show voip rtp forking <cr>    # conditional_registration_candidates-003030
+(config)# do-exec show voip rtp high-availability stats <cr>    # conditional_registration_candidates-005435
+(config)# do-exec show voip rtp rate <cr>    # conditional_registration_candidates-003129
+(config)# do-exec show voip rtp stats <cr>    # conditional_registration_candidates-003227
+(config)# do-exec show voip stream-service statistics <cr>    # conditional_registration_candidates-003029
+(config)# do-exec show voip trace cover-buffers <cr>    # conditional_registration_candidates-003419
+(config)# do-exec show voip trunk group <cr>    # conditional_registration_candidates-002922
+(config)# do-exec show vsp all <cr>    # conditional_registration_candidates-001259
+(config)# do-exec show vxlan static-route all <cr>    # conditional_registration_candidates-003013
+(config)# do-exec show vxlan static-route next-hop bind-label <number:0..4294967295> <cr>    # conditional_registration_candidates-006962
+(config)# do-exec show vxlan static-route policy all <cr>    # conditional_registration_candidates-005717
+(config)# do-exec show vxlan static-route policy id <number:1..4294967295> <cr>    # conditional_registration_candidates-007120
+(config)# do-exec show vxlan static-route policy vrf <?option@55558bce7660> vni <number:1..16777215> <cr>    # conditional_registration_candidates-009586
+(config)# do-exec show vxlan static-route statistics vrf <?option@55558bce6ff0> all <cr>    # conditional_registration_candidates-009579
+(config)# do-exec show vxlan static-route vni-stats all <cr>    # conditional_registration_candidates-005621
+(config)# do-exec show vxlan static-route vrf <?option@55558bce6878> all <cr>    # conditional_registration_candidates-009556
+(config)# do-exec show whoami <cr>    # conditional_registration_candidates-000414
+(config)# do-exec show xconnect memory <cr>    # conditional_registration_candidates-001345
+(config)# do-exec show xconnect memory detail <cr>    # conditional_registration_candidates-002925
+(config)# do-exec show xconnect monitor <cr>    # conditional_registration_candidates-001394
+(config)# do-exec show xconnect monitor detail <cr>    # conditional_registration_candidates-003015
+(config)# do-exec show xdr linecard <cr>    # conditional_registration_candidates-001509
+(config)# do-exec show zone security <cr>    # conditional_registration_candidates-001342
+(config)# do-exec show zone security <string> <cr>    # conditional_registration_candidates-002923
+(config)# do-exec show zone-pair security <cr>    # conditional_registration_candidates-001343
+(config)# do-exec show zone-pair security source <string> destination <string> <cr>    # conditional_registration_candidates-007970
+(config)# do-exec test appnav-controller type appqoe create-bulk-sn <cr>    # conditional_registration_candidates-004723
+(config)# do-exec test appnav-controller type dpss delete-ctx <number:1..1> <cr>    # conditional_registration_candidates-006532
+(config)# do-exec test appnav-controller type utd delete-ctx <number:1..1> <cr>    # conditional_registration_candidates-006456
+(config)# do-exec test call id <number:0..4294967295> echo-canceller coverage 0 <cr>    # conditional_registration_candidates-007855
+(config)# do-exec test call id <number:0..4294967295> echo-canceller erl worst-case 0 <cr>    # conditional_registration_candidates-008654
+(config)# do-exec test call id <number:0..4294967295> echo-canceller h-register clear <cr>    # conditional_registration_candidates-007808
+(config)# do-exec test call id <number:0..4294967295> playout-delay fixed <number:0..1000> <cr>    # conditional_registration_candidates-007852
+(config)# do-exec test cell-cwan <interface> console-logs <cr>    # conditional_registration_candidates-009150
+(config)# do-exec test cell-cwan <interface> dyn-power-reduction disable <cr>    # conditional_registration_candidates-009253
+(config)# do-exec test cell-cwan <interface> dyn-power-reduction enable <cr>    # conditional_registration_candidates-009248
+(config)# do-exec test cell-cwan <interface> modem-crashdump off <cr>    # conditional_registration_candidates-009254
+(config)# do-exec test cell-cwan <interface> modem-crashdump on <cr>    # conditional_registration_candidates-009249
+(config)# do-exec test cell-cwan <interface> modem-crashdump on local_uf <cr>    # conditional_registration_candidates-009359
+(config)# do-exec test cell-cwan <interface> modem-crashdump on url_options <url:dynamic> <cr>    # conditional_registration_candidates-009573
+(config)# do-exec test cell-cwan <interface> usb-normal-mode <cr>    # conditional_registration_candidates-009146
+(config)# do-exec test cell-cwan <interface> usb-test-mode <cr>    # conditional_registration_candidates-009144
+(config)# do-exec test crypto ace global <cr>    # conditional_registration_candidates-002424
+(config)# do-exec test crypto ace ping <number:1..10> <number:1..10> <number:1..16> <address> <address> <cr>    # conditional_registration_candidates-008899
+(config)# do-exec test crypto ace slot <number:1..16> b2bha <cr>    # conditional_registration_candidates-006772
+(config)# do-exec test crypto ace slot <number:1..16> cfgmon <cr>    # conditional_registration_candidates-006718
+(config)# do-exec test crypto ace slot <number:1..16> echo <cr>    # conditional_registration_candidates-006749
+(config)# do-exec test crypto ace slot <number:1..16> getcrash <cr>    # conditional_registration_candidates-006582
+(config)# do-exec test crypto ace slot <number:1..16> pcp <cr>    # conditional_registration_candidates-006691
+(config)# do-exec test crypto ace slot <number:1..16> rcon <cr>    # conditional_registration_candidates-006745
+(config)# do-exec test crypto ace slot <number:1..16> shutdown <cr>    # conditional_registration_candidates-006656
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> b2bha <cr>    # conditional_registration_candidates-009491
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> cfgmon <cr>    # conditional_registration_candidates-009486
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> echo <cr>    # conditional_registration_candidates-009490
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> getcrash <cr>    # conditional_registration_candidates-009478
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> pcp <cr>    # conditional_registration_candidates-009484
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> rcon <cr>    # conditional_registration_candidates-009489
+(config)# do-exec test crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd3de08> <number:0..1> shutdown <cr>    # conditional_registration_candidates-009482
+(config)# do-exec test crypto autovpn private <cr>    # conditional_registration_candidates-002365
+(config)# do-exec test crypto autovpn public <cr>    # conditional_registration_candidates-002421
+(config)# do-exec test crypto blast <number:1..100000> <number:1..1000000> <number:36..10000> <cr>    # conditional_registration_candidates-006529
+(config)# do-exec test crypto callisto <number:1..1000> <cr>    # conditional_registration_candidates-000392
+(config)# do-exec test crypto cluster delete client handle <number:0..2147483647> <cr>    # conditional_registration_candidates-009376
+(config)# do-exec test crypto cluster delete tunnel handle <number:0..2147483647> <cr>    # conditional_registration_candidates-009367
+(config)# do-exec test crypto cluster local-identity <string> group-identity <string> source-ip <string> dest-ip <string> tun-int <string> ivrf <string> fvrf <string> tunindex <number:0..2147483647> <cr>    # conditional_registration_candidates-009073
+(config)# do-exec test crypto driver off <cr>    # conditional_registration_candidates-009167
+(config)# do-exec test crypto driver seq_ah random id <number:1..4294967295> <cr>    # conditional_registration_candidates-009572
+(config)# do-exec test crypto gkm ckm group <string> pip ipv4 <address> <address> <cr>    # conditional_registration_candidates-008981
+(config)# do-exec test crypto gkm re-auth send <cr>    # conditional_registration_candidates-004663
+(config)# do-exec test crypto gkm resiliency group <string> ks kek-lifetime <number:0..2592000> <cr>    # conditional_registration_candidates-008907
+(config)# do-exec test crypto gkm resiliency group <string> ks tek-lifetime <number:0..2592000> minimum <cr>    # conditional_registration_candidates-008979
+(config)# do-exec test crypto gkm resiliency group <string> ks tek-lifetime <number:0..2592000> spi <hex-string> <cr>    # conditional_registration_candidates-009520
+(config)# do-exec test crypto gkm sid gm re-register <cr>    # conditional_registration_candidates-006915
+(config)# do-exec test crypto gkm sid gm set group-size <cr>    # conditional_registration_candidates-008030
+(config)# do-exec test crypto gkm sid gm set lifetime <cr>    # conditional_registration_candidates-008015
+(config)# do-exec test crypto gkm sid gm set request <cr>    # conditional_registration_candidates-007982
+(config)# do-exec test crypto gkm sid gm set ssiv <cr>    # conditional_registration_candidates-007999
+(config)# do-exec test crypto gkm sid gm set ssiv <hex-string> <cr>    # conditional_registration_candidates-009494
+(config)# do-exec test crypto gkm sid ks assign <number:0..2147483647> <cr>    # conditional_registration_candidates-007993
+(config)# do-exec test crypto gkm sid ks re-initialize <cr>    # conditional_registration_candidates-006916
+(config)# do-exec test crypto gkm sid ks set gmsid current <cr>    # conditional_registration_candidates-008734
+(config)# do-exec test crypto gkm sid ks set kssid current <cr>    # conditional_registration_candidates-008739
+(config)# do-exec test crypto gkm sid ks set next-assign <cr>    # conditional_registration_candidates-007969
+(config)# do-exec test crypto ha replay get-sequence <number:0..4294967295> <cr>    # conditional_registration_candidates-006637
+(config)# do-exec test crypto ikev2 coverage <number:10000..10062> <cr>    # conditional_registration_candidates-005032
+(config)# do-exec test crypto ikev2 crypto <cr>    # conditional_registration_candidates-002473
+(config)# do-exec test crypto ikev2 disable-ake <cr>    # conditional_registration_candidates-003080
+(config)# do-exec test crypto ikev2 dru-static enable <cr>    # conditional_registration_candidates-005087
+(config)# do-exec test crypto ikev2 fsm <cr>    # conditional_registration_candidates-002522
+(config)# do-exec test crypto ikev2 initiate <address> <cr>    # conditional_registration_candidates-004950
+(config)# do-exec test crypto ikev2 ipsec <cr>    # conditional_registration_candidates-002306
+(config)# do-exec test crypto ikev2 negotiate <number:0..1500> <cr>    # conditional_registration_candidates-004913
+(config)# do-exec test crypto ikev2 platform <cr>    # conditional_registration_candidates-002450
+(config)# do-exec test crypto ikev2 platform psh <cr>    # conditional_registration_candidates-004620
+(config)# do-exec test crypto ikev2 policy <cr>    # conditional_registration_candidates-002492
+(config)# do-exec test crypto ikev2 policy default <address> <cr>    # conditional_registration_candidates-006605
+(config)# do-exec test crypto ikev2 sadb <number:1..10000> <cr>    # conditional_registration_candidates-004897
+(config)# do-exec test crypto ikev2 sadb <number:1..10000> verbose <cr>    # conditional_registration_candidates-006700
+(config)# do-exec test crypto ikev2 window <number:1..100> <cr>    # conditional_registration_candidates-004970
+(config)# do-exec test crypto ipsecv6 interface <interface> close-default spi <number:256..4294967295> <cr>    # conditional_registration_candidates-009493
+(config)# do-exec test crypto ipsecv6 interface <interface> open-default esp-spi <number:256..4294967295> transform esp-des key <string> esp-hmac-md5 key <string> <cr>    # conditional_registration_candidates-009521
+(config)# do-exec test crypto ipsecv6 interface <interface> open-default local <address> remote <address> <cr>    # conditional_registration_candidates-009515
+(config)# do-exec test crypto ipsecv6 traffic source <address> dest <address> size <number:500..10000> port <number:8000..10000> <cr>    # conditional_registration_candidates-009043
+(config)# do-exec test crypto isakmp ipv4 <address> <address> <string> <cr>    # conditional_registration_candidates-007854
+(config)# do-exec test crypto master-key compare <string> <string> <cr>    # conditional_registration_candidates-006751
+(config)# do-exec test crypto master-key encrypt <string> <cr>    # conditional_registration_candidates-004860
+(config)# do-exec test crypto master-key present <cr>    # conditional_registration_candidates-002556
+(config)# do-exec test crypto scale clear <cr>    # conditional_registration_candidates-002593
+(config)# do-exec test crypto scale show count <cr>    # conditional_registration_candidates-004733
+(config)# do-exec test crypto scale show queue <cr>    # conditional_registration_candidates-004787
+(config)# do-exec test crypto scale start <cr>    # conditional_registration_candidates-002415
+(config)# do-exec test crypto scale stop <cr>    # conditional_registration_candidates-002518
+(config)# do-exec test crypto test-id <string> <number:0..1> <cr>    # conditional_registration_candidates-005066
+(config)# do-exec test dapr-er <address> <number:0..65535> set state <number:0..65535> <cr>    # conditional_registration_candidates-007814
+(config)# do-exec test dapr-er <address> <number:0..65535> set stats <number:0..65535> <number:0..65535> <number:0..65535> <number:0..100> <cr>    # conditional_registration_candidates-008966
+(config)# do-exec test dapr-er auto-tunnel destination <address> create <cr>    # conditional_registration_candidates-006530
+(config)# do-exec test dapr-er auto-tunnel destination <address> destroy <cr>    # conditional_registration_candidates-006583
+(config)# do-exec test dapr-er auto-tunnel destination <address> show <cr>    # conditional_registration_candidates-006623
+(config)# do-exec test dapr-er flow-push <address> execute <cr>    # conditional_registration_candidates-004832
+(config)# do-exec test dapr-er flow-push <address> start <number:0..12000> <number:0..12000> <cr>    # conditional_registration_candidates-007882
+(config)# do-exec test dapr-er fnf-prog collector create <cr>    # conditional_registration_candidates-004746
+(config)# do-exec test dapr-er fnf-prog collector destroy <cr>    # conditional_registration_candidates-004795
+(config)# do-exec test dapr-er fnf-prog collector rm <number:1..20> <address> <number:1..50000> <number:20..10000> <?common_dscp_value_action@55558c39b828> <cr>    # conditional_registration_candidates-009514
+(config)# do-exec test dapr-er fnf-prog collector rm <number:1..20> <cr>    # conditional_registration_candidates-006807
+(config)# do-exec test dapr-er fnf-prog collector stats clear <cr>    # conditional_registration_candidates-006646
+(config)# do-exec test dapr-er fnf-prog collector stats show <cr>    # conditional_registration_candidates-006607
+(config)# do-exec test dapr-er fnf-prog exporter create <cr>    # conditional_registration_candidates-004566
+(config)# do-exec test dapr-er fnf-prog exporter destroy <cr>    # conditional_registration_candidates-004639
+(config)# do-exec test dapr-er fnf-prog monitor create <cr>    # conditional_registration_candidates-004625
+(config)# do-exec test dapr-er fnf-prog monitor destroy <cr>    # conditional_registration_candidates-004697
+(config)# do-exec test dapr-er fnf-prog monitor export <cr>    # conditional_registration_candidates-004799
+(config)# do-exec test dapr-er fnf-prog monitor interface <interface> attach <cr>    # conditional_registration_candidates-009446
+(config)# do-exec test dapr-er fnf-prog monitor interface <interface> detach <cr>    # conditional_registration_candidates-009447
+(config)# do-exec test dapr-er fnf-prog record create <cr>    # conditional_registration_candidates-004500
+(config)# do-exec test dapr-er fnf-prog record destroy <cr>    # conditional_registration_candidates-004580
+(config)# do-exec test dapr-er packet reg_req <cr>    # conditional_registration_candidates-002464
+(config)# do-exec test dapr-er pbr add <address> <address> <address> <address> <number:1..255> <cr>    # conditional_registration_candidates-008901
+(config)# do-exec test dapr-er pbr execute <cr>    # conditional_registration_candidates-002519
+(config)# do-exec test dapr-er pbr start <cr>    # conditional_registration_candidates-002416
+(config)# do-exec test dapr-er wan-stats interface <interface> link-group <string> Remove <cr>    # conditional_registration_candidates-009481
+(config)# do-exec test dapr-er wan-stats interface <interface> link-group <string> collect <cr>    # conditional_registration_candidates-009480
+(config)# do-exec test dapr-er wan-stats interface <interface> link-group <string> show <cr>    # conditional_registration_candidates-009483
+(config)# do-exec test dsmp database <cr>    # conditional_registration_candidates-001129
+(config)# do-exec test dsp algorithm <?slotcard_func_action@55558c6d8ba0> basic <cr>    # conditional_registration_candidates-009259
+(config)# do-exec test dsp debugger <?slotcard_func_action@55558c6d8168> all mips_measure disable <cr>    # conditional_registration_candidates-009449
+(config)# do-exec test dsp device <cr>    # conditional_registration_candidates-001186
+(config)# do-exec test dsp device <number:dynamic> <cr>    # conditional_registration_candidates-009160
+(config)# do-exec test dsp device all <number:dynamic> dspware <string> <cr>    # conditional_registration_candidates-009448
+(config)# do-exec test dsp device all all dspware <string> <cr>    # conditional_registration_candidates-007936
+(config)# do-exec test dsp memory <?slotcard_func_action@55558c6d6da0> <number:dynamic> peek data <number:0..4294967295> <number:1..252> <cr>    # conditional_registration_candidates-009589
+(config)# do-exec test dsp memory <?slotcard_func_action@55558c6d6da0> <number:dynamic> poke data <number:0..4294967295> <number:0..65535> <cr>    # conditional_registration_candidates-009590
+(config)# do-exec test dsp modem relay <number:1..4> <number:1..12> <number:1..46> <number:1..9> <number:0..4294967295> <cr>    # conditional_registration_candidates-008896
+(config)# do-exec test dsp recovery enable <cr>    # conditional_registration_candidates-002414
+(config)# do-exec test dsp send-message <?slotcard_func_action@55558c6d9600> <number:dynamic> dsp <number:1..1000> <cr>    # conditional_registration_candidates-009577
+(config)# do-exec test dsp simulate-crash <?slotcard_func_action@55558c6d9090> <number:dynamic> dsp assert-condition <cr>    # conditional_registration_candidates-009576
+(config)# do-exec test flowmon alarm flow <?slotcard_action@55558b58d530> <?slotcard_action@55558b58d598> cleared <cr>    # conditional_registration_candidates-009574
+(config)# do-exec test flowmon alarm group <number:0..3> <number:0..7> <?slotcard_action@55558b58d9a8> cleared <cr>    # conditional_registration_candidates-009488
+(config)# do-exec test flowmon alarm monitor <number:0..3> <?slotcard_action@55558b58d1a8> cleared <cr>    # conditional_registration_candidates-009445
+(config)# do-exec test flowmon condition <?slotcard_action@55558b58c7a0> <cr>    # conditional_registration_candidates-009148
+(config)# do-exec test flowmon flow <?slotcard_action@55558b58be80> <cr>    # conditional_registration_candidates-009161
+(config)# do-exec test flowmon group <number:0..7> <?slotcard_action@55558b58caf8> <cr>    # conditional_registration_candidates-009239
+(config)# do-exec test flowmon monitor <number:0..3> <cr>    # conditional_registration_candidates-002168
+(config)# do-exec test flowmon profile <number:0..7> <cr>    # conditional_registration_candidates-002307
+(config)# do-exec test flowmon set <number:0..7> <cr>    # conditional_registration_candidates-002462
+(config)# do-exec test fnf cache default <cr>    # conditional_registration_candidates-002373
+(config)# do-exec test fnf cache none <cr>    # conditional_registration_candidates-002308
+(config)# do-exec test fnf monitor <?option@55558b5abd78> populate <number:1..10000> <cr>    # conditional_registration_candidates-009553
+(config)# do-exec test fnf sd mode basicList disable <cr>    # conditional_registration_candidates-006616
+(config)# do-exec test fnf sd mode basicList enable <cr>    # conditional_registration_candidates-006567
+(config)# do-exec test fnf xdr clear <cr>    # conditional_registration_candidates-002426
+(config)# do-exec test fnf xdr populate <number:1..10000> <cr>    # conditional_registration_candidates-004624
+(config)# do-exec test fnf xdr show <cr>    # conditional_registration_candidates-002314
+(config)# do-exec test frr-manager client-handle <number:0..15> create-tunnel <address> <interface> ldp <address> <cr>    # conditional_registration_candidates-009508
+(config)# do-exec test frr-manager client-handle <number:0..15> deregister <cr>    # conditional_registration_candidates-004645
+(config)# do-exec test frr-manager client-handle <number:0..15> tunnel <number:0..1> Deconfigure-tunnel <cr>    # conditional_registration_candidates-007877
+(config)# do-exec test frr-manager client-handle <number:0..15> tunnel <number:0..1> configure-tunnel <cr>    # conditional_registration_candidates-007862
+(config)# do-exec test frr-manager client-name <string> register <cr>    # conditional_registration_candidates-004438
+(config)# do-exec test group-policy traffic-steering client register <cr>    # conditional_registration_candidates-004626
+(config)# do-exec test group-policy traffic-steering definition show <cr>    # conditional_registration_candidates-004588
+(config)# do-exec test group-policy traffic-steering permissions show <cr>    # conditional_registration_candidates-004646
+(config)# do-exec test group-policy traffic-steering service show <cr>    # conditional_registration_candidates-004701
+(config)# do-exec test gtp apn <number:1..2147483647> v1 <cr>    # conditional_registration_candidates-004439
+(config)# do-exec test gtp pdp attach <string> <string> <string> <string> ipv4 <address> <string> <number:0..255> <number:1..100000> <number:1..1000> gtpv1 <cr>    # conditional_registration_candidates-009067
+(config)# do-exec test gtp pdp attach <string> <string> <string> <string> ipv4 <address> <string> <number:0..255> gtpv1 <cr>    # conditional_registration_candidates-009058
+(config)# do-exec test gtp pdp detach <number:1..4294967295> <cr>    # conditional_registration_candidates-004621
+(config)# do-exec test gtp raw-ipudp <address> <number:1..65535> <address> <number:1..65535> <address> <interface> <cr>    # conditional_registration_candidates-009507
+(config)# do-exec test isis otv aed l2topoid <number:0..4294967295> enable <cr>    # conditional_registration_candidates-007931
+(config)# do-exec test isis otv app testcase <number:1..10000> <cr>    # conditional_registration_candidates-006777
+(config)# do-exec test isis otv hostname <cr>    # conditional_registration_candidates-003066

@@ -1,0 +1,277 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-035.md
+
+(config)# no novell spx-spoof session-clear <cr>    # conditional_registration_candidates-000395
+(config)# no novell spx-spoof table-clear <cr>    # conditional_registration_candidates-000389
+(config)# no novell throttle-update-proc <cr>    # conditional_registration_candidates-000084
+(config)# no novell throttle-update-sched <cr>    # conditional_registration_candidates-000081
+(config)# no novell type-20-helpered <cr>    # conditional_registration_candidates-000359
+(config)# no novell type-20-input-checks <cr>    # conditional_registration_candidates-000347
+(config)# no novell type-20-output-checks <cr>    # conditional_registration_candidates-000355
+(config)# no num-exp <string> <cr>    # conditional_registration_candidates-000494
+(config)# no otv convergence timers aggressive <cr>    # conditional_registration_candidates-001861
+(config)# no otv site bridge-domain <cr>    # conditional_registration_candidates-000596
+(config)# no platform subscriber cac bqs active-queues <cr>    # conditional_registration_candidates-004229
+(config)# no platform subscriber cac cpu fp <cr>    # conditional_registration_candidates-004250
+(config)# no platform subscriber cac cpu rp <cr>    # conditional_registration_candidates-004241
+(config)# no platform subscriber cac mem cc <cr>    # conditional_registration_candidates-004251
+(config)# no platform subscriber cac mem fp <cr>    # conditional_registration_candidates-004242
+(config)# no platform subscriber cac mem qfp <cr>    # conditional_registration_candidates-004257
+(config)# no platform subscriber cac mem rp <cr>    # conditional_registration_candidates-004235
+(config)# no platform subscriber cac timer <cr>    # conditional_registration_candidates-001849
+(config)# no platform subscriber statistics update accounting <cr>    # conditional_registration_candidates-004231
+(config)# no platform subscriber statistics update all <cr>    # conditional_registration_candidates-004224
+(config)# no platform subscriber statistics update drl <cr>    # conditional_registration_candidates-004244
+(config)# no platform subscriber statistics update segment <cr>    # conditional_registration_candidates-004227
+(config)# no platform subscriber statistics update tc <cr>    # conditional_registration_candidates-004237
+(config)# no presence <cr>    # conditional_registration_candidates-000171
+(config)# no pseudowire-class <string> <cr>    # conditional_registration_candidates-000272
+(config)# no pseudowire-static-oam class <string> <cr>    # conditional_registration_candidates-000576
+(config)# no pseudowire-tlv template <string> <cr>    # conditional_registration_candidates-000582
+(config)# no rpl battery-power <cr>    # conditional_registration_candidates-000205
+(config)# no rpl no-dao interval <cr>    # conditional_registration_candidates-000613
+(config)# no rpl smooth link-etx <cr>    # conditional_registration_candidates-000592
+(config)# no rpl smooth link-latency <cr>    # conditional_registration_candidates-000630
+(config)# no rpl smooth path-etx <cr>    # conditional_registration_candidates-000614
+(config)# no rpl smooth path-latency <cr>    # conditional_registration_candidates-000641
+(config)# no rtsp client rtpsetup enable <cr>    # conditional_registration_candidates-001855
+(config)# no rtsp client session history duration <cr>    # conditional_registration_candidates-004261
+(config)# no rtsp client session history records <cr>    # conditional_registration_candidates-004268
+(config)# no rtsp client timeout connect <cr>    # conditional_registration_candidates-001871
+(config)# no rtsp client timeout message <cr>    # conditional_registration_candidates-001882
+(config)# no sbc <string> <cr>    # conditional_registration_candidates-000496
+(config)# no sbc <string> dbe <cr>    # conditional_registration_candidates-001736
+(config)# no sbc redundancy-group <number:1..2> tcp <cr>    # conditional_registration_candidates-003989
+(config)# no sccp <cr>    # conditional_registration_candidates-000170
+(config)# no sccp ccm <address> <cr>    # conditional_registration_candidates-001730
+(config)# no sccp ccm group <number:1..65535> <cr>    # conditional_registration_candidates-003964
+(config)# no sccp codec g711ulaw <cr>    # conditional_registration_candidates-001755
+(config)# no sccp ip precedence <cr>    # conditional_registration_candidates-001684
+(config)# no sccp local <cr>    # conditional_registration_candidates-000471
+(config)# no sccp plar <cr>    # conditional_registration_candidates-000475
+(config)# no service-chain service-function <string> <cr>    # conditional_registration_candidates-000575
+(config)# no service-chain service-function-forwarder local <cr>    # conditional_registration_candidates-000579
+(config)# no service-chain service-path <number:1..16777215> <cr>    # conditional_registration_candidates-000590
+(config)# no service-export mdns-sd controller <string> <cr>    # conditional_registration_candidates-001869
+(config)# no signaling-class cas <string> <cr>    # conditional_registration_candidates-000568
+(config)# no sip-ua <cr>    # conditional_registration_candidates-000180
+(config)# no site-manager <cr>    # conditional_registration_candidates-000063
+(config)# no snmp-server enable traps isg-mib isg-job-finished <cr>    # conditional_registration_candidates-006293
+(config)# no spanning-tree bpdu delay-monitor <cr>    # conditional_registration_candidates-000665
+(config)# no spanning-tree bpdu sender-conflict <cr>    # conditional_registration_candidates-000683
+(config)# no spanning-tree bridge assurance <cr>    # conditional_registration_candidates-000633
+(config)# no spanning-tree cca <cr>    # conditional_registration_candidates-000201
+(config)# no spanning-tree dispute <cr>    # conditional_registration_candidates-000223
+(config)# no spanning-tree logging <cr>    # conditional_registration_candidates-000295
+(config)# no spanning-tree loopguard default <cr>    # conditional_registration_candidates-000660
+(config)# no spanning-tree mode <cr>    # conditional_registration_candidates-000228
+(config)# no spanning-tree optimize bpdu transmission <cr>    # conditional_registration_candidates-001936
+(config)# no spanning-tree portfast bpdu-guard <cr>    # conditional_registration_candidates-000746
+(config)# no spanning-tree portfast bpdufilter default <cr>    # conditional_registration_candidates-002124
+(config)# no spanning-tree portfast bpduguard default <cr>    # conditional_registration_candidates-002021
+(config)# no spanning-tree portfast default <cr>    # conditional_registration_candidates-000714
+(config)# no spanning-tree portfast network default <cr>    # conditional_registration_candidates-001937
+(config)# no spanning-tree portfast normal default <cr>    # conditional_registration_candidates-001944
+(config)# no spanning-tree queue maxsize <cr>    # conditional_registration_candidates-000323
+(config)# no spanning-tree sso block-tcn <cr>    # conditional_registration_candidates-000600
+(config)# no spanning-tree transmit hold-count <cr>    # conditional_registration_candidates-000694
+(config)# no stcapp <cr>    # conditional_registration_candidates-000096
+(config)# no stcapp call-control mode feature <cr>    # conditional_registration_candidates-001878
+(config)# no stcapp call-control mode standard <cr>    # conditional_registration_candidates-001868
+(config)# no stcapp ccm-group <cr>    # conditional_registration_candidates-000216
+(config)# no stcapp feature access-code <cr>    # conditional_registration_candidates-000583
+(config)# no stcapp feature callback <cr>    # conditional_registration_candidates-000627
+(config)# no stcapp feature speed-dial <cr>    # conditional_registration_candidates-000607
+(config)# no stcapp register capability <cr>    # conditional_registration_candidates-000675
+(config)# no stcapp security mode <cr>    # conditional_registration_candidates-000672
+(config)# no stcapp security tls-version <cr>    # conditional_registration_candidates-000690
+(config)# no stcapp security trustpoint <cr>    # conditional_registration_candidates-000650
+(config)# no stcapp supplementary-services <cr>    # conditional_registration_candidates-000276
+(config)# no stcapp timer <cr>    # conditional_registration_candidates-000231
+(config)# no stcapp timer roh <cr>    # conditional_registration_candidates-000593
+(config)# no telephony-service <cr>    # conditional_registration_candidates-000165
+(config)# no translate ruleset <string> <cr>    # conditional_registration_candidates-001429
+(config)# no translate use telnet <address> <cr>    # conditional_registration_candidates-003024
+(config)# no translation-rule <cr>    # conditional_registration_candidates-000110
+(config)# no utd <cr>    # conditional_registration_candidates-000140
+(config)# no utd engine advanced <cr>    # conditional_registration_candidates-001139
+(config)# no utd engine standard <cr>    # conditional_registration_candidates-001185
+(config)# no utd engine standard multi-tenancy <cr>    # conditional_registration_candidates-002588
+(config)# no utd engine standard unified-policy <cr>    # conditional_registration_candidates-002666
+(config)# no utd multi-tenancy <cr>    # conditional_registration_candidates-000370
+(config)# no utd threat-inspection whitelist <cr>    # conditional_registration_candidates-001136
+(config)# no utd web-filter block local-server profile <string> <cr>    # conditional_registration_candidates-006793
+(config)# no utd web-filter block page profile <string> <cr>    # conditional_registration_candidates-006824
+(config)# no utd web-filter domain profile <string> <cr>    # conditional_registration_candidates-005089
+(config)# no utd web-filter sourcedb <string> <cr>    # conditional_registration_candidates-003031
+(config)# no utd web-filter url profile <string> <cr>    # conditional_registration_candidates-005090
+(config)# no vc-group <string> <cr>    # conditional_registration_candidates-000424
+(config)# no vm-integration <cr>    # conditional_registration_candidates-000187
+(config)# no voice call carrier capacity active <cr>    # conditional_registration_candidates-004280
+(config)# no voice call carrier capacity mir <cr>    # conditional_registration_candidates-004290
+(config)# no voice call carrier capacity reporting inflection <cr>    # conditional_registration_candidates-006409
+(config)# no voice call carrier capacity reporting maxima <cr>    # conditional_registration_candidates-006384
+(config)# no voice call carrier capacity stw <cr>    # conditional_registration_candidates-004305
+(config)# no voice call carrier capacity timer interval <cr>    # conditional_registration_candidates-006349
+(config)# no voice call carrier csr data-points <cr>    # conditional_registration_candidates-004357
+(config)# no voice call carrier csr reporting interval <cr>    # conditional_registration_candidates-006354
+(config)# no voice call carrier trigger hwm <cr>    # conditional_registration_candidates-004304
+(config)# no voice call carrier trigger lwm <cr>    # conditional_registration_candidates-004289
+(config)# no voice call carrier trigger percent-change <cr>    # conditional_registration_candidates-004284
+(config)# no voice call convert-discpi-to-prog <cr>    # conditional_registration_candidates-000640
+(config)# no voice call debug full-guid <cr>    # conditional_registration_candidates-001888
+(config)# no voice call debug short-header <cr>    # conditional_registration_candidates-001904
+(config)# no voice call disc-pi-off <cr>    # conditional_registration_candidates-000608
+(config)# no voice call send-alert <cr>    # conditional_registration_candidates-000589
+(config)# no voice disc-pi-incoming-on <cr>    # conditional_registration_candidates-000258
+(config)# no voice dsp allocation round-robin <cr>    # conditional_registration_candidates-001927
+(config)# no voice dsp auto-reset <cr>    # conditional_registration_candidates-000834
+(config)# no voice dsp invalid-msg drop <cr>    # conditional_registration_candidates-001932
+(config)# no voice dsp release early <cr>    # conditional_registration_candidates-001931
+(config)# no voice dsp waitstate <number:1..3> <cr>    # conditional_registration_candidates-002041
+(config)# no voice echo-canceller extended <cr>    # conditional_registration_candidates-000601
+(config)# no voice echo-canceller extended <cr>    # conditional_registration_candidates-000727
+(config)# no voice rtp send-recv <cr>    # conditional_registration_candidates-000602
+(config)# no voice session-handle enable <cr>    # conditional_registration_candidates-000695
+(config)# no voice session-handle enable silence-voice <cr>    # conditional_registration_candidates-001915
+(config)# no voice vrf <cr>    # conditional_registration_candidates-000289
+(config)# no voice-ctl-file <string> <cr>    # conditional_registration_candidates-000470
+(config)# no voice-phone-proxy <string> <cr>    # conditional_registration_candidates-000493
+(config)# no voice-phone-proxy file-buffer <cr>    # conditional_registration_candidates-000489
+(config)# no voice-phone-proxy tftp-address ipv4 <address> <cr>    # conditional_registration_candidates-004027
+(config)# no voice-port <cr>    # conditional_registration_candidates-000158
+(config)# no vxlan <cr>    # conditional_registration_candidates-000151
+(config)# no vxlan gpe-tunnel-udp-port <cr>    # conditional_registration_candidates-000451
+(config)# no xconnect logging vc-state <cr>    # conditional_registration_candidates-000609
+(config)# no xconnect sanity <cr>    # conditional_registration_candidates-000206
+(config)# no zone security <string> <cr>    # conditional_registration_candidates-000647
+(config)# novell accounting-list <address> <address> <cr>    # conditional_registration_candidates-001096
+(config)# novell accounting-threshold <number:0..4294967295> <cr>    # conditional_registration_candidates-000027
+(config)# novell accounting-transits <number:0..32000> <cr>    # conditional_registration_candidates-000028
+(config)# novell advertise-to-lost-route <cr>    # conditional_registration_candidates-000143
+(config)# novell algorithms <cr>    # conditional_registration_candidates-000122
+(config)# novell backup-server-query-interval <number:2..2000> <cr>    # conditional_registration_candidates-000026
+(config)# novell broadcast-fastswitching <cr>    # conditional_registration_candidates-000129
+(config)# novell default-output-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-000018
+(config)# novell default-route <cr>    # conditional_registration_candidates-000137
+(config)# novell default-triggered-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-000020
+(config)# novell default-triggered-sap-holddown <number:0..4294967295> <cr>    # conditional_registration_candidates-000015
+(config)# novell gns-response-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-000022
+(config)# novell gns-round-robin <cr>    # conditional_registration_candidates-000114
+(config)# novell internal-network <cr>    # conditional_registration_candidates-000127
+(config)# novell maximum-hops <number:16..254> <cr>    # conditional_registration_candidates-000029
+(config)# novell maximum-paths <number:1..64> <cr>    # conditional_registration_candidates-000004
+(config)# novell netbios-socket-input-checks <cr>    # conditional_registration_candidates-000124
+(config)# novell per-host-load-share <cr>    # conditional_registration_candidates-000144
+(config)# novell ping-default cisco <cr>    # conditional_registration_candidates-000400
+(config)# novell route <number:0..4294967294> <address> <cr>    # conditional_registration_candidates-001614
+(config)# novell route <number:0..4294967294> <interface> <cr>    # conditional_registration_candidates-009126
+(config)# novell route-cache inactivity-timeout <number:0..65535> <cr>    # conditional_registration_candidates-001542
+(config)# novell route-cache max-size <number:0..4294967295> <cr>    # conditional_registration_candidates-001524
+(config)# novell route-cache update-timeout <number:0..65535> <cr>    # conditional_registration_candidates-001569
+(config)# novell routing <cr>    # conditional_registration_candidates-000078
+(config)# novell sap <number:0..65535> <string> <address> <number:0..4294967295> <number:1..254> <cr>    # conditional_registration_candidates-007203
+(config)# novell sap follow-route-path <cr>    # conditional_registration_candidates-000433
+(config)# novell sap-queue-maximum <number:0..4294967295> <cr>    # conditional_registration_candidates-000264
+(config)# novell sap-update-queue-maximum <number:0..4294967295> <cr>    # conditional_registration_candidates-000275
+(config)# novell sap-uses-routing-info <cr>    # conditional_registration_candidates-000123
+(config)# novell server-split-horizon-on-server-paths <cr>    # conditional_registration_candidates-000138
+(config)# novell spx-spoof session-clear <number:0..4294967295> <cr>    # conditional_registration_candidates-000141
+(config)# novell spx-spoof table-clear <number:0..4294967295> <cr>    # conditional_registration_candidates-000139
+(config)# novell throttle-update-proc <number:0..4294967295> <cr>    # conditional_registration_candidates-000013
+(config)# novell throttle-update-sched <number:0..4294967295> <cr>    # conditional_registration_candidates-000012
+(config)# novell type-20-helpered <cr>    # conditional_registration_candidates-000128
+(config)# novell type-20-input-checks <cr>    # conditional_registration_candidates-000125
+(config)# novell type-20-output-checks <cr>    # conditional_registration_candidates-000126
+(config)# num-exp <string> <string> <cr>    # conditional_registration_candidates-000497
+(config)# otv <cr>    # conditional_registration_candidates-009077
+(config)# otv convergence timers aggressive <cr>    # conditional_registration_candidates-000597
+(config)# otv fragmentation join-interface <interface-type> <string> <cr>    # conditional_registration_candidates-009134
+(config)# otv site bridge-domain <number:dynamic> <cr>    # conditional_registration_candidates-009104
+(config)# platform subscriber cac bqs active-queues <number:1..100> <cr>    # conditional_registration_candidates-004232
+(config)# platform subscriber cac cpu fp <number:1..100> <cr>    # conditional_registration_candidates-004253
+(config)# platform subscriber cac cpu rp <number:1..100> <cr>    # conditional_registration_candidates-004245
+(config)# platform subscriber cac mem cc <number:1..100> <cr>    # conditional_registration_candidates-004254
+(config)# platform subscriber cac mem fp <number:1..100> <cr>    # conditional_registration_candidates-004246
+(config)# platform subscriber cac mem qfp <number:1..100> <cr>    # conditional_registration_candidates-004258
+(config)# platform subscriber cac mem rp <number:1..100> <cr>    # conditional_registration_candidates-004238
+(config)# platform subscriber cac timer <number:1..10> <cr>    # conditional_registration_candidates-001850
+(config)# platform subscriber statistics update accounting <number:0..86400> <cr>    # conditional_registration_candidates-004233
+(config)# platform subscriber statistics update all <number:0..86400> <cr>    # conditional_registration_candidates-004225
+(config)# platform subscriber statistics update drl <number:0..86400> <cr>    # conditional_registration_candidates-004247
+(config)# platform subscriber statistics update segment <number:0..86400> <cr>    # conditional_registration_candidates-004228
+(config)# platform subscriber statistics update tc <number:0..86400> <cr>    # conditional_registration_candidates-004239
+(config)# presence <cr>    # conditional_registration_candidates-000036
+(config)# pseudowire-class <string> <cr>    # conditional_registration_candidates-000090
+(config)# pseudowire-static-oam class <string> <cr>    # conditional_registration_candidates-000221
+(config)# pseudowire-tlv template <string> <cr>    # conditional_registration_candidates-000236
+(config)# router lisp <cr>    # conditional_registration_candidates-009523
+(config)# rpl battery-power <cr>    # conditional_registration_candidates-000052
+(config)# rpl no-dao interval <number:1..60> count <number:1..5> <cr>    # conditional_registration_candidates-004277
+(config)# rpl smooth link-etx <number:0..100> <cr>    # conditional_registration_candidates-000603
+(config)# rpl smooth link-latency <number:0..100> <cr>    # conditional_registration_candidates-000635
+(config)# rpl smooth path-etx <number:0..100> <cr>    # conditional_registration_candidates-000623
+(config)# rpl smooth path-latency <number:0..100> <cr>    # conditional_registration_candidates-000648
+(config)# rtsp client rtpsetup enable <cr>    # conditional_registration_candidates-000580
+(config)# rtsp client session history duration <number:1..10000> <cr>    # conditional_registration_candidates-004264
+(config)# rtsp client session history records <number:1..100000> <cr>    # conditional_registration_candidates-004273
+(config)# rtsp client timeout connect <number:1..20> <cr>    # conditional_registration_candidates-001877
+(config)# rtsp client timeout message <number:1..20> <cr>    # conditional_registration_candidates-001891
+(config)# sbc <string> <cr>    # conditional_registration_candidates-000174
+(config)# sbc <string> dbe <cr>    # conditional_registration_candidates-000500
+(config)# sbc redundancy-group <number:1..2> tcp <cr>    # conditional_registration_candidates-001720
+(config)# sccp <cr>    # conditional_registration_candidates-000035
+(config)# sccp ccm <address> <cr>    # conditional_registration_candidates-000543
+(config)# sccp ccm group <number:1..65535> <cr>    # conditional_registration_candidates-001710
+(config)# sccp codec g711ulaw mask <cr>    # conditional_registration_candidates-001758
+(config)# sccp ip precedence <number:1..7> <cr>    # conditional_registration_candidates-001697
+(config)# sccp local <interface> <cr>    # conditional_registration_candidates-009097
+(config)# sccp plar <cr>    # conditional_registration_candidates-000166
+(config)# segment-routing mpls <cr>    # conditional_registration_candidates-009082
+(config)# service-chain service-function <string> <cr>    # conditional_registration_candidates-000219
+(config)# service-chain service-function-forwarder local <cr>    # conditional_registration_candidates-000225
+(config)# service-chain service-path <number:1..16777215> <cr>    # conditional_registration_candidates-000239
+(config)# service-export mdns-sd controller <string> <cr>    # conditional_registration_candidates-000618
+(config)# sgi beep listener <cr>    # conditional_registration_candidates-009103
+(config)# sgi ssh <cr>    # conditional_registration_candidates-009092
+(config)# signaling-class cas <string> <cr>    # conditional_registration_candidates-000209
+(config)# sip-ua <cr>    # conditional_registration_candidates-000039
+(config)# site-manager <cr>    # conditional_registration_candidates-000008
+(config)# snmp-server enable traps isg-mib isg-job-finished <cr>    # conditional_registration_candidates-004185
+(config)# spanning-tree bpdu delay-monitor <cr>    # conditional_registration_candidates-000294
+(config)# spanning-tree bpdu sender-conflict <cr>    # conditional_registration_candidates-000303
+(config)# spanning-tree bridge assurance <cr>    # conditional_registration_candidates-000271
+(config)# spanning-tree cca <cr>    # conditional_registration_candidates-000048
+(config)# spanning-tree dispute <cr>    # conditional_registration_candidates-000065
+(config)# spanning-tree logging <cr>    # conditional_registration_candidates-000104
+(config)# spanning-tree loopguard default <cr>    # conditional_registration_candidates-000293
+(config)# spanning-tree mode pvst <cr>    # conditional_registration_candidates-000265
+(config)# spanning-tree optimize bpdu transmission <cr>    # conditional_registration_candidates-000731
+(config)# spanning-tree portfast bpdu-guard <cr>    # conditional_registration_candidates-000329
+(config)# spanning-tree portfast bpdufilter default <cr>    # conditional_registration_candidates-000875
+(config)# spanning-tree portfast bpduguard default <cr>    # conditional_registration_candidates-000818
+(config)# spanning-tree portfast default <cr>    # conditional_registration_candidates-000315
+(config)# spanning-tree portfast network default <cr>    # conditional_registration_candidates-000732
+(config)# spanning-tree portfast normal default <cr>    # conditional_registration_candidates-000736
+(config)# spanning-tree queue maxsize <number:0..40000> <cr>    # conditional_registration_candidates-000121
+(config)# spanning-tree sso block-tcn <cr>    # conditional_registration_candidates-000251
+(config)# spanning-tree transmit hold-count <number:1..20> <cr>    # conditional_registration_candidates-000703
+(config)# stcapp <cr>    # conditional_registration_candidates-000017
+(config)# stcapp call-control mode feature <cr>    # conditional_registration_candidates-000634
+(config)# stcapp call-control mode standard <cr>    # conditional_registration_candidates-000617
+(config)# stcapp ccm-group <number:1..65535> <cr>    # conditional_registration_candidates-000220
+(config)# stcapp feature access-code <cr>    # conditional_registration_candidates-000237
+(config)# stcapp feature callback <cr>    # conditional_registration_candidates-000262
+(config)# stcapp feature speed-dial <cr>    # conditional_registration_candidates-000254
+(config)# stcapp register capability <?voice_action@55558bd1c380> <cr>    # conditional_registration_candidates-009106
+(config)# stcapp register capability modem-relay <cr>    # conditional_registration_candidates-000684
+(config)# stcapp security mode encrypted <cr>    # conditional_registration_candidates-000680
+(config)# stcapp security tls-version v1.0 <cr>    # conditional_registration_candidates-000701
+(config)# stcapp security trustpoint <string> <cr>    # conditional_registration_candidates-000661
+(config)# stcapp supplementary-services <cr>    # conditional_registration_candidates-000092
+(config)# stcapp timer <cr>    # conditional_registration_candidates-000068
+(config)# stcapp timer roh <number:0..120> <cr>    # conditional_registration_candidates-000604
+(config)# telephony-service <cr>    # conditional_registration_candidates-000034
+(config)# telephony-service setup <cr>    # conditional_registration_candidates-000168
+(config)# translate ruleset <string> <cr>    # conditional_registration_candidates-000438

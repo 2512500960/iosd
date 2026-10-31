@@ -1,0 +1,28 @@
+# 模式 address-family；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-router-af)# default manet cache acknowledgement <cr>    # conditional_registration_candidates-011062
+(config-router-af)# default manet cache update <cr>    # conditional_registration_candidates-011057
+(config-router-af)# default manet hello unicast <cr>    # conditional_registration_candidates-011068
+(config-router-af)# default manet peering selective <cr>    # conditional_registration_candidates-011070
+(config-router-af)# default manet timers ackwait <cr>    # conditional_registration_candidates-011065
+(config-router-af)# default manet willingness <cr>    # conditional_registration_candidates-011052
+(config-router-af)# default segment-routing srv6 <cr>    # conditional_registration_candidates-011049
+(config-router-af)# default timers manet ackwait <cr>    # conditional_registration_candidates-011066
+(config-router-af)# manet cache acknowledgement <number:0..4294967295> <cr>    # conditional_registration_candidates-011059
+(config-router-af)# manet cache update <number:0..4294967295> <cr>    # conditional_registration_candidates-011056
+(config-router-af)# manet hello unicast <cr>    # conditional_registration_candidates-011053
+(config-router-af)# manet peering selective <cr>    # conditional_registration_candidates-011054
+(config-router-af)# manet timers ackwait <number:0..10000> <cr>    # conditional_registration_candidates-011063
+(config-router-af)# manet willingness <number:0..255> <cr>    # conditional_registration_candidates-011051
+(config-router-af)# no manet cache acknowledgement <cr>    # conditional_registration_candidates-011058
+(config-router-af)# no manet cache update <cr>    # conditional_registration_candidates-011055
+(config-router-af)# no manet hello unicast <cr>    # conditional_registration_candidates-011067
+(config-router-af)# no manet peering selective <cr>    # conditional_registration_candidates-011069
+(config-router-af)# no manet timers ackwait <cr>    # conditional_registration_candidates-011060
+(config-router-af)# no manet willingness <cr>    # conditional_registration_candidates-011050
+(config-router-af)# no segment-routing srv6 <cr>    # conditional_registration_candidates-011048
+(config-router-af)# no timers manet ackwait <cr>    # conditional_registration_candidates-011061
+(config-router-af)# segment-routing srv6 <cr>    # conditional_registration_candidates-011047
+(config-router-af)# timers manet ackwait <number:0..10000> <cr>    # conditional_registration_candidates-011064

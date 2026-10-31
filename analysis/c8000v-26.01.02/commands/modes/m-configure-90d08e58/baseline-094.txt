@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-094.md
+
+(config)# no vpdn aaa attribute class tunnel-class <cr>    # path-046581
+(config)# no vpdn aaa attribute nas-ip-address vpdn-nas <cr>    # path-046425
+(config)# no vpdn aaa attribute nas-ip-address vpdn-tunnel-client <cr>    # path-046487
+(config)# no vpdn aaa attribute nas-port <cr>    # path-037171
+(config)# no vpdn aaa attribute username gateway <cr>    # path-046526
+(config)# no vpdn aaa override-server <string> <cr>    # path-036948
+(config)# no vpdn aaa untagged default <cr>    # path-037044
+(config)# no vpdn authen-before-forward <cr>    # path-027311
+(config)# no vpdn authorize directed-request <cr>    # path-030709
+(config)# no vpdn authorize domain <cr>    # path-030740
+(config)# no vpdn enable <cr>    # path-027269
+(config)# no vpdn history failure <cr>    # path-030700
+(config)# no vpdn ip udp ignore checksum <cr>    # path-046872
+(config)# no vpdn l2tp attribute clid <cr>    # path-037120
+(config)# no vpdn l2tp attribute initial-received-lcp-confreq <cr>    # path-037100
+(config)# no vpdn l2tp attribute physical-channel-id <cr>    # path-037052
+(config)# no vpdn l2tp cac enable <cr>    # path-037045
+(config)# no vpdn l2tp nas-port-type map all virtual <cr>    # path-053693
+(config)# no vpdn l2tp nas-port-type map digital-async v110 <cr>    # path-053727
+(config)# no vpdn l2tp session refuse <number:0..12> <cr>    # path-046505
+(config)# no vpdn l2tp session refuse icrp <cr>    # path-046366
+(config)# no vpdn l2tp tunnel refuse <number:0..11> <cr>    # path-046311
+(config)# no vpdn logging <cr>    # path-027405
+(config)# no vpdn multihop <cr>    # path-027362
+(config)# no vpdn outgoing <string> <string> ip <address> <cr>    # path-054176
+(config)# no vpdn pmtu <cr>    # path-027469
+(config)# no vpdn pptp tcp listen-queue <cr>    # path-030373
+(config)# no vpdn pptp tcp window-size <cr>    # path-030411
+(config)# no vpdn queuesize-alert <cr>    # path-027298
+(config)# no vpdn redirect <cr>    # path-027434
+(config)# no vpdn search-order <cr>    # path-027365
+(config)# no vpdn session accounting network <cr>    # path-037325
+(config)# no vpdn session accounting suppress multihop <cr>    # path-046842
+(config)# no vpdn session rate compute <cr>    # path-037220
+(config)# no vpdn session-limit <cr>    # path-027315
+(config)# no vpdn softshut <cr>    # path-027428
+(config)# no vpdn source-ip <cr>    # path-027384
+(config)# no vpdn tunnel accounting network <cr>    # path-037241
+(config)# no vpdn tunnel authorization network <cr>    # path-037284
+(config)# no vpdn tunnel authorization password <cr>    # path-037367
+(config)# no vpdn tunnel authorization virtual-template <cr>    # path-037327
+(config)# no vpdn-group <string> <cr>    # path-027294
+(config)# no vpdn-template <cr>    # path-025898
+(config)# no vrf definition <cr>    # path-026071
+(config)# no vrf list <cr>    # path-026132
+(config)# no vrf rd-auto <cr>    # path-026050
+(config)# no vrf selection source <address> <address> vrf <string> <cr>    # path-056773
+(config)# no vrf upgrade-cli multi-af-mode non-common-policies <cr>    # path-034002
+(config)# no vrrp match-address-limit <cr>    # path-025762
+(config)# no vrrs <string> <cr>    # path-026611
+(config)# no vtp domain <string> <cr>    # path-029371
+(config)# no vtp file <cr>    # path-026870
+(config)# no vtp interface <cr>    # path-026901
+(config)# no vtp mode <cr>    # path-027075
+(config)# no vtp password <cr>    # path-026992
+(config)# no vtp pruning <cr>    # path-026986
+(config)# no vtp server primary <cr>    # path-029521
+(config)# no vtp trunk <string> <cr>    # path-029300
+(config)# no vtp version <cr>    # path-027019
+(config)# no wrr-queue bandwidth <cr>    # path-026345
+(config)# no wrr-queue cos-map <cr>    # path-026362
+(config)# no x25 call-record <cr>    # path-027420
+(config)# no x25 host <string> <cr>    # path-029793
+(config)# no x25 hunt-group <string> <cr>    # path-029698
+(config)# no x25 profile <string> <cr>    # path-030592
+(config)# no x25 roa <string> <cr>    # path-030632
+(config)# no x25 rotary <number:1..99> <cr>    # path-029851
+(config)# no x25 route <string> <cr>    # path-030394
+(config)# no x25 routing <cr>    # path-027426
+(config)# no xdr multicast-group internal issu-slots-split <cr>    # path-035412
+(config)# no xdr multicast-group internal split threshold <cr>    # path-045038
+(config)# no xdr multicast-group mode individual <cr>    # path-035284
+(config)# no xot access-group <number:1..99> <cr>    # path-027894
+(config)# ntp <cr>    # path-060282
+(config)# ntp access-group query-only <cr>    # path-060474
+(config)# ntp allow mode private <cr>    # path-060668
+(config)# ntp authenticate <cr>    # path-060332
+(config)# ntp authentication-key <number:1..4294967295> <cr>    # path-060457
+(config)# ntp broadcastdelay <cr>    # path-060341
+(config)# ntp clock-period <cr>    # path-060345
+(config)# ntp leap-handle <cr>    # path-060327
+(config)# ntp logging <cr>    # path-060324
+(config)# ntp master <cr>    # path-060356
+(config)# ntp max-associations <number:0..4294967295> <cr>    # path-026667
+(config)# ntp maxdistance <cr>    # path-060339
+(config)# ntp mindistance <cr>    # path-060337
+(config)# ntp orphan <cr>    # path-060336
+(config)# ntp panic update <cr>    # path-060449
+(config)# ntp passive <cr>    # path-060323
+(config)# ntp peer <address> <cr>    # path-060488
+(config)# ntp refclock timing-card <cr>    # path-060478
+(config)# ntp source <cr>    # path-060348
+(config)# ntp trusted-key <number:1..65535> <cr>    # path-060460
+(config)# ntp update-calendar <cr>    # path-060357
+(config)# oam queue <number:40..32000> <cr>    # path-026238
+(config)# object-group knob check-normal-entry-dup enable <cr>    # path-031131
+(config)# object-group network <string> <cr>    # path-027541
+(config)# onep <cr>    # path-060281
+(config)# onep applications <cr>    # path-060338
+(config)# opflex agent <cr>    # path-060330
+(config)# overlay map <address> transport <address> network-id <number:1..65535> <cr>    # path-061998
+(config)# overlay service <cr>    # path-060335
+(config)# parameter-map type subscriber attribute-to-service <string> <cr>    # path-034024
+(config)# parameter-map type webauth global <cr>    # path-028042
+(config)# parser cache <cr>    # path-025878
+(config)# parser command serializer <cr>    # path-027277
+(config)# parser config cache interface <cr>    # path-030206
+(config)# parser config partition <cr>    # path-027279
+(config)# parser maximum latency <number:20..200> <cr>    # path-030361
+(config)# parser maximum utilization <number:1..100> <cr>    # path-030340
+(config)# parser view <string> <cr>    # path-027317
+(config)# partest <cr>    # path-025485
+(config)# passwd encryption off <cr>    # path-026845
+(config)# passwd encryption on <cr>    # path-026829
+(config)# passwd key ascii <string> <cr>    # path-029143
+(config)# passwd key export <string> <cr>    # path-029337
+(config)# passwd key import <string> <string> <cr>    # path-035502
+(config)# passwd key obfuscate <cr>    # path-026919
+(config)# passwd key random <cr>    # path-026895
+(config)# passwd key zeroize <cr>    # path-026864
+(config)# passwd private-key <string> <cr>    # path-026883
+(config)# password encryption aes <cr>    # path-027357
+(config)# password logging <cr>    # path-025921
+(config)# pipeline file <string> <cr>    # path-063030
+(config)# pipeline file <string> <cr>    # path-063031
+(config)# pkt-reordering <cr>    # path-025438
+(config)# platform access-list egress-dscp enable <cr>    # path-027896
+(config)# platform async loopback <cr>    # path-026033
+(config)# platform atm-cdvt <cr>    # path-025612
+(config)# platform bfd disable-offload <cr>    # path-026024
+(config)# platform bfd limit-offload <number:4095..6000> <cr>    # path-027848
+(config)# platform broadband 1K <cr>    # path-026435
+(config)# platform cce cache enable <cr>    # path-027882
+(config)# platform cef stats-interval label <number:0..3600> <cr>    # path-033989
+(config)# platform cfm <cr>    # path-025603
+(config)# platform cft nat-correlation <cr>    # path-026321
+(config)# platform cli-agent error <cr>    # path-026013
+(config)# platform cli-agent nvgen <cr>    # path-026009
+(config)# platform console <cr>    # path-025587
+(config)# platform crft collect-on-reload <string> <string> <string> <cr>    # path-044083
+(config)# platform edpl_internal_shaper <number:dynamic> <cr>    # path-060366
+(config)# platform hardware lite license enable <cr>    # path-034465
+(config)# platform hardware throughput level MB 10 <cr>    # path-044339
+(config)# platform hardware throughput level MB <?option@55558adb9cf8> <cr>    # path-061231
+(config)# platform hardware throughput restricted-throughput-rate-mode <cr>    # path-028465
+(config)# platform hardware vacs connect ip <cr>    # path-060537
+(config)# platform icmp rate-limit <number:0..4294967295> <cr>    # path-028209
+(config)# platform interface default-mode l3 <cr>    # path-028199
+(config)# platform ip multicast ssdp <cr>    # path-027861
+(config)# platform ip-ports ephemeral-max <number:49152..65534> <cr>    # path-028070
+(config)# platform ipsec fips-mode <cr>    # path-026295
+(config)# platform l2vpn cpha-pass-through <cr>    # path-026308
+(config)# platform l2vpn hdlc-pass-through <cr>    # path-026287
+(config)# platform l2vpn statistics enable <cr>    # path-028153
+(config)# platform macsec fips-mode <cr>    # path-026215
+(config)# platform macsec logging replay-protection <number:100..65535> <cr>    # path-034128
+(config)# platform memory add <number:dynamic> <cr>    # path-060529
+(config)# platform mgmt-port monitor <cr>    # path-026164
+(config)# platform multicast bridge-tcam-handling disable <cr>    # path-063015
+(config)# platform multicast lre off <cr>    # path-027869
+(config)# platform multicast lre on <cr>    # path-027866
+(config)# platform multicast mgre injection <cr>    # path-027855
+(config)# platform multicast ns-punt-throttle <number:1..4294967295> <cr>    # path-027874
+(config)# platform multicast oce flag suppress <cr>    # path-033993
+(config)# platform multicast replication layer2 sharing <cr>    # path-033991
+(config)# platform multicast replication layer3 sharing <cr>    # path-033994
+(config)# platform multicast rpf_fail_handling enable <cr>    # path-062731
+(config)# platform multicast src-mac-rewrite enable <cr>    # path-063073
+(config)# platform multicast statistics preferred <cr>    # path-027857
+(config)# platform power protection ac220v <number:dynamic> <number:dynamic> <cr>    # path-062811
+(config)# platform power protection action shutdown lc <cr>    # path-043947
+(config)# platform power redundancy-mode nplus1 <cr>    # path-028019
+(config)# platform punt-intf per-cause rate <number:0..1000000> <cr>    # path-034011
+(config)# platform punt-intf rate <number:0..1000000> <cr>    # path-027873
+(config)# platform punt-keepalive disable-kernel-core <cr>    # path-026007
+(config)# platform punt-keepalive enable-keepalive-standby <cr>    # path-026014
+(config)# platform punt-keepalive loprio-settings <cr>    # path-026057
+(config)# platform punt-keepalive loprio-settings fatal-count <number:15..120> <cr>    # path-026038
+(config)# platform punt-keepalive loprio-settings transmit-interval <number:0..60> <cr>    # path-026046
+(config)# platform punt-keepalive loprio-settings warning-count <number:10..120> <cr>    # path-026053
+(config)# platform punt-keepalive settings <cr>    # path-026049
+(config)# platform punt-keepalive settings fatal-count <number:15..60> <cr>    # path-026022
+(config)# platform punt-keepalive settings transmit-interval <number:2..30> <cr>    # path-026030
+(config)# platform punt-keepalive settings warning-count <number:10..60> <cr>    # path-026041
+(config)# platform punt-policer <number:1..175> <?number_help_func_action@55558987bd78> <cr>    # path-060505
+(config)# platform punt-sbrl ping-bypass <cr>    # path-026119
+(config)# platform punt-sbrl subscriber ping-bypass <cr>    # path-027901
+(config)# platform punt-sbrl subscriber punt-cause <number:1..175> rate-per-4-sec no-drop <cr>    # path-052042
+(config)# platform qfp drops threshold total <number:0..2147483647> <cr>    # path-043893
+(config)# platform qfp utilization monitor load <number:50..99> <cr>    # path-043891
+(config)# platform qos marker-statistics <cr>    # path-026068
+(config)# platform qos port-channel-aggregate <number:dynamic> <cr>    # path-060504
+(config)# platform reload immediate <cr>    # path-026222
+(config)# platform resource flex-heavy <cr>    # path-026217
+(config)# platform sd disable <cr>    # path-026100
+(config)# platform security audit monitor dns-client-files <cr>    # path-063155
+(config)# platform security audit monitor dns-client-files <cr>    # path-063156
+(config)# platform security audit monitor kernel-module-mgmt <cr>    # path-063157
+(config)# platform security audit monitor kernel-module-mgmt <cr>    # path-063158
+(config)# platform security audit monitor system-software <cr>    # path-063159
+(config)# platform security audit monitor system-software <cr>    # path-063160
+(config)# platform security audit monitor user-group-config-files <cr>    # path-063161
+(config)# platform security audit monitor user-group-config-files <cr>    # path-063162
+(config)# platform security audit monitor user-privilege-mgmt <cr>    # path-063163
+(config)# platform security audit monitor user-privilege-mgmt <cr>    # path-063164
+(config)# platform security selinux enforcing <cr>    # path-027967
+(config)# platform shell <cr>    # path-025549
+(config)# platform sslvpn use-pd <cr>    # path-026010
+(config)# platform stats-vmanage <cr>    # path-025632
+(config)# platform sudi cmca3 <cr>    # path-026115
+(config)# platform tcp mss <number:0..10000> <cr>    # path-027883
+(config)# platform tcp selective-ack <cr>    # path-026083
+(config)# platform tcp synwait-time <number:5..300> <cr>    # path-027904
+(config)# platform tcp timestamp <cr>    # path-026104
+(config)# platform tcp window-size <number:0..1073741823> <cr>    # path-027926
+(config)# platform urpf loose counter ipv4 supress asymmetric_only <cr>    # path-052040
+(config)# platform usb disable <cr>    # path-026101
+(config)# pnp auth-token 0 <string> <cr>    # path-060698
+(config)# pnp listener <string> <cr>    # path-060481
+(config)# pnp profile <string> <cr>    # path-060476
+(config)# pnp startup-vlan <cr>    # path-060362
+(config)# pnp tag <string> <cr>    # path-060486
+(config)# policy-manager policy enable <cr>    # path-027528
+(config)# policy-manager policy subsystem <string> enable <cr>    # path-038077
+(config)# policy-manager policy subsystem <string> policy-name <string> enable <cr>    # path-054430
+(config)# policy-map limit-warning percent <cr>    # path-026344
+(config)# policy-map type control <string> <cr>    # path-028388
+(config)# policy-map type control subscriber <string> <cr>    # path-034648
+(config)# policy-map type service <string> <cr>    # path-028254
+(config)# policy-peer keepalive <number:0..0> <cr>    # path-026698
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> <cr>    # path-060386
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> algorithm <cr>    # path-060539
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control default <cr>    # path-060771
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control tunnel-gre <cr>    # path-060774
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control tunnel-ipinip <cr>    # path-060772
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control tunnel-ipsec <cr>    # path-060777
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control tunnel-l2tp <cr>    # path-060785
+(config)# port-channel load-balance-hash-algo <?keyword_option_mm_action@5555898c3220> key-control tunnel-vxlan <cr>    # path-060781
+(config)# port-channel load-balance-hash-algo dpi algorithm <cr>    # path-028396
+(config)# port-channel load-balance-hash-algo dpi key-control default outer-src-ip outer-src-port <cr>    # path-052261
+(config)# port-channel load-balance-hash-algo dpi key-control tunnel-gre outer-src-ip inner-src-ip inner-src-port <cr>    # path-056876
+(config)# port-channel load-balance-hash-algo dpi key-control tunnel-ipinip outer-src-ip inner-src-ip inner-src-port <cr>    # path-056863
+(config)# port-channel load-balance-hash-algo dpi key-control tunnel-ipsec outer-src-ip <cr>    # path-044362
+(config)# port-channel load-balance-hash-algo dpi key-control tunnel-l2tp outer-src-ip outer-src-port inner-src-ip inner-src-port <cr>    # path-058950
+(config)# port-channel load-balance-hash-algo dpi key-control tunnel-vxlan outer-src-ip outer-src-port inner-src-mac ignore-inner-vlan <cr>    # path-058952
+(config)# port-channel load-balancing vlan-manual <cr>    # path-026410
+(config)# port-channel max-memlink-per-pc <number:2..16> <cr>    # path-026404
+(config)# port-channel mc-lag <cr>    # path-025627
+(config)# power inline redundant <cr>    # path-027592
+(config)# power main redundant <cr>    # path-027588
+(config)# ppp hold-queue <number:1..1000000> <cr>    # path-026239
+(config)# ppp interrupt-process <cr>    # path-025606
+(config)# ppp ip address-save aaa-acct-vsa <string> password <string> <cr>    # path-052071
+(config)# ppp limit ccp <number:1..8000> <cr>    # path-028017
+(config)# ppp ncp override local <cr>    # path-028142
+(config)# ppp packet throttle <number:1..100000> <number:1..3600> <number:dynamic> <cr>    # path-061212
+(config)# ppp queue tick <number:1..5> limit <number:1..500> <cr>    # path-043927
+(config)# ppp suppress-timeouts <cr>    # path-025597
+(config)# ppp syslog enable <cr>    # path-026297
+(config)# ppp unique address access-accept <cr>    # path-027968
+(config)# pppoe pads disable-ac-info <cr>    # path-027284
+(config)# privilege <?mode_action@55558960db68> <cr>    # path-060300
+(config)# process cpu autoprofile hog <cr>    # path-028009
+(config)# process cpu extended accounting enable <cr>    # path-034092
+(config)# process cpu extended accounting frames <number:0..15> <cr>    # path-043983
+(config)# process cpu extended accounting size <number:0..2147483647> <cr>    # path-043969
+(config)# process cpu extended history <number:2..720> <cr>    # path-034097
+(config)# process cpu statistics limit entry-percentage <number:1..100> <cr>    # path-043954
+(config)# process cpu threshold type process rising <number:1..100> interval <number:5..86400> <cr>    # path-058881
+(config)# process-max-time <number:20..200> <cr>    # path-025548
+(config)# product-analytics <cr>    # path-025481
+(config)# profile <?general_pointer_number_action@55558969bc18> <?general_pointer_number_action@55558969bc50> <number:0..4294967295> <cr>    # path-062730
+(config)# prompt <string> <cr>    # path-025676
+(config)# qos default queue-limit <?number_help_func_action@5555894ed820> <cr>    # path-060565
+(config)# qos police order parent-first <cr>    # path-028809
+(config)# qos scheduler 3-parameters priority <cr>    # path-028757
+(config)# qos scheduler priority-rate-propagation <cr>    # path-026790
+(config)# qos service-group layer <cr>    # path-026680
+(config)# qos set table <string> output <cr>    # path-035014
+(config)# qos shape-timer 1ms <cr>    # path-026695
+(config)# qos trace resize <number:0..2147483647> <cr>    # path-029155
+(config)# qos trace resize error <number:0..2147483647> <cr>    # path-035089
+(config)# qos trace resize event <number:0..2147483647> <cr>    # path-035053
+(config)# qos trace resize warning <number:0..2147483647> <cr>    # path-035139
+(config)# radius filter match-all <string> <cr>    # path-029817
+(config)# radius ip-input-bypass <cr>    # path-025847
+(config)# radius server <string> <cr>    # path-027087
+(config)# radius-server accounting system host-config <cr>    # path-030334
+(config)# radius-server attribute 11 default direction inbound <cr>    # path-046042
+(config)# radius-server attribute 11 optional <cr>    # path-030139
+(config)# radius-server attribute 188 format non-standard <cr>    # path-036340
+(config)# radius-server attribute 196 network-up lcp-open <cr>    # path-036807
+(config)# radius-server attribute 2 length maximum 240 <cr>    # path-046167
+(config)# radius-server attribute 218 mandatory <cr>    # path-030037
+(config)# radius-server attribute 25 access-request include <cr>    # path-036341
+(config)# radius-server attribute 25 accounting prefer-preauth <cr>    # path-036462
+(config)# radius-server attribute 25 include-in-access-req <cr>    # path-030042
+(config)# radius-server attribute 30 circuit-id <cr>    # path-030109
+(config)# radius-server attribute 30 original-called-number <cr>    # path-030070
+(config)# radius-server attribute 30 remote-id <cr>    # path-030146
+(config)# radius-server attribute 31 append-circuit-id <cr>    # path-030404
+(config)# radius-server attribute 31 mac format default <cr>    # path-046465
+(config)# radius-server attribute 31 remote-id <cr>    # path-030381
+(config)# radius-server attribute 31 send nas-port-detail <cr>    # path-036989
+(config)# radius-server attribute 32 include-in-access-req <cr>    # path-030131
+(config)# radius-server attribute 4 <address> <cr>    # path-030315
+(config)# radius-server attribute 4 nrp <cr>    # path-030279
+(config)# radius-server attribute 44 extend-with-addr <cr>    # path-029931
+(config)# radius-server attribute 44 include-in-access-req <cr>    # path-029906
+(config)# radius-server attribute 44 include-in-access-req all <cr>    # path-036303
+(config)# radius-server attribute 44 include-in-access-req vrf <string> <cr>    # path-045603
+(config)# radius-server attribute 44 initial <number:1..4294967295> <cr>    # path-027173
+(config)# radius-server attribute 44 on-for-access-req <cr>    # path-029823
+(config)# radius-server attribute 44 sync-with-client <cr>    # path-030015
+(config)# radius-server attribute 55 access-request include <cr>    # path-036461
+(config)# radius-server attribute 55 include-in-acct-req <cr>    # path-030038
+(config)# radius-server attribute 6 mandatory <cr>    # path-029932
+(config)# radius-server attribute 6 on-for-login-auth <cr>    # path-029762
+(config)# radius-server attribute 6 support-multiple <cr>    # path-029824
+(config)# radius-server attribute 6 voice 1 <cr>    # path-036145
+(config)# radius-server attribute 60 include-in-access-req <cr>    # path-029870
+(config)# radius-server attribute 61 extended <cr>    # path-030171
+(config)# radius-server attribute 66 include-in-access-req <cr>    # path-030441
+(config)# radius-server attribute 67 include-in-access-req <cr>    # path-030069
+(config)# radius-server attribute 69 clear <cr>    # path-029964
+(config)# radius-server attribute 77 include-in-acct-req <cr>    # path-029920
+(config)# radius-server attribute 8 include-in-access-req <cr>    # path-029871
+(config)# radius-server attribute 91 ignore <cr>    # path-030105
+(config)# radius-server attribute 95 <address> <cr>    # path-030452
+(config)# radius-server attribute list <string> <cr>    # path-030250
+(config)# radius-server attribute nas-port format a <cr>    # path-036697
+(config)# radius-server attribute nas-port-id include vendor-class-id <cr>    # path-062951
+(config)# radius-server attribute policy-name <string> include-in-access-req <cr>    # path-036281
+(config)# radius-server attribute wireless 44 extend-with-mac-addr <cr>    # path-037148
+(config)# radius-server attribute wireless 44 include-in-access-req <cr>    # path-037089
+(config)# radius-server attribute wireless accounting call-station-id ap-ethmac-only <cr>    # path-046637
+(config)# radius-server attribute wireless accounting callStationIdCase lower <cr>    # path-046683
+(config)# radius-server attribute wireless accounting mac-delimiter colon <cr>    # path-046486
+(config)# radius-server attribute wireless accounting nas-port-id exclude <cr>    # path-046719
+(config)# radius-server attribute wireless accounting username-case lower <cr>    # path-046593
+(config)# radius-server attribute wireless accounting username-delimiter colon <cr>    # path-046538
+(config)# radius-server attribute wireless authentication call-station-id ap-ethmac-only <cr>    # path-046636
+(config)# radius-server attribute wireless authentication callStationIdCase lower <cr>    # path-046536
+(config)# radius-server attribute wireless authentication mac-delimiter colon <cr>    # path-046591
+(config)# radius-server attribute wireless location civic-location-id <string> <cr>    # path-046633
+(config)# radius-server attribute wireless location delivery out-of-band <cr>    # path-046841
+(config)# radius-server attribute wireless location geo-location-id <string> <cr>    # path-046681
+(config)# radius-server attribute wireless location operator-id <string> <cr>    # path-046718
+(config)# radius-server authorization permit missing Service-Type <cr>    # path-036846
+(config)# radius-server backoff exponential <cr>    # path-027329
+(config)# radius-server cache authentication profile <string> <cr>    # path-036419
+(config)# radius-server cache authorization profile <string> <cr>    # path-036473
+(config)# radius-server cache expiry <number:0..2147483647> <cr>    # path-030273
+(config)# radius-server challenge-noecho <cr>    # path-025886
+(config)# radius-server configure-nas <cr>    # path-025865
+(config)# radius-server dead-criteria <cr>    # path-025842
+(config)# radius-server deadtime <number:1..1440> <cr>    # path-025463
+(config)# radius-server directed-request <cr>    # path-025876
+(config)# radius-server disallow unknown vendor-code <cr>    # path-030241
+(config)# radius-server domain-stripping <cr>    # path-025899
+(config)# radius-server dscp acct <number:1..63> <cr>    # path-030169
+(config)# radius-server ipc-limit done <number:1..10> <cr>    # path-025882
+(config)# radius-server ipc-limit in <number:1..100000> <cr>    # path-025873
+(config)# radius-server load-balance method least-outstanding <cr>    # path-030326
+(config)# radius-server optional-passwords <cr>    # path-025868
+(config)# radius-server retransmit <number:0..100> <cr>    # path-025477
+(config)# radius-server retry method reorder <cr>    # path-030214
+(config)# radius-server secret <string> <cr>    # path-027343
+(config)# radius-server send-ma <cr>    # path-025870
+(config)# radius-server source-ports 1645-1646 <cr>    # path-027292
+(config)# radius-server source-ports extended <cr>    # path-027307
+(config)# radius-server test id-per-port <number:1..255> <cr>    # path-025901
+(config)# radius-server throttle accounting <number:0..65535> <cr>    # path-030083
+(config)# radius-server timeout <number:1..1000> <cr>    # path-025478
+(config)# radius-server transaction max-tries <number:1..100> <cr>    # path-030209
+(config)# radius-server unique-ident <number:0..255> <cr>    # path-027285
+(config)# radius-server validate-ma <cr>    # path-025875
+(config)# radius-server vsa disallow unknown <cr>    # path-030036
+(config)# radius-server vsa send <cr>    # path-027266
+(config)# radius-server vsa send <cr>    # path-027290
+(config)# rate-limit llq-classify <cr>    # path-025879
+(config)# rbe nasip <interface> <cr>    # path-060374
+(config)# rcmd domain-lookup <cr>    # path-025698
+(config)# rcmd remote-host <string> <address> <string> <cr>    # path-034658
+(config)# rcmd remote-username <string> <cr>    # path-026591
+(config)# rcp-enable <cr>    # path-025447
+(config)# redirect log translations basic exporter <string> <cr>    # path-043920
+(config)# redirect reduce-timeouts <cr>    # path-025563
+(config)# redirect send-tcp-reset <cr>    # path-025556
+(config)# redirect server-group <string> <cr>    # path-026116
+(config)# redirect session-limit <cr>    # path-025579
+(config)# redundancy <cr>    # path-025430
+(config)# regexp optimize <cr>    # path-025594
+(config)# remote-management <cr>    # path-025491
+(config)# resource policy <cr>    # path-025542
+(config)# resource-group <string> memory limit <cr>    # path-060681
+(config)# restconf <cr>    # path-063005
+(config)# restconf <cr>    # path-063006
+(config)# restconf ipv4 access-list <cr>    # path-063041
+(config)# restconf ipv4 access-list name <cr>    # path-063115

@@ -1,0 +1,21 @@
+# 模式 custom；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-custom)# direction source <cr>    # observed_connections-008868
+(config-custom)# dscp <?common_dscp_value_action@55558a7b0a38> <?common_dscp_value_action@55558a7b0a88> <cr>    # observed_connections-008876
+(config-custom)# exit <cr>    # observed_connections-008862
+(config-custom)# ip <cr>    # observed_connections-008863
+(config-custom)# ip subnet <address> <number:0..32> <cr>    # observed_connections-008873
+(config-custom)# ipv6 address <address> <cr>    # observed_connections-008872
+(config-custom)# ipv6 subnet <address> <number:0..128> <cr>    # observed_connections-008874
+(config-custom)# no direction <cr>    # observed_connections-008869
+(config-custom)# no dscp <cr>    # observed_connections-008870
+(config-custom)# no ip <cr>    # observed_connections-008865
+(config-custom)# no ip subnet <address> <number:0..32> <cr>    # observed_connections-008875
+(config-custom)# no ipv6 <cr>    # observed_connections-008867
+(config-custom)# no port <cr>    # observed_connections-008866
+(config-custom)# port <cr>    # observed_connections-008864
+(config-custom)# port <number:1..65535> <cr>    # observed_connections-008871
+(config-custom)# port range <number:1..65535> <number:dynamic> <cr>    # observed_connections-008877
+(config-custom)# port range <number:1..65535> <number:dynamic> <number:1..65535> <cr>    # observed_connections-008878

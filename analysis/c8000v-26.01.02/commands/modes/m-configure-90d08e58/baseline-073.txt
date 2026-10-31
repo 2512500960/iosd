@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-073.md
+
+(config)# do-exec undebug tunnel packet <cr>    # path-032057
+(config)# do-exec undebug tunnel qos <cr>    # path-031954
+(config)# do-exec undebug tunnel rbscp <cr>    # path-032058
+(config)# do-exec undebug tunnel rbscp ack-split <cr>    # path-040327
+(config)# do-exec undebug tunnel rbscp detail <cr>    # path-040443
+(config)# do-exec undebug tunnel rbscp msg <cr>    # path-040251
+(config)# do-exec undebug tunnel rbscp rto <cr>    # path-040405
+(config)# do-exec undebug tunnel rbscp state <cr>    # path-040292
+(config)# do-exec undebug tunnel rbscp window <cr>    # path-040375
+(config)# do-exec undebug tunnel route-via <cr>    # path-031937
+(config)# do-exec undebug tunnel source tracking <cr>    # path-040163
+(config)# do-exec undebug vasi all <cr>    # path-031516
+(config)# do-exec undebug vasi elog <cr>    # path-031492
+(config)# do-exec undebug vasi events <cr>    # path-031438
+(config)# do-exec undebug vasi packet <cr>    # path-031451
+(config)# do-exec undebug vasi state <cr>    # path-031470
+(config)# do-exec undebug vdsl all <cr>    # path-030114
+(config)# do-exec undebug virtual-service VirtualPortGroup <cr>    # path-033777
+(config)# do-exec undebug virtual-service all <cr>    # path-033787
+(config)# do-exec undebug virtual-service messaging <cr>    # path-033750
+(config)# do-exec undebug virtual-service timeout <cr>    # path-033766
+(config)# do-exec undebug vlan <cr>    # path-027596
+(config)# do-exec undebug vlan encapsulation-events <cr>    # path-031425
+(config)# do-exec undebug vlan ifmgr error <cr>    # path-038938
+(config)# do-exec undebug vlan ifmgr trace <cr>    # path-039000
+(config)# do-exec undebug vlan oir-events <cr>    # path-031455
+(config)# do-exec undebug vlan packets <cr>    # path-031405
+(config)# do-exec undebug vlan port-channel <cr>    # path-031444
+(config)# do-exec undebug vlan-autoconfig <cr>    # path-027587
+(config)# do-exec undebug vlan-autoconfig error <cr>    # path-031357
+(config)# do-exec undebug vlan-autoconfig event <cr>    # path-031332
+(config)# do-exec undebug vpdn call event <cr>    # path-041550
+(config)# do-exec undebug vpdn call fsm <cr>    # path-041587
+(config)# do-exec undebug vpdn elog control <cr>    # path-041701
+(config)# do-exec undebug vpdn elog packet <cr>    # path-041729
+(config)# do-exec undebug vpdn elog session <cr>    # path-041759
+(config)# do-exec undebug vpdn error <cr>    # path-032610
+(config)# do-exec undebug vpdn event <cr>    # path-032592
+(config)# do-exec undebug vpdn event disconnect <cr>    # path-041485
+(config)# do-exec undebug vpdn event disconnect traceback <cr>    # path-050368
+(config)# do-exec undebug vpdn group-select <cr>    # path-032671
+(config)# do-exec undebug vpdn l2x data <cr>    # path-041365
+(config)# do-exec undebug vpdn l2x errors <cr>    # path-041237
+(config)# do-exec undebug vpdn l2x events <cr>    # path-041317
+(config)# do-exec undebug vpdn l2x events congestion-control <cr>    # path-050298
+(config)# do-exec undebug vpdn l2x packets <cr>    # path-041305
+(config)# do-exec undebug vpdn l2x startstop <cr>    # path-041340
+(config)# do-exec undebug vpdn l2x-data <cr>    # path-032553
+(config)# do-exec undebug vpdn l2x-errors <cr>    # path-032471
+(config)# do-exec undebug vpdn l2x-events <cr>    # path-032530
+(config)# do-exec undebug vpdn l2x-events congestion-control <cr>    # path-041332
+(config)# do-exec undebug vpdn l2x-packets <cr>    # path-032528
+(config)# do-exec undebug vpdn l2x-startstop <cr>    # path-032538
+(config)# do-exec undebug vpdn message <cr>    # path-032654
+(config)# do-exec undebug vpdn packet <cr>    # path-032661
+(config)# do-exec undebug vpdn packet counters <cr>    # path-041557
+(config)# do-exec undebug vpdn packet detail <cr>    # path-041512
+(config)# do-exec undebug vpdn packet errors <cr>    # path-041465
+(config)# do-exec undebug vpdn scalability <cr>    # path-032713
+(config)# do-exec undebug vpdn subscriber error <cr>    # path-041661
+(config)# do-exec undebug vpdn subscriber event <cr>    # path-041683
+(config)# do-exec undebug vpdn subscriber fsm <cr>    # path-041639
+(config)# do-exec undebug vpn authorization error <cr>    # path-041302
+(config)# do-exec undebug vpn authorization event <cr>    # path-041269
+(config)# do-exec undebug vpn authorization fsm <cr>    # path-041338
+(config)# do-exec undebug vpn authorization testapp <cr>    # path-041363
+(config)# do-exec undebug vprofile <cr>    # path-027562
+(config)# do-exec undebug vprofile packet <cr>    # path-031168
+(config)# do-exec undebug vprofile subblock <cr>    # path-031189
+(config)# do-exec undebug vrf api <cr>    # path-031197
+(config)# do-exec undebug vrf create <cr>    # path-030931
+(config)# do-exec undebug vrf crimson <cr>    # path-031276
+(config)# do-exec undebug vrf delete <cr>    # path-030955
+(config)# do-exec undebug vrf error <cr>    # path-031089
+(config)# do-exec undebug vrf gr <cr>    # path-031324
+(config)# do-exec undebug vrf ha <cr>    # path-031154
+(config)# do-exec undebug vrf initialization <cr>    # path-030907
+(config)# do-exec undebug vrf interface <cr>    # path-031032
+(config)# do-exec undebug vrf ipv4 <cr>    # path-030977
+(config)# do-exec undebug vrf ipv6 <cr>    # path-031008
+(config)# do-exec undebug vrf issu <cr>    # path-031177
+(config)# do-exec undebug vrf lock <cr>    # path-031053
+(config)# do-exec undebug vrf lookup <cr>    # path-031114
+(config)# do-exec undebug vrf mpls <cr>    # path-031135
+(config)# do-exec undebug vrf notifications <cr>    # path-031227
+(config)# do-exec undebug vrf parser <cr>    # path-031251
+(config)# do-exec undebug vrf platform <cr>    # path-031069
+(config)# do-exec undebug vrf selection <cr>    # path-031430
+(config)# do-exec undebug vrrp tloc <cr>    # path-031735
+(config)# do-exec undebug vrrs accounting all <cr>    # path-038056
+(config)# do-exec undebug vrrs accounting errors <cr>    # path-037979
+(config)# do-exec undebug vrrs accounting events <cr>    # path-038022
+(config)# do-exec undebug vrrs all <cr>    # path-031690
+(config)# do-exec undebug vrrs infra all <cr>    # path-037936
+(config)# do-exec undebug vrrs infra client <cr>    # path-038028
+(config)# do-exec undebug vrrs infra events <cr>    # path-037986
+(config)# do-exec undebug vrrs infra server <cr>    # path-038060
+(config)# do-exec undebug vrrs infra test <cr>    # path-038093
+(config)# do-exec undebug vrrs plugin all <cr>    # path-034651
+(config)# do-exec undebug vrrs plugin arp-packet <cr>    # path-034590
+(config)# do-exec undebug vrrs plugin client <cr>    # path-034564
+(config)# do-exec undebug vrrs plugin database <cr>    # path-034438
+(config)# do-exec undebug vrrs plugin if-state <cr>    # path-034484
+(config)# do-exec undebug vrrs plugin mac <cr>    # path-034531
+(config)# do-exec undebug vrrs plugin process <cr>    # path-034360
+(config)# do-exec undebug vrrs plugin subblock <cr>    # path-034398
+(config)# do-exec undebug vrrs plugin test <cr>    # path-034620
+(config)# do-exec undebug vtemplate cloning <cr>    # path-032910
+(config)# do-exec undebug vtemplate elog clone <cr>    # path-042152
+(config)# do-exec undebug vtemplate elog create <cr>    # path-042131
+(config)# do-exec undebug vtemplate elog free <cr>    # path-042172
+(config)# do-exec undebug vtemplate elog request <cr>    # path-042109
+(config)# do-exec undebug vtemplate error <cr>    # path-032898
+(config)# do-exec undebug vtemplate event <cr>    # path-032888
+(config)# do-exec undebug vtemplate redundancy <cr>    # path-032947
+(config)# do-exec undebug vtemplate subinterface <cr>    # path-032922
+(config)# do-exec undebug wccp events <cr>    # path-031337
+(config)# do-exec undebug wccp packets <cr>    # path-031397
+(config)# do-exec undebug wccp packets bypass <cr>    # path-038724
+(config)# do-exec undebug wccp packets redirect <cr>    # path-038884
+(config)# do-exec undebug wccp platform <cr>    # path-031412
+(config)# do-exec undebug wccp subblocks <cr>    # path-031381
+(config)# do-exec undebug wrr-queue all <cr>    # path-030106
+(config)# do-exec undebug wrr-queue bandwidth <cr>    # path-030177
+(config)# do-exec undebug wrr-queue cos-map <cr>    # path-030143
+(config)# do-exec undebug wsma agent <cr>    # path-033483
+(config)# do-exec undebug wsma agent config <cr>    # path-042927
+(config)# do-exec undebug wsma agent exec <cr>    # path-042954
+(config)# do-exec undebug wsma agent filesys <cr>    # path-042981
+(config)# do-exec undebug wsma agent mgmt <cr>    # path-043035
+(config)# do-exec undebug wsma agent notify <cr>    # path-043008
+(config)# do-exec undebug wsma profile <cr>    # path-033482
+(config)# do-exec undebug wsma profile initiator <cr>    # path-043028
+(config)# do-exec undebug wsma profile listener <cr>    # path-042998
+(config)# do-exec undebug x25 <cr>    # path-027722
+(config)# do-exec undebug x25 annexg <cr>    # path-032945
+(config)# do-exec undebug x25 aodi <cr>    # path-032957
+(config)# do-exec undebug x25 encapsulation <cr>    # path-032932
+(config)# do-exec undebug x25 switch <cr>    # path-032920
+(config)# do-exec undebug xdr buffering <cr>    # path-031886
+(config)# do-exec undebug xdr client <cr>    # path-031877
+(config)# do-exec undebug xdr error <cr>    # path-031873
+(config)# do-exec undebug xdr event <cr>    # path-031775
+(config)# do-exec undebug xdr fragment <cr>    # path-031859
+(config)# do-exec undebug xdr groups <cr>    # path-031906
+(config)# do-exec undebug xdr ipc <cr>    # path-031799
+(config)# do-exec undebug xdr issu <cr>    # path-031965
+(config)# do-exec undebug xdr issu client <cr>    # path-040164
+(config)# do-exec undebug xdr packet <cr>    # path-031944
+(config)# do-exec undebug xdr packet padding <cr>    # path-040122
+(config)# do-exec undebug xdr packing <cr>    # path-031820
+(config)# do-exec undebug xmpp profile <cr>    # path-033619
+(config)# do-exec undebug xmpp profile initiator <cr>    # path-043271
+(config)# do-exec undebug xmpp profile listener <cr>    # path-043253
+(config)# do-exec undelete <number:1..1024> <?url_prefix_action@55558940dd08> <cr>    # path-060671
+(config)# do-exec unprofile <?general_pointer_number_action@555589676dc0> <?general_pointer_number_action@555589677040> <number:0..4294967295> <cr>    # path-062773
+(config)# do-exec unprofile all <cr>    # path-026151
+(config)# do-exec unprofile task <cr>    # path-026133
+(config)# do-exec upgrade filesystem monlib <url:dynamic> <cr>    # path-060758
+(config)# do-exec verify /md5 <url:dynamic> <cr>    # path-060649
+(config)# do-exec verify /sha512 <url:dynamic> <cr>    # path-060651
+(config)# do-exec verify <url:dynamic> <cr>    # path-060425
+(config)# do-exec virtual-service clear name <string> aux <cr>    # path-047171
+(config)# do-exec virtual-service clear statistics CPU <cr>    # path-037832
+(config)# do-exec virtual-service connect name <string> aux <cr>    # path-047117
+(config)# do-exec virtual-service install name <string> package <url:dynamic> <cr>    # path-062008
+(config)# do-exec virtual-service move name <string> core to <url:dynamic> <cr>    # path-062339
+(config)# do-exec virtual-service move name <string> log to <url:dynamic> <cr>    # path-062338
+(config)# do-exec virtual-service throttle clear <cr>    # path-030954
+(config)# do-exec virtual-service throttle disable <cr>    # path-030930
+(config)# do-exec virtual-service throttle enable <cr>    # path-030903
+(config)# do-exec virtual-service uninstall name <string> <cr>    # path-037719
+(config)# do-exec vlan database <?sync_force_action@55558b3534c0> <cr>    # path-060580
+(config)# do-exec vtp password <string> <cr>    # path-029414
+(config)# do-exec vtp primary <cr>    # path-026995
+(config)# do-exec vtp primary force <cr>    # path-029422
+(config)# do-exec vtp pruning <cr>    # path-026985
+(config)# do-exec vtp version <number:1..2> <cr>    # path-029469
+(config)# do-exec where <cr>    # path-025644
+(config)# do-exec which-route <address> <cr>    # path-027058
+(config)# do-exec who <cr>    # path-025677
+(config)# do-exec write <cr>    # path-025725
+(config)# do-exec write core <?ipv4orv6_addr_action@5555896b24d0> <cr>    # path-060541
+(config)# do-exec write erase <cr>    # path-026556
+(config)# do-exec write memory <cr>    # path-026597
+(config)# do-exec write mib-data <cr>    # path-026593
+(config)# do-exec write network <cr>    # path-026637
+(config)# do-exec write network <url:dynamic> <cr>    # path-060544
+(config)# do-exec write terminal <cr>    # path-026634
+(config)# do-exec x3 <number:0..22> : <number:0..255> <cr>    # path-062789
+(config)# dot1x auth-fail eapol <cr>    # path-027509
+(config)# dot1x credentials <string> <cr>    # path-027523
+(config)# dot1x critical eapol <cr>    # path-027539
+(config)# dot1x critical eapol block <cr>    # path-031080
+(config)# dot1x critical recovery delay <number:1..10000> <cr>    # path-038165
+(config)# dot1x eapol version <number:2..3> <cr>    # path-030909
+(config)# dot1x guest-vlan supplicant <cr>    # path-027525
+(config)# dot1x logging verbose <cr>    # path-027511
+(config)# dot1x supplicant controlled transient <cr>    # path-031110
+(config)# dot1x supplicant force-multicast <cr>    # path-027532
+(config)# dot1x system-auth-control <cr>    # path-025959
+(config)# dot1x test timeout <number:1..65535> <cr>    # path-030913
+(config)# downward-compatible-config <number:0..999999> . <number:0..999999> <cr>    # path-060500
+(config)# dspfarm <cr>    # path-025454
+(config)# dspfarm codec g729 vad disable <cr>    # path-035236
+(config)# dspfarm confbridge maximum sessions <number:dynamic> <cr>    # path-060824
+(config)# dspfarm connection interval <number:60..10800> <cr>    # path-029253
+(config)# dspfarm profile <number:1..65535> <cr>    # path-026960
+(config)# dspfarm rtp timeout <number:60..172800> <cr>    # path-029059
+(config)# dspfarm transcoder maximum sessions <number:dynamic> <cr>    # path-060813
+(config)# dta <cr>    # path-063007
+(config)# dta <cr>    # path-063009
+(config)# eap key-name compliance <cr>    # path-026433
+(config)# eap method fast profile <string> <cr>    # path-034706
+(config)# eap profile <string> <cr>    # path-026460
+(config)# enable algorithm-type scrypt masked-secret <cr>    # path-062734
+(config)# enable last-resort <cr>    # path-062698
+(config)# enable masked-secret <cr>    # path-062700
+(config)# enable password <cr>    # path-062701
+(config)# enable secret <cr>    # path-062699
+(config)# enable use-tacacs <cr>    # path-062697
+(config)# enable-password 0 <string> <cr>    # path-026081
+(config)# end <cr>    # path-060276
+(config)# endpoint-tracker <cr>    # path-025461
+(config)# endpoint-tracker-settings dia-stabilize-status <cr>    # path-025590
+(config)# endpoint-tracker-sla-profile <string> <cr>    # path-025821
+(config)# epm logging <cr>    # path-025774
+(config)# errdisable detect cause loopdetect <cr>    # path-031302
+(config)# errdisable detect cause packet-buffer <?print_action@55558b3800c0> <cr>    # path-060985
+(config)# errdisable detect cause security-violation shutdown vlan <cr>    # path-047735
+(config)# errdisable flap-setting cause pagp-flap max-flaps <number:1..100> time <number:1..1800> <cr>    # path-058059
+(config)# errdisable recovery cause preemption <cr>    # path-031390
+(config)# errdisable recovery interval <number:30..86400> <cr>    # path-025987
+(config)# ethernet cfm ais link-status global <cr>    # path-034358
+(config)# ethernet cfm alarm delay <number:2500..10000> <cr>    # path-034308
+(config)# ethernet cfm alarm notification all <cr>    # path-034249
+(config)# ethernet cfm alarm packet <number:1..65535> <cr>    # path-034339
+(config)# ethernet cfm alarm reset <number:2500..10000> <cr>    # path-034374
+(config)# ethernet cfm distribution enable <cr>    # path-028059
+(config)# ethernet cfm domain <string> <cr>    # path-028343
+(config)# ethernet cfm global <cr>    # path-026293
+(config)# ethernet cfm ieee <cr>    # path-026234
+(config)# ethernet cfm lck link-status global <cr>    # path-034327
+(config)# ethernet cfm logging <cr>    # path-026478
+(config)# ethernet cfm mep crosscheck start-delay <number:1..65535> <cr>    # path-044572
+(config)# ethernet cfm mip auto-create level <number:0..7> evc <string> <cr>    # path-056819
+(config)# ethernet cfm mip auto-create level <number:0..7> vlan <number:1..4094> <cr>    # path-062892
+(config)# ethernet cfm mip filter <cr>    # path-028179
+(config)# ethernet cfm slm max <number:100..32000> <cr>    # path-034200
+(config)# ethernet cfm slm timeout <number:5..2400> <cr>    # path-034223
+(config)# ethernet cfm traceroute cache <cr>    # path-028217
+(config)# ethernet cfm traceroute cache hold-time <number:1..65535> <cr>    # path-044046
+(config)# ethernet cfm traceroute cache size <number:1..4095> <cr>    # path-044072
+(config)# ethernet egress-filter strict <cr>    # path-026214
+(config)# ethernet evc <string> <cr>    # path-026275
+(config)# ethernet lmi ce <cr>    # path-026203
+(config)# ethernet lmi global <cr>    # path-026176
+(config)# ethernet mac limit action flooding disable <cr>    # path-044198
+(config)# ethernet mac limit maximum addresses <number:dynamic> <cr>    # path-061218
+(config)# ethernet mac tunnel address destination default <address> <cr>    # path-052249
+(config)# ethernet mac tunnel address destination map <address> <address> <cr>    # path-056856
+(config)# ethernet mac-flush notification mirp <cr>    # path-028171
+(config)# ethernet mac-flush notification mirp cos <number:0..7> <cr>    # path-044022
+(config)# ethernet mac-flush notification mirp tx-timer <number:2..5> <cr>    # path-044020
+(config)# ethernet mac-tunnel engine slot <number:0..31> slotunit <number:0..31> <cr>    # path-052113
+(config)# ethernet mac-tunnel virtual <number:dynamic> <cr>    # path-060518
+(config)# ethernet oam mib log size <number:0..200> <cr>    # path-043942
+(config)# ethernet oam trap interval <number:1..900> <cr>    # path-034096
+(config)# ethernet reuse SubInterface <cr>    # path-026705
+(config)# ethernet service multi-line <cr>    # path-026286
+(config)# ethernet-internal subslot <?slotcard_func_action@55558b4f0950> <cr>    # path-060497
+(config)# event manager applet <string> <cr>    # path-060700
+(config)# event manager detector routing bootup-delay <cr>    # path-060968
+(config)# event manager detector rpc max-sessions <cr>    # path-060969
+(config)# event manager detector rpc ssh <cr>    # path-060971
+(config)# event manager directory user policy <cr>    # path-060954
+(config)# event manager environment <string> <cr>    # path-060691
+(config)# event manager history size events <number:0..50> <cr>    # path-060695
+(config)# event manager history size traps <number:0..50> <cr>    # path-060701
+(config)# event manager policy <string> <cr>    # path-060709
+(config)# event manager scheduler script resource-limit class cpu all queue <number:1..100> <cr>    # path-062623
+(config)# event manager scheduler script thread class number <cr>    # path-062043
+(config)# event manager scheduler suspend <cr>    # path-060692
+(config)# event manager session cli username <cr>    # path-060960
+(config)# exception crashinfo <cr>    # path-060320
+(config)# exception crashinfo buffersize <cr>    # path-060427
+(config)# exception crashinfo dump command <string> <cr>    # path-060908
+(config)# exception crashinfo dump garbage-detector <cr>    # path-060659
+(config)# exception crashinfo maximum files <number:1..32> <cr>    # path-060909
+(config)# exception data-corruption buffer log <cr>    # path-060648
+(config)# exception data-corruption buffer truncate <cr>    # path-060645
+(config)# exception data-corruption reload <cr>    # path-060423
+(config)# exception-slave core-file <cr>    # path-060306
+(config)# exception-slave crashinfo-file <cr>    # path-060308
+(config)# exception-slave dump <cr>    # path-060312
+(config)# exception-slave protocol <cr>    # path-060309
+(config)# exit <cr>    # path-060277
+(config)# facility-alarm critical exceed-action shutdown <cr>    # path-028058
+(config)# fallback profile <string> <cr>    # path-027489
+(config)# fhrp bfd <cr>    # path-025769
+(config)# fhrp mac-address bia <cr>    # path-026885
+(config)# fhrp sso <cr>    # path-025766
+(config)# file privilege <number:0..15> <cr>    # path-027502
+(config)# file prompt <cr>    # path-025968
+(config)# file scripts-url <url:dynamic> <cr>    # path-060466
+(config)# file verify auto <cr>    # path-027514
+(config)# flow exporter <string> <cr>    # path-027027
+(config)# flow monitor <string> <cr>    # path-060410
+(config)# flow platform cache timeout active <number:dynamic> <cr>    # path-061305
+(config)# flow platform cache timeout event transaction-end <cr>    # path-045661
+(config)# flow platform cache timeout export <number:dynamic> <cr>    # path-061318
+(config)# flow platform cache timeout fast <cr>    # path-036511
+(config)# flow platform cache timeout fast threshold <number:dynamic> <cr>    # path-061921
+(config)# flow platform cache timeout inactive <number:dynamic> <cr>    # path-061313
+(config)# flow platform cache timeout rate-limit <number:100..1000000> <cr>    # path-045901
+(config)# flow platform cache timeout synchronized <number:dynamic> <cr>    # path-061344
+(config)# flow platform cache timeout update <number:dynamic> <cr>    # path-061334
+(config)# flow record <string> <cr>    # path-062944
+(config)# flowspec <cr>    # path-025488
+(config)# format global <cr>    # path-060350
+(config)# fqdn ttl-timeout-factor <number:1..300> <cr>    # path-027342
+(config)# frame-relay address registration auto-address <cr>    # path-029907
+(config)# frame-relay address registration ip <cr>    # path-029854
+(config)# frame-relay de-list <number:1..10> interface <interface> <cr>    # path-060841
+(config)# frame-relay de-list <number:1..10> protocol <?protoname_action@555589c52db0> fragments <cr>    # path-061331
+(config)# frame-relay fast-restart <cr>    # path-025850
+(config)# frame-relay redundancy auto-sync dynamic-map <cr>    # path-029816
+(config)# frame-relay redundancy test transform <cr>    # path-029869
+(config)# frame-relay switching <cr>    # path-025810
+(config)# glbp sso <cr>    # path-025854
+(config)# global-address-family <?option@555589532140> <cr>    # path-060285
+(config)# help <cr>    # path-060279
+(config)# hostname <string> <cr>    # path-025505
+(config)# hw-module auto-off <cr>    # path-025985
+(config)# hw-module auto-off optics <cr>    # path-027571
+(config)# hw-module beacon on switch <number:dynamic> <cr>    # path-060951
+(config)# hw-module breakout <number:dynamic> <cr>    # path-060496
+(config)# hw-module breakout-enable <cr>    # path-025973
+(config)# hw-module module <number:1..1> port <number:dynamic> switch <number:dynamic> <cr>    # path-062885
+(config)# hw-module network-module C9350-NM-8Y mode 50G <cr>    # path-038287
+(config)# hw-module slot <?option@5555899c5638> port-group range <string> <cr>    # path-061495
+(config)# hw-module slot <?option@5555899c5638> qos input bandwidth <cr>    # path-061493
+(config)# hw-module slot <?option@5555899c5638> shutdown <cr>    # path-060702
+(config)# hw-module slot <?option@5555899c5638> upoe-plus <cr>    # path-060704
+(config)# hw-module slot <?option@5555899c5638> upoe-plus <cr>    # path-060707
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> battery-mode <cr>    # path-062762
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> breakout 10g port native_port_0 <cr>    # path-062886
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> disable-v5-mismatch <cr>    # path-062759
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> ethernet mode GE <cr>    # path-062845
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> ethernet mode TE <cr>    # path-062847
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> ethernet vlan unlimited <cr>    # path-062846
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> maintenance <cr>    # path-062760
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> mode 10G <cr>    # path-062808
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> qos input weight <cr>    # path-062844
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> recovery enable timer-value <number:0..10000> <cr>    # path-062809
+(config)# hw-module subslot <?slotcard_func_action@5555899c3e78> statistics poll-interval <number:1..255> <cr>    # path-062761
+(config)# hw-module switch <number:dynamic> auto-off <cr>    # path-062950
+(config)# hw-module switch <number:dynamic> auto-off optics <cr>    # path-062953
+(config)# hw-module switch <number:dynamic> network-module C9350-NM-8Y mode 50G <cr>    # path-062975
+(config)# hw-module switch <number:dynamic> usbflash1-password <cr>    # path-062949
+(config)# hw-module upoe-plus <cr>    # path-025986
+(config)# hw-module usbflash1-password <string> <cr>    # path-027549
+(config)# id-manager traceback <cr>    # path-025970
+(config)# identity policy <string> <cr>    # path-027490
+(config)# identity profile dot1x <cr>    # path-027483
+(config)# ingress-class-map <number:dynamic> <cr>    # path-060284
+(config)# interface <interface> <cr>    # path-060288
+(config)# interface <interface> <cr>    # path-060289
+(config)# interface range <interface> <cr>    # path-060375
+(config)# interface range <interface> <cr>    # path-060377
+(config)# interface range <interface> <cr>    # path-060378
+(config)# interface range macro <string> <cr>    # path-028028
+(config)# iox <cr>    # path-025442
+(config)# iox switch <number:dynamic> <cr>    # path-062943
+(config)# ip <?dumper_command_func@55558928fd38> access-list resequence <number:1..99> <number:1..2147483647> <number:1..2147483647> <cr>    # path-061849
+(config)# ip access-list extended <number:100..199> <cr>    # path-029726
+(config)# ip access-list extended <string> <cr>    # path-030029
+(config)# ip access-list fqdn <string> <cr>    # path-029878
+(config)# ip access-list helper egress check <cr>    # path-036141
+(config)# ip access-list log-update threshold <number:0..2147483647> <cr>    # path-034403
+(config)# ip access-list logging hash-generation <cr>    # path-028336
+(config)# ip access-list logging interval <number:0..2147483647> <cr>    # path-034373
+(config)# ip access-list match-local-traffic <cr>    # path-026403
+(config)# ip access-list persistent <cr>    # path-026402
+(config)# ip access-list role-based <string> <cr>    # path-029908
+(config)# ip access-list standard <number:1..99> <cr>    # path-029679
+(config)# ip access-list standard <string> <cr>    # path-029837
+(config)# ip accounting-list <address> <address> <cr>    # path-030263
+(config)# ip accounting-threshold <number:0..4294967295> <cr>    # path-025469
+(config)# ip accounting-transits <number:0..32000> <cr>    # path-025472
+(config)# ip address-pool dhcp-pool <cr>    # path-027296
+(config)# ip address-pool dhcp-proxy-client <cr>    # path-027281
+(config)# ip address-pool local <cr>    # path-027312
+(config)# ip admission http process <number:1..16> <cr>    # path-035945
+(config)# ip admission ratelimit <number:100..1000> <cr>    # path-029684
+(config)# ip admission source-interface <interface> <cr>    # path-060606
+(config)# ip admission virtual-ip <address> <cr>    # path-029581
+(config)# ip alias <address> <number:1..65535> <cr>    # path-028968
+(config)# ip arp entry learn <number:dynamic> <cr>    # path-060805
+(config)# ip arp gratuitous local <cr>    # path-028924

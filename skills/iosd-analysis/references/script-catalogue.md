@@ -39,6 +39,7 @@
 | `build_protocol_index.py` | Derive a portable subsystem search index from a reviewed saved architecture map. |
 | `build_runtime_report.py` | Build a Chinese runtime/static comparison reader from saved evidence only. |
 | `capture_debugger_memory.py` | Bounded, read-only paused debugger captures, guarded by image anchors. |
+| `check_cli_textbook.py` | Verify command-text hashes, every source ID/syntax, local links and evidence anchors. |
 | `check_config_refinement.py` | Check saved refinement evidence, page closure, source hashes and local links. |
 | `check_ehsa_evidence.py` | Verify EHSA evidence identities, table links, retained gaps and GOT range matches. |
 | `check_nvgen_evidence.py` | Verify saved NVGEN descriptor links and evidence identities, not target behavior. |
@@ -52,6 +53,7 @@
 | `expand_option_witnesses.py` | Replay a saved prefix, select each known option, and re-solve a bounded suffix. |
 | `export_cli_analysis.py` | Publish derived CLI metadata from saved analysis without captured bytes or code. |
 | `export_cli_catalogue.py` | Build a standalone searchable HTML inventory from a saved static CLI report. |
+| `export_cli_textbook.py` | Export hash-verified CLI witnesses as small, linked GitHub-readable Markdown files. |
 | `export_runtime_grammar.py` | Export observed runtime grammar, static comparison and unresolved frontiers. |
 | `extend_saved_mode_roots.py` | Decode new mode roots from the original saved pages, stopping at known nodes. |
 | `fill_runtime_frontiers.py` | Follow newly discovered missing grammar pages, retaining limits and failures. |

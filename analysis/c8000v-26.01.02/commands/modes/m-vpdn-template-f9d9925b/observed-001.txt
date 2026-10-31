@@ -1,0 +1,215 @@
+# 模式 vpdn-template；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vpdn-templ)# accept dialin l2tp virtual-template <number:1..25> <cr>    # observed_connections-005419
+(config-vpdn-templ)# accept dialout l2tp dialer <number:0..255> <cr>    # observed_connections-005420
+(config-vpdn-templ)# authen-before-forward <cr>    # observed_connections-005268
+(config-vpdn-templ)# backup ip <address> <cr>    # observed_connections-005316
+(config-vpdn-templ)# default accept <cr>    # observed_connections-005274
+(config-vpdn-templ)# default accept <cr>    # observed_connections-005278
+(config-vpdn-templ)# default authen-before-forward <cr>    # observed_connections-005307
+(config-vpdn-templ)# default backup ip <address> <cr>    # observed_connections-005366
+(config-vpdn-templ)# default description <cr>    # observed_connections-005296
+(config-vpdn-templ)# default dnis <string> <cr>    # observed_connections-005311
+(config-vpdn-templ)# default domain <string> <cr>    # observed_connections-005309
+(config-vpdn-templ)# default dsl-line-info-forwarding <cr>    # observed_connections-005291
+(config-vpdn-templ)# default force-local-chap <cr>    # observed_connections-005306
+(config-vpdn-templ)# default group session-limit <cr>    # observed_connections-005362
+(config-vpdn-templ)# default initiate-to ip <address> <cr>    # observed_connections-005368
+(config-vpdn-templ)# default ip mtu adjust <cr>    # observed_connections-005380
+(config-vpdn-templ)# default ip pmtu <cr>    # observed_connections-005346
+(config-vpdn-templ)# default ip precedence <number:0..7> <cr>    # observed_connections-005375
+(config-vpdn-templ)# default ip tos <number:0..15> <cr>    # observed_connections-005378
+(config-vpdn-templ)# default ip tos reflect <cr>    # observed_connections-005401
+(config-vpdn-templ)# default l2tp attribute clid mask-method remove <cr>    # observed_connections-005454
+(config-vpdn-templ)# default l2tp drop out-of-order <cr>    # observed_connections-005377
+(config-vpdn-templ)# default l2tp hidden <cr>    # observed_connections-005329
+(config-vpdn-templ)# default l2tp ignore tx-speed <cr>    # observed_connections-005373
+(config-vpdn-templ)# default l2tp ip tos reflect <cr>    # observed_connections-005424
+(config-vpdn-templ)# default l2tp ip udp checksum <cr>    # observed_connections-005422
+(config-vpdn-templ)# default l2tp rx-speed <cr>    # observed_connections-005350
+(config-vpdn-templ)# default l2tp security crypto-profile <cr>    # observed_connections-005409
+(config-vpdn-templ)# default l2tp security ip <cr>    # observed_connections-005404
+(config-vpdn-templ)# default l2tp sequencing <cr>    # observed_connections-005331
+(config-vpdn-templ)# default l2tp tunnel authentication <cr>    # observed_connections-005391
+(config-vpdn-templ)# default l2tp tunnel bearer capabilities <cr>    # observed_connections-005451
+(config-vpdn-templ)# default l2tp tunnel busy timeout <cr>    # observed_connections-005445
+(config-vpdn-templ)# default l2tp tunnel busy-disconnect <cr>    # observed_connections-005400
+(config-vpdn-templ)# default l2tp tunnel framing capabilities <cr>    # observed_connections-005448
+(config-vpdn-templ)# default l2tp tunnel hello <cr>    # observed_connections-005388
+(config-vpdn-templ)# default l2tp tunnel nosession-timeout <cr>    # observed_connections-005414
+(config-vpdn-templ)# default l2tp tunnel password <cr>    # observed_connections-005397
+(config-vpdn-templ)# default l2tp tunnel receive-window <cr>    # observed_connections-005411
+(config-vpdn-templ)# default l2tp tunnel resync <cr>    # observed_connections-005418
+(config-vpdn-templ)# default l2tp tunnel retransmit initial retries <cr>    # observed_connections-005462
+(config-vpdn-templ)# default l2tp tunnel retransmit initial timeout max <cr>    # observed_connections-005470
+(config-vpdn-templ)# default l2tp tunnel retransmit initial timeout min <cr>    # observed_connections-005467
+(config-vpdn-templ)# default l2tp tunnel retransmit retries <cr>    # observed_connections-005428
+(config-vpdn-templ)# default l2tp tunnel retransmit timeout max <cr>    # observed_connections-005463
+(config-vpdn-templ)# default l2tp tunnel retransmit timeout min <cr>    # observed_connections-005457
+(config-vpdn-templ)# default l2tp tunnel timeout no-session <cr>    # observed_connections-005444
+(config-vpdn-templ)# default l2tp tunnel timeout setup <cr>    # observed_connections-005437
+(config-vpdn-templ)# default l2tp tunnel zlb delay <cr>    # observed_connections-005442
+(config-vpdn-templ)# default l2tp tx-speed <cr>    # observed_connections-005342
+(config-vpdn-templ)# default lcp renegotiation <cr>    # observed_connections-005359
+(config-vpdn-templ)# default loadsharing ip <address> <cr>    # observed_connections-005364
+(config-vpdn-templ)# default local name <cr>    # observed_connections-005347
+(config-vpdn-templ)# default multilink bundle <cr>    # observed_connections-005319
+(config-vpdn-templ)# default multilink link <cr>    # observed_connections-005323
+(config-vpdn-templ)# default pptp flow-control receive-window <cr>    # observed_connections-005408
+(config-vpdn-templ)# default pptp flow-control static-rtt <cr>    # observed_connections-005402
+(config-vpdn-templ)# default pptp tunnel echo <cr>    # observed_connections-005394
+(config-vpdn-templ)# default pptp tunnel timeout setup <cr>    # observed_connections-005431
+(config-vpdn-templ)# default pptp tunnel timeout teardown <cr>    # observed_connections-005434
+(config-vpdn-templ)# default redirect identifier <cr>    # observed_connections-005327
+(config-vpdn-templ)# default relay pppoe bba-group <cr>    # observed_connections-005383
+(config-vpdn-templ)# default request <cr>    # observed_connections-005270
+(config-vpdn-templ)# default request <cr>    # observed_connections-005275
+(config-vpdn-templ)# default scalability call-drops <cr>    # observed_connections-005305
+(config-vpdn-templ)# default scalability multilink-num <cr>    # observed_connections-005301
+(config-vpdn-templ)# default scalability one-session-per-tunnel <cr>    # observed_connections-005351
+(config-vpdn-templ)# default scalability virtual-template <cr>    # observed_connections-005352
+(config-vpdn-templ)# default session-limit <cr>    # observed_connections-005283
+(config-vpdn-templ)# default source vpdn-template <cr>    # observed_connections-005337
+(config-vpdn-templ)# default source-ip <cr>    # observed_connections-005288
+(config-vpdn-templ)# default sso enable <cr>    # observed_connections-005317
+(config-vpdn-templ)# default terminate-from <cr>    # observed_connections-005280
+(config-vpdn-templ)# default vpn <cr>    # observed_connections-005292
+(config-vpdn-templ)# description <string> <cr>    # observed_connections-005295
+(config-vpdn-templ)# dnis <string> <cr>    # observed_connections-005277
+(config-vpdn-templ)# domain <string> <cr>    # observed_connections-005273
+(config-vpdn-templ)# dsl-line-info-forwarding <cr>    # observed_connections-005264
+(config-vpdn-templ)# exit <cr>    # observed_connections-005263
+(config-vpdn-templ)# force-local-chap <cr>    # observed_connections-005267
+(config-vpdn-templ)# group session-limit <number:1..65535> <cr>    # observed_connections-005361
+(config-vpdn-templ)# initiate-to ip <address> <cr>    # observed_connections-005321
+(config-vpdn-templ)# ip mtu adjust <cr>    # observed_connections-005339
+(config-vpdn-templ)# ip pmtu <cr>    # observed_connections-005298
+(config-vpdn-templ)# ip precedence <number:0..7> <cr>    # observed_connections-005333
+(config-vpdn-templ)# ip tos <number:0..15> <cr>    # observed_connections-005336
+(config-vpdn-templ)# ip tos reflect <cr>    # observed_connections-005358
+(config-vpdn-templ)# l2tp attribute clid mask-method remove <cr>    # observed_connections-005425
+(config-vpdn-templ)# l2tp drop out-of-order <cr>    # observed_connections-005334
+(config-vpdn-templ)# l2tp hidden <cr>    # observed_connections-005290
+(config-vpdn-templ)# l2tp ignore tx-speed <cr>    # observed_connections-005332
+(config-vpdn-templ)# l2tp ip tos reflect <cr>    # observed_connections-005370
+(config-vpdn-templ)# l2tp ip udp checksum <cr>    # observed_connections-005369
+(config-vpdn-templ)# l2tp rx-speed ANCP <cr>    # observed_connections-005353
+(config-vpdn-templ)# l2tp security crypto-profile <string> <cr>    # observed_connections-005415
+(config-vpdn-templ)# l2tp security ip address-check <cr>    # observed_connections-005399
+(config-vpdn-templ)# l2tp sequencing <cr>    # observed_connections-005293
+(config-vpdn-templ)# l2tp tunnel authentication <cr>    # observed_connections-005354
+(config-vpdn-templ)# l2tp tunnel bearer capabilities none <cr>    # observed_connections-005450
+(config-vpdn-templ)# l2tp tunnel busy 0 <cr>    # observed_connections-005416
+(config-vpdn-templ)# l2tp tunnel busy-disconnect <cr>    # observed_connections-005357
+(config-vpdn-templ)# l2tp tunnel framing capabilities none <cr>    # observed_connections-005447
+(config-vpdn-templ)# l2tp tunnel hello <number:0..1000> <cr>    # observed_connections-005385
+(config-vpdn-templ)# l2tp tunnel nosession-timeout <number:0..86400> <cr>    # observed_connections-005413
+(config-vpdn-templ)# l2tp tunnel password <string> <cr>    # observed_connections-005407
+(config-vpdn-templ)# l2tp tunnel receive-window <number:dynamic> <cr>    # observed_connections-005472
+(config-vpdn-templ)# l2tp tunnel resync <number:dynamic> <cr>    # observed_connections-005473
+(config-vpdn-templ)# l2tp tunnel retransmit initial retries <number:1..1000> <cr>    # observed_connections-005460
+(config-vpdn-templ)# l2tp tunnel retransmit initial timeout max <number:1..8> <cr>    # observed_connections-005469
+(config-vpdn-templ)# l2tp tunnel retransmit initial timeout min <number:1..8> <cr>    # observed_connections-005466
+(config-vpdn-templ)# l2tp tunnel retransmit retries <number:5..1000> <cr>    # observed_connections-005427
+(config-vpdn-templ)# l2tp tunnel retransmit timeout max <number:1..8> <cr>    # observed_connections-005461
+(config-vpdn-templ)# l2tp tunnel retransmit timeout min <number:1..8> <cr>    # observed_connections-005456
+(config-vpdn-templ)# l2tp tunnel timeout no-session <number:0..86400> <cr>    # observed_connections-005441
+(config-vpdn-templ)# l2tp tunnel timeout setup <number:60..6000> <cr>    # observed_connections-005436
+(config-vpdn-templ)# l2tp tunnel zlb delay <number:1..5> <cr>    # observed_connections-005440
+(config-vpdn-templ)# l2tp tx-speed ANCP <cr>    # observed_connections-005349
+(config-vpdn-templ)# lcp renegotiation always <cr>    # observed_connections-005356
+(config-vpdn-templ)# loadsharing ip <address> <cr>    # observed_connections-005312
+(config-vpdn-templ)# local name <string> <cr>    # observed_connections-005344
+(config-vpdn-templ)# multilink bundle <number:0..65535> <cr>    # observed_connections-005318
+(config-vpdn-templ)# multilink link <number:0..65535> <cr>    # observed_connections-005322
+(config-vpdn-templ)# no accept <cr>    # observed_connections-005271
+(config-vpdn-templ)# no accept <cr>    # observed_connections-005276
+(config-vpdn-templ)# no authen-before-forward <cr>    # observed_connections-005304
+(config-vpdn-templ)# no backup ip <address> <cr>    # observed_connections-005365
+(config-vpdn-templ)# no description <cr>    # observed_connections-005294
+(config-vpdn-templ)# no dnis <string> <cr>    # observed_connections-005310
+(config-vpdn-templ)# no domain <string> <cr>    # observed_connections-005308
+(config-vpdn-templ)# no dsl-line-info-forwarding <cr>    # observed_connections-005287
+(config-vpdn-templ)# no force-local-chap <cr>    # observed_connections-005303
+(config-vpdn-templ)# no group session-limit <cr>    # observed_connections-005360
+(config-vpdn-templ)# no initiate-to ip <address> <cr>    # observed_connections-005367
+(config-vpdn-templ)# no ip mtu adjust <cr>    # observed_connections-005379
+(config-vpdn-templ)# no ip pmtu <cr>    # observed_connections-005340
+(config-vpdn-templ)# no ip precedence <number:0..7> <cr>    # observed_connections-005372
+(config-vpdn-templ)# no ip tos <number:0..15> <cr>    # observed_connections-005376
+(config-vpdn-templ)# no ip tos reflect <cr>    # observed_connections-005393
+(config-vpdn-templ)# no l2tp attribute clid mask-method remove <cr>    # observed_connections-005453
+(config-vpdn-templ)# no l2tp drop out-of-order <cr>    # observed_connections-005374
+(config-vpdn-templ)# no l2tp hidden <cr>    # observed_connections-005326
+(config-vpdn-templ)# no l2tp ignore tx-speed <cr>    # observed_connections-005371
+(config-vpdn-templ)# no l2tp ip tos reflect <cr>    # observed_connections-005423
+(config-vpdn-templ)# no l2tp ip udp checksum <cr>    # observed_connections-005421
+(config-vpdn-templ)# no l2tp rx-speed <cr>    # observed_connections-005343
+(config-vpdn-templ)# no l2tp security crypto-profile <cr>    # observed_connections-005405
+(config-vpdn-templ)# no l2tp security ip <cr>    # observed_connections-005396
+(config-vpdn-templ)# no l2tp sequencing <cr>    # observed_connections-005330
+(config-vpdn-templ)# no l2tp tunnel authentication <cr>    # observed_connections-005386
+(config-vpdn-templ)# no l2tp tunnel bearer capabilities <cr>    # observed_connections-005449
+(config-vpdn-templ)# no l2tp tunnel busy timeout <cr>    # observed_connections-005443
+(config-vpdn-templ)# no l2tp tunnel busy-disconnect <cr>    # observed_connections-005392
+(config-vpdn-templ)# no l2tp tunnel framing capabilities <cr>    # observed_connections-005446
+(config-vpdn-templ)# no l2tp tunnel hello <cr>    # observed_connections-005384
+(config-vpdn-templ)# no l2tp tunnel nosession-timeout <cr>    # observed_connections-005412
+(config-vpdn-templ)# no l2tp tunnel password <cr>    # observed_connections-005389
+(config-vpdn-templ)# no l2tp tunnel receive-window <cr>    # observed_connections-005410
+(config-vpdn-templ)# no l2tp tunnel resync <cr>    # observed_connections-005417
+(config-vpdn-templ)# no l2tp tunnel retransmit initial retries <cr>    # observed_connections-005458
+(config-vpdn-templ)# no l2tp tunnel retransmit initial timeout max <cr>    # observed_connections-005468
+(config-vpdn-templ)# no l2tp tunnel retransmit initial timeout min <cr>    # observed_connections-005465
+(config-vpdn-templ)# no l2tp tunnel retransmit retries <cr>    # observed_connections-005426
+(config-vpdn-templ)# no l2tp tunnel retransmit timeout max <cr>    # observed_connections-005459
+(config-vpdn-templ)# no l2tp tunnel retransmit timeout min <cr>    # observed_connections-005455
+(config-vpdn-templ)# no l2tp tunnel timeout no-session <cr>    # observed_connections-005439
+(config-vpdn-templ)# no l2tp tunnel timeout setup <cr>    # observed_connections-005435
+(config-vpdn-templ)# no l2tp tunnel zlb delay <cr>    # observed_connections-005438
+(config-vpdn-templ)# no l2tp tx-speed <cr>    # observed_connections-005338
+(config-vpdn-templ)# no lcp renegotiation <cr>    # observed_connections-005355
+(config-vpdn-templ)# no loadsharing ip <address> <cr>    # observed_connections-005363
+(config-vpdn-templ)# no local name <cr>    # observed_connections-005341
+(config-vpdn-templ)# no multilink bundle <cr>    # observed_connections-005315
+(config-vpdn-templ)# no multilink link <cr>    # observed_connections-005320
+(config-vpdn-templ)# no pptp flow-control receive-window <cr>    # observed_connections-005403
+(config-vpdn-templ)# no pptp flow-control static-rtt <cr>    # observed_connections-005395
+(config-vpdn-templ)# no pptp tunnel echo <cr>    # observed_connections-005387
+(config-vpdn-templ)# no pptp tunnel timeout setup <cr>    # observed_connections-005429
+(config-vpdn-templ)# no pptp tunnel timeout teardown <cr>    # observed_connections-005432
+(config-vpdn-templ)# no redirect identifier <cr>    # observed_connections-005324
+(config-vpdn-templ)# no relay pppoe bba-group <cr>    # observed_connections-005381
+(config-vpdn-templ)# no request <cr>    # observed_connections-005269
+(config-vpdn-templ)# no request <cr>    # observed_connections-005272
+(config-vpdn-templ)# no scalability call-drops <cr>    # observed_connections-005302
+(config-vpdn-templ)# no scalability multilink-num <cr>    # observed_connections-005300
+(config-vpdn-templ)# no scalability one-session-per-tunnel <cr>    # observed_connections-005345
+(config-vpdn-templ)# no scalability virtual-template <cr>    # observed_connections-005348
+(config-vpdn-templ)# no session-limit <cr>    # observed_connections-005281
+(config-vpdn-templ)# no source vpdn-template <cr>    # observed_connections-005335
+(config-vpdn-templ)# no source-ip <cr>    # observed_connections-005285
+(config-vpdn-templ)# no sso enable <cr>    # observed_connections-005314
+(config-vpdn-templ)# no terminate-from <cr>    # observed_connections-005279
+(config-vpdn-templ)# no vpn <cr>    # observed_connections-005289
+(config-vpdn-templ)# pptp flow-control receive-window <number:1..64> <cr>    # observed_connections-005406
+(config-vpdn-templ)# pptp flow-control static-rtt <number:100..5000> <cr>    # observed_connections-005398
+(config-vpdn-templ)# pptp tunnel echo <number:0..1000> <cr>    # observed_connections-005390
+(config-vpdn-templ)# pptp tunnel timeout setup <number:1..300> <cr>    # observed_connections-005430
+(config-vpdn-templ)# pptp tunnel timeout teardown <number:1..300> <cr>    # observed_connections-005433
+(config-vpdn-templ)# redirect identifier <string> <cr>    # observed_connections-005325
+(config-vpdn-templ)# relay pppoe bba-group <string> <cr>    # observed_connections-005382
+(config-vpdn-templ)# request dialin ip <address> domain <string> <cr>    # observed_connections-005452
+(config-vpdn-templ)# request dialout l2tp ip <address> pool-member <number:1..255> <cr>    # observed_connections-005464
+(config-vpdn-templ)# scalability call-drops <number:1..100> <cr>    # observed_connections-005266
+(config-vpdn-templ)# scalability multilink-num <number:1..8> <cr>    # observed_connections-005265
+(config-vpdn-templ)# scalability one-session-per-tunnel <cr>    # observed_connections-005299
+(config-vpdn-templ)# scalability virtual-template <number:dynamic> <cr>    # observed_connections-005471
+(config-vpdn-templ)# session-limit <number:0..65535> <cr>    # observed_connections-005282
+(config-vpdn-templ)# source vpdn-template <cr>    # observed_connections-005297
+(config-vpdn-templ)# source-ip <address> <cr>    # observed_connections-005286
+(config-vpdn-templ)# sso enable <cr>    # observed_connections-005284
+(config-vpdn-templ)# terminate-from hostname <string> <cr>    # observed_connections-005313
+(config-vpdn-templ)# vpn vrf <string> <cr>    # observed_connections-005328

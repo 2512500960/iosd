@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-051.md
+
+(config)# do-exec show bgp * filter-list <number:1..500> <cr>    # path-061698
+(config)# do-exec show bgp * import <cr>    # path-061107
+(config)# do-exec show bgp * inconsistency nexthop-label <cr>    # path-061702
+(config)# do-exec show bgp * inconsistency nexthop-label <cr>    # path-061714
+(config)# do-exec show bgp * inconsistent-as <cr>    # path-061114
+(config)# do-exec show bgp * injected-paths <cr>    # path-061103
+(config)# do-exec show bgp * injected-paths <cr>    # path-061109
+(config)# do-exec show bgp * internal <cr>    # path-061088
+(config)# do-exec show bgp * internal stat <cr>    # path-061679
+(config)# do-exec show bgp * internal task <cr>    # path-061675
+(config)# do-exec show bgp * labels <cr>    # path-061049
+(config)# do-exec show bgp * labels <cr>    # path-061059
+(config)# do-exec show bgp * labels <cr>    # path-061097
+(config)# do-exec show bgp * largecommunity-list <number:1..500> <cr>    # path-061734
+(config)# do-exec show bgp * local-vtep <cr>    # path-061040
+(config)# do-exec show bgp * neighbors <cr>    # path-061072
+(config)# do-exec show bgp * nexthops <cr>    # path-061046
+(config)# do-exec show bgp * oer-paths <cr>    # path-061106
+(config)# do-exec show bgp * overlay-mapping <cr>    # path-061052
+(config)# do-exec show bgp * path-attribute discard <cr>    # path-061668
+(config)# do-exec show bgp * paths <cr>    # path-061062
+(config)# do-exec show bgp * peer-group <cr>    # path-061077
+(config)# do-exec show bgp * peer-group <string> summary <cr>    # path-062165
+(config)# do-exec show bgp * pending-prefixes <cr>    # path-061069
+(config)# do-exec show bgp * per-ce-label-internal <cr>    # path-061050
+(config)# do-exec show bgp * prefix-list <string> <cr>    # path-061710
+(config)# do-exec show bgp * prefix-list <string> <cr>    # path-061725
+(config)# do-exec show bgp * rcache <cr>    # path-061060
+(config)# do-exec show bgp * regexp <string> <cr>    # path-061709
+(config)# do-exec show bgp * replication <cr>    # path-061078
+(config)# do-exec show bgp * rib-failure <cr>    # path-061070
+(config)# do-exec show bgp * rnh <cr>    # path-061048
+(config)# do-exec show bgp * route-map <string> <cr>    # path-061711
+(config)# do-exec show bgp * route-map <string> <cr>    # path-061724
+(config)# do-exec show bgp * rpki servers <cr>    # path-061715
+(config)# do-exec show bgp * rpki table <cr>    # path-061716
+(config)# do-exec show bgp * rrinfo <cr>    # path-061067
+(config)# do-exec show bgp * rt-filter-list <cr>    # path-061051
+(config)# do-exec show bgp * sr-policy <cr>    # path-061047
+(config)# do-exec show bgp * sso internal <cr>    # path-061703
+(config)# do-exec show bgp * sso summary <cr>    # path-061699
+(config)# do-exec show bgp * state <cr>    # path-061034
+(config)# do-exec show bgp * summary <cr>    # path-061035
+(config)# do-exec show bgp * tags <cr>    # path-061042
+(config)# do-exec show bgp * template peer-policy <cr>    # path-061713
+(config)# do-exec show bgp * template peer-session <cr>    # path-061718
+(config)# do-exec show bgp * update-sources <cr>    # path-061055
+(config)# do-exec show bgp * va <cr>    # path-061075
+(config)# do-exec show bgp * ve-id <number:1..65535> block-offset <number:1..65535> <cr>    # path-062438
+(config)# do-exec show bgp * version <number:1..4294967295> <cr>    # path-061666
+(config)# do-exec show bgp <address> <address> longer-prefixes <cr>    # path-050598
+(config)# do-exec show bgp <address> <address> shorter-prefixes <cr>    # path-050619
+(config)# do-exec show bgp <address> <cr>    # path-032348
+(config)# do-exec show bgp <address> <cr>    # path-032851
+(config)# do-exec show bgp <address> internal pathext <cr>    # path-050680
+(config)# do-exec show bgp <cr>    # path-027657
+(config)# do-exec show bgp <cr>    # path-027687
+(config)# do-exec show bgp <prefix:dynamic> <cr>    # path-060725
+(config)# do-exec show bgp <prefix:dynamic> <cr>    # path-060733
+(config)# do-exec show bgp <prefix:dynamic> <cr>    # path-060734
+(config)# do-exec show bgp <prefix:dynamic> internal pathext <cr>    # path-061740
+(config)# do-exec show bgp <prefix:dynamic> internal pathext <cr>    # path-061754
+(config)# do-exec show bgp <prefix:dynamic> longer-prefixes <cr>    # path-061121
+(config)# do-exec show bgp <prefix:dynamic> longer-prefixes <cr>    # path-061125
+(config)# do-exec show bgp <prefix:dynamic> shorter-prefixes <cr>    # path-061128
+(config)# do-exec show bgp all route-type <number:1..7> <address> <cr>    # path-055831
+(config)# do-exec show bgp all route-type <number:1..7> <address> <cr>    # path-055847
+(config)# do-exec show bgp aspath hash <cr>    # path-041258
+(config)# do-exec show bgp attr hash <cr>    # path-041228
+(config)# do-exec show bgp attr nexthop <cr>    # path-041259
+(config)# do-exec show bgp binding-sid <cr>    # path-032310
+(config)# do-exec show bgp cidr-only <cr>    # path-032716
+(config)# do-exec show bgp cluster-ids <cr>    # path-032593
+(config)# do-exec show bgp cluster-ids internal <cr>    # path-041435
+(config)# do-exec show bgp community <cr>    # path-032907
+(config)# do-exec show bgp community-list <number:1..500> <cr>    # path-041902
+(config)# do-exec show bgp dampened-paths <cr>    # path-032635
+(config)# do-exec show bgp dampening parameters <cr>    # path-041507
+(config)# do-exec show bgp default <cr>    # path-032235
+(config)# do-exec show bgp detail <cr>    # path-032311
+(config)# do-exec show bgp detail <string> <cr>    # path-040960
+(config)# do-exec show bgp detail <string> <cr>    # path-040998
+(config)# do-exec show bgp detail <string> <cr>    # path-041037
+(config)# do-exec show bgp evi context <cr>    # path-040704
+(config)# do-exec show bgp extcommunity-list <string> <cr>    # path-041966
+(config)# do-exec show bgp filter-list <number:1..500> <cr>    # path-041677
+(config)# do-exec show bgp import <cr>    # path-032753
+(config)# do-exec show bgp inconsistency nexthop-label <cr>    # path-041702
+(config)# do-exec show bgp inconsistency nexthop-label <cr>    # path-041750
+(config)# do-exec show bgp inconsistent-as <cr>    # path-032783
+(config)# do-exec show bgp injected-paths <cr>    # path-032740
+(config)# do-exec show bgp injected-paths <cr>    # path-032767
+(config)# do-exec show bgp internal <cr>    # path-032643
+(config)# do-exec show bgp internal stat <cr>    # path-041513
+(config)# do-exec show bgp internal task <cr>    # path-041468
+(config)# do-exec show bgp labels <cr>    # path-032342
+(config)# do-exec show bgp labels <cr>    # path-032390
+(config)# do-exec show bgp labels <cr>    # path-032704
+(config)# do-exec show bgp large-community <?bgp_lrgcomm_action@555589a55d28> <cr>    # path-061129
+(config)# do-exec show bgp largecommunity-list <number:1..500> <cr>    # path-041954
+(config)# do-exec show bgp local-vtep <cr>    # path-032296
+(config)# do-exec show bgp memory <cr>    # path-032020
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> advertised-routes <cr>    # path-061684
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> dampened-routes <cr>    # path-061690
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> flap-statistics <cr>    # path-061686
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> paths <cr>    # path-061695
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> policy <cr>    # path-061700
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> received extcommunity-filter <cr>    # path-062168
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> received prefix-filter <cr>    # path-062167
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> received rtfilters <cr>    # path-062170
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> received-routes <cr>    # path-061676
+(config)# do-exec show bgp neighbors <?match_ipv6_addrinfo_action@55558aa83180> routes <cr>    # path-061673
+(config)# do-exec show bgp neighbors <address> advertised-routes <cr>    # path-050348
+(config)# do-exec show bgp neighbors <address> advertised-routes <prefix:dynamic> <cr>    # path-062166
+(config)# do-exec show bgp neighbors <address> dampened-routes <cr>    # path-050380
+(config)# do-exec show bgp neighbors <address> flap-statistics <cr>    # path-050362
+(config)# do-exec show bgp neighbors <address> paths <cr>    # path-050419
+(config)# do-exec show bgp neighbors <address> policy <cr>    # path-050433
+(config)# do-exec show bgp neighbors <address> received extcommunity-filter <cr>    # path-055996
+(config)# do-exec show bgp neighbors <address> received prefix-filter <cr>    # path-055990
+(config)# do-exec show bgp neighbors <address> received rtfilters <cr>    # path-056011
+(config)# do-exec show bgp neighbors <address> received-routes <cr>    # path-050326
+(config)# do-exec show bgp neighbors <address> routes <cr>    # path-050307
+(config)# do-exec show bgp neighbors <cr>    # path-032521
+(config)# do-exec show bgp nexthops <cr>    # path-032325
+(config)# do-exec show bgp oer-paths <cr>    # path-032750
+(config)# do-exec show bgp overlay-mapping <cr>    # path-032346
+(config)# do-exec show bgp path-attribute discard <cr>    # path-041356
+(config)# do-exec show bgp paths <cr>    # path-032394
+(config)# do-exec show bgp peer-group <cr>    # path-032543
+(config)# do-exec show bgp peer-group <string> summary <cr>    # path-050364
+(config)# do-exec show bgp pending-prefixes <cr>    # path-032495
+(config)# do-exec show bgp per-ce-label-internal <cr>    # path-032343
+(config)# do-exec show bgp prefix-list <string> <cr>    # path-041724
+(config)# do-exec show bgp prefix-list <string> <cr>    # path-041803
+(config)# do-exec show bgp rcache <cr>    # path-032391
+(config)# do-exec show bgp regexp <string> <cr>    # path-041723
+(config)# do-exec show bgp replication <cr>    # path-032557
+(config)# do-exec show bgp rib-failure <cr>    # path-032496
+(config)# do-exec show bgp rnh <cr>    # path-032329
+(config)# do-exec show bgp route-map <string> <cr>    # path-041725
+(config)# do-exec show bgp route-map <string> <cr>    # path-041802
+(config)# do-exec show bgp rpki servers <cr>    # path-041755
+(config)# do-exec show bgp rpki table <cr>    # path-041756
+(config)# do-exec show bgp rrinfo <cr>    # path-032486
+(config)# do-exec show bgp rt-filter-list <cr>    # path-032345
+(config)# do-exec show bgp sr-color <cr>    # path-032025
+(config)# do-exec show bgp sr-policy <cr>    # path-032328
+(config)# do-exec show bgp sso internal <cr>    # path-041706
+(config)# do-exec show bgp sso summary <cr>    # path-041678
+(config)# do-exec show bgp state <cr>    # path-032251
+(config)# do-exec show bgp summary <cr>    # path-032254
+(config)# do-exec show bgp tags <cr>    # path-032308
+(config)# do-exec show bgp template peer-policy <cr>    # path-041741
+(config)# do-exec show bgp template peer-session <cr>    # path-041773
+(config)# do-exec show bgp update-group <?match_ipv6_addrinfo_action@555589a14380> <cr>    # path-061090
+(config)# do-exec show bgp update-group <?match_ipv6_addrinfo_action@555589a14380> summary <cr>    # path-061688
+(config)# do-exec show bgp update-group <number:1..4294967295> <cr>    # path-041497
+(config)# do-exec show bgp update-group <number:1..4294967295> summary <cr>    # path-050402
+(config)# do-exec show bgp update-sources <cr>    # path-032377
+(config)# do-exec show bgp va <cr>    # path-032542
+(config)# do-exec show bgp ve-id <number:1..65535> block-offset <number:1..65535> <cr>    # path-055921
+(config)# do-exec show bgp version <number:1..4294967295> <cr>    # path-041335
+(config)# do-exec show bootvar <cr>    # path-027304
+(config)# do-exec show bootvar config-file <cr>    # path-030211
+(config)# do-exec show bootvar system <cr>    # path-030254
+(config)# do-exec show bridge <cr>    # path-027778
+(config)# do-exec show bridge <interface> <cr>    # path-060746
+(config)# do-exec show bridge circuit-group <cr>    # path-033618
+(config)# do-exec show bridge group <cr>    # path-033600
+(config)# do-exec show bridge-domain <cr>    # path-027487
+(config)# do-exec show bridge-domain <number:dynamic> <cr>    # path-060682
+(config)# do-exec show bridge-domain <number:dynamic> c-mac <cr>    # path-060934
+(config)# do-exec show bridge-domain <number:dynamic> external-ports <cr>    # path-060930
+(config)# do-exec show bridge-domain c-mac <cr>    # path-030840
+(config)# do-exec show bridge-domain external-ports <cr>    # path-030790
+(config)# do-exec show bridge-domain route stats <cr>    # path-037437
+(config)# do-exec show bsc <cr>    # path-027790
+(config)# do-exec show bstun <cr>    # path-027792
+(config)# do-exec show buffers <cr>    # path-027764
+(config)# do-exec show buffers address <?general_pointer_number_action@55558980db30> <cr>    # path-061179
+(config)# do-exec show buffers failures <cr>    # path-033532
+(config)# do-exec show buffers leak <cr>    # path-033678
+(config)# do-exec show buffers leak resource user <cr>    # path-051726
+(config)# do-exec show buffers tune <cr>    # path-033675
+(config)# do-exec show buffers usage <cr>    # path-033663
+(config)# do-exec show buffers usage pool <string> <cr>    # path-051713
+(config)# do-exec show bulkstat data-group <cr>    # path-033879
+(config)# do-exec show bulkstat data-group <string> process <cr>    # path-052004
+(config)# do-exec show bulkstat pre-defined <cr>    # path-033886
+(config)# do-exec show bulkstat pre-defined data <cr>    # path-043701
+(config)# do-exec show bulkstat pre-defined data-group <cr>    # path-043711
+(config)# do-exec show bulkstat pre-defined instance <cr>    # path-043719
+(config)# do-exec show bulkstat profile <cr>    # path-033880
+(config)# do-exec show calendar <cr>    # path-027324
+(config)# do-exec show call admission <cr>    # path-032995
+(config)# do-exec show call filter component <cr>    # path-042207
+(config)# do-exec show call filter match-list <cr>    # path-042214
+(config)# do-exec show call filter match-list <number:1..16> <cr>    # path-050896
+(config)# do-exec show call-home <cr>    # path-027488
+(config)# do-exec show call-home alert-group <cr>    # path-030716
+(config)# do-exec show call-home detail <cr>    # path-030686
+(config)# do-exec show call-home diagnostic-signature <cr>    # path-030968
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> <cr>    # path-038117
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> actions <cr>    # path-047199
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> events <cr>    # path-047183
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> prerequisite <cr>    # path-047243
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> prompt <cr>    # path-047220
+(config)# do-exec show call-home diagnostic-signature <number:1..99999999> variables <cr>    # path-047308
+(config)# do-exec show call-home diagnostic-signature failure <cr>    # path-037797
+(config)# do-exec show call-home diagnostic-signature info <cr>    # path-037695
+(config)# do-exec show call-home diagnostic-signature register <cr>    # path-037742
+(config)# do-exec show call-home diagnostic-signature statistics <cr>    # path-037898
+(config)# do-exec show call-home diagnostic-signature statistics download <cr>    # path-047160
+(config)# do-exec show call-home events <cr>    # path-030745
+(config)# do-exec show call-home mail-server status <cr>    # path-037409
+(config)# do-exec show call-home profile <string> <cr>    # path-037626
+(config)# do-exec show call-home profile all <cr>    # path-037552
+(config)# do-exec show call-home smart-licensing <cr>    # path-030847
+(config)# do-exec show call-home smart-licensing statistics <cr>    # path-037657
+(config)# do-exec show call-home statistics <cr>    # path-030823
+(config)# do-exec show call-home version <cr>    # path-030643
+(config)# do-exec show caller <cr>    # path-026821
+(config)# do-exec show caller <interface> <cr>    # path-060579
+(config)# do-exec show caller summary <cr>    # path-029344
+(config)# do-exec show capability feature routing <cr>    # path-035364
+(config)# do-exec show cca <cr>    # path-026908
+(config)# do-exec show cca <interface> <cr>    # path-060573
+(config)# do-exec show cce cp id <cr>    # path-038423
+(config)# do-exec show cce cp id collisions <cr>    # path-047553
+(config)# do-exec show cce cp id collisions class-group <cr>    # path-054467
+(config)# do-exec show cce cp id summary <cr>    # path-047539
+(config)# do-exec show cce cpdp associations <cr>    # path-060970
+(config)# do-exec show cce cpdp bindings <cr>    # path-060972
+(config)# do-exec show cce ha <cr>    # path-031305
+(config)# do-exec show cce ha collisions <cr>    # path-038549
+(config)# do-exec show cce ha collisions class-group <cr>    # path-047620
+(config)# do-exec show cdapi <cr>    # path-027727
+(config)# do-exec show cdp <cr>    # path-027537
+(config)# do-exec show cdp entry <string> <cr>    # path-038228
+(config)# do-exec show cdp feature <cr>    # path-030908
+(config)# do-exec show cdp interface <cr>    # path-031023
+(config)# do-exec show cdp interface <interface> <cr>    # path-060937
+(config)# do-exec show cdp mgmt-address <cr>    # path-030878
+(config)# do-exec show cdp neighbors <cr>    # path-031103
+(config)# do-exec show cdp neighbors <interface> <cr>    # path-060950
+(config)# do-exec show cdp tlv app <cr>    # path-038233
+(config)# do-exec show cdp tlv app <interface> <cr>    # path-061474
+(config)# do-exec show cdp tlv location-server <cr>    # path-038326
+(config)# do-exec show cdp tlv location-server interface <interface> <cr>    # path-062040
+(config)# do-exec show cdp tlv-list <string> <cr>    # path-038125
+(config)# do-exec show cdp traffic <cr>    # path-030978
+(config)# do-exec show cdp vlan <number:1..4094> <cr>    # path-037937
+(config)# do-exec show cef accounting <cr>    # path-030987
+(config)# do-exec show cef background <cr>    # path-030796
+(config)# do-exec show cef bfd <cr>    # path-031229
+(config)# do-exec show cef broker * <cr>    # path-060973
+(config)# do-exec show cef broker ipv4_p1 <cr>    # path-038560
+(config)# do-exec show cef collapse-chain loadinfo <cr>    # path-037648
+(config)# do-exec show cef collapse-chain loadinfo <interface> <cr>    # path-061434
+(config)# do-exec show cef drop <cr>    # path-031178
+(config)# do-exec show cef error <cr>    # path-031013
+(config)# do-exec show cef events <cr>    # path-031024
+(config)# do-exec show cef features global <cr>    # path-037697
+(config)# do-exec show cef fib <cr>    # path-030769
+(config)# do-exec show cef gr <cr>    # path-030601
+(config)# do-exec show cef hardware capabilities <cr>    # path-037385
+(config)# do-exec show cef hardware vectors <cr>    # path-037337
+(config)# do-exec show cef idb <cr>    # path-030816
+(config)# do-exec show cef interface <cr>    # path-030929
+(config)# do-exec show cef interface <interface> <cr>    # path-060935
+(config)# do-exec show cef linecard <cr>    # path-031399
+(config)# do-exec show cef linecard <number:dynamic> <cr>    # path-060977
+(config)# do-exec show cef loadinfo <cr>    # path-030748
+(config)# do-exec show cef loops <cr>    # path-031203
+(config)# do-exec show cef memory <cr>    # path-031044
+(config)# do-exec show cef non-ip <cr>    # path-031118
+(config)# do-exec show cef not-cef-switched <cr>    # path-031202
+(config)# do-exec show cef nsf <cr>    # path-031156
+(config)# do-exec show cef path <cr>    # path-030751
+(config)# do-exec show cef path list <cr>    # path-037497
+(config)# do-exec show cef state <cr>    # path-030994
+(config)# do-exec show cef subtree context client all <cr>    # path-054310
+(config)# do-exec show cef switching background <cr>    # path-038068
+(config)# do-exec show cef switching reinject handles <cr>    # path-047297
+(config)# do-exec show cef table <cr>    # path-030801
+(config)# do-exec show cef table IPv4 vrf <?option@555588c9bd00> <cr>    # path-062009
+(config)# do-exec show cef table IPv4 vrf <?option@555588c9bd00> download priority <cr>    # path-062527
+(config)# do-exec show cef table consistency-check <cr>    # path-037410
+(config)# do-exec show cef table download priority <cr>    # path-047045
+(config)# do-exec show cef timers <cr>    # path-030894
+(config)# do-exec show cef uid <cr>    # path-031234
+(config)# do-exec show cef uid client-key <cr>    # path-038197
+(config)# do-exec show cef uid mgr-table <cr>    # path-038301
+(config)# do-exec show cef uid table <cr>    # path-038247
+(config)# do-exec show cef vrf <cr>    # path-030678
+(config)# do-exec show cef vrf IPv4 <?option@555588c9b550> <cr>    # path-061417
+(config)# do-exec show cef walks <cr>    # path-031102
+(config)# do-exec show cef walks process <cr>    # path-038088
+(config)# do-exec show cef walks queue <cr>    # path-038052
+(config)# do-exec show cft active <cr>    # path-031788
+(config)# do-exec show cft all <cr>    # path-031716
+(config)# do-exec show cft histogram <cr>    # path-031804
+(config)# do-exec show cft inactive <cr>    # path-031781
+(config)# do-exec show cft stats <cr>    # path-031739
+(config)# do-exec show checkpoint clients <cr>    # path-030413
+(config)# do-exec show checkpoint domain <?option@5555892412f0> clients <cr>    # path-061385
+(config)# do-exec show checkpoint domain <?option@5555892412f0> entities <cr>    # path-061378
+(config)# do-exec show checkpoint domain <?option@5555892412f0> statistics <cr>    # path-061388
+(config)# do-exec show checkpoint domain <?option@5555892412f0> statistics buffer-usage <cr>    # path-061963
+(config)# do-exec show checkpoint entities <cr>    # path-030386
+(config)# do-exec show checkpoint statistics <cr>    # path-030439
+(config)# do-exec show checkpoint statistics buffer-usage <cr>    # path-036952
+(config)# do-exec show chunk <cr>    # path-027328
+(config)# do-exec show chunk brief <cr>    # path-030317
+(config)# do-exec show chunk failures <cr>    # path-030282
+(config)# do-exec show class-map <cr>    # path-027660
+(config)# do-exec show class-map <string> <cr>    # path-032372
+(config)# do-exec show class-map type control <?option@555589144650> all <cr>    # path-062161
+(config)# do-exec show class-map type control <cr>    # path-041196
+(config)# do-exec show class-map type traffic <cr>    # path-041184
+(config)# do-exec show clns <cr>    # path-027686
+(config)# do-exec show clns cache <cr>    # path-032574
+(config)# do-exec show clns es-neighbors <cr>    # path-032754
+(config)# do-exec show clns es-neighbors <interface> <cr>    # path-061110
+(config)# do-exec show clns filter-expr <cr>    # path-032680
+(config)# do-exec show clns filter-set <cr>    # path-032657
+(config)# do-exec show clns interface <cr>    # path-032558
+(config)# do-exec show clns interface <interface> <cr>    # path-061079
+(config)# do-exec show clns internal <cr>    # path-032691
+(config)# do-exec show clns is-neighbors <cr>    # path-032770
+(config)# do-exec show clns is-neighbors <interface> <cr>    # path-061116
+(config)# do-exec show clns neighbors <cr>    # path-032755
+(config)# do-exec show clns neighbors <interface> <cr>    # path-061111
+(config)# do-exec show clns neighbors areas <cr>    # path-041743
+(config)# do-exec show clns neighbors areas <interface> <cr>    # path-061717
+(config)# do-exec show clns old-route-display <cr>    # path-032615
+(config)# do-exec show clns protocol <cr>    # path-032675
+(config)# do-exec show clns redirects <cr>    # path-032551
+(config)# do-exec show clns route <cr>    # path-032645
+(config)# do-exec show clns traffic <cr>    # path-032719
+(config)# do-exec show clns traffic interface <interface> <cr>    # path-061712
+(config)# do-exec show cls <cr>    # path-027673
+(config)# do-exec show cns config connections <cr>    # path-043291
+(config)# do-exec show cns config outstanding <cr>    # path-043313
+(config)# do-exec show cns config stats <cr>    # path-043335
+(config)# do-exec show cns event connections <cr>    # path-043257
+(config)# do-exec show cns event stats <cr>    # path-043274
+(config)# do-exec show cns event subject <cr>    # path-043283
+(config)# do-exec show cns image connections <cr>    # path-043308
+(config)# do-exec show cns image inventory <cr>    # path-043332
+(config)# do-exec show cns image status <cr>    # path-043352
+(config)# do-exec show compress <cr>    # path-027126
+(config)# do-exec show configuration <cr>    # path-026674
+(config)# do-exec show configuration ha-sync-lock <cr>    # path-028770
+(config)# do-exec show configuration history <cr>    # path-028611
+(config)# do-exec show configuration id <cr>    # path-028847
+(config)# do-exec show configuration lock <cr>    # path-028728
+(config)# do-exec show connection <cr>    # path-060498
+(config)# do-exec show controllers <cr>    # path-026771
+(config)# do-exec show controllers <interface> <cr>    # path-060589
+(config)# do-exec show controllers E1 <?controller_action@55558b4482b0> <cr>    # path-062786
+(config)# do-exec show controllers E1 <?controller_action@55558b4482b0> errors <cr>    # path-062820
+(config)# do-exec show controllers SHDSL <?controller_action@55558b4d7180> <cr>    # path-060827
+(config)# do-exec show controllers T1 <?controller_action@55558b444d60> <cr>    # path-062784
+(config)# do-exec show controllers T1 <?controller_action@55558b444d60> errors <cr>    # path-062819
+(config)# do-exec show controllers VDSL <?controller_action@55558adc38c8> <cr>    # path-060825
+(config)# do-exec show cops servers <cr>    # path-032382
+(config)# do-exec show coverage history <cr>    # path-028279
+(config)# do-exec show coverage history all <cr>    # path-034186
+(config)# do-exec show coverage history first <number:1..100000> <cr>    # path-044035
+(config)# do-exec show coverage history last <number:1..100000> <cr>    # path-044060
+(config)# do-exec show cpl c3pl-info list <cr>    # path-038340
+(config)# do-exec show cpl class-map hash-table <cr>    # path-038235
+(config)# do-exec show cpl concurrency history <cr>    # path-038276
+(config)# do-exec show cpl policy-map hash-table <cr>    # path-038288
+(config)# do-exec show cpl target-c3pl-info <cr>    # path-031224
+(config)# do-exec show crm <cr>    # path-027728
+(config)# do-exec show crypto autovpn session <cr>    # path-042526
+(config)# do-exec show crypto autovpn session detail <cr>    # path-051141
+(config)# do-exec show crypto autovpn session peerno <number:0..2147483647> <cr>    # path-056445
+(config)# do-exec show crypto ca benchmarks <cr>    # path-042679
+(config)# do-exec show crypto ca certificates <cr>    # path-042593
+(config)# do-exec show crypto ca certificates pem <cr>    # path-051164
+(config)# do-exec show crypto ca certificates storage <cr>    # path-051137
+(config)# do-exec show crypto ca counters <cr>    # path-042623
+(config)# do-exec show crypto ca crls <cr>    # path-042559
+(config)# do-exec show crypto ca session <cr>    # path-042641
+(config)# do-exec show crypto ca timers <cr>    # path-042607
+(config)# do-exec show crypto ca timers detail <cr>    # path-051185
+(config)# do-exec show crypto ca trustpoints <cr>    # path-042609
+(config)# do-exec show crypto ca trustpoints status <cr>    # path-051169
+(config)# do-exec show crypto ca trustpool <cr>    # path-042575
+(config)# do-exec show crypto ca trustpool policy <cr>    # path-051149
+(config)# do-exec show crypto eli <cr>    # path-033216
+(config)# do-exec show crypto eli statistics <cr>    # path-042548
+(config)# do-exec show crypto ha <cr>    # path-033190
+(config)# do-exec show crypto ha statistics <cr>    # path-042515
+(config)# do-exec show crypto key mypubkey rsa <cr>    # path-051111
+(config)# do-exec show crypto key pubkey-chain rsa <cr>    # path-051136

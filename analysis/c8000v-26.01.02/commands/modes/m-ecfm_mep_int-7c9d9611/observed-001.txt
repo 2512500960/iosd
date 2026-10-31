@@ -1,0 +1,26 @@
+# 模式 ecfm_mep_int；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-ecfm-mep)# alarm delay <number:2500..10000> <cr>    # observed_connections-009009
+(config-if-ecfm-mep)# alarm notification all <cr>    # observed_connections-009012
+(config-if-ecfm-mep)# alarm reset <number:2500..10000> <cr>    # observed_connections-009006
+(config-if-ecfm-mep)# continuity-check static rmep <cr>    # observed_connections-009003
+(config-if-ecfm-mep)# cos <number:0..7> <cr>    # observed_connections-009001
+(config-if-ecfm-mep)# default alarm delay <cr>    # observed_connections-009010
+(config-if-ecfm-mep)# default alarm notification <cr>    # observed_connections-009014
+(config-if-ecfm-mep)# default alarm reset <cr>    # observed_connections-009007
+(config-if-ecfm-mep)# default continuity-check static rmep <cr>    # observed_connections-009016
+(config-if-ecfm-mep)# default cos <cr>    # observed_connections-009002
+(config-if-ecfm-mep)# default monitor loss counter <cr>    # observed_connections-009020
+(config-if-ecfm-mep)# default rmep mpid <number:1..8191> <cr>    # observed_connections-009018
+(config-if-ecfm-mep)# exit <cr>    # observed_connections-008999
+(config-if-ecfm-mep)# monitor loss counter <cr>    # observed_connections-009013
+(config-if-ecfm-mep)# no alarm delay <cr>    # observed_connections-009008
+(config-if-ecfm-mep)# no alarm notification <cr>    # observed_connections-009011
+(config-if-ecfm-mep)# no alarm reset <cr>    # observed_connections-009005
+(config-if-ecfm-mep)# no continuity-check static rmep <cr>    # observed_connections-009015
+(config-if-ecfm-mep)# no cos <cr>    # observed_connections-009000
+(config-if-ecfm-mep)# no monitor loss counter <cr>    # observed_connections-009019
+(config-if-ecfm-mep)# no rmep mpid <number:1..8191> <cr>    # observed_connections-009017
+(config-if-ecfm-mep)# rmep mpid <number:1..8191> <cr>    # observed_connections-009004

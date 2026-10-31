@@ -1,0 +1,17 @@
+# 模式 voice-service；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(conf-voi-serv)# default ip address trusted authenticate <cr>    # static_slot_creation_candidates-004459
+(conf-voi-serv)# default ip address trusted call-block cause <cr>    # static_slot_creation_candidates-004461
+(conf-voi-serv)# default ip address trusted list <cr>    # static_slot_creation_candidates-004457
+(conf-voi-serv)# default lpcor incoming <cr>    # static_slot_creation_candidates-004453
+(conf-voi-serv)# ip address trusted authenticate <cr>    # static_slot_creation_candidates-004455
+(conf-voi-serv)# ip address trusted call-block cause <?cause_code_action@55558c5b7e00> <cr>    # static_slot_creation_candidates-004463
+(conf-voi-serv)# ip address trusted list <cr>    # static_slot_creation_candidates-004454
+(conf-voi-serv)# lpcor incoming <string> <cr>    # static_slot_creation_candidates-004452
+(conf-voi-serv)# no ip address trusted authenticate <cr>    # static_slot_creation_candidates-004458
+(conf-voi-serv)# no ip address trusted call-block cause <cr>    # static_slot_creation_candidates-004460
+(conf-voi-serv)# no ip address trusted list <cr>    # static_slot_creation_candidates-004456
+(conf-voi-serv)# no lpcor incoming <cr>    # static_slot_creation_candidates-004451
+(conf-voi-serv)# translate incoming controller <?controller_action@55558994c190> called <cr>    # static_slot_creation_candidates-004462

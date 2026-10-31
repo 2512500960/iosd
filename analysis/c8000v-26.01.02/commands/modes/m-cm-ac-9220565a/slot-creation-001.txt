@@ -1,0 +1,23 @@
+# 模式 cm-ac；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-connection)# backup delay <number:0..180> <number:0..180> <cr>    # static_slot_creation_candidates-004279
+(config-connection)# backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004278
+(config-connection)# default backup delay <cr>    # static_slot_creation_candidates-004274
+(config-connection)# default backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004283
+(config-connection)# default match protocol ipv6 <cr>    # static_slot_creation_candidates-004276
+(config-connection)# default mtu <cr>    # static_slot_creation_candidates-004268
+(config-connection)# default redundancy all-active <cr>    # static_slot_creation_candidates-004272
+(config-connection)# default remote link failure notification <cr>    # static_slot_creation_candidates-004281
+(config-connection)# match protocol ipv6 <cr>    # static_slot_creation_candidates-004269
+(config-connection)# mtu <?number_help_func_action@55558beedac0> <cr>    # static_slot_creation_candidates-004284
+(config-connection)# no backup delay <cr>    # static_slot_creation_candidates-004273
+(config-connection)# no backup peer <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004282
+(config-connection)# no match protocol ipv6 <cr>    # static_slot_creation_candidates-004275
+(config-connection)# no mtu <cr>    # static_slot_creation_candidates-004267
+(config-connection)# no redundancy all-active <cr>    # static_slot_creation_candidates-004270
+(config-connection)# no remote link failure notification <cr>    # static_slot_creation_candidates-004280
+(config-connection)# redundancy all-active replicate <cr>    # static_slot_creation_candidates-004271
+(config-connection)# remote circuit id <number:dynamic> <cr>    # static_slot_creation_candidates-004285
+(config-connection)# remote link failure notification <cr>    # static_slot_creation_candidates-004277

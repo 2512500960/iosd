@@ -1,0 +1,258 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-022.md
+
+(config)# do-exec show sbc <string> sbe mib iccSigStackTable <cr>    # conditional_registration_candidates-007546
+(config)# do-exec show sbc <string> sbe mib iccStatCfgTable <cr>    # conditional_registration_candidates-007742
+(config)# do-exec show sbc <string> sbe mib icccainstancetable <cr>    # conditional_registration_candidates-007646
+(config)# do-exec show sbc <string> sbe mib iccpolicystatstable <cr>    # conditional_registration_candidates-007662
+(config)# do-exec show sbc <string> sbe mib meEditorStatsTable <cr>    # conditional_registration_candidates-007741
+(config)# do-exec show sbc <string> sbe mib meenttable <cr>    # conditional_registration_candidates-007666
+(config)# do-exec show sbc <string> sbe mib mepHeaderFilterElementTable <cr>    # conditional_registration_candidates-007735
+(config)# do-exec show sbc <string> sbe mib mepHeaderFilterProfileTable <cr>    # conditional_registration_candidates-007733
+(config)# do-exec show sbc <string> sbe mib mepbodyfilterelementtable <cr>    # conditional_registration_candidates-007726
+(config)# do-exec show sbc <string> sbe mib mepbodyfilterprofiletable <cr>    # conditional_registration_candidates-007725
+(config)# do-exec show sbc <string> sbe mib mepmethodfilterelementtable <cr>    # conditional_registration_candidates-007731
+(config)# do-exec show sbc <string> sbe mib mepmethodfilterprofiletable <cr>    # conditional_registration_candidates-007729
+(config)# do-exec show sbc <string> sbe mib mepoptionfilterelementtable <cr>    # conditional_registration_candidates-007728
+(config)# do-exec show sbc <string> sbe mib mepoptionfilterprofiletable <cr>    # conditional_registration_candidates-007727
+(config)# do-exec show sbc <string> sbe mib mepparameterfilterelementtable <cr>    # conditional_registration_candidates-007732
+(config)# do-exec show sbc <string> sbe mib mepparameterfilterprofiletable <cr>    # conditional_registration_candidates-007730
+(config)# do-exec show sbc <string> sbe mib mesScriptChunkTable <cr>    # conditional_registration_candidates-007740
+(config)# do-exec show sbc <string> sbe mib mesScriptTable <cr>    # conditional_registration_candidates-007739
+(config)# do-exec show sbc <string> sbe mib mesprogramtable <cr>    # conditional_registration_candidates-007724
+(config)# do-exec show sbc <string> sbe mib mgmEntStatsTable <cr>    # conditional_registration_candidates-007549
+(config)# do-exec show sbc <string> sbe mib mgmEntTable <cr>    # conditional_registration_candidates-007554
+(config)# do-exec show sbc <string> sbe mib mgmVirtualMGTable <cr>    # conditional_registration_candidates-007558
+(config)# do-exec show sbc <string> sbe mib mgmmediaaddresstable <cr>    # conditional_registration_candidates-007723
+(config)# do-exec show sbc <string> sbe mib radiuscliententitystatstable <cr>    # conditional_registration_candidates-007696
+(config)# do-exec show sbc <string> sbe mib radiuscliententitytable <cr>    # conditional_registration_candidates-007695
+(config)# do-exec show sbc <string> sbe mib radiusclientserverstatstable <cr>    # conditional_registration_candidates-007698
+(config)# do-exec show sbc <string> sbe mib radiusclientservertable <cr>    # conditional_registration_candidates-007697
+(config)# do-exec show sbc <string> sbe mib rfbillcdftable <cr>    # conditional_registration_candidates-007679
+(config)# do-exec show sbc <string> sbe mib rfbillcfgdcdftable <cr>    # conditional_registration_candidates-007678
+(config)# do-exec show sbc <string> sbe mib rfbilldestrealmtable <cr>    # conditional_registration_candidates-007676
+(config)# do-exec show sbc <string> sbe mib rfbillmethodconfigtable <cr>    # conditional_registration_candidates-007675
+(config)# do-exec show sbc <string> sbe mib rfbillrealmstatstable <cr>    # conditional_registration_candidates-007677
+(config)# do-exec show sbc <string> sbe mib rpsSigStackTable <cr>    # conditional_registration_candidates-007572
+(config)# do-exec show sbc <string> sbe mib rpsStatsTable <cr>    # conditional_registration_candidates-007583
+(config)# do-exec show sbc <string> sbe mib rpsadmindomaintable <cr>    # conditional_registration_candidates-007721
+(config)# do-exec show sbc <string> sbe mib rpsconfigsettable <cr>    # conditional_registration_candidates-007699
+(config)# do-exec show sbc <string> sbe mib rpsinstancetable <cr>    # conditional_registration_candidates-007722
+(config)# do-exec show sbc <string> sbe mib rpsrtgactiontable <cr>    # conditional_registration_candidates-007648
+(config)# do-exec show sbc <string> sbe mib rpsrtgtabletable <cr>    # conditional_registration_candidates-007651
+(config)# do-exec show sbc <string> sbe mib rpssigchantable <cr>    # conditional_registration_candidates-007720
+(config)# do-exec show sbc <string> sbe mib rpsvalidationentrytable <cr>    # conditional_registration_candidates-007650
+(config)# do-exec show sbc <string> sbe mib rpsvalidationtabletable <cr>    # conditional_registration_candidates-007653
+(config)# do-exec show sbc <string> sbe mib sipchenttable <cr>    # conditional_registration_candidates-007660
+(config)# do-exec show sbc <string> sbe mib siptmenttable <cr>    # conditional_registration_candidates-007664
+(config)# do-exec show sbc <string> sbe mib siptmmjtable <cr>    # conditional_registration_candidates-007665
+(config)# do-exec show sbc <string> sbe mib siptmstattable <cr>    # conditional_registration_candidates-007667
+(config)# do-exec show sbc <string> sbe mib sudbe2clienttable <cr>    # conditional_registration_candidates-007694
+(config)# do-exec show sbc <string> sbe mib sudblocalidtable <cr>    # conditional_registration_candidates-007659
+(config)# do-exec show sbc <string> sbe mib sudbsubscribertable <cr>    # conditional_registration_candidates-007658
+(config)# do-exec show sbc <string> sbe mib vpssadjaltdesttable <cr>    # conditional_registration_candidates-007702
+(config)# do-exec show sbc <string> sbe mib vpssadjtable <cr>    # conditional_registration_candidates-007703
+(config)# do-exec show sbc <string> sbe mib vpssauthrealmtable <cr>    # conditional_registration_candidates-007652
+(config)# do-exec show sbc <string> sbe mib vpssbodyfilterelement <cr>    # conditional_registration_candidates-007710
+(config)# do-exec show sbc <string> sbe mib vpssbodyfilterprofile <cr>    # conditional_registration_candidates-007709
+(config)# do-exec show sbc <string> sbe mib vpsserrorfilterelementtable <cr>    # conditional_registration_candidates-007708
+(config)# do-exec show sbc <string> sbe mib vpsserrorfilterprofiletable <cr>    # conditional_registration_candidates-007707
+(config)# do-exec show sbc <string> sbe mib vpssheaderfilterelement <cr>    # conditional_registration_candidates-007706
+(config)# do-exec show sbc <string> sbe mib vpssheaderfilterprofile <cr>    # conditional_registration_candidates-007704
+(config)# do-exec show sbc <string> sbe mib vpssinstancetable <cr>    # conditional_registration_candidates-007656
+(config)# do-exec show sbc <string> sbe mib vpssipfqdnmappingtable <cr>    # conditional_registration_candidates-007718
+(config)# do-exec show sbc <string> sbe mib vpssmethodfilterelement <cr>    # conditional_registration_candidates-007713
+(config)# do-exec show sbc <string> sbe mib vpssmethodfilterprofile <cr>    # conditional_registration_candidates-007711
+(config)# do-exec show sbc <string> sbe mib vpssmthdrcstatstable <cr>    # conditional_registration_candidates-007701
+(config)# do-exec show sbc <string> sbe mib vpssmthdstatstable <cr>    # conditional_registration_candidates-007700
+(config)# do-exec show sbc <string> sbe mib vpssoptionfilterelementtable <cr>    # conditional_registration_candidates-007655
+(config)# do-exec show sbc <string> sbe mib vpssoptionfilterprofiletable <cr>    # conditional_registration_candidates-007654
+(config)# do-exec show sbc <string> sbe mib vpssparamactionset <cr>    # conditional_registration_candidates-007712
+(config)# do-exec show sbc <string> sbe mib vpssparameteraction <cr>    # conditional_registration_candidates-007714
+(config)# do-exec show sbc <string> sbe mib vpssprioritytable <cr>    # conditional_registration_candidates-007657
+(config)# do-exec show sbc <string> sbe nmr <cr>    # conditional_registration_candidates-005774
+(config)# do-exec show sbc <string> sbe qos-profile <string> <cr>    # conditional_registration_candidates-007517
+(config)# do-exec show sbc <string> sbe qos-profiles <cr>    # conditional_registration_candidates-006262
+(config)# do-exec show sbc <string> sbe radius-client-accounting accounting <string> <cr>    # conditional_registration_candidates-008289
+(config)# do-exec show sbc <string> sbe radius-client-accounting authentication <cr>    # conditional_registration_candidates-007523
+(config)# do-exec show sbc <string> sbe radius-client-stats accounting <string> <cr>    # conditional_registration_candidates-008284
+(config)# do-exec show sbc <string> sbe radius-client-stats authentication <cr>    # conditional_registration_candidates-007519
+(config)# do-exec show sbc <string> sbe radius-server-stats accounting <string> <cr>    # conditional_registration_candidates-008287
+(config)# do-exec show sbc <string> sbe radius-server-stats authentication <cr>    # conditional_registration_candidates-007522
+(config)# do-exec show sbc <string> sbe redirect-limit <cr>    # conditional_registration_candidates-006320
+(config)# do-exec show sbc <string> sbe resource-priority-sets <cr>    # conditional_registration_candidates-006337
+(config)# do-exec show sbc <string> sbe resource-priority-sets <string> <cr>    # conditional_registration_candidates-007599
+(config)# do-exec show sbc <string> sbe script-set <number:1..2147483647> <cr>    # conditional_registration_candidates-007550
+(config)# do-exec show sbc <string> sbe sdp-h245-mappings <cr>    # conditional_registration_candidates-006329
+(config)# do-exec show sbc <string> sbe sip body-editor <cr>    # conditional_registration_candidates-007640
+(config)# do-exec show sbc <string> sbe sip body-editor <string> <cr>    # conditional_registration_candidates-008422
+(config)# do-exec show sbc <string> sbe sip body-profile <cr>    # conditional_registration_candidates-007622
+(config)# do-exec show sbc <string> sbe sip body-profile <string> <cr>    # conditional_registration_candidates-008384
+(config)# do-exec show sbc <string> sbe sip delegate-profiles <cr>    # conditional_registration_candidates-007628
+(config)# do-exec show sbc <string> sbe sip editor-type <cr>    # conditional_registration_candidates-007542
+(config)# do-exec show sbc <string> sbe sip error-profile <cr>    # conditional_registration_candidates-007625
+(config)# do-exec show sbc <string> sbe sip error-profile <string> <cr>    # conditional_registration_candidates-008390
+(config)# do-exec show sbc <string> sbe sip essential-headers <cr>    # conditional_registration_candidates-007557
+(config)# do-exec show sbc <string> sbe sip essential-methods <cr>    # conditional_registration_candidates-007591
+(config)# do-exec show sbc <string> sbe sip essential-options <cr>    # conditional_registration_candidates-007547
+(config)# do-exec show sbc <string> sbe sip essential-parameters <cr>    # conditional_registration_candidates-007571
+(config)# do-exec show sbc <string> sbe sip header-editor <cr>    # conditional_registration_candidates-007649
+(config)# do-exec show sbc <string> sbe sip header-editor <string> <cr>    # conditional_registration_candidates-008443
+(config)# do-exec show sbc <string> sbe sip header-profile <cr>    # conditional_registration_candidates-007573
+(config)# do-exec show sbc <string> sbe sip header-profile <string> <cr>    # conditional_registration_candidates-008334
+(config)# do-exec show sbc <string> sbe sip hunting-trigger <cr>    # conditional_registration_candidates-007582
+(config)# do-exec show sbc <string> sbe sip inherit-profile <cr>    # conditional_registration_candidates-007638
+(config)# do-exec show sbc <string> sbe sip inherit-profile <string> <cr>    # conditional_registration_candidates-008416
+(config)# do-exec show sbc <string> sbe sip ip-fqdn-mapping <cr>    # conditional_registration_candidates-007634
+(config)# do-exec show sbc <string> sbe sip method-editor <cr>    # conditional_registration_candidates-007645
+(config)# do-exec show sbc <string> sbe sip method-editor <string> <cr>    # conditional_registration_candidates-008433
+(config)# do-exec show sbc <string> sbe sip method-profile <cr>    # conditional_registration_candidates-007630
+(config)# do-exec show sbc <string> sbe sip method-profile <string> <cr>    # conditional_registration_candidates-008397
+(config)# do-exec show sbc <string> sbe sip option-editor <cr>    # conditional_registration_candidates-007643
+(config)# do-exec show sbc <string> sbe sip option-editor <string> <cr>    # conditional_registration_candidates-008428
+(config)# do-exec show sbc <string> sbe sip option-profile <cr>    # conditional_registration_candidates-007561
+(config)# do-exec show sbc <string> sbe sip option-profile <string> <cr>    # conditional_registration_candidates-008321
+(config)# do-exec show sbc <string> sbe sip parameter-editor <cr>    # conditional_registration_candidates-007647
+(config)# do-exec show sbc <string> sbe sip parameter-editor <string> <cr>    # conditional_registration_candidates-008438
+(config)# do-exec show sbc <string> sbe sip parameter-profile <cr>    # conditional_registration_candidates-007585
+(config)# do-exec show sbc <string> sbe sip parameter-profile <string> <cr>    # conditional_registration_candidates-008346
+(config)# do-exec show sbc <string> sbe sip sdp-match-table <cr>    # conditional_registration_candidates-007626
+(config)# do-exec show sbc <string> sbe sip sdp-media-profile <cr>    # conditional_registration_candidates-007611
+(config)# do-exec show sbc <string> sbe sip sdp-media-profile <string> <cr>    # conditional_registration_candidates-008368
+(config)# do-exec show sbc <string> sbe sip sdp-policy-table <cr>    # conditional_registration_candidates-007608
+(config)# do-exec show sbc <string> sbe sip statistics <cr>    # conditional_registration_candidates-007641
+(config)# do-exec show sbc <string> sbe sip subscribers <cr>    # conditional_registration_candidates-007633
+(config)# do-exec show sbc <string> sbe sip subscribers adjacency <string> <cr>    # conditional_registration_candidates-008874
+(config)# do-exec show sbc <string> sbe sip subscribers adjacency <string> filter <string> <cr>    # conditional_registration_candidates-009009
+(config)# do-exec show sbc <string> sbe sip subscribers delegate <cr>    # conditional_registration_candidates-008409
+(config)# do-exec show sbc <string> sbe sip subscribers filter <string> <cr>    # conditional_registration_candidates-008870
+(config)# do-exec show sbc <string> sbe sip subscribers filter <string> adjacency <string> <cr>    # conditional_registration_candidates-009008
+(config)# do-exec show sbc <string> sbe sip timers <cr>    # conditional_registration_candidates-007545
+(config)# do-exec show sbc <string> sbe stream-list <cr>    # conditional_registration_candidates-005933
+(config)# do-exec show sbc <string> sbe stream-list <string> detail <cr>    # conditional_registration_candidates-008150
+(config)# do-exec show sbc <string> sbe subscriber-stats global current5mins <cr>    # conditional_registration_candidates-008310
+(config)# do-exec show sbc <string> sbe transcoding-stats global current5mins <cr>    # conditional_registration_candidates-008340
+(config)# do-exec show sbc <string> services <cr>    # conditional_registration_candidates-003311
+(config)# do-exec show sbc <string> version <cr>    # conditional_registration_candidates-003490
+(config)# do-exec show sccp <cr>    # conditional_registration_candidates-000461
+(config)# do-exec show sdspfarm message statistics <cr>    # conditional_registration_candidates-003464
+(config)# do-exec show sdspfarm sessions <cr>    # conditional_registration_candidates-001655
+(config)# do-exec show sdspfarm sessions active <cr>    # conditional_registration_candidates-003645
+(config)# do-exec show sdspfarm sessions callID <number:1..2147483647> <cr>    # conditional_registration_candidates-005766
+(config)# do-exec show sdspfarm sessions states <cr>    # conditional_registration_candidates-003473
+(config)# do-exec show sdspfarm sessions statistics <cr>    # conditional_registration_candidates-003565
+(config)# do-exec show sdspfarm sessions streamID <number:1..2147483647> <cr>    # conditional_registration_candidates-005821
+(config)# do-exec show sdspfarm sessions summary <cr>    # conditional_registration_candidates-003384
+(config)# do-exec show sdspfarm units <cr>    # conditional_registration_candidates-001615
+(config)# do-exec show sdspfarm units name <string> <cr>    # conditional_registration_candidates-005617
+(config)# do-exec show sdspfarm units register <cr>    # conditional_registration_candidates-003392
+(config)# do-exec show sdspfarm units summary <cr>    # conditional_registration_candidates-003295
+(config)# do-exec show sdspfarm units tag <number:1..10> <cr>    # conditional_registration_candidates-005698
+(config)# do-exec show sdspfarm units unregister <cr>    # conditional_registration_candidates-003478
+(config)# do-exec show segment-routing attributes <cr>    # conditional_registration_candidates-001375
+(config)# do-exec show segment-routing client <cr>    # conditional_registration_candidates-001438
+(config)# do-exec show segment-routing client <number:1..4294967295> <cr>    # conditional_registration_candidates-003014
+(config)# do-exec show segment-routing mpls connected-prefix-sid-map <?option@55558bfaaef0> <cr>    # conditional_registration_candidates-009282
+(config)# do-exec show segment-routing mpls gb <cr>    # conditional_registration_candidates-003443
+(config)# do-exec show segment-routing mpls gb lock <cr>    # conditional_registration_candidates-005347
+(config)# do-exec show segment-routing mpls lb <cr>    # conditional_registration_candidates-003619
+(config)# do-exec show segment-routing mpls lb assigned-sids <cr>    # conditional_registration_candidates-005677
+(config)# do-exec show segment-routing mpls lb lock <cr>    # conditional_registration_candidates-005434
+(config)# do-exec show segment-routing mpls nsf <cr>    # conditional_registration_candidates-003226
+(config)# do-exec show segment-routing mpls state <cr>    # conditional_registration_candidates-003126
+(config)# do-exec show segment-routing perf-stat <cr>    # conditional_registration_candidates-001576
+(config)# do-exec show segment-routing perf-stat <number:0..256> <cr>    # conditional_registration_candidates-003298
+(config)# do-exec show segment-routing snapshot <cr>    # conditional_registration_candidates-001510
+(config)# do-exec show segment-routing snapshot <number:0..256> <cr>    # conditional_registration_candidates-003206
+(config)# do-exec show service-insertion alarms <cr>    # conditional_registration_candidates-001632
+(config)# do-exec show service-insertion appnav-controller-group <cr>    # conditional_registration_candidates-001322
+(config)# do-exec show service-insertion cluster-summary <cr>    # conditional_registration_candidates-001492
+(config)# do-exec show service-insertion config <cr>    # conditional_registration_candidates-001546
+(config)# do-exec show service-insertion config appnav-controller-group <cr>    # conditional_registration_candidates-003310
+(config)# do-exec show service-insertion config service-context <cr>    # conditional_registration_candidates-003404
+(config)# do-exec show service-insertion config service-node-group <cr>    # conditional_registration_candidates-003205
+(config)# do-exec show service-insertion service-context <cr>    # conditional_registration_candidates-001628
+(config)# do-exec show service-insertion service-node-group <cr>    # conditional_registration_candidates-001610
+(config)# do-exec show service-insertion service-node-group <string> auto-discovered <cr>    # conditional_registration_candidates-005831
+(config)# do-exec show service-insertion statistics appnav-controller-group <cr>    # conditional_registration_candidates-003702
+(config)# do-exec show service-insertion statistics service-node <cr>    # conditional_registration_candidates-003889
+(config)# do-exec show service-insertion statistics sessions <cr>    # conditional_registration_candidates-003930
+(config)# do-exec show service-insertion status <cr>    # conditional_registration_candidates-001456
+(config)# do-exec show service-insertion token <cr>    # conditional_registration_candidates-001374
+(config)# do-exec show sgi session <cr>    # conditional_registration_candidates-001269
+(config)# do-exec show sgi statistics <cr>    # conditional_registration_candidates-001324
+(config)# do-exec show shared-line barge <cr>    # conditional_registration_candidates-001469
+(config)# do-exec show shared-line barge details <cr>    # conditional_registration_candidates-003204
+(config)# do-exec show shared-line call <cr>    # conditional_registration_candidates-001432
+(config)# do-exec show shared-line call details <cr>    # conditional_registration_candidates-003111
+(config)# do-exec show shared-line details <cr>    # conditional_registration_candidates-001319
+(config)# do-exec show shared-line subscription <cr>    # conditional_registration_candidates-001455
+(config)# do-exec show shared-line summary <cr>    # conditional_registration_candidates-001262
+(config)# do-exec show tech-support alg platform <cr>    # conditional_registration_candidates-003296
+(config)# do-exec show tech-support called-number inbound <number:1..10000> <cr>    # conditional_registration_candidates-005523
+(config)# do-exec show tech-support called-number-pool <number:1..10000> <cr>    # conditional_registration_candidates-003745
+(config)# do-exec show tech-support cube <cr>    # conditional_registration_candidates-001452
+(config)# do-exec show tech-support dial-peer provision-policy <cr>    # conditional_registration_candidates-003738
+(config)# do-exec show tech-support dial-peer provision-policy <number:1..10000> <cr>    # conditional_registration_candidates-005696
+(config)# do-exec show tech-support dpg <cr>    # conditional_registration_candidates-001685
+(config)# do-exec show tech-support dpg <number:1..10000> <cr>    # conditional_registration_candidates-003895
+(config)# do-exec show tech-support e164-pattern-map <cr>    # conditional_registration_candidates-001596
+(config)# do-exec show tech-support e164-pattern-map <number:1..10000> <cr>    # conditional_registration_candidates-003467
+(config)# do-exec show tech-support e164-pattern-map summary <cr>    # conditional_registration_candidates-003560
+(config)# do-exec show tech-support e164-translation <cr>    # conditional_registration_candidates-001593
+(config)# do-exec show tech-support e164-translation <number:1..10000> <cr>    # conditional_registration_candidates-003552
+(config)# do-exec show tech-support route-string <cr>    # conditional_registration_candidates-001677
+(config)# do-exec show tech-support route-string <number:1..10000> <cr>    # conditional_registration_candidates-003899
+(config)# do-exec show tech-support server-group <cr>    # conditional_registration_candidates-001680
+(config)# do-exec show tech-support server-group <number:1..10000> <cr>    # conditional_registration_candidates-003812
+(config)# do-exec show tech-support server-group dialpeer <number:1..2147483647> <cr>    # conditional_registration_candidates-005900
+(config)# do-exec show tech-support sip-options-keepalive <cr>    # conditional_registration_candidates-001649
+(config)# do-exec show tech-support sip-options-keepalive <number:1..10000> <cr>    # conditional_registration_candidates-003701
+(config)# do-exec show tech-support sip-options-keepalive global <cr>    # conditional_registration_candidates-003758
+(config)# do-exec show tech-support sip-predefined-profiles <cr>    # conditional_registration_candidates-001623
+(config)# do-exec show tech-support utd <cr>    # conditional_registration_candidates-001453
+(config)# do-exec show tech-support voice <cr>    # conditional_registration_candidates-001451
+(config)# do-exec show telephony-service <cr>    # conditional_registration_candidates-009526
+(config)# do-exec show telephony-service all <cr>    # conditional_registration_candidates-001260
+(config)# do-exec show telephony-service bulk-speed-dial global <number:0..9> <string> <cr>    # conditional_registration_candidates-007111
+(config)# do-exec show telephony-service bulk-speed-dial local <number:dynamic> <number:0..9> <string> <cr>    # conditional_registration_candidates-009467
+(config)# do-exec show telephony-service bulk-speed-dial summary <cr>    # conditional_registration_candidates-003110
+(config)# do-exec show telephony-service conference hardware <cr>    # conditional_registration_candidates-003462
+(config)# do-exec show telephony-service conference hardware ad-hoc <cr>    # conditional_registration_candidates-005414
+(config)# do-exec show telephony-service conference hardware ad-hoc detail <cr>    # conditional_registration_candidates-006953
+(config)# do-exec show telephony-service conference hardware ad-hoc detail video <cr>    # conditional_registration_candidates-008000
+(config)# do-exec show telephony-service conference hardware ad-hoc video <cr>    # conditional_registration_candidates-006942
+(config)# do-exec show telephony-service conference hardware detail <cr>    # conditional_registration_candidates-005507
+(config)# do-exec show telephony-service conference hardware detail video <cr>    # conditional_registration_candidates-006978
+(config)# do-exec show telephony-service conference hardware meetme <cr>    # conditional_registration_candidates-005332
+(config)# do-exec show telephony-service conference hardware meetme detail <cr>    # conditional_registration_candidates-006909
+(config)# do-exec show telephony-service conference hardware meetme detail video <cr>    # conditional_registration_candidates-007983
+(config)# do-exec show telephony-service conference hardware meetme video <cr>    # conditional_registration_candidates-006898
+(config)# do-exec show telephony-service conference hardware number <string> <cr>    # conditional_registration_candidates-007003
+(config)# do-exec show telephony-service conference hardware number <string> detail <cr>    # conditional_registration_candidates-008017
+(config)# do-exec show telephony-service dial-peer <cr>    # conditional_registration_candidates-001624
+(config)# do-exec show telephony-service directory-entry <cr>    # conditional_registration_candidates-001682
+(config)# do-exec show telephony-service ephone <cr>    # conditional_registration_candidates-001416
+(config)# do-exec show telephony-service ephone-dn <cr>    # conditional_registration_candidates-001454
+(config)# do-exec show telephony-service ephone-dn-template <cr>    # conditional_registration_candidates-001528
+(config)# do-exec show telephony-service ephone-template <cr>    # conditional_registration_candidates-001491
+(config)# do-exec show telephony-service fac <cr>    # conditional_registration_candidates-001586
+(config)# do-exec show telephony-service hfs-bindings <cr>    # conditional_registration_candidates-001639
+(config)# do-exec show telephony-service license <cr>    # conditional_registration_candidates-001674
+(config)# do-exec show telephony-service security-info <cr>    # conditional_registration_candidates-009528
+(config)# do-exec show telephony-service tftp-bindings <cr>    # conditional_registration_candidates-001663
+(config)# do-exec show telephony-service user-defined-locale <cr>    # conditional_registration_candidates-001560
+(config)# do-exec show telephony-service voice-port <cr>    # conditional_registration_candidates-001604
+(config)# do-exec show translate <cr>    # conditional_registration_candidates-000409
+(config)# do-exec show translate ruleset <cr>    # conditional_registration_candidates-001392
+(config)# do-exec show translation-rule <cr>    # conditional_registration_candidates-000416
+(config)# do-exec show translation-rule <number:1..2147483647> <cr>    # conditional_registration_candidates-001271
+(config)# do-exec show tunnel mudp <address> <cr>    # conditional_registration_candidates-003816
+(config)# do-exec show tunnel mudp <interface> <cr>    # conditional_registration_candidates-009204
+(config)# do-exec show tunnel udp <interface> <cr>    # conditional_registration_candidates-009203
+(config)# do-exec show tunnel udp dst <address> <cr>    # conditional_registration_candidates-005865
+(config)# do-exec show utd engine standard config <cr>    # conditional_registration_candidates-005245
+(config)# do-exec show utd engine standard tls-decryption source status <cr>    # conditional_registration_candidates-008213
+(config)# do-exec show utd engine standard trace message <string> <cr>    # conditional_registration_candidates-008161
+(config)# do-exec show utd engine standard web-filter source status <cr>    # conditional_registration_candidates-008185

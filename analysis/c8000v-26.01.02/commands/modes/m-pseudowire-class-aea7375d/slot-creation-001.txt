@@ -1,0 +1,88 @@
+# 模式 pseudowire-class；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-pw-class)# control-word <cr>    # static_slot_creation_candidates-003438
+(config-pw-class)# default control-word <cr>    # static_slot_creation_candidates-003445
+(config-pw-class)# default encapsulation <cr>    # static_slot_creation_candidates-003442
+(config-pw-class)# default interworking <cr>    # static_slot_creation_candidates-003449
+(config-pw-class)# default ip dfbit set <cr>    # static_slot_creation_candidates-003508
+(config-pw-class)# default ip local interface <cr>    # static_slot_creation_candidates-003500
+(config-pw-class)# default ip pmtu <cr>    # static_slot_creation_candidates-003485
+(config-pw-class)# default ip protocol l2tp <cr>    # static_slot_creation_candidates-003510
+(config-pw-class)# default ip tos reflect <cr>    # static_slot_creation_candidates-003505
+(config-pw-class)# default ip tos value <cr>    # static_slot_creation_candidates-003506
+(config-pw-class)# default ip ttl <cr>    # static_slot_creation_candidates-003481
+(config-pw-class)# default ip vrf forwarding <string> <cr>    # static_slot_creation_candidates-003514
+(config-pw-class)# default load-balance <cr>    # static_slot_creation_candidates-003451
+(config-pw-class)# default monitor peer bfd <cr>    # static_slot_creation_candidates-003489
+(config-pw-class)# default preferred-path <cr>    # static_slot_creation_candidates-003456
+(config-pw-class)# default protocol <cr>    # static_slot_creation_candidates-003460
+(config-pw-class)# default sequencing <cr>    # static_slot_creation_candidates-003461
+(config-pw-class)# default sequencing resync <cr>    # static_slot_creation_candidates-003477
+(config-pw-class)# default status <cr>    # static_slot_creation_candidates-003464
+(config-pw-class)# default status admin-down disconnect <cr>    # static_slot_creation_candidates-003496
+(config-pw-class)# default status control-plane route-watch <cr>    # static_slot_creation_candidates-003490
+(config-pw-class)# default status decoupled <cr>    # static_slot_creation_candidates-003473
+(config-pw-class)# default status peer topology dual-homed <cr>    # static_slot_creation_candidates-003512
+(config-pw-class)# default status protocol notification static <cr>    # static_slot_creation_candidates-003517
+(config-pw-class)# default status redundancy master <cr>    # static_slot_creation_candidates-003497
+(config-pw-class)# default switching tlv <cr>    # static_slot_creation_candidates-003467
+(config-pw-class)# default vccv bfd template <cr>    # static_slot_creation_candidates-003493
+(config-pw-class)# default vccv control-word <cr>    # static_slot_creation_candidates-003471
+(config-pw-class)# encapsulation udp <cr>    # static_slot_creation_candidates-003443
+(config-pw-class)# interworking clnp <cr>    # static_slot_creation_candidates-003448
+(config-pw-class)# ip dfbit set <cr>    # static_slot_creation_candidates-003484
+(config-pw-class)# ip local interface <interface> <cr>    # static_slot_creation_candidates-003520
+(config-pw-class)# ip pmtu <cr>    # static_slot_creation_candidates-003465
+(config-pw-class)# ip protocol l2tp <cr>    # static_slot_creation_candidates-003486
+(config-pw-class)# ip tos reflect <cr>    # static_slot_creation_candidates-003482
+(config-pw-class)# ip tos value <number:0..255> <cr>    # static_slot_creation_candidates-003504
+(config-pw-class)# ip ttl <number:1..255> <cr>    # static_slot_creation_candidates-003480
+(config-pw-class)# ip vrf forwarding <string> <cr>    # static_slot_creation_candidates-003499
+(config-pw-class)# load-balance flow <cr>    # static_slot_creation_candidates-003453
+(config-pw-class)# monitor peer bfd <cr>    # static_slot_creation_candidates-003468
+(config-pw-class)# monitor peer bfd local interface <interface> <cr>    # static_slot_creation_candidates-003521
+(config-pw-class)# no control-word <cr>    # static_slot_creation_candidates-003444
+(config-pw-class)# no encapsulation <cr>    # static_slot_creation_candidates-003441
+(config-pw-class)# no interworking <cr>    # static_slot_creation_candidates-003447
+(config-pw-class)# no ip dfbit set <cr>    # static_slot_creation_candidates-003507
+(config-pw-class)# no ip local interface <cr>    # static_slot_creation_candidates-003498
+(config-pw-class)# no ip pmtu <cr>    # static_slot_creation_candidates-003483
+(config-pw-class)# no ip protocol l2tp <cr>    # static_slot_creation_candidates-003509
+(config-pw-class)# no ip tos reflect <cr>    # static_slot_creation_candidates-003502
+(config-pw-class)# no ip tos value <cr>    # static_slot_creation_candidates-003503
+(config-pw-class)# no ip ttl <cr>    # static_slot_creation_candidates-003478
+(config-pw-class)# no ip vrf forwarding <string> <cr>    # static_slot_creation_candidates-003513
+(config-pw-class)# no load-balance <cr>    # static_slot_creation_candidates-003450
+(config-pw-class)# no monitor peer bfd <cr>    # static_slot_creation_candidates-003487
+(config-pw-class)# no preferred-path <cr>    # static_slot_creation_candidates-003455
+(config-pw-class)# no protocol <cr>    # static_slot_creation_candidates-003457
+(config-pw-class)# no sequencing <cr>    # static_slot_creation_candidates-003458
+(config-pw-class)# no sequencing resync <cr>    # static_slot_creation_candidates-003474
+(config-pw-class)# no status <cr>    # static_slot_creation_candidates-003462
+(config-pw-class)# no status admin-down disconnect <cr>    # static_slot_creation_candidates-003494
+(config-pw-class)# no status control-plane route-watch <cr>    # static_slot_creation_candidates-003488
+(config-pw-class)# no status decoupled <cr>    # static_slot_creation_candidates-003472
+(config-pw-class)# no status peer topology dual-homed <cr>    # static_slot_creation_candidates-003511
+(config-pw-class)# no status protocol notification static <cr>    # static_slot_creation_candidates-003515
+(config-pw-class)# no status redundancy master <cr>    # static_slot_creation_candidates-003495
+(config-pw-class)# no switching tlv <cr>    # static_slot_creation_candidates-003466
+(config-pw-class)# no vccv bfd template <cr>    # static_slot_creation_candidates-003491
+(config-pw-class)# no vccv control-word <cr>    # static_slot_creation_candidates-003470
+(config-pw-class)# preferred-path interface <interface> <cr>    # static_slot_creation_candidates-003519
+(config-pw-class)# preferred-path peer <address> <cr>    # static_slot_creation_candidates-003479
+(config-pw-class)# protocol l2tpv3 <cr>    # static_slot_creation_candidates-003463
+(config-pw-class)# sequencing <cr>    # static_slot_creation_candidates-003439
+(config-pw-class)# sequencing resync <cr>    # static_slot_creation_candidates-003459
+(config-pw-class)# status <cr>    # static_slot_creation_candidates-003440
+(config-pw-class)# status admin-down disconnect <cr>    # static_slot_creation_candidates-003475
+(config-pw-class)# status control-plane route-watch <cr>    # static_slot_creation_candidates-003469
+(config-pw-class)# status decoupled <cr>    # static_slot_creation_candidates-003454
+(config-pw-class)# status peer topology dual-homed <cr>    # static_slot_creation_candidates-003492
+(config-pw-class)# status protocol notification static <string> <cr>    # static_slot_creation_candidates-003516
+(config-pw-class)# status redundancy master <cr>    # static_slot_creation_candidates-003476
+(config-pw-class)# switching tlv <cr>    # static_slot_creation_candidates-003446
+(config-pw-class)# vccv bfd status signaling <cr>    # static_slot_creation_candidates-003518
+(config-pw-class)# vccv bfd template <string> <cr>    # static_slot_creation_candidates-003501
+(config-pw-class)# vccv control-word <cr>    # static_slot_creation_candidates-003452

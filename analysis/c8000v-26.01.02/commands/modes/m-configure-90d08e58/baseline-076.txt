@@ -1,0 +1,379 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-076.md
+
+(config)# ipv6 nd nsf dad suppress <number:0..600> <cr>    # path-029303
+(config)# ipv6 nd nsf throttle <number:128..4096> <cr>    # path-026896
+(config)# ipv6 nd nud limit <number:32..4096> <cr>    # path-035543
+(config)# ipv6 nd ra solicited unicast <cr>    # path-035237
+(config)# ipv6 nd reachable-time <number:0..3600000> <cr>    # path-025783
+(config)# ipv6 nd resolution data limit <number:16..2048> <cr>    # path-029408
+(config)# ipv6 nd route-owner <cr>    # path-026913
+(config)# ipv6 nd suppress <cr>    # path-062719
+(config)# ipv6 nd suppress policy <string> <cr>    # path-062787
+(config)# ipv6 neighbor <address> <interface> <cr>    # path-060584
+(config)# ipv6 neighbor binding <cr>    # path-027057
+(config)# ipv6 neighbor binding <prefix:dynamic> <cr>    # path-062947
+(config)# ipv6 neighbor binding logging <cr>    # path-029427
+(config)# ipv6 neighbor binding max-entries <number:1..1000000> <cr>    # path-035784
+(config)# ipv6 neighbor binding reachable-lifetime <number:1..86400> <cr>    # path-060844
+(config)# ipv6 neighbor tracking <cr>    # path-026955
+(config)# ipv6 nsf-converge <number:1..3600> <cr>    # path-026912
+(config)# ipv6 ospf name-lookup <cr>    # path-026961
+(config)# ipv6 pim accept-register list <number:100..199> <cr>    # path-035863
+(config)# ipv6 pim allow-rp <cr>    # path-027249
+(config)# ipv6 pim anycast-rp <address> <address> <cr>    # path-036342
+(config)# ipv6 pim bsr announced rp <address> <cr>    # path-046308
+(config)# ipv6 pim bsr candidate bsr <address> <cr>    # path-046309
+(config)# ipv6 pim bsr candidate rp <address> <cr>    # path-046364
+(config)# ipv6 pim maximum group-mappings bsr <number:1..10000> <cr>    # path-045728
+(config)# ipv6 pim mvpn source-link-local <cr>    # path-030039
+(config)# ipv6 pim neighbor-filter list <number:100..199> <cr>    # path-035804
+(config)# ipv6 pim old-register-checksum <cr>    # path-027139
+(config)# ipv6 pim pfp-sa announce <address> <cr>    # path-036995
+(config)# ipv6 pim pfp-sa cache <cr>    # path-030468
+(config)# ipv6 pim pfp-sa timers holdtime <number:1..3600> <cr>    # path-046249
+(config)# ipv6 pim pfp-sa timers interval <number:1..3600> <cr>    # path-046284
+(config)# ipv6 pim register-source <interface> <cr>    # path-060617
+(config)# ipv6 pim rp embedded <cr>    # path-029627
+(config)# ipv6 pim rp-address <address> <cr>    # path-029796
+(config)# ipv6 pim spt-threshold infinity <cr>    # path-029903
+(config)# ipv6 pim static-rpf <address> <number:0..32> <interface> <address> <cr>    # path-061905
+(config)# ipv6 prefix-list <string> <cr>    # path-027160
+(config)# ipv6 prefix-list <string> deny <prefix:dynamic> <cr>    # path-060852
+(config)# ipv6 prefix-list sequence-number <cr>    # path-027028
+(config)# ipv6 radius source-interface <interface> <cr>    # path-060607
+(config)# ipv6 reassembly-queue length <number:dynamic> <cr>    # path-060577
+(config)# ipv6 reassembly-queue time-out <number:0..60> <cr>    # path-029261
+(config)# ipv6 rip vrf-mode enable <cr>    # path-029246
+(config)# ipv6 route <?match_ipv6_pfxinfo_action@55558ad45b90> segment-routing srv6 via policy <string> <cr>    # path-062276
+(config)# ipv6 route static bfd <interface> <address> <cr>    # path-061269
+(config)# ipv6 route static resolve default <cr>    # path-035135
+(config)# ipv6 router <?ipv6_router_action@55558aae3f98> <cr>    # path-062718
+(config)# ipv6 snooping <cr>    # path-025838
+(config)# ipv6 snooping policy <string> <cr>    # path-029680
+(config)# ipv6 source-guard <cr>    # path-025819
+(config)# ipv6 source-guard policy <string> <cr>    # path-029525
+(config)# ipv6 source-route <cr>    # path-025768
+(config)# ipv6 spd mode aggressive <cr>    # path-029676
+(config)# ipv6 spd queue max-threshold <number:2..65535> <cr>    # path-035934
+(config)# ipv6 spd queue min-threshold <number:1..65535> <cr>    # path-036008
+(config)# ipv6 tacacs source-interface <interface> <cr>    # path-060592
+(config)# ipv6 traffic interface-statistics <cr>    # path-026925
+(config)# ipv6 unicast-routing <cr>    # path-025764
+(config)# ipv6 visibility global flow monitor sdwan_flow_monitor_ipv6 input <cr>    # path-052781
+(config)# isdn alert-end-to-end <cr>    # path-025955
+(config)# isdn debug <cr>    # path-025958
+(config)# isdn display layer2-status <cr>    # path-027454
+(config)# isdn housekeeping warn <cr>    # path-027476
+(config)# isdn logging <cr>    # path-025956
+(config)# isdn silent-boot <cr>    # path-025952
+(config)# isdn switch-type none <cr>    # path-027437
+(config)# isdn-mib retain-timer <number:0..336> <cr>    # path-027452
+(config)# isis display delimiter <cr>    # path-027320
+(config)# isis optimize inline <cr>    # path-027215
+(config)# isis optimize lspdb-walk <cr>    # path-027231
+(config)# issu set rollback-timer <cr>    # path-027591
+(config)# issu set rollback-timer <hh:mm:ss> <cr>    # path-060710
+(config)# kerberos clients mandatory <cr>    # path-026434
+(config)# kerberos credentials forward <cr>    # path-026531
+(config)# kerberos instance map <string> <number:0..15> <cr>    # path-034475
+(config)# kerberos local-realm <string> <cr>    # path-026368
+(config)# kerberos password <cr>    # path-025703
+(config)# kerberos preauth encrypted-kerberos-timestamp <cr>    # path-026485
+(config)# kerberos processes <number:1..10> <cr>    # path-025446
+(config)# kerberos realm <string> <string> <cr>    # path-028246
+(config)# kerberos retry <number:1..5> <cr>    # path-025444
+(config)# kerberos server <string> <address> <cr>    # path-028400
+(config)# kerberos srvtab remote <address> <string> <cr>    # path-034365
+(config)# kerberos srvtab remote <url:dynamic> <cr>    # path-060531
+(config)# kerberos timeout <number:1..10> <cr>    # path-025443
+(config)# key chain <string> <cr>    # path-027401
+(config)# key config-key 1 <string> <cr>    # path-030531
+(config)# key config-key newpass <string> <cr>    # path-030565
+(config)# key config-key newpass <string> oldpass <string> <cr>    # path-046769
+(config)# key config-key password-encrypt <cr>    # path-027408
+(config)# kron occurrence <string> in <number:0..4294967294> oneshot <cr>    # path-061233
+(config)# kron policy-list <string> <cr>    # path-026513
+(config)# l2protocol-tunnel cos <number:0..7> <cr>    # path-027558
+(config)# l2protocol-tunnel global drop-threshold <number:100..20000> <cr>    # path-031241
+(config)# l2tp congestion-control <cr>    # path-025741
+(config)# l2tp connect-speed-update ancp <cr>    # path-026799
+(config)# l2tp connect-speed-update enable <cr>    # path-026779
+(config)# l2tp session l2tpv3 id min <number:dynamic> max <number:dynamic> <cr>    # path-062893
+(config)# l2tp sso cf-flow disable <cr>    # path-029249
+(config)# l2tp sso enable <cr>    # path-026838
+(config)# l2tp sso test transform <cr>    # path-029189
+(config)# l2tp tunnel failover-cap <cr>    # path-026842
+(config)# l2tp tunnel l2tpv3 accounting headers <cr>    # path-035133
+(config)# l2tp tunnel max-sessions <number:1..65535> <cr>    # path-029199
+(config)# l2tp-class <string> <cr>    # path-025742
+(config)# l2vpn evpn all-active-mh <cr>    # path-027012
+(config)# l2vpn evpn ethernet-segment <number:dynamic> <cr>    # path-060600
+(config)# l2vpn evpn instance <number:1..65535> <cr>    # path-060619
+(config)# l2vpn evpn profile default <cr>    # path-029474
+(config)# lacp system-priority <number:0..65535> <cr>    # path-027581
+(config)# ldap attribute-map <string> <cr>    # path-027106
+(config)# ldap server <string> <cr>    # path-027135
+(config)# li-view <string> user <string> password <string> <cr>    # path-043895
+(config)# license accept end user agreement <cr>    # path-037933
+(config)# license boot level ipbase <cr>    # path-031094
+(config)# license boot level network-essentials <cr>    # path-060696
+(config)# license mode dna <cr>    # path-027512
+(config)# license smart conversion automatic <cr>    # path-031107
+(config)# license smart custom_id <cr>    # path-027543
+(config)# license smart enable <cr>    # path-027529
+(config)# license smart enable noprompt <cr>    # path-031047
+(config)# license smart ip-type os-default <cr>    # path-031316
+(config)# license smart log verbose <cr>    # path-031342
+(config)# license smart onprem trust <cr>    # path-031331
+(config)# license smart privacy all <cr>    # path-031218
+(config)# license smart proxy address <string> <cr>    # path-038339
+(config)# license smart reservation <cr>    # path-027527
+(config)# license smart server-identity-check <cr>    # path-027565
+(config)# license smart transport smart <cr>    # path-031191
+(config)# license smart url <cr>    # path-027584
+(config)# license smart usage interval <cr>    # path-031303
+(config)# license smart utility <cr>    # path-027542
+(config)# license smart utility customer_info city <cr>    # path-038424
+(config)# license smart utility customer_info country <cr>    # path-038516
+(config)# license smart utility customer_info id <cr>    # path-038275
+(config)# license smart utility customer_info name <cr>    # path-038327
+(config)# license smart utility customer_info postalcode <cr>    # path-038561
+(config)# license smart utility customer_info state <cr>    # path-038466
+(config)# license smart utility customer_info street <cr>    # path-038383
+(config)# license smart vrf <cr>    # path-027583
+(config)# license udi <cr>    # path-025964
+(config)# line <?ttyline_action@5555896718b8> <cr>    # path-060301
+(config)# line auto-consolidation <cr>    # path-025892
+(config)# lldp custom-network-hash <string> <cr>    # path-026350
+(config)# lldp holdtime <number:0..65535> <cr>    # path-025434
+(config)# lldp management-address ipv4 <address> <cr>    # path-060527
+(config)# lldp management-address ipv6 <address> <cr>    # path-060528
+(config)# lldp management-vlan <number:1..4095> <cr>    # path-026324
+(config)# lldp reinit <number:2..5> <cr>    # path-025436
+(config)# lldp run <cr>    # path-025620
+(config)# lldp system-name <string> switch-id <number:0..16> <cr>    # path-034185
+(config)# lldp timer <number:5..65534> <cr>    # path-025432
+(config)# lldp tlv-select management-address <cr>    # path-026233
+(config)# lldp ucs-tlv ipv6 <address> mgmt-port <number:1..65534> infra-vlan <number:1..4095> cluster-id <string> <cr>    # path-059619
+(config)# lnm disabled <cr>    # path-025670
+(config)# lnm pathtrace-disabled <cr>    # path-025704
+(config)# lnm snmp-only <cr>    # path-025664
+(config)# load protocol <?fpm_protocol_action@55558935a170> <cr>    # path-060370
+(config)# locaddr-priority-list <number:1..10> <number:0..255> high <cr>    # path-028568
+(config)# location admin-tag <string> <cr>    # path-026537
+(config)# location civic-location identifier host <cr>    # path-028365
+(config)# location custom-location identifier host <cr>    # path-028379
+(config)# location elin-location <string> identifier <string> <cr>    # path-034388
+(config)# location geo-location identifier host <cr>    # path-028413
+(config)# location prefer cdp weight <number:0..255> <cr>    # path-026462
+(config)# location prefer lldp-med weight <number:0..255> <cr>    # path-026406
+(config)# location prefer static weight <number:0..255> <cr>    # path-026383
+(config)# log-export local <cr>    # path-063024
+(config)# log-export local <cr>    # path-063026
+(config)# logging <address> <cr>    # path-060298
+(config)# logging alarm <cr>    # path-060292
+(config)# logging buginf <cr>    # path-025564
+(config)# logging count <cr>    # path-025546
+(config)# logging delimiter tcp <cr>    # path-060394
+(config)# logging discriminator <string> <cr>    # path-026174
+(config)# logging discriminator <string> msg-body includes <string> <cr>    # path-061208
+(config)# logging dmvpn <cr>    # path-060291
+(config)# logging esm config <cr>    # path-060389
+(config)# logging event link-status global <cr>    # path-028198
+(config)# logging event trunk-status global <cr>    # path-028220
+(config)# logging exception <number:4096..2147483647> <cr>    # path-026092
+(config)# logging facility <cr>    # path-060296
+(config)# logging file <url:dynamic> <cr>    # path-060380
+(config)# logging filter <url:dynamic> <cr>    # path-062717
+(config)# logging history emergencies <cr>    # path-060392
+(config)# logging history size <number:0..500> <cr>    # path-060290
+(config)# logging host <address> <cr>    # path-060408
+(config)# logging message-counter log <cr>    # path-026127
+(config)# logging on <cr>    # path-025623
+(config)# logging origin-id <cr>    # path-060294
+(config)# logging persistent <cr>    # path-025658
+(config)# logging persistent threshold <number:dynamic> <cr>    # path-060532
+(config)# logging prefix version <number:1..2> <cr>    # path-028292
+(config)# logging purge-log buffer days <number:1..120> <cr>    # path-034114
+(config)# logging purge-log buffer days <number:1..120> time <hh:mm> <cr>    # path-061836
+(config)# logging queue-limit <cr>    # path-025599
+(config)# logging radioactive-trace <cr>    # path-025569
+(config)# logging server-arp <cr>    # path-060295
+(config)# logging snmp-authfail <cr>    # path-025557
+(config)# logging snmp-trap emergencies <cr>    # path-060398
+(config)# logging source-interface <cr>    # path-060297
+(config)# logging syslog-events <cr>    # path-025649
+(config)# logging tls-profile <string> <cr>    # path-060399
+(config)# logging trap <cr>    # path-060293
+(config)# logging userinfo <cr>    # path-025561
+(config)# login block-for <number:1..65535> attempts <number:1..65535> within <number:1..65535> <cr>    # path-052322
+(config)# login delay <number:1..10> <cr>    # path-026574
+(config)# login on-failure <cr>    # path-025710
+(config)# login on-success <cr>    # path-025714
+(config)# login password-reuse-interval <number:1..365> <cr>    # path-026665
+(config)# login password-warning-interval days <number:0..30> <cr>    # path-028876
+(config)# login password-warning-interval hours <number:0..23> <cr>    # path-028723
+(config)# login password-warning-interval minutes <number:0..59> <cr>    # path-028818
+(config)# login password-warning-interval months <number:0..11> <cr>    # path-028764
+(config)# login password-warning-interval seconds <number:0..59> <cr>    # path-028689
+(config)# login password-warning-interval years <number:0..99> <cr>    # path-028652
+(config)# login quiet-mode access-class <number:1..199> <cr>    # path-028593
+(config)# login quiet-mode ipv6 access-class <string> <cr>    # path-034678
+(config)# login-string <string> <string> <cr>    # path-026716
+(config)# mab logging verbose <cr>    # path-027143
+(config)# mab request format attribute 2 <string> <cr>    # path-045968
+(config)# mac access-list extended <string> <cr>    # path-031216
+(config)# mac-address-table aging-time <cr>    # path-060343
+(config)# mac-address-table control-packet-learn <cr>    # path-060334
+(config)# mac-address-table static <cr>    # path-060349
+(config)# map-class frame-relay <string> <cr>    # path-026553
+(config)# map-list <string> <cr>    # path-025678
+(config)# mdns-sd controller service-list <string> <cr>    # path-027995
+(config)# mdns-sd controller service-policy <string> <cr>    # path-027978
+(config)# mdns-sd flex-profile <string> <cr>    # path-026276
+(config)# mdns-sd gateway <cr>    # path-025560
+(config)# mdns-sd location-filter <string> <cr>    # path-026290
+(config)# mdns-sd service-definition <string> <cr>    # path-026201
+(config)# mdns-sd service-list <string> IN <cr>    # path-028007
+(config)# mdns-sd service-list <string> OUT <cr>    # path-028034
+(config)# mdns-sd service-peer group <cr>    # path-026266
+(config)# mdns-sd service-policy <string> <cr>    # path-026190
+(config)# mdns-sd wired-filter <string> <cr>    # path-026307
+(config)# memory check-interval <number:1..2147483> <cr>    # path-025486
+(config)# memory chunk siblings threshold <number:2..4294967295> <cr>    # path-038481
+(config)# memory free low-watermark processor <number:1..3994575> <cr>    # path-038523
+(config)# memory free-list <number:1..4294967280> <cr>    # path-027531
+(config)# memory lite <cr>    # path-025979
+(config)# memory record events <cr>    # path-027548
+(config)# memory record filter PC <?general_pointer_number_action@55558973f1b0> <cr>    # path-060955
+(config)# memory record filter include <string> <cr>    # path-038050
+(config)# memory record traceback <cr>    # path-027544
+(config)# memory reserve critical <cr>    # path-027568
+(config)# memory reserved console <number:0..4096> <cr>    # path-031265
+(config)# memory sanity <cr>    # path-025984
+(config)# memory statistics history table <number:12..72> <cr>    # path-038201
+(config)# memory validate-checksum <number:1..2147483> <cr>    # path-025487
+(config)# mgmt-traffic control ipv4 <cr>    # path-060467
+(config)# microcode reload <cr>    # path-025580
+(config)# mka defaults policy send-secure-announcements <cr>    # path-031448
+(config)# mka policy <string> <cr>    # path-027593
+(config)# mka suppress syslogs sak-rekey <cr>    # path-031462
+(config)# modemcap edit <string> miscellaneous <string> <cr>    # path-037268
+(config)# modemcap entry <string> <cr>    # path-027381
+(config)# monitor drop log urpf <cr>    # path-060663
+(config)# monitor drop match ip <string> <cr>    # path-060916
+(config)# monitor event-trace eigrp perf-events rate-limiting <cr>    # path-061007
+(config)# monitor event-trace stacktrace <cr>    # path-060439
+(config)# monitor pcm-tracer <cr>    # path-062942
+(config)# monitor pcm-tracer capture-destination <cr>    # path-063028
+(config)# monitor pcm-tracer capture-duration <cr>    # path-063027
+(config)# monitor pcm-tracer delayed-start <cr>    # path-063029
+(config)# monitor pcm-tracer profile <number:1..10> <cr>    # path-063038
+(config)# monitor permit-list <cr>    # path-060328
+(config)# monitor permit-list destination interface <interface> <cr>    # path-063106
+(config)# monitor session <number:dynamic> <cr>    # path-062726
+(config)# monitor session <number:dynamic> <cr>    # path-062727
+(config)# monitor session <number:dynamic> filter <cr>    # path-062757
+(config)# monitor session <number:dynamic> filter address-type <cr>    # path-062805
+(config)# monitor session <number:dynamic> filter ip access-group <cr>    # path-062843
+(config)# monitor session <number:dynamic> filter ipv6 access-group <cr>    # path-062841
+(config)# monitor session <number:dynamic> filter mac access-group <cr>    # path-062839
+(config)# monitor session <number:dynamic> filter packet-type <cr>    # path-062802
+(config)# monitor session <number:dynamic> filter packet-type good <cr>    # path-062840
+(config)# monitor session <number:dynamic> filter vlan <cr>    # path-062952
+(config)# monitor session <number:dynamic> type capture <cr>    # path-062806
+(config)# monitor session <number:dynamic> type erspan-destination <cr>    # path-062798
+(config)# monitor session <number:dynamic> type erspan-source <cr>    # path-062796
+(config)# monitor session <number:dynamic> type local <cr>    # path-062803
+(config)# monitor session <number:dynamic> type local-tx <cr>    # path-062804
+(config)# monitor session <number:dynamic> type rspan-destination <cr>    # path-062800
+(config)# monitor session <number:dynamic> type rspan-source <cr>    # path-062799
+(config)# monitor session all <cr>    # path-060451
+(config)# monitor session capture <cr>    # path-060458
+(config)# monitor session erspan-destination <cr>    # path-060462
+(config)# monitor session erspan-source <cr>    # path-060459
+(config)# monitor session local <cr>    # path-060452
+(config)# monitor session range <?string_help_func_action@55558982a958> <cr>    # path-062756
+(config)# monitor session remote <cr>    # path-060456
+(config)# monitor ssm id <cr>    # path-060426
+(config)# multilink bundle-name authenticated <cr>    # path-027253
+(config)# multilink test-mode <number:0..1> <cr>    # path-025467
+(config)# multilink virtual-template <number:dynamic> <cr>    # path-060415
+(config)# mvr <cr>    # path-025462
+(config)# mvr group <address> <number:dynamic> <cr>    # path-060616
+(config)# mvr max-groups <number:dynamic> <cr>    # path-060405
+(config)# mvr mode <cr>    # path-025835
+(config)# mvr querytime <number:1..100> <cr>    # path-027060
+(config)# mvr vlan <number:dynamic> <cr>    # path-060403
+(config)# named-ordering-route-map enable <cr>    # path-025756
+(config)# nat46 prefix <prefix:dynamic> <cr>    # path-062725
+(config)# nat46 v4 pool <string> <cr>    # path-060667
+(config)# nat46 v6v4 pool <string> <cr>    # path-060670
+(config)# nat64 logging translations flow-export v9 udp destination <address> <number:1..65535> <cr>    # path-062524
+(config)# nat64 map-t domain <number:1..10000> <cr>    # path-060678
+(config)# nat64 prefix stateful <cr>    # path-060447
+(config)# nat64 provisioning mode jp01 <cr>    # path-060680
+(config)# nat64 route <prefix:dynamic> <cr>    # path-062728
+(config)# nat64 route vrf <string> <prefix:dynamic> global <cr>    # path-062837
+(config)# nat64 service ftp <cr>    # path-060455
+(config)# nat64 settings <cr>    # path-060353
+(config)# nat64 switchover replicate http <cr>    # path-060673
+(config)# nat64 translation max-entries <cr>    # path-060461
+(config)# nat64 v4 pool <string> <cr>    # path-060674
+(config)# nat64 v6v4 list <string> <cr>    # path-060685
+(config)# nat66 max-vpn <number:1..250> <cr>    # path-060444
+(config)# nat66 nd enable <cr>    # path-060438
+(config)# nat66 prefix inside <prefix:dynamic> outside <prefix:dynamic> <cr>    # path-062960
+(config)# nat66 route vrf <string> <prefix:dynamic> global <cr>    # path-062834
+(config)# ncia client <number:1..1> <address> <address> <cr>    # path-034600
+(config)# ncia rsrb <number:1..4095> <number:1..15> <number:1..4095> <number:1..15> <number:1..4095> <address> <cr>    # path-056820
+(config)# ncia server <number:1..1> <address> <address> <address> <number:1..4095> <cr>    # path-052405
+(config)# netbios <?dumper_command_func@555589e36bc8> access-list bytes <string> <cr>    # path-060756
+(config)# netbios <?dumper_command_func@555589e36bc8> access-list filter-name-recognized <cr>    # path-060501
+(config)# netbios <?dumper_command_func@555589e36bc8> access-list host <string> <cr>    # path-060755
+(config)# netbios name-cache <address> <string> <cr>    # path-027913
+(config)# netbios name-cache <address> <string> <interface> <cr>    # path-060757
+(config)# netbios name-cache broadcast-name-recognized <cr>    # path-026051
+(config)# netbios name-cache cache-add-name <cr>    # path-026025
+(config)# netbios name-cache name-len <number:8..16> <cr>    # path-025517
+(config)# netbios name-cache proxy-datagram <number:0..4294967295> <cr>    # path-025520
+(config)# netbios name-cache query-timeout <number:1..4294967295> <cr>    # path-025524
+(config)# netbios name-cache recognized-timeout <number:1..4294967295> <cr>    # path-025525
+(config)# netbios name-cache timeout <number:1..35000> <cr>    # path-025512
+(config)# netconf beep initiator <string> <number:1..65535> <cr>    # path-060956
+(config)# netconf beep listener <cr>    # path-060483
+(config)# netconf detailed-error <cr>    # path-060340
+(config)# netconf format <cr>    # path-060354
+(config)# netconf legacy <cr>    # path-060342
+(config)# netconf lock-time <cr>    # path-060352
+(config)# netconf max-message <cr>    # path-060358
+(config)# netconf max-sessions <cr>    # path-060346
+(config)# netconf ssh <cr>    # path-060360
+(config)# netconf-yang <cr>    # path-063003
+(config)# netconf-yang <cr>    # path-063004
+(config)# netconf-yang callhome client <string> <cr>    # path-063080
+(config)# netconf-yang callhome client <string> <cr>    # path-063085
+(config)# netconf-yang cisco-ia auto-sync <cr>    # path-063054
+(config)# netconf-yang cisco-ia auto-sync disabled <cr>    # path-063113
+(config)# netconf-yang cisco-ia auto-sync disabled <cr>    # path-063114
+(config)# netconf-yang cisco-ia blocking cli-blocking-enabled <cr>    # path-063109
+(config)# netconf-yang cisco-ia blocking cli-blocking-enabled <cr>    # path-063110
+(config)# netconf-yang cisco-ia blocking confd-cfg-blocking-enabled <cr>    # path-063118
+(config)# netconf-yang cisco-ia blocking confd-cfg-blocking-enabled <cr>    # path-063119
+(config)# netconf-yang cisco-ia blocking confd-cfg-command <string> <cr>    # path-063145
+(config)# netconf-yang cisco-ia blocking confd-cfg-command <string> <cr>    # path-063146
+(config)# netconf-yang cisco-ia blocking network-element-command <string> <cr>    # path-063150
+(config)# netconf-yang cisco-ia blocking network-element-command <string> <cr>    # path-063151
+(config)# netconf-yang cisco-ia conf-full-sync-cli <string> <cr>    # path-063083
+(config)# netconf-yang cisco-ia conf-full-sync-cli <string> <cr>    # path-063084
+(config)# netconf-yang cisco-ia conf-parser-msg-error <string> <cr>    # path-063086
+(config)# netconf-yang cisco-ia conf-parser-msg-error <string> <cr>    # path-063087
+(config)# netconf-yang cisco-ia conf-parser-msg-ignore <string> <cr>    # path-063089
+(config)# netconf-yang cisco-ia conf-parser-msg-ignore <string> <cr>    # path-063090
+(config)# netconf-yang cisco-ia config-change-delay <cr>    # path-063057
+(config)# netconf-yang cisco-ia config-change-delay <number:0..65535> <cr>    # path-063092
+(config)# netconf-yang cisco-ia config-change-delay <number:0..65535> <cr>    # path-063093
+(config)# netconf-yang cisco-ia init-sync <cr>    # path-063062
+(config)# netconf-yang cisco-ia init-sync disabled <cr>    # path-063129

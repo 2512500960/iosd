@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-065.md
+
+(config)# do-exec undebug cns io <cr>    # path-033436
+(config)# do-exec undebug cns lock <cr>    # path-033445
+(config)# do-exec undebug cns management <cr>    # path-033495
+(config)# do-exec undebug cns ssl <cr>    # path-033469
+(config)# do-exec undebug cns transport <cr>    # path-033456
+(config)# do-exec undebug cns xml all <cr>    # path-043180
+(config)# do-exec undebug cns xml decode <cr>    # path-043162
+(config)# do-exec undebug cns xml dom <cr>    # path-043124
+(config)# do-exec undebug cns xml parser <cr>    # path-043144
+(config)# do-exec undebug compress <cr>    # path-026831
+(config)# do-exec undebug compress detailed <cr>    # path-029055
+(config)# do-exec undebug condition <number:1..1000> <cr>    # path-028255
+(config)# do-exec undebug condition all <cr>    # path-028294
+(config)# do-exec undebug condition called <string> <cr>    # path-034471
+(config)# do-exec undebug condition calling <string> <cr>    # path-034515
+(config)# do-exec undebug condition cpl class-map <string> <cr>    # path-044815
+(config)# do-exec undebug condition cpl policy-map <string> <cr>    # path-044855
+(config)# do-exec undebug condition cts peer-id <string> <cr>    # path-044691
+(config)# do-exec undebug condition domain <string> <cr>    # path-034638
+(config)# do-exec undebug condition ip <address> <cr>    # path-034645
+(config)# do-exec undebug condition ip nat inside destination list <number:1..2699> <cr>    # path-059016
+(config)# do-exec undebug condition ip nat inside source <cr>    # path-052638
+(config)# do-exec undebug condition ip nat inside source static <address> <address> <cr>    # path-059714
+(config)# do-exec undebug condition ip nat outside source list <number:1..2699> <cr>    # path-059025
+(config)# do-exec undebug condition ip nat outside source static <address> <address> <cr>    # path-059710
+(config)# do-exec undebug condition ip nat pool <string> <cr>    # path-052588
+(config)# do-exec undebug condition mac-address <address> <cr>    # path-034583
+(config)# do-exec undebug condition mac-address all <cr>    # path-034584
+(config)# do-exec undebug condition match-list <number:1..16> <cr>    # path-034913
+(config)# do-exec undebug condition portbundle ip <address> bundle <number:0..65536> <cr>    # path-056936
+(config)# do-exec undebug condition session-id <number:1..4294967295> <cr>    # path-034669
+(config)# do-exec undebug condition tnlmsg <number:1..15> <cr>    # path-034749
+(config)# do-exec undebug condition username <string> <cr>    # path-034428
+(config)# do-exec undebug condition vcid <number:1..4294967295> <cr>    # path-034609
+(config)# do-exec undebug condition vlan <number:1..4094> <cr>    # path-034987
+(config)# do-exec undebug condition vrf default <cr>    # path-034881
+(config)# do-exec undebug configuration lock <cr>    # path-028419
+(config)# do-exec undebug confmodem <cr>    # path-027691
+(config)# do-exec undebug conn <cr>    # path-027535
+(config)# do-exec undebug cops <cr>    # path-027649
+(config)# do-exec undebug cpc function-trace <cr>    # path-031313
+(config)# do-exec undebug cpc subblock <cr>    # path-031285
+(config)# do-exec undebug cpl <cr>    # path-027700
+(config)# do-exec undebug cpl cap-xos <cr>    # path-032762
+(config)# do-exec undebug cpl classification <cr>    # path-032917
+(config)# do-exec undebug cpl classification client <cr>    # path-041991
+(config)# do-exec undebug cpl classification dp <cr>    # path-042012
+(config)# do-exec undebug cpl classification infra <cr>    # path-041964
+(config)# do-exec undebug cpl concurrency delay acquire <number:0..300> <number:1..10000> <cr>    # path-058710
+(config)# do-exec undebug cpl concurrency history <cr>    # path-041748
+(config)# do-exec undebug cpl concurrency lock <cr>    # path-041806
+(config)# do-exec undebug cpl concurrency pid <number:1..10000> <cr>    # path-050629
+(config)# do-exec undebug cpl concurrency trace <cr>    # path-041781
+(config)# do-exec undebug cpl filtering <cr>    # path-032854
+(config)# do-exec undebug cpl function <string> <cr>    # path-041854
+(config)# do-exec undebug cpl inline <cr>    # path-032723
+(config)# do-exec undebug cpl pol-shim <cr>    # path-032779
+(config)# do-exec undebug cpl ppcp <cr>    # path-033008
+(config)# do-exec undebug cpl ppcp bind <cr>    # path-041940
+(config)# do-exec undebug cpl ppcp client <cr>    # path-042166
+(config)# do-exec undebug cpl ppcp client class-type <cr>    # path-050813
+(config)# do-exec undebug cpl ppcp client classification <cr>    # path-050753
+(config)# do-exec undebug cpl ppcp client distribution <cr>    # path-050772
+(config)# do-exec undebug cpl ppcp client feature <cr>    # path-050710
+(config)# do-exec undebug cpl ppcp client filter-type <cr>    # path-050833
+(config)# do-exec undebug cpl ppcp client legacy-platform <cr>    # path-050850
+(config)# do-exec undebug cpl ppcp client policy-type <cr>    # path-050794
+(config)# do-exec undebug cpl ppcp client target <cr>    # path-050732
+(config)# do-exec undebug cpl ppcp database <cr>    # path-042147
+(config)# do-exec undebug cpl ppcp database runtime <cr>    # path-050829
+(config)# do-exec undebug cpl ppcp database template <cr>    # path-050805
+(config)# do-exec undebug cpl ppcp event <cr>    # path-042253
+(config)# do-exec undebug cpl ppcp event action <cr>    # path-050908
+(config)# do-exec undebug cpl ppcp event action add <cr>    # path-056274
+(config)# do-exec undebug cpl ppcp event action delete <cr>    # path-056296
+(config)# do-exec undebug cpl ppcp event action modify <cr>    # path-056286
+(config)# do-exec undebug cpl ppcp event attribute <cr>    # path-050937
+(config)# do-exec undebug cpl ppcp event attribute add <cr>    # path-056301
+(config)# do-exec undebug cpl ppcp event attribute delete <cr>    # path-056307
+(config)# do-exec undebug cpl ppcp event child-policy <cr>    # path-050924
+(config)# do-exec undebug cpl ppcp event child-policy add <cr>    # path-056293
+(config)# do-exec undebug cpl ppcp event child-policy delete <cr>    # path-056303
+(config)# do-exec undebug cpl ppcp event class-to-policy <cr>    # path-050907
+(config)# do-exec undebug cpl ppcp event class-to-policy add <cr>    # path-056285
+(config)# do-exec undebug cpl ppcp event class-to-policy delete <cr>    # path-056295
+(config)# do-exec undebug cpl ppcp event classmap <cr>    # path-050872
+(config)# do-exec undebug cpl ppcp event classmap add <cr>    # path-056241
+(config)# do-exec undebug cpl ppcp event classmap delete <cr>    # path-056253
+(config)# do-exec undebug cpl ppcp event classmap logicalop <cr>    # path-056267
+(config)# do-exec undebug cpl ppcp event filter <cr>    # path-050884
+(config)# do-exec undebug cpl ppcp event filter add <cr>    # path-056262
+(config)# do-exec undebug cpl ppcp event filter delete <cr>    # path-056276
+(config)# do-exec undebug cpl ppcp event parameter-map <cr>    # path-050952
+(config)# do-exec undebug cpl ppcp event parameter-map add <cr>    # path-056306
+(config)# do-exec undebug cpl ppcp event parameter-map delete <cr>    # path-056315
+(config)# do-exec undebug cpl ppcp event policymap <cr>    # path-050870
+(config)# do-exec undebug cpl ppcp event policymap add <cr>    # path-056251
+(config)# do-exec undebug cpl ppcp event policymap delete <cr>    # path-056265
+(config)# do-exec undebug cpl ppcp event service-policy <cr>    # path-051037
+(config)# do-exec undebug cpl ppcp event service-policy activate <cr>    # path-056363
+(config)# do-exec undebug cpl ppcp event service-policy install <cr>    # path-056314
+(config)# do-exec undebug cpl ppcp event service-policy notify <cr>    # path-056335
+(config)# do-exec undebug cpl ppcp event service-policy remove <cr>    # path-056320
+(config)# do-exec undebug cpl ppcp event service-policy suspend <cr>    # path-056350
+(config)# do-exec undebug cpl ppcp event service-policy update <cr>    # path-056326
+(config)# do-exec undebug cpl ppcp event test client <number:0..7> <cr>    # path-058759
+(config)# do-exec undebug cpl ppcp event test dbtype <number:0..1> <cr>    # path-058769
+(config)# do-exec undebug cpl ppcp event test event <number:0..40> <cr>    # path-058748
+(config)# do-exec undebug cpl ppcp event test start <cr>    # path-056268
+(config)# do-exec undebug cpl ppcp flow <cr>    # path-042234
+(config)# do-exec undebug cpl ppcp flow db <cr>    # path-050902
+(config)# do-exec undebug cpl ppcp flow prov <cr>    # path-050889
+(config)# do-exec undebug cpl ppcp infra <cr>    # path-041909
+(config)# do-exec undebug cpl ppcp ipc <cr>    # path-042013
+(config)# do-exec undebug cpl ppcp level <cr>    # path-042187
+(config)# do-exec undebug cpl ppcp level brief <cr>    # path-050855
+(config)# do-exec undebug cpl ppcp level brief <cr>    # path-050856
+(config)# do-exec undebug cpl ppcp level error <cr>    # path-050817
+(config)# do-exec undebug cpl ppcp level error <cr>    # path-050818
+(config)# do-exec undebug cpl ppcp level normal <cr>    # path-050867
+(config)# do-exec undebug cpl ppcp level normal <cr>    # path-050868
+(config)# do-exec undebug cpl ppcp level verbose <cr>    # path-050861
+(config)# do-exec undebug cpl ppcp level warning <cr>    # path-050838
+(config)# do-exec undebug cpl ppcp level warning <cr>    # path-050839
+(config)# do-exec undebug cpl ppcp ras-dbg <cr>    # path-042158
+(config)# do-exec undebug cpl ppcp ras-fc <cr>    # path-042121
+(config)# do-exec undebug cpl ppcp ras-feature <cr>    # path-042096
+(config)# do-exec undebug cpl ppcp ras-tc <cr>    # path-042138
+(config)# do-exec undebug cpl ppcp stats <cr>    # path-042057
+(config)# do-exec undebug cpl ppcp stats ipc <cr>    # path-050759
+(config)# do-exec undebug cpl ppcp stats ipc ms <cr>    # path-056204
+(config)# do-exec undebug cpl ppcp stats update <cr>    # path-050776
+(config)# do-exec undebug cpl ppcp stats update ms <cr>    # path-056216
+(config)# do-exec undebug cpl provisioning api <cr>    # path-041722
+(config)# do-exec undebug cpl provisioning cce_dp_stubs <cr>    # path-041894
+(config)# do-exec undebug cpl provisioning cce_for_test <cr>    # path-041868
+(config)# do-exec undebug cpl provisioning db <cr>    # path-041785
+(config)# do-exec undebug cpl provisioning errors <cr>    # path-041809
+(config)# do-exec undebug cpl provisioning non_nvgen_client <cr>    # path-041920
+(config)# do-exec undebug cpl provisioning test <cr>    # path-041837
+(config)# do-exec undebug cpl provisioning ttc <cr>    # path-041754
+(config)# do-exec undebug cpl show detail <cr>    # path-041883
+(config)# do-exec undebug cpl vrf-target <cr>    # path-032798
+(config)# do-exec undebug crm <cr>    # path-027724
+(config)# do-exec undebug crm all <cr>    # path-033052
+(config)# do-exec undebug crm detail <cr>    # path-033016
+(config)# do-exec undebug crm error <cr>    # path-033068
+(config)# do-exec undebug crm error call <cr>    # path-042306
+(config)# do-exec undebug crm error call informational <cr>    # path-050968
+(config)# do-exec undebug crm error software <cr>    # path-042329
+(config)# do-exec undebug crm error software informational <cr>    # path-050984
+(config)# do-exec undebug crm function <cr>    # path-033027
+(config)# do-exec undebug crm inout <cr>    # path-033009
+(config)# do-exec undebug crypto autovpn error <cr>    # path-042424
+(config)# do-exec undebug crypto autovpn events <cr>    # path-042446
+(config)# do-exec undebug crypto autovpn info <cr>    # path-042464
+(config)# do-exec undebug crypto autovpn verbose <cr>    # path-042482
+(config)# do-exec undebug crypto ber <cr>    # path-033133
+(config)# do-exec undebug crypto engine <cr>    # path-033089
+(config)# do-exec undebug crypto engine accelerator control <cr>    # path-051072
+(config)# do-exec undebug crypto engine accelerator control detail <cr>    # path-056395
+(config)# do-exec undebug crypto engine accelerator control error <cr>    # path-056398
+(config)# do-exec undebug crypto engine accelerator control error mask <number:0..4294967295> <cr>    # path-059596
+(config)# do-exec undebug crypto engine accelerator packet <cr>    # path-051098
+(config)# do-exec undebug crypto engine accelerator packet detail <cr>    # path-056413
+(config)# do-exec undebug crypto engine accelerator packet error <cr>    # path-056404
+(config)# do-exec undebug crypto engine accelerator packet error mask <number:0..4294967295> <cr>    # path-059597
+(config)# do-exec undebug crypto engine accelerator packet number <number:0..32767> length <number:0..32767> <cr>    # path-059936
+(config)# do-exec undebug crypto engine error <cr>    # path-042293
+(config)# do-exec undebug crypto engine packet <cr>    # path-042350
+(config)# do-exec undebug crypto engine packet detail <cr>    # path-051005
+(config)# do-exec undebug crypto engine vpn_hw all <cr>    # path-051145
+(config)# do-exec undebug crypto engine vpn_hw buffer <cr>    # path-051133
+(config)# do-exec undebug crypto engine vpn_hw error <cr>    # path-051108
+(config)# do-exec undebug crypto engine vpn_hw high <cr>    # path-051066
+(config)# do-exec undebug crypto engine vpn_hw low <cr>    # path-051094
+(config)# do-exec undebug crypto engine vpn_hw medium <cr>    # path-051078
+(config)# do-exec undebug crypto engine vpn_hw normal <cr>    # path-051059
+(config)# do-exec undebug crypto engine vpn_hw packet <cr>    # path-051051
+(config)# do-exec undebug crypto engine vpn_hw stat <cr>    # path-051123
+(config)# do-exec undebug crypto est-client <cr>    # path-033139
+(config)# do-exec undebug crypto pki API <cr>    # path-042467
+(config)# do-exec undebug crypto pki callbacks <cr>    # path-042512
+(config)# do-exec undebug crypto pki messages <cr>    # path-042427
+(config)# do-exec undebug crypto pki scep <cr>    # path-042485
+(config)# do-exec undebug crypto pki server <cr>    # path-042475
+(config)# do-exec undebug crypto pki server performance <cr>    # path-051087
+(config)# do-exec undebug crypto pki transactions <cr>    # path-042474
+(config)# do-exec undebug crypto pki transactions performance <cr>    # path-051086
+(config)# do-exec undebug crypto pki validation <cr>    # path-042500
+(config)# do-exec undebug crypto socket <cr>    # path-033096
+(config)# do-exec undebug crypto verbose <cr>    # path-033138
+(config)# do-exec undebug crypto wui <cr>    # path-033150
+(config)# do-exec undebug cts <cr>    # path-027628
+(config)# do-exec undebug cts aaa <cr>    # path-031704
+(config)# do-exec undebug cts all <cr>    # path-031978
+(config)# do-exec undebug cts authentication details <cr>    # path-039342
+(config)# do-exec undebug cts authentication events <cr>    # path-039288
+(config)# do-exec undebug cts authorization aaa critical <cr>    # path-048856
+(config)# do-exec undebug cts authorization aaa debug <cr>    # path-048544
+(config)# do-exec undebug cts authorization aaa emergency <cr>    # path-048928
+(config)# do-exec undebug cts authorization aaa error <cr>    # path-048788
+(config)# do-exec undebug cts authorization aaa info <cr>    # path-048605
+(config)# do-exec undebug cts authorization aaa notice <cr>    # path-048660
+(config)# do-exec undebug cts authorization aaa verbose <cr>    # path-048483
+(config)# do-exec undebug cts authorization aaa warning <cr>    # path-048718
+(config)# do-exec undebug cts authorization all <cr>    # path-039757
+(config)# do-exec undebug cts cache <cr>    # path-031863
+(config)# do-exec undebug cts coa events <cr>    # path-040130
+(config)# do-exec undebug cts critical-authentication error <cr>    # path-040171
+(config)# do-exec undebug cts critical-authentication event <cr>    # path-040124
+(config)# do-exec undebug cts dp Info <cr>    # path-039719
+(config)# do-exec undebug cts dp errors <cr>    # path-039789
+(config)# do-exec undebug cts dp packets <cr>    # path-039842
+(config)# do-exec undebug cts environment-data <cr>    # path-031796
+(config)# do-exec undebug cts environment-data aaa <cr>    # path-039336
+(config)# do-exec undebug cts environment-data default-epg <cr>    # path-039636
+(config)# do-exec undebug cts environment-data default-sg <cr>    # path-039570
+(config)# do-exec undebug cts environment-data events <cr>    # path-039390
+(config)# do-exec undebug cts environment-data platform <cr>    # path-039510
+(config)# do-exec undebug cts environment-data sg-epg <cr>    # path-039459
+(config)# do-exec undebug cts error <cr>    # path-031602
+(config)# do-exec undebug cts fips events <cr>    # path-039611
+(config)# do-exec undebug cts ha config <cr>    # path-040080
+(config)# do-exec undebug cts ha core <cr>    # path-040284
+(config)# do-exec undebug cts ha core bindings <cr>    # path-049415
+(config)# do-exec undebug cts ha core bindings events <cr>    # path-055394
+(config)# do-exec undebug cts ha core environment-data <cr>    # path-049308
+(config)# do-exec undebug cts ha core environment-data events <cr>    # path-055320
+(config)# do-exec undebug cts ha core policy <cr>    # path-049364
+(config)# do-exec undebug cts ha core policy events <cr>    # path-055360
+(config)# do-exec undebug cts ha infra <cr>    # path-040035
+(config)# do-exec undebug cts ifc cache <cr>    # path-039726
+(config)# do-exec undebug cts ifc events <cr>    # path-039670
+(config)# do-exec undebug cts ifc snmp <cr>    # path-039792
+(config)# do-exec undebug cts layer3-trustsec <cr>    # path-031840
+(config)# do-exec undebug cts odm <cr>    # path-031559
+(config)# do-exec undebug cts policy-server all <cr>    # path-040330
+(config)# do-exec undebug cts policy-server http all <cr>    # path-049391
+(config)# do-exec undebug cts policy-server http error <cr>    # path-049258
+(config)# do-exec undebug cts policy-server http events <cr>    # path-049328
+(config)# do-exec undebug cts policy-server json all <cr>    # path-049441
+(config)# do-exec undebug cts policy-server json error <cr>    # path-049322
+(config)# do-exec undebug cts policy-server json events <cr>    # path-049386
+(config)# do-exec undebug cts policy-server selection all <cr>    # path-049494
+(config)# do-exec undebug cts policy-server selection error <cr>    # path-049379
+(config)# do-exec undebug cts policy-server selection events <cr>    # path-049437
+(config)# do-exec undebug cts provisioning events <cr>    # path-039832
+(config)# do-exec undebug cts provisioning packets <cr>    # path-039890
+(config)# do-exec undebug cts rcl-server all <cr>    # path-040257
+(config)# do-exec undebug cts rcl-server errors <cr>    # path-040208
+(config)# do-exec undebug cts rcl-server events <cr>    # path-040165
+(config)# do-exec undebug cts relay event <cr>    # path-039783
+(config)# do-exec undebug cts relay pak <cr>    # path-039838
+(config)# do-exec undebug cts sap events <cr>    # path-039552
+(config)# do-exec undebug cts sap packets <cr>    # path-039620
+(config)# do-exec undebug cts sap pakdump <cr>    # path-039679
+(config)# do-exec undebug cts server-list <cr>    # path-031660
+(config)# do-exec undebug cts sgacl-db <cr>    # path-031582
+(config)# do-exec undebug cts states <cr>    # path-031532
+(config)# do-exec undebug cts sxp conn <cr>    # path-040042
+(config)# do-exec undebug cts sxp error <cr>    # path-040219
+(config)# do-exec undebug cts sxp filter <cr>    # path-040178
+(config)# do-exec undebug cts sxp internal <cr>    # path-039991
+(config)# do-exec undebug cts sxp mdb <cr>    # path-040135
+(config)# do-exec undebug cts sxp message <cr>    # path-040085
+(config)# do-exec undebug custom-queue <cr>    # path-026564
+(config)# do-exec undebug cwan <cr>    # path-027760
+(config)# do-exec undebug cwan alarm <cr>    # path-033481
+(config)# do-exec undebug cwan atom <cr>    # path-033592
+(config)# do-exec undebug cwan atom cf <cr>    # path-043198
+(config)# do-exec undebug cwan atom circuit-idx <cr>    # path-043164
+(config)# do-exec undebug cwan atom entry <cr>    # path-043108
+(config)# do-exec undebug cwan atom ha <cr>    # path-043182
+(config)# do-exec undebug cwan atom issu <cr>    # path-043235
+(config)# do-exec undebug cwan atom msg <cr>    # path-043146
+(config)# do-exec undebug cwan atom rf <cr>    # path-043219
+(config)# do-exec undebug cwan atom stats <cr>    # path-043127
+(config)# do-exec undebug cwan bridge <cr>    # path-033492
+(config)# do-exec undebug cwan choc-dsx resets <cr>    # path-043030
+(config)# do-exec undebug cwan choc-dsx semaphore <cr>    # path-043001
+(config)# do-exec undebug cwan choc-error <cr>    # path-033361
+(config)# do-exec undebug cwan choc-event <cr>    # path-033377
+(config)# do-exec undebug cwan chocx config <cr>    # path-043057
+(config)# do-exec undebug cwan chocx error <cr>    # path-042977
+(config)# do-exec undebug cwan chocx events <cr>    # path-043033
+(config)# do-exec undebug cwan chocx love-letters <cr>    # path-043098
+(config)# do-exec undebug cwan chocx mib <cr>    # path-043076
+(config)# do-exec undebug cwan chocx state <cr>    # path-043005
+(config)# do-exec undebug cwan cmd-retry <cr>    # path-033349
+(config)# do-exec undebug cwan cmd-timeout <cr>    # path-033340
+(config)# do-exec undebug cwan ct3 <cr>    # path-033499
+(config)# do-exec undebug cwan ct3 config <cr>    # path-043059
+(config)# do-exec undebug cwan ct3 error <cr>    # path-042933
+(config)# do-exec undebug cwan ct3 event <cr>    # path-042910
+(config)# do-exec undebug cwan ct3 loveletter <cr>    # path-042985
+(config)# do-exec undebug cwan ct3 mib <cr>    # path-043010
+(config)# do-exec undebug cwan ct3 state <cr>    # path-042959
+(config)# do-exec undebug cwan ct3 stats <cr>    # path-043036
+(config)# do-exec undebug cwan dss <cr>    # path-033297
+(config)# do-exec undebug cwan hw-module queue <cr>    # path-043093
+(config)# do-exec undebug cwan icc <cr>    # path-033247
+(config)# do-exec undebug cwan ifcom <cr>    # path-033264
+(config)# do-exec undebug cwan ifmgr error <cr>    # path-043142
+(config)# do-exec undebug cwan ifmgr trace <cr>    # path-043160
+(config)# do-exec undebug cwan interface <cr>    # path-033236
+(config)# do-exec undebug cwan localsw <cr>    # path-033526
+(config)# do-exec undebug cwan logger <cr>    # path-033274
+(config)# do-exec undebug cwan love <cr>    # path-033288
+(config)# do-exec undebug cwan ltl <cr>    # path-033496
+(config)# do-exec undebug cwan ltl plat-idx <cr>    # path-043053
+(config)# do-exec undebug cwan ltl skip-sp <cr>    # path-043026
+(config)# do-exec undebug cwan oir <cr>    # path-033308
+(config)# do-exec undebug cwan pc-lb <cr>    # path-033325
+(config)# do-exec undebug cwan redundancy <cr>    # path-033570
+(config)# do-exec undebug cwan redundancy aps all <cr>    # path-051415
+(config)# do-exec undebug cwan redundancy aps bulk <cr>    # path-051470
+(config)# do-exec undebug cwan redundancy aps incr <cr>    # path-051444
+(config)# do-exec undebug cwan redundancy ccb all <cr>    # path-051548
+(config)# do-exec undebug cwan redundancy ccb bulk <cr>    # path-051577
+(config)# do-exec undebug cwan redundancy ccb incr <cr>    # path-051567
+(config)# do-exec undebug cwan redundancy channelized-vc <cr>    # path-043134
+(config)# do-exec undebug cwan redundancy deferred <cr>    # path-043166
+(config)# do-exec undebug cwan redundancy if-config all <cr>    # path-051499
+(config)# do-exec undebug cwan redundancy if-config bulk <cr>    # path-051541
+(config)# do-exec undebug cwan redundancy if-config incr <cr>    # path-051523
+(config)# do-exec undebug cwan redundancy if-event all <cr>    # path-051520
+(config)# do-exec undebug cwan redundancy if-event bulk <cr>    # path-051553
+(config)# do-exec undebug cwan redundancy if-event incr <cr>    # path-051539
+(config)# do-exec undebug cwan redundancy if-index all <cr>    # path-051537
+(config)# do-exec undebug cwan redundancy if-index bulk <cr>    # path-051568
+(config)# do-exec undebug cwan redundancy if-index incr <cr>    # path-051552
+(config)# do-exec undebug cwan redundancy reload <cr>    # path-043184
+(config)# do-exec undebug cwan redundancy slot-info all <cr>    # path-051563
+(config)# do-exec undebug cwan redundancy slot-info bulk <cr>    # path-051587
+(config)# do-exec undebug cwan redundancy slot-info incr <cr>    # path-051574
+(config)# do-exec undebug cwan redundancy spa <cr>    # path-042983
+(config)# do-exec undebug cwan redundancy srp all <cr>    # path-051436
+(config)# do-exec undebug cwan redundancy srp bulk <cr>    # path-051489
+(config)# do-exec undebug cwan redundancy srp incr <cr>    # path-051465
+(config)# do-exec undebug cwan redundancy switchover <cr>    # path-043150
+(config)# do-exec undebug cwan redundancy vlan all <cr>    # path-051480
+(config)# do-exec undebug cwan redundancy vlan bulk <cr>    # path-051526
+(config)# do-exec undebug cwan redundancy vlan incr <cr>    # path-051502
+(config)# do-exec undebug cwan set <cr>    # path-033217
+(config)# do-exec undebug cwan single-spa <cr>    # path-033228
+(config)# do-exec undebug cwan srp-error <cr>    # path-033395
+(config)# do-exec undebug cwan srp-event <cr>    # path-033409
+(config)# do-exec undebug cwan t3e3 <cr>    # path-033477
+(config)# do-exec undebug cwan t3e3 error <cr>    # path-042979
+(config)# do-exec undebug cwan t3e3 event <cr>    # path-042952
+(config)# do-exec undebug cwan t3e3 state <cr>    # path-043007
+(config)# do-exec undebug cwmp all <cr>    # path-032629
+(config)# do-exec undebug cwmp error <cr>    # path-032581
+(config)# do-exec undebug cwmp profile <cr>    # path-032588
+(config)# do-exec undebug cwmp profile error <cr>    # path-041431
+(config)# do-exec undebug cwmp trace <cr>    # path-032601
+(config)# do-exec undebug dampening all <cr>    # path-028922
+(config)# do-exec undebug dampening interface <cr>    # path-028872
+(config)# do-exec undebug data-descriptor entry <cr>    # path-033185
+(config)# do-exec undebug data-descriptor node <cr>    # path-033176
+(config)# do-exec undebug data-descriptor other <cr>    # path-033194
+(config)# do-exec undebug dcm core all <cr>    # path-042429
+(config)# do-exec undebug dcm core error <cr>    # path-042393
+(config)# do-exec undebug dcm core info <cr>    # path-042411
+(config)# do-exec undebug dcm provider cmd error <cr>    # path-051142
+(config)# do-exec undebug dcm provider cmd info <cr>    # path-051126
+(config)# do-exec undebug dcm provider expression error <cr>    # path-051130
+(config)# do-exec undebug dcm provider expression info <cr>    # path-051116
+(config)# do-exec undebug dcm provider snmp error <cr>    # path-051118
+(config)# do-exec undebug dcm provider snmp info <cr>    # path-051101
+(config)# do-exec undebug dcm services client all <cr>    # path-051092
+(config)# do-exec undebug dcm services client any-ipc error <cr>    # path-056422
+(config)# do-exec undebug dcm services client any-ipc info <cr>    # path-056407
+(config)# do-exec undebug dcm services client api-infra error <cr>    # path-056410
+(config)# do-exec undebug dcm services client api-infra info <cr>    # path-056399
+(config)# do-exec undebug dcm services core all <cr>    # path-051105
+(config)# do-exec undebug dcm services core any-ipc error <cr>    # path-056432
+(config)# do-exec undebug dcm services core any-ipc info <cr>    # path-056416
+(config)# do-exec undebug dcm services core api-infra error <cr>    # path-056421
+(config)# do-exec undebug dcm services core api-infra info <cr>    # path-056406
+(config)# do-exec undebug dcm services provider all <cr>    # path-051119
+(config)# do-exec undebug dcm services provider any-ipc error <cr>    # path-056440
+(config)# do-exec undebug dcm services provider any-ipc info <cr>    # path-056427
+(config)# do-exec undebug dcm services provider api-infra error <cr>    # path-056431
+(config)# do-exec undebug dcm services provider api-infra info <cr>    # path-056415
+(config)# do-exec undebug dhcp <cr>    # path-027725
+(config)# do-exec undebug dhcp api <cr>    # path-033062
+(config)# do-exec undebug dhcp oper <cr>    # path-033076
+(config)# do-exec undebug dhcp redundancy <cr>    # path-033055
+(config)# do-exec undebug dhcp redundancy packet <cr>    # path-042274
+(config)# do-exec undebug diagnostic all <cr>    # path-033426
+(config)# do-exec undebug diagnostic engineer <cr>    # path-033333
+(config)# do-exec undebug diagnostic error <cr>    # path-033371
+(config)# do-exec undebug diagnostic gods_error <cr>    # path-033355
+(config)# do-exec undebug diagnostic gods_message <cr>    # path-033416
+(config)# do-exec undebug diagnostic message <cr>    # path-033405
+(config)# do-exec undebug diagnostic packet <cr>    # path-033342
+(config)# do-exec undebug diagnostic pointer <cr>    # path-033391
+(config)# do-exec undebug dialer <cr>    # path-027025

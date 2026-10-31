@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-091.md
+
+(config)# no ip multicast mofrr-dampening-period <cr>    # path-029443
+(config)# no ip multicast mofrr-max-sw-flows <cr>    # path-029498
+(config)# no ip multicast mofrr-threshold <cr>    # path-029610
+(config)# no ip multicast mofrr-traffic-monitoring-period <cr>    # path-029555
+(config)# no ip multicast mpls mldp <cr>    # path-035831
+(config)# no ip multicast mpls traffic-eng <cr>    # path-035897
+(config)# no ip multicast mrinfo-filter <cr>    # path-029948
+(config)# no ip multicast multipath <cr>    # path-029904
+(config)# no ip multicast redundancy nsf holdtime <cr>    # path-045156
+(config)# no ip multicast redundancy routeflush maxtime <cr>    # path-045112
+(config)# no ip multicast redundancy rpf-sync <cr>    # path-035712
+(config)# no ip multicast route-limit <cr>    # path-029499
+(config)# no ip multicast rpf backoff disable <cr>    # path-045337
+(config)# no ip multicast rpf default-distance <number:0..255> <cr>    # path-045278
+(config)# no ip multicast rpf interval <number:1..30> <cr>    # path-045377
+(config)# no ip multicast rpf mofrr <cr>    # path-036046
+(config)# no ip multicast rpf multitopology <cr>    # path-035684
+(config)# no ip multicast rpf proxy disable <cr>    # path-045501
+(config)# no ip multicast rpf proxy rd vector <cr>    # path-053187
+(config)# no ip multicast rpf proxy vector <cr>    # path-045565
+(config)# no ip multicast rpf select global group-list <number:1..99> <cr>    # path-057272
+(config)# no ip multicast rpf select topology unicast <string> <number:100..199> <cr>    # path-059109
+(config)# no ip multicast rpf-check-interval <number:1..10> <cr>    # path-035902
+(config)# no ip multicast rsvp <cr>    # path-029652
+(config)# no ip multicast topology unicast <string> tid <number:1..4095> <cr>    # path-057164
+(config)# no ip multicast-routing <cr>    # path-026938
+(config)# no ip name-server <cr>    # path-027130
+(config)# no ip nat create flow-entries <cr>    # path-035635
+(config)# no ip nat dia track-enable <number:1..65534> <cr>    # path-045289
+(config)# no ip nat inside destination list <number:1..2699> pool <string> <cr>    # path-059144
+(config)# no ip nat inside source static <address> <address> <cr>    # path-057584
+(config)# no ip nat log translations <cr>    # path-035725
+(config)# no ip nat name <string> <cr>    # path-036262
+(config)# no ip nat outside source static <address> <address> <cr>    # path-057557
+(config)# no ip nat pool <string> <cr>    # path-036200
+(config)# no ip nat route vrf <string> <address> <address> global <cr>    # path-059100
+(config)# no ip nat service ftp <cr>    # path-036195
+(config)# no ip nat settings central-policy <cr>    # path-035608
+(config)# no ip nat settings cfg-check static-map-removal <cr>    # path-045262
+(config)# no ip nat settings fbd <cr>    # path-036662
+(config)# no ip nat settings gatekeeper-size <cr>    # path-035909
+(config)# no ip nat settings high-performance <cr>    # path-036510
+(config)# no ip nat settings interface-overload block port tcp <number:1024..65535> <cr>    # path-059129
+(config)# no ip nat settings interface-overload port range <cr>    # path-053168
+(config)# no ip nat settings log-destination <cr>    # path-036570
+(config)# no ip nat settings mode <cr>    # path-035776
+(config)# no ip nat settings nonpatdrop <cr>    # path-036133
+(config)# no ip nat settings nonpatlog-disable <cr>    # path-036207
+(config)# no ip nat settings pap <cr>    # path-035981
+(config)# no ip nat settings pool watermark <cr>    # path-045769
+(config)# no ip nat settings preserve-sdwan-ports <cr>    # path-036711
+(config)# no ip nat settings redundancy optimized-data-sync <cr>    # path-045139
+(config)# no ip nat settings reserve-ports <cr>    # path-036618
+(config)# no ip nat settings scale bind <cr>    # path-045881
+(config)# no ip nat settings trans-err-limit <cr>    # path-036396
+(config)# no ip nat switchover replication http <cr>    # path-045211
+(config)# no ip nat translation dns-timeout <cr>    # path-036395
+(config)# no ip nat translation finrst-timeout <cr>    # path-036204
+(config)# no ip nat translation icmp-timeout <cr>    # path-036454
+(config)# no ip nat translation max-entries <number:1..2147483647> <cr>    # path-045902
+(config)# no ip nat translation port-timeout tcp <number:1..65535> <cr>    # path-053382
+(config)# no ip nat translation pptp-timeout <cr>    # path-036132
+(config)# no ip nat translation routemap-entry-timeout <cr>    # path-036453
+(config)# no ip nat translation syn-timeout <cr>    # path-036270
+(config)# no ip nat translation tcp-timeout <cr>    # path-035974
+(config)# no ip nat translation timeout <cr>    # path-035904
+(config)# no ip nat translation udp-timeout <cr>    # path-036131
+(config)# no ip nbar attribute-map <string> <cr>    # path-035939
+(config)# no ip nbar classification auto-learn top-hosts <cr>    # path-045534
+(config)# no ip nbar classification auto-learn top-hosts sample-rate <number:1..8192> <cr>    # path-057227
+(config)# no ip nbar classification dns classify-by-domain <cr>    # path-045570
+(config)# no ip nbar classification dns learning <cr>    # path-045709
+(config)# no ip nbar classification dns learning cache-ttl-zero <cr>    # path-053120
+(config)# no ip nbar classification dns learning domains <cr>    # path-053163
+(config)# no ip nbar classification dns learning guard <cr>    # path-053084
+(config)# no ip nbar classification granularity <cr>    # path-035975
+(config)# no ip nbar classification ip-traffic all-caches <cr>    # path-045288
+(config)# no ip nbar classification multi-vrf <cr>    # path-036111
+(config)# no ip nbar classification tunneled-traffic ipv6inip <cr>    # path-045350
+(config)# no ip nbar custom <string> <cr>    # path-060860
+(config)# no ip nbar disable custom-async <cr>    # path-035711
+(config)# no ip nbar disable encrypted-app <cr>    # path-035654
+(config)# no ip nbar disable sc-hit-vm-handler <cr>    # path-035767
+(config)# no ip nbar http-services <cr>    # path-029554
+(config)# no ip nbar protocol-map <string> <cr>    # path-035601
+(config)# no ip nbar protocol-pack <cr>    # path-029518
+(config)# no ip nsf-converge <cr>    # path-026583
+(config)# no ip options <cr>    # path-026805
+(config)# no ip ospf name-lookup <cr>    # path-028915
+(config)# no ip pim accept-register <cr>    # path-029504
+(config)# no ip pim accept-rp auto-rp <cr>    # path-035178
+(config)# no ip pim allow-rp <cr>    # path-029853
+(config)# no ip pim autorp <cr>    # path-028894
+(config)# no ip pim autorp listener <cr>    # path-034936
+(config)# no ip pim bidir-enable <cr>    # path-028546
+(config)# no ip pim bidir-offer-interval <cr>    # path-028743
+(config)# no ip pim bsr-candidate <cr>    # path-029122
+(config)# no ip pim cache rpf-oif <cr>    # path-034834
+(config)# no ip pim dm-fallback <cr>    # path-028775
+(config)# no ip pim fast-register-stop <cr>    # path-029354
+(config)# no ip pim log-neighbor-changes <cr>    # path-029597
+(config)# no ip pim maximum group-mappings autorp <cr>    # path-045253
+(config)# no ip pim mofrr clone join <address> mask-length <number:0..32> <cr>    # path-058992
+(config)# no ip pim mofrr clone source <address> mask-length <number:0..32> <cr>    # path-058982
+(config)# no ip pim mofrr flow <cr>    # path-034773
+(config)# no ip pim old-register-checksum <cr>    # path-028731
+(config)# no ip pim pfp-sa announce <cr>    # path-035121
+(config)# no ip pim pfp-sa cache <cr>    # path-035226
+(config)# no ip pim pfp-sa timers holdtime <cr>    # path-044876
+(config)# no ip pim pfp-sa timers interval <cr>    # path-044904
+(config)# no ip pim register-rate-limit <cr>    # path-029397
+(config)# no ip pim register-source <cr>    # path-029447
+(config)# no ip pim rp-address <address> <cr>    # path-035041
+(config)# no ip pim rp-announce-filter <cr>    # path-029327
+(config)# no ip pim rp-proxy-join <cr>    # path-028776
+(config)# no ip pim send-rp-announce <address> <cr>    # path-035491
+(config)# no ip pim send-rp-discovery <cr>    # path-029323
+(config)# no ip pim sparse accept-source-reports <cr>    # path-035967
+(config)# no ip pim sparse sg-expiry-timer <cr>    # path-035894
+(config)# no ip pim spt-threshold 0 <cr>    # path-035122
+(config)# no ip pim ssm <cr>    # path-029612
+(config)# no ip pim state-refresh disable <cr>    # path-034791
+(config)# no ip pim v1-rp-reachability <cr>    # path-029696
+(config)# no ip policy-list <string> permit <cr>    # path-034603
+(config)# no ip portbundle <cr>    # path-026528
+(config)# no ip prefix-list <string> <cr>    # path-029810
+(config)# no ip prefix-list sequence-number <cr>    # path-029418
+(config)# no ip rcmd domain-lookup <cr>    # path-028347
+(config)# no ip rcmd rcp-enable <cr>    # path-028431
+(config)# no ip rcmd remote-host <string> <number:1..99> <string> <cr>    # path-052433
+(config)# no ip rcmd remote-username <cr>    # path-028564
+(config)# no ip rcmd rsh-disable-command <string> <cr>    # path-034553
+(config)# no ip rcmd rsh-enable <cr>    # path-028460
+(config)# no ip rcmd source-interface <cr>    # path-028603
+(config)# no ip reflexive-list timeout <cr>    # path-030126
+(config)# no ip rsvp aggregation ip <cr>    # path-035727
+(config)# no ip rsvp aggregation ip level <cr>    # path-045265
+(config)# no ip rsvp aggregation ip map any <cr>    # path-052863
+(config)# no ip rsvp aggregation ip sender service <cr>    # path-052960
+(config)# no ip rsvp authentication <cr>    # path-029761
+(config)# no ip rsvp authentication challenge <cr>    # path-035910
+(config)# no ip rsvp authentication key-chain <cr>    # path-035664
+(config)# no ip rsvp authentication lifetime <cr>    # path-035843
+(config)# no ip rsvp authentication type <cr>    # path-035915
+(config)# no ip rsvp authentication window-size <cr>    # path-035777
+(config)# no ip rsvp listener <address> <number:0..255> <number:0..65535> announce <cr>    # path-057320
+(config)# no ip rsvp metadata <cr>    # path-029661
+(config)# no ip rsvp metadata sender-host <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-059746
+(config)# no ip rsvp metadata statistics <cr>    # path-035676
+(config)# no ip rsvp msg-pacing <cr>    # path-030099
+(config)# no ip rsvp policy default-reject <cr>    # path-035713
+(config)# no ip rsvp policy identity <string> <cr>    # path-045208
+(config)# no ip rsvp policy local default <cr>    # path-045357
+(config)# no ip rsvp policy preempt <cr>    # path-035835
+(config)# no ip rsvp pq-profile <cr>    # path-029514
+(config)# no ip rsvp qos <cr>    # path-030051
+(config)# no ip rsvp reservation <address> <address> <number:0..255> <number:0..65535> <number:0..65535> wf load <number:1..10000000> <number:1..65535> <cr>    # path-060198
+(config)# no ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..10000000> <number:1..65535> <cr>    # path-060021
+(config)# no ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..10000000> <number:1..65535> <cr>    # path-060025
+(config)# no ip rsvp signalling fast-local-repair notifications <cr>    # path-045879
+(config)# no ip rsvp signalling fast-local-repair rate <cr>    # path-045934
+(config)# no ip rsvp signalling hello <cr>    # path-036999
+(config)# no ip rsvp signalling hello bfd <cr>    # path-046339
+(config)# no ip rsvp signalling hello cleanup-timer <cr>    # path-046303
+(config)# no ip rsvp signalling hello down <cr>    # path-046137
+(config)# no ip rsvp signalling hello graceful-restart dscp <cr>    # path-053921
+(config)# no ip rsvp signalling hello graceful-restart help-neighbor <cr>    # path-053965
+(config)# no ip rsvp signalling hello graceful-restart refresh interval <cr>    # path-057671
+(config)# no ip rsvp signalling hello graceful-restart refresh misses <cr>    # path-057708
+(config)# no ip rsvp signalling hello graceful-restart send recovery-time <cr>    # path-057764
+(config)# no ip rsvp signalling hello graceful-restart send restart-time <cr>    # path-057789
+(config)# no ip rsvp signalling hello queue <number:1..200> <number:1..200> <cr>    # path-057542
+(config)# no ip rsvp signalling hello statistics <cr>    # path-046136
+(config)# no ip rsvp signalling hello timer <number:1..100> <cr>    # path-053634
+(config)# no ip rsvp signalling initial-retransmit-delay <cr>    # path-036616
+(config)# no ip rsvp signalling patherr state-removal <cr>    # path-045977
+(config)# no ip rsvp signalling rate-limit <cr>    # path-036506
+(config)# no ip rsvp signalling refresh interval <cr>    # path-046108
+(config)# no ip rsvp signalling refresh misses <cr>    # path-046162
+(config)# no ip rsvp signalling refresh reduction <cr>    # path-046016
+(config)# no ip rsvp signalling refresh reduction ack-delay <cr>    # path-053511
+(config)# no ip rsvp sso nbr <address> <cr>    # path-045717
+(config)# no ip rsvp transport client <number:1..65535> <cr>    # path-045294
+(config)# no ip rsvp transport statistics <cr>    # path-035706
+(config)# no ip rsvp udp hosts <cr>    # path-035714
+(config)# no ip rsvp udp neighbor <address> <cr>    # path-045380
+(config)# no ip rtcp report interval <cr>    # path-035278
+(config)# no ip rtp coalesce <cr>    # path-029094
+(config)# no ip sap cache-timeout <cr>    # path-029400
+(config)# no ip scp password <cr>    # path-029566
+(config)# no ip scp remote-username <cr>    # path-029453
+(config)# no ip scp server enable <cr>    # path-035487
+(config)# no ip scp username <cr>    # path-029512
+(config)# no ip security eso-info <number:0..255> <cr>    # path-034691
+(config)# no ip sftp password <cr>    # path-029511
+(config)# no ip sftp username <cr>    # path-029450
+(config)# no ip source-route <cr>    # path-026539
+(config)# no ip spd mode <cr>    # path-028944
+(config)# no ip spd queue max-threshold <cr>    # path-035081
+(config)# no ip spd queue min-threshold <cr>    # path-035128
+(config)# no ip ssh authentication-retries <cr>    # path-026958
+(config)# no ip ssh break-string <cr>    # path-029806
+(config)# no ip ssh bulk-mode <cr>    # path-029402
+(config)# no ip ssh client algorithm authentication <cr>    # path-046419
+(config)# no ip ssh client algorithm encryption <cr>    # path-046203
+(config)# no ip ssh client algorithm hostkey <cr>    # path-046362
+(config)# no ip ssh client algorithm kex <cr>    # path-046238
+(config)# no ip ssh client algorithm mac <cr>    # path-046159
+(config)# no ip ssh client algorithm publickey <cr>    # path-046469
+(config)# no ip ssh dh min size <cr>    # path-045766
+(config)# no ip ssh dscp <cr>    # path-030063
+(config)# no ip ssh ec keypair-name <cr>    # path-035973
+(config)# no ip ssh logging events <cr>    # path-036040
+(config)# no ip ssh maxstartups <cr>    # path-029356
+(config)# no ip ssh port <number:2000..10000> <number:2000..10000> <cr>    # path-045293
+(config)# no ip ssh precedence <cr>    # path-030031
+(config)# no ip ssh pubkey-chain <cr>    # path-030130
+(config)# no ip ssh rekey <cr>    # path-030200
+(config)# no ip ssh rekey time <cr>    # path-036658
+(config)# no ip ssh rekey volume <cr>    # path-036708
+(config)# no ip ssh rsa keypair-name <cr>    # path-035903
+(config)# no ip ssh server authenticate user <cr>    # path-046064
+(config)# no ip ssh server certificate profile <cr>    # path-046073
+(config)# no ip ssh server peruser session limit <cr>    # path-053556
+(config)# no ip ssh source-interface <cr>    # path-029660
+(config)# no ip ssh stricthostkeycheck <cr>    # path-030057
+(config)# no ip ssh time-out <cr>    # path-026935
+(config)# no ip ssh version 2 <cr>    # path-036080
+(config)# no ip ssh window-size <cr>    # path-026978
+(config)# no ip sticky-arp <cr>    # path-026669
+(config)# no ip subnet-zero <cr>    # path-026521
+(config)# no ip subscriber l2-roaming <cr>    # path-029929
+(config)# no ip subscriber list <string> <cr>    # path-036144
+(config)# no ip subscriber timer clear-dangling <cr>    # path-036330
+(config)# no ip tcp RST-count <number:2..20> RST-window <number:2000..60000> <cr>    # path-052736
+(config)# no ip tcp ack-tuning <cr>    # path-028748
+(config)# no ip tcp async-mobility server <cr>    # path-035145
+(config)# no ip tcp chunk-size <cr>    # path-026676
+(config)# no ip tcp delayed-ack <cr>    # path-028579
+(config)# no ip tcp ecn <cr>    # path-028487
+(config)# no ip tcp finwait-time <cr>    # path-026758
+(config)# no ip tcp keepalive interval <cr>    # path-028850
+(config)# no ip tcp keepalive retries <cr>    # path-028777
+(config)# no ip tcp mss <cr>    # path-026691
+(config)# no ip tcp path-mtu-discovery <cr>    # path-029131
+(config)# no ip tcp queuemax <cr>    # path-026778
+(config)# no ip tcp selective-ack <cr>    # path-028519
+(config)# no ip tcp synwait-time <cr>    # path-026795
+(config)# no ip tcp timestamp <cr>    # path-028547
+(config)# no ip tcp window-size <cr>    # path-026737
+(config)# no ip tcp winupdate-opt <cr>    # path-028620
+(config)# no ip telnet comport disconnect delay <cr>    # path-044759
+(config)# no ip telnet comport enable <cr>    # path-034920
+(config)# no ip telnet comport flow level <cr>    # path-044664
+(config)# no ip telnet comport receive window <cr>    # path-044714
+(config)# no ip telnet disable <cr>    # path-028774
+(config)# no ip telnet hidden addresses <cr>    # path-034796
+(config)# no ip telnet hidden hostnames <cr>    # path-034745
+(config)# no ip telnet quiet <cr>    # path-028619
+(config)# no ip telnet source-interface <cr>    # path-028599
+(config)# no ip telnet timeout retransmit <cr>    # path-028618
+(config)# no ip telnet tos <cr>    # path-028638
+(config)# no ip tftp arp-glean <cr>    # path-028765
+(config)# no ip tftp blocksize <cr>    # path-029002
+(config)# no ip tftp boot-interface <cr>    # path-028949
+(config)# no ip tftp claim-netascii <cr>    # path-028721
+(config)# no ip tftp source-interface <cr>    # path-028798
+(config)# no ip trigger-authentication <cr>    # path-027069
+(config)# no ip ttl decrement <cr>    # path-028913
+(config)# no ip verify drop-rate compute interval <cr>    # path-044965
+(config)# no ip verify drop-rate compute window <cr>    # path-044997
+(config)# no ip verify drop-rate notify hold-down <cr>    # path-044996
+(config)# no ip visibility global flow monitor sdwan_flow_monitor input <cr>    # path-056976
+(config)# no ip vrf <cr>    # path-026924
+(config)# no ip wccp check acl outbound <cr>    # path-045206
+(config)# no ip wccp check services all <cr>    # path-045157
+(config)# no ip wccp outbound-acl-check <cr>    # path-029500
+(config)# no ip wccp source-interface <cr>    # path-029557
+(config)# no ip wccp variable-timers <cr>    # path-029350
+(config)# no ip wccp version <number:2..2> <cr>    # path-035414
+(config)# no ip wccp web-cache <cr>    # path-030067
+(config)# no ipc buffers max-free <cr>    # path-027960
+(config)# no ipc buffers min-free <cr>    # path-027971
+(config)# no ipc buffers permanent <cr>    # path-027989
+(config)# no ipc cache <cr>    # path-026131
+(config)# no ipc cache slot <number:dynamic> <cr>    # path-060759
+(config)# no ipc cache slot all <cr>    # path-034033
+(config)# no ipc header-cache permanent <cr>    # path-027952
+(config)# no ipc holdq threshold lower <cr>    # path-034030
+(config)# no ipc holdq threshold upper <cr>    # path-034021
+(config)# no ipc ru-action on <cr>    # path-027903
+(config)# no ipc zone default <cr>    # path-027933
+(config)# no ipv6 access-list <string> <cr>    # path-030061
+(config)# no ipv6 access-list fqdn <string> <cr>    # path-036390
+(config)# no ipv6 access-list log-update threshold <cr>    # path-036446
+(config)# no ipv6 access-list match-local-traffic <cr>    # path-029979
+(config)# no ipv6 access-list role-based <string> <cr>    # path-036266
+(config)# no ipv6 address-validate <cr>    # path-026867
+(config)# no ipv6 alias <address> <cr>    # path-029702
+(config)# no ipv6 cef <cr>    # path-027188
+(config)# no ipv6 cef accounting <cr>    # path-030168
+(config)# no ipv6 cef load-sharing algorithm <cr>    # path-036256
+(config)# no ipv6 cef load-sharing key-control dpi default <cr>    # path-053303
+(config)# no ipv6 cef load-sharing key-control dpi l2vpn-mac <cr>    # path-053345
+(config)# no ipv6 cef load-sharing key-control dpi tunnel-gre <cr>    # path-053433
+(config)# no ipv6 cef load-sharing key-control dpi tunnel-ipinip <cr>    # path-053388
+(config)# no ipv6 cef load-sharing key-control dpi tunnel-ipsec <cr>    # path-053474
+(config)# no ipv6 cef load-sharing key-control dpi tunnel-l2tp <cr>    # path-053555
+(config)# no ipv6 cef load-sharing key-control dpi tunnel-vxlan <cr>    # path-053509
+(config)# no ipv6 cef optimize neighbor resolution <cr>    # path-045385
+(config)# no ipv6 cef traffic-statistics <cr>    # path-030030
+(config)# no ipv6 deny-echo-reply <cr>    # path-026889
+(config)# no ipv6 destination-guard policy <string> <cr>    # path-035573
+(config)# no ipv6 dhcp binding track ppp <cr>    # path-045272
+(config)# no ipv6 dhcp database <string> <cr>    # path-035600
+(config)# no ipv6 dhcp iana-route-add <cr>    # path-029535
+(config)# no ipv6 dhcp iapd-route-add <cr>    # path-029481
+(config)# no ipv6 dhcp monitor statistics start sample-size <number:0..4294967295> <cr>    # path-057137
+(config)# no ipv6 dhcp monitor statistics stop <cr>    # path-045228
+(config)# no ipv6 dhcp ping packets <cr>    # path-035724
+(config)# no ipv6 dhcp pool <string> <cr>    # path-035938
+(config)# no ipv6 dhcp ppp framed-prefix cache <cr>    # path-045390
+(config)# no ipv6 dhcp ppp terminate <cr>    # path-035795
+(config)# no ipv6 dhcp server join all-dhcp-servers <cr>    # path-045443
+(config)# no ipv6 dhcp server vrf enable <cr>    # path-045493
+(config)# no ipv6 dhcp test relay drop peeraddr <cr>    # path-053390
+(config)# no ipv6 dhcp test relay forward add <cr>    # path-053225
+(config)# no ipv6 dhcp test relay notifications <cr>    # path-045671
+(config)# no ipv6 dhcp test relay packet-control <cr>    # path-045743
+(config)# no ipv6 dhcp test relay reply add vsio <cr>    # path-057359
+(config)# no ipv6 dhcp test server add vsio <cr>    # path-053267
+(config)# no ipv6 dhcp-client leasequery <cr>    # path-029574
+(config)# no ipv6 dhcp-client leasequery server <address> <cr>    # path-045271
+(config)# no ipv6 dhcp-relay bulk-lease disable <cr>    # path-035515
+(config)# no ipv6 dhcp-relay bulk-lease retry <number:0..15> <cr>    # path-045340
+(config)# no ipv6 dhcp-relay bulk-lease timeout <number:1..40> <cr>    # path-045127
+(config)# no ipv6 dhcp-relay option client-link-addr <cr>    # path-035634
+(config)# no ipv6 dhcp-relay option vpn <cr>    # path-035564
+(config)# no ipv6 dhcp-relay short-lease <number:60..3600> <cr>    # path-035465
+(config)# no ipv6 dhcp-relay source-interface <cr>    # path-029355
+(config)# no ipv6 dhcp-relay trust-all <cr>    # path-029374
+(config)# no ipv6 first-hop full-proxy <cr>    # path-029509
+(config)# no ipv6 first-hop logging <cr>    # path-029666
+(config)# no ipv6 first-hop service-support punt-acl <number:0..7> <cr>    # path-045220
+(config)# no ipv6 first-hop unit-test bulk-sync <cr>    # path-035510
+(config)# no ipv6 first-hop unit-test check-reach vlan <number:0..4096> <address> <cr>    # path-057184
+(config)# no ipv6 first-hop unit-test disable-cli-sync <cr>    # path-036314
+(config)# no ipv6 first-hop unit-test ha-sync-msg msg-type bt-entry action enable <cr>    # path-059127
+(config)# no ipv6 first-hop unit-test ipdt vlan <number:1..4096> <cr>    # path-053019
+(config)# no ipv6 first-hop unit-test pgm <cr>    # path-036211
+(config)# no ipv6 first-hop unit-test reapply-filters vlan <number:1..4096> <cr>    # path-053182
+(config)# no ipv6 first-hop unit-test upgm <cr>    # path-036206
+(config)# no ipv6 flowset <cr>    # path-026862
+(config)# no ipv6 hop-limit <cr>    # path-026833
+(config)# no ipv6 host <string> <cr>    # path-029282
+(config)# no ipv6 icmp error-interval <cr>    # path-029229
+(config)# no ipv6 icmp od-length enable <cr>    # path-035242
+(config)# no ipv6 icmp od-length test <cr>    # path-035304
+(config)# no ipv6 local policy route-map <cr>    # path-035446
+(config)# no ipv6 local pool <string> <cr>    # path-035329
+(config)# no ipv6 mfib <cr>    # path-026936
+(config)# no ipv6 mfib <cr>    # path-027002
+(config)# no ipv6 mfib hardware-switching <cr>    # path-029668
+(config)# no ipv6 mfib hardware-switching connected <cr>    # path-035692
+(config)# no ipv6 mfib hardware-switching replication-mode ingress <cr>    # path-045280
+(config)# no ipv6 mfib hardware-switching shared-tree <cr>    # path-035575
+(config)# no ipv6 mfib hardware-switching uplink <cr>    # path-035884
+(config)# no ipv6 mfib logging-ttl <cr>    # path-029257
+(config)# no ipv6 mld ssm-map enable <cr>    # path-035563
+(config)# no ipv6 mld ssm-map query dns <cr>    # path-045222
+(config)# no ipv6 mld ssm-map static <number:1..199> <address> <cr>    # path-052913
+(config)# no ipv6 mld state-limit <cr>    # path-029551
+(config)# no ipv6 multicast group-range <cr>    # path-030086
+(config)# no ipv6 multicast limit cost <number:1..199> <cr>    # path-045923
+(config)# no ipv6 multicast limit rate <cr>    # path-036560
+(config)# no ipv6 multicast mib set-enable mgmd <cr>    # path-045620
+(config)# no ipv6 multicast mib set-enable pimstdmib <cr>    # path-045679
+(config)# no ipv6 multicast mpls mldp <cr>    # path-036324
+(config)# no ipv6 multicast mpls source <cr>    # path-036443
+(config)# no ipv6 multicast mpls traffic-eng <cr>    # path-036387
+(config)# no ipv6 multicast multipath <cr>    # path-029982
+(config)# no ipv6 multicast pim-passive-enable <cr>    # path-029783
+(config)# no ipv6 multicast route-limit <cr>    # path-029987
+(config)# no ipv6 multicast rpf backoff <cr>    # path-036562
+(config)# no ipv6 multicast rpf select vrf <string> group-range <number:1..199> <cr>    # path-059188
+(config)# no ipv6 multicast rpf use-bgp <cr>    # path-036150
+(config)# no ipv6 multicast-routing <cr>    # path-027072
+(config)# no ipv6 nd cache expire <cr>    # path-035445
+(config)# no ipv6 nd cache interface-limit <cr>    # path-035390
+(config)# no ipv6 nd dad loopback detect <cr>    # path-045221
+(config)# no ipv6 nd dad time <cr>    # path-029487
+(config)# no ipv6 nd default-route <cr>    # path-029621
+(config)# no ipv6 nd host mode strict <cr>    # path-044937
+(config)# no ipv6 nd ns-interval <cr>    # path-026942
+(config)# no ipv6 nd nsf convergence <cr>    # path-029149
+(config)# no ipv6 nd nsf dad suppress <cr>    # path-035366
+(config)# no ipv6 nd nsf throttle <cr>    # path-029222
+(config)# no ipv6 nd nud <cr>    # path-029324
+(config)# no ipv6 nd ra solicited unicast <cr>    # path-044881
+(config)# no ipv6 nd reachable-time <cr>    # path-026927

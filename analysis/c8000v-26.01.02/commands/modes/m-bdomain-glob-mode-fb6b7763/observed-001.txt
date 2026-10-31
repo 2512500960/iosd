@@ -1,0 +1,97 @@
+# 模式 bdomain-glob-mode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-bdomain)# default device-tracking <cr>    # observed_connections-006765
+(config-bdomain)# default flooding-suppression unknown-unicast <cr>    # observed_connections-006770
+(config-bdomain)# default ip igmp snooping <cr>    # observed_connections-006782
+(config-bdomain)# default ip igmp snooping access-group <cr>    # observed_connections-006787
+(config-bdomain)# default ip igmp snooping check rtr-alert-option <cr>    # observed_connections-006815
+(config-bdomain)# default ip igmp snooping check ttl <cr>    # observed_connections-006817
+(config-bdomain)# default ip igmp snooping explicit-tracking <cr>    # observed_connections-006809
+(config-bdomain)# default ip igmp snooping explicit-tracking limit <cr>    # observed_connections-006823
+(config-bdomain)# default ip igmp snooping immediate-leave <cr>    # observed_connections-006789
+(config-bdomain)# default ip igmp snooping last-member-query-count <cr>    # observed_connections-006800
+(config-bdomain)# default ip igmp snooping last-member-query-interval <cr>    # observed_connections-006805
+(config-bdomain)# default ip igmp snooping limit <cr>    # observed_connections-006790
+(config-bdomain)# default ip igmp snooping minimum-version <cr>    # observed_connections-006794
+(config-bdomain)# default ip igmp snooping mrouter learn cgmp <cr>    # observed_connections-006836
+(config-bdomain)# default ip igmp snooping mrouter learn pim-dvmrp <cr>    # observed_connections-006834
+(config-bdomain)# default ip igmp snooping querier <cr>    # observed_connections-006811
+(config-bdomain)# default ip igmp snooping querier address <cr>    # observed_connections-006826
+(config-bdomain)# default ip igmp snooping querier max-response-time <cr>    # observed_connections-006832
+(config-bdomain)# default ip igmp snooping querier query-interval <cr>    # observed_connections-006829
+(config-bdomain)# default ip igmp snooping querier tcn query count <cr>    # observed_connections-006842
+(config-bdomain)# default ip igmp snooping querier tcn query interval <cr>    # observed_connections-006845
+(config-bdomain)# default ip igmp snooping querier timer expiry <cr>    # observed_connections-006839
+(config-bdomain)# default ip igmp snooping querier version <cr>    # observed_connections-006822
+(config-bdomain)# default ip igmp snooping report-suppression <cr>    # observed_connections-006807
+(config-bdomain)# default ip igmp snooping robustness-variable <cr>    # observed_connections-006797
+(config-bdomain)# default mac aging-time <cr>    # observed_connections-006776
+(config-bdomain)# default mac learning <cr>    # observed_connections-006772
+(config-bdomain)# default member evpn-instance <cr>    # observed_connections-006774
+(config-bdomain)# default shutdown <cr>    # observed_connections-006764
+(config-bdomain)# device-tracking <cr>    # observed_connections-006761
+(config-bdomain)# exit <cr>    # observed_connections-006759
+(config-bdomain)# flooding-suppression unknown-unicast <cr>    # observed_connections-006766
+(config-bdomain)# ip igmp snooping <cr>    # observed_connections-006777
+(config-bdomain)# ip igmp snooping access-group <number:1..199> <cr>    # observed_connections-006785
+(config-bdomain)# ip igmp snooping check rtr-alert-option <cr>    # observed_connections-006803
+(config-bdomain)# ip igmp snooping check ttl <cr>    # observed_connections-006806
+(config-bdomain)# ip igmp snooping explicit-tracking <cr>    # observed_connections-006781
+(config-bdomain)# ip igmp snooping explicit-tracking limit <number:0..128000> <cr>    # observed_connections-006821
+(config-bdomain)# ip igmp snooping immediate-leave <cr>    # observed_connections-006778
+(config-bdomain)# ip igmp snooping last-member-query-count <number:1..7> <cr>    # observed_connections-006799
+(config-bdomain)# ip igmp snooping last-member-query-interval <number:100..32767> <cr>    # observed_connections-006802
+(config-bdomain)# ip igmp snooping limit <number:1..64000> <cr>    # observed_connections-006793
+(config-bdomain)# ip igmp snooping minimum-version <number:2..3> <cr>    # observed_connections-006792
+(config-bdomain)# ip igmp snooping mrouter interface <interface> efp_id <number:1..4000> <cr>    # observed_connections-006849
+(config-bdomain)# ip igmp snooping mrouter learn cgmp <cr>    # observed_connections-006813
+(config-bdomain)# ip igmp snooping mrouter learn pim-dvmrp <cr>    # observed_connections-006812
+(config-bdomain)# ip igmp snooping querier <cr>    # observed_connections-006783
+(config-bdomain)# ip igmp snooping querier address <address> <cr>    # observed_connections-006825
+(config-bdomain)# ip igmp snooping querier max-response-time <number:1..25> <cr>    # observed_connections-006831
+(config-bdomain)# ip igmp snooping querier query-interval <number:1..18000> <cr>    # observed_connections-006828
+(config-bdomain)# ip igmp snooping querier tcn query count <number:1..10> <cr>    # observed_connections-006841
+(config-bdomain)# ip igmp snooping querier tcn query interval <number:1..255> <cr>    # observed_connections-006844
+(config-bdomain)# ip igmp snooping querier timer expiry <number:60..300> <cr>    # observed_connections-006838
+(config-bdomain)# ip igmp snooping querier version <number:1..3> <cr>    # observed_connections-006820
+(config-bdomain)# ip igmp snooping report-suppression <cr>    # observed_connections-006779
+(config-bdomain)# ip igmp snooping robustness-variable <number:1..3> <cr>    # observed_connections-006796
+(config-bdomain)# ip igmp snooping static <address> interface <interface> <cr>    # observed_connections-006848
+(config-bdomain)# ip igmp snooping static <address> source <address> interface <interface> <number:1..100> <cr>    # observed_connections-006850
+(config-bdomain)# mac aging-time <number:dynamic> <cr>    # observed_connections-006847
+(config-bdomain)# mac learning <cr>    # observed_connections-006767
+(config-bdomain)# member <interface> <cr>    # observed_connections-006846
+(config-bdomain)# member evpn-instance <cr>    # observed_connections-006768
+(config-bdomain)# member evpn-instance <number:1..65535> <cr>    # observed_connections-006851
+(config-bdomain)# no device-tracking <cr>    # observed_connections-006763
+(config-bdomain)# no flooding-suppression unknown-unicast <cr>    # observed_connections-006769
+(config-bdomain)# no ip igmp snooping <cr>    # observed_connections-006780
+(config-bdomain)# no ip igmp snooping access-group <cr>    # observed_connections-006784
+(config-bdomain)# no ip igmp snooping check rtr-alert-option <cr>    # observed_connections-006814
+(config-bdomain)# no ip igmp snooping check ttl <cr>    # observed_connections-006816
+(config-bdomain)# no ip igmp snooping explicit-tracking <cr>    # observed_connections-006808
+(config-bdomain)# no ip igmp snooping explicit-tracking limit <cr>    # observed_connections-006819
+(config-bdomain)# no ip igmp snooping immediate-leave <cr>    # observed_connections-006786
+(config-bdomain)# no ip igmp snooping last-member-query-count <cr>    # observed_connections-006798
+(config-bdomain)# no ip igmp snooping last-member-query-interval <cr>    # observed_connections-006801
+(config-bdomain)# no ip igmp snooping limit <cr>    # observed_connections-006788
+(config-bdomain)# no ip igmp snooping minimum-version <cr>    # observed_connections-006791
+(config-bdomain)# no ip igmp snooping mrouter learn cgmp <cr>    # observed_connections-006835
+(config-bdomain)# no ip igmp snooping mrouter learn pim-dvmrp <cr>    # observed_connections-006833
+(config-bdomain)# no ip igmp snooping querier <cr>    # observed_connections-006810
+(config-bdomain)# no ip igmp snooping querier address <cr>    # observed_connections-006824
+(config-bdomain)# no ip igmp snooping querier max-response-time <cr>    # observed_connections-006830
+(config-bdomain)# no ip igmp snooping querier query-interval <cr>    # observed_connections-006827
+(config-bdomain)# no ip igmp snooping querier tcn query count <cr>    # observed_connections-006840
+(config-bdomain)# no ip igmp snooping querier tcn query interval <cr>    # observed_connections-006843
+(config-bdomain)# no ip igmp snooping querier timer expiry <cr>    # observed_connections-006837
+(config-bdomain)# no ip igmp snooping querier version <cr>    # observed_connections-006818
+(config-bdomain)# no ip igmp snooping report-suppression <cr>    # observed_connections-006804
+(config-bdomain)# no ip igmp snooping robustness-variable <cr>    # observed_connections-006795
+(config-bdomain)# no mac aging-time <cr>    # observed_connections-006775
+(config-bdomain)# no mac learning <cr>    # observed_connections-006771
+(config-bdomain)# no member evpn-instance <cr>    # observed_connections-006773
+(config-bdomain)# no shutdown <cr>    # observed_connections-006762
+(config-bdomain)# shutdown <cr>    # observed_connections-006760

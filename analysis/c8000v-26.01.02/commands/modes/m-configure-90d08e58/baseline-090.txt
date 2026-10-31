@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-090.md
+
+(config)# no dot1x system-auth-control <cr>    # path-027481
+(config)# no dot1x test timeout <cr>    # path-030900
+(config)# no downward-compatible-config <cr>    # path-025492
+(config)# no dspfarm <cr>    # path-025760
+(config)# no dspfarm codec g729 vad disable <cr>    # path-044880
+(config)# no dspfarm confbridge maximum sessions <cr>    # path-035330
+(config)# no dspfarm connection interval <cr>    # path-029217
+(config)# no dspfarm profile <number:1..65535> <cr>    # path-029075
+(config)# no dspfarm rtp timeout <cr>    # path-029036
+(config)# no dspfarm transcoder maximum sessions <cr>    # path-035174
+(config)# no eap key-name compliance <cr>    # path-028287
+(config)# no eap method fast profile <string> <cr>    # path-044441
+(config)# no eap profile <string> <cr>    # path-028325
+(config)# no enable-password <cr>    # path-025535
+(config)# no endpoint-tracker <cr>    # path-025817
+(config)# no endpoint-tracker-settings dia-stabilize-status <cr>    # path-026208
+(config)# no endpoint-tracker-sla-profile <string> <cr>    # path-027059
+(config)# no epm logging <cr>    # path-026881
+(config)# no errdisable detect cause loopdetect <cr>    # path-038507
+(config)# no errdisable detect cause security-violation shutdown vlan <cr>    # path-054541
+(config)# no errdisable flap-setting cause pagp-flap <cr>    # path-038552
+(config)# no errdisable recovery cause preemption <cr>    # path-038688
+(config)# no errdisable recovery interval <cr>    # path-027574
+(config)# no ethernet cfm ais link-status global <cr>    # path-044137
+(config)# no ethernet cfm alarm delay <cr>    # path-034290
+(config)# no ethernet cfm alarm notification all <cr>    # path-044044
+(config)# no ethernet cfm alarm packet <cr>    # path-034322
+(config)# no ethernet cfm alarm reset <cr>    # path-034355
+(config)# no ethernet cfm distribution enable <cr>    # path-034109
+(config)# no ethernet cfm domain <string> <cr>    # path-034357
+(config)# no ethernet cfm global <cr>    # path-028071
+(config)# no ethernet cfm ieee <cr>    # path-028012
+(config)# no ethernet cfm lck link-status global <cr>    # path-044110
+(config)# no ethernet cfm logging <cr>    # path-028345
+(config)# no ethernet cfm mep crosscheck start-delay <cr>    # path-044554
+(config)# no ethernet cfm mip auto-create level <number:0..7> evc <string> <cr>    # path-058912
+(config)# no ethernet cfm mip filter <cr>    # path-034191
+(config)# no ethernet cfm slm max <cr>    # path-034184
+(config)# no ethernet cfm slm timeout <cr>    # path-034212
+(config)# no ethernet cfm traceroute cache <cr>    # path-034233
+(config)# no ethernet cfm traceroute cache hold-time <cr>    # path-044028
+(config)# no ethernet cfm traceroute cache size <cr>    # path-044052
+(config)# no ethernet egress-filter strict <cr>    # path-027992
+(config)# no ethernet evc <string> <cr>    # path-028047
+(config)# no ethernet lmi ce <cr>    # path-027983
+(config)# no ethernet lmi global <cr>    # path-027955
+(config)# no ethernet mac limit action flooding disable <cr>    # path-052182
+(config)# no ethernet mac limit maximum addresses <cr>    # path-044159
+(config)# no ethernet mac tunnel address destination default <cr>    # path-052228
+(config)# no ethernet mac tunnel address destination map <address> <cr>    # path-056845
+(config)# no ethernet mac-flush notification mirp <cr>    # path-034182
+(config)# no ethernet mac-flush notification mirp cos <cr>    # path-044011
+(config)# no ethernet mac-flush notification mirp tx-timer <number:2..5> <cr>    # path-052091
+(config)# no ethernet mac-tunnel engine slot <number:0..31> slotunit <number:0..31> <cr>    # path-056782
+(config)# no ethernet oam mib log size <cr>    # path-043936
+(config)# no ethernet oam trap interval <cr>    # path-034090
+(config)# no ethernet reuse SubInterface <cr>    # path-028739
+(config)# no ethernet service multi-line <cr>    # path-028061
+(config)# no facility-alarm critical exceed-action shutdown <cr>    # path-034107
+(config)# no fallback profile <string> <cr>    # path-030834
+(config)# no fhrp bfd <cr>    # path-026847
+(config)# no fhrp mac-address <cr>    # path-026873
+(config)# no fhrp sso <cr>    # path-026830
+(config)# no file privilege <number:0..15> <cr>    # path-030879
+(config)# no file prompt <cr>    # path-027516
+(config)# no file verify auto <cr>    # path-030962
+(config)# no flow exporter <string> <cr>    # path-029526
+(config)# no flow platform cache timeout active <cr>    # path-045532
+(config)# no flow platform cache timeout event transaction-end <cr>    # path-053143
+(config)# no flow platform cache timeout export <cr>    # path-045642
+(config)# no flow platform cache timeout fast <cr>    # path-045765
+(config)# no flow platform cache timeout inactive <cr>    # path-045592
+(config)# no flow platform cache timeout rate-limit <cr>    # path-045878
+(config)# no flow platform cache timeout synchronized <cr>    # path-045877
+(config)# no flow platform cache timeout update <cr>    # path-045822
+(config)# no flowspec <cr>    # path-025975
+(config)# no fqdn ttl-timeout-factor <number:1..300> <cr>    # path-030377
+(config)# no frame-relay address registration auto-address <cr>    # path-036127
+(config)# no frame-relay address registration ip <cr>    # path-036047
+(config)# no frame-relay fast-restart <cr>    # path-027120
+(config)# no frame-relay redundancy auto-sync dynamic-map <cr>    # path-035997
+(config)# no frame-relay redundancy test transform <cr>    # path-036070
+(config)# no frame-relay switching <cr>    # path-027005
+(config)# no glbp sso <cr>    # path-027152
+(config)# no hostname <cr>    # path-025500
+(config)# no hw-module auto-off <cr>    # path-027561
+(config)# no hw-module auto-off optics <cr>    # path-031243
+(config)# no hw-module breakout-enable <cr>    # path-027533
+(config)# no hw-module network-module C9350-NM-8Y mode 50G <cr>    # path-047445
+(config)# no hw-module upoe-plus <cr>    # path-027566
+(config)# no hw-module usbflash1-password <cr>    # path-027545
+(config)# no id-manager traceback <cr>    # path-027522
+(config)# no identity policy <string> <cr>    # path-030835
+(config)# no identity profile dot1x <cr>    # path-030805
+(config)# no interface range macro <string> <cr>    # path-034079
+(config)# no iox <cr>    # path-025647
+(config)# no ip access-list extended <number:100..199> <cr>    # path-035868
+(config)# no ip access-list extended <string> <cr>    # path-036332
+(config)# no ip access-list fqdn <string> <cr>    # path-036093
+(config)# no ip access-list helper egress check <cr>    # path-045542
+(config)# no ip access-list log-update threshold <cr>    # path-034383
+(config)# no ip access-list logging hash-generation <cr>    # path-034349
+(config)# no ip access-list logging interval <cr>    # path-034352
+(config)# no ip access-list match-local-traffic <cr>    # path-028245
+(config)# no ip access-list persistent <cr>    # path-028244
+(config)# no ip access-list role-based <string> <cr>    # path-036128
+(config)# no ip access-list standard <number:1..99> <cr>    # path-035808
+(config)# no ip access-list standard <string> <cr>    # path-036029
+(config)# no ip accounting-list <cr>    # path-027288
+(config)# no ip accounting-threshold <cr>    # path-025872
+(config)# no ip accounting-transits <cr>    # path-025885
+(config)# no ip address-pool <cr>    # path-027241
+(config)# no ip admission http process <cr>    # path-035901
+(config)# no ip admission ratelimit <cr>    # path-029658
+(config)# no ip admission source-interface <cr>    # path-029562
+(config)# no ip admission virtual-ip <address> <cr>    # path-035679
+(config)# no ip alias <address> <cr>    # path-028935
+(config)# no ip arp entry learn <cr>    # path-035008
+(config)# no ip arp gratuitous <cr>    # path-028899
+(config)# no ip arp incomplete enable <cr>    # path-035209
+(config)# no ip arp incomplete entries <cr>    # path-035225
+(config)# no ip arp incomplete retry <cr>    # path-035179
+(config)# no ip arp nat-garp-retry feature enable <cr>    # path-044675
+(config)# no ip arp poll queue <cr>    # path-034862
+(config)# no ip arp poll rate <cr>    # path-034921
+(config)# no ip arp proxy <cr>    # path-028799
+(config)# no ip arp queue <cr>    # path-029003
+(config)# no ip as-path access-list <number:1..500> <cr>    # path-035009
+(config)# no ip auth-proxy <cr>    # path-027161
+(config)# no ip auth-proxy auth-proxy-audit <cr>    # path-029591
+(config)# no ip auth-proxy auth-proxy-banner file <cr>    # path-035667
+(config)# no ip auth-proxy inactivity-timer <cr>    # path-029804
+(config)# no ip auth-proxy init-state-time <cr>    # path-029659
+(config)# no ip auth-proxy max-login-attempts <cr>    # path-029564
+(config)# no ip auth-proxy name <string> <cr>    # path-036398
+(config)# no ip auth-proxy proxy http refresh-all <cr>    # path-045363
+(config)# no ip auth-proxy proxy http success redirect <string> <cr>    # path-057169
+(config)# no ip auth-proxy watch-list enable <cr>    # path-035659
+(config)# no ip bgp-community new-format <cr>    # path-028614
+(config)# no ip bootp server <cr>    # path-029465
+(config)# no ip cache-ager <cr>    # path-027068
+(config)# no ip cache-invalidate-delay <cr>    # path-027053
+(config)# no ip casa <cr>    # path-027098
+(config)# no ip cef <cr>    # path-027347
+(config)# no ip cef accounting <cr>    # path-030494
+(config)# no ip cef load-sharing algorithm <cr>    # path-036870
+(config)# no ip cef load-sharing key-control dpi default <cr>    # path-053756
+(config)# no ip cef load-sharing key-control dpi l2vpn-mac <cr>    # path-053794
+(config)# no ip cef load-sharing key-control dpi tunnel-gre <cr>    # path-053870
+(config)# no ip cef load-sharing key-control dpi tunnel-ipinip <cr>    # path-053829
+(config)# no ip cef load-sharing key-control dpi tunnel-ipsec <cr>    # path-053924
+(config)# no ip cef load-sharing key-control dpi tunnel-l2tp <cr>    # path-054017
+(config)# no ip cef load-sharing key-control dpi tunnel-vxlan <cr>    # path-053975
+(config)# no ip cef optimize neighbor resolution <cr>    # path-045983
+(config)# no ip cef table adjacency-prefix override <cr>    # path-046375
+(config)# no ip cef table consistency-check auto-repair <cr>    # path-046506
+(config)# no ip cef table consistency-check error-message <cr>    # path-046324
+(config)# no ip cef table consistency-check type <cr>    # path-046349
+(config)# no ip cef table event-log <cr>    # path-037079
+(config)# no ip cef table short-mask-protection <cr>    # path-037069
+(config)# no ip cef traffic-statistics <cr>    # path-030392
+(config)# no ip classless <cr>    # path-026523
+(config)# no ip community-list <number:1..99> <cr>    # path-029011
+(config)# no ip ddns update method <string> <cr>    # path-045729
+(config)# no ip default-gateway <cr>    # path-026427
+(config)# no ip default-network <address> <cr>    # path-029060
+(config)# no ip dhcp aaa default username <cr>    # path-047034
+(config)# no ip dhcp auto-broadcast <cr>    # path-030922
+(config)# no ip dhcp binding cleanup interval <cr>    # path-046612
+(config)# no ip dhcp bootp ignore <cr>    # path-037440
+(config)# no ip dhcp class <string> <cr>    # path-037801
+(config)# no ip dhcp compatibility lease-query client <cr>    # path-046816
+(config)# no ip dhcp compatibility suboption link-selection <cr>    # path-046699
+(config)# no ip dhcp conflict logging <cr>    # path-037474
+(config)# no ip dhcp conflict resolution <cr>    # path-037602
+(config)# no ip dhcp database <string> <cr>    # path-036792
+(config)# no ip dhcp drop-inform <cr>    # path-030318
+(config)# no ip dhcp event-notification interval <cr>    # path-037601
+(config)# no ip dhcp excluded-address <address> <cr>    # path-037722
+(config)# no ip dhcp global-options <cr>    # path-030949
+(config)# no ip dhcp hardware-class <string> <cr>    # path-037202
+(config)# no ip dhcp limit lease log <cr>    # path-046177
+(config)# no ip dhcp limit lease per interface <cr>    # path-053657
+(config)# no ip dhcp limited-broadcast-address <cr>    # path-030284
+(config)# no ip dhcp monitor statistics start sample-size <number:0..4294967295> <cr>    # path-057630
+(config)# no ip dhcp monitor statistics stop <cr>    # path-046437
+(config)# no ip dhcp ping packets <cr>    # path-037780
+(config)# no ip dhcp ping timeout <cr>    # path-037772
+(config)# no ip dhcp pool <string> <cr>    # path-037749
+(config)# no ip dhcp relay bootp ignore <cr>    # path-046456
+(config)# no ip dhcp relay information check <cr>    # path-046602
+(config)# no ip dhcp relay information option <cr>    # path-046556
+(config)# no ip dhcp relay information option vpn <cr>    # path-053838
+(config)# no ip dhcp relay information policy <cr>    # path-046613
+(config)# no ip dhcp relay information removal pad <cr>    # path-053884
+(config)# no ip dhcp relay information trust-all <cr>    # path-046650
+(config)# no ip dhcp relay override giaddr link-selection <cr>    # path-053835
+(config)# no ip dhcp remember <cr>    # path-030563
+(config)# no ip dhcp route static <cr>    # path-036918
+(config)# no ip dhcp smart-relay <cr>    # path-030343
+(config)# no ip dhcp snooping <cr>    # path-030877
+(config)# no ip dhcp snooping acl <string> <cr>    # path-046913
+(config)# no ip dhcp snooping bridge-domain <string> <cr>    # path-047096
+(config)# no ip dhcp snooping database timeout <cr>    # path-047121
+(config)# no ip dhcp snooping glean <cr>    # path-037411
+(config)# no ip dhcp snooping information option <cr>    # path-047067
+(config)# no ip dhcp snooping information option allow-untrusted <cr>    # path-054242
+(config)# no ip dhcp snooping information option format snmp-ifindex <cr>    # path-057931
+(config)# no ip dhcp snooping track host <cr>    # path-046987
+(config)# no ip dhcp snooping verify mac-address <cr>    # path-047046
+(config)# no ip dhcp snooping verify no-relay-agent-address <cr>    # path-047083
+(config)# no ip dhcp snooping wireless bootp-broadcast enable <cr>    # path-054276
+(config)# no ip dhcp subscriber-id <cr>    # path-030569
+(config)# no ip dhcp support option125-override <cr>    # path-037391
+(config)# no ip dhcp support option55-override <cr>    # path-037351
+(config)# no ip dhcp support sort-pool-name <cr>    # path-037311
+(config)# no ip dhcp support tunnel unicast <cr>    # path-046707
+(config)# no ip dhcp test relay stateless <cr>    # path-046753
+(config)# no ip dhcp update dns <cr>    # path-037865
+(config)# no ip dhcp use class <cr>    # path-037121
+(config)# no ip dhcp use class aaa <cr>    # path-046488
+(config)# no ip dhcp use hardware-address <cr>    # path-037206
+(config)# no ip dhcp use subscriber-id <cr>    # path-037162
+(config)# no ip dhcp use vrf connected <cr>    # path-046598
+(config)# no ip dhcp use vrf remote <cr>    # path-046539
+(config)# no ip dhcp-client broadcast-flag <cr>    # path-030110
+(config)# no ip dhcp-client default-router distance <cr>    # path-036706
+(config)# no ip dhcp-client forcerenew <cr>    # path-030217
+(config)# no ip dhcp-client network-discovery <cr>    # path-030162
+(config)# no ip dhcp-client update dns <cr>    # path-036798
+(config)# no ip dhcp-relay information option server-override <cr>    # path-046030
+(config)# no ip dhcp-relay short-lease <number:60..3600> <cr>    # path-036819
+(config)# no ip dhcp-relay source-interface <cr>    # path-030300
+(config)# no ip dhcp-relay validate-reply <cr>    # path-030253
+(config)# no ip dhcp-server <address> <cr>    # path-030180
+(config)# no ip dhcp-server query lease check-source <cr>    # path-046005
+(config)# no ip dhcp-server query lease retries <cr>    # path-045973
+(config)# no ip dhcp-server query lease timeout <cr>    # path-046018
+(config)# no ip dhcp-sip capture buffer-size <cr>    # path-036334
+(config)# no ip dhcp-sip capture dead-session-info <cr>    # path-036157
+(config)# no ip dhcp-sip class <string> <cr>    # path-036088
+(config)# no ip dhcp-sip test sanity <cr>    # path-036146
+(config)# no ip dns name-list <number:1..500> <cr>    # path-035184
+(config)# no ip dns primary <string> <cr>    # path-035222
+(config)# no ip dns server <cr>    # path-029133
+(config)# no ip dns server queue limit forwarder <cr>    # path-052694
+(config)# no ip dns server view-group <cr>    # path-035230
+(config)# no ip dns spoofing <cr>    # path-029239
+(config)# no ip dns view <cr>    # path-029090
+(config)# no ip dns view-list <string> <cr>    # path-035026
+(config)# no ip domain list <cr>    # path-029760
+(config)# no ip domain lookup <cr>    # path-029960
+(config)# no ip domain lookup nsap <cr>    # path-036020
+(config)# no ip domain lookup recursive <cr>    # path-035853
+(config)# no ip domain multicast <cr>    # path-029909
+(config)# no ip domain name <cr>    # path-029956
+(config)# no ip domain periodic-resolve <cr>    # path-029751
+(config)# no ip domain recursive allow-soa <cr>    # path-036231
+(config)# no ip domain recursive retry <cr>    # path-036259
+(config)# no ip domain retry <cr>    # path-029655
+(config)# no ip domain round-robin <cr>    # path-029410
+(config)# no ip domain timeout <cr>    # path-029708
+(config)# no ip drp access-group <cr>    # path-028481
+(config)# no ip drp authentication key-chain <cr>    # path-034596
+(config)# no ip drp delay <cr>    # path-028376
+(config)# no ip drp drp-rtt <cr>    # path-028563
+(config)# no ip drp rttprobe destinationport <cr>    # path-034736
+(config)# no ip drp rttprobe sourceport <cr>    # path-034693
+(config)# no ip drp server <cr>    # path-028506
+(config)# no ip extcommunity-list <number:1..99> <cr>    # path-028806
+(config)# no ip finger <cr>    # path-026584
+(config)# no ip finger rfc-compliant <cr>    # path-028492
+(config)# no ip forward-protocol sdns <cr>    # path-028530
+(config)# no ip ftp passive <cr>    # path-028718
+(config)# no ip ftp password <cr>    # path-029001
+(config)# no ip ftp source-interface <cr>    # path-028898
+(config)# no ip ftp username <cr>    # path-028947
+(config)# no ip gdp eigrp <cr>    # path-028871
+(config)# no ip gdp irdp <cr>    # path-029039
+(config)# no ip gdp irdp multicast <cr>    # path-035055
+(config)# no ip gdp rip <cr>    # path-028921
+(config)# no ip global-nameserver <cr>    # path-027045
+(config)# no ip gratuitous-arps <cr>    # path-026731
+(config)# no ip host <string> <cr>    # path-030101
+(config)# no ip host <string> mx <number:0..65535> <string> <cr>    # path-052933
+(config)# no ip host <string> ns <string> <cr>    # path-045392
+(config)# no ip host <string> srv <number:0..65535> <number:0..65535> <number:0..65535> <string> <cr>    # path-059097
+(config)# no ip host <string> standby <address> <cr>    # path-045499
+(config)# no ip host-list <string> <cr>    # path-030009
+(config)# no ip host-mode extended <cr>    # path-028570
+(config)# no ip host-routing <cr>    # path-026635
+(config)# no ip hostname strict <cr>    # path-029547
+(config)# no ip hp-host <string> <cr>    # path-029648
+(config)# no ip hp-probe <cr>    # path-026559
+(config)# no ip http access-class <number:1..99> <cr>    # path-034993
+(config)# no ip http access-class ipv4 <number:1..99> <cr>    # path-044828
+(config)# no ip http access-class ipv4 <string> <cr>    # path-044927
+(config)# no ip http access-class ipv6 <string> <cr>    # path-044865
+(config)# no ip http accounting commands <number:0..15> <cr>    # path-045114
+(config)# no ip http active-session-modules <cr>    # path-029326
+(config)# no ip http auth-retry <cr>    # path-029004
+(config)# no ip http authentication <cr>    # path-029134
+(config)# no ip http client cache ager interval <cr>    # path-052903
+(config)# no ip http client cache memory file <cr>    # path-052904
+(config)# no ip http client cache memory pool <cr>    # path-052864
+(config)# no ip http client connection forceclose <cr>    # path-045433
+(config)# no ip http client connection idle <cr>    # path-045319
+(config)# no ip http client connection pipeline-length <cr>    # path-045326
+(config)# no ip http client connection retry <cr>    # path-045264
+(config)# no ip http client connection timeout <cr>    # path-045212
+(config)# no ip http client password <cr>    # path-035844
+(config)# no ip http client proxy-server <cr>    # path-035911
+(config)# no ip http client response timeout <cr>    # path-045477
+(config)# no ip http client secure-ciphersuite <cr>    # path-036208
+(config)# no ip http client source-interface <cr>    # path-035718
+(config)# no ip http client username <cr>    # path-035778
+(config)# no ip http digest algorithm <cr>    # path-035553
+(config)# no ip http help-path <cr>    # path-029663
+(config)# no ip http max-connections <cr>    # path-029130
+(config)# no ip http path <cr>    # path-029619
+(config)# no ip http port <cr>    # path-028800
+(config)# no ip http secure-server <cr>    # path-029119
+(config)# no ip http server <cr>    # path-028746
+(config)# no ip http session-idle-timeout <cr>    # path-029235
+(config)# no ip http session-module-list <string> <cr>    # path-035388
+(config)# no ip http timeout-policy idle <cr>    # path-035279
+(config)# no ip http timeout-policy linger <cr>    # path-035335
+(config)# no ip http upload enable path <cr>    # path-044663
+(config)# no ip http upload overwrite <cr>    # path-034883
+(config)# no ip icmp od-length enable <cr>    # path-034981
+(config)# no ip icmp od-length test <cr>    # path-035025
+(config)# no ip icmp rate-limit unreachable <cr>    # path-035084
+(config)# no ip icmp redirect <cr>    # path-028945
+(config)# no ip igmp filter <cr>    # path-029376
+(config)# no ip igmp immediate-leave <cr>    # path-029515
+(config)# no ip igmp limit <cr>    # path-029456
+(config)# no ip igmp profile <number:1..4294967295> <cr>    # path-035517
+(config)# no ip igmp query disperse <cr>    # path-035565
+(config)# no ip igmp snooping <cr>    # path-029867
+(config)# no ip igmp snooping check rtr-alert-option <cr>    # path-045209
+(config)# no ip igmp snooping check ttl <cr>    # path-045158
+(config)# no ip igmp snooping explicit-tracking limit <cr>    # path-045115
+(config)# no ip igmp snooping last-member-query-count <cr>    # path-035912
+(config)# no ip igmp snooping last-member-query-interval <cr>    # path-035982
+(config)# no ip igmp snooping querier <cr>    # path-036460
+(config)# no ip igmp snooping querier address <cr>    # path-045649
+(config)# no ip igmp snooping querier max-response-time <cr>    # path-045772
+(config)# no ip igmp snooping querier query-interval <cr>    # path-045706
+(config)# no ip igmp snooping querier tcn query count <cr>    # path-057403
+(config)# no ip igmp snooping querier tcn query interval <cr>    # path-057434
+(config)# no ip igmp snooping querier timer expiry <cr>    # path-053307
+(config)# no ip igmp snooping querier version <cr>    # path-045595
+(config)# no ip igmp snooping report-suppression <cr>    # path-035547
+(config)# no ip igmp snooping robustness-variable <cr>    # path-035845
+(config)# no ip igmp snooping source-only-learning <cr>    # path-035916
+(config)# no ip igmp snooping source-only-learning age-timer <cr>    # path-045379
+(config)# no ip igmp snooping tcn flood <cr>    # path-045318
+(config)# no ip igmp snooping tcn flood query count <cr>    # path-057198
+(config)# no ip igmp snooping tcn query solicit <cr>    # path-052897
+(config)# no ip igmp ssm-map enable <cr>    # path-035468
+(config)# no ip igmp ssm-map increment <address> <address> <number:2..16000> <cr>    # path-057153
+(config)# no ip igmp ssm-map query dns <cr>    # path-045174
+(config)# no ip igmp ssm-map static <number:1..99> <address> <cr>    # path-052808
+(config)# no ip kerberos source-interface <cr>    # path-029747
+(config)# no ip large-community-list <number:1..99> <cr>    # path-028866
+(config)# no ip local policy route-map <cr>    # path-034459
+(config)# no ip local pool default <cr>    # path-034505
+(config)# no ip mfib <cr>    # path-027097
+(config)# no ip mfib logging-ttl <cr>    # path-029727
+(config)# no ip mrm accept-manager <number:1..99> <cr>    # path-035386
+(config)# no ip mrm manager <string> <cr>    # path-035248
+(config)# no ip mroute extend-timer <cr>    # path-028634
+(config)# no ip msdp border <cr>    # path-029083
+(config)# no ip msdp cache-rejected-sa <cr>    # path-028892
+(config)# no ip msdp cache-sa-state <cr>    # path-028849
+(config)# no ip msdp default-peer <address> <cr>    # path-035120
+(config)# no ip msdp description <address> <cr>    # path-035327
+(config)# no ip msdp filter-sa-request <address> <cr>    # path-034912
+(config)# no ip msdp keepalive <address> <cr>    # path-035544
+(config)# no ip msdp mesh-group <string> <address> <cr>    # path-044527
+(config)# no ip msdp new-rpf-rules <cr>    # path-029436
+(config)# no ip msdp originator-id <cr>    # path-029121
+(config)# no ip msdp password peer <address> <cr>    # path-044553
+(config)# no ip msdp peer <address> <cr>    # path-034819
+(config)# no ip msdp redistribute <cr>    # path-028940
+(config)# no ip msdp sa-filter in <address> <cr>    # path-044796
+(config)# no ip msdp sa-limit <address> <cr>    # path-035437
+(config)# no ip msdp shutdown <address> <cr>    # path-035295
+(config)# no ip msdp timer <cr>    # path-029353
+(config)# no ip msdp ttl-threshold <address> <cr>    # path-035273
+(config)# no ip multicast auto-enable <cr>    # path-029690
+(config)# no ip multicast bier bidir <address> <string> <cr>    # path-053557
+(config)# no ip multicast bier disposition <cr>    # path-036755
+(config)# no ip multicast bier igmp <cr>    # path-036496
+(config)# no ip multicast cache-headers <cr>    # path-029754
+(config)# no ip multicast default-rpf-distance <number:0..255> <cr>    # path-035929
+(config)# no ip multicast group-range <cr>    # path-029990
+(config)# no ip multicast heartbeat <address> <cr>    # path-036386
+(config)# no ip multicast limit cost <number:1..199> <cr>    # path-045252
+(config)# no ip multicast longest-match <cr>    # path-029785

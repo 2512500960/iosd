@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-015.md
+
+(config)# default do-exec show bridge <cr>    # path-033683
+(config)# default do-exec show bridge circuit-group <cr>    # path-043300
+(config)# default do-exec show bridge group <cr>    # path-043265
+(config)# default do-exec show bridge-domain <cr>    # path-030851
+(config)# default do-exec show bridge-domain c-mac <cr>    # path-037716
+(config)# default do-exec show bridge-domain external-ports <cr>    # path-037633
+(config)# default do-exec show bridge-domain route stats <cr>    # path-046876
+(config)# default do-exec show bsc <cr>    # path-033747
+(config)# default do-exec show bstun <cr>    # path-033759
+(config)# default do-exec show buffers <cr>    # path-033578
+(config)# default do-exec show buffers failures <cr>    # path-043143
+(config)# default do-exec show buffers leak <cr>    # path-043401
+(config)# default do-exec show buffers leak resource user <cr>    # path-056645
+(config)# default do-exec show buffers tune <cr>    # path-043399
+(config)# default do-exec show buffers usage <cr>    # path-043380
+(config)# default do-exec show buffers usage pool <string> <cr>    # path-056642
+(config)# default do-exec show bulkstat data-group <cr>    # path-043702
+(config)# default do-exec show bulkstat data-group <string> process <cr>    # path-056744
+(config)# default do-exec show bulkstat pre-defined <cr>    # path-043720
+(config)# default do-exec show bulkstat pre-defined data <cr>    # path-051974
+(config)# default do-exec show bulkstat pre-defined data-group <cr>    # path-051981
+(config)# default do-exec show bulkstat pre-defined instance <cr>    # path-051986
+(config)# default do-exec show bulkstat profile <cr>    # path-043703
+(config)# default do-exec show calendar <cr>    # path-030349
+(config)# default do-exec show call admission <cr>    # path-042196
+(config)# default do-exec show call filter component <cr>    # path-050917
+(config)# default do-exec show call filter match-list <cr>    # path-050923
+(config)# default do-exec show call filter match-list <number:1..16> <cr>    # path-056304
+(config)# default do-exec show call-home <cr>    # path-030852
+(config)# default do-exec show call-home alert-group <cr>    # path-037483
+(config)# default do-exec show call-home detail <cr>    # path-037446
+(config)# default do-exec show call-home diagnostic-signature <cr>    # path-037934
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> <cr>    # path-047355
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> actions <cr>    # path-054337
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> events <cr>    # path-054328
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> prerequisite <cr>    # path-054367
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> prompt <cr>    # path-054348
+(config)# default do-exec show call-home diagnostic-signature <number:1..99999999> variables <cr>    # path-054407
+(config)# default do-exec show call-home diagnostic-signature failure <cr>    # path-047141
+(config)# default do-exec show call-home diagnostic-signature info <cr>    # path-047076
+(config)# default do-exec show call-home diagnostic-signature register <cr>    # path-047106
+(config)# default do-exec show call-home diagnostic-signature statistics <cr>    # path-047194
+(config)# default do-exec show call-home diagnostic-signature statistics download <cr>    # path-054319
+(config)# default do-exec show call-home events <cr>    # path-037530
+(config)# default do-exec show call-home mail-server status <cr>    # path-046848
+(config)# default do-exec show call-home profile <string> <cr>    # path-047026
+(config)# default do-exec show call-home profile all <cr>    # path-046967
+(config)# default do-exec show call-home smart-licensing <cr>    # path-037725
+(config)# default do-exec show call-home smart-licensing statistics <cr>    # path-047047
+(config)# default do-exec show call-home statistics <cr>    # path-037690
+(config)# default do-exec show call-home version <cr>    # path-037381
+(config)# default do-exec show caller <cr>    # path-029087
+(config)# default do-exec show caller summary <cr>    # path-035483
+(config)# default do-exec show capability feature routing <cr>    # path-044988
+(config)# default do-exec show cca <cr>    # path-029296
+(config)# default do-exec show cce cp id <cr>    # path-047579
+(config)# default do-exec show cce cp id collisions <cr>    # path-054480
+(config)# default do-exec show cce cp id collisions class-group <cr>    # path-058030
+(config)# default do-exec show cce cp id summary <cr>    # path-054478
+(config)# default do-exec show cce ha <cr>    # path-038558
+(config)# default do-exec show cce ha collisions <cr>    # path-047663
+(config)# default do-exec show cce ha collisions class-group <cr>    # path-054503
+(config)# default do-exec show cdapi <cr>    # path-033106
+(config)# default do-exec show cdp <cr>    # path-031105
+(config)# default do-exec show cdp entry <string> <cr>    # path-047442
+(config)# default do-exec show cdp feature <cr>    # path-037843
+(config)# default do-exec show cdp interface <cr>    # path-038009
+(config)# default do-exec show cdp mgmt-address <cr>    # path-037789
+(config)# default do-exec show cdp neighbors <cr>    # path-038155
+(config)# default do-exec show cdp tlv app <cr>    # path-047444
+(config)# default do-exec show cdp tlv location-server <cr>    # path-047526
+(config)# default do-exec show cdp tlv-list <string> <cr>    # path-047364
+(config)# default do-exec show cdp traffic <cr>    # path-037954
+(config)# default do-exec show cdp vlan <number:1..4094> <cr>    # path-047214
+(config)# default do-exec show cef accounting <cr>    # path-037964
+(config)# default do-exec show cef background <cr>    # path-037641
+(config)# default do-exec show cef bfd <cr>    # path-038418
+(config)# default do-exec show cef broker ipv4_p1 <cr>    # path-047669
+(config)# default do-exec show cef collapse-chain loadinfo <cr>    # path-047035
+(config)# default do-exec show cef drop <cr>    # path-038322
+(config)# default do-exec show cef error <cr>    # path-038004
+(config)# default do-exec show cef events <cr>    # path-038011
+(config)# default do-exec show cef features global <cr>    # path-047078
+(config)# default do-exec show cef fib <cr>    # path-037569
+(config)# default do-exec show cef gr <cr>    # path-037304
+(config)# default do-exec show cef hardware capabilities <cr>    # path-046829
+(config)# default do-exec show cef hardware vectors <cr>    # path-046794
+(config)# default do-exec show cef idb <cr>    # path-037679
+(config)# default do-exec show cef interface <cr>    # path-037869
+(config)# default do-exec show cef linecard <cr>    # path-038755
+(config)# default do-exec show cef loadinfo <cr>    # path-037533
+(config)# default do-exec show cef loops <cr>    # path-038374
+(config)# default do-exec show cef memory <cr>    # path-038046
+(config)# default do-exec show cef non-ip <cr>    # path-038184
+(config)# default do-exec show cef not-cef-switched <cr>    # path-038373
+(config)# default do-exec show cef nsf <cr>    # path-038271
+(config)# default do-exec show cef path <cr>    # path-037542
+(config)# default do-exec show cef path list <cr>    # path-046928
+(config)# default do-exec show cef state <cr>    # path-037972
+(config)# default do-exec show cef subtree context client all <cr>    # path-057949
+(config)# default do-exec show cef switching background <cr>    # path-047315
+(config)# default do-exec show cef switching reinject handles <cr>    # path-054401
+(config)# default do-exec show cef table <cr>    # path-037650
+(config)# default do-exec show cef table consistency-check <cr>    # path-046850
+(config)# default do-exec show cef table download priority <cr>    # path-054269
+(config)# default do-exec show cef timers <cr>    # path-037816
+(config)# default do-exec show cef uid <cr>    # path-038427
+(config)# default do-exec show cef uid client-key <cr>    # path-047418
+(config)# default do-exec show cef uid mgr-table <cr>    # path-047508
+(config)# default do-exec show cef uid table <cr>    # path-047465
+(config)# default do-exec show cef vrf <cr>    # path-037429
+(config)# default do-exec show cef walks <cr>    # path-038154
+(config)# default do-exec show cef walks process <cr>    # path-047335
+(config)# default do-exec show cef walks queue <cr>    # path-047299
+(config)# default do-exec show cft active <cr>    # path-039755
+(config)# default do-exec show cft all <cr>    # path-039556
+(config)# default do-exec show cft histogram <cr>    # path-039801
+(config)# default do-exec show cft inactive <cr>    # path-039736
+(config)# default do-exec show cft stats <cr>    # path-039625
+(config)# default do-exec show checkpoint clients <cr>    # path-036985
+(config)# default do-exec show checkpoint entities <cr>    # path-036939
+(config)# default do-exec show checkpoint statistics <cr>    # path-037028
+(config)# default do-exec show checkpoint statistics buffer-usage <cr>    # path-046376
+(config)# default do-exec show chunk <cr>    # path-030357
+(config)# default do-exec show chunk brief <cr>    # path-036823
+(config)# default do-exec show chunk failures <cr>    # path-036772
+(config)# default do-exec show class-map <cr>    # path-032396
+(config)# default do-exec show class-map <string> <cr>    # path-041096
+(config)# default do-exec show class-map type control <cr>    # path-050258
+(config)# default do-exec show class-map type traffic <cr>    # path-050255
+(config)# default do-exec show clns <cr>    # path-032791
+(config)# default do-exec show clns cache <cr>    # path-041455
+(config)# default do-exec show clns es-neighbors <cr>    # path-041775
+(config)# default do-exec show clns filter-expr <cr>    # path-041633
+(config)# default do-exec show clns filter-set <cr>    # path-041601
+(config)# default do-exec show clns interface <cr>    # path-041424
+(config)# default do-exec show clns internal <cr>    # path-041652
+(config)# default do-exec show clns is-neighbors <cr>    # path-041799
+(config)# default do-exec show clns neighbors <cr>    # path-041777
+(config)# default do-exec show clns neighbors areas <cr>    # path-050557
+(config)# default do-exec show clns old-route-display <cr>    # path-041536
+(config)# default do-exec show clns protocol <cr>    # path-041627
+(config)# default do-exec show clns redirects <cr>    # path-041413
+(config)# default do-exec show clns route <cr>    # path-041581
+(config)# default do-exec show clns traffic <cr>    # path-041696
+(config)# default do-exec show cls <cr>    # path-032660
+(config)# default do-exec show cns config connections <cr>    # path-051688
+(config)# default do-exec show cns config outstanding <cr>    # path-051699
+(config)# default do-exec show cns config stats <cr>    # path-051709
+(config)# default do-exec show cns event connections <cr>    # path-051659
+(config)# default do-exec show cns event stats <cr>    # path-051675
+(config)# default do-exec show cns event subject <cr>    # path-051680
+(config)# default do-exec show cns image connections <cr>    # path-051696
+(config)# default do-exec show cns image inventory <cr>    # path-051707
+(config)# default do-exec show cns image status <cr>    # path-051719
+(config)# default do-exec show compress <cr>    # path-029862
+(config)# default do-exec show configuration <cr>    # path-028708
+(config)# default do-exec show configuration ha-sync-lock <cr>    # path-034901
+(config)# default do-exec show configuration history <cr>    # path-034711
+(config)# default do-exec show configuration id <cr>    # path-034969
+(config)# default do-exec show configuration lock <cr>    # path-034848
+(config)# default do-exec show controllers <cr>    # path-028941
+(config)# default do-exec show cops servers <cr>    # path-041119
+(config)# default do-exec show coverage history <cr>    # path-034325
+(config)# default do-exec show coverage history all <cr>    # path-044014
+(config)# default do-exec show coverage history first <number:1..100000> <cr>    # path-052104
+(config)# default do-exec show coverage history last <number:1..100000> <cr>    # path-052116
+(config)# default do-exec show cpl c3pl-info list <cr>    # path-047534
+(config)# default do-exec show cpl class-map hash-table <cr>    # path-047449
+(config)# default do-exec show cpl concurrency history <cr>    # path-047484
+(config)# default do-exec show cpl policy-map hash-table <cr>    # path-047491
+(config)# default do-exec show cpl target-c3pl-info <cr>    # path-038412
+(config)# default do-exec show crm <cr>    # path-033116
+(config)# default do-exec show crypto autovpn session <cr>    # path-051156
+(config)# default do-exec show crypto autovpn session detail <cr>    # path-056458
+(config)# default do-exec show crypto autovpn session peerno <number:0..2147483647> <cr>    # path-058848
+(config)# default do-exec show crypto ca benchmarks <cr>    # path-051230
+(config)# default do-exec show crypto ca certificates <cr>    # path-051194
+(config)# default do-exec show crypto ca certificates pem <cr>    # path-056469
+(config)# default do-exec show crypto ca certificates storage <cr>    # path-056454
+(config)# default do-exec show crypto ca counters <cr>    # path-051211
+(config)# default do-exec show crypto ca crls <cr>    # path-051175
+(config)# default do-exec show crypto ca session <cr>    # path-051218
+(config)# default do-exec show crypto ca timers <cr>    # path-051204
+(config)# default do-exec show crypto ca timers detail <cr>    # path-056484
+(config)# default do-exec show crypto ca trustpoints <cr>    # path-051205
+(config)# default do-exec show crypto ca trustpoints status <cr>    # path-056471
+(config)# default do-exec show crypto ca trustpool <cr>    # path-051183
+(config)# default do-exec show crypto ca trustpool policy <cr>    # path-056462
+(config)# default do-exec show crypto eli <cr>    # path-042576
+(config)# default do-exec show crypto eli statistics <cr>    # path-051173
+(config)# default do-exec show crypto ha <cr>    # path-042540
+(config)# default do-exec show crypto ha statistics <cr>    # path-051151
+(config)# default do-exec show crypto key mypubkey rsa <cr>    # path-056435
+(config)# default do-exec show crypto key pubkey-chain rsa <cr>    # path-056453
+(config)# default do-exec show crypto key pubkey-chain rsa address <address> <cr>    # path-059605
+(config)# default do-exec show crypto key pubkey-chain rsa name <string> <cr>    # path-059602
+(config)# default do-exec show crypto key pubkey-chain rsa vrf <string> <cr>    # path-059607
+(config)# default do-exec show crypto key storage <cr>    # path-051104
+(config)# default do-exec show crypto pki server <cr>    # path-051165
+(config)# default do-exec show cts <cr>    # path-033368
+(config)# default do-exec show cts ap sgt-info <string> <cr>    # path-056516
+(config)# default do-exec show cts authorization entries <cr>    # path-051253
+(config)# default do-exec show cts credentials <cr>    # path-042568
+(config)# default do-exec show cts environment-data <cr>    # path-042639
+(config)# default do-exec show cts ha sync-status <cr>    # path-051296
+(config)# default do-exec show cts interface <cr>    # path-042680
+(config)# default do-exec show cts interface brief <cr>    # path-051215
+(config)# default do-exec show cts interface summary <cr>    # path-051221
+(config)# default do-exec show cts keystore <cr>    # path-042586
+(config)# default do-exec show cts pacs <cr>    # path-042550
+(config)# default do-exec show cts policy <cr>    # path-042776
+(config)# default do-exec show cts policy peer <cr>    # path-051258
+(config)# default do-exec show cts policy sgt <cr>    # path-051336
+(config)# default do-exec show cts policy-server details active <cr>    # path-056496
+(config)# default do-exec show cts policy-server details all <cr>    # path-056504
+(config)# default do-exec show cts policy-server details name <string> <cr>    # path-058860
+(config)# default do-exec show cts policy-server statistics active <cr>    # path-056490
+(config)# default do-exec show cts policy-server statistics all <cr>    # path-056497
+(config)# default do-exec show cts policy-server statistics name <string> <cr>    # path-058856
+(config)# default do-exec show cts provisioning <cr>    # path-042774
+(config)# default do-exec show cts provisioning queue <cr>    # path-051264
+(config)# default do-exec show cts rbacl <cr>    # path-042698
+(config)# default do-exec show cts role-based counters <cr>    # path-051571
+(config)# default do-exec show cts role-based permissions <cr>    # path-051590
+(config)# default do-exec show cts role-based sgt-map platform <cr>    # path-056563
+(config)# default do-exec show cts server-list <cr>    # path-042620
+(config)# default do-exec show cts sg-epg translations <cr>    # path-051358
+(config)# default do-exec show cts sg-epg translations all <cr>    # path-056528
+(config)# default do-exec show cts sg-epg translations default-epg <cr>    # path-056518
+(config)# default do-exec show cts sg-epg translations default-sg <cr>    # path-056506
+(config)# default do-exec show cts sxp ap connections <string> <cr>    # path-058867
+(config)# default do-exec show cts sxp ap summary <string> <cr>    # path-058869
+(config)# default do-exec show cts sxp connections <cr>    # path-051434
+(config)# default do-exec show cts sxp connections brief <cr>    # path-056559
+(config)# default do-exec show cts sxp export-import-group <cr>    # path-051579
+(config)# default do-exec show cts sxp export-list <cr>    # path-051514
+(config)# default do-exec show cts sxp filter-group <cr>    # path-051535
+(config)# default do-exec show cts sxp filter-list <cr>    # path-051455
+(config)# default do-exec show cts sxp import-list <cr>    # path-051534
+(config)# default do-exec show cts sxp sgt-map <cr>    # path-051457
+(config)# default do-exec show cts sxp sgt-map brief <cr>    # path-056567
+(config)# default do-exec show cts transaction-id <cr>    # path-042517
+(config)# default do-exec show cwmp map hosttable <cr>    # path-050852
+(config)# default do-exec show cwmp map landevice <cr>    # path-050713
+(config)# default do-exec show cwmp map lanethernetinterface <cr>    # path-050774
+(config)# default do-exec show cwmp map manageddevice <cr>    # path-050815
+(config)# default do-exec show cwmp map portmapping <cr>    # path-050796
+(config)# default do-exec show cwmp map routetable <cr>    # path-050835
+(config)# default do-exec show cwmp map wanconnectiondevice <cr>    # path-050755
+(config)# default do-exec show cwmp map wandevice <cr>    # path-050734
+(config)# default do-exec show cwmp methods <cr>    # path-041859
+(config)# default do-exec show cwmp parameter all <cr>    # path-050672
+(config)# default do-exec show cwmp parameter notify all <cr>    # path-056169
+(config)# default do-exec show cwmp persistent data <cr>    # path-050692
+(config)# default do-exec show cwmp session <cr>    # path-041916
+(config)# default do-exec show dampening interface <cr>    # path-035707
+(config)# default do-exec show data-corruption <cr>    # path-029439
+(config)# default do-exec show data-descriptor controller <cr>    # path-042648
+(config)# default do-exec show data-descriptor hwidb <cr>    # path-042670
+(config)# default do-exec show data-descriptor queue <cr>    # path-042747
+(config)# default do-exec show data-descriptor queue old <cr>    # path-051250
+(config)# default do-exec show data-descriptor swidb <cr>    # path-042692
+(config)# default do-exec show database clients <cr>    # path-042112
+(config)# default do-exec show database data <string> <number:0..2> <cr>    # path-056259
+(config)# default do-exec show database names <cr>    # path-042062
+(config)# default do-exec show dcm assa <cr>    # path-042581
+(config)# default do-exec show dcm client <cr>    # path-042608
+(config)# default do-exec show dcm client <number:1..4294967295> subscription <cr>    # path-056482
+(config)# default do-exec show dcm data-providers <cr>    # path-042565
+(config)# default do-exec show dcm errcode <number:0..60> <cr>    # path-051207
+(config)# default do-exec show dcm session <cr>    # path-042600
+(config)# default do-exec show debugging <cr>    # path-028996
+(config)# default do-exec show debugging condition <cr>    # path-035231
+(config)# default do-exec show derived-config <cr>    # path-029182
+(config)# default do-exec show device-tracking events <cr>    # path-041865
+(config)# default do-exec show device-tracking features <cr>    # path-041918
+(config)# default do-exec show device-tracking internal counters <cr>    # path-050786
+(config)# default do-exec show device-tracking internal crimson-dhcp-svr <cr>    # path-050892
+(config)# default do-exec show device-tracking internal crimson-fault-evq <cr>    # path-050878
+(config)# default do-exec show device-tracking internal crimson-ip <cr>    # path-050830
+(config)# default do-exec show device-tracking internal crimson-ip-evq <cr>    # path-050862
+(config)# default do-exec show device-tracking internal crimson-mac <cr>    # path-050808
+(config)# default do-exec show device-tracking internal crimson-mac-evq <cr>    # path-050848
+(config)# default do-exec show device-tracking internal groups <cr>    # path-050921
+(config)# default do-exec show device-tracking messages <cr>    # path-041931
+(config)# default do-exec show device-tracking policy <string> <cr>    # path-050748
+(config)# default do-exec show dhcp lease <cr>    # path-042504
+(config)# default do-exec show dhcp server <cr>    # path-042444
+(config)# default do-exec show dhcp-server-tracking database <cr>    # path-041875
+(config)# default do-exec show dhcp-server-tracking policy <cr>    # path-041780
+(config)# default do-exec show diag chassis eeprom <cr>    # path-051977
+(config)# default do-exec show diagnostic bootup level <cr>    # path-051670
+(config)# default do-exec show diagnostic cns publish <cr>    # path-051742
+(config)# default do-exec show diagnostic content slot <cr>    # path-051769
+(config)# default do-exec show diagnostic events slot all <cr>    # path-056652
+(config)# default do-exec show diagnostic level <cr>    # path-043262
+(config)# default do-exec show diagnostic ondemand settings <cr>    # path-051646
+(config)# default do-exec show diagnostic result slot <cr>    # path-051812
+(config)# default do-exec show diagnostic schedule slot <cr>    # path-051783
+(config)# default do-exec show diagnostic simulation failure slot <cr>    # path-056667
+(config)# default do-exec show diagnostic slot <cr>    # path-043509
+(config)# default do-exec show diagnostic status <cr>    # path-043192
+(config)# default do-exec show dialer <cr>    # path-029957
+(config)# default do-exec show dialer dnis group <cr>    # path-045763
+(config)# default do-exec show dialer dnis number <cr>    # path-045635
+(config)# default do-exec show dialer dnis range <cr>    # path-045697
+(config)# default do-exec show dialer maps <cr>    # path-036016
+(config)# default do-exec show dialer sessions <cr>    # path-036174
+(config)# default do-exec show diameter attributes <cr>    # path-043822
+(config)# default do-exec show diameter gx session all <cr>    # path-056764
+(config)# default do-exec show diameter gx session id <string> <cr>    # path-058878
+(config)# default do-exec show diameter gx statistics <cr>    # path-052035
+(config)# default do-exec show diameter id-manager statistics <cr>    # path-052034
+(config)# default do-exec show diameter peer <cr>    # path-043827
+(config)# default do-exec show diameter redundancy <cr>    # path-043803
+(config)# default do-exec show dlep clients <cr>    # path-042389
+(config)# default do-exec show dlep config <cr>    # path-042376
+(config)# default do-exec show dlep counters <cr>    # path-042420
+(config)# default do-exec show dlep neighbors <cr>    # path-042406
+(config)# default do-exec show dlsw fastcache <cr>    # path-043571
+(config)# default do-exec show dmvpn <cr>    # path-033739
+(config)# default do-exec show dmvpn debug-condition <cr>    # path-043393
+(config)# default do-exec show dmvpn detail rwatch <cr>    # path-051785
+(config)# default do-exec show dns-lookup cache <cr>    # path-040818
+(config)# default do-exec show dns-lookup hostname <string> <cr>    # path-049990
+(config)# default do-exec show dnsix <cr>    # path-032270
+(config)# default do-exec show dot1q-tunnel <cr>    # path-033864
+(config)# default do-exec show drip <cr>    # path-033690
+(config)# default do-exec show drops <cr>    # path-030600
+(config)# default do-exec show drops bqs <cr>    # path-037157
+(config)# default do-exec show drops crypto <cr>    # path-037062
+(config)# default do-exec show drops firewall <cr>    # path-037106
+(config)# default do-exec show drops history qfp <cr>    # path-046696
+(config)# default do-exec show drops history qfp clear <cr>    # path-053982
+(config)# default do-exec show drops interface <cr>    # path-036858
+(config)# default do-exec show drops ip-all <cr>    # path-036970
+(config)# default do-exec show drops nat <cr>    # path-036929
+(config)# default do-exec show drops punt <cr>    # path-037020
+(config)# default do-exec show drops qfp <cr>    # path-036815
+(config)# default do-exec show drops qos <cr>    # path-036894
+(config)# default do-exec show drops thresholds <cr>    # path-037238
+(config)# default do-exec show dspfarm <cr>    # path-028808
+(config)# default do-exec show dspfarm dsp stats <number:1..2147483647> <cr>    # path-052535
+(config)# default do-exec show dspfarm utilization profile all <cr>    # path-052401
+(config)# default do-exec show dtp <cr>    # path-031911
+(config)# default do-exec show dtp interface <cr>    # path-040151
+(config)# default do-exec show dwnld_mgr profiles all <cr>    # path-047979
+(config)# default do-exec show dxi map <cr>    # path-038521
+(config)# default do-exec show dxi pvc <cr>    # path-038637
+(config)# default do-exec show eigrp address-family ipv4 accounting <cr>    # path-056096
+(config)# default do-exec show eigrp address-family ipv4 interfaces <cr>    # path-056087
+(config)# default do-exec show eigrp address-family ipv4 neighbors <cr>    # path-056102
+(config)# default do-exec show eigrp address-family ipv4 perf-stats <cr>    # path-056145
+(config)# default do-exec show eigrp address-family ipv4 sia-event <cr>    # path-056123
+(config)# default do-exec show eigrp address-family ipv4 sia-statistics <cr>    # path-056152
+(config)# default do-exec show eigrp address-family ipv4 timers <cr>    # path-056054
+(config)# default do-exec show eigrp address-family ipv4 topology <cr>    # path-056237
+(config)# default do-exec show eigrp address-family ipv4 traffic <cr>    # path-056064
+(config)# default do-exec show eigrp address-family ipv6 accounting <cr>    # path-056065
+(config)# default do-exec show eigrp address-family ipv6 interfaces <cr>    # path-056057
+(config)# default do-exec show eigrp address-family ipv6 neighbors <cr>    # path-056073
+(config)# default do-exec show eigrp address-family ipv6 perf-stats <cr>    # path-056119
+(config)# default do-exec show eigrp address-family ipv6 sia-event <cr>    # path-056097
+(config)# default do-exec show eigrp address-family ipv6 sia-statistics <cr>    # path-056124
+(config)# default do-exec show eigrp address-family ipv6 timers <cr>    # path-056033
+(config)# default do-exec show eigrp address-family ipv6 topology <cr>    # path-056191
+(config)# default do-exec show eigrp address-family ipv6 traffic <cr>    # path-056042
+(config)# default do-exec show eigrp parser <cr>    # path-041326
+(config)# default do-exec show eigrp plugins <cr>    # path-041351
+(config)# default do-exec show eigrp protocols <cr>    # path-041319
+(config)# default do-exec show eigrp service-family external-client <cr>    # path-050420
+(config)# default do-exec show eigrp service-family ipv4 accounting <cr>    # path-056080
+(config)# default do-exec show eigrp service-family ipv4 clients <cr>    # path-056149
+(config)# default do-exec show eigrp service-family ipv4 clients detail <cr>    # path-058708
+(config)# default do-exec show eigrp service-family ipv4 interfaces <cr>    # path-056071
+(config)# default do-exec show eigrp service-family ipv4 neighbors <cr>    # path-056088
+(config)# default do-exec show eigrp service-family ipv4 sia-event <cr>    # path-056110
+(config)# default do-exec show eigrp service-family ipv4 sia-statistics <cr>    # path-056136
+(config)# default do-exec show eigrp service-family ipv4 subscriptions <cr>    # path-056167
+(config)# default do-exec show eigrp service-family ipv4 subscriptions detail <cr>    # path-058714
+(config)# default do-exec show eigrp service-family ipv4 timers <cr>    # path-056041
+(config)# default do-exec show eigrp service-family ipv4 topology <cr>    # path-056198
+(config)# default do-exec show eigrp service-family ipv4 traffic <cr>    # path-056053
+(config)# default do-exec show eigrp service-family ipv6 accounting <cr>    # path-056107
+(config)# default do-exec show eigrp service-family ipv6 clients <cr>    # path-056178
+(config)# default do-exec show eigrp service-family ipv6 clients detail <cr>    # path-058717
+(config)# default do-exec show eigrp service-family ipv6 interfaces <cr>    # path-056099
+(config)# default do-exec show eigrp service-family ipv6 neighbors <cr>    # path-056114
+(config)# default do-exec show eigrp service-family ipv6 sia-event <cr>    # path-056134
+(config)# default do-exec show eigrp service-family ipv6 sia-statistics <cr>    # path-056168
+(config)# default do-exec show eigrp service-family ipv6 subscriptions <cr>    # path-056188
+(config)# default do-exec show eigrp service-family ipv6 subscriptions detail <cr>    # path-058724
+(config)# default do-exec show eigrp service-family ipv6 timers <cr>    # path-056062
+(config)# default do-exec show eigrp service-family ipv6 topology <cr>    # path-056214
+(config)# default do-exec show eigrp service-family ipv6 traffic <cr>    # path-056079
+(config)# default do-exec show eigrp tech-support <cr>    # path-041348
+(config)# default do-exec show end-user-license-agreement <cr>    # path-029224
+(config)# default do-exec show endpoint-tracker <cr>    # path-032298
+(config)# default do-exec show endpoint-tracker dns-probe <cr>    # path-040607

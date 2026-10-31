@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-002.md
+
+(exec)# clear ip rtp header-compression <interface> <cr>    # path-017238
+(exec)# clear ip sctp statistics <cr>    # path-004991
+(exec)# clear ip sdr <cr>    # path-001254
+(exec)# clear ip subscriber <cr>    # path-001483
+(exec)# clear ip tcp adjust stats <interface> <cr>    # path-021281
+(exec)# clear ip tcp header-compression <cr>    # path-004862
+(exec)# clear ip tcp header-compression <interface> <cr>    # path-017251
+(exec)# clear ip traffic <cr>    # path-001046
+(exec)# clear ip traffic interface <interface> <cr>    # path-017160
+(exec)# clear ip traffic topology base <cr>    # path-008431
+(exec)# clear ip trigger-authentication <cr>    # path-001353
+(exec)# clear ipam counts <cr>    # path-000943
+(exec)# clear ipam queues <cr>    # path-000961
+(exec)# clear ipc statistics peak <cr>    # path-004353
+(exec)# clear ipc statistics queue <cr>    # path-004322
+(exec)# clear ipc statistics zone <cr>    # path-004356
+(exec)# clear ipv6 access-list <cr>    # path-001434
+(exec)# clear ipv6 cef * prefix-statistics <cr>    # path-017782
+(exec)# clear ipv6 cef prefix-statistics <cr>    # path-005347
+(exec)# clear ipv6 dhcp binding * <cr>    # path-017734
+(exec)# clear ipv6 dhcp binding <address> <cr>    # path-008922
+(exec)# clear ipv6 dhcp client <interface> <cr>    # path-017700
+(exec)# clear ipv6 dhcp conflict * <cr>    # path-017767
+(exec)# clear ipv6 dhcp conflict <address> <cr>    # path-008945
+(exec)# clear ipv6 dhcp relay binding <address> <cr>    # path-010986
+(exec)# clear ipv6 dhcp relay binding <prefix:dynamic> <cr>    # path-021655
+(exec)# clear ipv6 dhcp route <address> <cr>    # path-008946
+(exec)# clear ipv6 dhcp route <prefix:dynamic> <cr>    # path-017733
+(exec)# clear ipv6 eigrp events <cr>    # path-005199
+(exec)# clear ipv6 eigrp logging <cr>    # path-005182
+(exec)# clear ipv6 eigrp neighbors <cr>    # path-005237
+(exec)# clear ipv6 eigrp neighbors <interface> <cr>    # path-017680
+(exec)# clear ipv6 eigrp topology <prefix:dynamic> <cr>    # path-017592
+(exec)# clear ipv6 errors-internal <cr>    # path-001176
+(exec)# clear ipv6 mfib counters <cr>    # path-005156
+(exec)# clear ipv6 mfib counters <prefix:dynamic> <cr>    # path-017576
+(exec)# clear ipv6 mld all-vrfs traffic <cr>    # path-008809
+(exec)# clear ipv6 mld counters <cr>    # path-005204
+(exec)# clear ipv6 mld counters <interface> <cr>    # path-017629
+(exec)# clear ipv6 mld group <cr>    # path-005247
+(exec)# clear ipv6 mld group <interface> <cr>    # path-017679
+(exec)# clear ipv6 mld traffic <cr>    # path-005151
+(exec)# clear ipv6 mtu <cr>    # path-001225
+(exec)# clear ipv6 multicast aaa authorization <cr>    # path-008937
+(exec)# clear ipv6 multicast aaa authorization <interface> <cr>    # path-021673
+(exec)# clear ipv6 multicast snooping limit vlan <number:1..4095> statistics <cr>    # path-011990
+(exec)# clear ipv6 nd destination <cr>    # path-005079
+(exec)# clear ipv6 nd on-link prefix <cr>    # path-008725
+(exec)# clear ipv6 nd router <cr>    # path-005097
+(exec)# clear ipv6 neighbors <cr>    # path-001344
+(exec)# clear ipv6 neighbors binding policy <string> <cr>    # path-010870
+(exec)# clear ipv6 neighbors ha statistics <cr>    # path-008717
+(exec)# clear ipv6 nhrp <cr>    # path-001451
+(exec)# clear ipv6 nhrp <prefix:dynamic> <cr>    # path-013680
+(exec)# clear ipv6 nhrp counters <cr>    # path-005245
+(exec)# clear ipv6 nhrp shortcut <cr>    # path-005257
+(exec)# clear ipv6 nhrp shortcut interface <interface> <cr>    # path-021656
+(exec)# clear ipv6 nhrp stats <cr>    # path-005220
+(exec)# clear ipv6 nhrp stats <interface> <cr>    # path-017665
+(exec)# clear ipv6 pim all-vrfs traffic <cr>    # path-008827
+(exec)# clear ipv6 pim limit <cr>    # path-005235
+(exec)# clear ipv6 pim limit <interface> <cr>    # path-017671
+(exec)# clear ipv6 pim pfp-sa cache <cr>    # path-008891
+(exec)# clear ipv6 pim pfp-sa originator <cr>    # path-008870
+(exec)# clear ipv6 pim reset <cr>    # path-005180
+(exec)# clear ipv6 pim traffic <cr>    # path-005214
+(exec)# clear ipv6 prefix-list <cr>    # path-001438
+(exec)# clear ipv6 rip <cr>    # path-001382
+(exec)# clear ipv6 route <address> <cr>    # path-005047
+(exec)# clear ipv6 route <prefix:dynamic> <cr>    # path-013585
+(exec)# clear ipv6 snooping counters <cr>    # path-005286
+(exec)# clear ipv6 snooping events <cr>    # path-005283
+(exec)# clear ipv6 snooping messages <cr>    # path-005302
+(exec)# clear ipv6 spd <cr>    # path-001446
+(exec)# clear ipv6 traffic <cr>    # path-001283
+(exec)# clear ipv6 traffic interface <cr>    # path-005066
+(exec)# clear ipv6 traffic interface <interface> <cr>    # path-017478
+(exec)# clear isis * <cr>    # path-012542
+(exec)# clear isis lsp-fast-flooding <cr>    # path-001619
+(exec)# clear isis lspfull <cr>    # path-001581
+(exec)# clear kerberos creds <cr>    # path-000859
+(exec)# clear l2fib statistics all <cr>    # path-004620
+(exec)# clear l2fib statistics bridge-domain <number:dynamic> <cr>    # path-017033
+(exec)# clear l2protocol-forward counters <cr>    # path-002342
+(exec)# clear l2protocol-forward counters <interface> <cr>    # path-014653
+(exec)# clear l2protocol-tunnel counters <cr>    # path-002323
+(exec)# clear l2protocol-tunnel counters <interface> <cr>    # path-014633
+(exec)# clear l2rib counters client producers <cr>    # path-008622
+(exec)# clear l2rib test <string> msg-buffer <cr>    # path-008647
+(exec)# clear lacp <number:dynamic> counters <cr>    # path-014674
+(exec)# clear lacp counters <cr>    # path-002351
+(exec)# clear ldap server <string> <cr>    # path-005560
+(exec)# clear line <?ttyline_action@5555896af940> <cr>    # path-012309
+(exec)# clear line <?ttyline_action@5555896af940> <cr>    # path-012310
+(exec)# clear line async-queue <cr>    # path-000579
+(exec)# clear lldp counters <cr>    # path-001272
+(exec)# clear lldp table <cr>    # path-001289
+(exec)# clear logging <cr>    # path-000071
+(exec)# clear logging persistent <cr>    # path-000539
+(exec)# clear logging xml <cr>    # path-000527
+(exec)# clear mac address-table dynamic <cr>    # path-006395
+(exec)# clear macsec interface <interface> <cr>    # path-013064
+(exec)# clear macsec interface <interface> <cr>    # path-013085
+(exec)# clear mdns-sd query-db <cr>    # path-001324
+(exec)# clear memory events <cr>    # path-001951
+(exec)# clear memory low-water-mark <cr>    # path-001913
+(exec)# clear mfib linecard <cr>    # path-001683
+(exec)# clear mfib table <cr>    # path-001598
+(exec)# clear mka all <cr>    # path-002369
+(exec)# clear mka sessions <cr>    # path-002447
+(exec)# clear mka sessions interface <interface> <cr>    # path-019089
+(exec)# clear mka sessions interface <interface> efp <number:1..16384> <cr>    # path-024215
+(exec)# clear mka sessions interface <interface> port-id <number:1..65535> <cr>    # path-024185
+(exec)# clear mka sessions local-sci <hex-string> <cr>    # path-018929
+(exec)# clear mka statistics <cr>    # path-002460
+(exec)# clear mka statistics interface <interface> <cr>    # path-019113
+(exec)# clear mka statistics interface <interface> efp <number:1..16384> <cr>    # path-024227
+(exec)# clear mka statistics interface <interface> port-id <number:1..65535> <cr>    # path-024194
+(exec)# clear mka statistics local-sci <hex-string> <cr>    # path-018970
+(exec)# clear mlrib layer2 statistics <cr>    # path-005287
+(exec)# clear mvr counters <cr>    # path-001436
+(exec)# clear nat64 ha statistics <cr>    # path-004744
+(exec)# clear nat64 map-e rule running <cr>    # path-008480
+(exec)# clear nat64 statistics <cr>    # path-001120
+(exec)# clear nat64 translations all <cr>    # path-004779
+(exec)# clear nat66 statistics <cr>    # path-001105
+(exec)# clear ncia circuits <cr>    # path-002229
+(exec)# clear netbios-cache <cr>    # path-000300
+(exec)# clear netconf counters <cr>    # path-002011
+(exec)# clear netconf sessions <cr>    # path-002035
+(exec)# clear nhrp stats <cr>    # path-001560
+(exec)# clear nhrp stats <interface> <cr>    # path-013827
+(exec)# clear nhrp stats performance <cr>    # path-005340
+(exec)# clear onep trace <cr>    # path-001880
+(exec)# clear opflex agent service vxlan-evpn all <cr>    # path-011058
+(exec)# clear ospfv3 counters <cr>    # path-001770
+(exec)# clear ospfv3 events <cr>    # path-001766
+(exec)# clear ospfv3 force-spf <cr>    # path-001708
+(exec)# clear ospfv3 process <cr>    # path-001693
+(exec)# clear ospfv3 redistribution <cr>    # path-001672
+(exec)# clear ospfv3 traffic <cr>    # path-001782
+(exec)# clear ospfv3 traffic <interface> <cr>    # path-014076
+(exec)# clear packet-debug pak_debug_tracebuf <cr>    # path-001033
+(exec)# clear parser atomic-config <cr>    # path-000524
+(exec)# clear parser cache <cr>    # path-000526
+(exec)# clear parser statistics <cr>    # path-000525
+(exec)# clear platform arpsnooping-trace <cr>    # path-000521
+(exec)# clear platform authentication secure-mac <interface> all <cr>    # path-020736
+(exec)# clear platform authentication secure-mac <interface> mac <address> <cr>    # path-023305
+(exec)# clear platform condition all <cr>    # path-004272
+(exec)# clear platform dhcpsnooping pkt-trace ipv4 <cr>    # path-008049
+(exec)# clear platform packet-trace configuration <cr>    # path-004271
+(exec)# clear platform packet-trace statistics <cr>    # path-004275
+(exec)# clear platform software adjacency counters <cr>    # path-008068
+(exec)# clear platform software adjacency nexthop-ipfrr <cr>    # path-008063
+(exec)# clear platform software cce statistics <cr>    # path-008245
+(exec)# clear platform software cef counters <cr>    # path-008066
+(exec)# clear platform software cli-agent counters <cr>    # path-008054
+(exec)# clear platform software cman statistics <cr>    # path-008051
+(exec)# clear platform software crimson operational statistics <cr>    # path-010542
+(exec)# clear platform software dpidb counters <cr>    # path-008053
+(exec)# clear platform software epbr statistics <cr>    # path-008089
+(exec)# clear platform software ethernet efp statistics <cr>    # path-010456
+(exec)# clear platform software fhs statistics <cr>    # path-008072
+(exec)# clear platform software flow statistics <cr>    # path-008126
+(exec)# clear platform software icmp statistics <cr>    # path-008137
+(exec)# clear platform software infrastructure bipc <cr>    # path-008316
+(exec)# clear platform software infrastructure chasfs <cr>    # path-008333
+(exec)# clear platform software infrastructure debug <cr>    # path-008352
+(exec)# clear platform software infrastructure inject <cr>    # path-008312
+(exec)# clear platform software infrastructure lfts sar all <cr>    # path-011627
+(exec)# clear platform software infrastructure lfts sar ipv4-addr <address> <cr>    # path-011958
+(exec)# clear platform software infrastructure lfts sar ipv6-addr <address> <cr>    # path-011959
+(exec)# clear platform software infrastructure lsmpi <cr>    # path-008299
+(exec)# clear platform software infrastructure packet <cr>    # path-008298
+(exec)# clear platform software infrastructure punt <cr>    # path-025308
+(exec)# clear platform software infrastructure punt statistics <cr>    # path-025319
+(exec)# clear platform software infrastructure punt-keepalive <cr>    # path-008353
+(exec)# clear platform software infrastructure session source all <cr>    # path-011629
+(exec)# clear platform software infrastructure thread <cr>    # path-008272
+(exec)# clear platform software l2pt statistics <cr>    # path-008096
+(exec)# clear platform software mlppp counters <cr>    # path-008060
+(exec)# clear platform software multicast monitor-trace <cr>    # path-008070
+(exec)# clear platform software multicast statistics <cr>    # path-008074
+(exec)# clear platform software nat statistics <cr>    # path-008209
+(exec)# clear platform software nat64 statistics <cr>    # path-008148
+(exec)# clear platform software nat66 statistics <cr>    # path-008159
+(exec)# clear platform software nbar statistics <cr>    # path-008107
+(exec)# clear platform software netflow statistics <cr>    # path-008164
+(exec)# clear platform software nwpi counters <cr>    # path-008114
+(exec)# clear platform software pfr statistics <cr>    # path-008175
+(exec)# clear platform software qos statistics <cr>    # path-008225
+(exec)# clear platform software route-map counters <cr>    # path-008184
+(exec)# clear platform software vnic-if interface <interface> <cr>    # path-020773
+(exec)# clear platform software vnic-if nvtable <cr>    # path-008076
+(exec)# clear platform software vrf statistics <cr>    # path-008084
+(exec)# clear platform software wccp counters <cr>    # path-008213
+(exec)# clear platform software wccp statistics <cr>    # path-008197
+(exec)# clear pmon <cr>    # path-000085
+(exec)# clear pmon <interface> <cr>    # path-012312
+(exec)# clear policy-map client onepk transient <cr>    # path-008655
+(exec)# clear policy-map control <?option@555589144a70> all <cr>    # path-017268
+(exec)# clear policy-map control <cr>    # path-001208
+(exec)# clear policy-map counters <cr>    # path-001299
+(exec)# clear policy-map counters <interface> <cr>    # path-013553
+(exec)# clear policy-map counters vrf <string> <cr>    # path-008743
+(exec)# clear port-security dynamic <cr>    # path-002344
+(exec)# clear ppp all <cr>    # path-000681
+(exec)# clear ppp queues <cr>    # path-000610
+(exec)# clear ppp statistics <cr>    # path-000648
+(exec)# clear ppp statistics fsm <cr>    # path-004379
+(exec)# clear ppp subscriber statistics <cr>    # path-004392
+(exec)# clear ppp syslog statistics <cr>    # path-004366
+(exec)# clear pppatm interface <interface> <cr>    # path-013978
+(exec)# clear pppatm statistics <cr>    # path-001578
+(exec)# clear pppoe all <cr>    # path-001181
+(exec)# clear pppoe derived group <string> <cr>    # path-008597
+(exec)# clear pppoe interface <interface> <cr>    # path-013476
+(exec)# clear pppoe interface <interface> vc <?number_func_nows_action@55558abfe010> <string> vlan <number:1..4095> <cr>    # path-025370
+(exec)# clear pppoe interface <interface> vlan <number:1..4095> <cr>    # path-021324
+(exec)# clear pppoe relay context all <cr>    # path-008585
+(exec)# clear pppoe rmac <address> <cr>    # path-004908
+(exec)# clear pppoe rmac <address> sid <number:1..65535> <cr>    # path-010660
+(exec)# clear pppoe statistics <cr>    # path-001213
+(exec)# clear pppoe vrrs <string> <cr>    # path-004990
+(exec)# clear profile <cr>    # path-000055
+(exec)# clear qos event <cr>    # path-001077
+(exec)# clear qos trace <cr>    # path-001135
+(exec)# clear qos trace error <cr>    # path-004806
+(exec)# clear qos trace event <cr>    # path-004775
+(exec)# clear qos trace warning <cr>    # path-004791
+(exec)# clear radius server index <cr>    # path-005498
+(exec)# clear radius sg-stats <cr>    # path-001759
+(exec)# clear radius statistics <cr>    # path-001736
+(exec)# clear radius-proxy client <address> <cr>    # path-004907
+(exec)# clear radius-proxy statistics <cr>    # path-001179
+(exec)# clear rbscp <cr>    # path-000262
+(exec)# clear rbscp <interface> <cr>    # path-012535
+(exec)# clear redundancy counters <cr>    # path-000671
+(exec)# clear redundancy idb-sync-history <cr>    # path-000662
+(exec)# clear registry calls <string> <cr>    # path-005721
+(exec)# clear rif-cache <cr>    # path-000107
+(exec)# clear route-map counters <string> <cr>    # path-005117
+(exec)# clear rudpv1 statistics <cr>    # path-001648
+(exec)# clear sampler <cr>    # path-000168
+(exec)# clear service-group traffic-stats <cr>    # path-000918
+(exec)# clear service-group traffic-stats <number:dynamic> <cr>    # path-013170
+(exec)# clear service-routing capabilities-manager <cr>    # path-001583
+(exec)# clear service-routing client <number:0..65535> <cr>    # path-005354
+(exec)# clear service-routing database <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-012201
+(exec)# clear service-routing xmcp client <address> <cr>    # path-017861
+(exec)# clear smef stats <cr>    # path-001502
+(exec)# clear snapshot quiet-time <interface> <cr>    # path-014075
+(exec)# clear snmp stats hosts <cr>    # path-005262
+(exec)# clear snmp sync lock <cr>    # path-005249
+(exec)# clear sockets <number:1..4294967295> <cr>    # path-001471
+(exec)# clear source-bridge <cr>    # path-000295
+(exec)# clear startup-config <cr>    # path-000062
+(exec)# clear subscriber coa statistics <cr>    # path-004773
+(exec)# clear subscriber disconnect history <cr>    # path-004802
+(exec)# clear subscriber disconnect stats <cr>    # path-004823
+(exec)# clear subscriber lite-session ip <address> <cr>    # path-008571
+(exec)# clear subscriber log ip <address> <cr>    # path-008561
+(exec)# clear subscriber log ip <prefix:dynamic> <cr>    # path-017307
+(exec)# clear subscriber log mac-address <string> <cr>    # path-008531
+(exec)# clear subscriber log vrf <string> ip <address> <cr>    # path-011670
+(exec)# clear subscriber policy conditions <cr>    # path-004973
+(exec)# clear subscriber policy peer all <cr>    # path-008759
+(exec)# clear subscriber policy preauth handle <number:0..4294967295> <cr>    # path-010704
+(exec)# clear subscriber policy rules <cr>    # path-004956
+(exec)# clear subscriber session all <cr>    # path-004891
+(exec)# clear subscriber statistics <cr>    # path-001108
+(exec)# clear subscriber template idle <cr>    # path-004805
+(exec)# clear subscriber template tid <number:1..1000> <cr>    # path-008496
+(exec)# clear tcp ha statistics <cr>    # path-005209
+(exec)# clear tcp line <?ttyline_action@555589255188> <cr>    # path-013669
+(exec)# clear tcp local <address> <number:1..65535> remote <address> <number:1..65535> <cr>    # path-012005
+(exec)# clear tcp statistics <cr>    # path-001360
+(exec)# clear tcp statistics ingress <cr>    # path-005128
+(exec)# clear tcp tcb * <cr>    # path-013662
+(exec)# clear vlan <cr>    # path-000215
+(exec)# clear vlan <interface> <cr>    # path-012476
+(exec)# clear vlan <number:dynamic> <cr>    # path-012475
+(exec)# clear vlan <number:dynamic> counters <cr>    # path-013501
+(exec)# clear vlan counters <cr>    # path-001312
+(exec)# clear vlan-autoconfig <interface> <number:0..4294967295> <number:1..4294967295> <cr>    # path-017308
+(exec)# clear vlan-autoconfig Statistics <cr>    # path-001123
+(exec)# clear vpdn accounting <cr>    # path-001653
+(exec)# clear vpdn dead-cache all <cr>    # path-005474
+(exec)# clear vpdn dead-cache group <string> <cr>    # path-009053
+(exec)# clear vpdn dead-cache ip-address <address> <cr>    # path-009057
+(exec)# clear vpdn history failure <cr>    # path-005416
+(exec)# clear vpdn queue <cr>    # path-001707
+(exec)# clear vpdn redirect <cr>    # path-001671
+(exec)# clear vpdn statistics call fsm <cr>    # path-009023
+(exec)# clear vpdn statistics mgr fsm <cr>    # path-009030
+(exec)# clear vpdn subscriber fsm <cr>    # path-005401
+(exec)# clear vrrp statistics <cr>    # path-001333
+(exec)# clear vtemplate redundancy counters <cr>    # path-005495
+(exec)# clear vtp counters <cr>    # path-001287
+(exec)# clear wccp <cr>    # path-000206
+(exec)# clear wsma agent counters <cr>    # path-005940
+(exec)# clear wsma profile counters <cr>    # path-005934
+(exec)# clear x25 <interface> <cr>    # path-012566
+(exec)# clear xdr linecard <cr>    # path-001354
+(exec)# clear xdr linecard <number:dynamic> <cr>    # path-013648
+(exec)# clear xmpp profile counters <cr>    # path-006104
+(exec)# clear xot remote <address> <number:1..65535> local <address> <number:1..65535> <cr>    # path-012025
+(exec)# clock read-calendar <cr>    # path-000141
+(exec)# clock set <hh:mm:ss> <?month_action@5555896c7ab8> <number:1993..2035> <cr>    # path-025307
+(exec)# clock update-calendar <cr>    # path-000146
+(exec)# cns config cancel <number:1..4294967295> <cr>    # path-005272
+(exec)# cns config retrieve <string> <cr>    # path-005485
+(exec)# cns image retrieve <cr>    # path-001491
+(exec)# configure <cr>    # path-000025
+(exec)# configure check syntax <cr>    # path-000670
+(exec)# configure check syntax <url:dynamic> <cr>    # path-012949
+(exec)# configure confirm <cr>    # path-000122
+(exec)# configure http <cr>    # path-000105
+(exec)# configure memory <cr>    # path-000114
+(exec)# configure network <cr>    # path-000119
+(exec)# configure network <url:dynamic> <cr>    # path-012356
+(exec)# configure overwrite-network <cr>    # path-000118
+(exec)# configure overwrite-network <url:dynamic> <cr>    # path-012350
+(exec)# configure revert now <cr>    # path-000685
+(exec)# configure revert timer <number:1..120> <cr>    # path-004477
+(exec)# controller-mode disable <cr>    # path-000238
+(exec)# controller-mode enable <cr>    # path-000236
+(exec)# controller-mode reset <cr>    # path-000240
+(exec)# copy <url:dynamic> <url:dynamic> <cr>    # path-025281
+(exec)# crypto key benchmark rsa <cr>    # path-005205
+(exec)# crypto key export ec <string> pem terminal 3des <string> <cr>    # path-012115
+(exec)# crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-012113
+(exec)# crypto key generate ec keysize <number:256..256> <cr>    # path-010934
+(exec)# crypto key generate rsa <cr>    # path-005248
+(exec)# crypto key import ec <string> terminal <cr>    # path-010992
+(exec)# crypto key import rsa <string> terminal <cr>    # path-011009
+(exec)# crypto key lock rsa <cr>    # path-005270
+(exec)# crypto key unlock rsa <cr>    # path-005289
+(exec)# crypto key zeroize <cr>    # path-001422
+(exec)# crypto pki authenticate <string> <cr>    # path-005200
+(exec)# crypto pki authenticate <string> fingerprint <cr>    # path-008853
+(exec)# crypto pki authenticate <string> fingerprint <hex-data> <cr>    # path-021566
+(exec)# crypto pki benchmark start <number:0..9990> <cr>    # path-008951
+(exec)# crypto pki benchmark stop <cr>    # path-005297
+(exec)# crypto pki certificate clear <string> <cr>    # path-008884
+(exec)# crypto pki certificate validate <string> <cr>    # path-008856
+(exec)# crypto pki crl refresh-cache <cr>    # path-005157
+(exec)# crypto pki crl request <string> <cr>    # path-008823
+(exec)# crypto pki enroll <string> <cr>    # path-005191
+(exec)# crypto pki export <string> pkcs12 <url:dynamic> password <string> <cr>    # path-024726
+(exec)# crypto pki import <string> certificate <cr>    # path-008889
+(exec)# crypto pki import <string> pkcs12 <url:dynamic> password <string> <cr>    # path-024718
+(exec)# crypto pki server <string> grant <number:1..999> <cr>    # path-011025
+(exec)# crypto pki server <string> grant all <cr>    # path-011013
+(exec)# crypto pki server <string> password generate <cr>    # path-011039
+(exec)# crypto pki server <string> password generate <number:1..1440> <cr>    # path-011769
+(exec)# crypto pki server <string> reject <number:1..999> <cr>    # path-011032
+(exec)# crypto pki server <string> reject all <cr>    # path-011022
+(exec)# crypto pki server <string> remove <number:1..999> <cr>    # path-011035
+(exec)# crypto pki server <string> remove all <cr>    # path-011031
+(exec)# crypto pki server <string> request pkcs10 <url:dynamic> <cr>    # path-023979
+(exec)# crypto pki server <string> request pkcs10 terminal <cr>    # path-011781
+(exec)# crypto pki server <string> revoke <number:1..2147483647> <cr>    # path-011037
+(exec)# crypto pki server <string> start <cr>    # path-008941
+(exec)# crypto pki server <string> trim expired <cr>    # path-011048
+(exec)# crypto pki server <string> trim url <url:dynamic> <cr>    # path-023965
+(exec)# crypto pki server <string> unrevoke <number:1..2147483647> <cr>    # path-011041
+(exec)# ct-isdn add interface <interface> callnum <number:1..65564> <string> <cr>    # path-023828
+(exec)# ct-isdn append interface <interface> callnum <number:1..65564> <number:0..255> <string> <cr>    # path-024709
+(exec)# ct-isdn delay <number:100..1000000> <cr>    # path-001345
+(exec)# ct-isdn init-call interface <interface> callnum <number:1..65534> <cr>    # path-021689
+(exec)# ct-isdn modify interface <interface> callnum <number:1..65564> call-decode <number:0..1024> <string> <cr>    # path-025013
+(exec)# ct-isdn receive interface <interface> callnum <number:1..65564> call-connect <cr>    # path-023910
+(exec)# ct-isdn send interface <interface> callnum <number:1..65564> call-proceeding <cr>    # path-023947
+(exec)# ct-isdn show interface <interface> callnum <number:1..65564> call-decode <cr>    # path-023811
+(exec)# ct-isdn start overlap <cr>    # path-001398
+(exec)# ct-isdn test-end <cr>    # path-000242
+(exec)# cts change-password server <address> <number:1..65535> <cr>    # path-008938
+(exec)# cts change-password server <address> <number:1..65535> <interface> <cr>    # path-021674
+(exec)# cts credentials id <string> password <string> <cr>    # path-010939
+(exec)# cts refresh environment-data <cr>    # path-001386
+(exec)# cts refresh pac <cr>    # path-001400
+(exec)# cts refresh policy <cr>    # path-001420
+(exec)# cts refresh policy peer <cr>    # path-005215
+(exec)# cts refresh policy sgt <cr>    # path-005271
+(exec)# cts rekey interface <interface> <cr>    # path-013708
+(exec)# cts role-based policy trace ipv4 ip host <address> host <address> <cr>    # path-012171
+(exec)# debug <cr>    # path-000001
+(exec)# debug ACM all <cr>    # path-000569
+(exec)# debug ACM error <cr>    # path-000544
+(exec)# debug ACM event <cr>    # path-000560
+(exec)# debug LDAP all <cr>    # path-003341
+(exec)# debug LDAP error <cr>    # path-003305
+(exec)# debug LDAP event <cr>    # path-003319
+(exec)# debug LDAP legacy <cr>    # path-003332
+(exec)# debug LDAP packet <cr>    # path-003290
+(exec)# debug aaa accounting <cr>    # path-000745
+(exec)# debug aaa administrative <cr>    # path-000766
+(exec)# debug aaa api <cr>    # path-001117

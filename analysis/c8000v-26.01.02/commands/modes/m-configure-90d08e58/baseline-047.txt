@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-047.md
+
+(config)# do-exec debug platform software nat64 configuration replication <cr>    # path-053299
+(config)# do-exec debug platform software nat64 configuration service <cr>    # path-053212
+(config)# do-exec debug platform software nat64 configuration timeout <cr>    # path-053164
+(config)# do-exec debug platform software nat64 exec <cr>    # path-045298
+(config)# do-exec debug platform software nat64 messages adjacency <cr>    # path-053424
+(config)# do-exec debug platform software nat64 messages all <cr>    # path-053594
+(config)# do-exec debug platform software nat64 messages global-prefix <cr>    # path-053115
+(config)# do-exec debug platform software nat64 messages interface <cr>    # path-053079
+(config)# do-exec debug platform software nat64 messages limit <cr>    # path-053161
+(config)# do-exec debug platform software nat64 messages logging <cr>    # path-053298
+(config)# do-exec debug platform software nat64 messages map-t bmr <cr>    # path-057488
+(config)# do-exec debug platform software nat64 messages map-t dmr <cr>    # path-057515
+(config)# do-exec debug platform software nat64 messages mapping dynamic <cr>    # path-057532
+(config)# do-exec debug platform software nat64 messages mapping static <cr>    # path-057509
+(config)# do-exec debug platform software nat64 messages pool <cr>    # path-053467
+(config)# do-exec debug platform software nat64 messages replication <cr>    # path-053379
+(config)# do-exec debug platform software nat64 messages service <cr>    # path-053257
+(config)# do-exec debug platform software nat64 messages settings <cr>    # path-053338
+(config)# do-exec debug platform software nat64 messages timeout <cr>    # path-053210
+(config)# do-exec debug platform software nat64 reconcile <cr>    # path-045474
+(config)# do-exec debug platform software nat64 reconcile messages <cr>    # path-053000
+(config)# do-exec debug platform software nat64 statistics <cr>    # path-045645
+(config)# do-exec debug platform software nat64 statistics messages <cr>    # path-053105
+(config)# do-exec debug platform software nat64 warn <cr>    # path-045227
+(config)# do-exec debug platform software nat66 configuration all <cr>    # path-053091
+(config)# do-exec debug platform software nat66 configuration interface <cr>    # path-052999
+(config)# do-exec debug platform software nat66 configuration prefix <cr>    # path-053043
+(config)# do-exec debug platform software nat66 exec <cr>    # path-045359
+(config)# do-exec debug platform software nat66 messages all <cr>    # path-053122
+(config)# do-exec debug platform software nat66 messages interface <cr>    # path-053036
+(config)# do-exec debug platform software nat66 messages prefix <cr>    # path-053086
+(config)# do-exec debug platform software nat66 statistics <cr>    # path-045593
+(config)# do-exec debug platform software nat66 statistics messages <cr>    # path-053078
+(config)# do-exec debug platform software nat66 warn <cr>    # path-045285
+(config)# do-exec debug platform software nbar event <cr>    # path-044979
+(config)# do-exec debug platform software nbar node exec <cr>    # path-052889
+(config)# do-exec debug platform software nbar node regexp <cr>    # path-052852
+(config)# do-exec debug platform software nbar node state <cr>    # path-052815
+(config)# do-exec debug platform software nbar trace <cr>    # path-045029
+(config)# do-exec debug platform software nbar update <cr>    # path-045072
+(config)# do-exec debug platform software netflow <cr>    # path-036279
+(config)# do-exec debug platform software netflow cache <cr>    # path-045413
+(config)# do-exec debug platform software netflow export <cr>    # path-045464
+(config)# do-exec debug platform software netflow interface <cr>    # path-045345
+(config)# do-exec debug platform software netflow sampling <cr>    # path-045522
+(config)# do-exec debug platform software netflow stats-update <cr>    # path-045579
+(config)# do-exec debug platform software nwpi <cr>    # path-035558
+(config)# do-exec debug platform software nwpi action <cr>    # path-045019
+(config)# do-exec debug platform software pbr all <cr>    # path-044989
+(config)# do-exec debug platform software pbr events <cr>    # path-044918
+(config)# do-exec debug platform software pbr stats-update <cr>    # path-044952
+(config)# do-exec debug platform software pd-sisf all <cr>    # path-046381
+(config)# do-exec debug platform software pd-sisf cfg <cr>    # path-046441
+(config)# do-exec debug platform software pd-sisf error <cr>    # path-046546
+(config)# do-exec debug platform software pd-sisf packet <cr>    # path-046492
+(config)# do-exec debug platform software pfr configuration <cr>    # path-045402
+(config)# do-exec debug platform software pfr detail <cr>    # path-045519
+(config)# do-exec debug platform software pfr messages <cr>    # path-045459
+(config)# do-exec debug platform software pm all <cr>    # path-044333
+(config)# do-exec debug platform software pm counters <cr>    # path-044426
+(config)# do-exec debug platform software pm errdisable <cr>    # path-044707
+(config)# do-exec debug platform software pm fec <cr>    # path-044368
+(config)# do-exec debug platform software pm if-numbers <cr>    # path-044582
+(config)# do-exec debug platform software pm inject <cr>    # path-044459
+(config)# do-exec debug platform software pm platform <cr>    # path-044618
+(config)# do-exec debug platform software pm pm-vectors <cr>    # path-044549
+(config)# do-exec debug platform software pm punt <cr>    # path-044491
+(config)# do-exec debug platform software pm qos <cr>    # path-044398
+(config)# do-exec debug platform software pm subsys <cr>    # path-044519
+(config)# do-exec debug platform software pm tdl <cr>    # path-044753
+(config)# do-exec debug platform software pm vlans <cr>    # path-044658
+(config)# do-exec debug platform software qfp <cr>    # path-034100
+(config)# do-exec debug platform software qos <cr>    # path-036668
+(config)# do-exec debug platform software qos actions <cr>    # path-045863
+(config)# do-exec debug platform software qos class <cr>    # path-045913
+(config)# do-exec debug platform software qos initialization <cr>    # path-045735
+(config)# do-exec debug platform software qos interface <cr>    # path-045804
+(config)# do-exec debug platform software qos messaging <cr>    # path-045667
+(config)# do-exec debug platform software qos statistics <cr>    # path-045965
+(config)# do-exec debug platform software qos template <cr>    # path-046012
+(config)# do-exec debug platform software redundancy <cr>    # path-034131
+(config)# do-exec debug platform software redundancy detail <cr>    # path-043959
+(config)# do-exec debug platform software rg detail <cr>    # path-045618
+(config)# do-exec debug platform software rg error <cr>    # path-045558
+(config)# do-exec debug platform software rg tdl <cr>    # path-045747
+(config)# do-exec debug platform software rg terse <cr>    # path-045677
+(config)# do-exec debug platform software route-map <cr>    # path-036135
+(config)# do-exec debug platform software route-map all <cr>    # path-045454
+(config)# do-exec debug platform software shell all <cr>    # path-045959
+(config)# do-exec debug platform software shell command connection <cr>    # path-053552
+(config)# do-exec debug platform software shell command connection detail <cr>    # path-057484
+(config)# do-exec debug platform software shell command handler <cr>    # path-053470
+(config)# do-exec debug platform software shell command handler detail <cr>    # path-057440
+(config)# do-exec debug platform software shell command package export <cr>    # path-057540
+(config)# do-exec debug platform software shell command package export detail <cr>    # path-059194
+(config)# do-exec debug platform software shell command package handler <cr>    # path-057522
+(config)# do-exec debug platform software shell command package handler detail <cr>    # path-059185
+(config)# do-exec debug platform software shell command package install <cr>    # path-057499
+(config)# do-exec debug platform software shell command package install detail <cr>    # path-059178
+(config)# do-exec debug platform software shell command set <cr>    # path-053427
+(config)# do-exec debug platform software shell command set detail <cr>    # path-057406
+(config)# do-exec debug platform software shell manager <cr>    # path-045922
+(config)# do-exec debug platform software shell manager detail <cr>    # path-053314
+(config)# do-exec debug platform software snp <cr>    # path-036869
+(config)# do-exec debug platform software startup debugging <cr>    # path-043976
+(config)# do-exec debug platform software startup debugging subsys <string> <cr>    # path-056778
+(config)# do-exec debug platform software switchport all <cr>    # path-044423
+(config)# do-exec debug platform software switchport error <cr>    # path-044394
+(config)# do-exec debug platform software switchport info <cr>    # path-044358
+(config)# do-exec debug platform software timestamp-engine configuration <cr>    # path-044944
+(config)# do-exec debug platform software uidp all <cr>    # path-046217
+(config)# do-exec debug platform software urpf config <cr>    # path-044539
+(config)# do-exec debug platform software urpf interface <cr>    # path-044505
+(config)# do-exec debug platform software urpf statistics <cr>    # path-044576
+(config)# do-exec debug platform software vnic-if all <cr>    # path-044744
+(config)# do-exec debug platform software vnic-if interface <cr>    # path-044697
+(config)# do-exec debug platform software vnic-if nvtable <cr>    # path-044641
+(config)# do-exec debug platform software vrf configuration all <cr>    # path-052685
+(config)# do-exec debug platform software vrf configuration vrf <cr>    # path-052661
+(config)# do-exec debug platform software vrf messages all <cr>    # path-052703
+(config)# do-exec debug platform software vrf messages vrf <cr>    # path-052678
+(config)# do-exec debug platform software vty <cr>    # path-036321
+(config)# do-exec debug platform software wccp configuration <cr>    # path-045508
+(config)# do-exec debug platform software wccp counters <cr>    # path-045684
+(config)# do-exec debug platform software wccp detail <cr>    # path-045627
+(config)# do-exec debug platform software wccp messages <cr>    # path-045569
+(config)# do-exec debug pm all <cr>    # path-033782
+(config)# do-exec debug pm assert <cr>    # path-033639
+(config)# do-exec debug pm card <cr>    # path-033744
+(config)# do-exec debug pm etherchnl <cr>    # path-033615
+(config)# do-exec debug pm hatable <cr>    # path-033755
+(config)# do-exec debug pm messages <cr>    # path-033674
+(config)# do-exec debug pm port <cr>    # path-033734
+(config)# do-exec debug pm pvlan <cr>    # path-033597
+(config)# do-exec debug pm redundancy cp <cr>    # path-043427
+(config)# do-exec debug pm redundancy em <cr>    # path-043410
+(config)# do-exec debug pm redundancy rf <cr>    # path-043386
+(config)# do-exec debug pm redundancy sync <cr>    # path-043362
+(config)# do-exec debug pm redundancy vlan <cr>    # path-043343
+(config)# do-exec debug pm registry <cr>    # path-033689
+(config)# do-exec debug pm scp <cr>    # path-033625
+(config)# do-exec debug pm sm <cr>    # path-033703
+(config)# do-exec debug pm span <cr>    # path-033606
+(config)# do-exec debug pm split <cr>    # path-033662
+(config)# do-exec debug pm statistics detail <cr>    # path-043524
+(config)# do-exec debug pm statistics summary <cr>    # path-043511
+(config)# do-exec debug pm vlan <cr>    # path-033725
+(config)# do-exec debug pm vp <cr>    # path-033714
+(config)# do-exec debug pnp all <cr>    # path-033733
+(config)# do-exec debug pnp connection <cr>    # path-033603
+(config)# do-exec debug pnp diag <cr>    # path-033702
+(config)# do-exec debug pnp discovery <cr>    # path-033673
+(config)# do-exec debug pnp hello <cr>    # path-033661
+(config)# do-exec debug pnp history <cr>    # path-033688
+(config)# do-exec debug pnp infra <cr>    # path-033611
+(config)# do-exec debug pnp io <cr>    # path-033649
+(config)# do-exec debug pnp memory <cr>    # path-033636
+(config)# do-exec debug pnp monitor <cr>    # path-033622
+(config)# do-exec debug pnp sasl <cr>    # path-033713
+(config)# do-exec debug pnp service capability <cr>    # path-043460
+(config)# do-exec debug pnp service certificate-install <cr>    # path-043672
+(config)# do-exec debug pnp service config <cr>    # path-043553
+(config)# do-exec debug pnp service copy <cr>    # path-043568
+(config)# do-exec debug pnp service device-auth <cr>    # path-043680
+(config)# do-exec debug pnp service device_id_cert <cr>    # path-043476
+(config)# do-exec debug pnp service eem_proxy <cr>    # path-043595
+(config)# do-exec debug pnp service exec <cr>    # path-043490
+(config)# do-exec debug pnp service image-install <cr>    # path-043542
+(config)# do-exec debug pnp service interface-info <cr>    # path-043531
+(config)# do-exec debug pnp service inventory <cr>    # path-043503
+(config)# do-exec debug pnp service license <cr>    # path-043605
+(config)# do-exec debug pnp service location <cr>    # path-043650
+(config)# do-exec debug pnp service notify <cr>    # path-043633
+(config)# do-exec debug pnp service proxy <cr>    # path-043616
+(config)# do-exec debug pnp service redirection <cr>    # path-043666
+(config)# do-exec debug pnp service reload <cr>    # path-043579
+(config)# do-exec debug pnp service script <cr>    # path-043622
+(config)# do-exec debug pnp service smu <cr>    # path-043692
+(config)# do-exec debug pnp service snmp-pdu <cr>    # path-043642
+(config)# do-exec debug pnp service token-auth <cr>    # path-043686
+(config)# do-exec debug pnp service topology <cr>    # path-043518
+(config)# do-exec debug pnp service vlan <cr>    # path-043657
+(config)# do-exec debug police <cr>    # path-027654
+(config)# do-exec debug police client <cr>    # path-032212
+(config)# do-exec debug police dp <cr>    # path-032228
+(config)# do-exec debug police infra <cr>    # path-032197
+(config)# do-exec debug policy-manager action <cr>    # path-033242
+(config)# do-exec debug policy-manager api <cr>    # path-033178
+(config)# do-exec debug policy-manager cli <cr>    # path-033186
+(config)# do-exec debug policy-manager errors <cr>    # path-033196
+(config)# do-exec debug policy-manager event-spec <cr>    # path-033232
+(config)# do-exec debug policy-manager events <cr>    # path-033211
+(config)# do-exec debug policy-manager policy <cr>    # path-033252
+(config)# do-exec debug policy-manager subsystem <cr>    # path-033226
+(config)# do-exec debug port-security <cr>    # path-027603
+(config)# do-exec debug port-security redundancy <cr>    # path-031579
+(config)# do-exec debug power <cr>    # path-027793
+(config)# do-exec debug power inline <cr>    # path-033729
+(config)# do-exec debug power main <cr>    # path-033741
+(config)# do-exec debug ppp authentication <cr>    # path-029028
+(config)# do-exec debug ppp authorization <cr>    # path-029068
+(config)# do-exec debug ppp bap <cr>    # path-029667
+(config)# do-exec debug ppp bap detailed <cr>    # path-035569
+(config)# do-exec debug ppp bap error <cr>    # path-035637
+(config)# do-exec debug ppp bap events <cr>    # path-035690
+(config)# do-exec debug ppp bap negotiation <cr>    # path-035749
+(config)# do-exec debug ppp cbcp <cr>    # path-029160
+(config)# do-exec debug ppp elog cps <cr>    # path-035162
+(config)# do-exec debug ppp elog detailed <cr>    # path-035208
+(config)# do-exec debug ppp elog keepalive <cr>    # path-035101
+(config)# do-exec debug ppp elog negotiation <cr>    # path-035057
+(config)# do-exec debug ppp error <cr>    # path-028880
+(config)# do-exec debug ppp events <cr>    # path-029276
+(config)# do-exec debug ppp ip address-save <cr>    # path-035456
+(config)# do-exec debug ppp keepalive <cr>    # path-029213
+(config)# do-exec debug ppp mppe detailed <cr>    # path-034889
+(config)# do-exec debug ppp mppe events <cr>    # path-034786
+(config)# do-exec debug ppp mppe packets <cr>    # path-034838
+(config)# do-exec debug ppp multilink data <cr>    # path-060837
+(config)# do-exec debug ppp multilink detailed <cr>    # path-060833
+(config)# do-exec debug ppp multilink events <cr>    # path-060840
+(config)# do-exec debug ppp multilink fragments <cr>    # path-060843
+(config)# do-exec debug ppp negotiation <cr>    # path-028766
+(config)# do-exec debug ppp packet <cr>    # path-028722
+(config)# do-exec debug ppp redundancy <cr>    # path-029085
+(config)# do-exec debug ppp subscriber <cr>    # path-028890
+(config)# do-exec debug ppp subscriber switch <cr>    # path-034933
+(config)# do-exec debug ppp unique address <cr>    # path-035245
+(config)# do-exec debug pppatm elog all <cr>    # path-041129
+(config)# do-exec debug pppatm elog detail <cr>    # path-041098
+(config)# do-exec debug pppatm elog events <cr>    # path-040940
+(config)# do-exec debug pppatm elog periodic <cr>    # path-041060
+(config)# do-exec debug pppatm elog ppp <cr>    # path-040979
+(config)# do-exec debug pppatm elog subscriber <cr>    # path-041021
+(config)# do-exec debug pppatm events <cr>    # path-032253
+(config)# do-exec debug pppatm events interface <interface> <cr>    # path-061653
+(config)# do-exec debug pppoe elog <cr>    # path-031149
+(config)# do-exec debug pppoe errors interface <interface> <cr>    # path-061491
+(config)# do-exec debug pre all <cr>    # path-029534
+(config)# do-exec debug pre error <cr>    # path-029367
+(config)# do-exec debug pre event <cr>    # path-029420
+(config)# do-exec debug pre ha error <cr>    # path-035618
+(config)# do-exec debug pre ha event <cr>    # path-035681
+(config)# do-exec debug pre prr all <cr>    # path-035950
+(config)# do-exec debug pre prr error <cr>    # path-035734
+(config)# do-exec debug pre prr event <cr>    # path-035811
+(config)# do-exec debug pre prr verbose <cr>    # path-035875
+(config)# do-exec debug pre rule all <cr>    # path-036027
+(config)# do-exec debug pre rule error <cr>    # path-035794
+(config)# do-exec debug pre rule event <cr>    # path-035870
+(config)# do-exec debug pre rule verbose <cr>    # path-035947
+(config)# do-exec debug priority <cr>    # path-026440
+(config)# do-exec debug probe <cr>    # path-027627
+(config)# do-exec debug protofltr all <cr>    # path-031634
+(config)# do-exec debug protofltr event <cr>    # path-031597
+(config)# do-exec debug protofltr interface <cr>    # path-031615
+(config)# do-exec debug ps_class_params <cr>    # path-026388
+(config)# do-exec debug ps_policymap_feature <cr>    # path-026371
+(config)# do-exec debug psp all <cr>    # path-031439
+(config)# do-exec debug psp cp <cr>    # path-031471
+(config)# do-exec debug psp dp <cr>    # path-031452
+(config)# do-exec debug psp provision <cr>    # path-031493
+(config)# do-exec debug qbm api <cr>    # path-029333
+(config)# do-exec debug qbm events <cr>    # path-029373
+(config)# do-exec debug qllc error <cr>    # path-033542
+(config)# do-exec debug qllc event <cr>    # path-033502
+(config)# do-exec debug qllc packet <cr>    # path-033514
+(config)# do-exec debug qllc state <cr>    # path-033487
+(config)# do-exec debug qllc test <cr>    # path-033551
+(config)# do-exec debug qllc timer <cr>    # path-033523
+(config)# do-exec debug qllc x25 <cr>    # path-033536
+(config)# do-exec debug qnq <cr>    # path-027767
+(config)# do-exec debug qnq event <cr>    # path-033559
+(config)# do-exec debug qnq misc <cr>    # path-033573
+(config)# do-exec debug qnq packet <cr>    # path-033548
+(config)# do-exec debug qos accounting error <cr>    # path-035686
+(config)# do-exec debug qos accounting event <cr>    # path-035623
+(config)# do-exec debug qos accounting ha <cr>    # path-035745
+(config)# do-exec debug qos cac local error <cr>    # path-045291
+(config)# do-exec debug qos cac local event <cr>    # path-045218
+(config)# do-exec debug qos cac local flow <cr>    # path-045360
+(config)# do-exec debug qos cac remote error <cr>    # path-045354
+(config)# do-exec debug qos cac remote event <cr>    # path-045276
+(config)# do-exec debug qos cce <cr>    # path-029694
+(config)# do-exec debug qos events <cr>    # path-029938
+(config)# do-exec debug qos feature generic <cr>    # path-035518
+(config)# do-exec debug qos feature ha error <cr>    # path-045184
+(config)# do-exec debug qos feature ha event <cr>    # path-045129
+(config)# do-exec debug qos feature node <cr>    # path-035453
+(config)# do-exec debug qos ha <cr>    # path-029736
+(config)# do-exec debug qos ha class-map <cr>    # path-035292
+(config)# do-exec debug qos ha issu <cr>    # path-035527
+(config)# do-exec debug qos ha msgs <cr>    # path-035475
+(config)# do-exec debug qos ha policy-map <cr>    # path-035358
+(config)# do-exec debug qos ha standby <cr>    # path-035423
+(config)# do-exec debug qos ids <cr>    # path-029893
+(config)# do-exec debug qos index <cr>    # path-029641
+(config)# do-exec debug qos mib <cr>    # path-029594
+(config)# do-exec debug qos peer all <cr>    # path-035696
+(config)# do-exec debug qos peer interface <interface> <cr>    # path-061272
+(config)# do-exec debug qos peer ipv4 <address> <cr>    # path-044971
+(config)# do-exec debug qos peer mon <cr>    # path-035720
+(config)# do-exec debug qos peer mon detail <cr>    # path-045131
+(config)# do-exec debug qos peer mon error <cr>    # path-045189
+(config)# do-exec debug qos peer rate <cr>    # path-035780
+(config)# do-exec debug qos peer rate detail <cr>    # path-045175
+(config)# do-exec debug qos peer rate error <cr>    # path-045234
+(config)# do-exec debug qos peer reset-all-debug <cr>    # path-035476
+(config)# do-exec debug qos peer show-all-debug <cr>    # path-035424
+(config)# do-exec debug qos peer udp <cr>    # path-035528
+(config)# do-exec debug qos police cp <cr>    # path-035472
+(config)# do-exec debug qos police dp <cr>    # path-035416
+(config)# do-exec debug qos police stats <cr>    # path-035349
+(config)# do-exec debug qos pre-classify <cr>    # path-029842
+(config)# do-exec debug qos provision <cr>    # path-029379
+(config)# do-exec debug qos service-policy global-lock <cr>    # path-036028
+(config)# do-exec debug qos service-policy iteration <cr>    # path-036179
+(config)# do-exec debug qos service-policy lifecycle <cr>    # path-036109
+(config)# do-exec debug qos service-policy polling <cr>    # path-035872
+(config)# do-exec debug qos service-policy stats <cr>    # path-035949
+(config)# do-exec debug qos service-policy trace <cr>    # path-035797
+(config)# do-exec debug qos set <cr>    # path-029519
+(config)# do-exec debug qos set cp <cr>    # path-035523
+(config)# do-exec debug qos set dp <cr>    # path-035470
+(config)# do-exec debug qos set stats <cr>    # path-035406
+(config)# do-exec debug qos snmp <cr>    # path-029693
+(config)# do-exec debug qos stats <cr>    # path-029788
+(config)# do-exec debug qos table-map <cr>    # path-029432
+(config)# do-exec debug radius <cr>    # path-027695
+(config)# do-exec debug radius-proxy errors <cr>    # path-031146
+(config)# do-exec debug radius-proxy events <cr>    # path-031172
+(config)# do-exec debug rbm policy critical <cr>    # path-043263
+(config)# do-exec debug rbm policy debug <cr>    # path-043178
+(config)# do-exec debug rbm policy emergency <cr>    # path-043281
+(config)# do-exec debug rbm policy error <cr>    # path-043248
+(config)# do-exec debug rbm policy info <cr>    # path-043195
+(config)# do-exec debug rbm policy notice <cr>    # path-043217
+(config)# do-exec debug rbm policy verbose <cr>    # path-043158
+(config)# do-exec debug rbm policy warning <cr>    # path-043232
+(config)# do-exec debug redundancy application group asymmetric-routing error <cr>    # path-053543
+(config)# do-exec debug redundancy application group asymmetric-routing peer <cr>    # path-053497
+(config)# do-exec debug redundancy application group asymmetric-routing tunnel <cr>    # path-053447
+(config)# do-exec debug redundancy application group config all <cr>    # path-053101
+(config)# do-exec debug redundancy application group config db <cr>    # path-053297
+(config)# do-exec debug redundancy application group config error <cr>    # path-053204
+(config)# do-exec debug redundancy application group config event <cr>    # path-053152
+(config)# do-exec debug redundancy application group config func <cr>    # path-053255
+(config)# do-exec debug redundancy application group faults DB <cr>    # path-053627
+(config)# do-exec debug redundancy application group faults all <cr>    # path-053400
+(config)# do-exec debug redundancy application group faults error <cr>    # path-053500
+(config)# do-exec debug redundancy application group faults event <cr>    # path-053453
+(config)# do-exec debug redundancy application group faults fault <cr>    # path-053545
+(config)# do-exec debug redundancy application group faults func <cr>    # path-053590
+(config)# do-exec debug redundancy application group im RF <cr>    # path-053252
+(config)# do-exec debug redundancy application group im config <cr>    # path-053295
+(config)# do-exec debug redundancy application group im error <cr>    # path-053141
+(config)# do-exec debug redundancy application group im interface <cr>    # path-053199
+(config)# do-exec debug redundancy application group media all <cr>    # path-053421
+(config)# do-exec debug redundancy application group media error <cr>    # path-053246
+(config)# do-exec debug redundancy application group media event <cr>    # path-053188
+(config)# do-exec debug redundancy application group media nbr <cr>    # path-053376
+(config)# do-exec debug redundancy application group media packet RX <cr>    # path-057416
+(config)# do-exec debug redundancy application group media packet TX <cr>    # path-057388
+(config)# do-exec debug redundancy application group media timer <cr>    # path-053293
+(config)# do-exec debug redundancy application group protocol all <cr>    # path-053357
+(config)# do-exec debug redundancy application group protocol auth <cr>    # path-053629
+(config)# do-exec debug redundancy application group protocol detail <cr>    # path-053410
+(config)# do-exec debug redundancy application group protocol error <cr>    # path-053459
+(config)# do-exec debug redundancy application group protocol event <cr>    # path-053503
+(config)# do-exec debug redundancy application group protocol media <cr>    # path-053547
+(config)# do-exec debug redundancy application group protocol peer <cr>    # path-053592
+(config)# do-exec debug redundancy application group rii error <cr>    # path-053363
+(config)# do-exec debug redundancy application group rii event <cr>    # path-053320
+(config)# do-exec debug redundancy application group transport db <cr>    # path-053505
+(config)# do-exec debug redundancy application group transport error <cr>    # path-053327
+(config)# do-exec debug redundancy application group transport event <cr>    # path-053279
+(config)# do-exec debug redundancy application group transport packet <cr>    # path-053463
+(config)# do-exec debug redundancy application group transport timer <cr>    # path-053372
+(config)# do-exec debug redundancy application group transport trace <cr>    # path-053419
+(config)# do-exec debug redundancy application group vp error <cr>    # path-053290
+(config)# do-exec debug redundancy application group vp event <cr>    # path-053238
+(config)# do-exec debug redundancy cloud all <cr>    # path-036104
+(config)# do-exec debug redundancy cloud detail <cr>    # path-036022
+(config)# do-exec debug redundancy cloud error <cr>    # path-035856
+(config)# do-exec debug redundancy cloud trace <cr>    # path-035941
+(config)# do-exec debug redundancy idb-sync-history <cr>    # path-029501
+(config)# do-exec debug redundancy interchassis all <cr>    # path-036004
+(config)# do-exec debug redundancy interchassis application <cr>    # path-036306
+(config)# do-exec debug redundancy interchassis error <cr>    # path-036169
+(config)# do-exec debug redundancy interchassis event <cr>    # path-036094
+(config)# do-exec debug redundancy interchassis monitor <cr>    # path-036238
+(config)# do-exec debug redundancy mask <number:0..4294967295> <cr>    # path-035086
+(config)# do-exec debug redundancy progression <cr>    # path-029237
+(config)# do-exec debug redundancy progression domain <?option@55558952ced0> <cr>    # path-061265
+(config)# do-exec debug reload-history all <cr>    # path-029338
+(config)# do-exec debug reload-history error <cr>    # path-029252
+(config)# do-exec debug reload-history verbose <cr>    # path-029302
+(config)# do-exec debug remote-management http access <cr>    # path-043474
+(config)# do-exec debug remote-management http error <cr>    # path-043458
+(config)# do-exec debug remote-management pnsc error <cr>    # path-043487

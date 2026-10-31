@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-049.md
+
+(exec)# show ipv6 mld ssm-map <cr>    # path-006669
+(exec)# show ipv6 mld traffic <cr>    # path-006610
+(exec)# show ipv6 mrib client <cr>    # path-006560
+(exec)# show ipv6 mrib route <address> <address> <cr>    # path-011332
+(exec)# show ipv6 mrib route <cr>    # path-006656
+(exec)# show ipv6 mrib route <prefix:dynamic> <cr>    # path-019175
+(exec)# show ipv6 mrib route summary <cr>    # path-009527
+(exec)# show ipv6 mroute <cr>    # path-002626
+(exec)# show ipv6 mroute active <cr>    # path-006816
+(exec)# show ipv6 mroute count <cr>    # path-006750
+(exec)# show ipv6 mtu <cr>    # path-002345
+(exec)# show ipv6 multicast <cr>    # path-002562
+(exec)# show ipv6 multicast overlay-mapping lisp <address> <cr>    # path-011342
+(exec)# show ipv6 multicast rpf monitored <cr>    # path-009719
+(exec)# show ipv6 multicast snooping limit vlan <number:1..4095> <cr>    # path-011848
+(exec)# show ipv6 multicast snooping summary <cr>    # path-009515
+(exec)# show ipv6 multicast snooping summary vlan <number:1..4095> <cr>    # path-011851
+(exec)# show ipv6 nd destination <cr>    # path-006494
+(exec)# show ipv6 nd destination <interface> <cr>    # path-018971
+(exec)# show ipv6 nd on-link prefix <cr>    # path-009522
+(exec)# show ipv6 nd on-link prefix <interface> <cr>    # path-022272
+(exec)# show ipv6 nd ra dns server <cr>    # path-011261
+(exec)# show ipv6 nd ra dns server <interface> <cr>    # path-024174
+(exec)# show ipv6 nd ra dns-search-list <cr>    # path-009521
+(exec)# show ipv6 nd ra dns-search-list <interface> <cr>    # path-022271
+(exec)# show ipv6 nd ra nat64-prefix <cr>    # path-009543
+(exec)# show ipv6 nd ra nat64-prefix <interface> <cr>    # path-022294
+(exec)# show ipv6 nd ra sessions <interface> <cr>    # path-022262
+(exec)# show ipv6 nd ra specific-route <cr>    # path-009560
+(exec)# show ipv6 nd ra specific-route <interface> <cr>    # path-022319
+(exec)# show ipv6 nd suppress <cr>    # path-006419
+(exec)# show ipv6 neighbors <cr>    # path-002509
+(exec)# show ipv6 neighbors <interface> <cr>    # path-014793
+(exec)# show ipv6 neighbors binding bdid <number:dynamic> <cr>    # path-025400
+(exec)# show ipv6 neighbors ha <cr>    # path-006429
+(exec)# show ipv6 nhrp <cr>    # path-002842
+(exec)# show ipv6 nhrp <interface> <cr>    # path-015171
+(exec)# show ipv6 nhrp <interface> shortcut <cr>    # path-019501
+(exec)# show ipv6 nhrp attribute <cr>    # path-006724
+(exec)# show ipv6 nhrp instances <cr>    # path-006767
+(exec)# show ipv6 nhrp map <cr>    # path-006752
+(exec)# show ipv6 nhrp map <interface> <cr>    # path-019284
+(exec)# show ipv6 nhrp multicast <cr>    # path-006790
+(exec)# show ipv6 nhrp multicast <interface> <cr>    # path-019297
+(exec)# show ipv6 nhrp nhs <cr>    # path-006755
+(exec)# show ipv6 nhrp nhs <interface> <cr>    # path-019304
+(exec)# show ipv6 nhrp nhs <interface> redundancy <cr>    # path-022596
+(exec)# show ipv6 nhrp nhs <interface> redundancy cluster <number:0..10> <cr>    # path-024860
+(exec)# show ipv6 nhrp nhs <interface> redundancy preempted <cr>    # path-024292
+(exec)# show ipv6 nhrp nhs <interface> redundancy running <cr>    # path-024282
+(exec)# show ipv6 nhrp nhs <interface> redundancy waiting <cr>    # path-024294
+(exec)# show ipv6 nhrp nhs redundancy <cr>    # path-009803
+(exec)# show ipv6 nhrp nhs redundancy cluster <number:0..10> <cr>    # path-011872
+(exec)# show ipv6 nhrp nhs redundancy preempted <cr>    # path-011354
+(exec)# show ipv6 nhrp nhs redundancy running <cr>    # path-011345
+(exec)# show ipv6 nhrp nhs redundancy waiting <cr>    # path-011359
+(exec)# show ipv6 nhrp purge <cr>    # path-006635
+(exec)# show ipv6 nhrp redirect <cr>    # path-006798
+(exec)# show ipv6 nhrp shortcut <cr>    # path-006946
+(exec)# show ipv6 nhrp stats <cr>    # path-006759
+(exec)# show ipv6 nhrp stats <interface> <cr>    # path-019309
+(exec)# show ipv6 nhrp traffic <cr>    # path-006671
+(exec)# show ipv6 pim all-vrfs traffic <cr>    # path-009643
+(exec)# show ipv6 pim anycast-rp <cr>    # path-006862
+(exec)# show ipv6 pim bfd neighbor <interface> inactive <cr>    # path-024357
+(exec)# show ipv6 pim bfd neighbor inactive <cr>    # path-011423
+(exec)# show ipv6 pim bsr candidate-rp <cr>    # path-009871
+(exec)# show ipv6 pim bsr election <cr>    # path-009888
+(exec)# show ipv6 pim bsr rp-cache <cr>    # path-009881
+(exec)# show ipv6 pim df <cr>    # path-006808
+(exec)# show ipv6 pim df <interface> <cr>    # path-019356
+(exec)# show ipv6 pim drlb gdr-candidates <cr>    # path-009850
+(exec)# show ipv6 pim drlb gdr-candidates <interface> <cr>    # path-022645
+(exec)# show ipv6 pim gir <cr>    # path-006857
+(exec)# show ipv6 pim group-map <cr>    # path-006756
+(exec)# show ipv6 pim group-map <prefix:dynamic> <cr>    # path-019308
+(exec)# show ipv6 pim interface <cr>    # path-006738
+(exec)# show ipv6 pim interface <interface> <cr>    # path-019275
+(exec)# show ipv6 pim interface <interface> bfd <cr>    # path-022592
+(exec)# show ipv6 pim interface bfd <cr>    # path-009800
+(exec)# show ipv6 pim internal <cr>    # path-006851
+(exec)# show ipv6 pim internal <interface> <cr>    # path-019407
+(exec)# show ipv6 pim join-prune statistic <cr>    # path-009815
+(exec)# show ipv6 pim join-prune statistic <interface> <cr>    # path-022597
+(exec)# show ipv6 pim limit <cr>    # path-006806
+(exec)# show ipv6 pim limit <interface> <cr>    # path-019344
+(exec)# show ipv6 pim limit reservation <cr>    # path-009816
+(exec)# show ipv6 pim limit reservation <interface> <cr>    # path-022608
+(exec)# show ipv6 pim limit reservation required <cr>    # path-011363
+(exec)# show ipv6 pim limit reservation required <interface> <cr>    # path-024298
+(exec)# show ipv6 pim lisp-rloc-state <cr>    # path-006764
+(exec)# show ipv6 pim mdt <cr>    # path-006959
+(exec)# show ipv6 pim mdt bgp <cr>    # path-009927
+(exec)# show ipv6 pim mdt bgp c-mroutes <cr>    # path-011424
+(exec)# show ipv6 pim mdt history interval <number:1..71582> <cr>    # path-011882
+(exec)# show ipv6 pim mdt internal bier <cr>    # path-011426
+(exec)# show ipv6 pim mdt internal crt <cr>    # path-011439
+(exec)# show ipv6 pim mdt internal gre <cr>    # path-011421
+(exec)# show ipv6 pim mdt internal ir <cr>    # path-011429
+(exec)# show ipv6 pim mdt internal leaf-ad <cr>    # path-011433
+(exec)# show ipv6 pim mdt internal mldp <cr>    # path-011436
+(exec)# show ipv6 pim mdt internal pe <cr>    # path-011443
+(exec)# show ipv6 pim mdt internal pe all <cr>    # path-011896
+(exec)# show ipv6 pim mdt internal replication <cr>    # path-011441
+(exec)# show ipv6 pim mdt internal tdb <cr>    # path-011442
+(exec)# show ipv6 pim mdt internal vxlan <cr>    # path-011416
+(exec)# show ipv6 pim mdt receive <cr>    # path-009883
+(exec)# show ipv6 pim mdt receive detail <cr>    # path-011400
+(exec)# show ipv6 pim mdt send <cr>    # path-009862
+(exec)# show ipv6 pim neighbor <cr>    # path-006757
+(exec)# show ipv6 pim neighbor <cr>    # path-006758
+(exec)# show ipv6 pim neighbor <interface> <cr>    # path-019298
+(exec)# show ipv6 pim neighbor <interface> <cr>    # path-019299
+(exec)# show ipv6 pim pfp-sa announcements <cr>    # path-009805
+(exec)# show ipv6 pim pfp-sa cache <cr>    # path-009831
+(exec)# show ipv6 pim pfp-sa originator <cr>    # path-009822
+(exec)# show ipv6 pim range-list <cr>    # path-006753
+(exec)# show ipv6 pim topology <cr>    # path-006695
+(exec)# show ipv6 pim topology route-count <cr>    # path-009680
+(exec)# show ipv6 pim traffic <cr>    # path-006811
+(exec)# show ipv6 pim tunnel <cr>    # path-006768
+(exec)# show ipv6 pim tunnel <interface> <cr>    # path-019316
+(exec)# show ipv6 policy <cr>    # path-002672
+(exec)# show ipv6 prefix <?match_ipv6_pfxinfo_action@55558ad32948> <cr>    # path-015046
+(exec)# show ipv6 prefix reserved <cr>    # path-006841
+(exec)# show ipv6 prefix-list <cr>    # path-002662
+(exec)# show ipv6 prefix-list <string> <prefix:dynamic> <cr>    # path-019423
+(exec)# show ipv6 prefix-list <string> seq <number:1..4294967295> <cr>    # path-011364
+(exec)# show ipv6 prefix-list detail <cr>    # path-006803
+(exec)# show ipv6 prefix-list summary <cr>    # path-006783
+(exec)# show ipv6 protocols <cr>    # path-002364
+(exec)# show ipv6 reassembly <interface> <cr>    # path-014983
+(exec)# show ipv6 rip <cr>    # path-002608
+(exec)# show ipv6 rip database <cr>    # path-006660
+(exec)# show ipv6 rip next-hops <cr>    # path-006680
+(exec)# show ipv6 route <?match_ipv6_pfxinfo_action@55558ad3cec8> longer-prefixes <cr>    # path-019330
+(exec)# show ipv6 route <address> <cr>    # path-006786
+(exec)# show ipv6 route <cr>    # path-002542
+(exec)# show ipv6 route interface <interface> <cr>    # path-019040
+(exec)# show ipv6 route multicast <cr>    # path-014884
+(exec)# show ipv6 route multicast nsf <cr>    # path-018943
+(exec)# show ipv6 route multicast summary <cr>    # path-018957
+(exec)# show ipv6 route multicast table <cr>    # path-018891
+(exec)# show ipv6 route multicast table <number:0..4294967295> <cr>    # path-022194
+(exec)# show ipv6 route multicast tag <number:0..4294967295> <cr>    # path-022399
+(exec)# show ipv6 route multicast watch <cr>    # path-018987
+(exec)# show ipv6 route nsf <cr>    # path-006408
+(exec)# show ipv6 route summary <cr>    # path-006420
+(exec)# show ipv6 route table <cr>    # path-006359
+(exec)# show ipv6 route table <number:0..4294967295> <cr>    # path-009404
+(exec)# show ipv6 route tag <number:0..4294967295> <cr>    # path-009601
+(exec)# show ipv6 route watch <cr>    # path-006446
+(exec)# show ipv6 routers <cr>    # path-002461
+(exec)# show ipv6 routers <interface> <cr>    # path-014788
+(exec)# show ipv6 rpf <address> <cr>    # path-006861
+(exec)# show ipv6 rpf select <cr>    # path-006835
+(exec)# show ipv6 snooping capture-policy bd <number:dynamic> <cr>    # path-025406
+(exec)# show ipv6 snooping counters bd <number:dynamic> <cr>    # path-025405
+(exec)# show ipv6 snooping events <cr>    # path-006778
+(exec)# show ipv6 snooping features <cr>    # path-006810
+(exec)# show ipv6 snooping internal access-list interface <interface> <cr>    # path-024326
+(exec)# show ipv6 snooping internal counters <cr>    # path-009845
+(exec)# show ipv6 snooping messages <cr>    # path-006814
+(exec)# show ipv6 snooping policies bd <number:dynamic> <cr>    # path-025407
+(exec)# show ipv6 snooping policy <cr>    # path-006815
+(exec)# show ipv6 source-guard policy <cr>    # path-006749
+(exec)# show ipv6 spd <cr>    # path-002646
+(exec)# show ipv6 static <?match_ipv6_pfxinfo_action@55558ad3fdb8> <cr>    # path-014839
+(exec)# show ipv6 static <cr>    # path-002508
+(exec)# show ipv6 static bfd <cr>    # path-006454
+(exec)# show ipv6 static multicast bfd <cr>    # path-018994
+(exec)# show ipv6 traffic <cr>    # path-002360
+(exec)# show ipv6 traffic interface <cr>    # path-006358
+(exec)# show ipv6 traffic interface <interface> <cr>    # path-018834
+(exec)# show ipv6 tunnel <cr>    # path-002399
+(exec)# show ipv6 virtual-reassembly <cr>    # path-002661
+(exec)# show isdn <?test_int_action@55558ce1c950> <?test_int_action@55558ce1dd80> call-rate <cr>    # path-025317
+(exec)# show isdn <?test_int_action@55558ce1c950> <?test_int_action@55558ce1dd80> variables statistics <cr>    # path-025349
+(exec)# show isdn <?test_int_action@55558ce1c950> active <cr>    # path-016010
+(exec)# show isdn <?test_int_action@55558ce1c950> history <cr>    # path-016004
+(exec)# show isdn <?test_int_action@55558ce1c950> memory <cr>    # path-015969
+(exec)# show isdn <?test_int_action@55558ce1c950> status <cr>    # path-016005
+(exec)# show isdn <?test_int_action@55558ce1c950> timers <cr>    # path-015988
+(exec)# show isdn answer <interface> <string> <cr>    # path-020123
+(exec)# show isdn answer <number:0..95> <string> <cr>    # path-010195
+(exec)# show isis * adjacency stagger <cr>    # path-019922
+(exec)# show isis * mesh-groups <cr>    # path-015682
+(exec)# show isis * mt <cr>    # path-015689
+(exec)# show isis * nsf <cr>    # path-015764
+(exec)# show isis * protocol <cr>    # path-015711
+(exec)# show isis * rib <cr>    # path-015705
+(exec)# show isis * rib prefix-sid <cr>    # path-019897
+(exec)# show isis * rib redistribution <cr>    # path-019898
+(exec)# show isis * rib strict-spf-sid <cr>    # path-019910
+(exec)# show isis * route <cr>    # path-015738
+(exec)# show isis * spf-log <cr>    # path-015644
+(exec)# show isis * topology <cr>    # path-015617
+(exec)# show isis adjacency stagger <cr>    # path-007323
+(exec)# show isis database <cr>    # path-003192
+(exec)# show isis hostname <cr>    # path-003115
+(exec)# show isis lsp-log <cr>    # path-003140
+(exec)# show isis lspgen tlv neighbor <cr>    # path-010022
+(exec)# show isis mesh-groups <cr>    # path-003336
+(exec)# show isis mpls <cr>    # path-003223
+(exec)# show isis mpls ldp igp-shortcuts <cr>    # path-010021
+(exec)# show isis mpls traffic-eng adjacency-log <cr>    # path-010011
+(exec)# show isis mpls traffic-eng advertisements <cr>    # path-010006
+(exec)# show isis mpls traffic-eng downstream-tree <string> <cr>    # path-011459
+(exec)# show isis mpls traffic-eng tunnel <cr>    # path-010029
+(exec)# show isis mt <cr>    # path-003339
+(exec)# show isis neighbors <cr>    # path-003123
+(exec)# show isis node <cr>    # path-003261
+(exec)# show isis nsf <cr>    # path-003401
+(exec)# show isis private <cr>    # path-003159
+(exec)# show isis protocol <cr>    # path-003354
+(exec)# show isis rib <cr>    # path-003350
+(exec)# show isis rib prefix-sid <cr>    # path-007302
+(exec)# show isis rib redistribution <cr>    # path-007303
+(exec)# show isis rib strict-spf-sid <cr>    # path-007313
+(exec)# show isis route <cr>    # path-003374
+(exec)# show isis spf-log <cr>    # path-003302
+(exec)# show isis timers <cr>    # path-003116
+(exec)# show isis topology <cr>    # path-003272
+(exec)# show isis tree <cr>    # path-003180
+(exec)# show issu FSM <cr>    # path-003786
+(exec)# show issu FSM <number:1..4294967295> <cr>    # path-007648
+(exec)# show issu capability types <cr>    # path-007633
+(exec)# show issu capability types <number:1..8035> <cr>    # path-010264
+(exec)# show issu capability types <number:1..8035> <number:1..4294967295> <cr>    # path-011573
+(exec)# show issu clients <cr>    # path-003728
+(exec)# show issu clients <number:dynamic> <cr>    # path-016118
+(exec)# show issu clients distributed <cr>    # path-007584
+(exec)# show issu comp-matrix stored <cr>    # path-007661
+(exec)# show issu endpoints <cr>    # path-003686
+(exec)# show issu entities <cr>    # path-003726
+(exec)# show issu entities <number:1..8035> <cr>    # path-007592
+(exec)# show issu image-version compatibility <cr>    # path-007585
+(exec)# show issu message types <cr>    # path-007646
+(exec)# show issu message types <number:1..8035> <cr>    # path-010269
+(exec)# show issu message types <number:1..8035> <number:1..4294967295> <cr>    # path-011575
+(exec)# show issu negotiated capability <cr>    # path-007659
+(exec)# show issu negotiated capability <number:1..4294967295> <cr>    # path-010265
+(exec)# show issu sessions <cr>    # path-003741
+(exec)# show issu sessions <number:1..8035> <cr>    # path-007619
+(exec)# show issu sessions <number:1..8035> <number:1..4294967295> <cr>    # path-010251
+(exec)# show kerberos creds <cr>    # path-001577
+(exec)# show key chain <cr>    # path-003438
+(exec)# show keystore <cr>    # path-000315
+(exec)# show kron schedule <cr>    # path-003952
+(exec)# show l2fib bridge-domain <number:dynamic> <cr>    # path-014105
+(exec)# show l2fib bridge-domain <number:dynamic> address multicast <address> <address> <cr>    # path-024768
+(exec)# show l2fib bridge-domain <number:dynamic> address unicast <address> <cr>    # path-023972
+(exec)# show l2fib bridge-domain <number:dynamic> lisp decap <cr>    # path-021836
+(exec)# show l2fib bridge-domain <number:dynamic> lisp encap <cr>    # path-021830
+(exec)# show l2fib bridge-domain <number:dynamic> lisp mac_oce <cr>    # path-021843
+(exec)# show l2fib bridge-domain <number:dynamic> mpls mac_oce <cr>    # path-021841
+(exec)# show l2fib bridge-domain <number:dynamic> otv decap <cr>    # path-021833
+(exec)# show l2fib bridge-domain <number:dynamic> otv encap <address> <cr>    # path-023975
+(exec)# show l2fib bridge-domain <number:dynamic> port <cr>    # path-017921
+(exec)# show l2fib bridge-domain <number:dynamic> table multicast <cr>    # path-021826
+(exec)# show l2fib bridge-domain <number:dynamic> table unicast <cr>    # path-021817
+(exec)# show l2fib bridge-domain <number:dynamic> vxlan decap <cr>    # path-021842
+(exec)# show l2fib bridge-domain <number:dynamic> vxlan encap <cr>    # path-021835
+(exec)# show l2fib bridge-domain <number:dynamic> vxlan mac_oce <cr>    # path-021851
+(exec)# show l2fib bridge-domain detail <cr>    # path-005407
+(exec)# show l2fib bridge-domain summary <cr>    # path-005384
+(exec)# show l2fib evpn ead local <cr>    # path-009054
+(exec)# show l2fib evpn ead remote <cr>    # path-009062
+(exec)# show l2fib log event <cr>    # path-005402
+(exec)# show l2fib next-hop-list <cr>    # path-001681
+(exec)# show l2fib output-list <cr>    # path-001661
+(exec)# show l2fib path-list <cr>    # path-001682
+(exec)# show l2fib statistics bridge-domain <number:dynamic> <cr>    # path-017964
+(exec)# show l2fib statistics detail <cr>    # path-005455
+(exec)# show l2fib statistics events <cr>    # path-005478
+(exec)# show l2fib statistics events history <cr>    # path-009058
+(exec)# show l2fib statistics summary <cr>    # path-005439
+(exec)# show l2protocol-forward <cr>    # path-000508
+(exec)# show l2protocol-tunnel <cr>    # path-000507
+(exec)# show l2rib clients <cr>    # path-002384
+(exec)# show l2rib counters <cr>    # path-002378
+(exec)# show l2rib deletions <cr>    # path-002381
+(exec)# show l2rib multicast route <cr>    # path-006863
+(exec)# show l2rib notifications <cr>    # path-002359
+(exec)# show l2rib producers <cr>    # path-002383
+(exec)# show l2rib registrations <cr>    # path-002385
+(exec)# show l2rib test <string> msg-buffer <cr>    # path-009537
+(exec)# show l2rib topologies <cr>    # path-002346
+(exec)# show l2rib unicast route <cr>    # path-006852
+(exec)# show l2route evpn summary <cr>    # path-006448
+(exec)# show lacp <number:dynamic> counters <cr>    # path-016623
+(exec)# show lacp <number:dynamic> internal <cr>    # path-016633
+(exec)# show lacp <number:dynamic> neighbor <cr>    # path-016625
+(exec)# show lacp <number:dynamic> sm-state <cr>    # path-016631
+(exec)# show lacp counters <cr>    # path-004201
+(exec)# show lacp internal <cr>    # path-004208
+(exec)# show lacp multi-chassis group <cr>    # path-008037
+(exec)# show lacp multi-chassis load-balance group <cr>    # path-010450
+(exec)# show lacp multi-chassis load-balance port-channel <cr>    # path-010453
+(exec)# show lacp multi-chassis load-balance port-channel <interface> <cr>    # path-023295
+(exec)# show lacp multi-chassis port-channel <cr>    # path-008040
+(exec)# show lacp multi-chassis port-channel <interface> <cr>    # path-020690
+(exec)# show lacp neighbor <cr>    # path-004203
+(exec)# show lacp sm-state <cr>    # path-004207
+(exec)# show lacp sys-id <cr>    # path-004190
+(exec)# show ldap attributes <cr>    # path-003520
+(exec)# show ldap server all <cr>    # path-007462
+(exec)# show license udi <cr>    # path-001288
+(exec)# show line <?ttyline_action@5555896d0f80> <cr>    # path-012822
+(exec)# show line <?ttyline_action@5555896d0f80> history <cr>    # path-016646
+(exec)# show line async-queue <cr>    # path-004231
+(exec)# show line x121-address <cr>    # path-004218
+(exec)# show list <cr>    # path-000447
+(exec)# show llc2 <cr>    # path-000513
+(exec)# show lldp <cr>    # path-000323
+(exec)# show lldp custom-information <cr>    # path-002535
+(exec)# show lldp entry <string> <cr>    # path-006593
+(exec)# show lldp errors <cr>    # path-002466
+(exec)# show lldp interface <cr>    # path-002476
+(exec)# show lldp interface <interface> <cr>    # path-014817
+(exec)# show lldp interface <interface> service-instance <number:1..8000> <cr>    # path-022340
+(exec)# show lldp neighbors <cr>    # path-002541
+(exec)# show lldp neighbors <interface> <cr>    # path-014860
+(exec)# show lldp traffic <cr>    # path-002450
+(exec)# show llp nhrp multicast <cr>    # path-007074
+(exec)# show llp nhrp multicast <interface> <cr>    # path-019621
+(exec)# show lnm bridge <cr>    # path-004217
+(exec)# show lnm bridge <interface> <cr>    # path-016640
+(exec)# show lnm config <cr>    # path-004213
+(exec)# show lnm interface <cr>    # path-004225
+(exec)# show lnm interface <interface> <cr>    # path-016645
+(exec)# show lnm ring <cr>    # path-004223
+(exec)# show lnm station * <cr>    # path-016654
+(exec)# show lnm station <cr>    # path-004232
+(exec)# show local-ack <cr>    # path-000496
+(exec)# show location <cr>    # path-000093
+(exec)# show location admin-tag <cr>    # path-000601
+(exec)# show location ap-proximity <cr>    # path-000694
+(exec)# show location civic-location static <cr>    # path-004373
+(exec)# show location custom-location static <cr>    # path-004394
+(exec)# show location elin-location static <cr>    # path-004381
+(exec)# show location fex all <cr>    # path-004449
+(exec)# show location geo-location static <cr>    # path-004412
+(exec)# show location host <cr>    # path-000657
+(exec)# show logging <cr>    # path-000171
+(exec)# show logging count <cr>    # path-000834
+(exec)# show logging history <cr>    # path-000835
+(exec)# show logging last <number:1..214748364> <cr>    # path-004560
+(exec)# show logging persistent <cr>    # path-000919
+(exec)# show logging xml <cr>    # path-000861
+(exec)# show login <cr>    # path-000275
+(exec)# show login failures <cr>    # path-001733
+(exec)# show mac address-table <cr>    # path-004198
+(exec)# show mac address-table aging-time <cr>    # path-008010
+(exec)# show mac address-table control-packet-learn <cr>    # path-008007
+(exec)# show mac address-table count <cr>    # path-008005
+(exec)# show mac address-table multicast <cr>    # path-008017
+(exec)# show macdb <cr>    # path-000322
+(exec)# show macsec hw <cr>    # path-001480
+(exec)# show macsec hw detail <cr>    # path-005273
+(exec)# show macsec mka-request-notify <cr>    # path-001509
+(exec)# show macsec mka-request-notify clear <cr>    # path-005309
+(exec)# show macsec post <cr>    # path-001476
+(exec)# show macsec statistics interface <interface> <cr>    # path-017818
+(exec)# show macsec statistics interface <interface> <cr>    # path-017834
+(exec)# show macsec statistics interface <interface> rx-sci <hex-string> <cr>    # path-025359
+(exec)# show macsec statistics interface <interface> secy <cr>    # path-021776
+(exec)# show macsec status interface <interface> <cr>    # path-017808
+(exec)# show macsec status interface <interface> <cr>    # path-017822
+(exec)# show macsec summary <cr>    # path-001453
+(exec)# show management event <cr>    # path-004053
+(exec)# show management expression <cr>    # path-004043
+(exec)# show mdns-sd location-filter <cr>    # path-002539
+(exec)# show mdns-sd remote-cache <cr>    # path-002591
+(exec)# show mdns-sd sdg service-peer summary <cr>    # path-009563
+(exec)# show mdns-sd service-definition <cr>    # path-002491
+(exec)# show mdns-sd service-list <cr>    # path-002493
+(exec)# show mdns-sd service-policy <cr>    # path-002554
+(exec)# show mdns-sd service-policy association vlan <cr>    # path-009641
+(exec)# show mdns-sd summary <cr>    # path-002553
+(exec)# show media access-lists <cr>    # path-003974
+(exec)# show media access-lists <number:1..100> <cr>    # path-016372
+(exec)# show memory <cr>    # path-000495
+(exec)# show memory console reserved <cr>    # path-007791
+(exec)# show memory debug incremental allocations <cr>    # path-010336
+(exec)# show memory debug incremental leaks <cr>    # path-010337
+(exec)# show memory debug incremental status <cr>    # path-010331
+(exec)# show memory debug leaks <cr>    # path-007822
+(exec)# show memory debug references <?general_pointer_number_action@55558973b430> <?general_pointer_number_action@55558973b700> <cr>    # path-025421
+(exec)# show memory debug references dangling <cr>    # path-010334
+(exec)# show memory debug unused <cr>    # path-007807
+(exec)# show memory events <cr>    # path-003993
+(exec)# show memory failures alloc <cr>    # path-007771
+(exec)# show memory lite-chunks statistics <cr>    # path-007758
+(exec)# show memory overflow <cr>    # path-003956
+(exec)# show memory overflow poisoning <cr>    # path-007827
+(exec)# show memory traceback <number:1..4294967294> <cr>    # path-007842
+(exec)# show memory traceback exclusive <cr>    # path-007826
+(exec)# show memory traceback totals <cr>    # path-007835
+(exec)# show mfib background <cr>    # path-003065

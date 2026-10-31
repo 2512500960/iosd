@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-052.md
+
+(config)# do-exec show crypto key pubkey-chain rsa address <address> <cr>    # path-058838
+(config)# do-exec show crypto key pubkey-chain rsa name <string> <cr>    # path-058830
+(config)# do-exec show crypto key pubkey-chain rsa vrf <string> <cr>    # path-058847
+(config)# do-exec show crypto key storage <cr>    # path-042463
+(config)# do-exec show crypto pki server <cr>    # path-042539
+(config)# do-exec show cts <cr>    # path-027745
+(config)# do-exec show cts ap sgt-info <string> <cr>    # path-051291
+(config)# do-exec show cts authorization entries <cr>    # path-042707
+(config)# do-exec show cts credentials <cr>    # path-033210
+(config)# do-exec show cts environment-data <cr>    # path-033251
+(config)# do-exec show cts ha sync-status <cr>    # path-042780
+(config)# do-exec show cts interface <cr>    # path-033278
+(config)# do-exec show cts interface <interface> <cr>    # path-061169
+(config)# do-exec show cts interface brief <cr>    # path-042633
+(config)# do-exec show cts interface summary <cr>    # path-042656
+(config)# do-exec show cts keystore <cr>    # path-033225
+(config)# do-exec show cts macsec counters interface <interface> <cr>    # path-062218
+(config)# do-exec show cts pacs <cr>    # path-033195
+(config)# do-exec show cts policy <cr>    # path-033332
+(config)# do-exec show cts policy peer <cr>    # path-042721
+(config)# do-exec show cts policy sgt <cr>    # path-042824
+(config)# do-exec show cts policy-server details active <cr>    # path-051247
+(config)# do-exec show cts policy-server details all <cr>    # path-051268
+(config)# do-exec show cts policy-server details name <string> <cr>    # path-056508
+(config)# do-exec show cts policy-server statistics active <cr>    # path-051231
+(config)# do-exec show cts policy-server statistics all <cr>    # path-051255
+(config)# do-exec show cts policy-server statistics name <string> <cr>    # path-056502
+(config)# do-exec show cts provisioning <cr>    # path-033329
+(config)# do-exec show cts provisioning queue <cr>    # path-042727
+(config)# do-exec show cts rbacl <cr>    # path-033291
+(config)# do-exec show cts role-based counters <cr>    # path-043122
+(config)# do-exec show cts role-based permissions <cr>    # path-043155
+(config)# do-exec show cts role-based sgt-map <prefix:dynamic> <cr>    # path-061785
+(config)# do-exec show cts role-based sgt-map platform <cr>    # path-051410
+(config)# do-exec show cts server-list <cr>    # path-033241
+(config)# do-exec show cts sg-epg translations <cr>    # path-042849
+(config)# do-exec show cts sg-epg translations all <cr>    # path-051324
+(config)# do-exec show cts sg-epg translations default-epg <cr>    # path-051298
+(config)# do-exec show cts sg-epg translations default-sg <cr>    # path-051275
+(config)# do-exec show cts sxp ap connections <string> <cr>    # path-056579
+(config)# do-exec show cts sxp ap summary <string> <cr>    # path-056583
+(config)# do-exec show cts sxp connections <cr>    # path-042946
+(config)# do-exec show cts sxp connections brief <cr>    # path-051404
+(config)# do-exec show cts sxp export-import-group <cr>    # path-043139
+(config)# do-exec show cts sxp export-list <cr>    # path-043044
+(config)# do-exec show cts sxp filter-group <cr>    # path-043067
+(config)# do-exec show cts sxp filter-list <cr>    # path-042970
+(config)# do-exec show cts sxp import-list <cr>    # path-043064
+(config)# do-exec show cts sxp sgt-map <cr>    # path-042971
+(config)# do-exec show cts sxp sgt-map brief <cr>    # path-051424
+(config)# do-exec show cts transaction-id <cr>    # path-033177
+(config)# do-exec show cwmp map hosttable <cr>    # path-042120
+(config)# do-exec show cwmp map landevice <cr>    # path-041963
+(config)# do-exec show cwmp map lanethernetinterface <cr>    # path-042029
+(config)# do-exec show cwmp map manageddevice <cr>    # path-042073
+(config)# do-exec show cwmp map portmapping <cr>    # path-042051
+(config)# do-exec show cwmp map routetable <cr>    # path-042095
+(config)# do-exec show cwmp map wanconnectiondevice <cr>    # path-042011
+(config)# do-exec show cwmp map wandevice <cr>    # path-041990
+(config)# do-exec show cwmp methods <cr>    # path-032807
+(config)# do-exec show cwmp parameter all <cr>    # path-041912
+(config)# do-exec show cwmp parameter notify all <cr>    # path-050647
+(config)# do-exec show cwmp persistent data <cr>    # path-041938
+(config)# do-exec show cwmp session <cr>    # path-032837
+(config)# do-exec show dampening interface <cr>    # path-029548
+(config)# do-exec show data-corruption <cr>    # path-026967
+(config)# do-exec show data-descriptor controller <cr>    # path-033260
+(config)# do-exec show data-descriptor hwidb <cr>    # path-033272
+(config)# do-exec show data-descriptor queue <cr>    # path-033312
+(config)# do-exec show data-descriptor queue old <cr>    # path-042704
+(config)# do-exec show data-descriptor swidb <cr>    # path-033285
+(config)# do-exec show database clients <cr>    # path-032943
+(config)# do-exec show database data <string> <number:0..2> <cr>    # path-050823
+(config)# do-exec show database names <cr>    # path-032918
+(config)# do-exec show dcm assa <cr>    # path-033221
+(config)# do-exec show dcm client <cr>    # path-033234
+(config)# do-exec show dcm client <number:1..4294967295> subscription <cr>    # path-051181
+(config)# do-exec show dcm data-providers <cr>    # path-033207
+(config)# do-exec show dcm errcode <number:0..60> <cr>    # path-042611
+(config)# do-exec show dcm session <cr>    # path-033231
+(config)# do-exec show debugging <cr>    # path-026788
+(config)# do-exec show debugging condition <cr>    # path-029128
+(config)# do-exec show derived-config <cr>    # path-026852
+(config)# do-exec show derived-config <interface> <cr>    # path-060571
+(config)# do-exec show device-tracking capture-policy bd <number:dynamic> <cr>    # path-062967
+(config)# do-exec show device-tracking counters bd <number:dynamic> <cr>    # path-062966
+(config)# do-exec show device-tracking database bdid <number:dynamic> <cr>    # path-062969
+(config)# do-exec show device-tracking events <cr>    # path-032812
+(config)# do-exec show device-tracking features <cr>    # path-032839
+(config)# do-exec show device-tracking internal access-list interface <interface> <cr>    # path-062213
+(config)# do-exec show device-tracking internal counters <cr>    # path-042042
+(config)# do-exec show device-tracking internal crimson-dhcp-svr <cr>    # path-042174
+(config)# do-exec show device-tracking internal crimson-fault-evq <cr>    # path-042155
+(config)# do-exec show device-tracking internal crimson-ip <cr>    # path-042089
+(config)# do-exec show device-tracking internal crimson-ip-evq <cr>    # path-042135
+(config)# do-exec show device-tracking internal crimson-mac <cr>    # path-042065
+(config)# do-exec show device-tracking internal crimson-mac-evq <cr>    # path-042114
+(config)# do-exec show device-tracking internal dhcp-server-stats <?ipv4orv6_addr_action@55558b147178> <cr>    # path-061765
+(config)# do-exec show device-tracking internal groups <cr>    # path-042211
+(config)# do-exec show device-tracking internal notify interface <interface> <cr>    # path-062211
+(config)# do-exec show device-tracking messages <cr>    # path-032848
+(config)# do-exec show device-tracking policies bd <number:dynamic> <cr>    # path-062968
+(config)# do-exec show device-tracking policy <string> <cr>    # path-042004
+(config)# do-exec show dhcp lease <cr>    # path-033171
+(config)# do-exec show dhcp lease <interface> <cr>    # path-061165
+(config)# do-exec show dhcp server <cr>    # path-033135
+(config)# do-exec show dhcp-server-tracking database <cr>    # path-032819
+(config)# do-exec show dhcp-server-tracking policy <cr>    # path-032757
+(config)# do-exec show diag chassis eeprom <cr>    # path-043704
+(config)# do-exec show diag subslot <?slotcard_func_action@5555898a8e68> eeprom <cr>    # path-061800
+(config)# do-exec show diagnostic bootup level <cr>    # path-043268
+(config)# do-exec show diagnostic cns publish <cr>    # path-043384
+(config)# do-exec show diagnostic content slot <?option@5555898db448> <cr>    # path-061791
+(config)# do-exec show diagnostic content slot <cr>    # path-043419
+(config)# do-exec show diagnostic description slot <?option@5555898db620> test <?number_help_func_action@555589914ac0> <string> <cr>    # path-062919
+(config)# do-exec show diagnostic events slot <?option@5555898db090> <cr>    # path-061790
+(config)# do-exec show diagnostic events slot all <cr>    # path-051753
+(config)# do-exec show diagnostic level <cr>    # path-033598
+(config)# do-exec show diagnostic ondemand settings <cr>    # path-043239
+(config)# do-exec show diagnostic ondemand test-parameter slot <?option@5555898dbd48> test <?number_help_func_action@555589914f68> <cr>    # path-062996
+(config)# do-exec show diagnostic result slot <?option@5555898dae48> <cr>    # path-061795
+(config)# do-exec show diagnostic result slot <?option@5555898dae48> xml <cr>    # path-062222
+(config)# do-exec show diagnostic result slot <cr>    # path-043483
+(config)# do-exec show diagnostic schedule slot <?option@5555898db270> <cr>    # path-061792
+(config)# do-exec show diagnostic schedule slot <cr>    # path-043438
+(config)# do-exec show diagnostic simulation failure slot <?option@5555898db7f8> <cr>    # path-062221
+(config)# do-exec show diagnostic simulation failure slot <cr>    # path-051793
+(config)# do-exec show diagnostic slot <?option@5555898dac70> <cr>    # path-061190
+(config)# do-exec show diagnostic slot <cr>    # path-033762
+(config)# do-exec show diagnostic status <cr>    # path-033558
+(config)# do-exec show dialer <cr>    # path-027159
+(config)# do-exec show dialer <interface> <cr>    # path-060621
+(config)# do-exec show dialer dnis group <cr>    # path-036326
+(config)# do-exec show dialer dnis number <cr>    # path-036192
+(config)# do-exec show dialer dnis range <cr>    # path-036258
+(config)# do-exec show dialer maps <cr>    # path-029777
+(config)# do-exec show dialer sessions <cr>    # path-029885
+(config)# do-exec show diameter attributes <cr>    # path-033941
+(config)# do-exec show diameter gx session all <cr>    # path-052031
+(config)# do-exec show diameter gx session id <string> <cr>    # path-056765
+(config)# do-exec show diameter gx statistics <cr>    # path-043835
+(config)# do-exec show diameter id-manager statistics <cr>    # path-043834
+(config)# do-exec show diameter peer <cr>    # path-033945
+(config)# do-exec show diameter redundancy <cr>    # path-033934
+(config)# do-exec show dlep clients <cr>    # path-033108
+(config)# do-exec show dlep clients <interface> <cr>    # path-061155
+(config)# do-exec show dlep config <cr>    # path-033098
+(config)# do-exec show dlep config <interface> <cr>    # path-061154
+(config)# do-exec show dlep counters <cr>    # path-033125
+(config)# do-exec show dlep counters <interface> <cr>    # path-061158
+(config)# do-exec show dlep neighbors <cr>    # path-033118
+(config)# do-exec show dlep neighbors <interface> <cr>    # path-061156
+(config)# do-exec show dlsw capabilities interface <interface> <cr>    # path-061797
+(config)# do-exec show dlsw fastcache <cr>    # path-033809
+(config)# do-exec show dmvpn <cr>    # path-027788
+(config)# do-exec show dmvpn debug-condition <cr>    # path-033672
+(config)# do-exec show dmvpn detail rwatch <cr>    # path-043440
+(config)# do-exec show dmvpn rd <?vrf_rd_action@555589bd0ac0> <cr>    # path-061188
+(config)# do-exec show dmvpn rd <?vrf_rd_action@555589bd0ac0> debug-condition <cr>    # path-061789
+(config)# do-exec show dmvpn rd <?vrf_rd_action@555589bd0ac0> detail rwatch <cr>    # path-062220
+(config)# do-exec show dns-lookup cache <cr>    # path-032224
+(config)# do-exec show dns-lookup hostname <string> <cr>    # path-040850
+(config)# do-exec show dnsix <cr>    # path-027652
+(config)# do-exec show dot1q-tunnel <cr>    # path-027806
+(config)# do-exec show dot1q-tunnel interface <interface> <cr>    # path-061191
+(config)# do-exec show drip <cr>    # path-027780
+(config)# do-exec show drops <cr>    # path-027412
+(config)# do-exec show drops bqs <cr>    # path-030506
+(config)# do-exec show drops crypto <cr>    # path-030458
+(config)# do-exec show drops firewall <cr>    # path-030482
+(config)# do-exec show drops history qfp <cr>    # path-037244
+(config)# do-exec show drops history qfp clear <cr>    # path-046621
+(config)# do-exec show drops interface <cr>    # path-030338
+(config)# do-exec show drops ip-all <cr>    # path-030407
+(config)# do-exec show drops nat <cr>    # path-030384
+(config)# do-exec show drops punt <cr>    # path-030432
+(config)# do-exec show drops qfp <cr>    # path-030309
+(config)# do-exec show drops qos <cr>    # path-030363
+(config)# do-exec show drops thresholds <cr>    # path-030561
+(config)# do-exec show dspfarm <cr>    # path-026715
+(config)# do-exec show dspfarm dsp stats <number:1..2147483647> <cr>    # path-044585
+(config)# do-exec show dspfarm utilization profile all <cr>    # path-044430
+(config)# do-exec show dtp <cr>    # path-027620
+(config)# do-exec show dtp interface <cr>    # path-031927
+(config)# do-exec show dtp interface <interface> <cr>    # path-061001
+(config)# do-exec show dwnld_mgr AAA Unique ID <number:0..4294967295> <cr>    # path-060978
+(config)# do-exec show dwnld_mgr profiles all <cr>    # path-038922
+(config)# do-exec show dxi map <cr>    # path-031286
+(config)# do-exec show dxi pvc <cr>    # path-031343
+(config)# do-exec show dxi pvc interface <interface> <cr>    # path-061497
+(config)# do-exec show eapol <interface> <cr>    # path-060742
+(config)# do-exec show eigrp address-family ipv4 accounting <cr>    # path-050551
+(config)# do-exec show eigrp address-family ipv4 interfaces <cr>    # path-050533
+(config)# do-exec show eigrp address-family ipv4 interfaces <interface> <cr>    # path-062174
+(config)# do-exec show eigrp address-family ipv4 neighbors <cr>    # path-050559
+(config)# do-exec show eigrp address-family ipv4 neighbors <interface> <cr>    # path-062177
+(config)# do-exec show eigrp address-family ipv4 perf-stats <cr>    # path-050615
+(config)# do-exec show eigrp address-family ipv4 sia-event <cr>    # path-050588
+(config)# do-exec show eigrp address-family ipv4 sia-statistics <cr>    # path-050621
+(config)# do-exec show eigrp address-family ipv4 timers <cr>    # path-050489
+(config)# do-exec show eigrp address-family ipv4 topology <cr>    # path-050781
+(config)# do-exec show eigrp address-family ipv4 topology <prefix:dynamic> <cr>    # path-062185
+(config)# do-exec show eigrp address-family ipv4 traffic <cr>    # path-050505
+(config)# do-exec show eigrp address-family ipv6 accounting <cr>    # path-050506
+(config)# do-exec show eigrp address-family ipv6 interfaces <cr>    # path-050491
+(config)# do-exec show eigrp address-family ipv6 interfaces <interface> <cr>    # path-062171
+(config)# do-exec show eigrp address-family ipv6 neighbors <cr>    # path-050510
+(config)# do-exec show eigrp address-family ipv6 neighbors <interface> <cr>    # path-062173
+(config)# do-exec show eigrp address-family ipv6 perf-stats <cr>    # path-050586
+(config)# do-exec show eigrp address-family ipv6 sia-event <cr>    # path-050553
+(config)# do-exec show eigrp address-family ipv6 sia-statistics <cr>    # path-050589
+(config)# do-exec show eigrp address-family ipv6 timers <cr>    # path-050460
+(config)# do-exec show eigrp address-family ipv6 topology <cr>    # path-050690
+(config)# do-exec show eigrp address-family ipv6 topology <prefix:dynamic> <cr>    # path-062178
+(config)# do-exec show eigrp address-family ipv6 traffic <cr>    # path-050473
+(config)# do-exec show eigrp parser <cr>    # path-032506
+(config)# do-exec show eigrp plugins <cr>    # path-032520
+(config)# do-exec show eigrp protocols <cr>    # path-032501
+(config)# do-exec show eigrp service-family external-client <cr>    # path-041537
+(config)# do-exec show eigrp service-family ipv4 accounting <cr>    # path-050526
+(config)# do-exec show eigrp service-family ipv4 clients <cr>    # path-050620
+(config)# do-exec show eigrp service-family ipv4 clients detail <cr>    # path-056129
+(config)# do-exec show eigrp service-family ipv4 interfaces <cr>    # path-050509
+(config)# do-exec show eigrp service-family ipv4 interfaces <interface> <cr>    # path-062172
+(config)# do-exec show eigrp service-family ipv4 neighbors <cr>    # path-050534
+(config)# do-exec show eigrp service-family ipv4 neighbors <interface> <cr>    # path-062175
+(config)# do-exec show eigrp service-family ipv4 sia-event <cr>    # path-050575
+(config)# do-exec show eigrp service-family ipv4 sia-statistics <cr>    # path-050601
+(config)# do-exec show eigrp service-family ipv4 subscriptions <cr>    # path-050643
+(config)# do-exec show eigrp service-family ipv4 subscriptions detail <cr>    # path-056142
+(config)# do-exec show eigrp service-family ipv4 timers <cr>    # path-050472
+(config)# do-exec show eigrp service-family ipv4 topology <cr>    # path-050708
+(config)# do-exec show eigrp service-family ipv4 traffic <cr>    # path-050488
+(config)# do-exec show eigrp service-family ipv6 accounting <cr>    # path-050572
+(config)# do-exec show eigrp service-family ipv6 clients <cr>    # path-050666
+(config)# do-exec show eigrp service-family ipv6 clients detail <cr>    # path-056158
+(config)# do-exec show eigrp service-family ipv6 interfaces <cr>    # path-050558
+(config)# do-exec show eigrp service-family ipv6 interfaces <interface> <cr>    # path-062176
+(config)# do-exec show eigrp service-family ipv6 neighbors <cr>    # path-050578
+(config)# do-exec show eigrp service-family ipv6 neighbors <interface> <cr>    # path-062179
+(config)# do-exec show eigrp service-family ipv6 sia-event <cr>    # path-050599
+(config)# do-exec show eigrp service-family ipv6 sia-statistics <cr>    # path-050644
+(config)# do-exec show eigrp service-family ipv6 subscriptions <cr>    # path-050685
+(config)# do-exec show eigrp service-family ipv6 subscriptions detail <cr>    # path-056172
+(config)# do-exec show eigrp service-family ipv6 timers <cr>    # path-050504
+(config)# do-exec show eigrp service-family ipv6 topology <cr>    # path-050745
+(config)# do-exec show eigrp service-family ipv6 traffic <cr>    # path-050525
+(config)# do-exec show eigrp tech-support <cr>    # path-032517
+(config)# do-exec show end-user-license-agreement <cr>    # path-026868
+(config)# do-exec show endpoint-tracker <cr>    # path-027656
+(config)# do-exec show endpoint-tracker <interface> <cr>    # path-060724
+(config)# do-exec show endpoint-tracker dns-probe <cr>    # path-032111
+(config)# do-exec show endpoint-tracker history <cr>    # path-032131
+(config)# do-exec show endpoint-tracker records <cr>    # path-032218
+(config)# do-exec show endpoint-tracker sla-mode <cr>    # path-032185
+(config)# do-exec show endpoint-tracker sla-profile <cr>    # path-032169
+(config)# do-exec show endpoint-tracker sla-statistics <cr>    # path-032146
+(config)# do-exec show endpoint-tracker sla-status <cr>    # path-032157
+(config)# do-exec show endpoint-tracker static-route <cr>    # path-032234
+(config)# do-exec show endpoint-tracker tracker-group <cr>    # path-032202
+(config)# do-exec show entry <cr>    # path-027484
+(config)# do-exec show environment <cr>    # path-027770
+(config)# do-exec show environment all <cr>    # path-033533
+(config)# do-exec show environment chassis <number:1..2> R0 <cr>    # path-051654
+(config)# do-exec show environment chassis active R0 <cr>    # path-051668
+(config)# do-exec show environment chassis standby R0 <cr>    # path-051683
+(config)# do-exec show environment counters <cr>    # path-033583
+(config)# do-exec show environment history <string> <cr>    # path-043156
+(config)# do-exec show environment location <string> <cr>    # path-043174
+(config)# do-exec show environment sensor <string> <cr>    # path-043209
+(config)# do-exec show environment table <string> <cr>    # path-043190
+(config)# do-exec show eobc <cr>    # path-027345
+(config)# do-exec show eobc controller <cr>    # path-030360
+(config)# do-exec show eobc interface <cr>    # path-030378
+(config)# do-exec show errdisable detect <cr>    # path-033885
+(config)# do-exec show errdisable flap-values <cr>    # path-033888
+(config)# do-exec show errdisable recovery <cr>    # path-033882
+(config)# do-exec show etherchannel load-balancing <cr>    # path-030500
+(config)# do-exec show etherchannel summary <cr>    # path-030557
+(config)# do-exec show ethernet cfm capabilities <cr>    # path-036753
+(config)# do-exec show ethernet cfm capabilities interface <interface> <cr>    # path-061944
+(config)# do-exec show ethernet cfm ccm-learning-database <cr>    # path-037039
+(config)# do-exec show ethernet cfm domain <cr>    # path-036757
+(config)# do-exec show ethernet cfm efd meps <cr>    # path-046077
+(config)# do-exec show ethernet cfm errors <cr>    # path-036572
+(config)# do-exec show ethernet cfm errors configuration <cr>    # path-045908
+(config)# do-exec show ethernet cfm fast-timeout database interfaces <cr>    # path-053639
+(config)# do-exec show ethernet cfm fast-timeout database remote-meps <cr>    # path-053689
+(config)# do-exec show ethernet cfm fast-timeout statistics <cr>    # path-046219
+(config)# do-exec show ethernet cfm internal counters packet <cr>    # path-053665
+(config)# do-exec show ethernet cfm internal database crosscheck-meps <cr>    # path-053978
+(config)# do-exec show ethernet cfm internal database domains <cr>    # path-053832
+(config)# do-exec show ethernet cfm internal database interfaces <cr>    # path-054122
+(config)# do-exec show ethernet cfm internal database interfaces <interface> <cr>    # path-062330
+(config)# do-exec show ethernet cfm internal database mac-learning <cr>    # path-054174
+(config)# do-exec show ethernet cfm internal database meps <cr>    # path-054057
+(config)# do-exec show ethernet cfm internal database meps interface <interface> <cr>    # path-062520
+(config)# do-exec show ethernet cfm internal database mips <cr>    # path-053874
+(config)# do-exec show ethernet cfm internal database mips interface <interface> <cr>    # path-062519
+(config)# do-exec show ethernet cfm internal database oir-config crosscheck-meps <cr>    # path-057835
+(config)# do-exec show ethernet cfm internal database oir-config interfaces <cr>    # path-057803
+(config)# do-exec show ethernet cfm internal database oir-config meps <cr>    # path-057823
+(config)# do-exec show ethernet cfm internal database ports <cr>    # path-054149
+(config)# do-exec show ethernet cfm internal database ports <interface> <cr>    # path-062327
+(config)# do-exec show ethernet cfm internal database remote-meps <cr>    # path-054105
+(config)# do-exec show ethernet cfm internal database remote-meps interface <interface> <cr>    # path-062522
+(config)# do-exec show ethernet cfm internal database services <cr>    # path-053875
+(config)# do-exec show ethernet cfm internal database transports <cr>    # path-054104
+(config)# do-exec show ethernet cfm latching-loopback active <cr>    # path-061356
+(config)# do-exec show ethernet cfm latching-loopback active brief <cr>    # path-061937
+(config)# do-exec show ethernet cfm latching-loopback discover-phase mip detail <cr>    # path-062310
+(config)# do-exec show ethernet cfm maintenance-points database <cr>    # path-045737
+(config)# do-exec show ethernet cfm maintenance-points local <cr>    # path-046028
+(config)# do-exec show ethernet cfm maintenance-points local interface <interface> <cr>    # path-062287
+(config)# do-exec show ethernet cfm maintenance-points remote <cr>    # path-045937
+(config)# do-exec show ethernet cfm maintenance-points remote crosscheck <cr>    # path-053437
+(config)# do-exec show ethernet cfm maintenance-points remote detail <cr>    # path-053391
+(config)# do-exec show ethernet cfm mpdb <cr>    # path-036391
+(config)# do-exec show ethernet cfm pm <cr>    # path-036389
+(config)# do-exec show ethernet cfm pm slm responder <cr>    # path-053346
+(config)# do-exec show ethernet cfm smep <cr>    # path-036702
+(config)# do-exec show ethernet cfm smep interface <interface> <cr>    # path-061935
+(config)# do-exec show ethernet cfm statistics <cr>    # path-036449
+(config)# do-exec show ethernet cfm traceroute-cache <cr>    # path-036717
+(config)# do-exec show ethernet dot1ad <cr>    # path-030724
+(config)# do-exec show ethernet dot1ad interface <interface> <cr>    # path-061419
+(config)# do-exec show ethernet l2ctrl interface <interface> <cr>    # path-061316
+(config)# do-exec show ethernet l2ctrl vlan <cr>    # path-036193
+(config)# do-exec show ethernet lmi evc <cr>    # path-036268
+(config)# do-exec show ethernet lmi evc detail <cr>    # path-045696
+(config)# do-exec show ethernet lmi evc detail <string> interface <interface> <cr>    # path-062492
+(config)# do-exec show ethernet lmi evc map interface <interface> <cr>    # path-062277
+(config)# do-exec show ethernet lmi parameters <cr>    # path-036122
+(config)# do-exec show ethernet lmi parameters interface <interface> <cr>    # path-061898
+(config)# do-exec show ethernet lmi statistics <cr>    # path-036039
+(config)# do-exec show ethernet lmi statistics interface <interface> <cr>    # path-061894
+(config)# do-exec show ethernet lmi uni map <cr>    # path-045693
+(config)# do-exec show ethernet lmi uni map interface <interface> <cr>    # path-062279
+(config)# do-exec show ethernet loopback active <cr>    # path-060877
+(config)# do-exec show ethernet loopback active brief <cr>    # path-061352
+(config)# do-exec show ethernet loopback permitted <cr>    # path-060873
+(config)# do-exec show ethernet mac-tunnel engine slot <number:dynamic> <cr>    # path-062096
+(config)# do-exec show ethernet oam debug link-monitor <cr>    # path-045972
+(config)# do-exec show ethernet oam debug link-monitor interface <interface> <cr>    # path-062290
+(config)# do-exec show ethernet oam debug loopback <cr>    # path-045952
+(config)# do-exec show ethernet oam discovery <cr>    # path-036120
+(config)# do-exec show ethernet oam discovery interface <interface> <cr>    # path-061896
+(config)# do-exec show ethernet oam runtime <cr>    # path-036194
+(config)# do-exec show ethernet oam runtime interface <interface> <cr>    # path-061901
+(config)# do-exec show ethernet oam statistics <cr>    # path-036328
+(config)# do-exec show ethernet oam statistics interface <interface> <cr>    # path-061910
+(config)# do-exec show ethernet oam status <cr>    # path-036260
+(config)# do-exec show ethernet oam status interface <interface> <cr>    # path-061903
+(config)# do-exec show ethernet oam summary <cr>    # path-036305
+(config)# do-exec show ethernet service evc <cr>    # path-040599
+(config)# do-exec show ethernet service evc interface <interface> <cr>    # path-062122
+(config)# do-exec show ethernet service instance <cr>    # path-040762
+(config)# do-exec show ethernet service instance interface <interface> <cr>    # path-062139
+(config)# do-exec show ethernet service instance policy-map <cr>    # path-049655
+(config)# do-exec show ethernet service interface <cr>    # path-040656
+(config)# do-exec show ethernet service interface <interface> <cr>    # path-061627
+(config)# do-exec show ethernet service internal back-trace <cr>    # path-049814
+(config)# do-exec show ethernet service internal db global <cr>    # path-055711
+(config)# do-exec show ethernet service internal db pcb interface <interface> <cr>    # path-062555
+(config)# do-exec show ethernet service internal db vport all <cr>    # path-058521
+(config)# do-exec show ethernet service ipc statistics <cr>    # path-049774
+(config)# do-exec show ethernet service mac-tunnel <number:dynamic> <cr>    # path-061622
+(config)# do-exec show ethernet service mac-tunnel summary <cr>    # path-049777
+(config)# do-exec show event manager detector all <cr>    # path-061805
+(config)# do-exec show event manager detector application <cr>    # path-061812
+(config)# do-exec show event manager detector cli <cr>    # path-061830
+(config)# do-exec show event manager detector config <cr>    # path-061833
+(config)# do-exec show event manager detector counter <cr>    # path-061829
+(config)# do-exec show event manager detector env <cr>    # path-061832
+(config)# do-exec show event manager detector generic <cr>    # path-061816
+(config)# do-exec show event manager detector gold <cr>    # path-061831
+(config)# do-exec show event manager detector interface <cr>    # path-061828
+(config)# do-exec show event manager detector ioswdsysmon <cr>    # path-061827
+(config)# do-exec show event manager detector mat <cr>    # path-061810
+(config)# do-exec show event manager detector neighbor-discovery <cr>    # path-061809
+(config)# do-exec show event manager detector nhrp <cr>    # path-061815
+(config)# do-exec show event manager detector none <cr>    # path-061826
+(config)# do-exec show event manager detector oir <cr>    # path-061825
+(config)# do-exec show event manager detector resource <cr>    # path-061808
+(config)# do-exec show event manager detector rf <cr>    # path-061824
+(config)# do-exec show event manager detector routing <cr>    # path-061811
+(config)# do-exec show event manager detector rpc <cr>    # path-061806
+(config)# do-exec show event manager detector rpc counters <cr>    # path-062229
+(config)# do-exec show event manager detector rpc session <cr>    # path-062228
+(config)# do-exec show event manager detector snmp <cr>    # path-061823
+(config)# do-exec show event manager detector snmp-notification <cr>    # path-061820
+(config)# do-exec show event manager detector snmp-object <cr>    # path-061821
+(config)# do-exec show event manager detector syslog <cr>    # path-061818
+(config)# do-exec show event manager detector test <cr>    # path-061834
+(config)# do-exec show event manager detector timer <cr>    # path-061814
+(config)# do-exec show event manager detector track <cr>    # path-061807
+(config)# do-exec show event manager directory user policy <cr>    # path-056729
+(config)# do-exec show event manager environment <cr>    # path-043712
+(config)# do-exec show event manager history events <cr>    # path-051995
+(config)# do-exec show event manager history events maximum <number:dynamic> <cr>    # path-062459

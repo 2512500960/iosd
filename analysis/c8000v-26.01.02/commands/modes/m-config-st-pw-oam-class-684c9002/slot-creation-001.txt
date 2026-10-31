@@ -1,0 +1,19 @@
+# 模式 config-st-pw-oam-class；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-st-pw-oam-class)# ack enable <cr>    # static_slot_creation_candidates-004422
+(config-st-pw-oam-class)# default ack enable <cr>    # static_slot_creation_candidates-004429
+(config-st-pw-oam-class)# default keepalive <cr>    # static_slot_creation_candidates-004424
+(config-st-pw-oam-class)# default timeout refresh ack <cr>    # static_slot_creation_candidates-004435
+(config-st-pw-oam-class)# default timeout refresh send <cr>    # static_slot_creation_candidates-004432
+(config-st-pw-oam-class)# default ttl <cr>    # static_slot_creation_candidates-004427
+(config-st-pw-oam-class)# keepalive <number:1..4095> <cr>    # static_slot_creation_candidates-004423
+(config-st-pw-oam-class)# no ack enable <cr>    # static_slot_creation_candidates-004428
+(config-st-pw-oam-class)# no keepalive <cr>    # static_slot_creation_candidates-004421
+(config-st-pw-oam-class)# no timeout refresh ack <cr>    # static_slot_creation_candidates-004433
+(config-st-pw-oam-class)# no timeout refresh send <cr>    # static_slot_creation_candidates-004430
+(config-st-pw-oam-class)# no ttl <cr>    # static_slot_creation_candidates-004425
+(config-st-pw-oam-class)# timeout refresh ack <number:0..4095> <cr>    # static_slot_creation_candidates-004434
+(config-st-pw-oam-class)# timeout refresh send <number:1..4095> <cr>    # static_slot_creation_candidates-004431
+(config-st-pw-oam-class)# ttl <number:1..255> <cr>    # static_slot_creation_candidates-004426

@@ -1,0 +1,13 @@
+# 模式 l2-vfi-neighbor；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-vfi-neighbor)# default local interface <number:1..4097> <cr>    # static_slot_creation_candidates-004527
+(config-vfi-neighbor)# default mpls control-word <cr>    # static_slot_creation_candidates-004525
+(config-vfi-neighbor)# default mpls label <cr>    # static_slot_creation_candidates-004524
+(config-vfi-neighbor)# local interface <number:1..4097> <cr>    # static_slot_creation_candidates-004521
+(config-vfi-neighbor)# mpls control-word <cr>    # static_slot_creation_candidates-004520
+(config-vfi-neighbor)# mpls label <number:dynamic> <number:16..1048575> <cr>    # static_slot_creation_candidates-004528
+(config-vfi-neighbor)# no local interface <number:1..4097> <cr>    # static_slot_creation_candidates-004526
+(config-vfi-neighbor)# no mpls control-word <cr>    # static_slot_creation_candidates-004523
+(config-vfi-neighbor)# no mpls label <cr>    # static_slot_creation_candidates-004522

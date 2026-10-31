@@ -1,0 +1,273 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-014.md
+
+(config)# default stcapp call-control mode feature <cr>    # conditional_registration_candidates-001890
+(config)# default stcapp call-control mode standard <cr>    # conditional_registration_candidates-001875
+(config)# default stcapp ccm-group <cr>    # conditional_registration_candidates-000226
+(config)# default stcapp feature access-code <cr>    # conditional_registration_candidates-000599
+(config)# default stcapp feature callback <cr>    # conditional_registration_candidates-000637
+(config)# default stcapp feature speed-dial <cr>    # conditional_registration_candidates-000624
+(config)# default stcapp register capability <cr>    # conditional_registration_candidates-000697
+(config)# default stcapp security mode <cr>    # conditional_registration_candidates-000687
+(config)# default stcapp security tls-version <cr>    # conditional_registration_candidates-000708
+(config)# default stcapp security trustpoint <cr>    # conditional_registration_candidates-000666
+(config)# default stcapp supplementary-services <cr>    # conditional_registration_candidates-000285
+(config)# default stcapp timer <cr>    # conditional_registration_candidates-000246
+(config)# default stcapp timer roh <cr>    # conditional_registration_candidates-000612
+(config)# default telephony-service <cr>    # conditional_registration_candidates-000167
+(config)# default translate ruleset <string> <cr>    # conditional_registration_candidates-001467
+(config)# default translate use telnet <address> <cr>    # conditional_registration_candidates-003119
+(config)# default translation-rule <cr>    # conditional_registration_candidates-000117
+(config)# default utd <cr>    # conditional_registration_candidates-000142
+(config)# default utd engine advanced <cr>    # conditional_registration_candidates-001180
+(config)# default utd engine standard <cr>    # conditional_registration_candidates-001221
+(config)# default utd engine standard multi-tenancy <cr>    # conditional_registration_candidates-002660
+(config)# default utd engine standard unified-policy <cr>    # conditional_registration_candidates-002741
+(config)# default utd multi-tenancy <cr>    # conditional_registration_candidates-000371
+(config)# default utd threat-inspection whitelist <cr>    # conditional_registration_candidates-001174
+(config)# default utd web-filter block local-server profile <string> <cr>    # conditional_registration_candidates-006823
+(config)# default utd web-filter block page profile <string> <cr>    # conditional_registration_candidates-006855
+(config)# default utd web-filter domain profile <string> <cr>    # conditional_registration_candidates-005142
+(config)# default utd web-filter sourcedb <string> <cr>    # conditional_registration_candidates-003121
+(config)# default utd web-filter url profile <string> <cr>    # conditional_registration_candidates-005143
+(config)# default vc-group <string> <cr>    # conditional_registration_candidates-000428
+(config)# default vm-integration <cr>    # conditional_registration_candidates-000189
+(config)# default voice call carrier capacity active <cr>    # conditional_registration_candidates-004283
+(config)# default voice call carrier capacity mir <cr>    # conditional_registration_candidates-004303
+(config)# default voice call carrier capacity reporting inflection <cr>    # conditional_registration_candidates-006425
+(config)# default voice call carrier capacity reporting maxima <cr>    # conditional_registration_candidates-006408
+(config)# default voice call carrier capacity stw <cr>    # conditional_registration_candidates-004330
+(config)# default voice call carrier capacity timer interval <cr>    # conditional_registration_candidates-006355
+(config)# default voice call carrier csr data-points <cr>    # conditional_registration_candidates-004396
+(config)# default voice call carrier csr reporting interval <cr>    # conditional_registration_candidates-006365
+(config)# default voice call carrier trigger hwm <cr>    # conditional_registration_candidates-004329
+(config)# default voice call carrier trigger lwm <cr>    # conditional_registration_candidates-004302
+(config)# default voice call carrier trigger percent-change <cr>    # conditional_registration_candidates-004288
+(config)# default voice call convert-discpi-to-prog <cr>    # conditional_registration_candidates-000654
+(config)# default voice call debug full-guid <cr>    # conditional_registration_candidates-001901
+(config)# default voice call debug short-header <cr>    # conditional_registration_candidates-001913
+(config)# default voice call disc-pi-off <cr>    # conditional_registration_candidates-000625
+(config)# default voice call send-alert <cr>    # conditional_registration_candidates-000605
+(config)# default voice disc-pi-incoming-on <cr>    # conditional_registration_candidates-000266
+(config)# default voice dsp allocation round-robin <cr>    # conditional_registration_candidates-001930
+(config)# default voice dsp auto-reset <cr>    # conditional_registration_candidates-000872
+(config)# default voice dsp invalid-msg drop <cr>    # conditional_registration_candidates-001939
+(config)# default voice dsp release early <cr>    # conditional_registration_candidates-001938
+(config)# default voice dsp waitstate <number:1..3> <cr>    # conditional_registration_candidates-002109
+(config)# default voice echo-canceller extended <cr>    # conditional_registration_candidates-000620
+(config)# default voice echo-canceller extended <cr>    # conditional_registration_candidates-000735
+(config)# default voice rtp send-recv <cr>    # conditional_registration_candidates-000621
+(config)# default voice session-handle enable <cr>    # conditional_registration_candidates-000711
+(config)# default voice session-handle enable silence-voice <cr>    # conditional_registration_candidates-001922
+(config)# default voice vrf <cr>    # conditional_registration_candidates-000298
+(config)# default voice-ctl-file <string> <cr>    # conditional_registration_candidates-000474
+(config)# default voice-phone-proxy <string> <cr>    # conditional_registration_candidates-000499
+(config)# default voice-phone-proxy file-buffer <cr>    # conditional_registration_candidates-000495
+(config)# default voice-phone-proxy tftp-address ipv4 <address> <cr>    # conditional_registration_candidates-004051
+(config)# default voice-port <cr>    # conditional_registration_candidates-000160
+(config)# default vxlan <cr>    # conditional_registration_candidates-000154
+(config)# default vxlan gpe-tunnel-udp-port <cr>    # conditional_registration_candidates-000456
+(config)# default xconnect logging vc-state <cr>    # conditional_registration_candidates-000626
+(config)# default xconnect sanity <cr>    # conditional_registration_candidates-000214
+(config)# default zone security <string> <cr>    # conditional_registration_candidates-000662
+(config)# dial-control-mib max-size <number:dynamic> <cr>    # conditional_registration_candidates-009095
+(config)# dial-control-mib retain-timer <number:0..35791> <cr>    # conditional_registration_candidates-000002
+(config)# dial-peer hunt <number:0..7> <cr>    # conditional_registration_candidates-000514
+(config)# dial-peer inbound selection creation-order <cr>    # conditional_registration_candidates-001769
+(config)# dial-peer inbound selection sip-trunk <cr>    # conditional_registration_candidates-001768
+(config)# dial-peer no-match disconnect-cause <number:1..127> <cr>    # conditional_registration_candidates-001772
+(config)# dial-peer no-match isdn disconnect-cause <?cause_code_action@55558c59b8b8> <cr>    # conditional_registration_candidates-009222
+(config)# dial-peer outbound status-check pots <cr>    # conditional_registration_candidates-001767
+(config)# dial-peer search type none <cr>    # conditional_registration_candidates-001778
+(config)# dial-peer terminator <string> <cr>    # conditional_registration_candidates-000521
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> <cr>    # conditional_registration_candidates-009099
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> <cr>    # conditional_registration_candidates-009100
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> mmoip <cr>    # conditional_registration_candidates-009133
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> pots <cr>    # conditional_registration_candidates-009132
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> voatm <cr>    # conditional_registration_candidates-009131
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> vofr <cr>    # conditional_registration_candidates-009130
+(config)# dial-peer voice <?voip_dpeer_cmd@55558c59a268> voip system <cr>    # conditional_registration_candidates-009221
+(config)# dial-peer voice <cr>    # conditional_registration_candidates-000191
+(config)# dial-peer voice mmoip <cr>    # conditional_registration_candidates-000542
+(config)# dial-peer voice pots <cr>    # conditional_registration_candidates-000536
+(config)# dial-peer voice voatm <cr>    # conditional_registration_candidates-000531
+(config)# dial-peer voice vofr <cr>    # conditional_registration_candidates-000527
+(config)# dial-peer voice voip <cr>    # conditional_registration_candidates-000529
+(config)# dial-peer voice voip system <cr>    # conditional_registration_candidates-001765
+(config)# do-exec appnav cm-register <url:dynamic> <cr>    # conditional_registration_candidates-009110
+(config)# do-exec atmsig close <interface> <cr>    # conditional_registration_candidates-009116
+(config)# do-exec atmsig establish-sscop <interface> <cr>    # conditional_registration_candidates-009115
+(config)# do-exec atmsig restartit <interface> <cr>    # conditional_registration_candidates-009114
+(config)# do-exec audio-prompt load <string> <cr>    # conditional_registration_candidates-000906
+(config)# do-exec ccm-manager config-download check-configuration reset <cr>    # conditional_registration_candidates-002361
+(config)# do-exec ccm-manager config-download check-configuration restart <cr>    # conditional_registration_candidates-002419
+(config)# do-exec ccm-manager config-download reset-version-id <cr>    # conditional_registration_candidates-000995
+(config)# do-exec ccm-manager switchover-to-backup <cr>    # conditional_registration_candidates-000362
+(config)# do-exec ccm-manager test <number:1..3> <cr>    # conditional_registration_candidates-001023
+(config)# do-exec cellular <interface> cdma activate iota <cr>    # conditional_registration_candidates-009261
+(config)# do-exec cellular <interface> cdma activate manual <string> <string> <string> <cr>    # conditional_registration_candidates-009487
+(config)# do-exec cellular <interface> cdma activate oma-dm device-config <cr>    # conditional_registration_candidates-009379
+(config)# do-exec cellular <interface> cdma activate otasp <string> <cr>    # conditional_registration_candidates-009364
+(config)# do-exec cellular <interface> cdma firmware-activate <number:1..10> <cr>    # conditional_registration_candidates-009270
+(config)# do-exec cellular <interface> cdma firmware-delete <number:2..4> <cr>    # conditional_registration_candidates-009276
+(config)# do-exec cellular <interface> cdma mno-activate <number:1..100> <cr>    # conditional_registration_candidates-009273
+(config)# do-exec cellular <interface> cdma mode 1xRTT <cr>    # conditional_registration_candidates-009252
+(config)# do-exec cellular <interface> cdma profile select <number:0..5> <cr>    # conditional_registration_candidates-009369
+(config)# do-exec cellular <interface> cdma sms delete all <cr>    # conditional_registration_candidates-009392
+(config)# do-exec cellular <interface> cdma sms send <string> <string> <cr>    # conditional_registration_candidates-009450
+(config)# do-exec cellular <interface> cdma sms view summary <cr>    # conditional_registration_candidates-009396
+(config)# do-exec cellular <interface> copy modem-crashdump <cr>    # conditional_registration_candidates-009153
+(config)# do-exec cellular <interface> eject-dongle <cr>    # conditional_registration_candidates-009118
+(config)# do-exec cellular <interface> gsm band auto-band <cr>    # conditional_registration_candidates-009354
+(config)# do-exec cellular <interface> gsm band gsm-450 <cr>    # conditional_registration_candidates-009274
+(config)# do-exec cellular <interface> gsm band gsm-480 <cr>    # conditional_registration_candidates-009277
+(config)# do-exec cellular <interface> gsm band gsm-750 <cr>    # conditional_registration_candidates-009280
+(config)# do-exec cellular <interface> gsm band gsm-850 <cr>    # conditional_registration_candidates-009285
+(config)# do-exec cellular <interface> gsm band gsm-all-bands <cr>    # conditional_registration_candidates-009312
+(config)# do-exec cellular <interface> gsm band gsm-dcs-1800 <cr>    # conditional_registration_candidates-009295
+(config)# do-exec cellular <interface> gsm band gsm-egsm-900 <cr>    # conditional_registration_candidates-009299
+(config)# do-exec cellular <interface> gsm band gsm-egsm-dcs <cr>    # conditional_registration_candidates-009308
+(config)# do-exec cellular <interface> gsm band gsm-pcs-1900 <cr>    # conditional_registration_candidates-009292
+(config)# do-exec cellular <interface> gsm band gsm-pcs-850 <cr>    # conditional_registration_candidates-009307
+(config)# do-exec cellular <interface> gsm band gsm-pgsm-900 <cr>    # conditional_registration_candidates-009302
+(config)# do-exec cellular <interface> gsm band gsm-rgsm-900 <cr>    # conditional_registration_candidates-009288
+(config)# do-exec cellular <interface> gsm band wcdma-1-imt-2000 <cr>    # conditional_registration_candidates-009314
+(config)# do-exec cellular <interface> gsm band wcdma-2-pcs-1900 <cr>    # conditional_registration_candidates-009316
+(config)# do-exec cellular <interface> gsm band wcdma-3-1700 <cr>    # conditional_registration_candidates-009318
+(config)# do-exec cellular <interface> gsm band wcdma-4-1700 <cr>    # conditional_registration_candidates-009319
+(config)# do-exec cellular <interface> gsm band wcdma-5-850 <cr>    # conditional_registration_candidates-009320
+(config)# do-exec cellular <interface> gsm band wcdma-6-800 <cr>    # conditional_registration_candidates-009323
+(config)# do-exec cellular <interface> gsm band wcdma-7-2600 <cr>    # conditional_registration_candidates-009327
+(config)# do-exec cellular <interface> gsm band wcdma-8-900 <cr>    # conditional_registration_candidates-009330
+(config)# do-exec cellular <interface> gsm band wcdma-850-gsm-egsm-dcs <cr>    # conditional_registration_candidates-009347
+(config)# do-exec cellular <interface> gsm band wcdma-9-1700 <cr>    # conditional_registration_candidates-009333
+(config)# do-exec cellular <interface> gsm band wcdma-900-imt-2000 <cr>    # conditional_registration_candidates-009349
+(config)# do-exec cellular <interface> gsm band wcdma-all-bands <cr>    # conditional_registration_candidates-009353
+(config)# do-exec cellular <interface> gsm band wcdma-au-gsm-eu <cr>    # conditional_registration_candidates-009344
+(config)# do-exec cellular <interface> gsm band wcdma-aus <cr>    # conditional_registration_candidates-009343
+(config)# do-exec cellular <interface> gsm band wcdma-gsm-eu <cr>    # conditional_registration_candidates-009337
+(config)# do-exec cellular <interface> gsm band wcdma-gsm-eu-900 <cr>    # conditional_registration_candidates-009352
+(config)# do-exec cellular <interface> gsm band wcdma-gsm-na <cr>    # conditional_registration_candidates-009340
+(config)# do-exec cellular <interface> gsm band wcdma-jap <cr>    # conditional_registration_candidates-009346
+(config)# do-exec cellular <interface> gsm band wcdma-na <cr>    # conditional_registration_candidates-009335
+(config)# do-exec cellular <interface> gsm mep unlock <string> <cr>    # conditional_registration_candidates-009385
+(config)# do-exec cellular <interface> gsm plmn search <cr>    # conditional_registration_candidates-009260
+(config)# do-exec cellular <interface> gsm plmn select auto <cr>    # conditional_registration_candidates-009378
+(config)# do-exec cellular <interface> gsm plmn select force <number:0..999> <number:0..999> <number:2..3> wcdma <cr>    # conditional_registration_candidates-009516
+(config)# do-exec cellular <interface> gsm plmn select manual <number:0..999> <number:0..999> wcdma <cr>    # conditional_registration_candidates-009510
+(config)# do-exec cellular <interface> gsm prl-region <number:0..6> <cr>    # conditional_registration_candidates-009272
+(config)# do-exec cellular <interface> gsm profile create <number:1..16> <cr>    # conditional_registration_candidates-009371
+(config)# do-exec cellular <interface> gsm sim activate slot <number:0..1> <cr>    # conditional_registration_candidates-009452
+(config)# do-exec cellular <interface> gsm sim unlock <string> <cr>    # conditional_registration_candidates-009391
+(config)# do-exec cellular <interface> lte fota start <cr>    # conditional_registration_candidates-009244
+(config)# do-exec cellular <interface> lte modem-reset <cr>    # conditional_registration_candidates-009157
+(config)# do-exec cellular <interface> lte profile reset <cr>    # conditional_registration_candidates-009265
+(config)# do-exec clear appfw dns cache name <string> <cr>    # conditional_registration_candidates-006405
+(config)# do-exec clear appletalk arp <cr>    # conditional_registration_candidates-000788
+(config)# do-exec clear appletalk interface <interface> <cr>    # conditional_registration_candidates-009137
+(config)# do-exec clear appletalk nbp <cr>    # conditional_registration_candidates-000867
+(config)# do-exec clear appletalk neighbor all <cr>    # conditional_registration_candidates-002295
+(config)# do-exec clear appletalk route <number:1..65535> <cr>    # conditional_registration_candidates-002181
+(config)# do-exec clear appletalk route-cache <cr>    # conditional_registration_candidates-000931
+(config)# do-exec clear appletalk traffic <cr>    # conditional_registration_candidates-000961
+(config)# do-exec clear bridge-domain <number:dynamic> mac table <cr>    # conditional_registration_candidates-009238
+(config)# do-exec clear call application interface <cr>    # conditional_registration_candidates-003107
+(config)# do-exec clear call application stats <cr>    # conditional_registration_candidates-002320
+(config)# do-exec clear callmon dead-memory <cr>    # conditional_registration_candidates-000777
+(config)# do-exec clear callmon trace <cr>    # conditional_registration_candidates-000820
+(config)# do-exec clear counters <interface> <cr>    # conditional_registration_candidates-009109
+(config)# do-exec clear crypto ace mace <cr>    # conditional_registration_candidates-002196
+(config)# do-exec clear crypto ace slot <number:1..16> invspi <cr>    # conditional_registration_candidates-006479
+(config)# do-exec clear crypto ace slot <number:1..16> stats <cr>    # conditional_registration_candidates-006444
+(config)# do-exec clear crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd40540> <number:0..1> invspi <cr>    # conditional_registration_candidates-009477
+(config)# do-exec clear crypto ace subslot <number:1..16> <?keyword_nows_action@55558bd40540> <number:0..1> stats <cr>    # conditional_registration_candidates-009476
+(config)# do-exec clear crypto call admission statistics <cr>    # conditional_registration_candidates-004562
+(config)# do-exec clear crypto datapath ipv4 <cr>    # conditional_registration_candidates-009532
+(config)# do-exec clear crypto dh <cr>    # conditional_registration_candidates-000930
+(config)# do-exec clear crypto gkm <cr>    # conditional_registration_candidates-001056
+(config)# do-exec clear crypto gkm dataplane counters <cr>    # conditional_registration_candidates-004692
+(config)# do-exec clear crypto gkm diagnose errors <cr>    # conditional_registration_candidates-004634
+(config)# do-exec clear crypto gkm diagnose events <cr>    # conditional_registration_candidates-004699
+(config)# do-exec clear crypto gkm ks coop counter <cr>    # conditional_registration_candidates-006431
+(config)# do-exec clear crypto gkm ks coop role <cr>    # conditional_registration_candidates-006472
+(config)# do-exec clear crypto gkm ks members <cr>    # conditional_registration_candidates-004609
+(config)# do-exec clear crypto gkm ks members counters <cr>    # conditional_registration_candidates-006463
+(config)# do-exec clear crypto gkm ks members now <cr>    # conditional_registration_candidates-006508
+(config)# do-exec clear crypto gkm ks multi-list <cr>    # conditional_registration_candidates-004527
+(config)# do-exec clear crypto gkm p2p counter <cr>    # conditional_registration_candidates-004575
+(config)# do-exec clear crypto gkm performance <cr>    # conditional_registration_candidates-002481
+(config)# do-exec clear crypto gkm pip counter <cr>    # conditional_registration_candidates-004512
+(config)# do-exec clear crypto gkm replay counter <cr>    # conditional_registration_candidates-004449
+(config)# do-exec clear crypto ikev2 certificate-cache <cr>    # conditional_registration_candidates-002387
+(config)# do-exec clear crypto ikev2 cluster dead-slaves <cr>    # conditional_registration_candidates-004520
+(config)# do-exec clear crypto ikev2 cluster stats <cr>    # conditional_registration_candidates-004448
+(config)# do-exec clear crypto ikev2 diagnose error <cr>    # conditional_registration_candidates-004490
+(config)# do-exec clear crypto ikev2 diagnose error count <cr>    # conditional_registration_candidates-006430
+(config)# do-exec clear crypto ikev2 performance <cr>    # conditional_registration_candidates-002051
+(config)# do-exec clear crypto ikev2 sa <cr>    # conditional_registration_candidates-002613
+(config)# do-exec clear crypto ikev2 sa fvrf <cr>    # conditional_registration_candidates-004767
+(config)# do-exec clear crypto ikev2 sa local <cr>    # conditional_registration_candidates-004728
+(config)# do-exec clear crypto ikev2 sa psh <cr>    # conditional_registration_candidates-004809
+(config)# do-exec clear crypto ikev2 sa remote <cr>    # conditional_registration_candidates-004770
+(config)# do-exec clear crypto ikev2 stats <cr>    # conditional_registration_candidates-002615
+(config)# do-exec clear crypto ikev2 stats exchange <cr>    # conditional_registration_candidates-004511
+(config)# do-exec clear crypto ikev2 stats ext-service <cr>    # conditional_registration_candidates-004584
+(config)# do-exec clear crypto ikev2 stats gkm <cr>    # conditional_registration_candidates-004805
+(config)# do-exec clear crypto ikev2 stats priority-queue <cr>    # conditional_registration_candidates-004707
+(config)# do-exec clear crypto ikev2 stats reconnect <cr>    # conditional_registration_candidates-004757
+(config)# do-exec clear crypto ikev2 stats timeout <cr>    # conditional_registration_candidates-004648
+(config)# do-exec clear crypto isakmp <cr>    # conditional_registration_candidates-001055
+(config)# do-exec clear crypto isakmp <number:1..4294967295> <cr>    # conditional_registration_candidates-002431
+(config)# do-exec clear crypto isakmp diagnose error <cr>    # conditional_registration_candidates-004631
+(config)# do-exec clear crypto isakmp peer handle <number:1..4294967295> <cr>    # conditional_registration_candidates-006639
+(config)# do-exec clear crypto isakmp performance <cr>    # conditional_registration_candidates-002257
+(config)# do-exec clear crypto isakmp stats <cr>    # conditional_registration_candidates-002325
+(config)# do-exec clear crypto sa <cr>    # conditional_registration_candidates-001033
+(config)# do-exec clear crypto sa counters <cr>    # conditional_registration_candidates-002197
+(config)# do-exec clear crypto sa keep-counters <cr>    # conditional_registration_candidates-002270
+(config)# do-exec clear crypto sa map <string> <cr>    # conditional_registration_candidates-004361
+(config)# do-exec clear crypto sa peer <address> <cr>    # conditional_registration_candidates-004463
+(config)# do-exec clear crypto sa spi <address> esp <number:0..4294967295> <cr>    # conditional_registration_candidates-007830
+(config)# do-exec clear crypto skip-client statistics <cr>    # conditional_registration_candidates-002053
+(config)# do-exec clear crypto ssl diagnose error <cr>    # conditional_registration_candidates-004450
+(config)# do-exec clear crypto ssl session counter <cr>    # conditional_registration_candidates-004548
+(config)# do-exec clear crypto ssl session profile <string> <cr>    # conditional_registration_candidates-006502
+(config)# do-exec clear crypto ssl session user <string> <cr>    # conditional_registration_candidates-006432
+(config)# do-exec clear crypto ssl stats <cr>    # conditional_registration_candidates-002299
+(config)# do-exec clear crypto stats <cr>    # conditional_registration_candidates-000862
+(config)# do-exec clear crypto tls-tunnel stats <cr>    # conditional_registration_candidates-002052
+(config)# do-exec clear dapr border-router <cr>    # conditional_registration_candidates-000789
+(config)# do-exec clear dapr route-manager <cr>    # conditional_registration_candidates-000830
+(config)# do-exec clear decnet accounting <cr>    # conditional_registration_candidates-000868
+(config)# do-exec clear decnet counter <cr>    # conditional_registration_candidates-000744
+(config)# do-exec clear dialogsnr database <cr>    # conditional_registration_candidates-000742
+(config)# do-exec clear et-analytics statistics <cr>    # conditional_registration_candidates-000832
+(config)# do-exec clear et-analytics statistics export <cr>    # conditional_registration_candidates-002015
+(config)# do-exec clear et-analytics statistics flow <cr>    # conditional_registration_candidates-001960
+(config)# do-exec clear ethernet service instance id <number:1..16384> mac-tunnel mac table <cr>    # conditional_registration_candidates-008906
+(config)# do-exec clear flow file-export default statistics <cr>    # conditional_registration_candidates-004360
+(config)# do-exec clear flow file-export default template statistics <cr>    # conditional_registration_candidates-006435
+(config)# do-exec clear flowmon condition <?slotcard_action@55558b58e6f8> <cr>    # conditional_registration_candidates-009138
+(config)# do-exec clear flowmon flow <?slotcard_action@55558b58e118> <cr>    # conditional_registration_candidates-009136
+(config)# do-exec clear flowmon group <number:0..7> <cr>    # conditional_registration_candidates-002179
+(config)# do-exec clear flowmon monitor <number:0..3> <cr>    # conditional_registration_candidates-001954
+(config)# do-exec clear flowmon profile <number:0..7> <cr>    # conditional_registration_candidates-002054
+(config)# do-exec clear flowmon set <number:0..7> <cr>    # conditional_registration_candidates-002250
+(config)# do-exec clear group-policy traffic-steering environment-data <cr>    # conditional_registration_candidates-002062
+(config)# do-exec clear group-policy traffic-steering statistics active <cr>    # conditional_registration_candidates-004378
+(config)# do-exec clear group-policy traffic-steering statistics all <cr>    # conditional_registration_candidates-004331
+(config)# do-exec clear gtp apn statistics <number:1..65535> <cr>    # conditional_registration_candidates-004332
+(config)# do-exec clear gtp apn statistics all <cr>    # conditional_registration_candidates-004379
+(config)# do-exec clear gtp mcsa statistics <cr>    # conditional_registration_candidates-002115
+(config)# do-exec clear gtp path statistics all <cr>    # conditional_registration_candidates-004414
+(config)# do-exec clear gtp path statistics remote-address <address> <cr>    # conditional_registration_candidates-006451
+(config)# do-exec clear gtp pdp-context all <cr>    # conditional_registration_candidates-002608
+(config)# do-exec clear gtp pdp-context apn <number:1..65535> <cr>    # conditional_registration_candidates-004721
+(config)# do-exec clear gtp pdp-context imsi <string> <cr>    # conditional_registration_candidates-004605
+(config)# do-exec clear gtp pdp-context ms-address <address> <cr>    # conditional_registration_candidates-004813
+(config)# do-exec clear gtp pdp-context ms-v6-address <address> <cr>    # conditional_registration_candidates-004852
+(config)# do-exec clear gtp pdp-context path <address> <cr>    # conditional_registration_candidates-004727
+(config)# do-exec clear gtp statistics <cr>    # conditional_registration_candidates-000900
+(config)# do-exec clear http client statistics <cr>    # conditional_registration_candidates-001955
+(config)# do-exec clear ip flow stats <cr>    # conditional_registration_candidates-002368

@@ -1,0 +1,26 @@
+# 模式 transport-map；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-tmap)# authentication-retries <number:0..5> <cr>    # observed_connections-009022
+(config-tmap)# banner wait <string> <cr>    # observed_connections-009035
+(config-tmap)# connection wait none <cr>    # observed_connections-009039
+(config-tmap)# default authentication-retries <cr>    # observed_connections-009028
+(config-tmap)# default banner wait <cr>    # observed_connections-009037
+(config-tmap)# default connection wait none <cr>    # observed_connections-009041
+(config-tmap)# default rsa keypair-name <cr>    # observed_connections-009038
+(config-tmap)# default secure-server <cr>    # observed_connections-009032
+(config-tmap)# default server <cr>    # observed_connections-009030
+(config-tmap)# default time-out <cr>    # observed_connections-009025
+(config-tmap)# no authentication-retries <cr>    # observed_connections-009026
+(config-tmap)# no banner wait <cr>    # observed_connections-009033
+(config-tmap)# no connection wait none <cr>    # observed_connections-009040
+(config-tmap)# no rsa keypair-name <cr>    # observed_connections-009034
+(config-tmap)# no secure-server <cr>    # observed_connections-009031
+(config-tmap)# no server <cr>    # observed_connections-009029
+(config-tmap)# no time-out <cr>    # observed_connections-009024
+(config-tmap)# rsa keypair-name <string> <cr>    # observed_connections-009036
+(config-tmap)# secure-server <cr>    # observed_connections-009027
+(config-tmap)# server <cr>    # observed_connections-009023
+(config-tmap)# time-out <number:1..120> <cr>    # observed_connections-009021
+(config-tmap)# transport interface GigabitEthernet <number:0..0> <cr>    # observed_connections-009042

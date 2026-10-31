@@ -1,0 +1,391 @@
+# 模式 scope-address-family-topology；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-scope-af-topo)# aggregate-address <address> <address> <cr>    # observed_connections-002820
+(config-router-scope-af-topo)# auto-summary <cr>    # observed_connections-002679
+(config-router-scope-af-topo)# bgp additional-paths install <cr>    # observed_connections-002789
+(config-router-scope-af-topo)# bgp additional-paths select <cr>    # observed_connections-002811
+(config-router-scope-af-topo)# bgp advertise-best-external <cr>    # observed_connections-002709
+(config-router-scope-af-topo)# bgp advertisement startup-delay <number:1..3600> <cr>    # observed_connections-002730
+(config-router-scope-af-topo)# bgp aggregate-timer <number:6..60> <cr>    # observed_connections-002812
+(config-router-scope-af-topo)# bgp aigp-rib-metric <cr>    # observed_connections-002741
+(config-router-scope-af-topo)# bgp always-compare-med <cr>    # observed_connections-002705
+(config-router-scope-af-topo)# bgp asnotation dot <cr>    # observed_connections-002777
+(config-router-scope-af-topo)# bgp bestpath aigp ignore <cr>    # observed_connections-002949
+(config-router-scope-af-topo)# bgp bestpath as-path ignore <cr>    # observed_connections-002943
+(config-router-scope-af-topo)# bgp bestpath as-path multipath-relax <cr>    # observed_connections-002945
+(config-router-scope-af-topo)# bgp bestpath compare-routerid <cr>    # observed_connections-002856
+(config-router-scope-af-topo)# bgp bestpath cost-community ignore <cr>    # observed_connections-002948
+(config-router-scope-af-topo)# bgp bestpath igp-metric ignore <cr>    # observed_connections-002890
+(config-router-scope-af-topo)# bgp bestpath med missing-as-worst <cr>    # observed_connections-002946
+(config-router-scope-af-topo)# bgp bestpath prefix-validate allow-invalid <cr>    # observed_connections-002898
+(config-router-scope-af-topo)# bgp bestpath prefix-validate disable <cr>    # observed_connections-002904
+(config-router-scope-af-topo)# bgp client-to-client reflection <cr>    # observed_connections-002798
+(config-router-scope-af-topo)# bgp client-to-client reflection intra-cluster cluster-id <cr>    # observed_connections-003117
+(config-router-scope-af-topo)# bgp cluster-id <number:1..4294967294> <cr>    # observed_connections-002795
+(config-router-scope-af-topo)# bgp confederation identifier <?bgp_as4_action@555589b12dd0> <cr>    # observed_connections-003102
+(config-router-scope-af-topo)# bgp confederation peers <?bgp_as4_action@555589b13140> <cr>    # observed_connections-003103
+(config-router-scope-af-topo)# bgp consistency-checker error-message <cr>    # observed_connections-002815
+(config-router-scope-af-topo)# bgp consistency-checker error-message interval <number:5..1440> <cr>    # observed_connections-002803
+(config-router-scope-af-topo)# bgp dampening <cr>    # observed_connections-002712
+(config-router-scope-af-topo)# bgp dampening route-map <string> <cr>    # observed_connections-002894
+(config-router-scope-af-topo)# bgp default inter-as-hybrid advertise-source-routes <cr>    # observed_connections-002891
+(config-router-scope-af-topo)# bgp default ipv4-unicast <cr>    # observed_connections-002761
+(config-router-scope-af-topo)# bgp default ipv6-nexthop <cr>    # observed_connections-002765
+(config-router-scope-af-topo)# bgp default local-preference <number:0..4294967295> <cr>    # observed_connections-002706
+(config-router-scope-af-topo)# bgp default route-target filter <cr>    # observed_connections-002887
+(config-router-scope-af-topo)# bgp default route-target filter <cr>    # observed_connections-002888
+(config-router-scope-af-topo)# bgp deterministic-med <cr>    # observed_connections-002719
+(config-router-scope-af-topo)# bgp dmzlink-bw <cr>    # observed_connections-002714
+(config-router-scope-af-topo)# bgp dynamic-med-interval <number:60..4294967295> <cr>    # observed_connections-002678
+(config-router-scope-af-topo)# bgp enforce-first-as <cr>    # observed_connections-002715
+(config-router-scope-af-topo)# bgp enhanced-error <cr>    # observed_connections-002737
+(config-router-scope-af-topo)# bgp fast-external-fallover <cr>    # observed_connections-002702
+(config-router-scope-af-topo)# bgp graceful-restart <cr>    # observed_connections-002740
+(config-router-scope-af-topo)# bgp graceful-restart restart-time <number:1..3600> <cr>    # observed_connections-002738
+(config-router-scope-af-topo)# bgp graceful-restart stalepath-time <number:1..3600> <cr>    # observed_connections-002739
+(config-router-scope-af-topo)# bgp graceful-shutdown all vrfs <number:30..65535> community <?bgp_community_action@555589b16978> <cr>    # observed_connections-003123
+(config-router-scope-af-topo)# bgp graceful-shutdown all vrfs activate <cr>    # observed_connections-002990
+(config-router-scope-af-topo)# bgp inject-map <string> exist-map <string> <cr>    # observed_connections-002983
+(config-router-scope-af-topo)# bgp label-allocation-batch <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-002885
+(config-router-scope-af-topo)# bgp listen block <address> <cr>    # observed_connections-002916
+(config-router-scope-af-topo)# bgp listen block <address> <cr>    # observed_connections-002927
+(config-router-scope-af-topo)# bgp listen limit <number:1..10000> <cr>    # observed_connections-002718
+(config-router-scope-af-topo)# bgp listen limit <number:1..10000> <cr>    # observed_connections-002733
+(config-router-scope-af-topo)# bgp listen persistent <cr>    # observed_connections-002848
+(config-router-scope-af-topo)# bgp listen range <prefix:dynamic> peer-group <string> <cr>    # observed_connections-003122
+(config-router-scope-af-topo)# bgp log-neighbor-changes <cr>    # observed_connections-002716
+(config-router-scope-af-topo)# bgp maxas-limit <number:1..254> <cr>    # observed_connections-002869
+(config-router-scope-af-topo)# bgp maxcommunity-limit <number:1..1018> <cr>    # observed_connections-002858
+(config-router-scope-af-topo)# bgp maxextcommunity-limit <number:1..509> <cr>    # observed_connections-002865
+(config-router-scope-af-topo)# bgp maxlargecommunity-limit <number:1..339> <cr>    # observed_connections-002861
+(config-router-scope-af-topo)# bgp mpls-local-label <cr>    # observed_connections-002728
+(config-router-scope-af-topo)# bgp nexthop route-map <string> <cr>    # observed_connections-002919
+(config-router-scope-af-topo)# bgp nexthop trigger critical-delay <number:0..100> <cr>    # observed_connections-002827
+(config-router-scope-af-topo)# bgp nexthop trigger delay <number:0..100> <cr>    # observed_connections-002822
+(config-router-scope-af-topo)# bgp nexthop trigger enable <cr>    # observed_connections-002915
+(config-router-scope-af-topo)# bgp nopeerup-delay cold-boot <number:1..3600> <cr>    # observed_connections-002926
+(config-router-scope-af-topo)# bgp recursion host <cr>    # observed_connections-002785
+(config-router-scope-af-topo)# bgp redistribute-internal <cr>    # observed_connections-002710
+(config-router-scope-af-topo)# bgp refresh max-eor-time <number:600..3600> <cr>    # observed_connections-002940
+(config-router-scope-af-topo)# bgp refresh stalepath-time <number:600..3600> <cr>    # observed_connections-002936
+(config-router-scope-af-topo)# bgp regexp deterministic <cr>    # observed_connections-002853
+(config-router-scope-af-topo)# bgp route-map priority <cr>    # observed_connections-002786
+(config-router-scope-af-topo)# bgp route-map-cache <cr>    # observed_connections-002704
+(config-router-scope-af-topo)# bgp router-id <address> <cr>    # observed_connections-002784
+(config-router-scope-af-topo)# bgp router-id auto-assign <cr>    # observed_connections-002818
+(config-router-scope-af-topo)# bgp router-id interface <interface> <cr>    # observed_connections-003100
+(config-router-scope-af-topo)# bgp router-id interface <interface> <cr>    # observed_connections-003101
+(config-router-scope-af-topo)# bgp rpki server tcp <address> port <number:1..65535> refresh <number:1..65535> <cr>    # observed_connections-003018
+(config-router-scope-af-topo)# bgp rr-group <string> <cr>    # observed_connections-002828
+(config-router-scope-af-topo)# bgp safe-ebgp-policy <cr>    # observed_connections-002742
+(config-router-scope-af-topo)# bgp scan-time <number:5..60> <cr>    # observed_connections-002824
+(config-router-scope-af-topo)# bgp slow-peer detection <cr>    # observed_connections-002793
+(config-router-scope-af-topo)# bgp slow-peer detection threshold <number:120..3600> <cr>    # observed_connections-002788
+(config-router-scope-af-topo)# bgp slow-peer split-update-group dynamic <cr>    # observed_connections-002909
+(config-router-scope-af-topo)# bgp snmp traps add-type <cr>    # observed_connections-002925
+(config-router-scope-af-topo)# bgp soft-reconfig-backup <cr>    # observed_connections-002717
+(config-router-scope-af-topo)# bgp sourced-paths per-net isis all <cr>    # observed_connections-002975
+(config-router-scope-af-topo)# bgp sourced-paths per-net ospf all <cr>    # observed_connections-002969
+(config-router-scope-af-topo)# bgp sourced-paths per-net ospfv3 all <cr>    # observed_connections-002971
+(config-router-scope-af-topo)# bgp sourced-paths per-net static all <cr>    # observed_connections-002966
+(config-router-scope-af-topo)# bgp sso route-refresh-enable <cr>    # observed_connections-002849
+(config-router-scope-af-topo)# bgp suppress-inactive <cr>    # observed_connections-002713
+(config-router-scope-af-topo)# bgp tid <number:1..255> <cr>    # observed_connections-002669
+(config-router-scope-af-topo)# bgp transport path-mtu-discovery <cr>    # observed_connections-002794
+(config-router-scope-af-topo)# bgp update-delay <number:1..3600> <cr>    # observed_connections-002680
+(config-router-scope-af-topo)# bgp update-group split as-override <cr>    # observed_connections-002893
+(config-router-scope-af-topo)# bgp upgrade-cli <cr>    # observed_connections-002703
+(config-router-scope-af-topo)# bgp va <address> mask <address> <cr>    # observed_connections-002972
+(config-router-scope-af-topo)# bgp vrf-update-optimisation off <cr>    # observed_connections-002851
+(config-router-scope-af-topo)# bgp write-limit <number:500..2147483647> <number:500..2147483647> <cr>    # observed_connections-002942
+(config-router-scope-af-topo)# context <string> <cr>    # observed_connections-002685
+(config-router-scope-af-topo)# default aggregate-address <address> <address> <cr>    # observed_connections-002918
+(config-router-scope-af-topo)# default auto-summary <cr>    # observed_connections-002724
+(config-router-scope-af-topo)# default bgp additional-paths install <cr>    # observed_connections-002905
+(config-router-scope-af-topo)# default bgp additional-paths select <cr>    # observed_connections-002912
+(config-router-scope-af-topo)# default bgp advertise-best-external <cr>    # observed_connections-002781
+(config-router-scope-af-topo)# default bgp advertisement startup-delay <cr>    # observed_connections-002834
+(config-router-scope-af-topo)# default bgp aggregate-timer <number:6..60> <cr>    # observed_connections-002913
+(config-router-scope-af-topo)# default bgp aigp-rib-metric <cr>    # observed_connections-002866
+(config-router-scope-af-topo)# default bgp always-compare-med <cr>    # observed_connections-002773
+(config-router-scope-af-topo)# default bgp asnotation dot <cr>    # observed_connections-002892
+(config-router-scope-af-topo)# default bgp bestpath aigp ignore <cr>    # observed_connections-003000
+(config-router-scope-af-topo)# default bgp bestpath as-path ignore <cr>    # observed_connections-002992
+(config-router-scope-af-topo)# default bgp bestpath as-path multipath-relax <cr>    # observed_connections-002995
+(config-router-scope-af-topo)# default bgp bestpath compare-routerid <cr>    # observed_connections-002947
+(config-router-scope-af-topo)# default bgp bestpath cost-community ignore <cr>    # observed_connections-002999
+(config-router-scope-af-topo)# default bgp bestpath igp-metric ignore <cr>    # observed_connections-002958
+(config-router-scope-af-topo)# default bgp bestpath med missing-as-worst <cr>    # observed_connections-002996
+(config-router-scope-af-topo)# default bgp bestpath prefix-validate allow-invalid <cr>    # observed_connections-002963
+(config-router-scope-af-topo)# default bgp bestpath prefix-validate disable <cr>    # observed_connections-002967
+(config-router-scope-af-topo)# default bgp client-to-client reflection <cr>    # observed_connections-002908
+(config-router-scope-af-topo)# default bgp cluster-id <cr>    # observed_connections-002801
+(config-router-scope-af-topo)# default bgp consistency-checker <cr>    # observed_connections-002809
+(config-router-scope-af-topo)# default bgp dampening <cr>    # observed_connections-002774
+(config-router-scope-af-topo)# default bgp default inter-as-hybrid advertise-source-routes <cr>    # observed_connections-002960
+(config-router-scope-af-topo)# default bgp default ipv4-unicast <cr>    # observed_connections-002882
+(config-router-scope-af-topo)# default bgp default ipv6-nexthop <cr>    # observed_connections-002886
+(config-router-scope-af-topo)# default bgp default local-preference <cr>    # observed_connections-002776
+(config-router-scope-af-topo)# default bgp default route-target filter <cr>    # observed_connections-002954
+(config-router-scope-af-topo)# default bgp default route-target filter <cr>    # observed_connections-002955
+(config-router-scope-af-topo)# default bgp deterministic-med <cr>    # observed_connections-002821
+(config-router-scope-af-topo)# default bgp dmzlink-bw <cr>    # observed_connections-002796
+(config-router-scope-af-topo)# default bgp dynamic-med-interval <cr>    # observed_connections-002723
+(config-router-scope-af-topo)# default bgp enforce-first-as <cr>    # observed_connections-002804
+(config-router-scope-af-topo)# default bgp enhanced-error <cr>    # observed_connections-002839
+(config-router-scope-af-topo)# default bgp fast-external-fallover <cr>    # observed_connections-002757
+(config-router-scope-af-topo)# default bgp graceful-restart <cr>    # observed_connections-002852
+(config-router-scope-af-topo)# default bgp graceful-restart restart-time <cr>    # observed_connections-002845
+(config-router-scope-af-topo)# default bgp graceful-restart stalepath-time <cr>    # observed_connections-002847
+(config-router-scope-af-topo)# default bgp graceful-shutdown all vrfs activate <cr>    # observed_connections-003016
+(config-router-scope-af-topo)# default bgp inject-map <string> exist-map <string> <cr>    # observed_connections-003014
+(config-router-scope-af-topo)# default bgp label-allocation-batch <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-002953
+(config-router-scope-af-topo)# default bgp listen block <address> <cr>    # observed_connections-002978
+(config-router-scope-af-topo)# default bgp listen block <address> <cr>    # observed_connections-002989
+(config-router-scope-af-topo)# default bgp listen limit <cr>    # observed_connections-002816
+(config-router-scope-af-topo)# default bgp listen limit <cr>    # observed_connections-002841
+(config-router-scope-af-topo)# default bgp listen persistent <cr>    # observed_connections-002930
+(config-router-scope-af-topo)# default bgp log-neighbor-changes <cr>    # observed_connections-002813
+(config-router-scope-af-topo)# default bgp maxas-limit <cr>    # observed_connections-002871
+(config-router-scope-af-topo)# default bgp maxcommunity-limit <cr>    # observed_connections-002859
+(config-router-scope-af-topo)# default bgp maxextcommunity-limit <cr>    # observed_connections-002867
+(config-router-scope-af-topo)# default bgp maxlargecommunity-limit <cr>    # observed_connections-002863
+(config-router-scope-af-topo)# default bgp mpls-local-label <cr>    # observed_connections-002831
+(config-router-scope-af-topo)# default bgp nexthop route-map <string> <cr>    # observed_connections-002980
+(config-router-scope-af-topo)# default bgp nexthop trigger critical-delay <cr>    # observed_connections-002924
+(config-router-scope-af-topo)# default bgp nexthop trigger delay <cr>    # observed_connections-002921
+(config-router-scope-af-topo)# default bgp nexthop trigger enable <cr>    # observed_connections-002977
+(config-router-scope-af-topo)# default bgp nopeerup-delay cold-boot <number:1..3600> <cr>    # observed_connections-002985
+(config-router-scope-af-topo)# default bgp recursion host <cr>    # observed_connections-002899
+(config-router-scope-af-topo)# default bgp redistribute-internal <cr>    # observed_connections-002782
+(config-router-scope-af-topo)# default bgp refresh max-eor-time <cr>    # observed_connections-002941
+(config-router-scope-af-topo)# default bgp refresh stalepath-time <cr>    # observed_connections-002937
+(config-router-scope-af-topo)# default bgp regexp deterministic <cr>    # observed_connections-002939
+(config-router-scope-af-topo)# default bgp route-map priority <cr>    # observed_connections-002900
+(config-router-scope-af-topo)# default bgp route-map-cache <cr>    # observed_connections-002766
+(config-router-scope-af-topo)# default bgp router-id <cr>    # observed_connections-002775
+(config-router-scope-af-topo)# default bgp router-id <cr>    # observed_connections-002817
+(config-router-scope-af-topo)# default bgp rpki server tcp <address> port <number:1..65535> refresh <number:1..65535> <cr>    # observed_connections-003020
+(config-router-scope-af-topo)# default bgp rr-group <cr>    # observed_connections-002825
+(config-router-scope-af-topo)# default bgp safe-ebgp-policy <cr>    # observed_connections-002872
+(config-router-scope-af-topo)# default bgp scan-time <number:5..60> <cr>    # observed_connections-002923
+(config-router-scope-af-topo)# default bgp slow-peer detection <cr>    # observed_connections-002902
+(config-router-scope-af-topo)# default bgp slow-peer split-update-group dynamic <cr>    # observed_connections-002968
+(config-router-scope-af-topo)# default bgp snmp traps add-type <cr>    # observed_connections-002982
+(config-router-scope-af-topo)# default bgp soft-reconfig-backup <cr>    # observed_connections-002814
+(config-router-scope-af-topo)# default bgp sourced-paths per-net isis all <cr>    # observed_connections-003012
+(config-router-scope-af-topo)# default bgp sourced-paths per-net ospf all <cr>    # observed_connections-003008
+(config-router-scope-af-topo)# default bgp sourced-paths per-net ospfv3 all <cr>    # observed_connections-003010
+(config-router-scope-af-topo)# default bgp sourced-paths per-net static all <cr>    # observed_connections-003006
+(config-router-scope-af-topo)# default bgp sso route-refresh-enable <cr>    # observed_connections-002931
+(config-router-scope-af-topo)# default bgp suppress-inactive <cr>    # observed_connections-002787
+(config-router-scope-af-topo)# default bgp tid <cr>    # observed_connections-002690
+(config-router-scope-af-topo)# default bgp transport path-mtu-discovery <cr>    # observed_connections-002907
+(config-router-scope-af-topo)# default bgp update-delay <cr>    # observed_connections-002735
+(config-router-scope-af-topo)# default bgp update-group split as-override <cr>    # observed_connections-002961
+(config-router-scope-af-topo)# default bgp upgrade-cli <cr>    # observed_connections-002763
+(config-router-scope-af-topo)# default bgp va <cr>    # observed_connections-002807
+(config-router-scope-af-topo)# default bgp vrf-update-optimisation off <cr>    # observed_connections-002935
+(config-router-scope-af-topo)# default bgp write-limit <cr>    # observed_connections-002855
+(config-router-scope-af-topo)# default context <cr>    # observed_connections-002684
+(config-router-scope-af-topo)# default default-information originate <cr>    # observed_connections-002829
+(config-router-scope-af-topo)# default default-metric <cr>    # observed_connections-002726
+(config-router-scope-af-topo)# default distance <cr>    # observed_connections-002734
+(config-router-scope-af-topo)# default distance bgp <cr>    # observed_connections-002836
+(config-router-scope-af-topo)# default distance mbgp <cr>    # observed_connections-002844
+(config-router-scope-af-topo)# default distribute-list in <cr>    # observed_connections-002843
+(config-router-scope-af-topo)# default flash-update-threshold <cr>    # observed_connections-002677
+(config-router-scope-af-topo)# default import <cr>    # observed_connections-002698
+(config-router-scope-af-topo)# default import l2vpn evpn <cr>    # observed_connections-002878
+(config-router-scope-af-topo)# default import nhrp <cr>    # observed_connections-002752
+(config-router-scope-af-topo)# default import vpnv4 unicast <cr>    # observed_connections-002875
+(config-router-scope-af-topo)# default input-queue <cr>    # observed_connections-002675
+(config-router-scope-af-topo)# default label mode <cr>    # observed_connections-002764
+(config-router-scope-af-topo)# default metric holddown <cr>    # observed_connections-002778
+(config-router-scope-af-topo)# default metric maximum-hops <cr>    # observed_connections-002711
+(config-router-scope-af-topo)# default metric weights <cr>    # observed_connections-002800
+(config-router-scope-af-topo)# default offset-list <number:0..99> in <cr>    # observed_connections-002884
+(config-router-scope-af-topo)# default output-delay <cr>    # observed_connections-002668
+(config-router-scope-af-topo)# default passive-interface default <cr>    # observed_connections-002753
+(config-router-scope-af-topo)# default propagate-aspath <cr>    # observed_connections-002695
+(config-router-scope-af-topo)# default propagate-community <cr>    # observed_connections-002699
+(config-router-scope-af-topo)# default redistribute maximum-prefix <cr>    # observed_connections-002751
+(config-router-scope-af-topo)# default snmp context <cr>    # observed_connections-002756
+(config-router-scope-af-topo)# default snmp context <string> community <string> <cr>    # observed_connections-003004
+(config-router-scope-af-topo)# default snmp context <string> user <string> <cr>    # observed_connections-003003
+(config-router-scope-af-topo)# default summary-prefix <address> <address> <cr>    # observed_connections-002877
+(config-router-scope-af-topo)# default summary-prefix <address> <cr>    # observed_connections-002746
+(config-router-scope-af-topo)# default synchronization <cr>    # observed_connections-002687
+(config-router-scope-af-topo)# default table-map <cr>    # observed_connections-002697
+(config-router-scope-af-topo)# default version <cr>    # observed_connections-002683
+(config-router-scope-af-topo)# default-information originate <cr>    # observed_connections-002725
+(config-router-scope-af-topo)# default-metric <number:1..16777214> <cr>    # observed_connections-002727
+(config-router-scope-af-topo)# distance <number:1..255> <cr>    # observed_connections-002729
+(config-router-scope-af-topo)# distance bgp <number:1..255> <number:1..255> <number:1..255> <cr>    # observed_connections-002986
+(config-router-scope-af-topo)# distance mbgp <number:0..255> <number:0..255> <number:0..255> <cr>    # observed_connections-002988
+(config-router-scope-af-topo)# distribute-list in <cr>    # observed_connections-002736
+(config-router-scope-af-topo)# distribute-list out <?router_action_proc_vpn@555589a4a8e8> <cr>    # observed_connections-003077
+(config-router-scope-af-topo)# exit <cr>    # observed_connections-002665
+(config-router-scope-af-topo)# flash-update-threshold <number:0..30> <cr>    # observed_connections-002664
+(config-router-scope-af-topo)# import <cr>    # observed_connections-002671
+(config-router-scope-af-topo)# import l2vpn evpn <cr>    # observed_connections-002748
+(config-router-scope-af-topo)# import nhrp <cr>    # observed_connections-002691
+(config-router-scope-af-topo)# import path selection <?option@555589b0dd00> <cr>    # observed_connections-003099
+(config-router-scope-af-topo)# import vpnv4 unicast <cr>    # observed_connections-002744
+(config-router-scope-af-topo)# input-queue <number:0..1024> <cr>    # observed_connections-002663
+(config-router-scope-af-topo)# label mode all-explicit-null <cr>    # observed_connections-003073
+(config-router-scope-af-topo)# label mode explicit-null <cr>    # observed_connections-003072
+(config-router-scope-af-topo)# maximum-paths <number:dynamic> <cr>    # observed_connections-003033
+(config-router-scope-af-topo)# maximum-secondary-paths <number:dynamic> <cr>    # observed_connections-003032
+(config-router-scope-af-topo)# metric holddown <cr>    # observed_connections-002707
+(config-router-scope-af-topo)# metric maximum-hops <number:1..255> <cr>    # observed_connections-002673
+(config-router-scope-af-topo)# metric weights <number:0..8> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <cr>    # observed_connections-003017
+(config-router-scope-af-topo)# neighbor <cr>    # observed_connections-003022
+(config-router-scope-af-topo)# neighbor <cr>    # observed_connections-003024
+(config-router-scope-af-topo)# neighbor accept-route-legacy-rt <cr>    # observed_connections-003056
+(config-router-scope-af-topo)# neighbor activate <cr>    # observed_connections-003062
+(config-router-scope-af-topo)# neighbor additional-paths <cr>    # observed_connections-003059
+(config-router-scope-af-topo)# neighbor advertise additional-paths <cr>    # observed_connections-003090
+(config-router-scope-af-topo)# neighbor advertise best-external <cr>    # observed_connections-003088
+(config-router-scope-af-topo)# neighbor advertise diverse-path mpath <cr>    # observed_connections-003114
+(config-router-scope-af-topo)# neighbor advertise-gw-ip-disable <cr>    # observed_connections-003070
+(config-router-scope-af-topo)# neighbor advertise-map <string> non-exist-map <string> <cr>    # observed_connections-003118
+(config-router-scope-af-topo)# neighbor advertisement-interval <cr>    # observed_connections-003047
+(config-router-scope-af-topo)# neighbor aigp <cr>    # observed_connections-003057
+(config-router-scope-af-topo)# neighbor allow-policy <cr>    # observed_connections-003058
+(config-router-scope-af-topo)# neighbor allowas-in <cr>    # observed_connections-003043
+(config-router-scope-af-topo)# neighbor announce rpki state <cr>    # observed_connections-003108
+(config-router-scope-af-topo)# neighbor ao <string> <cr>    # observed_connections-003094
+(config-router-scope-af-topo)# neighbor as-override <cr>    # observed_connections-003065
+(config-router-scope-af-topo)# neighbor capability orf prefix-list send <cr>    # observed_connections-003119
+(config-router-scope-af-topo)# neighbor cluster-id <cr>    # observed_connections-003067
+(config-router-scope-af-topo)# neighbor default-originate <cr>    # observed_connections-003052
+(config-router-scope-af-topo)# neighbor description <cr>    # observed_connections-003061
+(config-router-scope-af-topo)# neighbor disable-connected-check <cr>    # observed_connections-003041
+(config-router-scope-af-topo)# neighbor distribute-list <number:1..199> in <cr>    # observed_connections-003104
+(config-router-scope-af-topo)# neighbor dmzlink-bw <cr>    # observed_connections-003039
+(config-router-scope-af-topo)# neighbor dont-capability-negotiate <cr>    # observed_connections-003036
+(config-router-scope-af-topo)# neighbor dont-capability-negotiate enhanced-refresh <cr>    # observed_connections-003076
+(config-router-scope-af-topo)# neighbor dont-capability-negotiate four-octets-as <cr>    # observed_connections-003074
+(config-router-scope-af-topo)# neighbor ebgp-multihop <cr>    # observed_connections-003051
+(config-router-scope-af-topo)# neighbor encap srv6 <cr>    # observed_connections-003095
+(config-router-scope-af-topo)# neighbor fall-over <cr>    # observed_connections-003044
+(config-router-scope-af-topo)# neighbor filter-list <number:1..500> in <cr>    # observed_connections-003107
+(config-router-scope-af-topo)# neighbor force-open-collision <cr>    # observed_connections-003035
+(config-router-scope-af-topo)# neighbor ha-mode graceful-restart <cr>    # observed_connections-003097
+(config-router-scope-af-topo)# neighbor ha-mode sso <cr>    # observed_connections-003098
+(config-router-scope-af-topo)# neighbor inherit peer-policy <string> <cr>    # observed_connections-003113
+(config-router-scope-af-topo)# neighbor inherit peer-session <string> <cr>    # observed_connections-003112
+(config-router-scope-af-topo)# neighbor inter-as-hybrid <cr>    # observed_connections-003054
+(config-router-scope-af-topo)# neighbor internal-vpn-client <cr>    # observed_connections-003064
+(config-router-scope-af-topo)# neighbor local-as <cr>    # observed_connections-003042
+(config-router-scope-af-topo)# neighbor log-neighbor-changes <cr>    # observed_connections-003071
+(config-router-scope-af-topo)# neighbor long-lived-graceful-restart <cr>    # observed_connections-003069
+(config-router-scope-af-topo)# neighbor maximum-prefix <number:1..2147483647> <cr>    # observed_connections-003089
+(config-router-scope-af-topo)# neighbor next-hop-self <cr>    # observed_connections-003049
+(config-router-scope-af-topo)# neighbor next-hop-unchanged <cr>    # observed_connections-003050
+(config-router-scope-af-topo)# neighbor orf rt-import-list <cr>    # observed_connections-003078
+(config-router-scope-af-topo)# neighbor override-capability-neg <cr>    # observed_connections-003037
+(config-router-scope-af-topo)# neighbor password <cr>    # observed_connections-003060
+(config-router-scope-af-topo)# neighbor path-attribute treat-as-withdraw <number:1..255> in <cr>    # observed_connections-003120
+(config-router-scope-af-topo)# neighbor peer-group <cr>    # observed_connections-003034
+(config-router-scope-af-topo)# neighbor peer-group <string> <cr>    # observed_connections-003087
+(config-router-scope-af-topo)# neighbor prefix-length-size <number:1..2> <cr>    # observed_connections-003079
+(config-router-scope-af-topo)# neighbor prefix-list <string> in <cr>    # observed_connections-003105
+(config-router-scope-af-topo)# neighbor remote-as <cr>    # observed_connections-003040
+(config-router-scope-af-topo)# neighbor remove-private-as <cr>    # observed_connections-003053
+(config-router-scope-af-topo)# neighbor remove-private-as all <cr>    # observed_connections-003086
+(config-router-scope-af-topo)# neighbor remove-private-as all replace-as <cr>    # observed_connections-003111
+(config-router-scope-af-topo)# neighbor route-map <string> in <cr>    # observed_connections-003106
+(config-router-scope-af-topo)# neighbor route-reflector-client <cr>    # observed_connections-003055
+(config-router-scope-af-topo)# neighbor send-community <cr>    # observed_connections-003046
+(config-router-scope-af-topo)# neighbor send-label <cr>    # observed_connections-003066
+(config-router-scope-af-topo)# neighbor shutdown <cr>    # observed_connections-003048
+(config-router-scope-af-topo)# neighbor slow-peer detection <cr>    # observed_connections-003081
+(config-router-scope-af-topo)# neighbor slow-peer detection threshold <number:120..3600> <cr>    # observed_connections-003082
+(config-router-scope-af-topo)# neighbor slow-peer split-update-group dynamic <cr>    # observed_connections-003110
+(config-router-scope-af-topo)# neighbor slow-peer split-update-group static <cr>    # observed_connections-003109
+(config-router-scope-af-topo)# neighbor soft-reconfiguration inbound <cr>    # observed_connections-003083
+(config-router-scope-af-topo)# neighbor soo <?bgp_extcomm_action@555589a5e320> <cr>    # observed_connections-003125
+(config-router-scope-af-topo)# neighbor suppress-signaling-protocol ldp <cr>    # observed_connections-003096
+(config-router-scope-af-topo)# neighbor suppress-sr <cr>    # observed_connections-003068
+(config-router-scope-af-topo)# neighbor timers <cr>    # observed_connections-003063
+(config-router-scope-af-topo)# neighbor translate-topology <number:1..4095> <cr>    # observed_connections-003075
+(config-router-scope-af-topo)# neighbor translate-update <cr>    # observed_connections-003038
+(config-router-scope-af-topo)# neighbor transport multi-session <cr>    # observed_connections-003093
+(config-router-scope-af-topo)# neighbor transport path-mtu-discovery <cr>    # observed_connections-003092
+(config-router-scope-af-topo)# neighbor ttl-security hops <number:1..254> <cr>    # observed_connections-003115
+(config-router-scope-af-topo)# neighbor unsuppress-map <string> <cr>    # observed_connections-003080
+(config-router-scope-af-topo)# neighbor update in labeled-unicast unique <cr>    # observed_connections-003121
+(config-router-scope-af-topo)# neighbor update-source <interface> <cr>    # observed_connections-003126
+(config-router-scope-af-topo)# neighbor use nexthop-attribute <cr>    # observed_connections-003091
+(config-router-scope-af-topo)# neighbor validation off <cr>    # observed_connections-003084
+(config-router-scope-af-topo)# neighbor validation redirect-off <cr>    # observed_connections-003085
+(config-router-scope-af-topo)# neighbor version <number:4..4> <cr>    # observed_connections-003023
+(config-router-scope-af-topo)# neighbor weight <cr>    # observed_connections-003045
+(config-router-scope-af-topo)# network <address> <cr>    # observed_connections-003031
+(config-router-scope-af-topo)# network <address> <cr>    # observed_connections-003124
+(config-router-scope-af-topo)# no aggregate-address <address> <address> <cr>    # observed_connections-002914
+(config-router-scope-af-topo)# no auto-summary <cr>    # observed_connections-002721
+(config-router-scope-af-topo)# no bgp additional-paths install <cr>    # observed_connections-002901
+(config-router-scope-af-topo)# no bgp additional-paths select <cr>    # observed_connections-002910
+(config-router-scope-af-topo)# no bgp advertise-best-external <cr>    # observed_connections-002779
+(config-router-scope-af-topo)# no bgp advertisement startup-delay <cr>    # observed_connections-002832
+(config-router-scope-af-topo)# no bgp aggregate-timer <number:6..60> <cr>    # observed_connections-002911
+(config-router-scope-af-topo)# no bgp aigp-rib-metric <cr>    # observed_connections-002862
+(config-router-scope-af-topo)# no bgp always-compare-med <cr>    # observed_connections-002767
+(config-router-scope-af-topo)# no bgp asnotation dot <cr>    # observed_connections-002889
+(config-router-scope-af-topo)# no bgp bestpath aigp ignore <cr>    # observed_connections-002998
+(config-router-scope-af-topo)# no bgp bestpath as-path ignore <cr>    # observed_connections-002991
+(config-router-scope-af-topo)# no bgp bestpath as-path multipath-relax <cr>    # observed_connections-002993
+(config-router-scope-af-topo)# no bgp bestpath compare-routerid <cr>    # observed_connections-002944
+(config-router-scope-af-topo)# no bgp bestpath cost-community ignore <cr>    # observed_connections-002997
+(config-router-scope-af-topo)# no bgp bestpath igp-metric ignore <cr>    # observed_connections-002956
+(config-router-scope-af-topo)# no bgp bestpath med missing-as-worst <cr>    # observed_connections-002994
+(config-router-scope-af-topo)# no bgp bestpath prefix-validate allow-invalid <cr>    # observed_connections-002962
+(config-router-scope-af-topo)# no bgp bestpath prefix-validate disable <cr>    # observed_connections-002964
+(config-router-scope-af-topo)# no bgp client-to-client reflection <cr>    # observed_connections-002906
+(config-router-scope-af-topo)# no bgp cluster-id <cr>    # observed_connections-002792
+(config-router-scope-af-topo)# no bgp consistency-checker <cr>    # observed_connections-002802
+(config-router-scope-af-topo)# no bgp dampening <cr>    # observed_connections-002768
+(config-router-scope-af-topo)# no bgp default inter-as-hybrid advertise-source-routes <cr>    # observed_connections-002957
+(config-router-scope-af-topo)# no bgp default ipv4-unicast <cr>    # observed_connections-002880
+(config-router-scope-af-topo)# no bgp default ipv6-nexthop <cr>    # observed_connections-002883
+(config-router-scope-af-topo)# no bgp default local-preference <cr>    # observed_connections-002770
+(config-router-scope-af-topo)# no bgp default route-target filter <cr>    # observed_connections-002951
+(config-router-scope-af-topo)# no bgp default route-target filter <cr>    # observed_connections-002952
+(config-router-scope-af-topo)# no bgp deterministic-med <cr>    # observed_connections-002819
+(config-router-scope-af-topo)# no bgp dmzlink-bw <cr>    # observed_connections-002790
+(config-router-scope-af-topo)# no bgp dynamic-med-interval <cr>    # observed_connections-002720
+(config-router-scope-af-topo)# no bgp enforce-first-as <cr>    # observed_connections-002797
+(config-router-scope-af-topo)# no bgp enhanced-error <cr>    # observed_connections-002835
+(config-router-scope-af-topo)# no bgp fast-external-fallover <cr>    # observed_connections-002755
+(config-router-scope-af-topo)# no bgp graceful-restart <cr>    # observed_connections-002850
+(config-router-scope-af-topo)# no bgp graceful-restart restart-time <cr>    # observed_connections-002842
+(config-router-scope-af-topo)# no bgp graceful-restart stalepath-time <cr>    # observed_connections-002846
+(config-router-scope-af-topo)# no bgp graceful-shutdown all vrfs activate <cr>    # observed_connections-003015
+(config-router-scope-af-topo)# no bgp inject-map <string> exist-map <string> <cr>    # observed_connections-003013
+(config-router-scope-af-topo)# no bgp label-allocation-batch <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-002950
+(config-router-scope-af-topo)# no bgp listen block <address> <cr>    # observed_connections-002974
+(config-router-scope-af-topo)# no bgp listen block <address> <cr>    # observed_connections-002987
+(config-router-scope-af-topo)# no bgp listen limit <cr>    # observed_connections-002808
+(config-router-scope-af-topo)# no bgp listen limit <cr>    # observed_connections-002837
+(config-router-scope-af-topo)# no bgp listen persistent <cr>    # observed_connections-002928
+(config-router-scope-af-topo)# no bgp log-neighbor-changes <cr>    # observed_connections-002805
+(config-router-scope-af-topo)# no bgp maxas-limit <cr>    # observed_connections-002868
+(config-router-scope-af-topo)# no bgp maxcommunity-limit <cr>    # observed_connections-002857
+(config-router-scope-af-topo)# no bgp maxextcommunity-limit <cr>    # observed_connections-002864
+(config-router-scope-af-topo)# no bgp maxlargecommunity-limit <cr>    # observed_connections-002860
+(config-router-scope-af-topo)# no bgp mpls-local-label <cr>    # observed_connections-002830
+(config-router-scope-af-topo)# no bgp nexthop route-map <string> <cr>    # observed_connections-002979
+(config-router-scope-af-topo)# no bgp nexthop trigger critical-delay <cr>    # observed_connections-002922
+(config-router-scope-af-topo)# no bgp nexthop trigger delay <cr>    # observed_connections-002917
+(config-router-scope-af-topo)# no bgp nexthop trigger enable <cr>    # observed_connections-002973
+(config-router-scope-af-topo)# no bgp nopeerup-delay cold-boot <number:1..3600> <cr>    # observed_connections-002984
+(config-router-scope-af-topo)# no bgp recursion host <cr>    # observed_connections-002895
+(config-router-scope-af-topo)# no bgp redistribute-internal <cr>    # observed_connections-002780
+(config-router-scope-af-topo)# no bgp refresh max-eor-time <cr>    # observed_connections-002938
+(config-router-scope-af-topo)# no bgp refresh stalepath-time <cr>    # observed_connections-002933
+(config-router-scope-af-topo)# no bgp regexp deterministic <cr>    # observed_connections-002934

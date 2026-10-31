@@ -1,0 +1,18 @@
+# 模式 request-dialout；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vpdn-req-out)# default pool-member <cr>    # observed_connections-009269
+(config-vpdn-req-out)# default protocol <cr>    # observed_connections-009266
+(config-vpdn-req-out)# default rotary-group <cr>    # observed_connections-009272
+(config-vpdn-req-out)# default virtual-template <cr>    # observed_connections-009274
+(config-vpdn-req-out)# exit <cr>    # observed_connections-009262
+(config-vpdn-req-out)# no pool-member <cr>    # observed_connections-009267
+(config-vpdn-req-out)# no protocol <cr>    # observed_connections-009264
+(config-vpdn-req-out)# no rotary-group <cr>    # observed_connections-009270
+(config-vpdn-req-out)# no virtual-template <cr>    # observed_connections-009273
+(config-vpdn-req-out)# pool-member <number:1..255> <cr>    # observed_connections-009268
+(config-vpdn-req-out)# protocol l2tp <cr>    # observed_connections-009265
+(config-vpdn-req-out)# rotary-group <number:0..255> <cr>    # observed_connections-009271
+(config-vpdn-req-out)# virtual-template <cr>    # observed_connections-009263
+(config-vpdn-req-out)# virtual-template <number:dynamic> <cr>    # observed_connections-009275

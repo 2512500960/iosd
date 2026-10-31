@@ -1,0 +1,45 @@
+# 模式 evpn-evi；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evpn-evi)# advertise mac enable <cr>    # observed_connections-008384
+(config-evpn-evi)# auto-route-target <cr>    # observed_connections-008350
+(config-evpn-evi)# default advertise mac <cr>    # observed_connections-008385
+(config-evpn-evi)# default auto-route-target <cr>    # observed_connections-008354
+(config-evpn-evi)# default default-gateway advertise <cr>    # observed_connections-008380
+(config-evpn-evi)# default encapsulation <cr>    # observed_connections-008356
+(config-evpn-evi)# default flooding-suppression address-resolution <cr>    # observed_connections-008365
+(config-evpn-evi)# default ip local-learning <cr>    # observed_connections-008371
+(config-evpn-evi)# default multicast advertise <cr>    # observed_connections-008381
+(config-evpn-evi)# default multihoming aliasing <cr>    # observed_connections-008374
+(config-evpn-evi)# default multihoming proxy-mac-ip <cr>    # observed_connections-008382
+(config-evpn-evi)# default rd <cr>    # observed_connections-008353
+(config-evpn-evi)# default re-originate route-type5 <cr>    # observed_connections-008376
+(config-evpn-evi)# default replication-type <cr>    # observed_connections-008359
+(config-evpn-evi)# default vpws context <string> <cr>    # observed_connections-008387
+(config-evpn-evi)# default-gateway advertise enable <cr>    # observed_connections-008377
+(config-evpn-evi)# encapsulation mpls <cr>    # observed_connections-008358
+(config-evpn-evi)# exit <cr>    # observed_connections-008349
+(config-evpn-evi)# flooding-suppression address-resolution enable <cr>    # observed_connections-008364
+(config-evpn-evi)# ip local-learning enable <cr>    # observed_connections-008369
+(config-evpn-evi)# multicast advertise enable <cr>    # observed_connections-008378
+(config-evpn-evi)# multihoming aliasing enable <cr>    # observed_connections-008370
+(config-evpn-evi)# multihoming proxy-mac-ip enable <cr>    # observed_connections-008379
+(config-evpn-evi)# no advertise mac <cr>    # observed_connections-008383
+(config-evpn-evi)# no auto-route-target <cr>    # observed_connections-008352
+(config-evpn-evi)# no default-gateway advertise <cr>    # observed_connections-008372
+(config-evpn-evi)# no encapsulation <cr>    # observed_connections-008355
+(config-evpn-evi)# no flooding-suppression address-resolution <cr>    # observed_connections-008363
+(config-evpn-evi)# no ip local-learning <cr>    # observed_connections-008366
+(config-evpn-evi)# no multicast advertise <cr>    # observed_connections-008373
+(config-evpn-evi)# no multihoming aliasing <cr>    # observed_connections-008367
+(config-evpn-evi)# no multihoming proxy-mac-ip <cr>    # observed_connections-008375
+(config-evpn-evi)# no rd <cr>    # observed_connections-008351
+(config-evpn-evi)# no re-originate route-type5 <cr>    # observed_connections-008368
+(config-evpn-evi)# no replication-type <cr>    # observed_connections-008357
+(config-evpn-evi)# no vpws context <string> <cr>    # observed_connections-008386
+(config-evpn-evi)# rd <?vrf_rd_action@55558add3010> <cr>    # observed_connections-008388
+(config-evpn-evi)# re-originate route-type5 <cr>    # observed_connections-008361
+(config-evpn-evi)# replication-type ingress <cr>    # observed_connections-008360
+(config-evpn-evi)# route-target <?bgp_extcomm_action@55558add33a0> <cr>    # observed_connections-008389
+(config-evpn-evi)# vpws context <string> <cr>    # observed_connections-008362

@@ -1,0 +1,58 @@
+# 模式 eigrp_af_intf_vnet_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af-int-vnet)# add-paths <number:1..4> <cr>    # observed_connections-007774
+(config-router-af-int-vnet)# authentication key-chain <string> <cr>    # observed_connections-007786
+(config-router-af-int-vnet)# authentication mode hmac-sha-256 <string> <cr>    # observed_connections-007791
+(config-router-af-int-vnet)# authentication mode md5 <cr>    # observed_connections-007783
+(config-router-af-int-vnet)# bandwidth-percent <number:1..999999> <cr>    # observed_connections-007754
+(config-router-af-int-vnet)# bfd <cr>    # observed_connections-007743
+(config-router-af-int-vnet)# dampening-change <cr>    # observed_connections-007744
+(config-router-af-int-vnet)# dampening-interval <cr>    # observed_connections-007745
+(config-router-af-int-vnet)# default add-paths <cr>    # observed_connections-007777
+(config-router-af-int-vnet)# default authentication key-chain <cr>    # observed_connections-007787
+(config-router-af-int-vnet)# default authentication mode <cr>    # observed_connections-007784
+(config-router-af-int-vnet)# default bandwidth-percent <cr>    # observed_connections-007756
+(config-router-af-int-vnet)# default bfd <cr>    # observed_connections-007757
+(config-router-af-int-vnet)# default dampening-change <cr>    # observed_connections-007760
+(config-router-af-int-vnet)# default dampening-interval <cr>    # observed_connections-007764
+(config-router-af-int-vnet)# default hello-interval <cr>    # observed_connections-007766
+(config-router-af-int-vnet)# default hold-time <cr>    # observed_connections-007769
+(config-router-af-int-vnet)# default next-hop-self <cr>    # observed_connections-007772
+(config-router-af-int-vnet)# default passive-interface <cr>    # observed_connections-007775
+(config-router-af-int-vnet)# default shutdown <cr>    # observed_connections-007778
+(config-router-af-int-vnet)# default split-horizon <cr>    # observed_connections-007780
+(config-router-af-int-vnet)# default stub-site wan-interface <cr>    # observed_connections-007789
+(config-router-af-int-vnet)# default summary-address <address> <address> <cr>    # observed_connections-007793
+(config-router-af-int-vnet)# default test-bandwidth <cr>    # observed_connections-007752
+(config-router-af-int-vnet)# default test-delay <cr>    # observed_connections-007762
+(config-router-af-int-vnet)# exit-af-int-vnet <cr>    # observed_connections-007742
+(config-router-af-int-vnet)# hello-interval <number:1..65535> <cr>    # observed_connections-007765
+(config-router-af-int-vnet)# hold-time <number:1..65535> <cr>    # observed_connections-007768
+(config-router-af-int-vnet)# next-hop-self <cr>    # observed_connections-007746
+(config-router-af-int-vnet)# no add-paths <cr>    # observed_connections-007773
+(config-router-af-int-vnet)# no authentication key-chain <cr>    # observed_connections-007785
+(config-router-af-int-vnet)# no authentication mode <cr>    # observed_connections-007782
+(config-router-af-int-vnet)# no bandwidth-percent <cr>    # observed_connections-007753
+(config-router-af-int-vnet)# no bfd <cr>    # observed_connections-007755
+(config-router-af-int-vnet)# no dampening-change <cr>    # observed_connections-007758
+(config-router-af-int-vnet)# no dampening-interval <cr>    # observed_connections-007761
+(config-router-af-int-vnet)# no hello-interval <cr>    # observed_connections-007763
+(config-router-af-int-vnet)# no hold-time <cr>    # observed_connections-007767
+(config-router-af-int-vnet)# no next-hop-self <cr>    # observed_connections-007770
+(config-router-af-int-vnet)# no passive-interface <cr>    # observed_connections-007771
+(config-router-af-int-vnet)# no shutdown <cr>    # observed_connections-007776
+(config-router-af-int-vnet)# no split-horizon <cr>    # observed_connections-007779
+(config-router-af-int-vnet)# no stub-site wan-interface <cr>    # observed_connections-007788
+(config-router-af-int-vnet)# no summary-address <address> <address> <cr>    # observed_connections-007792
+(config-router-af-int-vnet)# no test-bandwidth <cr>    # observed_connections-007750
+(config-router-af-int-vnet)# no test-delay <cr>    # observed_connections-007759
+(config-router-af-int-vnet)# passive-interface <cr>    # observed_connections-007747
+(config-router-af-int-vnet)# shutdown <cr>    # observed_connections-007748
+(config-router-af-int-vnet)# split-horizon <cr>    # observed_connections-007749
+(config-router-af-int-vnet)# stub-site wan-interface <cr>    # observed_connections-007781
+(config-router-af-int-vnet)# summary-address <address> <address> <cr>    # observed_connections-007790
+(config-router-af-int-vnet)# summary-address <prefix:dynamic> <cr>    # observed_connections-007795
+(config-router-af-int-vnet)# test-bandwidth <number:1..4294967295> <cr>    # observed_connections-007751
+(config-router-af-int-vnet)# test-delay <?general_to_number_action@555589be23e8> <cr>    # observed_connections-007794

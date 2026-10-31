@@ -1,0 +1,12 @@
+# 模式 interchassis；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-r-ic)# exit <cr>    # observed_connections-009396
+(config-r-ic)# mlacp node-id <number:0..7> <cr>    # observed_connections-009398
+(config-r-ic)# mlacp system-mac <address> <cr>    # observed_connections-009403
+(config-r-ic)# mlacp system-priority <number:0..65535> <cr>    # observed_connections-009397
+(config-r-ic)# no exit <cr>    # observed_connections-009399
+(config-r-ic)# no mlacp node-id <cr>    # observed_connections-009401
+(config-r-ic)# no mlacp system-mac <cr>    # observed_connections-009402
+(config-r-ic)# no mlacp system-priority <cr>    # observed_connections-009400

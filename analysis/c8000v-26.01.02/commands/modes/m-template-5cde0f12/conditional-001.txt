@@ -1,0 +1,45 @@
+# 模式 template；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-template)# aaa session-mib disconnect <cr>    # conditional_registration_candidates-011017
+(config-template)# aaa session-mib populate start <cr>    # conditional_registration_candidates-011030
+(config-template)# default aaa session-mib disconnect <cr>    # conditional_registration_candidates-011029
+(config-template)# default aaa session-mib populate start <cr>    # conditional_registration_candidates-011037
+(config-template)# default ip inspect <string> in <cr>    # conditional_registration_candidates-011041
+(config-template)# default ip media-pool <address> <address> <cr>    # conditional_registration_candidates-011039
+(config-template)# default ip mobile arp <cr>    # conditional_registration_candidates-011034
+(config-template)# default ip mobile router-service roam <cr>    # conditional_registration_candidates-011043
+(config-template)# default spanning-tree <cr>    # conditional_registration_candidates-011009
+(config-template)# default spanning-tree bpdufilter <cr>    # conditional_registration_candidates-011020
+(config-template)# default spanning-tree bpduguard <cr>    # conditional_registration_candidates-011024
+(config-template)# default spanning-tree cost <cr>    # conditional_registration_candidates-011012
+(config-template)# default spanning-tree link-type <cr>    # conditional_registration_candidates-011023
+(config-template)# default spanning-tree port-priority <cr>    # conditional_registration_candidates-011026
+(config-template)# default spanning-tree portfast <cr>    # conditional_registration_candidates-011014
+(config-template)# ip flow egress <cr>    # conditional_registration_candidates-011044
+(config-template)# ip flow ingress <cr>    # conditional_registration_candidates-011045
+(config-template)# ip inspect <string> in <cr>    # conditional_registration_candidates-011033
+(config-template)# ip media-pool <address> <address> <cr>    # conditional_registration_candidates-011031
+(config-template)# ip mobile prefix-length <cr>    # conditional_registration_candidates-011027
+(config-template)# ip mobile router-service roam <cr>    # conditional_registration_candidates-011035
+(config-template)# no aaa session-mib disconnect <cr>    # conditional_registration_candidates-011028
+(config-template)# no aaa session-mib populate start <cr>    # conditional_registration_candidates-011036
+(config-template)# no ip inspect <string> in <cr>    # conditional_registration_candidates-011040
+(config-template)# no ip media-pool <address> <address> <cr>    # conditional_registration_candidates-011038
+(config-template)# no ip mobile arp <cr>    # conditional_registration_candidates-011032
+(config-template)# no ip mobile router-service roam <cr>    # conditional_registration_candidates-011042
+(config-template)# no spanning-tree <cr>    # conditional_registration_candidates-011008
+(config-template)# no spanning-tree bpdufilter <cr>    # conditional_registration_candidates-011016
+(config-template)# no spanning-tree bpduguard <cr>    # conditional_registration_candidates-011021
+(config-template)# no spanning-tree cost <cr>    # conditional_registration_candidates-011011
+(config-template)# no spanning-tree link-type <cr>    # conditional_registration_candidates-011019
+(config-template)# no spanning-tree port-priority <cr>    # conditional_registration_candidates-011025
+(config-template)# no spanning-tree portfast <cr>    # conditional_registration_candidates-011013
+(config-template)# spanning-tree <cr>    # conditional_registration_candidates-011006
+(config-template)# spanning-tree bpdufilter disable <cr>    # conditional_registration_candidates-011015
+(config-template)# spanning-tree bpduguard disable <cr>    # conditional_registration_candidates-011018
+(config-template)# spanning-tree cost <number:1..200000000> <cr>    # conditional_registration_candidates-011007
+(config-template)# spanning-tree link-type point-to-point <cr>    # conditional_registration_candidates-011022
+(config-template)# spanning-tree port-priority <?number_help_func_action@55558b93a9d0> <cr>    # conditional_registration_candidates-011046
+(config-template)# spanning-tree portfast <cr>    # conditional_registration_candidates-011010

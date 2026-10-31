@@ -1,0 +1,46 @@
+# 模式 tp；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-mpls-tp)# default fault-oam lockout-refresh-timer <cr>    # static_slot_creation_candidates-003953
+(config-mpls-tp)# default fault-oam refresh-timer <cr>    # static_slot_creation_candidates-003950
+(config-mpls-tp)# default global-id <cr>    # static_slot_creation_candidates-003936
+(config-mpls-tp)# default icc <cr>    # static_slot_creation_candidates-003939
+(config-mpls-tp)# default logging config-change <cr>    # static_slot_creation_candidates-003947
+(config-mpls-tp)# default protection trigger ais <cr>    # static_slot_creation_candidates-003955
+(config-mpls-tp)# default protection trigger ldi <cr>    # static_slot_creation_candidates-003957
+(config-mpls-tp)# default protection trigger lkr <cr>    # static_slot_creation_candidates-003959
+(config-mpls-tp)# default psc <cr>    # static_slot_creation_candidates-003942
+(config-mpls-tp)# default psc fast refresh interval <cr>    # static_slot_creation_candidates-003962
+(config-mpls-tp)# default psc remote refresh interval <cr>    # static_slot_creation_candidates-003967
+(config-mpls-tp)# default psc slow refresh interval <cr>    # static_slot_creation_candidates-003965
+(config-mpls-tp)# default router-id <cr>    # static_slot_creation_candidates-003930
+(config-mpls-tp)# default wtr-timer <cr>    # static_slot_creation_candidates-003933
+(config-mpls-tp)# fault-oam lockout-refresh-timer <number:1..255> <cr>    # static_slot_creation_candidates-003952
+(config-mpls-tp)# fault-oam refresh-timer <number:1..255> <cr>    # static_slot_creation_candidates-003948
+(config-mpls-tp)# global-id <number:0..2147483647> <cr>    # static_slot_creation_candidates-003935
+(config-mpls-tp)# icc <string> <cr>    # static_slot_creation_candidates-003938
+(config-mpls-tp)# logging config-change <cr>    # static_slot_creation_candidates-003941
+(config-mpls-tp)# no fault-oam lockout-refresh-timer <cr>    # static_slot_creation_candidates-003951
+(config-mpls-tp)# no fault-oam refresh-timer <cr>    # static_slot_creation_candidates-003946
+(config-mpls-tp)# no global-id <cr>    # static_slot_creation_candidates-003934
+(config-mpls-tp)# no icc <cr>    # static_slot_creation_candidates-003937
+(config-mpls-tp)# no logging config-change <cr>    # static_slot_creation_candidates-003944
+(config-mpls-tp)# no protection trigger ais <cr>    # static_slot_creation_candidates-003954
+(config-mpls-tp)# no protection trigger ldi <cr>    # static_slot_creation_candidates-003956
+(config-mpls-tp)# no protection trigger lkr <cr>    # static_slot_creation_candidates-003958
+(config-mpls-tp)# no psc <cr>    # static_slot_creation_candidates-003940
+(config-mpls-tp)# no psc fast refresh interval <cr>    # static_slot_creation_candidates-003960
+(config-mpls-tp)# no psc remote refresh interval <cr>    # static_slot_creation_candidates-003966
+(config-mpls-tp)# no psc slow refresh interval <cr>    # static_slot_creation_candidates-003963
+(config-mpls-tp)# no router-id <cr>    # static_slot_creation_candidates-003928
+(config-mpls-tp)# no wtr-timer <cr>    # static_slot_creation_candidates-003931
+(config-mpls-tp)# protection trigger ais <cr>    # static_slot_creation_candidates-003943
+(config-mpls-tp)# protection trigger ldi <cr>    # static_slot_creation_candidates-003945
+(config-mpls-tp)# protection trigger lkr <cr>    # static_slot_creation_candidates-003949
+(config-mpls-tp)# psc <cr>    # static_slot_creation_candidates-003927
+(config-mpls-tp)# psc fast refresh interval <number:1000..5000> <cr>    # static_slot_creation_candidates-003961
+(config-mpls-tp)# psc remote refresh interval <number:5..86400> <cr>    # static_slot_creation_candidates-003968
+(config-mpls-tp)# psc slow refresh interval <number:5..86400> <cr>    # static_slot_creation_candidates-003964
+(config-mpls-tp)# router-id <address> <cr>    # static_slot_creation_candidates-003929
+(config-mpls-tp)# wtr-timer <number:0..2147483647> <cr>    # static_slot_creation_candidates-003932

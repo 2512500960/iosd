@@ -1,0 +1,120 @@
+# 模式 router_eigrp_classic；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router)# address-family ipv4 vrf <string> <cr>    # observed_connections-006727
+(config-router)# auto-summary <cr>    # observed_connections-006645
+(config-router)# bfd all-interfaces <cr>    # observed_connections-006655
+(config-router)# bfd interface <interface> <cr>    # observed_connections-006755
+(config-router)# default address-family ipv4 vrf <string> <cr>    # observed_connections-006744
+(config-router)# default auto-summary <cr>    # observed_connections-006670
+(config-router)# default bfd all-interfaces <cr>    # observed_connections-006700
+(config-router)# default default-information in <cr>    # observed_connections-006712
+(config-router)# default default-metric <cr>    # observed_connections-006665
+(config-router)# default distance <number:1..255> <address> <address> <cr>    # observed_connections-006746
+(config-router)# default distance eigrp <cr>    # observed_connections-006714
+(config-router)# default distribute-list in <cr>    # observed_connections-006706
+(config-router)# default eigrp graceful-restart <cr>    # observed_connections-006722
+(config-router)# default eigrp upgrade-cli <string> <cr>    # observed_connections-006742
+(config-router)# default event-log-size <cr>    # observed_connections-006689
+(config-router)# default event-logging <cr>    # observed_connections-006685
+(config-router)# default kill-everyone <cr>    # observed_connections-006677
+(config-router)# default log-event-type <cr>    # observed_connections-006686
+(config-router)# default log-neighbor-changes <cr>    # observed_connections-006680
+(config-router)# default log-neighbor-warnings <cr>    # observed_connections-006683
+(config-router)# default maximum-paths <cr>    # observed_connections-006660
+(config-router)# default maximum-secondary-paths <cr>    # observed_connections-006659
+(config-router)# default metric maximum-hops <cr>    # observed_connections-006698
+(config-router)# default metric weights <cr>    # observed_connections-006702
+(config-router)# default neighbor maximum-prefix <cr>    # observed_connections-006719
+(config-router)# default network <address> <cr>    # observed_connections-006707
+(config-router)# default nsf <cr>    # observed_connections-006654
+(config-router)# default offset-list <number:0..99> in <cr>    # observed_connections-006739
+(config-router)# default passive-interface default <cr>    # observed_connections-006716
+(config-router)# default redistribute maximum-prefix <cr>    # observed_connections-006709
+(config-router)# default router-id <cr>    # observed_connections-006675
+(config-router)# default shutdown <cr>    # observed_connections-006690
+(config-router)# default stub <cr>    # observed_connections-006679
+(config-router)# default summary-metric <address> <address> <cr>    # observed_connections-006735
+(config-router)# default timers active-time <cr>    # observed_connections-006694
+(config-router)# default timers nsf converge <cr>    # observed_connections-006733
+(config-router)# default timers nsf route-hold <cr>    # observed_connections-006726
+(config-router)# default timers nsf signal <cr>    # observed_connections-006730
+(config-router)# default traffic-share balanced <cr>    # observed_connections-006703
+(config-router)# default variance <cr>    # observed_connections-006663
+(config-router)# default-information in <cr>    # observed_connections-006669
+(config-router)# default-metric <number:1..4294967295> <number:0..4294967295> <number:0..255> <number:1..255> <number:1..65535> <cr>    # observed_connections-006747
+(config-router)# distance <number:1..255> <address> <address> <cr>    # observed_connections-006740
+(config-router)# distance eigrp <number:1..255> <number:1..255> <cr>    # observed_connections-006738
+(config-router)# distribute-list in <cr>    # observed_connections-006666
+(config-router)# distribute-list out <?router_action_proc_vpn@555589c34608> <cr>    # observed_connections-006756
+(config-router)# eigrp graceful-restart <cr>    # observed_connections-006691
+(config-router)# eigrp upgrade-cli <string> <cr>    # observed_connections-006723
+(config-router)# event-log-size <number:dynamic> <cr>    # observed_connections-006754
+(config-router)# event-logging <cr>    # observed_connections-006648
+(config-router)# exit <cr>    # observed_connections-006643
+(config-router)# kill-everyone <cr>    # observed_connections-006646
+(config-router)# log-event-type <cr>    # observed_connections-006651
+(config-router)# log-neighbor-changes <cr>    # observed_connections-006647
+(config-router)# log-neighbor-warnings <cr>    # observed_connections-006649
+(config-router)# maximum-paths <number:dynamic> <cr>    # observed_connections-006750
+(config-router)# maximum-secondary-paths <number:dynamic> <cr>    # observed_connections-006749
+(config-router)# metric maximum-hops <number:1..255> <cr>    # observed_connections-006696
+(config-router)# metric weights <number:0..8> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <cr>    # observed_connections-006748
+(config-router)# neighbor <address> <interface> <cr>    # observed_connections-006757
+(config-router)# neighbor maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006720
+(config-router)# network <address> <cr>    # observed_connections-006667
+(config-router)# no address-family ipv4 vrf <string> <cr>    # observed_connections-006743
+(config-router)# no auto-summary <cr>    # observed_connections-006668
+(config-router)# no bfd all-interfaces <cr>    # observed_connections-006697
+(config-router)# no default-information in <cr>    # observed_connections-006711
+(config-router)# no default-metric <cr>    # observed_connections-006664
+(config-router)# no distance <number:1..255> <address> <address> <cr>    # observed_connections-006745
+(config-router)# no distance eigrp <cr>    # observed_connections-006713
+(config-router)# no distribute-list in <cr>    # observed_connections-006704
+(config-router)# no eigrp graceful-restart <cr>    # observed_connections-006721
+(config-router)# no eigrp upgrade-cli <string> <cr>    # observed_connections-006741
+(config-router)# no event-log-size <cr>    # observed_connections-006687
+(config-router)# no event-logging <cr>    # observed_connections-006682
+(config-router)# no kill-everyone <cr>    # observed_connections-006674
+(config-router)# no log-event-type <cr>    # observed_connections-006684
+(config-router)# no log-neighbor-changes <cr>    # observed_connections-006678
+(config-router)# no log-neighbor-warnings <cr>    # observed_connections-006681
+(config-router)# no maximum-paths <cr>    # observed_connections-006658
+(config-router)# no maximum-secondary-paths <cr>    # observed_connections-006657
+(config-router)# no metric maximum-hops <cr>    # observed_connections-006695
+(config-router)# no metric weights <cr>    # observed_connections-006699
+(config-router)# no neighbor maximum-prefix <cr>    # observed_connections-006717
+(config-router)# no network <address> <cr>    # observed_connections-006705
+(config-router)# no nsf <cr>    # observed_connections-006653
+(config-router)# no offset-list <number:0..99> in <cr>    # observed_connections-006737
+(config-router)# no passive-interface default <cr>    # observed_connections-006715
+(config-router)# no redistribute maximum-prefix <cr>    # observed_connections-006708
+(config-router)# no router-id <cr>    # observed_connections-006671
+(config-router)# no shutdown <cr>    # observed_connections-006688
+(config-router)# no stub <cr>    # observed_connections-006676
+(config-router)# no summary-metric <address> <address> <cr>    # observed_connections-006734
+(config-router)# no timers active-time <cr>    # observed_connections-006692
+(config-router)# no timers nsf converge <cr>    # observed_connections-006731
+(config-router)# no timers nsf route-hold <cr>    # observed_connections-006724
+(config-router)# no timers nsf signal <cr>    # observed_connections-006728
+(config-router)# no traffic-share balanced <cr>    # observed_connections-006701
+(config-router)# no variance <cr>    # observed_connections-006661
+(config-router)# nsf <cr>    # observed_connections-006644
+(config-router)# offset-list <number:0..99> in <number:0..2147483647> <cr>    # observed_connections-006736
+(config-router)# offset-list <string> in <cr>    # observed_connections-006758
+(config-router)# passive-interface <interface> <cr>    # observed_connections-006752
+(config-router)# passive-interface default <cr>    # observed_connections-006673
+(config-router)# redistribute <?router_action_no_proc_vpn@555589c383a8> <cr>    # observed_connections-006753
+(config-router)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006718
+(config-router)# router-id <address> <cr>    # observed_connections-006672
+(config-router)# shutdown <cr>    # observed_connections-006650
+(config-router)# stub <cr>    # observed_connections-006652
+(config-router)# summary-metric <address> <address> <cr>    # observed_connections-006710
+(config-router)# summary-metric <prefix:dynamic> <cr>    # observed_connections-006751
+(config-router)# timers active-time disabled <cr>    # observed_connections-006693
+(config-router)# timers nsf converge <number:60..180> <cr>    # observed_connections-006732
+(config-router)# timers nsf route-hold <number:20..300> <cr>    # observed_connections-006725
+(config-router)# timers nsf signal <number:10..30> <cr>    # observed_connections-006729
+(config-router)# traffic-share balanced <cr>    # observed_connections-006656
+(config-router)# variance <number:1..128> <cr>    # observed_connections-006662

@@ -1,0 +1,42 @@
+# 模式 cfg-af-topo；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-af-topology)# all-interfaces <cr>    # observed_connections-008572
+(config-af-topology)# context <string> <cr>    # observed_connections-008580
+(config-af-topology)# default all-interfaces <cr>    # observed_connections-008577
+(config-af-topology)# default context <cr>    # observed_connections-008579
+(config-af-topology)# default forward-base <cr>    # observed_connections-008575
+(config-af-topology)# default maximum routes <cr>    # observed_connections-008586
+(config-af-topology)# default route-replicate from unicast all <cr>    # observed_connections-008600
+(config-af-topology)# default route-replicate recursion-policy destination <cr>    # observed_connections-008592
+(config-af-topology)# default route-replicate-distance from unicast <cr>    # observed_connections-008598
+(config-af-topology)# default shutdown <cr>    # observed_connections-008582
+(config-af-topology)# default snmp context <cr>    # observed_connections-008589
+(config-af-topology)# default snmp context <string> community <string> <cr>    # observed_connections-008606
+(config-af-topology)# default snmp context <string> user <string> <cr>    # observed_connections-008605
+(config-af-topology)# default use-topology unicast base <cr>    # observed_connections-008593
+(config-af-topology)# exit-topo <cr>    # observed_connections-008570
+(config-af-topology)# forward-base <cr>    # observed_connections-008571
+(config-af-topology)# maximum routes <number:1..4294967294> warning-only <cr>    # observed_connections-008594
+(config-af-topology)# no all-interfaces <cr>    # observed_connections-008576
+(config-af-topology)# no context <cr>    # observed_connections-008578
+(config-af-topology)# no forward-base <cr>    # observed_connections-008574
+(config-af-topology)# no maximum routes <cr>    # observed_connections-008584
+(config-af-topology)# no route-replicate from unicast all <cr>    # observed_connections-008599
+(config-af-topology)# no route-replicate recursion-policy destination <cr>    # observed_connections-008590
+(config-af-topology)# no route-replicate-distance from unicast <cr>    # observed_connections-008595
+(config-af-topology)# no shutdown <cr>    # observed_connections-008581
+(config-af-topology)# no snmp context <cr>    # observed_connections-008588
+(config-af-topology)# no snmp context <string> community <string> <cr>    # observed_connections-008604
+(config-af-topology)# no snmp context <string> user <string> <cr>    # observed_connections-008603
+(config-af-topology)# no use-topology unicast base <cr>    # observed_connections-008591
+(config-af-topology)# route-replicate from unicast <?router_action_no_proc_vpn@55558955ca78> <cr>    # observed_connections-008607
+(config-af-topology)# route-replicate from unicast all <cr>    # observed_connections-008597
+(config-af-topology)# route-replicate recursion-policy destination <cr>    # observed_connections-008585
+(config-af-topology)# route-replicate-distance from unicast <number:0..255> <cr>    # observed_connections-008596
+(config-af-topology)# shutdown <cr>    # observed_connections-008573
+(config-af-topology)# snmp context <cr>    # observed_connections-008583
+(config-af-topology)# snmp context <string> community <string> <cr>    # observed_connections-008602
+(config-af-topology)# snmp context <string> user <string> <cr>    # observed_connections-008601
+(config-af-topology)# use-topology unicast base <cr>    # observed_connections-008587

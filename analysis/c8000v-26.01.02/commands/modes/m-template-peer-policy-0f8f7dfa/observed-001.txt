@@ -1,0 +1,248 @@
+# 模式 template-peer-policy；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-ptmp)# accept-route-legacy-rt <cr>    # observed_connections-004593
+(config-router-ptmp)# activate <cr>    # observed_connections-004596
+(config-router-ptmp)# additional-paths disable <cr>    # observed_connections-004671
+(config-router-ptmp)# advertise additional-paths <cr>    # observed_connections-004684
+(config-router-ptmp)# advertise best-external <cr>    # observed_connections-004674
+(config-router-ptmp)# advertise diverse-path mpath <cr>    # observed_connections-004747
+(config-router-ptmp)# advertise-gw-ip-disable <cr>    # observed_connections-004603
+(config-router-ptmp)# advertise-map <string> non-exist-map <string> <cr>    # observed_connections-004793
+(config-router-ptmp)# advertisement-interval <number:0..600> <cr>    # observed_connections-004635
+(config-router-ptmp)# aigp <cr>    # observed_connections-004594
+(config-router-ptmp)# aigp send cost-community <number:0..255> poi igp-cost <cr>    # observed_connections-004813
+(config-router-ptmp)# allow-policy <cr>    # observed_connections-004595
+(config-router-ptmp)# allowas-in <cr>    # observed_connections-004581
+(config-router-ptmp)# announce rpki state <cr>    # observed_connections-004728
+(config-router-ptmp)# ao <string> <cr>    # observed_connections-004701
+(config-router-ptmp)# as-override <cr>    # observed_connections-004598
+(config-router-ptmp)# capability orf prefix-list send <cr>    # observed_connections-004794
+(config-router-ptmp)# cluster-id <number:1..4294967294> <cr>    # observed_connections-004697
+(config-router-ptmp)# default <cr>    # observed_connections-004601
+(config-router-ptmp)# default accept-route-legacy-rt <cr>    # observed_connections-004665
+(config-router-ptmp)# default activate <cr>    # observed_connections-004682
+(config-router-ptmp)# default additional-paths <cr>    # observed_connections-004672
+(config-router-ptmp)# default advertise additional-paths <cr>    # observed_connections-004752
+(config-router-ptmp)# default advertise best-external <cr>    # observed_connections-004748
+(config-router-ptmp)# default advertise diverse-path mpath <cr>    # observed_connections-004792
+(config-router-ptmp)# default advertise-gw-ip-disable <cr>    # observed_connections-004705
+(config-router-ptmp)# default advertise-map <string> non-exist-map <string> <cr>    # observed_connections-004801
+(config-router-ptmp)# default advertisement-interval <cr>    # observed_connections-004642
+(config-router-ptmp)# default aigp <cr>    # observed_connections-004668
+(config-router-ptmp)# default allow-policy <cr>    # observed_connections-004669
+(config-router-ptmp)# default allowas-in <cr>    # observed_connections-004630
+(config-router-ptmp)# default announce rpki state <cr>    # observed_connections-004780
+(config-router-ptmp)# default ao <string> <cr>    # observed_connections-004762
+(config-router-ptmp)# default as-override <cr>    # observed_connections-004691
+(config-router-ptmp)# default capability orf prefix-list send <cr>    # observed_connections-004803
+(config-router-ptmp)# default cluster-id <cr>    # observed_connections-004699
+(config-router-ptmp)# default default-originate <cr>    # observed_connections-004653
+(config-router-ptmp)# default description <cr>    # observed_connections-004680
+(config-router-ptmp)# default disable-connected-check <cr>    # observed_connections-004627
+(config-router-ptmp)# default distribute-list <number:1..199> in <cr>    # observed_connections-004772
+(config-router-ptmp)# default dmzlink-bw <cr>    # observed_connections-004621
+(config-router-ptmp)# default dont-capability-negotiate <cr>    # observed_connections-004613
+(config-router-ptmp)# default dont-capability-negotiate enhanced-refresh <cr>    # observed_connections-004717
+(config-router-ptmp)# default dont-capability-negotiate four-octets-as <cr>    # observed_connections-004714
+(config-router-ptmp)# default ebgp-multihop <cr>    # observed_connections-004651
+(config-router-ptmp)# default encap srv6 <cr>    # observed_connections-004765
+(config-router-ptmp)# default fall-over <cr>    # observed_connections-004633
+(config-router-ptmp)# default filter-list <number:1..500> in <cr>    # observed_connections-004778
+(config-router-ptmp)# default force-open-collision <cr>    # observed_connections-004612
+(config-router-ptmp)# default ha-mode graceful-restart <cr>    # observed_connections-004768
+(config-router-ptmp)# default ha-mode sso <cr>    # observed_connections-004770
+(config-router-ptmp)# default inherit peer-policy <string> <cr>    # observed_connections-004791
+(config-router-ptmp)# default inherit peer-session <string> <cr>    # observed_connections-004789
+(config-router-ptmp)# default inter-as-hybrid <cr>    # observed_connections-004660
+(config-router-ptmp)# default internal-vpn-client <cr>    # observed_connections-004689
+(config-router-ptmp)# default local-as <cr>    # observed_connections-004628
+(config-router-ptmp)# default log-neighbor-changes <cr>    # observed_connections-004711
+(config-router-ptmp)# default long-lived-graceful-restart <cr>    # observed_connections-004704
+(config-router-ptmp)# default maximum-prefix <number:1..2147483647> <cr>    # observed_connections-004750
+(config-router-ptmp)# default next-hop-self <cr>    # observed_connections-004645
+(config-router-ptmp)# default next-hop-unchanged <cr>    # observed_connections-004647
+(config-router-ptmp)# default orf rt-import-list <cr>    # observed_connections-004724
+(config-router-ptmp)# default override-capability-neg <cr>    # observed_connections-004615
+(config-router-ptmp)# default password <cr>    # observed_connections-004677
+(config-router-ptmp)# default path-attribute treat-as-withdraw <number:1..255> in <cr>    # observed_connections-004805
+(config-router-ptmp)# default peer-group <cr>    # observed_connections-004609
+(config-router-ptmp)# default peer-group <string> <cr>    # observed_connections-004744
+(config-router-ptmp)# default prefix-length-size <number:1..2> <cr>    # observed_connections-004725
+(config-router-ptmp)# default prefix-list <string> in <cr>    # observed_connections-004774
+(config-router-ptmp)# default remote-as <cr>    # observed_connections-004625
+(config-router-ptmp)# default remove-private-as <cr>    # observed_connections-004659
+(config-router-ptmp)# default remove-private-as all <cr>    # observed_connections-004741
+(config-router-ptmp)# default remove-private-as all replace-as <cr>    # observed_connections-004786
+(config-router-ptmp)# default route-map <string> in <cr>    # observed_connections-004777
+(config-router-ptmp)# default route-reflector-client <cr>    # observed_connections-004664
+(config-router-ptmp)# default send-community <cr>    # observed_connections-004640
+(config-router-ptmp)# default send-label <cr>    # observed_connections-004693
+(config-router-ptmp)# default shutdown <cr>    # observed_connections-004643
+(config-router-ptmp)# default slow-peer detection <cr>    # observed_connections-004731
+(config-router-ptmp)# default slow-peer split-update-group dynamic <cr>    # observed_connections-004784
+(config-router-ptmp)# default slow-peer split-update-group static <cr>    # observed_connections-004782
+(config-router-ptmp)# default soft-reconfiguration inbound <cr>    # observed_connections-004733
+(config-router-ptmp)# default suppress-signaling-protocol ldp <cr>    # observed_connections-004767
+(config-router-ptmp)# default suppress-sr <cr>    # observed_connections-004702
+(config-router-ptmp)# default timers <cr>    # observed_connections-004685
+(config-router-ptmp)# default translate-topology <number:1..4095> <cr>    # observed_connections-004715
+(config-router-ptmp)# default translate-update <cr>    # observed_connections-004618
+(config-router-ptmp)# default transport multi-session <cr>    # observed_connections-004760
+(config-router-ptmp)# default transport path-mtu-discovery <cr>    # observed_connections-004758
+(config-router-ptmp)# default ttl-security hops <number:1..254> <cr>    # observed_connections-004796
+(config-router-ptmp)# default unsuppress-map <string> <cr>    # observed_connections-004727
+(config-router-ptmp)# default update in labeled-unicast unique <cr>    # observed_connections-004807
+(config-router-ptmp)# default use nexthop-attribute <cr>    # observed_connections-004755
+(config-router-ptmp)# default validation off <cr>    # observed_connections-004736
+(config-router-ptmp)# default validation redirect-off <cr>    # observed_connections-004739
+(config-router-ptmp)# default version <cr>    # observed_connections-004583
+(config-router-ptmp)# default weight <cr>    # observed_connections-004637
+(config-router-ptmp)# default-originate <cr>    # observed_connections-004589
+(config-router-ptmp)# description <string> <cr>    # observed_connections-004678
+(config-router-ptmp)# disable-connected-check <cr>    # observed_connections-004579
+(config-router-ptmp)# distribute-list <number:1..199> in <cr>    # observed_connections-004718
+(config-router-ptmp)# dmzlink-bw <cr>    # observed_connections-004578
+(config-router-ptmp)# dont-capability-negotiate <cr>    # observed_connections-004575
+(config-router-ptmp)# dont-capability-negotiate enhanced-refresh <cr>    # observed_connections-004608
+(config-router-ptmp)# dont-capability-negotiate four-octets-as <cr>    # observed_connections-004605
+(config-router-ptmp)# ebgp-multihop <cr>    # observed_connections-004588
+(config-router-ptmp)# encap srv6 <cr>    # observed_connections-004706
+(config-router-ptmp)# exit-peer-policy <cr>    # observed_connections-004572
+(config-router-ptmp)# fall-over <cr>    # observed_connections-004582
+(config-router-ptmp)# filter-list <number:1..500> in <cr>    # observed_connections-004721
+(config-router-ptmp)# force-open-collision <cr>    # observed_connections-004574
+(config-router-ptmp)# ha-mode graceful-restart <cr>    # observed_connections-004708
+(config-router-ptmp)# ha-mode sso <cr>    # observed_connections-004710
+(config-router-ptmp)# inherit peer-policy <string> <cr>    # observed_connections-004746
+(config-router-ptmp)# inherit peer-session <string> <cr>    # observed_connections-004743
+(config-router-ptmp)# inter-as-hybrid <cr>    # observed_connections-004591
+(config-router-ptmp)# internal-vpn-client <cr>    # observed_connections-004597
+(config-router-ptmp)# local-as <?bgp_as4_action@555589af7158> <cr>    # observed_connections-004808
+(config-router-ptmp)# local-as <number:1..4294967295> <cr>    # observed_connections-004631
+(config-router-ptmp)# log-neighbor-changes <cr>    # observed_connections-004604
+(config-router-ptmp)# long-lived-graceful-restart stale-time accept <number:0..4294967> <cr>    # observed_connections-004798
+(config-router-ptmp)# maximum-prefix <number:1..2147483647> <cr>    # observed_connections-004686
+(config-router-ptmp)# next-hop-self <cr>    # observed_connections-004586
+(config-router-ptmp)# next-hop-unchanged <cr>    # observed_connections-004587
+(config-router-ptmp)# no <cr>    # observed_connections-004599
+(config-router-ptmp)# no accept-route-legacy-rt <cr>    # observed_connections-004663
+(config-router-ptmp)# no activate <cr>    # observed_connections-004679
+(config-router-ptmp)# no additional-paths <cr>    # observed_connections-004670
+(config-router-ptmp)# no advertise additional-paths <cr>    # observed_connections-004751
+(config-router-ptmp)# no advertise best-external <cr>    # observed_connections-004745
+(config-router-ptmp)# no advertise diverse-path mpath <cr>    # observed_connections-004790
+(config-router-ptmp)# no advertise-gw-ip-disable <cr>    # observed_connections-004703
+(config-router-ptmp)# no advertise-map <string> non-exist-map <string> <cr>    # observed_connections-004800
+(config-router-ptmp)# no advertisement-interval <cr>    # observed_connections-004639
+(config-router-ptmp)# no aigp <cr>    # observed_connections-004666
+(config-router-ptmp)# no allow-policy <cr>    # observed_connections-004667
+(config-router-ptmp)# no allowas-in <cr>    # observed_connections-004629
+(config-router-ptmp)# no announce rpki state <cr>    # observed_connections-004779
+(config-router-ptmp)# no ao <string> <cr>    # observed_connections-004761
+(config-router-ptmp)# no as-override <cr>    # observed_connections-004690
+(config-router-ptmp)# no capability orf prefix-list send <cr>    # observed_connections-004802
+(config-router-ptmp)# no cluster-id <cr>    # observed_connections-004696
+(config-router-ptmp)# no default-originate <cr>    # observed_connections-004649
+(config-router-ptmp)# no description <cr>    # observed_connections-004676
+(config-router-ptmp)# no disable-connected-check <cr>    # observed_connections-004624
+(config-router-ptmp)# no distribute-list <number:1..199> in <cr>    # observed_connections-004771
+(config-router-ptmp)# no dmzlink-bw <cr>    # observed_connections-004620
+(config-router-ptmp)# no dont-capability-negotiate <cr>    # observed_connections-004611
+(config-router-ptmp)# no dont-capability-negotiate enhanced-refresh <cr>    # observed_connections-004716
+(config-router-ptmp)# no dont-capability-negotiate four-octets-as <cr>    # observed_connections-004712
+(config-router-ptmp)# no ebgp-multihop <cr>    # observed_connections-004648
+(config-router-ptmp)# no encap srv6 <cr>    # observed_connections-004763
+(config-router-ptmp)# no fall-over <cr>    # observed_connections-004632
+(config-router-ptmp)# no filter-list <number:1..500> in <cr>    # observed_connections-004776
+(config-router-ptmp)# no force-open-collision <cr>    # observed_connections-004610
+(config-router-ptmp)# no ha-mode graceful-restart <cr>    # observed_connections-004766
+(config-router-ptmp)# no ha-mode sso <cr>    # observed_connections-004769
+(config-router-ptmp)# no inherit peer-policy <string> <cr>    # observed_connections-004788
+(config-router-ptmp)# no inherit peer-session <string> <cr>    # observed_connections-004787
+(config-router-ptmp)# no inter-as-hybrid <cr>    # observed_connections-004658
+(config-router-ptmp)# no internal-vpn-client <cr>    # observed_connections-004688
+(config-router-ptmp)# no local-as <cr>    # observed_connections-004626
+(config-router-ptmp)# no log-neighbor-changes <cr>    # observed_connections-004709
+(config-router-ptmp)# no long-lived-graceful-restart <cr>    # observed_connections-004700
+(config-router-ptmp)# no maximum-prefix <number:1..2147483647> <cr>    # observed_connections-004749
+(config-router-ptmp)# no next-hop-self <cr>    # observed_connections-004644
+(config-router-ptmp)# no next-hop-unchanged <cr>    # observed_connections-004646
+(config-router-ptmp)# no orf rt-import-list <cr>    # observed_connections-004722
+(config-router-ptmp)# no override-capability-neg <cr>    # observed_connections-004614
+(config-router-ptmp)# no password <cr>    # observed_connections-004675
+(config-router-ptmp)# no path-attribute treat-as-withdraw <number:1..255> in <cr>    # observed_connections-004804
+(config-router-ptmp)# no peer-group <cr>    # observed_connections-004607
+(config-router-ptmp)# no peer-group <string> <cr>    # observed_connections-004742
+(config-router-ptmp)# no prefix-length-size <number:1..2> <cr>    # observed_connections-004723
+(config-router-ptmp)# no prefix-list <string> in <cr>    # observed_connections-004773
+(config-router-ptmp)# no remote-as <cr>    # observed_connections-004623
+(config-router-ptmp)# no remove-private-as <cr>    # observed_connections-004656
+(config-router-ptmp)# no remove-private-as all <cr>    # observed_connections-004740
+(config-router-ptmp)# no remove-private-as all replace-as <cr>    # observed_connections-004785
+(config-router-ptmp)# no route-map <string> in <cr>    # observed_connections-004775
+(config-router-ptmp)# no route-reflector-client <cr>    # observed_connections-004662
+(config-router-ptmp)# no send-community <cr>    # observed_connections-004638
+(config-router-ptmp)# no send-label <cr>    # observed_connections-004692
+(config-router-ptmp)# no shutdown <cr>    # observed_connections-004641
+(config-router-ptmp)# no slow-peer detection <cr>    # observed_connections-004730
+(config-router-ptmp)# no slow-peer split-update-group dynamic <cr>    # observed_connections-004783
+(config-router-ptmp)# no slow-peer split-update-group static <cr>    # observed_connections-004781
+(config-router-ptmp)# no soft-reconfiguration inbound <cr>    # observed_connections-004732
+(config-router-ptmp)# no suppress-signaling-protocol ldp <cr>    # observed_connections-004764
+(config-router-ptmp)# no suppress-sr <cr>    # observed_connections-004698
+(config-router-ptmp)# no timers <cr>    # observed_connections-004683
+(config-router-ptmp)# no translate-topology <number:1..4095> <cr>    # observed_connections-004713
+(config-router-ptmp)# no translate-update <cr>    # observed_connections-004616
+(config-router-ptmp)# no transport multi-session <cr>    # observed_connections-004757
+(config-router-ptmp)# no transport path-mtu-discovery <cr>    # observed_connections-004756
+(config-router-ptmp)# no ttl-security hops <number:1..254> <cr>    # observed_connections-004795
+(config-router-ptmp)# no unsuppress-map <string> <cr>    # observed_connections-004726
+(config-router-ptmp)# no update in labeled-unicast unique <cr>    # observed_connections-004806
+(config-router-ptmp)# no use nexthop-attribute <cr>    # observed_connections-004753
+(config-router-ptmp)# no validation off <cr>    # observed_connections-004734
+(config-router-ptmp)# no validation redirect-off <cr>    # observed_connections-004737
+(config-router-ptmp)# no version <cr>    # observed_connections-004580
+(config-router-ptmp)# no weight <cr>    # observed_connections-004634
+(config-router-ptmp)# orf rt-import-list <cr>    # observed_connections-004617
+(config-router-ptmp)# override-capability-neg <cr>    # observed_connections-004576
+(config-router-ptmp)# password <string> <cr>    # observed_connections-004681
+(config-router-ptmp)# path-attribute treat-as-withdraw <number:1..255> in <cr>    # observed_connections-004797
+(config-router-ptmp)# peer-group <cr>    # observed_connections-004573
+(config-router-ptmp)# peer-group <string> <cr>    # observed_connections-004673
+(config-router-ptmp)# prefix-length-size <number:1..2> <cr>    # observed_connections-004619
+(config-router-ptmp)# prefix-list <string> in <cr>    # observed_connections-004719
+(config-router-ptmp)# remote-as <?bgp_as4_action@555589af66c8> <cr>    # observed_connections-004809
+(config-router-ptmp)# remove-private-as <cr>    # observed_connections-004590
+(config-router-ptmp)# remove-private-as all <cr>    # observed_connections-004661
+(config-router-ptmp)# remove-private-as all replace-as <cr>    # observed_connections-004738
+(config-router-ptmp)# route-map <string> in <cr>    # observed_connections-004720
+(config-router-ptmp)# route-reflector-client <cr>    # observed_connections-004592
+(config-router-ptmp)# send-community <cr>    # observed_connections-004584
+(config-router-ptmp)# send-label <cr>    # observed_connections-004600
+(config-router-ptmp)# shutdown <cr>    # observed_connections-004585
+(config-router-ptmp)# shutdown graceful <number:30..65535> community <?bgp_community_action@555589afa2f0> <cr>    # observed_connections-004812
+(config-router-ptmp)# slow-peer detection <cr>    # observed_connections-004654
+(config-router-ptmp)# slow-peer detection threshold <number:120..3600> <cr>    # observed_connections-004650
+(config-router-ptmp)# slow-peer split-update-group dynamic <cr>    # observed_connections-004735
+(config-router-ptmp)# slow-peer split-update-group static <cr>    # observed_connections-004729
+(config-router-ptmp)# soft-reconfiguration inbound <cr>    # observed_connections-004652
+(config-router-ptmp)# soo <?bgp_extcomm_action@555589af8588> <cr>    # observed_connections-004810
+(config-router-ptmp)# suppress-signaling-protocol ldp <cr>    # observed_connections-004707
+(config-router-ptmp)# suppress-sr <cr>    # observed_connections-004602
+(config-router-ptmp)# timers <number:0..65535> <number:0..65535> <cr>    # observed_connections-004754
+(config-router-ptmp)# translate-topology <number:1..4095> <cr>    # observed_connections-004606
+(config-router-ptmp)# translate-update <cr>    # observed_connections-004577
+(config-router-ptmp)# transport multi-session <cr>    # observed_connections-004695
+(config-router-ptmp)# transport path-mtu-discovery <cr>    # observed_connections-004694
+(config-router-ptmp)# ttl-security hops <number:1..254> <cr>    # observed_connections-004759
+(config-router-ptmp)# unsuppress-map <string> <cr>    # observed_connections-004622
+(config-router-ptmp)# update in labeled-unicast unique <cr>    # observed_connections-004799
+(config-router-ptmp)# update-source <interface> <cr>    # observed_connections-004811
+(config-router-ptmp)# use nexthop-attribute <cr>    # observed_connections-004687
+(config-router-ptmp)# validation off <cr>    # observed_connections-004655
+(config-router-ptmp)# validation redirect-off <cr>    # observed_connections-004657
+(config-router-ptmp)# version <number:4..4> <cr>    # observed_connections-004570
+(config-router-ptmp)# weight <number:0..65535> <cr>    # observed_connections-004636
+(config-router-ptmp)# <cr>    # observed_connections-004571

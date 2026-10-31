@@ -1,0 +1,92 @@
+# 模式 pm-delay-profile-srpol；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-pm-dm-srpol)# advertisement <cr>    # observed_connections-007123
+(config-pm-dm-srpol)# advertisement accelerated <cr>    # observed_connections-007133
+(config-pm-dm-srpol)# advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007167
+(config-pm-dm-srpol)# advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007173
+(config-pm-dm-srpol)# advertisement periodic <cr>    # observed_connections-007135
+(config-pm-dm-srpol)# advertisement periodic disabled <cr>    # observed_connections-007152
+(config-pm-dm-srpol)# advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007180
+(config-pm-dm-srpol)# advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007170
+(config-pm-dm-srpol)# advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007176
+(config-pm-dm-srpol)# advertisement threshold-check <cr>    # observed_connections-007131
+(config-pm-dm-srpol)# advertisement threshold-check average-delay <cr>    # observed_connections-007138
+(config-pm-dm-srpol)# advertisement threshold-check maximum-delay <cr>    # observed_connections-007139
+(config-pm-dm-srpol)# advertisement threshold-check minimum-delay <cr>    # observed_connections-007140
+(config-pm-dm-srpol)# default <cr>    # observed_connections-007124
+(config-pm-dm-srpol)# default advertisement <cr>    # observed_connections-007129
+(config-pm-dm-srpol)# default advertisement accelerated <cr>    # observed_connections-007147
+(config-pm-dm-srpol)# default advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007196
+(config-pm-dm-srpol)# default advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007200
+(config-pm-dm-srpol)# default advertisement periodic <cr>    # observed_connections-007151
+(config-pm-dm-srpol)# default advertisement periodic disabled <cr>    # observed_connections-007186
+(config-pm-dm-srpol)# default advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007204
+(config-pm-dm-srpol)# default advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007198
+(config-pm-dm-srpol)# default advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007202
+(config-pm-dm-srpol)# default advertisement threshold-check <cr>    # observed_connections-007144
+(config-pm-dm-srpol)# default advertisement threshold-check average-delay <cr>    # observed_connections-007163
+(config-pm-dm-srpol)# default advertisement threshold-check maximum-delay <cr>    # observed_connections-007165
+(config-pm-dm-srpol)# default advertisement threshold-check minimum-delay <cr>    # observed_connections-007169
+(config-pm-dm-srpol)# default liveness-detection <cr>    # observed_connections-007134
+(config-pm-dm-srpol)# default liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007175
+(config-pm-dm-srpol)# default probe <cr>    # observed_connections-007130
+(config-pm-dm-srpol)# default probe burst-interval <number:30..15000> <cr>    # observed_connections-007171
+(config-pm-dm-srpol)# default probe computation-interval <number:3..3600> <cr>    # observed_connections-007179
+(config-pm-dm-srpol)# default probe measurement-mode loopback <cr>    # observed_connections-007192
+(config-pm-dm-srpol)# default probe measurement-mode one-way <cr>    # observed_connections-007187
+(config-pm-dm-srpol)# default probe measurement-mode two-way <cr>    # observed_connections-007188
+(config-pm-dm-srpol)# default probe padding-size <number:0..8000> <cr>    # observed_connections-007181
+(config-pm-dm-srpol)# default probe protocol <cr>    # observed_connections-007159
+(config-pm-dm-srpol)# default probe protocol pm-mpls <cr>    # observed_connections-007194
+(config-pm-dm-srpol)# default probe protocol twamp-light <cr>    # observed_connections-007191
+(config-pm-dm-srpol)# default probe sweep <cr>    # observed_connections-007161
+(config-pm-dm-srpol)# default probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-007207
+(config-pm-dm-srpol)# default probe tos-dscp <number:0..63> <cr>    # observed_connections-007182
+(config-pm-dm-srpol)# exit <cr>    # observed_connections-007121
+(config-pm-dm-srpol)# liveness-detection <cr>    # observed_connections-007126
+(config-pm-dm-srpol)# liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007145
+(config-pm-dm-srpol)# no <cr>    # observed_connections-007122
+(config-pm-dm-srpol)# no advertisement <cr>    # observed_connections-007127
+(config-pm-dm-srpol)# no advertisement accelerated <cr>    # observed_connections-007143
+(config-pm-dm-srpol)# no advertisement accelerated minimum-change <number:0..1000000> <cr>    # observed_connections-007195
+(config-pm-dm-srpol)# no advertisement accelerated threshold <number:0..100> <cr>    # observed_connections-007199
+(config-pm-dm-srpol)# no advertisement periodic <cr>    # observed_connections-007148
+(config-pm-dm-srpol)# no advertisement periodic disabled <cr>    # observed_connections-007183
+(config-pm-dm-srpol)# no advertisement periodic interval <number:30..3600> <cr>    # observed_connections-007203
+(config-pm-dm-srpol)# no advertisement periodic minimum-change <number:0..1000000> <cr>    # observed_connections-007197
+(config-pm-dm-srpol)# no advertisement periodic threshold <number:0..100> <cr>    # observed_connections-007201
+(config-pm-dm-srpol)# no advertisement threshold-check <cr>    # observed_connections-007142
+(config-pm-dm-srpol)# no advertisement threshold-check average-delay <cr>    # observed_connections-007162
+(config-pm-dm-srpol)# no advertisement threshold-check maximum-delay <cr>    # observed_connections-007164
+(config-pm-dm-srpol)# no advertisement threshold-check minimum-delay <cr>    # observed_connections-007166
+(config-pm-dm-srpol)# no liveness-detection <cr>    # observed_connections-007132
+(config-pm-dm-srpol)# no liveness-detection multiplier <number:2..10> <cr>    # observed_connections-007172
+(config-pm-dm-srpol)# no probe <cr>    # observed_connections-007128
+(config-pm-dm-srpol)# no probe burst-interval <number:30..15000> <cr>    # observed_connections-007168
+(config-pm-dm-srpol)# no probe computation-interval <number:3..3600> <cr>    # observed_connections-007174
+(config-pm-dm-srpol)# no probe measurement-mode loopback <cr>    # observed_connections-007190
+(config-pm-dm-srpol)# no probe measurement-mode one-way <cr>    # observed_connections-007184
+(config-pm-dm-srpol)# no probe measurement-mode two-way <cr>    # observed_connections-007185
+(config-pm-dm-srpol)# no probe padding-size <number:0..8000> <cr>    # observed_connections-007177
+(config-pm-dm-srpol)# no probe protocol <cr>    # observed_connections-007157
+(config-pm-dm-srpol)# no probe protocol pm-mpls <cr>    # observed_connections-007193
+(config-pm-dm-srpol)# no probe protocol twamp-light <cr>    # observed_connections-007189
+(config-pm-dm-srpol)# no probe sweep <cr>    # observed_connections-007160
+(config-pm-dm-srpol)# no probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-007206
+(config-pm-dm-srpol)# no probe tos-dscp <number:0..63> <cr>    # observed_connections-007178
+(config-pm-dm-srpol)# probe <cr>    # observed_connections-007125
+(config-pm-dm-srpol)# probe burst-interval <number:30..15000> <cr>    # observed_connections-007141
+(config-pm-dm-srpol)# probe computation-interval <number:3..3600> <cr>    # observed_connections-007146
+(config-pm-dm-srpol)# probe measurement-mode loopback <cr>    # observed_connections-007156
+(config-pm-dm-srpol)# probe measurement-mode one-way <cr>    # observed_connections-007153
+(config-pm-dm-srpol)# probe measurement-mode two-way <cr>    # observed_connections-007154
+(config-pm-dm-srpol)# probe padding-size <number:0..8000> <cr>    # observed_connections-007149
+(config-pm-dm-srpol)# probe protocol <cr>    # observed_connections-007136
+(config-pm-dm-srpol)# probe protocol pm-mpls <cr>    # observed_connections-007158
+(config-pm-dm-srpol)# probe protocol twamp-light <cr>    # observed_connections-007155
+(config-pm-dm-srpol)# probe sweep <cr>    # observed_connections-007137
+(config-pm-dm-srpol)# probe sweep destination ipv4 <address> range <number:0..128> <cr>    # observed_connections-007205
+(config-pm-dm-srpol)# probe tos-dscp <number:0..63> <cr>    # observed_connections-007150
+(config-pm-dm-srpol)# <cr>    # observed_connections-007120

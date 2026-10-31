@@ -1,0 +1,51 @@
+# 模式 evpn-prof；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evpn-prof)# advertise mac enable <cr>    # observed_connections-008269
+(config-evpn-prof)# default advertise mac <cr>    # observed_connections-008273
+(config-evpn-prof)# default default-gateway advertise <cr>    # observed_connections-008271
+(config-evpn-prof)# default encapsulation <cr>    # observed_connections-008236
+(config-evpn-prof)# default ethernet-tag auto-vni <cr>    # observed_connections-008278
+(config-evpn-prof)# default evi-base <cr>    # observed_connections-008249
+(config-evpn-prof)# default evi-id <cr>    # observed_connections-008253
+(config-evpn-prof)# default flooding-suppression address-resolution <cr>    # observed_connections-008256
+(config-evpn-prof)# default ip local-learning <cr>    # observed_connections-008261
+(config-evpn-prof)# default l2vni-base <cr>    # observed_connections-008246
+(config-evpn-prof)# default local-routing <cr>    # observed_connections-008244
+(config-evpn-prof)# default multicast advertise <cr>    # observed_connections-008272
+(config-evpn-prof)# default multihoming aliasing <cr>    # observed_connections-008265
+(config-evpn-prof)# default multihoming proxy-mac-ip <cr>    # observed_connections-008274
+(config-evpn-prof)# default re-originate route-type5 <cr>    # observed_connections-008276
+(config-evpn-prof)# default replication-type <cr>    # observed_connections-008239
+(config-evpn-prof)# default-gateway advertise enable <cr>    # observed_connections-008267
+(config-evpn-prof)# encapsulation mpls <cr>    # observed_connections-008238
+(config-evpn-prof)# ethernet-tag auto-vni <cr>    # observed_connections-008251
+(config-evpn-prof)# evi-base <number:0..65535> <cr>    # observed_connections-008248
+(config-evpn-prof)# evi-id <number:1..65535> <cr>    # observed_connections-008252
+(config-evpn-prof)# exit <cr>    # observed_connections-008234
+(config-evpn-prof)# flooding-suppression address-resolution enable <cr>    # observed_connections-008255
+(config-evpn-prof)# ip local-learning enable <cr>    # observed_connections-008259
+(config-evpn-prof)# l2vni-base <number:dynamic> <cr>    # observed_connections-008279
+(config-evpn-prof)# local-routing enable <cr>    # observed_connections-008243
+(config-evpn-prof)# multicast advertise enable <cr>    # observed_connections-008268
+(config-evpn-prof)# multihoming aliasing enable <cr>    # observed_connections-008260
+(config-evpn-prof)# multihoming proxy-mac-ip enable <cr>    # observed_connections-008270
+(config-evpn-prof)# no advertise mac <cr>    # observed_connections-008264
+(config-evpn-prof)# no default-gateway advertise <cr>    # observed_connections-008262
+(config-evpn-prof)# no encapsulation <cr>    # observed_connections-008235
+(config-evpn-prof)# no ethernet-tag auto-vni <cr>    # observed_connections-008277
+(config-evpn-prof)# no evi-base <cr>    # observed_connections-008247
+(config-evpn-prof)# no evi-id <cr>    # observed_connections-008250
+(config-evpn-prof)# no flooding-suppression address-resolution <cr>    # observed_connections-008254
+(config-evpn-prof)# no ip local-learning <cr>    # observed_connections-008257
+(config-evpn-prof)# no l2vni-base <cr>    # observed_connections-008245
+(config-evpn-prof)# no local-routing <cr>    # observed_connections-008241
+(config-evpn-prof)# no multicast advertise <cr>    # observed_connections-008263
+(config-evpn-prof)# no multihoming aliasing <cr>    # observed_connections-008258
+(config-evpn-prof)# no multihoming proxy-mac-ip <cr>    # observed_connections-008266
+(config-evpn-prof)# no re-originate route-type5 <cr>    # observed_connections-008275
+(config-evpn-prof)# no replication-type <cr>    # observed_connections-008237
+(config-evpn-prof)# re-originate route-type5 <cr>    # observed_connections-008242
+(config-evpn-prof)# replication-type ingress <cr>    # observed_connections-008240
+(config-evpn-prof)# replication-type static <prefix:dynamic> <cr>    # observed_connections-008280

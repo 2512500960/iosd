@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-038.md
+
+(config)# do-exec clear eigrp service-family ipv6 neighbors <cr>    # path-047382
+(config)# do-exec clear eigrp service-family ipv6 neighbors <interface> <cr>    # path-062038
+(config)# do-exec clear eigrp service-family ipv6 topology <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060253
+(config)# do-exec clear eigrp service-family ipv6 topology active <cr>    # path-054405
+(config)# do-exec clear eigrp service-family ipv6 traffic <cr>    # path-047376
+(config)# do-exec clear entry <number:0..256> <cr>    # path-029057
+(config)# do-exec clear environment counters <cr>    # path-031263
+(config)# do-exec clear eobc counters <cr>    # path-028442
+(config)# do-exec clear eobc interface <cr>    # path-028468
+(config)# do-exec clear errdisable <interface> recover-link <cr>    # path-060994
+(config)# do-exec clear errdisable <interface> vlan <cr>    # path-060993
+(config)# do-exec clear errdisable <interface> vlan <string> <cr>    # path-061525
+(config)# do-exec clear ethernet cfm ais domain <string> mpid <number:1..8191> port <cr>    # path-059668
+(config)# do-exec clear ethernet cfm ais link-status Interface <interface> <cr>    # path-062245
+(config)# do-exec clear ethernet cfm ccm-learning-database <cr>    # path-035012
+(config)# do-exec clear ethernet cfm errors <cr>    # path-034783
+(config)# do-exec clear ethernet cfm fast-timeout statistics <cr>    # path-044473
+(config)# do-exec clear ethernet cfm latching-loopback discover-phase mep <cr>    # path-052375
+(config)# do-exec clear ethernet cfm latching-loopback discover-phase mip <cr>    # path-052363
+(config)# do-exec clear ethernet cfm maintenance-points remote <cr>    # path-044316
+(config)# do-exec clear ethernet cfm maintenance-points remote domain <string> <cr>    # path-056846
+(config)# do-exec clear ethernet cfm pm session db <number:0..8000> <cr>    # path-056875
+(config)# do-exec clear ethernet cfm statistics <cr>    # path-034593
+(config)# do-exec clear ethernet cfm traceroute-cache <cr>    # path-034520
+(config)# do-exec clear ethernet lmi statistics <cr>    # path-034503
+(config)# do-exec clear ethernet lmi statistics <interface> <cr>    # path-061224
+(config)# do-exec clear ethernet oam statistics <cr>    # path-034495
+(config)# do-exec clear ethernet oam statistics interface <interface> <cr>    # path-061852
+(config)# do-exec clear ethernet service instance id <number:1..16384> mac-tunnel <cr>    # path-056948
+(config)# do-exec clear ethernet service instance id <number:1..16384> mac-tunnel errdisable <cr>    # path-058981
+(config)# do-exec clear ethernet service instance interface <interface> <cr>    # path-061861
+(config)# do-exec clear ethernet service instance interface <interface> errdisable <cr>    # path-062253
+(config)# do-exec clear ethernet service internal back-trace <cr>    # path-044353
+(config)# do-exec clear ethernet service ipc statistics <cr>    # path-044382
+(config)# do-exec clear ethernet service mac-tunnel <number:dynamic> <cr>    # path-061240
+(config)# do-exec clear event manager detector counters <cr>    # path-048525
+(config)# do-exec clear event manager detector rpc counters <cr>    # path-055028
+(config)# do-exec clear event manager detector rpc sessions <cr>    # path-055071
+(config)# do-exec clear event manager server counters <cr>    # path-048469
+(config)# do-exec clear facility-alarm <cr>    # path-026432
+(config)# do-exec clear facility-alarm critical <cr>    # path-028119
+(config)# do-exec clear facility-alarm hw-module slot <number:dynamic> oir <cr>    # path-061847
+(config)# do-exec clear flow exporter <?option@555588f376b0> statistics <cr>    # path-061266
+(config)# do-exec clear flow exporter statistics <cr>    # path-034982
+(config)# do-exec clear flow monitor <?option@555588f41c90> <cr>    # path-062788
+(config)# do-exec clear flowspec afi-all <cr>    # path-031728
+(config)# do-exec clear flowspec afi-all nlri <hex-data> <cr>    # path-061517
+(config)# do-exec clear flowspec counters afi-all <cr>    # path-039458
+(config)# do-exec clear flowspec counters internal <cr>    # path-039335
+(config)# do-exec clear fqdn packet statistics <cr>    # path-037783
+(config)# do-exec clear frame-relay counter <cr>    # path-030538
+(config)# do-exec clear frame-relay counter interface <interface> <cr>    # path-061402
+(config)# do-exec clear frame-relay inarp <cr>    # path-030567
+(config)# do-exec clear frame-relay inarp interface <interface> <cr>    # path-061406
+(config)# do-exec clear host <string> <cr>    # path-030699
+(config)# do-exec clear icm statistics <cr>    # path-030424
+(config)# do-exec clear interface <interface> <cr>    # path-060515
+(config)# do-exec clear interface range <interface> <interface> <cr>    # path-062812
+(config)# do-exec clear iox <cr>    # path-027612
+(config)# do-exec clear ip access-list counters <cr>    # path-035838
+(config)# do-exec clear ip accounting <cr>    # path-030512
+(config)# do-exec clear ip arp <address> <cr>    # path-035303
+(config)# do-exec clear ip arp poll statistics <cr>    # path-044972
+(config)# do-exec clear ip bgp <?match_ipv6_addrinfo_action@555589a037f0> <cr>    # path-060884
+(config)# do-exec clear ip bgp <?match_ipv6_addrinfo_action@555589a037f0> cease <cr>    # path-061351
+(config)# do-exec clear ip bgp <?match_ipv6_addrinfo_action@555589a037f0> flap-statistics <cr>    # path-061347
+(config)# do-exec clear ip bgp <?match_ipv6_addrinfo_action@555589a037f0> internal <cr>    # path-061348
+(config)# do-exec clear ip cache <cr>    # path-030159
+(config)# do-exec clear ip casa counters <cr>    # path-036914
+(config)# do-exec clear ip cef * prefix-statistics <cr>    # path-061415
+(config)# do-exec clear ip cef event-log <cr>    # path-037189
+(config)# do-exec clear ip cef inconsistency <cr>    # path-037143
+(config)# do-exec clear ip cef prefix-statistics <cr>    # path-037539
+(config)# do-exec clear ip cgmp <cr>    # path-030166
+(config)# do-exec clear ip cgmp <interface> <cr>    # path-060869
+(config)# do-exec clear ip dhcp binding * <cr>    # path-061421
+(config)# do-exec clear ip dhcp binding <address> <cr>    # path-046950
+(config)# do-exec clear ip dhcp conflict * <cr>    # path-061432
+(config)# do-exec clear ip dhcp conflict <address> <cr>    # path-046996
+(config)# do-exec clear ip dhcp limit lease <cr>    # path-047068
+(config)# do-exec clear ip dhcp limit lease <interface> <cr>    # path-062003
+(config)# do-exec clear ip dhcp server odap-statistics <cr>    # path-046830
+(config)# do-exec clear ip dhcp server statistics <cr>    # path-046870
+(config)# do-exec clear ip dhcp server statistics <interface> <cr>    # path-061991
+(config)# do-exec clear ip dhcp snooping binding * <cr>    # path-061989
+(config)# do-exec clear ip dhcp snooping binding <address> <cr>    # path-054135
+(config)# do-exec clear ip dhcp snooping binding <interface> <cr>    # path-061994
+(config)# do-exec clear ip dhcp snooping binding bridge-domain <string> <cr>    # path-057921
+(config)# do-exec clear ip dhcp snooping database statistics <cr>    # path-054129
+(config)# do-exec clear ip dhcp snooping statistics <cr>    # path-046859
+(config)# do-exec clear ip dhcp subnet * <cr>    # path-061429
+(config)# do-exec clear ip dhcp subnet <address> <cr>    # path-046993
+(config)# do-exec clear ip dns servers * <cr>    # path-061354
+(config)# do-exec clear ip dns servers <address> <cr>    # path-045949
+(config)# do-exec clear ip drp <cr>    # path-029640
+(config)# do-exec clear ip eigrp events <cr>    # path-036976
+(config)# do-exec clear ip eigrp logging <cr>    # path-036931
+(config)# do-exec clear ip eigrp neighbors <cr>    # path-037037
+(config)# do-exec clear ip eigrp neighbors <interface> <cr>    # path-061384
+(config)# do-exec clear ip eigrp topology <address> <cr>    # path-046353
+(config)# do-exec clear ip eigrp topology <prefix:dynamic> <cr>    # path-061383
+(config)# do-exec clear ip http client cache all <cr>    # path-053367
+(config)# do-exec clear ip http client cache session <string> <cr>    # path-057386
+(config)# do-exec clear ip http client cache url <string> <cr>    # path-057360
+(config)# do-exec clear ip http client cookie <cr>    # path-046027
+(config)# do-exec clear ip http client cookie domain <string> <cr>    # path-057410
+(config)# do-exec clear ip http client cookie name <string> <cr>    # path-057442
+(config)# do-exec clear ip http client cookie session <string> <cr>    # path-057382
+(config)# do-exec clear ip icmp rate-limit <cr>    # path-035442
+(config)# do-exec clear ip icmp rate-limit <interface> <cr>    # path-061271
+(config)# do-exec clear ip igmp group <cr>    # path-036843
+(config)# do-exec clear ip igmp group <interface> <cr>    # path-061364
+(config)# do-exec clear ip interface <interface> <cr>    # path-060832
+(config)# do-exec clear ip interface <interface> stats <cr>    # path-061284
+(config)# do-exec clear ip interface <interface> topology base stats <cr>    # path-062262
+(config)# do-exec clear ip mfib counters <cr>    # path-037126
+(config)# do-exec clear ip mfib counters <prefix:dynamic> <cr>    # path-061391
+(config)# do-exec clear ip mrm status-report <cr>    # path-036748
+(config)# do-exec clear ip mroute * <cr>    # path-060878
+(config)# do-exec clear ip mroute <address> <cr>    # path-036752
+(config)# do-exec clear ip msdp peer <address> <cr>    # path-045718
+(config)# do-exec clear ip msdp sa-cache <cr>    # path-036445
+(config)# do-exec clear ip msdp statistics <cr>    # path-036500
+(config)# do-exec clear ip multicast limit <cr>    # path-036615
+(config)# do-exec clear ip multicast limit <interface> <cr>    # path-061339
+(config)# do-exec clear ip multicast redundancy statistics <cr>    # path-046075
+(config)# do-exec clear ip multicast rsvp <cr>    # path-036565
+(config)# do-exec clear ip multicast rsvp <interface> <cr>    # path-061337
+(config)# do-exec clear ip multicast snooping limit vlan <number:1..4095> statistics <cr>    # path-059184
+(config)# do-exec clear ip nat statistics <cr>    # path-036771
+(config)# do-exec clear ip nat translation * <cr>    # path-061361
+(config)# do-exec clear ip nat translation <cr>    # path-037084
+(config)# do-exec clear ip nbar <cr>    # path-030132
+(config)# do-exec clear ip nbar classification auto-learn top-hosts restart <cr>    # path-057414
+(config)# do-exec clear ip nbar classification auto-learn top-hosts statistics <cr>    # path-057381
+(config)# do-exec clear ip nbar classification cache sync <cr>    # path-053352
+(config)# do-exec clear ip nbar classification dns learning cache <cr>    # path-057437
+(config)# do-exec clear ip nbar classification dns learning statistics <cr>    # path-057470
+(config)# do-exec clear ip nbar classification socket-cache <cr>    # path-046006
+(config)# do-exec clear ip nbar protocol-discovery <cr>    # path-036505
+(config)# do-exec clear ip nbar protocol-discovery interface <interface> <cr>    # path-061918
+(config)# do-exec clear ip nbar statistics <cr>    # path-036545
+(config)# do-exec clear ip nhrp <cr>    # path-030495
+(config)# do-exec clear ip nhrp <interface> <cr>    # path-060895
+(config)# do-exec clear ip nhrp counters <cr>    # path-037073
+(config)# do-exec clear ip nhrp rd <?vrf_rd_action@555589d53098> counters <cr>    # path-061969
+(config)# do-exec clear ip nhrp rd <?vrf_rd_action@555589d53098> shortcut <cr>    # path-061958
+(config)# do-exec clear ip nhrp shortcut <cr>    # path-036987
+(config)# do-exec clear ip nhrp shortcut interface <interface> <cr>    # path-061962
+(config)# do-exec clear ip nhrp stats <cr>    # path-037298
+(config)# do-exec clear ip nhrp stats <interface> <cr>    # path-061403
+(config)# do-exec clear ip ospf counters <cr>    # path-036944
+(config)# do-exec clear ip ospf counters neighbor <interface> <cr>    # path-061965
+(config)# do-exec clear ip ospf events <cr>    # path-036977
+(config)# do-exec clear ip ospf force-spf <cr>    # path-036826
+(config)# do-exec clear ip ospf lsa router <address> self <cr>    # path-057646
+(config)# do-exec clear ip ospf nsr statistics <cr>    # path-046125
+(config)# do-exec clear ip ospf process <cr>    # path-036737
+(config)# do-exec clear ip ospf redistribution <cr>    # path-036684
+(config)# do-exec clear ip ospf rib <cr>    # path-036780
+(config)# do-exec clear ip ospf traffic <cr>    # path-036994
+(config)# do-exec clear ip ospf traffic <interface> <cr>    # path-061376
+(config)# do-exec clear ip pim df <cr>    # path-036568
+(config)# do-exec clear ip pim df int <interface> <cr>    # path-061925
+(config)# do-exec clear ip pim interface <interface> count <cr>    # path-061922
+(config)# do-exec clear ip pim interface count <cr>    # path-046000
+(config)# do-exec clear ip pim pfp-sa cache <cr>    # path-045996
+(config)# do-exec clear ip pim pfp-sa originator <cr>    # path-045941
+(config)# do-exec clear ip pim rp-mapping <cr>    # path-036444
+(config)# do-exec clear ip prefix-list <cr>    # path-030490
+(config)# do-exec clear ip prefix-list <string> <prefix:dynamic> <cr>    # path-061397
+(config)# do-exec clear ip redirect <cr>    # path-029265
+(config)# do-exec clear ip reflexive-list * <cr>    # path-060899
+(config)# do-exec clear ip reflexive-list <string> <cr>    # path-037192
+(config)# do-exec clear ip route * <cr>    # path-060864
+(config)# do-exec clear ip route <address> <cr>    # path-036392
+(config)# do-exec clear ip route dhcp <address> <cr>    # path-045722
+(config)# do-exec clear ip route download * <cr>    # path-061340
+(config)# do-exec clear ip route download <address> <address> <cr>    # path-053405
+(config)# do-exec clear ip route download reload <cr>    # path-046002
+(config)# do-exec clear ip rsvp authentication <cr>    # path-037212
+(config)# do-exec clear ip rsvp counters <cr>    # path-036969
+(config)# do-exec clear ip rsvp hello bfd lost-cnt <cr>    # path-053886
+(config)# do-exec clear ip rsvp hello bfd nbr-lost <cr>    # path-053951
+(config)# do-exec clear ip rsvp hello instance counters <cr>    # path-053901
+(config)# do-exec clear ip rsvp hello instance statistics <cr>    # path-053839
+(config)# do-exec clear ip rsvp hello statistics <cr>    # path-046431
+(config)# do-exec clear ip rsvp metadata interface <cr>    # path-046583
+(config)# do-exec clear ip rsvp nsr counters <cr>    # path-046275
+(config)# do-exec clear ip rsvp reservation * <cr>    # path-061380
+(config)# do-exec clear ip rsvp reservation <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-059807
+(config)# do-exec clear ip rsvp sender * <cr>    # path-061375
+(config)# do-exec clear ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-059801
+(config)# do-exec clear ip rsvp signalling fast-local-repair statistics <cr>    # path-053837
+(config)# do-exec clear ip rsvp signalling rate-limit <cr>    # path-046541
+(config)# do-exec clear ip rsvp signalling refresh reduction <cr>    # path-053935
+(config)# do-exec clear ip rtp header-compression <cr>    # path-035913
+(config)# do-exec clear ip rtp header-compression <interface> <cr>    # path-061294
+(config)# do-exec clear ip sctp statistics <cr>    # path-036415
+(config)# do-exec clear ip sdr <cr>    # path-030095
+(config)# do-exec clear ip subscriber <cr>    # path-030618
+(config)# do-exec clear ip subscriber interface <interface> <cr>    # path-061400
+(config)# do-exec clear ip tcp adjust stats <interface> <cr>    # path-061897
+(config)# do-exec clear ip tcp header-compression <cr>    # path-035984
+(config)# do-exec clear ip tcp header-compression <interface> <cr>    # path-061295
+(config)# do-exec clear ip traffic <cr>    # path-029403
+(config)# do-exec clear ip traffic interface <interface> <cr>    # path-061281
+(config)# do-exec clear ip traffic topology base <cr>    # path-045004
+(config)# do-exec clear ip trigger-authentication <cr>    # path-030348
+(config)# do-exec clear ipam counts <cr>    # path-029097
+(config)# do-exec clear ipam queues <cr>    # path-029147
+(config)# do-exec clear ipc statistics peak <cr>    # path-034344
+(config)# do-exec clear ipc statistics queue <cr>    # path-034238
+(config)# do-exec clear ipc statistics zone <cr>    # path-034353
+(config)# do-exec clear ipv6 access-list <cr>    # path-030511
+(config)# do-exec clear ipv6 cef * prefix-statistics <cr>    # path-061413
+(config)# do-exec clear ipv6 cef prefix-statistics <cr>    # path-037490
+(config)# do-exec clear ipv6 dhcp binding * <cr>    # path-061405
+(config)# do-exec clear ipv6 dhcp binding <address> <cr>    # path-046684
+(config)# do-exec clear ipv6 dhcp client <interface> <cr>    # path-061398
+(config)# do-exec clear ipv6 dhcp conflict * <cr>    # path-061408
+(config)# do-exec clear ipv6 dhcp conflict <address> <cr>    # path-046764
+(config)# do-exec clear ipv6 dhcp relay binding <address> <cr>    # path-054041
+(config)# do-exec clear ipv6 dhcp relay binding <prefix:dynamic> <cr>    # path-061980
+(config)# do-exec clear ipv6 dhcp route <address> <cr>    # path-046770
+(config)# do-exec clear ipv6 dhcp route <prefix:dynamic> <cr>    # path-061404
+(config)# do-exec clear ipv6 eigrp events <cr>    # path-037023
+(config)# do-exec clear ipv6 eigrp logging <cr>    # path-036972
+(config)# do-exec clear ipv6 eigrp neighbors <cr>    # path-037135
+(config)# do-exec clear ipv6 eigrp neighbors <interface> <cr>    # path-061395
+(config)# do-exec clear ipv6 eigrp topology <prefix:dynamic> <cr>    # path-061372
+(config)# do-exec clear ipv6 errors-internal <cr>    # path-029875
+(config)# do-exec clear ipv6 mfib counters <cr>    # path-036909
+(config)# do-exec clear ipv6 mfib counters <prefix:dynamic> <cr>    # path-061369
+(config)# do-exec clear ipv6 mld all-vrfs traffic <cr>    # path-046318
+(config)# do-exec clear ipv6 mld counters <cr>    # path-037034
+(config)# do-exec clear ipv6 mld counters <interface> <cr>    # path-061381
+(config)# do-exec clear ipv6 mld group <cr>    # path-037176
+(config)# do-exec clear ipv6 mld group <interface> <cr>    # path-061394
+(config)# do-exec clear ipv6 mld traffic <cr>    # path-036895
+(config)# do-exec clear ipv6 mtu <cr>    # path-030013
+(config)# do-exec clear ipv6 multicast aaa authorization <cr>    # path-046738
+(config)# do-exec clear ipv6 multicast aaa authorization <interface> <cr>    # path-061983
+(config)# do-exec clear ipv6 multicast snooping limit vlan <number:1..4095> statistics <cr>    # path-059183
+(config)# do-exec clear ipv6 nd destination <cr>    # path-036700
+(config)# do-exec clear ipv6 nd destination vrf <?match_ipv6_zoneinfo_action@55558ad59678> <cr>    # path-061930
+(config)# do-exec clear ipv6 nd on-link prefix <cr>    # path-046055
+(config)# do-exec clear ipv6 nd on-link prefix vrf <?match_ipv6_zoneinfo_action@55558ad59330> <cr>    # path-062292
+(config)# do-exec clear ipv6 nd router <cr>    # path-036749
+(config)# do-exec clear ipv6 nd router vrf <?match_ipv6_zoneinfo_action@55558ad59990> <cr>    # path-061934
+(config)# do-exec clear ipv6 neighbors <cr>    # path-030333
+(config)# do-exec clear ipv6 neighbors <interface> <cr>    # path-060891
+(config)# do-exec clear ipv6 neighbors binding address <?ipv4orv6_addr_action@55558b14a808> policy <string> <cr>    # path-062505
+(config)# do-exec clear ipv6 neighbors binding policy <string> <cr>    # path-053669
+(config)# do-exec clear ipv6 neighbors ha statistics <cr>    # path-046033
+(config)# do-exec clear ipv6 nhrp <cr>    # path-030549
+(config)# do-exec clear ipv6 nhrp <prefix:dynamic> <cr>    # path-060894
+(config)# do-exec clear ipv6 nhrp counters <cr>    # path-037164
+(config)# do-exec clear ipv6 nhrp rd <?vrf_rd_action@55558aaca110> counters <cr>    # path-061976
+(config)# do-exec clear ipv6 nhrp rd <?vrf_rd_action@55558aaca110> shortcut <cr>    # path-061978
+(config)# do-exec clear ipv6 nhrp shortcut <cr>    # path-037209
+(config)# do-exec clear ipv6 nhrp shortcut interface <interface> <cr>    # path-061981
+(config)# do-exec clear ipv6 nhrp stats <cr>    # path-037081
+(config)# do-exec clear ipv6 nhrp stats <interface> <cr>    # path-061389
+(config)# do-exec clear ipv6 pim all-vrfs traffic <cr>    # path-046377
+(config)# do-exec clear ipv6 pim limit <cr>    # path-037128
+(config)# do-exec clear ipv6 pim limit <interface> <cr>    # path-061392
+(config)# do-exec clear ipv6 pim pfp-sa cache <cr>    # path-046595
+(config)# do-exec clear ipv6 pim pfp-sa originator <cr>    # path-046531
+(config)# do-exec clear ipv6 pim reset <cr>    # path-036968
+(config)# do-exec clear ipv6 pim traffic <cr>    # path-037061
+(config)# do-exec clear ipv6 prefix-list <cr>    # path-030519
+(config)# do-exec clear ipv6 prefix-list <string> <prefix:dynamic> <cr>    # path-061399
+(config)# do-exec clear ipv6 rip <cr>    # path-030417
+(config)# do-exec clear ipv6 route <address> <cr>    # path-036597
+(config)# do-exec clear ipv6 route <prefix:dynamic> <cr>    # path-060876
+(config)# do-exec clear ipv6 snooping counters <cr>    # path-037288
+(config)# do-exec clear ipv6 snooping counters interface <interface> <cr>    # path-061985
+(config)# do-exec clear ipv6 snooping events <cr>    # path-037276
+(config)# do-exec clear ipv6 snooping messages <cr>    # path-037319
+(config)# do-exec clear ipv6 spd <cr>    # path-030537
+(config)# do-exec clear ipv6 traffic <cr>    # path-030158
+(config)# do-exec clear ipv6 traffic interface <cr>    # path-036657
+(config)# do-exec clear ipv6 traffic interface <interface> <cr>    # path-061345
+(config)# do-exec clear isis * <cr>    # path-060672
+(config)# do-exec clear isis lsp-fast-flooding <cr>    # path-030812
+(config)# do-exec clear isis lspfull <cr>    # path-030762
+(config)# do-exec clear isis rib redistribution <prefix:dynamic> <cr>    # path-061452
+(config)# do-exec clear kerberos creds <cr>    # path-028873
+(config)# do-exec clear l2fib statistics all <cr>    # path-035017
+(config)# do-exec clear l2fib statistics bridge-domain <number:dynamic> <cr>    # path-061256
+(config)# do-exec clear l2protocol-forward counters <cr>    # path-031749
+(config)# do-exec clear l2protocol-forward counters <interface> <cr>    # path-060990
+(config)# do-exec clear l2protocol-tunnel counters <cr>    # path-031727
+(config)# do-exec clear l2protocol-tunnel counters <interface> <cr>    # path-060989
+(config)# do-exec clear l2rib counters client producers <cr>    # path-045730
+(config)# do-exec clear l2rib test <string> msg-buffer <cr>    # path-045816
+(config)# do-exec clear lacp <number:dynamic> counters <cr>    # path-060992
+(config)# do-exec clear lacp counters <cr>    # path-031758
+(config)# do-exec clear ldap server <string> <cr>    # path-038146
+(config)# do-exec clear line <?ttyline_action@5555896af940> <cr>    # path-060519
+(config)# do-exec clear line <?ttyline_action@5555896af940> <cr>    # path-060520
+(config)# do-exec clear line async-queue <cr>    # path-028214
+(config)# do-exec clear lldp counters <cr>    # path-030136
+(config)# do-exec clear lldp table <cr>    # path-030176
+(config)# do-exec clear logging <cr>    # path-026302
+(config)# do-exec clear logging persistent <cr>    # path-028104
+(config)# do-exec clear logging persistent url <url:dynamic> <cr>    # path-061211
+(config)# do-exec clear logging xml <cr>    # path-028049
+(config)# do-exec clear mac address-table dynamic <cr>    # path-039827
+(config)# do-exec clear mac address-table dynamic vlan <number:dynamic> <cr>    # path-062062
+(config)# do-exec clear macsec interface <interface> <cr>    # path-060789
+(config)# do-exec clear macsec interface <interface> <cr>    # path-060791
+(config)# do-exec clear mdns-sd cache interface <interface> <cr>    # path-061357
+(config)# do-exec clear mdns-sd query-db <cr>    # path-030286
+(config)# do-exec clear memory events <cr>    # path-031291
+(config)# do-exec clear memory low-water-mark <cr>    # path-031238
+(config)# do-exec clear mfib linecard <cr>    # path-030899
+(config)# do-exec clear mfib linecard <number:dynamic> <cr>    # path-060939
+(config)# do-exec clear mfib table <?option@55558aafab20> <cr>    # path-060926
+(config)# do-exec clear mfib table <cr>    # path-030782
+(config)# do-exec clear mka all <cr>    # path-031777
+(config)# do-exec clear mka sessions <cr>    # path-031866
+(config)# do-exec clear mka sessions interface <interface> <cr>    # path-061559
+(config)# do-exec clear mka sessions interface <interface> efp <number:1..16384> <cr>    # path-062380
+(config)# do-exec clear mka sessions interface <interface> port-id <number:1..65535> <cr>    # path-062370
+(config)# do-exec clear mka sessions local-sci <hex-string> <cr>    # path-061535
+(config)# do-exec clear mka statistics <cr>    # path-031879
+(config)# do-exec clear mka statistics interface <interface> <cr>    # path-061563
+(config)# do-exec clear mka statistics interface <interface> efp <number:1..16384> <cr>    # path-062384
+(config)# do-exec clear mka statistics interface <interface> port-id <number:1..65535> <cr>    # path-062373
+(config)# do-exec clear mka statistics local-sci <hex-string> <cr>    # path-061543
+(config)# do-exec clear mlrib layer2 statistics <cr>    # path-037291
+(config)# do-exec clear mvr counters <cr>    # path-030516
+(config)# do-exec clear mvr counters receiver-ports <interface> <cr>    # path-061396
+(config)# do-exec clear nat64 ha statistics <cr>    # path-035503
+(config)# do-exec clear nat64 map-e rule running <cr>    # path-045167
+(config)# do-exec clear nat64 statistics <cr>    # path-029669
+(config)# do-exec clear nat64 statistics interface <interface> <cr>    # path-061279
+(config)# do-exec clear nat64 translations all <cr>    # path-035632
+(config)# do-exec clear nat64 translations interface <interface> <cr>    # path-061293
+(config)# do-exec clear nat66 statistics <cr>    # path-029625
+(config)# do-exec clear nat66 statistics prefix <prefix:dynamic> <cr>    # path-061277
+(config)# do-exec clear ncia circuits <cr>    # path-031625
+(config)# do-exec clear netbios-cache <cr>    # path-027600
+(config)# do-exec clear netconf counters <cr>    # path-031374
+(config)# do-exec clear netconf sessions <cr>    # path-031406
+(config)# do-exec clear nhrp stats <cr>    # path-030734
+(config)# do-exec clear nhrp stats <interface> <cr>    # path-060917
+(config)# do-exec clear nhrp stats performance <cr>    # path-037451
+(config)# do-exec clear onep statistics session <?option@55558b204b98> <cr>    # path-061486
+(config)# do-exec clear onep trace <cr>    # path-031194
+(config)# do-exec clear opflex agent service vxlan-evpn all <cr>    # path-054334
+(config)# do-exec clear ospfv3 counters <cr>    # path-031020
+(config)# do-exec clear ospfv3 counters neighbor <interface> <cr>    # path-061461
+(config)# do-exec clear ospfv3 events <cr>    # path-031011
+(config)# do-exec clear ospfv3 force-spf <cr>    # path-030936
+(config)# do-exec clear ospfv3 process <cr>    # path-030916
+(config)# do-exec clear ospfv3 redistribution <cr>    # path-030887
+(config)# do-exec clear ospfv3 traffic <cr>    # path-031043
+(config)# do-exec clear ospfv3 traffic <interface> <cr>    # path-060947
+(config)# do-exec clear ospfv3 vrf * events <cr>    # path-061481
+(config)# do-exec clear ospfv3 vrf * force-spf <cr>    # path-061473
+(config)# do-exec clear ospfv3 vrf * process <cr>    # path-061469
+(config)# do-exec clear ospfv3 vrf * redistribution <cr>    # path-061467
+(config)# do-exec clear packet-debug pak_debug_tracebuf <cr>    # path-029368
+(config)# do-exec clear parser atomic-config <cr>    # path-027993
+(config)# do-exec clear parser cache <cr>    # path-028035
+(config)# do-exec clear parser statistics <cr>    # path-028015
+(config)# do-exec clear platform arpsnooping-trace <cr>    # path-027944
+(config)# do-exec clear platform authentication secure-mac <interface> all <cr>    # path-061835
+(config)# do-exec clear platform authentication secure-mac <interface> mac <address> <cr>    # path-062232
+(config)# do-exec clear platform condition all <cr>    # path-034045
+(config)# do-exec clear platform dhcpsnooping pkt-trace ipv4 <cr>    # path-043906
+(config)# do-exec clear platform packet-trace configuration <cr>    # path-034044
+(config)# do-exec clear platform packet-trace statistics <cr>    # path-034059
+(config)# do-exec clear platform software adjacency counters <cr>    # path-043970
+(config)# do-exec clear platform software adjacency nexthop-ipfrr <cr>    # path-043958
+(config)# do-exec clear platform software cce statistics <cr>    # path-044478
+(config)# do-exec clear platform software cef counters <cr>    # path-043966
+(config)# do-exec clear platform software cli-agent counters <cr>    # path-043928
+(config)# do-exec clear platform software cman statistics <cr>    # path-043913
+(config)# do-exec clear platform software crimson operational statistics <cr>    # path-052493
+(config)# do-exec clear platform software dpidb counters <cr>    # path-043921
+(config)# do-exec clear platform software epbr statistics <cr>    # path-044065
+(config)# do-exec clear platform software ethernet efp statistics <cr>    # path-052061
+(config)# do-exec clear platform software fhs statistics <cr>    # path-043999
+(config)# do-exec clear platform software flow statistics <cr>    # path-044179
+(config)# do-exec clear platform software icmp statistics <cr>    # path-044207
+(config)# do-exec clear platform software infrastructure bipc <cr>    # path-044665
+(config)# do-exec clear platform software infrastructure chasfs <cr>    # path-044704
+(config)# do-exec clear platform software infrastructure debug <cr>    # path-044749
+(config)# do-exec clear platform software infrastructure inject <cr>    # path-044653
+(config)# do-exec clear platform software infrastructure lfts sar all <cr>    # path-057004
+(config)# do-exec clear platform software infrastructure lfts sar ipv4-addr <address> <cr>    # path-059006
+(config)# do-exec clear platform software infrastructure lfts sar ipv6-addr <address> <cr>    # path-059011
+(config)# do-exec clear platform software infrastructure lsmpi <cr>    # path-044614
+(config)# do-exec clear platform software infrastructure packet <cr>    # path-044613
+(config)# do-exec clear platform software infrastructure punt <cr>    # path-062818
+(config)# do-exec clear platform software infrastructure punt statistics <cr>    # path-062857

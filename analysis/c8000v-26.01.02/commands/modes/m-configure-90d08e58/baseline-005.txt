@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-005.md
+
+(config)# default do-exec debug callback <cr>    # path-032705
+(config)# default do-exec debug cca <cr>    # path-028233
+(config)# default do-exec debug cce cp <cr>    # path-037500
+(config)# default do-exec debug cce cp filter balance <cr>    # path-054175
+(config)# default do-exec debug cce cpdp <cr>    # path-037688
+(config)# default do-exec debug cce cpdp elog <cr>    # path-047021
+(config)# default do-exec debug cce cpdp events <cr>    # path-047032
+(config)# default do-exec debug cce cpdp events detailed <cr>    # path-054241
+(config)# default do-exec debug cce ha <cr>    # path-037689
+(config)# default do-exec debug cce ha event <cr>    # path-046986
+(config)# default do-exec debug cce ha issu <cr>    # path-047022
+(config)# default do-exec debug cdapi detail <cr>    # path-042027
+(config)# default do-exec debug cdapi events <cr>    # path-042007
+(config)# default do-exec debug cdp adjacency <cr>    # path-037193
+(config)# default do-exec debug cdp events <cr>    # path-037151
+(config)# default do-exec debug cdp ilp <cr>    # path-037360
+(config)# default do-exec debug cdp ip <cr>    # path-037235
+(config)# default do-exec debug cdp location-server <cr>    # path-037277
+(config)# default do-exec debug cdp packets <cr>    # path-037093
+(config)# default do-exec debug cdp test <cr>    # path-037320
+(config)# default do-exec debug cef filter fib <cr>    # path-046021
+(config)# default do-exec debug cef filter hardware notifications type global <cr>    # path-059193
+(config)# default do-exec debug cef filter path <cr>    # path-046114
+(config)# default do-exec debug cef filter subtree context client <cr>    # path-057401
+(config)# default do-exec debug cef filter table <cr>    # path-046060
+(config)# default do-exec debug cef filter uid key <cr>    # path-053383
+(config)# default do-exec debug cef filter vrf <cr>    # path-046104
+(config)# default do-exec debug cef table <cr>    # path-036567
+(config)# default do-exec debug cfgdiff <cr>    # path-028236
+(config)# default do-exec debug cfgdiff timestamp <cr>    # path-034248
+(config)# default do-exec debug cft <cr>    # path-031436
+(config)# default do-exec debug cft ager <cr>    # path-038572
+(config)# default do-exec debug cft engine <cr>    # path-038669
+(config)# default do-exec debug cft fe <cr>    # path-038730
+(config)# default do-exec debug cft flow <cr>    # path-038522
+(config)# default do-exec debug cft l4 <cr>    # path-038782
+(config)# default do-exec debug cft memory <cr>    # path-038616
+(config)# default do-exec debug chat <cr>    # path-032718
+(config)# default do-exec debug checkpoint timers <cr>    # path-035328
+(config)# default do-exec debug clns cache <cr>    # path-040893
+(config)# default do-exec debug clns esis events <cr>    # path-049858
+(config)# default do-exec debug clns esis packets <cr>    # path-049881
+(config)# default do-exec debug clns events <cr>    # path-040705
+(config)# default do-exec debug clns filters <cr>    # path-040863
+(config)# default do-exec debug clns igrp-adjacency <cr>    # path-040803
+(config)# default do-exec debug clns igrp-events <cr>    # path-040736
+(config)# default do-exec debug clns igrp-packets <cr>    # path-040774
+(config)# default do-exec debug clns packets <cr>    # path-040831
+(config)# default do-exec debug clns routing <cr>    # path-040924
+(config)# default do-exec debug cls errors <cr>    # path-040856
+(config)# default do-exec debug cls flow-control <cr>    # path-040986
+(config)# default do-exec debug cls hpr <cr>    # path-041029
+(config)# default do-exec debug cls messages <cr>    # path-040886
+(config)# default do-exec debug cls sdlc <cr>    # path-040916
+(config)# default do-exec debug cls state <cr>    # path-040819
+(config)# default do-exec debug cls vdlc <cr>    # path-040951
+(config)# default do-exec debug cns aaa <cr>    # path-042864
+(config)# default do-exec debug cns all <cr>    # path-042943
+(config)# default do-exec debug cns config <cr>    # path-042767
+(config)# default do-exec debug cns config all <cr>    # path-051399
+(config)# default do-exec debug cns config apply <cr>    # path-051354
+(config)# default do-exec debug cns config decode <cr>    # path-051371
+(config)# default do-exec debug cns config initial <cr>    # path-051328
+(config)# default do-exec debug cns config interface <cr>    # path-051282
+(config)# default do-exec debug cns config messages <cr>    # path-051383
+(config)# default do-exec debug cns config notify all <cr>    # path-056599
+(config)# default do-exec debug cns config notify eventing <cr>    # path-056572
+(config)# default do-exec debug cns config notify expand <cr>    # path-056595
+(config)# default do-exec debug cns config notify generation <cr>    # path-056582
+(config)# default do-exec debug cns config notify modes <cr>    # path-056591
+(config)# default do-exec debug cns config notify nvgen <cr>    # path-056577
+(config)# default do-exec debug cns config notify xml <cr>    # path-056586
+(config)# default do-exec debug cns config partial <cr>    # path-051304
+(config)# default do-exec debug cns config retrieve <cr>    # path-051263
+(config)# default do-exec debug cns event agent <cr>    # path-051270
+(config)# default do-exec debug cns event all <cr>    # path-051307
+(config)# default do-exec debug cns event connection <cr>    # path-051251
+(config)# default do-exec debug cns event subscriber <cr>    # path-051286
+(config)# default do-exec debug cns exec agent <cr>    # path-051278
+(config)# default do-exec debug cns exec all <cr>    # path-051352
+(config)# default do-exec debug cns exec decode <cr>    # path-051326
+(config)# default do-exec debug cns exec messages <cr>    # path-051301
+(config)# default do-exec debug cns format <cr>    # path-042886
+(config)# default do-exec debug cns framework <cr>    # path-042841
+(config)# default do-exec debug cns http <cr>    # path-042905
+(config)# default do-exec debug cns image agent <cr>    # path-051322
+(config)# default do-exec debug cns image all <cr>    # path-051368
+(config)# default do-exec debug cns image connection <cr>    # path-051295
+(config)# default do-exec debug cns image error <cr>    # path-051350
+(config)# default do-exec debug cns io <cr>    # path-042740
+(config)# default do-exec debug cns lock <cr>    # path-042766
+(config)# default do-exec debug cns management <cr>    # path-042871
+(config)# default do-exec debug cns ssl <cr>    # path-042817
+(config)# default do-exec debug cns transport <cr>    # path-042795
+(config)# default do-exec debug cns xml all <cr>    # path-051474
+(config)# default do-exec debug cns xml decode <cr>    # path-051449
+(config)# default do-exec debug cns xml dom <cr>    # path-051402
+(config)# default do-exec debug cns xml parser <cr>    # path-051425
+(config)# default do-exec debug compress <cr>    # path-028671
+(config)# default do-exec debug compress detailed <cr>    # path-034713
+(config)# default do-exec debug condition called <string> <cr>    # path-043998
+(config)# default do-exec debug condition calling <string> <cr>    # path-044017
+(config)# default do-exec debug condition cpl class-map <string> <cr>    # path-052412
+(config)# default do-exec debug condition cpl policy-map <string> <cr>    # path-052439
+(config)# default do-exec debug condition cts peer-id <string> <cr>    # path-052338
+(config)# default do-exec debug condition domain <string> <cr>    # path-044116
+(config)# default do-exec debug condition ip <address> <cr>    # path-044126
+(config)# default do-exec debug condition ip nat inside destination list <number:1..2699> <cr>    # path-059657
+(config)# default do-exec debug condition ip nat inside source <cr>    # path-056911
+(config)# default do-exec debug condition ip nat inside source static <address> <address> <cr>    # path-059980
+(config)# default do-exec debug condition ip nat outside source list <number:1..2699> <cr>    # path-059662
+(config)# default do-exec debug condition ip nat outside source static <address> <address> <cr>    # path-059976
+(config)# default do-exec debug condition ip nat pool <string> <cr>    # path-056892
+(config)# default do-exec debug condition mac-address <address> <cr>    # path-044076
+(config)# default do-exec debug condition match-list <number:1..16> <cr>    # path-044318
+(config)# default do-exec debug condition portbundle ip <address> bundle <number:0..65536> <cr>    # path-058914
+(config)# default do-exec debug condition session-id <number:1..4294967295> <cr>    # path-044144
+(config)# default do-exec debug condition tnlmsg <number:1..15> <cr>    # path-044206
+(config)# default do-exec debug condition username <string> <cr>    # path-043981
+(config)# default do-exec debug condition vcid <number:1..4294967295> <cr>    # path-044091
+(config)# default do-exec debug condition vlan <number:1..4094> <cr>    # path-044356
+(config)# default do-exec debug condition vrf default <cr>    # path-044301
+(config)# default do-exec debug configuration lock <cr>    # path-034173
+(config)# default do-exec debug confmodem <cr>    # path-032717
+(config)# default do-exec debug conn <cr>    # path-030869
+(config)# default do-exec debug cops <cr>    # path-032092
+(config)# default do-exec debug cpc function-trace <cr>    # path-038129
+(config)# default do-exec debug cpc subblock <cr>    # path-038084
+(config)# default do-exec debug cpl <cr>    # path-032772
+(config)# default do-exec debug cpl cap-xos <cr>    # path-041525
+(config)# default do-exec debug cpl classification <cr>    # path-041826
+(config)# default do-exec debug cpl classification client <cr>    # path-050546
+(config)# default do-exec debug cpl classification dp <cr>    # path-050569
+(config)# default do-exec debug cpl classification infra <cr>    # path-050516
+(config)# default do-exec debug cpl concurrency delay acquire <number:0..300> <number:1..10000> <cr>    # path-059560
+(config)# default do-exec debug cpl concurrency history <cr>    # path-050389
+(config)# default do-exec debug cpl concurrency lock <cr>    # path-050429
+(config)# default do-exec debug cpl concurrency pid <number:1..10000> <cr>    # path-056032
+(config)# default do-exec debug cpl concurrency trace <cr>    # path-050412
+(config)# default do-exec debug cpl filtering <cr>    # path-041689
+(config)# default do-exec debug cpl function <string> <cr>    # path-050456
+(config)# default do-exec debug cpl inline <cr>    # path-041411
+(config)# default do-exec debug cpl pol-shim <cr>    # path-041567
+(config)# default do-exec debug cpl ppcp <cr>    # path-042021
+(config)# default do-exec debug cpl ppcp bind <cr>    # path-050501
+(config)# default do-exec debug cpl ppcp client <cr>    # path-050707
+(config)# default do-exec debug cpl ppcp client class-type <cr>    # path-056144
+(config)# default do-exec debug cpl ppcp client classification <cr>    # path-056106
+(config)# default do-exec debug cpl ppcp client distribution <cr>    # path-056118
+(config)# default do-exec debug cpl ppcp client feature <cr>    # path-056076
+(config)# default do-exec debug cpl ppcp client filter-type <cr>    # path-056163
+(config)# default do-exec debug cpl ppcp client legacy-platform <cr>    # path-056174
+(config)# default do-exec debug cpl ppcp client policy-type <cr>    # path-056130
+(config)# default do-exec debug cpl ppcp client target <cr>    # path-056093
+(config)# default do-exec debug cpl ppcp database <cr>    # path-050687
+(config)# default do-exec debug cpl ppcp database runtime <cr>    # path-056160
+(config)# default do-exec debug cpl ppcp database template <cr>    # path-056141
+(config)# default do-exec debug cpl ppcp event <cr>    # path-050803
+(config)# default do-exec debug cpl ppcp event action <cr>    # path-056213
+(config)# default do-exec debug cpl ppcp event action add <cr>    # path-058723
+(config)# default do-exec debug cpl ppcp event action delete <cr>    # path-058730
+(config)# default do-exec debug cpl ppcp event action modify <cr>    # path-058727
+(config)# default do-exec debug cpl ppcp event attribute <cr>    # path-056236
+(config)# default do-exec debug cpl ppcp event attribute add <cr>    # path-058733
+(config)# default do-exec debug cpl ppcp event attribute delete <cr>    # path-058739
+(config)# default do-exec debug cpl ppcp event child-policy <cr>    # path-056224
+(config)# default do-exec debug cpl ppcp event child-policy add <cr>    # path-058728
+(config)# default do-exec debug cpl ppcp event child-policy delete <cr>    # path-058734
+(config)# default do-exec debug cpl ppcp event class-to-policy <cr>    # path-056212
+(config)# default do-exec debug cpl ppcp event class-to-policy add <cr>    # path-058726
+(config)# default do-exec debug cpl ppcp event class-to-policy delete <cr>    # path-058729
+(config)# default do-exec debug cpl ppcp event classmap <cr>    # path-056190
+(config)# default do-exec debug cpl ppcp event classmap add <cr>    # path-058707
+(config)# default do-exec debug cpl ppcp event classmap delete <cr>    # path-058715
+(config)# default do-exec debug cpl ppcp event classmap logicalop <cr>    # path-058720
+(config)# default do-exec debug cpl ppcp event filter <cr>    # path-056197
+(config)# default do-exec debug cpl ppcp event filter add <cr>    # path-058716
+(config)# default do-exec debug cpl ppcp event filter delete <cr>    # path-058725
+(config)# default do-exec debug cpl ppcp event parameter-map <cr>    # path-056247
+(config)# default do-exec debug cpl ppcp event parameter-map add <cr>    # path-058738
+(config)# default do-exec debug cpl ppcp event parameter-map delete <cr>    # path-058746
+(config)# default do-exec debug cpl ppcp event policymap <cr>    # path-056189
+(config)# default do-exec debug cpl ppcp event policymap add <cr>    # path-058712
+(config)# default do-exec debug cpl ppcp event policymap delete <cr>    # path-058719
+(config)# default do-exec debug cpl ppcp event service-policy <cr>    # path-056298
+(config)# default do-exec debug cpl ppcp event service-policy activate <cr>    # path-058785
+(config)# default do-exec debug cpl ppcp event service-policy install <cr>    # path-058745
+(config)# default do-exec debug cpl ppcp event service-policy notify <cr>    # path-058773
+(config)# default do-exec debug cpl ppcp event service-policy remove <cr>    # path-058754
+(config)# default do-exec debug cpl ppcp event service-policy suspend <cr>    # path-058781
+(config)# default do-exec debug cpl ppcp event service-policy update <cr>    # path-058763
+(config)# default do-exec debug cpl ppcp event test client <number:0..7> <cr>    # path-059573
+(config)# default do-exec debug cpl ppcp event test dbtype <number:0..1> <cr>    # path-059575
+(config)# default do-exec debug cpl ppcp event test event <number:0..40> <cr>    # path-059571
+(config)# default do-exec debug cpl ppcp event test start <cr>    # path-058721
+(config)# default do-exec debug cpl ppcp flow <cr>    # path-050778
+(config)# default do-exec debug cpl ppcp flow db <cr>    # path-056210
+(config)# default do-exec debug cpl ppcp flow prov <cr>    # path-056201
+(config)# default do-exec debug cpl ppcp infra <cr>    # path-050481
+(config)# default do-exec debug cpl ppcp ipc <cr>    # path-050571
+(config)# default do-exec debug cpl ppcp level <cr>    # path-050725
+(config)# default do-exec debug cpl ppcp level brief <cr>    # path-056176
+(config)# default do-exec debug cpl ppcp level brief <cr>    # path-056177
+(config)# default do-exec debug cpl ppcp level error <cr>    # path-056146
+(config)# default do-exec debug cpl ppcp level error <cr>    # path-056147
+(config)# default do-exec debug cpl ppcp level normal <cr>    # path-056186
+(config)# default do-exec debug cpl ppcp level normal <cr>    # path-056187
+(config)# default do-exec debug cpl ppcp level verbose <cr>    # path-056184
+(config)# default do-exec debug cpl ppcp level warning <cr>    # path-056164
+(config)# default do-exec debug cpl ppcp level warning <cr>    # path-056165
+(config)# default do-exec debug cpl ppcp ras-dbg <cr>    # path-050700
+(config)# default do-exec debug cpl ppcp ras-fc <cr>    # path-050662
+(config)# default do-exec debug cpl ppcp ras-feature <cr>    # path-050639
+(config)# default do-exec debug cpl ppcp ras-tc <cr>    # path-050679
+(config)# default do-exec debug cpl ppcp stats <cr>    # path-050604
+(config)# default do-exec debug cpl ppcp stats ipc <cr>    # path-056109
+(config)# default do-exec debug cpl ppcp stats ipc ms <cr>    # path-058697
+(config)# default do-exec debug cpl ppcp stats update <cr>    # path-056121
+(config)# default do-exec debug cpl ppcp stats update ms <cr>    # path-058701
+(config)# default do-exec debug cpl provisioning api <cr>    # path-050371
+(config)# default do-exec debug cpl provisioning cce_dp_stubs <cr>    # path-050471
+(config)# default do-exec debug cpl provisioning cce_for_test <cr>    # path-050459
+(config)# default do-exec debug cpl provisioning db <cr>    # path-050416
+(config)# default do-exec debug cpl provisioning errors <cr>    # path-050432
+(config)# default do-exec debug cpl provisioning non_nvgen_client <cr>    # path-050487
+(config)# default do-exec debug cpl provisioning test <cr>    # path-050447
+(config)# default do-exec debug cpl provisioning ttc <cr>    # path-050397
+(config)# default do-exec debug cpl show detail <cr>    # path-050466
+(config)# default do-exec debug cpl vrf-target <cr>    # path-041596
+(config)# default do-exec debug crm <cr>    # path-032976
+(config)# default do-exec debug crm all <cr>    # path-042117
+(config)# default do-exec debug crm detail <cr>    # path-042045
+(config)# default do-exec debug crm error <cr>    # path-042144
+(config)# default do-exec debug crm error call <cr>    # path-050854
+(config)# default do-exec debug crm error call informational <cr>    # path-056260
+(config)# default do-exec debug crm error software <cr>    # path-050866
+(config)# default do-exec debug crm error software informational <cr>    # path-056273
+(config)# default do-exec debug crm function <cr>    # path-042068
+(config)# default do-exec debug crm inout <cr>    # path-042023
+(config)# default do-exec debug crypto autovpn error <cr>    # path-050956
+(config)# default do-exec debug crypto autovpn events <cr>    # path-050974
+(config)# default do-exec debug crypto autovpn info <cr>    # path-050992
+(config)# default do-exec debug crypto autovpn verbose <cr>    # path-051013
+(config)# default do-exec debug crypto ber <cr>    # path-042268
+(config)# default do-exec debug crypto engine <cr>    # path-042184
+(config)# default do-exec debug crypto engine accelerator control <cr>    # path-056329
+(config)# default do-exec debug crypto engine accelerator control detail <cr>    # path-058799
+(config)# default do-exec debug crypto engine accelerator control error <cr>    # path-058801
+(config)# default do-exec debug crypto engine accelerator control error mask <number:0..4294967295> <cr>    # path-059928
+(config)# default do-exec debug crypto engine accelerator packet <cr>    # path-056353
+(config)# default do-exec debug crypto engine accelerator packet detail <cr>    # path-058809
+(config)# default do-exec debug crypto engine accelerator packet error <cr>    # path-058804
+(config)# default do-exec debug crypto engine accelerator packet error mask <number:0..4294967295> <cr>    # path-059929
+(config)# default do-exec debug crypto engine accelerator packet number <number:0..32767> length <number:0..32767> <cr>    # path-060107
+(config)# default do-exec debug crypto engine error <cr>    # path-050844
+(config)# default do-exec debug crypto engine packet <cr>    # path-050883
+(config)# default do-exec debug crypto engine packet detail <cr>    # path-056284
+(config)# default do-exec debug crypto engine vpn_hw all <cr>    # path-056388
+(config)# default do-exec debug crypto engine vpn_hw buffer <cr>    # path-056382
+(config)# default do-exec debug crypto engine vpn_hw error <cr>    # path-056362
+(config)# default do-exec debug crypto engine vpn_hw high <cr>    # path-056325
+(config)# default do-exec debug crypto engine vpn_hw low <cr>    # path-056349
+(config)# default do-exec debug crypto engine vpn_hw medium <cr>    # path-056334
+(config)# default do-exec debug crypto engine vpn_hw normal <cr>    # path-056319
+(config)# default do-exec debug crypto engine vpn_hw packet <cr>    # path-056313
+(config)# default do-exec debug crypto engine vpn_hw stat <cr>    # path-056374
+(config)# default do-exec debug crypto est-client <cr>    # path-042283
+(config)# default do-exec debug crypto pki API <cr>    # path-050993
+(config)# default do-exec debug crypto pki callbacks <cr>    # path-051041
+(config)# default do-exec debug crypto pki messages <cr>    # path-050958
+(config)# default do-exec debug crypto pki scep <cr>    # path-051014
+(config)# default do-exec debug crypto pki server <cr>    # path-051001
+(config)# default do-exec debug crypto pki server performance <cr>    # path-056343
+(config)# default do-exec debug crypto pki transactions <cr>    # path-051000
+(config)# default do-exec debug crypto pki transactions performance <cr>    # path-056342
+(config)# default do-exec debug crypto pki validation <cr>    # path-051030
+(config)# default do-exec debug crypto socket <cr>    # path-042193
+(config)# default do-exec debug crypto verbose <cr>    # path-042282
+(config)# default do-exec debug crypto wui <cr>    # path-042303
+(config)# default do-exec debug cts <cr>    # path-031853
+(config)# default do-exec debug cts aaa <cr>    # path-039021
+(config)# default do-exec debug cts all <cr>    # path-039812
+(config)# default do-exec debug cts authentication details <cr>    # path-047912
+(config)# default do-exec debug cts authentication events <cr>    # path-047869
+(config)# default do-exec debug cts authorization aaa critical <cr>    # path-054812
+(config)# default do-exec debug cts authorization aaa debug <cr>    # path-054694
+(config)# default do-exec debug cts authorization aaa emergency <cr>    # path-054844
+(config)# default do-exec debug cts authorization aaa error <cr>    # path-054783
+(config)# default do-exec debug cts authorization aaa info <cr>    # path-054718
+(config)# default do-exec debug cts authorization aaa notice <cr>    # path-054741
+(config)# default do-exec debug cts authorization aaa verbose <cr>    # path-054671
+(config)# default do-exec debug cts authorization aaa warning <cr>    # path-054762
+(config)# default do-exec debug cts authorization all <cr>    # path-048238
+(config)# default do-exec debug cts cache <cr>    # path-039427
+(config)# default do-exec debug cts coa events <cr>    # path-048601
+(config)# default do-exec debug cts critical-authentication error <cr>    # path-048654
+(config)# default do-exec debug cts critical-authentication event <cr>    # path-048593
+(config)# default do-exec debug cts dp Info <cr>    # path-048208
+(config)# default do-exec debug cts dp errors <cr>    # path-048255
+(config)# default do-exec debug cts dp packets <cr>    # path-048297
+(config)# default do-exec debug cts environment-data <cr>    # path-039244
+(config)# default do-exec debug cts environment-data aaa <cr>    # path-047905
+(config)# default do-exec debug cts environment-data default-epg <cr>    # path-048144
+(config)# default do-exec debug cts environment-data default-sg <cr>    # path-048099
+(config)# default do-exec debug cts environment-data events <cr>    # path-047958
+(config)# default do-exec debug cts environment-data platform <cr>    # path-048051
+(config)# default do-exec debug cts environment-data sg-epg <cr>    # path-048010
+(config)# default do-exec debug cts error <cr>    # path-038780
+(config)# default do-exec debug cts fips events <cr>    # path-048122
+(config)# default do-exec debug cts ha config <cr>    # path-048541
+(config)# default do-exec debug cts ha core <cr>    # path-048814
+(config)# default do-exec debug cts ha core bindings <cr>    # path-055131
+(config)# default do-exec debug cts ha core bindings events <cr>    # path-058272
+(config)# default do-exec debug cts ha core environment-data <cr>    # path-055058
+(config)# default do-exec debug cts ha core environment-data events <cr>    # path-058238
+(config)# default do-exec debug cts ha core policy <cr>    # path-055090
+(config)# default do-exec debug cts ha core policy events <cr>    # path-058255
+(config)# default do-exec debug cts ha infra <cr>    # path-048479
+(config)# default do-exec debug cts ifc cache <cr>    # path-048217
+(config)# default do-exec debug cts ifc events <cr>    # path-048166
+(config)# default do-exec debug cts ifc snmp <cr>    # path-048260
+(config)# default do-exec debug cts layer3-trustsec <cr>    # path-039368
+(config)# default do-exec debug cts odm <cr>    # path-038667
+(config)# default do-exec debug cts policy-server all <cr>    # path-048917
+(config)# default do-exec debug cts policy-server http all <cr>    # path-055113
+(config)# default do-exec debug cts policy-server http error <cr>    # path-055024
+(config)# default do-exec debug cts policy-server http events <cr>    # path-055069
+(config)# default do-exec debug cts policy-server json all <cr>    # path-055155
+(config)# default do-exec debug cts policy-server json error <cr>    # path-055063
+(config)# default do-exec debug cts policy-server json events <cr>    # path-055111
+(config)# default do-exec debug cts policy-server selection all <cr>    # path-055198
+(config)# default do-exec debug cts policy-server selection error <cr>    # path-055103
+(config)# default do-exec debug cts policy-server selection events <cr>    # path-055153
+(config)# default do-exec debug cts provisioning events <cr>    # path-048289
+(config)# default do-exec debug cts provisioning packets <cr>    # path-048340
+(config)# default do-exec debug cts rcl-server all <cr>    # path-048779
+(config)# default do-exec debug cts rcl-server errors <cr>    # path-048706
+(config)# default do-exec debug cts rcl-server events <cr>    # path-048646
+(config)# default do-exec debug cts relay event <cr>    # path-048250
+(config)# default do-exec debug cts relay pak <cr>    # path-048294
+(config)# default do-exec debug cts sap events <cr>    # path-048082
+(config)# default do-exec debug cts sap packets <cr>    # path-048131
+(config)# default do-exec debug cts sap pakdump <cr>    # path-048176
+(config)# default do-exec debug cts server-list <cr>    # path-038912
+(config)# default do-exec debug cts sgacl-db <cr>    # path-038729
+(config)# default do-exec debug cts states <cr>    # path-038613
+(config)# default do-exec debug cts sxp conn <cr>    # path-048486
+(config)# default do-exec debug cts sxp error <cr>    # path-048721
+(config)# default do-exec debug cts sxp filter <cr>    # path-048663
+(config)# default do-exec debug cts sxp internal <cr>    # path-048432
+(config)# default do-exec debug cts sxp mdb <cr>    # path-048607
+(config)# default do-exec debug cts sxp message <cr>    # path-048548
+(config)# default do-exec debug custom-queue <cr>    # path-028208
+(config)# default do-exec debug cwan <cr>    # path-033443
+(config)# default do-exec debug cwan alarm <cr>    # path-042844
+(config)# default do-exec debug cwan atom <cr>    # path-043088
+(config)# default do-exec debug cwan atom cf <cr>    # path-051496
+(config)# default do-exec debug cwan atom circuit-idx <cr>    # path-051451
+(config)# default do-exec debug cwan atom entry <cr>    # path-051392
+(config)# default do-exec debug cwan atom ha <cr>    # path-051476
+(config)# default do-exec debug cwan atom issu <cr>    # path-051533
+(config)# default do-exec debug cwan atom msg <cr>    # path-051428
+(config)# default do-exec debug cwan atom rf <cr>    # path-051513
+(config)# default do-exec debug cwan atom stats <cr>    # path-051407
+(config)# default do-exec debug cwan bridge <cr>    # path-042868
+(config)# default do-exec debug cwan choc-dsx resets <cr>    # path-051323
+(config)# default do-exec debug cwan choc-dsx semaphore <cr>    # path-051297
+(config)# default do-exec debug cwan choc-error <cr>    # path-042624
+(config)# default do-exec debug cwan choc-event <cr>    # path-042642
+(config)# default do-exec debug cwan chocx config <cr>    # path-051353
+(config)# default do-exec debug cwan chocx error <cr>    # path-051280
+(config)# default do-exec debug cwan chocx events <cr>    # path-051327
+(config)# default do-exec debug cwan chocx love-letters <cr>    # path-051382
+(config)# default do-exec debug cwan chocx mib <cr>    # path-051370
+(config)# default do-exec debug cwan chocx state <cr>    # path-051302
+(config)# default do-exec debug cwan cmd-retry <cr>    # path-042604
+(config)# default do-exec debug cwan cmd-timeout <cr>    # path-042589
+(config)# default do-exec debug cwan ct3 <cr>    # path-042873
+(config)# default do-exec debug cwan ct3 config <cr>    # path-051356
+(config)# default do-exec debug cwan ct3 error <cr>    # path-051257
+(config)# default do-exec debug cwan ct3 event <cr>    # path-051239
+(config)# default do-exec debug cwan ct3 loveletter <cr>    # path-051288
+(config)# default do-exec debug cwan ct3 mib <cr>    # path-051309
+(config)# default do-exec debug cwan ct3 state <cr>    # path-051273
+(config)# default do-exec debug cwan ct3 stats <cr>    # path-051331
+(config)# default do-exec debug cwan dss <cr>    # path-042537
+(config)# default do-exec debug cwan hw-module queue <cr>    # path-051376
+(config)# default do-exec debug cwan icc <cr>    # path-042484
+(config)# default do-exec debug cwan ifcom <cr>    # path-042499
+(config)# default do-exec debug cwan ifmgr error <cr>    # path-051422
+(config)# default do-exec debug cwan ifmgr trace <cr>    # path-051448
+(config)# default do-exec debug cwan interface <cr>    # path-042466
+(config)# default do-exec debug cwan localsw <cr>    # path-042924
+(config)# default do-exec debug cwan logger <cr>    # path-042511
+(config)# default do-exec debug cwan love <cr>    # path-042523
+(config)# default do-exec debug cwan ltl <cr>    # path-042872
+(config)# default do-exec debug cwan ltl plat-idx <cr>    # path-051346
+(config)# default do-exec debug cwan ltl skip-sp <cr>    # path-051318
+(config)# default do-exec debug cwan oir <cr>    # path-042557
+(config)# default do-exec debug cwan pc-lb <cr>    # path-042572

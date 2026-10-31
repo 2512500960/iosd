@@ -1,0 +1,20 @@
+# 模式 oam；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-mpls)# default echo jitter <cr>    # static_slot_creation_candidates-004398
+(config-mpls)# default echo permit vrf all <cr>    # static_slot_creation_candidates-004402
+(config-mpls)# default echo reply-mode control-channel allow-reverse-lsp <cr>    # static_slot_creation_candidates-004404
+(config-mpls)# default echo revision <cr>    # static_slot_creation_candidates-004395
+(config-mpls)# default echo vendor-extension <cr>    # static_slot_creation_candidates-004392
+(config-mpls)# echo jitter <number:1..2147483647> <cr>    # static_slot_creation_candidates-004397
+(config-mpls)# echo permit vrf all <cr>    # static_slot_creation_candidates-004399
+(config-mpls)# echo reply-mode control-channel allow-reverse-lsp <cr>    # static_slot_creation_candidates-004400
+(config-mpls)# echo revision 3 <cr>    # static_slot_creation_candidates-004394
+(config-mpls)# echo vendor-extension <cr>    # static_slot_creation_candidates-004390
+(config-mpls)# no echo jitter <cr>    # static_slot_creation_candidates-004396
+(config-mpls)# no echo permit vrf all <cr>    # static_slot_creation_candidates-004401
+(config-mpls)# no echo reply-mode control-channel allow-reverse-lsp <cr>    # static_slot_creation_candidates-004403
+(config-mpls)# no echo revision <cr>    # static_slot_creation_candidates-004393
+(config-mpls)# no echo vendor-extension <cr>    # static_slot_creation_candidates-004391
+(config-mpls)# proxy-ping <cr>    # static_slot_creation_candidates-004405

@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-025.md
+
+(config)# default do-exec undebug cts dp Info <cr>    # path-048697
+(config)# default do-exec undebug cts dp errors <cr>    # path-048771
+(config)# default do-exec undebug cts dp packets <cr>    # path-048845
+(config)# default do-exec undebug cts environment-data <cr>    # path-039776
+(config)# default do-exec undebug cts environment-data aaa <cr>    # path-048327
+(config)# default do-exec undebug cts environment-data default-epg <cr>    # path-048614
+(config)# default do-exec undebug cts environment-data default-sg <cr>    # path-048554
+(config)# default do-exec undebug cts environment-data events <cr>    # path-048383
+(config)# default do-exec undebug cts environment-data platform <cr>    # path-048493
+(config)# default do-exec undebug cts environment-data sg-epg <cr>    # path-048446
+(config)# default do-exec undebug cts error <cr>    # path-039260
+(config)# default do-exec undebug cts fips events <cr>    # path-048588
+(config)# default do-exec undebug cts ha config <cr>    # path-049123
+(config)# default do-exec undebug cts ha core <cr>    # path-049368
+(config)# default do-exec undebug cts ha core bindings <cr>    # path-055482
+(config)# default do-exec undebug cts ha core bindings events <cr>    # path-058419
+(config)# default do-exec undebug cts ha core environment-data <cr>    # path-055423
+(config)# default do-exec undebug cts ha core environment-data events <cr>    # path-058397
+(config)# default do-exec undebug cts ha core policy <cr>    # path-055452
+(config)# default do-exec undebug cts ha core policy events <cr>    # path-058411
+(config)# default do-exec undebug cts ha infra <cr>    # path-049078
+(config)# default do-exec undebug cts ifc cache <cr>    # path-048705
+(config)# default do-exec undebug cts ifc events <cr>    # path-048645
+(config)# default do-exec undebug cts ifc snmp <cr>    # path-048778
+(config)# default do-exec undebug cts layer3-trustsec <cr>    # path-039911
+(config)# default do-exec undebug cts odm <cr>    # path-039161
+(config)# default do-exec undebug cts policy-server all <cr>    # path-049447
+(config)# default do-exec undebug cts policy-server http all <cr>    # path-055470
+(config)# default do-exec undebug cts policy-server http error <cr>    # path-055392
+(config)# default do-exec undebug cts policy-server http events <cr>    # path-055433
+(config)# default do-exec undebug cts policy-server json all <cr>    # path-055497
+(config)# default do-exec undebug cts policy-server json error <cr>    # path-055428
+(config)# default do-exec undebug cts policy-server json events <cr>    # path-055467
+(config)# default do-exec undebug cts policy-server selection all <cr>    # path-055523
+(config)# default do-exec undebug cts policy-server selection error <cr>    # path-055459
+(config)# default do-exec undebug cts policy-server selection events <cr>    # path-055494
+(config)# default do-exec undebug cts provisioning events <cr>    # path-048833
+(config)# default do-exec undebug cts provisioning packets <cr>    # path-048910
+(config)# default do-exec undebug cts rcl-server all <cr>    # path-049338
+(config)# default do-exec undebug cts rcl-server errors <cr>    # path-049273
+(config)# default do-exec undebug cts rcl-server events <cr>    # path-049216
+(config)# default do-exec undebug cts relay event <cr>    # path-048765
+(config)# default do-exec undebug cts relay pak <cr>    # path-048840
+(config)# default do-exec undebug cts sap events <cr>    # path-048532
+(config)# default do-exec undebug cts sap packets <cr>    # path-048599
+(config)# default do-exec undebug cts sap pakdump <cr>    # path-048657
+(config)# default do-exec undebug cts server-list <cr>    # path-039408
+(config)# default do-exec undebug cts sgacl-db <cr>    # path-039212
+(config)# default do-exec undebug cts states <cr>    # path-039105
+(config)# default do-exec undebug cts sxp conn <cr>    # path-049083
+(config)# default do-exec undebug cts sxp error <cr>    # path-049286
+(config)# default do-exec undebug cts sxp filter <cr>    # path-049231
+(config)# default do-exec undebug cts sxp internal <cr>    # path-049030
+(config)# default do-exec undebug cts sxp mdb <cr>    # path-049181
+(config)# default do-exec undebug cts sxp message <cr>    # path-049129
+(config)# default do-exec undebug custom-queue <cr>    # path-028502
+(config)# default do-exec undebug cwan <cr>    # path-033547
+(config)# default do-exec undebug cwan alarm <cr>    # path-043063
+(config)# default do-exec undebug cwan atom <cr>    # path-043252
+(config)# default do-exec undebug cwan atom cf <cr>    # path-051621
+(config)# default do-exec undebug cwan atom circuit-idx <cr>    # path-051599
+(config)# default do-exec undebug cwan atom entry <cr>    # path-051564
+(config)# default do-exec undebug cwan atom ha <cr>    # path-051610
+(config)# default do-exec undebug cwan atom issu <cr>    # path-051644
+(config)# default do-exec undebug cwan atom msg <cr>    # path-051588
+(config)# default do-exec undebug cwan atom rf <cr>    # path-051633
+(config)# default do-exec undebug cwan atom stats <cr>    # path-051575
+(config)# default do-exec undebug cwan bridge <cr>    # path-043081
+(config)# default do-exec undebug cwan choc-dsx resets <cr>    # path-051506
+(config)# default do-exec undebug cwan choc-dsx semaphore <cr>    # path-051485
+(config)# default do-exec undebug cwan choc-error <cr>    # path-042843
+(config)# default do-exec undebug cwan choc-event <cr>    # path-042867
+(config)# default do-exec undebug cwan chocx config <cr>    # path-051529
+(config)# default do-exec undebug cwan chocx error <cr>    # path-051464
+(config)# default do-exec undebug cwan chocx events <cr>    # path-051508
+(config)# default do-exec undebug cwan chocx love-letters <cr>    # path-051554
+(config)# default do-exec undebug cwan chocx mib <cr>    # path-051543
+(config)# default do-exec undebug cwan chocx state <cr>    # path-051488
+(config)# default do-exec undebug cwan cmd-retry <cr>    # path-042820
+(config)# default do-exec undebug cwan cmd-timeout <cr>    # path-042798
+(config)# default do-exec undebug cwan ct3 <cr>    # path-043087
+(config)# default do-exec undebug cwan ct3 config <cr>    # path-051532
+(config)# default do-exec undebug cwan ct3 error <cr>    # path-051426
+(config)# default do-exec undebug cwan ct3 event <cr>    # path-051403
+(config)# default do-exec undebug cwan ct3 loveletter <cr>    # path-051475
+(config)# default do-exec undebug cwan ct3 mib <cr>    # path-051495
+(config)# default do-exec undebug cwan ct3 state <cr>    # path-051450
+(config)# default do-exec undebug cwan ct3 stats <cr>    # path-051512
+(config)# default do-exec undebug cwan dss <cr>    # path-042715
+(config)# default do-exec undebug cwan hw-module queue <cr>    # path-051551
+(config)# default do-exec undebug cwan icc <cr>    # path-042635
+(config)# default do-exec undebug cwan ifcom <cr>    # path-042658
+(config)# default do-exec undebug cwan ifmgr error <cr>    # path-051584
+(config)# default do-exec undebug cwan ifmgr trace <cr>    # path-051596
+(config)# default do-exec undebug cwan interface <cr>    # path-042614
+(config)# default do-exec undebug cwan localsw <cr>    # path-043136
+(config)# default do-exec undebug cwan logger <cr>    # path-042674
+(config)# default do-exec undebug cwan love <cr>    # path-042695
+(config)# default do-exec undebug cwan ltl <cr>    # path-043086
+(config)# default do-exec undebug cwan ltl plat-idx <cr>    # path-051525
+(config)# default do-exec undebug cwan ltl skip-sp <cr>    # path-051501
+(config)# default do-exec undebug cwan oir <cr>    # path-042743
+(config)# default do-exec undebug cwan pc-lb <cr>    # path-042770
+(config)# default do-exec undebug cwan redundancy <cr>    # path-043206
+(config)# default do-exec undebug cwan redundancy aps all <cr>    # path-056565
+(config)# default do-exec undebug cwan redundancy aps bulk <cr>    # path-056578
+(config)# default do-exec undebug cwan redundancy aps incr <cr>    # path-056573
+(config)# default do-exec undebug cwan redundancy ccb all <cr>    # path-056596
+(config)# default do-exec undebug cwan redundancy ccb bulk <cr>    # path-056606
+(config)# default do-exec undebug cwan redundancy ccb incr <cr>    # path-056602
+(config)# default do-exec undebug cwan redundancy channelized-vc <cr>    # path-051578
+(config)# default do-exec undebug cwan redundancy deferred <cr>    # path-051600
+(config)# default do-exec undebug cwan redundancy if-config all <cr>    # path-056584
+(config)# default do-exec undebug cwan redundancy if-config bulk <cr>    # path-056594
+(config)# default do-exec undebug cwan redundancy if-config incr <cr>    # path-056589
+(config)# default do-exec undebug cwan redundancy if-event all <cr>    # path-056588
+(config)# default do-exec undebug cwan redundancy if-event bulk <cr>    # path-056598
+(config)# default do-exec undebug cwan redundancy if-event incr <cr>    # path-056593
+(config)# default do-exec undebug cwan redundancy if-index all <cr>    # path-056592
+(config)# default do-exec undebug cwan redundancy if-index bulk <cr>    # path-056603
+(config)# default do-exec undebug cwan redundancy if-index incr <cr>    # path-056597
+(config)# default do-exec undebug cwan redundancy reload <cr>    # path-051611
+(config)# default do-exec undebug cwan redundancy slot-info all <cr>    # path-056601
+(config)# default do-exec undebug cwan redundancy slot-info bulk <cr>    # path-056608
+(config)# default do-exec undebug cwan redundancy slot-info incr <cr>    # path-056605
+(config)# default do-exec undebug cwan redundancy spa <cr>    # path-051473
+(config)# default do-exec undebug cwan redundancy srp all <cr>    # path-056570
+(config)# default do-exec undebug cwan redundancy srp bulk <cr>    # path-056581
+(config)# default do-exec undebug cwan redundancy srp incr <cr>    # path-056575
+(config)# default do-exec undebug cwan redundancy switchover <cr>    # path-051589
+(config)# default do-exec undebug cwan redundancy vlan all <cr>    # path-056580
+(config)# default do-exec undebug cwan redundancy vlan bulk <cr>    # path-056590
+(config)# default do-exec undebug cwan redundancy vlan incr <cr>    # path-056585
+(config)# default do-exec undebug cwan set <cr>    # path-042577
+(config)# default do-exec undebug cwan single-spa <cr>    # path-042597
+(config)# default do-exec undebug cwan srp-error <cr>    # path-042888
+(config)# default do-exec undebug cwan srp-event <cr>    # path-042907
+(config)# default do-exec undebug cwan t3e3 <cr>    # path-043047
+(config)# default do-exec undebug cwan t3e3 error <cr>    # path-051469
+(config)# default do-exec undebug cwan t3e3 event <cr>    # path-051443
+(config)# default do-exec undebug cwan t3e3 state <cr>    # path-051492
+(config)# default do-exec undebug cwmp all <cr>    # path-041561
+(config)# default do-exec undebug cwmp error <cr>    # path-041473
+(config)# default do-exec undebug cwmp profile <cr>    # path-041486
+(config)# default do-exec undebug cwmp profile error <cr>    # path-050369
+(config)# default do-exec undebug cwmp trace <cr>    # path-041517
+(config)# default do-exec undebug dampening all <cr>    # path-035029
+(config)# default do-exec undebug dampening interface <cr>    # path-034988
+(config)# default do-exec undebug data-descriptor entry <cr>    # path-042531
+(config)# default do-exec undebug data-descriptor node <cr>    # path-042516
+(config)# default do-exec undebug data-descriptor other <cr>    # path-042549
+(config)# default do-exec undebug dcm core all <cr>    # path-051076
+(config)# default do-exec undebug dcm core error <cr>    # path-051056
+(config)# default do-exec undebug dcm core info <cr>    # path-051064
+(config)# default do-exec undebug dcm provider cmd error <cr>    # path-056459
+(config)# default do-exec undebug dcm provider cmd info <cr>    # path-056447
+(config)# default do-exec undebug dcm provider expression error <cr>    # path-056451
+(config)# default do-exec undebug dcm provider expression info <cr>    # path-056437
+(config)# default do-exec undebug dcm provider snmp error <cr>    # path-056441
+(config)# default do-exec undebug dcm provider snmp info <cr>    # path-056428
+(config)# default do-exec undebug dcm services client all <cr>    # path-056423
+(config)# default do-exec undebug dcm services client any-ipc error <cr>    # path-058841
+(config)# default do-exec undebug dcm services client any-ipc info <cr>    # path-058832
+(config)# default do-exec undebug dcm services client api-infra error <cr>    # path-058834
+(config)# default do-exec undebug dcm services client api-infra info <cr>    # path-058824
+(config)# default do-exec undebug dcm services core all <cr>    # path-056433
+(config)# default do-exec undebug dcm services core any-ipc error <cr>    # path-058844
+(config)# default do-exec undebug dcm services core any-ipc info <cr>    # path-058839
+(config)# default do-exec undebug dcm services core api-infra error <cr>    # path-058840
+(config)# default do-exec undebug dcm services core api-infra info <cr>    # path-058831
+(config)# default do-exec undebug dcm services provider all <cr>    # path-056442
+(config)# default do-exec undebug dcm services provider any-ipc error <cr>    # path-058846
+(config)# default do-exec undebug dcm services provider any-ipc info <cr>    # path-058842
+(config)# default do-exec undebug dcm services provider api-infra error <cr>    # path-058843
+(config)# default do-exec undebug dcm services provider api-infra info <cr>    # path-058837
+(config)# default do-exec undebug dhcp <cr>    # path-033090
+(config)# default do-exec undebug dhcp api <cr>    # path-042319
+(config)# default do-exec undebug dhcp oper <cr>    # path-042342
+(config)# default do-exec undebug dhcp redundancy <cr>    # path-042307
+(config)# default do-exec undebug dhcp redundancy packet <cr>    # path-050969
+(config)# default do-exec undebug diagnostic all <cr>    # path-042940
+(config)# default do-exec undebug diagnostic engineer <cr>    # path-042782
+(config)# default do-exec undebug diagnostic error <cr>    # path-042859
+(config)# default do-exec undebug diagnostic gods_error <cr>    # path-042832
+(config)# default do-exec undebug diagnostic gods_message <cr>    # path-042920
+(config)# default do-exec undebug diagnostic message <cr>    # path-042902
+(config)# default do-exec undebug diagnostic packet <cr>    # path-042807
+(config)# default do-exec undebug diagnostic pointer <cr>    # path-042882
+(config)# default do-exec undebug dialer <cr>    # path-029576
+(config)# default do-exec undebug dialer cef <cr>    # path-035428
+(config)# default do-exec undebug dialer detailed <cr>    # path-035480
+(config)# default do-exec undebug dialer forwarding <cr>    # path-035590
+(config)# default do-exec undebug dialer holdq <cr>    # path-035532
+(config)# default do-exec undebug dialer map <cr>    # path-035250
+(config)# default do-exec undebug dialer packets <cr>    # path-035311
+(config)# default do-exec undebug dialer temporary <cr>    # path-035371
+(config)# default do-exec undebug diameter all <cr>    # path-043689
+(config)# default do-exec undebug diameter connection <cr>    # path-043647
+(config)# default do-exec undebug diameter dcca <cr>    # path-043638
+(config)# default do-exec undebug diameter error <cr>    # path-043669
+(config)# default do-exec undebug diameter event <cr>    # path-043678
+(config)# default do-exec undebug diameter failover <cr>    # path-043628
+(config)# default do-exec undebug diameter fsm error <cr>    # path-051932
+(config)# default do-exec undebug diameter fsm event <cr>    # path-051941
+(config)# default do-exec undebug diameter gx database <cr>    # path-051971
+(config)# default do-exec undebug diameter gx error <cr>    # path-051965
+(config)# default do-exec undebug diameter gx event <cr>    # path-051955
+(config)# default do-exec undebug diameter gx fsm <cr>    # path-051960
+(config)# default do-exec undebug diameter packet error <cr>    # path-051925
+(config)# default do-exec undebug diameter packet event <cr>    # path-051934
+(config)# default do-exec undebug dlep client error <cr>    # path-050918
+(config)# default do-exec undebug dlep client infrastructure <cr>    # path-050946
+(config)# default do-exec undebug dlep client packet detail <cr>    # path-056324
+(config)# default do-exec undebug dlep client packet dump <cr>    # path-056317
+(config)# default do-exec undebug dlep client state <cr>    # path-050898
+(config)# default do-exec undebug dlep neighbor all <cr>    # path-050914
+(config)# default do-exec undebug dlep neighbor error <cr>    # path-050962
+(config)# default do-exec undebug dlep neighbor infrastructure <cr>    # path-051022
+(config)# default do-exec undebug dlep neighbor infrastructure detail <cr>    # path-056344
+(config)# default do-exec undebug dlep neighbor infrastructure error <cr>    # path-056360
+(config)# default do-exec undebug dlep neighbor metrics <cr>    # path-050945
+(config)# default do-exec undebug dlep neighbor state <cr>    # path-050932
+(config)# default do-exec undebug dlep server <cr>    # path-042179
+(config)# default do-exec undebug dlep server detail <cr>    # path-050874
+(config)# default do-exec undebug dlep snmp <cr>    # path-042228
+(config)# default do-exec undebug dlep timer <cr>    # path-042197
+(config)# default do-exec undebug dlep timer detail <cr>    # path-050888
+(config)# default do-exec undebug dlsw <cr>    # path-033684
+(config)# default do-exec undebug dmvpn condition <cr>    # path-043103
+(config)# default do-exec undebug dmvpn error <cr>    # path-043140
+(config)# default do-exec undebug dmvpn error <cr>    # path-043154
+(config)# default do-exec undebug dmvpn error <cr>    # path-043173
+(config)# default do-exec undebug dmvpn error <cr>    # path-043189
+(config)# default do-exec undebug dmvpn error <cr>    # path-043205
+(config)# default do-exec undebug dns-proxy all <cr>    # path-041863
+(config)# default do-exec undebug dns-proxy debug <cr>    # path-041804
+(config)# default do-exec undebug dns-proxy error <cr>    # path-041831
+(config)# default do-exec undebug dnsix dmdp <cr>    # path-040659
+(config)# default do-exec undebug dnsix dnssec <cr>    # path-040707
+(config)# default do-exec undebug dnsix nat <cr>    # path-040677
+(config)# default do-exec undebug domain <cr>    # path-032165
+(config)# default do-exec undebug dot1x all <cr>    # path-042510
+(config)# default do-exec undebug dot1x errors <cr>    # path-042459
+(config)# default do-exec undebug dot1x events <cr>    # path-042480
+(config)# default do-exec undebug dot1x packets <cr>    # path-042497
+(config)# default do-exec undebug dot1x redundancy <cr>    # path-042556
+(config)# default do-exec undebug dot1x registry <cr>    # path-042536
+(config)# default do-exec undebug dot1x state-machine <cr>    # path-042522
+(config)# default do-exec undebug drip event <cr>    # path-043070
+(config)# default do-exec undebug drip packet <cr>    # path-043095
+(config)# default do-exec undebug dspfarm all <cr>    # path-034482
+(config)# default do-exec undebug dspfarm errors <cr>    # path-034436
+(config)# default do-exec undebug dspfarm events <cr>    # path-034393
+(config)# default do-exec undebug dtp aggregation <cr>    # path-040012
+(config)# default do-exec undebug dtp all <cr>    # path-040053
+(config)# default do-exec undebug dtp decision <cr>    # path-039903
+(config)# default do-exec undebug dtp events <cr>    # path-039618
+(config)# default do-exec undebug dtp oserrs <cr>    # path-039799
+(config)# default do-exec undebug dtp packets <cr>    # path-039849
+(config)# default do-exec undebug dtp queue <cr>    # path-039960
+(config)# default do-exec undebug dtp states <cr>    # path-039677
+(config)# default do-exec undebug dtp timers <cr>    # path-039732
+(config)# default do-exec undebug dwnld_mgr error <cr>    # path-038400
+(config)# default do-exec undebug dwnld_mgr event <cr>    # path-038344
+(config)# default do-exec undebug dxi events <cr>    # path-038082
+(config)# default do-exec undebug dxi packet <cr>    # path-038128
+(config)# default do-exec undebug eap all <cr>    # path-037503
+(config)# default do-exec undebug ehsa alarms <cr>    # path-043567
+(config)# default do-exec undebug ehsa all <cr>    # path-043578
+(config)# default do-exec undebug ehsa configsync <cr>    # path-043541
+(config)# default do-exec undebug ehsa fsm <cr>    # path-043517
+(config)# default do-exec undebug ehsa keepalive <cr>    # path-043486
+(config)# default do-exec undebug ehsa peer-monitor <cr>    # path-043502
+(config)# default do-exec undebug ehsa services <cr>    # path-043552
+(config)# default do-exec undebug ehsa timesync <cr>    # path-043530
+(config)# default do-exec undebug eigrp address-family ipv4 <cr>    # path-050385
+(config)# default do-exec undebug eigrp address-family ipv6 <cr>    # path-050367
+(config)# default do-exec undebug eigrp crimson <cr>    # path-041284
+(config)# default do-exec undebug eigrp frr <cr>    # path-041069
+(config)# default do-exec undebug eigrp fsm <cr>    # path-040885
+(config)# default do-exec undebug eigrp neighbors <cr>    # path-041107
+(config)# default do-exec undebug eigrp nsf <cr>    # path-040950
+(config)# default do-exec undebug eigrp packets <cr>    # path-041658
+(config)# default do-exec undebug eigrp parser <cr>    # path-041300
+(config)# default do-exec undebug eigrp plugin <cr>    # path-041131
+(config)# default do-exec undebug eigrp process <cr>    # path-041231
+(config)# default do-exec undebug eigrp service-family api <cr>    # path-050216
+(config)# default do-exec undebug eigrp service-family external-client messages <cr>    # path-055975
+(config)# default do-exec undebug eigrp service-family ipv4 <cr>    # path-050406
+(config)# default do-exec undebug eigrp service-family ipv4 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060256
+(config)# default do-exec undebug eigrp service-family ipv4 client <string> <cr>    # path-058677
+(config)# default do-exec undebug eigrp service-family ipv4 neighbor <cr>    # path-055995
+(config)# default do-exec undebug eigrp service-family ipv4 notifications <cr>    # path-055988
+(config)# default do-exec undebug eigrp service-family ipv4 topology <cr>    # path-056000
+(config)# default do-exec undebug eigrp service-family ipv6 <cr>    # path-050421
+(config)# default do-exec undebug eigrp service-family ipv6 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060257
+(config)# default do-exec undebug eigrp service-family ipv6 neighbor <cr>    # path-056007
+(config)# default do-exec undebug eigrp service-family ipv6 notifications <cr>    # path-056006
+(config)# default do-exec undebug eigrp service-family ipv6 topology <cr>    # path-056014
+(config)# default do-exec undebug eigrp spath <cr>    # path-041028
+(config)# default do-exec undebug eigrp timers <cr>    # path-040915
+(config)# default do-exec undebug eigrp transmit <cr>    # path-041503
+(config)# default do-exec undebug eigrp upgrade-cli <cr>    # path-041255
+(config)# default do-exec undebug elog call-admission <cr>    # path-042327
+(config)# default do-exec undebug elog clock-tick-pc <cr>    # path-041707
+(config)# default do-exec undebug elog function-bracket <cr>    # path-041730
+(config)# default do-exec undebug elog ppp-cps <cr>    # path-041838
+(config)# default do-exec undebug elog ppp-detail <cr>    # path-041810
+(config)# default do-exec undebug elog ppp-keep <cr>    # path-041786
+(config)# default do-exec undebug elog ppp-neg <cr>    # path-041760
+(config)# default do-exec undebug elog pppoa-all <cr>    # path-042122
+(config)# default do-exec undebug elog pppoa-detail <cr>    # path-042097
+(config)# default do-exec undebug elog pppoa-event <cr>    # path-042014
+(config)# default do-exec undebug elog pppoa-periodic <cr>    # path-042032
+(config)# default do-exec undebug elog pppoa-ppp <cr>    # path-042052
+(config)# default do-exec undebug elog pppoa-sss <cr>    # path-042074
+(config)# default do-exec undebug elog pppoe <cr>    # path-041992
+(config)# default do-exec undebug elog registry-service <cr>    # path-041680
+(config)# default do-exec undebug elog ssm-cm <cr>    # path-041869
+(config)# default do-exec undebug elog subscriber-feature-mgr <cr>    # path-041945
+(config)# default do-exec undebug elog subscriber-policy-mgr <cr>    # path-041969
+(config)# default do-exec undebug elog subscriber-session-mgr <cr>    # path-041895
+(config)# default do-exec undebug elog subscriber-sip-api <cr>    # path-041921
+(config)# default do-exec undebug elog vpdn-ctrl <cr>    # path-042139
+(config)# default do-exec undebug elog vpdn-ctrl <cr>    # path-042195
+(config)# default do-exec undebug elog vpdn-pkt <cr>    # path-042159
+(config)# default do-exec undebug elog vpdn-pkt <cr>    # path-042213
+(config)# default do-exec undebug elog vpdn-session <cr>    # path-042176
+(config)# default do-exec undebug elog vpdn-session <cr>    # path-042230
+(config)# default do-exec undebug elog vtempl-clone <cr>    # path-042285
+(config)# default do-exec undebug elog vtempl-create <cr>    # path-042270
+(config)# default do-exec undebug elog vtempl-free <cr>    # path-042305
+(config)# default do-exec undebug elog vtempl-request <cr>    # path-042247
+(config)# default do-exec undebug entry <cr>    # path-030676
+(config)# default do-exec undebug environment location <string> <cr>    # path-051262
+(config)# default do-exec undebug environment override <cr>    # path-042837
+(config)# default do-exec undebug environment platform <cr>    # path-042791
+(config)# default do-exec undebug environment reminder <cr>    # path-042763
+(config)# default do-exec undebug environment sensor <string> <cr>    # path-051244
+(config)# default do-exec undebug environment virtual <signed:-200..500> <cr>    # path-051316
+(config)# default do-exec undebug epbr api <cr>    # path-043289
+(config)# default do-exec undebug epbr error <cr>    # path-043311
+(config)# default do-exec undebug epbr provision <cr>    # path-043269
+(config)# default do-exec undebug epc capture-point <cr>    # path-036534
+(config)# default do-exec undebug epc provision <cr>    # path-036471
+(config)# default do-exec undebug epm HA Error <cr>    # path-049489
+(config)# default do-exec undebug epm HA Events <cr>    # path-049536
+(config)# default do-exec undebug epm all <cr>    # path-040258
+(config)# default do-exec undebug epm api <cr>    # path-040296
+(config)# default do-exec undebug epm error <cr>    # path-040359
+(config)# default do-exec undebug epm error detail <cr>    # path-049270
+(config)# default do-exec undebug epm error fsm <cr>    # path-049410
+(config)# default do-exec undebug epm error fsm details <cr>    # path-055429
+(config)# default do-exec undebug epm error packet <cr>    # path-049462
+(config)# default do-exec undebug epm error packet details <cr>    # path-055461
+(config)# default do-exec undebug epm error session <cr>    # path-049298
+(config)# default do-exec undebug epm error session details <cr>    # path-055358
+(config)# default do-exec undebug epm events <cr>    # path-040393
+(config)# default do-exec undebug epm events detail <cr>    # path-049329
+(config)# default do-exec undebug epm events fsm <cr>    # path-049460
+(config)# default do-exec undebug epm events fsm details <cr>    # path-055458
+(config)# default do-exec undebug epm events packet <cr>    # path-049510
+(config)# default do-exec undebug epm events packet details <cr>    # path-055492
+(config)# default do-exec undebug epm events session <cr>    # path-049356
+(config)# default do-exec undebug epm events session details <cr>    # path-055391
+(config)# default do-exec undebug epm plugin QOS all <cr>    # path-055657
+(config)# default do-exec undebug epm plugin QOS errors <cr>    # path-055600
+(config)# default do-exec undebug epm plugin QOS events <cr>    # path-055628
+(config)# default do-exec undebug epm plugin acl all <cr>    # path-055570
+(config)# default do-exec undebug epm plugin acl detail <cr>    # path-055544
+(config)# default do-exec undebug epm plugin acl error <cr>    # path-055488
+(config)# default do-exec undebug epm plugin acl event <cr>    # path-055520
+(config)# default do-exec undebug epm plugin cts errors <cr>    # path-055692
+(config)# default do-exec undebug epm plugin cts events <cr>    # path-055706
+(config)# default do-exec undebug epm plugin fqdn all <cr>    # path-055567
+(config)# default do-exec undebug epm plugin fqdn error <cr>    # path-055515
+(config)# default do-exec undebug epm plugin fqdn event <cr>    # path-055541
+(config)# default do-exec undebug epm plugin iaf all <cr>    # path-055606
+(config)# default do-exec undebug epm plugin iaf errors <cr>    # path-055557
+(config)# default do-exec undebug epm plugin iaf events <cr>    # path-055583
+(config)# default do-exec undebug epm plugin ial all <cr>    # path-055736
+(config)# default do-exec undebug epm plugin ial errors <cr>    # path-055718
+(config)# default do-exec undebug epm plugin ial events <cr>    # path-055729
+(config)# default do-exec undebug epm plugin linksec all <cr>    # path-055707
+(config)# default do-exec undebug epm plugin linksec errors <cr>    # path-055674
+(config)# default do-exec undebug epm plugin linksec events <cr>    # path-055693
+(config)# default do-exec undebug epm plugin redirect all <cr>    # path-055609
+(config)# default do-exec undebug epm plugin redirect detail <cr>    # path-055587
+(config)# default do-exec undebug epm plugin redirect error <cr>    # path-055536
+(config)# default do-exec undebug epm plugin redirect event <cr>    # path-055564
+(config)# default do-exec undebug epm plugin template all <cr>    # path-055630
+(config)# default do-exec undebug epm plugin template errors <cr>    # path-055578
+(config)# default do-exec undebug epm plugin template events <cr>    # path-055603
+(config)# default do-exec undebug epm plugin tunnel errors <cr>    # path-055705
+(config)# default do-exec undebug epm plugin tunnel events <cr>    # path-055719
+(config)# default do-exec undebug epm plugin vlan-group all <cr>    # path-055680
+(config)# default do-exec undebug epm plugin vlan-group error <cr>    # path-055655
+(config)# default do-exec undebug epm plugin vlan-group event <cr>    # path-055623
+(config)# default do-exec undebug epm plugin voice-vlan all <cr>    # path-055695
+(config)# default do-exec undebug epm plugin voice-vlan error <cr>    # path-055678

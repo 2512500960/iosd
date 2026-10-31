@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-033.md
+
+(config)# default ethernet cfm alarm notification all <cr>    # path-044068
+(config)# default ethernet cfm alarm packet <cr>    # path-034354
+(config)# default ethernet cfm alarm reset <cr>    # path-034385
+(config)# default ethernet cfm distribution enable <cr>    # path-034121
+(config)# default ethernet cfm domain <string> <cr>    # path-034387
+(config)# default ethernet cfm global <cr>    # path-028101
+(config)# default ethernet cfm ieee <cr>    # path-028032
+(config)# default ethernet cfm lck link-status global <cr>    # path-044136
+(config)# default ethernet cfm logging <cr>    # path-028371
+(config)# default ethernet cfm mep crosscheck start-delay <cr>    # path-044586
+(config)# default ethernet cfm mip auto-create level <number:0..7> evc <string> <cr>    # path-058917
+(config)# default ethernet cfm mip filter <cr>    # path-034220
+(config)# default ethernet cfm slm max <cr>    # path-034211
+(config)# default ethernet cfm slm timeout <cr>    # path-034230
+(config)# default ethernet cfm traceroute cache <cr>    # path-034262
+(config)# default ethernet cfm traceroute cache hold-time <cr>    # path-044051
+(config)# default ethernet cfm traceroute cache size <cr>    # path-044082
+(config)# default ethernet egress-filter strict <cr>    # path-028011
+(config)# default ethernet evc <string> <cr>    # path-028065
+(config)# default ethernet lmi ce <cr>    # path-027997
+(config)# default ethernet lmi global <cr>    # path-027964
+(config)# default ethernet mac limit action flooding disable <cr>    # path-052207
+(config)# default ethernet mac limit maximum addresses <cr>    # path-044193
+(config)# default ethernet mac tunnel address destination default <cr>    # path-052256
+(config)# default ethernet mac tunnel address destination map <address> <cr>    # path-056860
+(config)# default ethernet mac-flush notification mirp <cr>    # path-034209
+(config)# default ethernet mac-flush notification mirp cos <cr>    # path-044030
+(config)# default ethernet mac-flush notification mirp tx-timer <number:2..5> <cr>    # path-052098
+(config)# default ethernet mac-tunnel engine slot <number:0..31> slotunit <number:0..31> <cr>    # path-056784
+(config)# default ethernet oam mib log size <cr>    # path-043946
+(config)# default ethernet oam trap interval <cr>    # path-034103
+(config)# default ethernet reuse SubInterface <cr>    # path-028788
+(config)# default ethernet service multi-line <cr>    # path-028084
+(config)# default facility-alarm critical exceed-action shutdown <cr>    # path-034119
+(config)# default fallback profile <string> <cr>    # path-030857
+(config)# default fhrp bfd <cr>    # path-026866
+(config)# default fhrp mac-address <cr>    # path-026903
+(config)# default fhrp sso <cr>    # path-026846
+(config)# default file privilege <number:0..15> <cr>    # path-030906
+(config)# default file prompt <cr>    # path-027521
+(config)# default file verify auto <cr>    # path-030991
+(config)# default flow exporter <string> <cr>    # path-029582
+(config)# default flow platform cache timeout active <cr>    # path-045588
+(config)# default flow platform cache timeout event transaction-end <cr>    # path-053189
+(config)# default flow platform cache timeout export <cr>    # path-045700
+(config)# default flow platform cache timeout fast <cr>    # path-045821
+(config)# default flow platform cache timeout inactive <cr>    # path-045640
+(config)# default flow platform cache timeout rate-limit <cr>    # path-045929
+(config)# default flow platform cache timeout synchronized <cr>    # path-045928
+(config)# default flow platform cache timeout update <cr>    # path-045876
+(config)# default flowspec <cr>    # path-025977
+(config)# default fqdn ttl-timeout-factor <number:1..300> <cr>    # path-030400
+(config)# default frame-relay address registration auto-address <cr>    # path-036197
+(config)# default frame-relay address registration ip <cr>    # path-036125
+(config)# default frame-relay fast-restart <cr>    # path-027146
+(config)# default frame-relay redundancy auto-sync dynamic-map <cr>    # path-036067
+(config)# default frame-relay redundancy test transform <cr>    # path-036143
+(config)# default frame-relay switching <cr>    # path-027029
+(config)# default glbp sso <cr>    # path-027165
+(config)# default hostname <cr>    # path-025501
+(config)# default hw-module auto-off <cr>    # path-027567
+(config)# default hw-module auto-off optics <cr>    # path-031269
+(config)# default hw-module breakout-enable <cr>    # path-027534
+(config)# default hw-module network-module C9350-NM-8Y mode 50G <cr>    # path-047488
+(config)# default hw-module upoe-plus <cr>    # path-027572
+(config)# default hw-module usbflash1-password <cr>    # path-027550
+(config)# default id-manager traceback <cr>    # path-027526
+(config)# default identity policy <string> <cr>    # path-030858
+(config)# default identity profile dot1x <cr>    # path-030833
+(config)# default interface range macro <string> <cr>    # path-034091
+(config)# default iox <cr>    # path-025654
+(config)# default ip access-list extended <number:100..199> <cr>    # path-035936
+(config)# default ip access-list extended <string> <cr>    # path-036393
+(config)# default ip access-list fqdn <string> <cr>    # path-036160
+(config)# default ip access-list helper egress check <cr>    # path-045601
+(config)# default ip access-list log-update threshold <cr>    # path-034422
+(config)# default ip access-list logging hash-generation <cr>    # path-034379
+(config)# default ip access-list logging interval <cr>    # path-034380
+(config)# default ip access-list match-local-traffic <cr>    # path-028284
+(config)# default ip access-list persistent <cr>    # path-028283
+(config)# default ip access-list role-based <string> <cr>    # path-036198
+(config)# default ip access-list standard <number:1..99> <cr>    # path-035867
+(config)# default ip access-list standard <string> <cr>    # path-036108
+(config)# default ip accounting-list <cr>    # path-027302
+(config)# default ip accounting-threshold <cr>    # path-025877
+(config)# default ip accounting-transits <cr>    # path-025891
+(config)# default ip address-pool <cr>    # path-027261
+(config)# default ip admission http process <cr>    # path-035968
+(config)# default ip admission ratelimit <cr>    # path-029707
+(config)# default ip admission source-interface <cr>    # path-029614
+(config)# default ip admission virtual-ip <address> <cr>    # path-035740
+(config)# default ip alias <address> <cr>    # path-028992
+(config)# default ip arp entry learn <cr>    # path-035043
+(config)# default ip arp gratuitous <cr>    # path-028948
+(config)# default ip arp incomplete enable <cr>    # path-035258
+(config)# default ip arp incomplete entries <cr>    # path-035275
+(config)# default ip arp incomplete retry <cr>    # path-035223
+(config)# default ip arp nat-garp-retry feature enable <cr>    # path-044725
+(config)# default ip arp poll queue <cr>    # path-034919
+(config)# default ip arp poll rate <cr>    # path-034971
+(config)# default ip arp proxy <cr>    # path-028854
+(config)# default ip arp queue <cr>    # path-029045
+(config)# default ip as-path access-list <number:1..500> <cr>    # path-035044
+(config)# default ip auth-proxy <cr>    # path-027176
+(config)# default ip auth-proxy auth-proxy-audit <cr>    # path-029636
+(config)# default ip auth-proxy auth-proxy-banner file <cr>    # path-035723
+(config)# default ip auth-proxy inactivity-timer <cr>    # path-029858
+(config)# default ip auth-proxy init-state-time <cr>    # path-029709
+(config)# default ip auth-proxy max-login-attempts <cr>    # path-029616
+(config)# default ip auth-proxy name <string> <cr>    # path-036456
+(config)# default ip auth-proxy proxy http refresh-all <cr>    # path-045419
+(config)# default ip auth-proxy proxy http success redirect <string> <cr>    # path-057188
+(config)# default ip auth-proxy watch-list enable <cr>    # path-035709
+(config)# default ip bgp-community new-format <cr>    # path-028649
+(config)# default ip bootp server <cr>    # path-029523
+(config)# default ip cache-ager <cr>    # path-027081
+(config)# default ip cache-invalidate-delay <cr>    # path-027067
+(config)# default ip casa <cr>    # path-027124
+(config)# default ip cef <cr>    # path-027351
+(config)# default ip cef accounting <cr>    # path-030523
+(config)# default ip cef load-sharing algorithm <cr>    # path-036901
+(config)# default ip cef load-sharing key-control dpi default <cr>    # path-053792
+(config)# default ip cef load-sharing key-control dpi l2vpn-mac <cr>    # path-053827
+(config)# default ip cef load-sharing key-control dpi tunnel-gre <cr>    # path-053922
+(config)# default ip cef load-sharing key-control dpi tunnel-ipinip <cr>    # path-053868
+(config)# default ip cef load-sharing key-control dpi tunnel-ipsec <cr>    # path-053974
+(config)# default ip cef load-sharing key-control dpi tunnel-l2tp <cr>    # path-054051
+(config)# default ip cef load-sharing key-control dpi tunnel-vxlan <cr>    # path-054016
+(config)# default ip cef optimize neighbor resolution <cr>    # path-046029
+(config)# default ip cef table adjacency-prefix override <cr>    # path-046428
+(config)# default ip cef table consistency-check auto-repair <cr>    # path-046558
+(config)# default ip cef table consistency-check error-message <cr>    # path-046383
+(config)# default ip cef table consistency-check type <cr>    # path-046408
+(config)# default ip cef table event-log <cr>    # path-037132
+(config)# default ip cef table short-mask-protection <cr>    # path-037113
+(config)# default ip cef traffic-statistics <cr>    # path-030416
+(config)# default ip classless <cr>    # path-026541
+(config)# default ip community-list <number:1..99> <cr>    # path-029051
+(config)# default ip ddns update method <string> <cr>    # path-045794
+(config)# default ip default-gateway <cr>    # path-026448
+(config)# default ip default-network <address> <cr>    # path-029099
+(config)# default ip dhcp aaa default username <cr>    # path-047066
+(config)# default ip dhcp auto-broadcast <cr>    # path-030943
+(config)# default ip dhcp binding cleanup interval <cr>    # path-046660
+(config)# default ip dhcp bootp ignore <cr>    # path-037473
+(config)# default ip dhcp class <string> <cr>    # path-037845
+(config)# default ip dhcp compatibility lease-query client <cr>    # path-046844
+(config)# default ip dhcp compatibility suboption link-selection <cr>    # path-046737
+(config)# default ip dhcp conflict logging <cr>    # path-037517
+(config)# default ip dhcp conflict resolution <cr>    # path-037643
+(config)# default ip dhcp database <string> <cr>    # path-036838
+(config)# default ip dhcp drop-inform <cr>    # path-030342
+(config)# default ip dhcp event-notification interval <cr>    # path-037642
+(config)# default ip dhcp excluded-address <address> <cr>    # path-037767
+(config)# default ip dhcp global-options <cr>    # path-030966
+(config)# default ip dhcp hardware-class <string> <cr>    # path-037246
+(config)# default ip dhcp limit lease log <cr>    # path-046218
+(config)# default ip dhcp limit lease per interface <cr>    # path-053688
+(config)# default ip dhcp limited-broadcast-address <cr>    # path-030316
+(config)# default ip dhcp monitor statistics start sample-size <number:0..4294967295> <cr>    # path-057651
+(config)# default ip dhcp monitor statistics stop <cr>    # path-046489
+(config)# default ip dhcp ping packets <cr>    # path-037828
+(config)# default ip dhcp ping timeout <cr>    # path-037822
+(config)# default ip dhcp pool <string> <cr>    # path-037800
+(config)# default ip dhcp relay bootp ignore <cr>    # path-046503
+(config)# default ip dhcp relay information check <cr>    # path-046647
+(config)# default ip dhcp relay information option <cr>    # path-046608
+(config)# default ip dhcp relay information option vpn <cr>    # path-053882
+(config)# default ip dhcp relay information policy <cr>    # path-046661
+(config)# default ip dhcp relay information removal pad <cr>    # path-053933
+(config)# default ip dhcp relay information trust-all <cr>    # path-046690
+(config)# default ip dhcp relay override giaddr link-selection <cr>    # path-053878
+(config)# default ip dhcp remember <cr>    # path-030587
+(config)# default ip dhcp route static <cr>    # path-036959
+(config)# default ip dhcp smart-relay <cr>    # path-030364
+(config)# default ip dhcp snooping <cr>    # path-030901
+(config)# default ip dhcp snooping acl <string> <cr>    # path-046947
+(config)# default ip dhcp snooping bridge-domain <string> <cr>    # path-047126
+(config)# default ip dhcp snooping database timeout <cr>    # path-047149
+(config)# default ip dhcp snooping glean <cr>    # path-037439
+(config)# default ip dhcp snooping information option <cr>    # path-047094
+(config)# default ip dhcp snooping information option allow-untrusted <cr>    # path-054254
+(config)# default ip dhcp snooping information option format snmp-ifindex <cr>    # path-057940
+(config)# default ip dhcp snooping track host <cr>    # path-047013
+(config)# default ip dhcp snooping verify mac-address <cr>    # path-047074
+(config)# default ip dhcp snooping verify no-relay-agent-address <cr>    # path-047105
+(config)# default ip dhcp snooping wireless bootp-broadcast enable <cr>    # path-054286
+(config)# default ip dhcp subscriber-id <cr>    # path-030593
+(config)# default ip dhcp support option125-override <cr>    # path-037419
+(config)# default ip dhcp support option55-override <cr>    # path-037389
+(config)# default ip dhcp support sort-pool-name <cr>    # path-037347
+(config)# default ip dhcp support tunnel unicast <cr>    # path-046752
+(config)# default ip dhcp test relay stateless <cr>    # path-046790
+(config)# default ip dhcp update dns <cr>    # path-037900
+(config)# default ip dhcp use class <cr>    # path-037169
+(config)# default ip dhcp use class aaa <cr>    # path-046537
+(config)# default ip dhcp use hardware-address <cr>    # path-037248
+(config)# default ip dhcp use subscriber-id <cr>    # path-037204
+(config)# default ip dhcp use vrf connected <cr>    # path-046644
+(config)# default ip dhcp use vrf remote <cr>    # path-046592
+(config)# default ip dhcp-client broadcast-flag <cr>    # path-030140
+(config)# default ip dhcp-client default-router distance <cr>    # path-036750
+(config)# default ip dhcp-client forcerenew <cr>    # path-030255
+(config)# default ip dhcp-client network-discovery <cr>    # path-030198
+(config)# default ip dhcp-client update dns <cr>    # path-036841
+(config)# default ip dhcp-relay information option server-override <cr>    # path-046071
+(config)# default ip dhcp-relay short-lease <number:60..3600> <cr>    # path-036855
+(config)# default ip dhcp-relay source-interface <cr>    # path-030329
+(config)# default ip dhcp-relay validate-reply <cr>    # path-030283
+(config)# default ip dhcp-server <address> <cr>    # path-030216
+(config)# default ip dhcp-server query lease check-source <cr>    # path-046046
+(config)# default ip dhcp-server query lease retries <cr>    # path-046017
+(config)# default ip dhcp-server query lease timeout <cr>    # path-046058
+(config)# default ip dhcp-sip capture buffer-size <cr>    # path-036397
+(config)# default ip dhcp-sip capture dead-session-info <cr>    # path-036226
+(config)# default ip dhcp-sip class <string> <cr>    # path-036156
+(config)# default ip dhcp-sip test sanity <cr>    # path-036218
+(config)# default ip dns name-list <number:1..500> <cr>    # path-035229
+(config)# default ip dns primary <string> <cr>    # path-035274
+(config)# default ip dns server <cr>    # path-029183
+(config)# default ip dns server queue limit forwarder <cr>    # path-052713
+(config)# default ip dns server view-group <cr>    # path-035281
+(config)# default ip dns spoofing <cr>    # path-029294
+(config)# default ip dns view <cr>    # path-029137
+(config)# default ip dns view-list <string> <cr>    # path-035061
+(config)# default ip domain list <cr>    # path-029809
+(config)# default ip domain lookup <cr>    # path-030000
+(config)# default ip domain lookup nsap <cr>    # path-036097
+(config)# default ip domain lookup recursive <cr>    # path-035927
+(config)# default ip domain multicast <cr>    # path-029951
+(config)# default ip domain name <cr>    # path-029997
+(config)# default ip domain periodic-resolve <cr>    # path-029802
+(config)# default ip domain recursive allow-soa <cr>    # path-036295
+(config)# default ip domain recursive retry <cr>    # path-036325
+(config)# default ip domain retry <cr>    # path-029706
+(config)# default ip domain round-robin <cr>    # path-029464
+(config)# default ip domain timeout <cr>    # path-029750
+(config)# default ip drp access-group <cr>    # path-028508
+(config)# default ip drp authentication key-chain <cr>    # path-034628
+(config)# default ip drp delay <cr>    # path-028411
+(config)# default ip drp drp-rtt <cr>    # path-028601
+(config)# default ip drp rttprobe destinationport <cr>    # path-034777
+(config)# default ip drp rttprobe sourceport <cr>    # path-034733
+(config)# default ip drp server <cr>    # path-028535
+(config)# default ip extcommunity-list <number:1..99> <cr>    # path-028865
+(config)# default ip finger <cr>    # path-026602
+(config)# default ip finger rfc-compliant <cr>    # path-028518
+(config)# default ip forward-protocol sdns <cr>    # path-028557
+(config)# default ip ftp passive <cr>    # path-028760
+(config)# default ip ftp password <cr>    # path-029042
+(config)# default ip ftp source-interface <cr>    # path-028946
+(config)# default ip ftp username <cr>    # path-028999
+(config)# default ip gdp eigrp <cr>    # path-028914
+(config)# default ip gdp irdp <cr>    # path-029077
+(config)# default ip gdp irdp multicast <cr>    # path-035090
+(config)# default ip gdp rip <cr>    # path-028973
+(config)# default ip global-nameserver <cr>    # path-027062
+(config)# default ip gratuitous-arps <cr>    # path-026753
+(config)# default ip host <string> <cr>    # path-030134
+(config)# default ip host <string> mx <number:0..65535> <string> <cr>    # path-052962
+(config)# default ip host <string> ns <string> <cr>    # path-045446
+(config)# default ip host <string> srv <number:0..65535> <number:0..65535> <number:0..65535> <string> <cr>    # path-059102
+(config)# default ip host <string> standby <address> <cr>    # path-045548
+(config)# default ip host-list <string> <cr>    # path-030043
+(config)# default ip host-mode extended <cr>    # path-028608
+(config)# default ip host-routing <cr>    # path-026653
+(config)# default ip hostname strict <cr>    # path-029601
+(config)# default ip hp-host <string> <cr>    # path-029703
+(config)# default ip hp-probe <cr>    # path-026576
+(config)# default ip http access-class <number:1..99> <cr>    # path-035027
+(config)# default ip http access-class ipv4 <number:1..99> <cr>    # path-044864
+(config)# default ip http access-class ipv4 <string> <cr>    # path-044959
+(config)# default ip http access-class ipv6 <string> <cr>    # path-044890
+(config)# default ip http accounting commands <number:0..15> <cr>    # path-045160
+(config)# default ip http active-session-modules <cr>    # path-029359
+(config)# default ip http auth-retry <cr>    # path-029046
+(config)# default ip http authentication <cr>    # path-029185
+(config)# default ip http client cache ager interval <cr>    # path-052930
+(config)# default ip http client cache memory file <cr>    # path-052931
+(config)# default ip http client cache memory pool <cr>    # path-052901
+(config)# default ip http client connection forceclose <cr>    # path-045480
+(config)# default ip http client connection idle <cr>    # path-045376
+(config)# default ip http client connection pipeline-length <cr>    # path-045382
+(config)# default ip http client connection retry <cr>    # path-045323
+(config)# default ip http client connection timeout <cr>    # path-045261
+(config)# default ip http client password <cr>    # path-035907
+(config)# default ip http client proxy-server <cr>    # path-035979
+(config)# default ip http client response timeout <cr>    # path-045536
+(config)# default ip http client secure-ciphersuite <cr>    # path-036273
+(config)# default ip http client source-interface <cr>    # path-035774
+(config)# default ip http client username <cr>    # path-035842
+(config)# default ip http digest algorithm <cr>    # path-035610
+(config)# default ip http help-path <cr>    # path-029712
+(config)# default ip http max-connections <cr>    # path-029180
+(config)# default ip http path <cr>    # path-029662
+(config)# default ip http port <cr>    # path-028855
+(config)# default ip http secure-server <cr>    # path-029168
+(config)# default ip http server <cr>    # path-028797
+(config)# default ip http session-idle-timeout <cr>    # path-029293
+(config)# default ip http session-module-list <string> <cr>    # path-035440
+(config)# default ip http timeout-policy idle <cr>    # path-035332
+(config)# default ip http timeout-policy linger <cr>    # path-035393
+(config)# default ip http upload enable path <cr>    # path-044712
+(config)# default ip http upload overwrite <cr>    # path-034940
+(config)# default ip icmp od-length enable <cr>    # path-035019
+(config)# default ip icmp od-length test <cr>    # path-035060
+(config)# default ip icmp rate-limit unreachable <cr>    # path-035131
+(config)# default ip icmp redirect <cr>    # path-028998
+(config)# default ip igmp filter <cr>    # path-029428
+(config)# default ip igmp immediate-leave <cr>    # path-029568
+(config)# default ip igmp limit <cr>    # path-029513
+(config)# default ip igmp profile <number:1..4294967295> <cr>    # path-035576
+(config)# default ip igmp query disperse <cr>    # path-035622
+(config)# default ip igmp snooping <cr>    # path-029916
+(config)# default ip igmp snooping check rtr-alert-option <cr>    # path-045257
+(config)# default ip igmp snooping check ttl <cr>    # path-045205
+(config)# default ip igmp snooping explicit-tracking limit <cr>    # path-045161
+(config)# default ip igmp snooping last-member-query-count <cr>    # path-035980
+(config)# default ip igmp snooping last-member-query-interval <cr>    # path-036055
+(config)# default ip igmp snooping querier <cr>    # path-036517
+(config)# default ip igmp snooping querier address <cr>    # path-045704
+(config)# default ip igmp snooping querier max-response-time <cr>    # path-045828
+(config)# default ip igmp snooping querier query-interval <cr>    # path-045771
+(config)# default ip igmp snooping querier tcn query count <cr>    # path-057433
+(config)# default ip igmp snooping querier tcn query interval <cr>    # path-057462
+(config)# default ip igmp snooping querier timer expiry <cr>    # path-053347
+(config)# default ip igmp snooping querier version <cr>    # path-045646
+(config)# default ip igmp snooping report-suppression <cr>    # path-035603
+(config)# default ip igmp snooping robustness-variable <cr>    # path-035908
+(config)# default ip igmp snooping source-only-learning <cr>    # path-035987
+(config)# default ip igmp snooping source-only-learning age-timer <cr>    # path-045431
+(config)# default ip igmp snooping tcn flood <cr>    # path-045375
+(config)# default ip igmp snooping tcn flood query count <cr>    # path-057219
+(config)# default ip igmp snooping tcn query solicit <cr>    # path-052929
+(config)# default ip igmp ssm-map enable <cr>    # path-035516
+(config)# default ip igmp ssm-map increment <address> <address> <number:2..16000> <cr>    # path-057166
+(config)# default ip igmp ssm-map query dns <cr>    # path-045226
+(config)# default ip igmp ssm-map static <number:1..99> <address> <cr>    # path-052834
+(config)# default ip kerberos source-interface <cr>    # path-029797
+(config)# default ip large-community-list <number:1..99> <cr>    # path-028909
+(config)# default ip local policy route-map <cr>    # path-034504
+(config)# default ip local pool default <cr>    # path-034543
+(config)# default ip mfib <cr>    # path-027123
+(config)# default ip mfib logging-ttl <cr>    # path-029775
+(config)# default ip mrm accept-manager <number:1..99> <cr>    # path-035439
+(config)# default ip mrm manager <string> <cr>    # path-035301
+(config)# default ip mroute extend-timer <cr>    # path-028667
+(config)# default ip msdp border <cr>    # path-029120
+(config)# default ip msdp cache-rejected-sa <cr>    # path-028938
+(config)# default ip msdp cache-sa-state <cr>    # path-028891
+(config)# default ip msdp default-peer <address> <cr>    # path-035175
+(config)# default ip msdp description <address> <cr>    # path-035382
+(config)# default ip msdp filter-sa-request <address> <cr>    # path-034966
+(config)# default ip msdp keepalive <address> <cr>    # path-035599
+(config)# default ip msdp mesh-group <string> <address> <cr>    # path-044556
+(config)# default ip msdp new-rpf-rules <cr>    # path-029490
+(config)# default ip msdp originator-id <cr>    # path-029169
+(config)# default ip msdp password peer <address> <cr>    # path-044584
+(config)# default ip msdp peer <address> <cr>    # path-034863
+(config)# default ip msdp redistribute <cr>    # path-028995
+(config)# default ip msdp sa-filter in <address> <cr>    # path-044842
+(config)# default ip msdp sa-limit <address> <cr>    # path-035488
+(config)# default ip msdp shutdown <address> <cr>    # path-035350
+(config)# default ip msdp timer <cr>    # path-029395
+(config)# default ip msdp ttl-threshold <address> <cr>    # path-035326
+(config)# default ip multicast auto-enable <cr>    # path-029734
+(config)# default ip multicast bier bidir <address> <string> <cr>    # path-053599
+(config)# default ip multicast bier disposition <cr>    # path-036799
+(config)# default ip multicast bier igmp <cr>    # path-036559
+(config)# default ip multicast cache-headers <cr>    # path-029805
+(config)# default ip multicast default-rpf-distance <number:0..255> <cr>    # path-036003
+(config)# default ip multicast group-range <cr>    # path-030025
+(config)# default ip multicast heartbeat <address> <cr>    # path-036441
+(config)# default ip multicast limit cost <number:1..199> <cr>    # path-045315
+(config)# default ip multicast longest-match <cr>    # path-029841
+(config)# default ip multicast mofrr-dampening-period <cr>    # path-029496
+(config)# default ip multicast mofrr-max-sw-flows <cr>    # path-029552
+(config)# default ip multicast mofrr-threshold <cr>    # path-029651
+(config)# default ip multicast mofrr-traffic-monitoring-period <cr>    # path-029609
+(config)# default ip multicast mpls mldp <cr>    # path-035893
+(config)# default ip multicast mpls traffic-eng <cr>    # path-035966
+(config)# default ip multicast mrinfo-filter <cr>    # path-029989
+(config)# default ip multicast multipath <cr>    # path-029947
+(config)# default ip multicast redundancy nsf holdtime <cr>    # path-045203
+(config)# default ip multicast redundancy routeflush maxtime <cr>    # path-045155
+(config)# default ip multicast redundancy rpf-sync <cr>    # path-035768
+(config)# default ip multicast route-limit <cr>    # path-029553
+(config)# default ip multicast rpf backoff disable <cr>    # path-045393
+(config)# default ip multicast rpf default-distance <number:0..255> <cr>    # path-045336
+(config)# default ip multicast rpf interval <number:1..30> <cr>    # path-045429
+(config)# default ip multicast rpf mofrr <cr>    # path-036124
+(config)# default ip multicast rpf multitopology <cr>    # path-035742
+(config)# default ip multicast rpf proxy disable <cr>    # path-045550
+(config)# default ip multicast rpf proxy rd vector <cr>    # path-053236
+(config)# default ip multicast rpf proxy vector <cr>    # path-045613
+(config)# default ip multicast rpf select global group-list <number:1..99> <cr>    # path-057297
+(config)# default ip multicast rpf select topology unicast <string> <number:100..199> <cr>    # path-059114
+(config)# default ip multicast rpf-check-interval <number:1..10> <cr>    # path-035970
+(config)# default ip multicast rsvp <cr>    # path-029705
+(config)# default ip multicast topology unicast <string> tid <number:1..4095> <cr>    # path-057181

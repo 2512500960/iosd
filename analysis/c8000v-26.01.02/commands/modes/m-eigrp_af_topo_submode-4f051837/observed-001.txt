@@ -1,0 +1,100 @@
+# 模式 eigrp_af_topo_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af-topology)# auto-summary <cr>    # observed_connections-006853
+(config-router-af-topology)# cts propagate sgt <cr>    # observed_connections-006878
+(config-router-af-topology)# default auto-summary <cr>    # observed_connections-006873
+(config-router-af-topology)# default cts propagate sgt <cr>    # observed_connections-006917
+(config-router-af-topology)# default default-information in <cr>    # observed_connections-006914
+(config-router-af-topology)# default default-metric <cr>    # observed_connections-006872
+(config-router-af-topology)# default distance <number:1..255> <address> <address> <cr>    # observed_connections-006935
+(config-router-af-topology)# default distance eigrp <cr>    # observed_connections-006904
+(config-router-af-topology)# default distance eigrp <cr>    # observed_connections-006905
+(config-router-af-topology)# default distribute-list in <cr>    # observed_connections-006913
+(config-router-af-topology)# default distribute-list prefix-list <string> in <cr>    # observed_connections-006933
+(config-router-af-topology)# default eigrp event-log-size <cr>    # observed_connections-006903
+(config-router-af-topology)# default eigrp event-logging <cr>    # observed_connections-006897
+(config-router-af-topology)# default eigrp log-event-type <cr>    # observed_connections-006898
+(config-router-af-topology)# default fast-reroute load-sharing <cr>    # observed_connections-006912
+(config-router-af-topology)# default fast-reroute per-prefix all <cr>    # observed_connections-006926
+(config-router-af-topology)# default fast-reroute tie-break linecard-disjoint <cr>    # observed_connections-006931
+(config-router-af-topology)# default maximum-paths <cr>    # observed_connections-006858
+(config-router-af-topology)# default maximum-secondary-paths <cr>    # observed_connections-006857
+(config-router-af-topology)# default metric maximum-hops <cr>    # observed_connections-006882
+(config-router-af-topology)# default offset-list <number:0..99> in <cr>    # observed_connections-006927
+(config-router-af-topology)# default redistribute maximum-prefix <cr>    # observed_connections-006894
+(config-router-af-topology)# default redistribute maximum-prefix <cr>    # observed_connections-006899
+(config-router-af-topology)# default snmp context <cr>    # observed_connections-006886
+(config-router-af-topology)# default summary-metric <address> <address> <cr>    # observed_connections-006920
+(config-router-af-topology)# default table-map <cr>    # observed_connections-006864
+(config-router-af-topology)# default table-map <cr>    # observed_connections-006868
+(config-router-af-topology)# default timers active-time <cr>    # observed_connections-006893
+(config-router-af-topology)# default topo-interface default <cr>    # observed_connections-006883
+(config-router-af-topology)# default traffic-share balanced <cr>    # observed_connections-006888
+(config-router-af-topology)# default variance <cr>    # observed_connections-006861
+(config-router-af-topology)# default-information in <cr>    # observed_connections-006877
+(config-router-af-topology)# default-metric <number:1..4294967295> <number:0..4294967295> <number:0..255> <number:1..255> <number:1..65535> <cr>    # observed_connections-006936
+(config-router-af-topology)# distance <number:1..255> <address> <address> <cr>    # observed_connections-006929
+(config-router-af-topology)# distance eigrp <number:1..255> <number:1..255> <cr>    # observed_connections-006922
+(config-router-af-topology)# distance eigrp <number:1..255> <number:1..255> <cr>    # observed_connections-006923
+(config-router-af-topology)# distribute-list in <cr>    # observed_connections-006876
+(config-router-af-topology)# distribute-list out <?router_action_proc_vpn@555589c146d0> <cr>    # observed_connections-006945
+(config-router-af-topology)# distribute-list prefix-list <string> in <cr>    # observed_connections-006918
+(config-router-af-topology)# distribute-list prefix-list <string> in <interface> <cr>    # observed_connections-006947
+(config-router-af-topology)# eigrp event-log-size <number:dynamic> <cr>    # observed_connections-006944
+(config-router-af-topology)# eigrp event-logging <cr>    # observed_connections-006867
+(config-router-af-topology)# eigrp log-event-type <cr>    # observed_connections-006874
+(config-router-af-topology)# exit-af-topology <cr>    # observed_connections-006852
+(config-router-af-topology)# fast-reroute load-sharing <cr>    # observed_connections-006875
+(config-router-af-topology)# fast-reroute per-prefix all <cr>    # observed_connections-006906
+(config-router-af-topology)# fast-reroute tie-break linecard-disjoint <number:1..255> <cr>    # observed_connections-006930
+(config-router-af-topology)# maximum-paths <number:dynamic> <cr>    # observed_connections-006939
+(config-router-af-topology)# maximum-secondary-paths <number:dynamic> <cr>    # observed_connections-006938
+(config-router-af-topology)# metric maximum-hops <number:1..255> <cr>    # observed_connections-006880
+(config-router-af-topology)# no auto-summary <cr>    # observed_connections-006871
+(config-router-af-topology)# no cts propagate sgt <cr>    # observed_connections-006916
+(config-router-af-topology)# no default-information in <cr>    # observed_connections-006910
+(config-router-af-topology)# no default-metric <cr>    # observed_connections-006870
+(config-router-af-topology)# no distance <number:1..255> <address> <address> <cr>    # observed_connections-006934
+(config-router-af-topology)# no distance eigrp <cr>    # observed_connections-006901
+(config-router-af-topology)# no distance eigrp <cr>    # observed_connections-006902
+(config-router-af-topology)# no distribute-list in <cr>    # observed_connections-006908
+(config-router-af-topology)# no distribute-list prefix-list <string> in <cr>    # observed_connections-006932
+(config-router-af-topology)# no eigrp event-log-size <cr>    # observed_connections-006900
+(config-router-af-topology)# no eigrp event-logging <cr>    # observed_connections-006892
+(config-router-af-topology)# no eigrp log-event-type <cr>    # observed_connections-006895
+(config-router-af-topology)# no fast-reroute load-sharing <cr>    # observed_connections-006907
+(config-router-af-topology)# no fast-reroute per-prefix all <cr>    # observed_connections-006924
+(config-router-af-topology)# no fast-reroute tie-break linecard-disjoint <cr>    # observed_connections-006928
+(config-router-af-topology)# no maximum-paths <cr>    # observed_connections-006856
+(config-router-af-topology)# no maximum-secondary-paths <cr>    # observed_connections-006855
+(config-router-af-topology)# no metric maximum-hops <cr>    # observed_connections-006879
+(config-router-af-topology)# no offset-list <number:0..99> in <cr>    # observed_connections-006925
+(config-router-af-topology)# no redistribute maximum-prefix <cr>    # observed_connections-006890
+(config-router-af-topology)# no redistribute maximum-prefix <cr>    # observed_connections-006896
+(config-router-af-topology)# no snmp context <cr>    # observed_connections-006884
+(config-router-af-topology)# no summary-metric <address> <address> <cr>    # observed_connections-006919
+(config-router-af-topology)# no table-map <cr>    # observed_connections-006862
+(config-router-af-topology)# no table-map <cr>    # observed_connections-006866
+(config-router-af-topology)# no timers active-time <cr>    # observed_connections-006889
+(config-router-af-topology)# no topo-interface default <cr>    # observed_connections-006881
+(config-router-af-topology)# no traffic-share balanced <cr>    # observed_connections-006887
+(config-router-af-topology)# no variance <cr>    # observed_connections-006859
+(config-router-af-topology)# offset-list <number:0..99> in <number:0..2147483647> <cr>    # observed_connections-006921
+(config-router-af-topology)# offset-list <string> in <cr>    # observed_connections-006946
+(config-router-af-topology)# redistribute <?ipv6_router_action@55558a9b3360> <cr>    # observed_connections-006942
+(config-router-af-topology)# redistribute <?router_action_no_proc_vpn@555589c15930> <cr>    # observed_connections-006943
+(config-router-af-topology)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006911
+(config-router-af-topology)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006915
+(config-router-af-topology)# snmp context <string> <cr>    # observed_connections-006885
+(config-router-af-topology)# summary-metric <address> <address> <cr>    # observed_connections-006909
+(config-router-af-topology)# summary-metric <prefix:dynamic> <cr>    # observed_connections-006940
+(config-router-af-topology)# summary-metric <prefix:dynamic> <cr>    # observed_connections-006941
+(config-router-af-topology)# table-map <string> <cr>    # observed_connections-006865
+(config-router-af-topology)# table-map <string> <cr>    # observed_connections-006869
+(config-router-af-topology)# timers active-time disabled <cr>    # observed_connections-006891
+(config-router-af-topology)# topo-interface <interface> <cr>    # observed_connections-006937
+(config-router-af-topology)# topo-interface default <cr>    # observed_connections-006854
+(config-router-af-topology)# traffic-share balanced <cr>    # observed_connections-006863
+(config-router-af-topology)# variance <number:1..128> <cr>    # observed_connections-006860

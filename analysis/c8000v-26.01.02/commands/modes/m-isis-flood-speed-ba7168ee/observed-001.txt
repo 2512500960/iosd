@@ -1,0 +1,13 @@
+# 模式 isis-flood-speed；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-isis-fspeed)# default exit-lsp-fast-flooding <cr>    # observed_connections-009600
+(config-isis-fspeed)# default max-lsp-tx <cr>    # observed_connections-009601
+(config-isis-fspeed)# default remote-psnp-delay <cr>    # observed_connections-009597
+(config-isis-fspeed)# exit-lsp-fast-flooding <cr>    # observed_connections-009593
+(config-isis-fspeed)# max-lsp-tx <number:33..5000> <cr>    # observed_connections-009599
+(config-isis-fspeed)# no exit-lsp-fast-flooding <cr>    # observed_connections-009596
+(config-isis-fspeed)# no max-lsp-tx <cr>    # observed_connections-009598
+(config-isis-fspeed)# no remote-psnp-delay <cr>    # observed_connections-009594
+(config-isis-fspeed)# remote-psnp-delay <number:1..10000> <cr>    # observed_connections-009595

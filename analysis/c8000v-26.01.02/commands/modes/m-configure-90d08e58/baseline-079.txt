@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-079.md
+
+(config)# no do-exec clear ip rsvp nsr counters <cr>    # path-053666
+(config)# no do-exec clear ip rsvp reservation <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-060047
+(config)# no do-exec clear ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-060043
+(config)# no do-exec clear ip rsvp signalling fast-local-repair statistics <cr>    # path-057655
+(config)# no do-exec clear ip rsvp signalling rate-limit <cr>    # path-053851
+(config)# no do-exec clear ip rsvp signalling refresh reduction <cr>    # path-057720
+(config)# no do-exec clear ip rtp header-compression <cr>    # path-045383
+(config)# no do-exec clear ip sctp statistics <cr>    # path-045789
+(config)# no do-exec clear ip sdr <cr>    # path-036457
+(config)# no do-exec clear ip subscriber <cr>    # path-037299
+(config)# no do-exec clear ip tcp header-compression <cr>    # path-045436
+(config)# no do-exec clear ip traffic <cr>    # path-035496
+(config)# no do-exec clear ip traffic topology base <cr>    # path-052751
+(config)# no do-exec clear ip trigger-authentication <cr>    # path-036834
+(config)# no do-exec clear ipam counts <cr>    # path-035151
+(config)# no do-exec clear ipam queues <cr>    # path-035205
+(config)# no do-exec clear ipc statistics peak <cr>    # path-044127
+(config)# no do-exec clear ipc statistics queue <cr>    # path-044034
+(config)# no do-exec clear ipc statistics zone <cr>    # path-044134
+(config)# no do-exec clear ipv6 access-list <cr>    # path-037117
+(config)# no do-exec clear ipv6 cef prefix-statistics <cr>    # path-046891
+(config)# no do-exec clear ipv6 dhcp binding <address> <cr>    # path-053996
+(config)# no do-exec clear ipv6 dhcp conflict <address> <cr>    # path-054070
+(config)# no do-exec clear ipv6 dhcp relay binding <address> <cr>    # path-057777
+(config)# no do-exec clear ipv6 dhcp route <address> <cr>    # path-054071
+(config)# no do-exec clear ipv6 eigrp events <cr>    # path-046402
+(config)# no do-exec clear ipv6 eigrp logging <cr>    # path-046338
+(config)# no do-exec clear ipv6 eigrp neighbors <cr>    # path-046516
+(config)# no do-exec clear ipv6 errors-internal <cr>    # path-036086
+(config)# no do-exec clear ipv6 mfib counters <cr>    # path-046268
+(config)# no do-exec clear ipv6 mld all-vrfs traffic <cr>    # path-053702
+(config)# no do-exec clear ipv6 mld counters <cr>    # path-046417
+(config)# no do-exec clear ipv6 mld group <cr>    # path-046569
+(config)# no do-exec clear ipv6 mld traffic <cr>    # path-046254
+(config)# no do-exec clear ipv6 mtu <cr>    # path-036302
+(config)# no do-exec clear ipv6 multicast aaa authorization <cr>    # path-054052
+(config)# no do-exec clear ipv6 multicast snooping limit vlan <number:1..4095> statistics <cr>    # path-059772
+(config)# no do-exec clear ipv6 nd destination <cr>    # path-046059
+(config)# no do-exec clear ipv6 nd on-link prefix <cr>    # path-053469
+(config)# no do-exec clear ipv6 nd router <cr>    # path-046102
+(config)# no do-exec clear ipv6 neighbors <cr>    # path-036804
+(config)# no do-exec clear ipv6 neighbors binding policy <string> <cr>    # path-057566
+(config)# no do-exec clear ipv6 neighbors ha statistics <cr>    # path-053442
+(config)# no do-exec clear ipv6 nhrp <cr>    # path-037179
+(config)# no do-exec clear ipv6 nhrp counters <cr>    # path-046560
+(config)# no do-exec clear ipv6 nhrp shortcut <cr>    # path-046611
+(config)# no do-exec clear ipv6 nhrp stats <cr>    # path-046472
+(config)# no do-exec clear ipv6 pim all-vrfs traffic <cr>    # path-053737
+(config)# no do-exec clear ipv6 pim limit <cr>    # path-046514
+(config)# no do-exec clear ipv6 pim pfp-sa cache <cr>    # path-053906
+(config)# no do-exec clear ipv6 pim pfp-sa originator <cr>    # path-053845
+(config)# no do-exec clear ipv6 pim reset <cr>    # path-046334
+(config)# no do-exec clear ipv6 pim traffic <cr>    # path-046450
+(config)# no do-exec clear ipv6 prefix-list <cr>    # path-037129
+(config)# no do-exec clear ipv6 rip <cr>    # path-036945
+(config)# no do-exec clear ipv6 route <address> <cr>    # path-045962
+(config)# no do-exec clear ipv6 snooping counters <cr>    # path-046697
+(config)# no do-exec clear ipv6 snooping events <cr>    # path-046692
+(config)# no do-exec clear ipv6 snooping messages <cr>    # path-046727
+(config)# no do-exec clear ipv6 spd <cr>    # path-037159
+(config)# no do-exec clear ipv6 traffic <cr>    # path-036563
+(config)# no do-exec clear ipv6 traffic interface <cr>    # path-046025
+(config)# no do-exec clear isis lsp-fast-flooding <cr>    # path-037632
+(config)# no do-exec clear isis lspfull <cr>    # path-037527
+(config)# no do-exec clear kerberos creds <cr>    # path-034938
+(config)# no do-exec clear l2fib statistics all <cr>    # path-044674
+(config)# no do-exec clear l2protocol-forward counters <cr>    # path-039593
+(config)# no do-exec clear l2protocol-tunnel counters <cr>    # path-039536
+(config)# no do-exec clear l2rib counters client producers <cr>    # path-053196
+(config)# no do-exec clear l2rib test <string> msg-buffer <cr>    # path-053263
+(config)# no do-exec clear lacp counters <cr>    # path-039626
+(config)# no do-exec clear ldap server <string> <cr>    # path-047345
+(config)# no do-exec clear line async-queue <cr>    # path-034231
+(config)# no do-exec clear lldp counters <cr>    # path-036525
+(config)# no do-exec clear lldp table <cr>    # path-036591
+(config)# no do-exec clear logging <cr>    # path-028080
+(config)# no do-exec clear logging persistent <cr>    # path-034129
+(config)# no do-exec clear logging xml <cr>    # path-034095
+(config)# no do-exec clear mac address-table dynamic <cr>    # path-048756
+(config)# no do-exec clear mdns-sd query-db <cr>    # path-036739
+(config)# no do-exec clear memory events <cr>    # path-038489
+(config)# no do-exec clear memory low-water-mark <cr>    # path-038395
+(config)# no do-exec clear mfib linecard <cr>    # path-037778
+(config)# no do-exec clear mfib table <cr>    # path-037570
+(config)# no do-exec clear mka all <cr>    # path-039673
+(config)# no do-exec clear mka sessions <cr>    # path-039930
+(config)# no do-exec clear mka statistics <cr>    # path-039980
+(config)# no do-exec clear mlrib layer2 statistics <cr>    # path-046700
+(config)# no do-exec clear mvr counters <cr>    # path-037122
+(config)# no do-exec clear nat64 ha statistics <cr>    # path-045051
+(config)# no do-exec clear nat64 map-e rule running <cr>    # path-052836
+(config)# no do-exec clear nat64 statistics <cr>    # path-035789
+(config)# no do-exec clear nat64 translations all <cr>    # path-045141
+(config)# no do-exec clear nat66 statistics <cr>    # path-035728
+(config)# no do-exec clear ncia circuits <cr>    # path-039279
+(config)# no do-exec clear netbios-cache <cr>    # path-031543
+(config)# no do-exec clear netconf counters <cr>    # path-038657
+(config)# no do-exec clear netconf sessions <cr>    # path-038716
+(config)# no do-exec clear nhrp stats <cr>    # path-037469
+(config)# no do-exec clear nhrp stats performance <cr>    # path-046861
+(config)# no do-exec clear onep trace <cr>    # path-038311
+(config)# no do-exec clear opflex agent service vxlan-evpn all <cr>    # path-057958
+(config)# no do-exec clear ospfv3 counters <cr>    # path-037971
+(config)# no do-exec clear ospfv3 events <cr>    # path-037960
+(config)# no do-exec clear ospfv3 force-spf <cr>    # path-037857
+(config)# no do-exec clear ospfv3 process <cr>    # path-037810
+(config)# no do-exec clear ospfv3 redistribution <cr>    # path-037758
+(config)# no do-exec clear ospfv3 traffic <cr>    # path-038010
+(config)# no do-exec clear packet-debug pak_debug_tracebuf <cr>    # path-035460
+(config)# no do-exec clear parser atomic-config <cr>    # path-034054
+(config)# no do-exec clear parser cache <cr>    # path-034084
+(config)# no do-exec clear parser statistics <cr>    # path-034069
+(config)# no do-exec clear platform arpsnooping-trace <cr>    # path-034027
+(config)# no do-exec clear platform condition all <cr>    # path-043912
+(config)# no do-exec clear platform dhcpsnooping pkt-trace ipv4 <cr>    # path-052041
+(config)# no do-exec clear platform packet-trace configuration <cr>    # path-043911
+(config)# no do-exec clear platform packet-trace statistics <cr>    # path-043919
+(config)# no do-exec clear platform software adjacency counters <cr>    # path-052076
+(config)# no do-exec clear platform software adjacency nexthop-ipfrr <cr>    # path-052069
+(config)# no do-exec clear platform software cce statistics <cr>    # path-052418
+(config)# no do-exec clear platform software cef counters <cr>    # path-052075
+(config)# no do-exec clear platform software cli-agent counters <cr>    # path-052053
+(config)# no do-exec clear platform software cman statistics <cr>    # path-052048
+(config)# no do-exec clear platform software crimson operational statistics <cr>    # path-056958
+(config)# no do-exec clear platform software dpidb counters <cr>    # path-052051
+(config)# no do-exec clear platform software epbr statistics <cr>    # path-052110
+(config)# no do-exec clear platform software ethernet efp statistics <cr>    # path-056772
+(config)# no do-exec clear platform software fhs statistics <cr>    # path-052085
+(config)# no do-exec clear platform software flow statistics <cr>    # path-052171
+(config)# no do-exec clear platform software icmp statistics <cr>    # path-052192
+(config)# no do-exec clear platform software infrastructure bipc <cr>    # path-052555
+(config)# no do-exec clear platform software infrastructure chasfs <cr>    # path-052574
+(config)# no do-exec clear platform software infrastructure debug <cr>    # path-052608
+(config)# no do-exec clear platform software infrastructure inject <cr>    # path-052552
+(config)# no do-exec clear platform software infrastructure lfts sar all <cr>    # path-058990
+(config)# no do-exec clear platform software infrastructure lfts sar ipv4-addr <address> <cr>    # path-059680
+(config)# no do-exec clear platform software infrastructure lfts sar ipv6-addr <address> <cr>    # path-059686
+(config)# no do-exec clear platform software infrastructure lsmpi <cr>    # path-052532
+(config)# no do-exec clear platform software infrastructure packet <cr>    # path-052531
+(config)# no do-exec clear platform software infrastructure punt-keepalive <cr>    # path-052609
+(config)# no do-exec clear platform software infrastructure session source all <cr>    # path-058996
+(config)# no do-exec clear platform software infrastructure thread <cr>    # path-052477
+(config)# no do-exec clear platform software l2pt statistics <cr>    # path-052121
+(config)# no do-exec clear platform software mlppp counters <cr>    # path-052063
+(config)# no do-exec clear platform software multicast monitor-trace <cr>    # path-052080
+(config)# no do-exec clear platform software multicast statistics <cr>    # path-052087
+(config)# no do-exec clear platform software nat statistics <cr>    # path-052360
+(config)# no do-exec clear platform software nat64 statistics <cr>    # path-052218
+(config)# no do-exec clear platform software nat66 statistics <cr>    # path-052243
+(config)# no do-exec clear platform software nbar statistics <cr>    # path-052136
+(config)# no do-exec clear platform software netflow statistics <cr>    # path-052271
+(config)# no do-exec clear platform software nwpi counters <cr>    # path-052151
+(config)# no do-exec clear platform software pfr statistics <cr>    # path-052289
+(config)# no do-exec clear platform software qos statistics <cr>    # path-052387
+(config)# no do-exec clear platform software route-map counters <cr>    # path-052313
+(config)# no do-exec clear platform software vnic-if nvtable <cr>    # path-052090
+(config)# no do-exec clear platform software vrf statistics <cr>    # path-052097
+(config)# no do-exec clear platform software wccp counters <cr>    # path-052369
+(config)# no do-exec clear platform software wccp statistics <cr>    # path-052335
+(config)# no do-exec clear pmon <cr>    # path-028193
+(config)# no do-exec clear policy-map client onepk transient <cr>    # path-053283
+(config)# no do-exec clear policy-map control <cr>    # path-036215
+(config)# no do-exec clear policy-map counters <cr>    # path-036620
+(config)# no do-exec clear policy-map counters vrf <string> <cr>    # path-053512
+(config)# no do-exec clear port-security dynamic <cr>    # path-039599
+(config)# no do-exec clear ppp all <cr>    # path-034568
+(config)# no do-exec clear ppp queues <cr>    # path-034336
+(config)# no do-exec clear ppp statistics <cr>    # path-034456
+(config)# no do-exec clear ppp statistics fsm <cr>    # path-044202
+(config)# no do-exec clear ppp subscriber statistics <cr>    # path-044236
+(config)# no do-exec clear ppp syslog statistics <cr>    # path-044172
+(config)# no do-exec clear pppatm statistics <cr>    # path-037521
+(config)# no do-exec clear pppoe all <cr>    # path-036107
+(config)# no do-exec clear pppoe derived group <string> <cr>    # path-053137
+(config)# no do-exec clear pppoe relay context all <cr>    # path-053110
+(config)# no do-exec clear pppoe rmac <address> <cr>    # path-045529
+(config)# no do-exec clear pppoe rmac <address> sid <number:1..65535> <cr>    # path-057222
+(config)# no do-exec clear pppoe statistics <cr>    # path-036242
+(config)# no do-exec clear pppoe vrrs <string> <cr>    # path-045788
+(config)# no do-exec clear profile <cr>    # path-027891
+(config)# no do-exec clear qos event <cr>    # path-035604
+(config)# no do-exec clear qos trace <cr>    # path-035846
+(config)# no do-exec clear qos trace error <cr>    # path-045240
+(config)# no do-exec clear qos trace event <cr>    # path-045130
+(config)# no do-exec clear qos trace warning <cr>    # path-045188
+(config)# no do-exec clear radius server index <cr>    # path-047233
+(config)# no do-exec clear radius sg-stats <cr>    # path-037951
+(config)# no do-exec clear radius statistics <cr>    # path-037911
+(config)# no do-exec clear radius-proxy client <address> <cr>    # path-045528
+(config)# no do-exec clear radius-proxy statistics <cr>    # path-036100
+(config)# no do-exec clear rbscp <cr>    # path-030703
+(config)# no do-exec clear redundancy counters <cr>    # path-034546
+(config)# no do-exec clear redundancy idb-sync-history <cr>    # path-034500
+(config)# no do-exec clear registry calls <string> <cr>    # path-047614
+(config)# no do-exec clear rif-cache <cr>    # path-028335
+(config)# no do-exec clear route-map counters <string> <cr>    # path-046172
+(config)# no do-exec clear rudpv1 statistics <cr>    # path-037703
+(config)# no do-exec clear sampler <cr>    # path-028905
+(config)# no do-exec clear service-group traffic-stats <cr>    # path-035079
+(config)# no do-exec clear service-routing capabilities-manager <cr>    # path-037529
+(config)# no do-exec clear service-routing client <number:0..65535> <cr>    # path-046908
+(config)# no do-exec clear service-routing database <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060243
+(config)# no do-exec clear smef stats <cr>    # path-037348
+(config)# no do-exec clear snmp stats hosts <cr>    # path-046628
+(config)# no do-exec clear snmp sync lock <cr>    # path-046576
+(config)# no do-exec clear sockets <number:1..4294967295> <cr>    # path-037245
+(config)# no do-exec clear source-bridge <cr>    # path-031478
+(config)# no do-exec clear startup-config <cr>    # path-027931
+(config)# no do-exec clear subscriber coa statistics <cr>    # path-045126
+(config)# no do-exec clear subscriber disconnect history <cr>    # path-045225
+(config)# no do-exec clear subscriber disconnect stats <cr>    # path-045297
+(config)# no do-exec clear subscriber lite-session ip <address> <cr>    # path-053057
+(config)# no do-exec clear subscriber log ip <address> <cr>    # path-053034
+(config)# no do-exec clear subscriber log mac-address <string> <cr>    # path-052965
+(config)# no do-exec clear subscriber log vrf <string> ip <address> <cr>    # path-059103
+(config)# no do-exec clear subscriber policy conditions <cr>    # path-045751
+(config)# no do-exec clear subscriber policy peer all <cr>    # path-053549
+(config)# no do-exec clear subscriber policy preauth handle <number:0..4294967295> <cr>    # path-057298
+(config)# no do-exec clear subscriber policy rules <cr>    # path-045682
+(config)# no do-exec clear subscriber session all <cr>    # path-045502
+(config)# no do-exec clear subscriber statistics <cr>    # path-035752
+(config)# no do-exec clear subscriber template idle <cr>    # path-045232
+(config)# no do-exec clear subscriber template tid <number:1..1000> <cr>    # path-052868
+(config)# no do-exec clear tcp ha statistics <cr>    # path-046432
+(config)# no do-exec clear tcp local <address> <number:1..65535> remote <address> <number:1..65535> <cr>    # path-059806
+(config)# no do-exec clear tcp statistics <cr>    # path-036871
+(config)# no do-exec clear tcp statistics ingress <cr>    # path-046214
+(config)# no do-exec clear vlan <cr>    # path-029998
+(config)# no do-exec clear vlan counters <cr>    # path-036676
+(config)# no do-exec clear vlan-autoconfig Statistics <cr>    # path-035800
+(config)# no do-exec clear vpdn accounting <cr>    # path-037708
+(config)# no do-exec clear vpdn dead-cache all <cr>    # path-047189
+(config)# no do-exec clear vpdn dead-cache group <string> <cr>    # path-054299
+(config)# no do-exec clear vpdn dead-cache ip-address <address> <cr>    # path-054317
+(config)# no do-exec clear vpdn history failure <cr>    # path-047042
+(config)# no do-exec clear vpdn queue <cr>    # path-037854
+(config)# no do-exec clear vpdn redirect <cr>    # path-037755
+(config)# no do-exec clear vpdn statistics call fsm <cr>    # path-054239
+(config)# no do-exec clear vpdn statistics mgr fsm <cr>    # path-054255
+(config)# no do-exec clear vpdn subscriber fsm <cr>    # path-047008
+(config)# no do-exec clear vrrp statistics <cr>    # path-036758
+(config)# no do-exec clear vtemplate redundancy counters <cr>    # path-047229
+(config)# no do-exec clear vtp counters <cr>    # path-036581
+(config)# no do-exec clear wccp <cr>    # path-029812
+(config)# no do-exec clear wsma agent counters <cr>    # path-047966
+(config)# no do-exec clear wsma profile counters <cr>    # path-047956
+(config)# no do-exec clear xdr linecard <cr>    # path-036839
+(config)# no do-exec clear xmpp profile counters <cr>    # path-048253
+(config)# no do-exec clear xot remote <address> <number:1..65535> local <address> <number:1..65535> <cr>    # path-059850
+(config)# no do-exec clock read-calendar <cr>    # path-028581
+(config)# no do-exec clock update-calendar <cr>    # path-028624
+(config)# no do-exec cns config cancel <number:1..4294967295> <cr>    # path-046669
+(config)# no do-exec cns config retrieve <string> <cr>    # path-047210
+(config)# no do-exec cns image retrieve <cr>    # path-037326
+(config)# no do-exec configure <cr>    # path-026627
+(config)# no do-exec configure check syntax <cr>    # path-034545
+(config)# no do-exec configure confirm <cr>    # path-028475
+(config)# no do-exec configure http <cr>    # path-028324
+(config)# no do-exec configure memory <cr>    # path-028386
+(config)# no do-exec configure network <cr>    # path-028462
+(config)# no do-exec configure overwrite-network <cr>    # path-028434
+(config)# no do-exec configure revert now <cr>    # path-034576
+(config)# no do-exec configure revert timer <number:1..120> <cr>    # path-044416
+(config)# no do-exec controller-mode disable <cr>    # path-030403
+(config)# no do-exec controller-mode enable <cr>    # path-030376
+(config)# no do-exec controller-mode reset <cr>    # path-030431
+(config)# no do-exec crypto key benchmark rsa <cr>    # path-046420
+(config)# no do-exec crypto key export ec <string> pem terminal 3des <string> <cr>    # path-060058
+(config)# no do-exec crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-060054
+(config)# no do-exec crypto key generate ec keysize <number:256..256> <cr>    # path-057676
+(config)# no do-exec crypto key generate rsa <cr>    # path-046570
+(config)# no do-exec crypto key import ec <string> terminal <cr>    # path-057791
+(config)# no do-exec crypto key import rsa <string> terminal <cr>    # path-057839
+(config)# no do-exec crypto key lock rsa <cr>    # path-046664
+(config)# no do-exec crypto key unlock rsa <cr>    # path-046702
+(config)# no do-exec crypto key zeroize <cr>    # path-037080
+(config)# no do-exec crypto pki authenticate <string> <cr>    # path-046409
+(config)# no do-exec crypto pki authenticate <string> fingerprint <cr>    # path-053791
+(config)# no do-exec crypto pki benchmark start <number:0..9990> <cr>    # path-054078
+(config)# no do-exec crypto pki benchmark stop <cr>    # path-046722
+(config)# no do-exec crypto pki certificate clear <string> <cr>    # path-053885
+(config)# no do-exec crypto pki certificate validate <string> <cr>    # path-053800
+(config)# no do-exec crypto pki crl refresh-cache <cr>    # path-046272
+(config)# no do-exec crypto pki crl request <string> <cr>    # path-053728
+(config)# no do-exec crypto pki enroll <string> <cr>    # path-046374
+(config)# no do-exec crypto pki import <string> certificate <cr>    # path-053897
+(config)# no do-exec crypto pki server <string> grant <number:1..999> <cr>    # path-057870
+(config)# no do-exec crypto pki server <string> grant all <cr>    # path-057846
+(config)# no do-exec crypto pki server <string> password generate <cr>    # path-057903
+(config)# no do-exec crypto pki server <string> password generate <number:1..1440> <cr>    # path-059306
+(config)# no do-exec crypto pki server <string> reject <number:1..999> <cr>    # path-057884
+(config)# no do-exec crypto pki server <string> reject all <cr>    # path-057864
+(config)# no do-exec crypto pki server <string> remove <number:1..999> <cr>    # path-057894
+(config)# no do-exec crypto pki server <string> remove all <cr>    # path-057880
+(config)# no do-exec crypto pki server <string> request pkcs10 terminal <cr>    # path-059334
+(config)# no do-exec crypto pki server <string> revoke <number:1..2147483647> <cr>    # path-057899
+(config)# no do-exec crypto pki server <string> start <cr>    # path-054061
+(config)# no do-exec crypto pki server <string> trim expired <cr>    # path-057930
+(config)# no do-exec crypto pki server <string> unrevoke <number:1..2147483647> <cr>    # path-057909
+(config)# no do-exec ct-isdn delay <number:100..1000000> <cr>    # path-036812
+(config)# no do-exec ct-isdn start overlap <cr>    # path-037004
+(config)# no do-exec ct-isdn test-end <cr>    # path-030460
+(config)# no do-exec cts change-password server <address> <number:1..65535> <cr>    # path-054056
+(config)# no do-exec cts credentials id <string> password <string> <cr>    # path-057682
+(config)# no do-exec cts refresh environment-data <cr>    # path-036958
+(config)# no do-exec cts refresh pac <cr>    # path-037015
+(config)# no do-exec cts refresh policy <cr>    # path-037075
+(config)# no do-exec cts refresh policy peer <cr>    # path-046457
+(config)# no do-exec cts refresh policy sgt <cr>    # path-046666
+(config)# no do-exec cts role-based policy trace ipv4 ip host <address> host <address> <cr>    # path-060174
+(config)# no do-exec diagnostic ondemand action-on-failure continue <number:0..999> <cr>    # path-054125
+(config)# no do-exec diagnostic ondemand action-on-failure stop <cr>    # path-046795
+(config)# no do-exec diagnostic ondemand iterations <number:1..999> <cr>    # path-046754
+(config)# no do-exec dir <cr>    # path-027504
+(config)# no do-exec disable <cr>    # path-026395
+(config)# no do-exec disconnect <cr>    # path-026431
+(config)# no do-exec dns query periodic re-trigger <cr>    # path-045084
+(config)# no do-exec dns-lookup hostname <string> <address> query A <cr>    # path-057136
+(config)# no do-exec enable <cr>    # path-026497
+(config)# no do-exec enable password-inline <number:0..15> <cr>    # path-034453
+(config)# no do-exec enable view <cr>    # path-028399
+(config)# no do-exec erase /all non-default <cr>    # path-037442
+(config)# no do-exec erase startup-config <cr>    # path-030622
+(config)# no do-exec ethernet cfm lck start mpid <number:1..8191> domain <string> vlan <number:1..4094> <cr>    # path-060131
+(config)# no do-exec ethernet cfm lck stop mpid <number:1..8191> domain <string> vlan <number:1..4094> <cr>    # path-060130
+(config)# no do-exec ethernet cfm pm configure session-type loss domain <string> vlan <number:1..4095> <address> source <address> frame-interval <number:1..999999> size <number:1..9999> cos <number:0..7> <cr>    # path-060271
+(config)# no do-exec ethernet cfm pm drop sd <number:1..9999999> <cr>    # path-056990
+(config)# no do-exec ethernet cfm pm start session <number:0..9999999> <cr>    # path-056932
+(config)# no do-exec ethernet oam test system-event reload router <cr>    # path-056847
+(config)# no do-exec ethernet oam test system-event reload slot <number:0..100> <cr>    # path-058934
+(config)# no do-exec ethernet service internal trace-size detail <number:8..1024> <cr>    # path-056862
+(config)# no do-exec event manager run <string> <cr>    # path-046926
+(config)# no do-exec event manager update user policy name <string> <cr>    # path-059331
+(config)# no do-exec exit <cr>    # path-026125
+(config)# no do-exec factory-reset boot-vars <cr>    # path-028828
+(config)# no do-exec fsck <cr>    # path-027435
+(config)# no do-exec guestshell <cr>    # path-027494
+(config)# no do-exec hangup <cr>    # path-026316
+(config)# no do-exec hw-module bootflash security-lock disable <cr>    # path-044642
+(config)# no do-exec hw-module bootflash security-lock enable <cr>    # path-044588
+(config)# no do-exec hw-module mcu rollback <cr>    # path-034788
+(config)# no do-exec hw-module single-sup-mode disable <cr>    # path-034839
+(config)# no do-exec hw-module single-sup-mode enable <cr>    # path-034789
+(config)# no do-exec hw-module usbflash1 security enable password <string> <cr>    # path-057007
+(config)# no do-exec hw-module usbflash1 unmount <cr>    # path-034877
+(config)# no do-exec if-mgr delete interfaceType <string> <cr>    # path-044438
+(config)# no do-exec ip sla udp-echo <address> <number:1..65535> <cr>    # path-054377
+(config)# no do-exec ip sla udp-jitter <address> <number:1..65535> <cr>    # path-054454
+(config)# no do-exec ipc-console <cr>    # path-027355
+(config)# no do-exec isdn asn encode <number:0..65536> <cr>    # path-046121
+(config)# no do-exec isdn modify display <cr>    # path-036960
+(config)# no do-exec issu abortversion <cr>    # path-030609
+(config)# no do-exec issu acceptversion <cr>    # path-030560
+(config)# no do-exec issu commitversion <cr>    # path-030586
+(config)# no do-exec issu runversion <cr>    # path-030535
+(config)# no do-exec iterate-ip-addrs <address> <address> <cr>    # path-036458
+(config)# no do-exec l2vpn evpn all-active-mh migrate-cli <cr>    # path-045490
+(config)# no do-exec ldap search <string> <number:0..65535> <string> <number:0..2> <string> <cr>    # path-059108
+(config)# no do-exec ldap search <string> <number:0..65535> <string> <number:0..2> <string> ssl <cr>    # path-059739
+(config)# no do-exec license smart clear eventlog <cr>    # path-044532
+(config)# no do-exec license smart conversion start <cr>    # path-044608
+(config)# no do-exec license smart conversion stop <cr>    # path-044564
+(config)# no do-exec license smart deregister <cr>    # path-034618
+(config)# no do-exec license smart export cancel <cr>    # path-044578
+(config)# no do-exec license smart export request local <string> <cr>    # path-056978
+(config)# no do-exec license smart export return local <string> <cr>    # path-056979
+(config)# no do-exec license smart factory reset <cr>    # path-044499
+(config)# no do-exec license smart mfg reservation cancel <cr>    # path-052478
+(config)# no do-exec license smart mfg reservation install <string> <cr>    # path-056983
+(config)# no do-exec license smart mfg reservation install file <string> <cr>    # path-058963
+(config)# no do-exec license smart mfg reservation request <cr>    # path-052407
+(config)# no do-exec license smart remove_trust <cr>    # path-035448
+(config)# no do-exec license smart renew ID <cr>    # path-044324
+(config)# no do-exec license smart renew auth <cr>    # path-044361
+(config)# no do-exec license smart reservation cancel <cr>    # path-044668
+(config)# no do-exec license smart reservation install <string> <cr>    # path-052505
+(config)# no do-exec license smart reservation install file <string> <cr>    # path-056939
+(config)# no do-exec license smart reservation request local <cr>    # path-052408
+(config)# no do-exec license smart reservation return <cr>    # path-044624
+(config)# no do-exec license smart reservation return authorization <string> <cr>    # path-057010
+(config)# no do-exec license smart reservation return authorization file <string> <cr>    # path-058987
+(config)# no do-exec license throughput Level auto-convert <cr>    # path-047127
+(config)# no do-exec lock <cr>    # path-026095
+(config)# no do-exec login <cr>    # path-026342
+(config)# no do-exec loop-counter clear-data <cr>    # path-030046
+(config)# no do-exec loop-counter disable <cr>    # path-030157
+(config)# no do-exec loop-counter disable <string> <cr>    # path-036520
+(config)# no do-exec loop-counter enable <cr>    # path-030122
+(config)# no do-exec loop-counter enable <string> <cr>    # path-036463
+(config)# no do-exec loop-counter show-data <cr>    # path-029967
+(config)# no do-exec loop-counter threshold <number:0..4294967295> <cr>    # path-036577
+(config)# no do-exec loop-counter types <cr>    # path-030011
+(config)# no do-exec microcode reload all <cr>    # path-034389
+(config)# no do-exec mkdir <cr>    # path-027444
+(config)# no do-exec mlacp reversion-delay <number:1..1200> <cr>    # path-037513
+(config)# no do-exec monitor capture <string> <cr>    # path-035048
+(config)# no do-exec monitor capture clear <cr>    # path-034529
+(config)# no do-exec monitor elog allocate <number:10..10000000> <cr>    # path-044474
+(config)# no do-exec monitor elog ascii-dump <cr>    # path-034626
+(config)# no do-exec monitor elog ascii-dump more <cr>    # path-044354

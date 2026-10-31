@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-010.md
+
+(config-if)# no ipv6 nd ra lifetime <cr>    # path-067191
+(config-if)# no ipv6 nd ra mtu suppress <cr>    # path-067532
+(config-if)# no ipv6 nd ra solicited unicast <cr>    # path-067537
+(config-if)# no ipv6 nd ra suppress <cr>    # path-067181
+(config-if)# no ipv6 nd ra-interval <cr>    # path-066280
+(config-if)# no ipv6 nd ra-lifetime <cr>    # path-066301
+(config-if)# no ipv6 nd reachable-time <cr>    # path-064671
+(config-if)# no ipv6 nd router-preference <cr>    # path-066402
+(config-if)# no ipv6 nd suppress <cr>    # path-066114
+(config-if)# no ipv6 nd suppress-ra <cr>    # path-066313
+(config-if)# no ipv6 next-hop-self eigrp <number:1..65535> <cr>    # path-067087
+(config-if)# no ipv6 pim <cr>    # path-064986
+(config-if)# no ipv6 pim bfd <cr>    # path-066383
+(config-if)# no ipv6 pim bsr border <cr>    # path-067105
+(config-if)# no ipv6 pim dr-priority <cr>    # path-065011
+(config-if)# no ipv6 pim drlb <cr>    # path-066322
+(config-if)# no ipv6 pim hello-interval <cr>    # path-064956
+(config-if)# no ipv6 pim join-prune-interval <cr>    # path-064887
+(config-if)# no ipv6 pim lisp core-group-range <cr>    # path-067107
+(config-if)# no ipv6 pim lisp transport <cr>    # path-067091
+(config-if)# no ipv6 pim non-dr-join <cr>    # path-066221
+(config-if)# no ipv6 pim passive <cr>    # path-066220
+(config-if)# no ipv6 pim pfp-sa border <cr>    # path-067134
+(config-if)# no ipv6 pim redundancy <string> <cr>    # path-067124
+(config-if)# no ipv6 policy route-map <cr>    # path-066203
+(config-if)# no ipv6 reassembly <cr>    # path-064820
+(config-if)# no ipv6 redirects <cr>    # path-064831
+(config-if)# no ipv6 rip <string> default-information originate <cr>    # path-067502
+(config-if)# no ipv6 rip <string> enable <cr>    # path-067028
+(config-if)# no ipv6 rip <string> metric-offset <cr>    # path-067090
+(config-if)# no ipv6 router isis <cr>    # path-066272
+(config-if)# no ipv6 snooping attach-policy <string> <cr>    # path-066973
+(config-if)# no ipv6 source-guard <cr>    # path-064804
+(config-if)# no ipv6 split-horizon eigrp <number:1..65535> <cr>    # path-067080
+(config-if)# no ipv6 tcp adjust-mss <cr>    # path-066090
+(config-if)# no ipv6 traffic-filter in <cr>    # path-066124
+(config-if)# no ipv6 unnumbered <cr>    # path-064739
+(config-if)# no ipv6 unreachables <cr>    # path-064851
+(config-if)# no ipv6 verify unicast <cr>    # path-066254
+(config-if)# no ipv6 virtual-reassembly percentage <number:1..100> precedence <number:0..7> <cr>    # path-067668
+(config-if)# no isdn N200 <cr>    # path-065377
+(config-if)# no isdn T-Activate <cr>    # path-065360
+(config-if)# no isdn T200 <cr>    # path-065380
+(config-if)# no isdn T203 <cr>    # path-065384
+(config-if)# no isdn T303 <cr>    # path-065373
+(config-if)# no isdn T306 <cr>    # path-065387
+(config-if)# no isdn T307 <cr>    # path-065398
+(config-if)# no isdn T309 <cr>    # path-065369
+(config-if)# no isdn T309-enable <cr>    # path-065324
+(config-if)# no isdn T310 <cr>    # path-065390
+(config-if)# no isdn T321 <cr>    # path-065366
+(config-if)# no isdn T3OOS <cr>    # path-065363
+(config-if)# no isdn answer1 <cr>    # path-065267
+(config-if)# no isdn answer2 <cr>    # path-065283
+(config-if)# no isdn autodetect <cr>    # path-065261
+(config-if)# no isdn bcac service audit <cr>    # path-067287
+(config-if)# no isdn bcac service audit interface <cr>    # path-067567
+(config-if)# no isdn bcac service audit trigger <number:1..6> <cr>    # path-067684
+(config-if)# no isdn bcac service retry in-serv-on-fail <cr>    # path-067558
+(config-if)# no isdn bcac service retry max <cr>    # path-067559
+(config-if)# no isdn bcac service timer <cr>    # path-067281
+(config-if)# no isdn bcac service update linkup <cr>    # path-067557
+(config-if)# no isdn bcac service update provision <cr>    # path-067563
+(config-if)# no isdn bchan-number-order <cr>    # path-065417
+(config-if)# no isdn bind-l3 q931 <cr>    # path-066663
+(config-if)# no isdn busy b_channel <number:0..24> - <number:0..24> <cr>    # path-067686
+(config-if)# no isdn caller <string> <cr>    # path-066539
+(config-if)# no isdn calling-number <cr>    # path-065305
+(config-if)# no isdn calling-party-num <cr>    # path-065326
+(config-if)# no isdn cause-location <cr>    # path-065407
+(config-if)# no isdn cc-pattern <cr>    # path-065430
+(config-if)# no isdn channel-id invert extend-bit <cr>    # path-067292
+(config-if)# no isdn datetime <cr>    # path-065434
+(config-if)# no isdn disconnect-cause <cr>    # path-065412
+(config-if)# no isdn fast-rollover-delay <cr>    # path-063990
+(config-if)# no isdn flip-chan-flag <cr>    # path-065371
+(config-if)# no isdn guard-timer <cr>    # path-065247
+(config-if)# no isdn incoming alerting add-PI <cr>    # path-067289
+(config-if)# no isdn incoming ie channel-id accept-qsig-variant <cr>    # path-067571
+(config-if)# no isdn incoming progress <cr>    # path-066668
+(config-if)# no isdn incoming-voice data <cr>    # path-066550
+(config-if)# no isdn incoming-voice modem <cr>    # path-066573
+(config-if)# no isdn incoming-voice voice <cr>    # path-066583
+(config-if)# no isdn k <number:1..7> <cr>    # path-066657
+(config-if)# no isdn layer1-emulate <cr>    # path-065268
+(config-if)# no isdn layer2-flap STATUS-ENQ <cr>    # path-066673
+(config-if)# no isdn map address <cr>    # path-066639
+(config-if)# no isdn max-restart-tries <cr>    # path-065408
+(config-if)# no isdn negotiate-bchan <cr>    # path-065405
+(config-if)# no isdn network <cr>    # path-065355
+(config-if)# no isdn nfas-channel_id <cr>    # path-065422
+(config-if)# no isdn nfas-order <cr>    # path-065416
+(config-if)# no isdn not-end-to-end <cr>    # path-065178
+(config-if)# no isdn nsf-service <cr>    # path-065440
+(config-if)# no isdn number called enbloc <cr>    # path-067262
+(config-if)# no isdn number called setup <cr>    # path-067266
+(config-if)# no isdn outgoing display-ie <cr>    # path-066665
+(config-if)# no isdn overlap-receiving <cr>    # path-065167
+(config-if)# no isdn overlap-receiving T302 <number:500..20000> <cr>    # path-067156
+(config-if)# no isdn point-to-point-setup <cr>    # path-065234
+(config-if)# no isdn protocol-emulate <cr>    # path-065201
+(config-if)# no isdn reject v110 <cr>    # path-066667
+(config-if)# no isdn reverse-charging-indicator <cr>    # path-065424
+(config-if)# no isdn send-alerting <cr>    # path-065402
+(config-if)# no isdn send-status-enquiry <cr>    # path-065397
+(config-if)# no isdn sending-complete <cr>    # path-065428
+(config-if)# no isdn service b_channel <number:0..24> - <number:0..24> state <number:0..2> <cr>    # path-067714
+(config-if)# no isdn setup-delay-timer <cr>    # path-065254
+(config-if)# no isdn skip-async-callerid-check <cr>    # path-065415
+(config-if)# no isdn skipsend-idverify <cr>    # path-065450
+(config-if)# no isdn snmp busyout b-channel <cr>    # path-067141
+(config-if)# no isdn spc <cr>    # path-065444
+(config-if)# no isdn spc deactivate <cr>    # path-065437
+(config-if)# no isdn spc reactivate <cr>    # path-065439
+(config-if)# no isdn spid1 <cr>    # path-065255
+(config-if)# no isdn spid2 <cr>    # path-065269
+(config-if)# no isdn spoofing <cr>    # path-065442
+(config-if)# no isdn static-tei <cr>    # path-064058
+(config-if)# no isdn supp-service callRerouteing <cr>    # path-066652
+(config-if)# no isdn switch-type <cr>    # path-065137
+(config-if)# no isdn tei-negotiation <cr>    # path-065271
+(config-if)# no isdn timeout-signaling <cr>    # path-065445
+(config-if)# no isdn timer T-Activate <cr>    # path-066564
+(config-if)# no isdn timer T200 <cr>    # path-066438
+(config-if)# no isdn timer T203 <cr>    # path-066455
+(config-if)# no isdn timer T301 <cr>    # path-066476
+(config-if)# no isdn timer T303 <cr>    # path-066494
+(config-if)# no isdn timer T306 <cr>    # path-066504
+(config-if)# no isdn timer T307 <cr>    # path-066531
+(config-if)# no isdn timer T309 <cr>    # path-066530
+(config-if)# no isdn timer T310 <cr>    # path-066543
+(config-if)# no isdn timer T321 <cr>    # path-066553
+(config-if)# no isdn timer T3OOS <cr>    # path-066575
+(config-if)# no isdn transition-delay <cr>    # path-063957
+(config-if)# no isdn twait-disable <cr>    # path-065187
+(config-if)# no isis adjacency-filter <cr>    # path-065124
+(config-if)# no isis advertise prefix <cr>    # path-066197
+(config-if)# no isis authentication key-chain <string> <cr>    # path-067039
+(config-if)# no isis authentication mode md5 <cr>    # path-067026
+(config-if)# no isis authentication send-only <cr>    # path-066237
+(config-if)# no isis bfd <cr>    # path-065152
+(config-if)# no isis campus-lisp <string> <cr>    # path-066100
+(config-if)# no isis circuit-type <cr>    # path-064687
+(config-if)# no isis csnp-interval <cr>    # path-065116
+(config-if)# no isis hello padding <cr>    # path-066296
+(config-if)# no isis hello-interval <cr>    # path-065032
+(config-if)# no isis hello-multiplier <cr>    # path-064985
+(config-if)# no isis ipv6 bfd <cr>    # path-066517
+(config-if)# no isis ipv6 metric <cr>    # path-066555
+(config-if)# no isis ipv6 tag <cr>    # path-066529
+(config-if)# no isis lsp-interval <cr>    # path-063915
+(config-if)# no isis mesh-group <cr>    # path-065111
+(config-if)# no isis metric <cr>    # path-064924
+(config-if)# no isis network point-to-point <cr>    # path-066042
+(config-if)# no isis password <string> <cr>    # path-066210
+(config-if)# no isis prefix-attributes n-flag-clear <cr>    # path-066303
+(config-if)# no isis priority <cr>    # path-064957
+(config-if)# no isis protocol shutdown <cr>    # path-066407
+(config-if)# no isis remote-psnp-delay <cr>    # path-065139
+(config-if)# no isis retransmit-interval <cr>    # path-063905
+(config-if)# no isis retransmit-throttle-interval <cr>    # path-063895
+(config-if)# no isis tag <number:1..4294967295> <cr>    # path-066289
+(config-if)# no isis te-metric flex-algo <number:1..16777214> <cr>    # path-067009
+(config-if)# no isis three-way-handshake <cr>    # path-064977
+(config-if)# no iso-igrp adjacency-filter <cr>    # path-064714
+(config-if)# no itu channel <cr>    # path-064171
+(config-if)# no keepalive <cr>    # path-063516
+(config-if)# no l2protocol forward <cr>    # path-065392
+(config-if)# no l2protocol forward drop-threshold <cr>    # path-066661
+(config-if)# no l2protocol forward shutdown-threshold <cr>    # path-066659
+(config-if)# no l2protocol-tunnel <cr>    # path-064045
+(config-if)# no l2protocol-tunnel drop-threshold <cr>    # path-065347
+(config-if)# no l2protocol-tunnel shutdown-threshold <cr>    # path-065339
+(config-if)# no lacp device-id <cr>    # path-065048
+(config-if)# no lacp direct-loadswap <cr>    # path-065002
+(config-if)# no lacp failover non-revertive <cr>    # path-066191
+(config-if)# no lacp fast-switchover <cr>    # path-064906
+(config-if)# no lacp fast-switchover dampening <cr>    # path-064869
+(config-if)# no lacp max-bundle <cr>    # path-064974
+(config-if)# no lacp min-bundle <cr>    # path-065028
+(config-if)# no lacp port-priority <cr>    # path-064858
+(config-if)# no lacp rate <cr>    # path-064913
+(config-if)# no lan-name <cr>    # path-063571
+(config-if)# no lapb N1 <cr>    # path-064584
+(config-if)# no lapb N2 <cr>    # path-063643
+(config-if)# no lapb T1 <cr>    # path-063584
+(config-if)# no lapb T2 <cr>    # path-063593
+(config-if)# no lapb T4 <cr>    # path-063619
+(config-if)# no lapb interface-outage <cr>    # path-063603
+(config-if)# no lapb k <cr>    # path-063653
+(config-if)# no lapb modulo <cr>    # path-064460
+(config-if)# no link <cr>    # path-064004
+(config-if)# no link debounce <cr>    # path-065251
+(config-if)# no linksec-shim <cr>    # path-063691
+(config-if)# no llc2 N2 <cr>    # path-063913
+(config-if)# no llc2 ack-delay-time <cr>    # path-063884
+(config-if)# no llc2 ack-max <cr>    # path-063868
+(config-if)# no llc2 adm-timer-value <cr>    # path-063960
+(config-if)# no llc2 akdelay-time <cr>    # path-063878
+(config-if)# no llc2 akmax <cr>    # path-063855
+(config-if)# no llc2 dynwind <cr>    # path-065216
+(config-if)# no llc2 idle-time <cr>    # path-063893
+(config-if)# no llc2 local-window <cr>    # path-063903
+(config-if)# no llc2 t1-time <cr>    # path-063922
+(config-if)# no llc2 tbusy-time <cr>    # path-063930
+(config-if)# no llc2 tpf-time <cr>    # path-063942
+(config-if)# no llc2 trej-time <cr>    # path-063937
+(config-if)# no llc2 txq-max <cr>    # path-063967
+(config-if)# no llc2 xid-neg-val-time <cr>    # path-063946
+(config-if)# no llc2 xid-retry-time <cr>    # path-063953
+(config-if)# no lldp med-tlv-select network-policy <cr>    # path-065972
+(config-if)# no lldp receive <cr>    # path-064543
+(config-if)# no lldp tlv-select power-management <cr>    # path-065894
+(config-if)# no lldp transmit <cr>    # path-064521
+(config-if)# no lldp ucs-chassis-tlv rack-id <number:1..255> <cr>    # path-066913
+(config-if)# no llp nhrp map multicast dynamic <cr>    # path-067497
+(config-if)# no lnm alternate <cr>    # path-065079
+(config-if)# no lnm crs <cr>    # path-065075
+(config-if)# no lnm express-buffer <cr>    # path-065136
+(config-if)# no lnm loss-threshold <cr>    # path-065110
+(config-if)# no lnm password <cr>    # path-065131
+(config-if)# no lnm rem <cr>    # path-065130
+(config-if)# no lnm ring-number-mismatch-allowed <cr>    # path-065190
+(config-if)# no lnm rps <cr>    # path-065164
+(config-if)# no lnm softerr <cr>    # path-065192
+(config-if)# no load-balance-hash-algo <cr>    # path-063509
+(config-if)# no load-balancing <cr>    # path-063513
+(config-if)# no load-interval <cr>    # path-063250
+(config-if)# no locaddr-priority <cr>    # path-063330
+(config-if)# no location additional-location-information <cr>    # path-064070
+(config-if)# no location civic-location-id none <cr>    # path-065454
+(config-if)# no location custom-location-id none <cr>    # path-065457
+(config-if)# no location elin-location-id <string> <cr>    # path-065453
+(config-if)# no location geo-location-id none <cr>    # path-065459
+(config-if)# no logging event dlci-status-change <cr>    # path-065503
+(config-if)# no logging event frame-relay dlci <cr>    # path-066698
+(config-if)# no logging event link-status <cr>    # path-065469
+(config-if)# no logging event link-status <cr>    # path-065477
+(config-if)# no loopback <cr>    # path-063432
+(config-if)# no loopback <cr>    # path-063450
+(config-if)# no loopback <cr>    # path-063574
+(config-if)# no loopback dte <cr>    # path-064148
+(config-if)# no loopback line <cr>    # path-064160
+(config-if)# no loopback remote <cr>    # path-064166
+(config-if)# no mab <cr>    # path-063803
+(config-if)# no mab eap <cr>    # path-064788
+(config-if)# no mac-address <cr>    # path-063406
+(config-if)# no macsec <cr>    # path-063556
+(config-if)# no macsec access-control <cr>    # path-064462
+(config-if)# no macsec disable-sci <cr>    # path-064379
+(config-if)# no macsec dot1q-in-clear <cr>    # path-064426
+(config-if)# no macsec replay-protection window-size <cr>    # path-065765
+(config-if)# no map-group <string> <cr>    # path-064245
+(config-if)# no mdns-sd gateway <cr>    # path-064622
+(config-if)# no media-type <cr>    # path-063457
+(config-if)# no medium p2p <cr>    # path-064257
+(config-if)# no mka policy <cr>    # path-065290
+(config-if)# no mka pre-shared-key key-chain <string> <cr>    # path-067259
+(config-if)# no mka pre-shared-key key-chain <string> fallback-key-chain <string> <cr>    # path-067675
+(config-if)# no mlacp interchassis group <cr>    # path-064867
+(config-if)# no mlacp lag-priority <cr>    # path-063831
+(config-if)# no mlacp mac mstp-tcn <cr>    # path-066287
+(config-if)# no mlacp mode active-active <cr>    # path-066239
+(config-if)# no mtu <cr>    # path-063404
+(config-if)# no multilink load-threshold <cr>    # path-064733
+(config-if)# no multilink max-fragments <cr>    # path-064749
+(config-if)# no multilink max-links <cr>    # path-064653
+(config-if)# no multilink min-links <cr>    # path-064683
+(config-if)# no multilink-group <cr>    # path-063719
+(config-if)# no multiring trcrf-vlan <cr>    # path-064386
+(config-if)# no mvr immediate <cr>    # path-064684
+(config-if)# no mvr type <cr>    # path-064692
+(config-if)# no nat64 enable <cr>    # path-064347
+(config-if)# no nat64 prefix stateful <cr>    # path-065830
+(config-if)# no nat64 settings mtu minimum <cr>    # path-066825
+(config-if)# no nat66 inside <cr>    # path-064373
+(config-if)# no nat66 outside <cr>    # path-064411
+(config-if)# no national bit <cr>    # path-064424
+(config-if)# no negotiation auto <cr>    # path-064230
+(config-if)# no netbios enable-name-cache <cr>    # path-064348
+(config-if)# no netbios input-access-filter host <string> <cr>    # path-066763
+(config-if)# no nrzi-encoding <cr>    # path-063718
+(config-if)# no ntp broadcast <cr>    # path-064598
+(config-if)# no ntp broadcast client <cr>    # path-065863
+(config-if)# no ntp disable <cr>    # path-064536
+(config-if)# no ntp multicast <cr>    # path-064620
+(config-if)# no ntp multicast client <cr>    # path-065931
+(config-if)# no onep application openflow exclusive <cr>    # path-067126
+(config-if)# no ospfv3 <number:1..65535> adjacency stagger <cr>    # path-067269
+(config-if)# no ospfv3 <number:1..65535> area <address> <cr>    # path-067160
+(config-if)# no ospfv3 <number:1..65535> authentication null <cr>    # path-067166
+(config-if)# no ospfv3 <number:1..65535> bfd <cr>    # path-066638
+(config-if)# no ospfv3 <number:1..65535> cost <cr>    # path-066506
+(config-if)# no ospfv3 <number:1..65535> database-filter <cr>    # path-066616
+(config-if)# no ospfv3 <number:1..65535> dead-interval <cr>    # path-065183
+(config-if)# no ospfv3 <number:1..65535> demand-circuit <cr>    # path-066594
+(config-if)# no ospfv3 <number:1..65535> flood-reduction <cr>    # path-066585
+(config-if)# no ospfv3 <number:1..65535> hello-interval <cr>    # path-065169
+(config-if)# no ospfv3 <number:1..65535> interface-retry <cr>    # path-065155
+(config-if)# no ospfv3 <number:1..65535> mpls traffic-eng autoroute announce area <address> <cr>    # path-067712
+(config-if)# no ospfv3 <number:1..65535> mpls traffic-eng autoroute metric <cr>    # path-067676
+(config-if)# no ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj area <address> <cr>    # path-067704
+(config-if)# no ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj interface-id <cr>    # path-067680
+(config-if)# no ospfv3 <number:1..65535> mtu-ignore <cr>    # path-066606
+(config-if)# no ospfv3 <number:1..65535> multi-area <address> <cr>    # path-067283
+(config-if)# no ospfv3 <number:1..65535> multi-area <address> cost <cr>    # path-067274
+(config-if)# no ospfv3 <number:1..65535> neighbor <address> <cr>    # path-067277
+(config-if)# no ospfv3 <number:1..65535> network <cr>    # path-066458
+(config-if)# no ospfv3 <number:1..65535> packet-size <cr>    # path-065205
+(config-if)# no ospfv3 <number:1..65535> prefix-suppression <cr>    # path-066630
+(config-if)# no ospfv3 <number:1..65535> priority <cr>    # path-065194
+(config-if)# no ospfv3 <number:1..65535> retransmit-interval <cr>    # path-065218
+(config-if)# no ospfv3 <number:1..65535> shutdown <cr>    # path-066647
+(config-if)# no ospfv3 <number:1..65535> transmit-delay <cr>    # path-065229
+(config-if)# no peer default ip address <cr>    # path-066848
+(config-if)# no peer default ipv6 pool <string> <cr>    # path-067413
+(config-if)# no peer ip address forced <cr>    # path-066759
+(config-if)# no peer match aaa-pools <cr>    # path-065731
+(config-if)# no peer neighbor-route <cr>    # path-064416
+(config-if)# no peer pool backup <cr>    # path-065771
+(config-if)# no peer pool static <cr>    # path-065789
+(config-if)# no phymode <cr>    # path-064022
+(config-if)# no physical-layer <cr>    # path-063400
+(config-if)# no plim ethernet vlan filter disable <cr>    # path-067350
+(config-if)# no plim min-frame-length 68byte <cr>    # path-065738
+(config-if)# no plim qos input weight <cr>    # path-066816
+(config-if)# no pnp startup-vlan <cr>    # path-065294
+(config-if)# no port <cr>    # path-063511
+(config-if)# no port-channel bfd destination ipv4 <address> <string> <cr>    # path-067637
+(config-if)# no port-channel bfd destination ipv6 <address> <string> <cr>    # path-067636
+(config-if)# no port-settings <cr>    # path-063474
+(config-if)# no power inline consumption <cr>    # path-065558
+(config-if)# no power inline delay shutdown <cr>    # path-066733
+(config-if)# no ppp accm <cr>    # path-064354
+(config-if)# no ppp accounting <cr>    # path-064800
+(config-if)# no ppp acfc local <cr>    # path-065912
+(config-if)# no ppp acfc remote <cr>    # path-065936
+(config-if)# no ppp authentication <cr>    # path-064758
+(config-if)# no ppp authorization <cr>    # path-064778
+(config-if)# no ppp bap call request <cr>    # path-067176
+(config-if)# no ppp bap callback accept <cr>    # path-067174
+(config-if)# no ppp bap drop accept <cr>    # path-067185
+(config-if)# no ppp bap max dial-attempts <cr>    # path-067218
+(config-if)# no ppp bap monitor load <cr>    # path-067224
+(config-if)# no ppp bap number default <cr>    # path-067165
+(config-if)# no ppp bap number format <cr>    # path-067236
+(config-if)# no ppp bap timeout pending <cr>    # path-067206
+(config-if)# no ppp bcp tagged-frame <cr>    # path-066327
+(config-if)# no ppp bridge appletalk <cr>    # path-066012
+(config-if)# no ppp callback <cr>    # path-064658
+(config-if)# no ppp caller name <cr>    # path-066067
+(config-if)# no ppp chap challenge-length <cr>    # path-066207
+(config-if)# no ppp chap hostname <cr>    # path-066158
+(config-if)# no ppp chap ignoreus <cr>    # path-066152
+(config-if)# no ppp chap matchnames <cr>    # path-066270
+(config-if)# no ppp chap password <cr>    # path-066233
+(config-if)# no ppp chap refuse <cr>    # path-066260
+(config-if)# no ppp chap splitnames <cr>    # path-066249
+(config-if)# no ppp chap wait <cr>    # path-066222
+(config-if)# no ppp direction <cr>    # path-064949
+(config-if)# no ppp disconnect-cause keepalive <cr>    # path-066048
+(config-if)# no ppp dnis <cr>    # path-064690
+(config-if)# no ppp eap identity <cr>    # path-066144
+(config-if)# no ppp eap local <cr>    # path-066175
+(config-if)# no ppp eap password <cr>    # path-066159
+(config-if)# no ppp eap refuse <cr>    # path-066184
+(config-if)# no ppp eap wait <cr>    # path-066153
+(config-if)# no ppp encrypt mppe <cr>    # path-066017
+(config-if)# no ppp hostname unique <cr>    # path-066168
+(config-if)# no ppp ignore-loopback <cr>    # path-064563
+(config-if)# no ppp ipcp accept-address <cr>    # path-066240
+(config-if)# no ppp ipcp address accept <cr>    # path-067177
+(config-if)# no ppp ipcp address no-ip send-ack <cr>    # path-067544
+(config-if)# no ppp ipcp address proxy <cr>    # path-067169
+(config-if)# no ppp ipcp address request ignore <cr>    # path-067540
+(config-if)# no ppp ipcp address required <cr>    # path-067151
+(config-if)# no ppp ipcp address unique <cr>    # path-067158
+(config-if)# no ppp ipcp dns <cr>    # path-066340
+(config-if)# no ppp ipcp header-compression ack <cr>    # path-067067
+(config-if)# no ppp ipcp ignore-map <cr>    # path-066354
+(config-if)# no ppp ipcp mask <cr>    # path-066377
+(config-if)# no ppp ipcp no-renegotiation <cr>    # path-066461
+(config-if)# no ppp ipcp predictive <cr>    # path-066382
+(config-if)# no ppp ipcp route default <cr>    # path-067119
+(config-if)# no ppp ipcp unique-address <cr>    # path-066394
+(config-if)# no ppp ipcp username unique <cr>    # path-067144
+(config-if)# no ppp ipcp wins <cr>    # path-066363
+(config-if)# no ppp iphc max-header <cr>    # path-066009
+(config-if)# no ppp iphc max-period <cr>    # path-065987
+(config-if)# no ppp iphc max-time <cr>    # path-066000
+(config-if)# no ppp ipv6cp address unique <cr>    # path-067066
+(config-if)# no ppp ipv6cp proxy <cr>    # path-066339
+(config-if)# no ppp lcp delay <cr>    # path-065946
+(config-if)# no ppp lcp echo mru verify <cr>    # path-067435
+(config-if)# no ppp lcp fast-start <cr>    # path-065881
+(config-if)# no ppp lcp predictive <cr>    # path-065850
+(config-if)# no ppp leased_line_option <cr>    # path-063544
+(config-if)# no ppp link reorders <cr>    # path-066307
+(config-if)# no ppp link reset <cr>    # path-066329
+(config-if)# no ppp link trap <cr>    # path-066353

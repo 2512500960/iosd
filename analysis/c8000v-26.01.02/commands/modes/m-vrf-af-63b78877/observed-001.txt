@@ -1,0 +1,122 @@
+# 模式 vrf-af；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vrf-af)# bgp next-hop <cr>    # observed_connections-006187
+(config-vrf-af)# context <cr>    # observed_connections-006172
+(config-vrf-af)# default bgp next-hop <cr>    # observed_connections-006209
+(config-vrf-af)# default context <cr>    # observed_connections-006182
+(config-vrf-af)# default exit-address-family <cr>    # observed_connections-006178
+(config-vrf-af)# default export map <string> <cr>    # observed_connections-006230
+(config-vrf-af)# default help <cr>    # observed_connections-006175
+(config-vrf-af)# default import map <string> <cr>    # observed_connections-006231
+(config-vrf-af)# default inter-as-hybrid <cr>    # observed_connections-006189
+(config-vrf-af)# default maximum routes <cr>    # observed_connections-006206
+(config-vrf-af)# default mdt auto-discovery pim <cr>    # observed_connections-006258
+(config-vrf-af)# default mdt auto-discovery receiver-site <cr>    # observed_connections-006253
+(config-vrf-af)# default mdt data <address> <address> <cr>    # observed_connections-006274
+(config-vrf-af)# default mdt data <cr>    # observed_connections-006223
+(config-vrf-af)# default mdt data threshold <number:1..4294967> <cr>    # observed_connections-006273
+(config-vrf-af)# default mdt default <address> <cr>    # observed_connections-006237
+(config-vrf-af)# default mdt default bier <cr>    # observed_connections-006244
+(config-vrf-af)# default mdt default ingress-replication <cr>    # observed_connections-006246
+(config-vrf-af)# default mdt default mpls mldp <address> <cr>    # observed_connections-006282
+(config-vrf-af)# default mdt default mpls mldp p2mp <cr>    # observed_connections-006280
+(config-vrf-af)# default mdt direct <cr>    # observed_connections-006204
+(config-vrf-af)# default mdt log-reuse <cr>    # observed_connections-006218
+(config-vrf-af)# default mdt mode gre <cr>    # observed_connections-006243
+(config-vrf-af)# default mdt mtu <cr>    # observed_connections-006205
+(config-vrf-af)# default mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-006268
+(config-vrf-af)# default mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-006271
+(config-vrf-af)# default mdt overlay use-bgp <cr>    # observed_connections-006250
+(config-vrf-af)# default mdt partitioned ingress-replication <cr>    # observed_connections-006245
+(config-vrf-af)# default mdt partitioned mldp p2mp <cr>    # observed_connections-006264
+(config-vrf-af)# default mdt preference pim <cr>    # observed_connections-006248
+(config-vrf-af)# default mdt strict-rpf interface <cr>    # observed_connections-006235
+(config-vrf-af)# default protection local-prefixes <cr>    # observed_connections-006215
+(config-vrf-af)# default route-replicate from unicast all <cr>    # observed_connections-006260
+(config-vrf-af)# default route-replicate recursion-policy destination <cr>    # observed_connections-006226
+(config-vrf-af)# default route-replicate-distance from unicast <cr>    # observed_connections-006233
+(config-vrf-af)# default snmp context <cr>    # observed_connections-006203
+(config-vrf-af)# default snmp context <string> community <string> <cr>    # observed_connections-006278
+(config-vrf-af)# default snmp context <string> user <string> <cr>    # observed_connections-006277
+(config-vrf-af)# default topology base <cr>    # observed_connections-006194
+(config-vrf-af)# default topology-accounting <cr>    # observed_connections-006179
+(config-vrf-af)# evpn-mcast <?ipv4orv6_addr_action@555589cd5678> <cr>    # observed_connections-006284
+(config-vrf-af)# exit-address-family <cr>    # observed_connections-006170
+(config-vrf-af)# export map <string> <cr>    # observed_connections-006198
+(config-vrf-af)# help <cr>    # observed_connections-006169
+(config-vrf-af)# import map <string> <cr>    # observed_connections-006199
+(config-vrf-af)# inter-as-hybrid <cr>    # observed_connections-006173
+(config-vrf-af)# maximum routes <cr>    # observed_connections-006186
+(config-vrf-af)# mdt auto-discovery pim <cr>    # observed_connections-006224
+(config-vrf-af)# mdt auto-discovery receiver-site <cr>    # observed_connections-006221
+(config-vrf-af)# mdt data <address> <address> <cr>    # observed_connections-006256
+(config-vrf-af)# mdt data <cr>    # observed_connections-006192
+(config-vrf-af)# mdt data threshold <number:1..4294967> <cr>    # observed_connections-006255
+(config-vrf-af)# mdt default <address> <cr>    # observed_connections-006210
+(config-vrf-af)# mdt default bier <cr>    # observed_connections-006213
+(config-vrf-af)# mdt default ingress-replication <cr>    # observed_connections-006217
+(config-vrf-af)# mdt default mpls mldp <address> <cr>    # observed_connections-006266
+(config-vrf-af)# mdt default mpls mldp p2mp <cr>    # observed_connections-006265
+(config-vrf-af)# mdt default vxlan <?ipv4orv6_addr_action@555589cd7878> <cr>    # observed_connections-006286
+(config-vrf-af)# mdt direct <cr>    # observed_connections-006184
+(config-vrf-af)# mdt log-reuse <cr>    # observed_connections-006191
+(config-vrf-af)# mdt mode gre <cr>    # observed_connections-006212
+(config-vrf-af)# mdt mtu <cr>    # observed_connections-006185
+(config-vrf-af)# mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-006252
+(config-vrf-af)# mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-006254
+(config-vrf-af)# mdt overlay use-bgp <cr>    # observed_connections-006220
+(config-vrf-af)# mdt partitioned ingress-replication <cr>    # observed_connections-006216
+(config-vrf-af)# mdt partitioned mldp p2mp <cr>    # observed_connections-006240
+(config-vrf-af)# mdt preference pim <cr>    # observed_connections-006219
+(config-vrf-af)# mdt strict-rpf interface <cr>    # observed_connections-006208
+(config-vrf-af)# no bgp next-hop <cr>    # observed_connections-006207
+(config-vrf-af)# no context <cr>    # observed_connections-006180
+(config-vrf-af)# no exit-address-family <cr>    # observed_connections-006176
+(config-vrf-af)# no export map <string> <cr>    # observed_connections-006227
+(config-vrf-af)# no help <cr>    # observed_connections-006174
+(config-vrf-af)# no import map <string> <cr>    # observed_connections-006228
+(config-vrf-af)# no inter-as-hybrid <cr>    # observed_connections-006188
+(config-vrf-af)# no maximum routes <cr>    # observed_connections-006201
+(config-vrf-af)# no mdt auto-discovery pim <cr>    # observed_connections-006257
+(config-vrf-af)# no mdt auto-discovery receiver-site <cr>    # observed_connections-006251
+(config-vrf-af)# no mdt data <address> <address> <cr>    # observed_connections-006272
+(config-vrf-af)# no mdt data <cr>    # observed_connections-006222
+(config-vrf-af)# no mdt data threshold <number:1..4294967> <cr>    # observed_connections-006270
+(config-vrf-af)# no mdt default <address> <cr>    # observed_connections-006236
+(config-vrf-af)# no mdt default bier <cr>    # observed_connections-006239
+(config-vrf-af)# no mdt default ingress-replication <cr>    # observed_connections-006242
+(config-vrf-af)# no mdt default mpls mldp <address> <cr>    # observed_connections-006281
+(config-vrf-af)# no mdt default mpls mldp p2mp <cr>    # observed_connections-006279
+(config-vrf-af)# no mdt direct <cr>    # observed_connections-006197
+(config-vrf-af)# no mdt log-reuse <cr>    # observed_connections-006214
+(config-vrf-af)# no mdt mode gre <cr>    # observed_connections-006238
+(config-vrf-af)# no mdt mtu <cr>    # observed_connections-006200
+(config-vrf-af)# no mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-006267
+(config-vrf-af)# no mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-006269
+(config-vrf-af)# no mdt overlay use-bgp <cr>    # observed_connections-006249
+(config-vrf-af)# no mdt partitioned ingress-replication <cr>    # observed_connections-006241
+(config-vrf-af)# no mdt partitioned mldp p2mp <cr>    # observed_connections-006263
+(config-vrf-af)# no mdt preference pim <cr>    # observed_connections-006247
+(config-vrf-af)# no mdt strict-rpf interface <cr>    # observed_connections-006234
+(config-vrf-af)# no protection local-prefixes <cr>    # observed_connections-006211
+(config-vrf-af)# no route-replicate from unicast all <cr>    # observed_connections-006259
+(config-vrf-af)# no route-replicate recursion-policy destination <cr>    # observed_connections-006225
+(config-vrf-af)# no route-replicate-distance from unicast <cr>    # observed_connections-006229
+(config-vrf-af)# no snmp context <cr>    # observed_connections-006196
+(config-vrf-af)# no snmp context <string> community <string> <cr>    # observed_connections-006276
+(config-vrf-af)# no snmp context <string> user <string> <cr>    # observed_connections-006275
+(config-vrf-af)# no topology base <cr>    # observed_connections-006193
+(config-vrf-af)# no topology-accounting <cr>    # observed_connections-006177
+(config-vrf-af)# protection local-prefixes <cr>    # observed_connections-006190
+(config-vrf-af)# route-replicate from unicast all <cr>    # observed_connections-006232
+(config-vrf-af)# route-replicate recursion-policy destination <cr>    # observed_connections-006195
+(config-vrf-af)# route-replicate-distance from unicast <cr>    # observed_connections-006202
+(config-vrf-af)# route-target <?bgp_extcomm_action@555589568bc0> <cr>    # observed_connections-006283
+(config-vrf-af)# route-target <?bgp_extcomm_action@555589568bc0> stitching <cr>    # observed_connections-006285
+(config-vrf-af)# snmp context <cr>    # observed_connections-006183
+(config-vrf-af)# snmp context <string> community <string> <cr>    # observed_connections-006262
+(config-vrf-af)# snmp context <string> user <string> <cr>    # observed_connections-006261
+(config-vrf-af)# topology base <cr>    # observed_connections-006181
+(config-vrf-af)# topology-accounting <cr>    # observed_connections-006171

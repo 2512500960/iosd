@@ -1,0 +1,29 @@
+# 模式 sd-service-controller；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-sd-service-controller)# address <address> <address> <cr>    # observed_connections-008451
+(config-sd-service-controller)# address <address> <cr>    # observed_connections-008440
+(config-sd-service-controller)# authentication-mode thousandeyes <cr>    # observed_connections-008432
+(config-sd-service-controller)# authentication-token <string> <cr>    # observed_connections-008433
+(config-sd-service-controller)# destination-ports application-updates <number:1..65535> <cr>    # observed_connections-008446
+(config-sd-service-controller)# destination-ports sensor-exporter <number:1..65535> <cr>    # observed_connections-008448
+(config-sd-service-controller)# dscp <number:0..63> <cr>    # observed_connections-008435
+(config-sd-service-controller)# exit <cr>    # observed_connections-008430
+(config-sd-service-controller)# hostname <string> <cr>    # observed_connections-008439
+(config-sd-service-controller)# hostname <string> <string> <cr>    # observed_connections-008450
+(config-sd-service-controller)# no address <cr>    # observed_connections-008437
+(config-sd-service-controller)# no authentication-mode thousandeyes <cr>    # observed_connections-008442
+(config-sd-service-controller)# no authentication-token <string> <cr>    # observed_connections-008444
+(config-sd-service-controller)# no destination-ports application-updates <cr>    # observed_connections-008447
+(config-sd-service-controller)# no destination-ports sensor-exporter <cr>    # observed_connections-008449
+(config-sd-service-controller)# no dscp <cr>    # observed_connections-008436
+(config-sd-service-controller)# no hostname <cr>    # observed_connections-008438
+(config-sd-service-controller)# no source-interface <cr>    # observed_connections-008434
+(config-sd-service-controller)# no transport application-updates <cr>    # observed_connections-008443
+(config-sd-service-controller)# no transport sensor-exporter udp <cr>    # observed_connections-008452
+(config-sd-service-controller)# no vrf <cr>    # observed_connections-008431
+(config-sd-service-controller)# source-interface <interface> <cr>    # observed_connections-008454
+(config-sd-service-controller)# transport application-updates http <cr>    # observed_connections-008445
+(config-sd-service-controller)# transport sensor-exporter udp <cr>    # observed_connections-008441
+(config-sd-service-controller)# vrf <string> <cr>    # observed_connections-008453

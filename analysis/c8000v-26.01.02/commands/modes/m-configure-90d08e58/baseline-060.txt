@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-060.md
+
+(config)# do-exec terminal default flowcontrol software <cr>    # path-035559
+(config)# do-exec terminal default flush-at-activation <cr>    # path-028427
+(config)# do-exec terminal default full-help <cr>    # path-028426
+(config)# do-exec terminal default history <cr>    # path-028366
+(config)# do-exec terminal default history size <cr>    # path-028332
+(config)# do-exec terminal default hold-character <cr>    # path-028900
+(config)# do-exec terminal default insecure <cr>    # path-028840
+(config)# do-exec terminal default international <cr>    # path-028393
+(config)# do-exec terminal default ip netmask-format hexadecimal <cr>    # path-044465
+(config)# do-exec terminal default ip tcp input-coalesce-threshold <cr>    # path-034759
+(config)# do-exec terminal default ipv6 access-class <string> out <cr>    # path-052388
+(config)# do-exec terminal default ipv6 format scoped_help-string <cr>    # path-044019
+(config)# do-exec terminal default length <cr>    # path-028344
+(config)# do-exec terminal default location <cr>    # path-028151
+(config)# do-exec terminal default lockable <cr>    # path-028555
+(config)# do-exec terminal default logging synchronous <cr>    # path-034734
+(config)# do-exec terminal default login <cr>    # path-028753
+(config)# do-exec terminal default login authentication <cr>    # path-034864
+(config)# do-exec terminal default logout-warning <cr>    # path-028674
+(config)# do-exec terminal default modem answer-timeout <cr>    # path-034975
+(config)# do-exec terminal default modem autoconfigure <cr>    # path-035722
+(config)# do-exec terminal default modem busyout <cr>    # path-035596
+(config)# do-exec terminal default modem callin <cr>    # path-034951
+(config)# do-exec terminal default modem dtr-delay <cr>    # path-034972
+(config)# do-exec terminal default monitor <cr>    # path-028503
+(config)# do-exec terminal default motd-banner <cr>    # path-028165
+(config)# do-exec terminal default notify <cr>    # path-028302
+(config)# do-exec terminal default ntp pps-discipline <cr>    # path-034700
+(config)# do-exec terminal default ntp refclock <cr>    # path-034540
+(config)# do-exec terminal default parity <cr>    # path-028901
+(config)# do-exec terminal default password <cr>    # path-028439
+(config)# do-exec terminal default prc expose <cr>    # path-034144
+(config)# do-exec terminal default prc hide <cr>    # path-034171
+(config)# do-exec terminal default private <cr>    # path-028783
+(config)# do-exec terminal default privilege level <cr>    # path-028230
+(config)# do-exec terminal default refuse-message <cr>    # path-028750
+(config)# do-exec terminal default rotary <cr>    # path-028858
+(config)# do-exec terminal default rxspeed <cr>    # path-026811
+(config)# do-exec terminal default script activation <cr>    # path-034778
+(config)# do-exec terminal default script arap-callback <cr>    # path-034866
+(config)# do-exec terminal default script callback <cr>    # path-034923
+(config)# do-exec terminal default script connection <cr>    # path-034659
+(config)# do-exec terminal default script dialer <cr>    # path-034695
+(config)# do-exec terminal default script modem-off-hook <cr>    # path-034822
+(config)# do-exec terminal default script reset <cr>    # path-034737
+(config)# do-exec terminal default script startup <cr>    # path-034629
+(config)# do-exec terminal default session-disconnect-warning <cr>    # path-028802
+(config)# do-exec terminal default session-limit <cr>    # path-028857
+(config)# do-exec terminal default session-timeout <cr>    # path-028113
+(config)# do-exec terminal default shell <cr>    # path-028170
+(config)# do-exec terminal default special-character-bits <cr>    # path-026338
+(config)# do-exec terminal default speed <cr>    # path-029086
+(config)# do-exec terminal default start-character <cr>    # path-029005
+(config)# do-exec terminal default stop-character <cr>    # path-029047
+(config)# do-exec terminal default stopbits <cr>    # path-028950
+(config)# do-exec terminal default telnet break-on-ip <cr>    # path-034709
+(config)# do-exec terminal default terminal-type <cr>    # path-028112
+(config)# do-exec terminal default timeout login response <cr>    # path-044161
+(config)# do-exec terminal default transport <cr>    # path-028712
+(config)# do-exec terminal default txspeed <cr>    # path-026825
+(config)# do-exec terminal default vacant-message <cr>    # path-028675
+(config)# do-exec terminal default width <cr>    # path-028342
+(config)# do-exec terminal default x25 address <cr>    # path-034696
+(config)# do-exec terminal default x25 subaddress <cr>    # path-034597
+(config)# do-exec terminal default x25 subscribe cug-service <cr>    # path-044460
+(config)# do-exec terminal default x25 subscribe local-cug <number:0..9999> <cr>    # path-052404
+(config)# do-exec terminal disconnect-character <?char_number_action@5555891b77e8> <cr>    # path-060543
+(config)# do-exec terminal dispatch-character <?char_number_action@5555891b63d0> <cr>    # path-060557
+(config)# do-exec terminal dispatch-character <cr>    # path-026733
+(config)# do-exec terminal dispatch-machine <string> <cr>    # path-028521
+(config)# do-exec terminal dispatch-timeout <number:0..4294967294> <cr>    # path-025720
+(config)# do-exec terminal domain-lookup <cr>    # path-026359
+(config)# do-exec terminal download <cr>    # path-026329
+(config)# do-exec terminal editing <cr>    # path-026463
+(config)# do-exec terminal escape-character <?char_number_action@5555896b4d68> <cr>    # path-060553
+(config)# do-exec terminal escape-character BREAK <cr>    # path-028693
+(config)# do-exec terminal escape-character DEFAULT <cr>    # path-028834
+(config)# do-exec terminal escape-character NONE <cr>    # path-028729
+(config)# do-exec terminal exec <cr>    # path-026399
+(config)# do-exec terminal exec prompt expand <cr>    # path-034236
+(config)# do-exec terminal exec prompt timestamp <cr>    # path-034275
+(config)# do-exec terminal exec-banner <cr>    # path-026330
+(config)# do-exec terminal exec-character-bits <number:7..8> <cr>    # path-028182
+(config)# do-exec terminal exec-timeout <number:0..35791> <cr>    # path-028267
+(config)# do-exec terminal exit <cr>    # path-026416
+(config)# do-exec terminal flowcontrol <?test_line_action@5555896d7c70> <cr>    # path-060595
+(config)# do-exec terminal flowcontrol software <cr>    # path-029406
+(config)# do-exec terminal flush-at-activation <cr>    # path-026508
+(config)# do-exec terminal full-help <cr>    # path-026507
+(config)# do-exec terminal history <cr>    # path-026470
+(config)# do-exec terminal history size <number:0..256> <cr>    # path-026439
+(config)# do-exec terminal hold-character <?char_number_action@5555891b67f8> <cr>    # path-060555
+(config)# do-exec terminal insecure <cr>    # path-026723
+(config)# do-exec terminal international <cr>    # path-026487
+(config)# do-exec terminal ip netmask-format hexadecimal <cr>    # path-034701
+(config)# do-exec terminal ip tcp input-coalesce-threshold <number:5..255> <cr>    # path-028651
+(config)# do-exec terminal ipv6 access-class <string> out <cr>    # path-044415
+(config)# do-exec terminal ipv6 format scoped_help-string <cr>    # path-034193
+(config)# do-exec terminal length <number:0..512> <cr>    # path-028295
+(config)# do-exec terminal location <string> <cr>    # path-028133
+(config)# do-exec terminal lockable <cr>    # path-026595
+(config)# do-exec terminal logging synchronous <cr>    # path-028710
+(config)# do-exec terminal login <cr>    # path-026689
+(config)# do-exec terminal login authentication <cr>    # path-028864
+(config)# do-exec terminal logout-warning <number:0..4294967295> <cr>    # path-028654
+(config)# do-exec terminal modem answer-timeout <number:0..65535> <cr>    # path-034888
+(config)# do-exec terminal modem autoconfigure discovery <cr>    # path-035882
+(config)# do-exec terminal modem autoconfigure type <string> <cr>    # path-045223
+(config)# do-exec terminal modem busyout <cr>    # path-029435
+(config)# do-exec terminal modem callin <cr>    # path-028826
+(config)# do-exec terminal modem dtr-delay <number:0..65535> <cr>    # path-034946
+(config)# do-exec terminal monitor <cr>    # path-026565
+(config)# do-exec terminal motd-banner <cr>    # path-026331
+(config)# do-exec terminal no absolute-timeout <cr>    # path-028676
+(config)# do-exec terminal no access-class out <cr>    # path-034258
+(config)# do-exec terminal no accounting resource <cr>    # path-034782
+(config)# do-exec terminal no activation-character <cr>    # path-028510
+(config)# do-exec terminal no authorization reverse-access <cr>    # path-034740
+(config)# do-exec terminal no autobaud <cr>    # path-028605
+(config)# do-exec terminal no autocommand <cr>    # path-028861
+(config)# do-exec terminal no autocommand-options <cr>    # path-028904
+(config)# do-exec terminal no autohangup <cr>    # path-028670
+(config)# do-exec terminal no autohangup session-timeout <cr>    # path-034710
+(config)# do-exec terminal no autohost <cr>    # path-028706
+(config)# do-exec terminal no autoselect <cr>    # path-028807
+(config)# do-exec terminal no autoselect arap <cr>    # path-034640
+(config)# do-exec terminal no buffer-length <cr>    # path-026479
+(config)# do-exec terminal no data-character-bits <cr>    # path-026284
+(config)# do-exec terminal no databits <cr>    # path-028863
+(config)# do-exec terminal no disconnect-character <cr>    # path-028541
+(config)# do-exec terminal no dispatch-character <cr>    # path-028803
+(config)# do-exec terminal no dispatch-machine <cr>    # path-028511
+(config)# do-exec terminal no dispatch-timeout <cr>    # path-026663
+(config)# do-exec terminal no domain-lookup <cr>    # path-028191
+(config)# do-exec terminal no download <cr>    # path-028139
+(config)# do-exec terminal no editing <cr>    # path-028333
+(config)# do-exec terminal no escape-character <cr>    # path-028678
+(config)# do-exec terminal no exec <cr>    # path-028242
+(config)# do-exec terminal no exec prompt expand <cr>    # path-044033
+(config)# do-exec terminal no exec prompt timestamp <cr>    # path-044070
+(config)# do-exec terminal no exec-banner <cr>    # path-028140
+(config)# do-exec terminal no exec-character-bits <cr>    # path-028173
+(config)# do-exec terminal no exec-timeout <cr>    # path-028215
+(config)# do-exec terminal no flowcontrol software <cr>    # path-035499
+(config)# do-exec terminal no flush-at-activation <cr>    # path-028395
+(config)# do-exec terminal no full-help <cr>    # path-028394
+(config)# do-exec terminal no history <cr>    # path-028338
+(config)# do-exec terminal no history size <cr>    # path-028303
+(config)# do-exec terminal no hold-character <cr>    # path-028859
+(config)# do-exec terminal no insecure <cr>    # path-028784
+(config)# do-exec terminal no international <cr>    # path-028361
+(config)# do-exec terminal no ip netmask-format hexadecimal <cr>    # path-044437
+(config)# do-exec terminal no ip tcp input-coalesce-threshold <cr>    # path-034719
+(config)# do-exec terminal no ipv6 access-class <string> out <cr>    # path-052362
+(config)# do-exec terminal no ipv6 format scoped_help-string <cr>    # path-044000
+(config)# do-exec terminal no length <cr>    # path-028313
+(config)# do-exec terminal no location <cr>    # path-028114
+(config)# do-exec terminal no lockable <cr>    # path-028528
+(config)# do-exec terminal no logging synchronous <cr>    # path-034694
+(config)# do-exec terminal no login <cr>    # path-028709
+(config)# do-exec terminal no login authentication <cr>    # path-034820
+(config)# do-exec terminal no logout-warning <cr>    # path-028642
+(config)# do-exec terminal no modem answer-timeout <cr>    # path-034924
+(config)# do-exec terminal no modem autoconfigure <cr>    # path-035666
+(config)# do-exec terminal no modem busyout <cr>    # path-035539
+(config)# do-exec terminal no modem callin <cr>    # path-034897
+(config)# do-exec terminal no modem dtr-delay <cr>    # path-034922
+(config)# do-exec terminal no monitor <cr>    # path-028477
+(config)# do-exec terminal no motd-banner <cr>    # path-028141
+(config)# do-exec terminal no notify <cr>    # path-028261
+(config)# do-exec terminal no ntp pps-discipline <cr>    # path-034663
+(config)# do-exec terminal no ntp refclock <cr>    # path-034498
+(config)# do-exec terminal no parity <cr>    # path-028860
+(config)# do-exec terminal no password <cr>    # path-028405
+(config)# do-exec terminal no prc expose <cr>    # path-034127
+(config)# do-exec terminal no prc hide <cr>    # path-034149
+(config)# do-exec terminal no private <cr>    # path-028737
+(config)# do-exec terminal no privilege level <cr>    # path-028207
+(config)# do-exec terminal no refuse-message <cr>    # path-028707
+(config)# do-exec terminal no rotary <cr>    # path-028805
+(config)# do-exec terminal no rxspeed <cr>    # path-026796
+(config)# do-exec terminal no script activation <cr>    # path-034738
+(config)# do-exec terminal no script arap-callback <cr>    # path-034823
+(config)# do-exec terminal no script callback <cr>    # path-034867
+(config)# do-exec terminal no script connection <cr>    # path-034630
+(config)# do-exec terminal no script dialer <cr>    # path-034660
+(config)# do-exec terminal no script modem-off-hook <cr>    # path-034779
+(config)# do-exec terminal no script reset <cr>    # path-034697
+(config)# do-exec terminal no script startup <cr>    # path-034598
+(config)# do-exec terminal no session-disconnect-warning <cr>    # path-028751
+(config)# do-exec terminal no session-limit <cr>    # path-028804
+(config)# do-exec terminal no session-timeout <cr>    # path-028079
+(config)# do-exec terminal no shell <cr>    # path-028147
+(config)# do-exec terminal no special-character-bits <cr>    # path-026320
+(config)# do-exec terminal no speed <cr>    # path-029048
+(config)# do-exec terminal no start-character <cr>    # path-028952
+(config)# do-exec terminal no stop-character <cr>    # path-029006
+(config)# do-exec terminal no stopbits <cr>    # path-028903
+(config)# do-exec terminal no telnet break-on-ip <cr>    # path-034671
+(config)# do-exec terminal no terminal-type <cr>    # path-028078
+(config)# do-exec terminal no timeout login response <cr>    # path-044132
+(config)# do-exec terminal no transport <cr>    # path-028679
+(config)# do-exec terminal no txspeed <cr>    # path-026812
+(config)# do-exec terminal no vacant-message <cr>    # path-028643
+(config)# do-exec terminal no width <cr>    # path-028312
+(config)# do-exec terminal no x25 address <cr>    # path-034661
+(config)# do-exec terminal no x25 subaddress <cr>    # path-034567
+(config)# do-exec terminal no x25 subscribe cug-service <cr>    # path-044435
+(config)# do-exec terminal no x25 subscribe local-cug <number:0..9999> <cr>    # path-052377
+(config)# do-exec terminal notify <cr>    # path-026415
+(config)# do-exec terminal ntp pps-discipline dcd <cr>    # path-034925
+(config)# do-exec terminal ntp refclock pps none <cr>    # path-044555
+(config)# do-exec terminal padding <?char_number_action@5555896d59f8> <cr>    # path-060552
+(config)# do-exec terminal parity none <cr>    # path-028814
+(config)# do-exec terminal password <string> <cr>    # path-028584
+(config)# do-exec terminal prc expose <cr>    # path-028091
+(config)# do-exec terminal prc hide <cr>    # path-028132
+(config)# do-exec terminal private <cr>    # path-026703
+(config)# do-exec terminal privilege level <number:0..15> <cr>    # path-026370
+(config)# do-exec terminal refuse-message <string> <cr>    # path-028725
+(config)# do-exec terminal rotary <number:1..99> <cr>    # path-029008
+(config)# do-exec terminal rxspeed <number:0..4294967295> <cr>    # path-025755
+(config)# do-exec terminal script activation <string> <cr>    # path-034762
+(config)# do-exec terminal script arap-callback <string> <cr>    # path-034843
+(config)# do-exec terminal script callback <string> <cr>    # path-034890
+(config)# do-exec terminal script connection <string> <cr>    # path-034643
+(config)# do-exec terminal script dialer <string> <cr>    # path-034680
+(config)# do-exec terminal script modem-off-hook <string> <cr>    # path-034802
+(config)# do-exec terminal script reset <string> <cr>    # path-034722
+(config)# do-exec terminal script startup <string> <cr>    # path-034616
+(config)# do-exec terminal session-disconnect-warning <number:0..4294967295> <cr>    # path-028845
+(config)# do-exec terminal session-limit <number:0..4294967295> <cr>    # path-028823
+(config)# do-exec terminal session-timeout <number:0..35791> <cr>    # path-028145
+(config)# do-exec terminal shell <cr>    # path-026335
+(config)# do-exec terminal special-character-bits <number:7..8> <cr>    # path-025626
+(config)# do-exec terminal speed <number:0..4294967295> <cr>    # path-029115
+(config)# do-exec terminal start-character <?char_number_action@5555896d6c58> <cr>    # path-060560
+(config)# do-exec terminal stop-character <?char_number_action@5555896d6fa8> <cr>    # path-060563
+(config)# do-exec terminal stopbits 1 <cr>    # path-028925
+(config)# do-exec terminal telnet break-on-ip <cr>    # path-028610
+(config)# do-exec terminal terminal-type <string> <cr>    # path-028100
+(config)# do-exec terminal timeout login response <number:1..300> <cr>    # path-044150
+(config)# do-exec terminal transport <?transport_action@5555896dc658> <cr>    # path-060549
+(config)# do-exec terminal txspeed <number:0..4294967295> <cr>    # path-025761
+(config)# do-exec terminal vacant-message <cr>    # path-026675
+(config)# do-exec terminal width <number:0..512> <cr>    # path-028327
+(config)# do-exec terminal x25 address <address> <cr>    # path-034681
+(config)# do-exec terminal x25 subaddress line <cr>    # path-034624
+(config)# do-exec terminal x25 subscribe cug-service <cr>    # path-034699
+(config)# do-exec terminal x25 subscribe local-cug <number:0..9999> network-cug <number:0..9999> <cr>    # path-056986
+(config)# do-exec test <interface> subinterface <cr>    # path-060697
+(config)# do-exec test aaa accounting giga <number:0..4294967295> <cr>    # path-044169
+(config)# do-exec test aaa accounting init <cr>    # path-034405
+(config)# do-exec test aaa accounting inject <number:0..4294967295> <number:0..4294967295> <cr>    # path-052162
+(config)# do-exec test aaa accounting service auth-proxy <string> <string> <cr>    # path-057011
+(config)# do-exec test aaa authentication abort <cr>    # path-034400
+(config)# do-exec test aaa authentication attrlist <string> <cr>    # path-044761
+(config)# do-exec test aaa authorization attrlist <string> <cr>    # path-044670
+(config)# do-exec test aaa group diameter dcca <number:0..99> <cr>    # path-052345
+(config)# do-exec test aaa radius inject <string> <cr>    # path-044108
+(config)# do-exec test aaa stop <cr>    # path-028450
+(config)# do-exec test adj complete <interface> <address> link ipv4 connectionid <cr>    # path-062488
+(config)# do-exec test adj disable <cr>    # path-028813
+(config)# do-exec test adj epoch begin <cr>    # path-035505
+(config)# do-exec test adj offset <cr>    # path-028877
+(config)# do-exec test adj sev enable <cr>    # path-035062
+(config)# do-exec test adj sev epoch <number:0..4294967295> <cr>    # path-044853
+(config)# do-exec test adj sev oneshot <cr>    # path-035108
+(config)# do-exec test ancp <cr>    # path-026793
+(config)# do-exec test ancp adjacency <interface> <number:1..4> <number:1..4> <cr>    # path-061870
+(config)# do-exec test ancp ping response interface <interface> port <string> result <number:0..1> code <number:1280..1289> <cr>    # path-062674
+(config)# do-exec test ancp port down <interface> <number:1..6> <number:2..3> <string> <cr>    # path-062474
+(config)# do-exec test ancp port up <interface> <cr>    # path-061259
+(config)# do-exec test ancp port up <interface> name <string> <string> <string> <cr>    # path-062595
+(config)# do-exec test application add app <string> ip <prefix:dynamic> <cr>    # path-062353
+(config)# do-exec test application init <cr>    # path-030896
+(config)# do-exec test arp_retry add <address> <cr>    # path-035444
+(config)# do-exec test arp_retry add <address> <interface> <number:0..2> <cr>    # path-061881
+(config)# do-exec test autoip fail control <cr>    # path-038051
+(config)# do-exec test autoip fail noncontrol <cr>    # path-038086
+(config)# do-exec test autoip start <cr>    # path-030970
+(config)# do-exec test autoip stop <cr>    # path-031001
+(config)# do-exec test autoip success control <cr>    # path-038017
+(config)# do-exec test autoip success noncontrol <cr>    # path-038054
+(config)# do-exec test avc sd-service auto-config is-bypass no <cr>    # path-054126
+(config)# do-exec test avc sd-service auto-config is-bypass yes <cr>    # path-054158
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes cdp no <cr>    # path-057877
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes cdp yes <cr>    # path-057892
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv4 no <cr>    # path-057898
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv4 yes <cr>    # path-057910
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv6 no <cr>    # path-057907
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv6 yes <cr>    # path-057918
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes lldp no <cr>    # path-057890
+(config)# do-exec test avc sd-service auto-config override-non-nbar-probes lldp yes <cr>    # path-057900
+(config)# do-exec test avc sd-service auto-config trigger <cr>    # path-046799
+(config)# do-exec test avc sd-service clear-all-export-caches <cr>    # path-037399
+(config)# do-exec test avc sd-service cloud-config load <url:dynamic> <cr>    # path-061979
+(config)# do-exec test avc sd-service cloud-config unload <cr>    # path-046685
+(config)# do-exec test avc sd-service cmds load <url:dynamic> <cr>    # path-061939
+(config)# do-exec test avc sd-service config-file load <url:dynamic> <cr>    # path-061941
+(config)# do-exec test avc sd-service custom-id set <string> <cr>    # path-053801
+(config)# do-exec test avc sd-service device-table-set-seq <number:0..65535> <cr>    # path-047051
+(config)# do-exec test avc sd-service ent device-health export trigger <cr>    # path-057717
+(config)# do-exec test avc sd-service ent disable <cr>    # path-046326
+(config)# do-exec test avc sd-service ent enable <cr>    # path-046276
+(config)# do-exec test avc sd-service ent export clear <cr>    # path-054074
+(config)# do-exec test avc sd-service ent export dump <cr>    # path-054046
+(config)# do-exec test avc sd-service ent export interfaces-db <cr>    # path-054003
+(config)# do-exec test avc sd-service ent export load <url:dynamic> <cr>    # path-062321
+(config)# do-exec test avc sd-service ent export protocols-db <cr>    # path-054015
+(config)# do-exec test avc sd-service ent export protocols-db size <cr>    # path-057747
+(config)# do-exec test avc sd-service ent export trigger <cr>    # path-053843
+(config)# do-exec test avc sd-service ent load <url:dynamic> <cr>    # path-061961
+(config)# do-exec test avc sd-service ent unload <cr>    # path-046446
+(config)# do-exec test avc sd-service flow-counters disable <cr>    # path-046972
+(config)# do-exec test avc sd-service flow-counters enable <cr>    # path-046945
+(config)# do-exec test avc sd-service force-using-binos-process no <cr>    # path-047109
+(config)# do-exec test avc sd-service force-using-binos-process yes <cr>    # path-047080
+(config)# do-exec test avc sd-service ftp-private-ip <string> <cr>    # path-046881
+(config)# do-exec test avc sd-service load-telemetry <cr>    # path-037107
+(config)# do-exec test avc sd-service opaque-json get <cr>    # path-046439
+(config)# do-exec test avc sd-service opaque-json set <url:dynamic> <cr>    # path-061960
+(config)# do-exec test avc sd-service packets-tx send payload-length <number:1..8192> packets-num <number:1..10000000> <cr>    # path-059829
+(config)# do-exec test avc sd-service permit-apps disable <cr>    # path-047055
+(config)# do-exec test avc sd-service permit-apps enable <cr>    # path-047018
+(config)# do-exec test avc sd-service persistency no <cr>    # path-046912
+(config)# do-exec test avc sd-service persistency yes <cr>    # path-046949
+(config)# do-exec test avc sd-service ppack-mode allow <cr>    # path-046878
+(config)# do-exec test avc sd-service ppack-mode disallow <cr>    # path-046914
+(config)# do-exec test avc sd-service rules-pack-file <url:dynamic> <cr>    # path-061368
+(config)# do-exec test avc sd-service scheduled-export debug-header length <number:0..4096> <cr>    # path-057878
+(config)# do-exec test avc sd-service scheduled-export is-bypass no <cr>    # path-054088
+(config)# do-exec test avc sd-service scheduled-export is-bypass yes <cr>    # path-054114
+(config)# do-exec test avc sd-service scheduled-export rate-control Disable <cr>    # path-054160
+(config)# do-exec test avc sd-service scheduled-export rate-control Enable <cr>    # path-054131
+(config)# do-exec test avc sd-service scheduled-export transport http <cr>    # path-054109
+(config)# do-exec test avc sd-service scheduled-export transport udp <cr>    # path-054137
+(config)# do-exec test avc sd-service scheduled-export trigger <cr>    # path-046716
+(config)# do-exec test avc sd-service scheduled-import is-bypass no <cr>    # path-054108
+(config)# do-exec test avc sd-service scheduled-import is-bypass yes <cr>    # path-054136
+(config)# do-exec test avc sd-service scheduled-import time-to-keep-files <number:0..10000000> <cr>    # path-054130
+(config)# do-exec test avc sd-service scheduled-import trigger <cr>    # path-046760
+(config)# do-exec test avc sd-service send-to-binos <url:dynamic> <cr>    # path-061444
+(config)# do-exec test avc sd-service telemetry off <cr>    # path-046638
+(config)# do-exec test avc sd-service telemetry on <cr>    # path-046584
+(config)# do-exec test avc sd-service testbench <cr>    # path-037596
+(config)# do-exec test avc sd-service tls-fp disable <cr>    # path-046386
+(config)# do-exec test avc sd-service tls-fp enable <cr>    # path-046317
+(config)# do-exec test avc sd-service tls-fp load <url:dynamic> default_mode <cr>    # path-062320
+(config)# do-exec test avc sd-service tls-fp load <url:dynamic> nbar_cls_mode <cr>    # path-062317
+(config)# do-exec test avc sd-service tls-fp unload <cr>    # path-046494
+(config)# do-exec test avc sd-service unclassified-domains disable <cr>    # path-046994
+(config)# do-exec test avc sd-service unclassified-domains enable <cr>    # path-046969
+(config)# do-exec test avc sd-service unclassified-domains local disable <cr>    # path-054272
+(config)# do-exec test avc sd-service unclassified-domains local enable <cr>    # path-054257
+(config)# do-exec test avc sd-service upload-file <url:dynamic> <cr>    # path-061390
+(config)# do-exec test beep basic <string> <cr>    # path-039438
+(config)# do-exec test beep basic <string> log <url:dynamic> <cr>    # path-062051
+(config)# do-exec test beep raw bing data <cr>    # path-048333
+(config)# do-exec test bridge-domain api vni <cr>    # path-035130
+(config)# do-exec test bridge-domain ipc all-slots <cr>    # path-034928
+(config)# do-exec test bridge-domain mst <interface> <number:1..16384> <number:1..16384> <number:0..1> <cr>    # path-062257
+(config)# do-exec test bridge-domain other <cr>    # path-028982
+(config)# do-exec test bridge-domain pw-reconciliation pp peer <address> <number:1..4294967295> <cr>    # path-057031
+(config)# do-exec test bridge-domain pw-reconciliation static-mac peer <address> <number:1..4294967295> <cr>    # path-057043
+(config)# do-exec test bridge-domain tcn receive <number:1..4096> <cr>    # path-044902
+(config)# do-exec test bridge-domain tcn receive <number:1..4096> <hex-data> <cr>    # path-061878
+(config)# do-exec test buffer get <string> <string> <number:0..4294967294> <cr>    # path-054332
+(config)# do-exec test buffer return <?general_pointer_number_action@55558943f8e8> <cr>    # path-060944
+(config)# do-exec test buffer transfer <string> <?general_pointer_number_action@55558943f618> <cr>    # path-061458
+(config)# do-exec test buffer tuning elements <cr>    # path-038018
+(config)# do-exec test buffer tuning pool <string> <cr>    # path-047379
+(config)# do-exec test c3pl stop <cr>    # path-028225
+(config)# do-exec test cce <cr>    # path-027014
+(config)# do-exec test cdna register <string> <number:0..4294967295> <cr>    # path-044259
+(config)# do-exec test cdna release <string> <cr>    # path-034551
+(config)# do-exec test cdna request <string> <cr>    # path-034513
+(config)# do-exec test cdna reset <cr>    # path-028496
+(config)# do-exec test cef <?dumper_command_func@555588cac488> broker ipv4_p1 normal <cr>    # path-061936
+(config)# do-exec test cef <?dumper_command_func@555588cac488> epoch begin ipv4 <cr>    # path-061931
+(config)# do-exec test cef <?dumper_command_func@555588cac488> frr <interface> state <cr>    # path-062860
+(config)# do-exec test cef <?dumper_command_func@555588cac488> load kill <cr>    # path-061319
+(config)# do-exec test cef <?dumper_command_func@555588cac488> loadshare disable <interface> <cr>    # path-062858
+(config)# do-exec test cef <?dumper_command_func@555588cac488> srv6 pfp classifer enable <cr>    # path-062288
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table consistency <cr>    # path-061338
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table fib-path-ext show <address> <address> <cr>    # path-062506
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table find nh-or-host prefix <address> <address> match <interface> <cr>    # path-062933
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table ndb up prefix <address> <address> <cr>    # path-062604
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route add <?option@555588cb3ac8> flags <cr>    # path-062915
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route add <?option@555588cb3ac8> path nexthop <cr>    # path-062923
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route create <string> <prefix:dynamic> <cr>    # path-062914
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route delete <?option@555588cb3428> <cr>    # path-062896
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route event <?option@555588cb57e8> insert <cr>    # path-062916
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route event override remove-all <cr>    # path-062510
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route set <?option@555588cb51b8> attribute traffic-index <number:0..64> <cr>    # path-062929
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table route show <cr>    # path-061933
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table signal-suppression Enable <cr>    # path-061926
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table signal-suppression Enable <cr>    # path-061928
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table stdby-drh <address> add <cr>    # path-062291
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table stdby-drh <address> add <cr>    # path-062294

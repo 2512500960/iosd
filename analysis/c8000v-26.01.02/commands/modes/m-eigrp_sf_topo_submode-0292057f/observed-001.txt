@@ -1,0 +1,29 @@
+# 模式 eigrp_sf_topo_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-sf-topology)# default eigrp event-log-size <cr>    # observed_connections-008857
+(config-router-sf-topology)# default eigrp event-logging <cr>    # observed_connections-008853
+(config-router-sf-topology)# default eigrp log-event-type <cr>    # observed_connections-008854
+(config-router-sf-topology)# default external-client <string> <cr>    # observed_connections-008842
+(config-router-sf-topology)# default metric maximum-hops <cr>    # observed_connections-008845
+(config-router-sf-topology)# default redistribute eigrp <number:1..65535> <cr>    # observed_connections-008860
+(config-router-sf-topology)# default redistribute maximum-service <cr>    # observed_connections-008847
+(config-router-sf-topology)# default timers active-time <cr>    # observed_connections-008851
+(config-router-sf-topology)# eigrp event-log-size <number:dynamic> <cr>    # observed_connections-008861
+(config-router-sf-topology)# eigrp event-logging <cr>    # observed_connections-008839
+(config-router-sf-topology)# eigrp log-event-type <cr>    # observed_connections-008840
+(config-router-sf-topology)# exit-sf-topology <cr>    # observed_connections-008837
+(config-router-sf-topology)# external-client <string> <cr>    # observed_connections-008838
+(config-router-sf-topology)# metric maximum-hops <number:1..255> <cr>    # observed_connections-008844
+(config-router-sf-topology)# no eigrp event-log-size <cr>    # observed_connections-008855
+(config-router-sf-topology)# no eigrp event-logging <cr>    # observed_connections-008850
+(config-router-sf-topology)# no eigrp log-event-type <cr>    # observed_connections-008852
+(config-router-sf-topology)# no external-client <string> <cr>    # observed_connections-008841
+(config-router-sf-topology)# no metric maximum-hops <cr>    # observed_connections-008843
+(config-router-sf-topology)# no redistribute eigrp <number:1..65535> <cr>    # observed_connections-008859
+(config-router-sf-topology)# no redistribute maximum-service <cr>    # observed_connections-008846
+(config-router-sf-topology)# no timers active-time <cr>    # observed_connections-008848
+(config-router-sf-topology)# redistribute eigrp <number:1..65535> <cr>    # observed_connections-008856
+(config-router-sf-topology)# redistribute maximum-service <number:1..4294967295> <cr>    # observed_connections-008858
+(config-router-sf-topology)# timers active-time disabled <cr>    # observed_connections-008849

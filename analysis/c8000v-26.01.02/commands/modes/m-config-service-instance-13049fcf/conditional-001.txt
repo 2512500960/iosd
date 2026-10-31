@@ -1,0 +1,10 @@
+# 模式 config-service-instance；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-if-srv)# default otv active-source <address> <address> <cr>    # conditional_registration_candidates-011113
+(config-if-srv)# default otv mac flood <address> <cr>    # conditional_registration_candidates-011115
+(config-if-srv)# no otv active-source <address> <address> <cr>    # conditional_registration_candidates-011112
+(config-if-srv)# no otv mac flood <address> <cr>    # conditional_registration_candidates-011114
+(config-if-srv)# otv active-source <address> <address> <cr>    # conditional_registration_candidates-011110
+(config-if-srv)# otv mac flood <address> <cr>    # conditional_registration_candidates-011111

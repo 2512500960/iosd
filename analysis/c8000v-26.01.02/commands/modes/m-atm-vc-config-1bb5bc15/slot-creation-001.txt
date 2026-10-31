@@ -1,0 +1,150 @@
+# 模式 atm-vc-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-if-atm-vc)# aaa connect-info <string> <cr>    # static_slot_creation_candidates-003106
+(config-if-atm-vc)# abr <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003155
+(config-if-atm-vc)# abr rate-factors <?keyword_option_mm_action@555588c3fdd8> <?keyword_option_mm_action@555588c3fe28> <cr>    # static_slot_creation_candidates-003159
+(config-if-atm-vc)# ancp enable <cr>    # static_slot_creation_candidates-003045
+(config-if-atm-vc)# ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003134
+(config-if-atm-vc)# bre-connect <number:dynamic> <cr>    # static_slot_creation_candidates-003142
+(config-if-atm-vc)# bridge-dot1q encap <number:dynamic> <cr>    # static_slot_creation_candidates-003148
+(config-if-atm-vc)# bridge-dot1q encap priority-tag <cr>    # static_slot_creation_candidates-003101
+(config-if-atm-vc)# bridge-vlan <number:dynamic> <cr>    # static_slot_creation_candidates-003143
+(config-if-atm-vc)# broadcast <cr>    # static_slot_creation_candidates-003015
+(config-if-atm-vc)# cac_off <cr>    # static_slot_creation_candidates-003016
+(config-if-atm-vc)# cbr <number:dynamic> <cr>    # static_slot_creation_candidates-003139
+(config-if-atm-vc)# cdvt <number:dynamic> <cr>    # static_slot_creation_candidates-003137
+(config-if-atm-vc)# class-vc <string> <cr>    # static_slot_creation_candidates-003039
+(config-if-atm-vc)# dbs enable <cr>    # static_slot_creation_candidates-003083
+(config-if-atm-vc)# default <cr>    # static_slot_creation_candidates-003025
+(config-if-atm-vc)# default aaa connect-info <cr>    # static_slot_creation_candidates-003107
+(config-if-atm-vc)# default abr rate-factors <cr>    # static_slot_creation_candidates-003099
+(config-if-atm-vc)# default ancp enable <cr>    # static_slot_creation_candidates-003104
+(config-if-atm-vc)# default ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003136
+(config-if-atm-vc)# default bre-connect <cr>    # static_slot_creation_candidates-003056
+(config-if-atm-vc)# default bridge-dot1q encap <cr>    # static_slot_creation_candidates-003098
+(config-if-atm-vc)# default bridge-vlan <cr>    # static_slot_creation_candidates-003063
+(config-if-atm-vc)# default broadcast <cr>    # static_slot_creation_candidates-003040
+(config-if-atm-vc)# default cac_off <cr>    # static_slot_creation_candidates-003046
+(config-if-atm-vc)# default cbr <cr>    # static_slot_creation_candidates-003033
+(config-if-atm-vc)# default cdvt <cr>    # static_slot_creation_candidates-003032
+(config-if-atm-vc)# default class-vc <string> <cr>    # static_slot_creation_candidates-003103
+(config-if-atm-vc)# default dbs enable <cr>    # static_slot_creation_candidates-003114
+(config-if-atm-vc)# default description <cr>    # static_slot_creation_candidates-003043
+(config-if-atm-vc)# default encapsulation <cr>    # static_slot_creation_candidates-003052
+(config-if-atm-vc)# default idle-timeout <cr>    # static_slot_creation_candidates-003075
+(config-if-atm-vc)# default ilmi manage <cr>    # static_slot_creation_candidates-003109
+(config-if-atm-vc)# default inarp <cr>    # static_slot_creation_candidates-003064
+(config-if-atm-vc)# default ip <cr>    # static_slot_creation_candidates-003069
+(config-if-atm-vc)# default max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003050
+(config-if-atm-vc)# default mid <cr>    # static_slot_creation_candidates-003060
+(config-if-atm-vc)# default multiqueue <cr>    # static_slot_creation_candidates-003070
+(config-if-atm-vc)# default oam ais-rdi <cr>    # static_slot_creation_candidates-003116
+(config-if-atm-vc)# default oam retry <cr>    # static_slot_creation_candidates-003118
+(config-if-atm-vc)# default oam retry cc end <cr>    # static_slot_creation_candidates-003130
+(config-if-atm-vc)# default oam retry cc segment <cr>    # static_slot_creation_candidates-003127
+(config-if-atm-vc)# default oam-pvc <cr>    # static_slot_creation_candidates-003082
+(config-if-atm-vc)# default oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003133
+(config-if-atm-vc)# default oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003131
+(config-if-atm-vc)# default pppoe max-sessions <cr>    # static_slot_creation_candidates-003112
+(config-if-atm-vc)# default queue-depth low-latency <cr>    # static_slot_creation_candidates-003095
+(config-if-atm-vc)# default radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003125
+(config-if-atm-vc)# default rx-limit <cr>    # static_slot_creation_candidates-003076
+(config-if-atm-vc)# default rx-speed <cr>    # static_slot_creation_candidates-003037
+(config-if-atm-vc)# default transmit-priority <cr>    # static_slot_creation_candidates-003065
+(config-if-atm-vc)# default tx-limit <cr>    # static_slot_creation_candidates-003072
+(config-if-atm-vc)# default tx-ring-limit <cr>    # static_slot_creation_candidates-003079
+(config-if-atm-vc)# default ubr <cr>    # static_slot_creation_candidates-003087
+(config-if-atm-vc)# default ubr+ <cr>    # static_slot_creation_candidates-003084
+(config-if-atm-vc)# default vbr-nrt <cr>    # static_slot_creation_candidates-003088
+(config-if-atm-vc)# default vbr-rt <cr>    # static_slot_creation_candidates-003030
+(config-if-atm-vc)# default vc-hold-queue <cr>    # static_slot_creation_candidates-003093
+(config-if-atm-vc)# default vcci <cr>    # static_slot_creation_candidates-003053
+(config-if-atm-vc)# default weight <cr>    # static_slot_creation_candidates-003035
+(config-if-atm-vc)# description <string> <cr>    # static_slot_creation_candidates-003042
+(config-if-atm-vc)# encapsulation aal5mux <?protoname_action@555588c4b230> <cr>    # static_slot_creation_candidates-003149
+(config-if-atm-vc)# encapsulation aal5mux <?protoname_action@555588c4b230> frame-relay <cr>    # static_slot_creation_candidates-003152
+(config-if-atm-vc)# encapsulation aal5snap <cr>    # static_slot_creation_candidates-003055
+(config-if-atm-vc)# idle-timeout <number:0..2000000> <cr>    # static_slot_creation_candidates-003078
+(config-if-atm-vc)# idle-timeout <number:0..2000000> <number:dynamic> <cr>    # static_slot_creation_candidates-003150
+(config-if-atm-vc)# ilmi manage <cr>    # static_slot_creation_candidates-003059
+(config-if-atm-vc)# inarp <cr>    # static_slot_creation_candidates-003019
+(config-if-atm-vc)# ip addr inarp <cr>    # static_slot_creation_candidates-003110
+(config-if-atm-vc)# max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003017
+(config-if-atm-vc)# mid <cr>    # static_slot_creation_candidates-003018
+(config-if-atm-vc)# multiqueue <cr>    # static_slot_creation_candidates-003020
+(config-if-atm-vc)# no <cr>    # static_slot_creation_candidates-003024
+(config-if-atm-vc)# no aaa connect-info <cr>    # static_slot_creation_candidates-003105
+(config-if-atm-vc)# no abr rate-factors <cr>    # static_slot_creation_candidates-003097
+(config-if-atm-vc)# no ancp enable <cr>    # static_slot_creation_candidates-003102
+(config-if-atm-vc)# no ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003135
+(config-if-atm-vc)# no bre-connect <cr>    # static_slot_creation_candidates-003054
+(config-if-atm-vc)# no bridge-dot1q encap <cr>    # static_slot_creation_candidates-003096
+(config-if-atm-vc)# no bridge-vlan <cr>    # static_slot_creation_candidates-003058
+(config-if-atm-vc)# no broadcast <cr>    # static_slot_creation_candidates-003038
+(config-if-atm-vc)# no cac_off <cr>    # static_slot_creation_candidates-003044
+(config-if-atm-vc)# no cbr <cr>    # static_slot_creation_candidates-003031
+(config-if-atm-vc)# no cdvt <cr>    # static_slot_creation_candidates-003029
+(config-if-atm-vc)# no class-vc <string> <cr>    # static_slot_creation_candidates-003100
+(config-if-atm-vc)# no dbs enable <cr>    # static_slot_creation_candidates-003113
+(config-if-atm-vc)# no description <cr>    # static_slot_creation_candidates-003041
+(config-if-atm-vc)# no encapsulation <cr>    # static_slot_creation_candidates-003048
+(config-if-atm-vc)# no idle-timeout <cr>    # static_slot_creation_candidates-003073
+(config-if-atm-vc)# no ilmi manage <cr>    # static_slot_creation_candidates-003108
+(config-if-atm-vc)# no inarp <cr>    # static_slot_creation_candidates-003061
+(config-if-atm-vc)# no ip <cr>    # static_slot_creation_candidates-003066
+(config-if-atm-vc)# no max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003047
+(config-if-atm-vc)# no mid <cr>    # static_slot_creation_candidates-003057
+(config-if-atm-vc)# no multiqueue <cr>    # static_slot_creation_candidates-003067
+(config-if-atm-vc)# no oam ais-rdi <cr>    # static_slot_creation_candidates-003115
+(config-if-atm-vc)# no oam retry <cr>    # static_slot_creation_candidates-003117
+(config-if-atm-vc)# no oam retry cc end <cr>    # static_slot_creation_candidates-003128
+(config-if-atm-vc)# no oam retry cc segment <cr>    # static_slot_creation_candidates-003126
+(config-if-atm-vc)# no oam-pvc <cr>    # static_slot_creation_candidates-003080
+(config-if-atm-vc)# no oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003132
+(config-if-atm-vc)# no oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003129
+(config-if-atm-vc)# no pppoe max-sessions <cr>    # static_slot_creation_candidates-003111
+(config-if-atm-vc)# no queue-depth low-latency <cr>    # static_slot_creation_candidates-003094
+(config-if-atm-vc)# no radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003124
+(config-if-atm-vc)# no rx-limit <cr>    # static_slot_creation_candidates-003074
+(config-if-atm-vc)# no rx-speed <cr>    # static_slot_creation_candidates-003036
+(config-if-atm-vc)# no transmit-priority <cr>    # static_slot_creation_candidates-003062
+(config-if-atm-vc)# no tx-limit <cr>    # static_slot_creation_candidates-003071
+(config-if-atm-vc)# no tx-ring-limit <cr>    # static_slot_creation_candidates-003077
+(config-if-atm-vc)# no ubr <cr>    # static_slot_creation_candidates-003085
+(config-if-atm-vc)# no ubr+ <cr>    # static_slot_creation_candidates-003081
+(config-if-atm-vc)# no vbr-nrt <cr>    # static_slot_creation_candidates-003086
+(config-if-atm-vc)# no vbr-rt <cr>    # static_slot_creation_candidates-003028
+(config-if-atm-vc)# no vc-hold-queue <cr>    # static_slot_creation_candidates-003091
+(config-if-atm-vc)# no vcci <cr>    # static_slot_creation_candidates-003049
+(config-if-atm-vc)# no weight <cr>    # static_slot_creation_candidates-003034
+(config-if-atm-vc)# oam ais-rdi <cr>    # static_slot_creation_candidates-003089
+(config-if-atm-vc)# oam retry <cr>    # static_slot_creation_candidates-003090
+(config-if-atm-vc)# oam retry cc end <cr>    # static_slot_creation_candidates-003121
+(config-if-atm-vc)# oam retry cc segment <cr>    # static_slot_creation_candidates-003120
+(config-if-atm-vc)# oam-pvc <cr>    # static_slot_creation_candidates-003023
+(config-if-atm-vc)# oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003123
+(config-if-atm-vc)# oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003122
+(config-if-atm-vc)# pppoe max-sessions <number:dynamic> <cr>    # static_slot_creation_candidates-003151
+(config-if-atm-vc)# protocol <?protoaddr_inarp_action@555588c6ee10> <cr>    # static_slot_creation_candidates-003141
+(config-if-atm-vc)# queue-depth <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003153
+(config-if-atm-vc)# queue-depth low-latency <cr>    # static_slot_creation_candidates-003027
+(config-if-atm-vc)# radius attribute nas-port-type <number:0..2147483647> <cr>    # static_slot_creation_candidates-003119
+(config-if-atm-vc)# rx-limit <cr>    # static_slot_creation_candidates-003021
+(config-if-atm-vc)# rx-speed <number:dynamic> <cr>    # static_slot_creation_candidates-003140
+(config-if-atm-vc)# service-policy input <string> <cr>    # static_slot_creation_candidates-003158
+(config-if-atm-vc)# transmit-priority <number:1..4> <cr>    # static_slot_creation_candidates-003068
+(config-if-atm-vc)# transmit-priority <number:dynamic> <cr>    # static_slot_creation_candidates-003144
+(config-if-atm-vc)# tx-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003145
+(config-if-atm-vc)# tx-ring-limit <cr>    # static_slot_creation_candidates-003022
+(config-if-atm-vc)# tx-ring-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003146
+(config-if-atm-vc)# ubr <cr>    # static_slot_creation_candidates-003026
+(config-if-atm-vc)# ubr <number:dynamic> <cr>    # static_slot_creation_candidates-003147
+(config-if-atm-vc)# ubr+ <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003156
+(config-if-atm-vc)# vbr-nrt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003157
+(config-if-atm-vc)# vbr-rt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003154
+(config-if-atm-vc)# vc-hold-queue <number:5..2048> <cr>    # static_slot_creation_candidates-003092
+(config-if-atm-vc)# vcci <number:0..32767> <cr>    # static_slot_creation_candidates-003051
+(config-if-atm-vc)# weight <number:dynamic> <cr>    # static_slot_creation_candidates-003138
+(config-if-atm-vc)# <cr>    # static_slot_creation_candidates-003014

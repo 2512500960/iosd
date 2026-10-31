@@ -1,0 +1,96 @@
+# 模式 router；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-router)# affinity-map <cr>    # conditional_registration_candidates-010688
+(config-router)# affinity-map <string> bit-position <number:0..255> <cr>    # conditional_registration_candidates-010759
+(config-router)# default affinity-map <cr>    # conditional_registration_candidates-010696
+(config-router)# default affinity-map <string> <cr>    # conditional_registration_candidates-010723
+(config-router)# default fast-reroute interface disable <cr>    # conditional_registration_candidates-010760
+(config-router)# default fast-reroute keep-all-paths <cr>    # conditional_registration_candidates-010709
+(config-router)# default fast-reroute load-sharing disable <cr>    # conditional_registration_candidates-010762
+(config-router)# default fast-reroute per-prefix all <cr>    # conditional_registration_candidates-010757
+(config-router)# default fast-reroute per-prefix enable prefix-priority <cr>    # conditional_registration_candidates-010770
+(config-router)# default fast-reroute per-prefix enable prefix-priority <cr>    # conditional_registration_candidates-010771
+(config-router)# default fast-reroute per-prefix tie-break srlg <cr>    # conditional_registration_candidates-010772
+(config-router)# default fast-reroute tie-break <cr>    # conditional_registration_candidates-010732
+(config-router)# default fast-reroute use-candidate-only <cr>    # conditional_registration_candidates-010727
+(config-router)# default flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010712
+(config-router)# default flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010722
+(config-router)# default manet cache acknowledgement <cr>    # conditional_registration_candidates-010740
+(config-router)# default manet cache update <cr>    # conditional_registration_candidates-010735
+(config-router)# default manet hello unicast <cr>    # conditional_registration_candidates-010746
+(config-router)# default manet peering selective <cr>    # conditional_registration_candidates-010748
+(config-router)# default manet timers ackwait <cr>    # conditional_registration_candidates-010743
+(config-router)# default manet willingness <cr>    # conditional_registration_candidates-010705
+(config-router)# default microloop avoidance <cr>    # conditional_registration_candidates-010717
+(config-router)# default microloop avoidance <cr>    # conditional_registration_candidates-010728
+(config-router)# default microloop avoidance protected <cr>    # conditional_registration_candidates-010755
+(config-router)# default microloop avoidance rib-update-delay <cr>    # conditional_registration_candidates-010713
+(config-router)# default nsr <cr>    # conditional_registration_candidates-010699
+(config-router)# default receive application flex-algo delay app-only <cr>    # conditional_registration_candidates-010776
+(config-router)# default segment-routing <cr>    # conditional_registration_candidates-010692
+(config-router)# default segment-routing area <address> mpls <cr>    # conditional_registration_candidates-010764
+(config-router)# default segment-routing prefix-sid-map advertise-local <cr>    # conditional_registration_candidates-010752
+(config-router)# default segment-routing prefix-sid-map receive <cr>    # conditional_registration_candidates-010753
+(config-router)# default timers manet ackwait <cr>    # conditional_registration_candidates-010744
+(config-router)# fast-reroute interface disable <cr>    # conditional_registration_candidates-010724
+(config-router)# fast-reroute keep-all-paths <cr>    # conditional_registration_candidates-010691
+(config-router)# fast-reroute load-sharing disable <cr>    # conditional_registration_candidates-010729
+(config-router)# fast-reroute per-prefix all <cr>    # conditional_registration_candidates-010720
+(config-router)# fast-reroute per-prefix enable prefix-priority high <cr>    # conditional_registration_candidates-010767
+(config-router)# fast-reroute per-prefix enable prefix-priority high <cr>    # conditional_registration_candidates-010768
+(config-router)# fast-reroute per-prefix tie-break srlg index <number:1..255> <cr>    # conditional_registration_candidates-010774
+(config-router)# fast-reroute tie-break <number:1..255> <cr>    # conditional_registration_candidates-010731
+(config-router)# fast-reroute use-candidate-only <cr>    # conditional_registration_candidates-010701
+(config-router)# flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010693
+(config-router)# flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010700
+(config-router)# manet cache acknowledgement <number:0..4294967295> <cr>    # conditional_registration_candidates-010737
+(config-router)# manet cache update <number:0..4294967295> <cr>    # conditional_registration_candidates-010734
+(config-router)# manet hello unicast <cr>    # conditional_registration_candidates-010706
+(config-router)# manet peering selective <cr>    # conditional_registration_candidates-010707
+(config-router)# manet timers ackwait <number:0..10000> <cr>    # conditional_registration_candidates-010741
+(config-router)# manet willingness <number:0..255> <cr>    # conditional_registration_candidates-010704
+(config-router)# microloop avoidance <cr>    # conditional_registration_candidates-010697
+(config-router)# microloop avoidance <cr>    # conditional_registration_candidates-010702
+(config-router)# microloop avoidance protected <cr>    # conditional_registration_candidates-010718
+(config-router)# microloop avoidance rib-update-delay <number:1..600000> <cr>    # conditional_registration_candidates-010694
+(config-router)# mpls <cr>    # conditional_registration_candidates-010777
+(config-router)# no affinity-map <cr>    # conditional_registration_candidates-010695
+(config-router)# no affinity-map <string> <cr>    # conditional_registration_candidates-010721
+(config-router)# no fast-reroute interface disable <cr>    # conditional_registration_candidates-010758
+(config-router)# no fast-reroute keep-all-paths <cr>    # conditional_registration_candidates-010708
+(config-router)# no fast-reroute load-sharing disable <cr>    # conditional_registration_candidates-010761
+(config-router)# no fast-reroute per-prefix all <cr>    # conditional_registration_candidates-010756
+(config-router)# no fast-reroute per-prefix enable prefix-priority <cr>    # conditional_registration_candidates-010765
+(config-router)# no fast-reroute per-prefix enable prefix-priority <cr>    # conditional_registration_candidates-010766
+(config-router)# no fast-reroute per-prefix tie-break srlg <cr>    # conditional_registration_candidates-010769
+(config-router)# no fast-reroute tie-break <cr>    # conditional_registration_candidates-010730
+(config-router)# no fast-reroute use-candidate-only <cr>    # conditional_registration_candidates-010725
+(config-router)# no flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010710
+(config-router)# no flex-algo <number:128..255> <cr>    # conditional_registration_candidates-010719
+(config-router)# no manet cache acknowledgement <cr>    # conditional_registration_candidates-010736
+(config-router)# no manet cache update <cr>    # conditional_registration_candidates-010733
+(config-router)# no manet hello unicast <cr>    # conditional_registration_candidates-010745
+(config-router)# no manet peering selective <cr>    # conditional_registration_candidates-010747
+(config-router)# no manet timers ackwait <cr>    # conditional_registration_candidates-010738
+(config-router)# no manet willingness <cr>    # conditional_registration_candidates-010703
+(config-router)# no microloop avoidance <cr>    # conditional_registration_candidates-010716
+(config-router)# no microloop avoidance <cr>    # conditional_registration_candidates-010726
+(config-router)# no microloop avoidance protected <cr>    # conditional_registration_candidates-010754
+(config-router)# no microloop avoidance rib-update-delay <cr>    # conditional_registration_candidates-010711
+(config-router)# no nsr <cr>    # conditional_registration_candidates-010698
+(config-router)# no receive application flex-algo delay app-only <cr>    # conditional_registration_candidates-010775
+(config-router)# no segment-routing <cr>    # conditional_registration_candidates-010690
+(config-router)# no segment-routing area <address> mpls <cr>    # conditional_registration_candidates-010763
+(config-router)# no segment-routing prefix-sid-map advertise-local <cr>    # conditional_registration_candidates-010750
+(config-router)# no segment-routing prefix-sid-map receive <cr>    # conditional_registration_candidates-010751
+(config-router)# no timers manet ackwait <cr>    # conditional_registration_candidates-010739
+(config-router)# nsr <cr>    # conditional_registration_candidates-010689
+(config-router)# receive application flex-algo delay app-only <cr>    # conditional_registration_candidates-010773
+(config-router)# segment-routing <cr>    # conditional_registration_candidates-010687
+(config-router)# segment-routing area <address> mpls <cr>    # conditional_registration_candidates-010749
+(config-router)# segment-routing mpls <cr>    # conditional_registration_candidates-010778
+(config-router)# segment-routing prefix-sid-map advertise-local <cr>    # conditional_registration_candidates-010714
+(config-router)# segment-routing prefix-sid-map receive <cr>    # conditional_registration_candidates-010715
+(config-router)# timers manet ackwait <number:0..10000> <cr>    # conditional_registration_candidates-010742

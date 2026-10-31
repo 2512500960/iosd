@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-004.md
+
+(config-if)# default llc2 txq-max <cr>    # path-063974
+(config-if)# default llc2 xid-neg-val-time <cr>    # path-063952
+(config-if)# default llc2 xid-retry-time <cr>    # path-063959
+(config-if)# default lldp med-tlv-select network-policy <cr>    # path-065982
+(config-if)# default lldp receive <cr>    # path-064561
+(config-if)# default lldp tlv-select power-management <cr>    # path-065919
+(config-if)# default lldp transmit <cr>    # path-064540
+(config-if)# default lldp ucs-chassis-tlv rack-id <number:1..255> <cr>    # path-066924
+(config-if)# default llp nhrp map multicast dynamic <cr>    # path-067500
+(config-if)# default lnm alternate <cr>    # path-065094
+(config-if)# default lnm crs <cr>    # path-065091
+(config-if)# default lnm express-buffer <cr>    # path-065144
+(config-if)# default lnm loss-threshold <cr>    # path-065122
+(config-if)# default lnm password <cr>    # path-065138
+(config-if)# default lnm rem <cr>    # path-065135
+(config-if)# default lnm ring-number-mismatch-allowed <cr>    # path-065200
+(config-if)# default lnm rps <cr>    # path-065179
+(config-if)# default lnm softerr <cr>    # path-065202
+(config-if)# default load-balance-hash-algo <cr>    # path-063512
+(config-if)# default load-balancing <cr>    # path-063529
+(config-if)# default load-interval <cr>    # path-063251
+(config-if)# default locaddr-priority <cr>    # path-063335
+(config-if)# default location additional-location-information <cr>    # path-064073
+(config-if)# default location civic-location-id none <cr>    # path-065456
+(config-if)# default location custom-location-id none <cr>    # path-065458
+(config-if)# default location elin-location-id <string> <cr>    # path-065455
+(config-if)# default location geo-location-id none <cr>    # path-065460
+(config-if)# default logging event dlci-status-change <cr>    # path-065510
+(config-if)# default logging event frame-relay dlci <cr>    # path-066702
+(config-if)# default logging event link-status <cr>    # path-065473
+(config-if)# default logging event link-status <cr>    # path-065478
+(config-if)# default loopback <cr>    # path-063435
+(config-if)# default loopback <cr>    # path-063454
+(config-if)# default loopback <cr>    # path-063588
+(config-if)# default loopback dte <cr>    # path-064159
+(config-if)# default loopback line <cr>    # path-064165
+(config-if)# default loopback remote <cr>    # path-064172
+(config-if)# default mab <cr>    # path-063816
+(config-if)# default mab eap <cr>    # path-064810
+(config-if)# default mac-address <cr>    # path-063408
+(config-if)# default macsec <cr>    # path-063570
+(config-if)# default macsec access-control <cr>    # path-064483
+(config-if)# default macsec disable-sci <cr>    # path-064414
+(config-if)# default macsec dot1q-in-clear <cr>    # path-064444
+(config-if)# default macsec replay-protection window-size <cr>    # path-065785
+(config-if)# default map-group <string> <cr>    # path-064252
+(config-if)# default mdns-sd gateway <cr>    # path-064631
+(config-if)# default media-type <cr>    # path-063459
+(config-if)# default medium p2p <cr>    # path-064263
+(config-if)# default mka policy <cr>    # path-065302
+(config-if)# default mka pre-shared-key key-chain <string> <cr>    # path-067261
+(config-if)# default mka pre-shared-key key-chain <string> fallback-key-chain <string> <cr>    # path-067677
+(config-if)# default mlacp interchassis group <cr>    # path-064895
+(config-if)# default mlacp lag-priority <cr>    # path-063845
+(config-if)# default mlacp mac mstp-tcn <cr>    # path-066306
+(config-if)# default mlacp mode active-active <cr>    # path-066264
+(config-if)# default mtu <cr>    # path-063405
+(config-if)# default multilink load-threshold <cr>    # path-064748
+(config-if)# default multilink max-fragments <cr>    # path-064771
+(config-if)# default multilink max-links <cr>    # path-064669
+(config-if)# default multilink min-links <cr>    # path-064709
+(config-if)# default multilink-group <cr>    # path-063729
+(config-if)# default multiring trcrf-vlan <cr>    # path-064423
+(config-if)# default mvr immediate <cr>    # path-064710
+(config-if)# default mvr type <cr>    # path-064719
+(config-if)# default nat64 enable <cr>    # path-064371
+(config-if)# default nat64 prefix stateful <cr>    # path-065860
+(config-if)# default nat64 settings mtu minimum <cr>    # path-066844
+(config-if)# default nat66 inside <cr>    # path-064405
+(config-if)# default nat66 outside <cr>    # path-064435
+(config-if)# default national bit <cr>    # path-064442
+(config-if)# default negotiation auto <cr>    # path-064239
+(config-if)# default netbios enable-name-cache <cr>    # path-064380
+(config-if)# default netbios input-access-filter host <string> <cr>    # path-066776
+(config-if)# default nrzi-encoding <cr>    # path-063727
+(config-if)# default ntp broadcast <cr>    # path-064610
+(config-if)# default ntp broadcast client <cr>    # path-065887
+(config-if)# default ntp disable <cr>    # path-064554
+(config-if)# default ntp multicast <cr>    # path-064630
+(config-if)# default ntp multicast client <cr>    # path-065947
+(config-if)# default onep application openflow exclusive <cr>    # path-067133
+(config-if)# default ospfv3 <number:1..65535> adjacency stagger <cr>    # path-067273
+(config-if)# default ospfv3 <number:1..65535> area <address> <cr>    # path-067168
+(config-if)# default ospfv3 <number:1..65535> authentication null <cr>    # path-067179
+(config-if)# default ospfv3 <number:1..65535> bfd <cr>    # path-066643
+(config-if)# default ospfv3 <number:1..65535> cost <cr>    # path-066521
+(config-if)# default ospfv3 <number:1..65535> database-filter <cr>    # path-066623
+(config-if)# default ospfv3 <number:1..65535> dead-interval <cr>    # path-065193
+(config-if)# default ospfv3 <number:1..65535> demand-circuit <cr>    # path-066605
+(config-if)# default ospfv3 <number:1..65535> flood-reduction <cr>    # path-066593
+(config-if)# default ospfv3 <number:1..65535> hello-interval <cr>    # path-065182
+(config-if)# default ospfv3 <number:1..65535> interface-retry <cr>    # path-065168
+(config-if)# default ospfv3 <number:1..65535> mpls traffic-eng autoroute announce area <address> <cr>    # path-067713
+(config-if)# default ospfv3 <number:1..65535> mpls traffic-eng autoroute metric <cr>    # path-067679
+(config-if)# default ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj area <address> <cr>    # path-067705
+(config-if)# default ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj interface-id <cr>    # path-067682
+(config-if)# default ospfv3 <number:1..65535> mtu-ignore <cr>    # path-066615
+(config-if)# default ospfv3 <number:1..65535> multi-area <address> <cr>    # path-067286
+(config-if)# default ospfv3 <number:1..65535> multi-area <address> cost <cr>    # path-067278
+(config-if)# default ospfv3 <number:1..65535> neighbor <address> <cr>    # path-067280
+(config-if)# default ospfv3 <number:1..65535> network <cr>    # path-066478
+(config-if)# default ospfv3 <number:1..65535> packet-size <cr>    # path-065217
+(config-if)# default ospfv3 <number:1..65535> prefix-suppression <cr>    # path-066637
+(config-if)# default ospfv3 <number:1..65535> priority <cr>    # path-065204
+(config-if)# default ospfv3 <number:1..65535> retransmit-interval <cr>    # path-065227
+(config-if)# default ospfv3 <number:1..65535> shutdown <cr>    # path-066650
+(config-if)# default ospfv3 <number:1..65535> transmit-delay <cr>    # path-065242
+(config-if)# default peer default ip address <cr>    # path-066861
+(config-if)# default peer default ipv6 pool <string> <cr>    # path-067424
+(config-if)# default peer ip address forced <cr>    # path-066773
+(config-if)# default peer match aaa-pools <cr>    # path-065752
+(config-if)# default peer neighbor-route <cr>    # path-064439
+(config-if)# default peer pool backup <cr>    # path-065788
+(config-if)# default peer pool static <cr>    # path-065801
+(config-if)# default phymode <cr>    # path-064030
+(config-if)# default physical-layer <cr>    # path-063402
+(config-if)# default plim ethernet vlan filter disable <cr>    # path-067355
+(config-if)# default plim min-frame-length 68byte <cr>    # path-065757
+(config-if)# default plim qos input weight <cr>    # path-066831
+(config-if)# default pnp startup-vlan <cr>    # path-065306
+(config-if)# default port <cr>    # path-063523
+(config-if)# default port-channel bfd destination ipv4 <address> <string> <cr>    # path-067640
+(config-if)# default port-channel bfd destination ipv6 <address> <string> <cr>    # path-067638
+(config-if)# default port-settings <cr>    # path-063480
+(config-if)# default power inline consumption <cr>    # path-065562
+(config-if)# default power inline delay shutdown <cr>    # path-066734
+(config-if)# default ppp accm <cr>    # path-064388
+(config-if)# default ppp accounting <cr>    # path-064824
+(config-if)# default ppp acfc local <cr>    # path-065934
+(config-if)# default ppp acfc remote <cr>    # path-065949
+(config-if)# default ppp authentication <cr>    # path-064777
+(config-if)# default ppp authorization <cr>    # path-064799
+(config-if)# default ppp bap call request <cr>    # path-067186
+(config-if)# default ppp bap callback accept <cr>    # path-067184
+(config-if)# default ppp bap drop accept <cr>    # path-067194
+(config-if)# default ppp bap max dial-attempts <cr>    # path-067228
+(config-if)# default ppp bap monitor load <cr>    # path-067232
+(config-if)# default ppp bap number default <cr>    # path-067178
+(config-if)# default ppp bap number format <cr>    # path-067240
+(config-if)# default ppp bap timeout pending <cr>    # path-067217
+(config-if)# default ppp bcp tagged-frame <cr>    # path-066349
+(config-if)# default ppp bridge appletalk <cr>    # path-066026
+(config-if)# default ppp callback <cr>    # path-064673
+(config-if)# default ppp caller name <cr>    # path-066091
+(config-if)# default ppp chap challenge-length <cr>    # path-066232
+(config-if)# default ppp chap hostname <cr>    # path-066181
+(config-if)# default ppp chap ignoreus <cr>    # path-066173
+(config-if)# default ppp chap matchnames <cr>    # path-066293
+(config-if)# default ppp chap password <cr>    # path-066259
+(config-if)# default ppp chap refuse <cr>    # path-066279
+(config-if)# default ppp chap splitnames <cr>    # path-066269
+(config-if)# default ppp chap wait <cr>    # path-066248
+(config-if)# default ppp direction <cr>    # path-064980
+(config-if)# default ppp disconnect-cause keepalive <cr>    # path-066066
+(config-if)# default ppp dnis <cr>    # path-064717
+(config-if)# default ppp eap identity <cr>    # path-066157
+(config-if)# default ppp eap local <cr>    # path-066196
+(config-if)# default ppp eap password <cr>    # path-066183
+(config-if)# default ppp eap refuse <cr>    # path-066206
+(config-if)# default ppp eap wait <cr>    # path-066174
+(config-if)# default ppp encrypt mppe <cr>    # path-066030
+(config-if)# default ppp hostname unique <cr>    # path-066188
+(config-if)# default ppp ignore-loopback <cr>    # path-064579
+(config-if)# default ppp ipcp accept-address <cr>    # path-066265
+(config-if)# default ppp ipcp address accept <cr>    # path-067187
+(config-if)# default ppp ipcp address no-ip send-ack <cr>    # path-067545
+(config-if)# default ppp ipcp address proxy <cr>    # path-067180
+(config-if)# default ppp ipcp address request ignore <cr>    # path-067542
+(config-if)# default ppp ipcp address required <cr>    # path-067153
+(config-if)# default ppp ipcp address unique <cr>    # path-067164
+(config-if)# default ppp ipcp dns <cr>    # path-066362
+(config-if)# default ppp ipcp header-compression ack <cr>    # path-067081
+(config-if)# default ppp ipcp ignore-map <cr>    # path-066371
+(config-if)# default ppp ipcp mask <cr>    # path-066389
+(config-if)# default ppp ipcp no-renegotiation <cr>    # path-066481
+(config-if)# default ppp ipcp predictive <cr>    # path-066393
+(config-if)# default ppp ipcp route default <cr>    # path-067127
+(config-if)# default ppp ipcp unique-address <cr>    # path-066406
+(config-if)# default ppp ipcp username unique <cr>    # path-067150
+(config-if)# default ppp ipcp wins <cr>    # path-066376
+(config-if)# default ppp iphc max-header <cr>    # path-066019
+(config-if)# default ppp iphc max-period <cr>    # path-065999
+(config-if)# default ppp iphc max-time <cr>    # path-066008
+(config-if)# default ppp ipv6cp address unique <cr>    # path-067079
+(config-if)# default ppp ipv6cp proxy <cr>    # path-066361
+(config-if)# default ppp lcp delay <cr>    # path-065959
+(config-if)# default ppp lcp echo mru verify <cr>    # path-067440
+(config-if)# default ppp lcp fast-start <cr>    # path-065900
+(config-if)# default ppp lcp predictive <cr>    # path-065877
+(config-if)# default ppp leased_line_option <cr>    # path-063548
+(config-if)# default ppp link reorders <cr>    # path-066326
+(config-if)# default ppp link reset <cr>    # path-066350
+(config-if)# default ppp link trap <cr>    # path-066370
+(config-if)# default ppp loopback ignore <cr>    # path-065938
+(config-if)# default ppp loopback no-backoff <cr>    # path-065953
+(config-if)# default ppp max-bad-auth <cr>    # path-063595
+(config-if)# default ppp max-configure <cr>    # path-063572
+(config-if)# default ppp max-failure <cr>    # path-063587
+(config-if)# default ppp max-terminate <cr>    # path-063561
+(config-if)# default ppp microcode <cr>    # path-064613
+(config-if)# default ppp mru match <cr>    # path-065920
+(config-if)# default ppp ms-chap refuse <cr>    # path-066204
+(config-if)# default ppp ms-chap-v2 refuse <cr>    # path-066230
+(config-if)# default ppp mtu adaptive <cr>    # path-065889
+(config-if)# default ppp mtu pppoe unlimited <cr>    # path-066855
+(config-if)# default ppp multilink <cr>    # path-065241
+(config-if)# default ppp multilink endpoint <cr>    # path-066477
+(config-if)# default ppp multilink fragment delay <cr>    # path-067235
+(config-if)# default ppp multilink fragment disable <cr>    # path-067204
+(config-if)# default ppp multilink fragment maximum <cr>    # path-067221
+(config-if)# default ppp multilink fragment size <cr>    # path-067199
+(config-if)# default ppp multilink fragment-delay <cr>    # path-066496
+(config-if)# default ppp multilink fragmentation <cr>    # path-066470
+(config-if)# default ppp multilink group <cr>    # path-066456
+(config-if)# default ppp multilink idle-link <cr>    # path-066525
+(config-if)# default ppp multilink interleave <cr>    # path-066526
+(config-if)# default ppp multilink links maximum <cr>    # path-067207
+(config-if)# default ppp multilink links minimum <cr>    # path-067219
+(config-if)# default ppp multilink load-threshold <cr>    # path-066532
+(config-if)# default ppp multilink mrru local <cr>    # path-066469
+(config-if)# default ppp multilink mrru remote <cr>    # path-066491
+(config-if)# default ppp multilink multiclass <cr>    # path-066534
+(config-if)# default ppp multilink ncp sequenced <cr>    # path-067167
+(config-if)# default ppp multilink queue depth fifo <cr>    # path-067193
+(config-if)# default ppp multilink queue depth qos <cr>    # path-067205
+(config-if)# default ppp multilink slippage mru <cr>    # path-066436
+(config-if)# default ppp multilink slippage msec <cr>    # path-066452
+(config-if)# default ppp ncp passive <cr>    # path-066360
+(config-if)# default ppp pap refuse <cr>    # path-066319
+(config-if)# default ppp pap sent-username <cr>    # path-066297
+(config-if)# default ppp pap wait <cr>    # path-066290
+(config-if)# default ppp pfc local <cr>    # path-065911
+(config-if)# default ppp pfc remote <cr>    # path-065935
+(config-if)# default ppp quality <cr>    # path-064389
+(config-if)# default ppp reliable-link <cr>    # path-064626
+(config-if)# default ppp timeout aaa <cr>    # path-066440
+(config-if)# default ppp timeout authentication <cr>    # path-065126
+(config-if)# default ppp timeout bacp <cr>    # path-065230
+(config-if)# default ppp timeout idle <cr>    # path-066460
+(config-if)# default ppp timeout multilink link add <cr>    # path-067183
+(config-if)# default ppp timeout multilink link remove <cr>    # path-067198
+(config-if)# default ppp timeout multilink lost-fragment <cr>    # path-067220
+(config-if)# default ppp timeout ncp <cr>    # path-066423
+(config-if)# default ppp timeout retry <cr>    # path-066409
+(config-if)# default pppoe enable <cr>    # path-064605
+(config-if)# default pppoe max-sessions <cr>    # path-064627
+(config-if)# default pppoe-client dial-pool-number <number:1..255> <cr>    # path-066235
+(config-if)# default pppoe-client ppp-max-payload <cr>    # path-064883
+(config-if)# default pppoe-sessions threshold percent <cr>    # path-066001
+(config-if)# default pulse-time <cr>    # path-063814
+(config-if)# default punt-control cause ipv4-options <cr>    # path-065805
+(config-if)# default punt-control enable <cr>    # path-064476
+(config-if)# default qllc accept-all-calls <cr>    # path-064935
+(config-if)# default qllc dlsw <cr>    # path-065156
+(config-if)# default qllc largest-packet <address> <number:0..1024> <cr>    # path-067072
+(config-if)# default qllc npsi-poll <address> <cr>    # path-066315
+(config-if)# default qllc partner <address> <address> <cr>    # path-067043
+(config-if)# default qllc sap <address> <number:2..254> <number:2..254> <cr>    # path-067495
+(config-if)# default qllc srb <address> <number:1..4095> <number:1..4095> <cr>    # path-067489
+(config-if)# default qllc xid <address> <cr>    # path-066251
+(config-if)# default qos pre-classify <cr>    # path-065041
+(config-if)# default qos pre-classify <cr>    # path-065042
+(config-if)# default radius attribute nas-port-type <cr>    # path-065474
+(config-if)# default rate-limit input <number:8000..2000000000> <number:1000..512000000> <number:2000..1024000000> conform-action drop exceed-action drop <cr>    # path-067717
+(config-if)# default rbs-zero <cr>    # path-063956
+(config-if)# default redirect to group <string> <cr>    # path-066917
+(config-if)# default redundancy asymmetric-routing enable <cr>    # path-065984
+(config-if)# default redundancy gratuitous-arp group <number:1..2> <cr>    # path-066950
+(config-if)# default redundancy group <number:1..2> <cr>    # path-066035
+(config-if)# default redundancy rii <cr>    # path-064656
+(config-if)# default ring-speed <cr>    # path-063583
+(config-if)# default rx-sync-disable <cr>    # path-063707
+(config-if)# default sap-priority <cr>    # path-063329
+(config-if)# default scramble <cr>    # path-063538
+(config-if)# default sdlc K <cr>    # path-063958
+(config-if)# default sdlc N1 <cr>    # path-063943
+(config-if)# default sdlc N2 <cr>    # path-063950
+(config-if)# default sdlc T1 <cr>    # path-063934
+(config-if)# default sdlc address <number:1..255> <cr>    # path-066515
+(config-if)# default sdlc cts-delay <cr>    # path-064009
+(config-if)# default sdlc dlsw default <cr>    # path-066642
+(config-if)# default sdlc frmr-disable <cr>    # path-065160
+(config-if)# default sdlc group-poll <number:1..255> <cr>    # path-066608
+(config-if)# default sdlc hdx <cr>    # path-065222
+(config-if)# default sdlc holdq <number:1..254> <cr>    # path-066527
+(config-if)# default sdlc line-speed <cr>    # path-063991
+(config-if)# default sdlc partner <address> <number:1..254> <cr>    # path-067272
+(config-if)# default sdlc poll-limit-value <cr>    # path-063919
+(config-if)# default sdlc poll-pause-timer <cr>    # path-063899
+(config-if)# default sdlc poll-wait-timeout <cr>    # path-063939
+(config-if)# default sdlc qllc-prtnr <address> <number:1..254> <cr>    # path-067243
+(config-if)# default sdlc rnr-limit <cr>    # path-063908
+(config-if)# default sdlc role <cr>    # path-065044
+(config-if)# default sdlc rts-timeout <cr>    # path-064019
+(config-if)# default sdlc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-067555
+(config-if)# default sdlc sdlc-largest-frame <number:1..254> <cr>    # path-066649
+(config-if)# default sdlc simultaneous <cr>    # path-065293
+(config-if)# default sdlc slow-poll <cr>    # path-065238
+(config-if)# default sdlc snrm-timer <cr>    # path-063927
+(config-if)# default sdlc virtual-multidrop <cr>    # path-065275
+(config-if)# default sdlc vmac <cr>    # path-065065
+(config-if)# default sdlc xid <number:1..254> <cr>    # path-066635
+(config-if)# default sdlc xid-pause-timer <number:10..300> <cr>    # path-066465
+(config-if)# default sdllc partner <address> <number:1..254> <cr>    # path-067058
+(config-if)# default sdllc ring-largest-frame <cr>    # path-064837
+(config-if)# default sdllc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-067493
+(config-if)# default sdllc sdlc-largest-frame <number:1..254> <cr>    # path-066177
+(config-if)# default sdllc traddr <cr>    # path-064817
+(config-if)# default sdllc xid <number:1..254> <cr>    # path-066198
+(config-if)# default serial restart-delay <cr>    # path-063717
+(config-if)# default service-overlay encap cmd <cr>    # path-066213
+(config-if)# default service-policy inline input <cr>    # path-065753
+(config-if)# default service-policy inline output <cr>    # path-065774
+(config-if)# default service-policy output <string> <cr>    # path-065732
+(config-if)# default service-policy type control <cr>    # path-065961
+(config-if)# default service-policy type control default <cr>    # path-066888
+(config-if)# default service-policy type control default <string> <cr>    # path-067402
+(config-if)# default service-policy type control subscriber <cr>    # path-066922
+(config-if)# default service-routing mdns-sd <cr>    # path-064652
+(config-if)# default shutdown <cr>    # path-063429
+(config-if)# default site-local-redundancy <cr>    # path-063744
+(config-if)# default smds address <cr>    # path-064534
+(config-if)# default smds dxi-mode <cr>    # path-064495
+(config-if)# default smds enable-arp <cr>    # path-064588
+(config-if)# default smds nec-mode <cr>    # path-064545
+(config-if)# default sna enable-host <cr>    # path-064517
+(config-if)# default sna start <string> <cr>    # path-065755
+(config-if)# default snapshot client <cr>    # path-065129
+(config-if)# default snmp ifindex clear <cr>    # path-066103
+(config-if)# default snmp ifindex persist <cr>    # path-066108
+(config-if)# default snmp trap ip verify drop-rate <cr>    # path-067480
+(config-if)# default snmp trap isdn-calls <cr>    # path-066129
+(config-if)# default snmp trap link-status <cr>    # path-066059
+(config-if)# default snmp trap link-status permit duplicates <cr>    # path-067463
+(config-if)# default source template <cr>    # path-064801
+(config-if)# default source-bridge <cr>    # path-063836
+(config-if)# default source-bridge max-hops <cr>    # path-063849
+(config-if)# default source-bridge max-in-hops <cr>    # path-063815
+(config-if)# default source-bridge max-out-hops <cr>    # path-063835
+(config-if)# default source-bridge proxy-explorer <cr>    # path-065003
+(config-if)# default source-bridge route-cache <cr>    # path-065069
+(config-if)# default source-bridge spanning <cr>    # path-064975
+(config-if)# default speed <cr>    # path-063471
+(config-if)# default standby <cr>    # path-063496
+(config-if)# default standby authentication <cr>    # path-064185
+(config-if)# default standby bfd <cr>    # path-064155
+(config-if)# default standby delay <cr>    # path-064115
+(config-if)# default standby follow <cr>    # path-064208
+(config-if)# default standby ip <cr>    # path-064256
+(config-if)# default standby ipv6 <cr>    # path-064281
+(config-if)# default standby mac-address <cr>    # path-064200
+(config-if)# default standby mac-refresh <cr>    # path-064135
+(config-if)# default standby name <cr>    # path-064199
+(config-if)# default standby preempt <cr>    # path-064224
+(config-if)# default standby priority <cr>    # path-064216
+(config-if)# default standby redirect <cr>    # path-064173
+(config-if)# default standby timers <cr>    # path-064176
+(config-if)# default standby track <number:1..32767> <cr>    # path-065542
+(config-if)# default standby unicast destination <address> <cr>    # path-066727
+(config-if)# default standby use-bia <cr>    # path-064116
+(config-if)# default standby use-bia scope interface <cr>    # path-066677
+(config-if)# default standby version <cr>    # path-064136
+(config-if)# default stun <cr>    # path-063900
+(config-if)# default stun group <number:1..255> <cr>    # path-063874
+(config-if)# default stun proxy-poll address <address> <cr>    # path-067122
+(config-if)# default stun route all tcp <address> <cr>    # path-067526
+(config-if)# default stun sdlc-role <cr>    # path-065045
+(config-if)# default subscriber aging <cr>    # path-064068
+(config-if)# default switchport <cr>    # path-063409
+(config-if)# default switchport access vlan <cr>    # path-065710
+(config-if)# default switchport mode access <cr>    # path-065695
+(config-if)# default switchport port-security <cr>    # path-064107
+(config-if)# default switchport port-security allowlist <cr>    # path-065468
+(config-if)# default switchport priority extend <cr>    # path-065491
+(config-if)# default switchport trunk allowed vlan <cr>    # path-066782
+(config-if)# default switchport trunk native vlan <cr>    # path-066767
+(config-if)# default template global inheritance disable <cr>    # path-066962
+(config-if)# default timeout absolute <cr>    # path-064229
+(config-if)# default timeslot <cr>    # path-063692
+(config-if)# default transmit-interface <cr>    # path-063413
+(config-if)# default transport-mode <cr>    # path-063456
+(config-if)# default trunk-group <cr>    # path-063972
+(config-if)# default ts16 <cr>    # path-063697
+(config-if)# default tunnel 6rd ipv4 <cr>    # path-066275
+(config-if)# default tunnel bandwidth transmit <cr>    # path-065986
+(config-if)# default tunnel checksum <cr>    # path-064680
+(config-if)# default tunnel delete-timer <cr>    # path-065112
+(config-if)# default tunnel destination <cr>    # path-064647
+(config-if)# default tunnel dst-port <cr>    # path-065082
+(config-if)# default tunnel endpoint service-policy output <string> <cr>    # path-067513
+(config-if)# default tunnel entropy <cr>    # path-064633
+(config-if)# default tunnel flow egress-records <cr>    # path-066136
+(config-if)# default tunnel key <cr>    # path-063702
+(config-if)# default tunnel key <cr>    # path-063703
+(config-if)# default tunnel metadata src_vpn <cr>    # path-066123
+(config-if)# default tunnel mode <cr>    # path-064616
+(config-if)# default tunnel mpls-ip-only <cr>    # path-065108
+(config-if)# default tunnel network-id <number:1..65535> nexthop <address> <cr>    # path-067462
+(config-if)# default tunnel path-mtu-discovery <cr>    # path-064805
+(config-if)# default tunnel path-mtu-discovery age-timer <cr>    # path-066109

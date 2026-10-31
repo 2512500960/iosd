@@ -1,0 +1,383 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-034.md
+
+(exec)# do-exec test tunnel tun-to <number:0..9> feature enable pre-decap <cr>    # path-024743
+(exec)# do-exec test tunnel tun-to <number:0..9> gre key disable <cr>    # path-024728
+(exec)# do-exec test tunnel tun-to <number:0..9> payload ipv4 enable <cr>    # path-024720
+(exec)# do-exec test tunnel tun-to <number:0..9> payload ipv4 mtu default <cr>    # path-025025
+(exec)# do-exec test tunnel tun-to <number:0..9> source <address> <cr>    # path-023816
+(exec)# do-exec test uninstall <string> <cr>    # path-014806
+(exec)# do-exec test vrrs client add <number:1..31> <string> <cr>    # path-023527
+(exec)# do-exec test vrrs client register <number:1..31> <cr>    # path-021265
+(exec)# do-exec test vrrs client remove <number:1..31> <string> <cr>    # path-023541
+(exec)# do-exec test vrrs client unregister <number:1..31> <cr>    # path-021238
+(exec)# do-exec test vrrs pathway name <string> disconnect <cr>    # path-023641
+(exec)# do-exec test vrrs plugin server <cr>    # path-016728
+(exec)# do-exec test vrrs server add <string> vip <address> <cr>    # path-024644
+(exec)# do-exec test vrrs server delete <string> <cr>    # path-021269
+(exec)# do-exec test vrrs server update <string> <cr>    # path-021329
+(exec)# do-exec test wccp ip web-cache assignment hash <cr>    # path-023667
+(exec)# do-exec test wccp ip web-cache capabilities <cr>    # path-021452
+(exec)# do-exec test wccp ip web-cache service <number:0..255> <number:0..255> <number:0..4294967295> <cr>    # path-024989
+(exec)# do-exec test wsma history <cr>    # path-014614
+(exec)# do-exec test wsma listener <string> <cr>    # path-018763
+(exec)# do-exec test wsma max-priv-enforcement <number:0..1> <cr>    # path-018798
+(exec)# do-exec test wsma summary <cr>    # path-014636
+(exec)# do-exec test x25 dbit <number:0..1000> <cr>    # path-017253
+(exec)# do-exec test xdr create-stream <number:1..20> <cr>    # path-017634
+(exec)# do-exec test xdr destroy-stream <number:1..20> <cr>    # path-017613
+(exec)# do-exec test xdr disable <cr>    # path-013572
+(exec)# do-exec test xdr enable <cr>    # path-013573
+(exec)# do-exec test xdr fragment <number:1..1000000> to_slots High-queue <cr>    # path-023913
+(exec)# do-exec test xdr ping to_linecards <number:0..2147483647> High-queue <cr>    # path-023781
+(exec)# do-exec test xdr push start <cr>    # path-017674
+(exec)# do-exec test xdr push stream <number:1..20> count <number:0..200000> to_linecards <number:0..2147483647> High-queue <cr>    # path-025212
+(exec)# do-exec test xdr show-streams <cr>    # path-013703
+(exec)# do-exec test xdr split allow <cr>    # path-017596
+(exec)# do-exec test xdr statistics client test-stats-1 create <number:1..1000000> <number:1..6000> <cr>    # path-025011
+(exec)# do-exec test xdr statistics client test-stats-1 req-stats <cr>    # path-023825
+(exec)# do-exec test xdr statistics client test-stats-1 show <cr>    # path-023846
+(exec)# do-exec test xdr statistics client test-stats-1 show <cr>    # path-023867
+(exec)# do-exec test xdr statistics selftest <number:0..64> <cr>    # path-021587
+(exec)# do-exec test xtf-policy-shim <cr>    # path-012595
+(exec)# do-exec traceroute <cr>    # path-012244
+(exec)# do-exec traceroute ethernet <address> domain <string> port <cr>    # path-023439
+(exec)# do-exec trigger <string> <cr>    # path-012275
+(exec)# do-exec tunnel <string> <cr>    # path-012436
+(exec)# do-exec undebug ACM all <cr>    # path-012951
+(exec)# do-exec undebug ACM error <cr>    # path-012926
+(exec)# do-exec undebug ACM event <cr>    # path-012937
+(exec)# do-exec undebug LDAP all <cr>    # path-015833
+(exec)# do-exec undebug LDAP error <cr>    # path-015797
+(exec)# do-exec undebug LDAP event <cr>    # path-015810
+(exec)# do-exec undebug LDAP legacy <cr>    # path-015822
+(exec)# do-exec undebug LDAP packet <cr>    # path-015785
+(exec)# do-exec undebug aaa accounting <cr>    # path-013220
+(exec)# do-exec undebug aaa administrative <cr>    # path-013235
+(exec)# do-exec undebug aaa api <cr>    # path-013547
+(exec)# do-exec undebug aaa api attr <cr>    # path-017424
+(exec)# do-exec undebug aaa attr <cr>    # path-013525
+(exec)# do-exec undebug aaa attr add <cr>    # path-017345
+(exec)# do-exec undebug aaa attr alloc-free <cr>    # path-017323
+(exec)# do-exec undebug aaa attr error <cr>    # path-017294
+(exec)# do-exec undebug aaa attr handle <cr>    # path-017271
+(exec)# do-exec undebug aaa attr info <cr>    # path-017391
+(exec)# do-exec undebug aaa attr update <cr>    # path-017366
+(exec)# do-exec undebug aaa authentication <cr>    # path-013187
+(exec)# do-exec undebug aaa authorization <cr>    # path-013205
+(exec)# do-exec undebug aaa boundary <cr>    # path-013252
+(exec)# do-exec undebug aaa cache filterserver <cr>    # path-017007
+(exec)# do-exec undebug aaa cache group <cr>    # path-017028
+(exec)# do-exec undebug aaa cca <cr>    # path-013272
+(exec)# do-exec undebug aaa coa <cr>    # path-013365
+(exec)# do-exec undebug aaa common-criteria <cr>    # path-013622
+(exec)# do-exec undebug aaa db <cr>    # path-013473
+(exec)# do-exec undebug aaa dead-criteria transaction <cr>    # path-017462
+(exec)# do-exec undebug aaa green <cr>    # path-013633
+(exec)# do-exec undebug aaa id <cr>    # path-013509
+(exec)# do-exec undebug aaa ipc <cr>    # path-013438
+(exec)# do-exec undebug aaa memory <cr>    # path-013415
+(exec)# do-exec undebug aaa mlist-ref-count <cr>    # path-013302
+(exec)# do-exec undebug aaa mlist-state <cr>    # path-013597
+(exec)# do-exec undebug aaa per-user <cr>    # path-013350
+(exec)# do-exec undebug aaa pod <cr>    # path-013382
+(exec)# do-exec undebug aaa profile db <cr>    # path-017037
+(exec)# do-exec undebug aaa protocol local <cr>    # path-017442
+(exec)# do-exec undebug aaa protocol radius <cr>    # path-017465
+(exec)# do-exec undebug aaa proxy <cr>    # path-013396
+(exec)# do-exec undebug aaa redundancy <cr>    # path-013634
+(exec)# do-exec undebug aaa server-ref-count <cr>    # path-013337
+(exec)# do-exec undebug aaa sg-ref-count <cr>    # path-013317
+(exec)# do-exec undebug aaa sg-server-selection <cr>    # path-013287
+(exec)# do-exec undebug aaa subscriber profile <cr>    # path-017026
+(exec)# do-exec undebug aaa subsys <cr>    # path-013453
+(exec)# do-exec undebug aaa testing <cr>    # path-013582
+(exec)# do-exec undebug aaa tools memleak <cr>    # path-017027
+(exec)# do-exec undebug aaa traceback <cr>    # path-013523
+(exec)# do-exec undebug aaa userdb <cr>    # path-013491
+(exec)# do-exec undebug access-expression <cr>    # path-012747
+(exec)# do-exec undebug access-session all <cr>    # path-016016
+(exec)# do-exec undebug access-session detail <cr>    # path-016007
+(exec)# do-exec undebug access-session errors <cr>    # path-015992
+(exec)# do-exec undebug access-session events <cr>    # path-016000
+(exec)# do-exec undebug access-session feature all <cr>    # path-020146
+(exec)# do-exec undebug access-session rcl_server all <cr>    # path-020219
+(exec)# do-exec undebug access-session rcl_server detail <cr>    # path-020214
+(exec)# do-exec undebug access-session rcl_server error <cr>    # path-020208
+(exec)# do-exec undebug access-session rcl_server event <cr>    # path-020199
+(exec)# do-exec undebug access-session sync <cr>    # path-016033
+(exec)# do-exec undebug acl cca error <cr>    # path-018015
+(exec)# do-exec undebug acl cca event <cr>    # path-018032
+(exec)# do-exec undebug adjacency <cr>    # path-012526
+(exec)# do-exec undebug alg all <cr>    # path-013839
+(exec)# do-exec undebug alg info <cr>    # path-013895
+(exec)# do-exec undebug alg trace <cr>    # path-013880
+(exec)# do-exec undebug alg warn <cr>    # path-013861
+(exec)# do-exec undebug all <cr>    # path-012301
+(exec)# do-exec undebug alps ascu event <cr>    # path-020456
+(exec)# do-exec undebug alps circuit event <cr>    # path-020428
+(exec)# do-exec undebug alps peer event <cr>    # path-020429
+(exec)# do-exec undebug alps snmp <cr>    # path-016315
+(exec)# do-exec undebug analyze memory-leak <cr>    # path-015607
+(exec)# do-exec undebug ancp adjacency <cr>    # path-013626
+(exec)# do-exec undebug application db <cr>    # path-015441
+(exec)# do-exec undebug application detail <cr>    # path-015464
+(exec)# do-exec undebug application event <cr>    # path-015414
+(exec)# do-exec undebug application ha <cr>    # path-015529
+(exec)# do-exec undebug application ha detail <cr>    # path-019756
+(exec)# do-exec undebug application route <address> <address> <cr>    # path-022809
+(exec)# do-exec undebug application rwatch <cr>    # path-015444
+(exec)# do-exec undebug application rwatch rib <cr>    # path-019704
+(exec)# do-exec undebug application summary <cr>    # path-015403
+(exec)# do-exec undebug archive config differences <cr>    # path-020212
+(exec)# do-exec undebug archive config ha <cr>    # path-020223
+(exec)# do-exec undebug archive config timestamp <cr>    # path-020217
+(exec)# do-exec undebug archive log config persistent <cr>    # path-023088
+(exec)# do-exec undebug archive versioning <cr>    # path-016084
+(exec)# do-exec undebug archive versioning ha <cr>    # path-020206
+(exec)# do-exec undebug arp <cr>    # path-012449
+(exec)# do-exec undebug arp adjacency <cr>    # path-013011
+(exec)# do-exec undebug arp application <cr>    # path-013033
+(exec)# do-exec undebug arp database <cr>    # path-013189
+(exec)# do-exec undebug arp dynamic <cr>    # path-013054
+(exec)# do-exec undebug arp error <cr>    # path-013161
+(exec)# do-exec undebug arp ha <cr>    # path-013075
+(exec)# do-exec undebug arp interface <cr>    # path-013097
+(exec)# do-exec undebug arp retry <cr>    # path-013239
+(exec)# do-exec undebug arp static <cr>    # path-013125
+(exec)# do-exec undebug arp subblocking <cr>    # path-013147
+(exec)# do-exec undebug arp table <cr>    # path-013177
+(exec)# do-exec undebug arp timer <cr>    # path-013207
+(exec)# do-exec undebug aspp event <cr>    # path-016545
+(exec)# do-exec undebug aspp packet <cr>    # path-016564
+(exec)# do-exec undebug async async-queue <cr>    # path-015225
+(exec)# do-exec undebug async framing <cr>    # path-015173
+(exec)# do-exec undebug async packet <cr>    # path-015191
+(exec)# do-exec undebug async state <cr>    # path-015210
+(exec)# do-exec undebug atm ilmi <cr>    # path-015035
+(exec)# do-exec undebug atm ilmi red <cr>    # path-019409
+(exec)# do-exec undebug atomic-config <cr>    # path-012781
+(exec)# do-exec undebug autoip event <cr>    # path-015458
+(exec)# do-exec undebug backup <cr>    # path-012433
+(exec)# do-exec undebug beep concurrency <cr>    # path-015671
+(exec)# do-exec undebug beep profile <cr>    # path-015706
+(exec)# do-exec undebug beep session <cr>    # path-015718
+(exec)# do-exec undebug bfd dampening <cr>    # path-014333
+(exec)# do-exec undebug bfd event <cr>    # path-014389
+(exec)# do-exec undebug bfd ha <cr>    # path-014294
+(exec)# do-exec undebug bfd packet <cr>    # path-014376
+(exec)# do-exec undebug bfd stub <cr>    # path-014311
+(exec)# do-exec undebug bgp telemetry enable <cr>    # path-019042
+(exec)# do-exec undebug bidb errors <cr>    # path-014984
+(exec)# do-exec undebug bidb events <cr>    # path-014971
+(exec)# do-exec undebug bidb verbose <cr>    # path-015000
+(exec)# do-exec undebug bing <cr>    # path-012684
+(exec)# do-exec undebug bing detail <cr>    # path-015672
+(exec)# do-exec undebug bridge-domain client api <cr>    # path-017654
+(exec)# do-exec undebug bridge-domain client errors <cr>    # path-017630
+(exec)# do-exec undebug bridge-domain configuration <cr>    # path-013698
+(exec)# do-exec undebug bridge-domain errors <cr>    # path-013713
+(exec)# do-exec undebug bridge-domain ipc <cr>    # path-013728
+(exec)# do-exec undebug bridge-domain l2fib errors <cr>    # path-017758
+(exec)# do-exec undebug bridge-domain l2fib events <cr>    # path-017739
+(exec)# do-exec undebug bridge-domain linkfault <cr>    # path-013743
+(exec)# do-exec undebug bridge-domain route errors <cr>    # path-017742
+(exec)# do-exec undebug bridge-domain route events <cr>    # path-017724
+(exec)# do-exec undebug bridge-domain route flow-control <cr>    # path-017775
+(exec)# do-exec undebug bridge-domain route messages <cr>    # path-017761
+(exec)# do-exec undebug bsc diagnostic <cr>    # path-016334
+(exec)# do-exec undebug bsc event <cr>    # path-016341
+(exec)# do-exec undebug bsc packet <cr>    # path-016356
+(exec)# do-exec undebug bstun event <cr>    # path-016340
+(exec)# do-exec undebug bstun packet <cr>    # path-016355
+(exec)# do-exec undebug buffer <cr>    # path-012745
+(exec)# do-exec undebug buffer failures <cr>    # path-016128
+(exec)# do-exec undebug bulkstat client all <cr>    # path-020563
+(exec)# do-exec undebug bulkstat client error <cr>    # path-020545
+(exec)# do-exec undebug bulkstat client info <cr>    # path-020554
+(exec)# do-exec undebug bulkstat file all <cr>    # path-020555
+(exec)# do-exec undebug bulkstat file error <cr>    # path-020535
+(exec)# do-exec undebug bulkstat file info <cr>    # path-020546
+(exec)# do-exec undebug bulkstat processing all <cr>    # path-020578
+(exec)# do-exec undebug bulkstat processing error <cr>    # path-020573
+(exec)# do-exec undebug bulkstat processing info <cr>    # path-020567
+(exec)# do-exec undebug caaa accounting <cr>    # path-014987
+(exec)# do-exec undebug caaa all <cr>    # path-015066
+(exec)# do-exec undebug caaa authentication <cr>    # path-015002
+(exec)# do-exec undebug caaa authorization <cr>    # path-015016
+(exec)# do-exec undebug caaa command-handler <cr>    # path-014963
+(exec)# do-exec undebug caaa error <cr>    # path-015030
+(exec)# do-exec undebug caaa ha <cr>    # path-014953
+(exec)# do-exec undebug caaa service <cr>    # path-014975
+(exec)# do-exec undebug call filter detail <cr>    # path-019889
+(exec)# do-exec undebug call filter inout <cr>    # path-019877
+(exec)# do-exec undebug call-admission elog <cr>    # path-015921
+(exec)# do-exec undebug call-admission trace <cr>    # path-015931
+(exec)# do-exec undebug call-home all <cr>    # path-013730
+(exec)# do-exec undebug call-home detail <cr>    # path-013670
+(exec)# do-exec undebug call-home diagnostic-signature action <cr>    # path-017762
+(exec)# do-exec undebug call-home diagnostic-signature all <cr>    # path-017817
+(exec)# do-exec undebug call-home diagnostic-signature api <cr>    # path-017788
+(exec)# do-exec undebug call-home diagnostic-signature cli <cr>    # path-017798
+(exec)# do-exec undebug call-home diagnostic-signature download <cr>    # path-017776
+(exec)# do-exec undebug call-home diagnostic-signature error <cr>    # path-017806
+(exec)# do-exec undebug call-home diagnostic-signature event-registration <cr>    # path-017743
+(exec)# do-exec undebug call-home diagnostic-signature parsing <cr>    # path-017725
+(exec)# do-exec undebug call-home error <cr>    # path-013700
+(exec)# do-exec undebug call-home mail <cr>    # path-013683
+(exec)# do-exec undebug call-home message-content <cr>    # path-013761
+(exec)# do-exec undebug call-home message-content profile <string> <cr>    # path-021636
+(exec)# do-exec undebug call-home smart-licensing all <cr>    # path-017774
+(exec)# do-exec undebug call-home smart-licensing error <cr>    # path-017760
+(exec)# do-exec undebug call-home smart-licensing trace <cr>    # path-017740
+(exec)# do-exec undebug call-home trace <cr>    # path-013716
+(exec)# do-exec undebug callback <cr>    # path-012685
+(exec)# do-exec undebug cca <cr>    # path-012366
+(exec)# do-exec undebug cce cp <cr>    # path-014031
+(exec)# do-exec undebug cce cp filter balance <cr>    # path-021822
+(exec)# do-exec undebug cce cpdp <cr>    # path-014114
+(exec)# do-exec undebug cce cpdp elog <cr>    # path-017998
+(exec)# do-exec undebug cce cpdp events <cr>    # path-018006
+(exec)# do-exec undebug cce cpdp events detailed <cr>    # path-021847
+(exec)# do-exec undebug cce ha <cr>    # path-014115
+(exec)# do-exec undebug cce ha event <cr>    # path-017982
+(exec)# do-exec undebug cce ha issu <cr>    # path-017999
+(exec)# do-exec undebug cdapi detail <cr>    # path-015857
+(exec)# do-exec undebug cdapi events <cr>    # path-015849
+(exec)# do-exec undebug cdp adjacency <cr>    # path-013894
+(exec)# do-exec undebug cdp events <cr>    # path-013878
+(exec)# do-exec undebug cdp ilp <cr>    # path-013951
+(exec)# do-exec undebug cdp ip <cr>    # path-013907
+(exec)# do-exec undebug cdp location-server <cr>    # path-013917
+(exec)# do-exec undebug cdp packets <cr>    # path-013859
+(exec)# do-exec undebug cdp test <cr>    # path-013932
+(exec)# do-exec undebug cef filter fib <cr>    # path-017664
+(exec)# do-exec undebug cef filter hardware notifications <cr>    # path-021688
+(exec)# do-exec undebug cef filter path <cr>    # path-017698
+(exec)# do-exec undebug cef filter subtree context client <cr>    # path-023792
+(exec)# do-exec undebug cef filter table <cr>    # path-017683
+(exec)# do-exec undebug cef filter uid key <cr>    # path-021563
+(exec)# do-exec undebug cef filter vrf <cr>    # path-017694
+(exec)# do-exec undebug cef table <cr>    # path-013691
+(exec)# do-exec undebug cfgdiff <cr>    # path-012367
+(exec)# do-exec undebug cfgdiff timestamp <cr>    # path-012959
+(exec)# do-exec undebug cft <cr>    # path-012590
+(exec)# do-exec undebug cft ager <cr>    # path-014461
+(exec)# do-exec undebug cft engine <cr>    # path-014508
+(exec)# do-exec undebug cft fe <cr>    # path-014529
+(exec)# do-exec undebug cft flow <cr>    # path-014440
+(exec)# do-exec undebug cft l4 <cr>    # path-014548
+(exec)# do-exec undebug cft memory <cr>    # path-014484
+(exec)# do-exec undebug chat <cr>    # path-012689
+(exec)# do-exec undebug checkpoint timers <cr>    # path-013416
+(exec)# do-exec undebug clns cache <cr>    # path-015321
+(exec)# do-exec undebug clns esis events <cr>    # path-019547
+(exec)# do-exec undebug clns esis packets <cr>    # path-019565
+(exec)# do-exec undebug clns events <cr>    # path-015223
+(exec)# do-exec undebug clns filters <cr>    # path-015303
+(exec)# do-exec undebug clns igrp-adjacency <cr>    # path-015270
+(exec)# do-exec undebug clns igrp-events <cr>    # path-015237
+(exec)# do-exec undebug clns igrp-packets <cr>    # path-015257
+(exec)# do-exec undebug clns packets <cr>    # path-015286
+(exec)# do-exec undebug clns routing <cr>    # path-015343
+(exec)# do-exec undebug cls errors <cr>    # path-015295
+(exec)# do-exec undebug cls flow-control <cr>    # path-015371
+(exec)# do-exec undebug cls hpr <cr>    # path-015389
+(exec)# do-exec undebug cls messages <cr>    # path-015314
+(exec)# do-exec undebug cls sdlc <cr>    # path-015336
+(exec)# do-exec undebug cls state <cr>    # path-015278
+(exec)# do-exec undebug cls vdlc <cr>    # path-015355
+(exec)# do-exec undebug cns aaa <cr>    # path-016292
+(exec)# do-exec undebug cns all <cr>    # path-016333
+(exec)# do-exec undebug cns config <cr>    # path-016255
+(exec)# do-exec undebug cns config all <cr>    # path-020434
+(exec)# do-exec undebug cns config apply <cr>    # path-020411
+(exec)# do-exec undebug cns config decode <cr>    # path-020420
+(exec)# do-exec undebug cns config initial <cr>    # path-020398
+(exec)# do-exec undebug cns config interface <cr>    # path-020365
+(exec)# do-exec undebug cns config messages <cr>    # path-020427
+(exec)# do-exec undebug cns config notify all <cr>    # path-023192
+(exec)# do-exec undebug cns config notify eventing <cr>    # path-023178
+(exec)# do-exec undebug cns config notify expand <cr>    # path-023188
+(exec)# do-exec undebug cns config notify generation <cr>    # path-023183
+(exec)# do-exec undebug cns config notify modes <cr>    # path-023186
+(exec)# do-exec undebug cns config notify nvgen <cr>    # path-023180
+(exec)# do-exec undebug cns config notify xml <cr>    # path-023185
+(exec)# do-exec undebug cns config partial <cr>    # path-020383
+(exec)# do-exec undebug cns config retrieve <cr>    # path-020346
+(exec)# do-exec undebug cns event agent <cr>    # path-020350
+(exec)# do-exec undebug cns event all <cr>    # path-020386
+(exec)# do-exec undebug cns event connection <cr>    # path-020335
+(exec)# do-exec undebug cns event subscriber <cr>    # path-020368
+(exec)# do-exec undebug cns exec agent <cr>    # path-020362
+(exec)# do-exec undebug cns exec all <cr>    # path-020409
+(exec)# do-exec undebug cns exec decode <cr>    # path-020396
+(exec)# do-exec undebug cns exec messages <cr>    # path-020381
+(exec)# do-exec undebug cns format <cr>    # path-016304
+(exec)# do-exec undebug cns framework <cr>    # path-016283
+(exec)# do-exec undebug cns http <cr>    # path-016316
+(exec)# do-exec undebug cns image agent <cr>    # path-020394
+(exec)# do-exec undebug cns image all <cr>    # path-020418
+(exec)# do-exec undebug cns image connection <cr>    # path-020378
+(exec)# do-exec undebug cns image error <cr>    # path-020408
+(exec)# do-exec undebug cns io <cr>    # path-016246
+(exec)# do-exec undebug cns lock <cr>    # path-016254
+(exec)# do-exec undebug cns management <cr>    # path-016298
+(exec)# do-exec undebug cns ssl <cr>    # path-016273
+(exec)# do-exec undebug cns transport <cr>    # path-016262
+(exec)# do-exec undebug cns xml all <cr>    # path-020461
+(exec)# do-exec undebug cns xml decode <cr>    # path-020453
+(exec)# do-exec undebug cns xml dom <cr>    # path-020437
+(exec)# do-exec undebug cns xml parser <cr>    # path-020444
+(exec)# do-exec undebug compress <cr>    # path-012441
+(exec)# do-exec undebug compress detailed <cr>    # path-013197
+(exec)# do-exec undebug condition <number:1..1000> <cr>    # path-012886
+(exec)# do-exec undebug condition all <cr>    # path-012895
+(exec)# do-exec undebug condition called <string> <cr>    # path-016828
+(exec)# do-exec undebug condition calling <string> <cr>    # path-016841
+(exec)# do-exec undebug condition cpl class-map <string> <cr>    # path-021073
+(exec)# do-exec undebug condition cpl policy-map <string> <cr>    # path-021086
+(exec)# do-exec undebug condition cts peer-id <string> <cr>    # path-021024
+(exec)# do-exec undebug condition domain <string> <cr>    # path-016889
+(exec)# do-exec undebug condition ip <address> <cr>    # path-016892
+(exec)# do-exec undebug condition ip nat inside destination list <number:1..2699> <cr>    # path-024959
+(exec)# do-exec undebug condition ip nat inside source <cr>    # path-023425
+(exec)# do-exec undebug condition ip nat inside source static <address> <address> <cr>    # path-025116
+(exec)# do-exec undebug condition ip nat outside source list <number:1..2699> <cr>    # path-024962
+(exec)# do-exec undebug condition ip nat outside source static <address> <address> <cr>    # path-025114
+(exec)# do-exec undebug condition ip nat pool <string> <cr>    # path-023423
+(exec)# do-exec undebug condition mac-address <address> <cr>    # path-016868
+(exec)# do-exec undebug condition mac-address all <cr>    # path-016869
+(exec)# do-exec undebug condition match-list <number:1..16> <cr>    # path-016983
+(exec)# do-exec undebug condition portbundle ip <address> bundle <number:0..65536> <cr>    # path-024566
+(exec)# do-exec undebug condition session-id <number:1..4294967295> <cr>    # path-016902
+(exec)# do-exec undebug condition tnlmsg <number:1..15> <cr>    # path-016932
+(exec)# do-exec undebug condition username <string> <cr>    # path-016813
+(exec)# do-exec undebug condition vcid <number:1..4294967295> <cr>    # path-016879
+(exec)# do-exec undebug condition vlan <number:1..4094> <cr>    # path-017013
+(exec)# do-exec undebug condition vrf default <cr>    # path-016975
+(exec)# do-exec undebug configuration lock <cr>    # path-012930
+(exec)# do-exec undebug confmodem <cr>    # path-012687
+(exec)# do-exec undebug conn <cr>    # path-012561
+(exec)# do-exec undebug cops <cr>    # path-012640
+(exec)# do-exec undebug cpc function-trace <cr>    # path-014292
+(exec)# do-exec undebug cpc subblock <cr>    # path-014270
+(exec)# do-exec undebug cpl <cr>    # path-012697
+(exec)# do-exec undebug cpl cap-xos <cr>    # path-015637
+(exec)# do-exec undebug cpl classification <cr>    # path-015771
+(exec)# do-exec undebug cpl classification client <cr>    # path-019937
+(exec)# do-exec undebug cpl classification dp <cr>    # path-019949
+(exec)# do-exec undebug cpl classification infra <cr>    # path-019928
+(exec)# do-exec undebug cpl concurrency delay acquire <number:0..300> <number:1..10000> <cr>    # path-024894
+(exec)# do-exec undebug cpl concurrency history <cr>    # path-019842
+(exec)# do-exec undebug cpl concurrency lock <cr>    # path-019857
+(exec)# do-exec undebug cpl concurrency pid <number:1..10000> <cr>    # path-022890
+(exec)# do-exec undebug cpl concurrency trace <cr>    # path-019853
+(exec)# do-exec undebug cpl filtering <cr>    # path-015724
+(exec)# do-exec undebug cpl function <string> <cr>    # path-019878
+(exec)# do-exec undebug cpl inline <cr>    # path-015596
+(exec)# do-exec undebug cpl pol-shim <cr>    # path-015650
+(exec)# do-exec undebug cpl ppcp <cr>    # path-015853
+(exec)# do-exec undebug cpl ppcp bind <cr>    # path-019916
+(exec)# do-exec undebug cpl ppcp client <cr>    # path-020018

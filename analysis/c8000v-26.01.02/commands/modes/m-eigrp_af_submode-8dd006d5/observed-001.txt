@@ -1,0 +1,134 @@
+# 模式 eigrp_af_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af)# af-interface <interface> <cr>    # observed_connections-006160
+(config-router-af)# af-interface default <cr>    # observed_connections-006045
+(config-router-af)# default af-interface default <cr>    # observed_connections-006077
+(config-router-af)# default eigrp default-route-tag <cr>    # observed_connections-006140
+(config-router-af)# default eigrp default-route-tag <cr>    # observed_connections-006144
+(config-router-af)# default eigrp graceful-restart <cr>    # observed_connections-006104
+(config-router-af)# default eigrp graceful-restart <cr>    # observed_connections-006119
+(config-router-af)# default eigrp kill-everyone <cr>    # observed_connections-006117
+(config-router-af)# default eigrp kill-everyone <cr>    # observed_connections-006128
+(config-router-af)# default eigrp log-neighbor-changes <cr>    # observed_connections-006124
+(config-router-af)# default eigrp log-neighbor-changes <cr>    # observed_connections-006132
+(config-router-af)# default eigrp log-neighbor-warnings <cr>    # observed_connections-006134
+(config-router-af)# default eigrp log-neighbor-warnings <cr>    # observed_connections-006139
+(config-router-af)# default eigrp router-id <cr>    # observed_connections-006095
+(config-router-af)# default eigrp router-id <cr>    # observed_connections-006112
+(config-router-af)# default eigrp stub <cr>    # observed_connections-006114
+(config-router-af)# default eigrp stub <cr>    # observed_connections-006125
+(config-router-af)# default eigrp stub-site <cr>    # observed_connections-006126
+(config-router-af)# default eigrp stub-site <cr>    # observed_connections-006133
+(config-router-af)# default maximum-prefix <cr>    # observed_connections-006052
+(config-router-af)# default maximum-prefix <cr>    # observed_connections-006057
+(config-router-af)# default metric rib-scale <cr>    # observed_connections-006083
+(config-router-af)# default metric rib-scale <cr>    # observed_connections-006096
+(config-router-af)# default metric version <cr>    # observed_connections-006089
+(config-router-af)# default metric version <cr>    # observed_connections-006105
+(config-router-af)# default metric weights <cr>    # observed_connections-006099
+(config-router-af)# default metric weights <cr>    # observed_connections-006115
+(config-router-af)# default neighbor <address> description <cr>    # observed_connections-006155
+(config-router-af)# default neighbor maximum-prefix <cr>    # observed_connections-006102
+(config-router-af)# default network <address> <cr>    # observed_connections-006086
+(config-router-af)# default nsf <cr>    # observed_connections-006048
+(config-router-af)# default populate bgp-ext-comm <cr>    # observed_connections-006110
+(config-router-af)# default populate bgp-ext-comm <cr>    # observed_connections-006122
+(config-router-af)# default shutdown <cr>    # observed_connections-006053
+(config-router-af)# default shutdown <cr>    # observed_connections-006059
+(config-router-af)# default soft-sia <cr>    # observed_connections-006062
+(config-router-af)# default soft-sia <cr>    # observed_connections-006068
+(config-router-af)# default timers graceful-restart purge-time <cr>    # observed_connections-006147
+(config-router-af)# default timers graceful-restart purge-time <cr>    # observed_connections-006150
+(config-router-af)# default timers nsf converge <cr>    # observed_connections-006159
+(config-router-af)# default timers nsf signal <cr>    # observed_connections-006156
+(config-router-af)# default topology base <cr>    # observed_connections-006079
+(config-router-af)# eigrp default-route-tag <address> <cr>    # observed_connections-006165
+(config-router-af)# eigrp default-route-tag <address> <cr>    # observed_connections-006166
+(config-router-af)# eigrp default-route-tag <number:0..4294967295> <cr>    # observed_connections-006138
+(config-router-af)# eigrp default-route-tag <number:0..4294967295> <cr>    # observed_connections-006143
+(config-router-af)# eigrp graceful-restart <cr>    # observed_connections-006056
+(config-router-af)# eigrp graceful-restart <cr>    # observed_connections-006063
+(config-router-af)# eigrp kill-everyone <cr>    # observed_connections-006061
+(config-router-af)# eigrp kill-everyone <cr>    # observed_connections-006067
+(config-router-af)# eigrp log-neighbor-changes <cr>    # observed_connections-006065
+(config-router-af)# eigrp log-neighbor-changes <cr>    # observed_connections-006069
+(config-router-af)# eigrp log-neighbor-warnings <cr>    # observed_connections-006070
+(config-router-af)# eigrp log-neighbor-warnings <cr>    # observed_connections-006072
+(config-router-af)# eigrp router-id <address> <cr>    # observed_connections-006091
+(config-router-af)# eigrp router-id <address> <cr>    # observed_connections-006108
+(config-router-af)# eigrp stub <cr>    # observed_connections-006074
+(config-router-af)# eigrp stub <cr>    # observed_connections-006075
+(config-router-af)# eigrp stub-site <?eigrp_stub_site_id_action@555589c12bc0> <cr>    # observed_connections-006164
+(config-router-af)# eigrp stub-site <?eigrp_stub_site_id_action@55558a9b07f8> <cr>    # observed_connections-006163
+(config-router-af)# exit-address-family <cr>    # observed_connections-006039
+(config-router-af)# maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006071
+(config-router-af)# maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006073
+(config-router-af)# metric rib-scale <number:1..255> <cr>    # observed_connections-006081
+(config-router-af)# metric rib-scale <number:1..255> <cr>    # observed_connections-006092
+(config-router-af)# metric version 32bit <cr>    # observed_connections-006085
+(config-router-af)# metric version 32bit <cr>    # observed_connections-006100
+(config-router-af)# metric version 64bit <cr>    # observed_connections-006093
+(config-router-af)# metric version 64bit <cr>    # observed_connections-006109
+(config-router-af)# metric weights <number:0..8> <cr>    # observed_connections-006135
+(config-router-af)# metric weights <number:0..8> <cr>    # observed_connections-006141
+(config-router-af)# neighbor <address> <interface> <cr>    # observed_connections-006161
+(config-router-af)# neighbor <address> <interface> <cr>    # observed_connections-006162
+(config-router-af)# neighbor <address> description <string> <cr>    # observed_connections-006153
+(config-router-af)# neighbor maximum-prefix <number:1..4294967295> <cr>    # observed_connections-006127
+(config-router-af)# network <address> <cr>    # observed_connections-006050
+(config-router-af)# no af-interface default <cr>    # observed_connections-006076
+(config-router-af)# no eigrp default-route-tag <cr>    # observed_connections-006137
+(config-router-af)# no eigrp default-route-tag <cr>    # observed_connections-006142
+(config-router-af)# no eigrp graceful-restart <cr>    # observed_connections-006097
+(config-router-af)# no eigrp graceful-restart <cr>    # observed_connections-006113
+(config-router-af)# no eigrp kill-everyone <cr>    # observed_connections-006111
+(config-router-af)# no eigrp kill-everyone <cr>    # observed_connections-006123
+(config-router-af)# no eigrp log-neighbor-changes <cr>    # observed_connections-006118
+(config-router-af)# no eigrp log-neighbor-changes <cr>    # observed_connections-006129
+(config-router-af)# no eigrp log-neighbor-warnings <cr>    # observed_connections-006131
+(config-router-af)# no eigrp log-neighbor-warnings <cr>    # observed_connections-006136
+(config-router-af)# no eigrp router-id <cr>    # observed_connections-006087
+(config-router-af)# no eigrp router-id <cr>    # observed_connections-006103
+(config-router-af)# no eigrp stub <cr>    # observed_connections-006106
+(config-router-af)# no eigrp stub <cr>    # observed_connections-006120
+(config-router-af)# no eigrp stub-site <cr>    # observed_connections-006121
+(config-router-af)# no eigrp stub-site <cr>    # observed_connections-006130
+(config-router-af)# no maximum-prefix <cr>    # observed_connections-006049
+(config-router-af)# no maximum-prefix <cr>    # observed_connections-006054
+(config-router-af)# no metric rib-scale <cr>    # observed_connections-006080
+(config-router-af)# no metric rib-scale <cr>    # observed_connections-006088
+(config-router-af)# no metric version <cr>    # observed_connections-006084
+(config-router-af)# no metric version <cr>    # observed_connections-006098
+(config-router-af)# no metric weights <cr>    # observed_connections-006090
+(config-router-af)# no metric weights <cr>    # observed_connections-006107
+(config-router-af)# no neighbor <address> description <cr>    # observed_connections-006151
+(config-router-af)# no neighbor maximum-prefix <cr>    # observed_connections-006094
+(config-router-af)# no network <address> <cr>    # observed_connections-006082
+(config-router-af)# no nsf <cr>    # observed_connections-006046
+(config-router-af)# no populate bgp-ext-comm <cr>    # observed_connections-006101
+(config-router-af)# no populate bgp-ext-comm <cr>    # observed_connections-006116
+(config-router-af)# no shutdown <cr>    # observed_connections-006051
+(config-router-af)# no shutdown <cr>    # observed_connections-006055
+(config-router-af)# no soft-sia <cr>    # observed_connections-006060
+(config-router-af)# no soft-sia <cr>    # observed_connections-006066
+(config-router-af)# no timers graceful-restart purge-time <cr>    # observed_connections-006145
+(config-router-af)# no timers graceful-restart purge-time <cr>    # observed_connections-006148
+(config-router-af)# no timers nsf converge <cr>    # observed_connections-006157
+(config-router-af)# no timers nsf signal <cr>    # observed_connections-006152
+(config-router-af)# no topology base <cr>    # observed_connections-006078
+(config-router-af)# nsf <cr>    # observed_connections-006040
+(config-router-af)# populate bgp-ext-comm <cr>    # observed_connections-006058
+(config-router-af)# populate bgp-ext-comm <cr>    # observed_connections-006064
+(config-router-af)# remote-neighbors source <interface> multicast-group <cr>    # observed_connections-006167
+(config-router-af)# remote-neighbors source <interface> multicast-group <cr>    # observed_connections-006168
+(config-router-af)# shutdown <cr>    # observed_connections-006041
+(config-router-af)# shutdown <cr>    # observed_connections-006042
+(config-router-af)# soft-sia <cr>    # observed_connections-006043
+(config-router-af)# soft-sia <cr>    # observed_connections-006044
+(config-router-af)# timers graceful-restart purge-time <number:20..300> <cr>    # observed_connections-006146
+(config-router-af)# timers graceful-restart purge-time <number:20..300> <cr>    # observed_connections-006149
+(config-router-af)# timers nsf converge <number:60..180> <cr>    # observed_connections-006158
+(config-router-af)# timers nsf signal <number:10..30> <cr>    # observed_connections-006154
+(config-router-af)# topology base <cr>    # observed_connections-006047

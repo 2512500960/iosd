@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-086.md
+
+(config)# no do-exec show processes cpu history table <cr>    # path-053563
+(config)# no do-exec show processes cpu monitor <cr>    # path-046236
+(config)# no do-exec show processes cpu sorted <cr>    # path-046265
+(config)# no do-exec show processes events <cr>    # path-036610
+(config)# no do-exec show processes heapcheck <cr>    # path-036352
+(config)# no do-exec show processes history <cr>    # path-036783
+(config)# no do-exec show processes memory <cr>    # path-036800
+(config)# no do-exec show processes memory old-header <cr>    # path-046142
+(config)# no do-exec show processes memory sorted <cr>    # path-046154
+(config)# no do-exec show processes timercheck <cr>    # path-036423
+(config)# no do-exec show profile <cr>    # path-033452
+(config)# no do-exec show protocols <cr>    # path-031983
+(config)# no do-exec show qbm client <cr>    # path-037017
+(config)# no do-exec show qbm pool <cr>    # path-037114
+(config)# no do-exec show qfp drops thresholds <cr>    # path-045987
+(config)# no do-exec show qfp utilization monitor <cr>    # path-045938
+(config)# no do-exec show qllc <cr>    # path-033821
+(config)# no do-exec show qos adaptive db <cr>    # path-047540
+(config)# no do-exec show qos adaptive multipoint <cr>    # path-047580
+(config)# no do-exec show qos event <cr>    # path-038421
+(config)# no do-exec show qos trace <cr>    # path-038600
+(config)# no do-exec show qos trace error <cr>    # path-047631
+(config)# no do-exec show qos trace event <cr>    # path-047563
+(config)# no do-exec show qos trace warning <cr>    # path-047596
+(config)# no do-exec show radius server-group all <cr>    # path-050910
+(config)# no do-exec show radius statistics <cr>    # path-042191
+(config)# no do-exec show radius table attributes <cr>    # path-050911
+(config)# no do-exec show radius-proxy client <address> <cr>    # path-048189
+(config)# no do-exec show radius-proxy session id <number:1..4294967295> <cr>    # path-054748
+(config)# no do-exec show radius-proxy statistics <cr>    # path-039209
+(config)# no do-exec show rbscp state <cr>    # path-041263
+(config)# no do-exec show redirect group <cr>    # path-039075
+(config)# no do-exec show redirect translations <cr>    # path-039283
+(config)# no do-exec show redundancy <cr>    # path-030524
+(config)# no do-exec show redundancy application group <cr>    # path-046787
+(config)# no do-exec show redundancy clients <cr>    # path-036842
+(config)# no do-exec show redundancy cloud provider <cr>    # path-046746
+(config)# no do-exec show redundancy history monitor <cr>    # path-046463
+(config)# no do-exec show redundancy idb-sync-history <cr>    # path-036908
+(config)# no do-exec show redundancy interchassis <cr>    # path-037250
+(config)# no do-exec show redundancy rii <cr>    # path-037165
+(config)# no do-exec show redundancy rii <number:1..65535> <cr>    # path-046532
+(config)# no do-exec show redundancy switchover history <cr>    # path-046511
+(config)# no do-exec show redundancy trace main <cr>    # path-046617
+(config)# no do-exec show refuse-message <cr>    # path-031979
+(config)# no do-exec show region <cr>    # path-033420
+(config)# no do-exec show registry <cr>    # path-033519
+(config)# no do-exec show registry calls <cr>    # path-043017
+(config)# no do-exec show reload <cr>    # path-029084
+(config)# no do-exec show reload history <cr>    # path-035095
+(config)# no do-exec show remote-management status <cr>    # path-043766
+(config)# no do-exec show resource database <cr>    # path-035492
+(config)# no do-exec show resource monitor all <cr>    # path-045255
+(config)# no do-exec show resource notification owner all user all <cr>    # path-059080
+(config)# no do-exec show resource owner all user-type all <cr>    # path-057135
+(config)# no do-exec show resource policy all <cr>    # path-045159
+(config)# no do-exec show resource relationship user-type all <cr>    # path-052866
+(config)# no do-exec show resource user-type all <cr>    # path-045165
+(config)# no do-exec show resource-group <cr>    # path-033518
+(config)# no do-exec show resource-group memory <cr>    # path-043050
+(config)# no do-exec show rfs issu endpoints <cr>    # path-051245
+(config)# no do-exec show rhosts <cr>    # path-030990
+(config)# no do-exec show rib application <cr>    # path-041023
+(config)# no do-exec show rib client <cr>    # path-040943
+(config)# no do-exec show rib gr <cr>    # path-041022
+(config)# no do-exec show rib ut <cr>    # path-041135
+(config)# no do-exec show rif <cr>    # path-029845
+(config)# no do-exec show rmon <cr>    # path-033201
+(config)# no do-exec show romvar <cr>    # path-030221
+(config)# no do-exec show route-map <cr>    # path-032022
+(config)# no do-exec show route-map all <cr>    # path-040167
+(config)# no do-exec show route-map dynamic <cr>    # path-040394
+(config)# no do-exec show route-map dynamic application <cr>    # path-049357
+(config)# no do-exec show route-map ipc <cr>    # path-040331
+(config)# no do-exec show route-tag <cr>    # path-031966
+(config)# no do-exec show rsh-disable-commands <cr>    # path-031015
+(config)# no do-exec show rudpv1 failures <cr>    # path-041832
+(config)# no do-exec show rudpv1 parameters <cr>    # path-041864
+(config)# no do-exec show rudpv1 statistics <cr>    # path-041805
+(config)# no do-exec show running-config <cr>    # path-029917
+(config)# no do-exec show running-config aaa <cr>    # path-037042
+(config)# no do-exec show running-config bridge-domain parameterized vlan <cr>    # path-052871
+(config)# no do-exec show running-config class-map <cr>    # path-035994
+(config)# no do-exec show running-config cts <cr>    # path-036667
+(config)# no do-exec show running-config eap method profiles <cr>    # path-053226
+(config)# no do-exec show running-config eap profiles <cr>    # path-045647
+(config)# no do-exec show running-config ethernet cfm <cr>    # path-046070
+(config)# no do-exec show running-config flow exporter <cr>    # path-045215
+(config)# no do-exec show running-config flow monitor <cr>    # path-045439
+(config)# no do-exec show running-config flow record <cr>    # path-045384
+(config)# no do-exec show running-config identity policy <cr>    # path-045598
+(config)# no do-exec show running-config ip dhcp pool <cr>    # path-053219
+(config)# no do-exec show running-config ipv6 dhcp pool <cr>    # path-053265
+(config)# no do-exec show running-config map-class <cr>    # path-035988
+(config)# no do-exec show running-config mdns-sd <cr>    # path-036621
+(config)# no do-exec show running-config nat <cr>    # path-035132
+(config)# no do-exec show running-config nve <cr>    # path-034916
+(config)# no do-exec show running-config service-group <cr>    # path-035606
+(config)# no do-exec show running-config switchport <cr>    # path-036056
+(config)# no do-exec show running-config vc-class <cr>    # path-036061
+(config)# no do-exec show running-config vlan <cr>    # path-036059
+(config)# no do-exec show running-config vrf <cr>    # path-034860
+(config)# no do-exec show rwatch <cr>    # path-033162
+(config)# no do-exec show sampler <cr>    # path-030784
+(config)# no do-exec show sampler broker <cr>    # path-037644
+(config)# no do-exec show sasl all <cr>    # path-043785
+(config)# no do-exec show sasl context <cr>    # path-043813
+(config)# no do-exec show sasl mechanisms <cr>    # path-043804
+(config)# no do-exec show sasl profile <string> <cr>    # path-052029
+(config)# no do-exec show sasl profile all <cr>    # path-052024
+(config)# no do-exec show scalable-queue statistics <cr>    # path-036287
+(config)# no do-exec show sd-card summary <cr>    # path-043676
+(config)# no do-exec show sdb <cr>    # path-033363
+(config)# no do-exec show sdllc <cr>    # path-033736
+(config)# no do-exec show self-diagnostics <cr>    # path-033834
+(config)# no do-exec show sensor-mgr db <cr>    # path-035148
+(config)# no do-exec show service-group all <cr>    # path-037729
+(config)# no do-exec show service-overlay applications registered <cr>    # path-050152
+(config)# no do-exec show service-overlay internal <cr>    # path-041188
+(config)# no do-exec show service-overlay stats <cr>    # path-041126
+(config)# no do-exec show service-overlay summary <cr>    # path-041158
+(config)# no do-exec show service-routing capabilities-manager <cr>    # path-041500
+(config)# no do-exec show service-routing database <cr>    # path-041420
+(config)# no do-exec show service-routing parser <cr>    # path-041397
+(config)# no do-exec show service-routing plugins <cr>    # path-041428
+(config)# no do-exec show service-routing registered <cr>    # path-041421
+(config)# no do-exec show service-routing registered detail <cr>    # path-050341
+(config)# no do-exec show service-routing subscriptions <cr>    # path-041451
+(config)# no do-exec show service-routing subscriptions detail <cr>    # path-050354
+(config)# no do-exec show service-routing tech-support <cr>    # path-041393
+(config)# no do-exec show service-routing xmcp clients <cr>    # path-050435
+(config)# no do-exec show service-routing xmcp server <cr>    # path-050398
+(config)# no do-exec show service-routing xmcp timers <cr>    # path-050417
+(config)# no do-exec show service-template <cr>    # path-033258
+(config)# no do-exec show sessions <cr>    # path-028887
+(config)# no do-exec show shell data-path <cr>    # path-034203
+(config)# no do-exec show shell environment <cr>    # path-034145
+(config)# no do-exec show shell functions brief <cr>    # path-043963
+(config)# no do-exec show shell triggers <cr>    # path-034207
+(config)# no do-exec show shell-exec status <cr>    # path-042461
+(config)# no do-exec show slip <cr>    # path-032478
+(config)# no do-exec show smds addresses <cr>    # path-038707
+(config)# no do-exec show smds map <cr>    # path-038768
+(config)# no do-exec show smds traffic <cr>    # path-038819
+(config)# no do-exec show smf <cr>    # path-032106
+(config)# no do-exec show sna <cr>    # path-032679
+(config)# no do-exec show snapshot <cr>    # path-033021
+(config)# no do-exec show snmp <cr>    # path-032451
+(config)# no do-exec show snmp chassis <cr>    # path-040992
+(config)# no do-exec show snmp community <cr>    # path-041033
+(config)# no do-exec show snmp contact <cr>    # path-040923
+(config)# no do-exec show snmp context <cr>    # path-040783
+(config)# no do-exec show snmp context mapping <cr>    # path-049904
+(config)# no do-exec show snmp cpu-stats <cr>    # path-040720
+(config)# no do-exec show snmp engineID <cr>    # path-040773
+(config)# no do-exec show snmp group <cr>    # path-040830
+(config)# no do-exec show snmp host <cr>    # path-040892
+(config)# no do-exec show snmp location <cr>    # path-040955
+(config)# no do-exec show snmp mib <cr>    # path-040843
+(config)# no do-exec show snmp mib bulkstat transfer <cr>    # path-055804
+(config)# no do-exec show snmp mib bulkstat transfer <string> <cr>    # path-058571
+(config)# no do-exec show snmp mib context <cr>    # path-049953
+(config)# no do-exec show snmp mib ifmib ifindex <cr>    # path-055825
+(config)# no do-exec show snmp mib ifmib ifindex free-list <cr>    # path-058592
+(config)# no do-exec show snmp mib ifmib traps <cr>    # path-055759
+(config)# no do-exec show snmp mib nhrp status <cr>    # path-055754
+(config)# no do-exec show snmp mib notification-log <cr>    # path-049982
+(config)# no do-exec show snmp mib notification-log all <cr>    # path-055753
+(config)# no do-exec show snmp mib notification-log default <cr>    # path-055780
+(config)# no do-exec show snmp notify <cr>    # path-040802
+(config)# no do-exec show snmp pending <cr>    # path-041313
+(config)# no do-exec show snmp sa cache-stat <cr>    # path-050308
+(config)# no do-exec show snmp sessions <cr>    # path-041323
+(config)# no do-exec show snmp slot-mapping <cr>    # path-041192
+(config)# no do-exec show snmp stats hosts <cr>    # path-050231
+(config)# no do-exec show snmp stats oid <cr>    # path-050207
+(config)# no do-exec show snmp user <cr>    # path-040897
+(config)# no do-exec show snmp view <cr>    # path-041072
+(config)# no do-exec show sntp <cr>    # path-030794
+(config)# no do-exec show sockets <cr>    # path-032191
+(config)# no do-exec show sockets <number:1..4294967295> <cr>    # path-040815
+(config)# no do-exec show sockets <number:1..4294967295> events <cr>    # path-049905
+(config)# no do-exec show software authenticity keys <cr>    # path-051902
+(config)# no do-exec show source-bridge <cr>    # path-033748
+(config)# no do-exec show spanning-tree <cr>    # path-033697
+(config)# no do-exec show spanning-tree blockedports <cr>    # path-043280
+(config)# no do-exec show spanning-tree bridge <cr>    # path-043402
+(config)# no do-exec show spanning-tree bridge address <cr>    # path-051660
+(config)# no do-exec show spanning-tree bridge forward-time <cr>    # path-051677
+(config)# no do-exec show spanning-tree bridge hello-time <cr>    # path-051693
+(config)# no do-exec show spanning-tree bridge id <cr>    # path-051739
+(config)# no do-exec show spanning-tree bridge max-age <cr>    # path-051704
+(config)# no do-exec show spanning-tree bridge priority <cr>    # path-051725
+(config)# no do-exec show spanning-tree bridge priority system-id <cr>    # path-056641
+(config)# no do-exec show spanning-tree bridge protocol <cr>    # path-051723
+(config)# no do-exec show spanning-tree inconsistentports <cr>    # path-043341
+(config)# no do-exec show spanning-tree instances <cr>    # path-043320
+(config)# no do-exec show spanning-tree platform <cr>    # path-043299
+(config)# no do-exec show spanning-tree root <cr>    # path-043439
+(config)# no do-exec show spanning-tree root address <cr>    # path-051674
+(config)# no do-exec show spanning-tree root cost <cr>    # path-051691
+(config)# no do-exec show spanning-tree root forward-time <cr>    # path-051702
+(config)# no do-exec show spanning-tree root hello-time <cr>    # path-051712
+(config)# no do-exec show spanning-tree root id <cr>    # path-051767
+(config)# no do-exec show spanning-tree root max-age <cr>    # path-051722
+(config)# no do-exec show spanning-tree root port <cr>    # path-051738
+(config)# no do-exec show spanning-tree root priority <cr>    # path-051768
+(config)# no do-exec show spanning-tree root priority system-id <cr>    # path-056649
+(config)# no do-exec show spanning-tree summary <cr>    # path-043379
+(config)# no do-exec show sse all <cr>    # path-040608
+(config)# no do-exec show ssm cdb <cr>    # path-038609
+(config)# no do-exec show ssm group <cr>    # path-039080
+(config)# no do-exec show ssm id <cr>    # path-038985
+(config)# no do-exec show ssm id all <cr>    # path-047785
+(config)# no do-exec show ssm memory <cr>    # path-038981
+(config)# no do-exec show ssm memory chunk variable feature <cr>    # path-058113
+(config)# no do-exec show ssm memory chunk variable queue <cr>    # path-058130
+(config)# no do-exec show ssm memory chunk variable segment <cr>    # path-058121
+(config)# no do-exec show ssm stats <cr>    # path-038908
+(config)# no do-exec show stacks <cr>    # path-029991
+(config)# no do-exec show standby <cr>    # path-031235
+(config)# no do-exec show standby capability <cr>    # path-038152
+(config)# no do-exec show standby delay <cr>    # path-038281
+(config)# no do-exec show standby internal <cr>    # path-038284
+(config)# no do-exec show standby internal summary <cr>    # path-047358
+(config)# no do-exec show standby neighbors <cr>    # path-038111
+(config)# no do-exec show standby redirect <cr>    # path-038336
+(config)# no do-exec show starting-keyword <string> <cr>    # path-034753
+(config)# no do-exec show startup-config <cr>    # path-028744
+(config)# no do-exec show stun <cr>    # path-033791
+(config)# no do-exec show subscriber circuits <cr>    # path-039070
+(config)# no do-exec show subscriber coa statistics <cr>    # path-047992
+(config)# no do-exec show subscriber default-session <cr>    # path-039175
+(config)# no do-exec show subscriber disconnect history <cr>    # path-048191
+(config)# no do-exec show subscriber disconnect stats <cr>    # path-048079
+(config)# no do-exec show subscriber lite-session <cr>    # path-039125
+(config)# no do-exec show subscriber log ip <address> <cr>    # path-054850
+(config)# no do-exec show subscriber log mac-address <string> <cr>    # path-054791
+(config)# no do-exec show subscriber log vrf <string> ip <address> <cr>    # path-059437
+(config)# no do-exec show subscriber memory <cr>    # path-038923
+(config)# no do-exec show subscriber per-session debug sessions-hit end-code <cr>    # path-058179
+(config)# no do-exec show subscriber per-session debug sessions-hit start-code <cr>    # path-058166
+(config)# no do-exec show subscriber per-session debug sessions-hit unexpected-disconnect <cr>    # path-058192
+(config)# no do-exec show subscriber per-session debug statistics <cr>    # path-054805
+(config)# no do-exec show subscriber policy conditions <cr>    # path-048226
+(config)# no do-exec show subscriber policy pACLs <cr>    # path-048309
+(config)# no do-exec show subscriber policy pClasses <cr>    # path-048357
+(config)# no do-exec show subscriber policy peer all <cr>    # path-054986
+(config)# no do-exec show subscriber policy ppm-shim-db <cr>    # path-048266
+(config)# no do-exec show subscriber policy preauth handle <number:0..4294967295> <cr>    # path-058133
+(config)# no do-exec show subscriber policy profile <cr>    # path-048138
+(config)# no do-exec show subscriber policy rules <cr>    # path-048180
+(config)# no do-exec show subscriber service <cr>    # path-039190
+(config)# no do-exec show subscriber session <cr>    # path-039777
+(config)# no do-exec show subscriber session queuing display <cr>    # path-054794
+(config)# no do-exec show subscriber session queuing enable <number:0..4294967295> <cr>    # path-058205
+(config)# no do-exec show subscriber statistics <cr>    # path-039084
+(config)# no do-exec show subscriber tech-support <cr>    # path-038904
+(config)# no do-exec show subscriber template <cr>    # path-039242
+(config)# no do-exec show subscriber template active <cr>    # path-048088
+(config)# no do-exec show subscriber template id <number:1..30500> <cr>    # path-054729
+(config)# no do-exec show subscriber template key tmpl_id <number:1..30500> <cr>    # path-058124
+(config)# no do-exec show subscriber template state <cr>    # path-048134
+(config)# no do-exec show subscriber-policy <cr>    # path-033554
+(config)# no do-exec show subsys <cr>    # path-033484
+(config)# no do-exec show subsys boottime <cr>    # path-043020
+(config)# no do-exec show subsys boottime class <cr>    # path-051466
+(config)# no do-exec show subsys boottime init <cr>    # path-051438
+(config)# no do-exec show subsys class kernel <cr>    # path-051461
+(config)# no do-exec show subsys memory <cr>    # path-043066
+(config)# no do-exec show subsys memory class <cr>    # path-051504
+(config)# no do-exec show subsys memory init <cr>    # path-051483
+(config)# no do-exec show subsys name <string> <cr>    # path-051417
+(config)# no do-exec show sum <cr>    # path-028263
+(config)# no do-exec show system insecure configuration <cr>    # path-050763
+(config)# no do-exec show system insecure profile <cr>    # path-050787
+(config)# no do-exec show system security mode <cr>    # path-050784
+(config)# no do-exec show table-map <cr>    # path-032621
+(config)# no do-exec show table-map <cr>    # path-032647
+(config)# no do-exec show table-map enabled <cr>    # path-041543
+(config)# no do-exec show tableid ha statistics <cr>    # path-049432
+(config)# no do-exec show tacacs <cr>    # path-032906
+(config)# no do-exec show tcl mem <cr>    # path-042271
+(config)# no do-exec show tcl mem contents <cr>    # path-050940
+(config)# no do-exec show tcp statistics <cr>    # path-040344
+(config)# no do-exec show tcp statistics ingress <cr>    # path-049377
+(config)# no do-exec show tdm connections aim <number:0..4294967295> <cr>    # path-053184
+(config)# no do-exec show tech-support <cr>    # path-033385
+(config)# no do-exec show tech-support mfib ipv4 <cr>    # path-051850
+(config)# no do-exec show tech-support mfib ipv6 <cr>    # path-051844
+(config)# no do-exec show tech-support vrrp ipv4 <cr>    # path-051816
+(config)# no do-exec show tech-support vrrp ipv6 <cr>    # path-051824
+(config)# no do-exec show template <cr>    # path-032966
+(config)# no do-exec show template binding target interface_global <cr>    # path-056249
+(config)# no do-exec show template brief <cr>    # path-042030
+(config)# no do-exec show template detail <cr>    # path-042080
+(config)# no do-exec show template global <cr>    # path-042130
+(config)# no do-exec show template global all <cr>    # path-050731
+(config)# no do-exec show template global binding all <cr>    # path-056229
+(config)# no do-exec show template global brief <cr>    # path-050709
+(config)# no do-exec show template global detail <cr>    # path-050820
+(config)# no do-exec show template global source built-in all <cr>    # path-058752
+(config)# no do-exec show template global source built-in original all <cr>    # path-059590
+(config)# no do-exec show template global source user all <cr>    # path-058742
+(config)# no do-exec show template interface all <cr>    # path-050792
+(config)# no do-exec show template interface binding all <cr>    # path-056219
+(config)# no do-exec show template interface binding target interface_global <cr>    # path-058735
+(config)# no do-exec show template interface brief <cr>    # path-050751
+(config)# no do-exec show template interface source built-in Original all <cr>    # path-059588
+(config)# no do-exec show template interface source built-in all <cr>    # path-058771
+(config)# no do-exec show template interface source user all <cr>    # path-058750
+(config)# no do-exec show template service all <cr>    # path-050769
+(config)# no do-exec show template service brief <cr>    # path-050811
+(config)# no do-exec show template service source aaa all <cr>    # path-058741
+(config)# no do-exec show template service source built-in all <cr>    # path-058762
+(config)# no do-exec show template service source user all <cr>    # path-058751
+(config)# no do-exec show tenant all <cr>    # path-041681
+(config)# no do-exec show tenant mapping table <cr>    # path-050514
+(config)# no do-exec show terminal <cr>    # path-033920
+(config)# no do-exec show test_rib_access get_all_ipv4_protos <cr>    # path-042534
+(config)# no do-exec show test_rib_access get_proto_pdb <string> <number:1..2> <number:0..1> <string> <cr>    # path-059611
+(config)# no do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> exact <cr>    # path-060208
+(config)# no do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> long <cr>    # path-060211
+(config)# no do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> long del_nh <cr>    # path-060226
+(config)# no do-exec show test_rib_access walk_rib <number:0..7> <string> <cr>    # path-056470
+(config)# no do-exec show time-range <cr>    # path-032928
+(config)# no do-exec show time-range ipc <cr>    # path-042006
+(config)# no do-exec show timers <cr>    # path-028785
+(config)# no do-exec show topology <cr>    # path-031353
+(config)# no do-exec show topology <cr>    # path-031354
+(config)# no do-exec show topology clients <cr>    # path-038498
+(config)# no do-exec show topology ha <cr>    # path-038588
+(config)# no do-exec show track <cr>    # path-031556
+(config)# no do-exec show track <number:1..32767> map <cr>    # path-047998
+(config)# no do-exec show track map <cr>    # path-038541
+(config)# no do-exec show track resolution <cr>    # path-038596
+(config)# no do-exec show track summary <cr>    # path-038445
+(config)# no do-exec show track timers <cr>    # path-038404
+(config)# no do-exec show traffic-shape <cr>    # path-030548
+(config)# no do-exec show traffic-shape queue <cr>    # path-037124
+(config)# no do-exec show traffic-shape statistics <cr>    # path-037131
+(config)# no do-exec show transport-map all <cr>    # path-035458
+(config)# no do-exec show transport-map name <string> <cr>    # path-045087
+(config)# no do-exec show transport-map type console <cr>    # path-045185
+(config)# no do-exec show tunnel 6rd <cr>    # path-043471
+(config)# no do-exec show tunnel bgp host-addr <cr>    # path-051815
+(config)# no do-exec show tunnel capabilities feature gre-checksum <cr>    # path-056681
+(config)# no do-exec show tunnel capabilities mode uninitialized <cr>    # path-056678
+(config)# no do-exec show tunnel endpoints <cr>    # path-043436
+(config)# no do-exec show tunnel groups <cr>    # path-043482
+(config)# no do-exec show tunnel interface <cr>    # path-043437
+(config)# no do-exec show tunnel source tracking <cr>    # path-051827
+(config)# no do-exec show tunnel tunnel-to <cr>    # path-043645
+(config)# no do-exec show udf <cr>    # path-033642
+(config)# no do-exec show udp <cr>    # path-030923
+(config)# no do-exec show uidp statistics <cr>    # path-043625
+(config)# no do-exec show usb-devices summary <cr>    # path-043654
+(config)# no do-exec show users <cr>    # path-029241
+(config)# no do-exec show vasi pair status <cr>    # path-048361
+(config)# no do-exec show vasi pair status <number:1..2000> <cr>    # path-054789
+(config)# no do-exec show version <cr>    # path-029125
+(config)# no do-exec show virtual-service <cr>    # path-033926
+(config)# no do-exec show virtual-service detail <cr>    # path-043750
+(config)# no do-exec show virtual-service list <cr>    # path-043739
+(config)# no do-exec show virtual-service profile name <string> <cr>    # path-056749
+(config)# no do-exec show virtual-service storage pool list <cr>    # path-056756
+(config)# no do-exec show virtual-service storage volume detail volume-name <string> <cr>    # path-059614
+(config)# no do-exec show virtual-service storage volume list <cr>    # path-056760
+(config)# no do-exec show virtual-service tech-support <cr>    # path-043772
+(config)# no do-exec show virtual-service trace message <cr>    # path-052020
+(config)# no do-exec show virtual-service utilization name <string> <cr>    # path-056748
+(config)# no do-exec show virtual-service utilization statistics CPU <cr>    # path-056753
+(config)# no do-exec show virtual-service version installed <cr>    # path-052017
+(config)# no do-exec show vlan <cr>    # path-032049
+(config)# no do-exec show vlan brief <cr>    # path-039994
+(config)# no do-exec show vlan counters <cr>    # path-040180
+(config)# no do-exec show vlan dot1q tag native <cr>    # path-055598
+(config)# no do-exec show vlan group <cr>    # path-040512
+(config)# no do-exec show vlan group group-name <string> <cr>    # path-055613
+(config)# no do-exec show vlan group group-name <string> user-count <cr>    # path-058474
+(config)# no do-exec show vlan id <string> <cr>    # path-049522
+(config)# no do-exec show vlan id <string> counters <cr>    # path-055406
+(config)# no do-exec show vlan ifindex <cr>    # path-040334
+(config)# no do-exec show vlan internal usage <cr>    # path-049657
+(config)# no do-exec show vlan mtu <cr>    # path-040043
+(config)# no do-exec show vlan name <string> <cr>    # path-049417
+(config)# no do-exec show vlan private-vlan <cr>    # path-040312
+(config)# no do-exec show vlan remote-span <cr>    # path-040301
+(config)# no do-exec show vlan summary <cr>    # path-040411
+(config)# no do-exec show vlan uni-vlan <cr>    # path-040390
+(config)# no do-exec show vlan-autoconfig access-interface <cr>    # path-039115
+(config)# no do-exec show vlan-autoconfig error-history <cr>    # path-039004
+(config)# no do-exec show vlan-autoconfig statistics <cr>    # path-039058
+(config)# no do-exec show vlan-autoconfig summary <cr>    # path-038944
+(config)# no do-exec show vlan-autoconfig vlan-interface <cr>    # path-039331
+(config)# no do-exec show vlan-autoconfig vlan-interface detailed <cr>    # path-048163
+(config)# no do-exec show vlan-range <cr>    # path-031591
+(config)# no do-exec show vlans <cr>    # path-031674
+(config)# no do-exec show vlans dot1q <cr>    # path-039663
+(config)# no do-exec show vlans dot1q <cr>    # path-039775

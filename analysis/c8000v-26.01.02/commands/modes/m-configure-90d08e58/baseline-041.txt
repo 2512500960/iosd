@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-041.md
+
+(config)# do-exec debug cts authorization aaa error <cr>    # path-048265
+(config)# do-exec debug cts authorization aaa info <cr>    # path-048137
+(config)# do-exec debug cts authorization aaa notice <cr>    # path-048179
+(config)# do-exec debug cts authorization aaa verbose <cr>    # path-048042
+(config)# do-exec debug cts authorization aaa warning <cr>    # path-048225
+(config)# do-exec debug cts cache <cr>    # path-031667
+(config)# do-exec debug cts coa events <cr>    # path-039621
+(config)# do-exec debug cts critical-authentication error <cr>    # path-039676
+(config)# do-exec debug cts critical-authentication event <cr>    # path-039615
+(config)# do-exec debug cts dp Info <cr>    # path-039196
+(config)# do-exec debug cts dp errors <cr>    # path-039250
+(config)# do-exec debug cts dp packets <cr>    # path-039297
+(config)# do-exec debug cts environment-data <cr>    # path-031596
+(config)# do-exec debug cts environment-data aaa <cr>    # path-038848
+(config)# do-exec debug cts environment-data default-epg <cr>    # path-039120
+(config)# do-exec debug cts environment-data default-sg <cr>    # path-039064
+(config)# do-exec debug cts environment-data events <cr>    # path-038893
+(config)# do-exec debug cts environment-data platform <cr>    # path-039008
+(config)# do-exec debug cts environment-data sg-epg <cr>    # path-038951
+(config)# do-exec debug cts error <cr>    # path-031409
+(config)# do-exec debug cts fips events <cr>    # path-039097
+(config)# do-exec debug cts ha config <cr>    # path-039557
+(config)# do-exec debug cts ha core <cr>    # path-039822
+(config)# do-exec debug cts ha core bindings <cr>    # path-048882
+(config)# do-exec debug cts ha core bindings events <cr>    # path-055027
+(config)# do-exec debug cts ha core environment-data <cr>    # path-048746
+(config)# do-exec debug cts ha core environment-data events <cr>    # path-054957
+(config)# do-exec debug cts ha core policy <cr>    # path-048811
+(config)# do-exec debug cts ha core policy events <cr>    # path-054992
+(config)# do-exec debug cts ha infra <cr>    # path-039497
+(config)# do-exec debug cts ifc cache <cr>    # path-039202
+(config)# do-exec debug cts ifc events <cr>    # path-039151
+(config)# do-exec debug cts ifc snmp <cr>    # path-039254
+(config)# do-exec debug cts layer3-trustsec <cr>    # path-031642
+(config)# do-exec debug cts odm <cr>    # path-031358
+(config)# do-exec debug cts policy-server all <cr>    # path-039899
+(config)# do-exec debug cts policy-server http all <cr>    # path-048843
+(config)# do-exec debug cts policy-server http error <cr>    # path-048691
+(config)# do-exec debug cts policy-server http events <cr>    # path-048768
+(config)# do-exec debug cts policy-server json all <cr>    # path-048911
+(config)# do-exec debug cts policy-server json error <cr>    # path-048757
+(config)# do-exec debug cts policy-server json events <cr>    # path-048836
+(config)# do-exec debug cts policy-server selection all <cr>    # path-048981
+(config)# do-exec debug cts policy-server selection error <cr>    # path-048829
+(config)# do-exec debug cts policy-server selection events <cr>    # path-048908
+(config)# do-exec debug cts provisioning events <cr>    # path-039289
+(config)# do-exec debug cts provisioning packets <cr>    # path-039344
+(config)# do-exec debug cts rcl-server all <cr>    # path-039793
+(config)# do-exec debug cts rcl-server errors <cr>    # path-039727
+(config)# do-exec debug cts rcl-server events <cr>    # path-039671
+(config)# do-exec debug cts relay event <cr>    # path-039246
+(config)# do-exec debug cts relay pak <cr>    # path-039294
+(config)# do-exec debug cts sap events <cr>    # path-039046
+(config)# do-exec debug cts sap packets <cr>    # path-039103
+(config)# do-exec debug cts sap pakdump <cr>    # path-039159
+(config)# do-exec debug cts server-list <cr>    # path-031457
+(config)# do-exec debug cts sgacl-db <cr>    # path-031379
+(config)# do-exec debug cts states <cr>    # path-031334
+(config)# do-exec debug cts sxp conn <cr>    # path-039504
+(config)# do-exec debug cts sxp error <cr>    # path-039741
+(config)# do-exec debug cts sxp filter <cr>    # path-039684
+(config)# do-exec debug cts sxp internal <cr>    # path-039447
+(config)# do-exec debug cts sxp mdb <cr>    # path-039630
+(config)# do-exec debug cts sxp message <cr>    # path-039563
+(config)# do-exec debug custom-queue <cr>    # path-026352
+(config)# do-exec debug cwan <cr>    # path-027751
+(config)# do-exec debug cwan alarm <cr>    # path-033362
+(config)# do-exec debug cwan atom <cr>    # path-033500
+(config)# do-exec debug cwan atom cf <cr>    # path-043011
+(config)# do-exec debug cwan atom circuit-idx <cr>    # path-042960
+(config)# do-exec debug cwan atom entry <cr>    # path-042895
+(config)# do-exec debug cwan atom ha <cr>    # path-042986
+(config)# do-exec debug cwan atom issu <cr>    # path-043060
+(config)# do-exec debug cwan atom msg <cr>    # path-042935
+(config)# do-exec debug cwan atom rf <cr>    # path-043037
+(config)# do-exec debug cwan atom stats <cr>    # path-042913
+(config)# do-exec debug cwan bridge <cr>    # path-033378
+(config)# do-exec debug cwan choc-dsx resets <cr>    # path-042806
+(config)# do-exec debug cwan choc-dsx semaphore <cr>    # path-042781
+(config)# do-exec debug cwan choc-error <cr>    # path-033243
+(config)# do-exec debug cwan choc-event <cr>    # path-033253
+(config)# do-exec debug cwan chocx config <cr>    # path-042834
+(config)# do-exec debug cwan chocx error <cr>    # path-042754
+(config)# do-exec debug cwan chocx events <cr>    # path-042810
+(config)# do-exec debug cwan chocx love-letters <cr>    # path-042883
+(config)# do-exec debug cwan chocx mib <cr>    # path-042860
+(config)# do-exec debug cwan chocx state <cr>    # path-042784
+(config)# do-exec debug cwan cmd-retry <cr>    # path-033233
+(config)# do-exec debug cwan cmd-timeout <cr>    # path-033227
+(config)# do-exec debug cwan ct3 <cr>    # path-033386
+(config)# do-exec debug cwan ct3 config <cr>    # path-042839
+(config)# do-exec debug cwan ct3 error <cr>    # path-042709
+(config)# do-exec debug cwan ct3 event <cr>    # path-042684
+(config)# do-exec debug cwan ct3 loveletter <cr>    # path-042764
+(config)# do-exec debug cwan ct3 mib <cr>    # path-042793
+(config)# do-exec debug cwan ct3 state <cr>    # path-042737
+(config)# do-exec debug cwan ct3 stats <cr>    # path-042815
+(config)# do-exec debug cwan dss <cr>    # path-033189
+(config)# do-exec debug cwan hw-module queue <cr>    # path-042876
+(config)# do-exec debug cwan icc <cr>    # path-033158
+(config)# do-exec debug cwan ifcom <cr>    # path-033168
+(config)# do-exec debug cwan ifmgr error <cr>    # path-042931
+(config)# do-exec debug cwan ifmgr trace <cr>    # path-042957
+(config)# do-exec debug cwan interface <cr>    # path-033147
+(config)# do-exec debug cwan localsw <cr>    # path-033419
+(config)# do-exec debug cwan logger <cr>    # path-033175
+(config)# do-exec debug cwan love <cr>    # path-033183
+(config)# do-exec debug cwan ltl <cr>    # path-033383
+(config)# do-exec debug cwan ltl plat-idx <cr>    # path-042829
+(config)# do-exec debug cwan ltl skip-sp <cr>    # path-042802
+(config)# do-exec debug cwan oir <cr>    # path-033200
+(config)# do-exec debug cwan pc-lb <cr>    # path-033212
+(config)# do-exec debug cwan redundancy <cr>    # path-033466
+(config)# do-exec debug cwan redundancy aps all <cr>    # path-051243
+(config)# do-exec debug cwan redundancy aps bulk <cr>    # path-051284
+(config)# do-exec debug cwan redundancy aps incr <cr>    # path-051266
+(config)# do-exec debug cwan redundancy ccb all <cr>    # path-051374
+(config)# do-exec debug cwan redundancy ccb bulk <cr>    # path-051409
+(config)# do-exec debug cwan redundancy ccb incr <cr>    # path-051395
+(config)# do-exec debug cwan redundancy channelized-vc <cr>    # path-042922
+(config)# do-exec debug cwan redundancy deferred <cr>    # path-042967
+(config)# do-exec debug cwan redundancy if-config all <cr>    # path-051315
+(config)# do-exec debug cwan redundancy if-config bulk <cr>    # path-051366
+(config)# do-exec debug cwan redundancy if-config incr <cr>    # path-051345
+(config)# do-exec debug cwan redundancy if-event all <cr>    # path-051339
+(config)# do-exec debug cwan redundancy if-event bulk <cr>    # path-051379
+(config)# do-exec debug cwan redundancy if-event incr <cr>    # path-051363
+(config)# do-exec debug cwan redundancy if-index all <cr>    # path-051360
+(config)# do-exec debug cwan redundancy if-index bulk <cr>    # path-051396
+(config)# do-exec debug cwan redundancy if-index incr <cr>    # path-051377
+(config)# do-exec debug cwan redundancy reload <cr>    # path-042993
+(config)# do-exec debug cwan redundancy slot-info all <cr>    # path-051391
+(config)# do-exec debug cwan redundancy slot-info bulk <cr>    # path-051427
+(config)# do-exec debug cwan redundancy slot-info incr <cr>    # path-051406
+(config)# do-exec debug cwan redundancy spa <cr>    # path-042762
+(config)# do-exec debug cwan redundancy srp all <cr>    # path-051261
+(config)# do-exec debug cwan redundancy srp bulk <cr>    # path-051303
+(config)# do-exec debug cwan redundancy srp incr <cr>    # path-051281
+(config)# do-exec debug cwan redundancy switchover <cr>    # path-042942
+(config)# do-exec debug cwan redundancy vlan all <cr>    # path-051293
+(config)# do-exec debug cwan redundancy vlan bulk <cr>    # path-051349
+(config)# do-exec debug cwan redundancy vlan incr <cr>    # path-051320
+(config)# do-exec debug cwan set <cr>    # path-033128
+(config)# do-exec debug cwan single-spa <cr>    # path-033136
+(config)# do-exec debug cwan srp-error <cr>    # path-033267
+(config)# do-exec debug cwan srp-event <cr>    # path-033277
+(config)# do-exec debug cwan t3e3 <cr>    # path-033351
+(config)# do-exec debug cwan t3e3 error <cr>    # path-042758
+(config)# do-exec debug cwan t3e3 event <cr>    # path-042728
+(config)# do-exec debug cwan t3e3 state <cr>    # path-042788
+(config)# do-exec debug cwmp all <cr>    # path-032455
+(config)# do-exec debug cwmp error <cr>    # path-032416
+(config)# do-exec debug cwmp profile <cr>    # path-032426
+(config)# do-exec debug cwmp profile error <cr>    # path-041143
+(config)# do-exec debug cwmp trace <cr>    # path-032433
+(config)# do-exec debug dampening all <cr>    # path-028520
+(config)# do-exec debug dampening interface <cr>    # path-028489
+(config)# do-exec debug data-descriptor entry <cr>    # path-033104
+(config)# do-exec debug data-descriptor node <cr>    # path-033092
+(config)# do-exec debug data-descriptor other <cr>    # path-033112
+(config)# do-exec debug dcm core all <cr>    # path-042262
+(config)# do-exec debug dcm core error <cr>    # path-042218
+(config)# do-exec debug dcm core info <cr>    # path-042239
+(config)# do-exec debug dcm provider cmd error <cr>    # path-051040
+(config)# do-exec debug dcm provider cmd info <cr>    # path-051026
+(config)# do-exec debug dcm provider expression error <cr>    # path-051028
+(config)# do-exec debug dcm provider expression info <cr>    # path-051008
+(config)# do-exec debug dcm provider snmp error <cr>    # path-051011
+(config)# do-exec debug dcm provider snmp info <cr>    # path-050986
+(config)# do-exec debug dcm services client all <cr>    # path-050975
+(config)# do-exec debug dcm services client any-ipc error <cr>    # path-056347
+(config)# do-exec debug dcm services client any-ipc info <cr>    # path-056332
+(config)# do-exec debug dcm services client api-infra error <cr>    # path-056333
+(config)# do-exec debug dcm services client api-infra info <cr>    # path-056323
+(config)# do-exec debug dcm services core all <cr>    # path-050991
+(config)# do-exec debug dcm services core any-ipc error <cr>    # path-056359
+(config)# do-exec debug dcm services core any-ipc info <cr>    # path-056341
+(config)# do-exec debug dcm services core api-infra error <cr>    # path-056346
+(config)# do-exec debug dcm services core api-infra info <cr>    # path-056331
+(config)# do-exec debug dcm services provider all <cr>    # path-051012
+(config)# do-exec debug dcm services provider any-ipc error <cr>    # path-056370
+(config)# do-exec debug dcm services provider any-ipc info <cr>    # path-056354
+(config)# do-exec debug dcm services provider api-infra error <cr>    # path-056358
+(config)# do-exec debug dcm services provider api-infra info <cr>    # path-056339
+(config)# do-exec debug device-tracking bdid <number:dynamic> <cr>    # path-062955
+(config)# do-exec debug dhcp <cr>    # path-027711
+(config)# do-exec debug dhcp api <cr>    # path-032956
+(config)# do-exec debug dhcp oper <cr>    # path-032969
+(config)# do-exec debug dhcp redundancy <cr>    # path-032951
+(config)# do-exec debug dhcp redundancy packet <cr>    # path-042086
+(config)# do-exec debug diagnostic all <cr>    # path-033298
+(config)# do-exec debug diagnostic engineer <cr>    # path-033218
+(config)# do-exec debug diagnostic error <cr>    # path-033248
+(config)# do-exec debug diagnostic gods_error <cr>    # path-033237
+(config)# do-exec debug diagnostic gods_message <cr>    # path-033289
+(config)# do-exec debug diagnostic message <cr>    # path-033275
+(config)# do-exec debug diagnostic packet <cr>    # path-033229
+(config)# do-exec debug diagnostic pointer <cr>    # path-033265
+(config)# do-exec debug dialer <cr>    # path-026824
+(config)# do-exec debug dialer cef <cr>    # path-028827
+(config)# do-exec debug dialer detailed <cr>    # path-028882
+(config)# do-exec debug dialer forwarding <cr>    # path-028986
+(config)# do-exec debug dialer holdq <cr>    # path-028928
+(config)# do-exec debug dialer map <cr>    # path-028688
+(config)# do-exec debug dialer packets <cr>    # path-028726
+(config)# do-exec debug dialer temporary <cr>    # path-028767
+(config)# do-exec debug diameter all <cr>    # path-033837
+(config)# do-exec debug diameter connection <cr>    # path-033785
+(config)# do-exec debug diameter dcca <cr>    # path-033775
+(config)# do-exec debug diameter error <cr>    # path-033812
+(config)# do-exec debug diameter event <cr>    # path-033825
+(config)# do-exec debug diameter failover <cr>    # path-033764
+(config)# do-exec debug diameter fsm error <cr>    # path-043560
+(config)# do-exec debug diameter fsm event <cr>    # path-043574
+(config)# do-exec debug diameter gx database <cr>    # path-043631
+(config)# do-exec debug diameter gx error <cr>    # path-043620
+(config)# do-exec debug diameter gx event <cr>    # path-043599
+(config)# do-exec debug diameter gx fsm <cr>    # path-043611
+(config)# do-exec debug diameter packet error <cr>    # path-043545
+(config)# do-exec debug diameter packet event <cr>    # path-043563
+(config)# do-exec debug dlep client error <cr>    # path-042009
+(config)# do-exec debug dlep client infrastructure <cr>    # path-042048
+(config)# do-exec debug dlep client packet detail <cr>    # path-050788
+(config)# do-exec debug dlep client packet dump <cr>    # path-050764
+(config)# do-exec debug dlep client packet interface <interface> <cr>    # path-062203
+(config)# do-exec debug dlep client state <cr>    # path-041987
+(config)# do-exec debug dlep neighbor all <cr>    # path-042003
+(config)# do-exec debug dlep neighbor error <cr>    # path-042070
+(config)# do-exec debug dlep neighbor infrastructure <cr>    # path-042145
+(config)# do-exec debug dlep neighbor infrastructure detail <cr>    # path-050827
+(config)# do-exec debug dlep neighbor infrastructure error <cr>    # path-050847
+(config)# do-exec debug dlep neighbor metrics <cr>    # path-042046
+(config)# do-exec debug dlep neighbor state <cr>    # path-042025
+(config)# do-exec debug dlep server <cr>    # path-032872
+(config)# do-exec debug dlep server detail <cr>    # path-041937
+(config)# do-exec debug dlep snmp <cr>    # path-032900
+(config)# do-exec debug dlep timer <cr>    # path-032883
+(config)# do-exec debug dlep timer detail <cr>    # path-041962
+(config)# do-exec debug dlsw <cr>    # path-027766
+(config)# do-exec debug dlsw border-peers interface <interface> <cr>    # path-061786
+(config)# do-exec debug dmvpn condition <cr>    # path-033396
+(config)# do-exec debug dmvpn condition interface <interface> <cr>    # path-061782
+(config)# do-exec debug dmvpn error <cr>    # path-033421
+(config)# do-exec debug dmvpn error <cr>    # path-033433
+(config)# do-exec debug dmvpn error <cr>    # path-033442
+(config)# do-exec debug dmvpn error <cr>    # path-033454
+(config)# do-exec debug dmvpn error <cr>    # path-033465
+(config)# do-exec debug dns-proxy all <cr>    # path-032666
+(config)# do-exec debug dns-proxy debug <cr>    # path-032625
+(config)# do-exec debug dns-proxy error <cr>    # path-032648
+(config)# do-exec debug dnsix dmdp <cr>    # path-032011
+(config)# do-exec debug dnsix dnssec <cr>    # path-032038
+(config)# do-exec debug dnsix nat <cr>    # path-032024
+(config)# do-exec debug domain <cr>    # path-027630
+(config)# do-exec debug dot1x all <cr>    # path-033086
+(config)# do-exec debug dot1x errors <cr>    # path-033047
+(config)# do-exec debug dot1x events <cr>    # path-033061
+(config)# do-exec debug dot1x packets <cr>    # path-033075
+(config)# do-exec debug dot1x redundancy <cr>    # path-033115
+(config)# do-exec debug dot1x registry <cr>    # path-033105
+(config)# do-exec debug dot1x state-machine <cr>    # path-033095
+(config)# do-exec debug drip event <cr>    # path-033369
+(config)# do-exec debug drip packet <cr>    # path-033389
+(config)# do-exec debug dspfarm all <cr>    # path-028134
+(config)# do-exec debug dspfarm errors <cr>    # path-028096
+(config)# do-exec debug dspfarm events <cr>    # path-028062
+(config)# do-exec debug dtp aggregation <cr>    # path-031685
+(config)# do-exec debug dtp all <cr>    # path-031703
+(config)# do-exec debug dtp decision <cr>    # path-031636
+(config)# do-exec debug dtp events <cr>    # path-031531
+(config)# do-exec debug dtp oserrs <cr>    # path-031601
+(config)# do-exec debug dtp packets <cr>    # path-031618
+(config)# do-exec debug dtp queue <cr>    # path-031659
+(config)# do-exec debug dtp states <cr>    # path-031558
+(config)# do-exec debug dtp timers <cr>    # path-031581
+(config)# do-exec debug dwnld_mgr error <cr>    # path-031002
+(config)# do-exec debug dwnld_mgr event <cr>    # path-030972
+(config)# do-exec debug dxi events <cr>    # path-030831
+(config)# do-exec debug dxi packet <cr>    # path-030861
+(config)# do-exec debug eap all <cr>    # path-030487
+(config)# do-exec debug ehsa alarms <cr>    # path-033701
+(config)# do-exec debug ehsa all <cr>    # path-033712
+(config)# do-exec debug ehsa configsync <cr>    # path-033671
+(config)# do-exec debug ehsa fsm <cr>    # path-033647
+(config)# do-exec debug ehsa keepalive <cr>    # path-033620
+(config)# do-exec debug ehsa peer-monitor <cr>    # path-033634
+(config)# do-exec debug ehsa services <cr>    # path-033687
+(config)# do-exec debug ehsa timesync <cr>    # path-033659
+(config)# do-exec debug eigrp address-family ipv4 <cr>    # path-041169
+(config)# do-exec debug eigrp address-family ipv6 <cr>    # path-041142
+(config)# do-exec debug eigrp address-family ipv6 topology <prefix:dynamic> <cr>    # path-062147
+(config)# do-exec debug eigrp crimson <cr>    # path-032307
+(config)# do-exec debug eigrp frr <cr>    # path-032186
+(config)# do-exec debug eigrp fsm <cr>    # path-032115
+(config)# do-exec debug eigrp neighbors <cr>    # path-032205
+(config)# do-exec debug eigrp nsf <cr>    # path-032148
+(config)# do-exec debug eigrp packets <cr>    # path-032523
+(config)# do-exec debug eigrp packets <number:1..99> <cr>    # path-061073
+(config)# do-exec debug eigrp parser <cr>    # path-032313
+(config)# do-exec debug eigrp parser verbose <cr>    # path-061058
+(config)# do-exec debug eigrp plugin <cr>    # path-032219
+(config)# do-exec debug eigrp process <cr>    # path-032272
+(config)# do-exec debug eigrp service-family api <cr>    # path-040814
+(config)# do-exec debug eigrp service-family external-client messages <cr>    # path-050046
+(config)# do-exec debug eigrp service-family ipv4 <cr>    # path-041203
+(config)# do-exec debug eigrp service-family ipv4 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060245
+(config)# do-exec debug eigrp service-family ipv4 client <string> <cr>    # path-055936
+(config)# do-exec debug eigrp service-family ipv4 neighbor <cr>    # path-050198
+(config)# do-exec debug eigrp service-family ipv4 notifications <cr>    # path-050166
+(config)# do-exec debug eigrp service-family ipv4 topology <cr>    # path-050217
+(config)# do-exec debug eigrp service-family ipv6 <cr>    # path-041236
+(config)# do-exec debug eigrp service-family ipv6 <number:1..65535> : <number:1..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060246
+(config)# do-exec debug eigrp service-family ipv6 neighbor <cr>    # path-050238
+(config)# do-exec debug eigrp service-family ipv6 notifications <cr>    # path-050236
+(config)# do-exec debug eigrp service-family ipv6 topology <cr>    # path-050261
+(config)# do-exec debug eigrp spath <cr>    # path-032170
+(config)# do-exec debug eigrp timers <cr>    # path-032133
+(config)# do-exec debug eigrp transmit <cr>    # path-032430
+(config)# do-exec debug eigrp transmit ack <cr>    # path-061071
+(config)# do-exec debug eigrp upgrade-cli <cr>    # path-032292
+(config)# do-exec debug elog call-admission <cr>    # path-032959
+(config)# do-exec debug elog clock-tick-pc <cr>    # path-032548
+(config)# do-exec debug elog function-bracket <cr>    # path-032565
+(config)# do-exec debug elog ppp-cps <cr>    # path-032651
+(config)# do-exec debug elog ppp-detail <cr>    # path-032632
+(config)# do-exec debug elog ppp-keep <cr>    # path-032605
+(config)# do-exec debug elog ppp-neg <cr>    # path-032584
+(config)# do-exec debug elog pppoa-all <cr>    # path-032829
+(config)# do-exec debug elog pppoa-detail <cr>    # path-032816
+(config)# do-exec debug elog pppoa-event <cr>    # path-032748
+(config)# do-exec debug elog pppoa-periodic <cr>    # path-032765
+(config)# do-exec debug elog pppoa-ppp <cr>    # path-032781
+(config)# do-exec debug elog pppoa-sss <cr>    # path-032800
+(config)# do-exec debug elog pppoe <cr>    # path-032737
+(config)# do-exec debug elog registry-service <cr>    # path-032534
+(config)# do-exec debug elog ssm-cm <cr>    # path-032669
+(config)# do-exec debug elog subscriber-feature-mgr <cr>    # path-032710
+(config)# do-exec debug elog subscriber-policy-mgr <cr>    # path-032726
+(config)# do-exec debug elog subscriber-session-mgr <cr>    # path-032686
+(config)# do-exec debug elog subscriber-sip-api <cr>    # path-032701
+(config)# do-exec debug elog vpdn-ctrl <cr>    # path-032843
+(config)# do-exec debug elog vpdn-ctrl <cr>    # path-032879
+(config)# do-exec debug elog vpdn-pkt <cr>    # path-032855
+(config)# do-exec debug elog vpdn-pkt <cr>    # path-032891
+(config)# do-exec debug elog vpdn-session <cr>    # path-032867
+(config)# do-exec debug elog vpdn-session <cr>    # path-032903
+(config)# do-exec debug elog vtempl-clone <cr>    # path-032934
+(config)# do-exec debug elog vtempl-create <cr>    # path-032924
+(config)# do-exec debug elog vtempl-free <cr>    # path-032949
+(config)# do-exec debug elog vtempl-request <cr>    # path-032913
+(config)# do-exec debug entry <cr>    # path-027349
+(config)# do-exec debug environment location <string> <cr>    # path-042541
+(config)# do-exec debug environment override <cr>    # path-033240
+(config)# do-exec debug environment platform <cr>    # path-033222
+(config)# do-exec debug environment reminder <cr>    # path-033208
+(config)# do-exec debug environment sensor <string> <cr>    # path-042527
+(config)# do-exec debug environment virtual <signed:-200..500> <cr>    # path-042595
+(config)# do-exec debug epbr api <cr>    # path-033522
+(config)# do-exec debug epbr error <cr>    # path-033535
+(config)# do-exec debug epbr provision <cr>    # path-033512
+(config)# do-exec debug epc capture-point <cr>    # path-029682
+(config)# do-exec debug epc provision <cr>    # path-029629
+(config)# do-exec debug epm HA Error <cr>    # path-039942
+(config)# do-exec debug epm HA Events <cr>    # path-039997
+(config)# do-exec debug epm all <cr>    # path-031800
+(config)# do-exec debug epm api <cr>    # path-031821
+(config)# do-exec debug epm error <cr>    # path-031849
+(config)# do-exec debug epm error detail <cr>    # path-039725
+(config)# do-exec debug epm error fsm <cr>    # path-039865
+(config)# do-exec debug epm error fsm details <cr>    # path-048759
+(config)# do-exec debug epm error packet <cr>    # path-039920
+(config)# do-exec debug epm error packet details <cr>    # path-048830
+(config)# do-exec debug epm error session <cr>    # path-039753
+(config)# do-exec debug epm error session details <cr>    # path-048637
+(config)# do-exec debug epm events <cr>    # path-031868
+(config)# do-exec debug epm events detail <cr>    # path-039788
+(config)# do-exec debug epm events fsm <cr>    # path-039919
+(config)# do-exec debug epm events fsm details <cr>    # path-048827
+(config)# do-exec debug epm events packet <cr>    # path-039975
+(config)# do-exec debug epm events packet details <cr>    # path-048897
+(config)# do-exec debug epm events session <cr>    # path-039814
+(config)# do-exec debug epm events session details <cr>    # path-048689
+(config)# do-exec debug epm plugin QOS all <cr>    # path-049276
+(config)# do-exec debug epm plugin QOS errors <cr>    # path-049161
+(config)# do-exec debug epm plugin QOS events <cr>    # path-049221
+(config)# do-exec debug epm plugin acl all <cr>    # path-049091
+(config)# do-exec debug epm plugin acl detail <cr>    # path-049041
+(config)# do-exec debug epm plugin acl error <cr>    # path-048889
+(config)# do-exec debug epm plugin acl event <cr>    # path-048974
+(config)# do-exec debug epm plugin cts errors <cr>    # path-049384
+(config)# do-exec debug epm plugin cts events <cr>    # path-049439
+(config)# do-exec debug epm plugin fqdn all <cr>    # path-049084
+(config)# do-exec debug epm plugin fqdn error <cr>    # path-048961
+(config)# do-exec debug epm plugin fqdn event <cr>    # path-049032
+(config)# do-exec debug epm plugin iaf all <cr>    # path-049176
+(config)# do-exec debug epm plugin iaf errors <cr>    # path-049075
+(config)# do-exec debug epm plugin iaf events <cr>    # path-049121
+(config)# do-exec debug epm plugin ial all <cr>    # path-049587
+(config)# do-exec debug epm plugin ial errors <cr>    # path-049490
+(config)# do-exec debug epm plugin ial events <cr>    # path-049537

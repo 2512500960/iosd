@@ -1,0 +1,294 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-016.md
+
+(config)# do-exec debug crypto condition local ipv4 <address> <cr>    # conditional_registration_candidates-006844
+(config)# do-exec debug crypto condition peer group <string> <cr>    # conditional_registration_candidates-006789
+(config)# do-exec debug crypto condition peer hostname <string> <cr>    # conditional_registration_candidates-006758
+(config)# do-exec debug crypto condition peer ipv4 <address> <cr>    # conditional_registration_candidates-006638
+(config)# do-exec debug crypto condition peer subnet <address> <address> <cr>    # conditional_registration_candidates-007897
+(config)# do-exec debug crypto condition peer subnet <prefix:dynamic> <cr>    # conditional_registration_candidates-009373
+(config)# do-exec debug crypto condition peer username <string> <cr>    # conditional_registration_candidates-006734
+(config)# do-exec debug crypto condition reset <cr>    # conditional_registration_candidates-003257
+(config)# do-exec debug crypto condition session range <number:1..100000000> <number:1..100000000> <cr>    # conditional_registration_candidates-007883
+(config)# do-exec debug crypto condition spi <number:256..4294967295> <cr>    # conditional_registration_candidates-004867
+(config)# do-exec debug crypto condition unmatched <cr>    # conditional_registration_candidates-003548
+(config)# do-exec debug crypto condition unmatched engine <cr>    # conditional_registration_candidates-005387
+(config)# do-exec debug crypto condition unmatched ikev2 <cr>    # conditional_registration_candidates-005483
+(config)# do-exec debug crypto condition unmatched ipsec <cr>    # conditional_registration_candidates-005291
+(config)# do-exec debug crypto condition unmatched isakmp <cr>    # conditional_registration_candidates-005202
+(config)# do-exec debug crypto condition username <string> <cr>    # conditional_registration_candidates-005031
+(config)# do-exec debug crypto csi <cr>    # conditional_registration_candidates-001472
+(config)# do-exec debug crypto csi error <cr>    # conditional_registration_candidates-003211
+(config)# do-exec debug crypto gkm all-features packet <cr>    # conditional_registration_candidates-009263
+(config)# do-exec debug crypto gkm condition group <string> <cr>    # conditional_registration_candidates-006833
+(config)# do-exec debug crypto gkm condition reset <cr>    # conditional_registration_candidates-004928
+(config)# do-exec debug crypto gkm condition unmatched <cr>    # conditional_registration_candidates-004868
+(config)# do-exec debug crypto gkm gm all-features packet <cr>    # conditional_registration_candidates-009365
+(config)# do-exec debug crypto gkm gm infrastructure packet <cr>    # conditional_registration_candidates-009394
+(config)# do-exec debug crypto gkm gm registration packet <cr>    # conditional_registration_candidates-009374
+(config)# do-exec debug crypto gkm gm rekey packet <cr>    # conditional_registration_candidates-009383
+(config)# do-exec debug crypto gkm gm replay packet <cr>    # conditional_registration_candidates-009389
+(config)# do-exec debug crypto gkm ks all-features packet <cr>    # conditional_registration_candidates-009362
+(config)# do-exec debug crypto gkm ks coop packet <cr>    # conditional_registration_candidates-009366
+(config)# do-exec debug crypto gkm ks infrastructure packet <cr>    # conditional_registration_candidates-009395
+(config)# do-exec debug crypto gkm ks registration packet <cr>    # conditional_registration_candidates-009375
+(config)# do-exec debug crypto gkm ks rekey packet <cr>    # conditional_registration_candidates-009384
+(config)# do-exec debug crypto gkm ks replay packet <cr>    # conditional_registration_candidates-009390
+(config)# do-exec debug crypto gkm performance <cr>    # conditional_registration_candidates-002747
+(config)# do-exec debug crypto ha <cr>    # conditional_registration_candidates-001242
+(config)# do-exec debug crypto ikev2 <cr>    # conditional_registration_candidates-001365
+(config)# do-exec debug crypto ikev2 data <cr>    # conditional_registration_candidates-002904
+(config)# do-exec debug crypto ikev2 error <cr>    # conditional_registration_candidates-002662
+(config)# do-exec debug crypto ikev2 internal <cr>    # conditional_registration_candidates-002742
+(config)# do-exec debug crypto ikev2 packet <cr>    # conditional_registration_candidates-002682
+(config)# do-exec debug crypto ikev2 packet hexdump <cr>    # conditional_registration_candidates-004824
+(config)# do-exec debug crypto ikev2 performance <cr>    # conditional_registration_candidates-002511
+(config)# do-exec debug crypto ikev2 trace <cr>    # conditional_registration_candidates-002823
+(config)# do-exec debug crypto interface <cr>    # conditional_registration_candidates-001339
+(config)# do-exec debug crypto ipsec <cr>    # conditional_registration_candidates-001412
+(config)# do-exec debug crypto ipsec error <cr>    # conditional_registration_candidates-002557
+(config)# do-exec debug crypto ipsec ha <cr>    # conditional_registration_candidates-003194
+(config)# do-exec debug crypto ipsec ha detail <cr>    # conditional_registration_candidates-005085
+(config)# do-exec debug crypto ipsec ha update <cr>    # conditional_registration_candidates-005148
+(config)# do-exec debug crypto ipsec hw-request <cr>    # conditional_registration_candidates-002635
+(config)# do-exec debug crypto ipsec message <cr>    # conditional_registration_candidates-002717
+(config)# do-exec debug crypto ipsec metadata sgt <cr>    # conditional_registration_candidates-005026
+(config)# do-exec debug crypto ipsec states <cr>    # conditional_registration_candidates-002801
+(config)# do-exec debug crypto ipv6 ipsec <cr>    # conditional_registration_candidates-002697
+(config)# do-exec debug crypto ipv6 packet <cr>    # conditional_registration_candidates-002783
+(config)# do-exec debug crypto isakmp <cr>    # conditional_registration_candidates-001487
+(config)# do-exec debug crypto isakmp aaa <cr>    # conditional_registration_candidates-002661
+(config)# do-exec debug crypto isakmp detail <cr>    # conditional_registration_candidates-002510
+(config)# do-exec debug crypto isakmp error <cr>    # conditional_registration_candidates-002991
+(config)# do-exec debug crypto isakmp ha <cr>    # conditional_registration_candidates-003361
+(config)# do-exec debug crypto isakmp ha detail <cr>    # conditional_registration_candidates-005275
+(config)# do-exec debug crypto isakmp kmi <number:1..50> <cr>    # conditional_registration_candidates-004977
+(config)# do-exec debug crypto isakmp packet <cr>    # conditional_registration_candidates-002584
+(config)# do-exec debug crypto isakmp performance <cr>    # conditional_registration_candidates-002903
+(config)# do-exec debug crypto isakmp qos <cr>    # conditional_registration_candidates-003166
+(config)# do-exec debug crypto isakmp session <cr>    # conditional_registration_candidates-003078
+(config)# do-exec debug crypto isakmp stats <cr>    # conditional_registration_candidates-002822
+(config)# do-exec debug crypto kmi <cr>    # conditional_registration_candidates-001288
+(config)# do-exec debug crypto mib detail <cr>    # conditional_registration_candidates-002627
+(config)# do-exec debug crypto mib error <cr>    # conditional_registration_candidates-002709
+(config)# do-exec debug crypto rmal <cr>    # conditional_registration_candidates-001480
+(config)# do-exec debug crypto rmal datahandler <cr>    # conditional_registration_candidates-003350
+(config)# do-exec debug crypto rmal datahandler error <cr>    # conditional_registration_candidates-005258
+(config)# do-exec debug crypto rmal error <cr>    # conditional_registration_candidates-003118
+(config)# do-exec debug crypto routing <cr>    # conditional_registration_candidates-001213
+(config)# do-exec debug crypto skip-client debug <cr>    # conditional_registration_candidates-002824
+(config)# do-exec debug crypto skip-client error <cr>    # conditional_registration_candidates-002664
+(config)# do-exec debug crypto skip-client event <cr>    # conditional_registration_candidates-002744
+(config)# do-exec debug crypto skip-client feature-flow <cr>    # conditional_registration_candidates-002586
+(config)# do-exec debug crypto ssl <cr>    # conditional_registration_candidates-001732
+(config)# do-exec debug crypto ssl aaa <cr>    # conditional_registration_candidates-002905
+(config)# do-exec debug crypto ssl acl <cr>    # conditional_registration_candidates-003671
+(config)# do-exec debug crypto ssl aggr-auth message <cr>    # conditional_registration_candidates-005039
+(config)# do-exec debug crypto ssl aggr-auth packets <cr>    # conditional_registration_candidates-004968
+(config)# do-exec debug crypto ssl condition client ipv4 <address> <cr>    # conditional_registration_candidates-007895
+(config)# do-exec debug crypto ssl condition client username <string> <cr>    # conditional_registration_candidates-007916
+(config)# do-exec debug crypto ssl count <cr>    # conditional_registration_candidates-003915
+(config)# do-exec debug crypto ssl data <cr>    # conditional_registration_candidates-003880
+(config)# do-exec debug crypto ssl dns <cr>    # conditional_registration_candidates-002992
+(config)# do-exec debug crypto ssl dtls <cr>    # conditional_registration_candidates-004034
+(config)# do-exec debug crypto ssl dtls errors <cr>    # conditional_registration_candidates-005986
+(config)# do-exec debug crypto ssl dtls events <cr>    # conditional_registration_candidates-006023
+(config)# do-exec debug crypto ssl dtls packets <cr>    # conditional_registration_candidates-006054
+(config)# do-exec debug crypto ssl dump <cr>    # conditional_registration_candidates-003255
+(config)# do-exec debug crypto ssl emweb <cr>    # conditional_registration_candidates-003533
+(config)# do-exec debug crypto ssl emweb state <cr>    # conditional_registration_candidates-005444
+(config)# do-exec debug crypto ssl entry <string> <cr>    # conditional_registration_candidates-005068
+(config)# do-exec debug crypto ssl entry <string> source <address> <?ipmask_action@55558cd00d80> <cr>    # conditional_registration_candidates-009495
+(config)# do-exec debug crypto ssl http <cr>    # conditional_registration_candidates-003009
+(config)# do-exec debug crypto ssl http authentication <cr>    # conditional_registration_candidates-004911
+(config)# do-exec debug crypto ssl http trace <cr>    # conditional_registration_candidates-004978
+(config)# do-exec debug crypto ssl hw-api <cr>    # conditional_registration_candidates-003836
+(config)# do-exec debug crypto ssl license <cr>    # conditional_registration_candidates-003999
+(config)# do-exec debug crypto ssl package <cr>    # conditional_registration_candidates-003601
+(config)# do-exec debug crypto ssl sdps <cr>    # conditional_registration_candidates-003274
+(config)# do-exec debug crypto ssl sock <cr>    # conditional_registration_candidates-003617
+(config)# do-exec debug crypto ssl sock flow <cr>    # conditional_registration_candidates-005538
+(config)# do-exec debug crypto ssl timer <cr>    # conditional_registration_candidates-003733
+(config)# do-exec debug crypto ssl tunnel <cr>    # conditional_registration_candidates-003693
+(config)# do-exec debug crypto ssl tunnel errors <cr>    # conditional_registration_candidates-005547
+(config)# do-exec debug crypto ssl tunnel events <cr>    # conditional_registration_candidates-005443
+(config)# do-exec debug crypto ssl tunnel packets <cr>    # conditional_registration_candidates-005644
+(config)# do-exec debug crypto ssl url-disp <cr>    # conditional_registration_candidates-003784
+(config)# do-exec debug crypto ssl webservice <cr>    # conditional_registration_candidates-003187
+(config)# do-exec debug crypto tls-tunnel error <cr>    # conditional_registration_candidates-002663
+(config)# do-exec debug crypto tls-tunnel event <cr>    # conditional_registration_candidates-002743
+(config)# do-exec debug crypto tls-tunnel feature-flow <cr>    # conditional_registration_candidates-002585
+(config)# do-exec debug ctl-client <cr>    # conditional_registration_candidates-000336
+(config)# do-exec debug dapr packet <cr>    # conditional_registration_candidates-000938
+(config)# do-exec debug dapr packet detail <cr>    # conditional_registration_candidates-002123
+(config)# do-exec debug dapr packet dump <cr>    # conditional_registration_candidates-002195
+(config)# do-exec debug dapr packet error <cr>    # conditional_registration_candidates-002049
+(config)# do-exec debug dapr socket <cr>    # conditional_registration_candidates-000871
+(config)# do-exec debug dapr socket detail <cr>    # conditional_registration_candidates-002061
+(config)# do-exec debug dapr socket error <cr>    # conditional_registration_candidates-001985
+(config)# do-exec debug decnet adjacencies <cr>    # conditional_registration_candidates-000813
+(config)# do-exec debug decnet connects <cr>    # conditional_registration_candidates-000767
+(config)# do-exec debug decnet events <cr>    # conditional_registration_candidates-000855
+(config)# do-exec debug decnet packets <cr>    # conditional_registration_candidates-000896
+(config)# do-exec debug decnet routing <cr>    # conditional_registration_candidates-000929
+(config)# do-exec debug dialog-manager all <cr>    # conditional_registration_candidates-000925
+(config)# do-exec debug dialog-manager errors <cr>    # conditional_registration_candidates-000756
+(config)# do-exec debug dialog-manager events <cr>    # conditional_registration_candidates-000804
+(config)# do-exec debug dialog-manager info <cr>    # conditional_registration_candidates-000889
+(config)# do-exec debug dialog-manager xml <cr>    # conditional_registration_candidates-000845
+(config)# do-exec debug dialpeer <cr>    # conditional_registration_candidates-000332
+(config)# do-exec debug domain all <cr>    # conditional_registration_candidates-000807
+(config)# do-exec debug ephone error <cr>    # conditional_registration_candidates-000864
+(config)# do-exec debug ephone hfs <cr>    # conditional_registration_candidates-000754
+(config)# do-exec debug eta error <cr>    # conditional_registration_candidates-000815
+(config)# do-exec debug eta event <cr>    # conditional_registration_candidates-000857
+(config)# do-exec debug eta message <cr>    # conditional_registration_candidates-000898
+(config)# do-exec debug event manager detector ipsla <cr>    # conditional_registration_candidates-004754
+(config)# do-exec debug evpn all <cr>    # conditional_registration_candidates-001018
+(config)# do-exec debug evpn database <cr>    # conditional_registration_candidates-000883
+(config)# do-exec debug evpn dm <cr>    # conditional_registration_candidates-000919
+(config)# do-exec debug evpn error <cr>    # conditional_registration_candidates-000798
+(config)# do-exec debug evpn ha <cr>    # conditional_registration_candidates-000951
+(config)# do-exec debug evpn mlrib <cr>    # conditional_registration_candidates-001002
+(config)# do-exec debug evpn pd <cr>    # conditional_registration_candidates-000839
+(config)# do-exec debug evpn rwatch <cr>    # conditional_registration_candidates-000979
+(config)# do-exec debug fax relay t30 all-level-1 <cr>    # conditional_registration_candidates-004434
+(config)# do-exec debug fax relay t30 called-number <string> <cr>    # conditional_registration_candidates-006520
+(config)# do-exec debug fax relay t30 calling-number <string> <cr>    # conditional_registration_candidates-006487
+(config)# do-exec debug fax relay t30 level-2 <cr>    # conditional_registration_candidates-004433
+(config)# do-exec debug flow file-export all <cr>    # conditional_registration_candidates-002259
+(config)# do-exec debug flow file-export error <cr>    # conditional_registration_candidates-002184
+(config)# do-exec debug flow file-export event <cr>    # conditional_registration_candidates-002113
+(config)# do-exec debug flow-sampler class-based <cr>    # conditional_registration_candidates-000882
+(config)# do-exec debug flow-sampler events <cr>    # conditional_registration_candidates-000750
+(config)# do-exec debug flow-sampler ipc <cr>    # conditional_registration_candidates-000796
+(config)# do-exec debug flow-sampler match <cr>    # conditional_registration_candidates-000837
+(config)# do-exec debug frame-relay adjacency vc-bundle <cr>    # conditional_registration_candidates-003678
+(config)# do-exec debug frame-relay pseudowire <cr>    # conditional_registration_candidates-001537
+(config)# do-exec debug frame-relay vc-bundle detail <cr>    # conditional_registration_candidates-003608
+(config)# do-exec debug frame-relay vc-bundle state-change <cr>    # conditional_registration_candidates-003524
+(config)# do-exec debug frr-manager api <cr>    # conditional_registration_candidates-000761
+(config)# do-exec debug frr-manager errors <cr>    # conditional_registration_candidates-000850
+(config)# do-exec debug frr-manager events <cr>    # conditional_registration_candidates-000810
+(config)# do-exec debug funi api <cr>    # conditional_registration_candidates-001021
+(config)# do-exec debug funi counters <cr>    # conditional_registration_candidates-001042
+(config)# do-exec debug funi errors <cr>    # conditional_registration_candidates-000849
+(config)# do-exec debug funi events <cr>    # conditional_registration_candidates-001007
+(config)# do-exec debug funi gdb-enable <cr>    # conditional_registration_candidates-000927
+(config)# do-exec debug funi lfi <cr>    # conditional_registration_candidates-000984
+(config)# do-exec debug funi memory-alloc show <cr>    # conditional_registration_candidates-002176
+(config)# do-exec debug funi multiuser <cr>    # conditional_registration_candidates-000958
+(config)# do-exec debug funi oam <cr>    # conditional_registration_candidates-001219
+(config)# do-exec debug funi oam cc <cr>    # conditional_registration_candidates-002832
+(config)# do-exec debug funi oam cc interface <interface> <cr>    # conditional_registration_candidates-009388
+(config)# do-exec debug funi oam interface <interface> <cr>    # conditional_registration_candidates-009266
+(config)# do-exec debug funi packet <cr>    # conditional_registration_candidates-000904
+(config)# do-exec debug funi packet interface <interface> <cr>    # conditional_registration_candidates-009233
+(config)# do-exec debug funi state <cr>    # conditional_registration_candidates-001094
+(config)# do-exec debug funi xdr <cr>    # conditional_registration_candidates-001173
+(config)# do-exec debug group-policy traffic-steering all <cr>    # conditional_registration_candidates-002535
+(config)# do-exec debug group-policy traffic-steering odm <cr>    # conditional_registration_candidates-002494
+(config)# do-exec debug group-policy traffic-steering provisioning critical <cr>    # conditional_registration_candidates-004760
+(config)# do-exec debug group-policy traffic-steering provisioning debug <cr>    # conditional_registration_candidates-004472
+(config)# do-exec debug group-policy traffic-steering provisioning emergency <cr>    # conditional_registration_candidates-004806
+(config)# do-exec debug group-policy traffic-steering provisioning error <cr>    # conditional_registration_candidates-004712
+(config)# do-exec debug group-policy traffic-steering provisioning info <cr>    # conditional_registration_candidates-004535
+(config)# do-exec debug group-policy traffic-steering provisioning notice <cr>    # conditional_registration_candidates-004596
+(config)# do-exec debug group-policy traffic-steering provisioning warning <cr>    # conditional_registration_candidates-004655
+(config)# do-exec debug gtp all detail <cr>    # conditional_registration_candidates-002878
+(config)# do-exec debug gtp all error <cr>    # conditional_registration_candidates-002701
+(config)# do-exec debug gtp all event <cr>    # conditional_registration_candidates-002787
+(config)# do-exec debug gtp all function <cr>    # conditional_registration_candidates-003062
+(config)# do-exec debug gtp all message <cr>    # conditional_registration_candidates-002972
+(config)# do-exec debug gtp audit <cr>    # conditional_registration_candidates-001309
+(config)# do-exec debug gtp audit detail <cr>    # conditional_registration_candidates-002740
+(config)# do-exec debug gtp audit error <cr>    # conditional_registration_candidates-002583
+(config)# do-exec debug gtp audit event <cr>    # conditional_registration_candidates-002659
+(config)# do-exec debug gtp audit function <cr>    # conditional_registration_candidates-002902
+(config)# do-exec debug gtp audit message <cr>    # conditional_registration_candidates-002821
+(config)# do-exec debug gtp dns <cr>    # conditional_registration_candidates-001102
+(config)# do-exec debug gtp dns detail <cr>    # conditional_registration_candidates-002425
+(config)# do-exec debug gtp dns error <cr>    # conditional_registration_candidates-002312
+(config)# do-exec debug gtp dns event <cr>    # conditional_registration_candidates-002374
+(config)# do-exec debug gtp dns function <cr>    # conditional_registration_candidates-002523
+(config)# do-exec debug gtp dns message <cr>    # conditional_registration_candidates-002474
+(config)# do-exec debug gtp ha <cr>    # conditional_registration_candidates-000971
+(config)# do-exec debug gtp ha detail <cr>    # conditional_registration_candidates-002194
+(config)# do-exec debug gtp ha error <cr>    # conditional_registration_candidates-002048
+(config)# do-exec debug gtp ha event <cr>    # conditional_registration_candidates-002122
+(config)# do-exec debug gtp ha function <cr>    # conditional_registration_candidates-002269
+(config)# do-exec debug gtp internal <cr>    # conditional_registration_candidates-001188
+(config)# do-exec debug gtp internal detail <cr>    # conditional_registration_candidates-002520
+(config)# do-exec debug gtp internal error <cr>    # conditional_registration_candidates-002417
+(config)# do-exec debug gtp internal event <cr>    # conditional_registration_candidates-002470
+(config)# do-exec debug gtp internal function <cr>    # conditional_registration_candidates-002670
+(config)# do-exec debug gtp internal message <cr>    # conditional_registration_candidates-002594
+(config)# do-exec debug gtp io <cr>    # conditional_registration_candidates-001014
+(config)# do-exec debug gtp io detail <cr>    # conditional_registration_candidates-002260
+(config)# do-exec debug gtp io error <cr>    # conditional_registration_candidates-002114
+(config)# do-exec debug gtp io event <cr>    # conditional_registration_candidates-002185
+(config)# do-exec debug gtp io function <cr>    # conditional_registration_candidates-002381
+(config)# do-exec debug gtp io message <cr>    # conditional_registration_candidates-002327
+(config)# do-exec debug gtp mcsa <cr>    # conditional_registration_candidates-001144
+(config)# do-exec debug gtp mcsa detail <cr>    # conditional_registration_candidates-002471
+(config)# do-exec debug gtp mcsa error <cr>    # conditional_registration_candidates-002367
+(config)# do-exec debug gtp mcsa event <cr>    # conditional_registration_candidates-002422
+(config)# do-exec debug gtp mcsa function <cr>    # conditional_registration_candidates-002595
+(config)# do-exec debug gtp mcsa message <cr>    # conditional_registration_candidates-002521
+(config)# do-exec debug gtp path <cr>    # conditional_registration_candidates-001032
+(config)# do-exec debug gtp path detail <cr>    # conditional_registration_candidates-002324
+(config)# do-exec debug gtp path error <cr>    # conditional_registration_candidates-002177
+(config)# do-exec debug gtp path event <cr>    # conditional_registration_candidates-002255
+(config)# do-exec debug gtp path function <cr>    # conditional_registration_candidates-002430
+(config)# do-exec debug gtp path message <cr>    # conditional_registration_candidates-002379
+(config)# do-exec debug gtp pdp <cr>    # conditional_registration_candidates-001054
+(config)# do-exec debug gtp pdp detail <cr>    # conditional_registration_candidates-002376
+(config)# do-exec debug gtp pdp error <cr>    # conditional_registration_candidates-002247
+(config)# do-exec debug gtp pdp event <cr>    # conditional_registration_candidates-002315
+(config)# do-exec debug gtp pdp function <cr>    # conditional_registration_candidates-002475
+(config)# do-exec debug gtp pdp message <cr>    # conditional_registration_candidates-002427
+(config)# do-exec debug gtp protocol <cr>    # conditional_registration_candidates-001364
+(config)# do-exec debug gtp protocol detail <cr>    # conditional_registration_candidates-002797
+(config)# do-exec debug gtp protocol error <cr>    # conditional_registration_candidates-002629
+(config)# do-exec debug gtp protocol event <cr>    # conditional_registration_candidates-002712
+(config)# do-exec debug gtp protocol function <cr>    # conditional_registration_candidates-002977
+(config)# do-exec debug gtp protocol message <cr>    # conditional_registration_candidates-002887
+(config)# do-exec debug gtp timer <cr>    # conditional_registration_candidates-001255
+(config)# do-exec debug gtp timer detail <cr>    # conditional_registration_candidates-002665
+(config)# do-exec debug gtp timer error <cr>    # conditional_registration_candidates-002512
+(config)# do-exec debug gtp timer event <cr>    # conditional_registration_candidates-002587
+(config)# do-exec debug gtp timer function <cr>    # conditional_registration_candidates-002825
+(config)# do-exec debug gtp timer message <cr>    # conditional_registration_candidates-002745
+(config)# do-exec debug gtp tunnel <cr>    # conditional_registration_candidates-001222
+(config)# do-exec debug gtp tunnel detail <cr>    # conditional_registration_candidates-002592
+(config)# do-exec debug gtp tunnel error <cr>    # conditional_registration_candidates-002468
+(config)# do-exec debug gtp tunnel event <cr>    # conditional_registration_candidates-002516
+(config)# do-exec debug gtp tunnel function <cr>    # conditional_registration_candidates-002748
+(config)# do-exec debug gtp tunnel message <cr>    # conditional_registration_candidates-002669
+(config)# do-exec debug http client all <cr>    # conditional_registration_candidates-002482
+(config)# do-exec debug http client api <cr>    # conditional_registration_candidates-002334
+(config)# do-exec debug http client background <cr>    # conditional_registration_candidates-002439
+(config)# do-exec debug http client cache <cr>    # conditional_registration_candidates-002202
+(config)# do-exec debug http client cookie <cr>    # conditional_registration_candidates-002057
+(config)# do-exec debug http client error <cr>    # conditional_registration_candidates-002389
+(config)# do-exec debug http client main <cr>    # conditional_registration_candidates-001981
+(config)# do-exec debug http client msg <cr>    # conditional_registration_candidates-002274
+(config)# do-exec debug http client socket <cr>    # conditional_registration_candidates-002127
+(config)# do-exec debug ip flow cache <cr>    # conditional_registration_candidates-002698
+(config)# do-exec debug ip flow export <cr>    # conditional_registration_candidates-002784
+(config)# do-exec debug ip flow ipc <cr>    # conditional_registration_candidates-002875
+(config)# do-exec debug ip flow mp <cr>    # conditional_registration_candidates-002969
+(config)# do-exec debug ip flow non-forwarded <cr>    # conditional_registration_candidates-003060
+(config)# do-exec debug ip inspect acl-bypass <cr>    # conditional_registration_candidates-003244
+(config)# do-exec debug ip inspect aol-msgr <cr>    # conditional_registration_candidates-004162
+(config)# do-exec debug ip inspect cuseeme <cr>    # conditional_registration_candidates-003832
+(config)# do-exec debug ip inspect detailed <cr>    # conditional_registration_candidates-003150
+(config)# do-exec debug ip inspect dns <cr>    # conditional_registration_candidates-003943
+(config)# do-exec debug ip inspect events <cr>    # conditional_registration_candidates-002699
+(config)# do-exec debug ip inspect ftp-cmd <cr>    # conditional_registration_candidates-003338
+(config)# do-exec debug ip inspect ftp-token <cr>    # conditional_registration_candidates-003428
+(config)# do-exec debug ip inspect function-trace <cr>    # conditional_registration_candidates-002785
+(config)# do-exec debug ip inspect h323 <cr>    # conditional_registration_candidates-003913
+(config)# do-exec debug ip inspect http <cr>    # conditional_registration_candidates-004049
+(config)# do-exec debug ip inspect icmp <cr>    # conditional_registration_candidates-004172

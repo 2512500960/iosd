@@ -1,0 +1,11 @@
+# 模式 filter；其他模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：other-001.md
+
+(filter)# | append <url:dynamic> <cr>    # other_mode_connections-000005
+(filter)# | format <cr>    # other_mode_connections-000001
+(filter)# | format netconf-xml <cr>    # other_mode_connections-000002
+(filter)# | format restconf-json <cr>    # other_mode_connections-000003
+(filter)# | redirect <url:dynamic> <cr>    # other_mode_connections-000004
+(filter)# | tee /append <url:dynamic> <cr>    # other_mode_connections-000007
+(filter)# | tee <url:dynamic> <cr>    # other_mode_connections-000006

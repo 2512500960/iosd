@@ -1,0 +1,35 @@
+# 模式 policymap-service-classmap；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-service-policymap-class-traffic)# accounting aaa list <string> <cr>    # observed_connections-008698
+(config-service-policymap-class-traffic)# default accounting <cr>    # observed_connections-008681
+(config-service-policymap-class-traffic)# default dscp output <cr>    # observed_connections-008690
+(config-service-policymap-class-traffic)# default gx-monitoring-key <string> <cr>    # observed_connections-008693
+(config-service-policymap-class-traffic)# default police output <cr>    # observed_connections-008695
+(config-service-policymap-class-traffic)# default prepaid config default <cr>    # observed_connections-008699
+(config-service-policymap-class-traffic)# default redirect to group <string> <cr>    # observed_connections-008703
+(config-service-policymap-class-traffic)# default reroute to next-hop ip <address> <cr>    # observed_connections-008705
+(config-service-policymap-class-traffic)# default timeout absolute <cr>    # observed_connections-008687
+(config-service-policymap-class-traffic)# default timeout idle <cr>    # observed_connections-008684
+(config-service-policymap-class-traffic)# dscp <cr>    # observed_connections-008707
+(config-service-policymap-class-traffic)# dscp output <number:0..63> <cr>    # observed_connections-008692
+(config-service-policymap-class-traffic)# exit <cr>    # observed_connections-008679
+(config-service-policymap-class-traffic)# gx-monitoring-key <string> <cr>    # observed_connections-008682
+(config-service-policymap-class-traffic)# no accounting <cr>    # observed_connections-008680
+(config-service-policymap-class-traffic)# no dscp output <cr>    # observed_connections-008689
+(config-service-policymap-class-traffic)# no gx-monitoring-key <string> <cr>    # observed_connections-008691
+(config-service-policymap-class-traffic)# no police output <cr>    # observed_connections-008694
+(config-service-policymap-class-traffic)# no prepaid config default <cr>    # observed_connections-008697
+(config-service-policymap-class-traffic)# no redirect to group <string> <cr>    # observed_connections-008702
+(config-service-policymap-class-traffic)# no reroute to next-hop ip <address> <cr>    # observed_connections-008704
+(config-service-policymap-class-traffic)# no timeout absolute <cr>    # observed_connections-008685
+(config-service-policymap-class-traffic)# no timeout idle <cr>    # observed_connections-008683
+(config-service-policymap-class-traffic)# police <cr>    # observed_connections-008708
+(config-service-policymap-class-traffic)# police output <number:8000..1000000000> <cr>    # observed_connections-008696
+(config-service-policymap-class-traffic)# prepaid <cr>    # observed_connections-008706
+(config-service-policymap-class-traffic)# prepaid config default <cr>    # observed_connections-008688
+(config-service-policymap-class-traffic)# redirect to group <string> <cr>    # observed_connections-008700
+(config-service-policymap-class-traffic)# reroute to next-hop ip <address> <cr>    # observed_connections-008701
+(config-service-policymap-class-traffic)# timeout absolute <number:0..31104000> <cr>    # observed_connections-008686
+(config-service-policymap-class-traffic)# timeout idle <number:dynamic> <cr>    # observed_connections-008709

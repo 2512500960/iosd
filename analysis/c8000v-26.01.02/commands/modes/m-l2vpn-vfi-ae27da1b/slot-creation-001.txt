@@ -1,0 +1,34 @@
+# 模式 l2vpn-vfi；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-vfi)# autodiscovery bgp signaling bgp <cr>    # static_slot_creation_candidates-004230
+(config-vfi)# default autodiscovery bgp signaling bgp <cr>    # static_slot_creation_candidates-004234
+(config-vfi)# default evc <string> <cr>    # static_slot_creation_candidates-004223
+(config-vfi)# default evpn ethernet-segment <cr>    # static_slot_creation_candidates-004219
+(config-vfi)# default forward permit l2protocol all <cr>    # static_slot_creation_candidates-004232
+(config-vfi)# default l2protocol forward <cr>    # static_slot_creation_candidates-004226
+(config-vfi)# default member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004229
+(config-vfi)# default mtu <cr>    # static_slot_creation_candidates-004211
+(config-vfi)# default shutdown <cr>    # static_slot_creation_candidates-004210
+(config-vfi)# default status decoupled <cr>    # static_slot_creation_candidates-004221
+(config-vfi)# default vpn id <cr>    # static_slot_creation_candidates-004216
+(config-vfi)# evc <string> <cr>    # static_slot_creation_candidates-004212
+(config-vfi)# evpn ethernet-segment <number:1..65535> <cr>    # static_slot_creation_candidates-004218
+(config-vfi)# forward permit l2protocol all <cr>    # static_slot_creation_candidates-004227
+(config-vfi)# l2protocol forward <cr>    # static_slot_creation_candidates-004213
+(config-vfi)# member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004224
+(config-vfi)# mtu <number:1500..9180> <cr>    # static_slot_creation_candidates-004209
+(config-vfi)# no autodiscovery bgp signaling bgp <cr>    # static_slot_creation_candidates-004233
+(config-vfi)# no evc <string> <cr>    # static_slot_creation_candidates-004222
+(config-vfi)# no evpn ethernet-segment <cr>    # static_slot_creation_candidates-004217
+(config-vfi)# no forward permit l2protocol all <cr>    # static_slot_creation_candidates-004231
+(config-vfi)# no l2protocol forward <cr>    # static_slot_creation_candidates-004225
+(config-vfi)# no member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004228
+(config-vfi)# no mtu <cr>    # static_slot_creation_candidates-004208
+(config-vfi)# no shutdown <cr>    # static_slot_creation_candidates-004207
+(config-vfi)# no status decoupled <cr>    # static_slot_creation_candidates-004220
+(config-vfi)# no vpn id <cr>    # static_slot_creation_candidates-004214
+(config-vfi)# shutdown <cr>    # static_slot_creation_candidates-004205
+(config-vfi)# status decoupled <cr>    # static_slot_creation_candidates-004206
+(config-vfi)# vpn id <number:1..4294967295> <cr>    # static_slot_creation_candidates-004215

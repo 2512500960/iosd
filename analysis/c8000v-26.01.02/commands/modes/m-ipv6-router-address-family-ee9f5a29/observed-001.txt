@@ -1,0 +1,51 @@
+# 模式 ipv6-router-address-family；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-ipv6-rtr-af)# default distance <cr>    # observed_connections-008196
+(config-ipv6-rtr-af)# default omp-route-tag <cr>    # observed_connections-008204
+(config-ipv6-rtr-af)# default poison-reverse <cr>    # observed_connections-008207
+(config-ipv6-rtr-af)# default port <cr>    # observed_connections-008216
+(config-ipv6-rtr-af)# default split-horizon <cr>    # observed_connections-008200
+(config-ipv6-rtr-af)# default timers <cr>    # observed_connections-008202
+(config-ipv6-rtr-af)# default timers lsa arrival <cr>    # observed_connections-008218
+(config-ipv6-rtr-af)# default timers lsa-arrival <cr>    # observed_connections-008210
+(config-ipv6-rtr-af)# default timers lsa-group-pacing <cr>    # observed_connections-008206
+(config-ipv6-rtr-af)# default timers lsa-interval <cr>    # observed_connections-008211
+(config-ipv6-rtr-af)# default timers pacing flood <cr>    # observed_connections-008222
+(config-ipv6-rtr-af)# default timers pacing lsa-group <cr>    # observed_connections-008220
+(config-ipv6-rtr-af)# default timers pacing retransmission <cr>    # observed_connections-008224
+(config-ipv6-rtr-af)# default timers throttle lsa <cr>    # observed_connections-008228
+(config-ipv6-rtr-af)# default timers throttle spf <cr>    # observed_connections-008226
+(config-ipv6-rtr-af)# distance <cr>    # observed_connections-008187
+(config-ipv6-rtr-af)# distance <number:1..254> <prefix:dynamic> <cr>    # observed_connections-008233
+(config-ipv6-rtr-af)# exit-address-family <cr>    # observed_connections-008188
+(config-ipv6-rtr-af)# no distance <cr>    # observed_connections-008195
+(config-ipv6-rtr-af)# no omp-route-tag <cr>    # observed_connections-008201
+(config-ipv6-rtr-af)# no poison-reverse <cr>    # observed_connections-008205
+(config-ipv6-rtr-af)# no port <cr>    # observed_connections-008214
+(config-ipv6-rtr-af)# no split-horizon <cr>    # observed_connections-008197
+(config-ipv6-rtr-af)# no timers <cr>    # observed_connections-008198
+(config-ipv6-rtr-af)# no timers lsa arrival <cr>    # observed_connections-008217
+(config-ipv6-rtr-af)# no timers lsa-arrival <cr>    # observed_connections-008208
+(config-ipv6-rtr-af)# no timers lsa-group-pacing <cr>    # observed_connections-008203
+(config-ipv6-rtr-af)# no timers lsa-interval <cr>    # observed_connections-008209
+(config-ipv6-rtr-af)# no timers pacing flood <cr>    # observed_connections-008221
+(config-ipv6-rtr-af)# no timers pacing lsa-group <cr>    # observed_connections-008219
+(config-ipv6-rtr-af)# no timers pacing retransmission <cr>    # observed_connections-008223
+(config-ipv6-rtr-af)# no timers throttle lsa <cr>    # observed_connections-008227
+(config-ipv6-rtr-af)# no timers throttle spf <cr>    # observed_connections-008225
+(config-ipv6-rtr-af)# omp-route-tag <cr>    # observed_connections-008190
+(config-ipv6-rtr-af)# poison-reverse <cr>    # observed_connections-008192
+(config-ipv6-rtr-af)# port <number:1..65535> multicast-group <address> <cr>    # observed_connections-008229
+(config-ipv6-rtr-af)# split-horizon <cr>    # observed_connections-008189
+(config-ipv6-rtr-af)# timers <number:5..65535> <number:1..65535> <number:0..65535> <number:1..65535> <cr>    # observed_connections-008230
+(config-ipv6-rtr-af)# timers lsa arrival <number:0..600000> <cr>    # observed_connections-008199
+(config-ipv6-rtr-af)# timers lsa-arrival <number:0..600> <cr>    # observed_connections-008193
+(config-ipv6-rtr-af)# timers lsa-group-pacing <number:10..1800> <cr>    # observed_connections-008191
+(config-ipv6-rtr-af)# timers lsa-interval <number:0..600> <cr>    # observed_connections-008194
+(config-ipv6-rtr-af)# timers pacing flood <number:5..100> <cr>    # observed_connections-008213
+(config-ipv6-rtr-af)# timers pacing lsa-group <number:10..1800> <cr>    # observed_connections-008212
+(config-ipv6-rtr-af)# timers pacing retransmission <number:5..200> <cr>    # observed_connections-008215
+(config-ipv6-rtr-af)# timers throttle lsa <number:0..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-008232
+(config-ipv6-rtr-af)# timers throttle spf <number:1..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-008231

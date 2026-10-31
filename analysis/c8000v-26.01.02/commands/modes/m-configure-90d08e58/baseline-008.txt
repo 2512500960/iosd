@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-008.md
+
+(config)# default do-exec debug ip multicast gir <cr>    # path-047518
+(config)# default do-exec debug ip multicast redundancy <cr>    # path-047643
+(config)# default do-exec debug ip multicast redundancy verbose <cr>    # path-054496
+(config)# default do-exec debug ip multicast rpf tracked <cr>    # path-054400
+(config)# default do-exec debug ip multicast topology <cr>    # path-047432
+(config)# default do-exec debug ip multicast trace-point <cr>    # path-047443
+(config)# default do-exec debug ip nat <cr>    # path-039548
+(config)# default do-exec debug ip nat <cr>    # path-039717
+(config)# default do-exec debug ip nat alg <cr>    # path-048229
+(config)# default do-exec debug ip nat bind <cr>    # path-048796
+(config)# default do-exec debug ip nat detailed <cr>    # path-048504
+(config)# default do-exec debug ip nat drop <cr>    # path-048240
+(config)# default do-exec debug ip nat h323 <cr>    # path-048503
+(config)# default do-exec debug ip nat ha <cr>    # path-048028
+(config)# default do-exec debug ip nat ha event <cr>    # path-054623
+(config)# default do-exec debug ip nat ha issu <cr>    # path-054645
+(config)# default do-exec debug ip nat ha-sso detail <cr>    # path-054968
+(config)# default do-exec debug ip nat ha-sso error <cr>    # path-055004
+(config)# default do-exec debug ip nat ipsec <cr>    # path-048270
+(config)# default do-exec debug ip nat limit <cr>    # path-049001
+(config)# default do-exec debug ip nat mapping <cr>    # path-048864
+(config)# default do-exec debug ip nat pap <cr>    # path-048146
+(config)# default do-exec debug ip nat pool <cr>    # path-048622
+(config)# default do-exec debug ip nat port <cr>    # path-048017
+(config)# default do-exec debug ip nat pptp <cr>    # path-048102
+(config)# default do-exec debug ip nat route <cr>    # path-048230
+(config)# default do-exec debug ip nat route-map <cr>    # path-048797
+(config)# default do-exec debug ip nat session <cr>    # path-048674
+(config)# default do-exec debug ip nat sg <cr>    # path-048407
+(config)# default do-exec debug ip nat sip <cr>    # path-048623
+(config)# default do-exec debug ip nat skinny <cr>    # path-048564
+(config)# default do-exec debug ip nat timeout <cr>    # path-049002
+(config)# default do-exec debug ip nat vrf <cr>    # path-048408
+(config)# default do-exec debug ip nat wlan-nat <cr>    # path-049101
+(config)# default do-exec debug ip nat-route all <cr>    # path-047784
+(config)# default do-exec debug ip nbar control-plane low <cr>    # path-054442
+(config)# default do-exec debug ip omp adjacency <cr>    # path-047972
+(config)# default do-exec debug ip omp all <cr>    # path-048058
+(config)# default do-exec debug ip omp forwarding <cr>    # path-047846
+(config)# default do-exec debug ip omp gw-tracking <cr>    # path-048066
+(config)# default do-exec debug ip omp gw-tracking detail <cr>    # path-054655
+(config)# default do-exec debug ip omp multi-tenant <cr>    # path-047807
+(config)# default do-exec debug ip omp multicast <cr>    # path-047927
+(config)# default do-exec debug ip omp network <cr>    # path-047754
+(config)# default do-exec debug ip omp redistribute <cr>    # path-047767
+(config)# default do-exec debug ip omp redistribute detail <cr>    # path-054547
+(config)# default do-exec debug ip omp routes <cr>    # path-047725
+(config)# default do-exec debug ip omp routes detail <cr>    # path-054525
+(config)# default do-exec debug ip omp rwatch <cr>    # path-047892
+(config)# default do-exec debug ip ospf adj <cr>    # path-047714
+(config)# default do-exec debug ip ospf capability advertisements <cr>    # path-054828
+(config)# default do-exec debug ip ospf crimson notification <cr>    # path-054580
+(config)# default do-exec debug ip ospf crimson oper <cr>    # path-054589
+(config)# default do-exec debug ip ospf database-timer <cr>    # path-048318
+(config)# default do-exec debug ip ospf database-timer rate-limit <cr>    # path-054847
+(config)# default do-exec debug ip ospf demand-circuit <cr>    # path-048022
+(config)# default do-exec debug ip ospf events <cr>    # path-048059
+(config)# default do-exec debug ip ospf fast-reroute rib <cr>    # path-055129
+(config)# default do-exec debug ip ospf fast-reroute spf <cr>    # path-055055
+(config)# default do-exec debug ip ospf fast-reroute ti-lfa rib <cr>    # path-058357
+(config)# default do-exec debug ip ospf fast-reroute ti-lfa spf <cr>    # path-058358
+(config)# default do-exec debug ip ospf flex-algo <cr>    # path-049068
+(config)# default do-exec debug ip ospf flood <cr>    # path-048243
+(config)# default do-exec debug ip ospf ha <cr>    # path-047981
+(config)# default do-exec debug ip ospf hello <cr>    # path-047975
+(config)# default do-exec debug ip ospf lsa-generation <cr>    # path-048517
+(config)# default do-exec debug ip ospf lsa-maxage <cr>    # path-048575
+(config)# default do-exec debug ip ospf monitor <cr>    # path-048194
+(config)# default do-exec debug ip ospf mpls traffic-eng <cr>    # path-054879
+(config)# default do-exec debug ip ospf mpls traffic-eng advertisements <cr>    # path-058206
+(config)# default do-exec debug ip ospf mpls traffic-eng signaling <cr>    # path-058175
+(config)# default do-exec debug ip ospf nsf <cr>    # path-047934
+(config)# default do-exec debug ip ospf nsr <cr>    # path-047898
+(config)# default do-exec debug ip ospf packet <cr>    # path-048241
+(config)# default do-exec debug ip ospf performance-measurement <cr>    # path-048947
+(config)# default do-exec debug ip ospf rib <cr>    # path-048956
+(config)# default do-exec debug ip ospf rib <cr>    # path-049020
+(config)# default do-exec debug ip ospf rib <cr>    # path-049070
+(config)# default do-exec debug ip ospf rib <cr>    # path-049071
+(config)# default do-exec debug ip ospf scheduler hello <cr>    # path-055021
+(config)# default do-exec debug ip ospf scheduler hello input <cr>    # path-058231
+(config)# default do-exec debug ip ospf scheduler hello output <cr>    # path-058247
+(config)# default do-exec debug ip ospf scheduler hello timer <cr>    # path-058215
+(config)# default do-exec debug ip ospf scheduler router <cr>    # path-055094
+(config)# default do-exec debug ip ospf scheduler router event <cr>    # path-058245
+(config)# default do-exec debug ip ospf scheduler router input <cr>    # path-058266
+(config)# default do-exec debug ip ospf scheduler router mode <cr>    # path-058282
+(config)# default do-exec debug ip ospf scheduler router timer <cr>    # path-058225
+(config)# default do-exec debug ip ospf segment-routing <cr>    # path-049155
+(config)# default do-exec debug ip ospf segment-routing adjacency-sid <cr>    # path-055033
+(config)# default do-exec debug ip ospf segment-routing app <cr>    # path-055074
+(config)# default do-exec debug ip ospf segment-routing mapping-server <cr>    # path-055168
+(config)# default do-exec debug ip ospf segment-routing microloop-avoidance event <cr>    # path-058369
+(config)# default do-exec debug ip ospf segment-routing microloop-avoidance rib <cr>    # path-058434
+(config)# default do-exec debug ip ospf segment-routing microloop-avoidance spf <cr>    # path-058426
+(config)# default do-exec debug ip ospf segment-routing oam <cr>    # path-055157
+(config)# default do-exec debug ip ospf segment-routing prefix-sid <cr>    # path-055282
+(config)# default do-exec debug ip ospf segment-routing traffic-eng <cr>    # path-055355
+(config)# default do-exec debug ip ospf snmp <cr>    # path-047774
+(config)# default do-exec debug ip ospf snmp query <cr>    # path-054527
+(config)# default do-exec debug ip ospf snmp trap <cr>    # path-054549
+(config)# default do-exec debug ip ospf spf <cr>    # path-048521
+(config)# default do-exec debug ip ospf spf external <cr>    # path-054902
+(config)# default do-exec debug ip ospf spf inter <cr>    # path-054878
+(config)# default do-exec debug ip ospf spf intra <cr>    # path-054846
+(config)# default do-exec debug ip ospf spf statistic <cr>    # path-054928
+(config)# default do-exec debug ip ospf teapp <cr>    # path-048879
+(config)# default do-exec debug ip ospf topology <cr>    # path-049205
+(config)# default do-exec debug ip ospf topology fast-reroute <cr>    # path-055511
+(config)# default do-exec debug ip ospf topology fast-reroute path <cr>    # path-058464
+(config)# default do-exec debug ip ospf topology fast-reroute route <cr>    # path-058487
+(config)# default do-exec debug ip ospf topology path <cr>    # path-055485
+(config)# default do-exec debug ip ospf topology route <cr>    # path-055514
+(config)# default do-exec debug ip packet <cr>    # path-037373
+(config)# default do-exec debug ip peer <cr>    # path-037317
+(config)# default do-exec debug ip pim <cr>    # path-038518
+(config)# default do-exec debug ip pim atm <cr>    # path-047520
+(config)# default do-exec debug ip pim auto-rp <cr>    # path-047339
+(config)# default do-exec debug ip pim bfd <cr>    # path-047730
+(config)# default do-exec debug ip pim bsr <cr>    # path-047306
+(config)# default do-exec debug ip pim crimson <cr>    # path-047551
+(config)# default do-exec debug ip pim df <cr>    # path-047406
+(config)# default do-exec debug ip pim drlb <cr>    # path-047519
+(config)# default do-exec debug ip pim hello <cr>    # path-047434
+(config)# default do-exec debug ip pim pfp-sa <cr>    # path-047769
+(config)# default do-exec debug ip pim pfp-sa <cr>    # path-047770
+(config)# default do-exec debug ip pim timers <cr>    # path-047400
+(config)# default do-exec debug ip policy <cr>    # path-038984
+(config)# default do-exec debug ip policy dynamic <cr>    # path-047915
+(config)# default do-exec debug ip policy early <cr>    # path-047984
+(config)# default do-exec debug ip process <cr>    # path-037973
+(config)# default do-exec debug ip rgmp <cr>    # path-038108
+(config)# default do-exec debug ip rip <cr>    # path-039089
+(config)# default do-exec debug ip rip bfd events <cr>    # path-054687
+(config)# default do-exec debug ip rip database <cr>    # path-047908
+(config)# default do-exec debug ip rip events <cr>    # path-047961
+(config)# default do-exec debug ip rip trigger <cr>    # path-048013
+(config)# default do-exec debug ip routing <cr>    # path-038565
+(config)# default do-exec debug ip routing <number:1..199> <cr>    # path-047477
+(config)# default do-exec debug ip routing altpref <cr>    # path-047698
+(config)# default do-exec debug ip routing connected <cr>    # path-047606
+(config)# default do-exec debug ip routing maxroutes <cr>    # path-047612
+(config)# default do-exec debug ip routing nsf <cr>    # path-047275
+(config)# default do-exec debug ip routing parser <cr>    # path-047241
+(config)# default do-exec debug ip routing static bfd <cr>    # path-054605
+(config)# default do-exec debug ip routing static db <cr>    # path-054570
+(config)# default do-exec debug ip routing static default-network <cr>    # path-054553
+(config)# default do-exec debug ip routing static detail <cr>    # path-054634
+(config)# default do-exec debug ip routing static event <cr>    # path-054519
+(config)# default do-exec debug ip routing static nsf <cr>    # path-054606
+(config)# default do-exec debug ip routing static route <address> <address> <cr>    # path-059423
+(config)# default do-exec debug ip routing static rwatch <cr>    # path-054574
+(config)# default do-exec debug ip routing static rwatch defaultnet <cr>    # path-058070
+(config)# default do-exec debug ip routing static rwatch rib <cr>    # path-058060
+(config)# default do-exec debug ip routing static summary <cr>    # path-054507
+(config)# default do-exec debug ip routing static time <cr>    # path-054620
+(config)# default do-exec debug ip routing subblock <cr>    # path-047217
+(config)# default do-exec debug ip rsvp <cr>    # path-040580
+(config)# default do-exec debug ip rsvp aggregation <cr>    # path-049635
+(config)# default do-exec debug ip rsvp all <cr>    # path-049676
+(config)# default do-exec debug ip rsvp api <cr>    # path-048863
+(config)# default do-exec debug ip rsvp authentication <cr>    # path-048404
+(config)# default do-exec debug ip rsvp cli <cr>    # path-049142
+(config)# default do-exec debug ip rsvp data-pkts <number:1..32767> <cr>    # path-054715
+(config)# default do-exec debug ip rsvp data-pkts unlimited <cr>    # path-054686
+(config)# default do-exec debug ip rsvp database <cr>    # path-049190
+(config)# default do-exec debug ip rsvp docsis <cr>    # path-049407
+(config)# default do-exec debug ip rsvp dump-messages <cr>    # path-049900
+(config)# default do-exec debug ip rsvp dump-messages hex <cr>    # path-055731
+(config)# default do-exec debug ip rsvp errors <cr>    # path-049594
+(config)# default do-exec debug ip rsvp events <cr>    # path-048143
+(config)# default do-exec debug ip rsvp fast-reroute <cr>    # path-049768
+(config)# default do-exec debug ip rsvp fast-reroute errors <cr>    # path-055611
+(config)# default do-exec debug ip rsvp fast-reroute signalling <cr>    # path-055618
+(config)# default do-exec debug ip rsvp fast-reroute state <cr>    # path-055643
+(config)# default do-exec debug ip rsvp filter <cr>    # path-048201
+(config)# default do-exec debug ip rsvp function <cr>    # path-048184
+(config)# default do-exec debug ip rsvp handles <cr>    # path-049457
+(config)# default do-exec debug ip rsvp hello <cr>    # path-049374
+(config)# default do-exec debug ip rsvp hello bfd <cr>    # path-055340
+(config)# default do-exec debug ip rsvp hello client <cr>    # path-055300
+(config)# default do-exec debug ip rsvp hello detail <cr>    # path-055445
+(config)# default do-exec debug ip rsvp hello messages <cr>    # path-055378
+(config)# default do-exec debug ip rsvp hello stats <cr>    # path-055414
+(config)# default do-exec debug ip rsvp ingress <cr>    # path-048142
+(config)# default do-exec debug ip rsvp messages <cr>    # path-049242
+(config)# default do-exec debug ip rsvp msg-mgr <cr>    # path-048795
+(config)# default do-exec debug ip rsvp nsr <cr>    # path-048317
+(config)# default do-exec debug ip rsvp nsr infra <cr>    # path-054771
+(config)# default do-exec debug ip rsvp p2mp <cr>    # path-048311
+(config)# default do-exec debug ip rsvp path <cr>    # path-048183
+(config)# default do-exec debug ip rsvp pfr <cr>    # path-048227
+(config)# default do-exec debug ip rsvp policy <cr>    # path-049059
+(config)# default do-exec debug ip rsvp proxy <cr>    # path-048458
+(config)# default do-exec debug ip rsvp rate-limit <cr>    # path-048563
+(config)# default do-exec debug ip rsvp reliable-msg <cr>    # path-048731
+(config)# default do-exec debug ip rsvp resv <cr>    # path-048098
+(config)# default do-exec debug ip rsvp routing <cr>    # path-048621
+(config)# default do-exec debug ip rsvp sbm <cr>    # path-049000
+(config)# default do-exec debug ip rsvp signalling <cr>    # path-049546
+(config)# default do-exec debug ip rsvp snmp <cr>    # path-049297
+(config)# default do-exec debug ip rsvp sso <cr>    # path-048403
+(config)# default do-exec debug ip rsvp summary-refresh <cr>    # path-048673
+(config)# default do-exec debug ip rsvp svc <cr>    # path-048932
+(config)# default do-exec debug ip rsvp traffic-control <cr>    # path-048572
+(config)# default do-exec debug ip rsvp traffic-control all <cr>    # path-054914
+(config)# default do-exec debug ip rsvp wfq <cr>    # path-049355
+(config)# default do-exec debug ip rtp errors <cr>    # path-047143
+(config)# default do-exec debug ip rtp header-compression <cr>    # path-047108
+(config)# default do-exec debug ip rtp packets <cr>    # path-047079
+(config)# default do-exec debug ip scp <cr>    # path-039320
+(config)# default do-exec debug ip sctp api <cr>    # path-047497
+(config)# default do-exec debug ip sctp congestion <cr>    # path-047602
+(config)# default do-exec debug ip sctp init <cr>    # path-047637
+(config)# default do-exec debug ip sctp multihome <cr>    # path-047659
+(config)# default do-exec debug ip sctp performance <cr>    # path-047691
+(config)# default do-exec debug ip sctp rcvchunks <cr>    # path-047543
+(config)# default do-exec debug ip sctp rto <cr>    # path-047720
+(config)# default do-exec debug ip sctp segments <cr>    # path-047761
+(config)# default do-exec debug ip sctp segmentv <cr>    # path-047811
+(config)# default do-exec debug ip sctp signal <cr>    # path-047854
+(config)# default do-exec debug ip sctp sndchunks <cr>    # path-047571
+(config)# default do-exec debug ip sctp state <cr>    # path-047896
+(config)# default do-exec debug ip sctp timer <cr>    # path-047931
+(config)# default do-exec debug ip sctp warnings <cr>    # path-047977
+(config)# default do-exec debug ip sd <cr>    # path-037966
+(config)# default do-exec debug ip security <cr>    # path-037358
+(config)# default do-exec debug ip service first-hop <cr>    # path-047184
+(config)# default do-exec debug ip sftp <cr>    # path-039372
+(config)# default do-exec debug ip sla error 0 <cr>    # path-055087
+(config)# default do-exec debug ip sla error <cr>    # path-048685
+(config)# default do-exec debug ip sla error crimson <cr>    # path-055052
+(config)# default do-exec debug ip sla error ep-api <cr>    # path-055051
+(config)# default do-exec debug ip sla error ethernet-monitor <cr>    # path-055240
+(config)# default do-exec debug ip sla error event-publisher <cr>    # path-055013
+(config)# default do-exec debug ip sla event responder direct <cr>    # path-058293
+(config)# default do-exec debug ip sla event responder mgd-timer <cr>    # path-058260
+(config)# default do-exec debug ip sla event responder socket <cr>    # path-058313
+(config)# default do-exec debug ip sla event responder tw-timer <cr>    # path-058279
+(config)# default do-exec debug ip sla event sender direct <cr>    # path-058281
+(config)# default do-exec debug ip sla event sender mgd-timer <cr>    # path-058241
+(config)# default do-exec debug ip sla event sender socket <cr>    # path-058295
+(config)# default do-exec debug ip sla event sender tw-timer <cr>    # path-058264
+(config)# default do-exec debug ip sla trace 0 <cr>    # path-055053
+(config)# default do-exec debug ip sla trace <cr>    # path-048634
+(config)# default do-exec debug ip sla trace crimson <cr>    # path-055015
+(config)# default do-exec debug ip sla trace ep-api <cr>    # path-055014
+(config)# default do-exec debug ip sla trace ethernet-monitor <cr>    # path-055211
+(config)# default do-exec debug ip sla trace event-publisher <cr>    # path-054978
+(config)# default do-exec debug ip sla trace twamp connection <cr>    # path-058395
+(config)# default do-exec debug ip sla trace twamp control reflector <cr>    # path-059468
+(config)# default do-exec debug ip sla trace twamp control server <cr>    # path-059478
+(config)# default do-exec debug ip sla trace twamp session <cr>    # path-058314
+(config)# default do-exec debug ip sla trace twamp-light session <cr>    # path-058330
+(config)# default do-exec debug ip sla trace twamp-light session <number:1..100> <cr>    # path-059467
+(config)# default do-exec debug ip socket <cr>    # path-038468
+(config)# default do-exec debug ip socket api <cr>    # path-047513
+(config)# default do-exec debug ip socket dumpl2raw <number:1..255> <cr>    # path-054443
+(config)# default do-exec debug ip socket error <cr>    # path-047471
+(config)# default do-exec debug ip socket event <cr>    # path-047549
+(config)# default do-exec debug ip socket l2raw <cr>    # path-047425
+(config)# default do-exec debug ip ssh <cr>    # path-039442
+(config)# default do-exec debug ip ssh client <cr>    # path-048252
+(config)# default do-exec debug ip ssh detail <cr>    # path-048295
+(config)# default do-exec debug ip ssh packet <cr>    # path-048345
+(config)# default do-exec debug ip subscriber all <cr>    # path-048453
+(config)# default do-exec debug ip subscriber error <cr>    # path-048348
+(config)# default do-exec debug ip subscriber event <cr>    # path-048299
+(config)# default do-exec debug ip subscriber fsm <cr>    # path-048212
+(config)# default do-exec debug ip subscriber packet <cr>    # path-048257
+(config)# default do-exec debug ip subscriber redundancy <cr>    # path-048395
+(config)# default do-exec debug ip tcp CEF <cr>    # path-047185
+(config)# default do-exec debug ip tcp Winscale <cr>    # path-047342
+(config)# default do-exec debug ip tcp adjust-mss <cr>    # path-047286
+(config)# default do-exec debug ip tcp congestion <cr>    # path-047200
+(config)# default do-exec debug ip tcp driver <cr>    # path-047244
+(config)# default do-exec debug ip tcp driver-pak <cr>    # path-047276
+(config)# default do-exec debug ip tcp ecn <cr>    # path-047436
+(config)# default do-exec debug ip tcp ha event <cr>    # path-054523
+(config)# default do-exec debug ip tcp ha transactions <cr>    # path-054539
+(config)# default do-exec debug ip tcp header-compression <cr>    # path-047403
+(config)# default do-exec debug ip tcp mkt <cr>    # path-047479
+(config)# default do-exec debug ip tcp rcmd <cr>    # path-047662
+(config)# default do-exec debug ip tcp sack <cr>    # path-047375
+(config)# default do-exec debug ip tcp throughput <cr>    # path-047522
+(config)# default do-exec debug ip tempacl <cr>    # path-037396
+(config)# default do-exec debug ip trigger-authentication <cr>    # path-039030
+(config)# default do-exec debug ip trigger-authentication verbose <cr>    # path-048003
+(config)# default do-exec debug ip udp <cr>    # path-039598
+(config)# default do-exec debug ip urd <cr>    # path-038071
+(config)# default do-exec debug ip virtual-reassembly <cr>    # path-039373
+(config)# default do-exec debug ipam address <cr>    # path-037146
+(config)# default do-exec debug ipam detailed aaa <cr>    # path-046627
+(config)# default do-exec debug ipam detailed all <cr>    # path-046682
+(config)# default do-exec debug ipam detailed dhcp <cr>    # path-046724
+(config)# default do-exec debug ipam detailed event <cr>    # path-046774
+(config)# default do-exec debug ipam detailed message <cr>    # path-046808
+(config)# default do-exec debug ipam dhcp <cr>    # path-037232
+(config)# default do-exec debug ipam error <cr>    # path-037275
+(config)# default do-exec debug ipam event <cr>    # path-037318
+(config)# default do-exec debug ipam ipc <cr>    # path-037397
+(config)# default do-exec debug ipam message <cr>    # path-037425
+(config)# default do-exec debug ipam odap <cr>    # path-037458
+(config)# default do-exec debug ipam pools <cr>    # path-037495
+(config)# default do-exec debug ipam redundancy <cr>    # path-037359
+(config)# default do-exec debug ipc all <cr>    # path-035762
+(config)# default do-exec debug ipc app <cr>    # path-035598
+(config)# default do-exec debug ipc backpressure <cr>    # path-035040
+(config)# default do-exec debug ipc buffer <cr>    # path-035381
+(config)# default do-exec debug ipc bundle seat <cr>    # path-044684
+(config)# default do-exec debug ipc bundle session <cr>    # path-044737
+(config)# default do-exec debug ipc delayed-init <cr>    # path-035486
+(config)# default do-exec debug ipc driver <cr>    # path-034650
+(config)# default do-exec debug ipc errors <cr>    # path-034780
+(config)# default do-exec debug ipc errors driver <cr>    # path-044482
+(config)# default do-exec debug ipc errors sequence <cr>    # path-044443
+(config)# default do-exec debug ipc events <cr>    # path-034868
+(config)# default do-exec debug ipc events flushes <cr>    # path-044508
+(config)# default do-exec debug ipc events retries <cr>    # path-044544
+(config)# default do-exec debug ipc events timeout <cr>    # path-044475
+(config)# default do-exec debug ipc issu events <cr>    # path-044941
+(config)# default do-exec debug ipc issu messages <cr>    # path-045041
+(config)# default do-exec debug ipc keepalive <cr>    # path-035172
+(config)# default do-exec debug ipc mcast appclass <cr>    # path-045306
+(config)# default do-exec debug ipc mcast errors <cr>    # path-045366
+(config)# default do-exec debug ipc mcast events <cr>    # path-045423
+(config)# default do-exec debug ipc mcast groups <cr>    # path-045178
+(config)# default do-exec debug ipc mcast member-sessions <cr>    # path-045523
+(config)# default do-exec debug ipc mcast ports <cr>    # path-045236
+(config)# default do-exec debug ipc mcast sessions <cr>    # path-045467
+(config)# default do-exec debug ipc notifications <cr>    # path-035268
+(config)# default do-exec debug ipc packets <cr>    # path-034541
+(config)# default do-exec debug ipc ports <cr>    # path-034858
+(config)# default do-exec debug ipc priority <cr>    # path-035703
+(config)# default do-exec debug ipc rmi <cr>    # path-035116
+(config)# default do-exec debug ipc seats <cr>    # path-034814
+(config)# default do-exec debug ipc sessions <cr>    # path-035076
+(config)# default do-exec debug ipc stateful <cr>    # path-035218
+(config)# default do-exec debug ipc thread <cr>    # path-035557
+(config)# default do-exec debug ipc thread errors <cr>    # path-045066
+(config)# default do-exec debug ipc thread events <cr>    # path-045016
+(config)# default do-exec debug ipc udp <cr>    # path-035541
+(config)# default do-exec debug ipc window <cr>    # path-034909
+(config)# default do-exec debug ipc window-error <cr>    # path-034963
+(config)# default do-exec debug ipc zones <cr>    # path-034770
+(config)# default do-exec debug iphc ipc <cr>    # path-037372
+(config)# default do-exec debug iphc ipc events <cr>    # path-046711
+(config)# default do-exec debug iphc ipc statistics <cr>    # path-046763
+(config)# default do-exec debug iphc process <cr>    # path-037227
+(config)# default do-exec debug ipv6 access-list <cr>    # path-039386
+(config)# default do-exec debug ipv6 address <cr>    # path-039379
+(config)# default do-exec debug ipv6 cef drop <cr>    # path-048754
+(config)# default do-exec debug ipv6 cef drop rpf <cr>    # path-054881
+(config)# default do-exec debug ipv6 cef events <cr>    # path-048549
+(config)# default do-exec debug ipv6 cef packet <cr>    # path-048752
+(config)# default do-exec debug ipv6 cef receive <cr>    # path-048955
+(config)# default do-exec debug ipv6 cef table background <cr>    # path-054965
+(config)# default do-exec debug ipv6 dhcp <cr>    # path-039143
+(config)# default do-exec debug ipv6 dhcp database <cr>    # path-048306
+(config)# default do-exec debug ipv6 dhcp leasequery <cr>    # path-048040
+(config)# default do-exec debug ipv6 dhcp redundancy <cr>    # path-048412
+(config)# default do-exec debug ipv6 dhcp relay <cr>    # path-048315
+(config)# default do-exec debug ipv6 dhcp relay bulk-lease <cr>    # path-054768
+(config)# default do-exec debug ipv6 eigrp <cr>    # path-039148
+(config)# default do-exec debug ipv6 feature <cr>    # path-038698
+(config)# default do-exec debug ipv6 fragment <cr>    # path-038625
+(config)# default do-exec debug ipv6 icmp <cr>    # path-038493
+(config)# default do-exec debug ipv6 interface <cr>    # path-039604
+(config)# default do-exec debug ipv6 mfib init <cr>    # path-047793
+(config)# default do-exec debug ipv6 mib <cr>    # path-038642
+(config)# default do-exec debug ipv6 mld <cr>    # path-039147
+(config)# default do-exec debug ipv6 mld events <cr>    # path-048053
+(config)# default do-exec debug ipv6 mld explicit <address> <cr>    # path-054612
+(config)# default do-exec debug ipv6 mld explicit <cr>    # path-047932
+(config)# default do-exec debug ipv6 mld group <address> <cr>    # path-054637
+(config)# default do-exec debug ipv6 mld timer-wheel <cr>    # path-048015
+(config)# default do-exec debug ipv6 mrib bundle <cr>    # path-048232
+(config)# default do-exec debug ipv6 mrib client <cr>    # path-048020
+(config)# default do-exec debug ipv6 mrib filter <cr>    # path-048148
+(config)# default do-exec debug ipv6 mrib io <cr>    # path-048103
+(config)# default do-exec debug ipv6 mrib issu <cr>    # path-047970
+(config)# default do-exec debug ipv6 mrib malloc <cr>    # path-048272
+(config)# default do-exec debug ipv6 mrib proxy <cr>    # path-047889
+(config)# default do-exec debug ipv6 mrib route <address> <cr>    # path-054639
+(config)# default do-exec debug ipv6 mrib route <cr>    # path-048026
+(config)# default do-exec debug ipv6 mrib table <cr>    # path-048057
+(config)# default do-exec debug ipv6 mrib test <cr>    # path-047925
+(config)# default do-exec debug ipv6 mrib timer <cr>    # path-048186
+(config)# default do-exec debug ipv6 mrib trans <address> <cr>    # path-054624
+(config)# default do-exec debug ipv6 mrib trans <cr>    # path-047980
+(config)# default do-exec debug ipv6 multicast aaa detail <cr>    # path-054834
+(config)# default do-exec debug ipv6 multicast aaa error <cr>    # path-054795
+(config)# default do-exec debug ipv6 multicast aaa verbose <cr>    # path-054871
+(config)# default do-exec debug ipv6 multicast gir <cr>    # path-048617
+(config)# default do-exec debug ipv6 multicast rpf <cr>    # path-048495
+(config)# default do-exec debug ipv6 multicast rwatch <cr>    # path-048452
+(config)# default do-exec debug ipv6 nd <cr>    # path-038646
+(config)# default do-exec debug ipv6 nd ha <cr>    # path-047726
+(config)# default do-exec debug ipv6 packet <cr>    # path-038598
+(config)# default do-exec debug ipv6 pim <cr>    # path-039547

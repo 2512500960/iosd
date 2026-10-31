@@ -1,0 +1,19 @@
+# 模式 srv6；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-srv6)# default encapsulation <cr>    # static_slot_creation_candidates-004445
+(config-srv6)# default explicit-sids <cr>    # static_slot_creation_candidates-004447
+(config-srv6)# default locators <cr>    # static_slot_creation_candidates-004446
+(config-srv6)# default sid holdtime <number:0..60> <cr>    # static_slot_creation_candidates-004450
+(config-srv6)# default transit-node-ptb-relay <cr>    # static_slot_creation_candidates-004444
+(config-srv6)# encapsulation <cr>    # static_slot_creation_candidates-004437
+(config-srv6)# explicit-sids <cr>    # static_slot_creation_candidates-004439
+(config-srv6)# locators <cr>    # static_slot_creation_candidates-004438
+(config-srv6)# no encapsulation <cr>    # static_slot_creation_candidates-004441
+(config-srv6)# no explicit-sids <cr>    # static_slot_creation_candidates-004443
+(config-srv6)# no locators <cr>    # static_slot_creation_candidates-004442
+(config-srv6)# no sid holdtime <number:0..60> <cr>    # static_slot_creation_candidates-004449
+(config-srv6)# no transit-node-ptb-relay <cr>    # static_slot_creation_candidates-004440
+(config-srv6)# sid holdtime <number:0..60> <cr>    # static_slot_creation_candidates-004448
+(config-srv6)# transit-node-ptb-relay <cr>    # static_slot_creation_candidates-004436

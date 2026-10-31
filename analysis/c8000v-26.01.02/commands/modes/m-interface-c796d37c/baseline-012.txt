@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-012.md
+
+(config-if)# ppp chap matchnames <cr>    # path-064992
+(config-if)# ppp chap password <string> <cr>    # path-066292
+(config-if)# ppp chap refuse <cr>    # path-065008
+(config-if)# ppp chap refuse callin <cr>    # path-066267
+(config-if)# ppp chap splitnames <cr>    # path-064967
+(config-if)# ppp chap wait <cr>    # path-064934
+(config-if)# ppp direction callin <cr>    # path-064966
+(config-if)# ppp disconnect-cause keepalive lost-carrier <cr>    # path-066054
+(config-if)# ppp dnis <string> <cr>    # path-064703
+(config-if)# ppp eap identity <string> <cr>    # path-066151
+(config-if)# ppp eap local <cr>    # path-064870
+(config-if)# ppp eap password <string> <cr>    # path-066219
+(config-if)# ppp eap refuse <cr>    # path-064919
+(config-if)# ppp eap refuse callin <cr>    # path-066194
+(config-if)# ppp eap wait <cr>    # path-064849
+(config-if)# ppp encrypt mppe 40 <cr>    # path-066164
+(config-if)# ppp hostname unique <cr>    # path-064866
+(config-if)# ppp ignore-loopback <cr>    # path-063655
+(config-if)# ppp ipcp accept-address <cr>    # path-064962
+(config-if)# ppp ipcp address accept <cr>    # path-066490
+(config-if)# ppp ipcp address no-ip send-ack <cr>    # path-067192
+(config-if)# ppp ipcp address proxy <address> <cr>    # path-067175
+(config-if)# ppp ipcp address request ignore <cr>    # path-067171
+(config-if)# ppp ipcp address required <cr>    # path-066426
+(config-if)# ppp ipcp address unique <cr>    # path-066448
+(config-if)# ppp ipcp dns reject <cr>    # path-066352
+(config-if)# ppp ipcp header-compression ack <cr>    # path-066284
+(config-if)# ppp ipcp ignore-map <cr>    # path-065073
+(config-if)# ppp ipcp mask request <cr>    # path-066381
+(config-if)# ppp ipcp no-renegotiation <cr>    # path-065181
+(config-if)# ppp ipcp predictive <cr>    # path-065105
+(config-if)# ppp ipcp route default <cr>    # path-066380
+(config-if)# ppp ipcp unique-address <cr>    # path-065119
+(config-if)# ppp ipcp username unique <cr>    # path-066416
+(config-if)# ppp ipcp wins reject <cr>    # path-066369
+(config-if)# ppp iphc max-header <number:60..168> <cr>    # path-066013
+(config-if)# ppp iphc max-period <number:1..65535> <cr>    # path-065995
+(config-if)# ppp iphc max-time <number:1..255> <cr>    # path-066005
+(config-if)# ppp ipv6cp address unique <cr>    # path-066282
+(config-if)# ppp ipv6cp proxy <address> <cr>    # path-066351
+(config-if)# ppp lcp delay <number:0..255> <cr>    # path-065991
+(config-if)# ppp lcp echo mru verify <cr>    # path-066936
+(config-if)# ppp lcp fast-start <cr>    # path-064560
+(config-if)# ppp lcp predictive <cr>    # path-064539
+(config-if)# ppp leased_line_option <number:0..4294967295> <cr>    # path-063265
+(config-if)# ppp link reorders <cr>    # path-065034
+(config-if)# ppp link reset <cr>    # path-065054
+(config-if)# ppp link trap <cr>    # path-065072
+(config-if)# ppp loopback ignore <cr>    # path-064586
+(config-if)# ppp loopback no-backoff <cr>    # path-064599
+(config-if)# ppp max-bad-auth <number:1..255> <cr>    # path-063272
+(config-if)# ppp max-configure <number:1..255> <cr>    # path-063268
+(config-if)# ppp max-failure <number:1..255> <cr>    # path-063269
+(config-if)# ppp max-terminate <number:1..255> <cr>    # path-063266
+(config-if)# ppp microcode <cr>    # path-063669
+(config-if)# ppp mru match <cr>    # path-064573
+(config-if)# ppp ms-chap refuse <cr>    # path-064916
+(config-if)# ppp ms-chap refuse callin <cr>    # path-066193
+(config-if)# ppp ms-chap-v2 refuse <cr>    # path-064952
+(config-if)# ppp ms-chap-v2 refuse callin <cr>    # path-066218
+(config-if)# ppp mtu adaptive <cr>    # path-064569
+(config-if)# ppp mtu pppoe unlimited <cr>    # path-065845
+(config-if)# ppp multilink <cr>    # path-064007
+(config-if)# ppp multilink endpoint mac <interface> <cr>    # path-067873
+(config-if)# ppp multilink endpoint none <cr>    # path-066467
+(config-if)# ppp multilink fragment delay <number:0..1000> <cr>    # path-067241
+(config-if)# ppp multilink fragment disable <cr>    # path-066510
+(config-if)# ppp multilink fragment maximum 1 <cr>    # path-067215
+(config-if)# ppp multilink fragment size <number:42..65535> <cr>    # path-067195
+(config-if)# ppp multilink fragment-delay <number:1..1000> <cr>    # path-066488
+(config-if)# ppp multilink fragmentation <cr>    # path-065159
+(config-if)# ppp multilink group <number:dynamic> <cr>    # path-067825
+(config-if)# ppp multilink idle-link <cr>    # path-065209
+(config-if)# ppp multilink interleave <cr>    # path-065210
+(config-if)# ppp multilink links maximum <number:dynamic> <cr>    # path-067872
+(config-if)# ppp multilink links minimum <number:dynamic> <cr>    # path-067876
+(config-if)# ppp multilink load-threshold <number:1..255> <cr>    # path-066565
+(config-if)# ppp multilink mrru local <number:128..16384> <cr>    # path-065158
+(config-if)# ppp multilink mrru remote <number:128..16384> <cr>    # path-065176
+(config-if)# ppp multilink multiclass <cr>    # path-065248
+(config-if)# ppp multilink multiclass local allow <cr>    # path-067877
+(config-if)# ppp multilink ncp sequenced if-needed <cr>    # path-067163
+(config-if)# ppp multilink queue depth fifo <number:2..255> <cr>    # path-066497
+(config-if)# ppp multilink queue depth qos <number:2..255> <cr>    # path-066514
+(config-if)# ppp multilink slippage mru <number:2..32> <cr>    # path-065142
+(config-if)# ppp multilink slippage msec <number:1..16000> <cr>    # path-065151
+(config-if)# ppp ncp passive <cr>    # path-065101
+(config-if)# ppp pap refuse <cr>    # path-065049
+(config-if)# ppp pap refuse callin <cr>    # path-066310
+(config-if)# ppp pap sent-username <string> password <string> <cr>    # path-067517
+(config-if)# ppp pap wait <cr>    # path-064991
+(config-if)# ppp pfc local request <cr>    # path-065882
+(config-if)# ppp pfc remote apply <cr>    # path-065903
+(config-if)# ppp quality reject <cr>    # path-064376
+(config-if)# ppp reliable-link <cr>    # path-063675
+(config-if)# ppp timeout aaa <cr>    # path-065154
+(config-if)# ppp timeout authentication <number:0..255> <cr>    # path-063938
+(config-if)# ppp timeout bacp <number:1..255> <cr>    # path-064000
+(config-if)# ppp timeout idle 0 <cr>    # path-066505
+(config-if)# ppp timeout idle <number:dynamic> <cr>    # path-067827
+(config-if)# ppp timeout multilink link add <number:1..65535> <cr>    # path-066483
+(config-if)# ppp timeout multilink link remove <number:1..65535> <cr>    # path-066501
+(config-if)# ppp timeout multilink lost-fragment <number:0..255> <cr>    # path-067229
+(config-if)# ppp timeout ncp <number:1..65535> <cr>    # path-066429
+(config-if)# ppp timeout retry <number:0..255> <cr>    # path-066420
+(config-if)# pppoe enable <cr>    # path-063671
+(config-if)# pppoe max-sessions <number:dynamic> <cr>    # path-067764
+(config-if)# pppoe-client dial-pool-number <number:1..255> <cr>    # path-064917
+(config-if)# pppoe-client ppp-max-payload <number:dynamic> <cr>    # path-067777
+(config-if)# pppoe-sessions threshold <number:dynamic> <cr>    # path-067763
+(config-if)# pppoe-sessions threshold percent <number:0..100> interval <number:1..65535> <cr>    # path-067447
+(config-if)# pulse-time <number:0..60> <cr>    # path-063826
+(config-if)# punt-control cause ipv4-options <cr>    # path-064507
+(config-if)# punt-control enable <cr>    # path-063629
+(config-if)# qllc accept-all-calls <cr>    # path-063859
+(config-if)# qllc dlsw <cr>    # path-063965
+(config-if)# qllc dlsw pvc <number:1..4095> <number:1..4095> <?print_action@55558ac17660> <cr>    # path-067894
+(config-if)# qllc largest-packet <address> <number:0..1024> <cr>    # path-066271
+(config-if)# qllc npsi-poll <address> <cr>    # path-065022
+(config-if)# qllc partner <address> <address> <cr>    # path-066223
+(config-if)# qllc sap <address> <number:2..254> <number:2..254> <cr>    # path-067032
+(config-if)# qllc srb <address> <number:1..4095> <number:1..4095> <cr>    # path-067022
+(config-if)# qllc xid <address> <string> <cr>    # path-066241
+(config-if)# qos pre-classify <cr>    # path-063897
+(config-if)# qos pre-classify <cr>    # path-063898
+(config-if)# radius attribute nas-port-type <number:0..2147483647> <cr>    # path-065472
+(config-if)# rate-limit input <number:8000..2000000000> <number:1000..512000000> <number:2000..1024000000> conform-action drop exceed-action drop <cr>    # path-067707
+(config-if)# rbs-zero <cr>    # path-063369
+(config-if)# rbs-zero nfas-int <number:0..96> <cr>    # path-067787
+(config-if)# redirect to group <string> <cr>    # path-065943
+(config-if)# redundancy asymmetric-routing enable <cr>    # path-064634
+(config-if)# redundancy gratuitous-arp group <number:1..2> interval sec <number:1..14400> <cr>    # path-067639
+(config-if)# redundancy group <number:1..2> <cr>    # path-064696
+(config-if)# redundancy group <number:1..2> decrement <number:dynamic> <cr>    # path-067857
+(config-if)# redundancy rii <number:1..65535> <cr>    # path-064670
+(config-if)# ring-speed 4 <cr>    # path-063577
+(config-if)# rx-sync-disable <cr>    # path-063298
+(config-if)# sap-priority <number:1..10> <cr>    # path-063241
+(config-if)# scramble <cr>    # path-063263
+(config-if)# sdlc K <number:1..7> <cr>    # path-063370
+(config-if)# sdlc N1 <number:1..4294967295> <cr>    # path-063364
+(config-if)# sdlc N2 <number:1..255> <cr>    # path-063366
+(config-if)# sdlc T1 <number:1..64000> <cr>    # path-063360
+(config-if)# sdlc address <number:1..255> <cr>    # path-065213
+(config-if)# sdlc cts-delay <number:1..64000> <cr>    # path-063381
+(config-if)# sdlc dlsw <number:1..254> <cr>    # path-067790
+(config-if)# sdlc dlsw default <cr>    # path-065330
+(config-if)# sdlc frmr-disable <cr>    # path-063969
+(config-if)# sdlc group-poll <number:1..255> <cr>    # path-065298
+(config-if)# sdlc hdx <cr>    # path-063996
+(config-if)# sdlc holdq <number:1..254> <cr>    # path-065239
+(config-if)# sdlc line-speed <number:1200..2000000> <cr>    # path-063378
+(config-if)# sdlc partner <address> <number:1..254> <cr>    # path-066645
+(config-if)# sdlc poll-limit-value <number:0..10> <cr>    # path-063354
+(config-if)# sdlc poll-pause-timer <number:1..10000> <cr>    # path-063347
+(config-if)# sdlc poll-wait-timeout <number:500..64000> <cr>    # path-063362
+(config-if)# sdlc qllc-prtnr <address> <number:1..254> <cr>    # path-066576
+(config-if)# sdlc rnr-limit <number:0..30> <cr>    # path-063350
+(config-if)# sdlc role primary <cr>    # path-065036
+(config-if)# sdlc rts-timeout <number:1..64000> <cr>    # path-063385
+(config-if)# sdlc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-067263
+(config-if)# sdlc sdlc-largest-frame <number:1..254> <number:0..4294967295> <cr>    # path-066648
+(config-if)# sdlc simultaneous full-datmode <cr>    # path-065287
+(config-if)# sdlc slow-poll <cr>    # path-064002
+(config-if)# sdlc snrm-timer <number:1..64000> <cr>    # path-063357
+(config-if)# sdlc virtual-multidrop <cr>    # path-064026
+(config-if)# sdlc vmac <address> <cr>    # path-065055
+(config-if)# sdlc xid <number:1..254> <string> <cr>    # path-066641
+(config-if)# sdlc xid-pause-timer <number:10..300> <cr>    # path-065157
+(config-if)# sdllc partner <address> <number:1..254> <cr>    # path-066250
+(config-if)# sdllc ring-largest-frame 516 <cr>    # path-064828
+(config-if)# sdllc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-067027
+(config-if)# sdllc sdlc-largest-frame <number:1..254> <number:0..4294967295> <cr>    # path-066170
+(config-if)# sdllc traddr <address> <number:0..4095> <number:0..15> <number:0..4095> <cr>    # path-067479
+(config-if)# sdllc xid <number:1..254> <string> <cr>    # path-066190
+(config-if)# serial restart-delay <number:0..900> <cr>    # path-063302
+(config-if)# service instance <number:dynamic> <cr>    # path-067758
+(config-if)# service-overlay encap cmd <cr>    # path-064891
+(config-if)# service-policy inline input <cr>    # path-064402
+(config-if)# service-policy inline output <cr>    # path-064433
+(config-if)# service-policy input <string> <cr>    # path-067755
+(config-if)# service-policy output <string> <cr>    # path-064368
+(config-if)# service-policy type control <cr>    # path-064611
+(config-if)# service-policy type control default <cr>    # path-065909
+(config-if)# service-policy type control default <string> <cr>    # path-066868
+(config-if)# service-policy type control subscriber <?option@5555890f3358> <cr>    # path-067854
+(config-if)# service-routing mdns-sd <cr>    # path-063709
+(config-if)# shutdown <cr>    # path-063254
+(config-if)# site-local-redundancy <cr>    # path-063308
+(config-if)# smds address <address> <cr>    # path-064525
+(config-if)# smds dxi-mode <cr>    # path-063608
+(config-if)# smds enable-arp <cr>    # path-063660
+(config-if)# smds glean-mode <?protoname_action@55558a0a1bc0> <cr>    # path-067760
+(config-if)# smds multicast <?protoname_action@55558a0a26a0> <?protoname_action@55558a0a2700> <address> <cr>    # path-068013
+(config-if)# smds multicast <?protoname_action@55558a0a26a0> <address> <cr>    # path-067808
+(config-if)# smds nec-mode <cr>    # path-063636
+(config-if)# smds static-map <?protoaddr_action@55558a0a2250> <address> <cr>    # path-067811
+(config-if)# sna enable-host <cr>    # path-063623
+(config-if)# sna start <string> <cr>    # path-064407
+(config-if)# snapshot server <number:5..1000> <cr>    # path-065143
+(config-if)# snmp ifindex clear <cr>    # path-064767
+(config-if)# snmp ifindex persist <cr>    # path-064770
+(config-if)# snmp trap ip verify drop-rate <cr>    # path-067000
+(config-if)# snmp trap isdn-calls <cr>    # path-064796
+(config-if)# snmp trap link-status <cr>    # path-064731
+(config-if)# snmp trap link-status permit duplicates <cr>    # path-066960
+(config-if)# source template <cr>    # path-063819
+(config-if)# source-bridge <?params_action_alist@55558a9ff7e0> <?params_action_alist@55558a9ffb88> <?params_action_alist@55558a9ffe30> <?params_action_alist@55558aa000d8> <?params_action_alist@55558aa00380> <?params_action_alist@55558aa00628> max-rd <number:2..8> <cr>    # path-068041
+(config-if)# source-bridge <number:1..4095> <number:1..15> <number:1..4095> <cr>    # path-066253
+(config-if)# source-bridge max-hops <number:1..7> <cr>    # path-063341
+(config-if)# source-bridge max-in-hops <number:1..7> <cr>    # path-063331
+(config-if)# source-bridge max-out-hops <number:1..7> <cr>    # path-063337
+(config-if)# source-bridge proxy-explorer <cr>    # path-063882
+(config-if)# source-bridge route-cache <cr>    # path-063909
+(config-if)# source-bridge spanning <cr>    # path-063876
+(config-if)# source-bridge trcrf-vlan <number:dynamic> ring-group <number:1..4095> <cr>    # path-067859
+(config-if)# speed 10 <cr>    # path-063488
+(config-if)# standby <number:dynamic> <cr>    # path-067722
+(config-if)# standby <number:dynamic> authentication <cr>    # path-067742
+(config-if)# standby <number:dynamic> follow <cr>    # path-067746
+(config-if)# standby <number:dynamic> ip <cr>    # path-067750
+(config-if)# standby <number:dynamic> ipv6 <cr>    # path-067751
+(config-if)# standby <number:dynamic> mac-address <cr>    # path-067744
+(config-if)# standby <number:dynamic> name <cr>    # path-067743
+(config-if)# standby <number:dynamic> preempt <cr>    # path-067748
+(config-if)# standby <number:dynamic> priority <cr>    # path-067747
+(config-if)# standby <number:dynamic> timers <cr>    # path-067738
+(config-if)# standby <number:dynamic> track <number:1..32767> <cr>    # path-067798
+(config-if)# standby <number:dynamic> unicast destination <address> <cr>    # path-067841
+(config-if)# standby authentication <string> <cr>    # path-064231
+(config-if)# standby bfd <cr>    # path-063439
+(config-if)# standby delay minimum <number:0..10000> <cr>    # path-065489
+(config-if)# standby follow <string> <cr>    # path-064207
+(config-if)# standby ip <cr>    # path-063503
+(config-if)# standby ipv6 <cr>    # path-063506
+(config-if)# standby mac-address <address> <cr>    # path-064197
+(config-if)# standby mac-refresh <number:0..255> <cr>    # path-064129
+(config-if)# standby name <string> <cr>    # path-064196
+(config-if)# standby preempt <cr>    # path-063483
+(config-if)# standby redirect <cr>    # path-063449
+(config-if)# standby redirect timers <number:dynamic> <number:dynamic> <cr>    # path-068009
+(config-if)# standby track <number:1..32767> <cr>    # path-064211
+(config-if)# standby unicast destination <address> <cr>    # path-065575
+(config-if)# standby use-bia <cr>    # path-063425
+(config-if)# standby use-bia scope interface <cr>    # path-065479
+(config-if)# standby version <number:1..2> <cr>    # path-064130
+(config-if)# stun group <number:1..255> <cr>    # path-063343
+(config-if)# stun proxy-poll address <address> discovery <cr>    # path-067120
+(config-if)# stun route all interface <interface> <cr>    # path-067868
+(config-if)# stun route all tcp <address> <cr>    # path-067121
+(config-if)# stun sdlc-role primary <cr>    # path-065037
+(config-if)# subscriber aging probe <cr>    # path-064072
+(config-if)# switchport <cr>    # path-063248
+(config-if)# switchport access vlan <number:1..2349> <cr>    # path-065704
+(config-if)# switchport access vlan <number:dynamic> <cr>    # path-067791
+(config-if)# switchport mode access <cr>    # path-064315
+(config-if)# switchport port-security <cr>    # path-063422
+(config-if)# switchport port-security allowlist <cr>    # path-064092
+(config-if)# switchport port-security limit rate invalid-source-mac <number:dynamic> <cr>    # path-067878
+(config-if)# switchport port-security maximum <number:dynamic> <cr>    # path-067792
+(config-if)# switchport priority extend cos <number:0..7> <cr>    # path-066682
+(config-if)# switchport priority extend trust <cr>    # path-065487
+(config-if)# switchport trunk allowed vlan all <cr>    # path-066843
+(config-if)# switchport trunk native vlan <number:1..2349> <cr>    # path-066764
+(config-if)# template global inheritance disable <cr>    # path-066041
+(config-if)# timeout absolute <number:0..518399> <cr>    # path-064238
+(config-if)# timeslot <number:0..31> - <number:0..31> <cr>    # path-065981
+(config-if)# topology <?option@5555895340b0> <cr>    # path-067729
+(config-if)# transmit-interface <interface> <cr>    # path-067719
+(config-if)# transport-mode lan <cr>    # path-063455
+(config-if)# trunk-group <cr>    # path-063375
+(config-if)# trunk-group <string> timeslots <?number_func_nows_action@55558ce58140> <cr>    # path-068038
+(config-if)# ts16 <cr>    # path-063293
+(config-if)# tunnel 6rd prefix <prefix:dynamic> <cr>    # path-067821
+(config-if)# tunnel 6rd reverse-map-check <cr>    # path-064996
+(config-if)# tunnel bandwidth transmit <number:1..10000000> <cr>    # path-065983
+(config-if)# tunnel checksum <cr>    # path-063726
+(config-if)# tunnel delete-timer <number:10..60> <cr>    # path-065104
+(config-if)# tunnel destination dynamic <cr>    # path-064666
+(config-if)# tunnel dst-port <number:0..65535> <cr>    # path-065071
+(config-if)# tunnel endpoint service-policy output <string> <cr>    # path-067095
+(config-if)# tunnel entropy <cr>    # path-063686
+(config-if)# tunnel flow egress-records <cr>    # path-064806
+(config-if)# tunnel key <number:0..16777215> <cr>    # path-063295
+(config-if)# tunnel key <number:0..4294967295> <cr>    # path-063296
+(config-if)# tunnel metadata src_vpn <cr>    # path-064784
+(config-if)# tunnel mode gre <?test_subsys_action@555589d7c780> ipv6 <cr>    # path-067856
+(config-if)# tunnel mode ipv6 <cr>    # path-064650
+(config-if)# tunnel mode ipv6ip <cr>    # path-064762
+(config-if)# tunnel mode nos <cr>    # path-064640
+(config-if)# tunnel mode rbscp <cr>    # path-064641
+(config-if)# tunnel mpls-ip-only <cr>    # path-063932
+(config-if)# tunnel network-id <number:1..65535> nexthop <address> <cr>    # path-066957
+(config-if)# tunnel path-mtu-discovery <cr>    # path-063793
+(config-if)# tunnel path-mtu-discovery age-timer <number:10..30> <cr>    # path-066099
+(config-if)# tunnel path-mtu-discovery min-mtu <number:92..65535> <cr>    # path-063785
+(config-if)# tunnel raw-packet-interface <interface> <cr>    # path-067771
+(config-if)# tunnel rbscp delay <cr>    # path-064621
+(config-if)# tunnel route-via <interface> preferred <cr>    # path-067817
+(config-if)# tunnel sequence-datagrams <cr>    # path-063716
+(config-if)# tunnel snooping enable <cr>    # path-065064
+(config-if)# tunnel source <interface> <cr>    # path-067765
+(config-if)# tunnel source dynamic <cr>    # path-064624
+(config-if)# tunnel src-mac-address <address> <cr>    # path-065016
+(config-if)# tunnel src-port <number:0..65535> <cr>    # path-065088
+(config-if)# tunnel tos <number:0..255> <cr>    # path-063334
+(config-if)# tunnel ttl <number:1..255> <cr>    # path-063339
+(config-if)# tunnel udlr address-resolution <cr>    # path-064811
+(config-if)# tunnel udlr send-only <interface> <cr>    # path-067819
+(config-if)# tunnel vlan <number:1..4094> - <number:1..4094> <cr>    # path-067114
+(config-if)# tunnel vlan <number:1..4094> <cr>    # path-067786
+(config-if)# tunnel vrf multiplexing <cr>    # path-064894
+(config-if)# tunnel vxlan source-port-range <number:1..65535> <number:1..65535> <cr>    # path-067142
+(config-if)# tunnel vxlan vni <number:1..16777215> <cr>    # path-066391
+(config-if)# tx-queue-limit <number:dynamic> <cr>    # path-067721
+(config-if)# tx-ring-limit <cr>    # path-063255
+(config-if)# tx-ring-limit <number:dynamic> <cr>    # path-067720
+(config-if)# vlan-autoconfig <cr>    # path-063283
+(config-if)# vlan-autoconfig protocol any <cr>    # path-064537
+(config-if)# vlan-autoconfig protocol dhcpv6iapd <cr>    # path-064559
+(config-if)# vlan-id dot1q <number:1..4094> <cr>    # path-064623
+(config-if)# vlan-range dot1q <number:1..4094> <number:dynamic> <cr>    # path-067812
+(config-if)# vnet global <cr>    # path-063610
+(config-if)# vnet name <string> <cr>    # path-067759
+(config-if)# vnet trunk <cr>    # path-063420
+(config-if)# vnet trunk list <string> <cr>    # path-067794
+(config-if)# vpdn authorization <cr>    # path-067917
+(config-if)# vpdn template <string> <cr>    # path-064109
+(config-if)# vrf autoclassify source <cr>    # path-064119
+(config-if)# vrf forwarding <string> <cr>    # path-067735
+(config-if)# vrf receive <string> <cr>    # path-064131
+(config-if)# vrf select source <cr>    # path-064122
+(config-if)# vrf sitemap <string> <cr>    # path-064110
+(config-if)# vrrp <number:1..255> <cr>    # path-067918
+(config-if)# vrrp <number:1..255> address-family ipv4 <cr>    # path-065872
+(config-if)# vrrp <number:1..255> authentication <cr>    # path-067938
+(config-if)# vrrp <number:1..255> description <cr>    # path-067939
+(config-if)# vrrp <number:1..255> ip <address> <cr>    # path-067979
+(config-if)# vrrp <number:1..255> name <cr>    # path-067940
+(config-if)# vrrp <number:1..255> preempt <cr>    # path-067942
+(config-if)# vrrp <number:1..255> priority <cr>    # path-067943
+(config-if)# vrrp <number:1..255> shutdown <cr>    # path-067944
+(config-if)# vrrp <number:1..255> timers advertise <cr>    # path-067980
+(config-if)# vrrp <number:1..255> track <number:1..32767> <cr>    # path-067981
+(config-if)# vrrp delay minimum <cr>    # path-067941
+(config-if)# vrrs follow <cr>    # path-067726
+(config-if)# vrrs interface-state <cr>    # path-067725
+(config-if)# vrrs mac-address <cr>    # path-067727
+(config-if)# vrrs pathway <string> <cr>    # path-064558
+(config-if)# vtp <cr>    # path-063282
+(config-if)# x25 accept-reverse <cr>    # path-063830
+(config-if)# x25 address <address> <cr>    # path-064600
+(config-if)# x25 alias <string> <cr>    # path-064615
+(config-if)# x25 aodi <cr>    # path-063975
+(config-if)# x25 bfe-decision yes <cr>    # path-065231
+(config-if)# x25 bfe-emergency never <cr>    # path-065221
+(config-if)# x25 default <?protoname_action@55558a10cd68> <cr>    # path-067784
+(config-if)# x25 facility cug <number:dynamic> <cr>    # path-067822
+(config-if)# x25 facility reverse <cr>    # path-065057
+(config-if)# x25 fail-over <number:0..65565> interface <interface> <cr>    # path-067871
+(config-if)# x25 hic <number:0..4095> <cr>    # path-063289
+(config-if)# x25 hoc <number:0..4095> <cr>    # path-063300
+(config-if)# x25 hold-queue <number:0..9999> <cr>    # path-063368
+(config-if)# x25 hold-vc-timer <number:0..1000> <cr>    # path-063374
+(config-if)# x25 htc <number:0..4095> <cr>    # path-063292
+(config-if)# x25 idle <number:0..255> <cr>    # path-065121
+(config-if)# x25 ip-precedence <cr>    # path-063970
+(config-if)# x25 ips <number:dynamic> <cr>    # path-067776
+(config-if)# x25 lic <number:0..4095> <cr>    # path-063288
+(config-if)# x25 linkrestart <cr>    # path-063863
+(config-if)# x25 loc <number:0..4095> <cr>    # path-063297
+(config-if)# x25 ltc <number:0..4095> <cr>    # path-063290
+(config-if)# x25 map <?protoaddr_action@555589e57540> <cr>    # path-067789
+(config-if)# x25 map svc <string> <cr>    # path-067832
+(config-if)# x25 modulo 8 <cr>    # path-064601
+(config-if)# x25 nonzero-dte-cause <cr>    # path-063844
+(config-if)# x25 nvc <number:1..8> <cr>    # path-063377
+(config-if)# x25 ops <number:dynamic> <cr>    # path-067778
+(config-if)# x25 pad-access <cr>    # path-063872
+(config-if)# x25 relay-vc-number <cr>    # path-063854
+(config-if)# x25 remote-red <address> remote-black <address> <cr>    # path-067237
+(config-if)# x25 retry interval <number:5..3600> attempts <number:1..100> <cr>    # path-067543
+(config-if)# x25 security crcdn <cr>    # path-064538
+(config-if)# x25 subscribe cug-service <cr>    # path-065240
+(config-if)# x25 subscribe flow-control always <cr>    # path-066427
+(config-if)# x25 subscribe lc0 incoming-only <cr>    # path-066468
+(config-if)# x25 subscribe local-cug <number:dynamic> <cr>    # path-067826
+(config-if)# x25 subscribe packetsize <cr>    # path-065153
+(config-if)# x25 subscribe throughput never <cr>    # path-066417
+(config-if)# x25 subscribe windowsize <cr>    # path-065166
+(config-if)# x25 suppress-called-address <cr>    # path-063888
+(config-if)# x25 suppress-calling-address <cr>    # path-063896
+(config-if)# x25 t10 <number:1..1000> <cr>    # path-063305
+(config-if)# x25 t11 <number:1..1000> <cr>    # path-063312
+(config-if)# x25 t12 <number:1..1000> <cr>    # path-063317
+(config-if)# x25 t13 <number:1..1000> <cr>    # path-063322
+(config-if)# x25 t20 <number:1..1000> <cr>    # path-063306
+(config-if)# x25 t21 <number:1..1000> <cr>    # path-063313
+(config-if)# x25 t22 <number:1..1000> <cr>    # path-063318
+(config-if)# x25 t23 <number:1..1000> <cr>    # path-063323

@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-013.md
+
+(config)# default do-exec debug system secure verbose <cr>    # path-050378
+(config)# default do-exec debug tableid ha <cr>    # path-039704
+(config)# default do-exec debug tableid ha checkpoint <cr>    # path-048596
+(config)# default do-exec debug tableid ha ipc <cr>    # path-048524
+(config)# default do-exec debug tacacs <cr>    # path-032127
+(config)# default do-exec debug tacacs accounting <cr>    # path-040558
+(config)# default do-exec debug tacacs authentication <cr>    # path-040500
+(config)# default do-exec debug tacacs authorization <cr>    # path-040533
+(config)# default do-exec debug tacacs events <cr>    # path-040473
+(config)# default do-exec debug tacacs packet <cr>    # path-040591
+(config)# default do-exec debug tacacs secure <cr>    # path-040472
+(config)# default do-exec debug tbridge autonomous <cr>    # path-042842
+(config)# default do-exec debug tbridge crb <cr>    # path-042769
+(config)# default do-exec debug tbridge discard-1 <cr>    # path-042714
+(config)# default do-exec debug tbridge flood <cr>    # path-042866
+(config)# default do-exec debug tbridge flow-id <cr>    # path-042797
+(config)# default do-exec debug tbridge ipmulticast <cr>    # path-042819
+(config)# default do-exec debug tbridge irb bvi status <cr>    # path-056549
+(config)# default do-exec debug tbridge irb cef <cr>    # path-051375
+(config)# default do-exec debug tbridge multicast-2 <cr>    # path-042742
+(config)# default do-exec debug tbridge packet-0 <cr>    # path-042612
+(config)# default do-exec debug tbridge packet-1 <cr>    # path-042632
+(config)# default do-exec debug tbridge packet-2 <cr>    # path-042655
+(config)# default do-exec debug tbridge packet-3 <cr>    # path-042673
+(config)# default do-exec debug tbridge receive-1 <cr>    # path-042694
+(config)# default do-exec debug telnet <cr>    # path-031669
+(config)# default do-exec debug template <cr>    # path-032560
+(config)# default do-exec debug template detailed <cr>    # path-041383
+(config)# default do-exec debug template error <cr>    # path-041361
+(config)# default do-exec debug template event <cr>    # path-041336
+(config)# default do-exec debug tenant-mgr all <cr>    # path-041019
+(config)# default do-exec debug tenant-mgr cfg <cr>    # path-041058
+(config)# default do-exec debug tenant-mgr event <cr>    # path-041190
+(config)# default do-exec debug tenant-mgr lock <cr>    # path-041222
+(config)# default do-exec debug tenant-mgr map <cr>    # path-041128
+(config)# default do-exec debug tenant-mgr tenant <cr>    # path-041097
+(config)# default do-exec debug tenant-mgr vpn <cr>    # path-041160
+(config)# default do-exec debug tftp events <cr>    # path-040254
+(config)# default do-exec debug tftp packets <cr>    # path-040293
+(config)# default do-exec debug tgrm <cr>    # path-033003
+(config)# default do-exec debug tgrm all <cr>    # path-042156
+(config)# default do-exec debug tgrm call <cr>    # path-042066
+(config)# default do-exec debug tgrm error <cr>    # path-042182
+(config)# default do-exec debug tgrm error call <cr>    # path-050882
+(config)# default do-exec debug tgrm error call informational <cr>    # path-056282
+(config)# default do-exec debug tgrm error software <cr>    # path-050894
+(config)# default do-exec debug tgrm error software informational <cr>    # path-056292
+(config)# default do-exec debug tgrm function <cr>    # path-042115
+(config)# default do-exec debug tgrm inout <cr>    # path-042103
+(config)# default do-exec debug tgrm inout call <cr>    # path-050783
+(config)# default do-exec debug tgrm inout service <cr>    # path-050807
+(config)# default do-exec debug tgrm service <cr>    # path-042091
+(config)# default do-exec debug token events <cr>    # path-034837
+(config)# default do-exec debug token ring <cr>    # path-034886
+(config)# default do-exec debug topology accounting <cr>    # path-037814
+(config)# default do-exec debug topology all <cr>    # path-037963
+(config)# default do-exec debug topology cache <cr>    # path-037567
+(config)# default do-exec debug topology client <cr>    # path-037718
+(config)# default do-exec debug topology db <cr>    # path-037416
+(config)# default do-exec debug topology elog <cr>    # path-037894
+(config)# default do-exec debug topology event <cr>    # path-037861
+(config)# default do-exec debug topology gr <cr>    # path-037962
+(config)# default do-exec debug topology ha <cr>    # path-037532
+(config)# default do-exec debug topology interface <cr>    # path-037635
+(config)# default do-exec debug topology locking <cr>    # path-037640
+(config)# default do-exec debug topology queue <cr>    # path-037485
+(config)# default do-exec debug topology sb <cr>    # path-037815
+(config)# default do-exec debug topology state <cr>    # path-037448
+(config)# default do-exec debug topology topoid <cr>    # path-037383
+(config)# default do-exec debug topology vrf <cr>    # path-037677
+(config)# default do-exec debug track initialisation <cr>    # path-037723
+(config)# default do-exec debug transport port-agent <cr>    # path-039396
+(config)# default do-exec debug transport port-manager <cr>    # path-039341
+(config)# default do-exec debug transport port-ranges <cr>    # path-039463
+(config)# default do-exec debug tsp error <cr>    # path-042189
+(config)# default do-exec debug tunnel <cr>    # path-031748
+(config)# default do-exec debug tunnel bgp crypto <cr>    # path-048982
+(config)# default do-exec debug tunnel bgp error <cr>    # path-049048
+(config)# default do-exec debug tunnel bgp event <cr>    # path-048760
+(config)# default do-exec debug tunnel bgp packet <cr>    # path-048912
+(config)# default do-exec debug tunnel bgp timer <cr>    # path-048837
+(config)# default do-exec debug tunnel databases <cr>    # path-039628
+(config)# default do-exec debug tunnel event <cr>    # path-040028
+(config)# default do-exec debug tunnel groups <cr>    # path-039705
+(config)# default do-exec debug tunnel ha <cr>    # path-039740
+(config)# default do-exec debug tunnel keepalive <cr>    # path-039501
+(config)# default do-exec debug tunnel packet <cr>    # path-040116
+(config)# default do-exec debug tunnel qos <cr>    # path-039737
+(config)# default do-exec debug tunnel rbscp <cr>    # path-040117
+(config)# default do-exec debug tunnel rbscp ack-split <cr>    # path-048913
+(config)# default do-exec debug tunnel rbscp detail <cr>    # path-049093
+(config)# default do-exec debug tunnel rbscp msg <cr>    # path-048762
+(config)# default do-exec debug tunnel rbscp rto <cr>    # path-049049
+(config)# default do-exec debug tunnel rbscp state <cr>    # path-048838
+(config)# default do-exec debug tunnel rbscp window <cr>    # path-048983
+(config)# default do-exec debug tunnel route-via <cr>    # path-039683
+(config)# default do-exec debug tunnel source tracking <cr>    # path-048642
+(config)# default do-exec debug vasi all <cr>    # path-038581
+(config)# default do-exec debug vasi elog <cr>    # path-038536
+(config)# default do-exec debug vasi events <cr>    # path-038394
+(config)# default do-exec debug vasi packet <cr>    # path-038439
+(config)# default do-exec debug vasi state <cr>    # path-038488
+(config)# default do-exec debug vdsl all <cr>    # path-035878
+(config)# default do-exec debug virtual-service VirtualPortGroup <cr>    # path-043366
+(config)# default do-exec debug virtual-service all <cr>    # path-043389
+(config)# default do-exec debug virtual-service messaging <cr>    # path-043324
+(config)# default do-exec debug virtual-service timeout <cr>    # path-043346
+(config)# default do-exec debug vlan <cr>    # path-031310
+(config)# default do-exec debug vlan encapsulation-events <cr>    # path-038355
+(config)# default do-exec debug vlan ifmgr error <cr>    # path-047623
+(config)# default do-exec debug vlan ifmgr trace <cr>    # path-047650
+(config)# default do-exec debug vlan oir-events <cr>    # path-038449
+(config)# default do-exec debug vlan packets <cr>    # path-038298
+(config)# default do-exec debug vlan port-channel <cr>    # path-038408
+(config)# default do-exec debug vlan-autoconfig <cr>    # path-031164
+(config)# default do-exec debug vlan-autoconfig error <cr>    # path-038207
+(config)# default do-exec debug vlan-autoconfig event <cr>    # path-038164
+(config)# default do-exec debug vpdn call event <cr>    # path-050284
+(config)# default do-exec debug vpdn call fsm <cr>    # path-050305
+(config)# default do-exec debug vpdn elog control <cr>    # path-050356
+(config)# default do-exec debug vpdn elog packet <cr>    # path-050379
+(config)# default do-exec debug vpdn elog session <cr>    # path-050400
+(config)# default do-exec debug vpdn error <cr>    # path-041224
+(config)# default do-exec debug vpdn event <cr>    # path-041198
+(config)# default do-exec debug vpdn event disconnect <cr>    # path-050256
+(config)# default do-exec debug vpdn event disconnect traceback <cr>    # path-055952
+(config)# default do-exec debug vpdn group-select <cr>    # path-041312
+(config)# default do-exec debug vpdn l2x data <cr>    # path-050163
+(config)# default do-exec debug vpdn l2x errors <cr>    # path-050035
+(config)# default do-exec debug vpdn l2x events <cr>    # path-050110
+(config)# default do-exec debug vpdn l2x events congestion-control <cr>    # path-055864
+(config)# default do-exec debug vpdn l2x packets <cr>    # path-050101
+(config)# default do-exec debug vpdn l2x startstop <cr>    # path-050136
+(config)# default do-exec debug vpdn l2x-data <cr>    # path-041130
+(config)# default do-exec debug vpdn l2x-errors <cr>    # path-040946
+(config)# default do-exec debug vpdn l2x-events <cr>    # path-041076
+(config)# default do-exec debug vpdn l2x-events congestion-control <cr>    # path-050128
+(config)# default do-exec debug vpdn l2x-packets <cr>    # path-041067
+(config)# default do-exec debug vpdn l2x-startstop <cr>    # path-041100
+(config)# default do-exec debug vpdn message <cr>    # path-041283
+(config)# default do-exec debug vpdn packet <cr>    # path-041298
+(config)# default do-exec debug vpdn packet counters <cr>    # path-050289
+(config)# default do-exec debug vpdn packet detail <cr>    # path-050271
+(config)# default do-exec debug vpdn packet errors <cr>    # path-050247
+(config)# default do-exec debug vpdn scalability <cr>    # path-041390
+(config)# default do-exec debug vpdn subscriber error <cr>    # path-050334
+(config)# default do-exec debug vpdn subscriber event <cr>    # path-050346
+(config)# default do-exec debug vpdn subscriber fsm <cr>    # path-050321
+(config)# default do-exec debug vpn authorization error <cr>    # path-050097
+(config)# default do-exec debug vpn authorization event <cr>    # path-050057
+(config)# default do-exec debug vpn authorization fsm <cr>    # path-050133
+(config)# default do-exec debug vpn authorization testapp <cr>    # path-050160
+(config)# default do-exec debug vprofile <cr>    # path-031022
+(config)# default do-exec debug vprofile packet <cr>    # path-037908
+(config)# default do-exec debug vprofile subblock <cr>    # path-037947
+(config)# default do-exec debug vrf api <cr>    # path-037961
+(config)# default do-exec debug vrf create <cr>    # path-037480
+(config)# default do-exec debug vrf crimson <cr>    # path-038066
+(config)# default do-exec debug vrf delete <cr>    # path-037528
+(config)# default do-exec debug vrf error <cr>    # path-037761
+(config)# default do-exec debug vrf gr <cr>    # path-038144
+(config)# default do-exec debug vrf ha <cr>    # path-037893
+(config)# default do-exec debug vrf initialization <cr>    # path-037443
+(config)# default do-exec debug vrf interface <cr>    # path-037634
+(config)# default do-exec debug vrf ipv4 <cr>    # path-037565
+(config)# default do-exec debug vrf ipv6 <cr>    # path-037590
+(config)# default do-exec debug vrf issu <cr>    # path-037927
+(config)# default do-exec debug vrf lock <cr>    # path-037675
+(config)# default do-exec debug vrf lookup <cr>    # path-037813
+(config)# default do-exec debug vrf mpls <cr>    # path-037860
+(config)# default do-exec debug vrf notifications <cr>    # path-038003
+(config)# default do-exec debug vrf parser <cr>    # path-038038
+(config)# default do-exec debug vrf platform <cr>    # path-037717
+(config)# default do-exec debug vrf selection <cr>    # path-038372
+(config)# default do-exec debug vrrp tloc <cr>    # path-039090
+(config)# default do-exec debug vrrs accounting all <cr>    # path-047057
+(config)# default do-exec debug vrrs accounting errors <cr>    # path-046981
+(config)# default do-exec debug vrrs accounting events <cr>    # path-047019
+(config)# default do-exec debug vrrs all <cr>    # path-038977
+(config)# default do-exec debug vrrs infra all <cr>    # path-046961
+(config)# default do-exec debug vrrs infra client <cr>    # path-047024
+(config)# default do-exec debug vrrs infra events <cr>    # path-046990
+(config)# default do-exec debug vrrs infra server <cr>    # path-047059
+(config)# default do-exec debug vrrs infra test <cr>    # path-047088
+(config)# default do-exec debug vrrs plugin all <cr>    # path-044130
+(config)# default do-exec debug vrrs plugin arp-packet <cr>    # path-044080
+(config)# default do-exec debug vrrs plugin client <cr>    # path-044050
+(config)# default do-exec debug vrrs plugin database <cr>    # path-043986
+(config)# default do-exec debug vrrs plugin if-state <cr>    # path-044005
+(config)# default do-exec debug vrrs plugin mac <cr>    # path-044025
+(config)# default do-exec debug vrrs plugin process <cr>    # path-043956
+(config)# default do-exec debug vrrs plugin subblock <cr>    # path-043968
+(config)# default do-exec debug vrrs plugin test <cr>    # path-044104
+(config)# default do-exec debug vtemplate cloning <cr>    # path-041808
+(config)# default do-exec debug vtemplate elog clone <cr>    # path-050699
+(config)# default do-exec debug vtemplate elog create <cr>    # path-050673
+(config)# default do-exec debug vtemplate elog free <cr>    # path-050719
+(config)# default do-exec debug vtemplate elog request <cr>    # path-050650
+(config)# default do-exec debug vtemplate error <cr>    # path-041784
+(config)# default do-exec debug vtemplate event <cr>    # path-041753
+(config)# default do-exec debug vtemplate redundancy <cr>    # path-041893
+(config)# default do-exec debug vtemplate subinterface <cr>    # path-041836
+(config)# default do-exec debug wccp events <cr>    # path-038173
+(config)# default do-exec debug wccp packets <cr>    # path-038285
+(config)# default do-exec debug wccp packets bypass <cr>    # path-047472
+(config)# default do-exec debug wccp packets redirect <cr>    # path-047583
+(config)# default do-exec debug wccp platform <cr>    # path-038315
+(config)# default do-exec debug wccp subblocks <cr>    # path-038261
+(config)# default do-exec debug wrr-queue all <cr>    # path-035860
+(config)# default do-exec debug wrr-queue bandwidth <cr>    # path-036024
+(config)# default do-exec debug wrr-queue cos-map <cr>    # path-035944
+(config)# default do-exec debug wsma agent <cr>    # path-042850
+(config)# default do-exec debug wsma agent config <cr>    # path-051246
+(config)# default do-exec debug wsma agent exec <cr>    # path-051267
+(config)# default do-exec debug wsma agent filesys <cr>    # path-051285
+(config)# default do-exec debug wsma agent mgmt <cr>    # path-051329
+(config)# default do-exec debug wsma agent notify <cr>    # path-051306
+(config)# default do-exec debug wsma profile <cr>    # path-042848
+(config)# default do-exec debug wsma profile initiator <cr>    # path-051321
+(config)# default do-exec debug wsma profile listener <cr>    # path-051294
+(config)# default do-exec debug x25 <cr>    # path-032967
+(config)# default do-exec debug x25 annexg <cr>    # path-041891
+(config)# default do-exec debug x25 aodi <cr>    # path-041919
+(config)# default do-exec debug x25 encapsulation <cr>    # path-041866
+(config)# default do-exec debug x25 switch <cr>    # path-041833
+(config)# default do-exec debug xdr buffering <cr>    # path-039515
+(config)# default do-exec debug xdr client <cr>    # path-039488
+(config)# default do-exec debug xdr error <cr>    # path-039471
+(config)# default do-exec debug xdr event <cr>    # path-039200
+(config)# default do-exec debug xdr fragment <cr>    # path-039403
+(config)# default do-exec debug xdr groups <cr>    # path-039576
+(config)# default do-exec debug xdr ipc <cr>    # path-039253
+(config)# default do-exec debug xdr issu <cr>    # path-039762
+(config)# default do-exec debug xdr issu client <cr>    # path-048644
+(config)# default do-exec debug xdr packet <cr>    # path-039702
+(config)# default do-exec debug xdr packet padding <cr>    # path-048587
+(config)# default do-exec debug xdr packing <cr>    # path-039300
+(config)# default do-exec debug xmpp profile <cr>    # path-043138
+(config)# default do-exec debug xmpp profile initiator <cr>    # path-051566
+(config)# default do-exec debug xmpp profile listener <cr>    # path-051547
+(config)# default do-exec diagnostic ondemand action-on-failure continue <number:0..999> <cr>    # path-054151
+(config)# default do-exec diagnostic ondemand action-on-failure stop <cr>    # path-046823
+(config)# default do-exec diagnostic ondemand iterations <number:1..999> <cr>    # path-046791
+(config)# default do-exec dir <cr>    # path-027507
+(config)# default do-exec disable <cr>    # path-026424
+(config)# default do-exec disconnect <cr>    # path-026454
+(config)# default do-exec dns query periodic re-trigger <cr>    # path-045120
+(config)# default do-exec dns-lookup hostname <string> <address> query A <cr>    # path-057149
+(config)# default do-exec enable <cr>    # path-026519
+(config)# default do-exec enable password-inline <number:0..15> <cr>    # path-034494
+(config)# default do-exec enable view <cr>    # path-028433
+(config)# default do-exec eobc config <cr>    # path-028600
+(config)# default do-exec eobc shut <cr>    # path-028490
+(config)# default do-exec erase /all non-default <cr>    # path-037477
+(config)# default do-exec erase startup-config <cr>    # path-030646
+(config)# default do-exec ethernet cfm lck start mpid <number:1..8191> domain <string> vlan <number:1..4094> <cr>    # path-060134
+(config)# default do-exec ethernet cfm lck stop mpid <number:1..8191> domain <string> vlan <number:1..4094> <cr>    # path-060133
+(config)# default do-exec ethernet cfm mep crosscheck disable domain <string> port <cr>    # path-059661
+(config)# default do-exec ethernet cfm mep crosscheck enable domain <string> port <cr>    # path-059658
+(config)# default do-exec ethernet cfm pm configure session-type loss domain <string> vlan <number:1..4095> <address> source <address> frame-interval <number:1..999999> size <number:1..9999> cos <number:0..7> <cr>    # path-060272
+(config)# default do-exec ethernet cfm pm drop sd <number:1..9999999> <cr>    # path-057002
+(config)# default do-exec ethernet cfm pm start session <number:0..9999999> <cr>    # path-056946
+(config)# default do-exec ethernet oam test system-event reload router <cr>    # path-056864
+(config)# default do-exec ethernet oam test system-event reload slot <number:0..100> <cr>    # path-058941
+(config)# default do-exec ethernet service internal trace-size detail <number:8..1024> <cr>    # path-056874
+(config)# default do-exec event manager run <string> <cr>    # path-046955
+(config)# default do-exec event manager update user policy name <string> <cr>    # path-059333
+(config)# default do-exec exit <cr>    # path-026141
+(config)# default do-exec factory-reset boot-vars <cr>    # path-028881
+(config)# default do-exec fsck <cr>    # path-027451
+(config)# default do-exec function <string> <cr>    # path-027852
+(config)# default do-exec guestshell <cr>    # path-027499
+(config)# default do-exec hangup <cr>    # path-026333
+(config)# default do-exec hw-module bootflash security-lock disable <cr>    # path-044690
+(config)# default do-exec hw-module bootflash security-lock enable <cr>    # path-044626
+(config)# default do-exec hw-module mcu rollback <cr>    # path-034829
+(config)# default do-exec hw-module single-sup-mode disable <cr>    # path-034884
+(config)# default do-exec hw-module single-sup-mode enable <cr>    # path-034830
+(config)# default do-exec hw-module usbflash1 security enable password <string> <cr>    # path-057015
+(config)# default do-exec hw-module usbflash1 unmount <cr>    # path-034935
+(config)# default do-exec if-mgr delete interfaceType <string> <cr>    # path-044466
+(config)# default do-exec ip sla udp-echo <address> <number:1..65535> <cr>    # path-054398
+(config)# default do-exec ip sla udp-jitter <address> <number:1..65535> <cr>    # path-054466
+(config)# default do-exec ipc-console <cr>    # path-027367
+(config)# default do-exec isdn asn encode <number:0..65536> <cr>    # path-046173
+(config)# default do-exec isdn modify display <cr>    # path-037010
+(config)# default do-exec issu abortversion <cr>    # path-030629
+(config)# default do-exec issu acceptversion <cr>    # path-030585
+(config)# default do-exec issu commitversion <cr>    # path-030608
+(config)# default do-exec issu image-version compatibility disable <cr>    # path-046634
+(config)# default do-exec issu image-version compatibility enable <cr>    # path-046572
+(config)# default do-exec issu runversion <cr>    # path-030559
+(config)# default do-exec iterate-ip-addrs <address> <address> <cr>    # path-036514
+(config)# default do-exec l2vpn evpn all-active-mh migrate-cli <cr>    # path-045541
+(config)# default do-exec ldap search <string> <number:0..65535> <string> <number:0..2> <string> <cr>    # path-059113
+(config)# default do-exec ldap search <string> <number:0..65535> <string> <number:0..2> <string> ssl <cr>    # path-059741
+(config)# default do-exec license smart clear eventlog <cr>    # path-044563
+(config)# default do-exec license smart conversion start <cr>    # path-044647
+(config)# default do-exec license smart conversion stop <cr>    # path-044599
+(config)# default do-exec license smart deregister <cr>    # path-034646
+(config)# default do-exec license smart export cancel <cr>    # path-044611
+(config)# default do-exec license smart export request local <string> <cr>    # path-056994
+(config)# default do-exec license smart export return local <string> <cr>    # path-056995
+(config)# default do-exec license smart factory reset <cr>    # path-044531
+(config)# default do-exec license smart mfg reservation cancel <cr>    # path-052504
+(config)# default do-exec license smart mfg reservation install <string> <cr>    # path-056998
+(config)# default do-exec license smart mfg reservation install file <string> <cr>    # path-058970
+(config)# default do-exec license smart mfg reservation request <cr>    # path-052435
+(config)# default do-exec license smart remove_trust <cr>    # path-035498
+(config)# default do-exec license smart renew ID <cr>    # path-044350
+(config)# default do-exec license smart renew auth <cr>    # path-044390
+(config)# default do-exec license smart reservation cancel <cr>    # path-044715
+(config)# default do-exec license smart reservation install <string> <cr>    # path-052528
+(config)# default do-exec license smart reservation install file <string> <cr>    # path-056956
+(config)# default do-exec license smart reservation request local <cr>    # path-052436
+(config)# default do-exec license smart reservation return <cr>    # path-044667
+(config)# default do-exec license smart reservation return authorization <string> <cr>    # path-057018
+(config)# default do-exec license smart reservation return authorization file <string> <cr>    # path-058995
+(config)# default do-exec license throughput Level auto-convert <cr>    # path-047155
+(config)# default do-exec lock <cr>    # path-026107
+(config)# default do-exec login <cr>    # path-026355
+(config)# default do-exec loop-counter clear-data <cr>    # path-030077
+(config)# default do-exec loop-counter disable <cr>    # path-030191
+(config)# default do-exec loop-counter disable <string> <cr>    # path-036576
+(config)# default do-exec loop-counter enable <cr>    # path-030156
+(config)# default do-exec loop-counter enable <string> <cr>    # path-036519
+(config)# default do-exec loop-counter show-data <cr>    # path-030006
+(config)# default do-exec loop-counter threshold <number:0..4294967295> <cr>    # path-036626
+(config)# default do-exec loop-counter types <cr>    # path-030044
+(config)# default do-exec microcode reload all <cr>    # path-034425
+(config)# default do-exec mkdir <cr>    # path-027457
+(config)# default do-exec mlacp reversion-delay <number:1..1200> <cr>    # path-037548
+(config)# default do-exec monitor capture <string> <cr>    # path-035085
+(config)# default do-exec monitor capture clear <cr>    # path-034559
+(config)# default do-exec monitor elog allocate <number:10..10000000> <cr>    # path-044500
+(config)# default do-exec monitor elog ascii-dump <cr>    # path-034656
+(config)# default do-exec monitor elog ascii-dump more <cr>    # path-044383
+(config)# default do-exec monitor elog calibrate <cr>    # path-034855
+(config)# default do-exec monitor elog free <cr>    # path-034811
+(config)# default do-exec monitor elog off <cr>    # path-034521
+(config)# default do-exec monitor elog on <cr>    # path-034539
+(config)# default do-exec monitor elog on <number:0..4294967295> <cr>    # path-044261
+(config)# default do-exec monitor elog patch <number:0..4294967295> <number:1..65535> <number:0..65535> <cr>    # path-056913
+(config)# default do-exec monitor elog save <string> <cr>    # path-044326
+(config)# default do-exec monitor elog show-dynamic <cr>    # path-034727
+(config)# default do-exec monitor elog stats <cr>    # path-034907
+(config)# default do-exec monitor elog test <cr>    # path-034585
+(config)# default do-exec monitor elog trigger clear <cr>    # path-044791
+(config)# default do-exec monitor elog trigger on <cr>    # path-044709
+(config)# default do-exec monitor elog trigger on <number:0..4294967295> <cr>    # path-052561
+(config)# default do-exec monitor elog trigger patch <number:0..4294967295> <cr>    # path-052585
+(config)# default do-exec monitor elog trigger position <cr>    # path-044798
+(config)# default do-exec monitor elog trigger position <number:0..100> <cr>    # path-052619
+(config)# default do-exec monitor elog unpatch <number:0..4294967295> <cr>    # path-044442
+(config)# default do-exec monitor elog unpatch all <cr>    # path-044481
+(config)# default do-exec monitor event-trace hw-api <cr>    # path-035011
+(config)# default do-exec monitor processes cpu extended <number:1..2147483647> <cr>    # path-052254
+(config)# default do-exec monitor tdm-pcm-capture caplog <number:1..268435455> <cr>    # path-044522
+(config)# default do-exec monitor tdm-pcm-capture disable <cr>    # path-034682
+(config)# default do-exec monitor xcode-pcm-capture <number:1..10> disable <cr>    # path-044349
+(config)# default do-exec monitor xcode-pcm-capture <number:1..10> incoming-side call-id <number:0..2147483647> stream <number:1..268435455> duration <number:0..255> <cr>    # path-060132
+(config)# default do-exec mrinfo <cr>    # path-026998
+(config)# default do-exec mrm <string> start <cr>    # path-035671
+(config)# default do-exec mstat <cr>    # path-027022
+(config)# default do-exec mtr <cr>    # path-026605
+(config)# default do-exec mtrace <cr>    # path-027039
+(config)# default do-exec name-connection <cr>    # path-026375
+(config)# default do-exec nat64 map-e address register <cr>    # path-044883
+(config)# default do-exec nat64 map-e rule request <cr>    # path-044847
+(config)# default do-exec nat64 map-t ce address domain <number:1..10000> ipv4 <address> <cr>    # path-059699
+(config)# default do-exec ncia start <cr>    # path-030697
+(config)# default do-exec ncia stop <cr>    # path-030727
+(config)# default do-exec no analyze memory-leak <cr>    # path-036343
+(config)# default do-exec no debug <cr>    # path-027893
+(config)# default do-exec no eobc config <cr>    # path-034735
+(config)# default do-exec no eobc shut <cr>    # path-034602
+(config)# default do-exec no function <string> <cr>    # path-033981
+(config)# default do-exec no processes cpu pid <number:1..4294967295> autoprofile <cr>    # path-056832
+(config)# default do-exec onep stop session all <cr>    # path-046178
+(config)# default do-exec pad <string> <cr>    # path-030002
+(config)# default do-exec ping <cr>    # path-026606
+(config)# default do-exec pnpa service abort-on-fault <number:0..1> <cr>    # path-050522
+(config)# default do-exec pnpa service act2-sudi <number:0..1> <cr>    # path-050497
+(config)# default do-exec pnpa service ap-extension <number:0..1> <cr>    # path-050484
+(config)# default do-exec pnpa service backoff-reset <string> <cr>    # path-051010
+(config)# default do-exec pnpa service certify <string> <string> <cr>    # path-056364
+(config)# default do-exec pnpa service check-server-id <string> <number:0..65535> <cr>    # path-056351
+(config)# default do-exec pnpa service check-ssl-handshake <string> <number:0..65535> <cr>    # path-056336
+(config)# default do-exec pnpa service config-control <number:0..3> <cr>    # path-050468
+(config)# default do-exec pnpa service config-monitor <number:0..1> <cr>    # path-050457
+(config)# default do-exec pnpa service config-reserve <string> <cr>    # path-050441
+(config)# default do-exec pnpa service config-retry <number:0..10000> <number:0..10000> <cr>    # path-056022
+(config)# default do-exec pnpa service config-upgrade <string> <cr>    # path-051003
+(config)# default do-exec pnpa service connectivity-enforcement <number:0..1> <cr>    # path-050411
+(config)# default do-exec pnpa service copy <string> <string> <cr>    # path-056375
+(config)# default do-exec pnpa service correlator-check <number:0..1> <cr>    # path-050395
+(config)# default do-exec pnpa service device-id-cert <number:0..1> <cr>    # path-050376
+(config)# default do-exec pnpa service diag <number:0..1> <cr>    # path-050916
+(config)# default do-exec pnpa service discovery abort-autoinstall <cr>    # path-051202
+(config)# default do-exec pnpa service discovery bypass-auto-install <number:0..1> <cr>    # path-056485

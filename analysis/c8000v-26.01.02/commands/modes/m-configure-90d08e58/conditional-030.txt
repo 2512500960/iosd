@@ -1,0 +1,271 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-030.md
+
+(config)# no do-exec show crypto ipsec spi-lookup <cr>    # conditional_registration_candidates-005808
+(config)# no do-exec show crypto ipsec transform-set <cr>    # conditional_registration_candidates-006007
+(config)# no do-exec show crypto ipsec transform-set <string> <cr>    # conditional_registration_candidates-007316
+(config)# no do-exec show crypto isakmp default policy <cr>    # conditional_registration_candidates-007280
+(config)# no do-exec show crypto isakmp diagnose error <cr>    # conditional_registration_candidates-007476
+(config)# no do-exec show crypto isakmp diagnose error count <cr>    # conditional_registration_candidates-008240
+(config)# no do-exec show crypto isakmp key <cr>    # conditional_registration_candidates-005960
+(config)# no do-exec show crypto isakmp memory <cr>    # conditional_registration_candidates-006061
+(config)# no do-exec show crypto isakmp peers <address> <cr>    # conditional_registration_candidates-007350
+(config)# no do-exec show crypto isakmp peers <cr>    # conditional_registration_candidates-006157
+(config)# no do-exec show crypto isakmp peers config <cr>    # conditional_registration_candidates-007456
+(config)# no do-exec show crypto isakmp peers detail <cr>    # conditional_registration_candidates-007416
+(config)# no do-exec show crypto isakmp performance <cr>    # conditional_registration_candidates-006099
+(config)# no do-exec show crypto isakmp policy <cr>    # conditional_registration_candidates-005876
+(config)# no do-exec show crypto isakmp profile <cr>    # conditional_registration_candidates-006118
+(config)# no do-exec show crypto isakmp sa <cr>    # conditional_registration_candidates-006082
+(config)# no do-exec show crypto isakmp sa count <cr>    # conditional_registration_candidates-007256
+(config)# no do-exec show crypto isakmp sa sd-monitor <cr>    # conditional_registration_candidates-007291
+(config)# no do-exec show crypto isakmp stats <cr>    # conditional_registration_candidates-006138
+(config)# no do-exec show crypto master-key-status <cr>    # conditional_registration_candidates-003423
+(config)# no do-exec show crypto mib ipsec flowmib history failure size <cr>    # conditional_registration_candidates-008917
+(config)# no do-exec show crypto mib ipsec flowmib history tunnel size <cr>    # conditional_registration_candidates-008914
+(config)# no do-exec show crypto mib ipsec flowmib version <cr>    # conditional_registration_candidates-008040
+(config)# no do-exec show crypto optional <cr>    # conditional_registration_candidates-003776
+(config)# no do-exec show crypto route <cr>    # conditional_registration_candidates-003506
+(config)# no do-exec show crypto sdwan-ipsec session-info l-color default <cr>    # conditional_registration_candidates-008060
+(config)# no do-exec show crypto sdwan-ipsec session-info l-color default remote-sys-ip <address> r-color default <cr>    # conditional_registration_candidates-009019
+(config)# no do-exec show crypto session <cr>    # conditional_registration_candidates-004127
+(config)# no do-exec show crypto session brief <cr>    # conditional_registration_candidates-006033
+(config)# no do-exec show crypto session detail <cr>    # conditional_registration_candidates-005997
+(config)# no do-exec show crypto session fvrf <string> <cr>    # conditional_registration_candidates-007400
+(config)# no do-exec show crypto session fvrf <string> brief <cr>    # conditional_registration_candidates-008193
+(config)# no do-exec show crypto session fvrf <string> detail <cr>    # conditional_registration_candidates-008172
+(config)# no do-exec show crypto session fvrf <string> ivrf <string> <cr>    # conditional_registration_candidates-008794
+(config)# no do-exec show crypto session fvrf <string> ivrf <string> brief <cr>    # conditional_registration_candidates-008938
+(config)# no do-exec show crypto session fvrf <string> ivrf <string> detail <cr>    # conditional_registration_candidates-008930
+(config)# no do-exec show crypto session groups <cr>    # conditional_registration_candidates-006139
+(config)# no do-exec show crypto session internal <cr>    # conditional_registration_candidates-006062
+(config)# no do-exec show crypto session isakmp group <string> <cr>    # conditional_registration_candidates-008270
+(config)# no do-exec show crypto session isakmp group <string> brief <cr>    # conditional_registration_candidates-008831
+(config)# no do-exec show crypto session isakmp group <string> detail <cr>    # conditional_registration_candidates-008826
+(config)# no do-exec show crypto session isakmp profile <string> <cr>    # conditional_registration_candidates-008261
+(config)# no do-exec show crypto session isakmp profile <string> brief <cr>    # conditional_registration_candidates-008827
+(config)# no do-exec show crypto session isakmp profile <string> detail <cr>    # conditional_registration_candidates-008823
+(config)# no do-exec show crypto session ivrf <string> <cr>    # conditional_registration_candidates-007430
+(config)# no do-exec show crypto session ivrf <string> brief <cr>    # conditional_registration_candidates-008207
+(config)# no do-exec show crypto session ivrf <string> detail <cr>    # conditional_registration_candidates-008189
+(config)# no do-exec show crypto session ivrf <string> fvrf <string> <cr>    # conditional_registration_candidates-008804
+(config)# no do-exec show crypto session ivrf <string> fvrf <string> brief <cr>    # conditional_registration_candidates-008944
+(config)# no do-exec show crypto session ivrf <string> fvrf <string> detail <cr>    # conditional_registration_candidates-008936
+(config)# no do-exec show crypto session local <address> <cr>    # conditional_registration_candidates-007344
+(config)# no do-exec show crypto session local <address> brief <cr>    # conditional_registration_candidates-008157
+(config)# no do-exec show crypto session local <address> detail <cr>    # conditional_registration_candidates-008141
+(config)# no do-exec show crypto session local <address> port <number:1..65535> <cr>    # conditional_registration_candidates-008773
+(config)# no do-exec show crypto session local <address> port <number:1..65535> brief <cr>    # conditional_registration_candidates-008928
+(config)# no do-exec show crypto session local <address> port <number:1..65535> detail <cr>    # conditional_registration_candidates-008923
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> <cr>    # conditional_registration_candidates-008988
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> brief <cr>    # conditional_registration_candidates-009027
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> detail <cr>    # conditional_registration_candidates-009023
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> port <number:1..65535> <cr>    # conditional_registration_candidates-009048
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> port <number:1..65535> brief <cr>    # conditional_registration_candidates-009063
+(config)# no do-exec show crypto session local <address> port <number:1..65535> remote <address> port <number:1..65535> detail <cr>    # conditional_registration_candidates-009061
+(config)# no do-exec show crypto session local <address> remote <address> <cr>    # conditional_registration_candidates-008785
+(config)# no do-exec show crypto session local <address> remote <address> brief <cr>    # conditional_registration_candidates-008934
+(config)# no do-exec show crypto session local <address> remote <address> detail <cr>    # conditional_registration_candidates-008927
+(config)# no do-exec show crypto session local <address> remote <address> port <number:1..65535> <cr>    # conditional_registration_candidates-008987
+(config)# no do-exec show crypto session local <address> remote <address> port <number:1..65535> brief <cr>    # conditional_registration_candidates-009026
+(config)# no do-exec show crypto session local <address> remote <address> port <number:1..65535> detail <cr>    # conditional_registration_candidates-009022
+(config)# no do-exec show crypto session remote <address> <cr>    # conditional_registration_candidates-007372
+(config)# no do-exec show crypto session remote <address> brief <cr>    # conditional_registration_candidates-008175
+(config)# no do-exec show crypto session remote <address> detail <cr>    # conditional_registration_candidates-008153
+(config)# no do-exec show crypto session remote <address> port <number:1..65535> <cr>    # conditional_registration_candidates-008783
+(config)# no do-exec show crypto session remote <address> port <number:1..65535> brief <cr>    # conditional_registration_candidates-008931
+(config)# no do-exec show crypto session remote <address> port <number:1..65535> detail <cr>    # conditional_registration_candidates-008925
+(config)# no do-exec show crypto session stats active <cr>    # conditional_registration_candidates-007265
+(config)# no do-exec show crypto session stats active sid <number:1..1073741824> <cr>    # conditional_registration_candidates-008758
+(config)# no do-exec show crypto session stats closed <cr>    # conditional_registration_candidates-007342
+(config)# no do-exec show crypto session stats closed detail <cr>    # conditional_registration_candidates-008135
+(config)# no do-exec show crypto session stats closed sid <number:1..1073741824> <cr>    # conditional_registration_candidates-008767
+(config)# no do-exec show crypto session summary <cr>    # conditional_registration_candidates-006150
+(config)# no do-exec show crypto session username <string> <cr>    # conditional_registration_candidates-007486
+(config)# no do-exec show crypto session username <string> brief <cr>    # conditional_registration_candidates-008249
+(config)# no do-exec show crypto session username <string> detail <cr>    # conditional_registration_candidates-008246
+(config)# no do-exec show crypto session users <cr>    # conditional_registration_candidates-006170
+(config)# no do-exec show crypto skip-client client <string> <cr>    # conditional_registration_candidates-006887
+(config)# no do-exec show crypto skip-client statistics <cr>    # conditional_registration_candidates-005287
+(config)# no do-exec show crypto sockets internal <cr>    # conditional_registration_candidates-005196
+(config)# no do-exec show crypto ssl authorization policy <cr>    # conditional_registration_candidates-007200
+(config)# no do-exec show crypto ssl diagnose error <cr>    # conditional_registration_candidates-007180
+(config)# no do-exec show crypto ssl policy <cr>    # conditional_registration_candidates-005595
+(config)# no do-exec show crypto ssl profile <cr>    # conditional_registration_candidates-005506
+(config)# no do-exec show crypto ssl proposal <cr>    # conditional_registration_candidates-005684
+(config)# no do-exec show crypto ssl session <cr>    # conditional_registration_candidates-005513
+(config)# no do-exec show crypto ssl session user <string> <cr>    # conditional_registration_candidates-008064
+(config)# no do-exec show crypto ssl stats <cr>    # conditional_registration_candidates-005610
+(config)# no do-exec show crypto tls-tunnel client <string> <cr>    # conditional_registration_candidates-006886
+(config)# no do-exec show crypto tls-tunnel sessions <cr>    # conditional_registration_candidates-005382
+(config)# no do-exec show crypto tls-tunnel stats <cr>    # conditional_registration_candidates-005286
+(config)# no do-exec show ctl-client <cr>    # conditional_registration_candidates-001248
+(config)# no do-exec show decnet <cr>    # conditional_registration_candidates-001660
+(config)# no do-exec show decnet access-lists <cr>    # conditional_registration_candidates-003281
+(config)# no do-exec show decnet accounting <cr>    # conditional_registration_candidates-003686
+(config)# no do-exec show decnet database <cr>    # conditional_registration_candidates-003792
+(config)# no do-exec show decnet debug <cr>    # conditional_registration_candidates-003146
+(config)# no do-exec show decnet interface <cr>    # conditional_registration_candidates-003538
+(config)# no do-exec show decnet map <cr>    # conditional_registration_candidates-003426
+(config)# no do-exec show decnet neighbors <cr>    # conditional_registration_candidates-003615
+(config)# no do-exec show decnet route <cr>    # conditional_registration_candidates-003797
+(config)# no do-exec show decnet static <cr>    # conditional_registration_candidates-003356
+(config)# no do-exec show decnet traffic <cr>    # conditional_registration_candidates-003779
+(config)# no do-exec show dial-peer carrier <cr>    # conditional_registration_candidates-002962
+(config)# no do-exec show dial-peer cor <cr>    # conditional_registration_candidates-003242
+(config)# no do-exec show dial-peer group <cr>    # conditional_registration_candidates-003197
+(config)# no do-exec show dial-peer group detail <cr>    # conditional_registration_candidates-005091
+(config)# no do-exec show dial-peer group summary <cr>    # conditional_registration_candidates-005153
+(config)# no do-exec show dial-peer trunk-group-label <cr>    # conditional_registration_candidates-003054
+(config)# no do-exec show dial-peer voice <cr>    # conditional_registration_candidates-003547
+(config)# no do-exec show dial-peer voice <number:1..2147483647> <cr>    # conditional_registration_candidates-005200
+(config)# no do-exec show dial-peer voice busy-trigger-counter <cr>    # conditional_registration_candidates-005480
+(config)# no do-exec show dial-peer voice summary <cr>    # conditional_registration_candidates-005384
+(config)# no do-exec show dial-peer voice voip system <cr>    # conditional_registration_candidates-006931
+(config)# no do-exec show dial-peer voip keepalive status <cr>    # conditional_registration_candidates-007107
+(config)# no do-exec show dial-peer voip keepalive status <number:1..1073741823> <cr>    # conditional_registration_candidates-008032
+(config)# no do-exec show dial-peer voip keepalive status tenant <number:1..10000> <cr>    # conditional_registration_candidates-008745
+(config)# no do-exec show dialogsnr database <cr>    # conditional_registration_candidates-002856
+(config)# no do-exec show dialplan dialpeer <number:1..2147483647> number <string> <cr>    # conditional_registration_candidates-008044
+(config)# no do-exec show dialplan in-carrier <string> pots <cr>    # conditional_registration_candidates-006808
+(config)# no do-exec show dialplan in-carrier <string> voip <cr>    # conditional_registration_candidates-006854
+(config)# no do-exec show dialplan in-trunk-group-label <string> pots <cr>    # conditional_registration_candidates-006840
+(config)# no do-exec show dialplan in-trunk-group-label <string> voip <cr>    # conditional_registration_candidates-006875
+(config)# no do-exec show dialplan incall number <string> <cr>    # conditional_registration_candidates-007051
+(config)# no do-exec show dialplan incall sip called <string> <cr>    # conditional_registration_candidates-008062
+(config)# no do-exec show dialplan incall uri h323 <cr>    # conditional_registration_candidates-007115
+(config)# no do-exec show dialplan incall uri sip <cr>    # conditional_registration_candidates-007163
+(config)# no do-exec show dialplan number <string> <cr>    # conditional_registration_candidates-005695
+(config)# no do-exec show dialplan number <string> fax <cr>    # conditional_registration_candidates-007104
+(config)# no do-exec show dialplan number <string> huntstop <cr>    # conditional_registration_candidates-007004
+(config)# no do-exec show dialplan uri <string> <cr>    # conditional_registration_candidates-005440
+(config)# no do-exec show dn-numbers <cr>    # conditional_registration_candidates-001244
+(config)# no do-exec show dns-defense config <cr>    # conditional_registration_candidates-002859
+(config)# no do-exec show dns-defense deviceid <cr>    # conditional_registration_candidates-003094
+(config)# no do-exec show dns-defense deviceid detailed <cr>    # conditional_registration_candidates-005079
+(config)# no do-exec show dns-defense dnscrypt <cr>    # conditional_registration_candidates-003050
+(config)# no do-exec show domain <string> <cr>    # conditional_registration_candidates-003754
+(config)# no do-exec show domain all <cr>    # conditional_registration_candidates-002858
+(config)# no do-exec show dsp-group <cr>    # conditional_registration_candidates-001300
+(config)# no do-exec show ephone <address> <cr>    # conditional_registration_candidates-003175
+(config)# no do-exec show ephone attempted-registrations <cr>    # conditional_registration_candidates-003418
+(config)# no do-exec show ephone moh <cr>    # conditional_registration_candidates-003225
+(config)# no do-exec show ephone phone-load <cr>    # conditional_registration_candidates-003843
+(config)# no do-exec show ephone phone-load details <cr>    # conditional_registration_candidates-005823
+(config)# no do-exec show ephone registered <cr>    # conditional_registration_candidates-003795
+(config)# no do-exec show ephone registered summary <cr>    # conditional_registration_candidates-005775
+(config)# no do-exec show ephone rtp connections <cr>    # conditional_registration_candidates-005746
+(config)# no do-exec show ephone sockets <cr>    # conditional_registration_candidates-003324
+(config)# no do-exec show ephone summary <cr>    # conditional_registration_candidates-003364
+(config)# no do-exec show ephone summary brief <cr>    # conditional_registration_candidates-005378
+(config)# no do-exec show ephone summary types <cr>    # conditional_registration_candidates-005279
+(config)# no do-exec show ephone tapiclients <cr>    # conditional_registration_candidates-003501
+(config)# no do-exec show ephone unregistered <cr>    # conditional_registration_candidates-003789
+(config)# no do-exec show ephone unregistered summary <cr>    # conditional_registration_candidates-005828
+(config)# no do-exec show ephone-dn <cr>    # conditional_registration_candidates-001658
+(config)# no do-exec show ephone-dn callback <cr>    # conditional_registration_candidates-003415
+(config)# no do-exec show ephone-dn conference <cr>    # conditional_registration_candidates-003624
+(config)# no do-exec show ephone-dn conference ad-hoc <cr>    # conditional_registration_candidates-005590
+(config)# no do-exec show ephone-dn conference ad-hoc video <cr>    # conditional_registration_candidates-007015
+(config)# no do-exec show ephone-dn conference meetme <cr>    # conditional_registration_candidates-005499
+(config)# no do-exec show ephone-dn conference meetme video <cr>    # conditional_registration_candidates-006961
+(config)# no do-exec show ephone-dn conference number <string> <cr>    # conditional_registration_candidates-007071
+(config)# no do-exec show ephone-dn loopback <cr>    # conditional_registration_candidates-003219
+(config)# no do-exec show ephone-dn paging <cr>    # conditional_registration_candidates-003500
+(config)# no do-exec show ephone-dn park <cr>    # conditional_registration_candidates-003587
+(config)# no do-exec show ephone-dn statistics <cr>    # conditional_registration_candidates-003722
+(config)# no do-exec show ephone-dn summary <cr>    # conditional_registration_candidates-003773
+(config)# no do-exec show ephone-dn whisper <cr>    # conditional_registration_candidates-003660
+(config)# no do-exec show ephone-hunt <cr>    # conditional_registration_candidates-001362
+(config)# no do-exec show ephone-hunt <number:1..100> <cr>    # conditional_registration_candidates-003002
+(config)# no do-exec show ephone-hunt <number:1..100> statistics last <number:1..167> hours <cr>    # conditional_registration_candidates-008712
+(config)# no do-exec show ephone-hunt summary <cr>    # conditional_registration_candidates-002955
+(config)# no do-exec show et-analytics configuration <cr>    # conditional_registration_candidates-002964
+(config)# no do-exec show et-analytics flows <cr>    # conditional_registration_candidates-003147
+(config)# no do-exec show et-analytics statistics <cr>    # conditional_registration_candidates-003282
+(config)# no do-exec show et-analytics statistics export <cr>    # conditional_registration_candidates-005210
+(config)# no do-exec show et-analytics statistics flow <cr>    # conditional_registration_candidates-005138
+(config)# no do-exec show evpn statistic <cr>    # conditional_registration_candidates-003047
+(config)# no do-exec show fb-its-log <cr>    # conditional_registration_candidates-001353
+(config)# no do-exec show fb-its-log summary <cr>    # conditional_registration_candidates-002944
+(config)# no do-exec show flow file-export default export log <cr>    # conditional_registration_candidates-008028
+(config)# no do-exec show flow file-export default statistics <cr>    # conditional_registration_candidates-006862
+(config)# no do-exec show flow file-export default template statistics <cr>    # conditional_registration_candidates-008021
+(config)# no do-exec show flow-sampler <cr>    # conditional_registration_candidates-001297
+(config)# no do-exec show frame-relay vc-bundle <cr>    # conditional_registration_candidates-003980
+(config)# no do-exec show frr-manager client all <cr>    # conditional_registration_candidates-005147
+(config)# no do-exec show frr-manager client client-name <string> details <cr>    # conditional_registration_candidates-008008
+(config)# no do-exec show frr-manager client client-name <string> interfaces <cr>    # conditional_registration_candidates-007996
+(config)# no do-exec show frr-manager client client-name <string> interfaces detail <cr>    # conditional_registration_candidates-008711
+(config)# no do-exec show frr-manager client client-name <string> sessions <cr>    # conditional_registration_candidates-007992
+(config)# no do-exec show frr-manager internal <cr>    # conditional_registration_candidates-002861
+(config)# no do-exec show funi map <cr>    # conditional_registration_candidates-003666
+(config)# no do-exec show funi oam auto-detect <cr>    # conditional_registration_candidates-005755
+(config)# no do-exec show funi pvc ppp <cr>    # conditional_registration_candidates-005403
+(config)# no do-exec show funi traffic <cr>    # conditional_registration_candidates-003337
+(config)# no do-exec show funi vc <cr>    # conditional_registration_candidates-003809
+(config)# no do-exec show funi vp <cr>    # conditional_registration_candidates-003279
+(config)# no do-exec show gateway <cr>    # conditional_registration_candidates-001246
+(config)# no do-exec show geo status <cr>    # conditional_registration_candidates-002860
+(config)# no do-exec show group-policy traffic-steering counters <cr>    # conditional_registration_candidates-005521
+(config)# no do-exec show group-policy traffic-steering entries <cr>    # conditional_registration_candidates-005394
+(config)# no do-exec show group-policy traffic-steering environment-data <cr>    # conditional_registration_candidates-005218
+(config)# no do-exec show group-policy traffic-steering permissions <cr>    # conditional_registration_candidates-005522
+(config)# no do-exec show group-policy traffic-steering policy sgt <cr>    # conditional_registration_candidates-007058
+(config)# no do-exec show group-policy traffic-steering server details active <cr>    # conditional_registration_candidates-008052
+(config)# no do-exec show group-policy traffic-steering server details all <cr>    # conditional_registration_candidates-008079
+(config)# no do-exec show group-policy traffic-steering server details name <string> <cr>    # conditional_registration_candidates-008752
+(config)# no do-exec show group-policy traffic-steering server statistics active <cr>    # conditional_registration_candidates-008075
+(config)# no do-exec show group-policy traffic-steering server statistics all <cr>    # conditional_registration_candidates-008097
+(config)# no do-exec show group-policy traffic-steering server statistics name <string> <cr>    # conditional_registration_candidates-008756
+(config)# no do-exec show gtp apn <number:1..65535> <cr>    # conditional_registration_candidates-005352
+(config)# no do-exec show gtp apn all <cr>    # conditional_registration_candidates-005449
+(config)# no do-exec show gtp apn statistics <number:1..65535> <cr>    # conditional_registration_candidates-007072
+(config)# no do-exec show gtp apn statistics all <cr>    # conditional_registration_candidates-007139
+(config)# no do-exec show gtp mcsa statistics <cr>    # conditional_registration_candidates-005438
+(config)# no do-exec show gtp parameters <cr>    # conditional_registration_candidates-003044
+(config)# no do-exec show gtp path all <cr>    # conditional_registration_candidates-005405
+(config)# no do-exec show gtp path remote-address <address> <cr>    # conditional_registration_candidates-007008
+(config)# no do-exec show gtp path statistics remote-address <address> <cr>    # conditional_registration_candidates-008061
+(config)# no do-exec show gtp pdp-context all <cr>    # conditional_registration_candidates-005855
+(config)# no do-exec show gtp pdp-context apn <number:1..65535> <cr>    # conditional_registration_candidates-007131
+(config)# no do-exec show gtp pdp-context imsi <string> <cr>    # conditional_registration_candidates-007100
+(config)# no do-exec show gtp pdp-context ms-address <address> <cr>    # conditional_registration_candidates-007057
+(config)# no do-exec show gtp pdp-context ms-v6-address <address> <cr>    # conditional_registration_candidates-007108
+(config)# no do-exec show gtp pdp-context msisdn <string> <cr>    # conditional_registration_candidates-007154
+(config)# no do-exec show gtp pdp-context path <address> <cr>    # conditional_registration_candidates-007271
+(config)# no do-exec show gtp pdp-context teid-u <number:0..4294967295> <cr>    # conditional_registration_candidates-007266
+(config)# no do-exec show gtp statistics <cr>    # conditional_registration_candidates-003092
+(config)# no do-exec show http client cache <cr>    # conditional_registration_candidates-005176
+(config)# no do-exec show http client cache brief <cr>    # conditional_registration_candidates-006846
+(config)# no do-exec show http client connection <cr>    # conditional_registration_candidates-005016
+(config)# no do-exec show http client cookie <cr>    # conditional_registration_candidates-005326
+(config)# no do-exec show http client cookie id <number:1..2147483647> <cr>    # conditional_registration_candidates-008002
+(config)# no do-exec show http client history <cr>    # conditional_registration_candidates-005150
+(config)# no do-exec show http client statistics <cr>    # conditional_registration_candidates-005307
+(config)# no do-exec show ip address trusted check <address> <cr>    # conditional_registration_candidates-008199
+(config)# no do-exec show ip address trusted list <cr>    # conditional_registration_candidates-007348
+(config)# no do-exec show ip explicit-paths <cr>    # conditional_registration_candidates-004058
+(config)# no do-exec show ip flow export <cr>    # conditional_registration_candidates-006074
+(config)# no do-exec show ip flow export template <cr>    # conditional_registration_candidates-007385
+(config)# no do-exec show ip flow export verbose <cr>    # conditional_registration_candidates-007347
+(config)# no do-exec show ip inspect all <cr>    # conditional_registration_candidates-006232
+(config)# no do-exec show ip inspect config <cr>    # conditional_registration_candidates-006146
+(config)# no do-exec show ip inspect debug <cr>    # conditional_registration_candidates-005985
+(config)# no do-exec show ip inspect interfaces <cr>    # conditional_registration_candidates-006201
+(config)# no do-exec show ip inspect name <string> <cr>    # conditional_registration_candidates-007477
+(config)# no do-exec show ip inspect sessions <cr>    # conditional_registration_candidates-006235
+(config)# no do-exec show ip inspect sis <cr>    # conditional_registration_candidates-006213
+(config)# no do-exec show ip inspect statistics <cr>    # conditional_registration_candidates-006152
+(config)# no do-exec show ip inspect tech-support <cr>    # conditional_registration_candidates-006117
+(config)# no do-exec show ip mobile mobile-networks <cr>    # conditional_registration_candidates-006070
+(config)# no do-exec show ip mobile vpn-realm <cr>    # conditional_registration_candidates-006053
+(config)# no do-exec show ip ospf fast-reroute <cr>    # conditional_registration_candidates-006298
+(config)# no do-exec show ip ospf fast-reroute prefix-summary <cr>    # conditional_registration_candidates-007530
+(config)# no do-exec show ip ospf flex-algo <cr>    # conditional_registration_candidates-006310
+(config)# no do-exec show ip ospf neighbor fast-reroute <cr>    # conditional_registration_candidates-007600
+(config)# no do-exec show ip ospf segment-routing <cr>    # conditional_registration_candidates-006339
+(config)# no do-exec show ip ospf segment-routing adjacency-sid <cr>    # conditional_registration_candidates-007623
+(config)# no do-exec show ip ospf segment-routing conflicts <cr>    # conditional_registration_candidates-007592
+(config)# no do-exec show ip ospf segment-routing global-block <cr>    # conditional_registration_candidates-007548

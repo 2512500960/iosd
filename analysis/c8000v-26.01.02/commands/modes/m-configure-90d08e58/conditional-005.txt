@@ -1,0 +1,285 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-005.md
+
+(config)# default do-exec debug spanning-tree mstp roles <cr>    # conditional_registration_candidates-006037
+(config)# default do-exec debug spanning-tree mstp sanity_check <cr>    # conditional_registration_candidates-005846
+(config)# default do-exec debug spanning-tree mstp state <cr>    # conditional_registration_candidates-005203
+(config)# default do-exec debug spanning-tree mstp sync <cr>    # conditional_registration_candidates-005886
+(config)# default do-exec debug spanning-tree mstp tc <cr>    # conditional_registration_candidates-005797
+(config)# default do-exec debug spanning-tree mstp timers <cr>    # conditional_registration_candidates-005293
+(config)# default do-exec debug srv6 all <cr>    # conditional_registration_candidates-002005
+(config)# default do-exec debug subscriber feature name ffr error <cr>    # conditional_registration_candidates-007965
+(config)# default do-exec debug subscriber feature name ffr event <cr>    # conditional_registration_candidates-007951
+(config)# default do-exec debug subscriber feature redundancy <cr>    # conditional_registration_candidates-004895
+(config)# default do-exec debug subscriber isg-mib detail <cr>    # conditional_registration_candidates-004590
+(config)# default do-exec debug subscriber isg-mib errors <cr>    # conditional_registration_candidates-004451
+(config)# default do-exec debug subscriber isg-mib events <cr>    # conditional_registration_candidates-004521
+(config)# default do-exec debug subscriber mobility error <cr>    # conditional_registration_candidates-004465
+(config)# default do-exec debug subscriber mobility event <cr>    # conditional_registration_candidates-004404
+(config)# default do-exec debug subscriber redundancy <cr>    # conditional_registration_candidates-002199
+(config)# default do-exec debug translate <cr>    # conditional_registration_candidates-000784
+(config)# default do-exec debug translation detail <cr>    # conditional_registration_candidates-002009
+(config)# default do-exec debug udptn <cr>    # conditional_registration_candidates-000785
+(config)# default do-exec debug utd config <cr>    # conditional_registration_candidates-002161
+(config)# default do-exec debug vfi error <cr>    # conditional_registration_candidates-002148
+(config)# default do-exec debug vfi event <cr>    # conditional_registration_candidates-002080
+(config)# default do-exec debug vfi fsm error <cr>    # conditional_registration_candidates-004524
+(config)# default do-exec debug vfi fsm event <cr>    # conditional_registration_candidates-004457
+(config)# default do-exec debug voip ccapi <cr>    # conditional_registration_candidates-002689
+(config)# default do-exec debug voip ccapi all <cr>    # conditional_registration_candidates-004528
+(config)# default do-exec debug voip ccapi default <cr>    # conditional_registration_candidates-004594
+(config)# default do-exec debug voip ccapi detail <cr>    # conditional_registration_candidates-004652
+(config)# default do-exec debug voip ccapi error <cr>    # conditional_registration_candidates-005013
+(config)# default do-exec debug voip ccapi function <cr>    # conditional_registration_candidates-004711
+(config)# default do-exec debug voip ccapi individual <number:1..168> <cr>    # conditional_registration_candidates-006676
+(config)# default do-exec debug voip ccapi inout <cr>    # conditional_registration_candidates-004405
+(config)# default do-exec debug voip ccapi protoheaders <cr>    # conditional_registration_candidates-004466
+(config)# default do-exec debug voip ccapi service <cr>    # conditional_registration_candidates-004759
+(config)# default do-exec debug voip dcapi error <cr>    # conditional_registration_candidates-004522
+(config)# default do-exec debug voip dcapi inout <cr>    # conditional_registration_candidates-004453
+(config)# default do-exec debug voip profile fax mail <cr>    # conditional_registration_candidates-006465
+(config)# default do-exec debug voip profile fax relay application <cr>    # conditional_registration_candidates-007815
+(config)# default do-exec debug voip profile fax relay signaling <cr>    # conditional_registration_candidates-007835
+(config)# default do-exec debug voip profile help <cr>    # conditional_registration_candidates-004537
+(config)# default do-exec debug voip profile modem pass-through signaling <cr>    # conditional_registration_candidates-007773
+(config)# default do-exec debug voip profile modem relay signaling <cr>    # conditional_registration_candidates-007787
+(config)# default do-exec debug voip profile voice application <cr>    # conditional_registration_candidates-006436
+(config)# default do-exec debug voip profile voice signaling <cr>    # conditional_registration_candidates-006473
+(config)# default do-exec debug vpdn redundancy <cr>    # conditional_registration_candidates-002353
+(config)# default do-exec debug vpdn redundancy detail <cr>    # conditional_registration_candidates-004513
+(config)# default do-exec debug vpm change rcv-map <number:0..15> <number:0..15> <cr>    # conditional_registration_candidates-008077
+(config)# default do-exec debug vpm change xmt-map <number:0..15> <number:0..15> <cr>    # conditional_registration_candidates-008093
+(config)# default do-exec debug vpm cmd <number:0..15> <cr>    # conditional_registration_candidates-005221
+(config)# default do-exec debug vpm port <cr>    # conditional_registration_candidates-003006
+(config)# default do-exec debug vpm rcv-map <cr>    # conditional_registration_candidates-003457
+(config)# default do-exec debug vpm show-map <cr>    # conditional_registration_candidates-003284
+(config)# default do-exec debug vpm spi <cr>    # conditional_registration_candidates-002011
+(config)# default do-exec debug vpm voaal2 type1 to_dsp <cr>    # conditional_registration_candidates-006812
+(config)# default do-exec debug vpm xmt-map <cr>    # conditional_registration_candidates-003376
+(config)# default do-exec debug vsp all <cr>    # conditional_registration_candidates-002096
+(config)# default do-exec debug vtsp dsp <cr>    # conditional_registration_candidates-001998
+(config)# default do-exec debug vxlan static-route all <cr>    # conditional_registration_candidates-004713
+(config)# default do-exec debug vxlan static-route database <cr>    # conditional_registration_candidates-004475
+(config)# default do-exec debug vxlan static-route error <cr>    # conditional_registration_candidates-004367
+(config)# default do-exec debug vxlan static-route ha <cr>    # conditional_registration_candidates-004656
+(config)# default do-exec debug vxlan static-route parser <cr>    # conditional_registration_candidates-004597
+(config)# default do-exec debug vxlan static-route state <cr>    # conditional_registration_candidates-004538
+(config)# default do-exec debug vxlan static-route statistics <cr>    # conditional_registration_candidates-004417
+(config)# default do-exec debug xconnect error <cr>    # conditional_registration_candidates-002201
+(config)# default do-exec debug xconnect event <cr>    # conditional_registration_candidates-002157
+(config)# default do-exec debug xconnect event detail <cr>    # conditional_registration_candidates-004364
+(config)# default do-exec debug xconnect initialization <cr>    # conditional_registration_candidates-002273
+(config)# default do-exec debug xconnect internal <cr>    # conditional_registration_candidates-002333
+(config)# default do-exec debug xconnect monitor <cr>    # conditional_registration_candidates-002126
+(config)# default do-exec debug zone security events <cr>    # conditional_registration_candidates-004335
+(config)# default do-exec debug zone security flow-logging <cr>    # conditional_registration_candidates-004485
+(config)# default do-exec debug zone security object-creation <cr>    # conditional_registration_candidates-004381
+(config)# default do-exec debug zone security object-deletion <cr>    # conditional_registration_candidates-004423
+(config)# default do-exec disconnect qdm <cr>    # conditional_registration_candidates-001098
+(config)# default do-exec emadmin login <string> <number:1..2000> <cr>    # conditional_registration_candidates-004662
+(config)# default do-exec emadmin logout <string> <cr>    # conditional_registration_candidates-002241
+(config)# default do-exec file-acct reset <cr>    # conditional_registration_candidates-000911
+(config)# default do-exec geo database revert default <cr>    # conditional_registration_candidates-004565
+(config)# default do-exec group-policy traffic-steering refresh environment-data <cr>    # conditional_registration_candidates-004637
+(config)# default do-exec group-policy traffic-steering refresh policy <cr>    # conditional_registration_candidates-004725
+(config)# default do-exec group-policy traffic-steering refresh policy sgt <number:2..65521> <cr>    # conditional_registration_candidates-007848
+(config)# default do-exec hunt-group statistics write-all <string> <cr>    # conditional_registration_candidates-004498
+(config)# default do-exec l2vpn redundancy activate peer <address> <number:1..4294967295> <cr>    # conditional_registration_candidates-007824
+(config)# default do-exec mgcp dlcx <string> <cr>    # conditional_registration_candidates-002349
+(config)# default do-exec mgcp dlcx <string> <string> <cr>    # conditional_registration_candidates-004499
+(config)# default do-exec monitor call application event-log stop <cr>    # conditional_registration_candidates-006768
+(config)# default do-exec monitor capture buffer <string> <cr>    # conditional_registration_candidates-005012
+(config)# default do-exec monitor capture buffer <string> clear <cr>    # conditional_registration_candidates-006801
+(config)# default do-exec monitor capture buffer <string> filter access-list <cr>    # conditional_registration_candidates-007944
+(config)# default do-exec monitor capture buffer <string> limit packets-per-sec <cr>    # conditional_registration_candidates-007927
+(config)# default do-exec monitor capture point start all <cr>    # conditional_registration_candidates-006640
+(config)# default do-exec ping mpls <cr>    # conditional_registration_candidates-001407
+(config)# default do-exec sbc <string> sbe billing xml <number:0..7> flush <cr>    # conditional_registration_candidates-008666
+(config)# default do-exec sbc dump-alarms <cr>    # conditional_registration_candidates-000986
+(config)# default do-exec sbc dump-diagnostics <cr>    # conditional_registration_candidates-000963
+(config)# default do-exec sbc periodic-dump-alarms time-period <number:0..1440> <cr>    # conditional_registration_candidates-004680
+(config)# default do-exec send qdm message <string> <cr>    # conditional_registration_candidates-004907
+(config)# default do-exec set http client cache stale <cr>    # conditional_registration_candidates-006368
+(config)# default do-exec show acircuit id <cr>    # conditional_registration_candidates-003224
+(config)# default do-exec show acircuit memory <cr>    # conditional_registration_candidates-003265
+(config)# default do-exec show acircuit memory detail <cr>    # conditional_registration_candidates-005186
+(config)# default do-exec show appfw configuration <cr>    # conditional_registration_candidates-002928
+(config)# default do-exec show appfw name <string> <cr>    # conditional_registration_candidates-005241
+(config)# default do-exec show appletalk access-lists <cr>    # conditional_registration_candidates-003189
+(config)# default do-exec show appletalk adjacent-routes <cr>    # conditional_registration_candidates-003181
+(config)# default do-exec show appletalk arp <cr>    # conditional_registration_candidates-003268
+(config)# default do-exec show appletalk cache <cr>    # conditional_registration_candidates-003231
+(config)# default do-exec show appletalk globals <cr>    # conditional_registration_candidates-003333
+(config)# default do-exec show appletalk map <cr>    # conditional_registration_candidates-003504
+(config)# default do-exec show appletalk name-cache <cr>    # conditional_registration_candidates-003591
+(config)# default do-exec show appletalk nbp <cr>    # conditional_registration_candidates-003663
+(config)# default do-exec show appletalk neighbors <cr>    # conditional_registration_candidates-003791
+(config)# default do-exec show appletalk private <cr>    # conditional_registration_candidates-004082
+(config)# default do-exec show appletalk route <cr>    # conditional_registration_candidates-003958
+(config)# default do-exec show appletalk sockets <cr>    # conditional_registration_candidates-003922
+(config)# default do-exec show appletalk static <cr>    # conditional_registration_candidates-003975
+(config)# default do-exec show appletalk traffic <cr>    # conditional_registration_candidates-003911
+(config)# default do-exec show appletalk zone <cr>    # conditional_registration_candidates-003979
+(config)# default do-exec show bridge-domain mac table <cr>    # conditional_registration_candidates-006156
+(config)# default do-exec show call accounting-template voice <cr>    # conditional_registration_candidates-005693
+(config)# default do-exec show call accounting-template voice <string> <cr>    # conditional_registration_candidates-007147
+(config)# default do-exec show call accounting-template voice attrList <cr>    # conditional_registration_candidates-006922
+(config)# default do-exec show call accounting-template voice qdump <cr>    # conditional_registration_candidates-007037
+(config)# default do-exec show call accounting-template voice summary <cr>    # conditional_registration_candidates-006988
+(config)# default do-exec show call application active app-level <cr>    # conditional_registration_candidates-007112
+(config)# default do-exec show call application active gateway-level <cr>    # conditional_registration_candidates-006921
+(config)# default do-exec show call application active session-level <cr>    # conditional_registration_candidates-007309
+(config)# default do-exec show call application interface <cr>    # conditional_registration_candidates-006128
+(config)# default do-exec show call application services registry <cr>    # conditional_registration_candidates-007130
+(config)# default do-exec show call application sessions <cr>    # conditional_registration_candidates-005862
+(config)# default do-exec show call application voice <cr>    # conditional_registration_candidates-005857
+(config)# default do-exec show call application voice <string> <cr>    # conditional_registration_candidates-007240
+(config)# default do-exec show call application voice summary <cr>    # conditional_registration_candidates-007175
+(config)# default do-exec show call language voice <cr>    # conditional_registration_candidates-005600
+(config)# default do-exec show call language voice <string> <cr>    # conditional_registration_candidates-007085
+(config)# default do-exec show call language voice summary <cr>    # conditional_registration_candidates-006963
+(config)# default do-exec show call malloc ivr <cr>    # conditional_registration_candidates-005531
+(config)# default do-exec show call malloc rtsp <cr>    # conditional_registration_candidates-005718
+(config)# default do-exec show call malloc tcl <cr>    # conditional_registration_candidates-005748
+(config)# default do-exec show call malloc tcl contents <cr>    # conditional_registration_candidates-007121
+(config)# default do-exec show call prompt-mem-usage <cr>    # conditional_registration_candidates-003529
+(config)# default do-exec show call prompt-mem-usage detail <cr>    # conditional_registration_candidates-005432
+(config)# default do-exec show call-manager-fallback <cr>    # conditional_registration_candidates-001654
+(config)# default do-exec show call-manager-fallback all <cr>    # conditional_registration_candidates-003471
+(config)# default do-exec show call-manager-fallback dial-peer <cr>    # conditional_registration_candidates-003765
+(config)# default do-exec show call-manager-fallback ephone-dn <cr>    # conditional_registration_candidates-003564
+(config)# default do-exec show call-manager-fallback license <cr>    # conditional_registration_candidates-003710
+(config)# default do-exec show call-manager-fallback voice-port <cr>    # conditional_registration_candidates-003644
+(config)# default do-exec show callmon call <cr>    # conditional_registration_candidates-002935
+(config)# default do-exec show callmon gcid <cr>    # conditional_registration_candidates-003036
+(config)# default do-exec show callmon subscription <cr>    # conditional_registration_candidates-003134
+(config)# default do-exec show callmon trace all <cr>    # conditional_registration_candidates-005789
+(config)# default do-exec show callmon trace event all <cr>    # conditional_registration_candidates-007086
+(config)# default do-exec show callmon trace event call <cr>    # conditional_registration_candidates-007030
+(config)# default do-exec show callmon trace event connection <cr>    # conditional_registration_candidates-006964
+(config)# default do-exec show callmon trace exec <cr>    # conditional_registration_candidates-005553
+(config)# default do-exec show callmon trace server <cr>    # conditional_registration_candidates-005726
+(config)# default do-exec show callmon trace subscription <cr>    # conditional_registration_candidates-005647
+(config)# default do-exec show callmon trace trigger <cr>    # conditional_registration_candidates-005448
+(config)# default do-exec show capf-server summary <cr>    # conditional_registration_candidates-002943
+(config)# default do-exec show ccm-manager music-on-hold <cr>    # conditional_registration_candidates-003019
+(config)# default do-exec show cef srv6 binding-label policy <cr>    # conditional_registration_candidates-007516
+(config)# default do-exec show cef srv6 sid <cr>    # conditional_registration_candidates-006268
+(config)# default do-exec show credentials <cr>    # conditional_registration_candidates-001293
+(config)# default do-exec show crypto <cr>    # conditional_registration_candidates-001485
+(config)# default do-exec show crypto ace collection <cr>    # conditional_registration_candidates-005464
+(config)# default do-exec show crypto ace polo <cr>    # conditional_registration_candidates-005858
+(config)# default do-exec show crypto ace polo detail <cr>    # conditional_registration_candidates-007176
+(config)# default do-exec show crypto ace redundancy <cr>    # conditional_registration_candidates-005656
+(config)# default do-exec show crypto ace slot <number:1..16> invspi <cr>    # conditional_registration_candidates-008056
+(config)# default do-exec show crypto ace slot <number:1..16> stats <cr>    # conditional_registration_candidates-008039
+(config)# default do-exec show crypto ace statistics <cr>    # conditional_registration_candidates-005564
+(config)# default do-exec show crypto call admission statistics <cr>    # conditional_registration_candidates-007312
+(config)# default do-exec show crypto debug-condition <cr>    # conditional_registration_candidates-003962
+(config)# default do-exec show crypto debug-condition connid <cr>    # conditional_registration_candidates-005366
+(config)# default do-exec show crypto debug-condition dmvpn <cr>    # conditional_registration_candidates-005794
+(config)# default do-exec show crypto debug-condition fvrf <cr>    # conditional_registration_candidates-005565
+(config)# default do-exec show crypto debug-condition ikev2 profile <cr>    # conditional_registration_candidates-007318
+(config)# default do-exec show crypto debug-condition isakmp profile <cr>    # conditional_registration_candidates-007281
+(config)# default do-exec show crypto debug-condition ivrf <cr>    # conditional_registration_candidates-005657
+(config)# default do-exec show crypto debug-condition local address <cr>    # conditional_registration_candidates-007251
+(config)# default do-exec show crypto debug-condition peer <cr>    # conditional_registration_candidates-005263
+(config)# default do-exec show crypto debug-condition spi <cr>    # conditional_registration_candidates-005465
+(config)# default do-exec show crypto debug-condition unmatched <cr>    # conditional_registration_candidates-005733
+(config)# default do-exec show crypto debug-condition username <cr>    # conditional_registration_candidates-005844
+(config)# default do-exec show crypto engine brief <cr>    # conditional_registration_candidates-005655
+(config)# default do-exec show crypto engine configuration <cr>    # conditional_registration_candidates-005563
+(config)# default do-exec show crypto engine connections active <cr>    # conditional_registration_candidates-007113
+(config)# default do-exec show crypto engine connections dh <cr>    # conditional_registration_candidates-007091
+(config)# default do-exec show crypto engine connections dropped-packet <cr>    # conditional_registration_candidates-007038
+(config)# default do-exec show crypto engine connections flow <cr>    # conditional_registration_candidates-007148
+(config)# default do-exec show crypto engine qos <cr>    # conditional_registration_candidates-005365
+(config)# default do-exec show crypto engine token <cr>    # conditional_registration_candidates-005592
+(config)# default do-exec show crypto engine token detail <cr>    # conditional_registration_candidates-007018
+(config)# default do-exec show crypto entropy sample <number:1..9> <cr>    # conditional_registration_candidates-007050
+(config)# default do-exec show crypto entropy status <cr>    # conditional_registration_candidates-005262
+(config)# default do-exec show crypto gkm <cr>    # conditional_registration_candidates-003986
+(config)# default do-exec show crypto gkm debug-condition <cr>    # conditional_registration_candidates-005593
+(config)# default do-exec show crypto gkm debug-condition flags <cr>    # conditional_registration_candidates-007019
+(config)# default do-exec show crypto gkm detail <cr>    # conditional_registration_candidates-005368
+(config)# default do-exec show crypto gkm diagnose errors <cr>    # conditional_registration_candidates-007369
+(config)# default do-exec show crypto gkm diagnose errors recent <cr>    # conditional_registration_candidates-008166
+(config)# default do-exec show crypto gkm diagnose events <cr>    # conditional_registration_candidates-007357
+(config)# default do-exec show crypto gkm feature ipv6-crypto-path <cr>    # conditional_registration_candidates-007209
+(config)# default do-exec show crypto gkm gm <cr>    # conditional_registration_candidates-006159
+(config)# default do-exec show crypto gkm gm acl download <cr>    # conditional_registration_candidates-008139
+(config)# default do-exec show crypto gkm gm acl local <cr>    # conditional_registration_candidates-008121
+(config)# default do-exec show crypto gkm gm dataplane counters <cr>    # conditional_registration_candidates-008231
+(config)# default do-exec show crypto gkm gm identifier <cr>    # conditional_registration_candidates-007445
+(config)# default do-exec show crypto gkm gm identifier detail <cr>    # conditional_registration_candidates-008217
+(config)# default do-exec show crypto gkm gm p2p counters <cr>    # conditional_registration_candidates-008173
+(config)# default do-exec show crypto gkm gm p2p peers <cr>    # conditional_registration_candidates-008151
+(config)# default do-exec show crypto gkm gm pip-sa <cr>    # conditional_registration_candidates-007343
+(config)# default do-exec show crypto gkm gm pip-sa counters <cr>    # conditional_registration_candidates-008154
+(config)# default do-exec show crypto gkm gm pip-sa detail <cr>    # conditional_registration_candidates-008136
+(config)# default do-exec show crypto gkm gm pubkey <cr>    # conditional_registration_candidates-007393
+(config)# default do-exec show crypto gkm gm rekey <cr>    # conditional_registration_candidates-007397
+(config)# default do-exec show crypto gkm gm rekey detail <cr>    # conditional_registration_candidates-008186
+(config)# default do-exec show crypto gkm ipsec sa <cr>    # conditional_registration_candidates-007282
+(config)# default do-exec show crypto gkm ks <cr>    # conditional_registration_candidates-006186
+(config)# default do-exec show crypto gkm ks acl <cr>    # conditional_registration_candidates-007252
+(config)# default do-exec show crypto gkm ks coop <cr>    # conditional_registration_candidates-007431
+(config)# default do-exec show crypto gkm ks coop detail <cr>    # conditional_registration_candidates-008191
+(config)# default do-exec show crypto gkm ks coop identifier <cr>    # conditional_registration_candidates-008226
+(config)# default do-exec show crypto gkm ks coop identifier detail <cr>    # conditional_registration_candidates-008798
+(config)# default do-exec show crypto gkm ks coop version <cr>    # conditional_registration_candidates-008169
+(config)# default do-exec show crypto gkm ks detail <cr>    # conditional_registration_candidates-007454
+(config)# default do-exec show crypto gkm ks identifier <cr>    # conditional_registration_candidates-007457
+(config)# default do-exec show crypto gkm ks identifier detail <cr>    # conditional_registration_candidates-008230
+(config)# default do-exec show crypto gkm ks members <address> <cr>    # conditional_registration_candidates-008220
+(config)# default do-exec show crypto gkm ks members <cr>    # conditional_registration_candidates-007461
+(config)# default do-exec show crypto gkm ks members summary <cr>    # conditional_registration_candidates-008201
+(config)# default do-exec show crypto gkm ks members total <cr>    # conditional_registration_candidates-008239
+(config)# default do-exec show crypto gkm ks members total detail <cr>    # conditional_registration_candidates-008813
+(config)# default do-exec show crypto gkm ks policy <cr>    # conditional_registration_candidates-007362
+(config)# default do-exec show crypto gkm ks rekey <cr>    # conditional_registration_candidates-007420
+(config)# default do-exec show crypto gkm ks replay <cr>    # conditional_registration_candidates-007289
+(config)# default do-exec show crypto gkm performance <cr>    # conditional_registration_candidates-006001
+(config)# default do-exec show crypto gkm pip sa <cr>    # conditional_registration_candidates-007153
+(config)# default do-exec show crypto gkm pip sa detail <cr>    # conditional_registration_candidates-008066
+(config)# default do-exec show crypto gkm rekey sa <cr>    # conditional_registration_candidates-007225
+(config)# default do-exec show crypto gkm rekey sa detail <cr>    # conditional_registration_candidates-008101
+(config)# default do-exec show crypto identity <cr>    # conditional_registration_candidates-003444
+(config)# default do-exec show crypto identity <string> <cr>    # conditional_registration_candidates-005349
+(config)# default do-exec show crypto ikev2 authorization policy <cr>    # conditional_registration_candidates-007301
+(config)# default do-exec show crypto ikev2 certificate-cache <cr>    # conditional_registration_candidates-006000
+(config)# default do-exec show crypto ikev2 count <cr>    # conditional_registration_candidates-005466
+(config)# default do-exec show crypto ikev2 data applications <cr>    # conditional_registration_candidates-007471
+(config)# default do-exec show crypto ikev2 data sockets <cr>    # conditional_registration_candidates-007438
+(config)# default do-exec show crypto ikev2 diagnose error <cr>    # conditional_registration_candidates-007224
+(config)# default do-exec show crypto ikev2 diagnose error count <cr>    # conditional_registration_candidates-008119
+(config)# default do-exec show crypto ikev2 diagnose error count detailed <cr>    # conditional_registration_candidates-008753
+(config)# default do-exec show crypto ikev2 performance <cr>    # conditional_registration_candidates-006105
+(config)# default do-exec show crypto ikev2 policy <cr>    # conditional_registration_candidates-005894
+(config)# default do-exec show crypto ikev2 profile <cr>    # conditional_registration_candidates-005401
+(config)# default do-exec show crypto ikev2 proposal <cr>    # conditional_registration_candidates-005854
+(config)# default do-exec show crypto ikev2 sa <cr>    # conditional_registration_candidates-006125
+(config)# default do-exec show crypto ikev2 sa detailed <cr>    # conditional_registration_candidates-007391
+(config)# default do-exec show crypto ikev2 sa fvrf <string> <cr>    # conditional_registration_candidates-008209
+(config)# default do-exec show crypto ikev2 sa fvrf <string> detailed <cr>    # conditional_registration_candidates-008787
+(config)# default do-exec show crypto ikev2 sa local <address> <cr>    # conditional_registration_candidates-008178
+(config)# default do-exec show crypto ikev2 sa local <address> detailed <cr>    # conditional_registration_candidates-008765
+(config)# default do-exec show crypto ikev2 sa mem-dump <number:1..65535> <cr>    # conditional_registration_candidates-008216
+(config)# default do-exec show crypto ikev2 sa remote <address> <cr>    # conditional_registration_candidates-008194
+(config)# default do-exec show crypto ikev2 sa remote <address> detailed <cr>    # conditional_registration_candidates-008775
+(config)# default do-exec show crypto ikev2 sd-monitor <cr>    # conditional_registration_candidates-005566
+(config)# default do-exec show crypto ikev2 session <cr>    # conditional_registration_candidates-006009
+(config)# default do-exec show crypto ikev2 session detailed <cr>    # conditional_registration_candidates-007319
+(config)# default do-exec show crypto ikev2 stats <cr>    # conditional_registration_candidates-006045
+(config)# default do-exec show crypto ikev2 stats exchange <cr>    # conditional_registration_candidates-007197
+(config)# default do-exec show crypto ikev2 stats exchange detailed <cr>    # conditional_registration_candidates-008087
+(config)# default do-exec show crypto ikev2 stats ext-service <cr>    # conditional_registration_candidates-007374
+(config)# default do-exec show crypto ikev2 stats ext-service aaa <cr>    # conditional_registration_candidates-008116
+(config)# default do-exec show crypto ikev2 stats ext-service ce <cr>    # conditional_registration_candidates-008177
+(config)# default do-exec show crypto ikev2 stats ext-service gkm <cr>    # conditional_registration_candidates-008103
+(config)# default do-exec show crypto ikev2 stats ext-service ipsec <cr>    # conditional_registration_candidates-008130
+(config)# default do-exec show crypto ikev2 stats ext-service pki <cr>    # conditional_registration_candidates-008142
+(config)# default do-exec show crypto ikev2 stats ext-service ppk <cr>    # conditional_registration_candidates-008158
+(config)# default do-exec show crypto ikev2 stats gkm <cr>    # conditional_registration_candidates-007262
+(config)# default do-exec show crypto ikev2 stats priority-queue <cr>    # conditional_registration_candidates-007241

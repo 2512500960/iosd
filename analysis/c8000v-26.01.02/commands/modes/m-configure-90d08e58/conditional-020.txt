@@ -1,0 +1,277 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-020.md
+
+(config)# do-exec show ephone <?keyword_option_mm_action@55558b9d0168> <?keyword_option_mm_action@55558b9d06c8> <?keyword_option_mm_action@55558b9d09b0> ringing <cr>    # conditional_registration_candidates-009594
+(config)# do-exec show ephone <?keyword_option_mm_action@55558b9d0168> <?keyword_option_mm_action@55558b9d06c8> <?keyword_option_mm_action@55558b9d09b0> telephone-number <string> <cr>    # conditional_registration_candidates-009601
+(config)# do-exec show ephone <?keyword_option_mm_action@55558b9d0168> <cr>    # conditional_registration_candidates-009127
+(config)# do-exec show ephone <address> <cr>    # conditional_registration_candidates-001428
+(config)# do-exec show ephone attempted-registrations <cr>    # conditional_registration_candidates-001526
+(config)# do-exec show ephone moh <cr>    # conditional_registration_candidates-001449
+(config)# do-exec show ephone phone-load <cr>    # conditional_registration_candidates-001668
+(config)# do-exec show ephone phone-load details <cr>    # conditional_registration_candidates-003811
+(config)# do-exec show ephone registered <cr>    # conditional_registration_candidates-001648
+(config)# do-exec show ephone registered summary <cr>    # conditional_registration_candidates-003757
+(config)# do-exec show ephone rtp connections <cr>    # conditional_registration_candidates-003737
+(config)# do-exec show ephone sockets <cr>    # conditional_registration_candidates-001490
+(config)# do-exec show ephone summary <cr>    # conditional_registration_candidates-001505
+(config)# do-exec show ephone summary brief <cr>    # conditional_registration_candidates-003398
+(config)# do-exec show ephone summary types <cr>    # conditional_registration_candidates-003302
+(config)# do-exec show ephone tapiclients <cr>    # conditional_registration_candidates-001557
+(config)# do-exec show ephone unregistered <cr>    # conditional_registration_candidates-001646
+(config)# do-exec show ephone unregistered summary <cr>    # conditional_registration_candidates-003813
+(config)# do-exec show ephone-dn <cr>    # conditional_registration_candidates-000468
+(config)# do-exec show ephone-dn <number:dynamic> <cr>    # conditional_registration_candidates-009123
+(config)# do-exec show ephone-dn <number:dynamic> statistics <cr>    # conditional_registration_candidates-009172
+(config)# do-exec show ephone-dn <number:dynamic> trace <cr>    # conditional_registration_candidates-009188
+(config)# do-exec show ephone-dn <number:dynamic> trace detail <cr>    # conditional_registration_candidates-009291
+(config)# do-exec show ephone-dn callback <cr>    # conditional_registration_candidates-001525
+(config)# do-exec show ephone-dn conference <cr>    # conditional_registration_candidates-001598
+(config)# do-exec show ephone-dn conference ad-hoc <cr>    # conditional_registration_candidates-003606
+(config)# do-exec show ephone-dn conference ad-hoc video <cr>    # conditional_registration_candidates-005524
+(config)# do-exec show ephone-dn conference meetme <cr>    # conditional_registration_candidates-003523
+(config)# do-exec show ephone-dn conference meetme video <cr>    # conditional_registration_candidates-005421
+(config)# do-exec show ephone-dn conference number <string> <cr>    # conditional_registration_candidates-005615
+(config)# do-exec show ephone-dn loopback <cr>    # conditional_registration_candidates-001448
+(config)# do-exec show ephone-dn paging <cr>    # conditional_registration_candidates-001556
+(config)# do-exec show ephone-dn park <cr>    # conditional_registration_candidates-001584
+(config)# do-exec show ephone-dn statistics <cr>    # conditional_registration_candidates-001622
+(config)# do-exec show ephone-dn summary <cr>    # conditional_registration_candidates-001637
+(config)# do-exec show ephone-dn whisper <cr>    # conditional_registration_candidates-001602
+(config)# do-exec show ephone-hunt <cr>    # conditional_registration_candidates-000422
+(config)# do-exec show ephone-hunt <number:1..100> <cr>    # conditional_registration_candidates-001344
+(config)# do-exec show ephone-hunt <number:1..100> statistics last <number:1..167> hours <cr>    # conditional_registration_candidates-007985
+(config)# do-exec show ephone-hunt <number:1..100> statistics start <?day_action@55558ba9f3c8> <number:0..23> <cr>    # conditional_registration_candidates-009458
+(config)# do-exec show ephone-hunt summary <cr>    # conditional_registration_candidates-001318
+(config)# do-exec show et-analytics configuration <cr>    # conditional_registration_candidates-001327
+(config)# do-exec show et-analytics flows <cr>    # conditional_registration_candidates-001419
+(config)# do-exec show et-analytics statistics <cr>    # conditional_registration_candidates-001478
+(config)# do-exec show et-analytics statistics export <cr>    # conditional_registration_candidates-003214
+(config)# do-exec show et-analytics statistics flow <cr>    # conditional_registration_candidates-003114
+(config)# do-exec show event manager detector ipsla <cr>    # conditional_registration_candidates-009317
+(config)# do-exec show evpn peers vrf <?option@55558b579530> <cr>    # conditional_registration_candidates-009540
+(config)# do-exec show evpn statistic <cr>    # conditional_registration_candidates-001370
+(config)# do-exec show fb-its-log <cr>    # conditional_registration_candidates-000418
+(config)# do-exec show fb-its-log summary <cr>    # conditional_registration_candidates-001310
+(config)# do-exec show flow file-export default export log <cr>    # conditional_registration_candidates-007001
+(config)# do-exec show flow file-export default statistics <cr>    # conditional_registration_candidates-005180
+(config)# do-exec show flow file-export default template statistics <cr>    # conditional_registration_candidates-006972
+(config)# do-exec show flow-sampler <cr>    # conditional_registration_candidates-000412
+(config)# do-exec show frame-relay vc-bundle <cr>    # conditional_registration_candidates-001716
+(config)# do-exec show frr-manager client all <cr>    # conditional_registration_candidates-003120
+(config)# do-exec show frr-manager client client-name <string> details <cr>    # conditional_registration_candidates-006947
+(config)# do-exec show frr-manager client client-name <string> interfaces <cr>    # conditional_registration_candidates-006910
+(config)# do-exec show frr-manager client client-name <string> interfaces detail <cr>    # conditional_registration_candidates-007984
+(config)# do-exec show frr-manager client client-name <string> sessions <cr>    # conditional_registration_candidates-006899
+(config)# do-exec show frr-manager internal <cr>    # conditional_registration_candidates-001268
+(config)# do-exec show funi <interface> <cr>    # conditional_registration_candidates-009121
+(config)# do-exec show funi capabilities <interface> <cr>    # conditional_registration_candidates-009201
+(config)# do-exec show funi class-links <?number_func_nows_action@55558bf16058> <string> <cr>    # conditional_registration_candidates-009306
+(config)# do-exec show funi map <cr>    # conditional_registration_candidates-001605
+(config)# do-exec show funi oam auto-detect <cr>    # conditional_registration_candidates-003746
+(config)# do-exec show funi oam auto-detect <interface> <cr>    # conditional_registration_candidates-009303
+(config)# do-exec show funi pvc <interface> <cr>    # conditional_registration_candidates-009198
+(config)# do-exec show funi pvc ppp <cr>    # conditional_registration_candidates-003441
+(config)# do-exec show funi traffic <cr>    # conditional_registration_candidates-001493
+(config)# do-exec show funi vc <cr>    # conditional_registration_candidates-001657
+(config)# do-exec show funi vc <number:dynamic> <cr>    # conditional_registration_candidates-009200
+(config)# do-exec show funi vp <cr>    # conditional_registration_candidates-001475
+(config)# do-exec show funi vp <number:dynamic> <cr>    # conditional_registration_candidates-009173
+(config)# do-exec show gateway <cr>    # conditional_registration_candidates-000403
+(config)# do-exec show geo file-contents info <url:dynamic> <cr>    # conditional_registration_candidates-009278
+(config)# do-exec show geo status <cr>    # conditional_registration_candidates-001267
+(config)# do-exec show group-policy traffic-steering counters <cr>    # conditional_registration_candidates-003545
+(config)# do-exec show group-policy traffic-steering entries <cr>    # conditional_registration_candidates-003416
+(config)# do-exec show group-policy traffic-steering environment-data <cr>    # conditional_registration_candidates-003220
+(config)# do-exec show group-policy traffic-steering permissions <cr>    # conditional_registration_candidates-003546
+(config)# do-exec show group-policy traffic-steering policy sgt <cr>    # conditional_registration_candidates-005599
+(config)# do-exec show group-policy traffic-steering server details active <cr>    # conditional_registration_candidates-007065
+(config)# do-exec show group-policy traffic-steering server details all <cr>    # conditional_registration_candidates-007138
+(config)# do-exec show group-policy traffic-steering server details name <string> <cr>    # conditional_registration_candidates-008104
+(config)# do-exec show group-policy traffic-steering server statistics active <cr>    # conditional_registration_candidates-007119
+(config)# do-exec show group-policy traffic-steering server statistics all <cr>    # conditional_registration_candidates-007182
+(config)# do-exec show group-policy traffic-steering server statistics name <string> <cr>    # conditional_registration_candidates-008112
+(config)# do-exec show gtp apn <number:1..65535> <cr>    # conditional_registration_candidates-003386
+(config)# do-exec show gtp apn all <cr>    # conditional_registration_candidates-003474
+(config)# do-exec show gtp apn statistics <number:1..65535> <cr>    # conditional_registration_candidates-005616
+(config)# do-exec show gtp apn statistics all <cr>    # conditional_registration_candidates-005708
+(config)# do-exec show gtp mcsa statistics <cr>    # conditional_registration_candidates-003466
+(config)# do-exec show gtp parameters <cr>    # conditional_registration_candidates-001368
+(config)# do-exec show gtp path all <cr>    # conditional_registration_candidates-003442
+(config)# do-exec show gtp path remote-address <address> <cr>    # conditional_registration_candidates-005510
+(config)# do-exec show gtp path statistics remote-address <address> <cr>    # conditional_registration_candidates-007098
+(config)# do-exec show gtp pdp-context all <cr>    # conditional_registration_candidates-003840
+(config)# do-exec show gtp pdp-context apn <number:1..65535> <cr>    # conditional_registration_candidates-005699
+(config)# do-exec show gtp pdp-context imsi <string> <cr>    # conditional_registration_candidates-005674
+(config)# do-exec show gtp pdp-context ms-address <address> <cr>    # conditional_registration_candidates-005598
+(config)# do-exec show gtp pdp-context ms-v6-address <address> <cr>    # conditional_registration_candidates-005688
+(config)# do-exec show gtp pdp-context msisdn <string> <cr>    # conditional_registration_candidates-005743
+(config)# do-exec show gtp pdp-context path <address> <cr>    # conditional_registration_candidates-005937
+(config)# do-exec show gtp pdp-context teid-u <number:0..4294967295> <cr>    # conditional_registration_candidates-005930
+(config)# do-exec show gtp statistics <cr>    # conditional_registration_candidates-001391
+(config)# do-exec show gtp tunnel <interface> <cr>    # conditional_registration_candidates-009197
+(config)# do-exec show http client cache <cr>    # conditional_registration_candidates-003176
+(config)# do-exec show http client cache brief <cr>    # conditional_registration_candidates-005125
+(config)# do-exec show http client connection <cr>    # conditional_registration_candidates-002921
+(config)# do-exec show http client cookie <cr>    # conditional_registration_candidates-003353
+(config)# do-exec show http client cookie id <number:1..2147483647> <cr>    # conditional_registration_candidates-006923
+(config)# do-exec show http client history <cr>    # conditional_registration_candidates-003125
+(config)# do-exec show http client statistics <cr>    # conditional_registration_candidates-003325
+(config)# do-exec show ip address trusted check <address> <cr>    # conditional_registration_candidates-007402
+(config)# do-exec show ip address trusted list <cr>    # conditional_registration_candidates-006016
+(config)# do-exec show ip explicit-paths <cr>    # conditional_registration_candidates-001739
+(config)# do-exec show ip flow export <cr>    # conditional_registration_candidates-004031
+(config)# do-exec show ip flow export template <cr>    # conditional_registration_candidates-006050
+(config)# do-exec show ip flow export verbose <cr>    # conditional_registration_candidates-006015
+(config)# do-exec show ip inspect all <cr>    # conditional_registration_candidates-004134
+(config)# do-exec show ip inspect config <cr>    # conditional_registration_candidates-004075
+(config)# do-exec show ip inspect debug <cr>    # conditional_registration_candidates-003966
+(config)# do-exec show ip inspect interfaces <cr>    # conditional_registration_candidates-004108
+(config)# do-exec show ip inspect name <string> <cr>    # conditional_registration_candidates-006214
+(config)# do-exec show ip inspect sessions <cr>    # conditional_registration_candidates-004136
+(config)# do-exec show ip inspect sis <cr>    # conditional_registration_candidates-004119
+(config)# do-exec show ip inspect statistics <cr>    # conditional_registration_candidates-004078
+(config)# do-exec show ip inspect tech-support <cr>    # conditional_registration_candidates-004054
+(config)# do-exec show ip lisp <cr>    # conditional_registration_candidates-009529
+(config)# do-exec show ip lisp eid-table <string> <cr>    # conditional_registration_candidates-009547
+(config)# do-exec show ip lisp eid-table <string> <cr>    # conditional_registration_candidates-009548
+(config)# do-exec show ip lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009564
+(config)# do-exec show ip lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009566
+(config)# do-exec show ip lisp locator-table <string> <cr>    # conditional_registration_candidates-009549
+(config)# do-exec show ip lisp locator-table <string> <cr>    # conditional_registration_candidates-009550
+(config)# do-exec show ip lisp locator-table vrf <string> <cr>    # conditional_registration_candidates-009569
+(config)# do-exec show ip lisp locator-table vrf <string> <cr>    # conditional_registration_candidates-009571
+(config)# do-exec show ip mobile mobile-networks <cr>    # conditional_registration_candidates-004028
+(config)# do-exec show ip mobile vpn-realm <cr>    # conditional_registration_candidates-004010
+(config)# do-exec show ip ospf fast-reroute <cr>    # conditional_registration_candidates-004188
+(config)# do-exec show ip ospf fast-reroute prefix-summary <cr>    # conditional_registration_candidates-006295
+(config)# do-exec show ip ospf flex-algo <cr>    # conditional_registration_candidates-004196
+(config)# do-exec show ip ospf neighbor <interface> fast-reroute <cr>    # conditional_registration_candidates-009441
+(config)# do-exec show ip ospf neighbor fast-reroute <cr>    # conditional_registration_candidates-006338
+(config)# do-exec show ip ospf segment-routing <cr>    # conditional_registration_candidates-004209
+(config)# do-exec show ip ospf segment-routing adjacency-sid <cr>    # conditional_registration_candidates-006346
+(config)# do-exec show ip ospf segment-routing adjacency-sid interface <interface> <cr>    # conditional_registration_candidates-009475
+(config)# do-exec show ip ospf segment-routing conflicts <cr>    # conditional_registration_candidates-006335
+(config)# do-exec show ip ospf segment-routing global-block <cr>    # conditional_registration_candidates-006314
+(config)# do-exec show ip ospf segment-routing local-block <cr>    # conditional_registration_candidates-006322
+(config)# do-exec show ip ospf segment-routing local-prefix <cr>    # conditional_registration_candidates-006317
+(config)# do-exec show ip ospf segment-routing local-prefix <prefix:dynamic> <cr>    # conditional_registration_candidates-009438
+(config)# do-exec show ip ospf segment-routing mapping-server <cr>    # conditional_registration_candidates-006336
+(config)# do-exec show ip ospf segment-routing mapping-server <prefix:dynamic> <cr>    # conditional_registration_candidates-009442
+(config)# do-exec show ip ospf segment-routing protected-adjacencies <cr>    # conditional_registration_candidates-006326
+(config)# do-exec show ip ospf segment-routing sid-database <cr>    # conditional_registration_candidates-006343
+(config)# do-exec show ip ospf topology <cr>    # conditional_registration_candidates-004201
+(config)# do-exec show ip ospf topology internal <cr>    # conditional_registration_candidates-006333
+(config)# do-exec show ip ospf topology internal interface <interface> <cr>    # conditional_registration_candidates-009474
+(config)# do-exec show ip ospf topology path <cr>    # conditional_registration_candidates-006331
+(config)# do-exec show ip ospf topology prefix <cr>    # conditional_registration_candidates-006332
+(config)# do-exec show ip ospf topology prefix <prefix:dynamic> <cr>    # conditional_registration_candidates-009439
+(config)# do-exec show ip ospf topology route <cr>    # conditional_registration_candidates-006334
+(config)# do-exec show ip ospf topology route <prefix:dynamic> <cr>    # conditional_registration_candidates-009440
+(config)# do-exec show ip ospf topology summary <cr>    # conditional_registration_candidates-006323
+(config)# do-exec show ip route <?router_action_no_proc_vpn@5555897853d8> overrides pfr <cr>    # conditional_registration_candidates-009604
+(config)# do-exec show ip rsvp high-availability counters <cr>    # conditional_registration_candidates-009545
+(config)# do-exec show ip rsvp high-availability database cbts-bundle <cr>    # conditional_registration_candidates-009563
+(config)# do-exec show ip rsvp high-availability database hello <cr>    # conditional_registration_candidates-009567
+(config)# do-exec show ip rsvp high-availability database if-autotun <cr>    # conditional_registration_candidates-009562
+(config)# do-exec show ip rsvp high-availability database internal <cr>    # conditional_registration_candidates-009570
+(config)# do-exec show ip rsvp high-availability database link-management interfaces <cr>    # conditional_registration_candidates-009581
+(config)# do-exec show ip rsvp high-availability database link-management interfaces fixed <cr>    # conditional_registration_candidates-009587
+(config)# do-exec show ip rsvp high-availability database link-management interfaces variable <cr>    # conditional_registration_candidates-009588
+(config)# do-exec show ip rsvp high-availability database link-management system <cr>    # conditional_registration_candidates-009580
+(config)# do-exec show ip rsvp high-availability database lsp <cr>    # conditional_registration_candidates-009561
+(config)# do-exec show ip rsvp high-availability database lsp-head <cr>    # conditional_registration_candidates-009565
+(config)# do-exec show ip rsvp high-availability database summary <cr>    # conditional_registration_candidates-009568
+(config)# do-exec show ip rsvp high-availability summary <cr>    # conditional_registration_candidates-009546
+(config)# do-exec show ipv6 lisp <cr>    # conditional_registration_candidates-009527
+(config)# do-exec show ipv6 lisp eid-table <string> <cr>    # conditional_registration_candidates-009541
+(config)# do-exec show ipv6 lisp eid-table <string> <cr>    # conditional_registration_candidates-009542
+(config)# do-exec show ipv6 lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009557
+(config)# do-exec show ipv6 lisp eid-table vrf <string> <cr>    # conditional_registration_candidates-009558
+(config)# do-exec show ipv6 lisp locator-table <string> <cr>    # conditional_registration_candidates-009543
+(config)# do-exec show ipv6 lisp locator-table <string> <cr>    # conditional_registration_candidates-009544
+(config)# do-exec show ipv6 lisp locator-table vrf <string> <cr>    # conditional_registration_candidates-009559
+(config)# do-exec show ipv6 lisp locator-table vrf <string> <cr>    # conditional_registration_candidates-009560
+(config)# do-exec show ipv6 mobile pmipv6 lma binding <cr>    # conditional_registration_candidates-007308
+(config)# do-exec show ipv6 mobile pmipv6 lma globals <cr>    # conditional_registration_candidates-007000
+(config)# do-exec show ipv6 mobile pmipv6 lma heartbeat <cr>    # conditional_registration_candidates-007036
+(config)# do-exec show ipv6 mobile pmipv6 lma logical-mn <cr>    # conditional_registration_candidates-007191
+(config)# do-exec show ipv6 mobile pmipv6 lma mnp <cr>    # conditional_registration_candidates-007090
+(config)# do-exec show ipv6 mobile pmipv6 lma stats <cr>    # conditional_registration_candidates-007270
+(config)# do-exec show ipv6 mobile pmipv6 lma tunnel <cr>    # conditional_registration_candidates-007052
+(config)# do-exec show ipv6 mobile pmipv6 trace <cr>    # conditional_registration_candidates-005459
+(config)# do-exec show irec-agent <cr>    # conditional_registration_candidates-000402
+(config)# do-exec show isis * fast-reroute interfaces <cr>    # conditional_registration_candidates-009357
+(config)# do-exec show isis * fast-reroute summary <cr>    # conditional_registration_candidates-009356
+(config)# do-exec show isis * flex-algo <cr>    # conditional_registration_candidates-009226
+(config)# do-exec show isis * srv6 <cr>    # conditional_registration_candidates-009225
+(config)# do-exec show isis fast-reroute interfaces <cr>    # conditional_registration_candidates-004194
+(config)# do-exec show isis fast-reroute summary <cr>    # conditional_registration_candidates-004190
+(config)# do-exec show isis flex-algo <cr>    # conditional_registration_candidates-001789
+(config)# do-exec show isis srv6 <cr>    # conditional_registration_candidates-001783
+(config)# do-exec show l2vpn internal event-trace <cr>    # conditional_registration_candidates-003851
+(config)# do-exec show l2vpn internal ifmgr <cr>    # conditional_registration_candidates-003559
+(config)# do-exec show l2vpn internal pwintf <cr>    # conditional_registration_candidates-003642
+(config)# do-exec show l2vpn internal pwtree <cr>    # conditional_registration_candidates-003708
+(config)# do-exec show l2vpn pwmib <cr>    # conditional_registration_candidates-001570
+(config)# do-exec show l2vpn rib <cr>    # conditional_registration_candidates-001618
+(config)# do-exec show l2vpn rib vpls-id <?bgp_extcomm_action@55558c27fc40> <cr>    # conditional_registration_candidates-009304
+(config)# do-exec show l2vpn signaling nlri <cr>    # conditional_registration_candidates-003535
+(config)# do-exec show l2vpn signaling nlri rd <?vrf_rd_action@55558c27fdc0> ve-id <number:1..16384> vbo <number:1..16384> <cr>    # conditional_registration_candidates-009517
+(config)# do-exec show l2vpn signaling rib <cr>    # conditional_registration_candidates-003804
+(config)# do-exec show l2vpn signaling rib rd <?vrf_rd_action@55558c2805f8> <cr>    # conditional_registration_candidates-009409
+(config)# do-exec show l2vpn signaling rib-filter <cr>    # conditional_registration_candidates-003688
+(config)# do-exec show l2vpn signaling rib-filter rd <?vrf_rd_action@55558c2806f8> <cr>    # conditional_registration_candidates-009406
+(config)# do-exec show l2vpn vfi <cr>    # conditional_registration_candidates-001578
+(config)# do-exec show l3vpn encapsulation ip <?option@55558c19ba00> <cr>    # conditional_registration_candidates-009281
+(config)# do-exec show l3vpn encapsulation ip <cr>    # conditional_registration_candidates-003285
+(config)# do-exec show mcsa binding <cr>    # conditional_registration_candidates-001323
+(config)# do-exec show media-proxy sessions <cr>    # conditional_registration_candidates-001484
+(config)# do-exec show metadata application table <cr>    # conditional_registration_candidates-009186
+(config)# do-exec show metadata application version table <cr>    # conditional_registration_candidates-009300
+(config)# do-exec show metadata filter table <cr>    # conditional_registration_candidates-003112
+(config)# do-exec show metadata flow classification table <cr>    # conditional_registration_candidates-005422
+(config)# do-exec show metadata flow local-flow-id <number:1..2147483647> <cr>    # conditional_registration_candidates-005744
+(config)# do-exec show metadata flow local-flow-id <number:1..2147483647> source <?option@55558bc762e8> <cr>    # conditional_registration_candidates-009463
+(config)# do-exec show metadata flow statistics <cr>    # conditional_registration_candidates-003440
+(config)# do-exec show metadata flow statistics internal <cr>    # conditional_registration_candidates-005340
+(config)# do-exec show metadata flow table <cr>    # conditional_registration_candidates-003748
+(config)# do-exec show metadata flow table application name <?option@55558bc75770> <cr>    # conditional_registration_candidates-009465
+(config)# do-exec show metadata flow table filter <cr>    # conditional_registration_candidates-005938
+(config)# do-exec show metadata flow table ip detail <cr>    # conditional_registration_candidates-007118
+(config)# do-exec show metadata flow table summary <cr>    # conditional_registration_candidates-005785
+(config)# do-exec show metadata memory <cr>    # conditional_registration_candidates-001321
+(config)# do-exec show metadata vendor table <cr>    # conditional_registration_candidates-002924
+(config)# do-exec show mgcp <cr>    # conditional_registration_candidates-000473
+(config)# do-exec show mgcp nas dump <number:dynamic> <number:0..28> <number:0..31> <cr>    # conditional_registration_candidates-009468
+(config)# do-exec show monitor capture buffer all <cr>    # conditional_registration_candidates-005761
+(config)# do-exec show monitor capture buffer all filter direction egress <cr>    # conditional_registration_candidates-008754
+(config)# do-exec show monitor capture buffer all filter input-interface <interface> <cr>    # conditional_registration_candidates-009504
+(config)# do-exec show monitor capture point all <cr>    # conditional_registration_candidates-005342
+(config)# do-exec show mpss flows all <cr>    # conditional_registration_candidates-003322
+(config)# do-exec show mpss flows appid <number:1..2147483647> <cr>    # conditional_registration_candidates-005183
+(config)# do-exec show mpss flows appname <string> <cr>    # conditional_registration_candidates-005259
+(config)# do-exec show mpss flows flowid <number:1..2147483647> <cr>    # conditional_registration_candidates-005123
+(config)# do-exec show mpss monitors all <cr>    # conditional_registration_candidates-003228
+(config)# do-exec show mpss monitors appid <number:1..2147483647> <cr>    # conditional_registration_candidates-005126
+(config)# do-exec show mpss monitors appname <string> <cr>    # conditional_registration_candidates-005187
+(config)# do-exec show mpss monitors monitorid <number:1..2147483647> <cr>    # conditional_registration_candidates-005070
+(config)# do-exec show mpss resource-pool all <cr>    # conditional_registration_candidates-003578
+(config)# do-exec show mpss resource-pool appname <string> <cr>    # conditional_registration_candidates-005526
+(config)# do-exec show mpss resource-pool dsp all <cr>    # conditional_registration_candidates-005344
+(config)# do-exec show mpss resource-pool dsp pool-id <number:1..2147483647> <cr>    # conditional_registration_candidates-007014
+(config)# do-exec show mpss resource-pool pool-id <number:1..2147483647> <cr>    # conditional_registration_candidates-005427
+(config)# do-exec show mpss resource-pool port all <cr>    # conditional_registration_candidates-005256
+(config)# do-exec show mpss resource-pool port pool-id <number:1..2147483647> <cr>    # conditional_registration_candidates-006967
+(config)# do-exec show mpss sessions all <cr>    # conditional_registration_candidates-003495
+(config)# do-exec show mpss sessions appname <string> <cr>    # conditional_registration_candidates-005431
+(config)# do-exec show mpss sessions inline <cr>    # conditional_registration_candidates-003113
+(config)# do-exec show mpss sessions local <cr>    # conditional_registration_candidates-003213
+(config)# do-exec show mpss sessions sessionid <number:1..2147483647> <cr>    # conditional_registration_candidates-005346
+(config)# do-exec show nid interface <interface> <cr>    # conditional_registration_candidates-009165
+(config)# do-exec show novell access-lists <cr>    # conditional_registration_candidates-001659
+(config)# do-exec show novell access-lists <number:1..100> <cr>    # conditional_registration_candidates-009177
+(config)# do-exec show novell accounting <cr>    # conditional_registration_candidates-001611
+(config)# do-exec show novell cache <cr>    # conditional_registration_candidates-001476
+(config)# do-exec show novell ppp-clients <cr>    # conditional_registration_candidates-001664
+(config)# do-exec show novell private cache-history <cr>    # conditional_registration_candidates-003839

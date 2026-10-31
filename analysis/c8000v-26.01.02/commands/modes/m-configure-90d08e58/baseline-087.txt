@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-087.md
+
+(config)# no do-exec show vlans summary <cr>    # path-039205
+(config)# no do-exec show vlans tokenring <cr>    # path-039257
+(config)# no do-exec show vlans tr-isl <cr>    # path-039302
+(config)# no do-exec show vnet <cr>    # path-032876
+(config)# no do-exec show vpdn dead-cache all <cr>    # path-050635
+(config)# no do-exec show vpdn dead-cache group <string> <cr>    # path-056139
+(config)# no do-exec show vpdn domain <cr>    # path-041711
+(config)# no do-exec show vpdn group <cr>    # path-041717
+(config)# no do-exec show vpdn group <string> <cr>    # path-050554
+(config)# no do-exec show vpdn group <string> domain <cr>    # path-056077
+(config)# no do-exec show vpdn group <string> endpoint <cr>    # path-056060
+(config)# no do-exec show vpdn group-select Default <cr>    # path-050675
+(config)# no do-exec show vpdn group-select Summary <cr>    # path-050652
+(config)# no do-exec show vpdn group-select keys hostname <string> source-ip <address> <cr>    # path-059926
+(config)# no do-exec show vpdn history failure <cr>    # path-050507
+(config)# no do-exec show vpdn history fsm <cr>    # path-050500
+(config)# no do-exec show vpdn lsg all <cr>    # path-050658
+(config)# no do-exec show vpdn lsg group <string> <cr>    # path-056155
+(config)# no do-exec show vpdn multilink <cr>    # path-041763
+(config)# no do-exec show vpdn redirect <cr>    # path-041732
+(config)# no do-exec show vpdn redundancy <cr>    # path-041982
+(config)# no do-exec show vpdn redundancy all <cr>    # path-050674
+(config)# no do-exec show vpdn scalability <cr>    # path-041790
+(config)# no do-exec show vpdn statistics call fsm <cr>    # path-056031
+(config)# no do-exec show vpdn statistics mgr fsm <cr>    # path-056040
+(config)# no do-exec show vpdn subscriber statistics fsm <cr>    # path-056038
+(config)# no do-exec show vrf <cr>    # path-032110
+(config)# no do-exec show vrf list <cr>    # path-040756
+(config)# no do-exec show vrf select <cr>    # path-040624
+(config)# no do-exec show vrrp <cr>    # path-032008
+(config)# no do-exec show vrrs accounting <cr>    # path-038505
+(config)# no do-exec show vrrs client <cr>    # path-040030
+(config)# no do-exec show vrrs clients <cr>    # path-038487
+(config)# no do-exec show vrrs group <cr>    # path-038510
+(config)# no do-exec show vrrs internal <cr>    # path-038593
+(config)# no do-exec show vrrs pathway <cr>    # path-040113
+(config)# no do-exec show vrrs pathway address <cr>    # path-049088
+(config)# no do-exec show vrrs plugin database <cr>    # path-044290
+(config)# no do-exec show vrrs server <cr>    # path-040114
+(config)# no do-exec show vrrs summary <cr>    # path-038393
+(config)# no do-exec show vrrs tag <cr>    # path-039864
+(config)# no do-exec show vtemplate <cr>    # path-033033
+(config)# no do-exec show vtemplate queue <cr>    # path-042231
+(config)# no do-exec show vtp counters <cr>    # path-040048
+(config)# no do-exec show vtp devices <cr>    # path-040146
+(config)# no do-exec show vtp devices conflicts <cr>    # path-049114
+(config)# no do-exec show vtp interface <cr>    # path-040108
+(config)# no do-exec show vtp password <cr>    # path-040137
+(config)# no do-exec show vtp status <cr>    # path-040023
+(config)# no do-exec show vtp trunks <cr>    # path-040235
+(config)# no do-exec show vtp trunks all <cr>    # path-049213
+(config)# no do-exec show wccp <cr>    # path-031612
+(config)# no do-exec show wccp capabilities <cr>    # path-039135
+(config)# no do-exec show wccp capabilities internal <cr>    # path-048190
+(config)# no do-exec show wccp capabilities internal data <cr>    # path-054708
+(config)# no do-exec show wccp global counters <cr>    # path-048064
+(config)# no do-exec show wccp global internal <cr>    # path-047944
+(config)# no do-exec show wccp interfaces <cr>    # path-039145
+(config)# no do-exec show wccp interfaces cef <cr>    # path-048092
+(config)# no do-exec show wccp interfaces counts <cr>    # path-048043
+(config)# no do-exec show wccp interfaces detail <cr>    # path-047991
+(config)# no do-exec show wccp summary <cr>    # path-039014
+(config)# no do-exec show wccp web-cache assignment <cr>    # path-048462
+(config)# no do-exec show wccp web-cache buckets <cr>    # path-048300
+(config)# no do-exec show wccp web-cache clients <cr>    # path-048670
+(config)# no do-exec show wccp web-cache counters <cr>    # path-048676
+(config)# no do-exec show wccp web-cache detail <cr>    # path-048808
+(config)# no do-exec show wccp web-cache hash <address> <address> <number:0..65535> <number:0..65535> <cr>    # path-059882
+(config)# no do-exec show wccp web-cache internal <cr>    # path-048793
+(config)# no do-exec show wccp web-cache mask-acl <cr>    # path-048349
+(config)# no do-exec show wccp web-cache merged-acl <cr>    # path-048862
+(config)# no do-exec show wccp web-cache service <cr>    # path-048497
+(config)# no do-exec show wccp web-cache view <cr>    # path-048560
+(config)# no do-exec show wrr-queue bandwidth <cr>    # path-037092
+(config)# no do-exec show wrr-queue cos-map <cr>    # path-037150
+(config)# no do-exec show wsma agent counters <cr>    # path-051721
+(config)# no do-exec show wsma agent profiles <cr>    # path-051736
+(config)# no do-exec show wsma agent schema <cr>    # path-051751
+(config)# no do-exec show wsma history <cr>    # path-043277
+(config)# no do-exec show wsma id <cr>    # path-043242
+(config)# no do-exec show wsma profile connections <cr>    # path-051743
+(config)# no do-exec show wsma summary <cr>    # path-043296
+(config)# no do-exec show wsma tech-support <cr>    # path-043317
+(config)# no do-exec show x25 <cr>    # path-033143
+(config)# no do-exec show x25 context <cr>    # path-042366
+(config)# no do-exec show x25 context xot <cr>    # path-050987
+(config)# no do-exec show x25 cug local-cug <cr>    # path-051083
+(config)# no do-exec show x25 hunt-group <cr>    # path-042288
+(config)# no do-exec show x25 map <cr>    # path-042237
+(config)# no do-exec show x25 profile <cr>    # path-042388
+(config)# no do-exec show x25 remote-red <cr>    # path-042488
+(config)# no do-exec show x25 route <cr>    # path-042278
+(config)# no do-exec show x25 vc <cr>    # path-042391
+(config)# no do-exec show x25 xot <cr>    # path-042440
+(config)# no do-exec show x25 xot access-group <cr>    # path-051063
+(config)# no do-exec show x28 hunt-group <cr>    # path-041294
+(config)# no do-exec show x29 access-lists <cr>    # path-041288
+(config)# no do-exec show xdr client all <cr>    # path-049309
+(config)# no do-exec show xdr linecard <cr>    # path-040315
+(config)# no do-exec show xdr memory <cr>    # path-040276
+(config)# no do-exec show xdr multicast-group <cr>    # path-040145
+(config)# no do-exec show xdr statistics timers <cr>    # path-049211
+(config)# no do-exec show xdr timers <cr>    # path-040176
+(config)# no do-exec show xmpp profile connections <cr>    # path-051871
+(config)# no do-exec show xos <cr>    # path-033352
+(config)# no do-exec show xos errors <cr>    # path-042730
+(config)# no do-exec show xos info xdm <cr>    # path-051348
+(config)# no do-exec show xos traces <cr>    # path-042997
+(config)# no do-exec show xos traces address <cr>    # path-051412
+(config)# no do-exec show xos traces interface <cr>    # path-051430
+(config)# no do-exec show xos traces ipc <cr>    # path-051276
+(config)# no do-exec show xos traces mgd <cr>    # path-051299
+(config)# no do-exec show xos traces packet <cr>    # path-051369
+(config)# no do-exec show xos traces policy <cr>    # path-051381
+(config)# no do-exec show xos traces routing <cr>    # path-051398
+(config)# no do-exec show xos traces time <cr>    # path-051325
+(config)# no do-exec show xos traces utils <cr>    # path-051351
+(config)# no do-exec show xos traces xdm <cr>    # path-051453
+(config)# no do-exec show xsd-format cli <string> <cr>    # path-051667
+(config)# no do-exec slip <cr>    # path-027101
+(config)# no do-exec snmp get-next v1 <string> <string> oid <string> <cr>    # path-059335
+(config)# no do-exec ssh <string> <cr>    # path-030085
+(config)# no do-exec systat <cr>    # path-026445
+(config)# no do-exec system kexecreload <cr>    # path-027846
+(config)# no do-exec tclquit <cr>    # path-027237
+(config)# no do-exec tclsh <cr>    # path-027242
+(config)# no do-exec telnet <cr>    # path-026953
+(config)# no do-exec telnet <cr>    # path-026974
+(config)# no do-exec telnet <cr>    # path-026975
+(config)# no do-exec test aaa accounting giga <number:0..4294967295> <cr>    # path-052165
+(config)# no do-exec test aaa accounting init <cr>    # path-044187
+(config)# no do-exec test aaa accounting inject <number:0..4294967295> <number:0..4294967295> <cr>    # path-056789
+(config)# no do-exec test aaa accounting service auth-proxy <string> <string> <cr>    # path-058999
+(config)# no do-exec test aaa authentication abort <cr>    # path-044182
+(config)# no do-exec test aaa authentication attrlist <string> <cr>    # path-052614
+(config)# no do-exec test aaa authorization attrlist <string> <cr>    # path-052556
+(config)# no do-exec test aaa group diameter dcca <number:0..99> <cr>    # path-056885
+(config)# no do-exec test aaa radius inject <string> <cr>    # path-052125
+(config)# no do-exec test aaa stop <cr>    # path-034488
+(config)# no do-exec test adj disable <cr>    # path-034885
+(config)# no do-exec test adj epoch begin <cr>    # path-045055
+(config)# no do-exec test adj offset <cr>    # path-034948
+(config)# no do-exec test adj sev enable <cr>    # path-044735
+(config)# no do-exec test adj sev epoch <number:0..4294967295> <cr>    # path-052664
+(config)# no do-exec test adj sev oneshot <cr>    # path-044785
+(config)# no do-exec test ancp <cr>    # path-028959
+(config)# no do-exec test application init <cr>    # path-037765
+(config)# no do-exec test arp_retry add <address> <cr>    # path-045000
+(config)# no do-exec test autoip fail control <cr>    # path-047260
+(config)# no do-exec test autoip fail noncontrol <cr>    # path-047301
+(config)# no do-exec test autoip start <cr>    # path-037906
+(config)# no do-exec test autoip stop <cr>    # path-037946
+(config)# no do-exec test autoip success control <cr>    # path-047230
+(config)# no do-exec test autoip success noncontrol <cr>    # path-047267
+(config)# no do-exec test avc sd-service auto-config is-bypass no <cr>    # path-057845
+(config)# no do-exec test avc sd-service auto-config is-bypass yes <cr>    # path-057869
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes cdp no <cr>    # path-059299
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes cdp yes <cr>    # path-059305
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv4 no <cr>    # path-059308
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv4 yes <cr>    # path-059318
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv6 no <cr>    # path-059316
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes dhcpv6 yes <cr>    # path-059326
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes lldp no <cr>    # path-059304
+(config)# no do-exec test avc sd-service auto-config override-non-nbar-probes lldp yes <cr>    # path-059310
+(config)# no do-exec test avc sd-service auto-config trigger <cr>    # path-054092
+(config)# no do-exec test avc sd-service clear-all-export-caches <cr>    # path-046814
+(config)# no do-exec test avc sd-service cloud-config unload <cr>    # path-053998
+(config)# no do-exec test avc sd-service custom-id set <string> <cr>    # path-057632
+(config)# no do-exec test avc sd-service device-table-set-seq <number:0..65535> <cr>    # path-054260
+(config)# no do-exec test avc sd-service ent device-health export trigger <cr>    # path-059241
+(config)# no do-exec test avc sd-service ent disable <cr>    # path-053707
+(config)# no do-exec test avc sd-service ent enable <cr>    # path-053667
+(config)# no do-exec test avc sd-service ent export clear <cr>    # path-057811
+(config)# no do-exec test avc sd-service ent export dump <cr>    # path-057784
+(config)# no do-exec test avc sd-service ent export interfaces-db <cr>    # path-057759
+(config)# no do-exec test avc sd-service ent export protocols-db <cr>    # path-057766
+(config)# no do-exec test avc sd-service ent export protocols-db size <cr>    # path-059255
+(config)# no do-exec test avc sd-service ent export trigger <cr>    # path-057659
+(config)# no do-exec test avc sd-service ent unload <cr>    # path-053784
+(config)# no do-exec test avc sd-service flow-counters disable <cr>    # path-054221
+(config)# no do-exec test avc sd-service flow-counters enable <cr>    # path-054201
+(config)# no do-exec test avc sd-service force-using-binos-process no <cr>    # path-054281
+(config)# no do-exec test avc sd-service force-using-binos-process yes <cr>    # path-054271
+(config)# no do-exec test avc sd-service ftp-private-ip <cr>    # path-046868
+(config)# no do-exec test avc sd-service load-telemetry <cr>    # path-046501
+(config)# no do-exec test avc sd-service opaque-json get <cr>    # path-053778
+(config)# no do-exec test avc sd-service packets-tx send payload-length <number:1..8192> packets-num <number:1..10000000> <cr>    # path-060063
+(config)# no do-exec test avc sd-service permit-apps disable <cr>    # path-054261
+(config)# no do-exec test avc sd-service permit-apps enable <cr>    # path-054246
+(config)# no do-exec test avc sd-service persistency no <cr>    # path-054182
+(config)# no do-exec test avc sd-service persistency yes <cr>    # path-054205
+(config)# no do-exec test avc sd-service ppack-mode allow <cr>    # path-054155
+(config)# no do-exec test avc sd-service ppack-mode disallow <cr>    # path-054186
+(config)# no do-exec test avc sd-service scheduled-export debug-header length <number:0..4096> <cr>    # path-059300
+(config)# no do-exec test avc sd-service scheduled-export is-bypass no <cr>    # path-057819
+(config)# no do-exec test avc sd-service scheduled-export is-bypass yes <cr>    # path-057834
+(config)# no do-exec test avc sd-service scheduled-export rate-control Disable <cr>    # path-057872
+(config)# no do-exec test avc sd-service scheduled-export rate-control Enable <cr>    # path-057850
+(config)# no do-exec test avc sd-service scheduled-export transport http <cr>    # path-057832
+(config)# no do-exec test avc sd-service scheduled-export transport udp <cr>    # path-057854
+(config)# no do-exec test avc sd-service scheduled-export trigger <cr>    # path-054031
+(config)# no do-exec test avc sd-service scheduled-import is-bypass no <cr>    # path-057831
+(config)# no do-exec test avc sd-service scheduled-import is-bypass yes <cr>    # path-057853
+(config)# no do-exec test avc sd-service scheduled-import time-to-keep-files <number:0..10000000> <cr>    # path-057849
+(config)# no do-exec test avc sd-service scheduled-import trigger <cr>    # path-054067
+(config)# no do-exec test avc sd-service telemetry off <cr>    # path-053957
+(config)# no do-exec test avc sd-service telemetry on <cr>    # path-053894
+(config)# no do-exec test avc sd-service testbench <cr>    # path-046976
+(config)# no do-exec test avc sd-service tls-fp disable <cr>    # path-053743
+(config)# no do-exec test avc sd-service tls-fp enable <cr>    # path-053701
+(config)# no do-exec test avc sd-service tls-fp unload <cr>    # path-053817
+(config)# no do-exec test avc sd-service unclassified-domains disable <cr>    # path-054234
+(config)# no do-exec test avc sd-service unclassified-domains enable <cr>    # path-054216
+(config)# no do-exec test avc sd-service unclassified-domains local disable <cr>    # path-057928
+(config)# no do-exec test avc sd-service unclassified-domains local enable <cr>    # path-057924
+(config)# no do-exec test beep basic <string> <cr>    # path-048368
+(config)# no do-exec test beep raw bing data <cr>    # path-054804
+(config)# no do-exec test bridge-domain api vni <cr>    # path-044801
+(config)# no do-exec test bridge-domain ipc all-slots <cr>    # path-044590
+(config)# no do-exec test bridge-domain other <cr>    # path-035031
+(config)# no do-exec test bridge-domain pw-reconciliation pp peer <address> <number:1..4294967295> <cr>    # path-059020
+(config)# no do-exec test bridge-domain pw-reconciliation static-mac peer <address> <number:1..4294967295> <cr>    # path-059028
+(config)# no do-exec test bridge-domain tcn receive <number:1..4096> <cr>    # path-052692
+(config)# no do-exec test buffer get <string> <string> <number:0..4294967294> <cr>    # path-057955
+(config)# no do-exec test buffer tuning elements <cr>    # path-047232
+(config)# no do-exec test buffer tuning pool <string> <cr>    # path-054428
+(config)# no do-exec test c3pl stop <cr>    # path-034247
+(config)# no do-exec test cce <cr>    # path-029505
+(config)# no do-exec test cdna register <string> <number:0..4294967295> <cr>    # path-052233
+(config)# no do-exec test cdna release <string> <cr>    # path-044298
+(config)# no do-exec test cdna request <string> <cr>    # path-044267
+(config)# no do-exec test cdna reset <cr>    # path-034561
+(config)# no do-exec test cef crimson-oper-db add <cr>    # path-045032
+(config)# no do-exec test cef crimson-oper-db del <cr>    # path-045076
+(config)# no do-exec test cef crimson-oper-db disable <cr>    # path-044950
+(config)# no do-exec test cef crimson-oper-db enable <cr>    # path-044914
+(config)# no do-exec test cef crimson-oper-db oc-nh-grp-db IPv4 <cr>    # path-052805
+(config)# no do-exec test cef enable <cr>    # path-034891
+(config)# no do-exec test cef event-trace IPv4 <string> <cr>    # path-052811
+(config)# no do-exec test cef ext-lb disable <cr>    # path-044986
+(config)# no do-exec test cef ext-lb enable <cr>    # path-044985
+(config)# no do-exec test cef get-nexthop-adj IPv4 <address> <cr>    # path-053013
+(config)# no do-exec test cef idb consistency <cr>    # path-045097
+(config)# no do-exec test cef lisp l2instance create <number:0..65520> <number:0..65520> <number:1..4094> <cr>    # path-059701
+(config)# no do-exec test cef lisp map-req IPv4 <address> <address> r-eid <cr>    # path-059707
+(config)# no do-exec test cef lisp stats IPv4 clear <cr>    # path-057079
+(config)# no do-exec test cef lisp sw-fw eid-detection enable <cr>    # path-057097
+(config)# no do-exec test cef lisp unnum-if top-id <number:0..65520> clear-v4 <cr>    # path-059054
+(config)# no do-exec test cef lisp_samecable <address> <cr>    # path-044774
+(config)# no do-exec test cef oce-explore IPv4 <address> <cr>    # path-052982
+(config)# no do-exec test cef offset <cr>    # path-035033
+(config)# no do-exec test cef register-interest show <cr>    # path-045133
+(config)# no do-exec test cef sadr-oce <address> <cr>    # path-045014
+(config)# no do-exec test cef switching IPv4 clear <cr>    # path-052650
+(config)# no do-exec test cef track-destination IPv4 local-label <cr>    # path-053129
+(config)# no do-exec test cef user-command <number:1..255> <cr>    # path-045427
+(config)# no do-exec test checkpoint add <cr>    # path-034741
+(config)# no do-exec test cisp disable <cr>    # path-035103
+(config)# no do-exec test cisp enable <cr>    # path-035104
+(config)# no do-exec test clear-nvram local-lock <cr>    # path-038997
+(config)# no do-exec test cli-agent config-accounting test-mode disable <cr>    # path-052336
+(config)# no do-exec test cli-agent config-accounting test-mode enable <cr>    # path-052303
+(config)# no do-exec test cns history <cr>    # path-039349
+(config)# no do-exec test cns inventory <cr>    # path-039468
+(config)# no do-exec test cns summary <cr>    # path-039400
+(config)# no do-exec test cops start-listen <address> <number:0..65535> <cr>    # path-053926
+(config)# no do-exec test cops stop-listen <address> <number:0..65535> <cr>    # path-053980
+(config)# no do-exec test cot set def-params <cr>    # path-044907
+(config)# no do-exec test cpuaccounting debug dump <cr>    # path-044138
+(config)# no do-exec test cpurmi hog complex <cr>    # path-044045
+(config)# no do-exec test cpurmi hog simple <number:1..5000> <cr>    # path-052093
+(config)# no do-exec test crash <cr>    # path-028556
+(config)# no do-exec test crypto kgs-test perf controller <number:1..300> <number:1..300> <number:1..10000> <number:1..300> <cr>    # path-060080
+(config)# no do-exec test crypto modexp perf-test <cr>    # path-047821
+(config)# no do-exec test crypto modexp self-test <cr>    # path-047877
+(config)# no do-exec test crypto nist-tests cfb8 <cr>    # path-047978
+(config)# no do-exec test crypto pki api <string> <cr>    # path-054900
+(config)# no do-exec test crypto pki benchmark rsa <cr>    # path-054722
+(config)# no do-exec test crypto pki benchmark validate-peer <string> <cr>    # path-058160
+(config)# no do-exec test crypto pki benchmark validate-router <string> <cr>    # path-058152
+(config)# no do-exec test crypto pki cache on <cr>    # path-054754
+(config)# no do-exec test crypto pki cert-attributes <cr>    # path-047893
+(config)# no do-exec test crypto pki config-update-notify <string> <cr>    # path-054526
+(config)# no do-exec test crypto pki crl request <string> <cr>    # path-058066
+(config)# no do-exec test crypto pki csr <string> nb <cr>    # path-058135
+(config)# no do-exec test crypto pki enrollment-proxy-api <cr>    # path-048514
+(config)# no do-exec test crypto pki expiry-alerts reset <cr>    # path-054868
+(config)# no do-exec test crypto pki expiry-alerts shrink-periodicity <cr>    # path-054827
+(config)# no do-exec test crypto pki new-cert <string> <cr>    # path-054656
+(config)# no do-exec test crypto pki ocsp-get-staple <string> chain blocking-test <cr>    # path-059398
+(config)# no do-exec test crypto pki openssl <cr>    # path-048149
+(config)# no do-exec test crypto pki pkcs7verify <cr>    # path-047755
+(config)# no do-exec test crypto pki safemode on <cr>    # path-054733
+(config)# no do-exec test crypto pki self-signed-certificate <cr>    # path-047973
+(config)# no do-exec test crypto pki session <number:1..60> <cr>    # path-054773
+(config)# no do-exec test crypto pki trustpool remove <cr>    # path-054838
+(config)# no do-exec test crypto pki trustpool reset <cr>    # path-054802
+(config)# no do-exec test crypto pki verify-certificate <cr>    # path-047928
+(config)# no do-exec test crypto replay <number:1..4294967295> <cr>    # path-047791
+(config)# no do-exec test crypto replay time <number:1..42949672> <cr>    # path-054587
+(config)# no do-exec test crypto rng-tests <cr>    # path-038621
+(config)# no do-exec test crypto self-test <cr>    # path-038732
+(config)# no do-exec test crypto wui tti petitioner <cr>    # path-054540
+(config)# no do-exec test cts enable <cr>    # path-038773
+(config)# no do-exec test cts event trace enable <cr>    # path-054705
+(config)# no do-exec test cts role-based cgc qlist sort <cr>    # path-058305
+(config)# no do-exec test cts role-based counters from <number:2..65521> to <number:2..65521> hw <cr>    # path-060096
+(config)# no do-exec test cts role-based dump ipsgt <address> <cr>    # path-058250
+(config)# no do-exec test cts role-based dump permissions <cr>    # path-055134
+(config)# no do-exec test cts role-based dump policy dynamic <cr>    # path-058319
+(config)# no do-exec test cts role-based dump sg-info <cr>    # path-055061
+(config)# no do-exec test cts role-based echo cli <string> <cr>    # path-058415
+(config)# no do-exec test cts role-based enforcement enable <cr>    # path-055318
+(config)# no do-exec test cts role-based ipsgt refresh <cr>    # path-055092
+(config)# no do-exec test cts role-based ping <cr>    # path-048755
+(config)# no do-exec test cts role-based policy close <cr>    # path-055317
+(config)# no do-exec test cts role-based rbacl save <cr>    # path-055315
+(config)# no do-exec test cts role-based sgacl-log <cr>    # path-048577
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058297
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058318
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058332
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058346
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058363
+(config)# no do-exec test cts role-based snmp mapping first <cr>    # path-058381
+(config)# no do-exec test cts role-based sw-dp enable <cr>    # path-055215
+(config)# no do-exec test cts role-based sync <number:1..2147483647> <cr>    # path-054821
+(config)# no do-exec test cts sap enable <cr>    # path-048081
+(config)# no do-exec test cts slist_mib del ste <cr>    # path-054720
+(config)# no do-exec test cts sxp ipsgt action <number:0..2> <cr>    # path-058185
+(config)# no do-exec test cwoir incr_sync on <cr>    # path-044637
+(config)# no do-exec test cwoir insert <number:1..13> <number:1..99> <cr>    # path-052406
+(config)# no do-exec test cwoir iosrunning <number:1..13> <number:0..1> <number:1..99> <cr>    # path-056953
+(config)# no do-exec test cwoir ipcready <number:1..13> <number:0..1> <number:0..3> <cr>    # path-056937
+(config)# no do-exec test cwoir read <cr>    # path-034849
+(config)# no do-exec test cwoir remove <number:1..13> <cr>    # path-044529
+(config)# no do-exec test cwoir show <cr>    # path-034902
+(config)# no do-exec test data-descriptor <cr>    # path-031387
+(config)# no do-exec test dhcp ns <cr>    # path-038785
+(config)# no do-exec test dhcp release <cr>    # path-038689
+(config)# no do-exec test dmtm <number:0..64> cmd <cr>    # path-046875
+(config)# no do-exec test dtp switch crash <number:0..3> <cr>    # path-053311
+(config)# no do-exec test dwnld_mgr <string> <cr>    # path-035964
+(config)# no do-exec test eci add <string> <cr>    # path-044293
+(config)# no do-exec test eci delete <string> <cr>    # path-044263
+(config)# no do-exec test eci scan <cr>    # path-034594
+(config)# no do-exec test eci set timeout <number:0..1000> <cr>    # path-052324
+(config)# no do-exec test eci show <cr>    # path-034657
+(config)# no do-exec test eem <cr>    # path-031711
+(config)# no do-exec test eigrp SIA <cr>    # path-037649
+(config)# no do-exec test eigrp address-family ipv4 ack <cr>    # path-054295
+(config)# no do-exec test eigrp address-family ipv4 error-percent <number:0..100> <cr>    # path-058022
+(config)# no do-exec test eigrp address-family ipv6 ack <cr>    # path-054282
+(config)# no do-exec test eigrp address-family ipv6 error-percent <number:0..100> <cr>    # path-058016
+(config)# no do-exec test eigrp crimson <cr>    # path-037422
+(config)# no do-exec test ethernet errdisable recovery-timer unit second <cr>    # path-057631
+(config)# no do-exec test ethernet mirp-rcv isid <number:1..16777215> <cr>    # path-053695
+(config)# no do-exec test ethernet safe-iteration <number:0..5> <cr>    # path-046120
+(config)# no do-exec test event manager ged define <cr>    # path-054447
+(config)# no do-exec test event manager ged publish <cr>    # path-054459
+(config)# no do-exec test event manager ged subscribe <cr>    # path-054474
+(config)# no do-exec test event manager ged unsubscribe <number:0..2147483647> <cr>    # path-058036
+(config)# no do-exec test flowspec client stop <cr>    # path-048655
+(config)# no do-exec test flowspec client xos <cr>    # path-048523
+(config)# no do-exec test flowspec rt-dump <cr>    # path-039821
+(config)# no do-exec test flowspec txlist-dump <cr>    # path-039735
+(config)# no do-exec test flowspec xtf <cr>    # path-039880
+(config)# no do-exec test flowspec xtf print <cr>    # path-048582
+(config)# no do-exec test fqdn <number:0..14> <cr>    # path-037941
+(config)# no do-exec test garp_retry add <address> <cr>    # path-045045
+(config)# no do-exec test glbp redundancy events enable <cr>    # path-053799
+(config)# no do-exec test gsi httpc <number:0..9> debug off <cr>    # path-058243
+(config)# no do-exec test gsi httpc <number:0..9> show <cr>    # path-054949
+(config)# no do-exec test gsi httpc <number:0..9> start <string> post <cr>    # path-059443
+(config)# no do-exec test gsi httpc <number:0..9> xml-header <cr>    # path-055012
+(config)# no do-exec test gsi httpc stop <cr>    # path-048490
+(config)# no do-exec test gsi https <number:0..9> debug off <cr>    # path-058228
+(config)# no do-exec test gsi https <number:0..9> show <cr>    # path-054922
+(config)# no do-exec test gsi https <number:0..9> start <string> encrypt post <cr>    # path-059881
+(config)# no do-exec test gsi https <number:0..9> xml-header <cr>    # path-054980
+(config)# no do-exec test gsi https stop <cr>    # path-048445
+(config)# no do-exec test gsi sshc <number:0..9> debug off <cr>    # path-058216
+(config)# no do-exec test gsi sshc <number:0..9> show <cr>    # path-054896
+(config)# no do-exec test gsi sshc <number:0..9> start <string> wsma <cr>    # path-059440
+(config)# no do-exec test gsi sshc <number:0..9> xml-header <cr>    # path-054952
+(config)# no do-exec test gsi sshc stop <cr>    # path-048389
+(config)# no do-exec test gssapi init_sec_context <string> <cr>    # path-047228
+(config)# no do-exec test gssapi token_exchange no_wrap <address> <string> <cr>    # path-057991
+(config)# no do-exec test gx access-accept service <string> <cr>    # path-055540
+(config)# no do-exec test gx access-reject <cr>    # path-040408
+(config)# no do-exec test gx delete-session ip <address> <cr>    # path-055521
+(config)# no do-exec test gx enable <cr>    # path-040173
+(config)# no do-exec test gx rar-sb session-id <number:1..4294967295> install-service <string> <cr>    # path-059509
+(config)# no do-exec test hsrp ha sync mac enable <cr>    # path-057084
+(config)# no do-exec test idmgr init <cr>    # path-038122
+(config)# no do-exec test idmgr req-type session-assert key-list <string> data-list <cr>    # path-059365
+(config)# no do-exec test ifs appn read <address> <string> <cr>    # path-058098
+(config)# no do-exec test ifs appn write <address> <string> <cr>    # path-058106
+(config)# no do-exec test ifs boot <string> <cr>    # path-047900
+(config)# no do-exec test ifs defaults <cr>    # path-038899
+(config)# no do-exec test ifs disk cluster <string> <cr>    # path-054707

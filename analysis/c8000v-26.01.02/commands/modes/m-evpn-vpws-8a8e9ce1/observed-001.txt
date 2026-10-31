@@ -1,0 +1,18 @@
+# 模式 evpn-vpws；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evpn-vpws)# default preferred-path segment-routing traffic-eng policy <string> <cr>    # observed_connections-009205
+(config-evpn-vpws)# default remote link failure notification <cr>    # observed_connections-009200
+(config-evpn-vpws)# default service target <number:1..16777215> source <number:1..16777215> <cr>    # observed_connections-009203
+(config-evpn-vpws)# default shutdown <cr>    # observed_connections-009196
+(config-evpn-vpws)# exit <cr>    # observed_connections-009193
+(config-evpn-vpws)# member <interface> <cr>    # observed_connections-009206
+(config-evpn-vpws)# no preferred-path segment-routing traffic-eng policy <string> <cr>    # observed_connections-009204
+(config-evpn-vpws)# no remote link failure notification <cr>    # observed_connections-009199
+(config-evpn-vpws)# no service target <number:1..16777215> source <number:1..16777215> <cr>    # observed_connections-009202
+(config-evpn-vpws)# no shutdown <cr>    # observed_connections-009195
+(config-evpn-vpws)# preferred-path segment-routing traffic-eng policy <string> <cr>    # observed_connections-009201
+(config-evpn-vpws)# remote link failure notification <cr>    # observed_connections-009197
+(config-evpn-vpws)# service target <number:1..16777215> source <number:1..16777215> <cr>    # observed_connections-009198
+(config-evpn-vpws)# shutdown <cr>    # observed_connections-009194

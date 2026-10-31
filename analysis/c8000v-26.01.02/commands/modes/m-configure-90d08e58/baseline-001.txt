@@ -1,0 +1,373 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-001.md
+
+(config)# aaa accounting delay-start <cr>    # path-026397
+(config)# aaa accounting dot1x default <cr>    # path-062745
+(config)# aaa accounting dot1x guarantee-first <cr>    # path-028424
+(config)# aaa accounting dot1x local <cr>    # path-028423
+(config)# aaa accounting dot1x visible-keys <cr>    # path-028387
+(config)# aaa accounting gigawords <cr>    # path-026486
+(config)# aaa accounting include auth-profile framed-ip-address <cr>    # path-034337
+(config)# aaa accounting jitter maximum <number:0..2147483> <cr>    # path-034276
+(config)# aaa accounting nested <cr>    # path-026516
+(config)# aaa accounting redundancy new-session <cr>    # path-028470
+(config)# aaa accounting redundancy suppress system-records <cr>    # path-034467
+(config)# aaa accounting send counters ipv6 <cr>    # path-034241
+(config)# aaa accounting send stop-record always <cr>    # path-034279
+(config)# aaa accounting send stop-record authentication failure <cr>    # path-044107
+(config)# aaa accounting send stop-record authentication success remote-server <cr>    # path-052160
+(config)# aaa accounting session-duration ntp-adjusted <cr>    # path-028319
+(config)# aaa accounting suppress attributes vpdn-endpoints <cr>    # path-034362
+(config)# aaa accounting suppress null-username <cr>    # path-028289
+(config)# aaa accounting update newinfo <cr>    # path-028337
+(config)# aaa archives enable-data index <number:1..5> <string> <cr>    # path-043908
+(config)# aaa archives user-data <string> index <number:1..5> <string> <cr>    # path-052044
+(config)# aaa attribute list <string> <cr>    # path-028088
+(config)# aaa authentication attempts login <number:1..25> <cr>    # path-034274
+(config)# aaa authentication banner <string> <cr>    # path-028293
+(config)# aaa authentication fail-message <string> <cr>    # path-028326
+(config)# aaa authentication login default <cr>    # path-062741
+(config)# aaa authentication password-prompt <string> <cr>    # path-028356
+(config)# aaa authentication rejected <number:1..65535> in <number:1..65535> ban <number:1..65535> <cr>    # path-056888
+(config)# aaa authentication suppress null-username <cr>    # path-028177
+(config)# aaa authentication token key <string> <cr>    # path-034647
+(config)# aaa authorization address-authorization-exec <cr>    # path-026412
+(config)# aaa authorization config-commands <cr>    # path-026386
+(config)# aaa authorization console <cr>    # path-026348
+(config)# aaa authorization network default <cr>    # path-062742
+(config)# aaa authorization network visible-keys <cr>    # path-028298
+(config)# aaa authorization suppress null-username <cr>    # path-028222
+(config)# aaa authorization template <cr>    # path-026436
+(config)# aaa cache filterserver <cr>    # path-026235
+(config)# aaa cache profile <string> <cr>    # path-028064
+(config)# aaa common-criteria policy <string> <cr>    # path-028087
+(config)# aaa configuration config-username <string> <cr>    # path-062736
+(config)# aaa configuration pool username <string> <cr>    # path-062775
+(config)# aaa configuration route username <string> <cr>    # path-062776
+(config)# aaa dnis map <string> accounting network none <cr>    # path-062856
+(config)# aaa dnis map <string> authentication ppp group <string> <cr>    # path-056909
+(config)# aaa dnis map <string> authentication ppp group tacacs+ <cr>    # path-062242
+(config)# aaa dnis map <string> authorization network group <string> <cr>    # path-056897
+(config)# aaa dnis map <string> authorization network group tacacs+ <cr>    # path-062240
+(config)# aaa dnis map enable <cr>    # path-028219
+(config)# aaa group server tacacs+ <string> <cr>    # path-034245
+(config)# aaa local authentication attempts max-fail <number:1..65535> <cr>    # path-044003
+(config)# aaa local authentication default authorization default <cr>    # path-043995
+(config)# aaa login display last-success <cr>    # path-062737
+(config)# aaa login success-track-conf-time <number:0..24> <cr>    # path-062703
+(config)# aaa max-sessions <cr>    # path-062705
+(config)# aaa memory threshold accounting disable <cr>    # path-062779
+(config)# aaa memory threshold authentication reject <cr>    # path-062778
+(config)# aaa nas description <cr>    # path-062710
+(config)# aaa nas port extended <cr>    # path-062738
+(config)# aaa nas redirected-station <cr>    # path-062709
+(config)# aaa new-model <cr>    # path-025568
+(config)# aaa password restriction <cr>    # path-062716
+(config)# aaa pod server <cr>    # path-062711
+(config)# aaa policy interface-config allow-subinterface <cr>    # path-062743
+(config)# aaa preauth <cr>    # path-062702
+(config)# aaa remote username <string> <cr>    # path-062740
+(config)# aaa route <cr>    # path-062706
+(config)# aaa serial-authentication exec-failure disconnect <cr>    # path-062735
+(config)# aaa server radius sesm <cr>    # path-062739
+(config)# aaa service-profile key username-with-nasport <cr>    # path-062744
+(config)# aaa session-id common <cr>    # path-062714
+(config)# aaa tools memleak mode manual count <number:2..64> <cr>    # path-052059
+(config)# aaa traceback recording <cr>    # path-062713
+(config)# aaa user profile <string> <cr>    # path-028130
+(config)# access-list <?dumper_command_func@5555892a2f88> <number:1..99> <cr>    # path-060393
+(config)# access-list <?dumper_command_func@5555892a2f88> <number:100..199> <cr>    # path-060396
+(config)# access-list acl-ace-limit <number:1..4294967295> <cr>    # path-026768
+(config)# access-list acl-limit <number:1..65535> <cr>    # path-026745
+(config)# access-list dynamic-extended <cr>    # path-025717
+(config)# access-list global-ace-limit <number:1..4294967295> <cr>    # path-026785
+(config)# access-list rate-limit <number:100..199> <address> <cr>    # path-028868
+(config)# access-list template <cr>    # path-025737
+(config)# access-session accounting attributes filter-spec include list <string> <cr>    # path-053350
+(config)# access-session accounting interim-disable <cr>    # path-027177
+(config)# access-session acl ack-timer <number:20..300> <cr>    # path-030379
+(config)# access-session acl default passthrough <cr>    # path-030308
+(config)# access-session attributes filter-list list <string> <cr>    # path-036280
+(config)# access-session authentication attributes filter-spec include list <string> <cr>    # path-053271
+(config)# access-session bridge-mode vm-policy <?option@5555890f84c8> <cr>    # path-060510
+(config)# access-session cache limit <number:0..24000> <cr>    # path-030213
+(config)# access-session cui-enable <cr>    # path-025840
+(config)# access-session event-logging enable session-limit <number:1..4000> event-limit <number:1..800> <cr>    # path-053135
+(config)# access-session interface-template sticky <cr>    # path-027335
+(config)# access-session limit profile name <string> <cr>    # path-036526
+(config)# access-session mac-move deny <cr>    # path-027163
+(config)# access-session monitor <cr>    # path-025869
+(config)# access-session passthru-access-group <string> passthru-domain-list <string> <cr>    # path-036763
+(config)# access-session pqc-type pqc <cr>    # path-027199
+(config)# access-session single-policy <interface> <cr>    # path-060418
+(config)# access-session single-policy <interface> forced <cr>    # path-060631
+(config)# access-session tls-version all <cr>    # path-027191
+(config)# access-session voice skip-data-vlan <cr>    # path-027275
+(config)# accounting group <string> list <string> <cr>    # path-034003
+(config)# alg sip blacklist trigger-period <number:10..60000> trigger-size <number:1..65535> <cr>    # path-061993
+(config)# alg sip processor session max-backlog <number:1..20> <cr>    # path-061410
+(config)# alg sip timer max-call-duration <number:0..65535> <cr>    # path-060914
+(config)# alg vtcp service sip <cr>    # path-060658
+(config)# alias <?sync_force_action@55558960ebb0> <?mode_action@55558960ebf0> <cr>    # path-062724
+(config)# alps circuit <string> <cr>    # path-026405
+(config)# alps enable-alarms ascu <interface> <number:33..126> <cr>    # path-060768
+(config)# alps enable-alarms peer <cr>    # path-026392
+(config)# alps keepalive <cr>    # path-025638
+(config)# alps local-peer <address> <cr>    # path-026343
+(config)# alps matip-host-emulation <cr>    # path-025651
+(config)# alps remote-peer <address> <cr>    # path-026552
+(config)# alps service-msg-list <number:1..8> number <number:1..8> <string> <cr>    # path-044056
+(config)# ancp adjacency timer <number:1..255> <cr>    # path-028383
+(config)# ancp atm shaper percent-factor <number:1..100> <cr>    # path-034413
+(config)# ancp atm shaper percent-factor <number:1..100> <cr>    # path-034414
+(config)# ancp enable test-configuration <cr>    # path-026489
+(config)# ancp neighbor name <string> id <string> <cr>    # path-044288
+(config)# ancp source-ip <address> <cr>    # path-026502
+(config)# ancp truncate <number:1..128> <cr>    # path-026408
+(config)# app-hosting appid <cr>    # path-063025
+(config)# app-hosting appid <string> <cr>    # path-063034
+(config)# app-hosting appid <string> <cr>    # path-063035
+(config)# app-hosting signed-verification <cr>    # path-063022
+(config)# app-hosting signed-verification <cr>    # path-063023
+(config)# archive <cr>    # path-025484
+(config)# arp <address> <address> arpa <cr>    # path-029236
+(config)# arp <address> <address> arpa <interface> <cr>    # path-060818
+(config)# arp entries interface-limit <number:1..2147483647> <cr>    # path-028993
+(config)# async-bootp bootfile <string> <cr>    # path-027234
+(config)# authentication command bounce-port ignore <cr>    # path-029968
+(config)# authentication command disable-port ignore <cr>    # path-030007
+(config)# authentication convert-to new-style <cr>    # path-027118
+(config)# authentication convert-to new-style forced <cr>    # path-029768
+(config)# authentication convert-to new-style single-policy <interface> <cr>    # path-060848
+(config)# authentication convert-to new-style single-policy <interface> forced <cr>    # path-061301
+(config)# authentication critical recovery delay <number:1..10000> <cr>    # path-036288
+(config)# authentication dis-scale-opt <cr>    # path-025830
+(config)# authentication logging session-terminate <cr>    # path-027185
+(config)# authentication logging verbose <cr>    # path-027169
+(config)# authentication mac-move permit <cr>    # path-027107
+(config)# autoconf enable <cr>    # path-025559
+(config)# avc <cr>    # path-025457
+(config)# avc sd-service <cr>    # path-025793
+(config)# banner <string> <cr>    # path-025914
+(config)# bba-group pppoe global <cr>    # path-026188
+(config)# beep channel limit <number:257..4294967295> <cr>    # path-028069
+(config)# bfd fast-timers-on-slow-interface <cr>    # path-025553
+(config)# bfd l2cos <number:0..7> <cr>    # path-026136
+(config)# bfd l3cos ipv6 <number:0..7> <cr>    # path-027942
+(config)# bfd map ipv4 <prefix:dynamic> <string> <cr>    # path-060763
+(config)# bfd neighbor multihop-ipv4 <address> <address> <cr>    # path-034093
+(config)# bfd slow-timers <number:1000..30000> <cr>    # path-026118
+(config)# bfd snmp traps more <cr>    # path-027938
+(config)# bfd-template single-hop <string> <cr>    # path-026114
+(config)# boot bootldr <url:dynamic> <cr>    # path-060368
+(config)# boot bootstrap flash <cr>    # path-026070
+(config)# boot bootstrap flash <url:dynamic> <cr>    # path-060502
+(config)# boot bootstrap ftp <string> <cr>    # path-027921
+(config)# boot bootstrap ftp <string> <cr>    # path-062733
+(config)# boot bootstrap rcp <string> <cr>    # path-027909
+(config)# boot bootstrap rcp <string> <cr>    # path-062732
+(config)# boot buffersize <number:0..4294967295> <cr>    # path-025425
+(config)# boot config <url:dynamic> <cr>    # path-060369
+(config)# boot-end-marker <cr>    # path-025427
+(config)# boot-start-marker <cr>    # path-025426
+(config)# bridge <number:1..255> <cr>    # path-060317
+(config)# bridge <number:1..255> acquire <cr>    # path-060419
+(config)# bridge <number:1..255> address <address> <cr>    # path-060644
+(config)# bridge <number:1..255> aging-time <number:10..1000000> <cr>    # path-060304
+(config)# bridge <number:1..255> bitswap-layer3-addresses <cr>    # path-060414
+(config)# bridge <number:1..255> bridge <?protoname_action@555589b35730> <cr>    # path-062754
+(config)# bridge <number:1..255> circuit-group <number:1..9> pause <number:0..10000> <cr>    # path-060653
+(config)# bridge <number:1..255> circuit-group <number:1..9> slow-convergence <cr>    # path-060906
+(config)# bridge <number:1..255> circuit-group <number:1..9> source-based <cr>    # path-060910
+(config)# bridge <number:1..255> domain <number:1..10> <cr>    # path-060302
+(config)# bridge <number:1..255> forward-time <number:4..200> <cr>    # path-060305
+(config)# bridge <number:1..255> hello-time <number:1..10> <cr>    # path-060307
+(config)# bridge <number:1..255> lat-service-filtering <cr>    # path-060424
+(config)# bridge <number:1..255> management-domain <string> vlan-id <number:1..1005> <cr>    # path-061346
+(config)# bridge <number:1..255> max-age <number:6..200> <cr>    # path-060310
+(config)# bridge <number:1..255> priority <number:0..65535> <cr>    # path-060313
+(config)# bridge <number:1..255> protocol <cr>    # path-060416
+(config)# bridge <number:1..255> route <?protoname_action@555589b35418> <cr>    # path-062752
+(config)# bridge <number:1..255> subscriber-policy <cr>    # path-060420
+(config)# bridge crb <cr>    # path-025616
+(config)# bridge irb <cr>    # path-025618
+(config)# bridge mac-address-table limit <number:0..1000200> <cr>    # path-025621
+(config)# bridge-domain <number:dynamic> <cr>    # path-060287
+(config)# bridge-domain c-mac aging-time <number:dynamic> <cr>    # path-060516
+(config)# bridge-domain otv default age-time <number:dynamic> <cr>    # path-060765
+(config)# bridge-domain parameterized vlan <cr>    # path-026232
+(config)# bstun keepalive-count <number:2..10> <cr>    # path-026458
+(config)# bstun lisnsap <number:0..255> <cr>    # path-026367
+(config)# bstun peer-name <address> <cr>    # path-026409
+(config)# bstun protocol-group <number:1..255> <string> <cr>    # path-028285
+(config)# bstun remote-peer-keepalive <cr>    # path-025662
+(config)# buffers <interface> permanent <cr>    # path-060387
+(config)# buffers element permanent <number:100..500> <cr>    # path-028137
+(config)# buffers header permanent <number:256..65535> <cr>    # path-028228
+(config)# buffers particle-clone <number:1..65535> <cr>    # path-026311
+(config)# buffers tune automatic <cr>    # path-026455
+(config)# bulkstat data <string> <cr>    # path-060473
+(config)# bulkstat data-group <string> <cr>    # path-060482
+(config)# bulkstat filter <string> <cr>    # path-060477
+(config)# bulkstat instance <string> <cr>    # path-060479
+(config)# bulkstat profile <string> <cr>    # path-060487
+(config)# bulkstat resource limit memory <number:20..100> <cr>    # path-060485
+(config)# bulkstat schedule <string> <cr>    # path-060493
+(config)# busy-message <string> <string> <cr>    # path-026739
+(config)# call admission cpu-limit <number:0..100> <cr>    # path-028918
+(config)# call admission cpu-load 5sec-cpu-load <cr>    # path-028972
+(config)# call admission ike <number:0..1000> <number:1..31> <cr>    # path-035238
+(config)# call admission ip <number:0..1000> <number:1..31> <cr>    # path-035049
+(config)# call admission limit <number:0..100000> <cr>    # path-028811
+(config)# call admission load <number:0..1000> <number:1..31> <cr>    # path-035346
+(config)# call admission new-model <cr>    # path-026916
+(config)# call admission padr <cr>    # path-026890
+(config)# call admission pppoa <number:0..1000> <number:1..31> <cr>    # path-035191
+(config)# call admission pppoe <number:0..1000> <number:1..31> <cr>    # path-035136
+(config)# call admission session-limit <number:0..1280000> <cr>    # path-028875
+(config)# call admission vpdn <number:0..1000> <number:1..31> <cr>    # path-035244
+(config)# call filter match-list <?gcfm_matchlist_voice_cmd@55558b5afcc8> <cr>    # path-060566
+(config)# call filter match-list <?gcfm_matchlist_voice_cmd@55558b5afcc8> gatekeeper <cr>    # path-060814
+(config)# call filter match-list gatekeeper <cr>    # path-029157
+(config)# call filter match-list voice <cr>    # path-029066
+(config)# call-history-mib max-size <number:0..500> <cr>    # path-025490
+(config)# call-history-mib retain-timer <number:0..500> <cr>    # path-025489
+(config)# call-home <cr>    # path-060280
+(config)# call-home reporting anonymous <cr>    # path-060440
+(config)# card type t1 <number:dynamic> <cr>    # path-062946
+(config)# carrier-id <string> <cr>    # path-025949
+(config)# carrier-id <string> cic <cr>    # path-027436
+(config)# cdp advertise-v2 <cr>    # path-025562
+(config)# cdp filter-tlv-list <string> <cr>    # path-026322
+(config)# cdp holdtime <number:10..255> <cr>    # path-025433
+(config)# cdp log mismatch duplex <cr>    # path-028006
+(config)# cdp mgmt-address ipv4 <address> <cr>    # path-060512
+(config)# cdp mgmt-address ipv6 <address> <cr>    # path-060513
+(config)# cdp run <cr>    # path-025605
+(config)# cdp source-interface <interface> <cr>    # path-060376
+(config)# cdp timer <number:5..254> <cr>    # path-025431
+(config)# cdp tlv app <cr>    # path-026334
+(config)# cdp tlv location <cr>    # path-026289
+(config)# cdp tlv-list <string> <cr>    # path-026306
+(config)# cef common <cr>    # path-025619
+(config)# cef table consistency-check IPv4 <cr>    # path-028408
+(config)# cef table consistency-check IPv4 auto-repair <cr>    # path-034547
+(config)# cef table consistency-check IPv4 data-checking <cr>    # path-034304
+(config)# cef table consistency-check IPv4 error-message <cr>    # path-034338
+(config)# cef table consistency-check IPv4 type <?option@555588d03198> <cr>    # path-061217
+(config)# cef table download recursive-dependents priority 1 <cr>    # path-044265
+(config)# cef table output-chain build inplace-modify <cr>    # path-034416
+(config)# cef table rate-monitor-period <number:1..60> <cr>    # path-028248
+(config)# cef table vrf tree ipv4 type mtrie <cr>    # path-052158
+(config)# cfg-mode <cr>    # path-060278
+(config)# chat-script <string> <string> <cr>    # path-027358
+(config)# cisp enable <cr>    # path-025640
+(config)# class-map <string> <cr>    # path-025631
+(config)# class-map type control <string> <cr>    # path-028586
+(config)# class-map type control subscriber match-all <string> <cr>    # path-044306
+(config)# class-map type multicast-flows <string> <cr>    # path-028155
+(config)# class-map type traffic match-any <string> <cr>    # path-034251
+(config)# classmap-template <string> <string> <cr>    # path-026664
+(config)# clns cache-invalidate-delay <cr>    # path-025812
+(config)# clns configuration-time <number:1..65535> <cr>    # path-025466
+(config)# clns filter-expr <string> <cr>    # path-027423
+(config)# clns filter-set <string> <cr>    # path-027391
+(config)# clns holding-time <number:1..65535> <cr>    # path-025468
+(config)# clns host <string> <address> <cr>    # path-029494
+(config)# clns net <address> <cr>    # path-027252
+(config)# clns packet-lifetime <number:1..255> <cr>    # path-025471
+(config)# clns queue-depth <number:1..2147483647> <cr>    # path-025474
+(config)# clns route <address> <cr>    # path-027083
+(config)# clns route default <cr>    # path-060406
+(config)# clns routing <cr>    # path-025905
+(config)# clns security pass-through <cr>    # path-060303
+(config)# clns template-alias <string> <string> <cr>    # path-030475
+(config)# clns want-erpdu <cr>    # path-025909
+(config)# clock calendar-valid <cr>    # path-025610
+(config)# clock initialize nvram <cr>    # path-026304
+(config)# clock save interval <number:8..24> <cr>    # path-028159
+(config)# clock summer-time <string> date <?month_action@5555896c6900> <number:1993..2035> <hh:mm> <?month_action@5555896c6aa8> <number:1993..2035> <hh:mm> <cr>    # path-063020
+(config)# clock summer-time <string> recurring <cr>    # path-028174
+(config)# cns aaa <cr>    # path-060355
+(config)# cns config initial <cr>    # path-060489
+(config)# cns config notify <cr>    # path-060490
+(config)# cns config partial <cr>    # path-060492
+(config)# cns connect <cr>    # path-060363
+(config)# cns dhcp <cr>    # path-060361
+(config)# cns event <cr>    # path-060359
+(config)# cns event <string> backup <cr>    # path-060693
+(config)# cns exec <cr>    # path-060365
+(config)# cns id hostname <cr>    # path-060484
+(config)# cns image <cr>    # path-060364
+(config)# cns image password <cr>    # path-060494
+(config)# cns image retry <cr>    # path-060491
+(config)# cns mib-access encapsulation snmp <cr>    # path-060694
+(config)# cns password <cr>    # path-060347
+(config)# cns template connect <cr>    # path-060495
+(config)# cns trusted-server event <string> <cr>    # path-060683
+(config)# config-register <number:0..65535> <cr>    # path-025601
+(config)# configuration mode exclusive <cr>    # path-027287
+(config)# connect <string> <cr>    # path-025751
+(config)# connect <string> <interface> <number:16..1007> <interface> <number:16..1007> <cr>    # path-062824
+(config)# control-plane <cr>    # path-025464
+(config)# controller <?controller_action@55558994b0d8> <cr>    # path-060283
+(config)# cops ip dscp ef <cr>    # path-028681
+(config)# cops listener access-list <cr>    # path-026656
+(config)# cops tcp window-size <number:516..65535> <cr>    # path-028644
+(config)# coverage history <number:1..100000> <cr>    # path-025992
+(config)# crypto RSA-key-pair <string> <number:0..255> <number:0..4294967295> <cr>    # path-034177
+(config)# crypto dh lifetime <number:0..86400> <cr>    # path-028098
+(config)# crypto dh pregen <number:0..20> <cr>    # path-028131
+(config)# crypto engine accelerator <cr>    # path-026518
+(config)# crypto engine accelerator <number:dynamic> <cr>    # path-060536
+(config)# crypto engine compliance shield disable <cr>    # path-034206
+(config)# crypto engine nm <number:0..3> <cr>    # path-028203
+(config)# crypto engine onboard <number:dynamic> <cr>    # path-060525
+(config)# crypto engine queue-size <number:50..500> <cr>    # path-028129
+(config)# crypto engine software ipsec <cr>    # path-028081
+(config)# crypto engine software isakmp <cr>    # path-028121
+(config)# crypto key decrypt rsa <cr>    # path-028437
+(config)# crypto key encrypt rsa <cr>    # path-028403
+(config)# crypto key export ec <string> pem terminal 3des <string> <cr>    # path-058895
+(config)# crypto key export ec <string> pem url <url:dynamic> 3des <string> <cr>    # path-062586
+(config)# crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-058892
+(config)# crypto key export rsa <string> pem url <url:dynamic> 3des <string> <cr>    # path-062585
+(config)# crypto key generate ec keysize <number:256..256> <cr>    # path-044053
+(config)# crypto key generate rsa <cr>    # path-028281
+(config)# crypto key generate rsa modulus <number:dynamic> <cr>    # path-061223
+(config)# crypto key import ec <string> terminal <cr>    # path-044133
+(config)# crypto key import ec <string> url <url:dynamic> <cr>    # path-061845
+(config)# crypto key import rsa <string> terminal <cr>    # path-044226
+(config)# crypto key import rsa <string> url <url:dynamic> <cr>    # path-061850
+(config)# crypto key move rsa <string> <cr>    # path-034232
+(config)# crypto key pubkey-chain rsa <cr>    # path-028204
+(config)# crypto key storage <string> <cr>    # path-028256
+(config)# crypto key zeroize <cr>    # path-026337
+(config)# crypto pki authenticate <string> <cr>    # path-030786
+(config)# crypto pki certificate chain <string> <cr>    # path-037945
+(config)# crypto pki certificate map <string> <number:1..65535> <cr>    # path-047218
+(config)# crypto pki certificate pool <cr>    # path-031018
+(config)# crypto pki certificate query <cr>    # path-030904
+(config)# crypto pki certificate self-signed hash sha1 <cr>    # path-047397
+(config)# crypto pki certificate storage <cr>    # path-031213
+(config)# crypto pki certificate storage <url:dynamic> <cr>    # path-060958
+(config)# crypto pki certificate validate <string> <cr>    # path-037981
+(config)# crypto pki crl cache size <number:0..131072> <cr>    # path-047271
+(config)# crypto pki crl download schedule prepublish <number:0..65535> <cr>    # path-054346
+(config)# crypto pki crl download schedule retries <number:1..15> <cr>    # path-054363
+(config)# crypto pki crl download schedule time Sunday <hh:mm> <cr>    # path-062348
+(config)# crypto pki crl download trustpoint <string> <cr>    # path-047266
+(config)# crypto pki crl download url <string> <cr>    # path-047318
+(config)# crypto pki crl download url <string> source-interface <interface> <cr>    # path-062350
+(config)# crypto pki crl request <string> <cr>    # path-037871
+(config)# crypto pki enroll <string> <cr>    # path-030844
+(config)# crypto pki export <string> pem terminal <cr>    # path-047252
+(config)# crypto pki export <string> pem terminal rollover <cr>    # path-054316
+(config)# crypto pki export <string> pem url <url:dynamic> <cr>    # path-062032
+(config)# crypto pki export <string> pkcs12 <url:dynamic> password <string> <cr>    # path-062342
+(config)# crypto pki export <string> pkcs12 terminal password <string> <cr>    # path-057935
+(config)# crypto pki http max-buffer-size <number:1..100> <cr>    # path-037993
+(config)# crypto pki import <string> certificate <cr>    # path-037795
+(config)# crypto pki import <string> pem terminal password <string> <cr>    # path-057962
+(config)# crypto pki import <string> pem url <url:dynamic> password <string> <cr>    # path-062529

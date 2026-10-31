@@ -1,0 +1,391 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-088.md
+
+(config)# no do-exec test ifs disk modes <string> <cr>    # path-054728
+(config)# no do-exec test ifs disk rdwr <string> <cr>    # path-054681
+(config)# no do-exec test ifs show hidden <cr>    # path-048034
+(config)# no do-exec test ifs slot <cr>    # path-039028
+(config)# no do-exec test interfaces <cr>    # path-028566
+(config)# no do-exec test ip access-list dynamic delete <number:100..199> <number:1..262144> <cr>    # path-059063
+(config)# no do-exec test ip access-list dynamic empty <number:100..199> <cr>    # path-057074
+(config)# no do-exec test ip access-list register <cr>    # path-044948
+(config)# no do-exec test ip dhcp api pool <string> <string> create <cr>    # path-059747
+(config)# no do-exec test ip dhcp query <address> <cr>    # path-053203
+(config)# no do-exec test ip dhcp terminate <address> <cr>    # path-053112
+(config)# no do-exec test ip domain apis <address> <string> <cr>    # path-057230
+(config)# no do-exec test ip domain default-domain <cr>    # path-045242
+(config)# no do-exec test ip domain get-ipv4-server <number:0..25> <cr>    # path-053002
+(config)# no do-exec test ip domain get-server <number:0..25> <cr>    # path-052968
+(config)# no do-exec test ip domain lookup <address> <cr>    # path-053270
+(config)# no do-exec test ip domain mcast-lookup <address> <cr>    # path-053170
+(config)# no do-exec test ip domain name-delete <string> <number:1..255> <number:1..4194304> <cr>    # path-059090
+(config)# no do-exec test ip multicast sync resume <cr>    # path-052850
+(config)# no do-exec test ip multicast sync suspend <cr>    # path-052814
+(config)# no do-exec test ip nat clear translations <cr>    # path-053032
+(config)# no do-exec test ip nat dump <cr>    # path-045688
+(config)# no do-exec test ip nat portmap trans_report <cr>    # path-053160
+(config)# no do-exec test ip nat show pool <string> <cr>    # path-057263
+(config)# no do-exec test ip nat show pool all <cr>    # path-057201
+(config)# no do-exec test ip nat show rule <string> <cr>    # path-057289
+(config)# no do-exec test ip nat show rule all <cr>    # path-057231
+(config)# no do-exec test ip nat-route database <cr>    # path-045409
+(config)# no do-exec test ip nbar batch-config end <cr>    # path-053045
+(config)# no do-exec test ip nbar batch-config start <cr>    # path-053004
+(config)# no do-exec test ip nbar byte-count-window disable <cr>    # path-053089
+(config)# no do-exec test ip nbar caches clear <cr>    # path-052855
+(config)# no do-exec test ip nbar caches export <string> <cr>    # path-057115
+(config)# no do-exec test ip nbar caches import <string> <cr>    # path-057101
+(config)# no do-exec test ip nbar caches show <cr>    # path-052892
+(config)# no do-exec test ip nbar cedge-simulation disable <cr>    # path-053117
+(config)# no do-exec test ip nbar cedge-simulation enable <cr>    # path-053080
+(config)# no do-exec test ip nbar config-mode async <cr>    # path-052873
+(config)# no do-exec test ip nbar config-mode sync <cr>    # path-052920
+(config)# no do-exec test ip nbar dataplane-info-monitor memory-thresholds low <number:1..100> <cr>    # path-059132
+(config)# no do-exec test ip nbar dataplane-info-monitor traffic-over-subscription-state false <cr>    # path-057308
+(config)# no do-exec test ip nbar dataplane-info-monitor traffic-over-subscription-state true <cr>    # path-057273
+(config)# no do-exec test ip nbar function <string> <cr>    # path-052956
+(config)# no do-exec test ip nbar npc disable <cr>    # path-052847
+(config)# no do-exec test ip nbar npc enable <string> <cr>    # path-057131
+(config)# no do-exec test ip nbar npc pack-mode allow <cr>    # path-057155
+(config)# no do-exec test ip nbar npc pack-mode disallow <cr>    # path-057172
+(config)# no do-exec test ip nbar npc save <cr>    # path-052888
+(config)# no do-exec test ip nbar set-max-protocol-id-no-cloud_ext <number:0..32767> <cr>    # path-053145
+(config)# no do-exec test ip nbar set-protocol-feature-support <number:0..255> <number:0..255> <cr>    # path-057324
+(config)# no do-exec test ip nbar show-features-activation <cr>    # path-045814
+(config)# no do-exec test ip nbar show-fib-ad-info <cr>    # path-045758
+(config)# no do-exec test ip nbar track-ip disable <cr>    # path-052880
+(config)# no do-exec test ip nbar track-ip enable <string> port <number:0..4294967295> vrf-id <number:0..4294967295> l4-proto <number:0..255> memory-size <number:0..20000> <cr>    # path-060240
+(config)# no do-exec test ip nbar track-ip flush <cr>    # path-052925
+(config)# no do-exec test ip nbar track-ip status <cr>    # path-052951
+(config)# no do-exec test ip omp flush <cr>    # path-045437
+(config)# no do-exec test ip pbr ipv6 attach <cr>    # path-052753
+(config)# no do-exec test ip pbr map <string> <cr>    # path-052729
+(config)# no do-exec test ip rib api iprib_geteachroute <cr>    # path-052950
+(config)# no do-exec test ip rmap <cr>    # path-035996
+(config)# no do-exec test ip rmap associate <string> local <cr>    # path-057268
+(config)# no do-exec test ip rmap batch-commit <string> <number:0..2147483647> <cr>    # path-057102
+(config)# no do-exec test ip rmap create <number:0..2147483647> <string> <cr>    # path-057132
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> <cr>    # path-057220
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-060002
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> match destination tag <number:0..1000> <cr>    # path-060152
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-060146
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> match source tag <number:0..1000> <cr>    # path-060149
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> match vrf <string> <cr>    # path-060015
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set color red <cr>    # path-060042
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set def-global-nh <address> <cr>    # path-060020
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set def-next-hop <address> <cr>    # path-060028
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set def-nh-verify <cr>    # path-059763
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set def-vrf-nh <string> <address> <cr>    # path-060156
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set df <number:0..65535> <cr>    # path-060037
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set gateway <address> <cr>    # path-060007
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set global <cr>    # path-059786
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set gw-vrf <string> <address> <cr>    # path-060147
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set ip-global-nh <address> <cr>    # path-060016
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set ip-vrf-nh <string> <address> <cr>    # path-060154
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-060012
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set nh-verify <cr>    # path-059743
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set precedence <number:0..65535> <cr>    # path-060034
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set tos <number:0..65535> <cr>    # path-060031
+(config)# no do-exec test ip rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-060040
+(config)# no do-exec test ip rmap delete <string> permit <cr>    # path-057197
+(config)# no do-exec test ip rmap register <number:0..2147483647> <cr>    # path-052752
+(config)# no do-exec test ip rmap remove <string> <number:0..2147483647> <cr>    # path-057125
+(config)# no do-exec test ip subscriber enable <cr>    # path-045572
+(config)# no do-exec test ip subscriber interface association disable <cr>    # path-057348
+(config)# no do-exec test ip subscriber interface association enable <cr>    # path-057347
+(config)# no do-exec test ipam pool local alloc <cr>    # path-052833
+(config)# no do-exec test ipc FC <number:1..5> <number:0..50000> <cr>    # path-054622
+(config)# no do-exec test ipc ack-drop <number:1..10000> <cr>    # path-047790
+(config)# no do-exec test ipc ack-pending <number:1..10000> <cr>    # path-047830
+(config)# no do-exec test ipc ack-timer <number:0..50000> <cr>    # path-048902
+(config)# no do-exec test ipc api <cr>    # path-038873
+(config)# no do-exec test ipc app-send <cr>    # path-039540
+(config)# no do-exec test ipc bundle mode seat on <cr>    # path-058326
+(config)# no do-exec test ipc bundle mode session on <cr>    # path-058303
+(config)# no do-exec test ipc bundle status seat <number:0..4294967295> seat-level on <cr>    # path-059894
+(config)# no do-exec test ipc bundle status session <number:0..4294967295> <number:0..65535> on <cr>    # path-059897
+(config)# no do-exec test ipc callback <cr>    # path-039129
+(config)# no do-exec test ipc diag <cr>    # path-039483
+(config)# no do-exec test ipc driver stop <cr>    # path-047876
+(config)# no do-exec test ipc drop <number:0..9999> <cr>    # path-047996
+(config)# no do-exec test ipc drop ack <number:65540..4294967295> <number:0..65535> <number:0..65535> <cr>    # path-059427
+(config)# no do-exec test ipc drop next <cr>    # path-048046
+(config)# no do-exec test ipc mcast appclass subscribe <string> <number:0..15> <cr>    # path-059394
+(config)# no do-exec test ipc mcast group close <number:0..4294967295> <number:0..65535> <cr>    # path-059432
+(config)# no do-exec test ipc mcast group create <string> <string> <number:0..15> <cr>    # path-059871
+(config)# no do-exec test ipc mcast group locate <string> <number:0..15> <cr>    # path-059419
+(config)# no do-exec test ipc mcast group member add <number:0..4294967295> <number:0..4294967295> <cr>    # path-059877
+(config)# no do-exec test ipc mcast group open <number:0..4294967295> <number:1..2> <cr>    # path-059435
+(config)# no do-exec test ipc mcast group remove <number:0..4294967295> <cr>    # path-058131
+(config)# no do-exec test ipc mcast group reserve <string> <number:0..15> <cr>    # path-059407
+(config)# no do-exec test ipc mcast group subscribe <string> <string> <number:0..15> <cr>    # path-059875
+(config)# no do-exec test ipc mcast group unreserve <string> <number:0..15> <cr>    # path-059414
+(config)# no do-exec test ipc mcast platform emulation <number:0..4294967295> disable <cr>    # path-059415
+(config)# no do-exec test ipc mcast platform emulation <number:0..4294967295> enable <cr>    # path-059408
+(config)# no do-exec test ipc mcast platform max-groups <number:0..15> <number:0..65535> <cr>    # path-059399
+(config)# no do-exec test ipc mcast platform registries <cr>    # path-054561
+(config)# no do-exec test ipc misc <cr>    # path-039316
+(config)# no do-exec test ipc ping <number:0..4294967295> <cr>    # path-048699
+(config)# no do-exec test ipc port close <number:0..4294967295> <number:0..65535> <cr>    # path-058327
+(config)# no do-exec test ipc port create <string> <number:1..3> <cr>    # path-058345
+(config)# no do-exec test ipc port free <number:0..4294967295> <number:1..1000000> <cr>    # path-058388
+(config)# no do-exec test ipc port msend <number:0..4294967295> <number:0..65535> <number:0..65535> <number:1..1000000> <number:1..4064> <cr>    # path-060090
+(config)# no do-exec test ipc port notify enable <cr>    # path-055187
+(config)# no do-exec test ipc port open <number:0..4294967295> <number:1..3> <cr>    # path-058362
+(config)# no do-exec test ipc port remove <number:0..4294967295> <cr>    # path-055193
+(config)# no do-exec test ipc port send header <cr>    # path-055246
+(config)# no do-exec test ipc queue <cr>    # path-039073
+(config)# no do-exec test ipc retry-period <number:0..50000> <cr>    # path-048834
+(config)# no do-exec test ipc rpc <cr>    # path-039329
+(config)# no do-exec test ipc ru create <string> <number:1..15> conf <cr>    # path-059397
+(config)# no do-exec test ipc ru remove <string> <cr>    # path-054593
+(config)# no do-exec test ipc ru tune-thresh <string> <number:1..6> rising major <number:0..10000> <cr>    # path-060081
+(config)# no do-exec test ipc seat-fc <number:0..1024> <cr>    # path-047875
+(config)# no do-exec test ipc size <number:0..100000> <number:0..1000> <cr>    # path-054990
+(config)# no do-exec test ipc slavecore <cr>    # path-038914
+(config)# no do-exec test ipc slavelog <cr>    # path-039023
+(config)# no do-exec test ipc speed <cr>    # path-039271
+(config)# no do-exec test ipc split-init <cr>    # path-039369
+(config)# no do-exec test ipc task-pool <cr>    # path-039179
+(config)# no do-exec test ipc toggle-mask-error <cr>    # path-038668
+(config)# no do-exec test ipc traffic <number:0..4294967295> <number:1..2147483647> <number:1..5> <number:1..50000> <cr>    # path-059424
+(config)# no do-exec test ipc traffic abort <number:0..2147483647> <cr>    # path-054545
+(config)# no do-exec test ipc watermark callback <cr>    # path-048534
+(config)# no do-exec test ipc window-size <number:32..1024> <cr>    # path-047745
+(config)# no do-exec test ipc zone seat2slave <number:2..15> <cr>    # path-054906
+(config)# no do-exec test iphc context lifetime default <cr>    # path-052826
+(config)# no do-exec test ipv6 access-list common enable <cr>    # path-053482
+(config)# no do-exec test ipv6 dhcp-client lease-query address <address> <cr>    # path-057480
+(config)# no do-exec test ipv6 dhcp-relay bulk-lease-query <cr>    # path-045942
+(config)# no do-exec test ipv6 dhcp-relay ldra <cr>    # path-046057
+(config)# no do-exec test ipv6 dhcp-server hostnum <number:0..4294967295> <cr>    # path-053440
+(config)# no do-exec test ipv6 nd client del <number:0..15> <cr>    # path-057543
+(config)# no do-exec test ipv6 nd pd-limit <number:0..2147483647> <cr>    # path-053395
+(config)# no do-exec test ipv6 nd repopulate queue-size <number:1..512> <cr>    # path-057464
+(config)# no do-exec test ipv6 nd test-nsf <cr>    # path-045856
+(config)# no do-exec test ipv6 rib multicast add <cr>    # path-053560
+(config)# no do-exec test ipv6 rib pdb add <number:1..16> <number:1..255> <number:0..1> <cr>    # path-059776
+(config)# no do-exec test ipv6 rib pdb del <number:1..16> <cr>    # path-057409
+(config)# no do-exec test ipv6 rib queue start <cr>    # path-053230
+(config)# no do-exec test ipv6 rib suspend start <cr>    # path-053276
+(config)# no do-exec test ipv6 rmap associate <string> local <cr>    # path-057666
+(config)# no do-exec test ipv6 rmap create <number:1..7> <string> <cr>    # path-057541
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> <cr>    # path-057678
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-060044
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-060167
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> set global <cr>    # path-059825
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-060051
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> set precedence <number:0..7> <cr>    # path-060055
+(config)# no do-exec test ipv6 rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-060060
+(config)# no do-exec test ipv6 rmap delete <string> permit <cr>    # path-057624
+(config)# no do-exec test ipv6 rmap register <number:1..7> <cr>    # path-053516
+(config)# no do-exec test ipv6 rmap remove <string> <number:1..7> <cr>    # path-057562
+(config)# no do-exec test ipv6 static limit <number:0..32> <cr>    # path-053316
+(config)# no do-exec test ipv6 static policy <cr>    # path-045785
+(config)# no do-exec test isis case <number:0..4294967295> <cr>    # path-047125
+(config)# no do-exec test isis clear counters <cr>    # path-046909
+(config)# no do-exec test isis debug <cr>    # path-037427
+(config)# no do-exec test isis ip address <cr>    # path-046927
+(config)# no do-exec test isis lsp advertise lan-adj-sid <number:1..255> <cr>    # path-057937
+(config)# no do-exec test isis lsp build <cr>    # path-047283
+(config)# no do-exec test isis lsp id <cr>    # path-047118
+(config)# no do-exec test isis lsp non_pn_delay on <cr>    # path-054345
+(config)# no do-exec test isis lsp pn_delay on <cr>    # path-054336
+(config)# no do-exec test isis lsp purge <cr>    # path-047352
+(config)# no do-exec test isis lsp purge dr <cr>    # path-054414
+(config)# no do-exec test isis lsp refresh <cr>    # path-047208
+(config)# no do-exec test isis nsap <cr>    # path-037462
+(config)# no do-exec test isis show counters <cr>    # path-046940
+(config)# no do-exec test isis spf <cr>    # path-037724
+(config)# no do-exec test isis telemetry enable <cr>    # path-046966
+(config)# no do-exec test issu capability entry register <number:1..4294967295> <number:0..100> <string> <cr>    # path-059649
+(config)# no do-exec test issu capability group register <number:1..4294967295> <number:1..100> <number:0..1> <string> <cr>    # path-059963
+(config)# no do-exec test issu capability type-list register <number:1..4294967295> <string> <cr>    # path-058937
+(config)# no do-exec test issu client <number:1..9999> bits enable <cr>    # path-056866
+(config)# no do-exec test issu client register <cr>    # path-044310
+(config)# no do-exec test issu distributed show <cr>    # path-044200
+(config)# no do-exec test issu divc no-test <cr>    # path-044710
+(config)# no do-exec test issu entity register <number:0..4294967295> <cr>    # path-052318
+(config)# no do-exec test issu injected calc_mtu <number:0..4294967295> <number:1..100> <number:1..100> <cr>    # path-058985
+(config)# no do-exec test issu injected capability <number:0..4294967295> <number:1..100> <cr>    # path-056957
+(config)# no do-exec test issu injected comp_result <number:0..4294967295> <number:1..2> <cr>    # path-056971
+(config)# no do-exec test issu injected message <number:0..4294967295> <number:1..100> <number:1..100> <number:1..100> <cr>    # path-059666
+(config)# no do-exec test issu injected register <number:0..4294967295> <cr>    # path-052409
+(config)# no do-exec test issu lossless session setup <cr>    # path-052376
+(config)# no do-exec test issu message group register <number:1..4294967295> <number:1..100> <string> <cr>    # path-059645
+(config)# no do-exec test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <cr>    # path-059956
+(config)# no do-exec test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <string> <cr>    # path-060125
+(config)# no do-exec test issu negative on <cr>    # path-044565
+(config)# no do-exec test issu nego-version config <number:1..4294967295> <number:1..100> <number:1..100> <cr>    # path-058974
+(config)# no do-exec test issu negotiate <number:1..4294967295> <number:0..1> <cr>    # path-052438
+(config)# no do-exec test issu policy off <cr>    # path-044648
+(config)# no do-exec test issu session ipc <cr>    # path-044494
+(config)# no do-exec test issu shared message_session unregister <number:1..4294967295> <number:0..1> <cr>    # path-058956
+(config)# no do-exec test issu shared nego_session register <cr>    # path-052460
+(config)# no do-exec test issu shared negotiate <number:1..4294967295> <number:1..4294967295> <number:0..1> <cr>    # path-058961
+(config)# no do-exec test issu transform <number:1..4294967295> <number:1..100> <number:0..1> <cr>    # path-056954
+(config)# no do-exec test l2protocol-forward <cr>    # path-031812
+(config)# no do-exec test l2protocol-tunnel <cr>    # path-031792
+(config)# no do-exec test lacp disable insert-seq-num <cr>    # path-048979
+(config)# no do-exec test lacp disable recv <cr>    # path-048906
+(config)# no do-exec test lacp disable send <cr>    # path-048824
+(config)# no do-exec test lacp enable insert-seq-num <cr>    # path-049044
+(config)# no do-exec test lacp enable recv <cr>    # path-048977
+(config)# no do-exec test lacp enable send <cr>    # path-048895
+(config)# no do-exec test lacp multi-chassis iccp-version <number:0..65535> <cr>    # path-055136
+(config)# no do-exec test lacp timer wait fast default <cr>    # path-058347
+(config)# no do-exec test license smart tech-support <cr>    # path-044964
+(config)# no do-exec test lim proximity-db enable <cr>    # path-044673
+(config)# no do-exec test mdns browse regtype <string> domain <string> periodicity <number:0..4294967295> interface <number:0..4294967295> <cr>    # path-060201
+(config)# no do-exec test mdns browse stop <number:1..4294967295> <cr>    # path-053517
+(config)# no do-exec test mdns cache <cr>    # path-036998
+(config)# no do-exec test mdns resolve host <string> interface <number:0..4294967295> <cr>    # path-059209
+(config)# no do-exec test mdns resolve service <string> regtype <string> domain <string> interface <number:0..4294967295> <cr>    # path-060203
+(config)# no do-exec test mdns resync <cr>    # path-036422
+(config)# no do-exec test mdns srv-enum <number:0..1> <cr>    # path-045781
+(config)# no do-exec test mdns start <cr>    # path-036546
+(config)# no do-exec test mdns stop <cr>    # path-036600
+(config)# no do-exec test mdns update bssid <address> client-mac <address> <cr>    # path-059203
+(config)# no do-exec test mdns update query-pak bssid-mac <address> <cr>    # path-057559
+(config)# no do-exec test memory <cr>    # path-028562
+(config)# no do-exec test memory allocate processor <number:0..4294967294> <number:0..4294967294> <number:0..4294967294> <cr>    # path-059001
+(config)# no do-exec test memory create dangling-reference <cr>    # path-044607
+(config)# no do-exec test memory create leak type1 <number:28..4294967295> <number:1..4294967295> <cr>    # path-059017
+(config)# no do-exec test memory history <number:1..60> <cr>    # path-044822
+(config)# no do-exec test memory nvram-multibus <cr>    # path-034683
+(config)# no do-exec test mfib cb-support IPv4 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-060234
+(config)# no do-exec test mfib cb-support IPv6 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-060236
+(config)# no do-exec test mfib channel <cr>    # path-037826
+(config)# no do-exec test mfib enable <cr>    # path-037479
+(config)# no do-exec test mfib epoch new <cr>    # path-047147
+(config)# no do-exec test mfib mrib <cr>    # path-037732
+(config)# no do-exec test mfib reload <cr>    # path-037867
+(config)# no do-exec test mgd-timer watch <cr>    # path-035754
+(config)# no do-exec test mka macsec-sim off <cr>    # path-048959
+(config)# no do-exec test mka message-number initial-value <number:1..4294967295> <cr>    # path-055217
+(config)# no do-exec test mka message-number window-size <number:0..4294967295> <cr>    # path-055254
+(config)# no do-exec test mka packet-number initial-value <number:0..4294967295> <cr>    # path-055287
+(config)# no do-exec test mock btrace <cr>    # path-038624
+(config)# no do-exec test mock chasfs <cr>    # path-038737
+(config)# no do-exec test mock chassis <cr>    # path-038677
+(config)# no do-exec test mock crypto <cr>    # path-038917
+(config)# no do-exec test mock cyan <cr>    # path-038791
+(config)# no do-exec test mock ei <cr>    # path-038582
+(config)# no do-exec test mock infra enqueue <cr>    # path-047531
+(config)# no do-exec test mock ipc <cr>    # path-038491
+(config)# no do-exec test mock mcp <cr>    # path-038441
+(config)# no do-exec test mock misc <cr>    # path-038537
+(config)# no do-exec test mock overlayfs system-call <cr>    # path-048038
+(config)# no do-exec test mock real <cr>    # path-038875
+(config)# no do-exec test mock system <cr>    # path-038401
+(config)# no do-exec test mock tdl <cr>    # path-038831
+(config)# no do-exec test mock vaarg <cr>    # path-038971
+(config)# no do-exec test monitor clear config lock <cr>    # path-054702
+(config)# no do-exec test mrib disable <cr>    # path-037621
+(config)# no do-exec test mrib ip stop <cr>    # path-047188
+(config)# no do-exec test mrib ipv6 stop <cr>    # path-047166
+(config)# no do-exec test mvpn ipv4 leaf-ad-recv add <address> <address> <address> <cr>    # path-059840
+(config)# no do-exec test mvpn ipv4 spt-only disable <cr>    # path-054203
+(config)# no do-exec test mvpn ipv4 spt-only enable <cr>    # path-054178
+(config)# no do-exec test mvpn ipv6 leaf-ad-recv add <address> <address> <address> <cr>    # path-059844
+(config)# no do-exec test mvpn ipv6 spt-only disable <cr>    # path-054219
+(config)# no do-exec test mvpn ipv6 spt-only enable <cr>    # path-054197
+(config)# no do-exec test mvrp enable <number:0..1> <cr>    # path-044817
+(config)# no do-exec test mvrp joinin <number:1..4094> <number:1..4094> <cr>    # path-052644
+(config)# no do-exec test mvrp new <number:1..4094> <number:1..4094> <cr>    # path-052618
+(config)# no do-exec test natmode suppress <cr>    # path-035383
+(config)# no do-exec test netconf-agent history <cr>    # path-039340
+(config)# no do-exec test netconf-agent summary <cr>    # path-039395
+(config)# no do-exec test ngdns config <cr>    # path-037334
+(config)# no do-exec test ngdns lookup <string> <cr>    # path-046566
+(config)# no do-exec test ngdns periodic dump <cr>    # path-046389
+(config)# no do-exec test ngdns periodic register fqdn-name <string> type both module-id <number:1..3> <cr>    # path-060168
+(config)# no do-exec test ngiosd process-isolation start <cr>    # path-048693
+(config)# no do-exec test ngiosd simulation prepare-failure enable <cr>    # path-055064
+(config)# no do-exec test ngiosd simulation prepare-pass enable <cr>    # path-055104
+(config)# no do-exec test ngiosd simulation start <cr>    # path-048638
+(config)# no do-exec test nhrp event <cr>    # path-030488
+(config)# no do-exec test notify <string> <cr>    # path-040038
+(config)# no do-exec test nvram <string> clear remote-lock <cr>    # path-054591
+(config)# no do-exec test nvram <string> explicit-lock <cr>    # path-047873
+(config)# no do-exec test nvram <string> initialize <cr>    # path-047916
+(config)# no do-exec test odb client <number:1..256> add-static-tlv type <number:0..65535> <cr>    # path-059375
+(config)# no do-exec test odb client <number:1..256> deregister <cr>    # path-054470
+(config)# no do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> add-tlv type <number:0..65535> value <string> <cr>    # path-060223
+(config)# no do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> delete <cr>    # path-059860
+(config)# no do-exec test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> notify subscribe change <cr>    # path-060178
+(config)# no do-exec test odb client <number:1..256> table <number:1..65534> add-row type <number:0..65535> value <string> <cr>    # path-060205
+(config)# no do-exec test odb client <number:1..256> table <number:1..65534> delete <cr>    # path-059378
+(config)# no do-exec test odb client <number:1..256> table <number:1..65534> notify subscribe add <cr>    # path-060075
+(config)# no do-exec test odb client <number:1..256> table create <cr>    # path-058047
+(config)# no do-exec test odb client register <string> <cr>    # path-054456
+(config)# no do-exec test onep cli uninstall <string> <cr>    # path-054482
+(config)# no do-exec test onep ctx_reg <cr>    # path-038679
+(config)# no do-exec test onep if_ctx_event enable <cr>    # path-047823
+(config)# no do-exec test onep internal enable <cr>    # path-047587
+(config)# no do-exec test onep thrift list <cr>    # path-047683
+(config)# no do-exec test onep version disable <cr>    # path-047724
+(config)# no do-exec test onep version disable exact <cr>    # path-054524
+(config)# no do-exec test onep version enable <cr>    # path-047711
+(config)# no do-exec test onep xdt_buginf <cr>    # path-038628
+(config)# no do-exec test opflex agent ha <cr>    # path-047255
+(config)# no do-exec test opflex agent service vxlan-evpn create <string> <cr>    # path-059370
+(config)# no do-exec test opflex agent service vxlan-evpn state <cr>    # path-058007
+(config)# no do-exec test opssl nonblockingsession server dtls stop <cr>    # path-058084
+(config)# no do-exec test ospf debug <cr>    # path-037068
+(config)# no do-exec test ospf nsr cf error <number:0..65535> <cr>    # path-057773
+(config)# no do-exec test ospf nsr cf flow-off <cr>    # path-053945
+(config)# no do-exec test ospf nsr cf flow-on <cr>    # path-053879
+(config)# no do-exec test ospf nsr cp clear <number:0..65535> <cr>    # path-057772
+(config)# no do-exec test ospf nsr cp interface <cr>    # path-054148
+(config)# no do-exec test ospf nsr cp lsa <cr>    # path-054142
+(config)# no do-exec test ospf nsr cp neighbor <cr>    # path-054173
+(config)# no do-exec test ospf nsr cp nop <cr>    # path-053932
+(config)# no do-exec test ospf nsr cp router-id <cr>    # path-054072
+(config)# no do-exec test ospf nsr cp sync <number:0..65535> <cr>    # path-057799
+(config)# no do-exec test ospf nsr recovery delay <number:0..255> <cr>    # path-057771
+(config)# no do-exec test ospf nsr unsynchronize <cr>    # path-046689
+(config)# no do-exec test ospfv3 crimson <cr>    # path-037923
+(config)# no do-exec test parser afs <cr>    # path-034288
+(config)# no do-exec test parser configure buffer <cr>    # path-044272
+(config)# no do-exec test parser consume-memory <number:0..2147483647> <cr>    # path-044089
+(config)# no do-exec test parser gmd <cr>    # path-034201
+(config)# no do-exec test parser green-fe <cr>    # path-034825
+(config)# no do-exec test parser ngios native-green enable <cr>    # path-052210
+(config)# no do-exec test parser ngios side-effect per-batch <cr>    # path-052237
+(config)# no do-exec test parser ngios validation enable <cr>    # path-052266
+(config)# no do-exec test parser ngios-meta path disable <cr>    # path-052290
+(config)# no do-exec test parser rc errno <number:0..2147483647> <cr>    # path-052241
+(config)# no do-exec test parser rc failure <number:11..211> <number:1..2> <cr>    # path-056799
+(config)# no do-exec test parser rc invalid <cr>    # path-044220
+(config)# no do-exec test parser rc success <number:1..3> <number:1..4> <cr>    # path-056811
+(config)# no do-exec test parser redirect small <cr>    # path-044162
+(config)# no do-exec test parser session-lock <number:0..1200> <cr>    # path-044038
+(config)# no do-exec test parser session-lock exit <cr>    # path-044073
+(config)# no do-exec test parser session-lock lock-break <cr>    # path-044131
+(config)# no do-exec test parser shell <cr>    # path-034347
+(config)# no do-exec test parser syntax exclude display <cr>    # path-052274
+(config)# no do-exec test parser syntax exclude mode <string> <cr>    # path-056822
+(config)# no do-exec test persistent variable api delete default <string> <cr>    # path-058904
+(config)# no do-exec test persistent variable api flush default <cr>    # path-056807
+(config)# no do-exec test persistent variable api get default <string> <cr>    # path-058900
+(config)# no do-exec test persistent variable api isset default <string> <cr>    # path-058894
+(config)# no do-exec test persistent variable api set default <string> <cr>    # path-058890
+(config)# no do-exec test persistent variable error <string> <cr>    # path-052147
+(config)# no do-exec test persistent variable media-delete <string> <cr>    # path-052130
+(config)# no do-exec test persistent variable show cache <cr>    # path-052115
+(config)# no do-exec test platform hardware poe cfg crit-limit <number:5000..15000> <cr>    # path-058903
+(config)# no do-exec test platform hardware poe cfg warn-limit <number:3000..8000> <cr>    # path-058910
+(config)# no do-exec test platform software cef autovpn <cr>    # path-052400
+(config)# no do-exec test platform software cef bgp <cr>    # path-052286
+(config)# no do-exec test platform software cef off <cr>    # path-052373
+(config)# no do-exec test platform software cef on <cr>    # path-052342
+(config)# no do-exec test platform software cef replicate cbl_l2mc <cr>    # path-056896
+(config)# no do-exec test platform software cef replicate mpls <cr>    # path-056879
+(config)# no do-exec test platform software crimson db-write-lock <cr>    # path-052770
+(config)# no do-exec test platform software crimson initdb <cr>    # path-052800
+(config)# no do-exec test platform software crimson notification deregister <cr>    # path-057093
+(config)# no do-exec test platform software crimson notification register <cr>    # path-057081
+(config)# no do-exec test platform software crimson operational add <number:0..4294967295> idbname <string> <cr>    # path-059986
+(config)# no do-exec test platform software crimson operational disable <cr>    # path-057162

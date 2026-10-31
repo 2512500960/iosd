@@ -1,0 +1,11 @@
+# 模式 l2-vfi-neighbor-interface；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-vfi-neighbor-interface)# default tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004584
+(config-vfi-neighbor-interface)# default tlv template <string> <cr>    # static_slot_creation_candidates-004581
+(config-vfi-neighbor-interface)# no tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004583
+(config-vfi-neighbor-interface)# no tlv template <string> <cr>    # static_slot_creation_candidates-004580
+(config-vfi-neighbor-interface)# tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004582
+(config-vfi-neighbor-interface)# tlv <number:1..64> <number:1..255> hexstr <hex-string> <cr>    # static_slot_creation_candidates-004585
+(config-vfi-neighbor-interface)# tlv template <string> <cr>    # static_slot_creation_candidates-004579

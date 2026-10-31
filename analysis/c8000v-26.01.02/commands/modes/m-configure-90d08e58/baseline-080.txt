@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-080.md
+
+(config)# no do-exec monitor elog calibrate <cr>    # path-034812
+(config)# no do-exec monitor elog free <cr>    # path-034769
+(config)# no do-exec monitor elog off <cr>    # path-034476
+(config)# no do-exec monitor elog on <cr>    # path-034496
+(config)# no do-exec monitor elog on <number:0..4294967295> <cr>    # path-044230
+(config)# no do-exec monitor elog patch <number:0..4294967295> <number:1..65535> <number:0..65535> <cr>    # path-056902
+(config)# no do-exec monitor elog save <string> <cr>    # path-044296
+(config)# no do-exec monitor elog show-dynamic <cr>    # path-034685
+(config)# no do-exec monitor elog stats <cr>    # path-034856
+(config)# no do-exec monitor elog test <cr>    # path-034560
+(config)# no do-exec monitor elog trigger clear <cr>    # path-044745
+(config)# no do-exec monitor elog trigger on <cr>    # path-044661
+(config)# no do-exec monitor elog trigger on <number:0..4294967295> <cr>    # path-052541
+(config)# no do-exec monitor elog trigger patch <number:0..4294967295> <cr>    # path-052562
+(config)# no do-exec monitor elog trigger position <cr>    # path-044756
+(config)# no do-exec monitor elog trigger position <number:0..100> <cr>    # path-052587
+(config)# no do-exec monitor elog unpatch <number:0..4294967295> <cr>    # path-044410
+(config)# no do-exec monitor elog unpatch all <cr>    # path-044450
+(config)# no do-exec monitor event-trace hw-api <cr>    # path-034977
+(config)# no do-exec monitor processes cpu extended <number:1..2147483647> <cr>    # path-052225
+(config)# no do-exec monitor tdm-pcm-capture caplog <number:1..268435455> <cr>    # path-044492
+(config)# no do-exec monitor tdm-pcm-capture disable <cr>    # path-034644
+(config)# no do-exec monitor xcode-pcm-capture <number:1..10> disable <cr>    # path-044322
+(config)# no do-exec monitor xcode-pcm-capture <number:1..10> incoming-side call-id <number:0..2147483647> stream <number:1..268435455> duration <number:0..255> <cr>    # path-060129
+(config)# no do-exec mrinfo <cr>    # path-026976
+(config)# no do-exec mstat <cr>    # path-026999
+(config)# no do-exec mtr <cr>    # path-026587
+(config)# no do-exec mtrace <cr>    # path-027023
+(config)# no do-exec name-connection <cr>    # path-026357
+(config)# no do-exec nat64 map-e address register <cr>    # path-044849
+(config)# no do-exec nat64 map-e rule request <cr>    # path-044807
+(config)# no do-exec nat64 map-t ce address domain <number:1..10000> ipv4 <address> <cr>    # path-059695
+(config)# no do-exec ncia start <cr>    # path-030677
+(config)# no do-exec ncia stop <cr>    # path-030698
+(config)# no do-exec onep stop session all <cr>    # path-046129
+(config)# no do-exec pad <string> <cr>    # path-029962
+(config)# no do-exec ping <cr>    # path-026588
+(config)# no do-exec pnpa service abort-on-fault <number:0..1> <cr>    # path-050498
+(config)# no do-exec pnpa service act2-sudi <number:0..1> <cr>    # path-050485
+(config)# no do-exec pnpa service ap-extension <number:0..1> <cr>    # path-050469
+(config)# no do-exec pnpa service backoff-reset <string> <cr>    # path-050989
+(config)# no do-exec pnpa service certify <string> <string> <cr>    # path-056352
+(config)# no do-exec pnpa service check-server-id <string> <number:0..65535> <cr>    # path-056337
+(config)# no do-exec pnpa service check-ssl-handshake <string> <number:0..65535> <cr>    # path-056327
+(config)# no do-exec pnpa service config-control <number:0..3> <cr>    # path-050458
+(config)# no do-exec pnpa service config-monitor <number:0..1> <cr>    # path-050442
+(config)# no do-exec pnpa service config-reserve <string> <cr>    # path-050428
+(config)# no do-exec pnpa service config-retry <number:0..10000> <number:0..10000> <cr>    # path-056016
+(config)# no do-exec pnpa service config-upgrade <string> <cr>    # path-050982
+(config)# no do-exec pnpa service connectivity-enforcement <number:0..1> <cr>    # path-050396
+(config)# no do-exec pnpa service copy <string> <string> <cr>    # path-056365
+(config)# no do-exec pnpa service correlator-check <number:0..1> <cr>    # path-050377
+(config)# no do-exec pnpa service device-id-cert <number:0..1> <cr>    # path-050359
+(config)# no do-exec pnpa service diag <number:0..1> <cr>    # path-050899
+(config)# no do-exec pnpa service discovery abort-autoinstall <cr>    # path-051190
+(config)# no do-exec pnpa service discovery bypass-auto-install <number:0..1> <cr>    # path-056480
+(config)# no do-exec pnpa service discovery bypass-cellular-check <number:0..1> <cr>    # path-056473
+(config)# no do-exec pnpa service discovery bypass-connectivity-check <number:0..1> <cr>    # path-056468
+(config)# no do-exec pnpa service discovery bypass-disc-summary <number:0..1> <cr>    # path-056464
+(config)# no do-exec pnpa service discovery bypass-dns-check <number:0..1> <cr>    # path-056457
+(config)# no do-exec pnpa service discovery bypass-https-enforcement <number:0..1> <cr>    # path-056449
+(config)# no do-exec pnpa service discovery bypass-napp-check <number:0..1> <cr>    # path-056439
+(config)# no do-exec pnpa service discovery bypass-startup-config <number:0..1> <cr>    # path-056430
+(config)# no do-exec pnpa service discovery bypass-webui-check <number:0..1> <cr>    # path-056420
+(config)# no do-exec pnpa service discovery bypass-wizard-input <number:0..1> <cr>    # path-056409
+(config)# no do-exec pnpa service discovery clear <cr>    # path-051068
+(config)# no do-exec pnpa service discovery dhcp ipv4 <string> <cr>    # path-058826
+(config)# no do-exec pnpa service discovery dhcp ipv6 <string> <cr>    # path-058820
+(config)# no do-exec pnpa service discovery dns-clear <cr>    # path-051054
+(config)# no do-exec pnpa service discovery dns-set <string> <cr>    # path-056391
+(config)# no do-exec pnpa service discovery method-disable <number:0..15> <cr>    # path-056386
+(config)# no do-exec pnpa service discovery method-enable <number:0..15> <cr>    # path-056379
+(config)# no do-exec pnpa service discovery method-show <cr>    # path-051018
+(config)# no do-exec pnpa service discovery no-shutdown <cr>    # path-050996
+(config)# no do-exec pnpa service discovery server-credential <number:0..1> <cr>    # path-056345
+(config)# no do-exec pnpa service discovery setup-abort <cr>    # path-050965
+(config)# no do-exec pnpa service discovery shutdown <cr>    # path-050949
+(config)# no do-exec pnpa service discovery start <cr>    # path-050935
+(config)# no do-exec pnpa service discovery stop <cr>    # path-050920
+(config)# no do-exec pnpa service discovery terminate <number:0..11> <number:0..14> <cr>    # path-058793
+(config)# no do-exec pnpa service discovery wait-for-stop <number:0..7200> <cr>    # path-056300
+(config)# no do-exec pnpa service do-change-mode <string> <cr>    # path-050875
+(config)# no do-exec pnpa service do-write-erase <cr>    # path-042142
+(config)# no do-exec pnpa service do-write-memory <cr>    # path-042125
+(config)# no do-exec pnpa service eem-proxy <number:0..1> <cr>    # path-050344
+(config)# no do-exec pnpa service event-notify <number:0..29> <string> <string> <cr>    # path-058756
+(config)# no do-exec pnpa service fault-control <number:0..1> <cr>    # path-050325
+(config)# no do-exec pnpa service hello <string> <string> <string> <number:0..65535> <cr>    # path-059584
+(config)# no do-exec pnpa service image-install <string> <cr>    # path-050762
+(config)# no do-exec pnpa service image-install-commit <cr>    # path-041953
+(config)# no do-exec pnpa service image-remove-inactive <cr>    # path-041977
+(config)# no do-exec pnpa service internal <number:0..1> <cr>    # path-046935
+(config)# no do-exec pnpa service location-tag <number:0..1> <string> <cr>    # path-055979
+(config)# no do-exec pnpa service lock-bypass <number:0..1> <cr>    # path-050303
+(config)# no do-exec pnpa service lock-config <cr>    # path-041257
+(config)# no do-exec pnpa service lock-exec <cr>    # path-041227
+(config)# no do-exec pnpa service monvar-diag <string> <cr>    # path-050250
+(config)# no do-exec pnpa service must-ignore-config-reg <number:0..1> <cr>    # path-050185
+(config)# no do-exec pnpa service must-ignore-config-rollback <number:0..1> <cr>    # path-050209
+(config)# no do-exec pnpa service must-ignore-dir-walk <number:0..1> <cr>    # path-050156
+(config)# no do-exec pnpa service must-ignore-ifs-walk <number:0..1> <cr>    # path-050131
+(config)# no do-exec pnpa service must-ignore-image-signature <number:0..1> <cr>    # path-050096
+(config)# no do-exec pnpa service must-ignore-reload-info <number:0..1> <cr>    # path-050065
+(config)# no do-exec pnpa service must-ignore-reload-info <number:0..1> <cr>    # path-050228
+(config)# no do-exec pnpa service must-ignore-save-tech <number:0..1> <cr>    # path-050037
+(config)# no do-exec pnpa service must-ignore-terminate-now <number:0..1> <cr>    # path-050019
+(config)# no do-exec pnpa service must-keep-backup <number:0..1> <cr>    # path-049995
+(config)# no do-exec pnpa service napp-client <number:0..1> <cr>    # path-050002
+(config)# no do-exec pnpa service napp-connect <string> <cr>    # path-049976
+(config)# no do-exec pnpa service napp-http-server <cr>    # path-040812
+(config)# no do-exec pnpa service napp-server <number:0..2> <cr>    # path-049937
+(config)# no do-exec pnpa service napp-show <cr>    # path-040719
+(config)# no do-exec pnpa service napp-tag <string> <cr>    # path-049890
+(config)# no do-exec pnpa service notify-now <string> <cr>    # path-050653
+(config)# no do-exec pnpa service notify-service <string> <string> <string> <number:0..1> <cr>    # path-059576
+(config)# no do-exec pnpa service notify-state <string> <cr>    # path-050611
+(config)# no do-exec pnpa service post-reload-priv <number:0..1> <cr>    # path-049843
+(config)# no do-exec pnpa service proxy-control <number:0..1> <cr>    # path-049850
+(config)# no do-exec pnpa service python-listener <number:0..1> <cr>    # path-049800
+(config)# no do-exec pnpa service query-to-client <string> <string> <string> configlet <string> <cr>    # path-059912
+(config)# no do-exec pnpa service query-to-server <string> <string> <string> <cr>    # path-058496
+(config)# no do-exec pnpa service redirect-backup <string> <number:0..65535> <cr>    # path-056127
+(config)# no do-exec pnpa service redirect-primary <string> <number:0..65535> <cr>    # path-056115
+(config)# no do-exec pnpa service reload cancel <cr>    # path-050636
+(config)# no do-exec pnpa service reset <cr>    # path-041426
+(config)# no do-exec pnpa service resolve-discovery <string> <cr>    # path-049703
+(config)# no do-exec pnpa service resolve-dns <number:0..4> <cr>    # path-049659
+(config)# no do-exec pnpa service resolve-hostname <string> <cr>    # path-049677
+(config)# no do-exec pnpa service save-tech <cr>    # path-041771
+(config)# no do-exec pnpa service script <string> <cr>    # path-050552
+(config)# no do-exec pnpa service sdwan-ready <cr>    # path-042055
+(config)# no do-exec pnpa service sdwan-start <number:0..4294967295> <cr>    # path-050828
+(config)# no do-exec pnpa service sdwan-stop <cr>    # path-042078
+(config)# no do-exec pnpa service security-ending-max <number:1..4294967295> <cr>    # path-049581
+(config)# no do-exec pnpa service security-enforcement <number:0..1> <cr>    # path-049533
+(config)# no do-exec pnpa service server-identity-check <number:0..1> <cr>    # path-049269
+(config)# no do-exec pnpa service show-file <string> <cr>    # path-049491
+(config)# no do-exec pnpa service show-running-config <cr>    # path-040342
+(config)# no do-exec pnpa service show-startup-config <cr>    # path-040306
+(config)# no do-exec pnpa service sid auth-only <number:0..1> <cr>    # path-055539
+(config)# no do-exec pnpa service sid must-renew <number:0..1> <cr>    # path-055491
+(config)# no do-exec pnpa service sid must-validate <number:0..1> <cr>    # path-055518
+(config)# no do-exec pnpa service sid update <string> <string> <cr>    # path-058435
+(config)# no do-exec pnpa service sid validation <number:0..1> <cr>    # path-055427
+(config)# no do-exec pnpa service sleep-for <number:1..3600> <cr>    # path-049218
+(config)# no do-exec pnpa service smu-task-activate <string> <cr>    # path-049169
+(config)# no do-exec pnpa service smu-task-add <string> <string> <cr>    # path-055346
+(config)# no do-exec pnpa service smu-task-clear-all <cr>    # path-040062
+(config)# no do-exec pnpa service smu-task-commit <cr>    # path-040021
+(config)# no do-exec pnpa service smu-task-deactivate <string> <cr>    # path-048973
+(config)# no do-exec pnpa service smu-task-remove <string> <cr>    # path-048903
+(config)# no do-exec pnpa service smu-task-run <cr>    # path-039862
+(config)# no do-exec pnpa service smu-task-show <cr>    # path-039813
+(config)# no do-exec pnpa service smu-verify <string> <cr>    # path-048799
+(config)# no do-exec pnpa service snmp <string> <cr>    # path-048649
+(config)# no do-exec pnpa service snooping <number:0..1> <number:0..4094> <string> <cr>    # path-058237
+(config)# no do-exec pnpa service stack-renumber <number:1..9> <cr>    # path-048482
+(config)# no do-exec pnpa service stack-reorder <number:1..9> <cr>    # path-048537
+(config)# no do-exec pnpa service tls-tunnel-notify <string> <cr>    # path-050798
+(config)# no do-exec pnpa service token-auth-set <string> <cr>    # path-048436
+(config)# no do-exec pnpa service trustpoint-install <string> <string> <cr>    # path-054521
+(config)# no do-exec pnpa service trustpoint-uninstall <string> <cr>    # path-047593
+(config)# no do-exec pnpa service trustpool-install <string> <cr>    # path-047609
+(config)# no do-exec pnpa service trustpool-uninstall <cr>    # path-038371
+(config)# no do-exec pnpa service udi-checking <number:0..1> <cr>    # path-048380
+(config)# no do-exec pnpa service udi-refresh <cr>    # path-039371
+(config)# no do-exec pnpa service unlock-config <cr>    # path-039319
+(config)# no do-exec pnpa service unlock-exec <cr>    # path-039274
+(config)# no do-exec pnpa service use-ntp-server <string> <cr>    # path-048211
+(config)# no do-exec pnpa service use-src-intf <string> <cr>    # path-048170
+(config)# no do-exec pnpa service use-unix-disk <number:0..1> <cr>    # path-048125
+(config)# no do-exec pnpa service use-vrf <string> <cr>    # path-048086
+(config)# no do-exec pnpa service validate <string> <cr>    # path-047557
+(config)# no do-exec pnpa service verbose <number:0..1> <cr>    # path-046962
+(config)# no do-exec pnpa service verify <string> <cr>    # path-047525
+(config)# no do-exec pnpa service wait-time <number:0..100> <cr>    # path-047481
+(config)# no do-exec pnpa service wakeup <cr>    # path-039079
+(config)# no do-exec pnpa service watch-ack-notifications <cr>    # path-038183
+(config)# no do-exec pnpa service watch-all <cr>    # path-038143
+(config)# no do-exec pnpa service watch-clear <cr>    # path-038100
+(config)# no do-exec pnpa service watch-config <cr>    # path-038065
+(config)# no do-exec pnpa service watch-default-action <string> <cr>    # path-047314
+(config)# no do-exec pnpa service watch-disable <string> <string> <cr>    # path-054358
+(config)# no do-exec pnpa service watch-enable <string> <string> <string> <number:0..4294967295> <string> <cr>    # path-059848
+(config)# no do-exec pnpa service watch-pnp-profile <cr>    # path-037926
+(config)# no do-exec pnpa service watch-pnp-server <cr>    # path-037891
+(config)# no do-exec pnpa service watch-pnp-service <cr>    # path-037858
+(config)# no do-exec pnpa service watch-pnp-state <cr>    # path-037811
+(config)# no do-exec pnpa service watch-system <cr>    # path-037759
+(config)# no do-exec pnpa service watch-tls-tunnel <cr>    # path-037712
+(config)# no do-exec pnpa service webui set <cr>    # path-047044
+(config)# no do-exec pnpa service webui start <cr>    # path-047012
+(config)# no do-exec pnpa service webui stop <cr>    # path-046985
+(config)# no do-exec pnpa service xep-clear <cr>    # path-038973
+(config)# no do-exec pnpa service xep-ignore-disconnect <number:0..1> <cr>    # path-047954
+(config)# no do-exec pnpa service xep-show <cr>    # path-038878
+(config)# no do-exec pnpa service xep-tracking <number:0..4> <cr>    # path-047872
+(config)# no do-exec pnpa service xml-clear <cr>    # path-038797
+(config)# no do-exec pnpa service xml-process <string> <cr>    # path-047783
+(config)# no do-exec pnpa service xml-profile <string> <string> <string> <string> <number:0..65535> <cr>    # path-059866
+(config)# no do-exec pnpa service xml-replay <cr>    # path-038633
+(config)# no do-exec pnpa service xml-udi <string> <cr>    # path-047679
+(config)# no do-exec pnpa service xml-usr <string> <string> <cr>    # path-054538
+(config)# no do-exec pnpa summary <cr>    # path-030711
+(config)# no do-exec profile hogs <cr>    # path-027945
+(config)# no do-exec profile start <cr>    # path-027919
+(config)# no do-exec profile stop <cr>    # path-027930
+(config)# no do-exec pwd <cr>    # path-027439
+(config)# no do-exec redundancy application reload group <number:1..2> peer <cr>    # path-056935
+(config)# no do-exec redundancy application reload group <number:1..2> self <cr>    # path-056962
+(config)# no do-exec redundancy application test-client disable <cr>    # path-044606
+(config)# no do-exec redundancy application test-client enable <cr>    # path-044559
+(config)# no do-exec redundancy force-switchover <cr>    # path-028862
+(config)# no do-exec redundancy keepalive enable <cr>    # path-034746
+(config)# no do-exec redundancy reload peer <cr>    # path-034675
+(config)# no do-exec redundancy reload shelf <cr>    # path-034821
+(config)# no do-exec redundancy switch-activity <cr>    # path-028560
+(config)# no do-exec reload <cr>    # path-026607
+(config)# no do-exec request consent-token generate-challenge shell-access <cr>    # path-043975
+(config)# no do-exec request license new-udi <cr>    # path-034104
+(config)# no do-exec request platform software netconf-yang key generate rsa <cr>    # path-058885
+(config)# no do-exec request tech-support <cr>    # path-028043
+(config)# no do-exec restart <cr>    # path-026855
+(config)# no do-exec resume <cr>    # path-026477
+(config)# no do-exec rmdir <cr>    # path-027431
+(config)# no do-exec routing-context vrf global <cr>    # path-035345
+(config)# no do-exec rsh <string> <string> <cr>    # path-035064
+(config)# no do-exec set memory debug incremental starting-time <cr>    # path-052054
+(config)# no do-exec setup <cr>    # path-026390
+(config)# no do-exec show <cr>    # path-026181
+(config)# no do-exec show aaa acct-stop-cache <cr>    # path-043222
+(config)# no do-exec show aaa attributes <cr>    # path-042925
+(config)# no do-exec show aaa cache filterserver acl <cr>    # path-056537
+(config)# no do-exec show aaa cache filterserver pending <cr>    # path-056545
+(config)# no do-exec show aaa cache group <string> all <cr>    # path-058862
+(config)# no do-exec show aaa clients <cr>    # path-043083
+(config)# no do-exec show aaa command handler <cr>    # path-051538
+(config)# no do-exec show aaa common-criteria policy all <cr>    # path-056558
+(config)# no do-exec show aaa counters <cr>    # path-042846
+(config)# no do-exec show aaa dead-criteria radius <address> <cr>    # path-056617
+(config)# no do-exec show aaa fqdn <cr>    # path-043359
+(config)# no do-exec show aaa hash <cr>    # path-043018
+(config)# no do-exec show aaa idmgr <cr>    # path-042786
+(config)# no do-exec show aaa ipv6 tacacs source-interface global <cr>    # path-058870
+(config)# no do-exec show aaa local admin_user all <cr>    # path-056543
+(config)# no do-exec show aaa local statistics <cr>    # path-051344
+(config)# no do-exec show aaa local user blocked <cr>    # path-056540
+(config)# no do-exec show aaa local user lockout <cr>    # path-056524
+(config)# no do-exec show aaa memory <cr>    # path-043302
+(config)# no do-exec show aaa memory stats all <cr>    # path-056631
+(config)# no do-exec show aaa method-lists authentication <cr>    # path-051401
+(config)# no do-exec show aaa requests statistics <cr>    # path-051441
+(config)# no do-exec show aaa server-private <cr>    # path-043152
+(config)# no do-exec show aaa servers <cr>    # path-043187
+(config)# no do-exec show aaa service-profiles <cr>    # path-043199
+(config)# no do-exec show aaa sessions <cr>    # path-043168
+(config)# no do-exec show aaa sp-cache all-list <cr>    # path-051622
+(config)# no do-exec show aaa subscriber profile <cr>    # path-051385
+(config)# no do-exec show aaa tools memleak statistics <cr>    # path-056532
+(config)# no do-exec show aaa tracebacks <cr>    # path-043016
+(config)# no do-exec show aaa user <number:1..4294967295> <cr>    # path-051421
+(config)# no do-exec show access-expression <cr>    # path-033562
+(config)# no do-exec show access-lists <cr>    # path-028956
+(config)# no do-exec show access-lists acl-limit <cr>    # path-035167
+(config)# no do-exec show access-lists fqdn client <cr>    # path-044844
+(config)# no do-exec show access-lists fqdn pending-mappings <cr>    # path-044781
+(config)# no do-exec show access-lists fqdn statistics <cr>    # path-044878
+(config)# no do-exec show access-lists ipc <cr>    # path-034997
+(config)# no do-exec show access-lists rate-limit <cr>    # path-035180
+(config)# no do-exec show access-lists template summary <cr>    # path-044866
+(config)# no do-exec show access-session limit profile details <cr>    # path-055776
+(config)# no do-exec show accounting group <cr>    # path-041487
+(config)# no do-exec show accounting group <string> <cr>    # path-050370
+(config)# no do-exec show accounting session <cr>    # path-041533
+(config)# no do-exec show accounting session <number:1..100000> <cr>    # path-050388
+(config)# no do-exec show acm rules <cr>    # path-034712
+(config)# no do-exec show adjacency <cr>    # path-030803
+(config)# no do-exec show adjacency connid-mgr <cr>    # path-037305
+(config)# no do-exec show adjacency summary <cr>    # path-037432
+(config)# no do-exec show alg sip <cr>    # path-037700
+(config)# no do-exec show alignment <cr>    # path-029492
+(config)# no do-exec show alps ascu <cr>    # path-043495
+(config)# no do-exec show alps circuits <cr>    # path-043456
+(config)# no do-exec show alps peers <cr>    # path-043418
+(config)# no do-exec show ancp an-port summary <cr>    # path-046895
+(config)# no do-exec show ancp neighbor <cr>    # path-037608
+(config)# no do-exec show ancp neighbor brief <cr>    # path-046768
+(config)# no do-exec show ancp port <cr>    # path-037434
+(config)# no do-exec show ancp session <cr>    # path-037433
+(config)# no do-exec show ancp statistics <cr>    # path-037355
+(config)# no do-exec show ancp status <cr>    # path-037465
+(config)# no do-exec show application ha statistics <cr>    # path-050714
+(config)# no do-exec show application ip route <cr>    # path-050780
+(config)# no do-exec show application ip route application <string> summary <cr>    # path-059578
+(config)# no do-exec show application summary <cr>    # path-041757
+(config)# no do-exec show archive <cr>    # path-033397
+(config)# no do-exec show archive config differences <cr>    # path-051456
+(config)# no do-exec show archive config rollback timer <cr>    # path-056571
+(config)# no do-exec show archive log config all persistent <cr>    # path-058864
+(config)# no do-exec show archive log config statistics <cr>    # path-056564
+(config)# no do-exec show arp <cr>    # path-031284
+(config)# no do-exec show asp <cr>    # path-033902
+(config)# no do-exec show async bootp <cr>    # path-041241
+(config)# no do-exec show async status <cr>    # path-041279
+(config)# no do-exec show auto install status <cr>    # path-043980
+(config)# no do-exec show auto install tech-support <cr>    # path-044001
+(config)# no do-exec show auto install trace <cr>    # path-044023
+(config)# no do-exec show auto secure config <cr>    # path-043964
+(config)# no do-exec show autoip status <cr>    # path-041903
+(config)# no do-exec show autoip status detail <cr>    # path-050626
+(config)# no do-exec show avc <cr>    # path-032056
+(config)# no do-exec show avc sd-service info cmds <cr>    # path-055640
+(config)# no do-exec show avc sd-service info cmds config <cr>    # path-058483
+(config)# no do-exec show avc sd-service info cmds status <cr>    # path-058473
+(config)# no do-exec show avc sd-service info detailed <cr>    # path-055602
+(config)# no do-exec show avc sd-service info ent <cr>    # path-055863
+(config)# no do-exec show avc sd-service info ent config <cr>    # path-058562
+(config)# no do-exec show avc sd-service info ent device-health db <cr>    # path-059540
+(config)# no do-exec show avc sd-service info ent device-health export last <cr>    # path-059921
+(config)# no do-exec show avc sd-service info ent device-health export stats <cr>    # path-059918
+(config)# no do-exec show avc sd-service info ent device-health interfaces <cr>    # path-059546
+(config)# no do-exec show avc sd-service info ent export <cr>    # path-058632
+(config)# no do-exec show avc sd-service info ent export current <cr>    # path-059532
+(config)# no do-exec show avc sd-service info ent export keys-db <cr>    # path-059541
+(config)# no do-exec show avc sd-service info ent export last <cr>    # path-059536
+(config)# no do-exec show avc sd-service info ent fields-db <cr>    # path-058578
+(config)# no do-exec show avc sd-service info ent symbol-table <cr>    # path-058591
+(config)# no do-exec show avc sd-service info export flow-counters <cr>    # path-058555
+(config)# no do-exec show avc sd-service info export l3-cache <cr>    # path-058557
+(config)# no do-exec show avc sd-service info export npc-info <cr>    # path-058545
+(config)# no do-exec show avc sd-service info export socket-cache <cr>    # path-058584
+(config)# no do-exec show avc sd-service info import dump <cr>    # path-058538
+(config)# no do-exec show avc sd-service info import dump l3-rules <cr>    # path-059514
+(config)# no do-exec show avc sd-service info import dump l4-rules <cr>    # path-059518
+(config)# no do-exec show avc sd-service info tls-fp clear-db <cr>    # path-058564
+(config)# no do-exec show avc sd-service info tls-fp clear-stats <cr>    # path-058603
+(config)# no do-exec show avc sd-service info tls-fp dump-db <cr>    # path-058567
+(config)# no do-exec show avc sd-service info tls-fp dump-db detail <cr>    # path-059521
+(config)# no do-exec show avc sd-service info tls-fp fingerprint-db dump <cr>    # path-059537
+(config)# no do-exec show avc sd-service info tls-fp fingerprint-db dump detail <cr>    # path-059917
+(config)# no do-exec show avc sd-service info tls-fp fingerprint-db info <cr>    # path-059529
+(config)# no do-exec show avc sd-service info tls-fp show-stats <cr>    # path-058579
+(config)# no do-exec show backup <cr>    # path-029599
+(config)# no do-exec show banner login <cr>    # path-034642
+(config)# no do-exec show beep blocked <cr>    # path-042151
+(config)# no do-exec show beep session <cr>    # path-042181
+(config)# no do-exec show bfd clients <cr>    # path-039277
+(config)# no do-exec show bfd drops <cr>    # path-039311
+(config)# no do-exec show bfd fast-timers-on-slow-int <cr>    # path-039525
+(config)# no do-exec show bfd hardware <cr>    # path-039326
+(config)# no do-exec show bfd idbs <cr>    # path-039419
+(config)# no do-exec show bfd interface <cr>    # path-039363
+(config)# no do-exec show bfd internal <cr>    # path-039171
+(config)# no do-exec show bfd map <cr>    # path-039534
+(config)# no do-exec show bfd summary <cr>    # path-039146
+(config)# no do-exec show bfd target-identifier all <cr>    # path-048533
+(config)# no do-exec show bfd target-identifier interface <cr>    # path-048713
+(config)# no do-exec show bfd target-identifier local <cr>    # path-048600
+(config)# no do-exec show bfd target-identifier remote <cr>    # path-048658
+(config)# no do-exec show bgp <address> <address> longer-prefixes <cr>    # path-056120
+(config)# no do-exec show bgp <address> <address> shorter-prefixes <cr>    # path-056133
+(config)# no do-exec show bgp <address> <cr>    # path-041011
+(config)# no do-exec show bgp <address> <cr>    # path-041908
+(config)# no do-exec show bgp <address> internal pathext <cr>    # path-056175
+(config)# no do-exec show bgp <cr>    # path-032314
+(config)# no do-exec show bgp <cr>    # path-032774
+(config)# no do-exec show bgp all route-type <number:1..7> <address> <cr>    # path-058599
+(config)# no do-exec show bgp all route-type <number:1..7> <address> <cr>    # path-058611
+(config)# no do-exec show bgp aspath hash <cr>    # path-050276
+(config)# no do-exec show bgp attr hash <cr>    # path-050257
+(config)# no do-exec show bgp attr nexthop <cr>    # path-050277
+(config)# no do-exec show bgp binding-sid <cr>    # path-040932
+(config)# no do-exec show bgp cidr-only <cr>    # path-041670
+(config)# no do-exec show bgp cluster-ids <cr>    # path-041454
+(config)# no do-exec show bgp cluster-ids internal <cr>    # path-050357
+(config)# no do-exec show bgp community <cr>    # path-042020
+(config)# no do-exec show bgp community-list <number:1..500> <cr>    # path-050640
+(config)# no do-exec show bgp dampened-paths <cr>    # path-041531
+(config)# no do-exec show bgp dampening parameters <cr>    # path-050394
+(config)# no do-exec show bgp default <cr>    # path-040811
+(config)# no do-exec show bgp detail <cr>    # path-040934
+(config)# no do-exec show bgp detail <string> <cr>    # path-050049
+(config)# no do-exec show bgp detail <string> <cr>    # path-050080
+(config)# no do-exec show bgp detail <string> <cr>    # path-050112
+(config)# no do-exec show bgp evi context <cr>    # path-049864
+(config)# no do-exec show bgp extcommunity-list <string> <cr>    # path-050698
+(config)# no do-exec show bgp filter-list <number:1..500> <cr>    # path-050482
+(config)# no do-exec show bgp import <cr>    # path-041742
+(config)# no do-exec show bgp inconsistency nexthop-label <cr>    # path-050496
+(config)# no do-exec show bgp inconsistency nexthop-label <cr>    # path-050542
+(config)# no do-exec show bgp inconsistent-as <cr>    # path-041794
+(config)# no do-exec show bgp injected-paths <cr>    # path-041715
+(config)# no do-exec show bgp injected-paths <cr>    # path-041768
+(config)# no do-exec show bgp internal <cr>    # path-041542
+(config)# no do-exec show bgp internal stat <cr>    # path-050399
+(config)# no do-exec show bgp internal task <cr>    # path-050375
+(config)# no do-exec show bgp labels <cr>    # path-040994
+(config)# no do-exec show bgp labels <cr>    # path-041104
+(config)# no do-exec show bgp labels <cr>    # path-041649
+(config)# no do-exec show bgp largecommunity-list <number:1..500> <cr>    # path-050682

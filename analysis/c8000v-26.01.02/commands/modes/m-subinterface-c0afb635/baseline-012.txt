@@ -1,0 +1,404 @@
+# 模式 subinterface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-012.md
+
+(config-subif)# ppp chap matchnames <cr>    # path-069798
+(config-subif)# ppp chap password <string> <cr>    # path-071098
+(config-subif)# ppp chap refuse <cr>    # path-069814
+(config-subif)# ppp chap refuse callin <cr>    # path-071073
+(config-subif)# ppp chap splitnames <cr>    # path-069773
+(config-subif)# ppp chap wait <cr>    # path-069740
+(config-subif)# ppp direction callin <cr>    # path-069772
+(config-subif)# ppp disconnect-cause keepalive lost-carrier <cr>    # path-070860
+(config-subif)# ppp dnis <string> <cr>    # path-069509
+(config-subif)# ppp eap identity <string> <cr>    # path-070957
+(config-subif)# ppp eap local <cr>    # path-069676
+(config-subif)# ppp eap password <string> <cr>    # path-071025
+(config-subif)# ppp eap refuse <cr>    # path-069725
+(config-subif)# ppp eap refuse callin <cr>    # path-071000
+(config-subif)# ppp eap wait <cr>    # path-069655
+(config-subif)# ppp encrypt mppe 40 <cr>    # path-070970
+(config-subif)# ppp hostname unique <cr>    # path-069672
+(config-subif)# ppp ignore-loopback <cr>    # path-068461
+(config-subif)# ppp ipcp accept-address <cr>    # path-069768
+(config-subif)# ppp ipcp address accept <cr>    # path-071296
+(config-subif)# ppp ipcp address no-ip send-ack <cr>    # path-071998
+(config-subif)# ppp ipcp address proxy <address> <cr>    # path-071981
+(config-subif)# ppp ipcp address request ignore <cr>    # path-071977
+(config-subif)# ppp ipcp address required <cr>    # path-071232
+(config-subif)# ppp ipcp address unique <cr>    # path-071254
+(config-subif)# ppp ipcp dns reject <cr>    # path-071158
+(config-subif)# ppp ipcp header-compression ack <cr>    # path-071090
+(config-subif)# ppp ipcp ignore-map <cr>    # path-069879
+(config-subif)# ppp ipcp mask request <cr>    # path-071187
+(config-subif)# ppp ipcp no-renegotiation <cr>    # path-069987
+(config-subif)# ppp ipcp predictive <cr>    # path-069911
+(config-subif)# ppp ipcp route default <cr>    # path-071186
+(config-subif)# ppp ipcp unique-address <cr>    # path-069925
+(config-subif)# ppp ipcp username unique <cr>    # path-071222
+(config-subif)# ppp ipcp wins reject <cr>    # path-071175
+(config-subif)# ppp iphc max-header <number:60..168> <cr>    # path-070819
+(config-subif)# ppp iphc max-period <number:1..65535> <cr>    # path-070801
+(config-subif)# ppp iphc max-time <number:1..255> <cr>    # path-070811
+(config-subif)# ppp ipv6cp address unique <cr>    # path-071088
+(config-subif)# ppp ipv6cp proxy <address> <cr>    # path-071157
+(config-subif)# ppp lcp delay <number:0..255> <cr>    # path-070797
+(config-subif)# ppp lcp echo mru verify <cr>    # path-071742
+(config-subif)# ppp lcp fast-start <cr>    # path-069366
+(config-subif)# ppp lcp predictive <cr>    # path-069345
+(config-subif)# ppp leased_line_option <number:0..4294967295> <cr>    # path-068071
+(config-subif)# ppp link reorders <cr>    # path-069840
+(config-subif)# ppp link reset <cr>    # path-069860
+(config-subif)# ppp link trap <cr>    # path-069878
+(config-subif)# ppp loopback ignore <cr>    # path-069392
+(config-subif)# ppp loopback no-backoff <cr>    # path-069405
+(config-subif)# ppp max-bad-auth <number:1..255> <cr>    # path-068078
+(config-subif)# ppp max-configure <number:1..255> <cr>    # path-068074
+(config-subif)# ppp max-failure <number:1..255> <cr>    # path-068075
+(config-subif)# ppp max-terminate <number:1..255> <cr>    # path-068072
+(config-subif)# ppp microcode <cr>    # path-068475
+(config-subif)# ppp mru match <cr>    # path-069379
+(config-subif)# ppp ms-chap refuse <cr>    # path-069722
+(config-subif)# ppp ms-chap refuse callin <cr>    # path-070999
+(config-subif)# ppp ms-chap-v2 refuse <cr>    # path-069758
+(config-subif)# ppp ms-chap-v2 refuse callin <cr>    # path-071024
+(config-subif)# ppp mtu adaptive <cr>    # path-069375
+(config-subif)# ppp mtu pppoe unlimited <cr>    # path-070651
+(config-subif)# ppp multilink <cr>    # path-068813
+(config-subif)# ppp multilink endpoint mac <interface> <cr>    # path-072679
+(config-subif)# ppp multilink endpoint none <cr>    # path-071273
+(config-subif)# ppp multilink fragment delay <number:0..1000> <cr>    # path-072047
+(config-subif)# ppp multilink fragment disable <cr>    # path-071316
+(config-subif)# ppp multilink fragment maximum 1 <cr>    # path-072021
+(config-subif)# ppp multilink fragment size <number:42..65535> <cr>    # path-072001
+(config-subif)# ppp multilink fragment-delay <number:1..1000> <cr>    # path-071294
+(config-subif)# ppp multilink fragmentation <cr>    # path-069965
+(config-subif)# ppp multilink group <number:dynamic> <cr>    # path-072631
+(config-subif)# ppp multilink idle-link <cr>    # path-070015
+(config-subif)# ppp multilink interleave <cr>    # path-070016
+(config-subif)# ppp multilink links maximum <number:dynamic> <cr>    # path-072678
+(config-subif)# ppp multilink links minimum <number:dynamic> <cr>    # path-072682
+(config-subif)# ppp multilink load-threshold <number:1..255> <cr>    # path-071371
+(config-subif)# ppp multilink mrru local <number:128..16384> <cr>    # path-069964
+(config-subif)# ppp multilink mrru remote <number:128..16384> <cr>    # path-069982
+(config-subif)# ppp multilink multiclass <cr>    # path-070054
+(config-subif)# ppp multilink multiclass local allow <cr>    # path-072683
+(config-subif)# ppp multilink ncp sequenced if-needed <cr>    # path-071969
+(config-subif)# ppp multilink queue depth fifo <number:2..255> <cr>    # path-071303
+(config-subif)# ppp multilink queue depth qos <number:2..255> <cr>    # path-071320
+(config-subif)# ppp multilink slippage mru <number:2..32> <cr>    # path-069948
+(config-subif)# ppp multilink slippage msec <number:1..16000> <cr>    # path-069957
+(config-subif)# ppp ncp passive <cr>    # path-069907
+(config-subif)# ppp pap refuse <cr>    # path-069855
+(config-subif)# ppp pap refuse callin <cr>    # path-071116
+(config-subif)# ppp pap sent-username <string> password <string> <cr>    # path-072323
+(config-subif)# ppp pap wait <cr>    # path-069797
+(config-subif)# ppp pfc local request <cr>    # path-070688
+(config-subif)# ppp pfc remote apply <cr>    # path-070709
+(config-subif)# ppp quality reject <cr>    # path-069182
+(config-subif)# ppp reliable-link <cr>    # path-068481
+(config-subif)# ppp timeout aaa <cr>    # path-069960
+(config-subif)# ppp timeout authentication <number:0..255> <cr>    # path-068744
+(config-subif)# ppp timeout bacp <number:1..255> <cr>    # path-068806
+(config-subif)# ppp timeout idle 0 <cr>    # path-071311
+(config-subif)# ppp timeout idle <number:dynamic> <cr>    # path-072633
+(config-subif)# ppp timeout multilink link add <number:1..65535> <cr>    # path-071289
+(config-subif)# ppp timeout multilink link remove <number:1..65535> <cr>    # path-071307
+(config-subif)# ppp timeout multilink lost-fragment <number:0..255> <cr>    # path-072035
+(config-subif)# ppp timeout ncp <number:1..65535> <cr>    # path-071235
+(config-subif)# ppp timeout retry <number:0..255> <cr>    # path-071226
+(config-subif)# pppoe enable <cr>    # path-068477
+(config-subif)# pppoe max-sessions <number:dynamic> <cr>    # path-072570
+(config-subif)# pppoe-client dial-pool-number <number:1..255> <cr>    # path-069723
+(config-subif)# pppoe-client ppp-max-payload <number:dynamic> <cr>    # path-072583
+(config-subif)# pppoe-sessions threshold <number:dynamic> <cr>    # path-072569
+(config-subif)# pppoe-sessions threshold percent <number:0..100> interval <number:1..65535> <cr>    # path-072253
+(config-subif)# pulse-time <number:0..60> <cr>    # path-068632
+(config-subif)# punt-control cause ipv4-options <cr>    # path-069313
+(config-subif)# punt-control enable <cr>    # path-068435
+(config-subif)# qllc accept-all-calls <cr>    # path-068665
+(config-subif)# qllc dlsw <cr>    # path-068771
+(config-subif)# qllc dlsw pvc <number:1..4095> <number:1..4095> <?print_action@55558ac17660> <cr>    # path-072700
+(config-subif)# qllc largest-packet <address> <number:0..1024> <cr>    # path-071077
+(config-subif)# qllc npsi-poll <address> <cr>    # path-069828
+(config-subif)# qllc partner <address> <address> <cr>    # path-071029
+(config-subif)# qllc sap <address> <number:2..254> <number:2..254> <cr>    # path-071838
+(config-subif)# qllc srb <address> <number:1..4095> <number:1..4095> <cr>    # path-071828
+(config-subif)# qllc xid <address> <string> <cr>    # path-071047
+(config-subif)# qos pre-classify <cr>    # path-068703
+(config-subif)# qos pre-classify <cr>    # path-068704
+(config-subif)# radius attribute nas-port-type <number:0..2147483647> <cr>    # path-070278
+(config-subif)# rate-limit input <number:8000..2000000000> <number:1000..512000000> <number:2000..1024000000> conform-action drop exceed-action drop <cr>    # path-072513
+(config-subif)# rbs-zero <cr>    # path-068175
+(config-subif)# rbs-zero nfas-int <number:0..96> <cr>    # path-072593
+(config-subif)# redirect to group <string> <cr>    # path-070749
+(config-subif)# redundancy asymmetric-routing enable <cr>    # path-069440
+(config-subif)# redundancy gratuitous-arp group <number:1..2> interval sec <number:1..14400> <cr>    # path-072445
+(config-subif)# redundancy group <number:1..2> <cr>    # path-069502
+(config-subif)# redundancy group <number:1..2> decrement <number:dynamic> <cr>    # path-072663
+(config-subif)# redundancy rii <number:1..65535> <cr>    # path-069476
+(config-subif)# ring-speed 4 <cr>    # path-068383
+(config-subif)# rx-sync-disable <cr>    # path-068104
+(config-subif)# sap-priority <number:1..10> <cr>    # path-068047
+(config-subif)# scramble <cr>    # path-068069
+(config-subif)# sdlc K <number:1..7> <cr>    # path-068176
+(config-subif)# sdlc N1 <number:1..4294967295> <cr>    # path-068170
+(config-subif)# sdlc N2 <number:1..255> <cr>    # path-068172
+(config-subif)# sdlc T1 <number:1..64000> <cr>    # path-068166
+(config-subif)# sdlc address <number:1..255> <cr>    # path-070019
+(config-subif)# sdlc cts-delay <number:1..64000> <cr>    # path-068187
+(config-subif)# sdlc dlsw <number:1..254> <cr>    # path-072596
+(config-subif)# sdlc dlsw default <cr>    # path-070136
+(config-subif)# sdlc frmr-disable <cr>    # path-068775
+(config-subif)# sdlc group-poll <number:1..255> <cr>    # path-070104
+(config-subif)# sdlc hdx <cr>    # path-068802
+(config-subif)# sdlc holdq <number:1..254> <cr>    # path-070045
+(config-subif)# sdlc line-speed <number:1200..2000000> <cr>    # path-068184
+(config-subif)# sdlc partner <address> <number:1..254> <cr>    # path-071451
+(config-subif)# sdlc poll-limit-value <number:0..10> <cr>    # path-068160
+(config-subif)# sdlc poll-pause-timer <number:1..10000> <cr>    # path-068153
+(config-subif)# sdlc poll-wait-timeout <number:500..64000> <cr>    # path-068168
+(config-subif)# sdlc qllc-prtnr <address> <number:1..254> <cr>    # path-071382
+(config-subif)# sdlc rnr-limit <number:0..30> <cr>    # path-068156
+(config-subif)# sdlc role primary <cr>    # path-069842
+(config-subif)# sdlc rts-timeout <number:1..64000> <cr>    # path-068191
+(config-subif)# sdlc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-072069
+(config-subif)# sdlc sdlc-largest-frame <number:1..254> <number:0..4294967295> <cr>    # path-071454
+(config-subif)# sdlc simultaneous full-datmode <cr>    # path-070093
+(config-subif)# sdlc slow-poll <cr>    # path-068808
+(config-subif)# sdlc snrm-timer <number:1..64000> <cr>    # path-068163
+(config-subif)# sdlc virtual-multidrop <cr>    # path-068832
+(config-subif)# sdlc vmac <address> <cr>    # path-069861
+(config-subif)# sdlc xid <number:1..254> <string> <cr>    # path-071447
+(config-subif)# sdlc xid-pause-timer <number:10..300> <cr>    # path-069963
+(config-subif)# sdllc partner <address> <number:1..254> <cr>    # path-071056
+(config-subif)# sdllc ring-largest-frame 516 <cr>    # path-069634
+(config-subif)# sdllc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-071833
+(config-subif)# sdllc sdlc-largest-frame <number:1..254> <number:0..4294967295> <cr>    # path-070976
+(config-subif)# sdllc traddr <address> <number:0..4095> <number:0..15> <number:0..4095> <cr>    # path-072285
+(config-subif)# sdllc xid <number:1..254> <string> <cr>    # path-070996
+(config-subif)# serial restart-delay <number:0..900> <cr>    # path-068108
+(config-subif)# service instance <number:dynamic> <cr>    # path-072564
+(config-subif)# service-overlay encap cmd <cr>    # path-069697
+(config-subif)# service-policy inline input <cr>    # path-069208
+(config-subif)# service-policy inline output <cr>    # path-069239
+(config-subif)# service-policy input <string> <cr>    # path-072561
+(config-subif)# service-policy output <string> <cr>    # path-069174
+(config-subif)# service-policy type control <cr>    # path-069417
+(config-subif)# service-policy type control default <cr>    # path-070715
+(config-subif)# service-policy type control default <string> <cr>    # path-071674
+(config-subif)# service-policy type control subscriber <?option@5555890f3358> <cr>    # path-072660
+(config-subif)# service-routing mdns-sd <cr>    # path-068515
+(config-subif)# shutdown <cr>    # path-068060
+(config-subif)# site-local-redundancy <cr>    # path-068114
+(config-subif)# smds address <address> <cr>    # path-069331
+(config-subif)# smds dxi-mode <cr>    # path-068414
+(config-subif)# smds enable-arp <cr>    # path-068466
+(config-subif)# smds glean-mode <?protoname_action@55558a0a1bc0> <cr>    # path-072566
+(config-subif)# smds multicast <?protoname_action@55558a0a26a0> <?protoname_action@55558a0a2700> <address> <cr>    # path-072819
+(config-subif)# smds multicast <?protoname_action@55558a0a26a0> <address> <cr>    # path-072614
+(config-subif)# smds nec-mode <cr>    # path-068442
+(config-subif)# smds static-map <?protoaddr_action@55558a0a2250> <address> <cr>    # path-072617
+(config-subif)# sna enable-host <cr>    # path-068429
+(config-subif)# sna start <string> <cr>    # path-069213
+(config-subif)# snapshot server <number:5..1000> <cr>    # path-069949
+(config-subif)# snmp ifindex clear <cr>    # path-069573
+(config-subif)# snmp ifindex persist <cr>    # path-069576
+(config-subif)# snmp trap ip verify drop-rate <cr>    # path-071806
+(config-subif)# snmp trap isdn-calls <cr>    # path-069602
+(config-subif)# snmp trap link-status <cr>    # path-069537
+(config-subif)# snmp trap link-status permit duplicates <cr>    # path-071766
+(config-subif)# source template <cr>    # path-068625
+(config-subif)# source-bridge <?params_action_alist@55558a9ff7e0> <?params_action_alist@55558a9ffb88> <?params_action_alist@55558a9ffe30> <?params_action_alist@55558aa000d8> <?params_action_alist@55558aa00380> <?params_action_alist@55558aa00628> max-rd <number:2..8> <cr>    # path-072847
+(config-subif)# source-bridge <number:1..4095> <number:1..15> <number:1..4095> <cr>    # path-071059
+(config-subif)# source-bridge max-hops <number:1..7> <cr>    # path-068147
+(config-subif)# source-bridge max-in-hops <number:1..7> <cr>    # path-068137
+(config-subif)# source-bridge max-out-hops <number:1..7> <cr>    # path-068143
+(config-subif)# source-bridge proxy-explorer <cr>    # path-068688
+(config-subif)# source-bridge route-cache <cr>    # path-068715
+(config-subif)# source-bridge spanning <cr>    # path-068682
+(config-subif)# source-bridge trcrf-vlan <number:dynamic> ring-group <number:1..4095> <cr>    # path-072665
+(config-subif)# speed 10 <cr>    # path-068294
+(config-subif)# standby <number:dynamic> <cr>    # path-072528
+(config-subif)# standby <number:dynamic> authentication <cr>    # path-072548
+(config-subif)# standby <number:dynamic> follow <cr>    # path-072552
+(config-subif)# standby <number:dynamic> ip <cr>    # path-072556
+(config-subif)# standby <number:dynamic> ipv6 <cr>    # path-072557
+(config-subif)# standby <number:dynamic> mac-address <cr>    # path-072550
+(config-subif)# standby <number:dynamic> name <cr>    # path-072549
+(config-subif)# standby <number:dynamic> preempt <cr>    # path-072554
+(config-subif)# standby <number:dynamic> priority <cr>    # path-072553
+(config-subif)# standby <number:dynamic> timers <cr>    # path-072544
+(config-subif)# standby <number:dynamic> track <number:1..32767> <cr>    # path-072604
+(config-subif)# standby <number:dynamic> unicast destination <address> <cr>    # path-072647
+(config-subif)# standby authentication <string> <cr>    # path-069037
+(config-subif)# standby bfd <cr>    # path-068245
+(config-subif)# standby delay minimum <number:0..10000> <cr>    # path-070295
+(config-subif)# standby follow <string> <cr>    # path-069013
+(config-subif)# standby ip <cr>    # path-068309
+(config-subif)# standby ipv6 <cr>    # path-068312
+(config-subif)# standby mac-address <address> <cr>    # path-069003
+(config-subif)# standby mac-refresh <number:0..255> <cr>    # path-068935
+(config-subif)# standby name <string> <cr>    # path-069002
+(config-subif)# standby preempt <cr>    # path-068289
+(config-subif)# standby redirect <cr>    # path-068255
+(config-subif)# standby redirect timers <number:dynamic> <number:dynamic> <cr>    # path-072815
+(config-subif)# standby track <number:1..32767> <cr>    # path-069017
+(config-subif)# standby unicast destination <address> <cr>    # path-070381
+(config-subif)# standby use-bia <cr>    # path-068231
+(config-subif)# standby use-bia scope interface <cr>    # path-070285
+(config-subif)# standby version <number:1..2> <cr>    # path-068936
+(config-subif)# stun group <number:1..255> <cr>    # path-068149
+(config-subif)# stun proxy-poll address <address> discovery <cr>    # path-071926
+(config-subif)# stun route all interface <interface> <cr>    # path-072674
+(config-subif)# stun route all tcp <address> <cr>    # path-071927
+(config-subif)# stun sdlc-role primary <cr>    # path-069843
+(config-subif)# subscriber aging probe <cr>    # path-068878
+(config-subif)# switchport <cr>    # path-068054
+(config-subif)# switchport access vlan <number:1..2349> <cr>    # path-070510
+(config-subif)# switchport access vlan <number:dynamic> <cr>    # path-072597
+(config-subif)# switchport mode access <cr>    # path-069121
+(config-subif)# switchport port-security <cr>    # path-068228
+(config-subif)# switchport port-security allowlist <cr>    # path-068898
+(config-subif)# switchport port-security limit rate invalid-source-mac <number:dynamic> <cr>    # path-072684
+(config-subif)# switchport port-security maximum <number:dynamic> <cr>    # path-072598
+(config-subif)# switchport priority extend cos <number:0..7> <cr>    # path-071488
+(config-subif)# switchport priority extend trust <cr>    # path-070293
+(config-subif)# switchport trunk allowed vlan all <cr>    # path-071649
+(config-subif)# switchport trunk native vlan <number:1..2349> <cr>    # path-071570
+(config-subif)# template global inheritance disable <cr>    # path-070847
+(config-subif)# timeout absolute <number:0..518399> <cr>    # path-069044
+(config-subif)# timeslot <number:0..31> - <number:0..31> <cr>    # path-070787
+(config-subif)# topology <?option@5555895340b0> <cr>    # path-072535
+(config-subif)# transmit-interface <interface> <cr>    # path-072525
+(config-subif)# transport-mode lan <cr>    # path-068261
+(config-subif)# trunk-group <cr>    # path-068181
+(config-subif)# trunk-group <string> timeslots <?number_func_nows_action@55558ce58140> <cr>    # path-072844
+(config-subif)# ts16 <cr>    # path-068099
+(config-subif)# tunnel 6rd prefix <prefix:dynamic> <cr>    # path-072627
+(config-subif)# tunnel 6rd reverse-map-check <cr>    # path-069802
+(config-subif)# tunnel bandwidth transmit <number:1..10000000> <cr>    # path-070789
+(config-subif)# tunnel checksum <cr>    # path-068532
+(config-subif)# tunnel delete-timer <number:10..60> <cr>    # path-069910
+(config-subif)# tunnel destination dynamic <cr>    # path-069472
+(config-subif)# tunnel dst-port <number:0..65535> <cr>    # path-069877
+(config-subif)# tunnel endpoint service-policy output <string> <cr>    # path-071901
+(config-subif)# tunnel entropy <cr>    # path-068492
+(config-subif)# tunnel flow egress-records <cr>    # path-069612
+(config-subif)# tunnel key <number:0..16777215> <cr>    # path-068101
+(config-subif)# tunnel key <number:0..4294967295> <cr>    # path-068102
+(config-subif)# tunnel metadata src_vpn <cr>    # path-069590
+(config-subif)# tunnel mode gre <?test_subsys_action@555589d7c780> ipv6 <cr>    # path-072662
+(config-subif)# tunnel mode ipv6 <cr>    # path-069456
+(config-subif)# tunnel mode ipv6ip <cr>    # path-069568
+(config-subif)# tunnel mode nos <cr>    # path-069446
+(config-subif)# tunnel mode rbscp <cr>    # path-069447
+(config-subif)# tunnel mpls-ip-only <cr>    # path-068738
+(config-subif)# tunnel network-id <number:1..65535> nexthop <address> <cr>    # path-071763
+(config-subif)# tunnel path-mtu-discovery <cr>    # path-068599
+(config-subif)# tunnel path-mtu-discovery age-timer <number:10..30> <cr>    # path-070905
+(config-subif)# tunnel path-mtu-discovery min-mtu <number:92..65535> <cr>    # path-068591
+(config-subif)# tunnel raw-packet-interface <interface> <cr>    # path-072577
+(config-subif)# tunnel rbscp delay <cr>    # path-069427
+(config-subif)# tunnel route-via <interface> preferred <cr>    # path-072623
+(config-subif)# tunnel sequence-datagrams <cr>    # path-068522
+(config-subif)# tunnel snooping enable <cr>    # path-069870
+(config-subif)# tunnel source <interface> <cr>    # path-072571
+(config-subif)# tunnel source dynamic <cr>    # path-069430
+(config-subif)# tunnel src-mac-address <address> <cr>    # path-069822
+(config-subif)# tunnel src-port <number:0..65535> <cr>    # path-069894
+(config-subif)# tunnel tos <number:0..255> <cr>    # path-068140
+(config-subif)# tunnel ttl <number:1..255> <cr>    # path-068145
+(config-subif)# tunnel udlr address-resolution <cr>    # path-069617
+(config-subif)# tunnel udlr send-only <interface> <cr>    # path-072625
+(config-subif)# tunnel vlan <number:1..4094> - <number:1..4094> <cr>    # path-071920
+(config-subif)# tunnel vlan <number:1..4094> <cr>    # path-072592
+(config-subif)# tunnel vrf multiplexing <cr>    # path-069700
+(config-subif)# tunnel vxlan source-port-range <number:1..65535> <number:1..65535> <cr>    # path-071948
+(config-subif)# tunnel vxlan vni <number:1..16777215> <cr>    # path-071197
+(config-subif)# tx-queue-limit <number:dynamic> <cr>    # path-072527
+(config-subif)# tx-ring-limit <cr>    # path-068061
+(config-subif)# tx-ring-limit <number:dynamic> <cr>    # path-072526
+(config-subif)# vlan-autoconfig <cr>    # path-068089
+(config-subif)# vlan-autoconfig protocol any <cr>    # path-069343
+(config-subif)# vlan-autoconfig protocol dhcpv6iapd <cr>    # path-069365
+(config-subif)# vlan-id dot1q <number:1..4094> <cr>    # path-069429
+(config-subif)# vlan-range dot1q <number:1..4094> <number:dynamic> <cr>    # path-072618
+(config-subif)# vnet global <cr>    # path-068416
+(config-subif)# vnet name <string> <cr>    # path-072565
+(config-subif)# vnet trunk <cr>    # path-068226
+(config-subif)# vnet trunk list <string> <cr>    # path-072600
+(config-subif)# vpdn authorization <cr>    # path-072723
+(config-subif)# vpdn template <string> <cr>    # path-068915
+(config-subif)# vrf autoclassify source <cr>    # path-068925
+(config-subif)# vrf forwarding <string> <cr>    # path-072541
+(config-subif)# vrf receive <string> <cr>    # path-068937
+(config-subif)# vrf select source <cr>    # path-068928
+(config-subif)# vrf sitemap <string> <cr>    # path-068916
+(config-subif)# vrrp <number:1..255> <cr>    # path-072724
+(config-subif)# vrrp <number:1..255> address-family ipv4 <cr>    # path-070678
+(config-subif)# vrrp <number:1..255> authentication <cr>    # path-072744
+(config-subif)# vrrp <number:1..255> description <cr>    # path-072745
+(config-subif)# vrrp <number:1..255> ip <address> <cr>    # path-072785
+(config-subif)# vrrp <number:1..255> name <cr>    # path-072746
+(config-subif)# vrrp <number:1..255> preempt <cr>    # path-072748
+(config-subif)# vrrp <number:1..255> priority <cr>    # path-072749
+(config-subif)# vrrp <number:1..255> shutdown <cr>    # path-072750
+(config-subif)# vrrp <number:1..255> timers advertise <cr>    # path-072786
+(config-subif)# vrrp <number:1..255> track <number:1..32767> <cr>    # path-072787
+(config-subif)# vrrp delay minimum <cr>    # path-072747
+(config-subif)# vrrs follow <cr>    # path-072532
+(config-subif)# vrrs interface-state <cr>    # path-072531
+(config-subif)# vrrs mac-address <cr>    # path-072533
+(config-subif)# vrrs pathway <string> <cr>    # path-069364
+(config-subif)# vtp <cr>    # path-068088
+(config-subif)# x25 accept-reverse <cr>    # path-068636
+(config-subif)# x25 address <address> <cr>    # path-069406
+(config-subif)# x25 alias <string> <cr>    # path-069421
+(config-subif)# x25 aodi <cr>    # path-068781
+(config-subif)# x25 bfe-decision yes <cr>    # path-070037
+(config-subif)# x25 bfe-emergency never <cr>    # path-070027
+(config-subif)# x25 default <?protoname_action@55558a10cd68> <cr>    # path-072590
+(config-subif)# x25 facility cug <number:dynamic> <cr>    # path-072628
+(config-subif)# x25 facility reverse <cr>    # path-069863
+(config-subif)# x25 fail-over <number:0..65565> interface <interface> <cr>    # path-072677
+(config-subif)# x25 hic <number:0..4095> <cr>    # path-068095
+(config-subif)# x25 hoc <number:0..4095> <cr>    # path-068106
+(config-subif)# x25 hold-queue <number:0..9999> <cr>    # path-068174
+(config-subif)# x25 hold-vc-timer <number:0..1000> <cr>    # path-068180
+(config-subif)# x25 htc <number:0..4095> <cr>    # path-068098
+(config-subif)# x25 idle <number:0..255> <cr>    # path-069927
+(config-subif)# x25 ip-precedence <cr>    # path-068776
+(config-subif)# x25 ips <number:dynamic> <cr>    # path-072582
+(config-subif)# x25 lic <number:0..4095> <cr>    # path-068094
+(config-subif)# x25 linkrestart <cr>    # path-068669
+(config-subif)# x25 loc <number:0..4095> <cr>    # path-068103
+(config-subif)# x25 ltc <number:0..4095> <cr>    # path-068096
+(config-subif)# x25 map <?protoaddr_action@555589e57540> <cr>    # path-072595
+(config-subif)# x25 map svc <string> <cr>    # path-072638
+(config-subif)# x25 modulo 8 <cr>    # path-069407
+(config-subif)# x25 nonzero-dte-cause <cr>    # path-068650
+(config-subif)# x25 nvc <number:1..8> <cr>    # path-068183
+(config-subif)# x25 ops <number:dynamic> <cr>    # path-072584
+(config-subif)# x25 pad-access <cr>    # path-068678
+(config-subif)# x25 relay-vc-number <cr>    # path-068660
+(config-subif)# x25 remote-red <address> remote-black <address> <cr>    # path-072043
+(config-subif)# x25 retry interval <number:5..3600> attempts <number:1..100> <cr>    # path-072349
+(config-subif)# x25 security crcdn <cr>    # path-069344
+(config-subif)# x25 subscribe cug-service <cr>    # path-070046
+(config-subif)# x25 subscribe flow-control always <cr>    # path-071233
+(config-subif)# x25 subscribe lc0 incoming-only <cr>    # path-071274
+(config-subif)# x25 subscribe local-cug <number:dynamic> <cr>    # path-072632
+(config-subif)# x25 subscribe packetsize <cr>    # path-069959
+(config-subif)# x25 subscribe throughput never <cr>    # path-071223
+(config-subif)# x25 subscribe windowsize <cr>    # path-069972
+(config-subif)# x25 suppress-called-address <cr>    # path-068694
+(config-subif)# x25 suppress-calling-address <cr>    # path-068702
+(config-subif)# x25 t10 <number:1..1000> <cr>    # path-068111
+(config-subif)# x25 t11 <number:1..1000> <cr>    # path-068118
+(config-subif)# x25 t12 <number:1..1000> <cr>    # path-068123
+(config-subif)# x25 t13 <number:1..1000> <cr>    # path-068128
+(config-subif)# x25 t20 <number:1..1000> <cr>    # path-068112
+(config-subif)# x25 t21 <number:1..1000> <cr>    # path-068119
+(config-subif)# x25 t22 <number:1..1000> <cr>    # path-068124
+(config-subif)# x25 t23 <number:1..1000> <cr>    # path-068129

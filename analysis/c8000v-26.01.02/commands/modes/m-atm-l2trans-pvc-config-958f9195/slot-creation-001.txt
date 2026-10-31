@@ -1,0 +1,78 @@
+# 模式 atm-l2trans-pvc-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(cfg-if-atm-l2trans-pvc)# abr <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003591
+(cfg-if-atm-l2trans-pvc)# abr rate-factors <?keyword_option_mm_action@55558b4ffb10> <?keyword_option_mm_action@55558b4ffb60> <cr>    # static_slot_creation_candidates-003595
+(cfg-if-atm-l2trans-pvc)# cbr <number:dynamic> <cr>    # static_slot_creation_candidates-003586
+(cfg-if-atm-l2trans-pvc)# cell-packing <cr>    # static_slot_creation_candidates-003524
+(cfg-if-atm-l2trans-pvc)# cell-packing <number:dynamic> <cr>    # static_slot_creation_candidates-003588
+(cfg-if-atm-l2trans-pvc)# class-vc <string> <cr>    # static_slot_creation_candidates-003537
+(cfg-if-atm-l2trans-pvc)# default abr rate-factors <cr>    # static_slot_creation_candidates-003554
+(cfg-if-atm-l2trans-pvc)# default cbr <cr>    # static_slot_creation_candidates-003529
+(cfg-if-atm-l2trans-pvc)# default cell-packing <cr>    # static_slot_creation_candidates-003545
+(cfg-if-atm-l2trans-pvc)# default class-vc <string> <cr>    # static_slot_creation_candidates-003556
+(cfg-if-atm-l2trans-pvc)# default encapsulation <cr>    # static_slot_creation_candidates-003540
+(cfg-if-atm-l2trans-pvc)# default epd <cr>    # static_slot_creation_candidates-003538
+(cfg-if-atm-l2trans-pvc)# default mpls l2transport route <cr>    # static_slot_creation_candidates-003567
+(cfg-if-atm-l2trans-pvc)# default oam ais-rdi <cr>    # static_slot_creation_candidates-003563
+(cfg-if-atm-l2trans-pvc)# default oam retry <cr>    # static_slot_creation_candidates-003565
+(cfg-if-atm-l2trans-pvc)# default oam retry cc end <cr>    # static_slot_creation_candidates-003582
+(cfg-if-atm-l2trans-pvc)# default oam retry cc segment <cr>    # static_slot_creation_candidates-003579
+(cfg-if-atm-l2trans-pvc)# default oam-ac emulation-enable <cr>    # static_slot_creation_candidates-003559
+(cfg-if-atm-l2trans-pvc)# default oam-ac segment endpoint <cr>    # static_slot_creation_candidates-003571
+(cfg-if-atm-l2trans-pvc)# default oam-pvc <cr>    # static_slot_creation_candidates-003550
+(cfg-if-atm-l2trans-pvc)# default oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003585
+(cfg-if-atm-l2trans-pvc)# default oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003583
+(cfg-if-atm-l2trans-pvc)# default service-policy input <string> <cr>    # static_slot_creation_candidates-003569
+(cfg-if-atm-l2trans-pvc)# default tx-limit <cr>    # static_slot_creation_candidates-003548
+(cfg-if-atm-l2trans-pvc)# default ubr <cr>    # static_slot_creation_candidates-003534
+(cfg-if-atm-l2trans-pvc)# default ubr+ <cr>    # static_slot_creation_candidates-003531
+(cfg-if-atm-l2trans-pvc)# default vbr-nrt <cr>    # static_slot_creation_candidates-003535
+(cfg-if-atm-l2trans-pvc)# default vbr-rt <cr>    # static_slot_creation_candidates-003527
+(cfg-if-atm-l2trans-pvc)# default xconnect <cr>    # static_slot_creation_candidates-003544
+(cfg-if-atm-l2trans-pvc)# encapsulation aal5 <cr>    # static_slot_creation_candidates-003541
+(cfg-if-atm-l2trans-pvc)# epd <cr>    # static_slot_creation_candidates-003523
+(cfg-if-atm-l2trans-pvc)# mpls l2transport route <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-003576
+(cfg-if-atm-l2trans-pvc)# no abr rate-factors <cr>    # static_slot_creation_candidates-003553
+(cfg-if-atm-l2trans-pvc)# no cbr <cr>    # static_slot_creation_candidates-003528
+(cfg-if-atm-l2trans-pvc)# no cell-packing <cr>    # static_slot_creation_candidates-003543
+(cfg-if-atm-l2trans-pvc)# no class-vc <string> <cr>    # static_slot_creation_candidates-003555
+(cfg-if-atm-l2trans-pvc)# no encapsulation <cr>    # static_slot_creation_candidates-003539
+(cfg-if-atm-l2trans-pvc)# no epd <cr>    # static_slot_creation_candidates-003536
+(cfg-if-atm-l2trans-pvc)# no mpls l2transport route <cr>    # static_slot_creation_candidates-003566
+(cfg-if-atm-l2trans-pvc)# no oam ais-rdi <cr>    # static_slot_creation_candidates-003562
+(cfg-if-atm-l2trans-pvc)# no oam retry <cr>    # static_slot_creation_candidates-003564
+(cfg-if-atm-l2trans-pvc)# no oam retry cc end <cr>    # static_slot_creation_candidates-003580
+(cfg-if-atm-l2trans-pvc)# no oam retry cc segment <cr>    # static_slot_creation_candidates-003578
+(cfg-if-atm-l2trans-pvc)# no oam-ac emulation-enable <cr>    # static_slot_creation_candidates-003558
+(cfg-if-atm-l2trans-pvc)# no oam-ac segment endpoint <cr>    # static_slot_creation_candidates-003570
+(cfg-if-atm-l2trans-pvc)# no oam-pvc <cr>    # static_slot_creation_candidates-003549
+(cfg-if-atm-l2trans-pvc)# no oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003584
+(cfg-if-atm-l2trans-pvc)# no oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003581
+(cfg-if-atm-l2trans-pvc)# no service-policy input <string> <cr>    # static_slot_creation_candidates-003568
+(cfg-if-atm-l2trans-pvc)# no tx-limit <cr>    # static_slot_creation_candidates-003547
+(cfg-if-atm-l2trans-pvc)# no ubr <cr>    # static_slot_creation_candidates-003532
+(cfg-if-atm-l2trans-pvc)# no ubr+ <cr>    # static_slot_creation_candidates-003530
+(cfg-if-atm-l2trans-pvc)# no vbr-nrt <cr>    # static_slot_creation_candidates-003533
+(cfg-if-atm-l2trans-pvc)# no vbr-rt <cr>    # static_slot_creation_candidates-003526
+(cfg-if-atm-l2trans-pvc)# no xconnect <cr>    # static_slot_creation_candidates-003542
+(cfg-if-atm-l2trans-pvc)# oam ais-rdi <cr>    # static_slot_creation_candidates-003551
+(cfg-if-atm-l2trans-pvc)# oam retry <cr>    # static_slot_creation_candidates-003552
+(cfg-if-atm-l2trans-pvc)# oam retry cc end <cr>    # static_slot_creation_candidates-003573
+(cfg-if-atm-l2trans-pvc)# oam retry cc segment <cr>    # static_slot_creation_candidates-003572
+(cfg-if-atm-l2trans-pvc)# oam-ac emulation-enable <cr>    # static_slot_creation_candidates-003546
+(cfg-if-atm-l2trans-pvc)# oam-ac segment endpoint <cr>    # static_slot_creation_candidates-003560
+(cfg-if-atm-l2trans-pvc)# oam-pvc <cr>    # static_slot_creation_candidates-003525
+(cfg-if-atm-l2trans-pvc)# oam-pvc manage cc end <cr>    # static_slot_creation_candidates-003575
+(cfg-if-atm-l2trans-pvc)# oam-pvc manage cc segment <cr>    # static_slot_creation_candidates-003574
+(cfg-if-atm-l2trans-pvc)# pseudowire <address> <number:1..4294967295> encapsulation mpls <cr>    # static_slot_creation_candidates-003590
+(cfg-if-atm-l2trans-pvc)# pseudowire <address> <number:1..4294967295> pw-class <string> <cr>    # static_slot_creation_candidates-003577
+(cfg-if-atm-l2trans-pvc)# service-policy input <string> <cr>    # static_slot_creation_candidates-003557
+(cfg-if-atm-l2trans-pvc)# tx-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003589
+(cfg-if-atm-l2trans-pvc)# ubr <cr>    # static_slot_creation_candidates-003522
+(cfg-if-atm-l2trans-pvc)# ubr <number:dynamic> <cr>    # static_slot_creation_candidates-003587
+(cfg-if-atm-l2trans-pvc)# ubr+ <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003593
+(cfg-if-atm-l2trans-pvc)# vbr-nrt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003594
+(cfg-if-atm-l2trans-pvc)# vbr-rt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003592
+(cfg-if-atm-l2trans-pvc)# xconnect vfi <string> <cr>    # static_slot_creation_candidates-003561

@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-055.md
+
+(exec)# test ipc window-size <number:32..1024> <cr>    # path-005807
+(exec)# test ipc zone seat2slave <number:2..15> <cr>    # path-009388
+(exec)# test iphc context lifetime <number:dynamic> <cr>    # path-017192
+(exec)# test iphc context lifetime default <cr>    # path-008476
+(exec)# test ipv6 access-list common enable <cr>    # path-008728
+(exec)# test ipv6 dhcp-client autoinstall <interface> test-case <number:1..65535> <cr>    # path-023685
+(exec)# test ipv6 dhcp-client lease-query address <address> <cr>    # path-010808
+(exec)# test ipv6 dhcp-relay bulk-lease-query <cr>    # path-005041
+(exec)# test ipv6 dhcp-relay ldra <cr>    # path-005078
+(exec)# test ipv6 dhcp-server hostnum <number:0..4294967295> <cr>    # path-008716
+(exec)# test ipv6 nd cache populate <interface> <address> <number:1..1000000> <address> <cr>    # path-025002
+(exec)# test ipv6 nd cache stale-traffic <interface> <address> <number:1..1000000> <cr>    # path-024689
+(exec)# test ipv6 nd client del <number:0..15> <cr>    # path-010852
+(exec)# test ipv6 nd client pfx-adv-ctrl <number:0..15> <interface> enable <cr>    # path-024682
+(exec)# test ipv6 nd client sendra <number:0..15> <interface> <address> <cr>    # path-024692
+(exec)# test ipv6 nd db populate <interface> <address> <number:1..262144> <address> add <cr>    # path-025139
+(exec)# test ipv6 nd ha <interface> <number:0..1> <cr>    # path-021545
+(exec)# test ipv6 nd mip_rmg <interface> <number:0..1> <cr>    # path-021509
+(exec)# test ipv6 nd pd-limit <number:0..2147483647> <cr>    # path-008698
+(exec)# test ipv6 nd repopulate queue-size <number:1..512> <cr>    # path-010795
+(exec)# test ipv6 nd router number <number:0..70000> <interface> <cr>    # path-023634
+(exec)# test ipv6 nd session create <interface> <number:1..65535> <cr>    # path-023794
+(exec)# test ipv6 nd session delete <interface> <number:1..65535> <number:1..65535> <cr>    # path-024727
+(exec)# test ipv6 nd session mac <interface> <number:1..65535> <number:1..65535> <address> <cr>    # path-025014
+(exec)# test ipv6 nd session prefix <interface> <number:1..65535> <number:1..65535> <prefix:dynamic> <cr>    # path-025372
+(exec)# test ipv6 nd session set <interface> <number:0..1> <cr>    # path-023783
+(exec)# test ipv6 nd session start <interface> <number:1..65535> <number:1..65535> <cr>    # path-024713
+(exec)# test ipv6 nd session stop <interface> <number:1..65535> <number:1..65535> <cr>    # path-024719
+(exec)# test ipv6 nd test-evpn-entry add <address> <interface> <address> <cr>    # path-024668
+(exec)# test ipv6 nd test-nsf <cr>    # path-005010
+(exec)# test ipv6 rib multicast add <cr>    # path-008763
+(exec)# test ipv6 rib path add clone <prefix:dynamic> <address> <interface> <interface> <cr>    # path-025419
+(exec)# test ipv6 rib path add foreign <number:1..16> <prefix:dynamic> <address> <interface> <cr>    # path-025373
+(exec)# test ipv6 rib path add primary <number:1..16> <prefix:dynamic> <address> <interface> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-025420
+(exec)# test ipv6 rib path add repair <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-025379
+(exec)# test ipv6 rib path add tilfa-primary <number:1..16> <prefix:dynamic> <address> <interface> <number:16777217..33554430> <number:1..255> <number:1..255> <cr>    # path-025382
+(exec)# test ipv6 rib path add tilfa-repair <number:1..16> <prefix:dynamic> <number:16777217..33554430> <number:1..255> <number:1..255> <cr>    # path-025209
+(exec)# test ipv6 rib path del foreign <number:1..16> <prefix:dynamic> <address> <interface> <cr>    # path-025374
+(exec)# test ipv6 rib path del primary <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <cr>    # path-025378
+(exec)# test ipv6 rib pdb add <number:1..16> <number:1..255> <number:0..1> <cr>    # path-011993
+(exec)# test ipv6 rib pdb del <number:1..16> <cr>    # path-010766
+(exec)# test ipv6 rib prefix add <number:1..16> <prefix:dynamic> <address> <interface> <number:1..255> <number:1..255> <number:1..32000> <cr>    # path-025380
+(exec)# test ipv6 rib prefix del <number:1..16> <prefix:dynamic> <address> <cr>    # path-024688
+(exec)# test ipv6 rib queue start <cr>    # path-008636
+(exec)# test ipv6 rib suspend start <cr>    # path-008651
+(exec)# test ipv6 rmap associate <string> <interface> <cr>    # path-021588
+(exec)# test ipv6 rmap associate <string> local <cr>    # path-010927
+(exec)# test ipv6 rmap create <number:1..7> <string> <cr>    # path-010851
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> <cr>    # path-010936
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-012110
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-012167
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> set global <cr>    # path-012014
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> set interface <interface> <cr>    # path-025030
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-012112
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> set precedence <number:0..7> <cr>    # path-012114
+(exec)# test ipv6 rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-012116
+(exec)# test ipv6 rmap delete <string> permit <cr>    # path-010901
+(exec)# test ipv6 rmap register <number:1..7> <cr>    # path-008745
+(exec)# test ipv6 rmap remove <string> <number:1..7> <cr>    # path-010867
+(exec)# test ipv6 static limit <number:0..32> <cr>    # path-008666
+(exec)# test ipv6 static policy <cr>    # path-004987
+(exec)# test isis case <number:0..4294967295> <cr>    # path-005450
+(exec)# test isis case <number:0..4294967295> <interface> <cr>    # path-017912
+(exec)# test isis clear counters <cr>    # path-005355
+(exec)# test isis debug <cr>    # path-001535
+(exec)# test isis ip address <cr>    # path-005361
+(exec)# test isis lsp advertise lan-adj-sid <number:1..255> <cr>    # path-011049
+(exec)# test isis lsp build <cr>    # path-005526
+(exec)# test isis lsp id <cr>    # path-005446
+(exec)# test isis lsp non_pn_delay on <cr>    # path-009069
+(exec)# test isis lsp pn_delay on <cr>    # path-009064
+(exec)# test isis lsp purge <cr>    # path-005562
+(exec)# test isis lsp purge dr <cr>    # path-009096
+(exec)# test isis lsp refresh <cr>    # path-005484
+(exec)# test isis nsap <cr>    # path-001556
+(exec)# test isis show counters <cr>    # path-005366
+(exec)# test isis spf <cr>    # path-001659
+(exec)# test isis telemetry enable <cr>    # path-005375
+(exec)# test issu capability entry register <number:1..4294967295> <number:0..100> <string> <cr>    # path-011942
+(exec)# test issu capability group register <number:1..4294967295> <number:1..100> <number:0..1> <string> <cr>    # path-012077
+(exec)# test issu capability type-list register <number:1..4294967295> <string> <cr>    # path-011606
+(exec)# test issu client <number:1..9999> bits enable <cr>    # path-010495
+(exec)# test issu client register <cr>    # path-004423
+(exec)# test issu distributed show <cr>    # path-004378
+(exec)# test issu divc no-test <cr>    # path-004627
+(exec)# test issu entity register <number:0..4294967295> <cr>    # path-008190
+(exec)# test issu injected calc_mtu <number:0..4294967295> <number:1..100> <number:1..100> <cr>    # path-011625
+(exec)# test issu injected capability <number:0..4294967295> <number:1..100> <cr>    # path-010541
+(exec)# test issu injected comp_result <number:0..4294967295> <number:1..2> <cr>    # path-010547
+(exec)# test issu injected message <number:0..4294967295> <number:1..100> <number:1..100> <number:1..100> <cr>    # path-011952
+(exec)# test issu injected register <number:0..4294967295> <cr>    # path-008239
+(exec)# test issu lossless session setup <cr>    # path-008220
+(exec)# test issu message group register <number:1..4294967295> <number:1..100> <string> <cr>    # path-011941
+(exec)# test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <cr>    # path-012074
+(exec)# test issu message type register <number:1..4294967295> <number:1..100> <number:1..5> <number:1..5> <string> <cr>    # path-012149
+(exec)# test issu negative on <cr>    # path-004563
+(exec)# test issu nego-version config <number:1..4294967295> <number:1..100> <number:1..100> <cr>    # path-011621
+(exec)# test issu negotiate <number:1..4294967295> <number:0..1> <cr>    # path-008255
+(exec)# test issu policy off <cr>    # path-004613
+(exec)# test issu session ipc <cr>    # path-004521
+(exec)# test issu shared message_session unregister <number:1..4294967295> <number:0..1> <cr>    # path-011611
+(exec)# test issu shared nego_session register <cr>    # path-008267
+(exec)# test issu shared negotiate <number:1..4294967295> <number:1..4294967295> <number:0..1> <cr>    # path-011614
+(exec)# test issu transform <number:1..4294967295> <number:1..100> <number:0..1> <cr>    # path-010540
+(exec)# test l2protocol-forward <cr>    # path-000316
+(exec)# test l2protocol-forward <interface> <cr>    # path-012600
+(exec)# test l2protocol-tunnel <cr>    # path-000314
+(exec)# test l2protocol-tunnel <interface> <cr>    # path-012598
+(exec)# test lacp disable insert-seq-num <cr>    # path-006507
+(exec)# test lacp disable recv <cr>    # path-006473
+(exec)# test lacp disable send <cr>    # path-006432
+(exec)# test lacp enable insert-seq-num <cr>    # path-006530
+(exec)# test lacp enable recv <cr>    # path-006504
+(exec)# test lacp enable send <cr>    # path-006468
+(exec)# test lacp multi-chassis iccp-version <number:0..65535> <cr>    # path-009524
+(exec)# test lacp sync-bit set <interface> <cr>    # path-019091
+(exec)# test lacp sync-bit switch <interface> <interface> <cr>    # path-025348
+(exec)# test lacp timer wait fast default <cr>    # path-011287
+(exec)# test license smart factory-reset clear all <cr>    # path-016944
+(exec)# test license smart tech-support <cr>    # path-004702
+(exec)# test lim proximity-db enable <cr>    # path-004619
+(exec)# test mac-table-mibs get-addr-info vlan <number:dynamic> <address> <cr>    # path-021834
+(exec)# test mac-table-mibs get-aging vlan <number:dynamic> <cr>    # path-017927
+(exec)# test mac-table-mibs get-igmp-status vlan <number:dynamic> <cr>    # path-018049
+(exec)# test mac-table-mibs get-learned-discards vlan <number:dynamic> <cr>    # path-018028
+(exec)# test mac-table-mibs get-next-addr vlan <number:dynamic> <cr>    # path-017953
+(exec)# test mac-table-mibs get-next-staticaddr vlan <number:dynamic> port <number:0..128> <cr>    # path-023983
+(exec)# test mac-table-mibs set-aging vlan <number:dynamic> aging-time <number:0..1000000> <cr>    # path-023973
+(exec)# test mac-table-mibs set-cpu-addr <address> vlan <number:dynamic> <number:1..2> <cr>    # path-024008
+(exec)# test mac-table-mibs set-delete-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-024770
+(exec)# test mac-table-mibs set-invalid-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-024771
+(exec)# test mac-table-mibs set-permanent-status vlan <number:dynamic> port <number:0..128> <address> <cr>    # path-024769
+(exec)# test mdns browse regtype <string> domain <string> periodicity <number:0..4294967295> interface <number:0..4294967295> <cr>    # path-012185
+(exec)# test mdns browse stop <number:1..4294967295> <cr>    # path-008746
+(exec)# test mdns cache <cr>    # path-001396
+(exec)# test mdns intf-wdraw <interface> <cr>    # path-013569
+(exec)# test mdns resolve host <string> interface <number:0..4294967295> <cr>    # path-011717
+(exec)# test mdns resolve service <string> regtype <string> domain <string> interface <number:0..4294967295> <cr>    # path-012186
+(exec)# test mdns resync <cr>    # path-001245
+(exec)# test mdns srv-enum <number:0..1> <cr>    # path-004984
+(exec)# test mdns start <cr>    # path-001278
+(exec)# test mdns stop <cr>    # path-001293
+(exec)# test mdns update bssid <address> client-mac <address> <cr>    # path-011714
+(exec)# test mdns update query-pak bssid-mac <address> <cr>    # path-010866
+(exec)# test memory <cr>    # path-000136
+(exec)# test memory allocate processor <number:0..4294967294> <number:0..4294967294> <number:0..4294967294> <cr>    # path-011632
+(exec)# test memory chunk lock <?general_pointer_number_action@55558943eb28> <cr>    # path-017093
+(exec)# test memory chunk refcount <?general_pointer_number_action@55558943ee20> <cr>    # path-017105
+(exec)# test memory create dangling-reference <cr>    # path-004589
+(exec)# test memory create leak type1 <number:28..4294967295> <number:1..4294967295> <cr>    # path-011637
+(exec)# test memory create leak type1 chunk <?general_pointer_number_action@55558943d098> <number:1..4294967295> <cr>    # path-024589
+(exec)# test memory delay-sibling-free <?general_pointer_number_action@55558943d778> <number:0..1> <number:0..1> <cr>    # path-021000
+(exec)# test memory destroy chunk <?general_pointer_number_action@55558943dc08> <cr>    # path-017023
+(exec)# test memory history <number:1..60> <cr>    # path-004659
+(exec)# test memory nvram-multibus <cr>    # path-000725
+(exec)# test memory overflow <?general_pointer_number_action@55558943dfe8> <number:0..4294967294> <number:0..4294967294> <cr>    # path-021059
+(exec)# test memory transfer <?general_pointer_number_action@55558943c6e0> <cr>    # path-013137
+(exec)# test mfib cb-support IPv4 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-012197
+(exec)# test mfib cb-support IPv6 add group <address> source <address> vrf <number:0..100> intf <number:0..255> <cr>    # path-012198
+(exec)# test mfib channel <cr>    # path-001699
+(exec)# test mfib enable <cr>    # path-001564
+(exec)# test mfib epoch new <?option@55558aafa690> <cr>    # path-017950
+(exec)# test mfib epoch new <cr>    # path-005460
+(exec)# test mfib mrib <cr>    # path-001663
+(exec)# test mfib mrib <number:dynamic> <cr>    # path-013975
+(exec)# test mfib reload <cr>    # path-001717
+(exec)# test mgd-timer watch <cr>    # path-001109
+(exec)# test mka linksec start interface <interface> preshared <cr>    # path-024267
+(exec)# test mka macsec-sim off <cr>    # path-006497
+(exec)# test mka message-number initial-value <number:1..4294967295> <cr>    # path-009562
+(exec)# test mka message-number window-size <number:0..4294967295> <cr>    # path-009579
+(exec)# test mka packet-number initial-value <number:0..4294967295> <cr>    # path-009595
+(exec)# test mka sak-rekey ckn <hex-string> interface <interface> <cr>    # path-025361
+(exec)# test mock btrace <cr>    # path-002003
+(exec)# test mock chasfs <cr>    # path-002042
+(exec)# test mock chassis <cr>    # path-002019
+(exec)# test mock crypto <cr>    # path-002099
+(exec)# test mock cyan <cr>    # path-002052
+(exec)# test mock ei <cr>    # path-001984
+(exec)# test mock infra enqueue <cr>    # path-005674
+(exec)# test mock ipc <cr>    # path-001952
+(exec)# test mock mcp <cr>    # path-001932
+(exec)# test mock misc <cr>    # path-001970
+(exec)# test mock overlayfs system-call <cr>    # path-005984
+(exec)# test mock real <cr>    # path-002081
+(exec)# test mock system <cr>    # path-001914
+(exec)# test mock tdl <cr>    # path-002069
+(exec)# test mock vaarg <cr>    # path-002119
+(exec)# test monitor clear config lock <cr>    # path-009276
+(exec)# test mrib disable <cr>    # path-001614
+(exec)# test mrib ip stop <cr>    # path-005473
+(exec)# test mrib ipv6 stop <cr>    # path-005467
+(exec)# test mvpn ipv4 leaf-ad-recv add <address> <address> <address> <cr>    # path-012021
+(exec)# test mvpn ipv4 spt-only disable <cr>    # path-009007
+(exec)# test mvpn ipv4 spt-only enable <cr>    # path-008995
+(exec)# test mvpn ipv6 leaf-ad-recv add <address> <address> <address> <cr>    # path-012023
+(exec)# test mvpn ipv6 spt-only disable <cr>    # path-009013
+(exec)# test mvpn ipv6 spt-only enable <cr>    # path-009003
+(exec)# test mvrp enable <number:0..1> <cr>    # path-004655
+(exec)# test mvrp joinin <number:1..4094> <number:1..4094> <cr>    # path-008369
+(exec)# test mvrp new <number:1..4094> <number:1..4094> <cr>    # path-008358
+(exec)# test natmode suppress <cr>    # path-001014
+(exec)# test netconf-agent history <cr>    # path-002254
+(exec)# test netconf-agent summary <cr>    # path-002278
+(exec)# test ngdns config <cr>    # path-001496
+(exec)# test ngdns lookup <string> <cr>    # path-005246
+(exec)# test ngdns periodic dump <cr>    # path-005195
+(exec)# test ngdns periodic register fqdn-name <string> type both module-id <number:1..3> <cr>    # path-012168
+(exec)# test ngiosd process-isolation start <cr>    # path-006363
+(exec)# test ngiosd simulation prepare-failure enable <cr>    # path-009480
+(exec)# test ngiosd simulation prepare-pass enable <cr>    # path-009500
+(exec)# test ngiosd simulation start <cr>    # path-006329
+(exec)# test nhrp event <number:0..1500> <cr>    # path-000243
+(exec)# test nhrp redirect interface <interface> <?ipv4orv6_addr_action@55558a13efe0> <prefix:dynamic> <cr>    # path-025410
+(exec)# test notify <string> <cr>    # path-002480
+(exec)# test nvram <string> clear remote-lock <cr>    # path-009207
+(exec)# test nvram <string> explicit-lock <cr>    # path-005882
+(exec)# test nvram <string> initialize <cr>    # path-005908
+(exec)# test odb client <number:1..256> add-static-tlv type <number:0..65535> <cr>    # path-011805
+(exec)# test odb client <number:1..256> deregister <cr>    # path-009127
+(exec)# test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> add-tlv type <number:0..65535> value <string> <cr>    # path-012193
+(exec)# test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> delete <cr>    # path-012029
+(exec)# test odb client <number:1..256> row <number:0..4294967295> <number:0..4294967295> notify subscribe change <cr>    # path-012172
+(exec)# test odb client <number:1..256> table <number:1..65534> add-row type <number:0..65535> value <string> <cr>    # path-012187
+(exec)# test odb client <number:1..256> table <number:1..65534> delete <cr>    # path-011806
+(exec)# test odb client <number:1..256> table <number:1..65534> notify subscribe add <cr>    # path-012123
+(exec)# test odb client <number:1..256> table create <cr>    # path-011095
+(exec)# test odb client register <string> <cr>    # path-009122
+(exec)# test onep cli uninstall <string> <cr>    # path-009133
+(exec)# test onep ctx_reg <cr>    # path-002021
+(exec)# test onep if_ctx_event enable <cr>    # path-005859
+(exec)# test onep internal enable <cr>    # path-005706
+(exec)# test onep thrift list <cr>    # path-005759
+(exec)# test onep timing api <?option@55558b1ff1d0> <cr>    # path-018253
+(exec)# test onep version disable <cr>    # path-005793
+(exec)# test onep version disable exact <cr>    # path-009162
+(exec)# test onep version enable <cr>    # path-005783
+(exec)# test onep xdt_buginf <cr>    # path-002004
+(exec)# test opflex agent ha <cr>    # path-005514
+(exec)# test opflex agent service vxlan-evpn create <string> <cr>    # path-011803
+(exec)# test opflex agent service vxlan-evpn state <cr>    # path-011080
+(exec)# test opssl nonblockingsession server dtls stop <cr>    # path-011113
+(exec)# test ospf debug <cr>    # path-001418
+(exec)# test ospf nsr cf error <number:0..65535> <cr>    # path-010982
+(exec)# test ospf nsr cf flow-off <cr>    # path-008907
+(exec)# test ospf nsr cf flow-on <cr>    # path-008881
+(exec)# test ospf nsr cp clear <number:0..65535> <cr>    # path-010981
+(exec)# test ospf nsr cp interface <cr>    # path-008982
+(exec)# test ospf nsr cp interface <interface> <cr>    # path-021720
+(exec)# test ospf nsr cp lsa <cr>    # path-008979
+(exec)# test ospf nsr cp neighbor <cr>    # path-008993
+(exec)# test ospf nsr cp neighbor <interface> <cr>    # path-021750
+(exec)# test ospf nsr cp nop <cr>    # path-008903
+(exec)# test ospf nsr cp router-id <cr>    # path-008947
+(exec)# test ospf nsr cp sync <number:0..65535> <cr>    # path-010996
+(exec)# test ospf nsr recovery delay <number:0..255> <cr>    # path-010980
+(exec)# test ospf nsr unsynchronize <cr>    # path-005282
+(exec)# test ospfv3 crimson <cr>    # path-001744
+(exec)# test ospfv3 interface <interface> filter hello <cr>    # path-021859
+(exec)# test ospfv3 interface <interface> filter none <cr>    # path-021869
+(exec)# test ospfv3 interface <interface> neighbor <address> down <cr>    # path-024003
+(exec)# test ospfv3 interface <interface> neighbor <address> up <cr>    # path-023995
+(exec)# test parser afs <cr>    # path-000594
+(exec)# test parser chainfunc recursion <?call_action@555589600a20> <cr>    # path-016793
+(exec)# test parser configure buffer <cr>    # path-004408
+(exec)# test parser consume-memory <number:0..2147483647> <cr>    # path-004342
+(exec)# test parser gmd <cr>    # path-000567
+(exec)# test parser green-fe <cr>    # path-000803
+(exec)# test parser ngios native-green enable <cr>    # path-008146
+(exec)# test parser ngios side-effect per-batch <cr>    # path-008156
+(exec)# test parser ngios validation enable <cr>    # path-008163
+(exec)# test parser ngios-meta path disable <cr>    # path-008177
+(exec)# test parser ngios-meta path enable <url:dynamic> <cr>    # path-020852
+(exec)# test parser opt list dyn <?option@555589609530> <cr>    # path-020758
+(exec)# test parser opt list norm <?keyword_option_list_mm_action@555589609880> <cr>    # path-020762
+(exec)# test parser pipeline <string> <cr>    # path-012901
+(exec)# test parser rc errno <number:0..2147483647> <cr>    # path-008158
+(exec)# test parser rc failure <number:11..211> <number:1..2> <cr>    # path-010467
+(exec)# test parser rc invalid <cr>    # path-004385
+(exec)# test parser rc success <number:1..3> <number:1..4> <cr>    # path-010471
+(exec)# test parser redirect small <cr>    # path-004365
+(exec)# test parser session-lock <number:0..1200> <cr>    # path-004323
+(exec)# test parser session-lock exit <cr>    # path-004335
+(exec)# test parser session-lock lock-break <cr>    # path-004355
+(exec)# test parser shell <cr>    # path-000612
+(exec)# test parser syntax exclude display <cr>    # path-008167
+(exec)# test parser syntax exclude mode <string> <cr>    # path-010476
+(exec)# test pbr unset <number:1..7> color adjacency <?general_pointer_number_action@555589d59438> <cr>    # path-023926
+(exec)# test persistent variable api delete default <string> <cr>    # path-011592
+(exec)# test persistent variable api flush default <cr>    # path-010468
+(exec)# test persistent variable api get default <string> <cr>    # path-011590
+(exec)# test persistent variable api isset default <string> <cr>    # path-011588
+(exec)# test persistent variable api set default <string> <cr>    # path-011587
+(exec)# test persistent variable error <string> <cr>    # path-008113
+(exec)# test persistent variable media-delete <string> <cr>    # path-008104
+(exec)# test persistent variable show cache <cr>    # path-008093
+(exec)# test pimv6 join group <address> <interface> <cr>    # path-021787
+(exec)# test platform hardware interface <interface> plim egress max-fill hp <number:0..245760> <cr>    # path-025093
+(exec)# test platform hardware poe cfg crit-limit <number:5000..15000> <cr>    # path-011591
+(exec)# test platform hardware poe cfg warn-limit <number:3000..8000> <cr>    # path-011595
+(exec)# test platform hardware poe get <number:dynamic> global <cr>    # path-023318
+(exec)# test platform hardware poe get <number:dynamic> global <number:0..255> <number:0..4294967295> <cr>    # path-024922
+(exec)# test platform hardware poe get <number:dynamic> port <cr>    # path-023323
+(exec)# test platform hardware poe get <number:dynamic> port <number:1..48> <cr>    # path-024547
+(exec)# test platform hardware poe get <number:dynamic> port <number:1..48> mdi-tlv <cr>    # path-024926
+(exec)# test platform hardware poe get <number:dynamic> port <number:1..48> mdi-tlv invoke <cr>    # path-025095
+(exec)# test platform hardware pse get <number:dynamic> <number:0..24> <number:1..255> <cr>    # path-024546
+(exec)# test platform hardware pse get <number:dynamic> <number:0..24> <number:1..255> <number:0..255> <cr>    # path-024924
+(exec)# test platform software cef autovpn <cr>    # path-008232
+(exec)# test platform software cef bgp <cr>    # path-008172
+(exec)# test platform software cef off <cr>    # path-008216
+(exec)# test platform software cef on <cr>    # path-008202
+(exec)# test platform software cef replicate cbl_l2mc <cr>    # path-010509
+(exec)# test platform software cef replicate mpls <cr>    # path-010500
+(exec)# test platform software chassis subslot <?slotcard_action@5555898019f0> insert <number:0..4294967295> <cr>    # path-024543
+(exec)# test platform software chassis subslot <?slotcard_action@5555898019f0> remove <cr>    # path-023327
+(exec)# test platform software crimson db-write-lock <cr>    # path-008443
+(exec)# test platform software crimson initdb <cr>    # path-008460
+(exec)# test platform software crimson notification deregister <cr>    # path-010595
+(exec)# test platform software crimson notification register <cr>    # path-010591
+(exec)# test platform software crimson operational add <number:0..4294967295> idbname <string> <cr>    # path-012088
+(exec)# test platform software crimson operational add <number:0..4294967295> subblock <?option@55558b2c1020> <number:0..4294967295> <cr>    # path-025117
+(exec)# test platform software crimson operational add <number:0..4294967295> subblock <?option@55558b2c1020> <number:0..4294967295> delete <cr>    # path-025194
+(exec)# test platform software crimson operational disable <cr>    # path-010632
+(exec)# test platform software crimson operational disable idb <cr>    # path-011666
+(exec)# test platform software crimson operational disable idb filter <cr>    # path-011978
+(exec)# test platform software crimson operational init <cr>    # path-010598
+(exec)# test platform software crimson operational init app <cr>    # path-011652
+(exec)# test platform software crimson operational init eventq <cr>    # path-011651
+(exec)# test platform software crimson operational init idb <cr>    # path-011655
+(exec)# test platform software crimson operational init idb filter <cr>    # path-011972
+(exec)# test platform software crimson operational lock acquire <cr>    # path-011663
+(exec)# test platform software crimson operational lock acquire offload <cr>    # path-011977
+(exec)# test platform software crimson operational lock release <cr>    # path-011667
+(exec)# test platform software crimson operational lock release offload <cr>    # path-011979
+(exec)# test platform software crimson operational lock status <cr>    # path-011665
+(exec)# test platform software crimson operational offload <cr>    # path-010625
+(exec)# test platform software crimson operational offload add <number:0..4294967295> <number:0..4294967295> <cr>    # path-012090
+(exec)# test platform software crimson operational offload delete <number:0..4294967295> <number:0..4294967295> <cr>    # path-012093
+(exec)# test platform software crimson operational offload register <cr>    # path-011654
+(exec)# test platform software crimson operational offload unregister <number:0..4294967295> <cr>    # path-011976
+(exec)# test platform software crimson operational offload update <number:0..4294967295> <number:0..4294967295> <cr>    # path-012091
+(exec)# test platform software crimson operational print db <cr>    # path-011657
+(exec)# test platform software crimson operational print subblock <number:0..4294967295> <cr>    # path-011975
+(exec)# test platform software crimson operational remove <number:0..4294967295> <cr>    # path-011659
+(exec)# test platform software crimson operational remove <number:0..4294967295> subblock <?option@55558b2c1d30> <cr>    # path-024974
+(exec)# test platform software crimson operational remove <number:0..4294967295> update <cr>    # path-011973
+(exec)# test platform software crimson operational set <number:0..4294967295> idbstate <number:0..4294967295> <cr>    # path-012095
+(exec)# test platform software crimson operational set <number:0..4294967295> linestate <number:0..4294967295> <cr>    # path-012092
+(exec)# test platform software crimson operational set <number:0..4294967295> namestring <string> <cr>    # path-012094
+(exec)# test platform software crimson operational update <number:0..4294967295> description <cr>    # path-011974
+(exec)# test platform software crimson persist restore-once disable-del <cr>    # path-011660
+(exec)# test platform software crimson persist restore-once enable-del <cr>    # path-011661
+(exec)# test platform software crimson unreferenced <string> <cr>    # path-010609
+(exec)# test platform software database get <?ei_services_action@55558b2d81b8> <cr>    # path-020832
+(exec)# test platform software dbal batch deadline <number:1..30000> <number:1..30000> <cr>    # path-011935
+(exec)# test platform software dbal batch stress <number:1..4294967295> <number:1..2> <number:1..4294967295> <number:1..2> <cr>    # path-012145
+(exec)# test platform software dbal lipc create <cr>    # path-010491
+(exec)# test platform software dbal lipc destroy <cr>    # path-010497
+(exec)# test platform software dbal ripc create <cr>    # path-010496
+(exec)# test platform software dbal scenario <number:1..6> <cr>    # path-010485
+(exec)# test platform software dbal tunnel start <cr>    # path-010472
+(exec)# test platform software dbal tunnel stop <cr>    # path-010479
+(exec)# test platform software dta enable <cr>    # path-008256
+(exec)# test platform software dvlan configuration <interface> off <cr>    # path-023382
+(exec)# test platform software dvlan configuration <interface> on <cr>    # path-023372
+(exec)# test platform software dvlan notification off <cr>    # path-010523
+(exec)# test platform software dvlan notification on <cr>    # path-010515
+(exec)# test platform software eoam <interface> lm frames <cr>    # path-023397
+(exec)# test platform software eoam <interface> rfi dg <cr>    # path-023388
+(exec)# test platform software feature-telemetry disable <cr>    # path-008327
+(exec)# test platform software feature-telemetry enable <cr>    # path-008346
+(exec)# test platform software feature-telemetry file <url:dynamic> <cr>    # path-020999
+(exec)# test platform software flow-control identifiers allocate ebfc all <cr>    # path-011938
+(exec)# test platform software infrastructure bipc clear fd <number:1..4294967295> <number:1..4294967295> <cr>    # path-012086
+(exec)# test platform software infrastructure console on <cr>    # path-010592
+(exec)# test platform software infrastructure drop-debug off <cr>    # path-010560
+(exec)# test platform software infrastructure drop-debug on <cr>    # path-010565
+(exec)# test platform software infrastructure pae-cssm send_packet <cr>    # path-010569
+(exec)# test platform software infrastructure session open <number:1..4294967295> <cr>    # path-011648
+(exec)# test platform software infrastructure watchdog off <cr>    # path-010564
+(exec)# test platform software infrastructure watchdog on <cr>    # path-010571
+(exec)# test platform software inject <interface> <address> <address> ipv4 <cr>    # path-024583
+(exec)# test platform software inject bd <number:1..4096> <address> <address> ipv4 <cr>    # path-012075
+(exec)# test platform software inject bd-local <number:1..4096> <address> <address> ipv4 <cr>    # path-012076
+(exec)# test platform software inject bridge_vlan <number:1..4096> <address> <address> <cr>    # path-011951
+(exec)# test platform software inject bypass <cr>    # path-008128
+(exec)# test platform software inject efp <interface> <number:0..65535> <address> <address> ipv4 <cr>    # path-025106
+(exec)# test platform software inject inject-rate <number:1..10000> <cr>    # path-010505
+(exec)# test platform software inject ipv4 arp-trigger <cr>    # path-010551
+(exec)# test platform software inject ipv4 nexthop <address> <cr>    # path-011618
+(exec)# test platform software inject ipv6 nd-trigger <cr>    # path-010548
+(exec)# test platform software inject keepalive <cr>    # path-008133
+(exec)# test platform software inject off <cr>    # path-008141
+(exec)# test platform software inject pak-priority <cr>    # path-008153
+(exec)# test platform software license expire eval <number:1..259200> <cr>    # path-011649
+(exec)# test platform software license metering reachability <cr>    # path-010581
+(exec)# test platform software lsmpi tx-fail-retry enable <cr>    # path-010490
+(exec)# test platform software macsec default-action ingress_non_control_non_macsec drop ingress_control_non_macsec drop ingress_non_control_macsec drop ingress_control_macsec drop egress_control drop egress_non_control drop <interface> <cr>    # path-025266
+(exec)# test platform software macsec frame-capture enable direction ingress <interface> <cr>    # path-024968

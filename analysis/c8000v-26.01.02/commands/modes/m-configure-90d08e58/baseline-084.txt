@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-084.md
+
+(config)# no do-exec show ipc mcast sessions <cr>    # path-045438
+(config)# no do-exec show ipc mcast sessions verbose <cr>    # path-052986
+(config)# no do-exec show ipc mcast status <cr>    # path-045117
+(config)# no do-exec show ipc nodes <cr>    # path-035668
+(config)# no do-exec show ipc nodes capabilities <cr>    # path-045312
+(config)# no do-exec show ipc nodes issu <cr>    # path-045248
+(config)# no do-exec show ipc nodes verbose <cr>    # path-045313
+(config)# no do-exec show ipc ports <cr>    # path-035919
+(config)# no do-exec show ipc ports verbose <cr>    # path-045365
+(config)# no do-exec show ipc queue <cr>    # path-035308
+(config)# no do-exec show ipc rmi all <cr>    # path-045119
+(config)# no do-exec show ipc rmi thresholds ru <string> <cr>    # path-057113
+(config)# no do-exec show ipc rpc <cr>    # path-036665
+(config)# no do-exec show ipc sess-ack <cr>    # path-036318
+(config)# no do-exec show ipc session all <cr>    # path-045434
+(config)# no do-exec show ipc session all verbose <cr>    # path-052978
+(config)# no do-exec show ipc session tx <cr>    # path-045483
+(config)# no do-exec show ipc session tx verbose <cr>    # path-053010
+(config)# no do-exec show ipc status <cr>    # path-036060
+(config)# no do-exec show ipc thread-stats <cr>    # path-036248
+(config)# no do-exec show ipc trace <number:1..3> <cr>    # path-045503
+(config)# no do-exec show ipc util <cr>    # path-036558
+(config)# no do-exec show ipc watermark <cr>    # path-036381
+(config)# no do-exec show ipc zones <cr>    # path-035589
+(config)# no do-exec show ipv6 access-list <cr>    # path-040548
+(config)# no do-exec show ipv6 access-list <string> dump-og-database <cr>    # path-055627
+(config)# no do-exec show ipv6 alias <cr>    # path-040669
+(config)# no do-exec show ipv6 cef <cr>    # path-041504
+(config)# no do-exec show ipv6 cef events <cr>    # path-050241
+(config)# no do-exec show ipv6 cef neighbor discovery throttling <cr>    # path-058581
+(config)# no do-exec show ipv6 cef protocol-discard <cr>    # path-049865
+(config)# no do-exec show ipv6 cef summary <cr>    # path-049908
+(config)# no do-exec show ipv6 cef switching statistics <cr>    # path-055855
+(config)# no do-exec show ipv6 cef traffic prefix-length <cr>    # path-055867
+(config)# no do-exec show ipv6 cef tree <cr>    # path-050010
+(config)# no do-exec show ipv6 destination-guard policy <cr>    # path-049509
+(config)# no do-exec show ipv6 dhcp <cr>    # path-040392
+(config)# no do-exec show ipv6 dhcp binding <cr>    # path-049760
+(config)# no do-exec show ipv6 dhcp conflict <cr>    # path-049813
+(config)# no do-exec show ipv6 dhcp database <cr>    # path-049640
+(config)# no do-exec show ipv6 dhcp interface <cr>    # path-049468
+(config)# no do-exec show ipv6 dhcp mac-hash-table dump pool <string> <cr>    # path-059516
+(config)# no do-exec show ipv6 dhcp mac-hash-table dump pool <string> <number:0..255> <number:0..255> <cr>    # path-060098
+(config)# no do-exec show ipv6 dhcp packet statistics <cr>    # path-055651
+(config)# no do-exec show ipv6 dhcp pool <cr>    # path-049757
+(config)# no do-exec show ipv6 dhcp relay binding <cr>    # path-055571
+(config)# no do-exec show ipv6 dhcp route <address> <cr>    # path-055631
+(config)# no do-exec show ipv6 dhcp statistics <cr>    # path-049390
+(config)# no do-exec show ipv6 eigrp accounting <cr>    # path-049402
+(config)# no do-exec show ipv6 eigrp interfaces <cr>    # path-049370
+(config)# no do-exec show ipv6 eigrp neighbors <cr>    # path-049427
+(config)# no do-exec show ipv6 eigrp sia-event <cr>    # path-049514
+(config)# no do-exec show ipv6 eigrp sia-statistics <cr>    # path-049602
+(config)# no do-exec show ipv6 eigrp timers <cr>    # path-049236
+(config)# no do-exec show ipv6 eigrp topology <cr>    # path-049772
+(config)# no do-exec show ipv6 eigrp traffic <cr>    # path-049291
+(config)# no do-exec show ipv6 enablement <cr>    # path-040690
+(config)# no do-exec show ipv6 errors-internal <cr>    # path-039321
+(config)# no do-exec show ipv6 features global <cr>    # path-048426
+(config)# no do-exec show ipv6 general-prefix <cr>    # path-040646
+(config)# no do-exec show ipv6 local pool <cr>    # path-048812
+(config)# no do-exec show ipv6 mfib <cr>    # path-040699
+(config)# no do-exec show ipv6 mfib cable <cr>    # path-049206
+(config)# no do-exec show ipv6 mfib interface <cr>    # path-049316
+(config)# no do-exec show ipv6 mfib internal fibidb <cr>    # path-055186
+(config)# no do-exec show ipv6 mfib internal mem <cr>    # path-055456
+(config)# no do-exec show ipv6 mfib rate-list <cr>    # path-049403
+(config)# no do-exec show ipv6 mfib status <cr>    # path-049047
+(config)# no do-exec show ipv6 mld acl-db <cr>    # path-049349
+(config)# no do-exec show ipv6 mld all-vrfs traffic <cr>    # path-055327
+(config)# no do-exec show ipv6 mld gir <cr>    # path-049503
+(config)# no do-exec show ipv6 mld groups <cr>    # path-049524
+(config)# no do-exec show ipv6 mld interface <cr>    # path-049247
+(config)# no do-exec show ipv6 mld internal <cr>    # path-049561
+(config)# no do-exec show ipv6 mld ssm-map <cr>    # path-049360
+(config)# no do-exec show ipv6 mld traffic <cr>    # path-049235
+(config)# no do-exec show ipv6 mrib client <cr>    # path-049106
+(config)# no do-exec show ipv6 mrib route <address> <address> <cr>    # path-058425
+(config)# no do-exec show ipv6 mrib route <cr>    # path-049319
+(config)# no do-exec show ipv6 mrib route summary <cr>    # path-055141
+(config)# no do-exec show ipv6 mroute <cr>    # path-040491
+(config)# no do-exec show ipv6 mroute active <cr>    # path-049730
+(config)# no do-exec show ipv6 mroute count <cr>    # path-049550
+(config)# no do-exec show ipv6 mtu <cr>    # path-039600
+(config)# no do-exec show ipv6 multicast <cr>    # path-040287
+(config)# no do-exec show ipv6 multicast overlay-mapping lisp <address> <cr>    # path-058445
+(config)# no do-exec show ipv6 multicast rpf monitored <cr>    # path-055477
+(config)# no do-exec show ipv6 multicast snooping limit vlan <number:1..4095> <cr>    # path-059454
+(config)# no do-exec show ipv6 multicast snooping summary <cr>    # path-055123
+(config)# no do-exec show ipv6 multicast snooping summary vlan <number:1..4095> <cr>    # path-059461
+(config)# no do-exec show ipv6 nd destination <cr>    # path-048953
+(config)# no do-exec show ipv6 nd on-link prefix <cr>    # path-055133
+(config)# no do-exec show ipv6 nd ra dns server <cr>    # path-058298
+(config)# no do-exec show ipv6 nd ra dns-search-list <cr>    # path-055130
+(config)# no do-exec show ipv6 nd ra nat64-prefix <cr>    # path-055173
+(config)# no do-exec show ipv6 nd ra specific-route <cr>    # path-055214
+(config)# no do-exec show ipv6 nd suppress <cr>    # path-048802
+(config)# no do-exec show ipv6 neighbors <cr>    # path-040120
+(config)# no do-exec show ipv6 neighbors ha <cr>    # path-048813
+(config)# no do-exec show ipv6 nhrp <cr>    # path-040937
+(config)# no do-exec show ipv6 nhrp attribute <cr>    # path-049500
+(config)# no do-exec show ipv6 nhrp instances <cr>    # path-049596
+(config)# no do-exec show ipv6 nhrp map <cr>    # path-049556
+(config)# no do-exec show ipv6 nhrp multicast <cr>    # path-049650
+(config)# no do-exec show ipv6 nhrp nhs <cr>    # path-049563
+(config)# no do-exec show ipv6 nhrp nhs redundancy <cr>    # path-055620
+(config)# no do-exec show ipv6 nhrp nhs redundancy cluster <number:0..10> <cr>    # path-059503
+(config)# no do-exec show ipv6 nhrp nhs redundancy preempted <cr>    # path-058471
+(config)# no do-exec show ipv6 nhrp nhs redundancy running <cr>    # path-058454
+(config)# no do-exec show ipv6 nhrp nhs redundancy waiting <cr>    # path-058477
+(config)# no do-exec show ipv6 nhrp purge <cr>    # path-049278
+(config)# no do-exec show ipv6 nhrp redirect <cr>    # path-049671
+(config)# no do-exec show ipv6 nhrp shortcut <cr>    # path-050026
+(config)# no do-exec show ipv6 nhrp stats <cr>    # path-049570
+(config)# no do-exec show ipv6 nhrp traffic <cr>    # path-049367
+(config)# no do-exec show ipv6 pim all-vrfs traffic <cr>    # path-055365
+(config)# no do-exec show ipv6 pim anycast-rp <cr>    # path-049853
+(config)# no do-exec show ipv6 pim bfd neighbor inactive <cr>    # path-058612
+(config)# no do-exec show ipv6 pim bsr candidate-rp <cr>    # path-055757
+(config)# no do-exec show ipv6 pim bsr election <cr>    # path-055802
+(config)# no do-exec show ipv6 pim bsr rp-cache <cr>    # path-055782
+(config)# no do-exec show ipv6 pim df <cr>    # path-049696
+(config)# no do-exec show ipv6 pim drlb gdr-candidates <cr>    # path-055712
+(config)# no do-exec show ipv6 pim gir <cr>    # path-049849
+(config)# no do-exec show ipv6 pim group-map <cr>    # path-049564
+(config)# no do-exec show ipv6 pim interface <cr>    # path-049523
+(config)# no do-exec show ipv6 pim interface bfd <cr>    # path-055616
+(config)# no do-exec show ipv6 pim internal <cr>    # path-049835
+(config)# no do-exec show ipv6 pim join-prune statistic <cr>    # path-055642
+(config)# no do-exec show ipv6 pim limit <cr>    # path-049689
+(config)# no do-exec show ipv6 pim limit reservation <cr>    # path-055645
+(config)# no do-exec show ipv6 pim limit reservation required <cr>    # path-058486
+(config)# no do-exec show ipv6 pim lisp-rloc-state <cr>    # path-049591
+(config)# no do-exec show ipv6 pim mdt <cr>    # path-050055
+(config)# no do-exec show ipv6 pim mdt bgp <cr>    # path-055885
+(config)# no do-exec show ipv6 pim mdt bgp c-mroutes <cr>    # path-058616
+(config)# no do-exec show ipv6 pim mdt history interval <number:1..71582> <cr>    # path-059525
+(config)# no do-exec show ipv6 pim mdt internal bier <cr>    # path-058622
+(config)# no do-exec show ipv6 pim mdt internal crt <cr>    # path-058653
+(config)# no do-exec show ipv6 pim mdt internal gre <cr>    # path-058609
+(config)# no do-exec show ipv6 pim mdt internal ir <cr>    # path-058631
+(config)# no do-exec show ipv6 pim mdt internal leaf-ad <cr>    # path-058640
+(config)# no do-exec show ipv6 pim mdt internal mldp <cr>    # path-058647
+(config)# no do-exec show ipv6 pim mdt internal pe <cr>    # path-058665
+(config)# no do-exec show ipv6 pim mdt internal pe all <cr>    # path-059558
+(config)# no do-exec show ipv6 pim mdt internal replication <cr>    # path-058660
+(config)# no do-exec show ipv6 pim mdt internal tdb <cr>    # path-058664
+(config)# no do-exec show ipv6 pim mdt internal vxlan <cr>    # path-058598
+(config)# no do-exec show ipv6 pim mdt receive <cr>    # path-055786
+(config)# no do-exec show ipv6 pim mdt receive detail <cr>    # path-058560
+(config)# no do-exec show ipv6 pim mdt send <cr>    # path-055745
+(config)# no do-exec show ipv6 pim neighbor <cr>    # path-049567
+(config)# no do-exec show ipv6 pim neighbor <cr>    # path-049568
+(config)# no do-exec show ipv6 pim pfp-sa announcements <cr>    # path-055624
+(config)# no do-exec show ipv6 pim pfp-sa cache <cr>    # path-055681
+(config)# no do-exec show ipv6 pim pfp-sa originator <cr>    # path-055656
+(config)# no do-exec show ipv6 pim range-list <cr>    # path-049560
+(config)# no do-exec show ipv6 pim topology <cr>    # path-049419
+(config)# no do-exec show ipv6 pim topology route-count <cr>    # path-055419
+(config)# no do-exec show ipv6 pim traffic <cr>    # path-049715
+(config)# no do-exec show ipv6 pim tunnel <cr>    # path-049601
+(config)# no do-exec show ipv6 policy <cr>    # path-040593
+(config)# no do-exec show ipv6 prefix reserved <cr>    # path-049803
+(config)# no do-exec show ipv6 prefix-list <cr>    # path-040576
+(config)# no do-exec show ipv6 prefix-list <string> seq <number:1..4294967295> <cr>    # path-058488
+(config)# no do-exec show ipv6 prefix-list detail <cr>    # path-049680
+(config)# no do-exec show ipv6 prefix-list summary <cr>    # path-049639
+(config)# no do-exec show ipv6 protocols <cr>    # path-039655
+(config)# no do-exec show ipv6 rip <cr>    # path-040435
+(config)# no do-exec show ipv6 rip database <cr>    # path-049337
+(config)# no do-exec show ipv6 rip next-hops <cr>    # path-049397
+(config)# no do-exec show ipv6 route <address> <cr>    # path-049643
+(config)# no do-exec show ipv6 route <cr>    # path-040200
+(config)# no do-exec show ipv6 route nsf <cr>    # path-048790
+(config)# no do-exec show ipv6 route summary <cr>    # path-048804
+(config)# no do-exec show ipv6 route table <cr>    # path-048679
+(config)# no do-exec show ipv6 route table <number:0..4294967295> <cr>    # path-054933
+(config)# no do-exec show ipv6 route tag <number:0..4294967295> <cr>    # path-055294
+(config)# no do-exec show ipv6 route watch <cr>    # path-048857
+(config)# no do-exec show ipv6 routers <cr>    # path-039985
+(config)# no do-exec show ipv6 rpf <address> <cr>    # path-049852
+(config)# no do-exec show ipv6 rpf select <cr>    # path-049781
+(config)# no do-exec show ipv6 snooping events <cr>    # path-049630
+(config)# no do-exec show ipv6 snooping features <cr>    # path-049713
+(config)# no do-exec show ipv6 snooping internal counters <cr>    # path-055704
+(config)# no do-exec show ipv6 snooping messages <cr>    # path-049724
+(config)# no do-exec show ipv6 snooping policy <cr>    # path-049725
+(config)# no do-exec show ipv6 source-guard policy <cr>    # path-049548
+(config)# no do-exec show ipv6 spd <cr>    # path-040539
+(config)# no do-exec show ipv6 static <cr>    # path-040119
+(config)# no do-exec show ipv6 static bfd <cr>    # path-048869
+(config)# no do-exec show ipv6 traffic <cr>    # path-039650
+(config)# no do-exec show ipv6 traffic interface <cr>    # path-048678
+(config)# no do-exec show ipv6 tunnel <cr>    # path-039760
+(config)# no do-exec show ipv6 virtual-reassembly <cr>    # path-040572
+(config)# no do-exec show isdn answer <number:0..95> <string> <cr>    # path-056389
+(config)# no do-exec show isis adjacency stagger <cr>    # path-050740
+(config)# no do-exec show isis database <cr>    # path-041630
+(config)# no do-exec show isis hostname <cr>    # path-041482
+(config)# no do-exec show isis lsp-log <cr>    # path-041527
+(config)# no do-exec show isis lspgen tlv neighbor <cr>    # path-056069
+(config)# no do-exec show isis mesh-groups <cr>    # path-041925
+(config)# no do-exec show isis mpls <cr>    # path-041697
+(config)# no do-exec show isis mpls ldp igp-shortcuts <cr>    # path-056067
+(config)# no do-exec show isis mpls traffic-eng adjacency-log <cr>    # path-056051
+(config)# no do-exec show isis mpls traffic-eng advertisements <cr>    # path-056039
+(config)# no do-exec show isis mpls traffic-eng downstream-tree <string> <cr>    # path-058698
+(config)# no do-exec show isis mpls traffic-eng tunnel <cr>    # path-056078
+(config)# no do-exec show isis mt <cr>    # path-041932
+(config)# no do-exec show isis neighbors <cr>    # path-041490
+(config)# no do-exec show isis node <cr>    # path-041779
+(config)# no do-exec show isis nsf <cr>    # path-042081
+(config)# no do-exec show isis private <cr>    # path-041571
+(config)# no do-exec show isis protocol <cr>    # path-041973
+(config)# no do-exec show isis rib <cr>    # path-041958
+(config)# no do-exec show isis rib prefix-sid <cr>    # path-050703
+(config)# no do-exec show isis rib redistribution <cr>    # path-050704
+(config)# no do-exec show isis rib strict-spf-sid <cr>    # path-050722
+(config)# no do-exec show isis route <cr>    # path-042018
+(config)# no do-exec show isis spf-log <cr>    # path-041847
+(config)# no do-exec show isis timers <cr>    # path-041483
+(config)# no do-exec show isis topology <cr>    # path-041796
+(config)# no do-exec show isis tree <cr>    # path-041610
+(config)# no do-exec show issu FSM <cr>    # path-042847
+(config)# no do-exec show issu FSM <number:1..4294967295> <cr>    # path-051317
+(config)# no do-exec show issu capability types <cr>    # path-051290
+(config)# no do-exec show issu capability types <number:1..8035> <cr>    # path-056513
+(config)# no do-exec show issu capability types <number:1..8035> <number:1..4294967295> <cr>    # path-058855
+(config)# no do-exec show issu clients <cr>    # path-042722
+(config)# no do-exec show issu clients distributed <cr>    # path-051226
+(config)# no do-exec show issu comp-matrix stored <cr>    # path-051341
+(config)# no do-exec show issu endpoints <cr>    # path-042651
+(config)# no do-exec show issu entities <cr>    # path-042719
+(config)# no do-exec show issu entities <number:1..8035> <cr>    # path-051236
+(config)# no do-exec show issu image-version compatibility <cr>    # path-051227
+(config)# no do-exec show issu message types <cr>    # path-051312
+(config)# no do-exec show issu message types <number:1..8035> <cr>    # path-056523
+(config)# no do-exec show issu message types <number:1..8035> <number:1..4294967295> <cr>    # path-058859
+(config)# no do-exec show issu negotiated capability <cr>    # path-051334
+(config)# no do-exec show issu negotiated capability <number:1..4294967295> <cr>    # path-056515
+(config)# no do-exec show issu sessions <cr>    # path-042748
+(config)# no do-exec show issu sessions <number:1..8035> <cr>    # path-051274
+(config)# no do-exec show issu sessions <number:1..8035> <number:1..4294967295> <cr>    # path-056494
+(config)# no do-exec show kerberos creds <cr>    # path-037519
+(config)# no do-exec show key chain <cr>    # path-042162
+(config)# no do-exec show keystore <cr>    # path-031809
+(config)# no do-exec show kron schedule <cr>    # path-043213
+(config)# no do-exec show l2fib bridge-domain detail <cr>    # path-047020
+(config)# no do-exec show l2fib bridge-domain summary <cr>    # path-046984
+(config)# no do-exec show l2fib evpn ead local <cr>    # path-054301
+(config)# no do-exec show l2fib evpn ead remote <cr>    # path-054330
+(config)# no do-exec show l2fib log event <cr>    # path-047011
+(config)# no do-exec show l2fib next-hop-list <cr>    # path-037768
+(config)# no do-exec show l2fib output-list <cr>    # path-037730
+(config)# no do-exec show l2fib path-list <cr>    # path-037776
+(config)# no do-exec show l2fib statistics detail <cr>    # path-047138
+(config)# no do-exec show l2fib statistics events <cr>    # path-047193
+(config)# no do-exec show l2fib statistics events history <cr>    # path-054318
+(config)# no do-exec show l2fib statistics summary <cr>    # path-047102
+(config)# no do-exec show l2protocol-forward <cr>    # path-033866
+(config)# no do-exec show l2protocol-tunnel <cr>    # path-033860
+(config)# no do-exec show l2rib clients <cr>    # path-039712
+(config)# no do-exec show l2rib counters <cr>    # path-039690
+(config)# no do-exec show l2rib deletions <cr>    # path-039700
+(config)# no do-exec show l2rib multicast route <cr>    # path-049859
+(config)# no do-exec show l2rib notifications <cr>    # path-039649
+(config)# no do-exec show l2rib producers <cr>    # path-039709
+(config)# no do-exec show l2rib registrations <cr>    # path-039713
+(config)# no do-exec show l2rib test <string> msg-buffer <cr>    # path-055163
+(config)# no do-exec show l2rib topologies <cr>    # path-039602
+(config)# no do-exec show l2rib unicast route <cr>    # path-049840
+(config)# no do-exec show l2route evpn summary <cr>    # path-048858
+(config)# no do-exec show lacp counters <cr>    # path-043736
+(config)# no do-exec show lacp internal <cr>    # path-043757
+(config)# no do-exec show lacp multi-chassis group <cr>    # path-052000
+(config)# no do-exec show lacp multi-chassis load-balance group <cr>    # path-056750
+(config)# no do-exec show lacp multi-chassis load-balance port-channel <cr>    # path-056758
+(config)# no do-exec show lacp multi-chassis port-channel <cr>    # path-052007
+(config)# no do-exec show lacp neighbor <cr>    # path-043740
+(config)# no do-exec show lacp sm-state <cr>    # path-043754
+(config)# no do-exec show lacp sys-id <cr>    # path-043708
+(config)# no do-exec show ldap attributes <cr>    # path-042339
+(config)# no do-exec show ldap server all <cr>    # path-051006
+(config)# no do-exec show license udi <cr>    # path-036589
+(config)# no do-exec show line async-queue <cr>    # path-043809
+(config)# no do-exec show line x121-address <cr>    # path-043781
+(config)# no do-exec show list <cr>    # path-033384
+(config)# no do-exec show llc2 <cr>    # path-033905
+(config)# no do-exec show lldp <cr>    # path-031947
+(config)# no do-exec show lldp custom-information <cr>    # path-040182
+(config)# no do-exec show lldp entry <string> <cr>    # path-049173
+(config)# no do-exec show lldp errors <cr>    # path-040003
+(config)# no do-exec show lldp interface <cr>    # path-040026
+(config)# no do-exec show lldp neighbors <cr>    # path-040197
+(config)# no do-exec show lldp traffic <cr>    # path-039949
+(config)# no do-exec show llp nhrp multicast <cr>    # path-050279
+(config)# no do-exec show lnm bridge <cr>    # path-043779
+(config)# no do-exec show lnm config <cr>    # path-043770
+(config)# no do-exec show lnm interface <cr>    # path-043792
+(config)# no do-exec show lnm ring <cr>    # path-043790
+(config)# no do-exec show lnm station <cr>    # path-043810
+(config)# no do-exec show local-ack <cr>    # path-033771
+(config)# no do-exec show location <cr>    # path-028235
+(config)# no do-exec show location admin-tag <cr>    # path-034311
+(config)# no do-exec show location ap-proximity <cr>    # path-034595
+(config)# no do-exec show location civic-location static <cr>    # path-044183
+(config)# no do-exec show location custom-location static <cr>    # path-044240
+(config)# no do-exec show location elin-location static <cr>    # path-044213
+(config)# no do-exec show location fex all <cr>    # path-044366
+(config)# no do-exec show location geo-location static <cr>    # path-044277
+(config)# no do-exec show location host <cr>    # path-034490
+(config)# no do-exec show logging <cr>    # path-028957
+(config)# no do-exec show logging count <cr>    # path-034892
+(config)# no do-exec show logging history <cr>    # path-034893
+(config)# no do-exec show logging last <number:1..214748364> <cr>    # path-044558
+(config)# no do-exec show logging persistent <cr>    # path-035082
+(config)# no do-exec show logging xml <cr>    # path-034952
+(config)# no do-exec show login <cr>    # path-030996
+(config)# no do-exec show login failures <cr>    # path-037907
+(config)# no do-exec show mac address-table <cr>    # path-043731
+(config)# no do-exec show mac address-table aging-time <cr>    # path-051947
+(config)# no do-exec show mac address-table control-packet-learn <cr>    # path-051942
+(config)# no do-exec show mac address-table count <cr>    # path-051940
+(config)# no do-exec show mac address-table multicast <cr>    # path-051959
+(config)# no do-exec show macdb <cr>    # path-031918
+(config)# no do-exec show macsec hw <cr>    # path-037287
+(config)# no do-exec show macsec hw detail <cr>    # path-046675
+(config)# no do-exec show macsec mka-request-notify <cr>    # path-037369
+(config)# no do-exec show macsec mka-request-notify clear <cr>    # path-046758
+(config)# no do-exec show macsec post <cr>    # path-037273
+(config)# no do-exec show macsec summary <cr>    # path-037184
+(config)# no do-exec show management event <cr>    # path-043424
+(config)# no do-exec show management expression <cr>    # path-043405
+(config)# no do-exec show mdns-sd location-filter <cr>    # path-040192
+(config)# no do-exec show mdns-sd remote-cache <cr>    # path-040380
+(config)# no do-exec show mdns-sd sdg service-peer summary <cr>    # path-055218
+(config)# no do-exec show mdns-sd service-definition <cr>    # path-040067
+(config)# no do-exec show mdns-sd service-list <cr>    # path-040070
+(config)# no do-exec show mdns-sd service-policy <cr>    # path-040244
+(config)# no do-exec show mdns-sd service-policy association vlan <cr>    # path-055363
+(config)# no do-exec show mdns-sd summary <cr>    # path-040240
+(config)# no do-exec show media access-lists <cr>    # path-043266
+(config)# no do-exec show memory <cr>    # path-033763
+(config)# no do-exec show memory console reserved <cr>    # path-051562
+(config)# no do-exec show memory debug incremental allocations <cr>    # path-056611
+(config)# no do-exec show memory debug incremental leaks <cr>    # path-056612
+(config)# no do-exec show memory debug incremental status <cr>    # path-056604
+(config)# no do-exec show memory debug leaks <cr>    # path-051613
+(config)# no do-exec show memory debug references dangling <cr>    # path-056609
+(config)# no do-exec show memory debug unused <cr>    # path-051586
+(config)# no do-exec show memory events <cr>    # path-043303
+(config)# no do-exec show memory failures alloc <cr>    # path-051519
+(config)# no do-exec show memory lite-chunks statistics <cr>    # path-051498
+(config)# no do-exec show memory overflow <cr>    # path-043224
+(config)# no do-exec show memory overflow poisoning <cr>    # path-051617
+(config)# no do-exec show memory traceback <number:1..4294967294> <cr>    # path-051640
+(config)# no do-exec show memory traceback exclusive <cr>    # path-051616
+(config)# no do-exec show memory traceback totals <cr>    # path-051629
+(config)# no do-exec show mfib background <cr>    # path-041392
+(config)# no do-exec show mfib error <cr>    # path-041444
+(config)# no do-exec show mfib linecard <cr>    # path-041747
+(config)# no do-exec show mfib nsf <cr>    # path-041568
+(config)# no do-exec show mfib state <cr>    # path-041448
+(config)# no do-exec show mfib table <cr>    # path-041460
+(config)# no do-exec show mfib timers <cr>    # path-041382
+(config)# no do-exec show mgmt-traffic control ipv4 <cr>    # path-051714
+(config)# no do-exec show microcode <cr>    # path-030054
+(config)# no do-exec show mka default-policy <cr>    # path-043791
+(config)# no do-exec show mka keychains <cr>    # path-043815
+(config)# no do-exec show mka policy <cr>    # path-043789
+(config)# no do-exec show mka policy <string> <cr>    # path-052026
+(config)# no do-exec show mka sessions <cr>    # path-043829
+(config)# no do-exec show mka sessions detail <cr>    # path-052023
+(config)# no do-exec show mka statistics <cr>    # path-043828
+(config)# no do-exec show mka summary <cr>    # path-043805
+(config)# no do-exec show mlrib common log event all <cr>    # path-058526
+(config)# no do-exec show mlrib evpn mac <cr>    # path-049915
+(config)# no do-exec show mlrib evpn mac evi <number:1..65535> <cr>    # path-058541
+(config)# no do-exec show mlrib evpn vtep <cr>    # path-049889
+(config)# no do-exec show mlrib evpn vtep evi <number:1..65535> <cr>    # path-058533
+(config)# no do-exec show mlrib layer2 clientdb producer <cr>    # path-055743
+(config)# no do-exec show mlrib layer2 log event all <cr>    # path-058542
+(config)# no do-exec show mlrib layer2 statistics producer all <cr>    # path-058544
+(config)# no do-exec show modemcap <cr>    # path-032985
+(config)# no do-exec show monitor capture <cr>    # path-035775
+(config)# no do-exec show monitor capture <string> buffer <cr>    # path-053134
+(config)# no do-exec show monitor event-trace continuous <cr>    # path-045397
+(config)# no do-exec show monitor event-trace cpu-report handle <number:1..255> <cr>    # path-057605
+(config)# no do-exec show monitor permit-list <cr>    # path-035821
+(config)# no do-exec show monitor session <number:1..1> <cr>    # path-045479
+(config)# no do-exec show mtm table <cr>    # path-042649
+(config)# no do-exec show mvpn ipv4 auto-discovery <cr>    # path-050452
+(config)# no do-exec show mvpn ipv4 auto-discovery <cr>    # path-050453
+(config)# no do-exec show mvpn ipv4 ingress-replication egress-info <cr>    # path-056010
+(config)# no do-exec show mvpn ipv6 auto-discovery <cr>    # path-050463
+(config)# no do-exec show mvpn ipv6 auto-discovery <cr>    # path-050464
+(config)# no do-exec show mvpn ipv6 ingress-replication egress-info <cr>    # path-056019
+(config)# no do-exec show mvpn replication <cr>    # path-041265
+(config)# no do-exec show mvpn vrfri <cr>    # path-041212
+(config)# no do-exec show mvr <cr>    # path-032142

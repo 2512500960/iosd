@@ -1,0 +1,404 @@
+# 模式 subinterface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-006.md
+
+(config-subif)# ip access-group common <number:1..199> <number:1..199> in <cr>    # path-072103
+(config-subif)# ip access-group common <number:1..199> <number:1..199> out <cr>    # path-072105
+(config-subif)# ip access-group common <number:1..199> in <cr>    # path-071484
+(config-subif)# ip access-group common <number:1..199> out <cr>    # path-071485
+(config-subif)# ip accounting <cr>    # path-068313
+(config-subif)# ip address <address> <address> <cr>    # path-070333
+(config-subif)# ip address dhcp client-id <interface> <cr>    # path-072642
+(config-subif)# ip address docsis <cr>    # path-068914
+(config-subif)# ip address slarp retry <number:1..60> <cr>    # path-071708
+(config-subif)# ip auth-proxy <string> <cr>    # path-069328
+(config-subif)# ip authentication key-chain eigrp <number:1..65535> <string> <cr>    # path-072168
+(config-subif)# ip authentication mode eigrp <number:1..65535> md5 <cr>    # path-072160
+(config-subif)# ip bandwidth-percent eigrp <number:1..65535> <number:1..999999> <cr>    # path-071595
+(config-subif)# ip bgp fast-external-fallover permit <cr>    # path-070325
+(config-subif)# ip broadcast-address <address> <cr>    # path-068938
+(config-subif)# ip cef accounting non-recursive internal <cr>    # path-071732
+(config-subif)# ip cgmp <cr>    # path-068285
+(config-subif)# ip cgmp batch-joins <cr>    # path-068994
+(config-subif)# ip cgmp process-leaves <cr>    # path-068988
+(config-subif)# ip clear-dont-fragment <cr>    # path-068246
+(config-subif)# ip dampening-change eigrp <number:1..65535> <cr>    # path-070622
+(config-subif)# ip dampening-interval eigrp <number:1..65535> <cr>    # path-070647
+(config-subif)# ip ddns update <string> <cr>    # path-070330
+(config-subif)# ip ddns update hostname <string> <cr>    # path-071490
+(config-subif)# ip dhcp client authentication key-chain <string> <cr>    # path-072150
+(config-subif)# ip dhcp client broadcast-flag set <cr>    # path-071521
+(config-subif)# ip dhcp client class-id <string> <cr>    # path-071538
+(config-subif)# ip dhcp client class-id hex <hex-string> <cr>    # path-072686
+(config-subif)# ip dhcp client client-id <interface> <cr>    # path-072646
+(config-subif)# ip dhcp client client-id ascii <string> <cr>    # path-072131
+(config-subif)# ip dhcp client default-router distance <number:1..255> <cr>    # path-072137
+(config-subif)# ip dhcp client hostname <string> <cr>    # path-071536
+(config-subif)# ip dhcp client lease <number:0..365> <cr>    # path-071546
+(config-subif)# ip dhcp client option <number:1..254> hex <hex-string> <cr>    # path-072702
+(config-subif)# ip dhcp client option <number:1..254> ip <address> <cr>    # path-072391
+(config-subif)# ip dhcp client process-requested-options-only <cr>    # path-070429
+(config-subif)# ip dhcp client request <cr>    # path-070448
+(config-subif)# ip dhcp client request option <number:1..254> <cr>    # path-072688
+(config-subif)# ip dhcp client route distance <number:0..254> <cr>    # path-072145
+(config-subif)# ip dhcp client route track <number:1..32767> <cr>    # path-072141
+(config-subif)# ip dhcp client update dns <cr>    # path-071548
+(config-subif)# ip dhcp client vendor-class ascii <string> <cr>    # path-072136
+(config-subif)# ip dhcp client vendor-class disable <cr>    # path-071526
+(config-subif)# ip dhcp client vendor-class hex <hex-string> <cr>    # path-072687
+(config-subif)# ip dhcp client vendor-class mac-address <cr>    # path-071529
+(config-subif)# ip dhcp limit lease <number:1..65535> <cr>    # path-071499
+(config-subif)# ip dhcp relay information check-reply <cr>    # path-071516
+(config-subif)# ip dhcp relay information option server-id-override <cr>    # path-072106
+(config-subif)# ip dhcp relay information option subscriber-id <string> <cr>    # path-072386
+(config-subif)# ip dhcp relay information option vpn-id <cr>    # path-072122
+(config-subif)# ip dhcp relay information option-insert <cr>    # path-071514
+(config-subif)# ip dhcp relay information policy-action drop <cr>    # path-072120
+(config-subif)# ip dhcp relay information trusted <cr>    # path-071493
+(config-subif)# ip dhcp relay short-lease <number:60..3600> <cr>    # path-071507
+(config-subif)# ip dhcp relay source-interface <interface> <cr>    # path-072643
+(config-subif)# ip dhcp restrict-next-hop cdp <cr>    # path-070326
+(config-subif)# ip dhcp server use hardware-address client-id <cr>    # path-072112
+(config-subif)# ip dhcp server use subscriber-id client-id <cr>    # path-072108
+(config-subif)# ip dhcp snooping bridge-domain <number:dynamic> information option format-type circuit-id string <cr>    # path-072842
+(config-subif)# ip dhcp snooping information option allow-untrusted <cr>    # path-072693
+(config-subif)# ip dhcp snooping limit rate <cr>    # path-072661
+(config-subif)# ip dhcp snooping limit rate <number:1..4294967294> <cr>    # path-072125
+(config-subif)# ip dhcp snooping packets <cr>    # path-070334
+(config-subif)# ip dhcp snooping trust <cr>    # path-072619
+(config-subif)# ip directed-broadcast <cr>    # path-068271
+(config-subif)# ip dlep set heartbeat-threshold <number:2..8> <cr>    # path-071702
+(config-subif)# ip dlep set nbr-down-ack-timeout <number:1..50> <cr>    # path-071729
+(config-subif)# ip dlep set peer-description <string> <cr>    # path-071752
+(config-subif)# ip dlep set peer-discovery-interval <number:1..60> <cr>    # path-071745
+(config-subif)# ip dlep set peer-discovery-mode ipv6 <cr>    # path-071749
+(config-subif)# ip dlep set peer-heartbeat-interval <number:1..60> <cr>    # path-071741
+(config-subif)# ip dlep set peer-init-ack-timeout <number:1..60> <cr>    # path-071738
+(config-subif)# ip dlep set peer-terminate-ack-timeout <number:1..50> <cr>    # path-071718
+(config-subif)# ip dlep vtemplate <number:1..4096> <cr>    # path-070786
+(config-subif)# ip dns view-group <string> <cr>    # path-070494
+(config-subif)# ip flow monitor <?option@555588f5d9c8> sampler <cr>    # path-072816
+(config-subif)# ip flow monitor <cr>    # path-072547
+(config-subif)# ip flowspec disable <cr>    # path-069380
+(config-subif)# ip header-compression disable-feedback <cr>    # path-069388
+(config-subif)# ip hello-interval eigrp <number:1..65535> <number:1..65535> <cr>    # path-071629
+(config-subif)# ip helper-address <address> <cr>    # path-068959
+(config-subif)# ip helper-address global <address> <cr>    # path-070302
+(config-subif)# ip helper-address vrf <string> <address> <cr>    # path-071487
+(config-subif)# ip hold-time eigrp <number:1..65535> <number:1..65535> <cr>    # path-071647
+(config-subif)# ip idle-group <number:1..199> in <cr>    # path-070298
+(config-subif)# ip idle-group <number:1..199> out <cr>    # path-070303
+(config-subif)# ip igmp access-group <number:1..199> <cr>    # path-070401
+(config-subif)# ip igmp explicit-tracking <cr>    # path-069065
+(config-subif)# ip igmp filter <number:1..4294967295> <cr>    # path-070745
+(config-subif)# ip igmp helper-address <address> <cr>    # path-070366
+(config-subif)# ip igmp helper-address udl <interface> <cr>    # path-072645
+(config-subif)# ip igmp iif-starg <cr>    # path-069029
+(config-subif)# ip igmp immediate-leave group-list <number:1..99> <cr>    # path-071542
+(config-subif)# ip igmp join-group <address> <cr>    # path-070363
+(config-subif)# ip igmp last-member-query-count <number:1..7> <cr>    # path-070352
+(config-subif)# ip igmp last-member-query-interval <number:100..25500> <cr>    # path-070344
+(config-subif)# ip igmp limit <number:1..64000> <cr>    # path-070515
+(config-subif)# ip igmp mroute-proxy <interface> <cr>    # path-072610
+(config-subif)# ip igmp proxy-report-interval <number:1..18000> <cr>    # path-070464
+(config-subif)# ip igmp proxy-service <cr>    # path-069138
+(config-subif)# ip igmp querier-timeout <number:60..300> <cr>    # path-070481
+(config-subif)# ip igmp query-interval <number:1..18000> <cr>    # path-070451
+(config-subif)# ip igmp query-max-response-time <number:1..25> <cr>    # path-070384
+(config-subif)# ip igmp robustness-variable <number:1..7> <cr>    # path-070343
+(config-subif)# ip igmp snooping access-group <number:1..199> <cr>    # path-071689
+(config-subif)# ip igmp snooping limit <cr>    # path-070799
+(config-subif)# ip igmp snooping tcn flood <cr>    # path-071660
+(config-subif)# ip igmp static-group * <cr>    # path-072606
+(config-subif)# ip igmp static-group <address> <cr>    # path-070367
+(config-subif)# ip igmp tcn query count <number:1..10> <cr>    # path-072170
+(config-subif)# ip igmp tcn query interval <number:1..255> <cr>    # path-072177
+(config-subif)# ip igmp unidirectional-link <cr>    # path-069104
+(config-subif)# ip igmp upstream-proxy <string> <cr>    # path-070373
+(config-subif)# ip igmp v3-query-max-response-time <number:1..3175> <cr>    # path-070393
+(config-subif)# ip igmp v3lite <cr>    # path-069189
+(config-subif)# ip igmp version <number:1..3> <cr>    # path-070426
+(config-subif)# ip information-reply <cr>    # path-068240
+(config-subif)# ip irdp <cr>    # path-068311
+(config-subif)# ip irdp address <address> <signed:-2147483648..2147483647> <cr>    # path-071568
+(config-subif)# ip irdp holdtime <number:4..9000> <cr>    # path-068323
+(config-subif)# ip irdp maxadvertinterval <number:4..1800> <cr>    # path-070480
+(config-subif)# ip irdp minadvertinterval <number:3..1800> <cr>    # path-068316
+(config-subif)# ip irdp multicast <cr>    # path-069080
+(config-subif)# ip irdp preference <signed:-2147483648..2147483647> <cr>    # path-070509
+(config-subif)# ip load-sharing <?option@555588d17fb0> <cr>    # path-072567
+(config-subif)# ip load-sharing <cr>    # path-068487
+(config-subif)# ip local-proxy-arp <cr>    # path-068268
+(config-subif)# ip mask-reply <cr>    # path-068236
+(config-subif)# ip mfib cef input <cr>    # path-070653
+(config-subif)# ip mfib cef output <cr>    # path-070686
+(config-subif)# ip mfib forwarding <cr>    # path-069376
+(config-subif)# ip mfib forwarding input <cr>    # path-070624
+(config-subif)# ip mfib forwarding output <cr>    # path-070657
+(config-subif)# ip mfib test adjacency <cr>    # path-070732
+(config-subif)# ip mfib test headless <cr>    # path-070748
+(config-subif)# ip mfib test macfilter <cr>    # path-070705
+(config-subif)# ip mfib test mask <cr>    # path-070681
+(config-subif)# ip mrm test-sender <cr>    # path-069184
+(config-subif)# ip mroute-cache <cr>    # path-068284
+(config-subif)# ip mtu <number:dynamic> <cr>    # path-072555
+(config-subif)# ip multicast boundary <cr>    # path-069377
+(config-subif)# ip multicast boundary block source <cr>    # path-071598
+(config-subif)# ip multicast boundary filter-autorp <number:1..99> <cr>    # path-071601
+(config-subif)# ip multicast boundary filter-autorp <number:1..99> <cr>    # path-071613
+(config-subif)# ip multicast cca test <cr>    # path-070604
+(config-subif)# ip multicast helper-map broadcast <address> <number:2000..2699> <cr>    # path-072182
+(config-subif)# ip multicast limit <number:1..199> <number:0..2147483647> <cr>    # path-071630
+(config-subif)# ip multicast rate-limit in <cr>    # path-070623
+(config-subif)# ip multicast ttl-threshold <number:0..255> <cr>    # path-068333
+(config-subif)# ip multicast ttl-threshold <number:0..255> <cr>    # path-068334
+(config-subif)# ip multicast use-functional <cr>    # path-069223
+(config-subif)# ip nat allow-static-host <cr>    # path-069303
+(config-subif)# ip nat enable <cr>    # path-069260
+(config-subif)# ip nat inside <cr>    # path-069215
+(config-subif)# ip nat outside <cr>    # path-069175
+(config-subif)# ip nat stick <cr>    # path-069243
+(config-subif)# ip nbar collect-dhcpv6-data <cr>    # path-069105
+(config-subif)# ip nbar protocol-discovery <cr>    # path-069204
+(config-subif)# ip network-broadcast <cr>    # path-068264
+(config-subif)# ip next-hop-self eigrp <number:1..65535> <cr>    # path-070662
+(config-subif)# ip nhrp attribute group <cr>    # path-072792
+(config-subif)# ip nhrp attribute set <string> <string> <cr>    # path-072829
+(config-subif)# ip nhrp authentication <cr>    # path-072751
+(config-subif)# ip nhrp bfd strict-mode <cr>    # path-072794
+(config-subif)# ip nhrp block-next-hop-override <cr>    # path-072763
+(config-subif)# ip nhrp cache bgp-sync <cr>    # path-072796
+(config-subif)# ip nhrp cache next-hop route-validate <cr>    # path-072822
+(config-subif)# ip nhrp cache non-authoritative <cr>    # path-072798
+(config-subif)# ip nhrp connect <number:1..65535> <cr>    # path-072790
+(config-subif)# ip nhrp holdtime <number:1..65535> <cr>    # path-072726
+(config-subif)# ip nhrp interest <cr>    # path-072752
+(config-subif)# ip nhrp map multicast dynamic <cr>    # path-072817
+(config-subif)# ip nhrp max-send <cr>    # path-072758
+(config-subif)# ip nhrp multicast batch-size <cr>    # path-072795
+(config-subif)# ip nhrp network-id <number:1..4294967295> <cr>    # path-072725
+(config-subif)# ip nhrp nhs <address> <cr>    # path-072793
+(config-subif)# ip nhrp nhs cluster <number:0..10> max-connections <number:0..255> <cr>    # path-072839
+(config-subif)# ip nhrp nhs fallback <number:0..60> <cr>    # path-072820
+(config-subif)# ip nhrp path preference <cr>    # path-072802
+(config-subif)# ip nhrp process-delay <cr>    # path-072756
+(config-subif)# ip nhrp record <cr>    # path-072754
+(config-subif)# ip nhrp redirect <cr>    # path-072764
+(config-subif)# ip nhrp registration delay <number:0..10> <cr>    # path-072759
+(config-subif)# ip nhrp registration differential <cr>    # path-072799
+(config-subif)# ip nhrp registration no-unique <cr>    # path-072797
+(config-subif)# ip nhrp registration req-def-map <cr>    # path-072800
+(config-subif)# ip nhrp registration timeout <number:1..65535> <cr>    # path-072761
+(config-subif)# ip nhrp reject <number:1..65535> <cr>    # path-072791
+(config-subif)# ip nhrp resolution refresh base <number:1..65535> <cr>    # path-072832
+(config-subif)# ip nhrp responder default-originate <cr>    # path-072789
+(config-subif)# ip nhrp role hub <cr>    # path-072788
+(config-subif)# ip nhrp send-routed <cr>    # path-072760
+(config-subif)# ip nhrp server-only <cr>    # path-072757
+(config-subif)# ip nhrp shortcut <cr>    # path-072762
+(config-subif)# ip nhrp summary-map <address> <address> <cr>    # path-072818
+(config-subif)# ip nhrp trigger-svc <cr>    # path-072753
+(config-subif)# ip nhrp use <number:1..65535> <cr>    # path-072727
+(config-subif)# ip ospf <number:1..65535> area <address> <cr>    # path-071668
+(config-subif)# ip ospf adjacency stagger disable <cr>    # path-071584
+(config-subif)# ip ospf authentication <cr>    # path-069018
+(config-subif)# ip ospf authentication-key <string> <cr>    # path-070359
+(config-subif)# ip ospf bfd <cr>    # path-069236
+(config-subif)# ip ospf cost <number:1..65535> <cr>    # path-068431
+(config-subif)# ip ospf database-filter all out <cr>    # path-071559
+(config-subif)# ip ospf dead-interval <number:1..65535> <cr>    # path-070378
+(config-subif)# ip ospf delay normalize interval <number:1..16777215> <cr>    # path-072199
+(config-subif)# ip ospf demand-circuit <cr>    # path-069098
+(config-subif)# ip ospf flood-reduction <cr>    # path-069085
+(config-subif)# ip ospf hello-interval <number:1..65535> <cr>    # path-068292
+(config-subif)# ip ospf interface-retry <number:1..65535> <cr>    # path-068281
+(config-subif)# ip ospf lls <cr>    # path-069086
+(config-subif)# ip ospf message-digest-key <number:1..255> md5 <string> <cr>    # path-072128
+(config-subif)# ip ospf mtu-ignore <cr>    # path-069097
+(config-subif)# ip ospf multi-area <address> <cr>    # path-070674
+(config-subif)# ip ospf multi-area <address> cost <number:1..65535> <cr>    # path-070597
+(config-subif)# ip ospf multi-area <address> delay normalize interval <number:1..16777215> <cr>    # path-072498
+(config-subif)# ip ospf network broadcast <cr>    # path-070358
+(config-subif)# ip ospf packet-size <number:576..10000> <cr>    # path-068270
+(config-subif)# ip ospf prefix-suppression <cr>    # path-069170
+(config-subif)# ip ospf priority <number:0..255> <cr>    # path-068297
+(config-subif)# ip ospf resync-timeout <number:1..65535> <cr>    # path-068276
+(config-subif)# ip ospf retransmit-interval <number:1..65535> <cr>    # path-068301
+(config-subif)# ip ospf shutdown <cr>    # path-069235
+(config-subif)# ip ospf transmit-delay <number:1..65535> <cr>    # path-068305
+(config-subif)# ip ospf ttl-security <cr>    # path-069253
+(config-subif)# ip ospf vnet area <address> <cr>    # path-071616
+(config-subif)# ip pim bfd <cr>    # path-069226
+(config-subif)# ip pim bidir-neighbor-filter <number:1..99> <cr>    # path-070584
+(config-subif)# ip pim bsr-border <cr>    # path-069335
+(config-subif)# ip pim dr-priority <number:0..4294967294> <cr>    # path-070585
+(config-subif)# ip pim drlb <cr>    # path-069362
+(config-subif)# ip pim join-prune-interval <number:10..600> <cr>    # path-070497
+(config-subif)# ip pim lisp core-group-range <address> <number:1..1000> <cr>    # path-072169
+(config-subif)# ip pim lisp transit-core-group-range <address> <number:1..1000> <cr>    # path-072176
+(config-subif)# ip pim lisp transport unicast <cr>    # path-071603
+(config-subif)# ip pim nbma-mode <cr>    # path-069304
+(config-subif)# ip pim neighbor-filter <number:1..99> <cr>    # path-070546
+(config-subif)# ip pim non-dr-join <cr>    # path-069264
+(config-subif)# ip pim passive <cr>    # path-069157
+(config-subif)# ip pim pfp-sa border <cr>    # path-070728
+(config-subif)# ip pim query-interval <number:1..65535> <cr>    # path-070713
+(config-subif)# ip pim redundancy <string> dr-priority <number:0..4294967294> <cr>    # path-072206
+(config-subif)# ip pim sparse-mode encap-helper <interface> <cr>    # path-072653
+(config-subif)# ip pim state-refresh origination-interval <cr>    # path-070784
+(config-subif)# ip policy route-map <string> <cr>    # path-070351
+(config-subif)# ip portbundle outside <cr>    # path-069073
+(config-subif)# ip probe proxy <cr>    # path-069012
+(config-subif)# ip proxy-arp <cr>    # path-068267
+(config-subif)# ip rarp-server <address> <cr>    # path-068948
+(config-subif)# ip reassembly <cr>    # path-068486
+(config-subif)# ip reassembly percentage <number:1..100> dscp <?common_dscp_value_action@55558903efd0> <cr>    # path-072830
+(config-subif)# ip reassembly percentage <number:1..100> dscp <?common_dscp_value_action@55558903efd0> <cr>    # path-072831
+(config-subif)# ip redirects <cr>    # path-068250
+(config-subif)# ip rgmp <cr>    # path-068266
+(config-subif)# ip rip advertise <number:0..4294966> <cr>    # path-068424
+(config-subif)# ip rip advertise-default <number:1..15> <number:0..65535> <cr>    # path-071645
+(config-subif)# ip rip authentication key-chain <string> <cr>    # path-071733
+(config-subif)# ip rip authentication mode text <cr>    # path-071721
+(config-subif)# ip rip initial-delay <number:0..1800> <cr>    # path-068408
+(config-subif)# ip rip receive version <cr>    # path-070754
+(config-subif)# ip rip send version <cr>    # path-070739
+(config-subif)# ip rip triggered <cr>    # path-069240
+(config-subif)# ip rip v2-broadcast <cr>    # path-069259
+(config-subif)# ip route-cache <cr>    # path-068237
+(config-subif)# ip route-cache same-interface <cr>    # path-068920
+(config-subif)# ip router isis <cr>    # path-069306
+(config-subif)# ip rsvp aggregation ip role interior <cr>    # path-072240
+(config-subif)# ip rsvp atm-peak-rate-limit <number:1..2139095> <cr>    # path-068542
+(config-subif)# ip rsvp authentication <cr>    # path-069891
+(config-subif)# ip rsvp authentication challenge <cr>    # path-071147
+(config-subif)# ip rsvp authentication exception fast-reroute <cr>    # path-071921
+(config-subif)# ip rsvp authentication key <string> <cr>    # path-071848
+(config-subif)# ip rsvp authentication key-chain <string> <cr>    # path-071861
+(config-subif)# ip rsvp authentication lifetime <hh:mm:ss> <cr>    # path-072670
+(config-subif)# ip rsvp authentication type <cr>    # path-071153
+(config-subif)# ip rsvp authentication window-size <number:1..64> <cr>    # path-071891
+(config-subif)# ip rsvp bandwidth <cr>    # path-069444
+(config-subif)# ip rsvp burst policing <cr>    # path-070952
+(config-subif)# ip rsvp data-packet classification none <cr>    # path-071789
+(config-subif)# ip rsvp dsbm candidate <cr>    # path-071067
+(config-subif)# ip rsvp dsbm non-resv-send-limit burst <number:1..2147483> <cr>    # path-072311
+(config-subif)# ip rsvp dsbm non-resv-send-limit max-unit <number:1..2147483647> <cr>    # path-072324
+(config-subif)# ip rsvp dsbm non-resv-send-limit min-unit <number:1..2147483647> <cr>    # path-072320
+(config-subif)# ip rsvp dsbm non-resv-send-limit peak <number:1..2147483> <cr>    # path-072316
+(config-subif)# ip rsvp dsbm non-resv-send-limit rate <number:1..2147483> <cr>    # path-072307
+(config-subif)# ip rsvp dsbm-candidate <cr>    # path-069667
+(config-subif)# ip rsvp flow-assist <cr>    # path-069461
+(config-subif)# ip rsvp listener outbound reply <cr>    # path-071767
+(config-subif)# ip rsvp neighbor <cr>    # path-069451
+(config-subif)# ip rsvp policy <?test_subsys_action@555589fa15e0> local default <cr>    # path-072691
+(config-subif)# ip rsvp precedence <cr>    # path-069764
+(config-subif)# ip rsvp resource-provider none <cr>    # path-070947
+(config-subif)# ip rsvp resource-provider wfq interface <cr>    # path-071825
+(config-subif)# ip rsvp resource-provider wfq pvc <cr>    # path-071836
+(config-subif)# ip rsvp signalling blockade <number:1..65536> <cr>    # path-071761
+(config-subif)# ip rsvp signalling dscp <number:0..63> <cr>    # path-071755
+(config-subif)# ip rsvp signalling fast-local-repair wait-time <number:0..5000> <cr>    # path-072258
+(config-subif)# ip rsvp signalling hello <cr>    # path-070971
+(config-subif)# ip rsvp signalling hello bfd <cr>    # path-071771
+(config-subif)# ip rsvp signalling hello dscp <number:0..63> <cr>    # path-072290
+(config-subif)# ip rsvp signalling hello graceful-restart <cr>    # path-071831
+(config-subif)# ip rsvp signalling hello refresh interval <number:10..30000> <cr>    # path-072455
+(config-subif)# ip rsvp signalling hello refresh misses <number:4..10> <cr>    # path-072459
+(config-subif)# ip rsvp signalling hello reroute dscp <number:0..63> <cr>    # path-072451
+(config-subif)# ip rsvp signalling hello reroute refresh interval <number:1000..30000> <cr>    # path-072501
+(config-subif)# ip rsvp signalling hello reroute refresh misses <number:4..10> <cr>    # path-072504
+(config-subif)# ip rsvp source address <address> <cr>    # path-071860
+(config-subif)# ip rsvp source interface <interface> <cr>    # path-072668
+(config-subif)# ip rsvp svc-required <cr>    # path-069492
+(config-subif)# ip rsvp tos <cr>    # path-069651
+(config-subif)# ip rsvp tunnel overhead-percent <cr>    # path-070803
+(config-subif)# ip rsvp udp-multicasts <cr>    # path-069434
+(config-subif)# ip rtp compression-connections <number:dynamic> <cr>    # path-072613
+(config-subif)# ip rtp header-compression <cr>    # path-069391
+(config-subif)# ip sap listen <cr>    # path-069021
+(config-subif)# ip security add <cr>    # path-069034
+(config-subif)# ip security dedicated <cr>    # path-069150
+(config-subif)# ip security dedicated Reserved1 <cr>    # path-070477
+(config-subif)# ip security dedicated Reserved1 <cr>    # path-070491
+(config-subif)# ip security dedicated Reserved1 to <cr>    # path-072657
+(config-subif)# ip security dedicated Reserved1 to Reserved1 <cr>    # path-072689
+(config-subif)# ip security dedicated Reserved1 to Reserved1 <cr>    # path-072690
+(config-subif)# ip security eso-min <number:0..255> <hex-data> <cr>    # path-072651
+(config-subif)# ip security extended-allowed <cr>    # path-069042
+(config-subif)# ip security extended-ignored <cr>    # path-069052
+(config-subif)# ip security first <cr>    # path-069064
+(config-subif)# ip security ignore-authorities <cr>    # path-069071
+(config-subif)# ip security ignore-cipso <cr>    # path-069082
+(config-subif)# ip security reserved-allowed <cr>    # path-069059
+(config-subif)# ip security strip <cr>    # path-069094
+(config-subif)# ip split-horizon <cr>    # path-068247
+(config-subif)# ip split-horizon eigrp <number:1..65535> <cr>    # path-070318
+(config-subif)# ip sticky-arp <cr>    # path-068269
+(config-subif)# ip subscriber routed <cr>    # path-069396
+(config-subif)# ip summary-address <?router_action_proc_vpn@555589d79118> <address> <address> <cr>    # path-072644
+(config-subif)# ip summary-address eigrp <number:1..65535> <address> <address> <cr>    # path-072685
+(config-subif)# ip tcp adjust-mss <number:500..1460> <cr>    # path-068244
+(config-subif)# ip tcp compression-connections <number:1..256> <cr>    # path-068248
+(config-subif)# ip tcp header-compression <cr>    # path-069011
+(config-subif)# ip topology-accounting <cr>    # path-068307
+(config-subif)# ip trigger-authentication <cr>    # path-068419
+(config-subif)# ip unnumbered <interface> <cr>    # path-072543
+(config-subif)# ip unreachables <cr>    # path-068253
+(config-subif)# ip urd <cr>    # path-068300
+(config-subif)# ip verify unicast notification threshold <number:0..4294967295> <cr>    # path-072248
+(config-subif)# ip verify unicast reverse-path <?option@555588d1dd40> <cr>    # path-072664
+(config-subif)# ip verify unicast reverse-path <cr>    # path-070858
+(config-subif)# ip virtual-reassembly <cr>    # path-068471
+(config-subif)# ip vrf autoclassify source <cr>    # path-072602
+(config-subif)# ip vrf receive <string> <cr>    # path-072605
+(config-subif)# ip vrf select source <cr>    # path-072603
+(config-subif)# ip vrf sitemap <cr>    # path-072545
+(config-subif)# ip wccp redirect exclude in <cr>    # path-071551
+(config-subif)# ip wccp web-cache <cr>    # path-069205
+(config-subif)# ip wccp web-cache group-listen <cr>    # path-070511
+(config-subif)# ip wccp web-cache redirect in <cr>    # path-071571
+(config-subif)# ip wccp web-cache redirect out <cr>    # path-071560
+(config-subif)# ipv6 address <address> link-local <cr>    # path-070933
+(config-subif)# ipv6 address <cr>    # path-068686
+(config-subif)# ipv6 address <prefix:dynamic> <cr>    # path-072587
+(config-subif)# ipv6 address autoconfig <cr>    # path-069552
+(config-subif)# ipv6 address dhcp <cr>    # path-069608
+(config-subif)# ipv6 authentication key-chain eigrp <number:1..65535> <string> <cr>    # path-072300
+(config-subif)# ipv6 authentication mode eigrp <number:1..65535> md5 <cr>    # path-072289
+(config-subif)# ipv6 bandwidth-percent eigrp <number:1..65535> <number:1..999999> <cr>    # path-071835
+(config-subif)# ipv6 cef <cr>    # path-068683
+(config-subif)# ipv6 dampening-change eigrp <number:1..65535> <cr>    # path-071087
+(config-subif)# ipv6 dampening-interval eigrp <number:1..65535> <cr>    # path-071108
+(config-subif)# ipv6 destination-guard <cr>    # path-068589
+(config-subif)# ipv6 dhcp client information refresh minimum <number:60..3600> <cr>    # path-072448
+(config-subif)# ipv6 dhcp client pd <string> <cr>    # path-071830
+(config-subif)# ipv6 dhcp client pd hint <prefix:dynamic> <cr>    # path-072696
+(config-subif)# ipv6 dhcp client request vendor <cr>    # path-071776
+(config-subif)# ipv6 dhcp client vendor-class ascii <string> <cr>    # path-072279
+(config-subif)# ipv6 dhcp client vendor-class disable <cr>    # path-071814
+(config-subif)# ipv6 dhcp client vendor-class hex <hex-string> <cr>    # path-072698
+(config-subif)# ipv6 dhcp client vendor-class mac-address <cr>    # path-071780
+(config-subif)# ipv6 dhcp framed password <string> <cr>    # path-071960
+(config-subif)# ipv6 dhcp relay destination <address> <cr>    # path-071976
+(config-subif)# ipv6 dhcp relay destination <address> <interface> <cr>    # path-072699
+(config-subif)# ipv6 dhcp relay option vpn <cr>    # path-071949
+(config-subif)# ipv6 dhcp relay short-lease <number:60..3600> <cr>    # path-071942
+(config-subif)# ipv6 dhcp relay source-interface <interface> <cr>    # path-072675
+(config-subif)# ipv6 dhcp relay trust <cr>    # path-071198
+(config-subif)# ipv6 dhcp server <cr>    # path-069946
+(config-subif)# ipv6 eigrp <number:1..65535> <cr>    # path-069614
+(config-subif)# ipv6 enable <cr>    # path-068590
+(config-subif)# ipv6 flow monitor <?option@555588f619a8> sampler <cr>    # path-072821
+(config-subif)# ipv6 flow monitor <cr>    # path-072580
+(config-subif)# ipv6 hello-interval eigrp <number:1..65535> <number:1..65535> <cr>    # path-071876
+(config-subif)# ipv6 hold-time eigrp <number:1..65535> <number:1..65535> <cr>    # path-071890
+(config-subif)# ipv6 mfib cef input <cr>    # path-070923
+(config-subif)# ipv6 mfib cef output <cr>    # path-070944
+(config-subif)# ipv6 mfib forwarding <cr>    # path-069649
+(config-subif)# ipv6 mfib forwarding input <cr>    # path-070904
+(config-subif)# ipv6 mfib forwarding output <cr>    # path-070926
+(config-subif)# ipv6 mfib test adjacency <cr>    # path-070978
+(config-subif)# ipv6 mfib test headless <cr>    # path-071001
+(config-subif)# ipv6 mfib test macfilter <cr>    # path-070955
+(config-subif)# ipv6 mfib test mask <cr>    # path-070939

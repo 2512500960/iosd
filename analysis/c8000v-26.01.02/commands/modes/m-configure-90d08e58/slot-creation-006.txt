@@ -1,0 +1,276 @@
+# 模式 configure；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-006.md
+
+(config)# do-exec debug voip rtp statistics <cr>    # static_slot_creation_candidates-000507
+(config)# do-exec debug voip source-group <cr>    # static_slot_creation_candidates-000168
+(config)# do-exec debug voip sprt checksum <cr>    # static_slot_creation_candidates-000462
+(config)# do-exec debug voip sprt packet <cr>    # static_slot_creation_candidates-000446
+(config)# do-exec debug voip srtcp <cr>    # static_slot_creation_candidates-000197
+(config)# do-exec debug voip srtcp error <cr>    # static_slot_creation_candidates-000447
+(config)# do-exec debug voip srtcp packet <cr>    # static_slot_creation_candidates-000463
+(config)# do-exec debug voip srtcp session <cr>    # static_slot_creation_candidates-000432
+(config)# do-exec debug voip srtp <cr>    # static_slot_creation_candidates-000190
+(config)# do-exec debug voip srtp error <cr>    # static_slot_creation_candidates-000433
+(config)# do-exec debug voip srtp packet <cr>    # static_slot_creation_candidates-000448
+(config)# do-exec debug voip srtp session <cr>    # static_slot_creation_candidates-000413
+(config)# do-exec debug voip statistics accounting <cr>    # static_slot_creation_candidates-000370
+(config)# do-exec debug voip statistics core <cr>    # static_slot_creation_candidates-000420
+(config)# do-exec debug voip statistics csr <cr>    # static_slot_creation_candidates-000398
+(config)# do-exec debug voip translation <cr>    # static_slot_creation_candidates-000165
+(config)# do-exec debug voip uri <cr>    # static_slot_creation_candidates-000169
+(config)# do-exec debug voip vtsp <cr>    # static_slot_creation_candidates-000210
+(config)# do-exec debug voip vtsp all <cr>    # static_slot_creation_candidates-000399
+(config)# do-exec ping mpls nil-fec labels <string> <cr>    # static_slot_creation_candidates-002743
+(config)# do-exec show appfw dns <cr>    # static_slot_creation_candidates-000229
+(config)# do-exec show appfw dns cache policy <string> addrdb <cr>    # static_slot_creation_candidates-002335
+(config)# do-exec show crypto ikev2 client <cr>    # static_slot_creation_candidates-000879
+(config)# do-exec show crypto ikev2 cluster <cr>    # static_slot_creation_candidates-000894
+(config)# do-exec show crypto ikev2 cluster dead-secondary <cr>    # static_slot_creation_candidates-001705
+(config)# do-exec show crypto ikev2 cluster detail <cr>    # static_slot_creation_candidates-001727
+(config)# do-exec show crypto ikev2 cluster stats <cr>    # static_slot_creation_candidates-001714
+(config)# do-exec show crypto ikev2 flowmib failure <cr>    # static_slot_creation_candidates-001732
+(config)# do-exec show crypto ikev2 flowmib failure detailed <cr>    # static_slot_creation_candidates-002212
+(config)# do-exec show crypto ikev2 flowmib global <cr>    # static_slot_creation_candidates-001675
+(config)# do-exec show crypto ikev2 flowmib history <cr>    # static_slot_creation_candidates-001721
+(config)# do-exec show crypto ikev2 flowmib history detailed <cr>    # static_slot_creation_candidates-002192
+(config)# do-exec show crypto ikev2 flowmib peer <cr>    # static_slot_creation_candidates-001722
+(config)# do-exec show crypto ikev2 flowmib peer <number:0..65535> <cr>    # static_slot_creation_candidates-002196
+(config)# do-exec show crypto ikev2 flowmib peer detailed <cr>    # static_slot_creation_candidates-002204
+(config)# do-exec show crypto ikev2 flowmib peer detailed <number:0..65535> <cr>    # static_slot_creation_candidates-002409
+(config)# do-exec show crypto ikev2 flowmib tunnel <cr>    # static_slot_creation_candidates-001712
+(config)# do-exec show crypto ikev2 flowmib tunnel <number:0..65535> <cr>    # static_slot_creation_candidates-002183
+(config)# do-exec show crypto ikev2 flowmib tunnel detailed <cr>    # static_slot_creation_candidates-002189
+(config)# do-exec show crypto ikev2 flowmib tunnel detailed <number:0..65535> <cr>    # static_slot_creation_candidates-002403
+(config)# do-exec show dapr border-router interfaces <cr>    # static_slot_creation_candidates-000660
+(config)# do-exec show dapr border-router interfaces metrics <cr>    # static_slot_creation_candidates-001290
+(config)# do-exec show dapr border-router neighbors <cr>    # static_slot_creation_candidates-000610
+(config)# do-exec show dapr border-router statistics <cr>    # static_slot_creation_candidates-000643
+(config)# do-exec show dapr border-router statistics inter-br <cr>    # static_slot_creation_candidates-001169
+(config)# do-exec show dapr border-router statistics packet <cr>    # static_slot_creation_candidates-001259
+(config)# do-exec show dapr border-router statistics wan-metric <cr>    # static_slot_creation_candidates-001215
+(config)# do-exec show dapr border-router summary <cr>    # static_slot_creation_candidates-000584
+(config)# do-exec show dapr route-manager border-router <address> <cr>    # static_slot_creation_candidates-001331
+(config)# do-exec show dapr route-manager border-router <cr>    # static_slot_creation_candidates-000700
+(config)# do-exec show dapr route-manager border-router neighbors <cr>    # static_slot_creation_candidates-001287
+(config)# do-exec show dapr route-manager border-router summary <cr>    # static_slot_creation_candidates-001364
+(config)# do-exec show dapr route-manager debug-condition <cr>    # static_slot_creation_candidates-000728
+(config)# do-exec show dapr route-manager flow-groups <cr>    # static_slot_creation_candidates-000778
+(config)# do-exec show dapr route-manager flow-groups match <cr>    # static_slot_creation_candidates-001521
+(config)# do-exec show dapr route-manager flow-groups match dscp <?common_dscp_value_action@55558c3a5e70> <cr>    # static_slot_creation_candidates-002709
+(config)# do-exec show dapr route-manager flow-groups match dscp <?common_dscp_value_action@55558c3a5e70> egress-br <address> <cr>    # static_slot_creation_candidates-002714
+(config)# do-exec show dapr route-manager internal <cr>    # static_slot_creation_candidates-000737
+(config)# do-exec show dapr route-manager link-groups <cr>    # static_slot_creation_candidates-000695
+(config)# do-exec show dapr route-manager link-groups <string> <cr>    # static_slot_creation_candidates-001359
+(config)# do-exec show dapr route-manager route-table <cr>    # static_slot_creation_candidates-000677
+(config)# do-exec show dapr route-manager statistics <cr>    # static_slot_creation_candidates-000602
+(config)# do-exec show dapr route-manager summary <cr>    # static_slot_creation_candidates-000575
+(config)# do-exec show domain <string> border all <cr>    # static_slot_creation_candidates-001461
+(config)# do-exec show domain <string> border channels <cr>    # static_slot_creation_candidates-001760
+(config)# do-exec show domain <string> border dca <cr>    # static_slot_creation_candidates-001729
+(config)# do-exec show domain <string> border exporter monitors <cr>    # static_slot_creation_candidates-002205
+(config)# do-exec show domain <string> border exporter monitors interface <interface-type> <string> prefix <address> <number:1..65535> dscp <number:1..65535> <cr>    # static_slot_creation_candidates-002715
+(config)# do-exec show domain <string> border exporter statistics <cr>    # static_slot_creation_candidates-002177
+(config)# do-exec show domain <string> border identity <string> traffic-classes <cr>    # static_slot_creation_candidates-002379
+(config)# do-exec show domain <string> border neighbor-channels <cr>    # static_slot_creation_candidates-001603
+(config)# do-exec show domain <string> border parent-route <cr>    # static_slot_creation_candidates-001708
+(config)# do-exec show domain <string> border peering <cr>    # static_slot_creation_candidates-001718
+(config)# do-exec show domain <string> border pmi <cr>    # static_slot_creation_candidates-001745
+(config)# do-exec show domain <string> border pmi policy-map <cr>    # static_slot_creation_candidates-002265
+(config)# do-exec show domain <string> border pmi policy-map interface <interface> <cr>    # static_slot_creation_candidates-002713
+(config)# do-exec show domain <string> border route-import <cr>    # static_slot_creation_candidates-001516
+(config)# do-exec show domain <string> border site-capability <cr>    # static_slot_creation_candidates-001612
+(config)# do-exec show domain <string> border site-prefix <cr>    # static_slot_creation_candidates-001518
+(config)# do-exec show domain <string> border statistics <cr>    # static_slot_creation_candidates-001544
+(config)# do-exec show domain <string> border status <cr>    # static_slot_creation_candidates-001578
+(config)# do-exec show domain <string> border tech <cr>    # static_slot_creation_candidates-001666
+(config)# do-exec show domain <string> border trace <cr>    # static_slot_creation_candidates-001680
+(config)# do-exec show domain <string> border traffic-classes <cr>    # static_slot_creation_candidates-001647
+(config)# do-exec show domain <string> master all <cr>    # static_slot_creation_candidates-001463
+(config)# do-exec show domain <string> master application-table <cr>    # static_slot_creation_candidates-001604
+(config)# do-exec show domain <string> master channels <cr>    # static_slot_creation_candidates-001725
+(config)# do-exec show domain <string> master channels summary <cr>    # static_slot_creation_candidates-002140
+(config)# do-exec show domain <string> master dca application-map <cr>    # static_slot_creation_candidates-002239
+(config)# do-exec show domain <string> master dca application-map summary <cr>    # static_slot_creation_candidates-002431
+(config)# do-exec show domain <string> master dca domain-map <cr>    # static_slot_creation_candidates-002236
+(config)# do-exec show domain <string> master dca status <cr>    # static_slot_creation_candidates-002245
+(config)# do-exec show domain <string> master discovered-sites <cr>    # static_slot_creation_candidates-001653
+(config)# do-exec show domain <string> master discovered-sites channel-health-db <cr>    # static_slot_creation_candidates-002175
+(config)# do-exec show domain <string> master exits <cr>    # static_slot_creation_candidates-001554
+(config)# do-exec show domain <string> master exporter multi-hop <cr>    # static_slot_creation_candidates-002214
+(config)# do-exec show domain <string> master peering <cr>    # static_slot_creation_candidates-001709
+(config)# do-exec show domain <string> master policy <cr>    # static_slot_creation_candidates-001757
+(config)# do-exec show domain <string> master policy <string> <cr>    # static_slot_creation_candidates-002263
+(config)# do-exec show domain <string> master route-import all <cr>    # static_slot_creation_candidates-002155
+(config)# do-exec show domain <string> master site-capability <cr>    # static_slot_creation_candidates-001724
+(config)# do-exec show domain <string> master site-prefix <cr>    # static_slot_creation_candidates-001723
+(config)# do-exec show domain <string> master statistics <cr>    # static_slot_creation_candidates-001486
+(config)# do-exec show domain <string> master status <cr>    # static_slot_creation_candidates-001462
+(config)# do-exec show domain <string> master tech <cr>    # static_slot_creation_candidates-001545
+(config)# do-exec show domain <string> master trace <cr>    # static_slot_creation_candidates-001579
+(config)# do-exec show domain <string> master traffic-classes <cr>    # static_slot_creation_candidates-001763
+(config)# do-exec show domain <string> master traffic-classes summary <cr>    # static_slot_creation_candidates-002167
+(config)# do-exec show domain default border all <cr>    # static_slot_creation_candidates-002637
+(config)# do-exec show domain default border channels <cr>    # static_slot_creation_candidates-002674
+(config)# do-exec show domain default border dca <cr>    # static_slot_creation_candidates-002670
+(config)# do-exec show domain default border exporter monitors <cr>    # static_slot_creation_candidates-002694
+(config)# do-exec show domain default border exporter statistics <cr>    # static_slot_creation_candidates-002693
+(config)# do-exec show domain default border identity <string> traffic-classes <cr>    # static_slot_creation_candidates-002708
+(config)# do-exec show domain default border neighbor-channels <cr>    # static_slot_creation_candidates-002652
+(config)# do-exec show domain default border parent-route <cr>    # static_slot_creation_candidates-002664
+(config)# do-exec show domain default border peering <cr>    # static_slot_creation_candidates-002666
+(config)# do-exec show domain default border pmi <cr>    # static_slot_creation_candidates-002672
+(config)# do-exec show domain default border pmi policy-map <cr>    # static_slot_creation_candidates-002701
+(config)# do-exec show domain default border route-import <cr>    # static_slot_creation_candidates-002642
+(config)# do-exec show domain default border site-capability <cr>    # static_slot_creation_candidates-002656
+(config)# do-exec show domain default border site-prefix <cr>    # static_slot_creation_candidates-002643
+(config)# do-exec show domain default border statistics <cr>    # static_slot_creation_candidates-002644
+(config)# do-exec show domain default border status <cr>    # static_slot_creation_candidates-002648
+(config)# do-exec show domain default border tech <cr>    # static_slot_creation_candidates-002661
+(config)# do-exec show domain default border trace <cr>    # static_slot_creation_candidates-002662
+(config)# do-exec show domain default border traffic-classes <cr>    # static_slot_creation_candidates-002658
+(config)# do-exec show domain default master all <cr>    # static_slot_creation_candidates-002639
+(config)# do-exec show domain default master application-table <cr>    # static_slot_creation_candidates-002653
+(config)# do-exec show domain default master channels <cr>    # static_slot_creation_candidates-002669
+(config)# do-exec show domain default master channels summary <cr>    # static_slot_creation_candidates-002686
+(config)# do-exec show domain default master dca application-map <cr>    # static_slot_creation_candidates-002697
+(config)# do-exec show domain default master dca application-map summary <cr>    # static_slot_creation_candidates-002711
+(config)# do-exec show domain default master dca domain-map <cr>    # static_slot_creation_candidates-002696
+(config)# do-exec show domain default master dca status <cr>    # static_slot_creation_candidates-002698
+(config)# do-exec show domain default master discovered-sites <cr>    # static_slot_creation_candidates-002660
+(config)# do-exec show domain default master discovered-sites channel-health-db <cr>    # static_slot_creation_candidates-002691
+(config)# do-exec show domain default master exits <cr>    # static_slot_creation_candidates-002646
+(config)# do-exec show domain default master exporter multi-hop <cr>    # static_slot_creation_candidates-002695
+(config)# do-exec show domain default master peering <cr>    # static_slot_creation_candidates-002665
+(config)# do-exec show domain default master policy <cr>    # static_slot_creation_candidates-002673
+(config)# do-exec show domain default master policy <string> <cr>    # static_slot_creation_candidates-002700
+(config)# do-exec show domain default master route-import all <cr>    # static_slot_creation_candidates-002687
+(config)# do-exec show domain default master site-capability <cr>    # static_slot_creation_candidates-002668
+(config)# do-exec show domain default master site-prefix <cr>    # static_slot_creation_candidates-002667
+(config)# do-exec show domain default master statistics <cr>    # static_slot_creation_candidates-002640
+(config)# do-exec show domain default master status <cr>    # static_slot_creation_candidates-002638
+(config)# do-exec show domain default master tech <cr>    # static_slot_creation_candidates-002645
+(config)# do-exec show domain default master trace <cr>    # static_slot_creation_candidates-002649
+(config)# do-exec show domain default master traffic-classes <cr>    # static_slot_creation_candidates-002675
+(config)# do-exec show domain default master traffic-classes summary <cr>    # static_slot_creation_candidates-002690
+(config)# do-exec show ip flow top-talkers <cr>    # static_slot_creation_candidates-000881
+(config)# do-exec show nve log event <cr>    # static_slot_creation_candidates-000541
+(config)# do-exec show otv isis <interface> aed svr req local info <cr>    # static_slot_creation_candidates-002740
+(config)# do-exec show otv isis <interface> aed svr req remote info <cr>    # static_slot_creation_candidates-002741
+(config)# do-exec show otv isis <interface> database <cr>    # static_slot_creation_candidates-002726
+(config)# do-exec show otv isis <interface> hostname <cr>    # static_slot_creation_candidates-002718
+(config)# do-exec show otv isis <interface> local ed summary <cr>    # static_slot_creation_candidates-002733
+(config)# do-exec show otv isis <interface> lsp-log <cr>    # static_slot_creation_candidates-002721
+(config)# do-exec show otv isis <interface> neighbors <cr>    # static_slot_creation_candidates-002720
+(config)# do-exec show otv isis <interface> private <cr>    # static_slot_creation_candidates-002722
+(config)# do-exec show otv isis <interface> protocol <cr>    # static_slot_creation_candidates-002723
+(config)# do-exec show otv isis <interface> remote ed summary <cr>    # static_slot_creation_candidates-002734
+(config)# do-exec show otv isis <interface> rib mac <cr>    # static_slot_creation_candidates-002730
+(config)# do-exec show otv isis <interface> site-index <cr>    # static_slot_creation_candidates-002725
+(config)# do-exec show otv isis <interface> spf-log <cr>    # static_slot_creation_candidates-002727
+(config)# do-exec show otv isis <interface> timers <cr>    # static_slot_creation_candidates-002719
+(config)# do-exec show otv isis <interface> tree <cr>    # static_slot_creation_candidates-002724
+(config)# do-exec show otv isis <interface> vlan status local info <cr>    # static_slot_creation_candidates-002738
+(config)# do-exec show otv isis <interface> vlan status remote info <cr>    # static_slot_creation_candidates-002739
+(config)# do-exec show otv isis <interface> vlan-database <cr>    # static_slot_creation_candidates-002728
+(config)# do-exec show otv isis aed svr req local info <cr>    # static_slot_creation_candidates-002504
+(config)# do-exec show otv isis aed svr req remote info <cr>    # static_slot_creation_candidates-002509
+(config)# do-exec show otv isis database <cr>    # static_slot_creation_candidates-000802
+(config)# do-exec show otv isis hostname <cr>    # static_slot_creation_candidates-000708
+(config)# do-exec show otv isis local ed summary <cr>    # static_slot_creation_candidates-002081
+(config)# do-exec show otv isis lsp-log <cr>    # static_slot_creation_candidates-000726
+(config)# do-exec show otv isis neighbors <cr>    # static_slot_creation_candidates-000717
+(config)# do-exec show otv isis nsf <cr>    # static_slot_creation_candidates-000658
+(config)# do-exec show otv isis private <cr>    # static_slot_creation_candidates-000755
+(config)# do-exec show otv isis protocol <cr>    # static_slot_creation_candidates-000762
+(config)# do-exec show otv isis remote ed summary <cr>    # static_slot_creation_candidates-002103
+(config)# do-exec show otv isis rib mac <cr>    # static_slot_creation_candidates-001575
+(config)# do-exec show otv isis site-index <cr>    # static_slot_creation_candidates-000794
+(config)# do-exec show otv isis spf-log <cr>    # static_slot_creation_candidates-000865
+(config)# do-exec show otv isis timers <cr>    # static_slot_creation_candidates-000709
+(config)# do-exec show otv isis tree <cr>    # static_slot_creation_candidates-000776
+(config)# do-exec show otv isis vlan status local info <cr>    # static_slot_creation_candidates-002392
+(config)# do-exec show otv isis vlan status remote info <cr>    # static_slot_creation_candidates-002406
+(config)# do-exec show otv isis vlan-database <cr>    # static_slot_creation_candidates-000880
+(config)# do-exec show otv log event <cr>    # static_slot_creation_candidates-000542
+(config)# do-exec show parameter-map type inspect <cr>    # static_slot_creation_candidates-000701
+(config)# do-exec show parameter-map type inspect <string> <cr>    # static_slot_creation_candidates-001365
+(config)# do-exec show parameter-map type inspect default <cr>    # static_slot_creation_candidates-001288
+(config)# do-exec show parameter-map type inspect-global <cr>    # static_slot_creation_candidates-000636
+(config)# do-exec show parameter-map type inspect-global gtp <cr>    # static_slot_creation_candidates-001295
+(config)# do-exec show parameter-map type inspect-vrf <cr>    # static_slot_creation_candidates-000641
+(config)# do-exec show parameter-map type inspect-vrf <string> <cr>    # static_slot_creation_candidates-001256
+(config)# do-exec show parameter-map type inspect-vrf default <cr>    # static_slot_creation_candidates-001167
+(config)# do-exec show parameter-map type inspect-zone <cr>    # static_slot_creation_candidates-000662
+(config)# do-exec show parameter-map type inspect-zone <string> <cr>    # static_slot_creation_candidates-001299
+(config)# do-exec show parameter-map type inspect-zone default <cr>    # static_slot_creation_candidates-001208
+(config)# do-exec show parameter-map type opendns <string> <cr>    # static_slot_creation_candidates-001258
+(config)# do-exec show parameter-map type opendns global <cr>    # static_slot_creation_candidates-002635
+(config)# do-exec show parameter-map type urlfilter <cr>    # static_slot_creation_candidates-000642
+(config)# do-exec show parameter-map type urlfilter <string> <cr>    # static_slot_creation_candidates-001257
+(config)# do-exec show parameter-map type urlfilter default <cr>    # static_slot_creation_candidates-001168
+(config)# do-exec show performance monitor clock rate <cr>    # static_slot_creation_candidates-001459
+(config)# do-exec show performance monitor context <?option@55558bba4340> <cr>    # static_slot_creation_candidates-002655
+(config)# do-exec show performance monitor context <?option@55558bba4340> interface <interface> <cr>    # static_slot_creation_candidates-002732
+(config)# do-exec show performance monitor context <?option@55558bba4340> traffic-monitor <?option@55558bba4880> <?option@55558bba4958> <cr>    # static_slot_creation_candidates-002742
+(config)# do-exec show performance monitor context <cr>    # static_slot_creation_candidates-000772
+(config)# do-exec show performance monitor observation-point <cr>    # static_slot_creation_candidates-000749
+(config)# do-exec show performance monitor profile <?option@55558bba4ef8> <cr>    # static_slot_creation_candidates-002650
+(config)# do-exec show policy-firewall stats avc <cr>    # static_slot_creation_candidates-000655
+(config)# do-exec show policy-firewall stats global <cr>    # static_slot_creation_candidates-000609
+(config)# do-exec show policy-firewall stats vrf <cr>    # static_slot_creation_candidates-000618
+(config)# do-exec show policy-firewall stats vrf <string> <cr>    # static_slot_creation_candidates-001209
+(config)# do-exec show policy-firewall stats zone <cr>    # static_slot_creation_candidates-000659
+(config)# do-exec show policy-firewall stats zone <string> <cr>    # static_slot_creation_candidates-001289
+(config)# do-exec show sbc h248 bac adjacencies <cr>    # static_slot_creation_candidates-001348
+(config)# do-exec show sbc h248 bac adjacencies <string> <cr>    # static_slot_creation_candidates-001974
+(config)# do-exec show sbc h248 bac call contexts <cr>    # static_slot_creation_candidates-001932
+(config)# do-exec show sbc h248 bac iad active-number <cr>    # static_slot_creation_candidates-001911
+(config)# do-exec show sbc h248 bac iad sessions <cr>    # static_slot_creation_candidates-001969
+(config)# do-exec show sbc h248 bac iad sessions filter <string> <cr>    # static_slot_creation_candidates-002494
+(config)# do-exec show sbc h248 bac iad sessions mid <string> detail <cr>    # static_slot_creation_candidates-002548
+(config)# do-exec show sbc h248 bac stats <cr>    # static_slot_creation_candidates-001337
+(config)# do-exec show sbc h248 bac trace-filter <cr>    # static_slot_creation_candidates-001370
+(config)# do-exec show sip-ua calls <cr>    # static_slot_creation_candidates-000299
+(config)# do-exec show sip-ua calls brief <cr>    # static_slot_creation_candidates-000853
+(config)# do-exec show sip-ua calls called-number <string> <cr>    # static_slot_creation_candidates-001559
+(config)# do-exec show sip-ua calls callid <number:1..2147483647> <cr>    # static_slot_creation_candidates-001523
+(config)# do-exec show sip-ua calls calling-number <string> <cr>    # static_slot_creation_candidates-001591
+(config)# do-exec show sip-ua calls dtmf-relay sip-kpml <cr>    # static_slot_creation_candidates-001659
+(config)# do-exec show sip-ua calls summary <cr>    # static_slot_creation_candidates-000843
+(config)# do-exec show sip-ua connections udp brief <cr>    # static_slot_creation_candidates-001358
+(config)# do-exec show sip-ua dhcp <cr>    # static_slot_creation_candidates-000276
+(config)# do-exec show sip-ua handoff stats <cr>    # static_slot_creation_candidates-000842
+(config)# do-exec show sip-ua history dtmf-relay sip-kpml <cr>    # static_slot_creation_candidates-001636
+(config)# do-exec show sip-ua history stats message-rate <cr>    # static_slot_creation_candidates-001655
+(config)# do-exec show sip-ua history watermark message-rate table <cr>    # static_slot_creation_candidates-002117
+(config)# do-exec show sip-ua map pstn-sip <cr>    # static_slot_creation_candidates-000688
+(config)# do-exec show sip-ua map sip-pstn <cr>    # static_slot_creation_candidates-000668
+(config)# do-exec show sip-ua map sip-request-pstn <cr>    # static_slot_creation_candidates-000707
+(config)# do-exec show sip-ua min-se <cr>    # static_slot_creation_candidates-000264
+(config)# do-exec show sip-ua mwi <cr>    # static_slot_creation_candidates-000226
+(config)# do-exec show sip-ua register status <cr>    # static_slot_creation_candidates-000639
+(config)# do-exec show sip-ua register status secondary <cr>    # static_slot_creation_candidates-001214
+(config)# do-exec show sip-ua register status tenant <number:1..10000> <cr>    # static_slot_creation_candidates-001933
+(config)# do-exec show sip-ua registration passthrough status <cr>    # static_slot_creation_candidates-001414
+(config)# do-exec show sip-ua registration passthrough status DN <string> <cr>    # static_slot_creation_candidates-002336
+(config)# do-exec show sip-ua registration passthrough status call-id <string> <cr>    # static_slot_creation_candidates-002344
+(config)# do-exec show sip-ua registration passthrough status detail <cr>    # static_slot_creation_candidates-001910
+(config)# do-exec show sip-ua registration passthrough status dial-peer <number:1..2147483647> all <cr>    # static_slot_creation_candidates-002497
+(config)# do-exec show sip-ua registration passthrough status dial-peer <number:1..2147483647> summary <cr>    # static_slot_creation_candidates-002493
+(config)# do-exec show sip-ua registration passthrough status summary <cr>    # static_slot_creation_candidates-001994
+(config)# do-exec show sip-ua retry <cr>    # static_slot_creation_candidates-000267
+(config)# do-exec show sip-ua service <cr>    # static_slot_creation_candidates-000255
+(config)# do-exec show sip-ua srtp <cr>    # static_slot_creation_candidates-000228
+(config)# do-exec show sip-ua statistics <cr>    # static_slot_creation_candidates-000250
+(config)# do-exec show sip-ua statistics dial-peer <number:1..2147483647> <cr>    # static_slot_creation_candidates-001388
+(config)# do-exec show sip-ua status <cr>    # static_slot_creation_candidates-000262
+(config)# do-exec show sip-ua status refer-ood <cr>    # static_slot_creation_candidates-000723
+(config)# do-exec show sip-ua status registrar <cr>    # static_slot_creation_candidates-000704
+(config)# do-exec show sip-ua timers <cr>    # static_slot_creation_candidates-000260
+(config)# do-exec show site-manager border channels <cr>    # static_slot_creation_candidates-000758
+(config)# do-exec show site-manager border dca <cr>    # static_slot_creation_candidates-000725
+(config)# do-exec show site-manager border dia <cr>    # static_slot_creation_candidates-000746
+(config)# do-exec show site-manager border neighbor-channels <cr>    # static_slot_creation_candidates-000669
+(config)# do-exec show site-manager border status <cr>    # static_slot_creation_candidates-000646
+(config)# do-exec show site-manager border traffic-classes <cr>    # static_slot_creation_candidates-000689

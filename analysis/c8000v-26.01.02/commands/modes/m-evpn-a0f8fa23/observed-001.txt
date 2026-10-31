@@ -1,0 +1,83 @@
+# 模式 evpn；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evpn)# advertise mac disable <cr>    # observed_connections-007233
+(config-evpn)# anycast-gateway mac auto <cr>    # observed_connections-007230
+(config-evpn)# default advertise mac disable <cr>    # observed_connections-007260
+(config-evpn)# default anycast-gateway mac auto <cr>    # observed_connections-007258
+(config-evpn)# default default-gateway advertise <cr>    # observed_connections-007226
+(config-evpn)# default flooding-suppression address-resolution disable <cr>    # observed_connections-007243
+(config-evpn)# default ip duplication <cr>    # observed_connections-007220
+(config-evpn)# default ip local-learning disable <cr>    # observed_connections-007247
+(config-evpn)# default ip local-learning limit per-mac ipv4 <cr>    # observed_connections-007282
+(config-evpn)# default ip local-learning time down <cr>    # observed_connections-007275
+(config-evpn)# default ip local-learning tracking <cr>    # observed_connections-007254
+(config-evpn)# default logging peer state <cr>    # observed_connections-007241
+(config-evpn)# default logging vpws vc-state <cr>    # observed_connections-007239
+(config-evpn)# default mac duplication <cr>    # observed_connections-007223
+(config-evpn)# default mpls label mode <cr>    # observed_connections-007246
+(config-evpn)# default multicast advertise <cr>    # observed_connections-007235
+(config-evpn)# default multihoming aliasing disable <cr>    # observed_connections-007252
+(config-evpn)# default multihoming device-id <cr>    # observed_connections-007236
+(config-evpn)# default multihoming ethernet-segment auto id-range <cr>    # observed_connections-007277
+(config-evpn)# default multihoming ethernet-segment bringup <cr>    # observed_connections-007272
+(config-evpn)# default multihoming ethernet-segment delay <cr>    # observed_connections-007268
+(config-evpn)# default multihoming irb-interface bringup <cr>    # observed_connections-007271
+(config-evpn)# default multihoming irb-interface delay <cr>    # observed_connections-007267
+(config-evpn)# default multihoming peering adjacent <cr>    # observed_connections-007264
+(config-evpn)# default multihoming proxy-mac-ip disable <cr>    # observed_connections-007257
+(config-evpn)# default replication-type <cr>    # observed_connections-007210
+(config-evpn)# default route-target auto vni <cr>    # observed_connections-007255
+(config-evpn)# default router-id <cr>    # observed_connections-007213
+(config-evpn)# default-gateway advertise <cr>    # observed_connections-007214
+(config-evpn)# exit <cr>    # observed_connections-007208
+(config-evpn)# flooding-suppression address-resolution disable <cr>    # observed_connections-007218
+(config-evpn)# ip duplication limit <number:2..1000> time <number:10..36000> <cr>    # observed_connections-007278
+(config-evpn)# ip local-learning disable <cr>    # observed_connections-007222
+(config-evpn)# ip local-learning limit per-mac ipv4 <number:0..32000> <cr>    # observed_connections-007281
+(config-evpn)# ip local-learning time down <number:1..1440> <cr>    # observed_connections-007274
+(config-evpn)# ip local-learning tracking <cr>    # observed_connections-007227
+(config-evpn)# logging peer state <cr>    # observed_connections-007217
+(config-evpn)# logging vpws vc-state <cr>    # observed_connections-007216
+(config-evpn)# mac duplication limit <number:2..1000> time <number:10..36000> <cr>    # observed_connections-007279
+(config-evpn)# mpls label mode per-evi <cr>    # observed_connections-007248
+(config-evpn)# multicast advertise <cr>    # observed_connections-007215
+(config-evpn)# multihoming aliasing disable <cr>    # observed_connections-007225
+(config-evpn)# multihoming device-id <address> <cr>    # observed_connections-007234
+(config-evpn)# multihoming ethernet-segment auto id-range <number:dynamic> <number:dynamic> <cr>    # observed_connections-007286
+(config-evpn)# multihoming ethernet-segment bringup <number:1..48> interval <number:1..3600> <cr>    # observed_connections-007284
+(config-evpn)# multihoming ethernet-segment delay <number:1..3600> <cr>    # observed_connections-007266
+(config-evpn)# multihoming irb-interface bringup <number:1..200> interval <number:1..3600> <cr>    # observed_connections-007283
+(config-evpn)# multihoming irb-interface delay <number:1..3600> <cr>    # observed_connections-007265
+(config-evpn)# multihoming peering adjacent <cr>    # observed_connections-007237
+(config-evpn)# multihoming proxy-mac-ip disable <cr>    # observed_connections-007229
+(config-evpn)# no advertise mac disable <cr>    # observed_connections-007259
+(config-evpn)# no anycast-gateway mac auto <cr>    # observed_connections-007256
+(config-evpn)# no default-gateway advertise <cr>    # observed_connections-007224
+(config-evpn)# no flooding-suppression address-resolution disable <cr>    # observed_connections-007242
+(config-evpn)# no ip duplication <cr>    # observed_connections-007219
+(config-evpn)# no ip local-learning disable <cr>    # observed_connections-007245
+(config-evpn)# no ip local-learning limit per-mac ipv4 <cr>    # observed_connections-007280
+(config-evpn)# no ip local-learning time down <cr>    # observed_connections-007273
+(config-evpn)# no ip local-learning tracking <cr>    # observed_connections-007250
+(config-evpn)# no logging peer state <cr>    # observed_connections-007240
+(config-evpn)# no logging vpws vc-state <cr>    # observed_connections-007238
+(config-evpn)# no mac duplication <cr>    # observed_connections-007221
+(config-evpn)# no mpls label mode <cr>    # observed_connections-007244
+(config-evpn)# no multicast advertise <cr>    # observed_connections-007231
+(config-evpn)# no multihoming aliasing disable <cr>    # observed_connections-007249
+(config-evpn)# no multihoming device-id <cr>    # observed_connections-007232
+(config-evpn)# no multihoming ethernet-segment auto id-range <cr>    # observed_connections-007276
+(config-evpn)# no multihoming ethernet-segment bringup <cr>    # observed_connections-007270
+(config-evpn)# no multihoming ethernet-segment delay <cr>    # observed_connections-007263
+(config-evpn)# no multihoming irb-interface bringup <cr>    # observed_connections-007269
+(config-evpn)# no multihoming irb-interface delay <cr>    # observed_connections-007262
+(config-evpn)# no multihoming peering adjacent <cr>    # observed_connections-007261
+(config-evpn)# no multihoming proxy-mac-ip disable <cr>    # observed_connections-007253
+(config-evpn)# no replication-type <cr>    # observed_connections-007209
+(config-evpn)# no route-target auto vni <cr>    # observed_connections-007251
+(config-evpn)# no router-id <cr>    # observed_connections-007212
+(config-evpn)# replication-type ingress <cr>    # observed_connections-007211
+(config-evpn)# route-target auto vni <cr>    # observed_connections-007228
+(config-evpn)# router-id <interface> <cr>    # observed_connections-007285

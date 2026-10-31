@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-005.md
+
+(config-if)# default tunnel path-mtu-discovery min-mtu <cr>    # path-064776
+(config-if)# default tunnel rbscp delay <cr>    # path-065970
+(config-if)# default tunnel route-via <cr>    # path-064756
+(config-if)# default tunnel sequence-datagrams <cr>    # path-064667
+(config-if)# default tunnel snooping enable <cr>    # path-066359
+(config-if)# default tunnel source <cr>    # path-064617
+(config-if)# default tunnel src-mac-address <cr>    # path-065029
+(config-if)# default tunnel src-port <cr>    # path-065097
+(config-if)# default tunnel tos <cr>    # path-063824
+(config-if)# default tunnel ttl <cr>    # path-063841
+(config-if)# default tunnel udlr address-resolution <cr>    # path-066142
+(config-if)# default tunnel vlan <cr>    # path-065005
+(config-if)# default tunnel vrf multiplexing <cr>    # path-066216
+(config-if)# default tunnel vxlan source-port-range <cr>    # path-066410
+(config-if)# default tunnel vxlan vni <cr>    # path-066397
+(config-if)# default tx-ring-limit <cr>    # path-063445
+(config-if)# default vlan-autoconfig <cr>    # path-063651
+(config-if)# default vlan-autoconfig protocol any <cr>    # path-065873
+(config-if)# default vlan-autoconfig protocol dhcpv6iapd <cr>    # path-065898
+(config-if)# default vlan-id dot1q <number:1..4094> <cr>    # path-065971
+(config-if)# default vnet global <cr>    # path-064501
+(config-if)# default vnet trunk <cr>    # path-064094
+(config-if)# default vpdn template <cr>    # path-064113
+(config-if)# default vrf autoclassify source <cr>    # path-065485
+(config-if)# default vrf forwarding <cr>    # path-064087
+(config-if)# default vrf receive <string> <cr>    # path-065493
+(config-if)# default vrf select source <cr>    # path-065490
+(config-if)# default vrf sitemap <cr>    # path-064104
+(config-if)# default vrrp <number:1..255> address-family ipv4 <cr>    # path-066865
+(config-if)# default vrrs pathway <string> <cr>    # path-065897
+(config-if)# default vtp <cr>    # path-063650
+(config-if)# default x25 accept-reverse <cr>    # path-064852
+(config-if)# default x25 address <cr>    # path-064607
+(config-if)# default x25 alias <string> <cr>    # path-065966
+(config-if)# default x25 aodi <cr>    # path-065174
+(config-if)# default x25 bfe-decision <cr>    # path-065235
+(config-if)# default x25 bfe-emergency <cr>    # path-065223
+(config-if)# default x25 default <cr>    # path-065030
+(config-if)# default x25 facility windowsize <cr>    # path-066336
+(config-if)# default x25 hic <cr>    # path-063672
+(config-if)# default x25 hoc <cr>    # path-063713
+(config-if)# default x25 hold-queue <cr>    # path-063954
+(config-if)# default x25 hold-vc-timer <cr>    # path-063968
+(config-if)# default x25 htc <cr>    # path-063695
+(config-if)# default x25 idle <cr>    # path-065113
+(config-if)# default x25 ip-precedence <cr>    # path-065161
+(config-if)# default x25 ips <cr>    # path-064862
+(config-if)# default x25 lic <cr>    # path-063666
+(config-if)# default x25 linkrestart <cr>    # path-064939
+(config-if)# default x25 loc <cr>    # path-063704
+(config-if)# default x25 ltc <cr>    # path-063683
+(config-if)# default x25 map svc <string> <cr>    # path-067252
+(config-if)# default x25 modulo <cr>    # path-064608
+(config-if)# default x25 nonzero-dte-cause <cr>    # path-064873
+(config-if)# default x25 nvc <cr>    # path-063984
+(config-if)# default x25 ops <cr>    # path-064884
+(config-if)# default x25 pad-access <cr>    # path-064963
+(config-if)# default x25 pvc <number:1..4095> <cr>    # path-066472
+(config-if)# default x25 relay-vc-number <cr>    # path-064903
+(config-if)# default x25 remote-red <address> <cr>    # path-066570
+(config-if)# default x25 retry interval <cr>    # path-066492
+(config-if)# default x25 security crcdn <cr>    # path-065874
+(config-if)# default x25 subscribe cug-service <cr>    # path-066554
+(config-if)# default x25 subscribe flow-control <cr>    # path-066431
+(config-if)# default x25 subscribe lc0 <cr>    # path-066479
+(config-if)# default x25 subscribe packetsize <cr>    # path-066462
+(config-if)# default x25 subscribe throughput <cr>    # path-066421
+(config-if)# default x25 subscribe windowsize <cr>    # path-066482
+(config-if)# default x25 suppress-called-address <cr>    # path-065018
+(config-if)# default x25 suppress-calling-address <cr>    # path-065039
+(config-if)# default x25 t10 <cr>    # path-063737
+(config-if)# default x25 t11 <cr>    # path-063752
+(config-if)# default x25 t12 <cr>    # path-063767
+(config-if)# default x25 t13 <cr>    # path-063780
+(config-if)# default x25 t20 <cr>    # path-063738
+(config-if)# default x25 t21 <cr>    # path-063753
+(config-if)# default x25 t22 <cr>    # path-063768
+(config-if)# default x25 t23 <cr>    # path-063781
+(config-if)# default x25 threshold <cr>    # path-063931
+(config-if)# default x25 use-source-address <cr>    # path-065059
+(config-if)# default x25 version <cr>    # path-064583
+(config-if)# default x25 win <cr>    # path-064822
+(config-if)# default x25 wout <cr>    # path-064841
+(config-if)# default yellow alarm detect <cr>    # path-065715
+(config-if)# delay <number:1..16777215> <cr>    # path-063240
+(config-if)# description <string> <cr>    # path-063396
+(config-if)# device-tracking <cr>    # path-067909
+(config-if)# dhcp-border-relay <cr>    # path-063249
+(config-if)# dhcp-server-tracking <cr>    # path-063353
+(config-if)# dialer aaa <cr>    # path-063885
+(config-if)# dialer callback-secure <cr>    # path-063832
+(config-if)# dialer called <string> <cr>    # path-064612
+(config-if)# dialer caller <string> <cr>    # path-064635
+(config-if)# dialer congestion-threshold <number:0..64000> <cr>    # path-064965
+(config-if)# dialer disable-multiencaps <cr>    # path-063628
+(config-if)# dialer dns <cr>    # path-063846
+(config-if)# dialer down-with-vInterface <cr>    # path-063761
+(config-if)# dialer dtr <cr>    # path-063542
+(config-if)# dialer enable-timeout <number:1..2147483> <cr>    # path-063278
+(config-if)# dialer extsig <cr>    # path-063881
+(config-if)# dialer fast-idle <number:1..2147483> <cr>    # path-063270
+(config-if)# dialer hold-queue <cr>    # path-063711
+(config-if)# dialer idle-timeout <number:0..2147483> <cr>    # path-064509
+(config-if)# dialer in-band <cr>    # path-063551
+(config-if)# dialer leased <cr>    # path-063611
+(config-if)# dialer load-threshold <number:1..255> <cr>    # path-064780
+(config-if)# dialer map <?protoaddr_action@555589bc0818> spc <cr>    # path-067815
+(config-if)# dialer max-call <number:1..4096> <cr>    # path-063307
+(config-if)# dialer mult-map-same-name <cr>    # path-063612
+(config-if)# dialer order <cr>    # path-063621
+(config-if)# dialer persistent <cr>    # path-063786
+(config-if)# dialer pool <number:1..255> <cr>    # path-064325
+(config-if)# dialer pool-member <number:1..255> <cr>    # path-064387
+(config-if)# dialer pppoe-client-vlan-cos <number:0..7> <cr>    # path-064765
+(config-if)# dialer priority <number:0..255> <cr>    # path-063301
+(config-if)# dialer redial interval <number:5..2147483> attempts <number:0..2147483647> <cr>    # path-067498
+(config-if)# dialer remote-name <string> <cr>    # path-064413
+(config-if)# dialer reserved-links <number:0..64000> <number:0..64000> <cr>    # path-066285
+(config-if)# dialer rotary-group <number:0..255> <cr>    # path-064648
+(config-if)# dialer rotor <cr>    # path-063617
+(config-if)# dialer snapshot <cr>    # path-063856
+(config-if)# dialer string <string> <cr>    # path-064636
+(config-if)# dialer suffix <string> password <string> <cr>    # path-067065
+(config-if)# dialer vpdn <cr>    # path-063774
+(config-if)# dialer wait-for-carrier-time <number:1..2147483> <cr>    # path-063285
+(config-if)# dialer wait-for-line-protocol <number:1..2147483> <cr>    # path-063280
+(config-if)# dialer watch-disable <number:1..2147483> <cr>    # path-064897
+(config-if)# dialer watch-group <number:1..255> <cr>    # path-064928
+(config-if)# dialer-group <number:1..128> <cr>    # path-063521
+(config-if)# dlsw llc2-peer listen-sap <number:0..255> <cr>    # path-065770
+(config-if)# dlsw transparent map local-mac <address> remote-mac <address> <cr>    # path-067600
+(config-if)# dlsw transparent redundancy-enable <address> <cr>    # path-065908
+(config-if)# dlsw transparent timers netbios <number:100..900> <cr>    # path-066836
+(config-if)# dot1q tunneling ethertype 0x9100 <cr>    # path-065965
+(config-if)# dot1x auth-fail max-attempts <number:1..3> <cr>    # path-066586
+(config-if)# dot1x auth-fail vlan <number:dynamic> <cr>    # path-067831
+(config-if)# dot1x authenticator eap profile <string> <cr>    # path-067222
+(config-if)# dot1x control-direction both <cr>    # path-065349
+(config-if)# dot1x control-direction in <cr>    # path-065341
+(config-if)# dot1x credentials <string> <cr>    # path-065340
+(config-if)# dot1x critical <cr>    # path-064041
+(config-if)# dot1x critical vlan <number:dynamic> <cr>    # path-067830
+(config-if)# dot1x default <cr>    # path-063981
+(config-if)# dot1x eap profile <string> <cr>    # path-066556
+(config-if)# dot1x guest-vlan <number:dynamic> <cr>    # path-067788
+(config-if)# dot1x host-mode multi-domain <cr>    # path-065350
+(config-if)# dot1x host-mode multi-host <cr>    # path-065342
+(config-if)# dot1x host-mode single-host <cr>    # path-065328
+(config-if)# dot1x mac-auth-bypass <cr>    # path-064039
+(config-if)# dot1x mac-auth-bypass eap <cr>    # path-065286
+(config-if)# dot1x mac-auth-bypass timeout inactivity <number:1..65535> <cr>    # path-067248
+(config-if)# dot1x max-reauth-req <number:1..10> <cr>    # path-065318
+(config-if)# dot1x max-req <number:1..10> <cr>    # path-065308
+(config-if)# dot1x max-start <number:1..10> <cr>    # path-065327
+(config-if)# dot1x pae authenticator <cr>    # path-065208
+(config-if)# dot1x pae both <cr>    # path-065233
+(config-if)# dot1x pae supplicant <cr>    # path-065232
+(config-if)# dot1x port-control auto <cr>    # path-065300
+(config-if)# dot1x port-control force-authorized <cr>    # path-065319
+(config-if)# dot1x port-control force-unauthorized <cr>    # path-065310
+(config-if)# dot1x reauthentication <cr>    # path-064042
+(config-if)# dot1x supplicant eap profile <string> <cr>    # path-067231
+(config-if)# dot1x supplicant enable-macsec <cr>    # path-065243
+(config-if)# dot1x timeout auth-period <number:1..65535> <cr>    # path-066619
+(config-if)# dot1x timeout held-period <number:1..65535> <cr>    # path-066607
+(config-if)# dot1x timeout quiet-period <number:1..65535> <cr>    # path-066587
+(config-if)# dot1x timeout ratelimit-period <number:1..65535> <cr>    # path-066596
+(config-if)# dot1x timeout reauth-period <number:1..65535> <cr>    # path-066625
+(config-if)# dot1x timeout reauth-period server <cr>    # path-066633
+(config-if)# dot1x timeout server-timeout <number:1..65535> <cr>    # path-066577
+(config-if)# dot1x timeout start-period <number:1..65535> <cr>    # path-066597
+(config-if)# dot1x timeout supp-timeout <number:1..65535> <cr>    # path-066618
+(config-if)# dot1x timeout tx-period <number:1..65535> <cr>    # path-066567
+(config-if)# dot1x violation-mode protect <cr>    # path-065354
+(config-if)# dot1x violation-mode restrict <cr>    # path-065357
+(config-if)# dot1x violation-mode shutdown <cr>    # path-065348
+(config-if)# down-when-looped <cr>    # path-063287
+(config-if)# dsu bandwidth <number:dynamic> <cr>    # path-067754
+(config-if)# dsu bandwidth <number:dynamic> <cr>    # path-067756
+(config-if)# dsu mode <number:0..4> <cr>    # path-064328
+(config-if)# dsu mode cisco <cr>    # path-064546
+(config-if)# dsu nettime <cr>    # path-063520
+(config-if)# dsu nettime <cr>    # path-063564
+(config-if)# dsu remote accept <cr>    # path-064324
+(config-if)# dsu remote fullrate <cr>    # path-064307
+(config-if)# dte-invert-txc <cr>    # path-063324
+(config-if)# duplex auto <cr>    # path-063481
+(config-if)# duplex full <cr>    # path-063497
+(config-if)# duplex half <cr>    # path-063487
+(config-if)# eapol announcement <cr>    # path-063987
+(config-if)# eapol destination-address bridge-group-address <cr>    # path-065171
+(config-if)# eapol eth-type 876F <cr>    # path-065170
+(config-if)# early-token-release <cr>    # path-063264
+(config-if)# eigrp <number:1..65535> interface dampening-change <cr>    # path-066324
+(config-if)# eigrp <number:1..65535> interface dampening-interval <cr>    # path-066346
+(config-if)# encapsulation arpa <cr>    # path-063423
+(config-if)# encapsulation dot1Q <number:1..2047> second-dot1q <cr>    # path-065505
+(config-if)# encapsulation dot1Q <number:1..4094> <cr>    # path-064384
+(config-if)# encapsulation dot1Q <number:dynamic> <cr>    # path-067736
+(config-if)# encapsulation dot1Q <number:dynamic> second-dot1q <cr>    # path-067795
+(config-if)# encapsulation lapb <?protoname_action@555589e2d330> <cr>    # path-067745
+(config-if)# encapsulation priority-tagged <cr>    # path-063421
+(config-if)# endpoint-tracker <cr>    # path-063309
+(config-if)# endpoint-tracker-sla-profile <cr>    # path-063320
+(config-if)# ethernet cfm ais link-status <cr>    # path-065932
+(config-if)# ethernet cfm ais link-status level <number:0..7> <cr>    # path-067414
+(config-if)# ethernet cfm ais link-status period 1 <cr>    # path-067425
+(config-if)# ethernet cfm block <cr>    # path-064549
+(config-if)# ethernet cfm interface <cr>    # path-064403
+(config-if)# ethernet cfm lck link-status <cr>    # path-065910
+(config-if)# ethernet cfm lck link-status level <number:0..7> <cr>    # path-067401
+(config-if)# ethernet cfm lck link-status period 1 <cr>    # path-067415
+(config-if)# ethernet cfm mep domain <string> mpid <number:1..8191> port <cr>    # path-067693
+(config-if)# ethernet cfm mip level <number:0..7> <cr>    # path-067853
+(config-if)# ethernet dot1ad nni <cr>    # path-064412
+(config-if)# ethernet lmi interface <cr>    # path-064333
+(config-if)# ethernet lmi n391 <number:1..65535> <cr>    # path-063547
+(config-if)# ethernet lmi n393 <number:1..10> <cr>    # path-063560
+(config-if)# ethernet lmi t391 <number:5..30> <cr>    # path-063559
+(config-if)# ethernet lmi t392 <number:0..0> <cr>    # path-065761
+(config-if)# ethernet loopback permit external <cr>    # path-065916
+(config-if)# ethernet loopback permit external <cr>    # path-065917
+(config-if)# ethernet loopback permit external <cr>    # path-067809
+(config-if)# ethernet loopback permit external <cr>    # path-067810
+(config-if)# ethernet oam <cr>    # path-063620
+(config-if)# ethernet oam dying-gasp type organization <cr>    # path-066882
+(config-if)# ethernet oam link-monitor frame threshold high none <cr>    # path-067607
+(config-if)# ethernet oam link-monitor frame threshold low <number:0..65535> <cr>    # path-067598
+(config-if)# ethernet oam link-monitor frame window <number:10..600> <cr>    # path-067392
+(config-if)# ethernet oam link-monitor frame-period threshold high none <cr>    # path-067613
+(config-if)# ethernet oam link-monitor frame-period threshold low <number:0..65535> <cr>    # path-067606
+(config-if)# ethernet oam link-monitor frame-period window <number:1..65535> <cr>    # path-067404
+(config-if)# ethernet oam link-monitor frame-seconds threshold high none <cr>    # path-067618
+(config-if)# ethernet oam link-monitor frame-seconds threshold low <number:1..900> <cr>    # path-067612
+(config-if)# ethernet oam link-monitor frame-seconds window <number:100..9000> <cr>    # path-067416
+(config-if)# ethernet oam link-monitor high-threshold action error-disable-interface <cr>    # path-067383
+(config-if)# ethernet oam link-monitor on <cr>    # path-065808
+(config-if)# ethernet oam link-monitor receive-crc threshold high none <cr>    # path-067625
+(config-if)# ethernet oam link-monitor receive-crc threshold low <number:0..65535> <cr>    # path-067622
+(config-if)# ethernet oam link-monitor receive-crc window <number:10..1800> <cr>    # path-067430
+(config-if)# ethernet oam link-monitor supported <cr>    # path-065797
+(config-if)# ethernet oam link-monitor symbol-period threshold high none <cr>    # path-067599
+(config-if)# ethernet oam link-monitor symbol-period threshold low <number:0..65535> <cr>    # path-067593
+(config-if)# ethernet oam link-monitor symbol-period window <number:1..65535> <cr>    # path-067382
+(config-if)# ethernet oam link-monitor transmit-crc threshold high none <cr>    # path-067633
+(config-if)# ethernet oam link-monitor transmit-crc threshold low <number:0..65535> <cr>    # path-067628
+(config-if)# ethernet oam link-monitor transmit-crc window <number:10..1800> <cr>    # path-067439
+(config-if)# ethernet oam max-rate <number:1..10> <cr>    # path-065822
+(config-if)# ethernet oam min-rate <number:1..10> <cr>    # path-065883
+(config-if)# ethernet oam mode active <cr>    # path-065927
+(config-if)# ethernet oam remote-failure critical-event action error-disable-interface <cr>    # path-067403
+(config-if)# ethernet oam remote-failure dying-gasp action <cr>    # path-066892
+(config-if)# ethernet oam remote-failure link-fault action <cr>    # path-066875
+(config-if)# ethernet oam remote-loopback supported <cr>    # path-065923
+(config-if)# ethernet oam remote-loopback timeout <number:1..10> <cr>    # path-066925
+(config-if)# ethernet oam timeout <number:2..30> <cr>    # path-065955
+(config-if)# ethernet uni bundle <cr>    # path-064555
+(config-if)# ethernet uni id <string> <cr>    # path-065802
+(config-if)# ethernet uni multiplex <cr>    # path-064535
+(config-if)# ethernet vlan color-block all <cr>    # path-065784
+(config-if)# ethernet-transit-oui 90-compatible <cr>    # path-063553
+(config-if)# event-buffer <cr>    # path-063246
+(config-if)# evpn ethernet-segment <number:dynamic> <cr>    # path-067768
+(config-if)# evpn ethernet-segment auto lacp <cr>    # path-066107
+(config-if)# evpn multihoming core-tracking <cr>    # path-064699
+(config-if)# exit <cr>    # path-063243
+(config-if)# exit <cr>    # path-063244
+(config-if)# fec auto <cr>    # path-064011
+(config-if)# fec disable <cr>    # path-063467
+(config-if)# fec enable <cr>    # path-063436
+(config-if)# fhrp delay minimum <number:0..3600> <cr>    # path-065853
+(config-if)# flowcontrol priority off <cr>    # path-065273
+(config-if)# flowcontrol receive off <cr>    # path-065249
+(config-if)# flowcontrol send off <cr>    # path-065257
+(config-if)# flowspec group <number:0..16383> <cr>    # path-065198
+(config-if)# frame-relay accounting adjust <cr>    # path-064973
+(config-if)# frame-relay address-reg enable <cr>    # path-065090
+(config-if)# frame-relay broadcast-queue <cr>    # path-063870
+(config-if)# frame-relay class <string> <cr>    # path-064702
+(config-if)# frame-relay congestion-management <cr>    # path-063926
+(config-if)# frame-relay de-group <number:1..10> <number:16..1007> <cr>    # path-066083
+(config-if)# frame-relay end-to-end <cr>    # path-063760
+(config-if)# frame-relay fast-restart <cr>    # path-063964
+(config-if)# frame-relay fragment <number:16..1600> end-to-end <cr>    # path-066037
+(config-if)# frame-relay fragmentation voice-adaptive <cr>    # path-064759
+(config-if)# frame-relay ifmib-counter64 <cr>    # path-063869
+(config-if)# frame-relay interface-dlci <number:16..1007> <cr>    # path-064701
+(config-if)# frame-relay interface-dlci <number:16..1007> <cr>    # path-064890
+(config-if)# frame-relay interface-dlci <number:16..1007> ppp <interface> <cr>    # path-068017
+(config-if)# frame-relay interface-dlci <number:16..1007> protocol <?protoaddr_action@555589c5b7e8> <cr>    # path-067861
+(config-if)# frame-relay intf-type dte <cr>    # path-064676
+(config-if)# frame-relay inverse-arp <?protoname_action@555589c63310> <number:16..1007> <cr>    # path-067820
+(config-if)# frame-relay inverse-arp <cr>    # path-063813
+(config-if)# frame-relay ip rtp compression-connections <number:1..256> <cr>    # path-064732
+(config-if)# frame-relay ip rtp header-compression <cr>    # path-066132
+(config-if)# frame-relay ip tcp compression-connections <number:1..256> <cr>    # path-064706
+(config-if)# frame-relay ip tcp header-compression <cr>    # path-066096
+(config-if)# frame-relay lmi-n391dte <number:1..255> <cr>    # path-063304
+(config-if)# frame-relay lmi-n392dce <number:1..10> <cr>    # path-063326
+(config-if)# frame-relay lmi-n392dte <number:1..10> <cr>    # path-063311
+(config-if)# frame-relay lmi-n393dce <number:1..10> <cr>    # path-063327
+(config-if)# frame-relay lmi-n393dte <number:1..10> <cr>    # path-063315
+(config-if)# frame-relay lmi-t392dce <number:5..30> <cr>    # path-063321
+(config-if)# frame-relay lmi-type annex D <cr>    # path-067766
+(config-if)# frame-relay lmi-type cisco <cr>    # path-064664
+(config-if)# frame-relay local-dlci <number:16..1007> <cr>    # path-063299
+(config-if)# frame-relay map <?protoaddr_action@555589c5c528> <cr>    # path-067773
+(config-if)# frame-relay multicast-dlci <number:1019..1022> <cr>    # path-063316
+(config-if)# frame-relay multilink ack <number:1..10> <cr>    # path-063763
+(config-if)# frame-relay multilink bandwidth-class a <cr>    # path-066078
+(config-if)# frame-relay multilink bid <cr>    # path-064720
+(config-if)# frame-relay multilink drop remove-link <cr>    # path-066135
+(config-if)# frame-relay multilink hello <number:1..180> <cr>    # path-063748
+(config-if)# frame-relay multilink lid <cr>    # path-064760
+(config-if)# frame-relay multilink lost-fragment <number:1..20000> <cr>    # path-063732
+(config-if)# frame-relay multilink output-threshold <number:20..2147483647> <cr>    # path-063710
+(config-if)# frame-relay multilink retry <number:1..5> <cr>    # path-063776
+(config-if)# frame-relay multilink slippage mru <number:2..32> <cr>    # path-064663
+(config-if)# frame-relay multilink slippage msec <number:1..20000> <cr>    # path-064682
+(config-if)# frame-relay multilink testack <cr>    # path-064790
+(config-if)# frame-relay multilink timestamp <cr>    # path-064769
+(config-if)# frame-relay payload-compression packet-by-packet <cr>    # path-064724
+(config-if)# frame-relay policing <cr>    # path-063916
+(config-if)# frame-relay priority-dlci-group <number:1..16> <number:16..1007> <cr>    # path-066089
+(config-if)# frame-relay qos-autosense <cr>    # path-063917
+(config-if)# frame-relay route <number:16..1007> interface <interface> <number:16..1007> <cr>    # path-067891
+(config-if)# frame-relay traps-maximum dlci-status-change <number:0..1024> <cr>    # path-063799
+(config-if)# frame-relay zap <cr>    # path-063757
+(config-if)# framing c-bit <cr>    # path-063522
+(config-if)# framing c-bit <cr>    # path-063576
+(config-if)# framing g751 <cr>    # path-063508
+(config-if)# framing g751 <cr>    # path-063536
+(config-if)# fras backup dlsw <address> <number:1..4095> <address> <cr>    # path-067528
+(config-if)# fras backup rsrb <address> <number:1..4095> <number:1..4095> <address> <cr>    # path-067657
+(config-if)# fras ban <number:1..4095> <number:1..15> <number:1..4095> <address> dlci <number:16..1007> <cr>    # path-067702
+(config-if)# fras ban frame-relay <interface> <address> dlci <number:16..1007> <cr>    # path-067898
+(config-if)# fras ddr-backup interface <interface> <number:16..1022> <cr>    # path-067867
+(config-if)# fras map llc2 <number:0..255> <interface> frame-relay dlci <number:16..1007> <number:0..255> <cr>    # path-067908
+(config-if)# fras map sdlc <number:0..255> <interface> sdlc <number:1..255> <cr>    # path-067899
+(config-if)# fras-host ban <interface> hmac <address> <cr>    # path-067849
+(config-if)# fras-host bnn <interface> fr-lsap <number:0..255> vmac <address> hmac <address> <cr>    # path-067907
+(config-if)# fras-host dlsw-local-ack <cr>    # path-063518
+(config-if)# fras-host test <cr>    # path-063594
+(config-if)# full-duplex <cr>    # path-063258
+(config-if)# glbp <number:0..1023> authentication text <string> <cr>    # path-066966
+(config-if)# glbp <number:0..1023> forwarder id <number:1..4> mac-address <address> <cr>    # path-067632
+(config-if)# glbp <number:0..1023> forwarder preempt <cr>    # path-065996
+(config-if)# glbp <number:0..1023> ip <cr>    # path-064752
+(config-if)# glbp <number:0..1023> ipv6 <cr>    # path-064753
+(config-if)# glbp <number:0..1023> load-balancing <cr>    # path-064695
+(config-if)# glbp <number:0..1023> name <string> <cr>    # path-066074
+(config-if)# glbp <number:0..1023> preempt <cr>    # path-064792
+(config-if)# glbp <number:0..1023> timers <number:1..60> <cr>    # path-067818
+(config-if)# glbp <number:0..1023> timers redirect <number:0..3600> <number:dynamic> <cr>    # path-067886
+(config-if)# glbp <number:0..1023> weighting <number:1..254> <cr>    # path-066031
+(config-if)# glbp <number:0..1023> weighting <number:1..254> upper <number:dynamic> <cr>    # path-067888
+(config-if)# glbp <number:0..1023> weighting track <number:1..32767> <cr>    # path-066951
+(config-if)# group <number:dynamic> <cr>    # path-067731
+(config-if)# group-range <?ttyline_action@555589e87068> <?ttyline_action@555589e870a0> <cr>    # path-067949
+(config-if)# half-duplex <cr>    # path-063259
+(config-if)# half-duplex controlled-carrier <cr>    # path-063502
+(config-if)# half-duplex log clear <cr>    # path-064264
+(config-if)# half-duplex log enable <cr>    # path-064266
+(config-if)# half-duplex test cts <cr>    # path-064269
+(config-if)# half-duplex test dcd <cr>    # path-064289
+(config-if)# half-duplex test dsr <cr>    # path-064284
+(config-if)# half-duplex test dtr <cr>    # path-064277
+(config-if)# half-duplex test loopback <cr>    # path-064300
+(config-if)# half-duplex test rts <cr>    # path-064260
+(config-if)# half-duplex test transmit <cr>    # path-064340
+(config-if)# half-duplex timer cts-delay <number:0..425> <cr>    # path-065594
+(config-if)# half-duplex timer cts-drop-timeout <number:0..1140000> <cr>    # path-065617
+(config-if)# half-duplex timer dcd-drop-delay <number:0..4400> <cr>    # path-065644
+(config-if)# half-duplex timer dcd-txstart-delay <number:0..4400> <cr>    # path-065633
+(config-if)# half-duplex timer rts-drop-delay <number:0..1140000> <cr>    # path-065603
+(config-if)# half-duplex timer rts-timeout <number:0..425> <cr>    # path-065586
+(config-if)# half-duplex timer transmit-delay <number:0..4400> <cr>    # path-065657
+(config-if)# help <cr>    # path-063245
+(config-if)# history bps <cr>    # path-063493
+(config-if)# hold-queue <number:dynamic> in <cr>    # path-067752
+(config-if)# hold-queue <number:dynamic> out <cr>    # path-067753
+(config-if)# hssi dce <cr>    # path-063635
+(config-if)# hssi external-loopback-request <cr>    # path-063596
+(config-if)# hssi internal-clock <cr>    # path-063607
+(config-if)# hssi loop-control <cr>    # path-063647
+(config-if)# idle-character flags <cr>    # path-063674
+(config-if)# if-state nhrp <cr>    # path-063808
+(config-if)# if-state track <number:1..32767> <cr>    # path-063336
+(config-if)# ignore dcd <cr>    # path-063659
+(config-if)# ignore dcd <cr>    # path-063664
+(config-if)# ignore-dcd <cr>    # path-063279
+(config-if)# ignore-dtr <cr>    # path-063281
+(config-if)# ignore-hw local-loopback <cr>    # path-063634
+(config-if)# invert data <cr>    # path-063809
+(config-if)# invert rxclock <cr>    # path-063791
+(config-if)# invert-txc <cr>    # path-063319
+(config-if)# ip access-group <number:1..199> in <cr>    # path-065486
+(config-if)# ip access-group <number:1..199> in <cr>    # path-065495
+(config-if)# ip access-group <number:1..199> out <cr>    # path-065494
+(config-if)# ip access-group <number:1..199> out <cr>    # path-065499

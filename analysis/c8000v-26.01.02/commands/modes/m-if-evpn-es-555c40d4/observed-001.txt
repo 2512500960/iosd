@@ -1,0 +1,18 @@
+# 模式 if-evpn-es；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-evpn-es)# default df-election preempt-time <cr>    # observed_connections-009287
+(config-if-evpn-es)# default identifier <cr>    # observed_connections-009281
+(config-if-evpn-es)# default redundancy <cr>    # observed_connections-009283
+(config-if-evpn-es)# default system-mac <cr>    # observed_connections-009279
+(config-if-evpn-es)# df-election preempt-time <number:1..3600> <cr>    # observed_connections-009286
+(config-if-evpn-es)# exit <cr>    # observed_connections-009276
+(config-if-evpn-es)# identifier type 0 <number:0..255> <cr>    # observed_connections-009289
+(config-if-evpn-es)# identifier type 3 system-mac <address> <cr>    # observed_connections-009288
+(config-if-evpn-es)# no df-election preempt-time <cr>    # observed_connections-009285
+(config-if-evpn-es)# no identifier <cr>    # observed_connections-009280
+(config-if-evpn-es)# no redundancy <cr>    # observed_connections-009282
+(config-if-evpn-es)# no system-mac <cr>    # observed_connections-009277
+(config-if-evpn-es)# redundancy all-active <cr>    # observed_connections-009284
+(config-if-evpn-es)# system-mac <address> <cr>    # observed_connections-009278

@@ -1,0 +1,291 @@
+# 模式 interface；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> <cr>    # conditional_registration_candidates-010380
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> arp-timeout <number:1..86400> <cr>    # conditional_registration_candidates-010373
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> client-mode <cr>    # conditional_registration_candidates-010408
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> distance <cr>    # conditional_registration_candidates-010405
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> pre-fdditalk <cr>    # conditional_registration_candidates-010409
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> rtmp-splithorizon <cr>    # conditional_registration_candidates-010406
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> rtmp-standby <number:0..60> <cr>    # conditional_registration_candidates-010368
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> rtmp-stub <cr>    # conditional_registration_candidates-010404
+(config-if)# appletalk <?params_action_alist@55558c2cbfd8> send-rtmps <cr>    # conditional_registration_candidates-010407
+(config-if)# appletalk access-group <number:1..100> <cr>    # conditional_registration_candidates-010402
+(config-if)# appletalk access-group <number:1..100> in <cr>    # conditional_registration_candidates-010425
+(config-if)# appletalk access-group <number:600..699> <cr>    # conditional_registration_candidates-009898
+(config-if)# appletalk access-group <number:600..699> in <cr>    # conditional_registration_candidates-010156
+(config-if)# appletalk address <address> <cr>    # conditional_registration_candidates-009816
+(config-if)# appletalk arp-timeout <number:1..86400> <cr>    # conditional_registration_candidates-009628
+(config-if)# appletalk cable-range <number:0..65279> - <number:0..65279> <cr>    # conditional_registration_candidates-010435
+(config-if)# appletalk client-mode <cr>    # conditional_registration_candidates-009739
+(config-if)# appletalk discovery <cr>    # conditional_registration_candidates-009679
+(config-if)# appletalk distance <number:0..4294967295> <cr>    # conditional_registration_candidates-009967
+(config-if)# appletalk distribute-list <number:1..100> in <cr>    # conditional_registration_candidates-010428
+(config-if)# appletalk distribute-list <number:600..699> in <cr>    # conditional_registration_candidates-010175
+(config-if)# appletalk free-trade-zone <cr>    # conditional_registration_candidates-009684
+(config-if)# appletalk getzonelist-filter <number:0..4294967295> <cr>    # conditional_registration_candidates-009620
+(config-if)# appletalk glean-packets <cr>    # conditional_registration_candidates-009690
+(config-if)# appletalk half-router <cr>    # conditional_registration_candidates-009694
+(config-if)# appletalk pre-fdditalk <cr>    # conditional_registration_candidates-009743
+(config-if)# appletalk protocol rtmp <cr>    # conditional_registration_candidates-009868
+(config-if)# appletalk route-cache <cr>    # conditional_registration_candidates-009700
+(config-if)# appletalk rtmp-splithorizon <cr>    # conditional_registration_candidates-009725
+(config-if)# appletalk rtmp-standby <number:0..60> <cr>    # conditional_registration_candidates-009624
+(config-if)# appletalk rtmp-stub <cr>    # conditional_registration_candidates-009720
+(config-if)# appletalk send-rtmps <cr>    # conditional_registration_candidates-009728
+(config-if)# appletalk zone <string> <cr>    # conditional_registration_candidates-009849
+(config-if)# asig conn-pending <number:1..255> <cr>    # conditional_registration_candidates-009621
+(config-if)# asig crankback-retries <number:1..10> <cr>    # conditional_registration_candidates-009619
+(config-if)# asig force-mpt-branch <cr>    # conditional_registration_candidates-009701
+(config-if)# asig itu-qos-translation <cr>    # conditional_registration_candidates-009705
+(config-if)# asig msg-retries <number:1..255> <cr>    # conditional_registration_candidates-009618
+(config-if)# asig status-enquiry-drain-count <number:1..200> <cr>    # conditional_registration_candidates-009623
+(config-if)# asig timer303 <number:1..60000> <cr>    # conditional_registration_candidates-009606
+(config-if)# asig timer308 <number:1..60000> <cr>    # conditional_registration_candidates-009613
+(config-if)# asig timer310 <number:1..60000> <cr>    # conditional_registration_candidates-009608
+(config-if)# asig timer313 <number:1..60000> <cr>    # conditional_registration_candidates-009609
+(config-if)# asig timer316 <number:1..60000> <cr>    # conditional_registration_candidates-009614
+(config-if)# asig timer322 <number:1..60000> <cr>    # conditional_registration_candidates-009611
+(config-if)# asig timer398 <number:1..60000> <cr>    # conditional_registration_candidates-009616
+(config-if)# asig timer399 <number:1..60000> <cr>    # conditional_registration_candidates-009617
+(config-if)# atm abr rate-factors <number:1..32768> <number:1..32768> <cr>    # conditional_registration_candidates-010302
+(config-if)# atm ais-enable <cr>    # conditional_registration_candidates-009752
+(config-if)# atm asynchronous <cr>    # conditional_registration_candidates-009722
+(config-if)# atm bandwidth dynamic <cr>    # conditional_registration_candidates-009938
+(config-if)# atm bridge-enable <cr>    # conditional_registration_candidates-009781
+(config-if)# atm bridge-enable dot1q-tunnel <number:dynamic> <cr>    # conditional_registration_candidates-010433
+(config-if)# atm clock INTERNAL <cr>    # conditional_registration_candidates-009828
+(config-if)# atm distributed <cr>    # conditional_registration_candidates-009703
+(config-if)# atm ds3-scramble <cr>    # conditional_registration_candidates-009715
+(config-if)# atm e3-payload-type-match <cr>    # conditional_registration_candidates-009749
+(config-if)# atm e3-scramble <cr>    # conditional_registration_candidates-009709
+(config-if)# atm epd <cr>    # conditional_registration_candidates-009769
+(config-if)# atm ether-mac-address <address> <cr>    # conditional_registration_candidates-010092
+(config-if)# atm ether-mac-address interface <interface> <cr>    # conditional_registration_candidates-010432
+(config-if)# atm f4 <cr>    # conditional_registration_candidates-010392
+(config-if)# atm framing g832adm <cr>    # conditional_registration_candidates-010001
+(config-if)# atm framing g832adm <cr>    # conditional_registration_candidates-010002
+(config-if)# atm framing m23adm <cr>    # conditional_registration_candidates-009989
+(config-if)# atm framing m23adm <cr>    # conditional_registration_candidates-009994
+(config-if)# atm framing sdh <cr>    # conditional_registration_candidates-010000
+(config-if)# atm l2transport pvc multiplex <cr>    # conditional_registration_candidates-010113
+(config-if)# atm lbo short <cr>    # conditional_registration_candidates-010029
+(config-if)# atm map-filter deny all out <cr>    # conditional_registration_candidates-010271
+(config-if)# atm maxvpi-bits 12 <cr>    # conditional_registration_candidates-010067
+(config-if)# atm mtu-reject-call <cr>    # conditional_registration_candidates-009666
+(config-if)# atm multicast <address> <cr>    # conditional_registration_candidates-009869
+(config-if)# atm oam flush <cr>    # conditional_registration_candidates-009885
+(config-if)# atm oversubscribe <cr>    # conditional_registration_candidates-009707
+(config-if)# atm oversubscribe factor <?number_func_nows_action@555588c54a20> <cr>    # conditional_registration_candidates-010427
+(config-if)# atm pvc <number:dynamic> <cr>    # conditional_registration_candidates-010419
+(config-if)# atm pvp <number:dynamic> <cr>    # conditional_registration_candidates-010418
+(config-if)# atm rate-queue <number:dynamic> <number:dynamic> <cr>    # conditional_registration_candidates-010447
+(config-if)# atm rate-queue tolerance svc 0 <cr>    # conditional_registration_candidates-010311
+(config-if)# atm restart timer <number:90..1800> <cr>    # conditional_registration_candidates-010185
+(config-if)# atm route-bridged <?test_subsys_action@555588c52680> ipv6 <cr>    # conditional_registration_candidates-010422
+(config-if)# atm route-bridged ip <cr>    # conditional_registration_candidates-009815
+(config-if)# atm scrambling cell-payload <cr>    # conditional_registration_candidates-009976
+(config-if)# atm scrambling sts-stream <cr>    # conditional_registration_candidates-009984
+(config-if)# atm smds-address <address> <cr>    # conditional_registration_candidates-009850
+(config-if)# atm sonet delay triggers line <cr>    # conditional_registration_candidates-010313
+(config-if)# atm sonet ignore S1 <cr>    # conditional_registration_candidates-010229
+(config-if)# atm sonet overhead c2 <number:0..255> <cr>    # conditional_registration_candidates-010316
+(config-if)# atm sonet report <cr>    # conditional_registration_candidates-010104
+(config-if)# atm sonet stm-4 <cr>    # conditional_registration_candidates-010074
+(config-if)# atm sonet threshold sd-ber <number:dynamic> <cr>    # conditional_registration_candidates-010440
+(config-if)# atm tx-latency <number:1..200> <cr>    # conditional_registration_candidates-010100
+(config-if)# atm vc-per-vp 16 <cr>    # conditional_registration_candidates-009832
+(config-if)# atm vc-per-vp <?option@555588c51708> <cr>    # conditional_registration_candidates-010396
+(config-if)# bandwidth <number:1..10000000> <cr>    # conditional_registration_candidates-009774
+(config-if)# bundle <?test_subsys_action@55558c750df8> <string> <?test_subsys_action@55558c750f20> <cr>    # conditional_registration_candidates-010445
+(config-if)# ccs connect <interface> <cr>    # conditional_registration_candidates-010399
+(config-if)# ccs encap <cr>    # conditional_registration_candidates-009674
+(config-if)# cell-packing <number:dynamic> <cr>    # conditional_registration_candidates-010362
+(config-if)# class-int <string> <cr>    # conditional_registration_candidates-009642
+(config-if)# class-int <string> <cr>    # conditional_registration_candidates-009643
+(config-if)# control-word include <cr>    # conditional_registration_candidates-009748
+(config-if)# crypto map <string> <cr>    # conditional_registration_candidates-009874
+(config-if)# dapr ingress <cr>    # conditional_registration_candidates-009678
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> accounting <cr>    # conditional_registration_candidates-010455
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> congestion-threshold <number:0..32767> <cr>    # conditional_registration_candidates-010450
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> route-cache <cr>    # conditional_registration_candidates-010454
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> router-priority <number:0..127> <cr>    # conditional_registration_candidates-010451
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> routing-timer <number:1..65535> <cr>    # conditional_registration_candidates-010452
+(config-if)# decnet <?params_action_alist@55558c3dfb70> <?params_action_alist@55558c3e07b8> <?params_action_alist@55558c3e0bb8> split-horizon <cr>    # conditional_registration_candidates-010453
+(config-if)# decnet <?params_action_alist@55558c3dfb70> cluster-holdtime <number:1..8191> <cr>    # conditional_registration_candidates-010360
+(config-if)# decnet <?params_action_alist@55558c3dfb70> cost <number:1..63> <cr>    # conditional_registration_candidates-010361
+(config-if)# decnet <?params_action_alist@55558c3dfb70> encapsulation <cr>    # conditional_registration_candidates-010397
+(config-if)# decnet <?params_action_alist@55558c3dfb70> hello-timer <number:1..8191> <cr>    # conditional_registration_candidates-010363
+(config-if)# decnet <?params_action_alist@55558c3dfb70> multicast-map iv-all-routers <cr>    # conditional_registration_candidates-010424
+(config-if)# default appletalk <cr>    # conditional_registration_candidates-009754
+(config-if)# default appletalk access-group <cr>    # conditional_registration_candidates-009944
+(config-if)# default appletalk access-group in <cr>    # conditional_registration_candidates-010178
+(config-if)# default appletalk address <cr>    # conditional_registration_candidates-009822
+(config-if)# default appletalk arp-timeout <cr>    # conditional_registration_candidates-009733
+(config-if)# default appletalk cable-range <cr>    # conditional_registration_candidates-009838
+(config-if)# default appletalk client-mode <cr>    # conditional_registration_candidates-010004
+(config-if)# default appletalk discovery <cr>    # conditional_registration_candidates-009872
+(config-if)# default appletalk distance <cr>    # conditional_registration_candidates-009971
+(config-if)# default appletalk distribute-list <number:600..699> in <cr>    # conditional_registration_candidates-010278
+(config-if)# default appletalk free-trade-zone <cr>    # conditional_registration_candidates-009883
+(config-if)# default appletalk getzonelist-filter <cr>    # conditional_registration_candidates-009697
+(config-if)# default appletalk glean-packets <cr>    # conditional_registration_candidates-009894
+(config-if)# default appletalk half-router <cr>    # conditional_registration_candidates-009908
+(config-if)# default appletalk pre-fdditalk <cr>    # conditional_registration_candidates-010014
+(config-if)# default appletalk protocol rtmp <cr>    # conditional_registration_candidates-010152
+(config-if)# default appletalk route-cache <cr>    # conditional_registration_candidates-009921
+(config-if)# default appletalk rtmp-splithorizon <cr>    # conditional_registration_candidates-009978
+(config-if)# default appletalk rtmp-standby <cr>    # conditional_registration_candidates-009716
+(config-if)# default appletalk rtmp-stub <cr>    # conditional_registration_candidates-009969
+(config-if)# default appletalk send-rtmps <cr>    # conditional_registration_candidates-009985
+(config-if)# default appletalk zone <cr>    # conditional_registration_candidates-009879
+(config-if)# default asig conn-pending <cr>    # conditional_registration_candidates-009699
+(config-if)# default asig crankback-retries <cr>    # conditional_registration_candidates-009691
+(config-if)# default asig force-mpt-branch <cr>    # conditional_registration_candidates-009922
+(config-if)# default asig itu-qos-translation <cr>    # conditional_registration_candidates-009936
+(config-if)# default asig msg-retries <cr>    # conditional_registration_candidates-009688
+(config-if)# default asig status-enquiry-drain-count <cr>    # conditional_registration_candidates-009712
+(config-if)# default asig timer303 <cr>    # conditional_registration_candidates-009638
+(config-if)# default asig timer308 <cr>    # conditional_registration_candidates-009669
+(config-if)# default asig timer310 <cr>    # conditional_registration_candidates-009647
+(config-if)# default asig timer313 <cr>    # conditional_registration_candidates-009654
+(config-if)# default asig timer316 <cr>    # conditional_registration_candidates-009675
+(config-if)# default asig timer322 <cr>    # conditional_registration_candidates-009664
+(config-if)# default asig timer398 <cr>    # conditional_registration_candidates-009681
+(config-if)# default asig timer399 <cr>    # conditional_registration_candidates-009686
+(config-if)# default atm abr <cr>    # conditional_registration_candidates-010079
+(config-if)# default atm ais-enable <cr>    # conditional_registration_candidates-010030
+(config-if)# default atm asynchronous <cr>    # conditional_registration_candidates-009973
+(config-if)# default atm bandwidth dynamic <cr>    # conditional_registration_candidates-010192
+(config-if)# default atm bridge-enable <cr>    # conditional_registration_candidates-010087
+(config-if)# default atm clock INTERNAL <cr>    # conditional_registration_candidates-010136
+(config-if)# default atm distributed <cr>    # conditional_registration_candidates-009932
+(config-if)# default atm ds3-scramble <cr>    # conditional_registration_candidates-009956
+(config-if)# default atm e3-payload-type-match <cr>    # conditional_registration_candidates-010023
+(config-if)# default atm e3-scramble <cr>    # conditional_registration_candidates-009948
+(config-if)# default atm epd <cr>    # conditional_registration_candidates-010059
+(config-if)# default atm ether-mac-address <cr>    # conditional_registration_candidates-010093
+(config-if)# default atm f4 <cr>    # conditional_registration_candidates-010099
+(config-if)# default atm framing g832adm <cr>    # conditional_registration_candidates-010213
+(config-if)# default atm framing g832adm <cr>    # conditional_registration_candidates-010214
+(config-if)# default atm framing m23adm <cr>    # conditional_registration_candidates-010205
+(config-if)# default atm framing m23adm <cr>    # conditional_registration_candidates-010209
+(config-if)# default atm framing sdh <cr>    # conditional_registration_candidates-010212
+(config-if)# default atm l2transport pvc multiplex <cr>    # conditional_registration_candidates-010258
+(config-if)# default atm lbo short <cr>    # conditional_registration_candidates-010217
+(config-if)# default atm map-filter deny all out <cr>    # conditional_registration_candidates-010326
+(config-if)# default atm maxvpi-bits <cr>    # conditional_registration_candidates-010072
+(config-if)# default atm mcpt-timers <cr>    # conditional_registration_candidates-010061
+(config-if)# default atm mtu-reject-call <cr>    # conditional_registration_candidates-009833
+(config-if)# default atm multicast <cr>    # conditional_registration_candidates-009877
+(config-if)# default atm oam flush <cr>    # conditional_registration_candidates-010164
+(config-if)# default atm oversubscribe <cr>    # conditional_registration_candidates-009941
+(config-if)# default atm rate-queue tolerance <cr>    # conditional_registration_candidates-010241
+(config-if)# default atm restart timer <cr>    # conditional_registration_candidates-010188
+(config-if)# default atm route-bridged ip <cr>    # conditional_registration_candidates-010131
+(config-if)# default atm scrambling cell-payload <cr>    # conditional_registration_candidates-010199
+(config-if)# default atm scrambling sts-stream <cr>    # conditional_registration_candidates-010204
+(config-if)# default atm smds-address <cr>    # conditional_registration_candidates-009858
+(config-if)# default atm sonet delay triggers line <cr>    # conditional_registration_candidates-010338
+(config-if)# default atm sonet ignore S1 <cr>    # conditional_registration_candidates-010305
+(config-if)# default atm sonet overhead c2 <cr>    # conditional_registration_candidates-010317
+(config-if)# default atm sonet report <cr>    # conditional_registration_candidates-010252
+(config-if)# default atm sonet stm-4 <cr>    # conditional_registration_candidates-010225
+(config-if)# default atm sonet threshold sd-ber <cr>    # conditional_registration_candidates-010314
+(config-if)# default atm tx-latency <cr>    # conditional_registration_candidates-010098
+(config-if)# default atm vc-per-vp 16 <cr>    # conditional_registration_candidates-010137
+(config-if)# default bandwidth <cr>    # conditional_registration_candidates-009767
+(config-if)# default ccs encap <cr>    # conditional_registration_candidates-009864
+(config-if)# default cell-packing <cr>    # conditional_registration_candidates-009663
+(config-if)# default class-int <string> <cr>    # conditional_registration_candidates-009798
+(config-if)# default class-int <string> <cr>    # conditional_registration_candidates-009799
+(config-if)# default control-word <cr>    # conditional_registration_candidates-009744
+(config-if)# default crypto map <cr>    # conditional_registration_candidates-009856
+(config-if)# default dapr <cr>    # conditional_registration_candidates-009673
+(config-if)# default domain dynamic-path <cr>    # conditional_registration_candidates-009882
+(config-if)# default domain saf neighboring <cr>    # conditional_registration_candidates-010157
+(config-if)# default domain smart-probe profile <number:0..2> <cr>    # conditional_registration_candidates-010272
+(config-if)# default encapsulation <cr>    # conditional_registration_candidates-009710
+(config-if)# default et-analytics enable <cr>    # conditional_registration_candidates-009808
+(config-if)# default flow-sampler <string> <cr>    # conditional_registration_candidates-009804
+(config-if)# default flow-sampler <string> egress <cr>    # conditional_registration_candidates-010110
+(config-if)# default frame-relay vc-bundle <string> <cr>    # conditional_registration_candidates-010189
+(config-if)# default funi abr <cr>    # conditional_registration_candidates-009974
+(config-if)# default funi bandwidth dynamic <cr>    # conditional_registration_candidates-010186
+(config-if)# default funi bridge-enable <cr>    # conditional_registration_candidates-009987
+(config-if)# default funi clock INTERNAL <cr>    # conditional_registration_candidates-010129
+(config-if)# default funi distributed <cr>    # conditional_registration_candidates-009918
+(config-if)# default funi epd <cr>    # conditional_registration_candidates-009939
+(config-if)# default funi ether-mac-address <cr>    # conditional_registration_candidates-009993
+(config-if)# default funi f4 <cr>    # conditional_registration_candidates-010010
+(config-if)# default funi map-filter deny all out <cr>    # conditional_registration_candidates-010324
+(config-if)# default funi maxvpi-bits <cr>    # conditional_registration_candidates-009960
+(config-if)# default funi mtu-reject-call <cr>    # conditional_registration_candidates-009819
+(config-if)# default funi multicast <cr>    # conditional_registration_candidates-009859
+(config-if)# default funi oam flush <cr>    # conditional_registration_candidates-010158
+(config-if)# default funi oversubscribe <cr>    # conditional_registration_candidates-009928
+(config-if)# default funi rate-queue tolerance <cr>    # conditional_registration_candidates-010215
+(config-if)# default funi restart timer <cr>    # conditional_registration_candidates-010180
+(config-if)# default funi route-bridged ip <cr>    # conditional_registration_candidates-010123
+(config-if)# default funi smds-address <cr>    # conditional_registration_candidates-009840
+(config-if)# default funi sonet delay triggers line <cr>    # conditional_registration_candidates-010336
+(config-if)# default funi sonet ignore S1 <cr>    # conditional_registration_candidates-010285
+(config-if)# default funi sonet overhead c2 <cr>    # conditional_registration_candidates-010298
+(config-if)# default funi sonet report <cr>    # conditional_registration_candidates-010244
+(config-if)# default funi sonet stm-4 <cr>    # conditional_registration_candidates-010196
+(config-if)# default funi sonet threshold sd-ber <cr>    # conditional_registration_candidates-010294
+(config-if)# default funi tx-latency <cr>    # conditional_registration_candidates-010006
+(config-if)# default group-based-policy <cr>    # conditional_registration_candidates-009667
+(config-if)# default group-policy traffic-steering enable <cr>    # conditional_registration_candidates-010108
+(config-if)# default h323-gateway voip bind srcaddr <cr>    # conditional_registration_candidates-010275
+(config-if)# default h323-gateway voip h323-id <cr>    # conditional_registration_candidates-010155
+(config-if)# default h323-gateway voip id <string> ipaddr <address> <cr>    # conditional_registration_candidates-010340
+(config-if)# default h323-gateway voip id <string> multicast <cr>    # conditional_registration_candidates-010323
+(config-if)# default h323-gateway voip interface <cr>    # conditional_registration_candidates-010120
+(config-if)# default h323-gateway voip tech-prefix <string> <cr>    # conditional_registration_candidates-010269
+(config-if)# default host-reachability protocol bgp <cr>    # conditional_registration_candidates-010118
+(config-if)# default ip inspect <string> in <cr>    # conditional_registration_candidates-010261
+(config-if)# default ip media-pool <address> <address> <cr>    # conditional_registration_candidates-010259
+(config-if)# default ip mobile arp <cr>    # conditional_registration_candidates-010126
+(config-if)# default ip mobile router-service roam <cr>    # conditional_registration_candidates-010265
+(config-if)# default ip ospf adjacency-sid index <number:0..1048575> <cr>    # conditional_registration_candidates-010332
+(config-if)# default ip ospf affinity flex-algo <cr>    # conditional_registration_candidates-010286
+(config-if)# default ip ospf fast-reroute per-prefix candidate <cr>    # conditional_registration_candidates-010329
+(config-if)# default ip ospf fast-reroute per-prefix protection <cr>    # conditional_registration_candidates-010330
+(config-if)# default ip ospf prefix-attributes n-flag-clear <cr>    # conditional_registration_candidates-010282
+(config-if)# default ipv6 address negotiated <cr>    # conditional_registration_candidates-010172
+(config-if)# default ipv6 crypto map <cr>    # conditional_registration_candidates-010182
+(config-if)# default ipv6 media-address <address> <cr>    # conditional_registration_candidates-010169
+(config-if)# default ipv6 media-pool <address> <address> <cr>    # conditional_registration_candidates-010273
+(config-if)# default isis affinity flex-algo <cr>    # conditional_registration_candidates-010240
+(config-if)# default isis delay normalize interval <number:1..16777215> offset <number:1..16777215> <cr>    # conditional_registration_candidates-010346
+(config-if)# default isis fast-reroute candidate <cr>    # conditional_registration_candidates-010249
+(config-if)# default isis fast-reroute protection <cr>    # conditional_registration_candidates-010247
+(config-if)# default isis fast-reroute tie-break <cr>    # conditional_registration_candidates-010254
+(config-if)# default label <cr>    # conditional_registration_candidates-009755
+(config-if)# default load-balance flow <cr>    # conditional_registration_candidates-010025
+(config-if)# default load-balance flow-label <cr>    # conditional_registration_candidates-010037
+(config-if)# default logging event frame-relay vc-bundle status <cr>    # conditional_registration_candidates-010319
+(config-if)# default member vni <string> <cr>    # conditional_registration_candidates-010146
+(config-if)# default metadata flow <cr>    # conditional_registration_candidates-009794
+(config-if)# default monitor peer bfd <cr>    # conditional_registration_candidates-010219
+(config-if)# default mtu <cr>    # conditional_registration_candidates-009732
+(config-if)# default neighbor <cr>    # conditional_registration_candidates-009726
+(config-if)# default novell access-group <cr>    # conditional_registration_candidates-009945
+(config-if)# default novell access-group in <cr>    # conditional_registration_candidates-010170
+(config-if)# default novell accounting <cr>    # conditional_registration_candidates-010085
+(config-if)# default novell advertise-default-route-only <number:1..4294967294> <cr>    # conditional_registration_candidates-010239
+(config-if)# default novell delay <cr>    # conditional_registration_candidates-009680
+(config-if)# default novell down <number:1..4294967294> <cr>    # conditional_registration_candidates-010193
+(config-if)# default novell encapsulation <cr>    # conditional_registration_candidates-009897
+(config-if)# default novell gns-reply-disable <cr>    # conditional_registration_candidates-009995
+(config-if)# default novell gns-response-delay <cr>    # conditional_registration_candidates-009741
+(config-if)# default novell helper-address <cr>    # conditional_registration_candidates-009930
+(config-if)# default novell helper-list <cr>    # conditional_registration_candidates-009951
+(config-if)# default novell input-network-filter <cr>    # conditional_registration_candidates-009959
+(config-if)# default novell input-sap-filter <cr>    # conditional_registration_candidates-009972
+(config-if)# default novell linkup-request sap <cr>    # conditional_registration_candidates-010235
+(config-if)# default novell network <cr>    # conditional_registration_candidates-010034
+(config-if)# default novell output-ggs-filter <cr>    # conditional_registration_candidates-010020
+(config-if)# default novell output-gns-filter <cr>    # conditional_registration_candidates-010027

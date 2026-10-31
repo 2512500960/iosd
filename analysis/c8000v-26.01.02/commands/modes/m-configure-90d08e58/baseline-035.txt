@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-035.md
+
+(config)# default ipv6 reassembly-queue length <cr>    # path-029227
+(config)# default ipv6 reassembly-queue time-out <cr>    # path-029292
+(config)# default ipv6 rip vrf-mode enable <cr>    # path-035342
+(config)# default ipv6 route static resolve default <cr>    # path-044848
+(config)# default ipv6 snooping <cr>    # path-027133
+(config)# default ipv6 snooping policy <string> <cr>    # path-035869
+(config)# default ipv6 source-guard <cr>    # path-027071
+(config)# default ipv6 source-guard policy <string> <cr>    # path-035678
+(config)# default ipv6 source-route <cr>    # path-026861
+(config)# default ipv6 spd mode <cr>    # path-029701
+(config)# default ipv6 spd queue max-threshold <cr>    # path-035961
+(config)# default ipv6 spd queue min-threshold <cr>    # path-036043
+(config)# default ipv6 traffic interface-statistics <cr>    # path-029289
+(config)# default ipv6 unicast-routing <cr>    # path-026843
+(config)# default ipv6 visibility global flow monitor sdwan_flow_monitor_ipv6 input <cr>    # path-057095
+(config)# default isdn alert-end-to-end <cr>    # path-027467
+(config)# default isdn debug <cr>    # path-027470
+(config)# default isdn display layer2-status <cr>    # path-030723
+(config)# default isdn housekeeping <cr>    # path-027473
+(config)# default isdn logging <cr>    # path-027477
+(config)# default isdn silent-boot <cr>    # path-027441
+(config)# default isdn switch-type <cr>    # path-027445
+(config)# default isdn-mib retain-timer <cr>    # path-027459
+(config)# default isis display delimiter <cr>    # path-030228
+(config)# default isis optimize inline <cr>    # path-030103
+(config)# default isis optimize lspdb-walk <cr>    # path-030137
+(config)# default issu set rollback-timer <cr>    # path-031393
+(config)# default kerberos clients <cr>    # path-026450
+(config)# default kerberos credentials forward <cr>    # path-028463
+(config)# default kerberos instance map <string> <cr>    # path-034499
+(config)# default kerberos local-realm <cr>    # path-026380
+(config)# default kerberos password <cr>    # path-026585
+(config)# default kerberos preauth <cr>    # path-026493
+(config)# default kerberos processes <cr>    # path-025697
+(config)# default kerberos realm <string> <string> <cr>    # path-034294
+(config)# default kerberos retry <cr>    # path-025684
+(config)# default kerberos server <string> <address> <cr>    # path-034458
+(config)# default kerberos srvtab remote <cr>    # path-028309
+(config)# default kerberos timeout <cr>    # path-025674
+(config)# default key chain <string> <cr>    # path-030572
+(config)# default key config-key 1 <cr>    # path-030543
+(config)# default key config-key newpass <string> <cr>    # path-037243
+(config)# default key config-key newpass <string> oldpass <cr>    # path-046785
+(config)# default key config-key password-encrypt <cr>    # path-030571
+(config)# default kron policy-list <string> <cr>    # path-028436
+(config)# default l2protocol-tunnel cos <cr>    # path-027560
+(config)# default l2protocol-tunnel global drop-threshold <cr>    # path-031255
+(config)# default l2tp congestion-control <cr>    # path-026761
+(config)# default l2tp connect-speed-update ancp <cr>    # path-029018
+(config)# default l2tp connect-speed-update enable <cr>    # path-028963
+(config)# default l2tp session l2tpv3 id <cr>    # path-035173
+(config)# default l2tp sso cf-flow disable <cr>    # path-035348
+(config)# default l2tp sso enable <cr>    # path-029139
+(config)# default l2tp sso test transform <cr>    # path-035289
+(config)# default l2tp tunnel failover-cap <cr>    # path-029148
+(config)# default l2tp tunnel l2tpv3 accounting headers <cr>    # path-044846
+(config)# default l2tp tunnel max-sessions <cr>    # path-029232
+(config)# default l2tp-class <string> <cr>    # path-026763
+(config)# default l2vpn evpn all-active-mh <cr>    # path-029545
+(config)# default l2vpn evpn instance <number:1..65535> <cr>    # path-035765
+(config)# default l2vpn evpn profile default <cr>    # path-035639
+(config)# default lacp system-priority <cr>    # path-027582
+(config)# default ldap attribute-map <string> <cr>    # path-029825
+(config)# default ldap server <string> <cr>    # path-029877
+(config)# default li-view <string> user <string> password <string> <cr>    # path-052039
+(config)# default license accept end user agreement <cr>    # path-047195
+(config)# default license boot level <cr>    # path-031098
+(config)# default license boot level ipbase <cr>    # path-038147
+(config)# default license mode <cr>    # path-027515
+(config)# default license smart conversion automatic <cr>    # path-038161
+(config)# default license smart custom_id <cr>    # path-031143
+(config)# default license smart enable <cr>    # path-031058
+(config)# default license smart enable noprompt <cr>    # path-038053
+(config)# default license smart ip-type <cr>    # path-031306
+(config)# default license smart log verbose <cr>    # path-038634
+(config)# default license smart onprem trust <cr>    # path-038605
+(config)# default license smart privacy all <cr>    # path-038398
+(config)# default license smart proxy address <string> <cr>    # path-047533
+(config)# default license smart reservation <cr>    # path-031051
+(config)# default license smart server-identity-check <cr>    # path-031250
+(config)# default license smart transport <cr>    # path-031179
+(config)# default license smart url <cr>    # path-031352
+(config)# default license smart usage interval <cr>    # path-038554
+(config)# default license smart utility <cr>    # path-031141
+(config)# default license smart utility customer_info city <cr>    # path-047581
+(config)# default license smart utility customer_info country <cr>    # path-047646
+(config)# default license smart utility customer_info id <cr>    # path-047483
+(config)# default license smart utility customer_info name <cr>    # path-047528
+(config)# default license smart utility customer_info postalcode <cr>    # path-047670
+(config)# default license smart utility customer_info state <cr>    # path-047617
+(config)# default license smart utility customer_info street <cr>    # path-047559
+(config)# default license smart vrf <cr>    # path-031349
+(config)# default license udi <cr>    # path-027498
+(config)# default line auto-consolidation <cr>    # path-027278
+(config)# default lldp custom-network-hash <cr>    # path-026363
+(config)# default lldp holdtime <cr>    # path-025582
+(config)# default lldp management-vlan <cr>    # path-026336
+(config)# default lldp reinit <cr>    # path-025593
+(config)# default lldp run <cr>    # path-026317
+(config)# default lldp system-name <string> switch-id <number:0..16> <cr>    # path-044013
+(config)# default lldp timer <cr>    # path-025573
+(config)# default lldp tlv-select management-address <cr>    # path-028031
+(config)# default lldp ucs-tlv ipv6 <address> mgmt-port <number:1..65534> infra-vlan <number:1..4095> cluster-id <string> <cr>    # path-059945
+(config)# default lnm disabled <cr>    # path-026503
+(config)# default lnm pathtrace-disabled <cr>    # path-026586
+(config)# default lnm snmp-only <cr>    # path-026481
+(config)# default locaddr-priority-list <number:1..10> <number:0..255> high <cr>    # path-034664
+(config)# default location admin-tag <cr>    # path-026551
+(config)# default location civic-location identifier host <cr>    # path-034415
+(config)# default location custom-location identifier host <cr>    # path-034431
+(config)# default location elin-location <string> identifier <string> <cr>    # path-044197
+(config)# default location geo-location identifier host <cr>    # path-034474
+(config)# default location prefer cdp weight <cr>    # path-028358
+(config)# default location prefer lldp-med weight <cr>    # path-028291
+(config)# default location prefer static weight <cr>    # path-028247
+(config)# default logging buginf <cr>    # path-026172
+(config)# default logging count <cr>    # path-026112
+(config)# default logging discriminator <string> <cr>    # path-027888
+(config)# default logging event link-status global <cr>    # path-034239
+(config)# default logging event trunk-status global <cr>    # path-034265
+(config)# default logging exception <cr>    # path-026098
+(config)# default logging message-counter log <cr>    # path-027923
+(config)# default logging on <cr>    # path-026332
+(config)# default logging persistent <cr>    # path-026301
+(config)# default logging prefix version <cr>    # path-028308
+(config)# default logging purge-log buffer <cr>    # path-028020
+(config)# default logging queue-limit <cr>    # path-026198
+(config)# default logging radioactive-trace <cr>    # path-026183
+(config)# default logging reload <cr>    # path-026272
+(config)# default logging snmp-authfail <cr>    # path-026146
+(config)# default logging userinfo <cr>    # path-026162
+(config)# default login block-for <cr>    # path-026543
+(config)# default login delay <cr>    # path-026566
+(config)# default login on-failure <cr>    # path-026622
+(config)# default login on-success <cr>    # path-026641
+(config)# default login password-reuse-interval <cr>    # path-026658
+(config)# default login password-warning-interval days <cr>    # path-028848
+(config)# default login password-warning-interval hours <cr>    # path-028702
+(config)# default login password-warning-interval minutes <cr>    # path-028792
+(config)# default login password-warning-interval months <cr>    # path-028741
+(config)# default login password-warning-interval seconds <cr>    # path-028666
+(config)# default login password-warning-interval years <cr>    # path-028631
+(config)# default login quiet-mode access-class <cr>    # path-028529
+(config)# default login quiet-mode ipv6 access-class <cr>    # path-034655
+(config)# default login-string <string> <cr>    # path-026725
+(config)# default mab logging verbose <cr>    # path-029898
+(config)# default mab request format attribute 1 <cr>    # path-045582
+(config)# default mac access-list extended <string> <cr>    # path-038396
+(config)# default map-class frame-relay <string> <cr>    # path-028486
+(config)# default map-list <string> <cr>    # path-026509
+(config)# default mdns-sd controller service-list <string> <cr>    # path-034068
+(config)# default mdns-sd controller service-policy <string> <cr>    # path-034055
+(config)# default mdns-sd flex-profile <string> <cr>    # path-028067
+(config)# default mdns-sd gateway <cr>    # path-026155
+(config)# default mdns-sd location-filter <string> <cr>    # path-028094
+(config)# default mdns-sd service-definition <string> <cr>    # path-027996
+(config)# default mdns-sd service-list <string> IN <cr>    # path-034078
+(config)# default mdns-sd service-list <string> OUT <cr>    # path-034094
+(config)# default mdns-sd service-peer group <cr>    # path-028052
+(config)# default mdns-sd service-policy <string> <cr>    # path-027981
+(config)# default mdns-sd wired-filter <string> <cr>    # path-028126
+(config)# default memory check-interval <cr>    # path-025972
+(config)# default memory chunk siblings threshold <cr>    # path-038514
+(config)# default memory free low-watermark processor <cr>    # path-038553
+(config)# default memory free-list <number:1..4294967280> <cr>    # path-031066
+(config)# default memory lite <cr>    # path-027551
+(config)# default memory record events <cr>    # path-031166
+(config)# default memory record filter include <string> <cr>    # path-047295
+(config)# default memory record traceback <cr>    # path-031100
+(config)# default memory reserve critical <cr>    # path-031232
+(config)# default memory reserved console <cr>    # path-031282
+(config)# default memory sanity <cr>    # path-027563
+(config)# default memory statistics <cr>    # path-027540
+(config)# default memory validate-checksum <cr>    # path-025976
+(config)# default microcode reload <cr>    # path-026202
+(config)# default mka defaults policy send-secure-announcements <cr>    # path-038838
+(config)# default mka policy <string> <cr>    # path-031421
+(config)# default mka suppress syslogs sak-rekey <cr>    # path-038927
+(config)# default modemcap edit <string> miscellaneous <cr>    # path-037283
+(config)# default modemcap entry <string> <cr>    # path-030526
+(config)# default multilink bundle-name <cr>    # path-027264
+(config)# default multilink test-mode <cr>    # path-025866
+(config)# default multilink virtual-template <cr>    # path-027223
+(config)# default mvr <cr>    # path-025829
+(config)# default mvr max-groups <cr>    # path-027048
+(config)# default mvr mode <cr>    # path-027127
+(config)# default mvr querytime <cr>    # path-027064
+(config)# default named-ordering-route-map enable <cr>    # path-026815
+(config)# default ncia client <number:1..1> <address> <address> <cr>    # path-044377
+(config)# default ncia rsrb <number:1..4095> <number:1..15> <number:1..4095> <number:1..15> <number:1..4095> <address> <cr>    # path-058918
+(config)# default ncia server <number:1..1> <address> <address> <address> <number:1..4095> <cr>    # path-056922
+(config)# default netbios name-cache <address> <string> <cr>    # path-034007
+(config)# default netbios name-cache broadcast-name-recognized <cr>    # path-027858
+(config)# default netbios name-cache cache-add-name <cr>    # path-027841
+(config)# default netbios name-cache name-len <cr>    # path-026040
+(config)# default netbios name-cache proxy-datagram <cr>    # path-026047
+(config)# default netbios name-cache query-timeout <cr>    # path-026058
+(config)# default netbios name-cache recognized-timeout <cr>    # path-026062
+(config)# default netbios name-cache timeout <cr>    # path-026020
+(config)# default ntp max-associations <cr>    # path-026660
+(config)# default oam queue <cr>    # path-026223
+(config)# default object-group knob check-normal-entry-dup <cr>    # path-031140
+(config)# default object-group network <string> <cr>    # path-031129
+(config)# default parameter-map type subscriber attribute-to-service <string> <cr>    # path-043907
+(config)# default parameter-map type webauth global <cr>    # path-034101
+(config)# default parser cache <cr>    # path-027250
+(config)# default parser command serializer <cr>    # path-030242
+(config)# default parser config cache interface <cr>    # path-036671
+(config)# default parser config partition <cr>    # path-030248
+(config)# default parser maximum latency <cr>    # path-030350
+(config)# default parser maximum utilization <cr>    # path-030324
+(config)# default parser view <string> <cr>    # path-030328
+(config)# default partest <cr>    # path-025969
+(config)# default passwd encryption off <cr>    # path-029165
+(config)# default passwd encryption on <cr>    # path-029112
+(config)# default passwd key ascii <string> <cr>    # path-035247
+(config)# default passwd key export <string> <cr>    # path-035469
+(config)# default passwd key import <string> <string> <cr>    # path-045086
+(config)# default passwd key obfuscate <cr>    # path-029322
+(config)# default passwd key random <cr>    # path-029284
+(config)# default passwd key zeroize <cr>    # path-029220
+(config)# default passwd private-key <string> <cr>    # path-029256
+(config)# default password encryption aes <cr>    # path-030471
+(config)# default password logging <cr>    # path-027369
+(config)# default pkt-reordering <cr>    # path-025637
+(config)# default platform access-list egress-dscp enable <cr>    # path-034016
+(config)# default platform async loopback <cr>    # path-027850
+(config)# default platform atm-cdvt <cr>    # path-026279
+(config)# default platform bfd disable-offload <cr>    # path-027840
+(config)# default platform bfd limit-offload <number:4095..6000> <cr>    # path-033983
+(config)# default platform broadband <cr>    # path-026452
+(config)# default platform cce cache enable <cr>    # path-034010
+(config)# default platform cef stats-interval label <cr>    # path-033990
+(config)# default platform cfm <cr>    # path-026262
+(config)# default platform cft nat-correlation <cr>    # path-028154
+(config)# default platform cli-agent error <cr>    # path-027831
+(config)# default platform cli-agent nvgen <cr>    # path-027825
+(config)# default platform console <cr>    # path-026160
+(config)# default platform crft collect-on-reload <string> <string> <string> <cr>    # path-052127
+(config)# default platform hardware lite license enable <cr>    # path-044260
+(config)# default platform hardware throughput level <cr>    # path-034508
+(config)# default platform hardware throughput level <cr>    # path-034509
+(config)# default platform hardware throughput restricted-throughput-rate-mode <cr>    # path-034544
+(config)# default platform icmp rate-limit <cr>    # path-028168
+(config)# default platform interface default-mode l3 <cr>    # path-034240
+(config)# default platform ip multicast ssdp <cr>    # path-033992
+(config)# default platform ip-ports ephemeral-max <cr>    # path-028053
+(config)# default platform ipsec control-plane <cr>    # path-028040
+(config)# default platform l2vpn cpha-pass-through <cr>    # path-028128
+(config)# default platform l2vpn hdlc-pass-through <cr>    # path-028086
+(config)# default platform l2vpn statistics enable <cr>    # path-034189
+(config)# default platform macsec fips-mode <cr>    # path-028014
+(config)# default platform macsec logging replay-protection <cr>    # path-034132
+(config)# default platform memory add <cr>    # path-028368
+(config)# default platform mgmt-port monitor <cr>    # path-027953
+(config)# default platform multicast lre off <cr>    # path-033998
+(config)# default platform multicast lre on <cr>    # path-033996
+(config)# default platform multicast mgre injection <cr>    # path-033984
+(config)# default platform multicast ns-punt-throttle <number:1..4294967295> <cr>    # path-034005
+(config)# default platform multicast oce flag suppress <cr>    # path-043901
+(config)# default platform multicast replication layer2 sharing <cr>    # path-043897
+(config)# default platform multicast replication layer3 sharing <cr>    # path-043902
+(config)# default platform multicast statistics preferred <cr>    # path-033988
+(config)# default platform power protection action shutdown lc <cr>    # path-052067
+(config)# default platform power redundancy-mode nplus1 <cr>    # path-034086
+(config)# default platform punt-intf per-cause rate <cr>    # path-034012
+(config)# default platform punt-intf rate <cr>    # path-027876
+(config)# default platform punt-keepalive disable-kernel-core <cr>    # path-027823
+(config)# default platform punt-keepalive enable-keepalive-standby <cr>    # path-027832
+(config)# default platform punt-keepalive loprio-settings <cr>    # path-027854
+(config)# default platform punt-keepalive settings <cr>    # path-027839
+(config)# default platform punt-sbrl ping-bypass <cr>    # path-027920
+(config)# default platform punt-sbrl subscriber ping-bypass <cr>    # path-034017
+(config)# default platform punt-sbrl subscriber punt-cause <number:1..175> rate-per-4-sec no-drop <cr>    # path-056767
+(config)# default platform qfp drops threshold total <cr>    # path-043894
+(config)# default platform qfp utilization monitor load <number:50..99> <cr>    # path-052037
+(config)# default platform qos marker-statistics <cr>    # path-027870
+(config)# default platform reload immediate <cr>    # path-028021
+(config)# default platform resource <cr>    # path-026194
+(config)# default platform sd disable <cr>    # path-027898
+(config)# default platform security selinux <cr>    # path-027958
+(config)# default platform shell <cr>    # path-026122
+(config)# default platform sslvpn use-pd <cr>    # path-027826
+(config)# default platform stats-vmanage <cr>    # path-026373
+(config)# default platform sudi cmca3 <cr>    # path-027915
+(config)# default platform tcp mss <cr>    # path-027886
+(config)# default platform tcp selective-ack <cr>    # path-027885
+(config)# default platform tcp synwait-time <cr>    # path-027911
+(config)# default platform tcp timestamp <cr>    # path-027908
+(config)# default platform tcp window-size <cr>    # path-027935
+(config)# default platform urpf loose counter ipv4 <cr>    # path-043903
+(config)# default platform usb disable <cr>    # path-027899
+(config)# default policy-manager policy enable <cr>    # path-031057
+(config)# default policy-manager policy subsystem <string> enable <cr>    # path-047326
+(config)# default policy-manager policy subsystem <string> policy-name <string> enable <cr>    # path-058005
+(config)# default policy-map limit-warning percent <cr>    # path-028187
+(config)# default policy-map type control <string> <cr>    # path-034443
+(config)# default policy-map type control subscriber <string> <cr>    # path-044428
+(config)# default policy-map type service <string> <cr>    # path-034306
+(config)# default policy-peer keepalive <cr>    # path-026709
+(config)# default port-channel load-balance-hash-algo <cr>    # path-026494
+(config)# default port-channel load-balance-hash-algo dpi algorithm <cr>    # path-034452
+(config)# default port-channel load-balance-hash-algo dpi key-control default <cr>    # path-044283
+(config)# default port-channel load-balance-hash-algo dpi key-control tunnel-gre <cr>    # path-044342
+(config)# default port-channel load-balance-hash-algo dpi key-control tunnel-ipinip <cr>    # path-044317
+(config)# default port-channel load-balance-hash-algo dpi key-control tunnel-ipsec <cr>    # path-044373
+(config)# default port-channel load-balance-hash-algo dpi key-control tunnel-l2tp <cr>    # path-044432
+(config)# default port-channel load-balance-hash-algo dpi key-control tunnel-vxlan <cr>    # path-044402
+(config)# default port-channel load-balancing <cr>    # path-026428
+(config)# default port-channel max-memlink-per-pc <number:2..16> <cr>    # path-028288
+(config)# default port-channel mc-lag <cr>    # path-026339
+(config)# default power inline redundant <cr>    # path-031419
+(config)# default power main redundant <cr>    # path-031400
+(config)# default ppp hold-queue <cr>    # path-026252
+(config)# default ppp interrupt-process <cr>    # path-026269
+(config)# default ppp ip address-save <cr>    # path-027985
+(config)# default ppp limit ccp <cr>    # path-028025
+(config)# default ppp ncp override local <cr>    # path-034178
+(config)# default ppp packet throttle <cr>    # path-028110
+(config)# default ppp queue tick <number:1..5> <cr>    # path-034074
+(config)# default ppp suppress-timeouts <cr>    # path-026248
+(config)# default ppp syslog enable <cr>    # path-028102
+(config)# default ppp unique address access-accept <cr>    # path-034050
+(config)# default pppoe pads disable-ac-info <cr>    # path-030262
+(config)# default process cpu autoprofile hog <cr>    # path-034080
+(config)# default process cpu extended accounting enable <cr>    # path-043949
+(config)# default process cpu extended accounting frames <cr>    # path-043990
+(config)# default process cpu extended accounting size <cr>    # path-043971
+(config)# default process cpu extended history <cr>    # path-034087
+(config)# default process cpu statistics limit <cr>    # path-034088
+(config)# default process cpu threshold type process <cr>    # path-043935
+(config)# default process-max-time <cr>    # path-025551
+(config)# default product-analytics <cr>    # path-025938
+(config)# default prompt <cr>    # path-025680
+(config)# default qos police order parent-first <cr>    # path-034927
+(config)# default qos scheduler 3-parameters priority <cr>    # path-034870
+(config)# default qos scheduler priority-rate-propagation <cr>    # path-029007
+(config)# default qos service-group layer <cr>    # path-028715
+(config)# default qos set table <string> output <cr>    # path-044718
+(config)# default qos shape-timer 1ms <cr>    # path-028758
+(config)# default qos trace resize <number:0..2147483647> <cr>    # path-035261
+(config)# default qos trace resize error <number:0..2147483647> <cr>    # path-044813
+(config)# default qos trace resize event <number:0..2147483647> <cr>    # path-044768
+(config)# default qos trace resize warning <number:0..2147483647> <cr>    # path-044852
+(config)# default radius filter match-all <string> <cr>    # path-036069
+(config)# default radius ip-input-bypass <cr>    # path-027155
+(config)# default radius server <string> <cr>    # path-029770
+(config)# default radius-server accounting system host-config <cr>    # path-036847
+(config)# default radius-server attribute 11 default direction <cr>    # path-046063
+(config)# default radius-server attribute 11 optional <cr>    # path-036584
+(config)# default radius-server attribute 188 format non-standard <cr>    # path-045777
+(config)# default radius-server attribute 196 network-up lcp-open <cr>    # path-046211
+(config)# default radius-server attribute 2 length maximum 240 <cr>    # path-053603
+(config)# default radius-server attribute 218 mandatory <cr>    # path-036409
+(config)# default radius-server attribute 25 access-request include <cr>    # path-045778
+(config)# default radius-server attribute 25 accounting prefer-preauth <cr>    # path-045889
+(config)# default radius-server attribute 25 include-in-access-req <cr>    # path-036421
+(config)# default radius-server attribute 30 circuit-id <cr>    # path-036529
+(config)# default radius-server attribute 30 original-called-number <cr>    # path-036466
+(config)# default radius-server attribute 30 remote-id <cr>    # path-036593
+(config)# default radius-server attribute 31 append-circuit-id <cr>    # path-036964
+(config)# default radius-server attribute 31 mac format <cr>    # path-046360
+(config)# default radius-server attribute 31 remote-id <cr>    # path-036923
+(config)# default radius-server attribute 31 send nas-port-detail <cr>    # path-046414
+(config)# default radius-server attribute 32 include-in-access-req <cr>    # path-036503
+(config)# default radius-server attribute 4 <address> <cr>    # path-036822
+(config)# default radius-server attribute 4 nrp <cr>    # path-036770
+(config)# default radius-server attribute 44 extend-with-addr <cr>    # path-036234
+(config)# default radius-server attribute 44 include-in-access-req <cr>    # path-036196
+(config)# default radius-server attribute 44 include-in-access-req all <cr>    # path-045748
+(config)# default radius-server attribute 44 include-in-access-req vrf <string> <cr>    # path-053140
+(config)# default radius-server attribute 44 initial <cr>    # path-029995
+(config)# default radius-server attribute 44 on-for-access-req <cr>    # path-036090
+(config)# default radius-server attribute 44 sync-with-client <cr>    # path-036372
+(config)# default radius-server attribute 55 access-request include <cr>    # path-045888
+(config)# default radius-server attribute 55 include-in-acct-req <cr>    # path-036410
+(config)# default radius-server attribute 6 mandatory <cr>    # path-036235
+(config)# default radius-server attribute 6 on-for-login-auth <cr>    # path-036000
+(config)# default radius-server attribute 6 support-multiple <cr>    # path-036091
+(config)# default radius-server attribute 6 voice 1 <cr>    # path-045604
+(config)# default radius-server attribute 60 include-in-access-req <cr>    # path-036147
+(config)# default radius-server attribute 61 extended <cr>    # path-036627
+(config)# default radius-server attribute 66 include-in-access-req <cr>    # path-037031
+(config)# default radius-server attribute 67 include-in-access-req <cr>    # path-036465
+(config)# default radius-server attribute 69 clear <cr>    # path-036283
+(config)# default radius-server attribute 77 include-in-acct-req <cr>    # path-036220
+(config)# default radius-server attribute 8 include-in-access-req <cr>    # path-036148
+(config)# default radius-server attribute 91 ignore <cr>    # path-036521
+(config)# default radius-server attribute 95 <cr>    # path-030466
+(config)# default radius-server attribute list <string> <cr>    # path-036728
+(config)# default radius-server attribute nas-port format a <cr>    # path-046098
+(config)# default radius-server attribute nas-port-id include <cr>    # path-036983
+(config)# default radius-server attribute policy-name <string> include-in-access-req <cr>    # path-045716
+(config)# default radius-server attribute wireless 44 extend-with-mac-addr <cr>    # path-046594
+(config)# default radius-server attribute wireless 44 include-in-access-req <cr>    # path-046527
+(config)# default radius-server attribute wireless accounting call-station-id ap-ethmac-only <cr>    # path-053994
+(config)# default radius-server attribute wireless accounting callStationIdCase lower <cr>    # path-054035
+(config)# default radius-server attribute wireless accounting mac-delimiter colon <cr>    # path-053848
+(config)# default radius-server attribute wireless accounting nas-port-id exclude <cr>    # path-054069
+(config)# default radius-server attribute wireless accounting username-case lower <cr>    # path-053949

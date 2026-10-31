@@ -1,0 +1,63 @@
+# 模式 vrf-af-topology；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vrf-af-topology)# all-interfaces <cr>    # observed_connections-007525
+(config-vrf-af-topology)# bgp next-hop <cr>    # observed_connections-007539
+(config-vrf-af-topology)# context <cr>    # observed_connections-007523
+(config-vrf-af-topology)# default all-interfaces <cr>    # observed_connections-007535
+(config-vrf-af-topology)# default bgp next-hop <cr>    # observed_connections-007555
+(config-vrf-af-topology)# default context <cr>    # observed_connections-007531
+(config-vrf-af-topology)# default exit-topology <cr>    # observed_connections-007529
+(config-vrf-af-topology)# default export map <string> <cr>    # observed_connections-007565
+(config-vrf-af-topology)# default forward-base <cr>    # observed_connections-007533
+(config-vrf-af-topology)# default import map <string> <cr>    # observed_connections-007566
+(config-vrf-af-topology)# default inter-as-hybrid <cr>    # observed_connections-007543
+(config-vrf-af-topology)# default maximum routes <cr>    # observed_connections-007547
+(config-vrf-af-topology)# default maximum routes <cr>    # observed_connections-007556
+(config-vrf-af-topology)# default protection local-prefixes <cr>    # observed_connections-007559
+(config-vrf-af-topology)# default route-replicate from unicast all <cr>    # observed_connections-007572
+(config-vrf-af-topology)# default route-replicate recursion-policy destination <cr>    # observed_connections-007561
+(config-vrf-af-topology)# default route-replicate-distance from unicast <cr>    # observed_connections-007568
+(config-vrf-af-topology)# default shutdown <cr>    # observed_connections-007542
+(config-vrf-af-topology)# default snmp context <cr>    # observed_connections-007553
+(config-vrf-af-topology)# default snmp context <string> community <string> <cr>    # observed_connections-007578
+(config-vrf-af-topology)# default snmp context <string> user <string> <cr>    # observed_connections-007577
+(config-vrf-af-topology)# default use-topology unicast base <cr>    # observed_connections-007570
+(config-vrf-af-topology)# exit-topology <cr>    # observed_connections-007522
+(config-vrf-af-topology)# export map <string> <cr>    # observed_connections-007549
+(config-vrf-af-topology)# forward-base <cr>    # observed_connections-007524
+(config-vrf-af-topology)# import map <string> <cr>    # observed_connections-007550
+(config-vrf-af-topology)# inter-as-hybrid <cr>    # observed_connections-007527
+(config-vrf-af-topology)# maximum routes <cr>    # observed_connections-007536
+(config-vrf-af-topology)# maximum routes <cr>    # observed_connections-007541
+(config-vrf-af-topology)# no all-interfaces <cr>    # observed_connections-007534
+(config-vrf-af-topology)# no bgp next-hop <cr>    # observed_connections-007551
+(config-vrf-af-topology)# no context <cr>    # observed_connections-007530
+(config-vrf-af-topology)# no exit-topology <cr>    # observed_connections-007528
+(config-vrf-af-topology)# no export map <string> <cr>    # observed_connections-007562
+(config-vrf-af-topology)# no forward-base <cr>    # observed_connections-007532
+(config-vrf-af-topology)# no import map <string> <cr>    # observed_connections-007563
+(config-vrf-af-topology)# no inter-as-hybrid <cr>    # observed_connections-007540
+(config-vrf-af-topology)# no maximum routes <cr>    # observed_connections-007546
+(config-vrf-af-topology)# no maximum routes <cr>    # observed_connections-007554
+(config-vrf-af-topology)# no protection local-prefixes <cr>    # observed_connections-007558
+(config-vrf-af-topology)# no route-replicate from unicast all <cr>    # observed_connections-007571
+(config-vrf-af-topology)# no route-replicate recursion-policy destination <cr>    # observed_connections-007560
+(config-vrf-af-topology)# no route-replicate-distance from unicast <cr>    # observed_connections-007564
+(config-vrf-af-topology)# no shutdown <cr>    # observed_connections-007538
+(config-vrf-af-topology)# no snmp context <cr>    # observed_connections-007548
+(config-vrf-af-topology)# no snmp context <string> community <string> <cr>    # observed_connections-007576
+(config-vrf-af-topology)# no snmp context <string> user <string> <cr>    # observed_connections-007575
+(config-vrf-af-topology)# no use-topology unicast base <cr>    # observed_connections-007569
+(config-vrf-af-topology)# protection local-prefixes <cr>    # observed_connections-007544
+(config-vrf-af-topology)# route-replicate from unicast all <cr>    # observed_connections-007567
+(config-vrf-af-topology)# route-replicate recursion-policy destination <cr>    # observed_connections-007545
+(config-vrf-af-topology)# route-replicate-distance from unicast <cr>    # observed_connections-007552
+(config-vrf-af-topology)# route-target <?bgp_extcomm_action@555589568bc0> <cr>    # observed_connections-007579
+(config-vrf-af-topology)# route-target <?bgp_extcomm_action@555589568bc0> stitching <cr>    # observed_connections-007580
+(config-vrf-af-topology)# shutdown <cr>    # observed_connections-007526
+(config-vrf-af-topology)# snmp context <cr>    # observed_connections-007537
+(config-vrf-af-topology)# snmp context <string> community <string> <cr>    # observed_connections-007574
+(config-vrf-af-topology)# snmp context <string> user <string> <cr>    # observed_connections-007573
+(config-vrf-af-topology)# use-topology unicast base <cr>    # observed_connections-007557

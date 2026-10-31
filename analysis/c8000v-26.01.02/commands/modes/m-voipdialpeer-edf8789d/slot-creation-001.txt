@@ -1,0 +1,58 @@
+# 模式 voipdialpeer；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-dial-peer)# corlist incoming <string> <cr>    # static_slot_creation_candidates-003805
+(config-dial-peer)# corlist outgoing <string> <cr>    # static_slot_creation_candidates-003808
+(config-dial-peer)# default corlist incoming <cr>    # static_slot_creation_candidates-003806
+(config-dial-peer)# default corlist outgoing <cr>    # static_slot_creation_candidates-003809
+(config-dial-peer)# default destination calling e164-pattern-map <cr>    # static_slot_creation_candidates-003851
+(config-dial-peer)# default destination dpg <cr>    # static_slot_creation_candidates-003827
+(config-dial-peer)# default destination e164-pattern-map <cr>    # static_slot_creation_candidates-003833
+(config-dial-peer)# default destination provision-policy <cr>    # static_slot_creation_candidates-003839
+(config-dial-peer)# default destination route-string <cr>    # static_slot_creation_candidates-003813
+(config-dial-peer)# default destination uri <cr>    # static_slot_creation_candidates-003821
+(config-dial-peer)# default destination uri-diversion <cr>    # static_slot_creation_candidates-003820
+(config-dial-peer)# default destination uri-from <cr>    # static_slot_creation_candidates-003826
+(config-dial-peer)# default destination uri-referred-by <cr>    # static_slot_creation_candidates-003832
+(config-dial-peer)# default destination uri-to <cr>    # static_slot_creation_candidates-003838
+(config-dial-peer)# default destination uri-via <cr>    # static_slot_creation_candidates-003842
+(config-dial-peer)# default incoming called e164-pattern-map <cr>    # static_slot_creation_candidates-003850
+(config-dial-peer)# default incoming called-number <cr>    # static_slot_creation_candidates-003819
+(config-dial-peer)# default incoming uri request <cr>    # static_slot_creation_candidates-003847
+(config-dial-peer)# default permission <cr>    # static_slot_creation_candidates-003803
+(config-dial-peer)# default phone-proxy <cr>    # static_slot_creation_candidates-003800
+(config-dial-peer)# destination calling e164-pattern-map <number:1..10000> <cr>    # static_slot_creation_candidates-003849
+(config-dial-peer)# destination dpg <number:1..10000> <cr>    # static_slot_creation_candidates-003825
+(config-dial-peer)# destination e164-pattern-map <number:1..10000> <cr>    # static_slot_creation_candidates-003831
+(config-dial-peer)# destination provision-policy <number:1..10000> <cr>    # static_slot_creation_candidates-003837
+(config-dial-peer)# destination route-string <number:1..10000> <cr>    # static_slot_creation_candidates-003811
+(config-dial-peer)# destination uri <string> <cr>    # static_slot_creation_candidates-003818
+(config-dial-peer)# destination uri-diversion <string> <cr>    # static_slot_creation_candidates-003817
+(config-dial-peer)# destination uri-from <string> <cr>    # static_slot_creation_candidates-003824
+(config-dial-peer)# destination uri-referred-by <string> <cr>    # static_slot_creation_candidates-003830
+(config-dial-peer)# destination uri-to <string> <cr>    # static_slot_creation_candidates-003836
+(config-dial-peer)# destination uri-via <string> <cr>    # static_slot_creation_candidates-003841
+(config-dial-peer)# incoming called e164-pattern-map <number:1..10000> <cr>    # static_slot_creation_candidates-003848
+(config-dial-peer)# incoming called-number <string> <cr>    # static_slot_creation_candidates-003816
+(config-dial-peer)# incoming uri request <string> <cr>    # static_slot_creation_candidates-003844
+(config-dial-peer)# no corlist incoming <cr>    # static_slot_creation_candidates-003804
+(config-dial-peer)# no corlist outgoing <cr>    # static_slot_creation_candidates-003807
+(config-dial-peer)# no destination calling e164-pattern-map <cr>    # static_slot_creation_candidates-003846
+(config-dial-peer)# no destination dpg <cr>    # static_slot_creation_candidates-003823
+(config-dial-peer)# no destination e164-pattern-map <cr>    # static_slot_creation_candidates-003829
+(config-dial-peer)# no destination provision-policy <cr>    # static_slot_creation_candidates-003835
+(config-dial-peer)# no destination route-string <cr>    # static_slot_creation_candidates-003810
+(config-dial-peer)# no destination uri <cr>    # static_slot_creation_candidates-003815
+(config-dial-peer)# no destination uri-diversion <cr>    # static_slot_creation_candidates-003814
+(config-dial-peer)# no destination uri-from <cr>    # static_slot_creation_candidates-003822
+(config-dial-peer)# no destination uri-referred-by <cr>    # static_slot_creation_candidates-003828
+(config-dial-peer)# no destination uri-to <cr>    # static_slot_creation_candidates-003834
+(config-dial-peer)# no destination uri-via <cr>    # static_slot_creation_candidates-003840
+(config-dial-peer)# no incoming called e164-pattern-map <cr>    # static_slot_creation_candidates-003845
+(config-dial-peer)# no incoming called-number <cr>    # static_slot_creation_candidates-003812
+(config-dial-peer)# no incoming uri request <cr>    # static_slot_creation_candidates-003843
+(config-dial-peer)# no permission <cr>    # static_slot_creation_candidates-003801
+(config-dial-peer)# no phone-proxy <cr>    # static_slot_creation_candidates-003799
+(config-dial-peer)# permission both <cr>    # static_slot_creation_candidates-003802
+(config-dial-peer)# phone-proxy <string> signal-addr ipv4 <address> cucm ipv4 <address> <cr>    # static_slot_creation_candidates-003852

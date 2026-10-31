@@ -1,0 +1,79 @@
+# 模式 atm-bm-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-if-atm-member)# abr <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003667
+(config-if-atm-member)# bump explicit <number:0..7> <cr>    # static_slot_creation_candidates-003656
+(config-if-atm-member)# bump implicit <cr>    # static_slot_creation_candidates-003630
+(config-if-atm-member)# bump traffic <cr>    # static_slot_creation_candidates-003626
+(config-if-atm-member)# cbr <number:dynamic> <cr>    # static_slot_creation_candidates-003663
+(config-if-atm-member)# class-vc <string> <cr>    # static_slot_creation_candidates-003604
+(config-if-atm-member)# default <cr>    # static_slot_creation_candidates-003602
+(config-if-atm-member)# default bump explicit <cr>    # static_slot_creation_candidates-003657
+(config-if-atm-member)# default bump implicit <cr>    # static_slot_creation_candidates-003650
+(config-if-atm-member)# default bump traffic <cr>    # static_slot_creation_candidates-003647
+(config-if-atm-member)# default cbr <cr>    # static_slot_creation_candidates-003622
+(config-if-atm-member)# default class-vc <string> <cr>    # static_slot_creation_candidates-003643
+(config-if-atm-member)# default inarp on <cr>    # static_slot_creation_candidates-003645
+(config-if-atm-member)# default inarp-vc <cr>    # static_slot_creation_candidates-003631
+(config-if-atm-member)# default max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003639
+(config-if-atm-member)# default multiqueue <cr>    # static_slot_creation_candidates-003611
+(config-if-atm-member)# default precedence <cr>    # static_slot_creation_candidates-003632
+(config-if-atm-member)# default protect group <cr>    # static_slot_creation_candidates-003651
+(config-if-atm-member)# default protect vc <cr>    # static_slot_creation_candidates-003653
+(config-if-atm-member)# default qos-group <cr>    # static_slot_creation_candidates-003633
+(config-if-atm-member)# default queue-depth <cr>    # static_slot_creation_candidates-003625
+(config-if-atm-member)# default rx-limit <cr>    # static_slot_creation_candidates-003614
+(config-if-atm-member)# default service-policy input <string> <cr>    # static_slot_creation_candidates-003659
+(config-if-atm-member)# default tx-limit <cr>    # static_slot_creation_candidates-003606
+(config-if-atm-member)# default tx-ring-limit <cr>    # static_slot_creation_candidates-003609
+(config-if-atm-member)# default ubr <cr>    # static_slot_creation_candidates-003615
+(config-if-atm-member)# default ubr+ <cr>    # static_slot_creation_candidates-003616
+(config-if-atm-member)# default vbr-nrt <cr>    # static_slot_creation_candidates-003618
+(config-if-atm-member)# default vbr-rt <cr>    # static_slot_creation_candidates-003620
+(config-if-atm-member)# default vc-hold-queue <cr>    # static_slot_creation_candidates-003641
+(config-if-atm-member)# inarp on <cr>    # static_slot_creation_candidates-003624
+(config-if-atm-member)# inarp-vc <cr>    # static_slot_creation_candidates-003600
+(config-if-atm-member)# max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003603
+(config-if-atm-member)# multiqueue <cr>    # static_slot_creation_candidates-003598
+(config-if-atm-member)# no <cr>    # static_slot_creation_candidates-003601
+(config-if-atm-member)# no bump explicit <cr>    # static_slot_creation_candidates-003655
+(config-if-atm-member)# no bump implicit <cr>    # static_slot_creation_candidates-003648
+(config-if-atm-member)# no bump traffic <cr>    # static_slot_creation_candidates-003646
+(config-if-atm-member)# no cbr <cr>    # static_slot_creation_candidates-003621
+(config-if-atm-member)# no class-vc <string> <cr>    # static_slot_creation_candidates-003642
+(config-if-atm-member)# no inarp on <cr>    # static_slot_creation_candidates-003644
+(config-if-atm-member)# no inarp-vc <cr>    # static_slot_creation_candidates-003627
+(config-if-atm-member)# no max-reserved-bandwidth <cr>    # static_slot_creation_candidates-003637
+(config-if-atm-member)# no multiqueue <cr>    # static_slot_creation_candidates-003608
+(config-if-atm-member)# no precedence <cr>    # static_slot_creation_candidates-003628
+(config-if-atm-member)# no protect group <cr>    # static_slot_creation_candidates-003649
+(config-if-atm-member)# no protect vc <cr>    # static_slot_creation_candidates-003652
+(config-if-atm-member)# no qos-group <cr>    # static_slot_creation_candidates-003629
+(config-if-atm-member)# no queue-depth <cr>    # static_slot_creation_candidates-003623
+(config-if-atm-member)# no rx-limit <cr>    # static_slot_creation_candidates-003610
+(config-if-atm-member)# no service-policy input <string> <cr>    # static_slot_creation_candidates-003658
+(config-if-atm-member)# no tx-limit <cr>    # static_slot_creation_candidates-003605
+(config-if-atm-member)# no tx-ring-limit <cr>    # static_slot_creation_candidates-003607
+(config-if-atm-member)# no ubr <cr>    # static_slot_creation_candidates-003612
+(config-if-atm-member)# no ubr+ <cr>    # static_slot_creation_candidates-003613
+(config-if-atm-member)# no vbr-nrt <cr>    # static_slot_creation_candidates-003617
+(config-if-atm-member)# no vbr-rt <cr>    # static_slot_creation_candidates-003619
+(config-if-atm-member)# no vc-hold-queue <cr>    # static_slot_creation_candidates-003638
+(config-if-atm-member)# precedence <number:0..7> <cr>    # static_slot_creation_candidates-003665
+(config-if-atm-member)# precedence other <cr>    # static_slot_creation_candidates-003635
+(config-if-atm-member)# protect group <cr>    # static_slot_creation_candidates-003634
+(config-if-atm-member)# protect vc <cr>    # static_slot_creation_candidates-003636
+(config-if-atm-member)# qos-group other <cr>    # static_slot_creation_candidates-003664
+(config-if-atm-member)# queue-depth <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003670
+(config-if-atm-member)# rx-limit <cr>    # static_slot_creation_candidates-003599
+(config-if-atm-member)# service-policy input <string> <cr>    # static_slot_creation_candidates-003654
+(config-if-atm-member)# tx-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003661
+(config-if-atm-member)# tx-ring-limit <cr>    # static_slot_creation_candidates-003597
+(config-if-atm-member)# tx-ring-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003660
+(config-if-atm-member)# ubr <number:dynamic> <cr>    # static_slot_creation_candidates-003662
+(config-if-atm-member)# ubr+ <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003666
+(config-if-atm-member)# vbr-nrt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003668
+(config-if-atm-member)# vbr-rt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003669
+(config-if-atm-member)# vc-hold-queue <number:5..1024> <cr>    # static_slot_creation_candidates-003640
+(config-if-atm-member)# <cr>    # static_slot_creation_candidates-003596

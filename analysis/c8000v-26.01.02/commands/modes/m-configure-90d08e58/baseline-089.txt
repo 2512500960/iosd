@@ -1,0 +1,377 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-089.md
+
+(config)# no do-exec test platform software crimson operational disable idb <cr>    # path-059088
+(config)# no do-exec test platform software crimson operational disable idb filter <cr>    # path-059731
+(config)# no do-exec test platform software crimson operational init <cr>    # path-057100
+(config)# no do-exec test platform software crimson operational init app <cr>    # path-059053
+(config)# no do-exec test platform software crimson operational init eventq <cr>    # path-059047
+(config)# no do-exec test platform software crimson operational init idb <cr>    # path-059062
+(config)# no do-exec test platform software crimson operational init idb filter <cr>    # path-059713
+(config)# no do-exec test platform software crimson operational lock acquire <cr>    # path-059081
+(config)# no do-exec test platform software crimson operational lock acquire offload <cr>    # path-059726
+(config)# no do-exec test platform software crimson operational lock release <cr>    # path-059089
+(config)# no do-exec test platform software crimson operational lock release offload <cr>    # path-059733
+(config)# no do-exec test platform software crimson operational lock status <cr>    # path-059085
+(config)# no do-exec test platform software crimson operational offload <cr>    # path-057148
+(config)# no do-exec test platform software crimson operational offload add <number:0..4294967295> <number:0..4294967295> <cr>    # path-059990
+(config)# no do-exec test platform software crimson operational offload delete <number:0..4294967295> <number:0..4294967295> <cr>    # path-059995
+(config)# no do-exec test platform software crimson operational offload register <cr>    # path-059058
+(config)# no do-exec test platform software crimson operational offload unregister <number:0..4294967295> <cr>    # path-059723
+(config)# no do-exec test platform software crimson operational offload update <number:0..4294967295> <number:0..4294967295> <cr>    # path-059992
+(config)# no do-exec test platform software crimson operational print db <cr>    # path-059065
+(config)# no do-exec test platform software crimson operational print subblock <number:0..4294967295> <cr>    # path-059722
+(config)# no do-exec test platform software crimson operational remove <number:0..4294967295> <cr>    # path-059071
+(config)# no do-exec test platform software crimson operational remove <number:0..4294967295> update <cr>    # path-059715
+(config)# no do-exec test platform software crimson operational set <number:0..4294967295> idbstate <number:0..4294967295> <cr>    # path-060000
+(config)# no do-exec test platform software crimson operational set <number:0..4294967295> linestate <number:0..4294967295> <cr>    # path-059993
+(config)# no do-exec test platform software crimson operational set <number:0..4294967295> namestring <string> <cr>    # path-059997
+(config)# no do-exec test platform software crimson operational update <number:0..4294967295> description <cr>    # path-059718
+(config)# no do-exec test platform software crimson persist restore-once disable-del <cr>    # path-059072
+(config)# no do-exec test platform software crimson persist restore-once enable-del <cr>    # path-059079
+(config)# no do-exec test platform software crimson unreferenced <string> <cr>    # path-057119
+(config)# no do-exec test platform software dbal batch deadline <number:1..30000> <number:1..30000> <cr>    # path-059636
+(config)# no do-exec test platform software dbal batch stress <number:1..4294967295> <number:1..2> <number:1..4294967295> <number:1..2> <cr>    # path-060121
+(config)# no do-exec test platform software dbal lipc create <cr>    # path-056854
+(config)# no do-exec test platform software dbal lipc destroy <cr>    # path-056869
+(config)# no do-exec test platform software dbal ripc create <cr>    # path-056868
+(config)# no do-exec test platform software dbal scenario <number:1..6> <cr>    # path-056837
+(config)# no do-exec test platform software dbal tunnel start <cr>    # path-056812
+(config)# no do-exec test platform software dbal tunnel stop <cr>    # path-056828
+(config)# no do-exec test platform software dta enable <cr>    # path-052443
+(config)# no do-exec test platform software dvlan notification off <cr>    # path-056918
+(config)# no do-exec test platform software dvlan notification on <cr>    # path-056903
+(config)# no do-exec test platform software feature-telemetry disable <cr>    # path-052569
+(config)# no do-exec test platform software feature-telemetry enable <cr>    # path-052602
+(config)# no do-exec test platform software flow-control identifiers allocate ebfc all <cr>    # path-059641
+(config)# no do-exec test platform software infrastructure bipc clear fd <number:1..4294967295> <number:1..4294967295> <cr>    # path-059983
+(config)# no do-exec test platform software infrastructure console on <cr>    # path-057082
+(config)# no do-exec test platform software infrastructure drop-debug off <cr>    # path-057019
+(config)# no do-exec test platform software infrastructure drop-debug on <cr>    # path-057029
+(config)# no do-exec test platform software infrastructure pae-cssm send_packet <cr>    # path-057037
+(config)# no do-exec test platform software infrastructure session open <number:1..4294967295> <cr>    # path-059042
+(config)# no do-exec test platform software infrastructure watchdog off <cr>    # path-057028
+(config)# no do-exec test platform software infrastructure watchdog on <cr>    # path-057040
+(config)# no do-exec test platform software inject bd <number:1..4096> <address> <address> ipv4 <cr>    # path-059957
+(config)# no do-exec test platform software inject bd-local <number:1..4096> <address> <address> ipv4 <cr>    # path-059962
+(config)# no do-exec test platform software inject bridge_vlan <number:1..4096> <address> <address> <cr>    # path-059665
+(config)# no do-exec test platform software inject bypass <cr>    # path-052173
+(config)# no do-exec test platform software inject inject-rate <number:1..10000> <cr>    # path-056893
+(config)# no do-exec test platform software inject ipv4 arp-trigger <cr>    # path-056982
+(config)# no do-exec test platform software inject ipv4 nexthop <address> <cr>    # path-058972
+(config)# no do-exec test platform software inject ipv6 nd-trigger <cr>    # path-056975
+(config)# no do-exec test platform software inject keepalive <cr>    # path-052179
+(config)# no do-exec test platform software inject off <cr>    # path-052198
+(config)# no do-exec test platform software inject pak-priority <cr>    # path-052224
+(config)# no do-exec test platform software license expire eval <number:1..259200> <cr>    # path-059045
+(config)# no do-exec test platform software license metering reachability <cr>    # path-057057
+(config)# no do-exec test platform software lsmpi tx-fail-retry enable <cr>    # path-056851
+(config)# no do-exec test platform software macsec pattern-delete name <string> <cr>    # path-059046
+(config)# no do-exec test platform software macsec pattern-name name <string> is-control yes has-vlan-tag yes has-vlan-inner-tag yes vlan-id <number:0..65535> inner-vlan-id <number:0..65535> priority <number:0..15> header <string> header-length <number:0..65535> control-frame dmac dest-mac <address> <cr>    # path-060274
+(config)# no do-exec test platform software multicast join <cr>    # path-052429
+(config)# no do-exec test platform software multicast leave <cr>    # path-052457
+(config)# no do-exec test platform software multicast shim dynamic <cr>    # path-056920
+(config)# no do-exec test platform software multicast shim notdl <cr>    # path-056931
+(config)# no do-exec test platform software multicast shim off <cr>    # path-056895
+(config)# no do-exec test platform software multicast shim on <cr>    # path-056877
+(config)# no do-exec test platform software multicast shim sticky <cr>    # path-056908
+(config)# no do-exec test platform software multicast shim tdl <cr>    # path-056945
+(config)# no do-exec test platform software multicast start <cr>    # path-052397
+(config)# no do-exec test platform software multicast status <cr>    # path-052339
+(config)# no do-exec test platform software multicast stop <cr>    # path-052485
+(config)# no do-exec test platform software peer timeout <cr>    # path-052180
+(config)# no do-exec test platform software plim qos class-map <cr>    # path-057108
+(config)# no do-exec test platform software product-analytics fast-grace-period <cr>    # path-052571
+(config)# no do-exec test platform software product-analytics sa-notify-false <cr>    # path-052517
+(config)# no do-exec test platform software product-analytics sa-notify-true <cr>    # path-052547
+(config)# no do-exec test platform software product-analytics timer <cr>    # path-052604
+(config)# no do-exec test platform software punt-keepalive ignore-fault <cr>    # path-052168
+(config)# no do-exec test platform software punt-keepalive trigger-failure <cr>    # path-052195
+(config)# no do-exec test platform software qos statistics <number:1..50000> <number:1..100000> <number:1..100> <cr>    # path-059672
+(config)# no do-exec test platform software redundancy use-vmac <cr>    # path-052355
+(config)# no do-exec test platform software rg ar_alwys_dvrt <number:0..4> <number:0..12> <cr>    # path-058976
+(config)# no do-exec test platform software rg notify bulksync <number:0..10> <number:0..10> <cr>    # path-059679
+(config)# no do-exec test platform software rg notify transport <number:0..10> <number:1..100000> <number:0..10> <cr>    # path-059973
+(config)# no do-exec test platform software rg services parameters <number:0..10> <number:0..10> <number:0..10> <number:0..1> <number:0..1> <cr>    # path-060196
+(config)# no do-exec test platform software rg tc-req <cr>    # path-052605
+(config)# no do-exec test platform software rg transport parameters <number:1..100000> <number:0..10> <address> <address> <number:0..10> <number:0..2048> <number:0..2048> <cr>    # path-060228
+(config)# no do-exec test platform software shell command handler automore disable <cr>    # path-059697
+(config)# no do-exec test platform software shell command handler automore manual <cr>    # path-059694
+(config)# no do-exec test platform software shell command handler basic <cr>    # path-059024
+(config)# no do-exec test platform software shell command handler null <cr>    # path-059033
+(config)# no do-exec test platform software shell command handler output redirect <cr>    # path-059688
+(config)# no do-exec test platform software shell command handler space <cr>    # path-059038
+(config)# no do-exec test platform software shell command set delete <cr>    # path-059012
+(config)# no do-exec test platform software shell command set load <cr>    # path-059003
+(config)# no do-exec test platform software stdout log running-config enable <cr>    # path-058896
+(config)# no do-exec test platform software tdl ping rp <cr>    # path-056887
+(config)# no do-exec test platform software tdl ping rp stats <cr>    # path-058925
+(config)# no do-exec test platform software tdl ping rp stats clear <cr>    # path-059635
+(config)# no do-exec test platform software timestamp-engine oam y1731 default disable all <cr>    # path-059975
+(config)# no do-exec test platform software timestamp-engine oam y1731 default enable all <cr>    # path-059972
+(config)# no do-exec test platform software uidp batch-count <number:0..1000> <cr>    # path-057060
+(config)# no do-exec test platform software uidp binding clear <cr>    # path-057052
+(config)# no do-exec test platform software uidp binding ip-user add <address> <number:0..4294967295> <string> <cr>    # path-060140
+(config)# no do-exec test platform software uidp binding ip-user delete <address> <number:0..4294967295> <string> <cr>    # path-060142
+(config)# no do-exec test platform software uidp binding user-usergroup add <string> <cr>    # path-059702
+(config)# no do-exec test platform software uidp binding user-usergroup delete <string> <cr>    # path-059706
+(config)# no do-exec test platform software uidp dwnld-timer <number:100..2000> <cr>    # path-057070
+(config)# no do-exec test platform software uidp user <string> <cr>    # path-057036
+(config)# no do-exec test platform software uidp user-group <string> <cr>    # path-057048
+(config)# no do-exec test platform software usb slot <number:1..4294967295> usbflash0 fake-remove <cr>    # path-059712
+(config)# no do-exec test pm <string> <cr>    # path-039845
+(config)# no do-exec test policy-manager appl-event create <cr>    # path-048072
+(config)# no do-exec test policy-manager wd-timer-event create <cr>    # path-048118
+(config)# no do-exec test pppatm subscriber delay <number:0..30000> <number:0..30000> <number:0..30000> <number:0..30000> <number:0..30000> <number:0..30000> <cr>    # path-060173
+(config)# no do-exec test pppoe <cr>    # path-031046
+(config)# no do-exec test pppoe init-session-num <number:1..65535> <cr>    # path-047071
+(config)# no do-exec test pppoe session <number:1..20000> autogrant <cr>    # path-054355
+(config)# no do-exec test pppoe session <number:1..20000> autogrant on <cr>    # path-057959
+(config)# no do-exec test pppoe session <number:1..20000> grant-threshold <number:0..65534> <cr>    # path-057977
+(config)# no do-exec test pppoe session <number:1..20000> headDropping <cr>    # path-054331
+(config)# no do-exec test pppoe session <number:1..20000> headDropping on <cr>    # path-057942
+(config)# no do-exec test pppoe session <number:1..20000> inband-credits <cr>    # path-054342
+(config)# no do-exec test pppoe session <number:1..20000> inband-credits on <cr>    # path-057952
+(config)# no do-exec test pppoe session <number:1..20000> local-credits <number:0..65535> <cr>    # path-057994
+(config)# no do-exec test pppoe session <number:1..20000> max-grant <number:0..65535> <cr>    # path-057969
+(config)# no do-exec test pppoe session <number:1..20000> padg <number:1..65535> <cr>    # path-057981
+(config)# no do-exec test pppoe session <number:1..20000> padg off <cr>    # path-057972
+(config)# no do-exec test pppoe session <number:1..20000> padg on <cr>    # path-057965
+(config)# no do-exec test pppoe session <number:1..20000> padq receive-only <cr>    # path-058065
+(config)# no do-exec test pppoe session <number:1..20000> peer-credits <number:0..65535> <cr>    # path-057986
+(config)# no do-exec test process create <number:1..5000> <number:1..10000> <number:1..5000> <cr>    # path-056785
+(config)# no do-exec test process kill <number:1..4294967295> <cr>    # path-044085
+(config)# no do-exec test rfd <cr>    # path-031503
+(config)# no do-exec test rib application create <string> <cr>    # path-054087
+(config)# no do-exec test rib application delete <number:0..65535> <cr>    # path-054060
+(config)# no do-exec test rib client create <string> <cr>    # path-053971
+(config)# no do-exec test rib client delete <number:1..2147483647> <cr>    # path-053834
+(config)# no do-exec test rib firsthop <address> <number:0..65535> <cr>    # path-054120
+(config)# no do-exec test rib route show <number:1..2147483647> <cr>    # path-053984
+(config)# no do-exec test rib table set forwarding-base <cr>    # path-054024
+(config)# no do-exec test rib ut <cr>    # path-037207
+(config)# no do-exec test rmi create user-type <string> <cr>    # path-054696
+(config)# no do-exec test rmi entphyind <cr>    # path-039414
+(config)# no do-exec test rmon hc-alarms <number:1..65535> Low32bitvalue <number:0..4294967295> High32bitvalue <number:0..4294967295> <cr>    # path-059865
+(config)# no do-exec test rsvp metadata forward <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-060065
+(config)# no do-exec test rsvp nsr disable <cr>    # path-046885
+(config)# no do-exec test rsvp nsr enable <cr>    # path-046857
+(config)# no do-exec test rsvp nsr incr <cr>    # path-046828
+(config)# no do-exec test rsvp nsr start <cr>    # path-046793
+(config)# no do-exec test rsvp transport send path <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..65535> <address> <number:1..65535> data <string> <cr>    # path-060249
+(config)# no do-exec test rtty <number:0..4294967295> <string> <cr>    # path-048823
+(config)# no do-exec test rtty statistics disable <cr>    # path-048976
+(config)# no do-exec test rtty statistics enable <cr>    # path-048893
+(config)# no do-exec test rtty statistics print <cr>    # path-049043
+(config)# no do-exec test sasl client ip <address> port <number:0..65535> <cr>    # path-059487
+(config)# no do-exec test sasl client ip <address> port <number:0..65535> profile <string> <cr>    # path-060094
+(config)# no do-exec test sasl server port <number:0..65535> <cr>    # path-055349
+(config)# no do-exec test sasl server port <number:0..65535> profile <string> <cr>    # path-059483
+(config)# no do-exec test sasl server stop <cr>    # path-049120
+(config)# no do-exec test save snapshot <cr>    # path-034246
+(config)# no do-exec test scheduler trash edisms <cr>    # path-046475
+(config)# no do-exec test scheduler watched-message <cr>    # path-035524
+(config)# no do-exec test sctp association create <cr>    # path-046411
+(config)# no do-exec test sctp delete <cr>    # path-037027
+(config)# no do-exec test sctp instance create <cr>    # path-046350
+(config)# no do-exec test sctp instance delete <number:1..65535> <cr>    # path-053732
+(config)# no do-exec test sctp parameters burstsize <number:1..1024> <cr>    # path-053988
+(config)# no do-exec test sctp parameters congabate <number:1..3> <number:0..65535> <cr>    # path-057916
+(config)# no do-exec test sctp parameters conglevels <number:0..3> <cr>    # path-054199
+(config)# no do-exec test sctp parameters congonset <number:1..3> <number:0..65535> <cr>    # path-057906
+(config)# no do-exec test sctp parameters delay <number:0..60000> <cr>    # path-054030
+(config)# no do-exec test sctp parameters display <cr>    # path-046999
+(config)# no do-exec test sctp parameters fixedparams <number:0..1> <cr>    # path-053804
+(config)# no do-exec test sctp parameters hbenabled <number:0..1> <cr>    # path-054065
+(config)# no do-exec test sctp parameters hbtimeout <number:0..600000> <cr>    # path-054090
+(config)# no do-exec test sctp parameters instreams <number:1..1024> <cr>    # path-053697
+(config)# no do-exec test sctp parameters maxRTO <number:300..65535> <cr>    # path-054154
+(config)# no do-exec test sctp parameters maxoutstand <number:0..1024> <cr>    # path-053939
+(config)# no do-exec test sctp parameters maxpackets <number:0..65535> <cr>    # path-053891
+(config)# no do-exec test sctp parameters maxpdusize <number:4..10000> <cr>    # path-053768
+(config)# no do-exec test sctp parameters minRTO <number:300..65535> <cr>    # path-054133
+(config)# no do-exec test sctp parameters outstreams <number:1..1024> <cr>    # path-053661
+(config)# no do-exec test sctp parameters pdusize <number:4..10000> <cr>    # path-053734
+(config)# no do-exec test sctp parameters rcvwin <number:1500..65535> <cr>    # path-054180
+(config)# no do-exec test sctp parameters testtype <number:0..1> <cr>    # path-054111
+(config)# no do-exec test sctp parameters usealladdrs <number:0..1> <cr>    # path-053844
+(config)# no do-exec test sdb add <string> <cr>    # path-047941
+(config)# no do-exec test sdb remove <string> <cr>    # path-047989
+(config)# no do-exec test sdb search <string> <cr>    # path-048032
+(config)# no do-exec test service-overlay application register <cr>    # path-046577
+(config)# no do-exec test service-routing api debug <number:0..4294967295> <number:0..4294967295> <cr>    # path-057945
+(config)# no do-exec test service-routing api publish-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <number:1..4294967295> <number:0..32768> <cr>    # path-060269
+(config)# no do-exec test service-routing api register-client <number:0..4294967295> <cr>    # path-054252
+(config)# no do-exec test service-routing api register-client <number:0..4294967295> <string> <cr>    # path-057914
+(config)# no do-exec test service-routing api subscribe-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <number:0..255> <cr>    # path-060265
+(config)# no do-exec test service-routing api unpublish-service <number:1..4294967295> <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060258
+(config)# no do-exec test service-routing api unregister-client <number:1..4294967295> <cr>    # path-054245
+(config)# no do-exec test service-routing api unsubscribe-service <number:1..4294967295> <number:1..4294967295> <cr>    # path-057938
+(config)# no do-exec test service-routing api version <cr>    # path-046941
+(config)# no do-exec test service-routing capabilities-manager api register <string> <string> <string> <cr>    # path-059841
+(config)# no do-exec test service-routing capabilities-manager api unregister <string> <string> <cr>    # path-059312
+(config)# no do-exec test service-routing capabilities-manager api version <cr>    # path-054222
+(config)# no do-exec test service-routing xmcp client <number:0..4294967295> error-response <number:100..699> <cr>    # path-059311
+(config)# no do-exec test session-mgr acct-stats start <cr>    # path-046482
+(config)# no do-exec test session-mgr cga-remote-auth authc <number:1..4294967295> <cr>    # path-053880
+(config)# no do-exec test session-mgr crimson table mab create <cr>    # path-057794
+(config)# no do-exec test session-mgr event send async start handle <number:1..4294967295> <cr>    # path-059794
+(config)# no do-exec test session-mgr fqdn-epm-notify <number:1..4294967295> <address> <cr>    # path-053981
+(config)# no do-exec test session-mgr green create <cr>    # path-046784
+(config)# no do-exec test session-mgr identity mac <address> add ip <address> <cr>    # path-059834
+(config)# no do-exec test session-mgr sm-client register <cr>    # path-046430
+(config)# no do-exec test session-mgr test-vlan <string> <number:1..4095> <number:1..4> <number:1..1000> <cr>    # path-059263
+(config)# no do-exec test snmp cpu-stats start <cr>    # path-046171
+(config)# no do-exec test snmp trap config-copy <cr>    # path-046513
+(config)# no do-exec test ssm asynchronous throttling print <cr>    # path-053150
+(config)# no do-exec test ssm counters enable <cr>    # path-045335
+(config)# no do-exec test ssm fcdb nosupport <number:1..25> <number:0..2> <cr>    # path-057200
+(config)# no do-exec test ssm feature status <cr>    # path-045681
+(config)# no do-exec test ssm repop <number:1..14> <number:0..2> <cr>    # path-052934
+(config)# no do-exec test ssm segment lock <number:1..4294967295> <cr>    # path-053071
+(config)# no do-exec test ssm segment support enable <number:1..41> <cr>    # path-057224
+(config)# no do-exec test subscriber feature accounting accuracy throttling print <cr>    # path-059130
+(config)# no do-exec test subscriber feature timer acceleration enable <cr>    # path-057315
+(config)# no do-exec test subscriber policy account-logon session <number:0..4294967295> <cr>    # path-057503
+(config)# no do-exec test subscriber policy condition-map <string> <string> <cr>    # path-057362
+(config)# no do-exec test subscriber policy dummy <cr>    # path-045874
+(config)# no do-exec test subscriber policy epd accounting-req start session-guid <string> epd-flow-id <number:0..32> epd-ipaddress <address> <cr>    # path-060216
+(config)# no do-exec test subscriber policy epd conn_mgmt-query version <string> command <string> peer-ip <address> keepalive <number:0..3600> <cr>    # path-060231
+(config)# no do-exec test subscriber policy epd conn_mgmt-ses-test <number:1..2> <number:0..30> <string> <cr>    # path-059779
+(config)# no do-exec test subscriber policy epd handler coa-request epd-ipaddress <address> attr-list <string> <cr>    # path-060161
+(config)# no do-exec test subscriber policy epd handler disconnect-request epd-ipaddress <address> attr-list <string> <cr>    # path-060163
+(config)# no do-exec test subscriber policy epd handler stop <cr>    # path-057494
+(config)# no do-exec test subscriber policy epd session-mgmt-req activate-policy-req session-handle <number:0..4294967295> <cr>    # path-059768
+(config)# no do-exec test subscriber policy epd session-query-req session-ipaddress <address> epd-ipaddress <address> <cr>    # path-060022
+(config)# no do-exec test subscriber policy epd session-terminate-req session-handle <number:0..4294967295> <cr>    # path-059147
+(config)# no do-exec test subscriber policy insert circuit-id <string> <cr>    # path-057593
+(config)# no do-exec test subscriber policy mlplink-added session <number:0..4294967295> <cr>    # path-057441
+(config)# no do-exec test subscriber policy policy-client session <number:0..4294967295> client Radius-Proxy event start <cr>    # path-060158
+(config)# no do-exec test subscriber policy send-session-log session <number:0..4294967295> <cr>    # path-057563
+(config)# no do-exec test subscriber policy service-profile-download <string> <cr>    # path-053244
+(config)# no do-exec test subscriber policy service-start session <number:0..4294967295> name <string> <cr>    # path-059792
+(config)# no do-exec test subscriber policy service-stop session <number:0..4294967295> name <string> <cr>    # path-059788
+(config)# no do-exec test subscriber policy session-deactivated session <number:0..4294967295> <cr>    # path-057482
+(config)# no do-exec test subscriber policy tcsession-req <cr>    # path-045926
+(config)# no do-exec test subscriber policy update session <number:0..4294967295> attr-list <string> <cr>    # path-059797
+(config)# no do-exec test sw-vlan show data <cr>    # path-045782
+(config)# no do-exec test system secure db <cr>    # path-047325
+(config)# no do-exec test tcp delay <number:0..2147483647> <cr>    # path-030192
+(config)# no do-exec test tcp drop <number:0..2147483647> <cr>    # path-030154
+(config)# no do-exec test tcp line <number:0..2147483647> <cr>    # path-030235
+(config)# no do-exec test tcp random <number:0..2147483647> <cr>    # path-030271
+(config)# no do-exec test template scope global <string> bind dynamic <cr>    # path-059348
+(config)# no do-exec test template scope global <string> unbind dynamic <cr>    # path-059352
+(config)# no do-exec test template scope interface <string> bind static merge interface-global <cr>    # path-060069
+(config)# no do-exec test template scope interface <string> bind static replace interface-global <cr>    # path-060072
+(config)# no do-exec test template scope interface <string> unbind static interface-global <cr>    # path-059856
+(config)# no do-exec test template scope interface nvgen interface-global <cr>    # path-058000
+(config)# no do-exec test tenant-mgr disable-cfg <cr>    # path-037751
+(config)# no do-exec test tenant-mgr enable-cfg <cr>    # path-037706
+(config)# no do-exec test timer-wheel process create <cr>    # path-045047
+(config)# no do-exec test topology clients <cr>    # path-035717
+(config)# no do-exec test topology create ipv6 <cr>    # path-045597
+(config)# no do-exec test topology delete ipv6 <cr>    # path-045537
+(config)# no do-exec test topology lookup ipv6 <cr>    # path-045478
+(config)# no do-exec test topology walk <cr>    # path-035917
+(config)# no do-exec test track map name <string> create <cr>    # path-057225
+(config)# no do-exec test track map name <string> del <cr>    # path-057286
+(config)# no do-exec test track map name <string> get <cr>    # path-057259
+(config)# no do-exec test track map num <number:1..32767> del <cr>    # path-057282
+(config)# no do-exec test track map num <number:1..32767> get <cr>    # path-057247
+(config)# no do-exec test track service <string> up <cr>    # path-052964
+(config)# no do-exec test track white-box <cr>    # path-035627
+(config)# no do-exec test tunnel Groups wccp <number:0..9> add <cr>    # path-057741
+(config)# no do-exec test tunnel Groups wccp <number:0..9> add ipv4 V1 <cr>    # path-059813
+(config)# no do-exec test tunnel Groups wccp <number:0..9> clear <cr>    # path-057826
+(config)# no do-exec test tunnel Groups wccp <number:0..9> delete <cr>    # path-057694
+(config)# no do-exec test tunnel Groups wccp <number:0..9> df-bit set <cr>    # path-059282
+(config)# no do-exec test tunnel Groups wccp <number:0..9> endpoint <address> add <cr>    # path-059821
+(config)# no do-exec test tunnel Groups wccp <number:0..9> endpoint <address> delete <cr>    # path-059827
+(config)# no do-exec test tunnel Groups wccp <number:0..9> source <address> <cr>    # path-059256
+(config)# no do-exec test tunnel Groups wccp <number:0..9> unsource <cr>    # path-057699
+(config)# no do-exec test tunnel tos enable <cr>    # path-046123
+(config)# no do-exec test tunnel tun-to <number:0..9> add transport ipv4 none <cr>    # path-059811
+(config)# no do-exec test tunnel tun-to <number:0..9> delete <cr>    # path-053740
+(config)# no do-exec test tunnel tun-to <number:0..9> display <number:0..160> <cr>    # path-057776
+(config)# no do-exec test tunnel tun-to <number:0..9> endpoint <address> add <cr>    # path-059245
+(config)# no do-exec test tunnel tun-to <number:0..9> endpoint <address> delete <cr>    # path-059260
+(config)# no do-exec test tunnel tun-to <number:0..9> feature enable post-encap <cr>    # path-059275
+(config)# no do-exec test tunnel tun-to <number:0..9> feature enable pre-decap <cr>    # path-059285
+(config)# no do-exec test tunnel tun-to <number:0..9> gre key disable <cr>    # path-059252
+(config)# no do-exec test tunnel tun-to <number:0..9> payload ipv4 enable <cr>    # path-059240
+(config)# no do-exec test tunnel tun-to <number:0..9> payload ipv4 mtu default <cr>    # path-059816
+(config)# no do-exec test tunnel tun-to <number:0..9> source <address> <cr>    # path-057635
+(config)# no do-exec test uninstall <string> <cr>    # path-039993
+(config)# no do-exec test vrrs client add <number:1..31> <string> <cr>    # path-057203
+(config)# no do-exec test vrrs client register <number:1..31> <cr>    # path-053025
+(config)# no do-exec test vrrs client remove <number:1..31> <string> <cr>    # path-057229
+(config)# no do-exec test vrrs client unregister <number:1..31> <cr>    # path-052966
+(config)# no do-exec test vrrs pathway name <string> disconnect <cr>    # path-057393
+(config)# no do-exec test vrrs plugin server <cr>    # path-043985
+(config)# no do-exec test vrrs server add <string> vip <address> <cr>    # path-059120
+(config)# no do-exec test vrrs server delete <string> <cr>    # path-053033
+(config)# no do-exec test vrrs server update <string> <cr>    # path-053178
+(config)# no do-exec test wccp ip web-cache assignment hash <cr>    # path-057431
+(config)# no do-exec test wccp ip web-cache capabilities <cr>    # path-053477
+(config)# no do-exec test wccp ip web-cache service <number:0..255> <number:0..255> <number:0..4294967295> <cr>    # path-059764
+(config)# no do-exec test wsma history <cr>    # path-039389
+(config)# no do-exec test wsma listener <string> <cr>    # path-048473
+(config)# no do-exec test wsma max-priv-enforcement <number:0..1> <cr>    # path-048529
+(config)# no do-exec test wsma summary <cr>    # path-039456
+(config)# no do-exec test x25 dbit <number:0..1000> <cr>    # path-045334
+(config)# no do-exec test xdr create-stream <number:1..20> <cr>    # path-046321
+(config)# no do-exec test xdr destroy-stream <number:1..20> <cr>    # path-046280
+(config)# no do-exec test xdr disable <cr>    # path-036535
+(config)# no do-exec test xdr enable <cr>    # path-036536
+(config)# no do-exec test xdr fragment <number:1..1000000> to_slots High-queue <cr>    # path-057815
+(config)# no do-exec test xdr ping to_linecards <number:0..2147483647> High-queue <cr>    # path-057580
+(config)# no do-exec test xdr push start <cr>    # path-046433
+(config)# no do-exec test xdr push stream <number:1..20> count <number:0..200000> to_linecards <number:0..2147483647> High-queue <cr>    # path-060171
+(config)# no do-exec test xdr show-streams <cr>    # path-036978
+(config)# no do-exec test xdr split allow <cr>    # path-046246
+(config)# no do-exec test xdr state-change IPC_START_SENDING <cr>    # path-046645
+(config)# no do-exec test xdr statistics client test-stats-1 create <number:1..1000000> <number:1..6000> <cr>    # path-059798
+(config)# no do-exec test xdr statistics client test-stats-1 req-stats <cr>    # path-057648
+(config)# no do-exec test xdr statistics client test-stats-1 show <cr>    # path-057677
+(config)# no do-exec test xdr statistics client test-stats-1 show <cr>    # path-057711
+(config)# no do-exec test xdr statistics selftest <number:0..64> <cr>    # path-053761
+(config)# no do-exec test xtf-policy-shim <cr>    # path-031726
+(config)# no do-exec traceroute <cr>    # path-026678
+(config)# no do-exec traceroute ethernet <address> domain <string> port <cr>    # path-057042
+(config)# no do-exec trigger <string> <cr>    # path-027829
+(config)# no do-exec tunnel <string> <cr>    # path-029040
+(config)# no do-exec unprofile all <cr>    # path-027928
+(config)# no do-exec unprofile task <cr>    # path-027916
+(config)# no do-exec virtual-service clear name <string> aux <cr>    # path-054309
+(config)# no do-exec virtual-service clear statistics CPU <cr>    # path-047130
+(config)# no do-exec virtual-service connect name <string> aux <cr>    # path-054284
+(config)# no do-exec virtual-service throttle clear <cr>    # path-037879
+(config)# no do-exec virtual-service throttle disable <cr>    # path-037840
+(config)# no do-exec virtual-service throttle enable <cr>    # path-037785
+(config)# no do-exec virtual-service uninstall name <string> <cr>    # path-047063
+(config)# no do-exec vtp password <cr>    # path-029392
+(config)# no do-exec vtp primary <cr>    # path-029457
+(config)# no do-exec vtp primary force <cr>    # path-035522
+(config)# no do-exec vtp pruning <cr>    # path-029426
+(config)# no do-exec vtp version <cr>    # path-029444
+(config)# no do-exec where <cr>    # path-026391
+(config)# no do-exec which-route <address> <cr>    # path-029630
+(config)# no do-exec who <cr>    # path-026512
+(config)# no do-exec write <cr>    # path-026677
+(config)# no do-exec write erase <cr>    # path-028469
+(config)# no do-exec write memory <cr>    # path-028534
+(config)# no do-exec write mib-data <cr>    # path-028522
+(config)# no do-exec write network <cr>    # path-028596
+(config)# no do-exec write terminal <cr>    # path-028582
+(config)# no dot1x auth-fail eapol <cr>    # path-030947
+(config)# no dot1x credentials <string> <cr>    # path-031003
+(config)# no dot1x critical eapol <cr>    # path-031096
+(config)# no dot1x critical eapol block <cr>    # path-038078
+(config)# no dot1x critical recovery delay <cr>    # path-038148
+(config)# no dot1x eapol version <number:2..3> <cr>    # path-037794
+(config)# no dot1x guest-vlan supplicant <cr>    # path-031016
+(config)# no dot1x logging verbose <cr>    # path-030950
+(config)# no dot1x supplicant controlled <cr>    # path-031095
+(config)# no dot1x supplicant force-multicast <cr>    # path-031049

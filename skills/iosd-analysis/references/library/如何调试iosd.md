@@ -519,7 +519,7 @@ python -X utf8 tools/check_skill_release.py
 python -X utf8 tools/check_tutorial_assets.py --bundle
 ```
 
-构建产物在 `dist/iosd-analysis-skill-0.4.0.zip`，生成来源与 SHA256 记录在 skill 的 `build-manifest.json`。主入口及核心使用 Python 标准库；部分 HTML 文档工具需要 `pip install -r requirements-docs.txt`。
+构建产物在 `dist/iosd-analysis-skill-0.4.1.zip`，生成来源与 SHA256 记录在 skill 的 `build-manifest.json`。主入口及核心使用 Python 标准库；部分 HTML 文档工具需要 `pip install -r requirements-docs.txt`。
 
 解析代码发生变化时，运行相应单元测试；完整测试入口为 `python -m unittest discover -s tests -q`。
 

@@ -1,0 +1,15 @@
+# 模式 fr-pw；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-fr-pw-switching)# default mpls l2transport route <cr>    # static_slot_creation_candidates-004494
+(config-fr-pw-switching)# default mtu <cr>    # static_slot_creation_candidates-004491
+(config-fr-pw-switching)# default xconnect <cr>    # static_slot_creation_candidates-004489
+(config-fr-pw-switching)# mpls l2transport route <address> <number:1..4294967295> <cr>    # static_slot_creation_candidates-004495
+(config-fr-pw-switching)# mtu <number:dynamic> <cr>    # static_slot_creation_candidates-004497
+(config-fr-pw-switching)# no mpls l2transport route <cr>    # static_slot_creation_candidates-004493
+(config-fr-pw-switching)# no mtu <cr>    # static_slot_creation_candidates-004490
+(config-fr-pw-switching)# no xconnect <cr>    # static_slot_creation_candidates-004488
+(config-fr-pw-switching)# pseudowire <address> <number:1..4294967295> encapsulation mpls <cr>    # static_slot_creation_candidates-004498
+(config-fr-pw-switching)# pseudowire <address> <number:1..4294967295> pw-class <string> <cr>    # static_slot_creation_candidates-004496
+(config-fr-pw-switching)# xconnect vfi <string> <cr>    # static_slot_creation_candidates-004492

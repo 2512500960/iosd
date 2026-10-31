@@ -1,0 +1,11 @@
+# 模式 accept-dialout；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vpdn-acc-out)# default dialer <cr>    # observed_connections-009626
+(config-vpdn-acc-out)# default protocol <cr>    # observed_connections-009623
+(config-vpdn-acc-out)# dialer <number:0..255> <cr>    # observed_connections-009625
+(config-vpdn-acc-out)# exit <cr>    # observed_connections-009620
+(config-vpdn-acc-out)# no dialer <cr>    # observed_connections-009624
+(config-vpdn-acc-out)# no protocol <cr>    # observed_connections-009621
+(config-vpdn-acc-out)# protocol l2tp <cr>    # observed_connections-009622

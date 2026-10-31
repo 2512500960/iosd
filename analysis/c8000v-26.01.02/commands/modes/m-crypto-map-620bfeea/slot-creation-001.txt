@@ -1,0 +1,46 @@
+# 模式 crypto-map；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-crypto-map)# default set group <cr>    # static_slot_creation_candidates-003889
+(config-crypto-map)# default set identity <cr>    # static_slot_creation_candidates-003898
+(config-crypto-map)# default set ikev2-profile <string> <cr>    # static_slot_creation_candidates-003920
+(config-crypto-map)# default set isakmp-profile <cr>    # static_slot_creation_candidates-003907
+(config-crypto-map)# default set mixed-mode <cr>    # static_slot_creation_candidates-003904
+(config-crypto-map)# default set pfs <cr>    # static_slot_creation_candidates-003899
+(config-crypto-map)# default set reverse-route <cr>    # static_slot_creation_candidates-003902
+(config-crypto-map)# default set security-association dfbit <cr>    # static_slot_creation_candidates-003913
+(config-crypto-map)# default set security-association level <cr>    # static_slot_creation_candidates-003914
+(config-crypto-map)# default set security-policy limit <cr>    # static_slot_creation_candidates-003916
+(config-crypto-map)# default set session-key inbound ah <cr>    # static_slot_creation_candidates-003924
+(config-crypto-map)# default set transform-set <cr>    # static_slot_creation_candidates-003893
+(config-crypto-map)# default set udp-encap <cr>    # static_slot_creation_candidates-003891
+(config-crypto-map)# no set group <cr>    # static_slot_creation_candidates-003887
+(config-crypto-map)# no set identity <cr>    # static_slot_creation_candidates-003894
+(config-crypto-map)# no set ikev2-profile <string> <cr>    # static_slot_creation_candidates-003918
+(config-crypto-map)# no set isakmp-profile <cr>    # static_slot_creation_candidates-003905
+(config-crypto-map)# no set mixed-mode <cr>    # static_slot_creation_candidates-003901
+(config-crypto-map)# no set pfs <cr>    # static_slot_creation_candidates-003895
+(config-crypto-map)# no set reverse-route <cr>    # static_slot_creation_candidates-003900
+(config-crypto-map)# no set security-association dfbit <cr>    # static_slot_creation_candidates-003908
+(config-crypto-map)# no set security-association level <cr>    # static_slot_creation_candidates-003909
+(config-crypto-map)# no set security-policy limit <cr>    # static_slot_creation_candidates-003912
+(config-crypto-map)# no set session-key inbound ah <cr>    # static_slot_creation_candidates-003923
+(config-crypto-map)# no set transform-set <cr>    # static_slot_creation_candidates-003892
+(config-crypto-map)# no set udp-encap <cr>    # static_slot_creation_candidates-003890
+(config-crypto-map)# set group <string> <cr>    # static_slot_creation_candidates-003888
+(config-crypto-map)# set identity <string> <cr>    # static_slot_creation_candidates-003896
+(config-crypto-map)# set ikev2-profile <string> <cr>    # static_slot_creation_candidates-003903
+(config-crypto-map)# set isakmp-profile <string> <cr>    # static_slot_creation_candidates-003906
+(config-crypto-map)# set mixed-mode <cr>    # static_slot_creation_candidates-003886
+(config-crypto-map)# set pfs group14 <cr>    # static_slot_creation_candidates-003926
+(config-crypto-map)# set reverse-route distance <number:1..255> <cr>    # static_slot_creation_candidates-003919
+(config-crypto-map)# set reverse-route gateway <address> <cr>    # static_slot_creation_candidates-003921
+(config-crypto-map)# set reverse-route gateway <address> <cr>    # static_slot_creation_candidates-003922
+(config-crypto-map)# set reverse-route tag <number:1..4294967295> <cr>    # static_slot_creation_candidates-003917
+(config-crypto-map)# set security-association dfbit copy <cr>    # static_slot_creation_candidates-003910
+(config-crypto-map)# set security-association level per-host <cr>    # static_slot_creation_candidates-003911
+(config-crypto-map)# set security-policy limit <number:0..50000> <cr>    # static_slot_creation_candidates-003915
+(config-crypto-map)# set session-key inbound ah <number:256..4294967295> <cr>    # static_slot_creation_candidates-003925
+(config-crypto-map)# set transform-set <string> <cr>    # static_slot_creation_candidates-003897
+(config-crypto-map)# set udp-encap <cr>    # static_slot_creation_candidates-003885

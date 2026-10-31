@@ -1,0 +1,11 @@
+# 模式 ecfm_ll_efp；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-srv-ecfm-ll)# controller discover-interval <number:1..10> <cr>    # observed_connections-009524
+(config-if-srv-ecfm-ll)# default controller discover-interval <cr>    # observed_connections-009525
+(config-if-srv-ecfm-ll)# default responder <cr>    # observed_connections-009522
+(config-if-srv-ecfm-ll)# exit <cr>    # observed_connections-009519
+(config-if-srv-ecfm-ll)# no controller discover-interval <cr>    # observed_connections-009523
+(config-if-srv-ecfm-ll)# no responder <cr>    # observed_connections-009521
+(config-if-srv-ecfm-ll)# responder <cr>    # observed_connections-009520

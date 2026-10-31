@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-093.md
+
+(config)# no radius-server attribute 44 sync-with-client <cr>    # path-036308
+(config)# no radius-server attribute 55 access-request include <cr>    # path-045836
+(config)# no radius-server attribute 55 include-in-acct-req <cr>    # path-036349
+(config)# no radius-server attribute 6 mandatory <cr>    # path-036172
+(config)# no radius-server attribute 6 on-for-login-auth <cr>    # path-035923
+(config)# no radius-server attribute 6 support-multiple <cr>    # path-036010
+(config)# no radius-server attribute 6 voice 1 <cr>    # path-045547
+(config)# no radius-server attribute 60 include-in-access-req <cr>    # path-036074
+(config)# no radius-server attribute 61 extended <cr>    # path-036579
+(config)# no radius-server attribute 66 include-in-access-req <cr>    # path-036990
+(config)# no radius-server attribute 67 include-in-access-req <cr>    # path-036412
+(config)# no radius-server attribute 69 clear <cr>    # path-036221
+(config)# no radius-server attribute 77 include-in-acct-req <cr>    # path-036149
+(config)# no radius-server attribute 8 include-in-access-req <cr>    # path-036075
+(config)# no radius-server attribute 91 ignore <cr>    # path-036467
+(config)# no radius-server attribute 95 <cr>    # path-030442
+(config)# no radius-server attribute list <string> <cr>    # path-036680
+(config)# no radius-server attribute nas-port format a <cr>    # path-046054
+(config)# no radius-server attribute nas-port-id include <cr>    # path-036937
+(config)# no radius-server attribute policy-name <string> include-in-access-req <cr>    # path-045658
+(config)# no radius-server attribute wireless 44 extend-with-mac-addr <cr>    # path-046540
+(config)# no radius-server attribute wireless 44 include-in-access-req <cr>    # path-046479
+(config)# no radius-server attribute wireless accounting call-station-id ap-ethmac-only <cr>    # path-053954
+(config)# no radius-server attribute wireless accounting callStationIdCase lower <cr>    # path-053995
+(config)# no radius-server attribute wireless accounting mac-delimiter colon <cr>    # path-053808
+(config)# no radius-server attribute wireless accounting nas-port-id exclude <cr>    # path-054037
+(config)# no radius-server attribute wireless accounting username-case lower <cr>    # path-053903
+(config)# no radius-server attribute wireless accounting username-delimiter colon <cr>    # path-053850
+(config)# no radius-server attribute wireless authentication call-station-id ap-ethmac-only <cr>    # path-053950
+(config)# no radius-server attribute wireless authentication callStationIdCase lower <cr>    # path-053849
+(config)# no radius-server attribute wireless authentication mac-delimiter colon <cr>    # path-053900
+(config)# no radius-server attribute wireless location civic-location-id <string> <cr>    # path-053943
+(config)# no radius-server attribute wireless location delivery <cr>    # path-046786
+(config)# no radius-server attribute wireless location geo-location-id <string> <cr>    # path-053992
+(config)# no radius-server attribute wireless location operator-id <string> <cr>    # path-054034
+(config)# no radius-server authorization permit missing Service-Type <cr>    # path-046210
+(config)# no radius-server backoff exponential <cr>    # path-030266
+(config)# no radius-server cache authentication profile <string> <cr>    # path-045793
+(config)# no radius-server cache authorization profile <string> <cr>    # path-045852
+(config)# no radius-server cache expiry <number:0..2147483647> <cr>    # path-036715
+(config)# no radius-server challenge-noecho <cr>    # path-027255
+(config)# no radius-server configure-nas <cr>    # path-027193
+(config)# no radius-server dead-criteria <cr>    # path-027116
+(config)# no radius-server deadtime <cr>    # path-025845
+(config)# no radius-server directed-request <cr>    # path-027225
+(config)# no radius-server disallow unknown vendor-code <cr>    # path-036672
+(config)# no radius-server domain-stripping <cr>    # path-027291
+(config)# no radius-server dscp acct <number:1..63> <cr>    # path-036575
+(config)# no radius-server ipc-limit done <cr>    # path-027240
+(config)# no radius-server ipc-limit in <cr>    # path-027217
+(config)# no radius-server load-balance <cr>    # path-027276
+(config)# no radius-server optional-passwords <cr>    # path-027202
+(config)# no radius-server retransmit <cr>    # path-025903
+(config)# no radius-server retry method <cr>    # path-030197
+(config)# no radius-server secret <cr>    # path-027301
+(config)# no radius-server send-ma <cr>    # path-027208
+(config)# no radius-server source-ports 1645-1646 <cr>    # path-030243
+(config)# no radius-server source-ports extended <cr>    # path-030280
+(config)# no radius-server test id-per-port <cr>    # path-027297
+(config)# no radius-server throttle accounting <number:0..65535> <cr>    # path-036440
+(config)# no radius-server timeout <cr>    # path-025908
+(config)# no radius-server transaction max-tries <number:1..100> <cr>    # path-036630
+(config)# no radius-server unique-ident <number:0..255> <cr>    # path-030223
+(config)# no radius-server validate-ma <cr>    # path-027222
+(config)# no radius-server vsa disallow unknown <cr>    # path-036345
+(config)# no radius-server vsa send <cr>    # path-030167
+(config)# no radius-server vsa send <cr>    # path-030239
+(config)# no rate-limit llq-classify <cr>    # path-027230
+(config)# no rbe nasip <cr>    # path-026229
+(config)# no rcmd domain-lookup <cr>    # path-026557
+(config)# no rcmd remote-host <string> <address> <string> <cr>    # path-044405
+(config)# no rcmd remote-username <cr>    # path-026582
+(config)# no rcp-enable <cr>    # path-025695
+(config)# no redirect log <cr>    # path-026182
+(config)# no redirect reduce-timeouts <cr>    # path-026156
+(config)# no redirect send-tcp-reset <cr>    # path-026126
+(config)# no redirect server-group <string> <cr>    # path-027902
+(config)# no redirect session-limit <cr>    # path-026161
+(config)# no regexp optimize <cr>    # path-026216
+(config)# no remote-management <cr>    # path-025988
+(config)# no resource policy <cr>    # path-026082
+(config)# no resume-string <string> <cr>    # path-026687
+(config)# no rif <address> ring-group <number:1..4095> <cr>    # path-034188
+(config)# no rif always-forward <cr>    # path-026178
+(config)# no rif timeout <cr>    # path-025609
+(config)# no rif validate-age <cr>    # path-026241
+(config)# no rif validate-enable <cr>    # path-026204
+(config)# no rif validate-route-cache <cr>    # path-026219
+(config)# no rif validate-time <cr>    # path-025577
+(config)# no rif xid-explorer <cr>    # path-026165
+(config)# no rlogin trusted-localuser-source local <cr>    # path-028351
+(config)# no rlogin trusted-localuser-source radius <cr>    # path-028420
+(config)# no rlogin trusted-localuser-source tacacs <cr>    # path-028384
+(config)# no rlogin trusted-remoteuser-source <cr>    # path-026442
+(config)# no rmon alarm <number:1..65535> <cr>    # path-029945
+(config)# no rmon event <number:1..65535> <cr>    # path-029901
+(config)# no rmon hc-alarms <number:1..65535> <cr>    # path-029849
+(config)# no route-map <string> <cr>    # path-026928
+(config)# no route-tag list <string> <cr>    # path-029231
+(config)# no route-tag notation dotted-decimal <cr>    # path-029014
+(config)# no routing-default-optimize <cr>    # path-025777
+(config)# no rsh-disable-command <string> <cr>    # path-026590
+(config)# no rsh-enable <cr>    # path-025702
+(config)# no rsrb remote-peer <number:1..4095> tcp <address> lsap-output-list <number:200..299> <cr>    # path-056803
+(config)# no rwatch <cr>    # path-025942
+(config)# no sampler <string> <cr>    # path-026963
+(config)# no sap-priority-list <number:1..10> high <cr>    # path-028484
+(config)# no sasl profile <string> <cr>    # path-028374
+(config)# no sbfd <cr>    # path-025749
+(config)# no sbfd local-discriminator <address> <cr>    # path-028923
+(config)# no sbfd local-discriminator <number:1..4294967294> <cr>    # path-028874
+(config)# no sbfd local-discriminator dynamic <cr>    # path-028981
+(config)# no sbfd remote-target ipv4 <address> remote-discriminator <number:1..4294967294> <cr>    # path-052615
+(config)# no sbfd remote-target ipv6 <address> remote-discriminator <number:1..4294967294> <cr>    # path-052642
+(config)# no scheduler-interval <number:100..2147483647> <cr>    # path-027495
+(config)# no scripting tcl encdir <cr>    # path-030636
+(config)# no scripting tcl init <cr>    # path-030616
+(config)# no scripting tcl low-memory <cr>    # path-030662
+(config)# no security authentication failure rate <cr>    # path-034001
+(config)# no security passwords min-length <cr>    # path-027879
+(config)# no service alignment detection <cr>    # path-028213
+(config)# no service call-home <cr>    # path-026356
+(config)# no service complete hidden commands <cr>    # path-034042
+(config)# no service compress-config <cr>    # path-026124
+(config)# no service config <cr>    # path-025993
+(config)# no service counters max age <cr>    # path-034183
+(config)# no service dhcp <cr>    # path-026341
+(config)# no service disable-ip-fast-frag <cr>    # path-026244
+(config)# no service exec-callback <cr>    # path-025997
+(config)# no service exec-wait <cr>    # path-026061
+(config)# no service finger <cr>    # path-026000
+(config)# no service hide-telnet-addresses <cr>    # path-026206
+(config)# no service high-power-optics-syslog <cr>    # path-026422
+(config)# no service internal <cr>    # path-026077
+(config)# no service keepalive-timeout-disable <cr>    # path-026094
+(config)# no service linenumber <cr>    # path-026065
+(config)# no service log backtrace <cr>    # path-027819
+(config)# no service log-hidden <cr>    # path-026087
+(config)# no service nagle <cr>    # path-026003
+(config)# no service oir-remove-failing-slot <cr>    # path-026032
+(config)# no service old-slip-prompts <cr>    # path-026193
+(config)# no service optimized-xfsu <cr>    # path-026076
+(config)# no service pad <cr>    # path-026043
+(config)# no service pad cmns <cr>    # path-027844
+(config)# no service pad from-xot <cr>    # path-027838
+(config)# no service pad to-xot <cr>    # path-027830
+(config)# no service password-encryption <cr>    # path-026052
+(config)# no service password-recovery <cr>    # path-026520
+(config)# no service performance <cr>    # path-026465
+(config)# no service private-config-encryption <cr>    # path-026060
+(config)# no service prompt config <cr>    # path-027925
+(config)# no service pt-vty-logging <cr>    # path-026221
+(config)# no service random seed <string> <cr>    # path-034332
+(config)# no service scripting <cr>    # path-026108
+(config)# no service sequence-numbers <cr>    # path-026265
+(config)# no service single-slot-reload-enable <cr>    # path-026004
+(config)# no service slave-coredump <cr>    # path-026012
+(config)# no service slave-log <cr>    # path-026008
+(config)# no service tcp-keepalives-in <cr>    # path-026028
+(config)# no service tcp-keepalives-out <cr>    # path-026036
+(config)# no service tcp-small-servers <cr>    # path-026200
+(config)# no service telnet-zeroidle <cr>    # path-026021
+(config)# no service timestamps <cr>    # path-026067
+(config)# no service udp-small-servers <cr>    # path-026185
+(config)# no service unsupported-transceiver <cr>    # path-026389
+(config)# no service-family external-client listen <cr>    # path-028265
+(config)# no service-instance mdns-sd service <string> regtype <string> domain <string> <cr>    # path-058879
+(config)# no service-list mdns-sd <string> <cr>    # path-028026
+(config)# no service-list mdns-sd <string> query <cr>    # path-034048
+(config)# no service-policy type control <cr>    # path-028027
+(config)# no service-policy type control subscriber <cr>    # path-034105
+(config)# no service-routing capabilities-manager <cr>    # path-026444
+(config)# no service-routing mdns-sd <cr>    # path-026209
+(config)# no service-routing xmcp listen <cr>    # path-028364
+(config)# no service-template <string> <cr>    # path-027491
+(config)# no shell init file <cr>    # path-027859
+(config)# no shell map <string> <cr>    # path-027865
+(config)# no shell processing <cr>    # path-026029
+(config)# no shell trigger <string> <cr>    # path-027860
+(config)# no shutdown vlan <number:2..1001> <cr>    # path-029194
+(config)# no sna host <string> <cr>    # path-027986
+(config)# no sna rsrb <number:1..4095> <cr>    # path-028003
+(config)# no sna vdlc <number:1..4095> <cr>    # path-027987
+(config)# no snmp autoconfig user <string> auth <number:0..4294967295> <string> <cr>    # path-057122
+(config)# no snmp ifmib ifalias long <cr>    # path-035271
+(config)# no snmp ifmib ifindex persist <cr>    # path-035241
+(config)# no snmp ifmib trap throttle <cr>    # path-035290
+(config)# no snmp mib bulkstat object-list <string> <cr>    # path-045290
+(config)# no snmp mib bulkstat schema <string> <cr>    # path-045353
+(config)# no snmp mib bulkstat transfer <string> <cr>    # path-045406
+(config)# no snmp mib cef throttling-interval <cr>    # path-035489
+(config)# no snmp mib community-map <string> <cr>    # path-035836
+(config)# no snmp mib event object list owner <string> name <string> <number:1..4294967295> <cr>    # path-060001
+(config)# no snmp mib event owner <string> name <string> <cr>    # path-057138
+(config)# no snmp mib event sample instance maximum <cr>    # path-053026
+(config)# no snmp mib event sample minimum <cr>    # path-045378
+(config)# no snmp mib event trigger owner <string> name <string> <cr>    # path-059094
+(config)# no snmp mib expression delta minimum <cr>    # path-045260
+(config)# no snmp mib expression delta wildcard maximum <cr>    # path-052959
+(config)# no snmp mib expression owner <string> name <string> <cr>    # path-057176
+(config)# no snmp mib flash cache <cr>    # path-035552
+(config)# no snmp mib flowmon alarmhistorysize <number:1..1000000> <cr>    # path-045349
+(config)# no snmp mib nhrp <cr>    # path-029394
+(config)# no snmp mib notification-log globalsize <cr>    # path-035546
+(config)# no snmp mib persist <cr>    # path-029360
+(config)# no snmp mib target list <string> <cr>    # path-045213
+(config)# no snmp monitor response <cr>    # path-029173
+(config)# no snmp-server <cr>    # path-025917
+(config)# no snmp-server accounting commands default <cr>    # path-036911
+(config)# no snmp-server cache <cr>    # path-027336
+(config)# no snmp-server chassis-id <cr>    # path-027247
+(config)# no snmp-server community <string> <cr>    # path-029753
+(config)# no snmp-server contact <cr>    # path-027224
+(config)# no snmp-server context <string> <cr>    # path-030281
+(config)# no snmp-server dbal cache <cr>    # path-030544
+(config)# no snmp-server dispatcher-queue-size <cr>    # path-026850
+(config)# no snmp-server drop report access <number:1..99> <cr>    # path-045736
+(config)# no snmp-server drop unknown-user <cr>    # path-029829
+(config)# no snmp-server drop vrf-traffic <cr>    # path-029764
+(config)# no snmp-server enable logging getop <cr>    # path-036721
+(config)# no snmp-server enable logging setop <cr>    # path-036769
+(config)# no snmp-server enable traps ospf rate-limit <cr>    # path-046300
+(config)# no snmp-server enable traps ospfv3 rate-limit <cr>    # path-047642
+(config)# no snmp-server enable traps port-security trap-rate <cr>    # path-048105
+(config)# no snmp-server engineID local <cr>    # path-029281
+(config)# no snmp-server file-transfer access-group <number:1..99> <cr>    # path-036872
+(config)# no snmp-server forwarder <cr>    # path-027353
+(config)# no snmp-server hc poll <cr>    # path-029226
+(config)# no snmp-server host <address> <string> <cr>    # path-037603
+(config)# no snmp-server ifindex persist <cr>    # path-029417
+(config)# no snmp-server inform <cr>    # path-027376
+(config)# no snmp-server ip dscp <cr>    # path-030127
+(config)# no snmp-server ip precedence <cr>    # path-030090
+(config)# no snmp-server local-queue-size <cr>    # path-026872
+(config)# no snmp-server location <cr>    # path-027197
+(config)# no snmp-server manager <cr>    # path-027375
+(config)# no snmp-server manager session-timeout <cr>    # path-027366
+(config)# no snmp-server packetsize <cr>    # path-025814
+(config)# no snmp-server password-policy <string> define <cr>    # path-036936
+(config)# no snmp-server priority <cr>    # path-027020
+(config)# no snmp-server queue-length <cr>    # path-025853
+(config)# no snmp-server source-interface informs <cr>    # path-029700
+(config)# no snmp-server sparse-tables <cr>    # path-027141
+(config)# no snmp-server subagent cache <cr>    # path-030617
+(config)# no snmp-server subagent cache-stats <cr>    # path-030581
+(config)# no snmp-server subagent datastage timeout <number:1..100> <cr>    # path-046624
+(config)# no snmp-server subagent enable <cr>    # path-030605
+(config)# no snmp-server subagent fetch count <number:1..100> <cr>    # path-046672
+(config)# no snmp-server system-shutdown <cr>    # path-027218
+(config)# no snmp-server tftp-server-list <number:1..99> <cr>    # path-029774
+(config)# no snmp-server trap authentication vrf <cr>    # path-035807
+(config)# no snmp-server trap link ietf <cr>    # path-035832
+(config)# no snmp-server trap retry <cr>    # path-029749
+(config)# no snmp-server trap timeout <cr>    # path-029801
+(config)# no snmp-server trap timestamp <cr>    # path-029462
+(config)# no snmp-server trap-authentication <cr>    # path-027096
+(config)# no snmp-server trap-frequency decay <cr>    # path-030268
+(config)# no snmp-server trap-source <cr>    # path-027052
+(config)# no snmp-server trap-timeout <cr>    # path-027157
+(config)# no snmp-server user <string> <string> v1 <cr>    # path-045081
+(config)# no snmp-server view <string> <cr>    # path-029451
+(config)# no source template <cr>    # path-027392
+(config)# no source template interface-ethernet-all <cr>    # path-030493
+(config)# no source-bridge connection-timeout <cr>    # path-025733
+(config)# no source-bridge cos-enable <cr>    # path-026684
+(config)# no source-bridge enable-80d5 <cr>    # path-026340
+(config)# no source-bridge explorer-dup-ARE-filter <cr>    # path-026563
+(config)# no source-bridge explorer-fastswitch <cr>    # path-026542
+(config)# no source-bridge explorer-maxrate <cr>    # path-026549
+(config)# no source-bridge explorerQ-depth <cr>    # path-026529
+(config)# no source-bridge fst-peername <cr>    # path-026662
+(config)# no source-bridge keepalive <cr>    # path-026806
+(config)# no source-bridge largest-frame <number:1..4095> <cr>    # path-028429
+(config)# no source-bridge lnm-preference <cr>    # path-026517
+(config)# no source-bridge passthrough <number:1..4095> <cr>    # path-025740
+(config)# no source-bridge ping <number:1..4095> <number:1..15> <number:1..4095> <cr>    # path-044191
+(config)# no source-bridge proxy-netbios-only <cr>    # path-026413
+(config)# no source-bridge qllc-local-ack <cr>    # path-026671
+(config)# no source-bridge remote-peer <number:1..4095> tcp <address> <cr>    # path-044552
+(config)# no source-bridge ring-group <cr>    # path-026515
+(config)# no source-bridge sap-80d5 <number:0..4294967295> <cr>    # path-028200
+(config)# no source-bridge sdllc-local-ack <cr>    # path-026654
+(config)# no source-bridge tcp-queue-max <cr>    # path-025735
+(config)# no source-bridge transparent <number:1..4095> fastswitch <cr>    # path-034296
+(config)# no spd enable <cr>    # path-026075
+(config)# no spd extended-headroom <number:0..65535> <cr>    # path-025528
+(config)# no spd headroom <number:0..65535> <cr>    # path-025531
+(config)# no stacks scan-lite <cr>    # path-026237
+(config)# no standby bfd all-interfaces <cr>    # path-028569
+(config)# no standby redirects <cr>    # path-026621
+(config)# no standby sso <cr>    # path-026681
+(config)# no state-machine <string> <cr>    # path-026510
+(config)# no statistics <cr>    # path-025953
+(config)# no stun keepalive-count <cr>    # path-025683
+(config)# no stun peer-name <cr>    # path-026447
+(config)# no stun poll-interval <cr>    # path-025646
+(config)# no stun primary-pass-through <cr>    # path-025655
+(config)# no stun protocol-group <number:1..255> <string> <cr>    # path-034469
+(config)# no stun quick-response <cr>    # path-026540
+(config)# no stun remote-peer-keepalive <cr>    # path-026550
+(config)# no stun schema <string> <cr>    # path-028430
+(config)# no subscriber access pppoe pre-authorize nas-port-id <cr>    # path-044757
+(config)# no subscriber access pppoe unqiue-key circuit-id <cr>    # path-044797
+(config)# no subscriber accounting accuracy <cr>    # path-029175
+(config)# no subscriber accounting send-encoded-name <cr>    # path-029151
+(config)# no subscriber accounting ssg <cr>    # path-029098
+(config)# no subscriber authorization enable <cr>    # path-028964
+(config)# no subscriber disconnect history-size <cr>    # path-028738
+(config)# no subscriber dsl-line-info update ancp <cr>    # path-035015
+(config)# no subscriber feature lock-path <cr>    # path-029017
+(config)# no subscriber feature prepaid default <cr>    # path-035030
+(config)# no subscriber per-session debug buffer-size <cr>    # path-035554
+(config)# no subscriber per-session debug enable buginf <cr>    # path-044970
+(config)# no subscriber per-session debug enable end-code SESS_DEB_START <cr>    # path-052820
+(config)# no subscriber per-session debug enable expected-code SESS_DEB_START <cr>    # path-052851
+(config)# no subscriber per-session debug enable session-count <cr>    # path-045267
+(config)# no subscriber per-session debug enable start-code SESS_DEB_START <cr>    # path-052795
+(config)# no subscriber per-session debug start <cr>    # path-035286
+(config)# no subscriber policy <cr>    # path-026808
+(config)# no subscriber policy format_option82_for_cats <cr>    # path-028980
+(config)# no subscriber policy recording profile service <cr>    # path-044825
+(config)# no subscriber policy recording profile user <cr>    # path-044769
+(config)# no subscriber policy recording rules <cr>    # path-035077
+(config)# no subscriber policy recording rules limit <number:0..100> <cr>    # path-052616
+(config)# no subscriber qos-per-user oversubscription <cr>    # path-029140
+(config)# no subscriber service accounting <cr>    # path-029516
+(config)# no subscriber service coa-rfc-compliant <cr>    # path-029065
+(config)# no subscriber service ignore concatenated-service <cr>    # path-035568
+(config)# no subscriber service multiple-accept <cr>    # path-029271
+(config)# no subscriber service nasport <cr>    # path-029312
+(config)# no subscriber service password <cr>    # path-029127
+(config)# no subscriber service police percent-factor <cr>    # path-035333
+(config)# no subscriber service police percent-factor <cr>    # path-035334
+(config)# no subscriber service session-accounting <cr>    # path-029345
+(config)# no subscriber service target-atm-vc <cr>    # path-029156
+(config)# no subscriber service vc-ignore-cos <cr>    # path-029209
+(config)# no subscriber session auto-service-fail-ignore <cr>    # path-029202
+(config)# no subscriber session duration accuracy <cr>    # path-035189
+(config)# no subscriber session mib index ifindex <cr>    # path-044911
+(config)# no subscriber session set cuid remote-id <cr>    # path-044967
+(config)# no subscriber templating <cr>    # path-026769
+(config)# no subscriber templating immediate <cr>    # path-028869
+(config)# no subscriber test sessions <number:0..70000> key <string> 1-time <cr>    # path-057006
+(config)# no subscriber-policy <number:1..100> <cr>    # path-026313
+(config)# no svl l2bum optimization <cr>    # path-031236
+(config)# no system mode insecure <cr>    # path-027817
+(config)# no system mode warning periodicity <cr>    # path-033977
+(config)# no table-map <string> <cr>    # path-027319
+(config)# no tacacs server <string> <cr>    # path-029423
+(config)# no tacacs-server administration <cr>    # path-027114
+(config)# no tacacs-server attribute allow unknown <cr>    # path-035402
+(config)# no tacacs-server authenticate enable <cr>    # path-029879
+(config)# no tacacs-server cache authentication profile <string> <cr>    # path-045509
+(config)# no tacacs-server cache authorization profile <string> <cr>    # path-045560
+(config)# no tacacs-server cache expiry <number:0..2147483647> <cr>    # path-036459
+(config)# no tacacs-server directed-request <cr>    # path-027036
+(config)# no tacacs-server dns-alias-lookup <cr>    # path-027091
+(config)# no tacacs-server domain-stripping <cr>    # path-027132
+(config)# no tacacs-server extended <cr>    # path-027079
+(config)# no tacacs-server host <address> <cr>    # path-029349
+(config)# no tacacs-server ignore-acl <cr>    # path-027153
+(config)# no tacacs-server key <cr>    # path-027095
+(config)# no tacacs-server last-resort <cr>    # path-026970
+(config)# no tacacs-server notify enable <cr>    # path-029926
+(config)# no tacacs-server optional-passwords <cr>    # path-027061
+(config)# no tacacs-server packet maxsize <cr>    # path-026932
+(config)# no tacacs-server retransmit <cr>    # path-025797
+(config)# no tacacs-server timeout <cr>    # path-025796
+(config)# no template <string> <cr>    # path-026261
+(config)# no template global <string> <cr>    # path-028024
+(config)# no template global <string> built-in modified <cr>    # path-043926
+(config)# no tenant-definition <cr>    # path-025910
+(config)# no terminal-queue entry-retry-interval <cr>    # path-025719
+(config)# no tftp-server rom <cr>    # path-026865
+(config)# no timezone <cr>    # path-025608
+(config)# no track <number:1..32767> <cr>    # path-026226
+(config)# no track resolution ip route bgp <cr>    # path-043933
+(config)# no track resolution ipv6 route bgp <cr>    # path-043953
+(config)# no track timer interface <cr>    # path-027984
+(config)# no transport-map type console <string> <cr>    # path-034023
+(config)# no udf <string> <cr>    # path-027552
+(config)# no user-name <string> <cr>    # path-026120
+(config)# no username <string> <cr>    # path-026097
+(config)# no vc-class atm <string> <cr>    # path-028030
+(config)# no vc-class global default <cr>    # path-028018
+(config)# no version <cr>    # path-025493
+(config)# no virtual-profile if-needed <cr>    # path-026685
+(config)# no virtual-profile virtual-template <cr>    # path-026727
+(config)# no virtual-service <cr>    # path-025648
+(config)# no virtual-service <string> <cr>    # path-026385
+(config)# no virtual-template snmp <cr>    # path-027382
+(config)# no virtual-template subinterface <cr>    # path-027368
+(config)# no vlan <string> <cr>    # path-026210
+(config)# no vlan accounting <cr>    # path-026196
+(config)# no vlan accounting input <cr>    # path-027954
+(config)# no vlan accounting output <cr>    # path-027965
+(config)# no vlan dot1q tag native <cr>    # path-034051
+(config)# no vlan internal allocation policy <cr>    # path-034102
+(config)# no vlan-autoconfig authorize list <cr>    # path-028851
+(config)# no vlan-autoconfig identifier <cr>    # path-026749

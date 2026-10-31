@@ -1,0 +1,63 @@
+# 模式 ip-sla；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-ip-sla)# default dhcp <address> <cr>    # observed_connections-008137
+(config-ip-sla)# default dns <string> name-server <address> <cr>    # observed_connections-008161
+(config-ip-sla)# default ethernet echo mpid <number:1..8191> domain <string> port <cr>    # observed_connections-008169
+(config-ip-sla)# default ethernet y1731 loss LMM domain <string> evc <string> cos <number:0..8> mpid <number:1..8191> <cr>    # observed_connections-008172
+(config-ip-sla)# default ftp get <string> <cr>    # observed_connections-008154
+(config-ip-sla)# default http get <string> <cr>    # observed_connections-008159
+(config-ip-sla)# default http secure get <string> <cr>    # observed_connections-008163
+(config-ip-sla)# default icmp-echo <string> <cr>    # observed_connections-008135
+(config-ip-sla)# default icmp-jitter <string> <cr>    # observed_connections-008139
+(config-ip-sla)# default path-echo <address> <cr>    # observed_connections-008142
+(config-ip-sla)# default path-jitter <address> <cr>    # observed_connections-008146
+(config-ip-sla)# default tcp-connect <string> <number:0..65535> <cr>    # observed_connections-008152
+(config-ip-sla)# default udp-echo <string> <number:0..65535> <cr>    # observed_connections-008149
+(config-ip-sla)# default udp-jitter <address> <number:0..65535> endpoint-list <string> <cr>    # observed_connections-008166
+(config-ip-sla)# default udp-jitter <string> <number:1..65535> <cr>    # observed_connections-008156
+(config-ip-sla)# dhcp <?ipv4orv6_addr_action@55558a022588> <cr>    # observed_connections-008173
+(config-ip-sla)# dhcp <address> <cr>    # observed_connections-008129
+(config-ip-sla)# dns <string> name-server <?ipv4orv6_addr_action@55558a025908> <cr>    # observed_connections-008180
+(config-ip-sla)# dns <string> name-server <address> <cr>    # observed_connections-008155
+(config-ip-sla)# ethernet echo mpid <number:1..8191> domain <string> evc <string> <cr>    # observed_connections-008184
+(config-ip-sla)# ethernet echo mpid <number:1..8191> domain <string> port <cr>    # observed_connections-008167
+(config-ip-sla)# ethernet y1731 delay 1DM domain <string> evc <string> cos <number:0..8> mpid <number:1..8191> <cr>    # observed_connections-008185
+(config-ip-sla)# ethernet y1731 loss LMM domain <string> evc <string> cos <number:0..8> mpid <number:1..8191> <cr>    # observed_connections-008170
+(config-ip-sla)# ethernet y1731 loss SLM domain <string> evc <string> cos <number:0..8> mpid <number:1..8191> <cr>    # observed_connections-008186
+(config-ip-sla)# ftp get <string> <cr>    # observed_connections-008143
+(config-ip-sla)# http get <string> <cr>    # observed_connections-008147
+(config-ip-sla)# http get <string> name-server <?ipv4orv6_addr_action@55558a02cf70> <cr>    # observed_connections-008182
+(config-ip-sla)# http secure get <string> <cr>    # observed_connections-008157
+(config-ip-sla)# http secure get <string> source-interface <interface> <cr>    # observed_connections-008183
+(config-ip-sla)# icmp-echo <?ipv4orv6_addr_action@55558a010058> <cr>    # observed_connections-008174
+(config-ip-sla)# icmp-echo <string> <cr>    # observed_connections-008128
+(config-ip-sla)# icmp-jitter <string> <cr>    # observed_connections-008130
+(config-ip-sla)# no dhcp <address> <cr>    # observed_connections-008134
+(config-ip-sla)# no dns <string> name-server <address> <cr>    # observed_connections-008160
+(config-ip-sla)# no ethernet echo mpid <number:1..8191> domain <string> port <cr>    # observed_connections-008168
+(config-ip-sla)# no ethernet y1731 loss LMM domain <string> evc <string> cos <number:0..8> mpid <number:1..8191> <cr>    # observed_connections-008171
+(config-ip-sla)# no ftp get <string> <cr>    # observed_connections-008151
+(config-ip-sla)# no http get <string> <cr>    # observed_connections-008158
+(config-ip-sla)# no http secure get <string> <cr>    # observed_connections-008162
+(config-ip-sla)# no icmp-echo <string> <cr>    # observed_connections-008133
+(config-ip-sla)# no icmp-jitter <string> <cr>    # observed_connections-008138
+(config-ip-sla)# no path-echo <address> <cr>    # observed_connections-008140
+(config-ip-sla)# no path-jitter <address> <cr>    # observed_connections-008145
+(config-ip-sla)# no tcp-connect <string> <number:0..65535> <cr>    # observed_connections-008150
+(config-ip-sla)# no udp-echo <string> <number:0..65535> <cr>    # observed_connections-008148
+(config-ip-sla)# no udp-jitter <address> <number:0..65535> endpoint-list <string> <cr>    # observed_connections-008165
+(config-ip-sla)# no udp-jitter <string> <number:1..65535> <cr>    # observed_connections-008153
+(config-ip-sla)# path-echo <?ipv4orv6_addr_action@55558a014ec8> <cr>    # observed_connections-008175
+(config-ip-sla)# path-echo <address> <cr>    # observed_connections-008131
+(config-ip-sla)# path-jitter <?ipv4orv6_addr_action@55558a01a3d8> <cr>    # observed_connections-008176
+(config-ip-sla)# path-jitter <address> <cr>    # observed_connections-008132
+(config-ip-sla)# tcp-connect <?ipv4orv6_addr_action@55558a00abd0> <number:0..65535> <cr>    # observed_connections-008178
+(config-ip-sla)# tcp-connect <string> <number:0..65535> <cr>    # observed_connections-008141
+(config-ip-sla)# udp-echo <?ipv4orv6_addr_action@555589ffc720> <number:0..65535> <cr>    # observed_connections-008177
+(config-ip-sla)# udp-echo <string> <number:0..65535> <cr>    # observed_connections-008136
+(config-ip-sla)# udp-jitter <?ipv4orv6_addr_action@55558a0029e8> <number:0..65535> endpoint-list <string> <cr>    # observed_connections-008181
+(config-ip-sla)# udp-jitter <?ipv4orv6_addr_action@55558a0029e8> <number:1..65535> <cr>    # observed_connections-008179
+(config-ip-sla)# udp-jitter <address> <number:0..65535> endpoint-list <string> <cr>    # observed_connections-008164
+(config-ip-sla)# udp-jitter <string> <number:1..65535> <cr>    # observed_connections-008144

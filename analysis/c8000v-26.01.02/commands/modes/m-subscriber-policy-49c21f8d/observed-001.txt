@@ -1,0 +1,23 @@
+# 模式 subscriber-policy；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-policy)# arp deny <cr>    # observed_connections-009103
+(config-policy)# broadcast deny <cr>    # observed_connections-009109
+(config-policy)# cdp deny <cr>    # observed_connections-009115
+(config-policy)# default arp <cr>    # observed_connections-009104
+(config-policy)# default broadcast <cr>    # observed_connections-009110
+(config-policy)# default cdp <cr>    # observed_connections-009116
+(config-policy)# default multicast <cr>    # observed_connections-009107
+(config-policy)# default stp <cr>    # observed_connections-009119
+(config-policy)# default unknown-destination <cr>    # observed_connections-009113
+(config-policy)# exit <cr>    # observed_connections-009101
+(config-policy)# multicast deny <cr>    # observed_connections-009106
+(config-policy)# no arp <cr>    # observed_connections-009102
+(config-policy)# no broadcast <cr>    # observed_connections-009108
+(config-policy)# no cdp <cr>    # observed_connections-009114
+(config-policy)# no multicast <cr>    # observed_connections-009105
+(config-policy)# no stp <cr>    # observed_connections-009117
+(config-policy)# no unknown-destination <cr>    # observed_connections-009111
+(config-policy)# stp deny <cr>    # observed_connections-009118
+(config-policy)# unknown-destination deny <cr>    # observed_connections-009112

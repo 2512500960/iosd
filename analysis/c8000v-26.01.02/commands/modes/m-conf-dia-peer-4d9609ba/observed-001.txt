@@ -1,0 +1,22 @@
+# 模式 conf-dia-peer；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-dia-peer)# address ipv4 <address> <cr>    # observed_connections-008747
+(config-dia-peer)# destination host <string> <cr>    # observed_connections-008750
+(config-dia-peer)# destination realm <string> <cr>    # observed_connections-008752
+(config-dia-peer)# exit <cr>    # observed_connections-008741
+(config-dia-peer)# ip vrf forwarding <string> <cr>    # observed_connections-008756
+(config-dia-peer)# no address ipv4 <address> <cr>    # observed_connections-008755
+(config-dia-peer)# no destination host <cr>    # observed_connections-008751
+(config-dia-peer)# no destination realm <cr>    # observed_connections-008754
+(config-dia-peer)# no ip vrf forwarding <cr>    # observed_connections-008757
+(config-dia-peer)# no peer-type server <cr>    # observed_connections-008753
+(config-dia-peer)# no security <cr>    # observed_connections-008744
+(config-dia-peer)# no timer connection <cr>    # observed_connections-008749
+(config-dia-peer)# no transport <cr>    # observed_connections-008742
+(config-dia-peer)# peer-type server <cr>    # observed_connections-008746
+(config-dia-peer)# security ipsec <cr>    # observed_connections-008743
+(config-dia-peer)# source interface <interface> <cr>    # observed_connections-008758
+(config-dia-peer)# timer connection <number:1..1000> <cr>    # observed_connections-008748
+(config-dia-peer)# transport tcp <cr>    # observed_connections-008745

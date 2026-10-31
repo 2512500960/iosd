@@ -1,0 +1,37 @@
+# 模式 atm-l2trans-pvp-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(cfg-if-atm-l2trans-pvp)# abr <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-004142
+(cfg-if-atm-l2trans-pvp)# cbr <number:dynamic> <cr>    # static_slot_creation_candidates-004138
+(cfg-if-atm-l2trans-pvp)# cell-packing <cr>    # static_slot_creation_candidates-004112
+(cfg-if-atm-l2trans-pvp)# cell-packing <number:dynamic> <cr>    # static_slot_creation_candidates-004137
+(cfg-if-atm-l2trans-pvp)# default abr <cr>    # static_slot_creation_candidates-004127
+(cfg-if-atm-l2trans-pvp)# default cbr <cr>    # static_slot_creation_candidates-004130
+(cfg-if-atm-l2trans-pvp)# default cell-packing <cr>    # static_slot_creation_candidates-004126
+(cfg-if-atm-l2trans-pvp)# default epd <cr>    # static_slot_creation_candidates-004118
+(cfg-if-atm-l2trans-pvp)# default service-policy input <string> <cr>    # static_slot_creation_candidates-004134
+(cfg-if-atm-l2trans-pvp)# default ubr <cr>    # static_slot_creation_candidates-004114
+(cfg-if-atm-l2trans-pvp)# default ubr+ <cr>    # static_slot_creation_candidates-004117
+(cfg-if-atm-l2trans-pvp)# default vbr-nrt <cr>    # static_slot_creation_candidates-004120
+(cfg-if-atm-l2trans-pvp)# default vbr-rt <cr>    # static_slot_creation_candidates-004123
+(cfg-if-atm-l2trans-pvp)# default xconnect <cr>    # static_slot_creation_candidates-004128
+(cfg-if-atm-l2trans-pvp)# epd <cr>    # static_slot_creation_candidates-004111
+(cfg-if-atm-l2trans-pvp)# no abr <cr>    # static_slot_creation_candidates-004124
+(cfg-if-atm-l2trans-pvp)# no cbr <cr>    # static_slot_creation_candidates-004129
+(cfg-if-atm-l2trans-pvp)# no cell-packing <cr>    # static_slot_creation_candidates-004122
+(cfg-if-atm-l2trans-pvp)# no epd <cr>    # static_slot_creation_candidates-004116
+(cfg-if-atm-l2trans-pvp)# no service-policy input <string> <cr>    # static_slot_creation_candidates-004133
+(cfg-if-atm-l2trans-pvp)# no ubr <cr>    # static_slot_creation_candidates-004113
+(cfg-if-atm-l2trans-pvp)# no ubr+ <cr>    # static_slot_creation_candidates-004115
+(cfg-if-atm-l2trans-pvp)# no vbr-nrt <cr>    # static_slot_creation_candidates-004119
+(cfg-if-atm-l2trans-pvp)# no vbr-rt <cr>    # static_slot_creation_candidates-004121
+(cfg-if-atm-l2trans-pvp)# no xconnect <cr>    # static_slot_creation_candidates-004125
+(cfg-if-atm-l2trans-pvp)# pseudowire <address> <number:1..4294967295> encapsulation mpls <cr>    # static_slot_creation_candidates-004139
+(cfg-if-atm-l2trans-pvp)# pseudowire <address> <number:1..4294967295> pw-class <string> <cr>    # static_slot_creation_candidates-004135
+(cfg-if-atm-l2trans-pvp)# service-policy input <string> <cr>    # static_slot_creation_candidates-004131
+(cfg-if-atm-l2trans-pvp)# ubr <number:dynamic> <cr>    # static_slot_creation_candidates-004136
+(cfg-if-atm-l2trans-pvp)# ubr+ <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-004140
+(cfg-if-atm-l2trans-pvp)# vbr-nrt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-004141
+(cfg-if-atm-l2trans-pvp)# vbr-rt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-004143
+(cfg-if-atm-l2trans-pvp)# xconnect vfi <string> <cr>    # static_slot_creation_candidates-004132

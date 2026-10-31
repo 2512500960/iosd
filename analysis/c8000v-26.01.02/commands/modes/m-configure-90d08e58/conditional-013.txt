@@ -1,0 +1,292 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-013.md
+
+(config)# default do-exec undebug vxlan static-route ha <cr>    # conditional_registration_candidates-005165
+(config)# default do-exec undebug vxlan static-route parser <cr>    # conditional_registration_candidates-005108
+(config)# default do-exec undebug vxlan static-route state <cr>    # conditional_registration_candidates-005053
+(config)# default do-exec undebug vxlan static-route statistics <cr>    # conditional_registration_candidates-004923
+(config)# default do-exec undebug xconnect error <cr>    # conditional_registration_candidates-002796
+(config)# default do-exec undebug xconnect event <cr>    # conditional_registration_candidates-002753
+(config)# default do-exec undebug xconnect event detail <cr>    # conditional_registration_candidates-004859
+(config)# default do-exec undebug xconnect initialization <cr>    # conditional_registration_candidates-002886
+(config)# default do-exec undebug xconnect internal <cr>    # conditional_registration_candidates-002976
+(config)# default do-exec undebug xconnect monitor <cr>    # conditional_registration_candidates-002711
+(config)# default do-exec undebug zone security events <cr>    # conditional_registration_candidates-004820
+(config)# default do-exec undebug zone security flow-logging <cr>    # conditional_registration_candidates-004996
+(config)# default do-exec undebug zone security object-creation <cr>    # conditional_registration_candidates-004874
+(config)# default do-exec undebug zone security object-deletion <cr>    # conditional_registration_candidates-004934
+(config)# default do-exec utd connectivity threat-inspection <cr>    # conditional_registration_candidates-002513
+(config)# default do-exec utd process stop dns <cr>    # conditional_registration_candidates-004774
+(config)# default do-exec utd signature update <cr>    # conditional_registration_candidates-002611
+(config)# default do-exec utd threat-inspection custom-signature apply global <cr>    # conditional_registration_candidates-006697
+(config)# default do-exec utd threat-inspection custom-signature load global <cr>    # conditional_registration_candidates-006694
+(config)# default do-exec utd web-filter database update <cr>    # conditional_registration_candidates-004678
+(config)# default do-exec xconnect backup force-switchover peer <address> <number:1..4294967295> <cr>    # conditional_registration_candidates-007809
+(config)# default domain default <cr>    # conditional_registration_candidates-000244
+(config)# default dsapp line <cr>    # conditional_registration_candidates-000250
+(config)# default dsapp line call-control mode feature <cr>    # conditional_registration_candidates-004272
+(config)# default dsapp line call-control mode standard <cr>    # conditional_registration_candidates-004263
+(config)# default dsapp line feature access-code <cr>    # conditional_registration_candidates-001854
+(config)# default dsapp line feature callback <cr>    # conditional_registration_candidates-001865
+(config)# default dsapp line feature voice-mail <cr>    # conditional_registration_candidates-001883
+(config)# default ephone-type <cr>    # conditional_registration_candidates-000196
+(config)# default et-analytics <cr>    # conditional_registration_candidates-000069
+(config)# default flow file-export default <cr>    # conditional_registration_candidates-000610
+(config)# default flow-sampler-map <string> <cr>    # conditional_registration_candidates-000211
+(config)# default gateway <cr>    # conditional_registration_candidates-000177
+(config)# default geo database <cr>    # conditional_registration_candidates-000227
+(config)# default gw-accounting aaa <cr>    # conditional_registration_candidates-000286
+(config)# default gw-accounting file <cr>    # conditional_registration_candidates-000318
+(config)# default gw-accounting h323 <cr>    # conditional_registration_candidates-000306
+(config)# default gw-accounting h323 resolve <cr>    # conditional_registration_candidates-000715
+(config)# default gw-accounting h323 upd-inbound-callinfo <cr>    # conditional_registration_candidates-000725
+(config)# default gw-accounting h323 vsa <cr>    # conditional_registration_candidates-000702
+(config)# default gw-accounting syslog <cr>    # conditional_registration_candidates-000320
+(config)# default gw-accounting voip <cr>    # conditional_registration_candidates-000283
+(config)# default http client cache memory file <cr>    # conditional_registration_candidates-004276
+(config)# default http client cache memory pool <cr>    # conditional_registration_candidates-004269
+(config)# default http client cache query <cr>    # conditional_registration_candidates-001857
+(config)# default http client cache refresh <cr>    # conditional_registration_candidates-001887
+(config)# default http client connection idle <cr>    # conditional_registration_candidates-001896
+(config)# default http client connection persistent <cr>    # conditional_registration_candidates-001863
+(config)# default http client connection timeout <cr>    # conditional_registration_candidates-001900
+(config)# default http client cookie <cr>    # conditional_registration_candidates-000574
+(config)# default http client post-multipart content-disposition filename no-quote <cr>    # conditional_registration_candidates-006348
+(config)# default http client response timeout <cr>    # conditional_registration_candidates-001910
+(config)# default http client source interface <cr>    # conditional_registration_candidates-001920
+(config)# default ip explicit-path identifier <number:1..65535> <cr>    # conditional_registration_candidates-003086
+(config)# default ip export destination <address> <number:1..65535> <cr>    # conditional_registration_candidates-005400
+(config)# default ip export template options export-stats <cr>    # conditional_registration_candidates-005331
+(config)# default ip export template options refresh-rate <cr>    # conditional_registration_candidates-005606
+(config)# default ip export template options sampler <cr>    # conditional_registration_candidates-005515
+(config)# default ip export template options timeout-rate <cr>    # conditional_registration_candidates-005514
+(config)# default ip export template refresh-rate <cr>    # conditional_registration_candidates-003451
+(config)# default ip export template timeout-rate <cr>    # conditional_registration_candidates-003363
+(config)# default ip export version <cr>    # conditional_registration_candidates-001401
+(config)# default ip flow-aggregation cache as <cr>    # conditional_registration_candidates-003027
+(config)# default ip flow-cache active-timeout <cr>    # conditional_registration_candidates-001044
+(config)# default ip flow-cache entries <cr>    # conditional_registration_candidates-001048
+(config)# default ip flow-cache mpls label-positions <cr>    # conditional_registration_candidates-002913
+(config)# default ip flow-cache timeout active <cr>    # conditional_registration_candidates-002610
+(config)# default ip flow-cache timeout inactive <cr>    # conditional_registration_candidates-002538
+(config)# default ip flow-capture fragment-offset <cr>    # conditional_registration_candidates-001256
+(config)# default ip flow-egress input-interface <cr>    # conditional_registration_candidates-000941
+(config)# default ip flow-export source <cr>    # conditional_registration_candidates-001400
+(config)# default ip flow-export version <cr>    # conditional_registration_candidates-001436
+(config)# default ip flow-top-talkers <cr>    # conditional_registration_candidates-000411
+(config)# default ip inspect <cr>    # conditional_registration_candidates-000432
+(config)# default ip inspect alert-off <cr>    # conditional_registration_candidates-001141
+(config)# default ip inspect audit-trail <cr>    # conditional_registration_candidates-001049
+(config)# default ip inspect dns-timeout <cr>    # conditional_registration_candidates-001410
+(config)# default ip inspect fast <cr>    # conditional_registration_candidates-000973
+(config)# default ip inspect hashtable-size <cr>    # conditional_registration_candidates-001304
+(config)# default ip inspect log drop-pkt <cr>    # conditional_registration_candidates-002304
+(config)# default ip inspect max-incomplete high <cr>    # conditional_registration_candidates-002917
+(config)# default ip inspect max-incomplete low <cr>    # conditional_registration_candidates-002839
+(config)# default ip inspect name <string> fragment <cr>    # conditional_registration_candidates-005813
+(config)# default ip inspect name <string> ftp <cr>    # conditional_registration_candidates-005404
+(config)# default ip inspect one-minute high <cr>    # conditional_registration_candidates-003008
+(config)# default ip inspect one-minute low <cr>    # conditional_registration_candidates-002915
+(config)# default ip inspect tcp block-non-session <cr>    # conditional_registration_candidates-003452
+(config)# default ip inspect tcp finwait-time <cr>    # conditional_registration_candidates-003378
+(config)# default ip inspect tcp idle-time <cr>    # conditional_registration_candidates-003288
+(config)# default ip inspect tcp max-incomplete <cr>    # conditional_registration_candidates-003625
+(config)# default ip inspect tcp synwait-time <cr>    # conditional_registration_candidates-003459
+(config)# default ip inspect udp idle-time <cr>    # conditional_registration_candidates-003007
+(config)# default ip mobile mobile-map <string> <cr>    # conditional_registration_candidates-003956
+(config)# default ip mobile router <cr>    # conditional_registration_candidates-001630
+(config)# default ip multicast netflow output-counters <cr>    # conditional_registration_candidates-002412
+(config)# default ip multicast netflow rpf-failure <cr>    # conditional_registration_candidates-002534
+(config)# default ip route-cache flow <cr>    # conditional_registration_candidates-001402
+(config)# default ip rsvp high-availability send-count <cr>    # conditional_registration_candidates-003351
+(config)# default ip rsvp high-availability send-timer <cr>    # conditional_registration_candidates-003263
+(config)# default ip udptn source-interface <cr>    # conditional_registration_candidates-000726
+(config)# default ivr asr-server <cr>    # conditional_registration_candidates-000278
+(config)# default ivr autoload <cr>    # conditional_registration_candidates-000232
+(config)# default ivr contact-center <cr>    # conditional_registration_candidates-000212
+(config)# default ivr language link <cr>    # conditional_registration_candidates-000693
+(config)# default ivr prompt buffers <cr>    # conditional_registration_candidates-000642
+(config)# default ivr prompt cutoff-threshold <cr>    # conditional_registration_candidates-000656
+(config)# default ivr prompt memory <cr>    # conditional_registration_candidates-000631
+(config)# default ivr prompt streamed <cr>    # conditional_registration_candidates-000674
+(config)# default ivr record cpu flash <cr>    # conditional_registration_candidates-001919
+(config)# default ivr record jitter <string> <cr>    # conditional_registration_candidates-001908
+(config)# default ivr record memory session <cr>    # conditional_registration_candidates-001912
+(config)# default ivr record memory system <cr>    # conditional_registration_candidates-001897
+(config)# default ivr tts-server <cr>    # conditional_registration_candidates-000290
+(config)# default l2 pseudowire routing <cr>    # conditional_registration_candidates-000699
+(config)# default l2 router-id <cr>    # conditional_registration_candidates-000308
+(config)# default l2vpn <cr>    # conditional_registration_candidates-000079
+(config)# default l2vpn sdwan instance <number:1..65531> <cr>    # conditional_registration_candidates-001872
+(config)# default l2vpn vfi context <string> <cr>    # conditional_registration_candidates-001864
+(config)# default l2vpn xconnect context <string> <cr>    # conditional_registration_candidates-003472
+(config)# default l3vpn encapsulation ip <string> <cr>    # conditional_registration_candidates-002418
+(config)# default menu <string> <cr>    # conditional_registration_candidates-000437
+(config)# default metadata flow <cr>    # conditional_registration_candidates-000247
+(config)# default metadata flow transmit <cr>    # conditional_registration_candidates-000571
+(config)# default mgcp <cr>    # conditional_registration_candidates-000200
+(config)# default mgcp behavior <string> <string> <cr>    # conditional_registration_candidates-003894
+(config)# default mgcp bind control <cr>    # conditional_registration_candidates-001715
+(config)# default mgcp block-newcalls <cr>    # conditional_registration_candidates-000488
+(config)# default mgcp call-agent <cr>    # conditional_registration_candidates-000506
+(config)# default mgcp codec <cr>    # conditional_registration_candidates-000553
+(config)# default mgcp crypto rfc-preferred <cr>    # conditional_registration_candidates-001846
+(config)# default mgcp debug-header <cr>    # conditional_registration_candidates-000537
+(config)# default mgcp digitmap <cr>    # conditional_registration_candidates-000490
+(config)# default mgcp disconnect-delay <cr>    # conditional_registration_candidates-000564
+(config)# default mgcp dns stale threshold <cr>    # conditional_registration_candidates-004219
+(config)# default mgcp dtmf-relay voip <cr>    # conditional_registration_candidates-001764
+(config)# default mgcp echo-cancel endpoint <cr>    # conditional_registration_candidates-001816
+(config)# default mgcp echo-cancel mode <cr>    # conditional_registration_candidates-001809
+(config)# default mgcp echo-cancel stat <cr>    # conditional_registration_candidates-001814
+(config)# default mgcp endpoint offset <cr>    # conditional_registration_candidates-001799
+(config)# default mgcp explicit hookstate <cr>    # conditional_registration_candidates-001812
+(config)# default mgcp fallback <cr>    # conditional_registration_candidates-000562
+(config)# default mgcp fax rate <cr>    # conditional_registration_candidates-001731
+(config)# default mgcp fax t38 ecm <cr>    # conditional_registration_candidates-003965
+(config)# default mgcp fax-relay ans-disable <cr>    # conditional_registration_candidates-001734
+(config)# default mgcp fax-relay sg3-to-g3 <cr>    # conditional_registration_candidates-001721
+(config)# default mgcp ip qos dscp default media <cr>    # conditional_registration_candidates-007534
+(config)# default mgcp ip-tos high-reliability <cr>    # conditional_registration_candidates-001781
+(config)# default mgcp lawful-intercept <cr>    # conditional_registration_candidates-000532
+(config)# default mgcp max-waiting-delay <cr>    # conditional_registration_candidates-000510
+(config)# default mgcp modem passthrough voip <cr>    # conditional_registration_candidates-004216
+(config)# default mgcp modem relay voip latency <cr>    # conditional_registration_candidates-006345
+(config)# default mgcp package-capability mdste-package <cr>    # conditional_registration_candidates-001788
+(config)# default mgcp persistent offhook <cr>    # conditional_registration_candidates-001813
+(config)# default mgcp piggyback message <cr>    # conditional_registration_candidates-001796
+(config)# default mgcp playout adaptive <cr>    # conditional_registration_candidates-001795
+(config)# default mgcp profile default <cr>    # conditional_registration_candidates-001835
+(config)# default mgcp quality-threshold hwm-jitter-buffer <cr>    # conditional_registration_candidates-001787
+(config)# default mgcp quarantine mode <cr>    # conditional_registration_candidates-001819
+(config)# default mgcp quarantine persistent-event <cr>    # conditional_registration_candidates-001823
+(config)# default mgcp request retries <cr>    # conditional_registration_candidates-001754
+(config)# default mgcp request timeout <cr>    # conditional_registration_candidates-001763
+(config)# default mgcp restart-delay <cr>    # conditional_registration_candidates-000530
+(config)# default mgcp rtp icmp timeout <cr>    # conditional_registration_candidates-004208
+(config)# default mgcp rtp payload-type g726r16 <cr>    # conditional_registration_candidates-004204
+(config)# default mgcp rtrcac <cr>    # conditional_registration_candidates-000544
+(config)# default mgcp sched-time <cr>    # conditional_registration_candidates-000522
+(config)# default mgcp sdp mdcx-ack <cr>    # conditional_registration_candidates-001804
+(config)# default mgcp sdp notation <cr>    # conditional_registration_candidates-001806
+(config)# default mgcp sdp simple <cr>    # conditional_registration_candidates-001792
+(config)# default mgcp sdp xpc-codec <cr>    # conditional_registration_candidates-001798
+(config)# default mgcp sgcp restart notify <cr>    # conditional_registration_candidates-004207
+(config)# default mgcp src-cac <cr>    # conditional_registration_candidates-000546
+(config)# default mgcp timer keep-alive <cr>    # conditional_registration_candidates-001848
+(config)# default mgcp timer net-cont-test <cr>    # conditional_registration_candidates-001843
+(config)# default mgcp timer nse-response t38 <cr>    # conditional_registration_candidates-004222
+(config)# default mgcp timer receive-rtcp <cr>    # conditional_registration_candidates-001834
+(config)# default mgcp timer toh-time <cr>    # conditional_registration_candidates-001840
+(config)# default mgcp tse payload <cr>    # conditional_registration_candidates-001829
+(config)# default mgcp vad <cr>    # conditional_registration_candidates-000540
+(config)# default mgcp validate call-agent source-ipaddr <cr>    # conditional_registration_candidates-004212
+(config)# default mgcp validate domain-name <cr>    # conditional_registration_candidates-001826
+(config)# default mgcp voaal2 lco-codec ignore <cr>    # conditional_registration_candidates-004217
+(config)# default mgcp voice-quality-stats <cr>    # conditional_registration_candidates-000539
+(config)# default novell accounting-list <cr>    # conditional_registration_candidates-000387
+(config)# default novell accounting-threshold <cr>    # conditional_registration_candidates-000131
+(config)# default novell accounting-transits <cr>    # conditional_registration_candidates-000134
+(config)# default novell advertise-to-lost-route <cr>    # conditional_registration_candidates-000406
+(config)# default novell algorithms <cr>    # conditional_registration_candidates-000327
+(config)# default novell backup-server-query-interval <cr>    # conditional_registration_candidates-000120
+(config)# default novell broadcast-fastswitching <cr>    # conditional_registration_candidates-000368
+(config)# default novell default-output-sap-delay <cr>    # conditional_registration_candidates-000100
+(config)# default novell default-route <cr>    # conditional_registration_candidates-000383
+(config)# default novell default-triggered-sap-delay <cr>    # conditional_registration_candidates-000106
+(config)# default novell default-triggered-sap-holddown <cr>    # conditional_registration_candidates-000094
+(config)# default novell gns-response-delay <cr>    # conditional_registration_candidates-000111
+(config)# default novell gns-round-robin <cr>    # conditional_registration_candidates-000317
+(config)# default novell internal-network <cr>    # conditional_registration_candidates-000348
+(config)# default novell maximum-hops <cr>    # conditional_registration_candidates-000136
+(config)# default novell maximum-paths <cr>    # conditional_registration_candidates-000060
+(config)# default novell netbios-socket-input-checks <cr>    # conditional_registration_candidates-000346
+(config)# default novell per-host-load-share <cr>    # conditional_registration_candidates-000410
+(config)# default novell ping-default cisco <cr>    # conditional_registration_candidates-001273
+(config)# default novell route default <cr>    # conditional_registration_candidates-001592
+(config)# default novell route-cache inactivity-timeout <cr>    # conditional_registration_candidates-001473
+(config)# default novell route-cache max-size <cr>    # conditional_registration_candidates-001543
+(config)# default novell route-cache update-timeout <cr>    # conditional_registration_candidates-001506
+(config)# default novell routing <cr>    # conditional_registration_candidates-000248
+(config)# default novell sap <number:0..65535> <string> <cr>    # conditional_registration_candidates-003736
+(config)# default novell sap follow-route-path <cr>    # conditional_registration_candidates-001518
+(config)# default novell sap-queue-maximum <cr>    # conditional_registration_candidates-000268
+(config)# default novell sap-update-queue-maximum <cr>    # conditional_registration_candidates-000279
+(config)# default novell sap-uses-routing-info <cr>    # conditional_registration_candidates-000340
+(config)# default novell server-split-horizon-on-server-paths <cr>    # conditional_registration_candidates-000388
+(config)# default novell spx-spoof session-clear <cr>    # conditional_registration_candidates-000398
+(config)# default novell spx-spoof table-clear <cr>    # conditional_registration_candidates-000394
+(config)# default novell throttle-update-proc <cr>    # conditional_registration_candidates-000086
+(config)# default novell throttle-update-sched <cr>    # conditional_registration_candidates-000083
+(config)# default novell type-20-helpered <cr>    # conditional_registration_candidates-000364
+(config)# default novell type-20-input-checks <cr>    # conditional_registration_candidates-000354
+(config)# default novell type-20-output-checks <cr>    # conditional_registration_candidates-000358
+(config)# default num-exp <string> <cr>    # conditional_registration_candidates-000501
+(config)# default otv convergence timers aggressive <cr>    # conditional_registration_candidates-001867
+(config)# default otv site bridge-domain <cr>    # conditional_registration_candidates-000615
+(config)# default platform subscriber cac bqs active-queues <cr>    # conditional_registration_candidates-004234
+(config)# default platform subscriber cac cpu fp <cr>    # conditional_registration_candidates-004255
+(config)# default platform subscriber cac cpu rp <cr>    # conditional_registration_candidates-004248
+(config)# default platform subscriber cac mem cc <cr>    # conditional_registration_candidates-004256
+(config)# default platform subscriber cac mem fp <cr>    # conditional_registration_candidates-004249
+(config)# default platform subscriber cac mem qfp <cr>    # conditional_registration_candidates-004259
+(config)# default platform subscriber cac mem rp <cr>    # conditional_registration_candidates-004240
+(config)# default platform subscriber cac timer <cr>    # conditional_registration_candidates-001851
+(config)# default platform subscriber statistics update accounting <cr>    # conditional_registration_candidates-004236
+(config)# default platform subscriber statistics update all <cr>    # conditional_registration_candidates-004226
+(config)# default platform subscriber statistics update drl <cr>    # conditional_registration_candidates-004252
+(config)# default platform subscriber statistics update segment <cr>    # conditional_registration_candidates-004230
+(config)# default platform subscriber statistics update tc <cr>    # conditional_registration_candidates-004243
+(config)# default presence <cr>    # conditional_registration_candidates-000175
+(config)# default pseudowire-class <string> <cr>    # conditional_registration_candidates-000282
+(config)# default pseudowire-static-oam class <string> <cr>    # conditional_registration_candidates-000587
+(config)# default pseudowire-tlv template <string> <cr>    # conditional_registration_candidates-000598
+(config)# default rpl battery-power <cr>    # conditional_registration_candidates-000213
+(config)# default rpl no-dao interval <cr>    # conditional_registration_candidates-000628
+(config)# default rpl smooth link-etx <cr>    # conditional_registration_candidates-000611
+(config)# default rpl smooth link-latency <cr>    # conditional_registration_candidates-000639
+(config)# default rpl smooth path-etx <cr>    # conditional_registration_candidates-000629
+(config)# default rpl smooth path-latency <cr>    # conditional_registration_candidates-000655
+(config)# default rtsp client rtpsetup enable <cr>    # conditional_registration_candidates-001862
+(config)# default rtsp client session history duration <cr>    # conditional_registration_candidates-004267
+(config)# default rtsp client session history records <cr>    # conditional_registration_candidates-004275
+(config)# default rtsp client timeout connect <cr>    # conditional_registration_candidates-001881
+(config)# default rtsp client timeout message <cr>    # conditional_registration_candidates-001895
+(config)# default sbc <string> <cr>    # conditional_registration_candidates-000502
+(config)# default sbc <string> dbe <cr>    # conditional_registration_candidates-001746
+(config)# default sbc redundancy-group <number:1..2> tcp <cr>    # conditional_registration_candidates-004008
+(config)# default sccp <cr>    # conditional_registration_candidates-000172
+(config)# default sccp ccm <address> <cr>    # conditional_registration_candidates-001738
+(config)# default sccp ccm group <number:1..65535> <cr>    # conditional_registration_candidates-003988
+(config)# default sccp codec g711ulaw <cr>    # conditional_registration_candidates-001761
+(config)# default sccp ip precedence <cr>    # conditional_registration_candidates-001700
+(config)# default sccp local <cr>    # conditional_registration_candidates-000476
+(config)# default sccp plar <cr>    # conditional_registration_candidates-000481
+(config)# default service-chain service-function <string> <cr>    # conditional_registration_candidates-000586
+(config)# default service-chain service-function-forwarder local <cr>    # conditional_registration_candidates-000595
+(config)# default service-chain service-path <number:1..16777215> <cr>    # conditional_registration_candidates-000606
+(config)# default service-export mdns-sd controller <string> <cr>    # conditional_registration_candidates-001876
+(config)# default signaling-class cas <string> <cr>    # conditional_registration_candidates-000572
+(config)# default sip-ua <cr>    # conditional_registration_candidates-000181
+(config)# default site-manager <cr>    # conditional_registration_candidates-000071
+(config)# default snmp-server enable traps isg-mib isg-job-finished <cr>    # conditional_registration_candidates-006300
+(config)# default spanning-tree bpdu delay-monitor <cr>    # conditional_registration_candidates-000682
+(config)# default spanning-tree bpdu sender-conflict <cr>    # conditional_registration_candidates-000705
+(config)# default spanning-tree bridge assurance <cr>    # conditional_registration_candidates-000645
+(config)# default spanning-tree cca <cr>    # conditional_registration_candidates-000202
+(config)# default spanning-tree dispute <cr>    # conditional_registration_candidates-000240
+(config)# default spanning-tree logging <cr>    # conditional_registration_candidates-000305
+(config)# default spanning-tree loopguard default <cr>    # conditional_registration_candidates-000679
+(config)# default spanning-tree mode <cr>    # conditional_registration_candidates-000243
+(config)# default spanning-tree optimize bpdu transmission <cr>    # conditional_registration_candidates-001942
+(config)# default spanning-tree portfast bpdu-guard <cr>    # conditional_registration_candidates-000780
+(config)# default spanning-tree portfast bpdufilter default <cr>    # conditional_registration_candidates-002189
+(config)# default spanning-tree portfast bpduguard default <cr>    # conditional_registration_candidates-002088
+(config)# default spanning-tree portfast default <cr>    # conditional_registration_candidates-000723
+(config)# default spanning-tree portfast network default <cr>    # conditional_registration_candidates-001943
+(config)# default spanning-tree portfast normal default <cr>    # conditional_registration_candidates-001962
+(config)# default spanning-tree queue maxsize <cr>    # conditional_registration_candidates-000326
+(config)# default spanning-tree sso block-tcn <cr>    # conditional_registration_candidates-000619
+(config)# default spanning-tree transmit hold-count <cr>    # conditional_registration_candidates-000710
+(config)# default stcapp <cr>    # conditional_registration_candidates-000099

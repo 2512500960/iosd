@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-068.md
+
+(config)# do-exec undebug ip ospf scheduler router mode <cr>    # path-055411
+(config)# do-exec undebug ip ospf scheduler router timer <cr>    # path-055289
+(config)# do-exec undebug ip ospf segment-routing <cr>    # path-040490
+(config)# do-exec undebug ip ospf segment-routing adjacency-sid <cr>    # path-049267
+(config)# do-exec undebug ip ospf segment-routing app <cr>    # path-049332
+(config)# do-exec undebug ip ospf segment-routing mapping-server <cr>    # path-049461
+(config)# do-exec undebug ip ospf segment-routing microloop-avoidance event <cr>    # path-055559
+(config)# do-exec undebug ip ospf segment-routing microloop-avoidance rib <cr>    # path-055687
+(config)# do-exec undebug ip ospf segment-routing microloop-avoidance spf <cr>    # path-055667
+(config)# do-exec undebug ip ospf segment-routing oam <cr>    # path-049448
+(config)# do-exec undebug ip ospf segment-routing prefix-sid <cr>    # path-049599
+(config)# do-exec undebug ip ospf segment-routing traffic-eng <cr>    # path-049688
+(config)# do-exec undebug ip ospf snmp <cr>    # path-039186
+(config)# do-exec undebug ip ospf snmp query <cr>    # path-048073
+(config)# do-exec undebug ip ospf snmp trap <cr>    # path-048128
+(config)# do-exec undebug ip ospf spf <cr>    # path-040072
+(config)# do-exec undebug ip ospf spf external <cr>    # path-049062
+(config)# do-exec undebug ip ospf spf inter <cr>    # path-049010
+(config)# do-exec undebug ip ospf spf intra <cr>    # path-048935
+(config)# do-exec undebug ip ospf spf statistic <cr>    # path-049103
+(config)# do-exec undebug ip ospf teapp <cr>    # path-040313
+(config)# do-exec undebug ip ospf topology <cr>    # path-040515
+(config)# do-exec undebug ip ospf topology fast-reroute <cr>    # path-049834
+(config)# do-exec undebug ip ospf topology fast-reroute path <cr>    # path-055732
+(config)# do-exec undebug ip ospf topology fast-reroute route <cr>    # path-055766
+(config)# do-exec undebug ip ospf topology path <cr>    # path-049817
+(config)# do-exec undebug ip ospf topology route <cr>    # path-049838
+(config)# do-exec undebug ip packet <cr>    # path-030850
+(config)# do-exec undebug ip peer <cr>    # path-030808
+(config)# do-exec undebug ip pim <cr>    # path-031484
+(config)# do-exec undebug ip pim atm <cr>    # path-038788
+(config)# do-exec undebug ip pim auto-rp <cr>    # path-038534
+(config)# do-exec undebug ip pim bfd <cr>    # path-039138
+(config)# do-exec undebug ip pim bsr <cr>    # path-038484
+(config)# do-exec undebug ip pim crimson <cr>    # path-038828
+(config)# do-exec undebug ip pim df <cr>    # path-038641
+(config)# do-exec undebug ip pim drlb <cr>    # path-038787
+(config)# do-exec undebug ip pim hello <cr>    # path-038674
+(config)# do-exec undebug ip pim pfp-sa <cr>    # path-039183
+(config)# do-exec undebug ip pim pfp-sa <cr>    # path-039184
+(config)# do-exec undebug ip pim timers <cr>    # path-038622
+(config)# do-exec undebug ip policy <cr>    # path-031693
+(config)# do-exec undebug ip policy dynamic <cr>    # path-039345
+(config)# do-exec undebug ip policy early <cr>    # path-039436
+(config)# do-exec undebug ip process <cr>    # path-031206
+(config)# do-exec undebug ip rgmp <cr>    # path-031307
+(config)# do-exec undebug ip rip <cr>    # path-031734
+(config)# do-exec undebug ip rip bfd events <cr>    # path-048530
+(config)# do-exec undebug ip rip database <cr>    # path-039338
+(config)# do-exec undebug ip rip events <cr>    # path-039393
+(config)# do-exec undebug ip rip trigger <cr>    # path-039461
+(config)# do-exec undebug ip routing <cr>    # path-031507
+(config)# do-exec undebug ip routing <number:1..199> <cr>    # path-038735
+(config)# do-exec undebug ip routing altpref <cr>    # path-039085
+(config)# do-exec undebug ip routing connected <cr>    # path-038916
+(config)# do-exec undebug ip routing maxroutes <cr>    # path-038926
+(config)# do-exec undebug ip routing nsf <cr>    # path-038440
+(config)# do-exec undebug ip routing parser <cr>    # path-038399
+(config)# do-exec undebug ip routing static bfd <cr>    # path-048267
+(config)# do-exec undebug ip routing static db <cr>    # path-048181
+(config)# do-exec undebug ip routing static default-network <cr>    # path-048139
+(config)# do-exec undebug ip routing static detail <cr>    # path-048358
+(config)# do-exec undebug ip routing static event <cr>    # path-048047
+(config)# do-exec undebug ip routing static nsf <cr>    # path-048268
+(config)# do-exec undebug ip routing static route <address> <address> <cr>    # path-058195
+(config)# do-exec undebug ip routing static rwatch <cr>    # path-048199
+(config)# do-exec undebug ip routing static rwatch defaultnet <cr>    # path-054713
+(config)# do-exec undebug ip routing static rwatch rib <cr>    # path-054684
+(config)# do-exec undebug ip routing static summary <cr>    # path-047997
+(config)# do-exec undebug ip routing static time <cr>    # path-048310
+(config)# do-exec undebug ip routing subblock <cr>    # path-038343
+(config)# do-exec undebug ip rsvp <cr>    # path-032241
+(config)# do-exec undebug ip rsvp aggregation <cr>    # path-040744
+(config)# do-exec undebug ip rsvp all <cr>    # path-040780
+(config)# do-exec undebug ip rsvp api <cr>    # path-040303
+(config)# do-exec undebug ip rsvp authentication <cr>    # path-039965
+(config)# do-exec undebug ip rsvp cli <cr>    # path-040477
+(config)# do-exec undebug ip rsvp data-pkts <number:1..32767> <cr>    # path-048598
+(config)# do-exec undebug ip rsvp data-pkts unlimited <cr>    # path-048528
+(config)# do-exec undebug ip rsvp database <cr>    # path-040507
+(config)# do-exec undebug ip rsvp docsis <cr>    # path-040622
+(config)# do-exec undebug ip rsvp dump-messages <cr>    # path-041048
+(config)# do-exec undebug ip rsvp dump-messages hex <cr>    # path-050107
+(config)# do-exec undebug ip rsvp errors <cr>    # path-040717
+(config)# do-exec undebug ip rsvp events <cr>    # path-039635
+(config)# do-exec undebug ip rsvp fast-reroute <cr>    # path-040846
+(config)# do-exec undebug ip rsvp fast-reroute errors <cr>    # path-049934
+(config)# do-exec undebug ip rsvp fast-reroute signalling <cr>    # path-049940
+(config)# do-exec undebug ip rsvp fast-reroute state <cr>    # path-049960
+(config)# do-exec undebug ip rsvp filter <cr>    # path-039710
+(config)# do-exec undebug ip rsvp function <cr>    # path-039689
+(config)# do-exec undebug ip rsvp handles <cr>    # path-040645
+(config)# do-exec undebug ip rsvp hello <cr>    # path-040602
+(config)# do-exec undebug ip rsvp hello bfd <cr>    # path-049664
+(config)# do-exec undebug ip rsvp hello client <cr>    # path-049626
+(config)# do-exec undebug ip rsvp hello detail <cr>    # path-049783
+(config)# do-exec undebug ip rsvp hello messages <cr>    # path-049710
+(config)# do-exec undebug ip rsvp hello stats <cr>    # path-049749
+(config)# do-exec undebug ip rsvp ingress <cr>    # path-039634
+(config)# do-exec undebug ip rsvp messages <cr>    # path-040538
+(config)# do-exec undebug ip rsvp msg-mgr <cr>    # path-040269
+(config)# do-exec undebug ip rsvp nsr <cr>    # path-039872
+(config)# do-exec undebug ip rsvp nsr infra <cr>    # path-048764
+(config)# do-exec undebug ip rsvp p2mp <cr>    # path-039854
+(config)# do-exec undebug ip rsvp path <cr>    # path-039688
+(config)# do-exec undebug ip rsvp pfr <cr>    # path-039744
+(config)# do-exec undebug ip rsvp policy <cr>    # path-040415
+(config)# do-exec undebug ip rsvp proxy <cr>    # path-040018
+(config)# do-exec undebug ip rsvp rate-limit <cr>    # path-040097
+(config)# do-exec undebug ip rsvp reliable-msg <cr>    # path-040227
+(config)# do-exec undebug ip rsvp resv <cr>    # path-039569
+(config)# do-exec undebug ip rsvp routing <cr>    # path-040141
+(config)# do-exec undebug ip rsvp sbm <cr>    # path-040382
+(config)# do-exec undebug ip rsvp signalling <cr>    # path-040688
+(config)# do-exec undebug ip rsvp snmp <cr>    # path-040562
+(config)# do-exec undebug ip rsvp sso <cr>    # path-039964
+(config)# do-exec undebug ip rsvp summary-refresh <cr>    # path-040186
+(config)# do-exec undebug ip rsvp svc <cr>    # path-040339
+(config)# do-exec undebug ip rsvp traffic-control <cr>    # path-040103
+(config)# do-exec undebug ip rsvp traffic-control all <cr>    # path-049077
+(config)# do-exec undebug ip rsvp wfq <cr>    # path-040592
+(config)# do-exec undebug ip rtp errors <cr>    # path-038170
+(config)# do-exec undebug ip rtp header-compression <cr>    # path-038127
+(config)# do-exec undebug ip rtp packets <cr>    # path-038081
+(config)# do-exec undebug ip scp <cr>    # path-031826
+(config)# do-exec undebug ip sctp api <cr>    # path-038759
+(config)# do-exec undebug ip sctp congestion <cr>    # path-038902
+(config)# do-exec undebug ip sctp init <cr>    # path-038961
+(config)# do-exec undebug ip sctp multihome <cr>    # path-039016
+(config)# do-exec undebug ip sctp performance <cr>    # path-039068
+(config)# do-exec undebug ip sctp rcvchunks <cr>    # path-038813
+(config)# do-exec undebug ip sctp rto <cr>    # path-039123
+(config)# do-exec undebug ip sctp segments <cr>    # path-039173
+(config)# do-exec undebug ip sctp segmentv <cr>    # path-039223
+(config)# do-exec undebug ip sctp signal <cr>    # path-039266
+(config)# do-exec undebug ip sctp sndchunks <cr>    # path-038864
+(config)# do-exec undebug ip sctp state <cr>    # path-039313
+(config)# do-exec undebug ip sctp timer <cr>    # path-039365
+(config)# do-exec undebug ip sctp warnings <cr>    # path-039422
+(config)# do-exec undebug ip sd <cr>    # path-031200
+(config)# do-exec undebug ip security <cr>    # path-030836
+(config)# do-exec undebug ip service first-hop <cr>    # path-038240
+(config)# do-exec undebug ip sftp <cr>    # path-031843
+(config)# do-exec undebug ip sla error 0 <cr>    # path-049345
+(config)# do-exec undebug ip sla error <cr>    # path-040198
+(config)# do-exec undebug ip sla error crimson <cr>    # path-049284
+(config)# do-exec undebug ip sla error ep-api <cr>    # path-049283
+(config)# do-exec undebug ip sla error ethernet-monitor <cr>    # path-049551
+(config)# do-exec undebug ip sla error event-publisher <cr>    # path-049230
+(config)# do-exec undebug ip sla event responder direct <cr>    # path-055439
+(config)# do-exec undebug ip sla event responder mgd-timer <cr>    # path-055362
+(config)# do-exec undebug ip sla event responder socket <cr>    # path-055474
+(config)# do-exec undebug ip sla event responder tw-timer <cr>    # path-055402
+(config)# do-exec undebug ip sla event sender direct <cr>    # path-055408
+(config)# do-exec undebug ip sla event sender mgd-timer <cr>    # path-055324
+(config)# do-exec undebug ip sla event sender socket <cr>    # path-055442
+(config)# do-exec undebug ip sla event sender tw-timer <cr>    # path-055369
+(config)# do-exec undebug ip sla trace 0 <cr>    # path-049287
+(config)# do-exec undebug ip sla trace <cr>    # path-040156
+(config)# do-exec undebug ip sla trace crimson <cr>    # path-049233
+(config)# do-exec undebug ip sla trace ep-api <cr>    # path-049232
+(config)# do-exec undebug ip sla trace ethernet-monitor <cr>    # path-049512
+(config)# do-exec undebug ip sla trace event-publisher <cr>    # path-049182
+(config)# do-exec undebug ip sla trace twamp connection <cr>    # path-055594
+(config)# do-exec undebug ip sla trace twamp control reflector <cr>    # path-058437
+(config)# do-exec undebug ip sla trace twamp control server <cr>    # path-058461
+(config)# do-exec undebug ip sla trace twamp session <cr>    # path-055478
+(config)# do-exec undebug ip sla trace twamp-light session <cr>    # path-055506
+(config)# do-exec undebug ip sla trace twamp-light session <number:1..100> <cr>    # path-058436
+(config)# do-exec undebug ip socket <cr>    # path-031464
+(config)# do-exec undebug ip socket api <cr>    # path-038776
+(config)# do-exec undebug ip socket dumpl2raw <number:1..255> <cr>    # path-047701
+(config)# do-exec undebug ip socket error <cr>    # path-038720
+(config)# do-exec undebug ip socket event <cr>    # path-038824
+(config)# do-exec undebug ip socket l2raw <cr>    # path-038662
+(config)# do-exec undebug ip ssh <cr>    # path-031867
+(config)# do-exec undebug ip ssh client <cr>    # path-039785
+(config)# do-exec undebug ip ssh detail <cr>    # path-039840
+(config)# do-exec undebug ip ssh packet <cr>    # path-039895
+(config)# do-exec undebug ip subscriber all <cr>    # path-040010
+(config)# do-exec undebug ip subscriber error <cr>    # path-039900
+(config)# do-exec undebug ip subscriber event <cr>    # path-039843
+(config)# do-exec undebug ip subscriber fsm <cr>    # path-039721
+(config)# do-exec undebug ip subscriber packet <cr>    # path-039790
+(config)# do-exec undebug ip subscriber redundancy <cr>    # path-039956
+(config)# do-exec undebug ip tcp CEF <cr>    # path-038241
+(config)# do-exec undebug ip tcp Winscale <cr>    # path-038543
+(config)# do-exec undebug ip tcp adjust-mss <cr>    # path-038465
+(config)# do-exec undebug ip tcp congestion <cr>    # path-038297
+(config)# do-exec undebug ip tcp driver <cr>    # path-038406
+(config)# do-exec undebug ip tcp driver-pak <cr>    # path-038447
+(config)# do-exec undebug ip tcp ecn <cr>    # path-038681
+(config)# do-exec undebug ip tcp ha event <cr>    # path-048063
+(config)# do-exec undebug ip tcp ha transactions <cr>    # path-048107
+(config)# do-exec undebug ip tcp header-compression <cr>    # path-038629
+(config)# do-exec undebug ip tcp mkt <cr>    # path-038741
+(config)# do-exec undebug ip tcp rcmd <cr>    # path-039025
+(config)# do-exec undebug ip tcp sack <cr>    # path-038586
+(config)# do-exec undebug ip tcp throughput <cr>    # path-038794
+(config)# do-exec undebug ip tempacl <cr>    # path-030865
+(config)# do-exec undebug ip trigger-authentication <cr>    # path-031710
+(config)# do-exec undebug ip trigger-authentication verbose <cr>    # path-039450
+(config)# do-exec undebug ip udp <cr>    # path-031913
+(config)# do-exec undebug ip urd <cr>    # path-031281
+(config)# do-exec undebug ip virtual-reassembly <cr>    # path-031844
+(config)# do-exec undebug ipam address <cr>    # path-030737
+(config)# do-exec undebug ipam detailed aaa <cr>    # path-037547
+(config)# do-exec undebug ipam detailed all <cr>    # path-037584
+(config)# do-exec undebug ipam detailed dhcp <cr>    # path-037624
+(config)# do-exec undebug ipam detailed event <cr>    # path-037668
+(config)# do-exec undebug ipam detailed message <cr>    # path-037710
+(config)# do-exec undebug ipam dhcp <cr>    # path-030775
+(config)# do-exec undebug ipam error <cr>    # path-030787
+(config)# do-exec undebug ipam event <cr>    # path-030809
+(config)# do-exec undebug ipam ipc <cr>    # path-030866
+(config)# do-exec undebug ipam message <cr>    # path-030890
+(config)# do-exec undebug ipam odap <cr>    # path-030919
+(config)# do-exec undebug ipam pools <cr>    # path-030939
+(config)# do-exec undebug ipam redundancy <cr>    # path-030837
+(config)# do-exec undebug ipc all <cr>    # path-030053
+(config)# do-exec undebug ipc app <cr>    # path-029940
+(config)# do-exec undebug ipc backpressure <cr>    # path-029383
+(config)# do-exec undebug ipc buffer <cr>    # path-029737
+(config)# do-exec undebug ipc bundle seat <cr>    # path-035455
+(config)# do-exec undebug ipc bundle session <cr>    # path-035519
+(config)# do-exec undebug ipc delayed-init <cr>    # path-029844
+(config)# do-exec undebug ipc driver <cr>    # path-028985
+(config)# do-exec undebug ipc errors <cr>    # path-029129
+(config)# do-exec undebug ipc errors driver <cr>    # path-035156
+(config)# do-exec undebug ipc errors sequence <cr>    # path-035094
+(config)# do-exec undebug ipc events <cr>    # path-029240
+(config)# do-exec undebug ipc events flushes <cr>    # path-035203
+(config)# do-exec undebug ipc events retries <cr>    # path-035257
+(config)# do-exec undebug ipc events timeout <cr>    # path-035142
+(config)# do-exec undebug ipc issu events <cr>    # path-035857
+(config)# do-exec undebug ipc issu messages <cr>    # path-036044
+(config)# do-exec undebug ipc keepalive <cr>    # path-029541
+(config)# do-exec undebug ipc mcast appclass <cr>    # path-036425
+(config)# do-exec undebug ipc mcast errors <cr>    # path-036484
+(config)# do-exec undebug ipc mcast events <cr>    # path-036548
+(config)# do-exec undebug ipc mcast groups <cr>    # path-036285
+(config)# do-exec undebug ipc mcast member-sessions <cr>    # path-036645
+(config)# do-exec undebug ipc mcast ports <cr>    # path-036359
+(config)# do-exec undebug ipc mcast sessions <cr>    # path-036601
+(config)# do-exec undebug ipc notifications <cr>    # path-029643
+(config)# do-exec undebug ipc packets <cr>    # path-028790
+(config)# do-exec undebug ipc ports <cr>    # path-029212
+(config)# do-exec undebug ipc priority <cr>    # path-030023
+(config)# do-exec undebug ipc rmi <cr>    # path-029489
+(config)# do-exec undebug ipc seats <cr>    # path-029159
+(config)# do-exec undebug ipc sessions <cr>    # path-029434
+(config)# do-exec undebug ipc stateful <cr>    # path-029596
+(config)# do-exec undebug ipc thread <cr>    # path-029911
+(config)# do-exec undebug ipc thread errors <cr>    # path-036095
+(config)# do-exec undebug ipc thread events <cr>    # path-036005
+(config)# do-exec undebug ipc udp <cr>    # path-029895
+(config)# do-exec undebug ipc window <cr>    # path-029275
+(config)# do-exec undebug ipc window-error <cr>    # path-029315
+(config)# do-exec undebug ipc zones <cr>    # path-029108
+(config)# do-exec undebug iphc ipc <cr>    # path-030849
+(config)# do-exec undebug iphc ipc events <cr>    # path-037609
+(config)# do-exec undebug iphc ipc statistics <cr>    # path-037660
+(config)# do-exec undebug iphc process <cr>    # path-030772
+(config)# do-exec undebug ipv6 access-list <cr>    # path-031851
+(config)# do-exec undebug ipv6 address <cr>    # path-031847
+(config)# do-exec undebug ipv6 cef drop <cr>    # path-040246
+(config)# do-exec undebug ipv6 cef drop rpf <cr>    # path-049021
+(config)# do-exec undebug ipv6 cef events <cr>    # path-040086
+(config)# do-exec undebug ipv6 cef packet <cr>    # path-040243
+(config)# do-exec undebug ipv6 cef receive <cr>    # path-040361
+(config)# do-exec undebug ipv6 cef table background <cr>    # path-049159
+(config)# do-exec undebug ipv6 dhcp <cr>    # path-031750
+(config)# do-exec undebug ipv6 dhcp database <cr>    # path-039852
+(config)# do-exec undebug ipv6 dhcp leasequery <cr>    # path-039496
+(config)# do-exec undebug ipv6 dhcp redundancy <cr>    # path-039976
+(config)# do-exec undebug ipv6 dhcp relay <cr>    # path-039869
+(config)# do-exec undebug ipv6 dhcp relay bulk-lease <cr>    # path-048761
+(config)# do-exec undebug ipv6 eigrp <cr>    # path-031755
+(config)# do-exec undebug ipv6 feature <cr>    # path-031572
+(config)# do-exec undebug ipv6 fragment <cr>    # path-031539
+(config)# do-exec undebug ipv6 icmp <cr>    # path-031472
+(config)# do-exec undebug ipv6 interface <cr>    # path-031915
+(config)# do-exec undebug ipv6 mfib init <cr>    # path-039201
+(config)# do-exec undebug ipv6 mib <cr>    # path-031545
+(config)# do-exec undebug ipv6 mld <cr>    # path-031754
+(config)# do-exec undebug ipv6 mld events <cr>    # path-039513
+(config)# do-exec undebug ipv6 mld explicit <address> <cr>    # path-048282
+(config)# do-exec undebug ipv6 mld explicit <cr>    # path-039375
+(config)# do-exec undebug ipv6 mld group <address> <cr>    # path-048372
+(config)# do-exec undebug ipv6 mld timer-wheel <cr>    # path-039466
+(config)# do-exec undebug ipv6 mrib bundle <cr>    # path-039749
+(config)# do-exec undebug ipv6 mrib client <cr>    # path-039472
+(config)# do-exec undebug ipv6 mrib filter <cr>    # path-039640
+(config)# do-exec undebug ipv6 mrib io <cr>    # path-039577
+(config)# do-exec undebug ipv6 mrib issu <cr>    # path-039405
+(config)# do-exec undebug ipv6 mrib malloc <cr>    # path-039806
+(config)# do-exec undebug ipv6 mrib proxy <cr>    # path-039303
+(config)# do-exec undebug ipv6 mrib route <address> <cr>    # path-048374
+(config)# do-exec undebug ipv6 mrib route <cr>    # path-039485
+(config)# do-exec undebug ipv6 mrib table <cr>    # path-039516
+(config)# do-exec undebug ipv6 mrib test <cr>    # path-039355
+(config)# do-exec undebug ipv6 mrib timer <cr>    # path-039692
+(config)# do-exec undebug ipv6 mrib trans <address> <cr>    # path-048325
+(config)# do-exec undebug ipv6 mrib trans <cr>    # path-039430
+(config)# do-exec undebug ipv6 multicast aaa detail <cr>    # path-048907
+(config)# do-exec undebug ipv6 multicast aaa error <cr>    # path-048828
+(config)# do-exec undebug ipv6 multicast aaa verbose <cr>    # path-048980
+(config)# do-exec undebug ipv6 multicast gir <cr>    # path-040139
+(config)# do-exec undebug ipv6 multicast rpf <cr>    # path-040051
+(config)# do-exec undebug ipv6 multicast rwatch <cr>    # path-040009
+(config)# do-exec undebug ipv6 nd <cr>    # path-031548
+(config)# do-exec undebug ipv6 nd ha <cr>    # path-039133
+(config)# do-exec undebug ipv6 packet <cr>    # path-031522
+(config)# do-exec undebug ipv6 pim <cr>    # path-031898
+(config)# do-exec undebug ipv6 pim bfd <cr>    # path-040279
+(config)# do-exec undebug ipv6 pim bsr <cr>    # path-040237
+(config)# do-exec undebug ipv6 pim bsr <cr>    # path-040238
+(config)# do-exec undebug ipv6 pim crimson <cr>    # path-039966
+(config)# do-exec undebug ipv6 pim df-election <cr>    # path-039654
+(config)# do-exec undebug ipv6 pim drlb <cr>    # path-039572
+(config)# do-exec undebug ipv6 pim events <cr>    # path-039909
+(config)# do-exec undebug ipv6 pim group <address> <cr>    # path-048643
+(config)# do-exec undebug ipv6 pim limit <address> <cr>    # path-048696
+(config)# do-exec undebug ipv6 pim limit <cr>    # path-039818
+(config)# do-exec undebug ipv6 pim neighbor <cr>    # path-039929
+(config)# do-exec undebug ipv6 pim pfp-sa <cr>    # path-040350
+(config)# do-exec undebug ipv6 pim pfp-sa <cr>    # path-040351
+(config)# do-exec undebug ipv6 pim timer-wheel <cr>    # path-039855
+(config)# do-exec undebug ipv6 policy <cr>    # path-031865
+(config)# do-exec undebug ipv6 pool <cr>    # path-031807
+(config)# do-exec undebug ipv6 rip <cr>    # path-031732
+(config)# do-exec undebug ipv6 routemap-api <cr>    # path-031744
+(config)# do-exec undebug ipv6 routeviafib <cr>    # path-031494
+(config)# do-exec undebug ipv6 rpf <cr>    # path-031664
+(config)# do-exec undebug ipv6 static <cr>    # path-031495
+(config)# do-exec undebug isdn all <cr>    # path-033126
+(config)# do-exec undebug isdn api <cr>    # path-033172
+(config)# do-exec undebug isdn cc <cr>    # path-033080
+(config)# do-exec undebug isdn code <cr>    # path-033127
+(config)# do-exec undebug isdn error <cr>    # path-033109
+(config)# do-exec undebug isdn events <cr>    # path-033046
+(config)# do-exec undebug isdn experimental <cr>    # path-033120
+(config)# do-exec undebug isdn mgmnt <cr>    # path-033069
+(config)# do-exec undebug isdn q921 <cr>    # path-033059
+(config)# do-exec undebug isdn q931 <cr>    # path-033070
+(config)# do-exec undebug isdn raw <cr>    # path-033134
+(config)# do-exec undebug isdn standard <cr>    # path-033141
+(config)# do-exec undebug isdn tgrm <cr>    # path-033099
+(config)# do-exec undebug isis adj-packets <cr>    # path-032409
+(config)# do-exec undebug isis adj-stagger <cr>    # path-032845
+(config)# do-exec undebug isis authentication information <cr>    # path-041272
+(config)# do-exec undebug isis bfd <cr>    # path-032392
+(config)# do-exec undebug isis cache <cr>    # path-032830
+(config)# do-exec undebug isis checksum-errors <cr>    # path-032438
+(config)# do-exec undebug isis cold-restart <cr>    # path-032858
+(config)# do-exec undebug isis crimson <cr>    # path-032817
+(config)# do-exec undebug isis distribute-ls <cr>    # path-032950
+(config)# do-exec undebug isis dr dampening <cr>    # path-041375
+(config)# do-exec undebug isis fast-reroute path-selection <cr>    # path-041959
+(config)# do-exec undebug isis fast-reroute ti-lfa <cr>    # path-041984
+(config)# do-exec undebug isis fast-reroute trigger <cr>    # path-041749
+(config)# do-exec undebug isis flex-algo <number:128..255> <cr>    # path-041801
+(config)# do-exec undebug isis flood-speed <cr>    # path-032869
+(config)# do-exec undebug isis geninfo <cr>    # path-032460
+(config)# do-exec undebug isis graceful-reload <cr>    # path-032881
+(config)# do-exec undebug isis local-updates <cr>    # path-032492
+(config)# do-exec undebug isis lsp dampening <cr>    # path-041355
+(config)# do-exec undebug isis lsp generation <cr>    # path-041379
+(config)# do-exec undebug isis mfi <cr>    # path-032914
+(config)# do-exec undebug isis microloop <cr>    # path-032850
+(config)# do-exec undebug isis mpls traffic-eng advertisements <cr>    # path-050858
+(config)# do-exec undebug isis mpls traffic-eng events <cr>    # path-050876
+(config)# do-exec undebug isis mtr <cr>    # path-032729
+(config)# do-exec undebug isis notifications <cr>    # path-032611
+(config)# do-exec undebug isis nsf <cr>    # path-032677
+(config)# do-exec undebug isis nsf cisco <cr>    # path-041551
+(config)# do-exec undebug isis nsf ietf <cr>    # path-041588
+(config)# do-exec undebug isis prc dampening <cr>    # path-041434
+(config)# do-exec undebug isis private <cr>    # path-032616
+(config)# do-exec undebug isis private detail <cr>    # path-041466
+(config)# do-exec undebug isis protocol-errors <cr>    # path-032422
+(config)# do-exec undebug isis rib global <cr>    # path-041823
+(config)# do-exec undebug isis rib local <cr>    # path-041825
+(config)# do-exec undebug isis rib redistribution <cr>    # path-041936
+(config)# do-exec undebug isis segment-routing <cr>    # path-032952
+(config)# do-exec undebug isis segment-routing mapping-server <cr>    # path-042202
+(config)# do-exec undebug isis snp-packets <cr>    # path-032405
+(config)# do-exec undebug isis spf-events <cr>    # path-032821
+(config)# do-exec undebug isis spf-statistics <cr>    # path-032768
+(config)# do-exec undebug isis spf-triggers <cr>    # path-032788
+(config)# do-exec undebug isis spt dampening <cr>    # path-041402
+(config)# do-exec undebug isis srv6 <cr>    # path-032925
+(config)# do-exec undebug isis teapp <cr>    # path-032892
+(config)# do-exec undebug isis test <cr>    # path-032904
+(config)# do-exec undebug isis update-packets <cr>    # path-032513
+(config)# do-exec undebug issu all <cr>    # path-033223
+(config)# do-exec undebug issu client event <cr>    # path-042591
+(config)# do-exec undebug issu client event clientID <number:1..8035> <cr>    # path-056481
+(config)# do-exec undebug issu client event clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-059609
+(config)# do-exec undebug issu client event clientID <number:1..8035> entityID <number:1..4294967295> MsgType <number:0..4294967294> <cr>    # path-060114

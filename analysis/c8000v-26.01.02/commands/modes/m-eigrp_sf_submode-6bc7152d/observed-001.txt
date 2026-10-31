@@ -1,0 +1,56 @@
+# 模式 eigrp_sf_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-sf)# default eigrp graceful-restart <cr>    # observed_connections-007825
+(config-router-sf)# default eigrp kill-everyone <cr>    # observed_connections-007827
+(config-router-sf)# default eigrp log-neighbor-changes <cr>    # observed_connections-007830
+(config-router-sf)# default eigrp log-neighbor-warnings <cr>    # observed_connections-007835
+(config-router-sf)# default eigrp router-id <cr>    # observed_connections-007821
+(config-router-sf)# default eigrp stub <cr>    # observed_connections-007829
+(config-router-sf)# default maximum-service <cr>    # observed_connections-007801
+(config-router-sf)# default metric version <cr>    # observed_connections-007813
+(config-router-sf)# default metric weights <cr>    # observed_connections-007818
+(config-router-sf)# default neighbor maximum-service <cr>    # observed_connections-007833
+(config-router-sf)# default neighbor maximum-service <cr>    # observed_connections-007836
+(config-router-sf)# default sf-interface default <cr>    # observed_connections-007816
+(config-router-sf)# default shutdown <cr>    # observed_connections-007802
+(config-router-sf)# default timers graceful-restart purge-time <cr>    # observed_connections-007842
+(config-router-sf)# default topology base <cr>    # observed_connections-007823
+(config-router-sf)# eigrp graceful-restart <cr>    # observed_connections-007804
+(config-router-sf)# eigrp kill-everyone <cr>    # observed_connections-007805
+(config-router-sf)# eigrp log-neighbor-changes <cr>    # observed_connections-007806
+(config-router-sf)# eigrp log-neighbor-warnings <cr>    # observed_connections-007808
+(config-router-sf)# eigrp router-id <address> <cr>    # observed_connections-007819
+(config-router-sf)# eigrp stub <cr>    # observed_connections-007807
+(config-router-sf)# exit-service-family <cr>    # observed_connections-007796
+(config-router-sf)# maximum-service <number:1..4294967295> <cr>    # observed_connections-007809
+(config-router-sf)# metric version 32bit <cr>    # observed_connections-007811
+(config-router-sf)# metric version 64bit <cr>    # observed_connections-007815
+(config-router-sf)# metric weights <number:0..8> <cr>    # observed_connections-007837
+(config-router-sf)# neighbor <address> <interface> <cr>    # observed_connections-007844
+(config-router-sf)# neighbor <address> <interface> <cr>    # observed_connections-007845
+(config-router-sf)# neighbor maximum-service <number:1..4294967295> <cr>    # observed_connections-007838
+(config-router-sf)# neighbor maximum-service <number:1..4294967295> <cr>    # observed_connections-007839
+(config-router-sf)# no eigrp graceful-restart <cr>    # observed_connections-007822
+(config-router-sf)# no eigrp kill-everyone <cr>    # observed_connections-007824
+(config-router-sf)# no eigrp log-neighbor-changes <cr>    # observed_connections-007828
+(config-router-sf)# no eigrp log-neighbor-warnings <cr>    # observed_connections-007832
+(config-router-sf)# no eigrp router-id <cr>    # observed_connections-007817
+(config-router-sf)# no eigrp stub <cr>    # observed_connections-007826
+(config-router-sf)# no maximum-service <cr>    # observed_connections-007798
+(config-router-sf)# no metric version <cr>    # observed_connections-007810
+(config-router-sf)# no metric weights <cr>    # observed_connections-007814
+(config-router-sf)# no neighbor maximum-service <cr>    # observed_connections-007831
+(config-router-sf)# no neighbor maximum-service <cr>    # observed_connections-007834
+(config-router-sf)# no sf-interface default <cr>    # observed_connections-007812
+(config-router-sf)# no shutdown <cr>    # observed_connections-007800
+(config-router-sf)# no timers graceful-restart purge-time <cr>    # observed_connections-007840
+(config-router-sf)# no topology base <cr>    # observed_connections-007820
+(config-router-sf)# remote-neighbors source <interface> multicast-group <cr>    # observed_connections-007846
+(config-router-sf)# remote-neighbors source <interface> multicast-group <cr>    # observed_connections-007847
+(config-router-sf)# sf-interface <interface> <cr>    # observed_connections-007843
+(config-router-sf)# sf-interface default <cr>    # observed_connections-007799
+(config-router-sf)# shutdown <cr>    # observed_connections-007797
+(config-router-sf)# timers graceful-restart purge-time <number:20..300> <cr>    # observed_connections-007841
+(config-router-sf)# topology base <cr>    # observed_connections-007803

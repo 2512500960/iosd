@@ -1,0 +1,43 @@
+# 模式 otv_site；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-otv-site)# default otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-004007
+(config-otv-site)# default otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-004005
+(config-otv-site)# default otv isis authentication send-only <cr>    # static_slot_creation_candidates-004003
+(config-otv-site)# default otv isis bfd <cr>    # static_slot_creation_candidates-003987
+(config-otv-site)# default otv isis csnp-interval <cr>    # static_slot_creation_candidates-003995
+(config-otv-site)# default otv isis hello padding <cr>    # static_slot_creation_candidates-003999
+(config-otv-site)# default otv isis hello-interval <cr>    # static_slot_creation_candidates-003988
+(config-otv-site)# default otv isis hello-multiplier <cr>    # static_slot_creation_candidates-003983
+(config-otv-site)# default otv isis lsp-interval <cr>    # static_slot_creation_candidates-003978
+(config-otv-site)# default otv isis metric <cr>    # static_slot_creation_candidates-003997
+(config-otv-site)# default otv isis priority <cr>    # static_slot_creation_candidates-003991
+(config-otv-site)# default otv isis retransmit-interval <cr>    # static_slot_creation_candidates-003976
+(config-otv-site)# default otv isis retransmit-throttle-interval <cr>    # static_slot_creation_candidates-003974
+(config-otv-site)# no otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-004006
+(config-otv-site)# no otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-004004
+(config-otv-site)# no otv isis authentication send-only <cr>    # static_slot_creation_candidates-004002
+(config-otv-site)# no otv isis bfd <cr>    # static_slot_creation_candidates-003984
+(config-otv-site)# no otv isis csnp-interval <cr>    # static_slot_creation_candidates-003994
+(config-otv-site)# no otv isis hello padding <cr>    # static_slot_creation_candidates-003998
+(config-otv-site)# no otv isis hello-interval <cr>    # static_slot_creation_candidates-003985
+(config-otv-site)# no otv isis hello-multiplier <cr>    # static_slot_creation_candidates-003981
+(config-otv-site)# no otv isis lsp-interval <cr>    # static_slot_creation_candidates-003977
+(config-otv-site)# no otv isis metric <cr>    # static_slot_creation_candidates-003996
+(config-otv-site)# no otv isis priority <cr>    # static_slot_creation_candidates-003990
+(config-otv-site)# no otv isis retransmit-interval <cr>    # static_slot_creation_candidates-003975
+(config-otv-site)# no otv isis retransmit-throttle-interval <cr>    # static_slot_creation_candidates-003973
+(config-otv-site)# otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-004001
+(config-otv-site)# otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-004000
+(config-otv-site)# otv isis authentication send-only <cr>    # static_slot_creation_candidates-003989
+(config-otv-site)# otv isis bfd <cr>    # static_slot_creation_candidates-003972
+(config-otv-site)# otv isis csnp-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003992
+(config-otv-site)# otv isis hello padding <cr>    # static_slot_creation_candidates-003982
+(config-otv-site)# otv isis hello-interval <number:1..65535> <cr>    # static_slot_creation_candidates-003980
+(config-otv-site)# otv isis hello-multiplier <number:3..1000> <cr>    # static_slot_creation_candidates-003979
+(config-otv-site)# otv isis lsp-interval <number:1..4294967295> <cr>    # static_slot_creation_candidates-003971
+(config-otv-site)# otv isis metric <number:1..16777214> <cr>    # static_slot_creation_candidates-003993
+(config-otv-site)# otv isis priority <number:0..127> <cr>    # static_slot_creation_candidates-003986
+(config-otv-site)# otv isis retransmit-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003970
+(config-otv-site)# otv isis retransmit-throttle-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003969

@@ -1,0 +1,34 @@
+# 模式 l2vpn-xc；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-xconnect)# default description <cr>    # static_slot_creation_candidates-004178
+(config-xconnect)# default interworking <cr>    # static_slot_creation_candidates-004181
+(config-xconnect)# default match protocol ipv6 <cr>    # static_slot_creation_candidates-004193
+(config-xconnect)# default member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004198
+(config-xconnect)# default redundancy all-active <cr>    # static_slot_creation_candidates-004190
+(config-xconnect)# default redundancy delay <number:0..180> <number:0..180> group <string> <cr>    # static_slot_creation_candidates-004203
+(config-xconnect)# default redundancy predictive <cr>    # static_slot_creation_candidates-004187
+(config-xconnect)# default remote circuit id <cr>    # static_slot_creation_candidates-004196
+(config-xconnect)# default remote link failure notification <cr>    # static_slot_creation_candidates-004200
+(config-xconnect)# default shutdown <cr>    # static_slot_creation_candidates-004183
+(config-xconnect)# description <string> <cr>    # static_slot_creation_candidates-004177
+(config-xconnect)# interworking ethernet <cr>    # static_slot_creation_candidates-004180
+(config-xconnect)# match protocol ipv6 <cr>    # static_slot_creation_candidates-004184
+(config-xconnect)# member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004191
+(config-xconnect)# no description <cr>    # static_slot_creation_candidates-004176
+(config-xconnect)# no interworking <cr>    # static_slot_creation_candidates-004179
+(config-xconnect)# no match protocol ipv6 <cr>    # static_slot_creation_candidates-004192
+(config-xconnect)# no member pseudowire <number:1..100000> <cr>    # static_slot_creation_candidates-004197
+(config-xconnect)# no redundancy all-active <cr>    # static_slot_creation_candidates-004188
+(config-xconnect)# no redundancy delay <number:0..180> <number:0..180> group <string> <cr>    # static_slot_creation_candidates-004202
+(config-xconnect)# no redundancy predictive <cr>    # static_slot_creation_candidates-004185
+(config-xconnect)# no remote circuit id <cr>    # static_slot_creation_candidates-004194
+(config-xconnect)# no remote link failure notification <cr>    # static_slot_creation_candidates-004199
+(config-xconnect)# no shutdown <cr>    # static_slot_creation_candidates-004182
+(config-xconnect)# redundancy all-active replicate <cr>    # static_slot_creation_candidates-004189
+(config-xconnect)# redundancy delay <number:0..180> <number:0..180> group <string> <cr>    # static_slot_creation_candidates-004201
+(config-xconnect)# redundancy predictive disabled <cr>    # static_slot_creation_candidates-004186
+(config-xconnect)# remote circuit id <number:dynamic> <cr>    # static_slot_creation_candidates-004204
+(config-xconnect)# remote link failure notification <cr>    # static_slot_creation_candidates-004195
+(config-xconnect)# shutdown <cr>    # static_slot_creation_candidates-004175

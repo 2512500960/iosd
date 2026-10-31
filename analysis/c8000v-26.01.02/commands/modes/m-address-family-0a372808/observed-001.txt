@@ -1,0 +1,404 @@
+# 模式 address-family；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af)# adjacency stagger none disable <cr>    # observed_connections-002471
+(config-router-af)# adjacency-check <cr>    # observed_connections-002024
+(config-router-af)# advertise passive-only <cr>    # observed_connections-002084
+(config-router-af)# aggregate-address <address> <address> <cr>    # observed_connections-002345
+(config-router-af)# area <address> <cr>    # observed_connections-002624
+(config-router-af)# area <address> authentication key-chain <cr>    # observed_connections-002638
+(config-router-af)# area <address> default-cost <cr>    # observed_connections-002628
+(config-router-af)# area <address> encryption ipsec spi <number:256..4294967295> <cr>    # observed_connections-002651
+(config-router-af)# area <address> filter-list prefix <string> in <cr>    # observed_connections-002652
+(config-router-af)# area <address> mpls <cr>    # observed_connections-002635
+(config-router-af)# area <address> no-transit <cr>    # observed_connections-002627
+(config-router-af)# area <address> normal <cr>    # observed_connections-002631
+(config-router-af)# area <address> nssa <cr>    # observed_connections-002633
+(config-router-af)# area <address> packet-size <cr>    # observed_connections-002629
+(config-router-af)# area <address> sham-link <address> <address> <cr>    # observed_connections-002649
+(config-router-af)# area <address> stub <cr>    # observed_connections-002632
+(config-router-af)# area <address> virtual-link <address> <cr>    # observed_connections-002644
+(config-router-af)# area <number:0..4294967295> authentication null <cr>    # observed_connections-002444
+(config-router-af)# area <number:0..4294967295> default-cost <number:0..16777214> <cr>    # observed_connections-002432
+(config-router-af)# area <number:0..4294967295> filter-list prefix <string> in <cr>    # observed_connections-002597
+(config-router-af)# area <number:0..4294967295> mpls <cr>    # observed_connections-002355
+(config-router-af)# area <number:0..4294967295> mpls traffic-engineering tunnel-tail ipv6 <interface> <cr>    # observed_connections-002654
+(config-router-af)# area <number:0..4294967295> no-transit <cr>    # observed_connections-002266
+(config-router-af)# area <number:0..4294967295> normal <cr>    # observed_connections-002294
+(config-router-af)# area <number:0..4294967295> nssa <cr>    # observed_connections-002351
+(config-router-af)# area <number:0..4294967295> packet-size <number:576..10000> <cr>    # observed_connections-002433
+(config-router-af)# area <number:0..4294967295> range <address> <address> <cr>    # observed_connections-002554
+(config-router-af)# area <number:0..4294967295> range <prefix:dynamic> <cr>    # observed_connections-002641
+(config-router-af)# area <number:0..4294967295> sham-link <address> <address> <cr>    # observed_connections-002559
+(config-router-af)# area <number:0..4294967295> stub <cr>    # observed_connections-002310
+(config-router-af)# area <number:0..4294967295> virtual-link <address> <cr>    # observed_connections-002492
+(config-router-af)# authentication mode strict <cr>    # observed_connections-002371
+(config-router-af)# auto-cost <cr>    # observed_connections-002043
+(config-router-af)# auto-summary <cr>    # observed_connections-002040
+(config-router-af)# bfd all-interfaces <cr>    # observed_connections-002062
+(config-router-af)# bfd all-interfaces <cr>    # observed_connections-002130
+(config-router-af)# bfd check-ctrl-plane-failure <cr>    # observed_connections-002108
+(config-router-af)# bfd interface <interface> <cr>    # observed_connections-002626
+(config-router-af)# bgp additional-paths install <cr>    # observed_connections-002308
+(config-router-af)# bgp additional-paths select <cr>    # observed_connections-002333
+(config-router-af)# bgp advertise-best-external <cr>    # observed_connections-002134
+(config-router-af)# bgp advertisement startup-delay <number:1..3600> <cr>    # observed_connections-002182
+(config-router-af)# bgp aggregate-timer <number:6..60> <cr>    # observed_connections-002334
+(config-router-af)# bgp aigp-rib-metric <cr>    # observed_connections-002209
+(config-router-af)# bgp always-compare-med <cr>    # observed_connections-002128
+(config-router-af)# bgp asnotation dot <cr>    # observed_connections-002286
+(config-router-af)# bgp bestpath aigp ignore <cr>    # observed_connections-002516
+(config-router-af)# bgp bestpath as-path ignore <cr>    # observed_connections-002510
+(config-router-af)# bgp bestpath as-path multipath-relax <cr>    # observed_connections-002512
+(config-router-af)# bgp bestpath compare-routerid <cr>    # observed_connections-002392
+(config-router-af)# bgp bestpath cost-community ignore <cr>    # observed_connections-002515
+(config-router-af)# bgp bestpath igp-metric ignore <cr>    # observed_connections-002441
+(config-router-af)# bgp bestpath med missing-as-worst <cr>    # observed_connections-002513
+(config-router-af)# bgp bestpath prefix-validate allow-invalid <cr>    # observed_connections-002454
+(config-router-af)# bgp bestpath prefix-validate disable <cr>    # observed_connections-002461
+(config-router-af)# bgp client-to-client reflection <cr>    # observed_connections-002318
+(config-router-af)# bgp client-to-client reflection intra-cluster cluster-id <cr>    # observed_connections-002650
+(config-router-af)# bgp cluster-id <number:1..4294967294> <cr>    # observed_connections-002315
+(config-router-af)# bgp confederation identifier <?bgp_as4_action@55558ab94158> <cr>    # observed_connections-002642
+(config-router-af)# bgp confederation peers <?bgp_as4_action@55558ab944c8> <cr>    # observed_connections-002643
+(config-router-af)# bgp consistency-checker error-message <cr>    # observed_connections-002338
+(config-router-af)# bgp consistency-checker error-message interval <number:5..1440> <cr>    # observed_connections-002324
+(config-router-af)# bgp dampening <cr>    # observed_connections-002138
+(config-router-af)# bgp dampening route-map <string> <cr>    # observed_connections-002448
+(config-router-af)# bgp default inter-as-hybrid advertise-source-routes <cr>    # observed_connections-002442
+(config-router-af)# bgp default ipv4-unicast <cr>    # observed_connections-002251
+(config-router-af)# bgp default ipv6-nexthop <cr>    # observed_connections-002264
+(config-router-af)# bgp default local-preference <number:0..4294967295> <cr>    # observed_connections-002131
+(config-router-af)# bgp default route-target filter <cr>    # observed_connections-002438
+(config-router-af)# bgp default route-target filter <cr>    # observed_connections-002439
+(config-router-af)# bgp deterministic-med <cr>    # observed_connections-002165
+(config-router-af)# bgp dmzlink-bw <cr>    # observed_connections-002148
+(config-router-af)# bgp dynamic-med-interval <number:60..4294967295> <cr>    # observed_connections-002044
+(config-router-af)# bgp enforce-first-as <cr>    # observed_connections-002154
+(config-router-af)# bgp enhanced-error <cr>    # observed_connections-002195
+(config-router-af)# bgp fast-external-fallover <cr>    # observed_connections-002100
+(config-router-af)# bgp graceful-restart <cr>    # observed_connections-002205
+(config-router-af)# bgp graceful-restart restart-time <number:1..3600> <cr>    # observed_connections-002198
+(config-router-af)# bgp graceful-restart stalepath-time <number:1..3600> <cr>    # observed_connections-002202
+(config-router-af)# bgp graceful-shutdown all vrfs <number:30..65535> community <?bgp_community_action@55558ab97d00> <cr>    # observed_connections-002655
+(config-router-af)# bgp graceful-shutdown all vrfs activate <cr>    # observed_connections-002566
+(config-router-af)# bgp inject-map <string> exist-map <string> <cr>    # observed_connections-002558
+(config-router-af)# bgp label-allocation-batch <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-002431
+(config-router-af)# bgp listen block <address> <cr>    # observed_connections-002475
+(config-router-af)# bgp listen block <address> <cr>    # observed_connections-002494
+(config-router-af)# bgp listen limit <number:1..10000> <cr>    # observed_connections-002158
+(config-router-af)# bgp listen limit <number:1..10000> <cr>    # observed_connections-002186
+(config-router-af)# bgp listen persistent <cr>    # observed_connections-002383
+(config-router-af)# bgp listen range <prefix:dynamic> peer-group <string> <cr>    # observed_connections-002653
+(config-router-af)# bgp log-neighbor-changes <cr>    # observed_connections-002156
+(config-router-af)# bgp maxas-limit <number:1..254> <cr>    # observed_connections-002406
+(config-router-af)# bgp maxcommunity-limit <number:1..1018> <cr>    # observed_connections-002395
+(config-router-af)# bgp maxextcommunity-limit <number:1..509> <cr>    # observed_connections-002402
+(config-router-af)# bgp maxlargecommunity-limit <number:1..339> <cr>    # observed_connections-002398
+(config-router-af)# bgp mpls-local-label <cr>    # observed_connections-002176
+(config-router-af)# bgp nexthop route-map <string> <cr>    # observed_connections-002480
+(config-router-af)# bgp nexthop trigger critical-delay <number:0..100> <cr>    # observed_connections-002357
+(config-router-af)# bgp nexthop trigger delay <number:0..100> <cr>    # observed_connections-002347
+(config-router-af)# bgp nexthop trigger enable <cr>    # observed_connections-002474
+(config-router-af)# bgp nopeerup-delay cold-boot <number:1..3600> <cr>    # observed_connections-002490
+(config-router-af)# bgp recursion host <cr>    # observed_connections-002303
+(config-router-af)# bgp redistribute-internal <cr>    # observed_connections-002135
+(config-router-af)# bgp refresh max-eor-time <number:600..3600> <cr>    # observed_connections-002507
+(config-router-af)# bgp refresh stalepath-time <number:600..3600> <cr>    # observed_connections-002503
+(config-router-af)# bgp regexp deterministic <cr>    # observed_connections-002388
+(config-router-af)# bgp route-map priority <cr>    # observed_connections-002304
+(config-router-af)# bgp route-map-cache <cr>    # observed_connections-002119
+(config-router-af)# bgp router-id <address> <cr>    # observed_connections-002299
+(config-router-af)# bgp router-id auto-assign <cr>    # observed_connections-002342
+(config-router-af)# bgp router-id interface <interface> <cr>    # observed_connections-002639
+(config-router-af)# bgp router-id interface <interface> <cr>    # observed_connections-002640
+(config-router-af)# bgp rpki server tcp <address> port <number:1..65535> refresh <number:1..65535> <cr>    # observed_connections-002611
+(config-router-af)# bgp rr-group <string> <cr>    # observed_connections-002360
+(config-router-af)# bgp safe-ebgp-policy <cr>    # observed_connections-002210
+(config-router-af)# bgp scan-time <number:5..60> <cr>    # observed_connections-002353
+(config-router-af)# bgp slow-peer detection <cr>    # observed_connections-002313
+(config-router-af)# bgp slow-peer detection threshold <number:120..3600> <cr>    # observed_connections-002307
+(config-router-af)# bgp slow-peer split-update-group dynamic <cr>    # observed_connections-002467
+(config-router-af)# bgp snmp traps add-type <cr>    # observed_connections-002489
+(config-router-af)# bgp soft-reconfig-backup <cr>    # observed_connections-002157
+(config-router-af)# bgp sourced-paths per-net isis all <cr>    # observed_connections-002548
+(config-router-af)# bgp sourced-paths per-net ospf all <cr>    # observed_connections-002543
+(config-router-af)# bgp sourced-paths per-net ospfv3 all <cr>    # observed_connections-002544
+(config-router-af)# bgp sourced-paths per-net static all <cr>    # observed_connections-002540
+(config-router-af)# bgp sso route-refresh-enable <cr>    # observed_connections-002384
+(config-router-af)# bgp suppress-inactive <cr>    # observed_connections-002140
+(config-router-af)# bgp tid <number:1..255> <cr>    # observed_connections-002027
+(config-router-af)# bgp transport path-mtu-discovery <cr>    # observed_connections-002314
+(config-router-af)# bgp update-delay <number:1..3600> <cr>    # observed_connections-002048
+(config-router-af)# bgp update-group split as-override <cr>    # observed_connections-002446
+(config-router-af)# bgp upgrade-cli <cr>    # observed_connections-002110
+(config-router-af)# bgp va <address> mask <address> <cr>    # observed_connections-002545
+(config-router-af)# bgp vrf-update-optimisation off <cr>    # observed_connections-002386
+(config-router-af)# bgp write-limit <number:500..2147483647> <number:500..2147483647> <cr>    # observed_connections-002509
+(config-router-af)# capability vrf-lite <cr>    # observed_connections-002175
+(config-router-af)# compatible rfc1583 <cr>    # observed_connections-002107
+(config-router-af)# compatible rfc1587 <cr>    # observed_connections-002117
+(config-router-af)# compatible rfc5243 <cr>    # observed_connections-002127
+(config-router-af)# context <string> <cr>    # observed_connections-002058
+(config-router-af)# default adjacency stagger <cr>    # observed_connections-002330
+(config-router-af)# default adjacency-check <cr>    # observed_connections-002071
+(config-router-af)# default advertise passive-only <cr>    # observed_connections-002236
+(config-router-af)# default aggregate-address <address> <address> <cr>    # observed_connections-002479
+(config-router-af)# default area <number:0..4294967295> <cr>    # observed_connections-002359
+(config-router-af)# default area <number:0..4294967295> authentication key-chain <cr>    # observed_connections-002529
+(config-router-af)# default area <number:0..4294967295> default-cost <cr>    # observed_connections-002436
+(config-router-af)# default area <number:0..4294967295> encryption ipsec spi <number:256..4294967295> <cr>    # observed_connections-002607
+(config-router-af)# default area <number:0..4294967295> filter-list prefix <string> in <cr>    # observed_connections-002609
+(config-router-af)# default area <number:0..4294967295> mpls <cr>    # observed_connections-002487
+(config-router-af)# default area <number:0..4294967295> no-transit <cr>    # observed_connections-002435
+(config-router-af)# default area <number:0..4294967295> normal <cr>    # observed_connections-002451
+(config-router-af)# default area <number:0..4294967295> nssa <cr>    # observed_connections-002485
+(config-router-af)# default area <number:0..4294967295> packet-size <cr>    # observed_connections-002437
+(config-router-af)# default area <number:0..4294967295> range <address> <address> <cr>    # observed_connections-002596
+(config-router-af)# default area <number:0..4294967295> sham-link <address> <address> <cr>    # observed_connections-002601
+(config-router-af)# default area <number:0..4294967295> stub <cr>    # observed_connections-002464
+(config-router-af)# default area <number:0..4294967295> virtual-link <address> <cr>    # observed_connections-002563
+(config-router-af)# default authentication mode strict <cr>    # observed_connections-002493
+(config-router-af)# default auto-cost <cr>    # observed_connections-002166
+(config-router-af)# default auto-summary <cr>    # observed_connections-002149
+(config-router-af)# default bfd all-interfaces <cr>    # observed_connections-002220
+(config-router-af)# default bfd all-interfaces <cr>    # observed_connections-002281
+(config-router-af)# default bfd check-ctrl-plane-failure <cr>    # observed_connections-002253
+(config-router-af)# default bgp additional-paths install <cr>    # observed_connections-002462
+(config-router-af)# default bgp additional-paths select <cr>    # observed_connections-002470
+(config-router-af)# default bgp advertise-best-external <cr>    # observed_connections-002295
+(config-router-af)# default bgp advertisement startup-delay <cr>    # observed_connections-002372
+(config-router-af)# default bgp aggregate-timer <number:6..60> <cr>    # observed_connections-002472
+(config-router-af)# default bgp aigp-rib-metric <cr>    # observed_connections-002403
+(config-router-af)# default bgp always-compare-med <cr>    # observed_connections-002278
+(config-router-af)# default bgp asnotation dot <cr>    # observed_connections-002443
+(config-router-af)# default bgp bestpath aigp ignore <cr>    # observed_connections-002577
+(config-router-af)# default bgp bestpath as-path ignore <cr>    # observed_connections-002569
+(config-router-af)# default bgp bestpath as-path multipath-relax <cr>    # observed_connections-002572
+(config-router-af)# default bgp bestpath compare-routerid <cr>    # observed_connections-002514
+(config-router-af)# default bgp bestpath cost-community ignore <cr>    # observed_connections-002576
+(config-router-af)# default bgp bestpath igp-metric ignore <cr>    # observed_connections-002530
+(config-router-af)# default bgp bestpath med missing-as-worst <cr>    # observed_connections-002573
+(config-router-af)# default bgp bestpath prefix-validate allow-invalid <cr>    # observed_connections-002536
+(config-router-af)# default bgp bestpath prefix-validate disable <cr>    # observed_connections-002541
+(config-router-af)# default bgp client-to-client reflection <cr>    # observed_connections-002466
+(config-router-af)# default bgp cluster-id <cr>    # observed_connections-002322
+(config-router-af)# default bgp consistency-checker <cr>    # observed_connections-002331
+(config-router-af)# default bgp dampening <cr>    # observed_connections-002283
+(config-router-af)# default bgp default inter-as-hybrid advertise-source-routes <cr>    # observed_connections-002532
+(config-router-af)# default bgp default ipv4-unicast <cr>    # observed_connections-002426
+(config-router-af)# default bgp default ipv6-nexthop <cr>    # observed_connections-002434
+(config-router-af)# default bgp default local-preference <cr>    # observed_connections-002285
+(config-router-af)# default bgp default route-target filter <cr>    # observed_connections-002525
+(config-router-af)# default bgp default route-target filter <cr>    # observed_connections-002526
+(config-router-af)# default bgp deterministic-med <cr>    # observed_connections-002346
+(config-router-af)# default bgp dmzlink-bw <cr>    # observed_connections-002316
+(config-router-af)# default bgp dynamic-med-interval <cr>    # observed_connections-002171
+(config-router-af)# default bgp enforce-first-as <cr>    # observed_connections-002325
+(config-router-af)# default bgp enhanced-error <cr>    # observed_connections-002376
+(config-router-af)# default bgp fast-external-fallover <cr>    # observed_connections-002245
+(config-router-af)# default bgp graceful-restart <cr>    # observed_connections-002387
+(config-router-af)# default bgp graceful-restart restart-time <cr>    # observed_connections-002380
+(config-router-af)# default bgp graceful-restart stalepath-time <cr>    # observed_connections-002382
+(config-router-af)# default bgp graceful-shutdown all vrfs activate <cr>    # observed_connections-002603
+(config-router-af)# default bgp inject-map <string> exist-map <string> <cr>    # observed_connections-002600
+(config-router-af)# default bgp label-allocation-batch <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-002523
+(config-router-af)# default bgp listen block <address> <cr>    # observed_connections-002551
+(config-router-af)# default bgp listen block <address> <cr>    # observed_connections-002565
+(config-router-af)# default bgp listen limit <cr>    # observed_connections-002339
+(config-router-af)# default bgp listen limit <cr>    # observed_connections-002377
+(config-router-af)# default bgp listen persistent <cr>    # observed_connections-002497
+(config-router-af)# default bgp log-neighbor-changes <cr>    # observed_connections-002336
+(config-router-af)# default bgp maxas-limit <cr>    # observed_connections-002408
+(config-router-af)# default bgp maxcommunity-limit <cr>    # observed_connections-002396
+(config-router-af)# default bgp maxextcommunity-limit <cr>    # observed_connections-002404
+(config-router-af)# default bgp maxlargecommunity-limit <cr>    # observed_connections-002400
+(config-router-af)# default bgp mpls-local-label <cr>    # observed_connections-002367
+(config-router-af)# default bgp nexthop route-map <string> <cr>    # observed_connections-002555
+(config-router-af)# default bgp nexthop trigger critical-delay <cr>    # observed_connections-002488
+(config-router-af)# default bgp nexthop trigger delay <cr>    # observed_connections-002482
+(config-router-af)# default bgp nexthop trigger enable <cr>    # observed_connections-002550
+(config-router-af)# default bgp nopeerup-delay cold-boot <number:1..3600> <cr>    # observed_connections-002562
+(config-router-af)# default bgp recursion host <cr>    # observed_connections-002455
+(config-router-af)# default bgp redistribute-internal <cr>    # observed_connections-002296
+(config-router-af)# default bgp refresh max-eor-time <cr>    # observed_connections-002508
+(config-router-af)# default bgp refresh stalepath-time <cr>    # observed_connections-002504
+(config-router-af)# default bgp regexp deterministic <cr>    # observed_connections-002506
+(config-router-af)# default bgp route-map priority <cr>    # observed_connections-002456
+(config-router-af)# default bgp route-map-cache <cr>    # observed_connections-002267
+(config-router-af)# default bgp router-id <cr>    # observed_connections-002284
+(config-router-af)# default bgp router-id <cr>    # observed_connections-002340
+(config-router-af)# default bgp rpki server tcp <address> port <number:1..65535> refresh <number:1..65535> <cr>    # observed_connections-002613
+(config-router-af)# default bgp rr-group <cr>    # observed_connections-002356
+(config-router-af)# default bgp safe-ebgp-policy <cr>    # observed_connections-002409
+(config-router-af)# default bgp scan-time <number:5..60> <cr>    # observed_connections-002486
+(config-router-af)# default bgp slow-peer detection <cr>    # observed_connections-002459
+(config-router-af)# default bgp slow-peer split-update-group dynamic <cr>    # observed_connections-002542
+(config-router-af)# default bgp snmp traps add-type <cr>    # observed_connections-002557
+(config-router-af)# default bgp soft-reconfig-backup <cr>    # observed_connections-002337
+(config-router-af)# default bgp sourced-paths per-net isis all <cr>    # observed_connections-002594
+(config-router-af)# default bgp sourced-paths per-net ospf all <cr>    # observed_connections-002590
+(config-router-af)# default bgp sourced-paths per-net ospfv3 all <cr>    # observed_connections-002592
+(config-router-af)# default bgp sourced-paths per-net static all <cr>    # observed_connections-002588
+(config-router-af)# default bgp sso route-refresh-enable <cr>    # observed_connections-002498
+(config-router-af)# default bgp suppress-inactive <cr>    # observed_connections-002305
+(config-router-af)# default bgp tid <cr>    # observed_connections-002079
+(config-router-af)# default bgp transport path-mtu-discovery <cr>    # observed_connections-002465
+(config-router-af)# default bgp update-delay <cr>    # observed_connections-002192
+(config-router-af)# default bgp update-group split as-override <cr>    # observed_connections-002534
+(config-router-af)# default bgp upgrade-cli <cr>    # observed_connections-002256
+(config-router-af)# default bgp va <cr>    # observed_connections-002328
+(config-router-af)# default bgp vrf-update-optimisation off <cr>    # observed_connections-002502
+(config-router-af)# default bgp write-limit <cr>    # observed_connections-002390
+(config-router-af)# default capability vrf-lite <cr>    # observed_connections-002366
+(config-router-af)# default compatible rfc1583 <cr>    # observed_connections-002250
+(config-router-af)# default compatible rfc1587 <cr>    # observed_connections-002262
+(config-router-af)# default compatible rfc5243 <cr>    # observed_connections-002277
+(config-router-af)# default context <cr>    # observed_connections-002057
+(config-router-af)# default default-information originate <cr>    # observed_connections-002237
+(config-router-af)# default default-information originate <cr>    # observed_connections-002320
+(config-router-af)# default default-information originate <cr>    # observed_connections-002370
+(config-router-af)# default default-metric <cr>    # observed_connections-002105
+(config-router-af)# default default-metric <cr>    # observed_connections-002151
+(config-router-af)# default default-metric <cr>    # observed_connections-002188
+(config-router-af)# default discard-route external <cr>    # observed_connections-002341
+(config-router-af)# default distance <cr>    # observed_connections-002072
+(config-router-af)# default distance <cr>    # observed_connections-002170
+(config-router-af)# default distance <cr>    # observed_connections-002179
+(config-router-af)# default distance nhrp <cr>    # observed_connections-002349
+(config-router-af)# default distance ospf <cr>    # observed_connections-002258
+(config-router-af)# default distance ospf <cr>    # observed_connections-002358
+(config-router-af)# default distribute-list in <cr>    # observed_connections-002361
+(config-router-af)# default distribute-list prefix-list <string> in <cr>    # observed_connections-002553
+(config-router-af)# default distribute-list route-map <string> in <cr>    # observed_connections-002519
+(config-router-af)# default domain-id <cr>    # observed_connections-002115
+(config-router-af)# default event-log <cr>    # observed_connections-002164
+(config-router-af)# default flash-update-threshold <cr>    # observed_connections-002036
+(config-router-af)# default graceful-restart <cr>    # observed_connections-002208
+(config-router-af)# default graceful-restart helper <cr>    # observed_connections-002393
+(config-router-af)# default ignore lsa mospf <cr>    # observed_connections-002453
+(config-router-af)# default import bgp <cr>    # observed_connections-002215
+(config-router-af)# default input-queue <cr>    # observed_connections-002033
+(config-router-af)# default interface-id snmp-if-index <cr>    # observed_connections-002276
+(config-router-af)# default ipv6 route priority high tag <cr>    # observed_connections-002586
+(config-router-af)# default limit retransmissions <cr>    # observed_connections-002378
+(config-router-af)# default local-rib-criteria <cr>    # observed_connections-002204
+(config-router-af)# default log-adjacency-changes <cr>    # observed_connections-002159
+(config-router-af)# default max-lsa <cr>    # observed_connections-002173
+(config-router-af)# default max-metric <cr>    # observed_connections-002095
+(config-router-af)# default max-metric intra-area <cr>    # observed_connections-002094
+(config-router-af)# default maximum-paths <cr>    # observed_connections-002132
+(config-router-af)# default maximum-paths <cr>    # observed_connections-002196
+(config-router-af)# default maximum-paths per-prefix-distribution <cr>    # observed_connections-002270
+(config-router-af)# default maximum-paths per-prefix-distribution <cr>    # observed_connections-002306
+(config-router-af)# default metric <cr>    # observed_connections-002152
+(config-router-af)# default metric holddown <cr>    # observed_connections-002238
+(config-router-af)# default metric maximum-hops <cr>    # observed_connections-002102
+(config-router-af)# default metric weights <cr>    # observed_connections-002282
+(config-router-af)# default mpls traffic-engineering autoroute-exclude prefix-list <string> <cr>    # observed_connections-002605
+(config-router-af)# default multi-topology <cr>    # observed_connections-002067
+(config-router-af)# default nhrp redirect interest <cr>    # observed_connections-002414
+(config-router-af)# default offset-list <number:0..99> in <cr>    # observed_connections-002425
+(config-router-af)# default omp-route-tag <cr>    # observed_connections-002144
+(config-router-af)# default output-delay <cr>    # observed_connections-002022
+(config-router-af)# default packet-size <cr>    # observed_connections-002047
+(config-router-af)# default passive-interface default <cr>    # observed_connections-002231
+(config-router-af)# default prc-interval <cr>    # observed_connections-002103
+(config-router-af)# default prefix-suppression <cr>    # observed_connections-002122
+(config-router-af)# default process-min-time percent <cr>    # observed_connections-002199
+(config-router-af)# default queue-depth hello <cr>    # observed_connections-002291
+(config-router-af)# default queue-depth update <cr>    # observed_connections-002300
+(config-router-af)# default redistribute maximum-prefix <cr>    # observed_connections-002230
+(config-router-af)# default redistribute maximum-prefix <cr>    # observed_connections-002269
+(config-router-af)# default router-id <cr>    # observed_connections-002074
+(config-router-af)# default router-id <cr>    # observed_connections-002080
+(config-router-af)# default set-attached-bit <cr>    # observed_connections-002121
+(config-router-af)# default set-overload-bit <cr>    # observed_connections-002123
+(config-router-af)# default shutdown <cr>    # observed_connections-002203
+(config-router-af)# default snmp context <cr>    # observed_connections-002228
+(config-router-af)# default snmp context <string> community <string> <cr>    # observed_connections-002583
+(config-router-af)# default snmp context <string> user <string> <cr>    # observed_connections-002582
+(config-router-af)# default spf-interval <cr>    # observed_connections-002124
+(config-router-af)# default statistics rib-timings <cr>    # observed_connections-002365
+(config-router-af)# default summary-prefix <address> <address> <cr>    # observed_connections-002416
+(config-router-af)# default summary-prefix <address> <cr>    # observed_connections-002226
+(config-router-af)# default table-map <cr>    # observed_connections-002088
+(config-router-af)# default table-map <cr>    # observed_connections-002104
+(config-router-af)# default table-map <cr>    # observed_connections-002187
+(config-router-af)# default timers basic <cr>    # observed_connections-002219
+(config-router-af)# default timers lsa arrival <cr>    # observed_connections-002224
+(config-router-af)# default timers lsa-arrival <cr>    # observed_connections-002089
+(config-router-af)# default timers lsa-group-pacing <cr>    # observed_connections-002076
+(config-router-af)# default timers lsa-interval <cr>    # observed_connections-002090
+(config-router-af)# default timers pacing flood <cr>    # observed_connections-002247
+(config-router-af)# default timers pacing lsa-group <cr>    # observed_connections-002240
+(config-router-af)# default timers pacing retransmission <cr>    # observed_connections-002259
+(config-router-af)# default timers throttle lsa <cr>    # observed_connections-002421
+(config-router-af)# default timers throttle spf <cr>    # observed_connections-002418
+(config-router-af)# default topology base <cr>    # observed_connections-002213
+(config-router-af)# default traffic-share min across-interfaces <cr>    # observed_connections-002411
+(config-router-af)# default ucmp local <cr>    # observed_connections-002290
+(config-router-af)# default validate-update-source <cr>    # observed_connections-002059
+(config-router-af)# default version <cr>    # observed_connections-002061
+(config-router-af)# default-information originate <cr>    # observed_connections-002087
+(config-router-af)# default-information originate <cr>    # observed_connections-002150
+(config-router-af)# default-information originate <cr>    # observed_connections-002180
+(config-router-af)# default-metric <number:1..16777214> <cr>    # observed_connections-002118
+(config-router-af)# default-metric <number:1..16777214> <cr>    # observed_connections-002153
+(config-router-af)# default-metric <number:1..16777214> <cr>    # observed_connections-002197
+(config-router-af)# discard-route external <cr>    # observed_connections-002161
+(config-router-af)# distance <cr>    # observed_connections-002025
+(config-router-af)# distance <cr>    # observed_connections-002046
+(config-router-af)# distance <number:1..254> <prefix:dynamic> <cr>    # observed_connections-002630
+(config-router-af)# distance <number:1..254> <prefix:dynamic> <cr>    # observed_connections-002636
+(config-router-af)# distance <number:1..255> <cr>    # observed_connections-002162
+(config-router-af)# distance nhrp <cr>    # observed_connections-002178
+(config-router-af)# distance ospf <cr>    # observed_connections-002139
+(config-router-af)# distance ospf <cr>    # observed_connections-002181
+(config-router-af)# distribute-list in <cr>    # observed_connections-002172
+(config-router-af)# distribute-list out <?router_action_proc_vpn@5555897c3ca0> <cr>    # observed_connections-002634
+(config-router-af)# distribute-list prefix-list <string> in <cr>    # observed_connections-002477
+(config-router-af)# distribute-list prefix-list <string> in <interface> <cr>    # observed_connections-002648
+(config-router-af)# distribute-list route-map <string> in <cr>    # observed_connections-002420
+(config-router-af)# distribute-list route-map <string> in <interface> <cr>    # observed_connections-002647
+(config-router-af)# domain-id type 0005 value <hex-string> <cr>    # observed_connections-002646
+(config-router-af)# event-log <cr>    # observed_connections-002042
+(config-router-af)# exit-address-family <cr>    # observed_connections-002019
+(config-router-af)# flash-update-threshold <number:0..30> <cr>    # observed_connections-002017
+(config-router-af)# graceful-restart <cr>    # observed_connections-002053
+(config-router-af)# graceful-restart helper <cr>    # observed_connections-002207
+(config-router-af)# ignore lsa mospf <cr>    # observed_connections-002302
+(config-router-af)# import bgp <number:1..4294967295> <cr>    # observed_connections-002216
+(config-router-af)# input-queue <number:0..1024> <cr>    # observed_connections-002016
+(config-router-af)# interface-id snmp-if-index <cr>    # observed_connections-002126
+(config-router-af)# ipv6 route priority high tag <number:1..4294967295> <cr>    # observed_connections-002585
+(config-router-af)# limit retransmissions <cr>    # observed_connections-002189
+(config-router-af)# local-rib-criteria <cr>    # observed_connections-002052
+(config-router-af)# log-adjacency-changes <cr>    # observed_connections-002041
+(config-router-af)# max-lsa <number:1..4294967294> <cr>    # observed_connections-002190
+(config-router-af)# max-metric intra-area <number:1..16777214> <cr>    # observed_connections-002030
+(config-router-af)# max-metric router-lsa <cr>    # observed_connections-002133
+(config-router-af)# maximum-paths <cr>    # observed_connections-002037
+(config-router-af)# maximum-paths <cr>    # observed_connections-002049
+(config-router-af)# maximum-paths <number:dynamic> <cr>    # observed_connections-002623
+(config-router-af)# maximum-paths per-prefix-distribution <cr>    # observed_connections-002120
+(config-router-af)# maximum-paths per-prefix-distribution <cr>    # observed_connections-002142
+(config-router-af)# metric <number:1..16777214> <cr>    # observed_connections-002143
+(config-router-af)# metric holddown <cr>    # observed_connections-002091
+(config-router-af)# metric maximum-hops <number:1..255> <cr>    # observed_connections-002031
+(config-router-af)# metric weights <number:0..8> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <cr>    # observed_connections-002610
+(config-router-af)# mpls traffic-engineering autoroute-exclude prefix-list <string> <cr>    # observed_connections-002567
+(config-router-af)# multi-topology <cr>    # observed_connections-002023
+(config-router-af)# neighbor <cr>    # observed_connections-002614
+(config-router-af)# neighbor nhs <interface> <cr>    # observed_connections-002658
+(config-router-af)# network <address> <cr>    # observed_connections-002622
+(config-router-af)# network <address> <cr>    # observed_connections-002656
+(config-router-af)# nhrp redirect interest <number:1..199> <cr>    # observed_connections-002413
+(config-router-af)# no adjacency stagger <cr>    # observed_connections-002321
+(config-router-af)# no adjacency-check <cr>    # observed_connections-002065
+(config-router-af)# no advertise passive-only <cr>    # observed_connections-002232
+(config-router-af)# no aggregate-address <address> <address> <cr>    # observed_connections-002473
+(config-router-af)# no area <number:0..4294967295> <cr>    # observed_connections-002352
+(config-router-af)# no area <number:0..4294967295> authentication key-chain <cr>    # observed_connections-002524
+(config-router-af)# no area <number:0..4294967295> default-cost <cr>    # observed_connections-002429

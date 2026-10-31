@@ -1,0 +1,11 @@
+# 模式 ip-subscriber；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-subscriber)# arp ignore local <cr>    # observed_connections-009428
+(config-subscriber)# exit <cr>    # observed_connections-009426
+(config-subscriber)# initiator radius-proxy <cr>    # observed_connections-009427
+(config-subscriber)# no arp ignore local <cr>    # observed_connections-009431
+(config-subscriber)# no initiator radius-proxy <cr>    # observed_connections-009429
+(config-subscriber)# no passthru downstream ipv6 <cr>    # observed_connections-009432
+(config-subscriber)# passthru downstream ipv6 <cr>    # observed_connections-009430

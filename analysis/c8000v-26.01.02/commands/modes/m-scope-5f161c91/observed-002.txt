@@ -1,0 +1,48 @@
+# 模式 scope；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-002.md
+
+(config-router-scope)# no bgp write-limit <cr>    # observed_connections-003305
+(config-router-scope)# no context <cr>    # observed_connections-003148
+(config-router-scope)# no default-information originate <cr>    # observed_connections-003264
+(config-router-scope)# no default-metric <cr>    # observed_connections-003174
+(config-router-scope)# no distance <cr>    # observed_connections-003186
+(config-router-scope)# no distribute-list in <cr>    # observed_connections-003285
+(config-router-scope)# no flash-update-threshold <cr>    # observed_connections-003139
+(config-router-scope)# no input-queue <cr>    # observed_connections-003137
+(config-router-scope)# no metric holddown <cr>    # observed_connections-003211
+(config-router-scope)# no metric maximum-hops <cr>    # observed_connections-003161
+(config-router-scope)# no metric weights <cr>    # observed_connections-003235
+(config-router-scope)# no offset-list <number:0..99> in <cr>    # observed_connections-003334
+(config-router-scope)# no output-delay <cr>    # observed_connections-003133
+(config-router-scope)# no passive-interface default <cr>    # observed_connections-003208
+(config-router-scope)# no redistribute maximum-prefix <cr>    # observed_connections-003206
+(config-router-scope)# no snmp context <cr>    # observed_connections-003219
+(config-router-scope)# no snmp context <string> community <string> <cr>    # observed_connections-003448
+(config-router-scope)# no snmp context <string> user <string> <cr>    # observed_connections-003447
+(config-router-scope)# no summary-prefix <address> <address> <cr>    # observed_connections-003324
+(config-router-scope)# no summary-prefix <address> <cr>    # observed_connections-003202
+(config-router-scope)# no synchronization <cr>    # observed_connections-003144
+(config-router-scope)# no table-map <cr>    # observed_connections-003153
+(config-router-scope)# no timers basic <cr>    # observed_connections-003200
+(config-router-scope)# no timers bgp <cr>    # observed_connections-003203
+(config-router-scope)# no version <cr>    # observed_connections-003145
+(config-router-scope)# offset-list <number:0..99> in <number:0..16> <cr>    # observed_connections-003329
+(config-router-scope)# offset-list <number:0..99> in <number:0..16> <interface> <cr>    # observed_connections-003554
+(config-router-scope)# output-delay <number:8..50> <cr>    # observed_connections-003128
+(config-router-scope)# passive-interface <interface> <cr>    # observed_connections-003471
+(config-router-scope)# passive-interface default <cr>    # observed_connections-003157
+(config-router-scope)# redistribute <?router_action_proc_vpn@555589aafbf0> <cr>    # observed_connections-003473
+(config-router-scope)# redistribute <?router_action_proc_vpn@555589aafbf0> ip level-1 into level-1 route-map <string> <cr>    # observed_connections-003566
+(config-router-scope)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-003225
+(config-router-scope)# snmp context <cr>    # observed_connections-003164
+(config-router-scope)# snmp context <string> community <string> <cr>    # observed_connections-003429
+(config-router-scope)# snmp context <string> user <string> <cr>    # observed_connections-003426
+(config-router-scope)# summary-prefix <address> <address> <cr>    # observed_connections-003204
+(config-router-scope)# summary-prefix <address> <address> <cr>    # observed_connections-003236
+(config-router-scope)# summary-prefix <prefix:dynamic> <cr>    # observed_connections-003472
+(config-router-scope)# synchronization <cr>    # observed_connections-003132
+(config-router-scope)# table-map <string> <cr>    # observed_connections-003156
+(config-router-scope)# timers basic <number:1..2147483> <number:1..2147483> <number:0..2147483> <cr>    # observed_connections-003397
+(config-router-scope)# timers bgp <cr>    # observed_connections-003154
+(config-router-scope)# version <number:1..2> <cr>    # observed_connections-003470

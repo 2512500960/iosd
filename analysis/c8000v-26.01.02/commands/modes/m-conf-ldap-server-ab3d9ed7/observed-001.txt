@@ -1,0 +1,39 @@
+# 模式 conf-ldap-server；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-ldap-server)# attribute map <string> <cr>    # observed_connections-007981
+(config-ldap-server)# authentication bind-first <cr>    # observed_connections-007967
+(config-ldap-server)# authentication compare <cr>    # observed_connections-007969
+(config-ldap-server)# automate-tester username <string> probe-on <cr>    # observed_connections-007990
+(config-ldap-server)# base-dn <string> <cr>    # observed_connections-007966
+(config-ldap-server)# bind authenticate root-dn <string> password <string> <cr>    # observed_connections-007992
+(config-ldap-server)# deadtime <number:1..1440> <cr>    # observed_connections-007970
+(config-ldap-server)# exit <cr>    # observed_connections-007958
+(config-ldap-server)# fqdn <string> <cr>    # observed_connections-007964
+(config-ldap-server)# ipv4 <address> <cr>    # observed_connections-007960
+(config-ldap-server)# ipv6 <address> <cr>    # observed_connections-007962
+(config-ldap-server)# mode secure <cr>    # observed_connections-007959
+(config-ldap-server)# no attribute map <string> <cr>    # observed_connections-007988
+(config-ldap-server)# no authentication bind-first <cr>    # observed_connections-007980
+(config-ldap-server)# no authentication compare <cr>    # observed_connections-007983
+(config-ldap-server)# no automate-tester username <string> probe-on <cr>    # observed_connections-007991
+(config-ldap-server)# no base-dn <cr>    # observed_connections-007968
+(config-ldap-server)# no bind authenticate <cr>    # observed_connections-007973
+(config-ldap-server)# no deadtime <cr>    # observed_connections-007971
+(config-ldap-server)# no fqdn <cr>    # observed_connections-007965
+(config-ldap-server)# no ipv4 <cr>    # observed_connections-007961
+(config-ldap-server)# no ipv6 <cr>    # observed_connections-007963
+(config-ldap-server)# no mode secure <cr>    # observed_connections-007974
+(config-ldap-server)# no search-filter user-object-type <string> <cr>    # observed_connections-007989
+(config-ldap-server)# no search-type nested <cr>    # observed_connections-007984
+(config-ldap-server)# no secure cipher rc4-128-md5 <cr>    # observed_connections-007987
+(config-ldap-server)# no secure trustpoint <cr>    # observed_connections-007977
+(config-ldap-server)# no timeout retransmit <cr>    # observed_connections-007986
+(config-ldap-server)# no transport port <cr>    # observed_connections-007979
+(config-ldap-server)# search-filter user-object-type <string> <cr>    # observed_connections-007982
+(config-ldap-server)# search-type nested <cr>    # observed_connections-007972
+(config-ldap-server)# secure cipher rc4-128-md5 <cr>    # observed_connections-007976
+(config-ldap-server)# secure trustpoint <string> <cr>    # observed_connections-007975
+(config-ldap-server)# timeout retransmit <number:1..65535> <cr>    # observed_connections-007985
+(config-ldap-server)# transport port <number:1..65535> <cr>    # observed_connections-007978

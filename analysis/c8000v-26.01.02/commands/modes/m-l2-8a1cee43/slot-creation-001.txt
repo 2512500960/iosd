@@ -1,0 +1,35 @@
+# 模式 l2；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-vfi)# auto-route-target <cr>    # static_slot_creation_candidates-004010
+(config-vfi)# bridge-domain <number:1..4094> vlan <cr>    # static_slot_creation_candidates-004030
+(config-vfi)# bridge-domain <number:dynamic> <cr>    # static_slot_creation_candidates-004035
+(config-vfi)# default auto-route-target <cr>    # static_slot_creation_candidates-004022
+(config-vfi)# default bridge-domain <cr>    # static_slot_creation_candidates-004015
+(config-vfi)# default description <cr>    # static_slot_creation_candidates-004021
+(config-vfi)# default forward permit l2protocol all <cr>    # static_slot_creation_candidates-004034
+(config-vfi)# default mtu <cr>    # static_slot_creation_candidates-004017
+(config-vfi)# default neighbor <address> <cr>    # static_slot_creation_candidates-004029
+(config-vfi)# default shutdown <cr>    # static_slot_creation_candidates-004014
+(config-vfi)# default status decoupled <cr>    # static_slot_creation_candidates-004027
+(config-vfi)# default vpn id <cr>    # static_slot_creation_candidates-004026
+(config-vfi)# description <string> <cr>    # static_slot_creation_candidates-004019
+(config-vfi)# forward permit l2protocol all <cr>    # static_slot_creation_candidates-004032
+(config-vfi)# mtu <cr>    # static_slot_creation_candidates-004009
+(config-vfi)# neighbor <address> encapsulation mpls <cr>    # static_slot_creation_candidates-004031
+(config-vfi)# no auto-route-target <cr>    # static_slot_creation_candidates-004020
+(config-vfi)# no bridge-domain <cr>    # static_slot_creation_candidates-004013
+(config-vfi)# no description <cr>    # static_slot_creation_candidates-004018
+(config-vfi)# no forward permit l2protocol all <cr>    # static_slot_creation_candidates-004033
+(config-vfi)# no mtu <cr>    # static_slot_creation_candidates-004016
+(config-vfi)# no neighbor <address> <cr>    # static_slot_creation_candidates-004028
+(config-vfi)# no shutdown <cr>    # static_slot_creation_candidates-004012
+(config-vfi)# no status decoupled <cr>    # static_slot_creation_candidates-004024
+(config-vfi)# no vpn id <cr>    # static_slot_creation_candidates-004023
+(config-vfi)# rd <?vrf_rd_action@55558c2a36f0> <cr>    # static_slot_creation_candidates-004036
+(config-vfi)# route-target <?bgp_extcomm_action@55558c2a3d68> <cr>    # static_slot_creation_candidates-004038
+(config-vfi)# shutdown <cr>    # static_slot_creation_candidates-004008
+(config-vfi)# status decoupled <cr>    # static_slot_creation_candidates-004011
+(config-vfi)# vpls-id <?bgp_extcomm_action@55558c2a40b0> <cr>    # static_slot_creation_candidates-004037
+(config-vfi)# vpn id <number:1..4294967295> <cr>    # static_slot_creation_candidates-004025

@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-048.md
+
+(config)# do-exec debug remote-management pnsc info <cr>    # path-043472
+(config)# do-exec debug remote-management restful-api error <cr>    # path-043501
+(config)# do-exec debug remote-management restful-api info <cr>    # path-043485
+(config)# do-exec debug resource manager error <cr>    # path-034468
+(config)# do-exec debug resource manager info <cr>    # path-034519
+(config)# do-exec debug resource owner memory error <cr>    # path-044321
+(config)# do-exec debug resource owner memory info <cr>    # path-044359
+(config)# do-exec debug resource policy error <cr>    # path-034514
+(config)# do-exec debug resource policy notify <string> <cr>    # path-044352
+(config)# do-exec debug restconf <cr>    # path-027781
+(config)# do-exec debug rif <cr>    # path-026704
+(config)# do-exec debug route-map api <cr>    # path-031657
+(config)# do-exec debug route-map event <cr>    # path-031682
+(config)# do-exec debug route-map ipc <cr>    # path-031709
+(config)# do-exec debug rtty errors <cr>    # path-033073
+(config)# do-exec debug rudpv1 application <cr>    # path-032418
+(config)# do-exec debug rudpv1 client <cr>    # path-032502
+(config)# do-exec debug rudpv1 performance <cr>    # path-032457
+(config)# do-exec debug rudpv1 retransmit <cr>    # path-032400
+(config)# do-exec debug rudpv1 segment <cr>    # path-032383
+(config)# do-exec debug rudpv1 server <cr>    # path-032518
+(config)# do-exec debug rudpv1 signal <cr>    # path-032512
+(config)# do-exec debug rudpv1 state <cr>    # path-032529
+(config)# do-exec debug rudpv1 timer <cr>    # path-032435
+(config)# do-exec debug rudpv1 transfer <cr>    # path-032539
+(config)# do-exec debug sampler <?option@555588f3b638> <cr>    # path-060654
+(config)# do-exec debug sampler <cr>    # path-027330
+(config)# do-exec debug sanity <cr>    # path-027734
+(config)# do-exec debug sasl detail <cr>    # path-033786
+(config)# do-exec debug sasl errors <cr>    # path-033765
+(config)# do-exec debug sasl events <cr>    # path-033776
+(config)# do-exec debug sasl mechanism anonymous <cr>    # path-043564
+(config)# do-exec debug sasl mechanism digest-md5 <cr>    # path-043546
+(config)# do-exec debug sdlc event <cr>    # path-033685
+(config)# do-exec debug sdlc local-ack <cr>    # path-033715
+(config)# do-exec debug sdlc packets <cr>    # path-033726
+(config)# do-exec debug sdlc qllc <cr>    # path-033724
+(config)# do-exec debug sdllc <cr>    # path-027785
+(config)# do-exec debug sensor-mgr errors all <cr>    # path-034363
+(config)# do-exec debug sensor-mgr errors db <cr>    # path-034399
+(config)# do-exec debug sensor-mgr errors event <cr>    # path-034439
+(config)# do-exec debug sensor-mgr trace all <cr>    # path-034328
+(config)# do-exec debug sensor-mgr trace db <cr>    # path-034371
+(config)# do-exec debug sensor-mgr trace event <cr>    # path-034404
+(config)# do-exec debug serial error <cr>    # path-028616
+(config)# do-exec debug serial event <cr>    # path-028694
+(config)# do-exec debug serial interface <cr>    # path-028592
+(config)# do-exec debug serial interface conditional <cr>    # path-034633
+(config)# do-exec debug serial m32_dma <cr>    # path-028730
+(config)# do-exec debug serial mueslix <cr>    # path-028773
+(config)# do-exec debug serial packet <cr>    # path-028574
+(config)# do-exec debug serial redundancy <cr>    # path-028930
+(config)# do-exec debug serial revive <cr>    # path-028835
+(config)# do-exec debug serial state <cr>    # path-028658
+(config)# do-exec debug service-group error <cr>    # path-030375
+(config)# do-exec debug service-overlay <cr>    # path-027639
+(config)# do-exec debug service-overlay detail <cr>    # path-032074
+(config)# do-exec debug service-overlay dp errors <cr>    # path-040609
+(config)# do-exec debug service-overlay dp info <cr>    # path-040581
+(config)# do-exec debug service-overlay dp internal <cr>    # path-040662
+(config)# do-exec debug service-overlay dp packets <cr>    # path-040637
+(config)# do-exec debug service-overlay error <cr>    # path-032061
+(config)# do-exec debug service-overlay internal <cr>    # path-032084
+(config)# do-exec debug service-routing capabilities-manager <cr>    # path-032267
+(config)# do-exec debug service-routing client handle <number:1..4294967295> <cr>    # path-049944
+(config)# do-exec debug service-routing database <cr>    # path-032164
+(config)# do-exec debug service-routing mcp <cr>    # path-032192
+(config)# do-exec debug service-routing parser <cr>    # path-032278
+(config)# do-exec debug service-routing parser verbose <cr>    # path-061053
+(config)# do-exec debug service-routing plugin <cr>    # path-032184
+(config)# do-exec debug service-routing xmcp transport <cr>    # path-040944
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> atm <cr>    # path-060868
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> dsl <cr>    # path-060859
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> efm <cr>    # path-060867
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> error <cr>    # path-060862
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> firmware phy training-logs <cr>    # path-061923
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> init <cr>    # path-060875
+(config)# do-exec debug shdsl <?controller_action@55558b4d7640> mib <cr>    # path-060866
+(config)# do-exec debug shell-exec <cr>    # path-027707
+(config)# do-exec debug smart_lic <cr>    # path-026836
+(config)# do-exec debug smart_lic error <cr>    # path-028916
+(config)# do-exec debug smart_lic info <cr>    # path-029025
+(config)# do-exec debug smart_lic trace <cr>    # path-028974
+(config)# do-exec debug smf matches <cr>    # path-031833
+(config)# do-exec debug smf misses <cr>    # path-031857
+(config)# do-exec debug smf updates <cr>    # path-031818
+(config)# do-exec debug sna activation <cr>    # path-032294
+(config)# do-exec debug sna alert <cr>    # path-032243
+(config)# do-exec debug sna packet <cr>    # path-032309
+(config)# do-exec debug sna state <cr>    # path-032344
+(config)# do-exec debug sna trace <cr>    # path-032327
+(config)# do-exec debug snapshot <cr>    # path-027683
+(config)# do-exec debug snmp cef <cr>    # path-029342
+(config)# do-exec debug snmp cifextmib-err <cr>    # path-029486
+(config)# do-exec debug snmp cifextmib-trace <cr>    # path-029539
+(config)# do-exec debug snmp dbal <cr>    # path-029949
+(config)# do-exec debug snmp dbal cache <cr>    # path-036152
+(config)# do-exec debug snmp detail <cr>    # path-029593
+(config)# do-exec debug snmp energywise <cr>    # path-029309
+(config)# do-exec debug snmp headers <cr>    # path-029204
+(config)# do-exec debug snmp ifmib-err <cr>    # path-029378
+(config)# do-exec debug snmp ifmib-trace <cr>    # path-029431
+(config)# do-exec debug snmp mib entity-perfmib <cr>    # path-036130
+(config)# do-exec debug snmp mib entity-perfmib error <cr>    # path-045447
+(config)# do-exec debug snmp mib entity-perfmib trace <cr>    # path-045510
+(config)# do-exec debug snmp mib entity-qfpmib error <cr>    # path-045498
+(config)# do-exec debug snmp mib entity-qfpmib event <cr>    # path-045563
+(config)# do-exec debug snmp mib nhrp error <cr>    # path-045549
+(config)# do-exec debug snmp mib nhrp events <cr>    # path-045612
+(config)# do-exec debug snmp mib nhrp internal <cr>    # path-045675
+(config)# do-exec debug snmp mib nhrp notif <cr>    # path-045927
+(config)# do-exec debug snmp mib nhrp notif detail <cr>    # path-053319
+(config)# do-exec debug snmp overhead <cr>    # path-029146
+(config)# do-exec debug snmp packets <cr>    # path-029267
+(config)# do-exec debug snmp requests <cr>    # path-029984
+(config)# do-exec debug snmp sa all <cr>    # path-036083
+(config)# do-exec debug snmp sa error <cr>    # path-036162
+(config)# do-exec debug snmp sessions <cr>    # path-029937
+(config)# do-exec debug snmp sync <cr>    # path-029787
+(config)# do-exec debug snmp timers <cr>    # path-029096
+(config)# do-exec debug sntp adjust <cr>    # path-030428
+(config)# do-exec debug sntp auth <cr>    # path-030480
+(config)# do-exec debug sntp packets <cr>    # path-030398
+(config)# do-exec debug sntp select <cr>    # path-030455
+(config)# do-exec debug source bridge <cr>    # path-033402
+(config)# do-exec debug source error <cr>    # path-033413
+(config)# do-exec debug source event <cr>    # path-033424
+(config)# do-exec debug spanning-tree all <cr>    # path-033418
+(config)# do-exec debug spanning-tree bpdu <cr>    # path-033300
+(config)# do-exec debug spanning-tree bpdu receive <cr>    # path-042665
+(config)# do-exec debug spanning-tree bpdu transmit <cr>    # path-042688
+(config)# do-exec debug spanning-tree bpdu-opt <cr>    # path-033398
+(config)# do-exec debug spanning-tree bpdu-opt detail <cr>    # path-042826
+(config)# do-exec debug spanning-tree bpdu-opt packet <cr>    # path-042854
+(config)# do-exec debug spanning-tree config <cr>    # path-033286
+(config)# do-exec debug spanning-tree etherchannel <cr>    # path-033347
+(config)# do-exec debug spanning-tree events <cr>    # path-033331
+(config)# do-exec debug spanning-tree events dump <cr>    # path-042735
+(config)# do-exec debug spanning-tree events snapshot <cr>    # path-042706
+(config)# do-exec debug spanning-tree exceptions <cr>    # path-033323
+(config)# do-exec debug spanning-tree general <cr>    # path-033262
+(config)# do-exec debug spanning-tree pseudo-information <cr>    # path-033408
+(config)# do-exec debug spanning-tree pvst+ <cr>    # path-033338
+(config)# do-exec debug spanning-tree rep <cr>    # path-033261
+(config)# do-exec debug spanning-tree root <cr>    # path-033306
+(config)# do-exec debug spanning-tree snmp <cr>    # path-033394
+(config)# do-exec debug spanning-tree synchronization <cr>    # path-033375
+(config)# do-exec debug ssl openssl errors <cr>    # path-042203
+(config)# do-exec debug ssl openssl ext <cr>    # path-042264
+(config)# do-exec debug ssl openssl msg <cr>    # path-042241
+(config)# do-exec debug ssl openssl states <cr>    # path-042223
+(config)# do-exec debug ssm cm errors <cr>    # path-038245
+(config)# do-exec debug ssm cm events <cr>    # path-038195
+(config)# do-exec debug ssm cm-errors <cr>    # path-031006
+(config)# do-exec debug ssm cm-events <cr>    # path-030976
+(config)# do-exec debug ssm elog cm <cr>    # path-037872
+(config)# do-exec debug ssm event-trace <number:0..10000> <cr>    # path-037967
+(config)# do-exec debug ssm fhm errors <cr>    # path-038348
+(config)# do-exec debug ssm fhm events <cr>    # path-038290
+(config)# do-exec debug ssm fhm-errors <cr>    # path-031088
+(config)# do-exec debug ssm fhm-events <cr>    # path-031068
+(config)# do-exec debug ssm sm counters <cr>    # path-038296
+(config)# do-exec debug ssm sm errors <cr>    # path-038353
+(config)# do-exec debug ssm sm events <cr>    # path-038239
+(config)# do-exec debug ssm sm-errors <cr>    # path-031052
+(config)# do-exec debug ssm sm-events <cr>    # path-031030
+(config)# do-exec debug ssm xdr <cr>    # path-031113
+(config)# do-exec debug standby <cr>    # path-027449
+(config)# do-exec debug standby errors <cr>    # path-030651
+(config)# do-exec debug standby events <cr>    # path-030902
+(config)# do-exec debug standby events all <cr>    # path-060940
+(config)# do-exec debug standby packets <cr>    # path-030785
+(config)# do-exec debug standby packets all <cr>    # path-060929
+(config)# do-exec debug standby terse <cr>    # path-060665
+(config)# do-exec debug stun events <cr>    # path-033467
+(config)# do-exec debug stun packet <cr>    # path-033493
+(config)# do-exec debug stun packet <number:1..255> <cr>    # path-061173
+(config)# do-exec debug stun tg <cr>    # path-033488
+(config)# do-exec debug subscriber aaa authorization event <cr>    # path-047324
+(config)# do-exec debug subscriber aaa authorization fsm <cr>    # path-047361
+(config)# do-exec debug subscriber classifier all <cr>    # path-038359
+(config)# do-exec debug subscriber classifier error <cr>    # path-038166
+(config)# do-exec debug subscriber classifier event <cr>    # path-038120
+(config)# do-exec debug subscriber classifier fsm <cr>    # path-038257
+(config)# do-exec debug subscriber classifier ha <cr>    # path-038309
+(config)# do-exec debug subscriber classifier packet <cr>    # path-038208
+(config)# do-exec debug subscriber elog feature-mgr <cr>    # path-038437
+(config)# do-exec debug subscriber elog policy-mgr <cr>    # path-038392
+(config)# do-exec debug subscriber elog session-mgr <cr>    # path-038482
+(config)# do-exec debug subscriber elog sip-api <cr>    # path-038533
+(config)# do-exec debug subscriber error <cr>    # path-031175
+(config)# do-exec debug subscriber event <cr>    # path-031196
+(config)# do-exec debug subscriber feature all <cr>    # path-038310
+(config)# do-exec debug subscriber feature detail <cr>    # path-038124
+(config)# do-exec debug subscriber feature error <cr>    # path-038168
+(config)# do-exec debug subscriber feature event <cr>    # path-038079
+(config)# do-exec debug subscriber feature issu error <cr>    # path-047500
+(config)# do-exec debug subscriber feature issu event <cr>    # path-047453
+(config)# do-exec debug subscriber feature name access-list error <cr>    # path-054920
+(config)# do-exec debug subscriber feature name access-list event <cr>    # path-054889
+(config)# do-exec debug subscriber feature name access-list packet <cr>    # path-054950
+(config)# do-exec debug subscriber feature name accounting detail <cr>    # path-054563
+(config)# do-exec debug subscriber feature name accounting error <cr>    # path-054600
+(config)# do-exec debug subscriber feature name accounting event <cr>    # path-054581
+(config)# do-exec debug subscriber feature name compression detail <cr>    # path-054895
+(config)# do-exec debug subscriber feature name compression error <cr>    # path-054924
+(config)# do-exec debug subscriber feature name compression event <cr>    # path-054861
+(config)# do-exec debug subscriber feature name dscp error <cr>    # path-054596
+(config)# do-exec debug subscriber feature name dscp event <cr>    # path-054577
+(config)# do-exec debug subscriber feature name filter error <cr>    # path-054869
+(config)# do-exec debug subscriber feature name filter event <cr>    # path-054829
+(config)# do-exec debug subscriber feature name gx-monitoring detail <cr>    # path-054782
+(config)# do-exec debug subscriber feature name gx-monitoring error <cr>    # path-054760
+(config)# do-exec debug subscriber feature name gx-monitoring event <cr>    # path-054734
+(config)# do-exec debug subscriber feature name idle-timer error <cr>    # path-054946
+(config)# do-exec debug subscriber feature name idle-timer event <cr>    # path-054915
+(config)# do-exec debug subscriber feature name interface-config error <cr>    # path-054533
+(config)# do-exec debug subscriber feature name interface-config event <cr>    # path-054516
+(config)# do-exec debug subscriber feature name ip-config error <cr>    # path-054551
+(config)# do-exec debug subscriber feature name ip-config event <cr>    # path-054529
+(config)# do-exec debug subscriber feature name keepalive error <cr>    # path-054738
+(config)# do-exec debug subscriber feature name keepalive event <cr>    # path-054711
+(config)# do-exec debug subscriber feature name l4redirect error <cr>    # path-054692
+(config)# do-exec debug subscriber feature name l4redirect event <cr>    # path-054669
+(config)# do-exec debug subscriber feature name l4redirect packet <cr>    # path-054717
+(config)# do-exec debug subscriber feature name modem-on-hold detail <cr>    # path-054839
+(config)# do-exec debug subscriber feature name modem-on-hold error <cr>    # path-054873
+(config)# do-exec debug subscriber feature name modem-on-hold event <cr>    # path-054803
+(config)# do-exec debug subscriber feature name policing detail <cr>    # path-054628
+(config)# do-exec debug subscriber feature name policing error <cr>    # path-054614
+(config)# do-exec debug subscriber feature name policing event <cr>    # path-054594
+(config)# do-exec debug subscriber feature name policing packet <cr>    # path-054649
+(config)# do-exec debug subscriber feature name portbundle error <cr>    # path-054716
+(config)# do-exec debug subscriber feature name portbundle event <cr>    # path-054689
+(config)# do-exec debug subscriber feature name portbundle packet <cr>    # path-054740
+(config)# do-exec debug subscriber feature name prepaid-absolute error <cr>    # path-054626
+(config)# do-exec debug subscriber feature name prepaid-absolute event <cr>    # path-054613
+(config)# do-exec debug subscriber feature name prepaid-idle error <cr>    # path-054646
+(config)# do-exec debug subscriber feature name prepaid-idle event <cr>    # path-054625
+(config)# do-exec debug subscriber feature name qos-peruser error <cr>    # path-054777
+(config)# do-exec debug subscriber feature name qos-peruser event <cr>    # path-054755
+(config)# do-exec debug subscriber feature name session-timer error <cr>    # path-054808
+(config)# do-exec debug subscriber feature name session-timer event <cr>    # path-054774
+(config)# do-exec debug subscriber feature name static-routes error <cr>    # path-054566
+(config)# do-exec debug subscriber feature name static-routes event <cr>    # path-054548
+(config)# do-exec debug subscriber feature name time-monitor error <cr>    # path-054660
+(config)# do-exec debug subscriber feature name time-monitor event <cr>    # path-054641
+(config)# do-exec debug subscriber feature name volume-monitor error <cr>    # path-054673
+(config)# do-exec debug subscriber feature name volume-monitor event <cr>    # path-054657
+(config)# do-exec debug subscriber feature packet <cr>    # path-038329
+(config)# do-exec debug subscriber feature packet detail <cr>    # path-047412
+(config)# do-exec debug subscriber feature packet full <cr>    # path-047461
+(config)# do-exec debug subscriber fsm <cr>    # path-031086
+(config)# do-exec debug subscriber lite-session errors <cr>    # path-038238
+(config)# do-exec debug subscriber lite-session events <cr>    # path-038295
+(config)# do-exec debug subscriber packet detail <cr>    # path-038402
+(config)# do-exec debug subscriber packet error <cr>    # path-038346
+(config)# do-exec debug subscriber packet event <cr>    # path-038289
+(config)# do-exec debug subscriber packet full <cr>    # path-038443
+(config)# do-exec debug subscriber policy all <cr>    # path-038160
+(config)# do-exec debug subscriber policy ancp <cr>    # path-039035
+(config)# do-exec debug subscriber policy ancp detail <cr>    # path-047960
+(config)# do-exec debug subscriber policy ancp error <cr>    # path-048012
+(config)# do-exec debug subscriber policy condition <cr>    # path-038885
+(config)# do-exec debug subscriber policy condition detail <cr>    # path-047834
+(config)# do-exec debug subscriber policy condition error <cr>    # path-047883
+(config)# do-exec debug subscriber policy detail <cr>    # path-038305
+(config)# do-exec debug subscriber policy error <cr>    # path-038357
+(config)# do-exec debug subscriber policy event <cr>    # path-038251
+(config)# do-exec debug subscriber policy fsm <cr>    # path-038203
+(config)# do-exec debug subscriber policy idmgr <cr>    # path-038801
+(config)# do-exec debug subscriber policy idmgr detail <cr>    # path-047750
+(config)# do-exec debug subscriber policy idmgr error <cr>    # path-047802
+(config)# do-exec debug subscriber policy peer error <cr>    # path-048008
+(config)# do-exec debug subscriber policy peer event <cr>    # path-047952
+(config)# do-exec debug subscriber policy prepaid <cr>    # path-038411
+(config)# do-exec debug subscriber policy profile <cr>    # path-038841
+(config)# do-exec debug subscriber policy profile detail <cr>    # path-047796
+(config)# do-exec debug subscriber policy profile error <cr>    # path-047838
+(config)# do-exec debug subscriber policy redundancy coa <cr>    # path-047590
+(config)# do-exec debug subscriber policy redundancy event <cr>    # path-047629
+(config)# do-exec debug subscriber policy rule <cr>    # path-038931
+(config)# do-exec debug subscriber policy rule detail <cr>    # path-047880
+(config)# do-exec debug subscriber policy rule error <cr>    # path-047918
+(config)# do-exec debug subscriber policy service <cr>    # path-038983
+(config)# do-exec debug subscriber policy service detail <cr>    # path-047914
+(config)# do-exec debug subscriber policy service error <cr>    # path-047963
+(config)# do-exec debug subscriber policy webportal detail <cr>    # path-047685
+(config)# do-exec debug subscriber policy webportal error <cr>    # path-047651
+(config)# do-exec debug subscriber policy webportal event <cr>    # path-047624
+(config)# do-exec debug subscriber queuing detail <cr>    # path-038299
+(config)# do-exec debug subscriber queuing error <cr>    # path-038193
+(config)# do-exec debug subscriber queuing event <cr>    # path-038244
+(config)# do-exec debug subscriber service <cr>    # path-031158
+(config)# do-exec debug subscriber service locks <cr>    # path-038194
+(config)# do-exec debug subscriber template error <cr>    # path-038159
+(config)# do-exec debug subscriber template event <cr>    # path-038202
+(config)# do-exec debug subscriber template redundancy <cr>    # path-038250
+(config)# do-exec debug subscriber template scale-event <cr>    # path-038304
+(config)# do-exec debug subscriber testing <cr>    # path-031050
+(config)# do-exec debug subscriber trace <cr>    # path-031152
+(config)# do-exec debug subsystem <cr>    # path-027731
+(config)# do-exec debug sw-vlan badpmcookies <cr>    # path-031512
+(config)# do-exec debug sw-vlan cfg-vlan bootup <cr>    # path-039502
+(config)# do-exec debug sw-vlan cfg-vlan cli <cr>    # path-039445
+(config)# do-exec debug sw-vlan events <cr>    # path-031585
+(config)# do-exec debug sw-vlan ifs open read <cr>    # path-048334
+(config)# do-exec debug sw-vlan ifs open write <cr>    # path-048280
+(config)# do-exec debug sw-vlan ifs read 1 <cr>    # path-048371
+(config)# do-exec debug sw-vlan ifs read 2 <cr>    # path-048438
+(config)# do-exec debug sw-vlan ifs read 3 <cr>    # path-048489
+(config)# do-exec debug sw-vlan ifs read 4 <cr>    # path-048551
+(config)# do-exec debug sw-vlan ifs write <cr>    # path-039343
+(config)# do-exec debug sw-vlan management <cr>    # path-031487
+(config)# do-exec debug sw-vlan mapping <cr>    # path-031605
+(config)# do-exec debug sw-vlan notification accfwdchange <cr>    # path-039633
+(config)# do-exec debug sw-vlan notification allowedvlancfgchange <cr>    # path-039687
+(config)# do-exec debug sw-vlan notification fwdchange <cr>    # path-039568
+(config)# do-exec debug sw-vlan notification linkchange <cr>    # path-039387
+(config)# do-exec debug sw-vlan notification modechange <cr>    # path-039454
+(config)# do-exec debug sw-vlan notification pruningcfgchange <cr>    # path-039743
+(config)# do-exec debug sw-vlan notification statechange <cr>    # path-039509
+(config)# do-exec debug sw-vlan packets <cr>    # path-031536
+(config)# do-exec debug sw-vlan redundancy <cr>    # path-031706
+(config)# do-exec debug sw-vlan registries <cr>    # path-031563
+(config)# do-exec debug sw-vlan vtp events <cr>    # path-039337
+(config)# do-exec debug sw-vlan vtp packets <cr>    # path-039391
+(config)# do-exec debug sw-vlan vtp pruning <cr>    # path-039653
+(config)# do-exec debug sw-vlan vtp pruning packets <cr>    # path-048474
+(config)# do-exec debug sw-vlan vtp pruning xmit <cr>    # path-048540
+(config)# do-exec debug sw-vlan vtp redundancy <cr>    # path-039571
+(config)# do-exec debug sw-vlan vtp xmit <cr>    # path-039460
+(config)# do-exec debug swport cca-routine <cr>    # path-033595
+(config)# do-exec debug system secure event <cr>    # path-041399
+(config)# do-exec debug system secure verbose <cr>    # path-041438
+(config)# do-exec debug tableid ha <cr>    # path-031770
+(config)# do-exec debug tableid ha checkpoint <cr>    # path-039619
+(config)# do-exec debug tableid ha ipc <cr>    # path-039549
+(config)# do-exec debug tacacs <cr>    # path-027640
+(config)# do-exec debug tacacs accounting <cr>    # path-032088
+(config)# do-exec debug tacacs authentication <cr>    # path-032066
+(config)# do-exec debug tacacs authorization <cr>    # path-032079
+(config)# do-exec debug tacacs events <cr>    # path-032053
+(config)# do-exec debug tacacs packet <cr>    # path-032104
+(config)# do-exec debug tacacs secure <cr>    # path-032052
+(config)# do-exec debug tbridge autonomous <cr>    # path-033360
+(config)# do-exec debug tbridge crb <cr>    # path-033324
+(config)# do-exec debug tbridge discard-1 <cr>    # path-033296
+(config)# do-exec debug tbridge flood <cr>    # path-033376
+(config)# do-exec debug tbridge flow-id <cr>    # path-033339
+(config)# do-exec debug tbridge ipmulticast <cr>    # path-033348
+(config)# do-exec debug tbridge irb bvi status <cr>    # path-051387
+(config)# do-exec debug tbridge irb cef <cr>    # path-042875
+(config)# do-exec debug tbridge multicast-2 <cr>    # path-033307
+(config)# do-exec debug tbridge packet-0 <cr>    # path-033235
+(config)# do-exec debug tbridge packet-1 <cr>    # path-033246
+(config)# do-exec debug tbridge packet-2 <cr>    # path-033263
+(config)# do-exec debug tbridge packet-3 <cr>    # path-033273
+(config)# do-exec debug tbridge receive-1 <cr>    # path-033287
+(config)# do-exec debug telnet <cr>    # path-027607
+(config)# do-exec debug template <cr>    # path-027669
+(config)# do-exec debug template detailed <cr>    # path-032536
+(config)# do-exec debug template error <cr>    # path-032525
+(config)# do-exec debug template event <cr>    # path-032508
+(config)# do-exec debug tenant-mgr all <cr>    # path-032335
+(config)# do-exec debug tenant-mgr cfg <cr>    # path-032353
+(config)# do-exec debug tenant-mgr event <cr>    # path-032424
+(config)# do-exec debug tenant-mgr lock <cr>    # path-032440
+(config)# do-exec debug tenant-mgr map <cr>    # path-032387
+(config)# do-exec debug tenant-mgr tenant <cr>    # path-032373
+(config)# do-exec debug tenant-mgr vpn <cr>    # path-032407
+(config)# do-exec debug tftp events <cr>    # path-031971
+(config)# do-exec debug tftp packets <cr>    # path-031986
+(config)# do-exec debug tgrm <cr>    # path-027715
+(config)# do-exec debug tgrm all <cr>    # path-032970
+(config)# do-exec debug tgrm call <cr>    # path-032919
+(config)# do-exec debug tgrm error <cr>    # path-032986
+(config)# do-exec debug tgrm error call <cr>    # path-042161
+(config)# do-exec debug tgrm error call informational <cr>    # path-050857
+(config)# do-exec debug tgrm error software <cr>    # path-042178
+(config)# do-exec debug tgrm error software informational <cr>    # path-050873
+(config)# do-exec debug tgrm function <cr>    # path-032944
+(config)# do-exec debug tgrm inout <cr>    # path-032938
+(config)# do-exec debug tgrm inout call <cr>    # path-042041
+(config)# do-exec debug tgrm inout service <cr>    # path-042064
+(config)# do-exec debug tgrm service <cr>    # path-032931
+(config)# do-exec debug token events <cr>    # path-028719
+(config)# do-exec debug token ring <cr>    # path-028763
+(config)# do-exec debug topology accounting <cr>    # path-030892
+(config)# do-exec debug topology all <cr>    # path-030986
+(config)# do-exec debug topology cache <cr>    # path-030767
+(config)# do-exec debug topology client <cr>    # path-030842
+(config)# do-exec debug topology db <cr>    # path-030669
+(config)# do-exec debug topology elog <cr>    # path-030941
+(config)# do-exec debug topology event <cr>    # path-030921
+(config)# do-exec debug topology gr <cr>    # path-030985
+(config)# do-exec debug topology ha <cr>    # path-030747
+(config)# do-exec debug topology interface <cr>    # path-030792
+(config)# do-exec debug topology locking <cr>    # path-030795
+(config)# do-exec debug topology queue <cr>    # path-030718

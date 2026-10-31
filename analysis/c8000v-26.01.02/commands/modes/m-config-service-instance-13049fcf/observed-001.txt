@@ -1,0 +1,126 @@
+# 模式 config-service-instance；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-srv)# bridge-domain <number:dynamic> <cr>    # observed_connections-006031
+(config-if-srv)# bridge-domain from-encapsulation <cr>    # observed_connections-005935
+(config-if-srv)# cfm encapsulation dot1q <number:1..4094> <cr>    # observed_connections-005985
+(config-if-srv)# cfm latching-loopback domain <string> <cr>    # observed_connections-005979
+(config-if-srv)# cfm mep domain <string> mpid <number:1..8191> <cr>    # observed_connections-006016
+(config-if-srv)# cfm mip level <number:0..7> <cr>    # observed_connections-005975
+(config-if-srv)# default bridge-domain from-encapsulation <cr>    # observed_connections-005951
+(config-if-srv)# default cfm encapsulation <cr>    # observed_connections-005948
+(config-if-srv)# default cfm latching-loopback domain <string> <cr>    # observed_connections-006004
+(config-if-srv)# default cfm mep domain <string> mpid <number:1..8191> <cr>    # observed_connections-006023
+(config-if-srv)# default cfm mip <cr>    # observed_connections-005952
+(config-if-srv)# default description <cr>    # observed_connections-005934
+(config-if-srv)# default encapsulation <cr>    # observed_connections-005933
+(config-if-srv)# default errdisable recovery cause mac-security <cr>    # observed_connections-005994
+(config-if-srv)# default ethernet egress-filter <cr>    # observed_connections-005961
+(config-if-srv)# default ethernet loopback permit external <cr>    # observed_connections-005996
+(config-if-srv)# default ethernet loopback permit internal <cr>    # observed_connections-005998
+(config-if-srv)# default exit <cr>    # observed_connections-005922
+(config-if-srv)# default ip access-group in <cr>    # observed_connections-005987
+(config-if-srv)# default ip access-group out <cr>    # observed_connections-005990
+(config-if-srv)# default ip dhcp relay information option subscriber-id <cr>    # observed_connections-006026
+(config-if-srv)# default ip igmp snooping access-group <number:1..199> <cr>    # observed_connections-006021
+(config-if-srv)# default ip igmp snooping limit <cr>    # observed_connections-006015
+(config-if-srv)# default ip igmp snooping tcn flood <cr>    # observed_connections-006019
+(config-if-srv)# default ip verify source <cr>    # observed_connections-005980
+(config-if-srv)# default ipv6 traffic-filter <string> in <cr>    # observed_connections-006000
+(config-if-srv)# default ipv6 traffic-filter <string> out <cr>    # observed_connections-006003
+(config-if-srv)# default lldp enable <cr>    # observed_connections-005955
+(config-if-srv)# default mac access-group <string> in <cr>    # observed_connections-006009
+(config-if-srv)# default mac access-group <string> out <cr>    # observed_connections-006011
+(config-if-srv)# default rewrite ingress <cr>    # observed_connections-005956
+(config-if-srv)# default rewrite ingress <cr>    # observed_connections-005957
+(config-if-srv)# default service-policy input <string> <cr>    # observed_connections-005971
+(config-if-srv)# default service-policy output <string> <cr>    # observed_connections-005973
+(config-if-srv)# default shutdown <cr>    # observed_connections-005924
+(config-if-srv)# default snmp ifindex clear <cr>    # observed_connections-005969
+(config-if-srv)# default snmp ifindex persist <cr>    # observed_connections-005965
+(config-if-srv)# default snmp trap link-status <cr>    # observed_connections-005963
+(config-if-srv)# default storm-control action shutdown <cr>    # observed_connections-005983
+(config-if-srv)# default track <cr>    # observed_connections-005929
+(config-if-srv)# default transparent-cfm <cr>    # observed_connections-005938
+(config-if-srv)# default untagged-cfm <cr>    # observed_connections-005940
+(config-if-srv)# default weight <cr>    # observed_connections-005927
+(config-if-srv)# description <string> <cr>    # observed_connections-005932
+(config-if-srv)# encapsulation <cr>    # observed_connections-006027
+(config-if-srv)# encapsulation default <cr>    # observed_connections-006030
+(config-if-srv)# errdisable recovery cause mac-security <number:30..86400> <cr>    # observed_connections-005993
+(config-if-srv)# ethernet egress-filter disable <cr>    # observed_connections-005960
+(config-if-srv)# ethernet lmi ce-vlan map <cr>    # observed_connections-006035
+(config-if-srv)# ethernet loopback permit external <cr>    # observed_connections-005967
+(config-if-srv)# ethernet loopback permit internal <cr>    # observed_connections-005970
+(config-if-srv)# exit <cr>    # observed_connections-005917
+(config-if-srv)# group <number:dynamic> <cr>    # observed_connections-006029
+(config-if-srv)# ip access-group <number:1..199> in <cr>    # observed_connections-005977
+(config-if-srv)# ip access-group <number:1..199> out <cr>    # observed_connections-005982
+(config-if-srv)# ip dhcp relay information option subscriber-id <string> <cr>    # observed_connections-006025
+(config-if-srv)# ip flow monitor <?option@555588f5efa0> sampler <cr>    # observed_connections-006037
+(config-if-srv)# ip flow monitor <cr>    # observed_connections-006033
+(config-if-srv)# ip igmp snooping access-group <number:1..199> <cr>    # observed_connections-006013
+(config-if-srv)# ip igmp snooping limit <cr>    # observed_connections-005991
+(config-if-srv)# ip igmp snooping tcn flood <cr>    # observed_connections-006012
+(config-if-srv)# ip verify source vlan dhcp-snooping <cr>    # observed_connections-006006
+(config-if-srv)# ip verify source vlan dhcp-snooping port-security <cr>    # observed_connections-006017
+(config-if-srv)# ipv6 flow monitor <?option@555588f60368> sampler <cr>    # observed_connections-006038
+(config-if-srv)# ipv6 flow monitor <cr>    # observed_connections-006034
+(config-if-srv)# ipv6 traffic-filter <string> in <cr>    # observed_connections-005974
+(config-if-srv)# ipv6 traffic-filter <string> out <cr>    # observed_connections-005978
+(config-if-srv)# l2protocol forward <cr>    # observed_connections-006032
+(config-if-srv)# lldp enable <cr>    # observed_connections-005936
+(config-if-srv)# mac access-group <string> in <cr>    # observed_connections-005986
+(config-if-srv)# mac access-group <string> out <cr>    # observed_connections-005989
+(config-if-srv)# no bridge-domain from-encapsulation <cr>    # observed_connections-005946
+(config-if-srv)# no cfm encapsulation <cr>    # observed_connections-005944
+(config-if-srv)# no cfm latching-loopback domain <string> <cr>    # observed_connections-006002
+(config-if-srv)# no cfm mep domain <string> mpid <number:1..8191> <cr>    # observed_connections-006022
+(config-if-srv)# no cfm mip <cr>    # observed_connections-005947
+(config-if-srv)# no description <cr>    # observed_connections-005931
+(config-if-srv)# no encapsulation <cr>    # observed_connections-005930
+(config-if-srv)# no errdisable recovery cause mac-security <cr>    # observed_connections-005992
+(config-if-srv)# no ethernet egress-filter <cr>    # observed_connections-005959
+(config-if-srv)# no ethernet loopback permit external <cr>    # observed_connections-005995
+(config-if-srv)# no ethernet loopback permit internal <cr>    # observed_connections-005997
+(config-if-srv)# no exit <cr>    # observed_connections-005921
+(config-if-srv)# no ip access-group in <cr>    # observed_connections-005984
+(config-if-srv)# no ip access-group out <cr>    # observed_connections-005988
+(config-if-srv)# no ip dhcp relay information option subscriber-id <cr>    # observed_connections-006024
+(config-if-srv)# no ip igmp snooping access-group <number:1..199> <cr>    # observed_connections-006020
+(config-if-srv)# no ip igmp snooping limit <cr>    # observed_connections-006014
+(config-if-srv)# no ip igmp snooping tcn flood <cr>    # observed_connections-006018
+(config-if-srv)# no ip verify source <cr>    # observed_connections-005976
+(config-if-srv)# no ipv6 traffic-filter <string> in <cr>    # observed_connections-005999
+(config-if-srv)# no ipv6 traffic-filter <string> out <cr>    # observed_connections-006001
+(config-if-srv)# no lldp enable <cr>    # observed_connections-005949
+(config-if-srv)# no mac access-group <string> in <cr>    # observed_connections-006005
+(config-if-srv)# no mac access-group <string> out <cr>    # observed_connections-006010
+(config-if-srv)# no rewrite ingress <cr>    # observed_connections-005953
+(config-if-srv)# no rewrite ingress <cr>    # observed_connections-005954
+(config-if-srv)# no service-policy input <string> <cr>    # observed_connections-005968
+(config-if-srv)# no service-policy output <string> <cr>    # observed_connections-005972
+(config-if-srv)# no shutdown <cr>    # observed_connections-005923
+(config-if-srv)# no snmp ifindex clear <cr>    # observed_connections-005966
+(config-if-srv)# no snmp ifindex persist <cr>    # observed_connections-005964
+(config-if-srv)# no snmp trap link-status <cr>    # observed_connections-005962
+(config-if-srv)# no storm-control action shutdown <cr>    # observed_connections-005981
+(config-if-srv)# no track <cr>    # observed_connections-005926
+(config-if-srv)# no transparent-cfm <cr>    # observed_connections-005937
+(config-if-srv)# no untagged-cfm <cr>    # observed_connections-005939
+(config-if-srv)# no weight <cr>    # observed_connections-005925
+(config-if-srv)# rewrite ingress tag pop 1 <cr>    # observed_connections-006007
+(config-if-srv)# rewrite ingress tag pop 1 <cr>    # observed_connections-006008
+(config-if-srv)# service-policy input <string> <cr>    # observed_connections-005945
+(config-if-srv)# service-policy output <string> <cr>    # observed_connections-005950
+(config-if-srv)# shutdown <cr>    # observed_connections-005918
+(config-if-srv)# snmp ifindex clear <cr>    # observed_connections-005943
+(config-if-srv)# snmp ifindex persist <cr>    # observed_connections-005942
+(config-if-srv)# snmp trap link-status <cr>    # observed_connections-005941
+(config-if-srv)# storm-control action shutdown <cr>    # observed_connections-005958
+(config-if-srv)# storm-control unicast cir <?general_to_number_func_action@555588ee10a0> <cr>    # observed_connections-006036
+(config-if-srv)# track <number:1..32767> <cr>    # observed_connections-005928
+(config-if-srv)# transparent-cfm <cr>    # observed_connections-005919
+(config-if-srv)# untagged-cfm <cr>    # observed_connections-005920
+(config-if-srv)# weight <number:dynamic> <cr>    # observed_connections-006028

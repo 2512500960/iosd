@@ -1,0 +1,230 @@
+# 模式 router-af-topology；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af-topology)# adjacency stagger none <number:1..65535> <cr>    # observed_connections-005001
+(config-router-af-topology)# advertise passive-only <cr>    # observed_connections-004857
+(config-router-af-topology)# area <address> authentication <cr>    # observed_connections-004922
+(config-router-af-topology)# area <address> capability default-exclusion <cr>    # observed_connections-004981
+(config-router-af-topology)# area <address> default-cost <number:0..16777214> <cr>    # observed_connections-004982
+(config-router-af-topology)# area <address> filter-list prefix <string> in <cr>    # observed_connections-005018
+(config-router-af-topology)# area <address> nssa <cr>    # observed_connections-004955
+(config-router-af-topology)# area <address> packet-size <number:576..10000> <cr>    # observed_connections-004986
+(config-router-af-topology)# area <address> range <address> <address> <cr>    # observed_connections-005008
+(config-router-af-topology)# area <address> sham-link <address> <address> <cr>    # observed_connections-005010
+(config-router-af-topology)# area <address> stub <cr>    # observed_connections-004944
+(config-router-af-topology)# area <address> virtual-link <address> <cr>    # observed_connections-005000
+(config-router-af-topology)# auto-cost <cr>    # observed_connections-004828
+(config-router-af-topology)# autoroute-exclude prefix-list <string> <cr>    # observed_connections-004976
+(config-router-af-topology)# capability opaque <cr>    # observed_connections-004916
+(config-router-af-topology)# compatible rfc1583 <cr>    # observed_connections-004867
+(config-router-af-topology)# compatible rfc1587 <cr>    # observed_connections-004872
+(config-router-af-topology)# compatible rfc5243 <cr>    # observed_connections-004881
+(config-router-af-topology)# context <string> <cr>    # observed_connections-004841
+(config-router-af-topology)# default adjacency stagger <cr>    # observed_connections-004964
+(config-router-af-topology)# default advertise passive-only <cr>    # observed_connections-004930
+(config-router-af-topology)# default area <address> <cr>    # observed_connections-004959
+(config-router-af-topology)# default area <address> authentication <cr>    # observed_connections-004983
+(config-router-af-topology)# default area <address> capability default-exclusion <cr>    # observed_connections-005006
+(config-router-af-topology)# default area <address> default-cost <cr>    # observed_connections-004984
+(config-router-af-topology)# default area <address> filter-list prefix <string> in <cr>    # observed_connections-005029
+(config-router-af-topology)# default area <address> nssa <cr>    # observed_connections-004997
+(config-router-af-topology)# default area <address> packet-size <cr>    # observed_connections-004988
+(config-router-af-topology)# default area <address> range <address> <address> <cr>    # observed_connections-005019
+(config-router-af-topology)# default area <address> sham-link <address> <address> <cr>    # observed_connections-005026
+(config-router-af-topology)# default area <address> stub <cr>    # observed_connections-004992
+(config-router-af-topology)# default area <address> virtual-link <address> <cr>    # observed_connections-005011
+(config-router-af-topology)# default auto-cost <cr>    # observed_connections-004883
+(config-router-af-topology)# default autoroute-exclude <cr>    # observed_connections-004920
+(config-router-af-topology)# default capability opaque <cr>    # observed_connections-004975
+(config-router-af-topology)# default compatible rfc1583 <cr>    # observed_connections-004935
+(config-router-af-topology)# default compatible rfc1587 <cr>    # observed_connections-004947
+(config-router-af-topology)# default compatible rfc5243 <cr>    # observed_connections-004951
+(config-router-af-topology)# default context <cr>    # observed_connections-004840
+(config-router-af-topology)# default default-information originate <cr>    # observed_connections-004926
+(config-router-af-topology)# default default-metric <cr>    # observed_connections-004854
+(config-router-af-topology)# default distance <cr>    # observed_connections-004866
+(config-router-af-topology)# default distance ospf <cr>    # observed_connections-004932
+(config-router-af-topology)# default distribute-list in <cr>    # observed_connections-004961
+(config-router-af-topology)# default domain-id <cr>    # observed_connections-004880
+(config-router-af-topology)# default domain-tag <cr>    # observed_connections-004824
+(config-router-af-topology)# default event-log <cr>    # observed_connections-004912
+(config-router-af-topology)# default ignore lsa mospf <cr>    # observed_connections-004993
+(config-router-af-topology)# default ignore-attached-bit <cr>    # observed_connections-004869
+(config-router-af-topology)# default interface-id snmp-if-index <cr>    # observed_connections-004939
+(config-router-af-topology)# default ip route priority high tag <cr>    # observed_connections-005017
+(config-router-af-topology)# default ispf <cr>    # observed_connections-004882
+(config-router-af-topology)# default limit retransmissions <cr>    # observed_connections-004972
+(config-router-af-topology)# default log-adjacency-changes <cr>    # observed_connections-004909
+(config-router-af-topology)# default max-lsa <cr>    # observed_connections-004890
+(config-router-af-topology)# default max-metric intra-area <cr>    # observed_connections-004847
+(config-router-af-topology)# default max-metric router-lsa <cr>    # observed_connections-004949
+(config-router-af-topology)# default metric <cr>    # observed_connections-004913
+(config-router-af-topology)# default multicast-intact <cr>    # observed_connections-004919
+(config-router-af-topology)# default never-set-attached-bit <cr>    # observed_connections-004863
+(config-router-af-topology)# default packet-size <cr>    # observed_connections-004821
+(config-router-af-topology)# default prc-interval <cr>    # observed_connections-004855
+(config-router-af-topology)# default prefix-priority high route-map <cr>    # observed_connections-005003
+(config-router-af-topology)# default prefix-suppression <cr>    # observed_connections-004907
+(config-router-af-topology)# default priority <cr>    # observed_connections-004819
+(config-router-af-topology)# default priority <cr>    # observed_connections-004851
+(config-router-af-topology)# default process-min-time percent <cr>    # observed_connections-004896
+(config-router-af-topology)# default queue-depth hello <cr>    # observed_connections-004942
+(config-router-af-topology)# default router-id <cr>    # observed_connections-004844
+(config-router-af-topology)# default set-attached-bit <cr>    # observed_connections-004884
+(config-router-af-topology)# default set-overload-bit <cr>    # observed_connections-004885
+(config-router-af-topology)# default shutdown <cr>    # observed_connections-004899
+(config-router-af-topology)# default snmp context <cr>    # observed_connections-004933
+(config-router-af-topology)# default snmp context <string> community <string> <cr>    # observed_connections-005023
+(config-router-af-topology)# default snmp context <string> user <string> <cr>    # observed_connections-005022
+(config-router-af-topology)# default spf-interval <cr>    # observed_connections-004865
+(config-router-af-topology)# default statistics rib-timings <cr>    # observed_connections-004960
+(config-router-af-topology)# default summary-prefix <address> <address> <cr>    # observed_connections-004989
+(config-router-af-topology)# default summary-prefix <address> <cr>    # observed_connections-004931
+(config-router-af-topology)# default timers basic <cr>    # observed_connections-004943
+(config-router-af-topology)# default timers lsa arrival <cr>    # observed_connections-004953
+(config-router-af-topology)# default timers lsa-arrival <cr>    # observed_connections-004901
+(config-router-af-topology)# default timers lsa-group-pacing <cr>    # observed_connections-004891
+(config-router-af-topology)# default timers lsa-interval <cr>    # observed_connections-004897
+(config-router-af-topology)# default timers pacing flood <cr>    # observed_connections-004970
+(config-router-af-topology)# default timers pacing lsa-group <cr>    # observed_connections-004966
+(config-router-af-topology)# default timers pacing retransmission <cr>    # observed_connections-004973
+(config-router-af-topology)# default timers throttle lsa <cr>    # observed_connections-004999
+(config-router-af-topology)# default timers throttle spf <cr>    # observed_connections-004996
+(config-router-af-topology)# default traffic-share min across-interfaces <cr>    # observed_connections-004978
+(config-router-af-topology)# default ttl-security all-interfaces <cr>    # observed_connections-004968
+(config-router-af-topology)# default-information originate <cr>    # observed_connections-004852
+(config-router-af-topology)# default-metric <number:1..16777214> <cr>    # observed_connections-004856
+(config-router-af-topology)# discard-route <cr>    # observed_connections-005030
+(config-router-af-topology)# distance <number:1..255> <cr>    # observed_connections-004853
+(config-router-af-topology)# distance ospf <cr>    # observed_connections-004879
+(config-router-af-topology)# distribute-list in <cr>    # observed_connections-004895
+(config-router-af-topology)# distribute-list out <?router_action_proc_vpn@5555897d0660> <cr>    # observed_connections-005037
+(config-router-af-topology)# domain-id <address> <cr>    # observed_connections-004858
+(config-router-af-topology)# domain-id type 0005 value <hex-data> <cr>    # observed_connections-005038
+(config-router-af-topology)# domain-tag <number:1..4294967295> <cr>    # observed_connections-004816
+(config-router-af-topology)# event-log <cr>    # observed_connections-004837
+(config-router-af-topology)# exit-router-topology <cr>    # observed_connections-004817
+(config-router-af-topology)# ignore lsa mospf <cr>    # observed_connections-004946
+(config-router-af-topology)# ignore-attached-bit <cr>    # observed_connections-004826
+(config-router-af-topology)# interface-id snmp-if-index <cr>    # observed_connections-004870
+(config-router-af-topology)# ip route priority high tag <number:1..4294967295> <cr>    # observed_connections-005015
+(config-router-af-topology)# ispf <cr>    # observed_connections-004827
+(config-router-af-topology)# limit retransmissions <cr>    # observed_connections-004911
+(config-router-af-topology)# local-rib-criteria <cr>    # observed_connections-005031
+(config-router-af-topology)# log-adjacency-changes <cr>    # observed_connections-004836
+(config-router-af-topology)# max-lsa <number:1..4294967294> <cr>    # observed_connections-004915
+(config-router-af-topology)# max-metric intra-area <number:1..16777214> <cr>    # observed_connections-004822
+(config-router-af-topology)# max-metric router-lsa <cr>    # observed_connections-004878
+(config-router-af-topology)# maximum-paths <number:dynamic> <cr>    # observed_connections-005034
+(config-router-af-topology)# metric <number:1..16777214> <cr>    # observed_connections-004900
+(config-router-af-topology)# multicast-intact <cr>    # observed_connections-004838
+(config-router-af-topology)# neighbor <cr>    # observed_connections-005032
+(config-router-af-topology)# neighbor <cr>    # observed_connections-005033
+(config-router-af-topology)# never-set-attached-bit <cr>    # observed_connections-004825
+(config-router-af-topology)# no adjacency stagger <cr>    # observed_connections-004962
+(config-router-af-topology)# no advertise passive-only <cr>    # observed_connections-004924
+(config-router-af-topology)# no area <address> <cr>    # observed_connections-004956
+(config-router-af-topology)# no area <address> authentication <cr>    # observed_connections-004979
+(config-router-af-topology)# no area <address> capability default-exclusion <cr>    # observed_connections-005005
+(config-router-af-topology)# no area <address> default-cost <cr>    # observed_connections-004980
+(config-router-af-topology)# no area <address> filter-list prefix <string> in <cr>    # observed_connections-005028
+(config-router-af-topology)# no area <address> nssa <cr>    # observed_connections-004995
+(config-router-af-topology)# no area <address> packet-size <cr>    # observed_connections-004985
+(config-router-af-topology)# no area <address> range <address> <address> <cr>    # observed_connections-005016
+(config-router-af-topology)# no area <address> sham-link <address> <address> <cr>    # observed_connections-005025
+(config-router-af-topology)# no area <address> stub <cr>    # observed_connections-004990
+(config-router-af-topology)# no area <address> virtual-link <address> <cr>    # observed_connections-005009
+(config-router-af-topology)# no auto-cost <cr>    # observed_connections-004875
+(config-router-af-topology)# no autoroute-exclude <cr>    # observed_connections-004918
+(config-router-af-topology)# no capability opaque <cr>    # observed_connections-004974
+(config-router-af-topology)# no compatible rfc1583 <cr>    # observed_connections-004934
+(config-router-af-topology)# no compatible rfc1587 <cr>    # observed_connections-004941
+(config-router-af-topology)# no compatible rfc5243 <cr>    # observed_connections-004948
+(config-router-af-topology)# no context <cr>    # observed_connections-004839
+(config-router-af-topology)# no default-information originate <cr>    # observed_connections-004923
+(config-router-af-topology)# no default-metric <cr>    # observed_connections-004849
+(config-router-af-topology)# no distance <cr>    # observed_connections-004862
+(config-router-af-topology)# no distance ospf <cr>    # observed_connections-004927
+(config-router-af-topology)# no distribute-list in <cr>    # observed_connections-004958
+(config-router-af-topology)# no domain-id <cr>    # observed_connections-004871
+(config-router-af-topology)# no domain-tag <cr>    # observed_connections-004823
+(config-router-af-topology)# no event-log <cr>    # observed_connections-004905
+(config-router-af-topology)# no ignore lsa mospf <cr>    # observed_connections-004991
+(config-router-af-topology)# no ignore-attached-bit <cr>    # observed_connections-004864
+(config-router-af-topology)# no interface-id snmp-if-index <cr>    # observed_connections-004936
+(config-router-af-topology)# no ip route priority high tag <cr>    # observed_connections-005014
+(config-router-af-topology)# no ispf <cr>    # observed_connections-004873
+(config-router-af-topology)# no limit retransmissions <cr>    # observed_connections-004969
+(config-router-af-topology)# no log-adjacency-changes <cr>    # observed_connections-004904
+(config-router-af-topology)# no max-lsa <cr>    # observed_connections-004887
+(config-router-af-topology)# no max-metric intra-area <cr>    # observed_connections-004843
+(config-router-af-topology)# no max-metric router-lsa <cr>    # observed_connections-004945
+(config-router-af-topology)# no metric <cr>    # observed_connections-004906
+(config-router-af-topology)# no multicast-intact <cr>    # observed_connections-004917
+(config-router-af-topology)# no never-set-attached-bit <cr>    # observed_connections-004859
+(config-router-af-topology)# no packet-size <cr>    # observed_connections-004820
+(config-router-af-topology)# no prc-interval <cr>    # observed_connections-004850
+(config-router-af-topology)# no prefix-priority high route-map <cr>    # observed_connections-005002
+(config-router-af-topology)# no prefix-suppression <cr>    # observed_connections-004903
+(config-router-af-topology)# no priority <cr>    # observed_connections-004818
+(config-router-af-topology)# no priority <cr>    # observed_connections-004845
+(config-router-af-topology)# no process-min-time percent <cr>    # observed_connections-004889
+(config-router-af-topology)# no queue-depth hello <cr>    # observed_connections-004937
+(config-router-af-topology)# no router-id <cr>    # observed_connections-004842
+(config-router-af-topology)# no set-attached-bit <cr>    # observed_connections-004876
+(config-router-af-topology)# no set-overload-bit <cr>    # observed_connections-004877
+(config-router-af-topology)# no shutdown <cr>    # observed_connections-004894
+(config-router-af-topology)# no snmp context <cr>    # observed_connections-004928
+(config-router-af-topology)# no snmp context <string> community <string> <cr>    # observed_connections-005021
+(config-router-af-topology)# no snmp context <string> user <string> <cr>    # observed_connections-005020
+(config-router-af-topology)# no spf-interval <cr>    # observed_connections-004861
+(config-router-af-topology)# no statistics rib-timings <cr>    # observed_connections-004957
+(config-router-af-topology)# no summary-prefix <address> <address> <cr>    # observed_connections-004987
+(config-router-af-topology)# no summary-prefix <address> <cr>    # observed_connections-004925
+(config-router-af-topology)# no timers basic <cr>    # observed_connections-004938
+(config-router-af-topology)# no timers lsa arrival <cr>    # observed_connections-004952
+(config-router-af-topology)# no timers lsa-arrival <cr>    # observed_connections-004898
+(config-router-af-topology)# no timers lsa-group-pacing <cr>    # observed_connections-004888
+(config-router-af-topology)# no timers lsa-interval <cr>    # observed_connections-004892
+(config-router-af-topology)# no timers pacing flood <cr>    # observed_connections-004967
+(config-router-af-topology)# no timers pacing lsa-group <cr>    # observed_connections-004963
+(config-router-af-topology)# no timers pacing retransmission <cr>    # observed_connections-004971
+(config-router-af-topology)# no timers throttle lsa <cr>    # observed_connections-004998
+(config-router-af-topology)# no timers throttle spf <cr>    # observed_connections-004994
+(config-router-af-topology)# no traffic-share min across-interfaces <cr>    # observed_connections-004977
+(config-router-af-topology)# no ttl-security all-interfaces <cr>    # observed_connections-004965
+(config-router-af-topology)# packet-size <number:576..10000> <cr>    # observed_connections-004815
+(config-router-af-topology)# prc-interval <number:1..120> <cr>    # observed_connections-004868
+(config-router-af-topology)# prefix-priority high route-map <string> <cr>    # observed_connections-005004
+(config-router-af-topology)# prefix-suppression <cr>    # observed_connections-004835
+(config-router-af-topology)# priority <number:0..127> <cr>    # observed_connections-004814
+(config-router-af-topology)# priority <number:0..127> <cr>    # observed_connections-004846
+(config-router-af-topology)# process-min-time percent <number:1..100> <cr>    # observed_connections-004831
+(config-router-af-topology)# queue-depth hello unlimited <cr>    # observed_connections-004940
+(config-router-af-topology)# redistribute <?router_action_proc_vpn@5555897cd180> <cr>    # observed_connections-005036
+(config-router-af-topology)# redistribute <?router_action_proc_vpn@5555897cd180> ip level-1 into level-1 route-map <string> <cr>    # observed_connections-005039
+(config-router-af-topology)# router-id <address> <cr>    # observed_connections-004848
+(config-router-af-topology)# set-attached-bit route-map <string> <cr>    # observed_connections-004950
+(config-router-af-topology)# set-overload-bit <cr>    # observed_connections-004829
+(config-router-af-topology)# shutdown <cr>    # observed_connections-004833
+(config-router-af-topology)# snmp context <cr>    # observed_connections-004860
+(config-router-af-topology)# snmp context <string> community <string> <cr>    # observed_connections-005013
+(config-router-af-topology)# snmp context <string> user <string> <cr>    # observed_connections-005012
+(config-router-af-topology)# spf-interval <number:1..120> <cr>    # observed_connections-004874
+(config-router-af-topology)# statistics rib-timings <cr>    # observed_connections-004893
+(config-router-af-topology)# summary-prefix <address> <address> <cr>    # observed_connections-004929
+(config-router-af-topology)# summary-prefix <address> <address> <cr>    # observed_connections-004954
+(config-router-af-topology)# summary-prefix <prefix:dynamic> <cr>    # observed_connections-005035
+(config-router-af-topology)# timers basic <number:1..2147483> <number:1..2147483> <number:0..2147483> <cr>    # observed_connections-005007
+(config-router-af-topology)# timers lsa arrival <number:0..600000> <cr>    # observed_connections-004886
+(config-router-af-topology)# timers lsa-arrival <number:0..600> <cr>    # observed_connections-004834
+(config-router-af-topology)# timers lsa-group-pacing <number:10..1800> <cr>    # observed_connections-004830
+(config-router-af-topology)# timers lsa-interval <number:0..600> <cr>    # observed_connections-004832
+(config-router-af-topology)# timers pacing flood <number:5..100> <cr>    # observed_connections-004908
+(config-router-af-topology)# timers pacing lsa-group <number:10..1800> <cr>    # observed_connections-004902
+(config-router-af-topology)# timers pacing retransmission <number:5..200> <cr>    # observed_connections-004914
+(config-router-af-topology)# timers throttle lsa <number:0..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-005027
+(config-router-af-topology)# timers throttle spf <number:1..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-005024
+(config-router-af-topology)# traffic-share min across-interfaces <cr>    # observed_connections-004921
+(config-router-af-topology)# ttl-security all-interfaces <cr>    # observed_connections-004910

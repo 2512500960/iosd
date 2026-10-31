@@ -1,0 +1,28 @@
+# 模式 eap-mprofile-mode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-eap-method-profile)# accept-on-auth-prov <cr>    # observed_connections-008643
+(config-eap-method-profile)# allow-anon-prov <cr>    # observed_connections-008644
+(config-eap-method-profile)# allow-auth-prov <cr>    # observed_connections-008645
+(config-eap-method-profile)# authority-id identity <string> <cr>    # observed_connections-008663
+(config-eap-method-profile)# authority-id information <string> <cr>    # observed_connections-008665
+(config-eap-method-profile)# client-cert-required <cr>    # observed_connections-008646
+(config-eap-method-profile)# description <string> <cr>    # observed_connections-008649
+(config-eap-method-profile)# exit <cr>    # observed_connections-008648
+(config-eap-method-profile)# local-cert-required <cr>    # observed_connections-008647
+(config-eap-method-profile)# local-key <string> <cr>    # observed_connections-008661
+(config-eap-method-profile)# no accept-on-auth-prov <cr>    # observed_connections-008650
+(config-eap-method-profile)# no allow-anon-prov <cr>    # observed_connections-008652
+(config-eap-method-profile)# no allow-auth-prov <cr>    # observed_connections-008653
+(config-eap-method-profile)# no authority-id identity <cr>    # observed_connections-008664
+(config-eap-method-profile)# no authority-id information <cr>    # observed_connections-008666
+(config-eap-method-profile)# no client-cert-required <cr>    # observed_connections-008654
+(config-eap-method-profile)# no description <cr>    # observed_connections-008651
+(config-eap-method-profile)# no exit <cr>    # observed_connections-008657
+(config-eap-method-profile)# no local-cert-required <cr>    # observed_connections-008655
+(config-eap-method-profile)# no local-key <cr>    # observed_connections-008656
+(config-eap-method-profile)# no pac-password <cr>    # observed_connections-008658
+(config-eap-method-profile)# no pac-ttl <cr>    # observed_connections-008660
+(config-eap-method-profile)# pac-password <string> <cr>    # observed_connections-008662
+(config-eap-method-profile)# pac-ttl <number:1..700000000> <cr>    # observed_connections-008659

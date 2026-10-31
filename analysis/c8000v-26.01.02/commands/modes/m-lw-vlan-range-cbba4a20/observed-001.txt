@@ -1,0 +1,10 @@
+# 模式 lw-vlan-range；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-vlan-range)# default exit-vlan-config <cr>    # observed_connections-009755
+(config-if-vlan-range)# default pppoe enable <cr>    # observed_connections-009757
+(config-if-vlan-range)# exit-vlan-config <cr>    # observed_connections-009753
+(config-if-vlan-range)# no exit-vlan-config <cr>    # observed_connections-009754
+(config-if-vlan-range)# no pppoe enable <cr>    # observed_connections-009756
+(config-if-vlan-range)# pppoe enable group global <cr>    # observed_connections-009758

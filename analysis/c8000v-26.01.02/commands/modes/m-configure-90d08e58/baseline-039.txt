@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-039.md
+
+(config)# do-exec clear platform software infrastructure punt-keepalive <cr>    # path-044750
+(config)# do-exec clear platform software infrastructure session source all <cr>    # path-057008
+(config)# do-exec clear platform software infrastructure thread <cr>    # path-044538
+(config)# do-exec clear platform software l2pt statistics <cr>    # path-044092
+(config)# do-exec clear platform software mlppp counters <cr>    # path-043948
+(config)# do-exec clear platform software multicast monitor-trace <cr>    # path-043982
+(config)# do-exec clear platform software multicast statistics <cr>    # path-044002
+(config)# do-exec clear platform software nat statistics <cr>    # path-044414
+(config)# do-exec clear platform software nat64 statistics <cr>    # path-044238
+(config)# do-exec clear platform software nat66 statistics <cr>    # path-044273
+(config)# do-exec clear platform software nbar statistics <cr>    # path-044117
+(config)# do-exec clear platform software netflow statistics <cr>    # path-044302
+(config)# do-exec clear platform software nwpi counters <cr>    # path-044145
+(config)# do-exec clear platform software pfr statistics <cr>    # path-044332
+(config)# do-exec clear platform software qos statistics <cr>    # path-044446
+(config)# do-exec clear platform software route-map counters <cr>    # path-044357
+(config)# do-exec clear platform software vnic-if interface <interface> <cr>    # path-061842
+(config)# do-exec clear platform software vnic-if nvtable <cr>    # path-044018
+(config)# do-exec clear platform software vrf statistics <cr>    # path-044042
+(config)# do-exec clear platform software wccp counters <cr>    # path-044420
+(config)# do-exec clear platform software wccp statistics <cr>    # path-044387
+(config)# do-exec clear pmon <cr>    # path-026364
+(config)# do-exec clear pmon <interface> <cr>    # path-060521
+(config)# do-exec clear policy-map client onepk transient <cr>    # path-045851
+(config)# do-exec clear policy-map control <?option@555589144a70> all <cr>    # path-061299
+(config)# do-exec clear policy-map control <cr>    # path-029961
+(config)# do-exec clear policy-map counters <cr>    # path-030203
+(config)# do-exec clear policy-map counters <interface> <cr>    # path-060870
+(config)# do-exec clear policy-map counters vrf <string> <cr>    # path-046113
+(config)# do-exec clear port-security dynamic <cr>    # path-031751
+(config)# do-exec clear port-security dynamic interface <interface> <cr>    # path-061528
+(config)# do-exec clear ppp all <cr>    # path-028509
+(config)# do-exec clear ppp interface <interface> <cr>    # path-060778
+(config)# do-exec clear ppp queues <cr>    # path-028322
+(config)# do-exec clear ppp statistics <cr>    # path-028432
+(config)# do-exec clear ppp statistics fsm <cr>    # path-034427
+(config)# do-exec clear ppp subscriber statistics <cr>    # path-034470
+(config)# do-exec clear ppp syslog statistics <cr>    # path-034390
+(config)# do-exec clear pppatm interface <interface> <cr>    # path-060932
+(config)# do-exec clear pppatm statistics <cr>    # path-030758
+(config)# do-exec clear pppoe all <cr>    # path-029886
+(config)# do-exec clear pppoe derived group <string> <cr>    # path-045655
+(config)# do-exec clear pppoe interface <interface> <cr>    # path-060853
+(config)# do-exec clear pppoe interface <interface> vc <?number_func_nows_action@55558abfe010> <string> vlan <number:1..4095> <cr>    # path-062922
+(config)# do-exec clear pppoe interface <interface> vlan <number:1..4095> <cr>    # path-061907
+(config)# do-exec clear pppoe relay context all <cr>    # path-045609
+(config)# do-exec clear pppoe rmac <address> <cr>    # path-036119
+(config)# do-exec clear pppoe rmac <address> sid <number:1..65535> <cr>    # path-053064
+(config)# do-exec clear pppoe statistics <cr>    # path-029978
+(config)# do-exec clear pppoe vrrs <string> <cr>    # path-036411
+(config)# do-exec clear profile <cr>    # path-026103
+(config)# do-exec clear qos event <cr>    # path-029495
+(config)# do-exec clear qos trace <cr>    # path-029716
+(config)# do-exec clear qos trace error <cr>    # path-035743
+(config)# do-exec clear qos trace event <cr>    # path-035620
+(config)# do-exec clear qos trace warning <cr>    # path-035682
+(config)# do-exec clear radius server index <cr>    # path-038019
+(config)# do-exec clear radius sg-stats <cr>    # path-031004
+(config)# do-exec clear radius statistics <cr>    # path-030974
+(config)# do-exec clear radius-proxy client <address> <cr>    # path-036118
+(config)# do-exec clear radius-proxy statistics <cr>    # path-029884
+(config)# do-exec clear rbscp <cr>    # path-027460
+(config)# do-exec clear rbscp <interface> <cr>    # path-060664
+(config)# do-exec clear redundancy counters <cr>    # path-028483
+(config)# do-exec clear redundancy counters domain <?option@55558952c340> <cr>    # path-061229
+(config)# do-exec clear redundancy idb-sync-history <cr>    # path-028459
+(config)# do-exec clear registry calls <string> <cr>    # path-038515
+(config)# do-exec clear registry calls <string> fn <?general_pointer_number_action@5555896d08e0> <cr>    # path-062045
+(config)# do-exec clear rif-cache <cr>    # path-026464
+(config)# do-exec clear route-map counters <string> <cr>    # path-036811
+(config)# do-exec clear rudpv1 statistics <cr>    # path-030856
+(config)# do-exec clear sampler <?option@555588f3bd00> <cr>    # path-060562
+(config)# do-exec clear sampler <cr>    # path-026776
+(config)# do-exec clear service-group traffic-stats <cr>    # path-029038
+(config)# do-exec clear service-group traffic-stats <number:dynamic> <cr>    # path-060808
+(config)# do-exec clear service-routing capabilities-manager <cr>    # path-030764
+(config)# do-exec clear service-routing client <number:0..65535> <cr>    # path-037514
+(config)# do-exec clear service-routing database <number:0..65535> : <number:0..65535> : <number:0..4294967295> - <number:0..65535> - <number:0..65535> - <number:0..65535> - <hex-string> <cr>    # path-062688
+(config)# do-exec clear service-routing database <number:0..65535> : <number:0..65535> : <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> . <number:0..4294967295> <cr>    # path-060233
+(config)# do-exec clear service-routing xmcp client <address> <cr>    # path-061436
+(config)# do-exec clear smef interface <interface> stats <cr>    # path-061412
+(config)# do-exec clear smef stats <cr>    # path-030649
+(config)# do-exec clear snapshot quiet-time <interface> <cr>    # path-060945
+(config)# do-exec clear snmp stats hosts <cr>    # path-037222
+(config)# do-exec clear snmp sync lock <cr>    # path-037180
+(config)# do-exec clear sockets <number:1..4294967295> <cr>    # path-030591
+(config)# do-exec clear source-bridge <cr>    # path-027595
+(config)# do-exec clear startup-config <cr>    # path-026158
+(config)# do-exec clear subscriber coa statistics <cr>    # path-035616
+(config)# do-exec clear subscriber disconnect history <cr>    # path-035733
+(config)# do-exec clear subscriber disconnect stats <cr>    # path-035809
+(config)# do-exec clear subscriber lite-session ip <address> <cr>    # path-045527
+(config)# do-exec clear subscriber log ip <address> <cr>    # path-045497
+(config)# do-exec clear subscriber log ip <prefix:dynamic> <cr>    # path-061307
+(config)# do-exec clear subscriber log mac-address <string> <cr>    # path-045387
+(config)# do-exec clear subscriber log vrf <string> ip <address> <cr>    # path-057221
+(config)# do-exec clear subscriber policy conditions <cr>    # path-036369
+(config)# do-exec clear subscriber policy peer all <cr>    # path-046149
+(config)# do-exec clear subscriber policy preauth handle <number:0..4294967295> <cr>    # path-053180
+(config)# do-exec clear subscriber policy rules <cr>    # path-036300
+(config)# do-exec clear subscriber session all <cr>    # path-036079
+(config)# do-exec clear subscriber session identifier resource-type-determined <cr>    # path-061335
+(config)# do-exec clear subscriber statistics <cr>    # path-029635
+(config)# do-exec clear subscriber template idle <cr>    # path-035741
+(config)# do-exec clear subscriber template tid <number:1..1000> <cr>    # path-045217
+(config)# do-exec clear tcp ha statistics <cr>    # path-037047
+(config)# do-exec clear tcp line <?ttyline_action@555589255188> <cr>    # path-060893
+(config)# do-exec clear tcp local <address> <number:1..65535> remote <address> <number:1..65535> <cr>    # path-059234
+(config)# do-exec clear tcp statistics <cr>    # path-030366
+(config)# do-exec clear tcp statistics ingress <cr>    # path-036848
+(config)# do-exec clear tcp tcb * <cr>    # path-060889
+(config)# do-exec clear vlan <cr>    # path-027187
+(config)# do-exec clear vlan <interface> <cr>    # path-060623
+(config)# do-exec clear vlan <number:dynamic> <cr>    # path-060622
+(config)# do-exec clear vlan <number:dynamic> counters <cr>    # path-060863
+(config)# do-exec clear vlan counters <cr>    # path-030245
+(config)# do-exec clear vlan-autoconfig <interface> <number:0..4294967295> <number:1..4294967295> <cr>    # path-061308
+(config)# do-exec clear vlan-autoconfig Statistics <cr>    # path-029674
+(config)# do-exec clear vpdn accounting <cr>    # path-030863
+(config)# do-exec clear vpdn dead-cache all <cr>    # path-037913
+(config)# do-exec clear vpdn dead-cache group <string> <cr>    # path-047156
+(config)# do-exec clear vpdn dead-cache ip-address <address> <cr>    # path-047180
+(config)# do-exec clear vpdn history failure <cr>    # path-037692
+(config)# do-exec clear vpdn queue <cr>    # path-030935
+(config)# do-exec clear vpdn redirect <cr>    # path-030886
+(config)# do-exec clear vpdn statistics call fsm <cr>    # path-047004
+(config)# do-exec clear vpdn statistics mgr fsm <cr>    # path-047039
+(config)# do-exec clear vpdn subscriber fsm <cr>    # path-037654
+(config)# do-exec clear vrrp statistics <cr>    # path-030305
+(config)# do-exec clear vrrp statistics <interface> <cr>    # path-060892
+(config)# do-exec clear vtemplate redundancy counters <cr>    # path-038016
+(config)# do-exec clear vtp counters <cr>    # path-030172
+(config)# do-exec clear wccp <cr>    # path-027131
+(config)# do-exec clear wsma agent counters <cr>    # path-038959
+(config)# do-exec clear wsma profile counters <cr>    # path-038947
+(config)# do-exec clear x25 <interface> <cr>    # path-060699
+(config)# do-exec clear xdr linecard <cr>    # path-030352
+(config)# do-exec clear xdr linecard <number:dynamic> <cr>    # path-060887
+(config)# do-exec clear xmpp profile counters <cr>    # path-039292
+(config)# do-exec clear xot remote <address> <number:1..65535> local <address> <number:1..65535> <cr>    # path-059347
+(config)# do-exec clock read-calendar <cr>    # path-026633
+(config)# do-exec clock set <hh:mm:ss> <?month_action@5555896c7ab8> <number:1993..2035> <cr>    # path-062817
+(config)# do-exec clock update-calendar <cr>    # path-026651
+(config)# do-exec cns config cancel <number:1..4294967295> <cr>    # path-037256
+(config)# do-exec cns config retrieve <string> <cr>    # path-037978
+(config)# do-exec cns config retrieve <string> source <interface> <cr>    # path-062026
+(config)# do-exec cns image retrieve <cr>    # path-030630
+(config)# do-exec configure <cr>    # path-025715
+(config)# do-exec configure check syntax <cr>    # path-028482
+(config)# do-exec configure check syntax <url:dynamic> <cr>    # path-060770
+(config)# do-exec configure confirm <cr>    # path-026560
+(config)# do-exec configure http <cr>    # path-026459
+(config)# do-exec configure memory <cr>    # path-026506
+(config)# do-exec configure network <cr>    # path-026546
+(config)# do-exec configure network <url:dynamic> <cr>    # path-060538
+(config)# do-exec configure overwrite-network <cr>    # path-026527
+(config)# do-exec configure overwrite-network <url:dynamic> <cr>    # path-060534
+(config)# do-exec configure replace <url:dynamic> <cr>    # path-060548
+(config)# do-exec configure revert now <cr>    # path-028514
+(config)# do-exec configure revert timer <number:1..120> <cr>    # path-034673
+(config)# do-exec controller-mode disable <cr>    # path-027348
+(config)# do-exec controller-mode enable <cr>    # path-027341
+(config)# do-exec controller-mode reset <cr>    # path-027352
+(config)# do-exec copy <url:dynamic> <url:dynamic> <cr>    # path-062758
+(config)# do-exec crypto key benchmark rsa <cr>    # path-037036
+(config)# do-exec crypto key export ec <string> pem terminal 3des <string> <cr>    # path-059823
+(config)# do-exec crypto key export ec <string> pem url <url:dynamic> 3des <string> <cr>    # path-062645
+(config)# do-exec crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-059817
+(config)# do-exec crypto key export rsa <string> pem url <url:dynamic> 3des <string> <cr>    # path-062644
+(config)# do-exec crypto key generate ec keysize <number:256..256> <cr>    # path-053871
+(config)# do-exec crypto key generate rsa <cr>    # path-037177
+(config)# do-exec crypto key generate rsa modulus <number:dynamic> <cr>    # path-061987
+(config)# do-exec crypto key import ec <string> terminal <cr>    # path-054053
+(config)# do-exec crypto key import ec <string> url <url:dynamic> <cr>    # path-062326
+(config)# do-exec crypto key import rsa <string> terminal <cr>    # path-054121
+(config)# do-exec crypto key import rsa <string> url <url:dynamic> <cr>    # path-062329
+(config)# do-exec crypto key lock rsa <cr>    # path-037253
+(config)# do-exec crypto key unlock rsa <cr>    # path-037295
+(config)# do-exec crypto key zeroize <cr>    # path-030492
+(config)# do-exec crypto pki authenticate <string> <cr>    # path-037025
+(config)# do-exec crypto pki authenticate <string> fingerprint <cr>    # path-046455
+(config)# do-exec crypto pki authenticate <string> fingerprint <hex-data> <cr>    # path-061959
+(config)# do-exec crypto pki benchmark start <number:0..9990> <cr>    # path-046783
+(config)# do-exec crypto pki benchmark stop <cr>    # path-037309
+(config)# do-exec crypto pki certificate clear <string> <cr>    # path-046580
+(config)# do-exec crypto pki certificate validate <string> <cr>    # path-046478
+(config)# do-exec crypto pki crl refresh-cache <cr>    # path-036910
+(config)# do-exec crypto pki crl request <string> <cr>    # path-046370
+(config)# do-exec crypto pki enroll <string> <cr>    # path-037002
+(config)# do-exec crypto pki export <string> pkcs12 <url:dynamic> password <string> <cr>    # path-062517
+(config)# do-exec crypto pki import <string> certificate <cr>    # path-046589
+(config)# do-exec crypto pki import <string> pkcs12 <url:dynamic> password <string> <cr>    # path-062515
+(config)# do-exec crypto pki server <string> grant <number:1..999> <cr>    # path-054159
+(config)# do-exec crypto pki server <string> grant all <cr>    # path-054128
+(config)# do-exec crypto pki server <string> password generate <cr>    # path-054226
+(config)# do-exec crypto pki server <string> password generate <number:1..1440> <cr>    # path-057897
+(config)# do-exec crypto pki server <string> reject <number:1..999> <cr>    # path-054183
+(config)# do-exec crypto pki server <string> reject all <cr>    # path-054152
+(config)# do-exec crypto pki server <string> remove <number:1..999> <cr>    # path-054202
+(config)# do-exec crypto pki server <string> remove all <cr>    # path-054177
+(config)# do-exec crypto pki server <string> request pkcs10 <url:dynamic> <cr>    # path-062346
+(config)# do-exec crypto pki server <string> request pkcs10 terminal <cr>    # path-057933
+(config)# do-exec crypto pki server <string> revoke <number:1..2147483647> <cr>    # path-054213
+(config)# do-exec crypto pki server <string> start <cr>    # path-046751
+(config)# do-exec crypto pki server <string> trim expired <cr>    # path-054285
+(config)# do-exec crypto pki server <string> trim url <url:dynamic> <cr>    # path-062337
+(config)# do-exec crypto pki server <string> unrevoke <number:1..2147483647> <cr>    # path-054229
+(config)# do-exec ct-isdn add interface <interface> callnum <number:1..65564> <string> <cr>    # path-062318
+(config)# do-exec ct-isdn append interface <interface> callnum <number:1..65564> <number:0..255> <string> <cr>    # path-062513
+(config)# do-exec ct-isdn delay <number:100..1000000> <cr>    # path-030335
+(config)# do-exec ct-isdn init-call interface <interface> callnum <number:1..65534> <cr>    # path-061986
+(config)# do-exec ct-isdn modify interface <interface> callnum <number:1..65564> call-decode <number:0..1024> <string> <cr>    # path-062610
+(config)# do-exec ct-isdn receive interface <interface> callnum <number:1..65564> call-connect <cr>    # path-062325
+(config)# do-exec ct-isdn send interface <interface> callnum <number:1..65564> call-proceeding <cr>    # path-062331
+(config)# do-exec ct-isdn show interface <interface> callnum <number:1..65564> call-decode <cr>    # path-062316
+(config)# do-exec ct-isdn start overlap <cr>    # path-030448
+(config)# do-exec ct-isdn test-end <cr>    # path-027361
+(config)# do-exec cts change-password server <address> <number:1..65535> <cr>    # path-046745
+(config)# do-exec cts change-password server <address> <number:1..65535> <interface> <cr>    # path-061984
+(config)# do-exec cts credentials id <string> password <string> <cr>    # path-053876
+(config)# do-exec cts refresh environment-data <cr>    # path-030425
+(config)# do-exec cts refresh pac <cr>    # path-030451
+(config)# do-exec cts refresh policy <cr>    # path-030489
+(config)# do-exec cts refresh policy peer <cr>    # path-037067
+(config)# do-exec cts refresh policy sgt <cr>    # path-037254
+(config)# do-exec cts rekey interface <interface> <cr>    # path-060896
+(config)# do-exec cts role-based policy trace ipv4 ip host <address> host <address> <cr>    # path-060068
+(config)# do-exec cts role-based policy trace ipv4 ip host <address> host <address> interface <interface> <cr>    # path-062679
+(config)# do-exec debug <cr>    # path-025539
+(config)# do-exec debug ACM all <cr>    # path-028183
+(config)# do-exec debug ACM error <cr>    # path-028118
+(config)# do-exec debug ACM event <cr>    # path-028158
+(config)# do-exec debug LDAP all <cr>    # path-032864
+(config)# do-exec debug LDAP error <cr>    # path-032823
+(config)# do-exec debug LDAP event <cr>    # path-032838
+(config)# do-exec debug LDAP legacy <cr>    # path-032852
+(config)# do-exec debug LDAP packet <cr>    # path-032808
+(config)# do-exec debug aaa accounting <cr>    # path-028661
+(config)# do-exec debug aaa administrative <cr>    # path-028695
+(config)# do-exec debug aaa api <cr>    # path-029654
+(config)# do-exec debug aaa api attr <cr>    # path-035737
+(config)# do-exec debug aaa attr <cr>    # path-029575
+(config)# do-exec debug aaa attr add <cr>    # path-035526
+(config)# do-exec debug aaa attr alloc-free <cr>    # path-035473
+(config)# do-exec debug aaa attr error <cr>    # path-035419
+(config)# do-exec debug aaa attr handle <cr>    # path-035351
+(config)# do-exec debug aaa attr info <cr>    # path-035643
+(config)# do-exec debug aaa attr update <cr>    # path-035586
+(config)# do-exec debug aaa authentication <cr>    # path-028580
+(config)# do-exec debug aaa authorization <cr>    # path-028622
+(config)# do-exec debug aaa boundary <cr>    # path-028732
+(config)# do-exec debug aaa cache filterserver <cr>    # path-034575
+(config)# do-exec debug aaa cache group <cr>    # path-034612
+(config)# do-exec debug aaa cca <cr>    # path-028778
+(config)# do-exec debug aaa coa <cr>    # path-029070
+(config)# do-exec debug aaa common-criteria <cr>    # path-029896
+(config)# do-exec debug aaa db <cr>    # path-029384
+(config)# do-exec debug aaa dead-criteria transaction <cr>    # path-035858
+(config)# do-exec debug aaa green <cr>    # path-029941
+(config)# do-exec debug aaa id <cr>    # path-029491
+(config)# do-exec debug aaa ipc <cr>    # path-029316
+(config)# do-exec debug aaa memory <cr>    # path-029214
+(config)# do-exec debug aaa mlist-ref-count <cr>    # path-028885
+(config)# do-exec debug aaa mlist-state <cr>    # path-029790
+(config)# do-exec debug aaa per-user <cr>    # path-029030
+(config)# do-exec debug aaa pod <cr>    # path-029109
+(config)# do-exec debug aaa profile db <cr>    # path-034637
+(config)# do-exec debug aaa protocol local <cr>    # path-035798
+(config)# do-exec debug aaa protocol radius <cr>    # path-035873
+(config)# do-exec debug aaa proxy <cr>    # path-029162
+(config)# do-exec debug aaa redundancy <cr>    # path-029942
+(config)# do-exec debug aaa server-ref-count <cr>    # path-028988
+(config)# do-exec debug aaa sg-ref-count <cr>    # path-028931
+(config)# do-exec debug aaa sg-server-selection <cr>    # path-028837
+(config)# do-exec debug aaa subscriber profile <cr>    # path-034605
+(config)# do-exec debug aaa subsys <cr>    # path-029347
+(config)# do-exec debug aaa testing <cr>    # path-029739
+(config)# do-exec debug aaa tools memleak <cr>    # path-034606
+(config)# do-exec debug aaa traceback <cr>    # path-029542
+(config)# do-exec debug aaa userdb <cr>    # path-029437
+(config)# do-exec debug access-expression <cr>    # path-027737
+(config)# do-exec debug access-session all <cr>    # path-033094
+(config)# do-exec debug access-session detail <cr>    # path-033085
+(config)# do-exec debug access-session errors <cr>    # path-033060
+(config)# do-exec debug access-session events <cr>    # path-033074
+(config)# do-exec debug access-session feature all <cr>    # path-042292
+(config)# do-exec debug access-session rcl_server all <cr>    # path-042498
+(config)# do-exec debug access-session rcl_server detail <cr>    # path-042481
+(config)# do-exec debug access-session rcl_server error <cr>    # path-042462
+(config)# do-exec debug access-session rcl_server event <cr>    # path-042443
+(config)# do-exec debug access-session sync <cr>    # path-033114
+(config)# do-exec debug acl cca error <cr>    # path-037653
+(config)# do-exec debug acl cca event <cr>    # path-037704
+(config)# do-exec debug adjacency <cr>    # path-027331
+(config)# do-exec debug adjacency <interface> <cr>    # path-060650
+(config)# do-exec debug alg all <cr>    # path-030449
+(config)# do-exec debug alg info <cr>    # path-030534
+(config)# do-exec debug alg trace <cr>    # path-030503
+(config)# do-exec debug alg warn <cr>    # path-030478
+(config)# do-exec debug all <cr>    # path-026157
+(config)# do-exec debug alps ascu event <cr>    # path-042972
+(config)# do-exec debug alps ascu event <interface> <number:0..255> <cr>    # path-062217
+(config)# do-exec debug alps circuit event <cr>    # path-042889
+(config)# do-exec debug alps peer event <cr>    # path-042891
+(config)# do-exec debug alps snmp <cr>    # path-033404
+(config)# do-exec debug analyze memory-leak <cr>    # path-032562
+(config)# do-exec debug ancp adjacency <cr>    # path-029922
+(config)# do-exec debug application db <cr>    # path-032404
+(config)# do-exec debug application detail <cr>    # path-032421
+(config)# do-exec debug application event <cr>    # path-032370
+(config)# do-exec debug application ha <cr>    # path-032480
+(config)# do-exec debug application ha detail <cr>    # path-041238
+(config)# do-exec debug application route <address> <address> <cr>    # path-050265
+(config)# do-exec debug application rwatch <cr>    # path-032408
+(config)# do-exec debug application rwatch rib <cr>    # path-041116
+(config)# do-exec debug application summary <cr>    # path-032349
+(config)# do-exec debug archive config differences <cr>    # path-042477
+(config)# do-exec debug archive config ha <cr>    # path-042508
+(config)# do-exec debug archive config timestamp <cr>    # path-042495
+(config)# do-exec debug archive log config persistent <cr>    # path-051084
+(config)# do-exec debug archive versioning <cr>    # path-033164
+(config)# do-exec debug archive versioning ha <cr>    # path-042458
+(config)# do-exec debug arp <cr>    # path-026694
+(config)# do-exec debug arp adjacency <cr>    # path-028321
+(config)# do-exec debug arp application <cr>    # path-028353
+(config)# do-exec debug arp database <cr>    # path-028585
+(config)# do-exec debug arp dynamic <cr>    # path-028385
+(config)# do-exec debug arp error <cr>    # path-028524
+(config)# do-exec debug arp ha <cr>    # path-028421
+(config)# do-exec debug arp interface <cr>    # path-028449
+(config)# do-exec debug arp retry <cr>    # path-028699
+(config)# do-exec debug arp static <cr>    # path-028474
+(config)# do-exec debug arp subblocking <cr>    # path-028499
+(config)# do-exec debug arp table <cr>    # path-028552
+(config)# do-exec debug arp timer <cr>    # path-028627
+(config)# do-exec debug aspp event <cr>    # path-033691
+(config)# do-exec debug aspp packet <cr>    # path-033716
+(config)# do-exec debug async async-queue <cr>    # path-032168
+(config)# do-exec debug async framing <cr>    # path-032130
+(config)# do-exec debug async packet <cr>    # path-032145
+(config)# do-exec debug async state <cr>    # path-032156
+(config)# do-exec debug atm ilmi <cr>    # path-032005
+(config)# do-exec debug atm ilmi <interface> <cr>    # path-061006
+(config)# do-exec debug atm ilmi red <cr>    # path-040294
+(config)# do-exec debug atomic-config level emergency <cr>    # path-043208
+(config)# do-exec debug autoip event <cr>    # path-032414
+(config)# do-exec debug backup <cr>    # path-026615
+(config)# do-exec debug beep concurrency <cr>    # path-032664
+(config)# do-exec debug beep profile <cr>    # path-032699
+(config)# do-exec debug beep session <cr>    # path-032731
+(config)# do-exec debug beep session log <url:dynamic> <cr>    # path-061708
+(config)# do-exec debug bfd dampening <cr>    # path-031134
+(config)# do-exec debug bfd event <cr>    # path-031210
+(config)# do-exec debug bfd event interface <interface> <cr>    # path-061480
+(config)# do-exec debug bfd ha <cr>    # path-031085
+(config)# do-exec debug bfd packet <cr>    # path-031186
+(config)# do-exec debug bfd packet interface <interface> <cr>    # path-061477
+(config)# do-exec debug bfd stub <cr>    # path-031111
+(config)# do-exec debug bgp * ipv4 <address> updates <cr>    # path-062136
+(config)# do-exec debug bgp * ipv4 <cr>    # path-061010
+(config)# do-exec debug bgp * ipv4 <cr>    # path-061021
+(config)# do-exec debug bgp * ipv4 <cr>    # path-061033
+(config)# do-exec debug bgp * ipv4 addpath <cr>    # path-061556
+(config)# do-exec debug bgp * ipv4 autordrt <cr>    # path-061550
+(config)# do-exec debug bgp * ipv4 csc <cr>    # path-061629
+(config)# do-exec debug bgp * ipv4 dampening <cr>    # path-061633
+(config)# do-exec debug bgp * ipv4 dampening <cr>    # path-061641
+(config)# do-exec debug bgp * ipv4 diversepath <cr>    # path-061552
+(config)# do-exec debug bgp * ipv4 events <cr>    # path-061642
+(config)# do-exec debug bgp * ipv4 events api <cr>    # path-062108
+(config)# do-exec debug bgp * ipv4 events crimson emulation address-family route <cr>    # path-062626
+(config)# do-exec debug bgp * ipv4 events crimson emulation address-family summary <cr>    # path-062625
+(config)# do-exec debug bgp * ipv4 events crimson emulation neighbor <cr>    # path-062557
+(config)# do-exec debug bgp * ipv4 events encap <cr>    # path-062121
+(config)# do-exec debug bgp * ipv4 events nexthop <cr>    # path-062107
+(config)# do-exec debug bgp * ipv4 events overlay <cr>    # path-062129
+(config)# do-exec debug bgp * ipv4 events rpki <cr>    # path-062132
+(config)# do-exec debug bgp * ipv4 events rpki detail <cr>    # path-062420
+(config)# do-exec debug bgp * ipv4 events update-source <cr>    # path-062118
+(config)# do-exec debug bgp * ipv4 events va <cr>    # path-062113
+(config)# do-exec debug bgp * ipv4 evi <cr>    # path-061591
+(config)# do-exec debug bgp * ipv4 evi context <cr>    # path-062092
+(config)# do-exec debug bgp * ipv4 gr <cr>    # path-061608
+(config)# do-exec debug bgp * ipv4 groups <cr>    # path-061632
+(config)# do-exec debug bgp * ipv4 import events <cr>    # path-062094
+(config)# do-exec debug bgp * ipv4 import updates <cr>    # path-062099
+(config)# do-exec debug bgp * ipv4 internal <cr>    # path-061607
+(config)# do-exec debug bgp * ipv4 iosp <cr>    # path-061554
+(config)# do-exec debug bgp * ipv4 keepalives <cr>    # path-061573
+(config)# do-exec debug bgp * ipv4 labelmode <cr>    # path-061635
+(config)# do-exec debug bgp * ipv4 mpls <cr>    # path-061615
+(config)# do-exec debug bgp * ipv4 nhrp <cr>    # path-061562
+(config)# do-exec debug bgp * ipv4 nve <cr>    # path-061589
+(config)# do-exec debug bgp * ipv4 range <cr>    # path-061586
+(config)# do-exec debug bgp * ipv4 range indepth <cr>    # path-062089
+(config)# do-exec debug bgp * ipv4 rib-filter <cr>    # path-061610
+(config)# do-exec debug bgp * ipv4 sso events <cr>    # path-062127
+(config)# do-exec debug bgp * ipv4 sso scale <cr>    # path-062130
+(config)# do-exec debug bgp * ipv4 sso transactions <cr>    # path-062131
+(config)# do-exec debug bgp * ipv4 trace <cr>    # path-061566

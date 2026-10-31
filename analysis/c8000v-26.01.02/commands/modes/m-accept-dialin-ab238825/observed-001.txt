@@ -1,0 +1,12 @@
+# 模式 accept-dialin；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vpdn-acc-in)# default protocol <cr>    # observed_connections-009616
+(config-vpdn-acc-in)# default virtual-template <cr>    # observed_connections-009618
+(config-vpdn-acc-in)# exit <cr>    # observed_connections-009612
+(config-vpdn-acc-in)# no protocol <cr>    # observed_connections-009614
+(config-vpdn-acc-in)# no virtual-template <cr>    # observed_connections-009617
+(config-vpdn-acc-in)# protocol l2tp <cr>    # observed_connections-009615
+(config-vpdn-acc-in)# virtual-template <cr>    # observed_connections-009613
+(config-vpdn-acc-in)# virtual-template <number:dynamic> <cr>    # observed_connections-009619

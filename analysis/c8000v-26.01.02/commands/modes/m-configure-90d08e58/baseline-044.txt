@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-044.md
+
+(config)# do-exec debug ip sla event responder socket <cr>    # path-055117
+(config)# do-exec debug ip sla event responder tw-timer <cr>    # path-055037
+(config)# do-exec debug ip sla event sender direct <cr>    # path-055042
+(config)# do-exec debug ip sla event sender mgd-timer <cr>    # path-054962
+(config)# do-exec debug ip sla event sender socket <cr>    # path-055082
+(config)# do-exec debug ip sla event sender tw-timer <cr>    # path-055002
+(config)# do-exec debug ip sla trace 0 <cr>    # path-048722
+(config)# do-exec debug ip sla trace <cr>    # path-039661
+(config)# do-exec debug ip sla trace crimson <cr>    # path-048665
+(config)# do-exec debug ip sla trace ep-api <cr>    # path-048664
+(config)# do-exec debug ip sla trace ethernet-monitor <cr>    # path-049013
+(config)# do-exec debug ip sla trace event-publisher <cr>    # path-048608
+(config)# do-exec debug ip sla trace twamp connection <cr>    # path-055316
+(config)# do-exec debug ip sla trace twamp control reflector <cr>    # path-058308
+(config)# do-exec debug ip sla trace twamp control server <cr>    # path-058355
+(config)# do-exec debug ip sla trace twamp session <cr>    # path-055122
+(config)# do-exec debug ip sla trace twamp-light session <cr>    # path-055164
+(config)# do-exec debug ip sla trace twamp-light session <number:1..100> <cr>    # path-058304
+(config)# do-exec debug ip socket <cr>    # path-031258
+(config)# do-exec debug ip socket api <cr>    # path-038307
+(config)# do-exec debug ip socket dumpl2raw <number:1..255> <cr>    # path-047385
+(config)# do-exec debug ip socket error <cr>    # path-038253
+(config)# do-exec debug ip socket event <cr>    # path-038358
+(config)# do-exec debug ip socket l2raw <cr>    # path-038205
+(config)# do-exec debug ip ssh <cr>    # path-031673
+(config)# do-exec debug ip ssh client <cr>    # path-039248
+(config)# do-exec debug ip ssh detail <cr>    # path-039295
+(config)# do-exec debug ip ssh packet <cr>    # path-039348
+(config)# do-exec debug ip subscriber all <cr>    # path-039470
+(config)# do-exec debug ip subscriber error <cr>    # path-039352
+(config)# do-exec debug ip subscriber event <cr>    # path-039298
+(config)# do-exec debug ip subscriber fsm <cr>    # path-039199
+(config)# do-exec debug ip subscriber packet <cr>    # path-039251
+(config)# do-exec debug ip subscriber redundancy <cr>    # path-039402
+(config)# do-exec debug ip tcp CEF <cr>    # path-037874
+(config)# do-exec debug ip tcp Winscale <cr>    # path-038095
+(config)# do-exec debug ip tcp adjust-mss <cr>    # path-038044
+(config)# do-exec debug ip tcp congestion <cr>    # path-037909
+(config)# do-exec debug ip tcp driver <cr>    # path-037995
+(config)# do-exec debug ip tcp driver-pak <cr>    # path-038032
+(config)# do-exec debug ip tcp ecn <cr>    # path-038219
+(config)# do-exec debug ip tcp ha event <cr>    # path-047665
+(config)# do-exec debug ip tcp ha transactions <cr>    # path-047694
+(config)# do-exec debug ip tcp header-compression <cr>    # path-038177
+(config)# do-exec debug ip tcp mkt <cr>    # path-038268
+(config)# do-exec debug ip tcp packet <?ttyline_action@55558924e6d8> <cr>    # path-061490
+(config)# do-exec debug ip tcp rcmd <cr>    # path-038548
+(config)# do-exec debug ip tcp sack <cr>    # path-038138
+(config)# do-exec debug ip tcp throughput <cr>    # path-038320
+(config)# do-exec debug ip tcp transactions <?ttyline_action@55558924d298> <cr>    # path-061470
+(config)# do-exec debug ip tempacl <cr>    # path-030655
+(config)# do-exec debug ip trigger-authentication <cr>    # path-031501
+(config)# do-exec debug ip trigger-authentication verbose <cr>    # path-038942
+(config)# do-exec debug ip udp <cr>    # path-031730
+(config)# do-exec debug ip urd <cr>    # path-031059
+(config)# do-exec debug ip virtual-reassembly <cr>    # path-031645
+(config)# do-exec debug ipam address <cr>    # path-030498
+(config)# do-exec debug ipam detailed aaa <cr>    # path-037182
+(config)# do-exec debug ipam detailed all <cr>    # path-037228
+(config)# do-exec debug ipam detailed dhcp <cr>    # path-037272
+(config)# do-exec debug ipam detailed event <cr>    # path-037316
+(config)# do-exec debug ipam detailed message <cr>    # path-037356
+(config)# do-exec debug ipam dhcp <cr>    # path-030556
+(config)# do-exec debug ipam error <cr>    # path-030582
+(config)# do-exec debug ipam event <cr>    # path-030606
+(config)# do-exec debug ipam ipc <cr>    # path-030656
+(config)# do-exec debug ipam message <cr>    # path-030675
+(config)# do-exec debug ipam odap <cr>    # path-030694
+(config)# do-exec debug ipam pools <cr>    # path-030721
+(config)# do-exec debug ipam redundancy <cr>    # path-030627
+(config)# do-exec debug ipc all <cr>    # path-029598
+(config)# do-exec debug ipc app <cr>    # path-029438
+(config)# do-exec debug ipc backpressure <cr>    # path-028933
+(config)# do-exec debug ipc buffer <cr>    # path-029278
+(config)# do-exec debug ipc bundle seat <cr>    # path-034986
+(config)# do-exec debug ipc bundle session <cr>    # path-035028
+(config)# do-exec debug ipc delayed-init <cr>    # path-029348
+(config)# do-exec debug ipc driver <cr>    # path-028551
+(config)# do-exec debug ipc errors <cr>    # path-028673
+(config)# do-exec debug ipc errors driver <cr>    # path-034718
+(config)# do-exec debug ipc errors sequence <cr>    # path-034668
+(config)# do-exec debug ipc events <cr>    # path-028752
+(config)# do-exec debug ipc events flushes <cr>    # path-034757
+(config)# do-exec debug ipc events retries <cr>    # path-034803
+(config)# do-exec debug ipc events timeout <cr>    # path-034707
+(config)# do-exec debug ipc issu events <cr>    # path-035296
+(config)# do-exec debug ipc issu messages <cr>    # path-035441
+(config)# do-exec debug ipc keepalive <cr>    # path-029072
+(config)# do-exec debug ipc mcast appclass <cr>    # path-035746
+(config)# do-exec debug ipc mcast errors <cr>    # path-035816
+(config)# do-exec debug ipc mcast events <cr>    # path-035881
+(config)# do-exec debug ipc mcast groups <cr>    # path-035626
+(config)# do-exec debug ipc mcast member-sessions <cr>    # path-036031
+(config)# do-exec debug ipc mcast ports <cr>    # path-035687
+(config)# do-exec debug ipc mcast sessions <cr>    # path-035952
+(config)# do-exec debug ipc notifications <cr>    # path-029164
+(config)# do-exec debug ipc packets <cr>    # path-028458
+(config)# do-exec debug ipc packets data offset <number:0..65535> value <number:0..255> <cr>    # path-062911
+(config)# do-exec debug ipc ports <cr>    # path-028735
+(config)# do-exec debug ipc priority <cr>    # path-029543
+(config)# do-exec debug ipc rmi <cr>    # path-029032
+(config)# do-exec debug ipc seats <cr>    # path-028698
+(config)# do-exec debug ipc sessions <cr>    # path-028990
+(config)# do-exec debug ipc stateful <cr>    # path-029111
+(config)# do-exec debug ipc thread <cr>    # path-029404
+(config)# do-exec debug ipc thread errors <cr>    # path-035471
+(config)# do-exec debug ipc thread events <cr>    # path-035408
+(config)# do-exec debug ipc udp <cr>    # path-029385
+(config)# do-exec debug ipc window <cr>    # path-028781
+(config)# do-exec debug ipc window-error <cr>    # path-028839
+(config)# do-exec debug ipc zones <cr>    # path-028662
+(config)# do-exec debug iphc ipc <cr>    # path-030637
+(config)# do-exec debug iphc ipc events <cr>    # path-037260
+(config)# do-exec debug iphc ipc statistics <cr>    # path-037307
+(config)# do-exec debug iphc process <cr>    # path-030553
+(config)# do-exec debug ipv6 access-list <cr>    # path-031651
+(config)# do-exec debug ipv6 access-list all <cr>    # path-060986
+(config)# do-exec debug ipv6 address <cr>    # path-031648
+(config)# do-exec debug ipv6 cef drop <cr>    # path-039773
+(config)# do-exec debug ipv6 cef drop rpf <cr>    # path-048422
+(config)# do-exec debug ipv6 cef events <cr>    # path-039564
+(config)# do-exec debug ipv6 cef packet <cr>    # path-039770
+(config)# do-exec debug ipv6 cef packet <interface> <cr>    # path-061542
+(config)# do-exec debug ipv6 cef receive <cr>    # path-039936
+(config)# do-exec debug ipv6 cef table background <cr>    # path-048584
+(config)# do-exec debug ipv6 dhcp <cr>    # path-031550
+(config)# do-exec debug ipv6 dhcp database <cr>    # path-039308
+(config)# do-exec debug ipv6 dhcp leasequery <cr>    # path-038994
+(config)# do-exec debug ipv6 dhcp redundancy <cr>    # path-039431
+(config)# do-exec debug ipv6 dhcp relay <cr>    # path-039322
+(config)# do-exec debug ipv6 dhcp relay bulk-lease <cr>    # path-048246
+(config)# do-exec debug ipv6 eigrp <cr>    # path-031555
+(config)# do-exec debug ipv6 feature <cr>    # path-031369
+(config)# do-exec debug ipv6 feature <interface> <cr>    # path-060974
+(config)# do-exec debug ipv6 fragment <cr>    # path-031339
+(config)# do-exec debug ipv6 icmp <cr>    # path-031271
+(config)# do-exec debug ipv6 interface <cr>    # path-031733
+(config)# do-exec debug ipv6 mfib init <cr>    # path-038711
+(config)# do-exec debug ipv6 mfib vrf <?option@55558ab0c198> pak <cr>    # path-062052
+(config)# do-exec debug ipv6 mib <cr>    # path-031345
+(config)# do-exec debug ipv6 mld <cr>    # path-031554
+(config)# do-exec debug ipv6 mld events <cr>    # path-039015
+(config)# do-exec debug ipv6 mld explicit <address> <cr>    # path-047866
+(config)# do-exec debug ipv6 mld explicit <cr>    # path-038879
+(config)# do-exec debug ipv6 mld group <address> <cr>    # path-047945
+(config)# do-exec debug ipv6 mld interface <interface> <cr>    # path-061501
+(config)# do-exec debug ipv6 mld timer-wheel <cr>    # path-038960
+(config)# do-exec debug ipv6 mrib bundle <cr>    # path-039228
+(config)# do-exec debug ipv6 mrib client <cr>    # path-038966
+(config)# do-exec debug ipv6 mrib filter <cr>    # path-039127
+(config)# do-exec debug ipv6 mrib io <cr>    # path-039071
+(config)# do-exec debug ipv6 mrib issu <cr>    # path-038907
+(config)# do-exec debug ipv6 mrib malloc <cr>    # path-039270
+(config)# do-exec debug ipv6 mrib proxy <cr>    # path-038823
+(config)# do-exec debug ipv6 mrib route <address> <cr>    # path-047948
+(config)# do-exec debug ipv6 mrib route <cr>    # path-038978
+(config)# do-exec debug ipv6 mrib table <cr>    # path-039019
+(config)# do-exec debug ipv6 mrib test <cr>    # path-038870
+(config)# do-exec debug ipv6 mrib timer <cr>    # path-039176
+(config)# do-exec debug ipv6 mrib trans <address> <cr>    # path-047903
+(config)# do-exec debug ipv6 mrib trans <cr>    # path-038924
+(config)# do-exec debug ipv6 multicast aaa detail <cr>    # path-048336
+(config)# do-exec debug ipv6 multicast aaa error <cr>    # path-048283
+(config)# do-exec debug ipv6 multicast aaa verbose <cr>    # path-048391
+(config)# do-exec debug ipv6 multicast gir <cr>    # path-039639
+(config)# do-exec debug ipv6 multicast rpf <cr>    # path-039514
+(config)# do-exec debug ipv6 multicast rwatch <cr>    # path-039469
+(config)# do-exec debug ipv6 nd <cr>    # path-031348
+(config)# do-exec debug ipv6 nd ha <cr>    # path-038636
+(config)# do-exec debug ipv6 packet <cr>    # path-031328
+(config)# do-exec debug ipv6 pim <cr>    # path-031713
+(config)# do-exec debug ipv6 pim bfd <cr>    # path-039820
+(config)# do-exec debug ipv6 pim bfd <interface> <cr>    # path-061536
+(config)# do-exec debug ipv6 pim bsr <cr>    # path-039764
+(config)# do-exec debug ipv6 pim bsr <cr>    # path-039765
+(config)# do-exec debug ipv6 pim crimson <cr>    # path-039420
+(config)# do-exec debug ipv6 pim df-election <cr>    # path-039140
+(config)# do-exec debug ipv6 pim df-election interface <interface> <cr>    # path-062048
+(config)# do-exec debug ipv6 pim drlb <cr>    # path-039067
+(config)# do-exec debug ipv6 pim events <cr>    # path-039364
+(config)# do-exec debug ipv6 pim group <address> <cr>    # path-048164
+(config)# do-exec debug ipv6 pim interface <interface> <cr>    # path-061508
+(config)# do-exec debug ipv6 pim limit <address> <cr>    # path-048206
+(config)# do-exec debug ipv6 pim limit <cr>    # path-039278
+(config)# do-exec debug ipv6 pim neighbor <cr>    # path-039381
+(config)# do-exec debug ipv6 pim neighbor <interface> <cr>    # path-061510
+(config)# do-exec debug ipv6 pim pfp-sa <cr>    # path-039925
+(config)# do-exec debug ipv6 pim pfp-sa <cr>    # path-039926
+(config)# do-exec debug ipv6 pim timer-wheel <cr>    # path-039312
+(config)# do-exec debug ipv6 policy <cr>    # path-031670
+(config)# do-exec debug ipv6 pool <cr>    # path-031607
+(config)# do-exec debug ipv6 rip <cr>    # path-031526
+(config)# do-exec debug ipv6 rip <interface> <cr>    # path-060980
+(config)# do-exec debug ipv6 routemap-api <cr>    # path-031542
+(config)# do-exec debug ipv6 routeviafib <cr>    # path-031294
+(config)# do-exec debug ipv6 rpf <cr>    # path-031459
+(config)# do-exec debug ipv6 snooping <cr>    # path-062763
+(config)# do-exec debug ipv6 static <cr>    # path-031295
+(config)# do-exec debug isdn all <cr>    # path-033019
+(config)# do-exec debug isdn all <interface> <cr>    # path-061146
+(config)# do-exec debug isdn api <cr>    # path-033082
+(config)# do-exec debug isdn api <interface> <cr>    # path-061153
+(config)# do-exec debug isdn cc <cr>    # path-032975
+(config)# do-exec debug isdn cc <interface> <cr>    # path-061139
+(config)# do-exec debug isdn code <cr>    # path-033022
+(config)# do-exec debug isdn code <interface> <cr>    # path-061147
+(config)# do-exec debug isdn error <cr>    # path-033007
+(config)# do-exec debug isdn error <interface> <cr>    # path-061144
+(config)# do-exec debug isdn events <cr>    # path-032940
+(config)# do-exec debug isdn events <interface> <cr>    # path-061134
+(config)# do-exec debug isdn experimental <cr>    # path-033014
+(config)# do-exec debug isdn experimental <interface> <cr>    # path-061145
+(config)# do-exec debug isdn mgmnt <cr>    # path-032963
+(config)# do-exec debug isdn mgmnt <interface> <cr>    # path-061137
+(config)# do-exec debug isdn q921 <cr>    # path-032953
+(config)# do-exec debug isdn q921 <interface> <cr>    # path-061136
+(config)# do-exec debug isdn q931 <cr>    # path-032964
+(config)# do-exec debug isdn q931 <interface> <cr>    # path-061138
+(config)# do-exec debug isdn raw <cr>    # path-033030
+(config)# do-exec debug isdn raw <interface> <cr>    # path-061149
+(config)# do-exec debug isdn standard <cr>    # path-033044
+(config)# do-exec debug isdn standard <interface> <cr>    # path-061151
+(config)# do-exec debug isdn tgrm <cr>    # path-032999
+(config)# do-exec debug isdn tgrm <interface> <cr>    # path-061141
+(config)# do-exec debug isis * <string> authentication information <cr>    # path-062200
+(config)# do-exec debug isis * <string> checksum-errors <cr>    # path-061752
+(config)# do-exec debug isis * <string> dr dampening <cr>    # path-062206
+(config)# do-exec debug isis * <string> geninfo <cr>    # path-061755
+(config)# do-exec debug isis * <string> local-updates <cr>    # path-061758
+(config)# do-exec debug isis * <string> lsp dampening <cr>    # path-062204
+(config)# do-exec debug isis * <string> lsp generation <cr>    # path-062207
+(config)# do-exec debug isis * <string> notifications <cr>    # path-061767
+(config)# do-exec debug isis * <string> nsf <cr>    # path-061773
+(config)# do-exec debug isis * <string> nsf cisco <cr>    # path-062212
+(config)# do-exec debug isis * <string> nsf ietf <cr>    # path-062214
+(config)# do-exec debug isis * <string> prc dampening <cr>    # path-062209
+(config)# do-exec debug isis * <string> private <cr>    # path-061768
+(config)# do-exec debug isis * <string> private detail <cr>    # path-062210
+(config)# do-exec debug isis * <string> protocol-errors <cr>    # path-061749
+(config)# do-exec debug isis * <string> snp-packets <cr>    # path-061744
+(config)# do-exec debug isis * <string> spt dampening <cr>    # path-062208
+(config)# do-exec debug isis * <string> update-packets <cr>    # path-061760
+(config)# do-exec debug isis * adj-stagger <cr>    # path-061094
+(config)# do-exec debug isis * cache <cr>    # path-061093
+(config)# do-exec debug isis * cold-restart <cr>    # path-061096
+(config)# do-exec debug isis * crimson <cr>    # path-061089
+(config)# do-exec debug isis * distribute-ls <cr>    # path-061118
+(config)# do-exec debug isis * fast-reroute path-selection <cr>    # path-061696
+(config)# do-exec debug isis * fast-reroute ti-lfa <cr>    # path-061701
+(config)# do-exec debug isis * fast-reroute trigger <cr>    # path-061671
+(config)# do-exec debug isis * flex-algo <number:128..255> <cr>    # path-061677
+(config)# do-exec debug isis * flood-speed <cr>    # path-061098
+(config)# do-exec debug isis * graceful-reload <cr>    # path-061101
+(config)# do-exec debug isis * mfi <cr>    # path-061108
+(config)# do-exec debug isis * microloop <cr>    # path-061095
+(config)# do-exec debug isis * mpls traffic-eng advertisements <cr>    # path-062187
+(config)# do-exec debug isis * mpls traffic-eng events <cr>    # path-062189
+(config)# do-exec debug isis * mtr <cr>    # path-061076
+(config)# do-exec debug isis * rib global <cr>    # path-061682
+(config)# do-exec debug isis * rib local <cr>    # path-061683
+(config)# do-exec debug isis * rib redistribution <cr>    # path-061693
+(config)# do-exec debug isis * segment-routing <cr>    # path-061119
+(config)# do-exec debug isis * segment-routing mapping-server <cr>    # path-061742
+(config)# do-exec debug isis * spf-events <cr>    # path-061092
+(config)# do-exec debug isis * spf-statistics <cr>    # path-061080
+(config)# do-exec debug isis * spf-triggers <cr>    # path-061083
+(config)# do-exec debug isis * srv6 <cr>    # path-061113
+(config)# do-exec debug isis * teapp <cr>    # path-061102
+(config)# do-exec debug isis * test <cr>    # path-061105
+(config)# do-exec debug isis adj-packets <cr>    # path-032275
+(config)# do-exec debug isis adj-packets <interface> <cr>    # path-061039
+(config)# do-exec debug isis adj-stagger <cr>    # path-032703
+(config)# do-exec debug isis authentication information <cr>    # path-040941
+(config)# do-exec debug isis bfd <cr>    # path-032255
+(config)# do-exec debug isis bfd <interface> <cr>    # path-061038
+(config)# do-exec debug isis cache <cr>    # path-032688
+(config)# do-exec debug isis checksum-errors <cr>    # path-032265
+(config)# do-exec debug isis cold-restart <cr>    # path-032715
+(config)# do-exec debug isis crimson <cr>    # path-032672
+(config)# do-exec debug isis distribute-ls <cr>    # path-032831
+(config)# do-exec debug isis dr dampening <cr>    # path-041087
+(config)# do-exec debug isis fast-reroute path-selection <cr>    # path-041698
+(config)# do-exec debug isis fast-reroute ti-lfa <cr>    # path-041720
+(config)# do-exec debug isis fast-reroute trigger <cr>    # path-041467
+(config)# do-exec debug isis flex-algo <number:128..255> <cr>    # path-041552
+(config)# do-exec debug isis flood-speed <cr>    # path-032728
+(config)# do-exec debug isis geninfo <cr>    # path-032290
+(config)# do-exec debug isis graceful-reload <cr>    # path-032739
+(config)# do-exec debug isis local-updates <cr>    # path-032324
+(config)# do-exec debug isis lsp dampening <cr>    # path-041051
+(config)# do-exec debug isis lsp generation <cr>    # path-041093
+(config)# do-exec debug isis mfi <cr>    # path-032782
+(config)# do-exec debug isis microloop <cr>    # path-032706
+(config)# do-exec debug isis mpls traffic-eng advertisements <cr>    # path-050667
+(config)# do-exec debug isis mpls traffic-eng events <cr>    # path-050694
+(config)# do-exec debug isis mtr <cr>    # path-032556
+(config)# do-exec debug isis notifications <cr>    # path-032444
+(config)# do-exec debug isis nsf <cr>    # path-032505
+(config)# do-exec debug isis nsf cisco <cr>    # path-041240
+(config)# do-exec debug isis nsf ietf <cr>    # path-041277
+(config)# do-exec debug isis prc dampening <cr>    # path-041146
+(config)# do-exec debug isis private <cr>    # path-032445
+(config)# do-exec debug isis private detail <cr>    # path-041172
+(config)# do-exec debug isis protocol-errors <cr>    # path-032249
+(config)# do-exec debug isis rib global <cr>    # path-041579
+(config)# do-exec debug isis rib local <cr>    # path-041582
+(config)# do-exec debug isis rib redistribution <cr>    # path-041676
+(config)# do-exec debug isis segment-routing <cr>    # path-032833
+(config)# do-exec debug isis segment-routing mapping-server <cr>    # path-042002
+(config)# do-exec debug isis snp-packets <cr>    # path-032232
+(config)# do-exec debug isis spf-events <cr>    # path-032678
+(config)# do-exec debug isis spf-statistics <cr>    # path-032618
+(config)# do-exec debug isis spf-triggers <cr>    # path-032641
+(config)# do-exec debug isis spt dampening <cr>    # path-041117
+(config)# do-exec debug isis srv6 <cr>    # path-032801
+(config)# do-exec debug isis teapp <cr>    # path-032749
+(config)# do-exec debug isis test <cr>    # path-032766
+(config)# do-exec debug isis update-packets <cr>    # path-032341
+(config)# do-exec debug issu all <cr>    # path-033131
+(config)# do-exec debug issu client event <cr>    # path-042438
+(config)# do-exec debug issu client event clientID <number:1..8035> <cr>    # path-056402
+(config)# do-exec debug issu client event clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-059600
+(config)# do-exec debug issu client event clientID <number:1..8035> entityID <number:1..4294967295> MsgType <number:0..4294967294> <cr>    # path-060109
+(config)# do-exec debug issu client event peerUID <number:1..4294967295> <cr>    # path-056412
+(config)# do-exec debug issu client event peerUID <number:1..4294967295> clientID <number:1..8035> <cr>    # path-059604
+(config)# do-exec debug issu client event peerUID <number:1..4294967295> clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-060111
+(config)# do-exec debug issu erp <cr>    # path-033132
+(config)# do-exec debug issu image-version compatibility <cr>    # path-042394
+(config)# do-exec debug issu infra event <cr>    # path-042419
+(config)# do-exec debug issu infra event clientID <number:1..8035> <cr>    # path-056397
+(config)# do-exec debug issu infra event clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-059598
+(config)# do-exec debug issu infra event clientID <number:1..8035> entityID <number:1..4294967295> MsgType <number:0..4294967294> <cr>    # path-060108
+(config)# do-exec debug issu infra event peerUID <number:1..4294967295> <cr>    # path-056403
+(config)# do-exec debug issu infra event peerUID <number:1..4294967295> clientID <number:1..8035> <cr>    # path-059601
+(config)# do-exec debug issu infra event peerUID <number:1..4294967295> clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-060110
+(config)# do-exec debug issu process <cr>    # path-033124
+(config)# do-exec debug kerberos <cr>    # path-027299
+(config)# do-exec debug kerberos packet <cr>    # path-030244
+(config)# do-exec debug keystore <cr>    # path-026879
+(config)# do-exec debug keystore ae46c1 <cr>    # path-028967
+(config)# do-exec debug keystore api <cr>    # path-029020
+(config)# do-exec debug keystore ha <cr>    # path-029105
+(config)# do-exec debug keystore sw <cr>    # path-029064
+(config)# do-exec debug kron all <cr>    # path-033304
+(config)# do-exec debug kron exec-cli <cr>    # path-033294
+(config)# do-exec debug kron info <cr>    # path-033283
+(config)# do-exec debug kron major <cr>    # path-033270
+(config)# do-exec debug l2ctrl all <cr>    # path-033063
+(config)# do-exec debug l2ctrl evc <cr>    # path-033041
+(config)# do-exec debug l2ctrl evc stp <cr>    # path-042255
+(config)# do-exec debug l2ctrl pm <cr>    # path-033057
+(config)# do-exec debug l2ctrl pm stp <cr>    # path-042275
+(config)# do-exec debug l2ctrl registry <cr>    # path-033049
+(config)# do-exec debug l2fib addr multicast <cr>    # path-037400
+(config)# do-exec debug l2fib addr multicast detail <cr>    # path-046789
+(config)# do-exec debug l2fib addr unicast <cr>    # path-037428
+(config)# do-exec debug l2fib addr unicast detail <cr>    # path-046820
+(config)# do-exec debug l2fib all <cr>    # path-030722
+(config)# do-exec debug l2fib bridge-domain <cr>    # path-030702
+(config)# do-exec debug l2fib bridge-domain detail <cr>    # path-037413
+(config)# do-exec debug l2fib bridge-domain port <cr>    # path-037426
+(config)# do-exec debug l2fib bridge-domain port detail <cr>    # path-046819
+(config)# do-exec debug l2fib error <cr>    # path-030314
+(config)# do-exec debug l2fib event <cr>    # path-030367
+(config)# do-exec debug l2fib event detail <cr>    # path-036850
+(config)# do-exec debug l2fib evpn encap <cr>    # path-037459
+(config)# do-exec debug l2fib evpn encap detail <cr>    # path-046846
+(config)# do-exec debug l2fib ha <cr>    # path-030414
+(config)# do-exec debug l2fib ha detail <cr>    # path-036912
+(config)# do-exec debug l2fib l2port <cr>    # path-030433
+(config)# do-exec debug l2fib l2rib <cr>    # path-030729
+(config)# do-exec debug l2fib l2rib detail <cr>    # path-037438
+(config)# do-exec debug l2fib lisp decap <cr>    # path-037141
+(config)# do-exec debug l2fib lisp encap <cr>    # path-037188
+(config)# do-exec debug l2fib mlrib <cr>    # path-030440
+(config)# do-exec debug l2fib mlrib detail <cr>    # path-036953
+(config)# do-exec debug l2fib olist <cr>    # path-030615
+(config)# do-exec debug l2fib olist detail <cr>    # path-037264
+(config)# do-exec debug l2fib otv tunnel decap <cr>    # path-046524
+(config)# do-exec debug l2fib otv tunnel encap <cr>    # path-046590
+(config)# do-exec debug l2fib pathlist <cr>    # path-030634
+(config)# do-exec debug l2fib pathlist detail <cr>    # path-037303
+(config)# do-exec debug l2fib pd <cr>    # path-030387
+(config)# do-exec debug l2fib pd detail <cr>    # path-036883
+(config)# do-exec debug l2fib trunk <cr>    # path-030459
+(config)# do-exec debug l2fib vxlan <cr>    # path-030596
+(config)# do-exec debug l2fib vxlan decap detail <cr>    # path-046622
+(config)# do-exec debug l2fib vxlan encap detail <cr>    # path-046674
+(config)# do-exec debug l2fib vxlan-cp <cr>    # path-030562
+(config)# do-exec debug l2protocol-tunnel <cr>    # path-027768
+(config)# do-exec debug l2protocol-tunnel error <cr>    # path-033560
+(config)# do-exec debug l2protocol-tunnel event <cr>    # path-033549
+(config)# do-exec debug l2protocol-tunnel misc <cr>    # path-033574
+(config)# do-exec debug l2protocol-tunnel packet <cr>    # path-033540
+(config)# do-exec debug l2rib error <cr>    # path-031264
+(config)# do-exec debug l2rib event <cr>    # path-031278
+(config)# do-exec debug l2rib event detail <cr>    # path-038428
+(config)# do-exec debug l2rib internal <cr>    # path-031290
+(config)# do-exec debug l2rib test <cr>    # path-031318
+(config)# do-exec debug l2tp all <cr>    # path-031220

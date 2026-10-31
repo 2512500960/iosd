@@ -1,0 +1,22 @@
+# 模式 main-cpu；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-r-mc)# default failover timeout <cr>    # observed_connections-009145
+(config-r-mc)# default secondary aux <cr>    # observed_connections-009144
+(config-r-mc)# default secondary console enable <cr>    # observed_connections-009148
+(config-r-mc)# default secondary console lock <cr>    # observed_connections-009152
+(config-r-mc)# default standby initialization delay <cr>    # observed_connections-009149
+(config-r-mc)# default switchover pxf restart <cr>    # observed_connections-009153
+(config-r-mc)# failover timeout <number:dynamic> <cr>    # observed_connections-009154
+(config-r-mc)# no failover timeout <cr>    # observed_connections-009143
+(config-r-mc)# no secondary aux <cr>    # observed_connections-009141
+(config-r-mc)# no secondary console enable <cr>    # observed_connections-009146
+(config-r-mc)# no secondary console lock <cr>    # observed_connections-009150
+(config-r-mc)# no standby initialization delay <cr>    # observed_connections-009147
+(config-r-mc)# no switchover pxf restart <cr>    # observed_connections-009151
+(config-r-mc)# secondary aux <cr>    # observed_connections-009139
+(config-r-mc)# secondary console enable <cr>    # observed_connections-009140
+(config-r-mc)# secondary console lock <cr>    # observed_connections-009142
+(config-r-mc)# standby initialization delay <number:dynamic> <cr>    # observed_connections-009155
+(config-r-mc)# switchover pxf restart <number:dynamic> <number:dynamic> <cr>    # observed_connections-009156

@@ -1,0 +1,270 @@
+# 模式 parameter_map_cfg；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-profile)# aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002962
+(config-profile)# aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003005
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002768
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002777
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002794
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002795
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002797
+(config-profile)# alert on <cr>    # static_slot_creation_candidates-002803
+(config-profile)# allow-mode on <cr>    # static_slot_creation_candidates-002763
+(config-profile)# api-key <string> <cr>    # static_slot_creation_candidates-002798
+(config-profile)# application-inspect dns <cr>    # static_slot_creation_candidates-002769
+(config-profile)# application-inspect dns <cr>    # static_slot_creation_candidates-002821
+(config-profile)# audit-trail on <cr>    # static_slot_creation_candidates-002760
+(config-profile)# audit-trail on <cr>    # static_slot_creation_candidates-002781
+(config-profile)# cache <number:0..2147483647> <cr>    # static_slot_creation_candidates-002778
+(config-profile)# dns-timeout <number:1..2147483> <cr>    # static_slot_creation_candidates-002813
+(config-profile)# dnscrypt <cr>    # static_slot_creation_candidates-002744
+(config-profile)# exclusive-domain permit <string> <cr>    # static_slot_creation_candidates-002847
+(config-profile)# gtp request-queue <number:1..4294967295> <cr>    # static_slot_creation_candidates-002899
+(config-profile)# gtp timeout gsn <number:1..35791> <cr>    # static_slot_creation_candidates-002944
+(config-profile)# gtp timeout pdp-context <number:1..35791> <cr>    # static_slot_creation_candidates-002946
+(config-profile)# gtp timeout request-queue <number:1..2147483> <cr>    # static_slot_creation_candidates-002948
+(config-profile)# gtp timeout signaling <number:1..35791> <cr>    # static_slot_creation_candidates-002951
+(config-profile)# gtp timeout tunnel <number:1..35791> <cr>    # static_slot_creation_candidates-002953
+(config-profile)# gtp tunnel-limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002902
+(config-profile)# gtp-in-gtp blocking <cr>    # static_slot_creation_candidates-002776
+(config-profile)# gtpv2 echo-rate-limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002870
+(config-profile)# gtpv2 request-queue <number:1..1048576> <cr>    # static_slot_creation_candidates-002850
+(config-profile)# gtpv2 tunnel-limit <number:1..900000> <cr>    # static_slot_creation_candidates-002859
+(config-profile)# icmp idle-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002889
+(config-profile)# icmp idle-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002967
+(config-profile)# icmp-unreachable-allow <cr>    # static_slot_creation_candidates-002746
+(config-profile)# icmp-unreachable-allow <cr>    # static_slot_creation_candidates-002748
+(config-profile)# inspect <string> <cr>    # static_slot_creation_candidates-002809
+(config-profile)# lisp inner-packet-inspection <cr>    # static_slot_creation_candidates-002793
+(config-profile)# lisp inner-packet-inspection <cr>    # static_slot_creation_candidates-002822
+(config-profile)# local-domain <string> <cr>    # static_slot_creation_candidates-002779
+(config-profile)# log dropped-message <cr>    # static_slot_creation_candidates-002802
+(config-profile)# log dropped-packets <cr>    # static_slot_creation_candidates-002752
+(config-profile)# log dropped-packets <cr>    # static_slot_creation_candidates-002755
+(config-profile)# log dropped-packets <cr>    # static_slot_creation_candidates-002801
+(config-profile)# log flow <cr>    # static_slot_creation_candidates-002764
+(config-profile)# log flow <cr>    # static_slot_creation_candidates-002807
+(config-profile)# log flow-export fnf <cr>    # static_slot_creation_candidates-002893
+(config-profile)# log flow-export template timeout-rate <number:0..65535> <cr>    # static_slot_creation_candidates-002959
+(config-profile)# log flow-export template timeout-rate <number:0..65535> <cr>    # static_slot_creation_candidates-002972
+(config-profile)# log flow-export v9 udp destination <address> <number:1..65535> <cr>    # static_slot_creation_candidates-002986
+(config-profile)# log flow-export v9 udp destination <address> <number:1..65535> <cr>    # static_slot_creation_candidates-002990
+(config-profile)# log flow-export v9 udp destination <address> <number:1..65535> source <interface> <cr>    # static_slot_creation_candidates-003013
+(config-profile)# max-destination <number:1..4294967295> <cr>    # static_slot_creation_candidates-002756
+(config-profile)# max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002780
+(config-profile)# max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002782
+(config-profile)# max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002787
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002985
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002987
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002988
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003007
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003008
+(config-profile)# max-incomplete <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003009
+(config-profile)# max-incomplete high <number:1..2147483647> <cr>    # static_slot_creation_candidates-002869
+(config-profile)# max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002866
+(config-profile)# max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002875
+(config-profile)# max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002882
+(config-profile)# max-incomplete low <number:1..2147483647> <cr>    # static_slot_creation_candidates-002858
+(config-profile)# max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002848
+(config-profile)# max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002855
+(config-profile)# max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002864
+(config-profile)# max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002856
+(config-profile)# max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002865
+(config-profile)# max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002874
+(config-profile)# max-request <number:1..2147483647> <cr>    # static_slot_creation_candidates-002757
+(config-profile)# max-resp-pak <number:0..20000> <cr>    # static_slot_creation_candidates-002765
+(config-profile)# multi-tenancy <cr>    # static_slot_creation_candidates-002747
+(config-profile)# multi-tenancy <cr>    # static_slot_creation_candidates-002751
+(config-profile)# no aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002980
+(config-profile)# no alert <cr>    # static_slot_creation_candidates-002773
+(config-profile)# no alert <cr>    # static_slot_creation_candidates-002788
+(config-profile)# no alert <cr>    # static_slot_creation_candidates-002790
+(config-profile)# no alert <cr>    # static_slot_creation_candidates-002792
+(config-profile)# no alert on <cr>    # static_slot_creation_candidates-002839
+(config-profile)# no alert on <cr>    # static_slot_creation_candidates-002878
+(config-profile)# no allow-mode on <cr>    # static_slot_creation_candidates-002834
+(config-profile)# no api-key <cr>    # static_slot_creation_candidates-002791
+(config-profile)# no application-inspect dns <cr>    # static_slot_creation_candidates-002838
+(config-profile)# no application-inspect dns <cr>    # static_slot_creation_candidates-002895
+(config-profile)# no audit-trail on <cr>    # static_slot_creation_candidates-002833
+(config-profile)# no audit-trail on <cr>    # static_slot_creation_candidates-002849
+(config-profile)# no cache <cr>    # static_slot_creation_candidates-002775
+(config-profile)# no dns-timeout <cr>    # static_slot_creation_candidates-002812
+(config-profile)# no dnscrypt <cr>    # static_slot_creation_candidates-002772
+(config-profile)# no exclusive-domain permit <string> <cr>    # static_slot_creation_candidates-002915
+(config-profile)# no gtp request-queue <cr>    # static_slot_creation_candidates-002897
+(config-profile)# no gtp timeout gsn <cr>    # static_slot_creation_candidates-002943
+(config-profile)# no gtp timeout pdp-context <cr>    # static_slot_creation_candidates-002945
+(config-profile)# no gtp timeout request-queue <cr>    # static_slot_creation_candidates-002947
+(config-profile)# no gtp timeout signaling <cr>    # static_slot_creation_candidates-002950
+(config-profile)# no gtp timeout tunnel <cr>    # static_slot_creation_candidates-002952
+(config-profile)# no gtp tunnel-limit <cr>    # static_slot_creation_candidates-002900
+(config-profile)# no gtp-in-gtp blocking <cr>    # static_slot_creation_candidates-002843
+(config-profile)# no gtpv2 echo-rate-limit <cr>    # static_slot_creation_candidates-002863
+(config-profile)# no gtpv2 request-queue <cr>    # static_slot_creation_candidates-002845
+(config-profile)# no gtpv2 tunnel-limit <cr>    # static_slot_creation_candidates-002854
+(config-profile)# no icmp idle-time <cr>    # static_slot_creation_candidates-002881
+(config-profile)# no icmp-unreachable-allow <cr>    # static_slot_creation_candidates-002799
+(config-profile)# no icmp-unreachable-allow <cr>    # static_slot_creation_candidates-002804
+(config-profile)# no inspect <string> <cr>    # static_slot_creation_candidates-002885
+(config-profile)# no lisp inner-packet-inspection <cr>    # static_slot_creation_candidates-002867
+(config-profile)# no lisp inner-packet-inspection <cr>    # static_slot_creation_candidates-002894
+(config-profile)# no local-domain <cr>    # static_slot_creation_candidates-002774
+(config-profile)# no log dropped-message <cr>    # static_slot_creation_candidates-002876
+(config-profile)# no log dropped-packets <cr>    # static_slot_creation_candidates-002825
+(config-profile)# no log dropped-packets <cr>    # static_slot_creation_candidates-002827
+(config-profile)# no log dropped-packets <cr>    # static_slot_creation_candidates-002877
+(config-profile)# no log flow <cr>    # static_slot_creation_candidates-002836
+(config-profile)# no log flow <cr>    # static_slot_creation_candidates-002884
+(config-profile)# no log flow-export fnf <cr>    # static_slot_creation_candidates-002937
+(config-profile)# no log flow-export template timeout-rate <number:0..65535> <cr>    # static_slot_creation_candidates-002977
+(config-profile)# no log flow-export template timeout-rate <number:0..65535> <cr>    # static_slot_creation_candidates-002984
+(config-profile)# no log flow-export v9 udp destination <address> <number:1..65535> <cr>    # static_slot_creation_candidates-002993
+(config-profile)# no log flow-export v9 udp destination <address> <number:1..65535> <cr>    # static_slot_creation_candidates-002998
+(config-profile)# no max-destination <number:1..4294967295> <cr>    # static_slot_creation_candidates-002826
+(config-profile)# no max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002846
+(config-profile)# no max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002852
+(config-profile)# no max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002860
+(config-profile)# no max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002992
+(config-profile)# no max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002995
+(config-profile)# no max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002996
+(config-profile)# no max-incomplete high <cr>    # static_slot_creation_candidates-002862
+(config-profile)# no max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002926
+(config-profile)# no max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002930
+(config-profile)# no max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002932
+(config-profile)# no max-incomplete low <cr>    # static_slot_creation_candidates-002853
+(config-profile)# no max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002916
+(config-profile)# no max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002921
+(config-profile)# no max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002924
+(config-profile)# no max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002922
+(config-profile)# no max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002925
+(config-profile)# no max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002929
+(config-profile)# no max-request <cr>    # static_slot_creation_candidates-002754
+(config-profile)# no max-resp-pak <cr>    # static_slot_creation_candidates-002759
+(config-profile)# no multi-tenancy <cr>    # static_slot_creation_candidates-002805
+(config-profile)# no multi-tenancy <cr>    # static_slot_creation_candidates-002824
+(config-profile)# no one-minute high <cr>    # static_slot_creation_candidates-002873
+(config-profile)# no one-minute low <cr>    # static_slot_creation_candidates-002861
+(config-profile)# no orgid <cr>    # static_slot_creation_candidates-002806
+(config-profile)# no per-box aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002989
+(config-profile)# no per-box max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002927
+(config-profile)# no per-box max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-003001
+(config-profile)# no per-box max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002966
+(config-profile)# no per-box max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002963
+(config-profile)# no per-box max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002964
+(config-profile)# no per-box tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002978
+(config-profile)# no permit-error <cr>    # static_slot_creation_candidates-002783
+(config-profile)# no public-key <cr>    # static_slot_creation_candidates-002784
+(config-profile)# no registration-vrf <cr>    # static_slot_creation_candidates-002814
+(config-profile)# no request-queue <cr>    # static_slot_creation_candidates-002766
+(config-profile)# no resolver ipv4 <address> <cr>    # static_slot_creation_candidates-002909
+(config-profile)# no server vendor websense <string> <cr>    # static_slot_creation_candidates-002954
+(config-profile)# no session packet <cr>    # static_slot_creation_candidates-002842
+(config-profile)# no session total <number:1..4294967295> <cr>    # static_slot_creation_candidates-002911
+(config-profile)# no session total <number:1..4294967295> <cr>    # static_slot_creation_candidates-002917
+(config-profile)# no session total <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002999
+(config-profile)# no session total <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-003000
+(config-profile)# no session-reclassify-allow <cr>    # static_slot_creation_candidates-002810
+(config-profile)# no sessions maximum <cr>    # static_slot_creation_candidates-002828
+(config-profile)# no sessions packet <cr>    # static_slot_creation_candidates-002837
+(config-profile)# no sessions rate high <cr>    # static_slot_creation_candidates-002919
+(config-profile)# no sessions rate low <cr>    # static_slot_creation_candidates-002914
+(config-profile)# no source-interface <cr>    # static_slot_creation_candidates-002800
+(config-profile)# no tcp finwait-time <cr>    # static_slot_creation_candidates-002901
+(config-profile)# no tcp half-close reset on <cr>    # static_slot_creation_candidates-002969
+(config-profile)# no tcp half-open reset on <cr>    # static_slot_creation_candidates-002971
+(config-profile)# no tcp idle reset on <cr>    # static_slot_creation_candidates-002968
+(config-profile)# no tcp idle-time <cr>    # static_slot_creation_candidates-002898
+(config-profile)# no tcp max-incomplete <cr>    # static_slot_creation_candidates-002906
+(config-profile)# no tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002956
+(config-profile)# no tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002957
+(config-profile)# no tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002958
+(config-profile)# no tcp syn-flood rate per-destination <number:1..1000000000> <cr>    # static_slot_creation_candidates-002976
+(config-profile)# no tcp synwait-time <cr>    # static_slot_creation_candidates-002904
+(config-profile)# no tcp window-scale-enforcement loose <cr>    # static_slot_creation_candidates-002908
+(config-profile)# no tcp window-scale-enforcement loose <cr>    # static_slot_creation_candidates-002935
+(config-profile)# no threat-detection basic-threat <cr>    # static_slot_creation_candidates-002832
+(config-profile)# no threat-detection rate fw-drop <cr>    # static_slot_creation_candidates-002918
+(config-profile)# no timeout pdp-context <cr>    # static_slot_creation_candidates-002880
+(config-profile)# no timeout request-queue <cr>    # static_slot_creation_candidates-002887
+(config-profile)# no token <cr>    # static_slot_creation_candidates-002753
+(config-profile)# no tunnel-limit <cr>    # static_slot_creation_candidates-002789
+(config-profile)# no udp half-open idle-time <cr>    # static_slot_creation_candidates-002933
+(config-profile)# no udp idle-time <cr>    # static_slot_creation_candidates-002872
+(config-profile)# no udp-timeout <cr>    # static_slot_creation_candidates-002767
+(config-profile)# no urlf-server-log on <cr>    # static_slot_creation_candidates-002857
+(config-profile)# no use-v2-api <cr>    # static_slot_creation_candidates-002811
+(config-profile)# no utd-policy <cr>    # static_slot_creation_candidates-002818
+(config-profile)# no utd-policy <cr>    # static_slot_creation_candidates-002820
+(config-profile)# no vpn zone security <cr>    # static_slot_creation_candidates-002942
+(config-profile)# no vpn zone security allow-dia <cr>    # static_slot_creation_candidates-002970
+(config-profile)# no vrf <string> <cr>    # static_slot_creation_candidates-002891
+(config-profile)# no vrf <string> inspect <string> <cr>    # static_slot_creation_candidates-002961
+(config-profile)# no zone-mismatch drop <cr>    # static_slot_creation_candidates-002831
+(config-profile)# no zone-mismatch drop <cr>    # static_slot_creation_candidates-002892
+(config-profile)# one-minute high <number:1..2147483647> <cr>    # static_slot_creation_candidates-002879
+(config-profile)# one-minute low <number:1..2147483647> <cr>    # static_slot_creation_candidates-002868
+(config-profile)# orgid <number:1..2147483647> <cr>    # static_slot_creation_candidates-002808
+(config-profile)# per-box aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002982
+(config-profile)# per-box aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003006
+(config-profile)# per-box max-incomplete <number:1..4294967295> <cr>    # static_slot_creation_candidates-002871
+(config-profile)# per-box max-incomplete <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002997
+(config-profile)# per-box max-incomplete <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003012
+(config-profile)# per-box max-incomplete icmp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002934
+(config-profile)# per-box max-incomplete tcp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002928
+(config-profile)# per-box max-incomplete udp <number:1..4294967295> <cr>    # static_slot_creation_candidates-002931
+(config-profile)# per-box tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002960
+(config-profile)# permit-error <cr>    # static_slot_creation_candidates-002745
+(config-profile)# public-key <string> <cr>    # static_slot_creation_candidates-002786
+(config-profile)# registration-vrf <string> <cr>    # static_slot_creation_candidates-002817
+(config-profile)# request-queue <number:1..1048576> <cr>    # static_slot_creation_candidates-002770
+(config-profile)# resolver ipv4 <address> <cr>    # static_slot_creation_candidates-002830
+(config-profile)# secret <?parser_passwd_action@55558bcb4ba8> <string> <cr>    # static_slot_creation_candidates-003004
+(config-profile)# server vendor websense <string> <cr>    # static_slot_creation_candidates-002910
+(config-profile)# session packet <number:25..100> <cr>    # static_slot_creation_candidates-002844
+(config-profile)# session total <number:1..4294967295> <cr>    # static_slot_creation_candidates-002841
+(config-profile)# session total <number:1..4294967295> <cr>    # static_slot_creation_candidates-002851
+(config-profile)# session total <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002991
+(config-profile)# session total <number:1..4294967295> aggressive-aging high <number:1..4294967295> low <number:1..4294967295> <cr>    # static_slot_creation_candidates-002994
+(config-profile)# session total <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003010
+(config-profile)# session total <number:1..4294967295> aggressive-aging high percent <number:1..100> low percent <number:1..100> <cr>    # static_slot_creation_candidates-003011
+(config-profile)# session-reclassify-allow <cr>    # static_slot_creation_candidates-002749
+(config-profile)# sessions maximum <number:1..2147483647> <cr>    # static_slot_creation_candidates-002835
+(config-profile)# sessions packet <number:25..100> <cr>    # static_slot_creation_candidates-002840
+(config-profile)# sessions rate high <number:1..2147483647> time <number:1..2147483> <cr>    # static_slot_creation_candidates-002981
+(config-profile)# sessions rate low <number:1..2147483647> time <number:1..2147483> <cr>    # static_slot_creation_candidates-002979
+(config-profile)# source-interface <interface> <cr>    # static_slot_creation_candidates-003003
+(config-profile)# tcp finwait-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002905
+(config-profile)# tcp finwait-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002974
+(config-profile)# tcp half-close reset on <cr>    # static_slot_creation_candidates-002939
+(config-profile)# tcp half-open reset on <cr>    # static_slot_creation_candidates-002941
+(config-profile)# tcp idle reset on <cr>    # static_slot_creation_candidates-002938
+(config-profile)# tcp idle-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002903
+(config-profile)# tcp idle-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002973
+(config-profile)# tcp max-incomplete host <number:1..4294967295> <cr>    # static_slot_creation_candidates-002949
+(config-profile)# tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002912
+(config-profile)# tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002913
+(config-profile)# tcp syn-flood limit <number:1..4294967295> <cr>    # static_slot_creation_candidates-002920
+(config-profile)# tcp syn-flood rate per-destination <number:1..1000000000> <cr>    # static_slot_creation_candidates-002955
+(config-profile)# tcp synwait-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002907
+(config-profile)# tcp synwait-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002975
+(config-profile)# tcp window-scale-enforcement loose <cr>    # static_slot_creation_candidates-002829
+(config-profile)# tcp window-scale-enforcement loose <cr>    # static_slot_creation_candidates-002890
+(config-profile)# threat-detection basic-threat <cr>    # static_slot_creation_candidates-002761
+(config-profile)# threat-detection rate fw-drop average-time-frame <number:600..3600> average-threshold <number:1..4294967295> burst-threshold <number:1..1000000000> <cr>    # static_slot_creation_candidates-003002
+(config-profile)# timeout pdp-context <number:1..259200> <cr>    # static_slot_creation_candidates-002883
+(config-profile)# timeout request-queue <number:1..3600> <cr>    # static_slot_creation_candidates-002888
+(config-profile)# token <string> <cr>    # static_slot_creation_candidates-002758
+(config-profile)# tunnel-limit <number:1..900000> <cr>    # static_slot_creation_candidates-002796
+(config-profile)# udp half-open idle-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002936
+(config-profile)# udp half-open idle-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002983
+(config-profile)# udp idle-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002886
+(config-profile)# udp idle-time <number:1..2147483> ageout-time <number:1..2147483> <cr>    # static_slot_creation_candidates-002965
+(config-profile)# udp-timeout <number:1..30> <cr>    # static_slot_creation_candidates-002771
+(config-profile)# urlf-server-log on <cr>    # static_slot_creation_candidates-002785
+(config-profile)# use-v2-api <cr>    # static_slot_creation_candidates-002750
+(config-profile)# utd-policy <string> <cr>    # static_slot_creation_candidates-002819
+(config-profile)# utd-policy <string> <cr>    # static_slot_creation_candidates-002823
+(config-profile)# vpn zone security <cr>    # static_slot_creation_candidates-002896
+(config-profile)# vpn zone security allow-dia <cr>    # static_slot_creation_candidates-002940

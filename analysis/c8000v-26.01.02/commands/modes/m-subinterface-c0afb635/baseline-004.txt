@@ -1,0 +1,404 @@
+# 模式 subinterface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-004.md
+
+(config-subif)# default llc2 txq-max <cr>    # path-068780
+(config-subif)# default llc2 xid-neg-val-time <cr>    # path-068758
+(config-subif)# default llc2 xid-retry-time <cr>    # path-068765
+(config-subif)# default lldp med-tlv-select network-policy <cr>    # path-070788
+(config-subif)# default lldp receive <cr>    # path-069367
+(config-subif)# default lldp tlv-select power-management <cr>    # path-070725
+(config-subif)# default lldp transmit <cr>    # path-069346
+(config-subif)# default lldp ucs-chassis-tlv rack-id <number:1..255> <cr>    # path-071730
+(config-subif)# default llp nhrp map multicast dynamic <cr>    # path-072306
+(config-subif)# default lnm alternate <cr>    # path-069900
+(config-subif)# default lnm crs <cr>    # path-069897
+(config-subif)# default lnm express-buffer <cr>    # path-069950
+(config-subif)# default lnm loss-threshold <cr>    # path-069928
+(config-subif)# default lnm password <cr>    # path-069944
+(config-subif)# default lnm rem <cr>    # path-069941
+(config-subif)# default lnm ring-number-mismatch-allowed <cr>    # path-070006
+(config-subif)# default lnm rps <cr>    # path-069985
+(config-subif)# default lnm softerr <cr>    # path-070008
+(config-subif)# default load-balance-hash-algo <cr>    # path-068318
+(config-subif)# default load-balancing <cr>    # path-068335
+(config-subif)# default load-interval <cr>    # path-068057
+(config-subif)# default locaddr-priority <cr>    # path-068141
+(config-subif)# default location additional-location-information <cr>    # path-068879
+(config-subif)# default location civic-location-id none <cr>    # path-070262
+(config-subif)# default location custom-location-id none <cr>    # path-070264
+(config-subif)# default location elin-location-id <string> <cr>    # path-070261
+(config-subif)# default location geo-location-id none <cr>    # path-070266
+(config-subif)# default logging event dlci-status-change <cr>    # path-070316
+(config-subif)# default logging event frame-relay dlci <cr>    # path-071508
+(config-subif)# default logging event link-status <cr>    # path-070279
+(config-subif)# default logging event link-status <cr>    # path-070284
+(config-subif)# default loopback <cr>    # path-068241
+(config-subif)# default loopback <cr>    # path-068260
+(config-subif)# default loopback <cr>    # path-068394
+(config-subif)# default loopback dte <cr>    # path-068965
+(config-subif)# default loopback line <cr>    # path-068971
+(config-subif)# default loopback remote <cr>    # path-068978
+(config-subif)# default mab <cr>    # path-068622
+(config-subif)# default mab eap <cr>    # path-069616
+(config-subif)# default mac-address <cr>    # path-068214
+(config-subif)# default macsec <cr>    # path-068376
+(config-subif)# default macsec access-control <cr>    # path-069289
+(config-subif)# default macsec disable-sci <cr>    # path-069220
+(config-subif)# default macsec dot1q-in-clear <cr>    # path-069250
+(config-subif)# default macsec replay-protection window-size <cr>    # path-070591
+(config-subif)# default map-group <string> <cr>    # path-069058
+(config-subif)# default mdns-sd gateway <cr>    # path-069437
+(config-subif)# default media-type <cr>    # path-068265
+(config-subif)# default medium p2p <cr>    # path-069069
+(config-subif)# default mka policy <cr>    # path-070108
+(config-subif)# default mka pre-shared-key key-chain <string> <cr>    # path-072067
+(config-subif)# default mka pre-shared-key key-chain <string> fallback-key-chain <string> <cr>    # path-072483
+(config-subif)# default mlacp interchassis group <cr>    # path-069701
+(config-subif)# default mlacp lag-priority <cr>    # path-068651
+(config-subif)# default mlacp mac mstp-tcn <cr>    # path-071112
+(config-subif)# default mlacp mode active-active <cr>    # path-071070
+(config-subif)# default mtu <cr>    # path-068211
+(config-subif)# default multilink load-threshold <cr>    # path-069554
+(config-subif)# default multilink max-fragments <cr>    # path-069577
+(config-subif)# default multilink max-links <cr>    # path-069475
+(config-subif)# default multilink min-links <cr>    # path-069515
+(config-subif)# default multilink-group <cr>    # path-068535
+(config-subif)# default multiring trcrf-vlan <cr>    # path-069229
+(config-subif)# default mvr immediate <cr>    # path-069516
+(config-subif)# default mvr type <cr>    # path-069525
+(config-subif)# default nat64 enable <cr>    # path-069177
+(config-subif)# default nat64 prefix stateful <cr>    # path-070666
+(config-subif)# default nat64 settings mtu minimum <cr>    # path-071650
+(config-subif)# default nat66 inside <cr>    # path-069211
+(config-subif)# default nat66 outside <cr>    # path-069241
+(config-subif)# default national bit <cr>    # path-069248
+(config-subif)# default negotiation auto <cr>    # path-069045
+(config-subif)# default netbios enable-name-cache <cr>    # path-069186
+(config-subif)# default netbios input-access-filter host <string> <cr>    # path-071582
+(config-subif)# default nrzi-encoding <cr>    # path-068533
+(config-subif)# default ntp broadcast <cr>    # path-069416
+(config-subif)# default ntp broadcast client <cr>    # path-070693
+(config-subif)# default ntp disable <cr>    # path-069360
+(config-subif)# default ntp multicast <cr>    # path-069436
+(config-subif)# default ntp multicast client <cr>    # path-070753
+(config-subif)# default onep application openflow exclusive <cr>    # path-071939
+(config-subif)# default ospfv3 <number:1..65535> adjacency stagger <cr>    # path-072079
+(config-subif)# default ospfv3 <number:1..65535> area <address> <cr>    # path-071974
+(config-subif)# default ospfv3 <number:1..65535> authentication null <cr>    # path-071985
+(config-subif)# default ospfv3 <number:1..65535> bfd <cr>    # path-071449
+(config-subif)# default ospfv3 <number:1..65535> cost <cr>    # path-071327
+(config-subif)# default ospfv3 <number:1..65535> database-filter <cr>    # path-071429
+(config-subif)# default ospfv3 <number:1..65535> dead-interval <cr>    # path-069999
+(config-subif)# default ospfv3 <number:1..65535> demand-circuit <cr>    # path-071411
+(config-subif)# default ospfv3 <number:1..65535> flood-reduction <cr>    # path-071399
+(config-subif)# default ospfv3 <number:1..65535> hello-interval <cr>    # path-069988
+(config-subif)# default ospfv3 <number:1..65535> interface-retry <cr>    # path-069974
+(config-subif)# default ospfv3 <number:1..65535> mpls traffic-eng autoroute announce area <address> <cr>    # path-072519
+(config-subif)# default ospfv3 <number:1..65535> mpls traffic-eng autoroute metric <cr>    # path-072485
+(config-subif)# default ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj area <address> <cr>    # path-072511
+(config-subif)# default ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj interface-id <cr>    # path-072488
+(config-subif)# default ospfv3 <number:1..65535> mtu-ignore <cr>    # path-071421
+(config-subif)# default ospfv3 <number:1..65535> multi-area <address> <cr>    # path-072092
+(config-subif)# default ospfv3 <number:1..65535> multi-area <address> cost <cr>    # path-072084
+(config-subif)# default ospfv3 <number:1..65535> neighbor <address> <cr>    # path-072086
+(config-subif)# default ospfv3 <number:1..65535> network <cr>    # path-071284
+(config-subif)# default ospfv3 <number:1..65535> packet-size <cr>    # path-070023
+(config-subif)# default ospfv3 <number:1..65535> prefix-suppression <cr>    # path-071443
+(config-subif)# default ospfv3 <number:1..65535> priority <cr>    # path-070010
+(config-subif)# default ospfv3 <number:1..65535> retransmit-interval <cr>    # path-070033
+(config-subif)# default ospfv3 <number:1..65535> shutdown <cr>    # path-071456
+(config-subif)# default ospfv3 <number:1..65535> transmit-delay <cr>    # path-070048
+(config-subif)# default peer default ip address <cr>    # path-071667
+(config-subif)# default peer default ipv6 pool <string> <cr>    # path-072230
+(config-subif)# default peer ip address forced <cr>    # path-071579
+(config-subif)# default peer match aaa-pools <cr>    # path-070558
+(config-subif)# default peer neighbor-route <cr>    # path-069245
+(config-subif)# default peer pool backup <cr>    # path-070594
+(config-subif)# default peer pool static <cr>    # path-070607
+(config-subif)# default phymode <cr>    # path-068836
+(config-subif)# default physical-layer <cr>    # path-068208
+(config-subif)# default plim ethernet vlan filter disable <cr>    # path-072161
+(config-subif)# default plim min-frame-length 68byte <cr>    # path-070563
+(config-subif)# default plim qos input weight <cr>    # path-071637
+(config-subif)# default pnp startup-vlan <cr>    # path-070112
+(config-subif)# default port <cr>    # path-068329
+(config-subif)# default port-channel bfd destination ipv4 <address> <string> <cr>    # path-072446
+(config-subif)# default port-channel bfd destination ipv6 <address> <string> <cr>    # path-072444
+(config-subif)# default port-settings <cr>    # path-068286
+(config-subif)# default power inline consumption <cr>    # path-070368
+(config-subif)# default power inline delay shutdown <cr>    # path-071540
+(config-subif)# default ppp accm <cr>    # path-069194
+(config-subif)# default ppp accounting <cr>    # path-069630
+(config-subif)# default ppp acfc local <cr>    # path-070740
+(config-subif)# default ppp acfc remote <cr>    # path-070755
+(config-subif)# default ppp authentication <cr>    # path-069583
+(config-subif)# default ppp authorization <cr>    # path-069605
+(config-subif)# default ppp bap call request <cr>    # path-071992
+(config-subif)# default ppp bap callback accept <cr>    # path-071990
+(config-subif)# default ppp bap drop accept <cr>    # path-072000
+(config-subif)# default ppp bap max dial-attempts <cr>    # path-072034
+(config-subif)# default ppp bap monitor load <cr>    # path-072038
+(config-subif)# default ppp bap number default <cr>    # path-071984
+(config-subif)# default ppp bap number format <cr>    # path-072046
+(config-subif)# default ppp bap timeout pending <cr>    # path-072023
+(config-subif)# default ppp bcp tagged-frame <cr>    # path-071155
+(config-subif)# default ppp bridge appletalk <cr>    # path-070832
+(config-subif)# default ppp callback <cr>    # path-069479
+(config-subif)# default ppp caller name <cr>    # path-070897
+(config-subif)# default ppp chap challenge-length <cr>    # path-071038
+(config-subif)# default ppp chap hostname <cr>    # path-070987
+(config-subif)# default ppp chap ignoreus <cr>    # path-070979
+(config-subif)# default ppp chap matchnames <cr>    # path-071099
+(config-subif)# default ppp chap password <cr>    # path-071065
+(config-subif)# default ppp chap refuse <cr>    # path-071085
+(config-subif)# default ppp chap splitnames <cr>    # path-071075
+(config-subif)# default ppp chap wait <cr>    # path-071054
+(config-subif)# default ppp direction <cr>    # path-069786
+(config-subif)# default ppp disconnect-cause keepalive <cr>    # path-070872
+(config-subif)# default ppp dnis <cr>    # path-069523
+(config-subif)# default ppp eap identity <cr>    # path-070963
+(config-subif)# default ppp eap local <cr>    # path-071002
+(config-subif)# default ppp eap password <cr>    # path-070989
+(config-subif)# default ppp eap refuse <cr>    # path-071012
+(config-subif)# default ppp eap wait <cr>    # path-070980
+(config-subif)# default ppp encrypt mppe <cr>    # path-070836
+(config-subif)# default ppp hostname unique <cr>    # path-070994
+(config-subif)# default ppp ignore-loopback <cr>    # path-069385
+(config-subif)# default ppp ipcp accept-address <cr>    # path-071071
+(config-subif)# default ppp ipcp address accept <cr>    # path-071993
+(config-subif)# default ppp ipcp address no-ip send-ack <cr>    # path-072351
+(config-subif)# default ppp ipcp address proxy <cr>    # path-071986
+(config-subif)# default ppp ipcp address request ignore <cr>    # path-072348
+(config-subif)# default ppp ipcp address required <cr>    # path-071959
+(config-subif)# default ppp ipcp address unique <cr>    # path-071970
+(config-subif)# default ppp ipcp dns <cr>    # path-071168
+(config-subif)# default ppp ipcp header-compression ack <cr>    # path-071887
+(config-subif)# default ppp ipcp ignore-map <cr>    # path-071177
+(config-subif)# default ppp ipcp mask <cr>    # path-071195
+(config-subif)# default ppp ipcp no-renegotiation <cr>    # path-071287
+(config-subif)# default ppp ipcp predictive <cr>    # path-071199
+(config-subif)# default ppp ipcp route default <cr>    # path-071933
+(config-subif)# default ppp ipcp unique-address <cr>    # path-071212
+(config-subif)# default ppp ipcp username unique <cr>    # path-071956
+(config-subif)# default ppp ipcp wins <cr>    # path-071182
+(config-subif)# default ppp iphc max-header <cr>    # path-070825
+(config-subif)# default ppp iphc max-period <cr>    # path-070805
+(config-subif)# default ppp iphc max-time <cr>    # path-070814
+(config-subif)# default ppp ipv6cp address unique <cr>    # path-071885
+(config-subif)# default ppp ipv6cp proxy <cr>    # path-071167
+(config-subif)# default ppp lcp delay <cr>    # path-070765
+(config-subif)# default ppp lcp echo mru verify <cr>    # path-072246
+(config-subif)# default ppp lcp fast-start <cr>    # path-070706
+(config-subif)# default ppp lcp predictive <cr>    # path-070683
+(config-subif)# default ppp leased_line_option <cr>    # path-068354
+(config-subif)# default ppp link reorders <cr>    # path-071132
+(config-subif)# default ppp link reset <cr>    # path-071156
+(config-subif)# default ppp link trap <cr>    # path-071176
+(config-subif)# default ppp loopback ignore <cr>    # path-070744
+(config-subif)# default ppp loopback no-backoff <cr>    # path-070759
+(config-subif)# default ppp max-bad-auth <cr>    # path-068401
+(config-subif)# default ppp max-configure <cr>    # path-068378
+(config-subif)# default ppp max-failure <cr>    # path-068393
+(config-subif)# default ppp max-terminate <cr>    # path-068367
+(config-subif)# default ppp microcode <cr>    # path-069419
+(config-subif)# default ppp mru match <cr>    # path-070726
+(config-subif)# default ppp ms-chap refuse <cr>    # path-071010
+(config-subif)# default ppp ms-chap-v2 refuse <cr>    # path-071036
+(config-subif)# default ppp mtu adaptive <cr>    # path-070695
+(config-subif)# default ppp mtu pppoe unlimited <cr>    # path-071661
+(config-subif)# default ppp multilink <cr>    # path-070047
+(config-subif)# default ppp multilink endpoint <cr>    # path-071283
+(config-subif)# default ppp multilink fragment delay <cr>    # path-072041
+(config-subif)# default ppp multilink fragment disable <cr>    # path-072010
+(config-subif)# default ppp multilink fragment maximum <cr>    # path-072027
+(config-subif)# default ppp multilink fragment size <cr>    # path-072005
+(config-subif)# default ppp multilink fragment-delay <cr>    # path-071302
+(config-subif)# default ppp multilink fragmentation <cr>    # path-071276
+(config-subif)# default ppp multilink group <cr>    # path-071262
+(config-subif)# default ppp multilink idle-link <cr>    # path-071331
+(config-subif)# default ppp multilink interleave <cr>    # path-071332
+(config-subif)# default ppp multilink links maximum <cr>    # path-072013
+(config-subif)# default ppp multilink links minimum <cr>    # path-072025
+(config-subif)# default ppp multilink load-threshold <cr>    # path-071338
+(config-subif)# default ppp multilink mrru local <cr>    # path-071275
+(config-subif)# default ppp multilink mrru remote <cr>    # path-071297
+(config-subif)# default ppp multilink multiclass <cr>    # path-071340
+(config-subif)# default ppp multilink ncp sequenced <cr>    # path-071973
+(config-subif)# default ppp multilink queue depth fifo <cr>    # path-071999
+(config-subif)# default ppp multilink queue depth qos <cr>    # path-072011
+(config-subif)# default ppp multilink slippage mru <cr>    # path-071242
+(config-subif)# default ppp multilink slippage msec <cr>    # path-071258
+(config-subif)# default ppp ncp passive <cr>    # path-071166
+(config-subif)# default ppp pap refuse <cr>    # path-071125
+(config-subif)# default ppp pap sent-username <cr>    # path-071103
+(config-subif)# default ppp pap wait <cr>    # path-071096
+(config-subif)# default ppp pfc local <cr>    # path-070717
+(config-subif)# default ppp pfc remote <cr>    # path-070741
+(config-subif)# default ppp quality <cr>    # path-069195
+(config-subif)# default ppp reliable-link <cr>    # path-069432
+(config-subif)# default ppp timeout aaa <cr>    # path-071246
+(config-subif)# default ppp timeout authentication <cr>    # path-069932
+(config-subif)# default ppp timeout bacp <cr>    # path-070036
+(config-subif)# default ppp timeout idle <cr>    # path-071266
+(config-subif)# default ppp timeout multilink link add <cr>    # path-071989
+(config-subif)# default ppp timeout multilink link remove <cr>    # path-072004
+(config-subif)# default ppp timeout multilink lost-fragment <cr>    # path-072026
+(config-subif)# default ppp timeout ncp <cr>    # path-071229
+(config-subif)# default ppp timeout retry <cr>    # path-071215
+(config-subif)# default pppoe enable <cr>    # path-069411
+(config-subif)# default pppoe max-sessions <cr>    # path-069433
+(config-subif)# default pppoe-client dial-pool-number <number:1..255> <cr>    # path-071041
+(config-subif)# default pppoe-client ppp-max-payload <cr>    # path-069689
+(config-subif)# default pppoe-sessions threshold percent <cr>    # path-070807
+(config-subif)# default pulse-time <cr>    # path-068620
+(config-subif)# default punt-control cause ipv4-options <cr>    # path-070611
+(config-subif)# default punt-control enable <cr>    # path-069282
+(config-subif)# default qllc accept-all-calls <cr>    # path-069741
+(config-subif)# default qllc dlsw <cr>    # path-069962
+(config-subif)# default qllc largest-packet <address> <number:0..1024> <cr>    # path-071878
+(config-subif)# default qllc npsi-poll <address> <cr>    # path-071121
+(config-subif)# default qllc partner <address> <address> <cr>    # path-071849
+(config-subif)# default qllc sap <address> <number:2..254> <number:2..254> <cr>    # path-072301
+(config-subif)# default qllc srb <address> <number:1..4095> <number:1..4095> <cr>    # path-072295
+(config-subif)# default qllc xid <address> <cr>    # path-071057
+(config-subif)# default qos pre-classify <cr>    # path-069847
+(config-subif)# default qos pre-classify <cr>    # path-069848
+(config-subif)# default radius attribute nas-port-type <cr>    # path-070280
+(config-subif)# default rate-limit input <number:8000..2000000000> <number:1000..512000000> <number:2000..1024000000> conform-action drop exceed-action drop <cr>    # path-072523
+(config-subif)# default rbs-zero <cr>    # path-068762
+(config-subif)# default redirect to group <string> <cr>    # path-071723
+(config-subif)# default redundancy asymmetric-routing enable <cr>    # path-070790
+(config-subif)# default redundancy gratuitous-arp group <number:1..2> <cr>    # path-071756
+(config-subif)# default redundancy group <number:1..2> <cr>    # path-070841
+(config-subif)# default redundancy rii <cr>    # path-069462
+(config-subif)# default ring-speed <cr>    # path-068389
+(config-subif)# default rx-sync-disable <cr>    # path-068513
+(config-subif)# default sap-priority <cr>    # path-068135
+(config-subif)# default scramble <cr>    # path-068344
+(config-subif)# default sdlc K <cr>    # path-068764
+(config-subif)# default sdlc N1 <cr>    # path-068749
+(config-subif)# default sdlc N2 <cr>    # path-068756
+(config-subif)# default sdlc T1 <cr>    # path-068740
+(config-subif)# default sdlc address <number:1..255> <cr>    # path-071321
+(config-subif)# default sdlc cts-delay <cr>    # path-068815
+(config-subif)# default sdlc dlsw default <cr>    # path-071448
+(config-subif)# default sdlc frmr-disable <cr>    # path-069966
+(config-subif)# default sdlc group-poll <number:1..255> <cr>    # path-071414
+(config-subif)# default sdlc hdx <cr>    # path-070028
+(config-subif)# default sdlc holdq <number:1..254> <cr>    # path-071333
+(config-subif)# default sdlc line-speed <cr>    # path-068797
+(config-subif)# default sdlc partner <address> <number:1..254> <cr>    # path-072078
+(config-subif)# default sdlc poll-limit-value <cr>    # path-068725
+(config-subif)# default sdlc poll-pause-timer <cr>    # path-068705
+(config-subif)# default sdlc poll-wait-timeout <cr>    # path-068745
+(config-subif)# default sdlc qllc-prtnr <address> <number:1..254> <cr>    # path-072049
+(config-subif)# default sdlc rnr-limit <cr>    # path-068714
+(config-subif)# default sdlc role <cr>    # path-069850
+(config-subif)# default sdlc rts-timeout <cr>    # path-068825
+(config-subif)# default sdlc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-072361
+(config-subif)# default sdlc sdlc-largest-frame <number:1..254> <cr>    # path-071455
+(config-subif)# default sdlc simultaneous <cr>    # path-070099
+(config-subif)# default sdlc slow-poll <cr>    # path-070044
+(config-subif)# default sdlc snrm-timer <cr>    # path-068733
+(config-subif)# default sdlc virtual-multidrop <cr>    # path-070081
+(config-subif)# default sdlc vmac <cr>    # path-069871
+(config-subif)# default sdlc xid <number:1..254> <cr>    # path-071441
+(config-subif)# default sdlc xid-pause-timer <number:10..300> <cr>    # path-071271
+(config-subif)# default sdllc partner <address> <number:1..254> <cr>    # path-071864
+(config-subif)# default sdllc ring-largest-frame <cr>    # path-069643
+(config-subif)# default sdllc saps <number:1..254> <number:1..255> <number:1..255> <cr>    # path-072299
+(config-subif)# default sdllc sdlc-largest-frame <number:1..254> <cr>    # path-070983
+(config-subif)# default sdllc traddr <cr>    # path-069623
+(config-subif)# default sdllc xid <number:1..254> <cr>    # path-071004
+(config-subif)# default serial restart-delay <cr>    # path-068523
+(config-subif)# default service-overlay encap cmd <cr>    # path-071019
+(config-subif)# default service-policy inline input <cr>    # path-070559
+(config-subif)# default service-policy inline output <cr>    # path-070580
+(config-subif)# default service-policy output <string> <cr>    # path-070538
+(config-subif)# default service-policy type control <cr>    # path-070767
+(config-subif)# default service-policy type control default <cr>    # path-071694
+(config-subif)# default service-policy type control default <string> <cr>    # path-072208
+(config-subif)# default service-policy type control subscriber <cr>    # path-071728
+(config-subif)# default service-routing mdns-sd <cr>    # path-069458
+(config-subif)# default shutdown <cr>    # path-068235
+(config-subif)# default site-local-redundancy <cr>    # path-068550
+(config-subif)# default smds address <cr>    # path-069340
+(config-subif)# default smds dxi-mode <cr>    # path-069301
+(config-subif)# default smds enable-arp <cr>    # path-069394
+(config-subif)# default smds nec-mode <cr>    # path-069351
+(config-subif)# default sna enable-host <cr>    # path-069323
+(config-subif)# default sna start <string> <cr>    # path-070561
+(config-subif)# default snapshot client <cr>    # path-069935
+(config-subif)# default snmp ifindex clear <cr>    # path-070909
+(config-subif)# default snmp ifindex persist <cr>    # path-070914
+(config-subif)# default snmp trap ip verify drop-rate <cr>    # path-072286
+(config-subif)# default snmp trap isdn-calls <cr>    # path-070935
+(config-subif)# default snmp trap link-status <cr>    # path-070865
+(config-subif)# default snmp trap link-status permit duplicates <cr>    # path-072269
+(config-subif)# default source template <cr>    # path-069607
+(config-subif)# default source-bridge <cr>    # path-068642
+(config-subif)# default source-bridge max-hops <cr>    # path-068655
+(config-subif)# default source-bridge max-in-hops <cr>    # path-068621
+(config-subif)# default source-bridge max-out-hops <cr>    # path-068641
+(config-subif)# default source-bridge proxy-explorer <cr>    # path-069809
+(config-subif)# default source-bridge route-cache <cr>    # path-069875
+(config-subif)# default source-bridge spanning <cr>    # path-069781
+(config-subif)# default speed <cr>    # path-068277
+(config-subif)# default standby <cr>    # path-068302
+(config-subif)# default standby authentication <cr>    # path-068991
+(config-subif)# default standby bfd <cr>    # path-068961
+(config-subif)# default standby delay <cr>    # path-068921
+(config-subif)# default standby follow <cr>    # path-069014
+(config-subif)# default standby ip <cr>    # path-069062
+(config-subif)# default standby ipv6 <cr>    # path-069087
+(config-subif)# default standby mac-address <cr>    # path-069006
+(config-subif)# default standby mac-refresh <cr>    # path-068941
+(config-subif)# default standby name <cr>    # path-069005
+(config-subif)# default standby preempt <cr>    # path-069030
+(config-subif)# default standby priority <cr>    # path-069022
+(config-subif)# default standby redirect <cr>    # path-068979
+(config-subif)# default standby timers <cr>    # path-068982
+(config-subif)# default standby track <number:1..32767> <cr>    # path-070348
+(config-subif)# default standby unicast destination <address> <cr>    # path-071533
+(config-subif)# default standby use-bia <cr>    # path-068922
+(config-subif)# default standby use-bia scope interface <cr>    # path-071483
+(config-subif)# default standby version <cr>    # path-068942
+(config-subif)# default stun <cr>    # path-068706
+(config-subif)# default stun group <number:1..255> <cr>    # path-068680
+(config-subif)# default stun proxy-poll address <address> <cr>    # path-071928
+(config-subif)# default stun route all tcp <address> <cr>    # path-072332
+(config-subif)# default stun sdlc-role <cr>    # path-069851
+(config-subif)# default subscriber aging <cr>    # path-068874
+(config-subif)# default switchport <cr>    # path-068215
+(config-subif)# default switchport access vlan <cr>    # path-070516
+(config-subif)# default switchport mode access <cr>    # path-070501
+(config-subif)# default switchport port-security <cr>    # path-068913
+(config-subif)# default switchport port-security allowlist <cr>    # path-070274
+(config-subif)# default switchport priority extend <cr>    # path-070297
+(config-subif)# default switchport trunk allowed vlan <cr>    # path-071588
+(config-subif)# default switchport trunk native vlan <cr>    # path-071573
+(config-subif)# default template global inheritance disable <cr>    # path-071768
+(config-subif)# default timeout absolute <cr>    # path-069035
+(config-subif)# default timeslot <cr>    # path-068498
+(config-subif)# default transmit-interface <cr>    # path-068219
+(config-subif)# default transport-mode <cr>    # path-068262
+(config-subif)# default trunk-group <cr>    # path-068778
+(config-subif)# default ts16 <cr>    # path-068503
+(config-subif)# default tunnel 6rd ipv4 <cr>    # path-071081
+(config-subif)# default tunnel bandwidth transmit <cr>    # path-070792
+(config-subif)# default tunnel checksum <cr>    # path-069486
+(config-subif)# default tunnel delete-timer <cr>    # path-069918
+(config-subif)# default tunnel destination <cr>    # path-069453
+(config-subif)# default tunnel dst-port <cr>    # path-069888
+(config-subif)# default tunnel endpoint service-policy output <string> <cr>    # path-072319
+(config-subif)# default tunnel entropy <cr>    # path-069439
+(config-subif)# default tunnel flow egress-records <cr>    # path-070942
+(config-subif)# default tunnel key <cr>    # path-068508
+(config-subif)# default tunnel key <cr>    # path-068509
+(config-subif)# default tunnel metadata src_vpn <cr>    # path-070929
+(config-subif)# default tunnel mode <cr>    # path-069422
+(config-subif)# default tunnel mpls-ip-only <cr>    # path-069914
+(config-subif)# default tunnel network-id <number:1..65535> nexthop <address> <cr>    # path-072268
+(config-subif)# default tunnel path-mtu-discovery <cr>    # path-069611
+(config-subif)# default tunnel path-mtu-discovery age-timer <cr>    # path-070915

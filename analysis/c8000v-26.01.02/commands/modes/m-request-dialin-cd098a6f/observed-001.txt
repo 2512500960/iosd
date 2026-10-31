@@ -1,0 +1,23 @@
+# 模式 request-dialin；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vpdn-req-in)# default dnis <string> <cr>    # observed_connections-009135
+(config-vpdn-req-in)# default domain <string> <cr>    # observed_connections-009133
+(config-vpdn-req-in)# default multihop hostname <string> <cr>    # observed_connections-009138
+(config-vpdn-req-in)# default pool-member <cr>    # observed_connections-009126
+(config-vpdn-req-in)# default protocol <cr>    # observed_connections-009123
+(config-vpdn-req-in)# default rotary-group <cr>    # observed_connections-009130
+(config-vpdn-req-in)# dnis <string> <cr>    # observed_connections-009131
+(config-vpdn-req-in)# domain <string> <cr>    # observed_connections-009128
+(config-vpdn-req-in)# exit <cr>    # observed_connections-009120
+(config-vpdn-req-in)# multihop hostname <string> <cr>    # observed_connections-009136
+(config-vpdn-req-in)# no dnis <string> <cr>    # observed_connections-009134
+(config-vpdn-req-in)# no domain <string> <cr>    # observed_connections-009132
+(config-vpdn-req-in)# no multihop hostname <string> <cr>    # observed_connections-009137
+(config-vpdn-req-in)# no pool-member <cr>    # observed_connections-009124
+(config-vpdn-req-in)# no protocol <cr>    # observed_connections-009121
+(config-vpdn-req-in)# no rotary-group <cr>    # observed_connections-009127
+(config-vpdn-req-in)# pool-member <number:1..255> <cr>    # observed_connections-009125
+(config-vpdn-req-in)# protocol l2tp <cr>    # observed_connections-009122
+(config-vpdn-req-in)# rotary-group <number:0..255> <cr>    # observed_connections-009129

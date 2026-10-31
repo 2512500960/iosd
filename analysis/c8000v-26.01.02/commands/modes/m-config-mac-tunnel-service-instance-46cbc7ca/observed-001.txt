@@ -1,0 +1,58 @@
+# 模式 config-mac-tunnel-service-instance；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-tunnel-srv)# bridge-domain <number:dynamic> <cr>    # observed_connections-007687
+(config-tunnel-srv)# bridge-domain from-encapsulation <cr>    # observed_connections-007647
+(config-tunnel-srv)# default bridge-domain from-encapsulation <cr>    # observed_connections-007654
+(config-tunnel-srv)# default description <cr>    # observed_connections-007646
+(config-tunnel-srv)# default encapsulation dot1ah isid <number:1..16777215> <cr>    # observed_connections-007675
+(config-tunnel-srv)# default ethernet egress-filter <cr>    # observed_connections-007658
+(config-tunnel-srv)# default exit <cr>    # observed_connections-007643
+(config-tunnel-srv)# default ip access-group in <cr>    # observed_connections-007670
+(config-tunnel-srv)# default ip access-group out <cr>    # observed_connections-007673
+(config-tunnel-srv)# default ipv6 traffic-filter <string> in <cr>    # observed_connections-007680
+(config-tunnel-srv)# default ipv6 traffic-filter <string> out <cr>    # observed_connections-007682
+(config-tunnel-srv)# default mac access-group <string> in <cr>    # observed_connections-007684
+(config-tunnel-srv)# default mac access-group <string> out <cr>    # observed_connections-007686
+(config-tunnel-srv)# default mac-flush notification mirp <cr>    # observed_connections-007661
+(config-tunnel-srv)# default mac-flush notification mirp cos <cr>    # observed_connections-007678
+(config-tunnel-srv)# default storm-control action shutdown <cr>    # observed_connections-007667
+(config-tunnel-srv)# default transparent-cfm <cr>    # observed_connections-007649
+(config-tunnel-srv)# default untagged-cfm <cr>    # observed_connections-007651
+(config-tunnel-srv)# description <string> <cr>    # observed_connections-007645
+(config-tunnel-srv)# encapsulation dot1ah isid <number:1..16777215> <cr>    # observed_connections-007659
+(config-tunnel-srv)# ethernet egress-filter disable <cr>    # observed_connections-007657
+(config-tunnel-srv)# exit <cr>    # observed_connections-007639
+(config-tunnel-srv)# ip access-group <number:1..199> in <cr>    # observed_connections-007663
+(config-tunnel-srv)# ip access-group <number:1..199> out <cr>    # observed_connections-007666
+(config-tunnel-srv)# ip flow monitor <?option@555588f5efa0> sampler <cr>    # observed_connections-007691
+(config-tunnel-srv)# ip flow monitor <cr>    # observed_connections-007688
+(config-tunnel-srv)# ipv6 flow monitor <?option@555588f60368> sampler <cr>    # observed_connections-007692
+(config-tunnel-srv)# ipv6 flow monitor <cr>    # observed_connections-007689
+(config-tunnel-srv)# ipv6 traffic-filter <string> in <cr>    # observed_connections-007662
+(config-tunnel-srv)# ipv6 traffic-filter <string> out <cr>    # observed_connections-007664
+(config-tunnel-srv)# mac access-group <string> in <cr>    # observed_connections-007669
+(config-tunnel-srv)# mac access-group <string> out <cr>    # observed_connections-007672
+(config-tunnel-srv)# mac-flush notification mirp <cr>    # observed_connections-007652
+(config-tunnel-srv)# mac-flush notification mirp cos <number:0..7> <cr>    # observed_connections-007677
+(config-tunnel-srv)# no bridge-domain from-encapsulation <cr>    # observed_connections-007653
+(config-tunnel-srv)# no description <cr>    # observed_connections-007644
+(config-tunnel-srv)# no encapsulation dot1ah isid <number:1..16777215> <cr>    # observed_connections-007674
+(config-tunnel-srv)# no ethernet egress-filter <cr>    # observed_connections-007656
+(config-tunnel-srv)# no exit <cr>    # observed_connections-007642
+(config-tunnel-srv)# no ip access-group in <cr>    # observed_connections-007668
+(config-tunnel-srv)# no ip access-group out <cr>    # observed_connections-007671
+(config-tunnel-srv)# no ipv6 traffic-filter <string> in <cr>    # observed_connections-007679
+(config-tunnel-srv)# no ipv6 traffic-filter <string> out <cr>    # observed_connections-007681
+(config-tunnel-srv)# no mac access-group <string> in <cr>    # observed_connections-007683
+(config-tunnel-srv)# no mac access-group <string> out <cr>    # observed_connections-007685
+(config-tunnel-srv)# no mac-flush notification mirp <cr>    # observed_connections-007660
+(config-tunnel-srv)# no mac-flush notification mirp cos <cr>    # observed_connections-007676
+(config-tunnel-srv)# no storm-control action shutdown <cr>    # observed_connections-007665
+(config-tunnel-srv)# no transparent-cfm <cr>    # observed_connections-007648
+(config-tunnel-srv)# no untagged-cfm <cr>    # observed_connections-007650
+(config-tunnel-srv)# storm-control action shutdown <cr>    # observed_connections-007655
+(config-tunnel-srv)# storm-control unicast cir <?general_to_number_func_action@555588ee10a0> <cr>    # observed_connections-007690
+(config-tunnel-srv)# transparent-cfm <cr>    # observed_connections-007640
+(config-tunnel-srv)# untagged-cfm <cr>    # observed_connections-007641

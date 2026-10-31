@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-016.md
+
+(config)# default do-exec show endpoint-tracker history <cr>    # path-040636
+(config)# default do-exec show endpoint-tracker records <cr>    # path-040804
+(config)# default do-exec show endpoint-tracker sla-mode <cr>    # path-040739
+(config)# default do-exec show endpoint-tracker sla-profile <cr>    # path-040709
+(config)# default do-exec show endpoint-tracker sla-statistics <cr>    # path-040661
+(config)# default do-exec show endpoint-tracker sla-status <cr>    # path-040680
+(config)# default do-exec show endpoint-tracker static-route <cr>    # path-040832
+(config)# default do-exec show endpoint-tracker tracker-group <cr>    # path-040776
+(config)# default do-exec show entry <cr>    # path-030843
+(config)# default do-exec show environment <cr>    # path-033608
+(config)# default do-exec show environment all <cr>    # path-043145
+(config)# default do-exec show environment chassis <number:1..2> R0 <cr>    # path-056625
+(config)# default do-exec show environment chassis active R0 <cr>    # path-056630
+(config)# default do-exec show environment chassis standby R0 <cr>    # path-056635
+(config)# default do-exec show environment counters <cr>    # path-043234
+(config)# default do-exec show environment history <string> <cr>    # path-051591
+(config)# default do-exec show environment location <string> <cr>    # path-051603
+(config)# default do-exec show environment sensor <string> <cr>    # path-051626
+(config)# default do-exec show environment table <string> <cr>    # path-051614
+(config)# default do-exec show eobc <cr>    # path-030418
+(config)# default do-exec show eobc controller <cr>    # path-036885
+(config)# default do-exec show eobc interface <cr>    # path-036919
+(config)# default do-exec show errdisable detect <cr>    # path-043716
+(config)# default do-exec show errdisable flap-values <cr>    # path-043721
+(config)# default do-exec show errdisable recovery <cr>    # path-043707
+(config)# default do-exec show etherchannel load-balancing <cr>    # path-037149
+(config)# default do-exec show etherchannel summary <cr>    # path-037234
+(config)# default do-exec show ethernet cfm capabilities <cr>    # path-046164
+(config)# default do-exec show ethernet cfm ccm-learning-database <cr>    # path-046473
+(config)# default do-exec show ethernet cfm domain <cr>    # path-046166
+(config)# default do-exec show ethernet cfm efd meps <cr>    # path-053528
+(config)# default do-exec show ethernet cfm errors <cr>    # path-045982
+(config)# default do-exec show ethernet cfm errors configuration <cr>    # path-053371
+(config)# default do-exec show ethernet cfm fast-timeout database interfaces <cr>    # path-057571
+(config)# default do-exec show ethernet cfm fast-timeout database remote-meps <cr>    # path-057602
+(config)# default do-exec show ethernet cfm fast-timeout statistics <cr>    # path-053641
+(config)# default do-exec show ethernet cfm internal counters packet <cr>    # path-057589
+(config)# default do-exec show ethernet cfm internal database crosscheck-meps <cr>    # path-057768
+(config)# default do-exec show ethernet cfm internal database domains <cr>    # path-057680
+(config)# default do-exec show ethernet cfm internal database interfaces <cr>    # path-057857
+(config)# default do-exec show ethernet cfm internal database mac-learning <cr>    # path-057889
+(config)# default do-exec show ethernet cfm internal database meps <cr>    # path-057817
+(config)# default do-exec show ethernet cfm internal database mips <cr>    # path-057713
+(config)# default do-exec show ethernet cfm internal database oir-config crosscheck-meps <cr>    # path-059294
+(config)# default do-exec show ethernet cfm internal database oir-config interfaces <cr>    # path-059283
+(config)# default do-exec show ethernet cfm internal database oir-config meps <cr>    # path-059290
+(config)# default do-exec show ethernet cfm internal database ports <cr>    # path-057875
+(config)# default do-exec show ethernet cfm internal database remote-meps <cr>    # path-057842
+(config)# default do-exec show ethernet cfm internal database services <cr>    # path-057714
+(config)# default do-exec show ethernet cfm internal database transports <cr>    # path-057840
+(config)# default do-exec show ethernet cfm maintenance-points database <cr>    # path-053250
+(config)# default do-exec show ethernet cfm maintenance-points local <cr>    # path-053479
+(config)# default do-exec show ethernet cfm maintenance-points remote <cr>    # path-053392
+(config)# default do-exec show ethernet cfm maintenance-points remote crosscheck <cr>    # path-057463
+(config)# default do-exec show ethernet cfm maintenance-points remote detail <cr>    # path-057435
+(config)# default do-exec show ethernet cfm mpdb <cr>    # path-045826
+(config)# default do-exec show ethernet cfm pm <cr>    # path-045824
+(config)# default do-exec show ethernet cfm pm slm responder <cr>    # path-057402
+(config)# default do-exec show ethernet cfm smep <cr>    # path-046105
+(config)# default do-exec show ethernet cfm statistics <cr>    # path-045883
+(config)# default do-exec show ethernet cfm traceroute-cache <cr>    # path-046116
+(config)# default do-exec show ethernet dot1ad <cr>    # path-037499
+(config)# default do-exec show ethernet l2ctrl vlan <cr>    # path-045636
+(config)# default do-exec show ethernet lmi evc <cr>    # path-045705
+(config)# default do-exec show ethernet lmi evc detail <cr>    # path-053222
+(config)# default do-exec show ethernet lmi parameters <cr>    # path-045589
+(config)# default do-exec show ethernet lmi statistics <cr>    # path-045530
+(config)# default do-exec show ethernet lmi uni map <cr>    # path-053220
+(config)# default do-exec show ethernet oam debug link-monitor <cr>    # path-053430
+(config)# default do-exec show ethernet oam debug loopback <cr>    # path-053409
+(config)# default do-exec show ethernet oam discovery <cr>    # path-045586
+(config)# default do-exec show ethernet oam runtime <cr>    # path-045639
+(config)# default do-exec show ethernet oam statistics <cr>    # path-045764
+(config)# default do-exec show ethernet oam status <cr>    # path-045699
+(config)# default do-exec show ethernet oam summary <cr>    # path-045750
+(config)# default do-exec show ethernet service evc <cr>    # path-049791
+(config)# default do-exec show ethernet service instance <cr>    # path-049923
+(config)# default do-exec show ethernet service instance policy-map <cr>    # path-055599
+(config)# default do-exec show ethernet service interface <cr>    # path-049836
+(config)# default do-exec show ethernet service internal back-trace <cr>    # path-055699
+(config)# default do-exec show ethernet service internal db global <cr>    # path-058525
+(config)# default do-exec show ethernet service internal db vport all <cr>    # path-059513
+(config)# default do-exec show ethernet service ipc statistics <cr>    # path-055673
+(config)# default do-exec show ethernet service mac-tunnel summary <cr>    # path-055676
+(config)# default do-exec show event manager directory user policy <cr>    # path-058873
+(config)# default do-exec show event manager environment <cr>    # path-051983
+(config)# default do-exec show event manager history events <cr>    # path-056738
+(config)# default do-exec show event manager history traps <cr>    # path-056747
+(config)# default do-exec show event manager policy pending <cr>    # path-056739
+(config)# default do-exec show event manager scheduler thread <cr>    # path-056751
+(config)# default do-exec show event manager session cli username <cr>    # path-058875
+(config)# default do-exec show event manager statistics server <cr>    # path-056745
+(config)# default do-exec show event manager trace <cr>    # path-051992
+(config)# default do-exec show event manager version <cr>    # path-051987
+(config)# default do-exec show event-manager consumers <cr>    # path-041965
+(config)# default do-exec show exception <cr>    # path-028218
+(config)# default do-exec show exception dumpfile <cr>    # path-034197
+(config)# default do-exec show exception dumphost <cr>    # path-034161
+(config)# default do-exec show facility-ains card <cr>    # path-035307
+(config)# default do-exec show facility-ains ports <cr>    # path-035368
+(config)# default do-exec show facility-ains status <cr>    # path-035246
+(config)# default do-exec show facility-ains transceiver <cr>    # path-035427
+(config)# default do-exec show facility-alarm relay minor <cr>    # path-044949
+(config)# default do-exec show facility-alarm status <cr>    # path-035280
+(config)# default do-exec show facility-condition status <cr>    # path-035352
+(config)# default do-exec show facility-protocols status <cr>    # path-035457
+(config)# default do-exec show fallback profile <cr>    # path-042645
+(config)# default do-exec show fast-reroute database <cr>    # path-040126
+(config)# default do-exec show fastblk <cr>    # path-033058
+(config)# default do-exec show fhrp <cr>    # path-031852
+(config)# default do-exec show file descriptors <cr>    # path-042745
+(config)# default do-exec show file systems <cr>    # path-042686
+(config)# default do-exec show flooding-suppression <cr>    # path-032803
+(config)# default do-exec show flow config log <cr>    # path-047190
+(config)# default do-exec show flow config transactions <cr>    # path-047134
+(config)# default do-exec show flow exporter <cr>    # path-037935
+(config)# default do-exec show flow exporter broker <cr>    # path-047152
+(config)# default do-exec show flow exporter option application engines <cr>    # path-057954
+(config)# default do-exec show flow exporter option application table <cr>    # path-057947
+(config)# default do-exec show flow exporter statistics <cr>    # path-047114
+(config)# default do-exec show flow exporter templates <cr>    # path-047175
+(config)# default do-exec show flow exporter templates details <cr>    # path-054305
+(config)# default do-exec show flow interface <cr>    # path-037777
+(config)# default do-exec show flow internal <cr>    # path-037599
+(config)# default do-exec show flow monitor <cr>    # path-038047
+(config)# default do-exec show flow monitor all <cr>    # path-047103
+(config)# default do-exec show flow monitor broker <cr>    # path-047319
+(config)# default do-exec show flow record <cr>    # path-037903
+(config)# default do-exec show flow record broker <cr>    # path-047123
+(config)# default do-exec show flowcontrol <cr>    # path-033889
+(config)# default do-exec show flowspec afi-all <cr>    # path-043714
+(config)# default do-exec show flowspec client <cr>    # path-043636
+(config)# default do-exec show flowspec summary <cr>    # path-043644
+(config)# default do-exec show fmm db alarm <cr>    # path-046011
+(config)# default do-exec show fmm db condition conditions <cr>    # path-053362
+(config)# default do-exec show fmm db condition profiles <cr>    # path-053318
+(config)# default do-exec show fmm db flow data basic <cr>    # path-057339
+(config)# default do-exec show fmm db flow data ip <cr>    # path-057395
+(config)# default do-exec show fmm db flow data l2vlan <cr>    # path-057365
+(config)# default do-exec show fmm db flow data rtp <cr>    # path-057476
+(config)# default do-exec show fmm db flow data tcp <cr>    # path-057454
+(config)# default do-exec show fmm db flow data udp <cr>    # path-057423
+(config)# default do-exec show fmm db flow metrics common <cr>    # path-057363
+(config)# default do-exec show fmm db flow metrics ipcbr <cr>    # path-057452
+(config)# default do-exec show fmm db flow metrics mdi <cr>    # path-057391
+(config)# default do-exec show fmm db flow metrics rtp <cr>    # path-057421
+(config)# default do-exec show fmm db groups <cr>    # path-045912
+(config)# default do-exec show fmm db interval common <cr>    # path-053277
+(config)# default do-exec show fmm db interval ipcbr <cr>    # path-053418
+(config)# default do-exec show fmm db interval mdi <cr>    # path-053325
+(config)# default do-exec show fmm db interval rtp <cr>    # path-053370
+(config)# default do-exec show fmm db monitor <cr>    # path-045656
+(config)# default do-exec show fmm db set flows <cr>    # path-053451
+(config)# default do-exec show fmm db set sets <cr>    # path-053398
+(config)# default do-exec show format <cr>    # path-033695
+(config)# default do-exec show format validate <cr>    # path-043327
+(config)# default do-exec show fqdn <cr>    # path-032894
+(config)# default do-exec show frame-relay end-to-end keepalive <cr>    # path-050117
+(config)# default do-exec show frame-relay fragment <cr>    # path-041081
+(config)# default do-exec show frame-relay ip rtp header-compression <cr>    # path-055934
+(config)# default do-exec show frame-relay ip tcp header-compression <cr>    # path-055919
+(config)# default do-exec show frame-relay lmi <cr>    # path-040753
+(config)# default do-exec show frame-relay map <cr>    # path-040671
+(config)# default do-exec show frame-relay multilink <cr>    # path-041113
+(config)# default do-exec show frame-relay pvc <cr>    # path-040787
+(config)# default do-exec show frame-relay qos-autosense <cr>    # path-040785
+(config)# default do-exec show frame-relay route <cr>    # path-040777
+(config)# default do-exec show frame-relay traffic <cr>    # path-040611
+(config)# default do-exec show frame-relay vofr <cr>    # path-040724
+(config)# default do-exec show fras <cr>    # path-033913
+(config)# default do-exec show fras-host <cr>    # path-032733
+(config)# default do-exec show glbp <cr>    # path-032544
+(config)# default do-exec show glbp capability <cr>    # path-041079
+(config)# default do-exec show glbp internal <cr>    # path-041041
+(config)# default do-exec show hardware <cr>    # path-029034
+(config)# default do-exec show hdd-devices summary <cr>    # path-043667
+(config)# default do-exec show history <cr>    # path-028606
+(config)# default do-exec show history all <cr>    # path-034610
+(config)# default do-exec show hosts summary <cr>    # path-040917
+(config)# default do-exec show hqf full-qos <cr>    # path-041520
+(config)# default do-exec show hqf interface <cr>    # path-041541
+(config)# default do-exec show hqf size <cr>    # path-041406
+(config)# default do-exec show hqf sub-interface <cr>    # path-041534
+(config)# default do-exec show hqf sub-interface <string> dlci <number:16..1007> <cr>    # path-058682
+(config)# default do-exec show hqf sub-interface <string> vcd <number:0..8191> <cr>    # path-058685
+(config)# default do-exec show html module command <string> <cr>    # path-055907
+(config)# default do-exec show html module count <cr>    # path-050102
+(config)# default do-exec show html module names <cr>    # path-050067
+(config)# default do-exec show html module options <cr>    # path-050016
+(config)# default do-exec show html module ports <cr>    # path-050078
+(config)# default do-exec show html port command <string> <cr>    # path-055946
+(config)# default do-exec show html port count <cr>    # path-050191
+(config)# default do-exec show html port names <cr>    # path-050137
+(config)# default do-exec show html port options <cr>    # path-050105
+(config)# default do-exec show html port shortnames <cr>    # path-050165
+(config)# default do-exec show hw-module all attribute <cr>    # path-046892
+(config)# default do-exec show hw-module all entity <cr>    # path-046953
+(config)# default do-exec show hw-module all module <cr>    # path-046952
+(config)# default do-exec show hw-module all oir <cr>    # path-047065
+(config)# default do-exec show hw-module all sensors <cr>    # path-047122
+(config)# default do-exec show hw-module all subblock <cr>    # path-046998
+(config)# default do-exec show hw-module all tech-support <cr>    # path-047062
+(config)# default do-exec show icm stats <cr>    # path-040526
+(config)# default do-exec show id-manager traceback <cr>    # path-043110
+(config)# default do-exec show idb <cr>    # path-033509
+(config)# default do-exec show idb bits <cr>    # path-043238
+(config)# default do-exec show idb ifnum <cr>    # path-043133
+(config)# default do-exec show idb pointers <cr>    # path-043137
+(config)# default do-exec show identity policy <cr>    # path-042646
+(config)# default do-exec show identity profile <cr>    # path-042647
+(config)# default do-exec show idmgr memory <cr>    # path-042232
+(config)# default do-exec show idmgr statistics <cr>    # path-042133
+(config)# default do-exec show if-mgr <cr>    # path-030467
+(config)# default do-exec show if-mgr db ifStack <cr>    # path-046443
+(config)# default do-exec show if-mgr db interface brief <cr>    # path-053765
+(config)# default do-exec show if-mgr db interface ifIndex <number:0..4294967295> <cr>    # path-057706
+(config)# default do-exec show if-mgr db interface ifIndex <number:0..4294967295> ifStack <cr>    # path-059235
+(config)# default do-exec show if-mgr db interface ifName <cr>    # path-053920
+(config)# default do-exec show if-mgr db interface ifName <string> <cr>    # path-057686
+(config)# default do-exec show if-mgr hash <cr>    # path-037076
+(config)# default do-exec show if-mgr hash brief <cr>    # path-046438
+(config)# default do-exec show ifnum list <cr>    # path-034430
+(config)# default do-exec show ifnum statistics <cr>    # path-034479
+(config)# default do-exec show interfaces counters protocol status <cr>    # path-052542
+(config)# default do-exec show interfaces dampening <cr>    # path-034343
+(config)# default do-exec show interfaces flowcontrol <cr>    # path-034739
+(config)# default do-exec show interfaces history <cr>    # path-035046
+(config)# default do-exec show inventory <cr>    # path-033463
+(config)# default do-exec show iosp-server status <cr>    # path-042460
+(config)# default do-exec show iox-service <cr>    # path-033904
+(config)# default do-exec show iox-service detail <cr>    # path-043743
+(config)# default do-exec show ip access-lists <cr>    # path-038845
+(config)# default do-exec show ip access-lists <number:1..199> dump-og-database <cr>    # path-054603
+(config)# default do-exec show ip access-lists <number:1..199> dump-reflexive <cr>    # path-054632
+(config)# default do-exec show ip access-lists <number:1..199> expanded <cr>    # path-054572
+(config)# default do-exec show ip accounting <cr>    # path-040726
+(config)# default do-exec show ip aliases <cr>    # path-039932
+(config)# default do-exec show ip amt tunnel <cr>    # path-048550
+(config)# default do-exec show ip arp <address> <cr>    # path-047476
+(config)# default do-exec show ip arp <address> <cr>    # path-047552
+(config)# default do-exec show ip arp <cr>    # path-038389
+(config)# default do-exec show ip arp garpretry <cr>    # path-047401
+(config)# default do-exec show ip arp incomplete <cr>    # path-047372
+(config)# default do-exec show ip arp poll <cr>    # path-047282
+(config)# default do-exec show ip arp summary <cr>    # path-047273
+(config)# default do-exec show ip as-path-access-list <cr>    # path-039435
+(config)# default do-exec show ip cache <cr>    # path-039040
+(config)# default do-exec show ip cache flow <cr>    # path-048154
+(config)# default do-exec show ip cache policy <cr>    # path-047886
+(config)# default do-exec show ip casa oper <cr>    # path-049436
+(config)# default do-exec show ip casa wildcard <cr>    # path-049729
+(config)# default do-exec show ip cef <cr>    # path-041548
+(config)# default do-exec show ip cef events <cr>    # path-050242
+(config)# default do-exec show ip cef inconsistency <cr>    # path-050115
+(config)# default do-exec show ip cef label-table <cr>    # path-050145
+(config)# default do-exec show ip cef protocol-discard <cr>    # path-049866
+(config)# default do-exec show ip cef summary <cr>    # path-049909
+(config)# default do-exec show ip cef switching statistics <cr>    # path-055835
+(config)# default do-exec show ip cef traffic prefix-length <cr>    # path-055890
+(config)# default do-exec show ip cef tree <cr>    # path-050012
+(config)# default do-exec show ip community-list <cr>    # path-039490
+(config)# default do-exec show ip ddns update <cr>    # path-049815
+(config)# default do-exec show ip ddns update method <cr>    # path-055637
+(config)# default do-exec show ip default-gateway <cr>    # path-038265
+(config)# default do-exec show ip dfp <cr>    # path-040458
+(config)# default do-exec show ip dhcp binding <address> <cr>    # path-055916
+(config)# default do-exec show ip dhcp binding <cr>    # path-050147
+(config)# default do-exec show ip dhcp conflict <cr>    # path-050081
+(config)# default do-exec show ip dhcp database <cr>    # path-049939
+(config)# default do-exec show ip dhcp database <string> <cr>    # path-055744
+(config)# default do-exec show ip dhcp excluded-addresses all <cr>    # path-055734
+(config)# default do-exec show ip dhcp excluded-addresses pool <string> <cr>    # path-058561
+(config)# default do-exec show ip dhcp excluded-addresses vrf <string> <cr>    # path-058551
+(config)# default do-exec show ip dhcp hash global dump <cr>    # path-058672
+(config)# default do-exec show ip dhcp hash global statistics <cr>    # path-058670
+(config)# default do-exec show ip dhcp import <cr>    # path-050108
+(config)# default do-exec show ip dhcp limit lease <cr>    # path-055957
+(config)# default do-exec show ip dhcp packet statistics <cr>    # path-055866
+(config)# default do-exec show ip dhcp pool <cr>    # path-050193
+(config)# default do-exec show ip dhcp relay information trusted-sources <cr>    # path-058534
+(config)# default do-exec show ip dhcp server odap-statistics <cr>    # path-055923
+(config)# default do-exec show ip dhcp server statistics <cr>    # path-055942
+(config)# default do-exec show ip dhcp sip session <cr>    # path-055902
+(config)# default do-exec show ip dhcp sip statistics <cr>    # path-055918
+(config)# default do-exec show ip dhcp snooping <cr>    # path-050122
+(config)# default do-exec show ip dhcp snooping binding <cr>    # path-055960
+(config)# default do-exec show ip dhcp snooping database <cr>    # path-055898
+(config)# default do-exec show ip dhcp snooping multi-chassis <cr>    # path-055877
+(config)# default do-exec show ip dhcp snooping statistics <cr>    # path-055899
+(config)# default do-exec show ip dhcp snooping track host <cr>    # path-058606
+(config)# default do-exec show ip dhcp vrf <string> binding <address> <cr>    # path-059549
+(config)# default do-exec show ip dhcp vrf <string> binding assigned <cr>    # path-059533
+(config)# default do-exec show ip dns name-list <cr>    # path-048867
+(config)# default do-exec show ip dns primary <cr>    # path-048940
+(config)# default do-exec show ip dns servers <cr>    # path-048988
+(config)# default do-exec show ip dns statistics <cr>    # path-048921
+(config)# default do-exec show ip dns view <cr>    # path-048954
+(config)# default do-exec show ip dns view-list <cr>    # path-048800
+(config)# default do-exec show ip domain-name <cr>    # path-038319
+(config)# default do-exec show ip drp <cr>    # path-038743
+(config)# default do-exec show ip eigrp accounting <cr>    # path-049454
+(config)# default do-exec show ip eigrp interfaces <cr>    # path-049421
+(config)# default do-exec show ip eigrp neighbors <cr>    # path-049481
+(config)# default do-exec show ip eigrp sia-event <cr>    # path-049554
+(config)# default do-exec show ip eigrp sia-statistics <cr>    # path-049646
+(config)# default do-exec show ip eigrp timers <cr>    # path-049292
+(config)# default do-exec show ip eigrp topology <cr>    # path-049839
+(config)# default do-exec show ip eigrp traffic <cr>    # path-049350
+(config)# default do-exec show ip extcommunity-list <cr>    # path-039330
+(config)# default do-exec show ip ftp-password <cr>    # path-039697
+(config)# default do-exec show ip ftp-username <cr>    # path-039646
+(config)# default do-exec show ip helper-address <cr>    # path-038467
+(config)# default do-exec show ip host-list <cr>    # path-040567
+(config)# default do-exec show ip http client all <cr>    # path-055006
+(config)# default do-exec show ip http client cache <cr>    # path-055170
+(config)# default do-exec show ip http client cache brief <cr>    # path-058309
+(config)# default do-exec show ip http client connection <cr>    # path-055083
+(config)# default do-exec show ip http client cookie summary <cr>    # path-058378
+(config)# default do-exec show ip http client cookie summary domain <string> <cr>    # path-059903
+(config)# default do-exec show ip http client cookie summary name <string> <cr>    # path-059905
+(config)# default do-exec show ip http client cookie summary session <string> <cr>    # path-059899
+(config)# default do-exec show ip http client history <cr>    # path-054970
+(config)# default do-exec show ip http client secure status <cr>    # path-058370
+(config)# default do-exec show ip http client session-module <cr>    # path-054932
+(config)# default do-exec show ip http client statistics <cr>    # path-055045
+(config)# default do-exec show ip http server all <cr>    # path-054907
+(config)# default do-exec show ip http server connection <cr>    # path-055046
+(config)# default do-exec show ip http server external registration <cr>    # path-058299
+(config)# default do-exec show ip http server external registration <string> <cr>    # path-059450
+(config)# default do-exec show ip http server external statistics data <cr>    # path-059469
+(config)# default do-exec show ip http server external statistics registration <cr>    # path-059462
+(config)# default do-exec show ip http server external statistics summary <cr>    # path-059456
+(config)# default do-exec show ip http server help-path <cr>    # path-055161
+(config)# default do-exec show ip http server history <cr>    # path-055119
+(config)# default do-exec show ip http server secure status <cr>    # path-058371
+(config)# default do-exec show ip http server session-module <cr>    # path-055060
+(config)# default do-exec show ip http server session-module <string> <cr>    # path-058240
+(config)# default do-exec show ip http server statistics <cr>    # path-055084
+(config)# default do-exec show ip http server status <cr>    # path-054941
+(config)# default do-exec show ip icmp rate-limit <cr>    # path-047350
+(config)# default do-exec show ip igmp filter <cr>    # path-049058
+(config)# default do-exec show ip igmp gir <cr>    # path-048791
+(config)# default do-exec show ip igmp groups <cr>    # path-048686
+(config)# default do-exec show ip igmp groups detail <cr>    # path-054981
+(config)# default do-exec show ip igmp interface <cr>    # path-048464
+(config)# default do-exec show ip igmp membership <cr>    # path-048815
+(config)# default do-exec show ip igmp profile <cr>    # path-049065
+(config)# default do-exec show ip igmp profile <number:1..4294967295> <cr>    # path-055190
+(config)# default do-exec show ip igmp snooping <cr>    # path-049320
+(config)# default do-exec show ip igmp snooping bd <number:1006..4094> <cr>    # path-058377
+(config)# default do-exec show ip igmp snooping bd <number:1006..4094> forced <cr>    # path-059481
+(config)# default do-exec show ip igmp snooping counters <cr>    # path-055309
+(config)# default do-exec show ip igmp snooping counters bd <number:1006..4094> <cr>    # path-059489
+(config)# default do-exec show ip igmp snooping filter BD <number:1006..4094> <cr>    # path-059485
+(config)# default do-exec show ip igmp snooping filter et <cr>    # path-058409
+(config)# default do-exec show ip igmp snooping groups <cr>    # path-055454
+(config)# default do-exec show ip igmp snooping groups count <cr>    # path-058401
+(config)# default do-exec show ip igmp snooping membership <cr>    # path-055554
+(config)# default do-exec show ip igmp snooping mrouter <cr>    # path-055348
+(config)# default do-exec show ip igmp snooping mrouter bd <number:1006..4094> <cr>    # path-059493
+(config)# default do-exec show ip igmp snooping querier <cr>    # path-055314
+(config)# default do-exec show ip igmp ssm-mapping <cr>    # path-048569
+(config)# default do-exec show ip igmp static-group class-map <cr>    # path-055054
+(config)# default do-exec show ip igmp udlr <cr>    # path-048681
+(config)# default do-exec show ip igmp virtual-group-cache <cr>    # path-048509
+(config)# default do-exec show ip interface address <cr>    # path-047353
+(config)# default do-exec show ip irdp <cr>    # path-038982
+(config)# default do-exec show ip largecommunity-list <cr>    # path-039440
+(config)# default do-exec show ip local policy <cr>    # path-047633
+(config)# default do-exec show ip local pool <cr>    # path-047777
+(config)# default do-exec show ip masks <cr>    # path-039086
+(config)# default do-exec show ip mcache <cr>    # path-039601
+(config)# default do-exec show ip mfib <cr>    # path-041013
+(config)# default do-exec show ip mfib cable <cr>    # path-049692
+(config)# default do-exec show ip mfib interface <cr>    # path-049765
+(config)# default do-exec show ip mfib internal fibidb <cr>    # path-055516
+(config)# default do-exec show ip mfib internal mem <cr>    # path-055689
+(config)# default do-exec show ip mfib rate-list <cr>    # path-049811
+(config)# default do-exec show ip mfib status <cr>    # path-049539
+(config)# default do-exec show ip mpacket <cr>    # path-039825
+(config)# default do-exec show ip mrib client <cr>    # path-049598
+(config)# default do-exec show ip mrib route <address> <address> <cr>    # path-058502
+(config)# default do-exec show ip mrib route <cr>    # path-049771
+(config)# default do-exec show ip mrib route summary <cr>    # path-055489
+(config)# default do-exec show ip mrm interface <cr>    # path-049150
+(config)# default do-exec show ip mrm manager <cr>    # path-049061
+(config)# default do-exec show ip mrm status-report <cr>    # path-049143
+(config)# default do-exec show ip mroute <cr>    # path-040366
+(config)# default do-exec show ip msdp count <cr>    # path-048625
+(config)# default do-exec show ip msdp peer <address> accepted-SAs <cr>    # path-058230
+(config)# default do-exec show ip msdp peer <address> advertised-SAs <cr>    # path-058214
+(config)# default do-exec show ip msdp peer <cr>    # path-048568
+(config)# default do-exec show ip msdp rpf-peer <address> <cr>    # path-054966
+(config)# default do-exec show ip msdp sa-cache <cr>    # path-048631
+(config)# default do-exec show ip msdp summary <cr>    # path-048387
+(config)# default do-exec show ip multicast <cr>    # path-039830
+(config)# default do-exec show ip multicast gir clients <cr>    # path-054796
+(config)# default do-exec show ip multicast interface <cr>    # path-048515
+(config)# default do-exec show ip multicast limit <cr>    # path-048574
+(config)# default do-exec show ip multicast lisp-rloc-state <cr>    # path-048559

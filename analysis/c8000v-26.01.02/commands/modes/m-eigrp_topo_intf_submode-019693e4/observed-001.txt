@@ -1,0 +1,48 @@
+# 模式 eigrp_topo_intf_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-topo-interface)# authentication key-chain <string> <cr>    # observed_connections-008124
+(config-router-topo-interface)# authentication mode hmac-sha-256 <string> <cr>    # observed_connections-008126
+(config-router-topo-interface)# authentication mode md5 <cr>    # observed_connections-008121
+(config-router-topo-interface)# bandwidth-percent <number:1..999999> <cr>    # observed_connections-008096
+(config-router-topo-interface)# bfd <cr>    # observed_connections-008085
+(config-router-topo-interface)# dampening-change <cr>    # observed_connections-008086
+(config-router-topo-interface)# dampening-interval <cr>    # observed_connections-008087
+(config-router-topo-interface)# default authentication key-chain <cr>    # observed_connections-008125
+(config-router-topo-interface)# default authentication mode <cr>    # observed_connections-008122
+(config-router-topo-interface)# default bandwidth-percent <cr>    # observed_connections-008098
+(config-router-topo-interface)# default bfd <cr>    # observed_connections-008099
+(config-router-topo-interface)# default dampening-change <cr>    # observed_connections-008102
+(config-router-topo-interface)# default dampening-interval <cr>    # observed_connections-008106
+(config-router-topo-interface)# default hello-interval <cr>    # observed_connections-008108
+(config-router-topo-interface)# default hold-time <cr>    # observed_connections-008112
+(config-router-topo-interface)# default next-hop-self <cr>    # observed_connections-008116
+(config-router-topo-interface)# default passive-interface <cr>    # observed_connections-008114
+(config-router-topo-interface)# default shutdown <cr>    # observed_connections-008117
+(config-router-topo-interface)# default split-horizon <cr>    # observed_connections-008119
+(config-router-topo-interface)# default test-bandwidth <cr>    # observed_connections-008094
+(config-router-topo-interface)# default test-delay <cr>    # observed_connections-008104
+(config-router-topo-interface)# exit-topo-interface <cr>    # observed_connections-008084
+(config-router-topo-interface)# hello-interval <number:1..65535> <cr>    # observed_connections-008107
+(config-router-topo-interface)# hold-time <number:1..65535> <cr>    # observed_connections-008110
+(config-router-topo-interface)# next-hop-self <cr>    # observed_connections-008089
+(config-router-topo-interface)# no authentication key-chain <cr>    # observed_connections-008123
+(config-router-topo-interface)# no authentication mode <cr>    # observed_connections-008120
+(config-router-topo-interface)# no bandwidth-percent <cr>    # observed_connections-008095
+(config-router-topo-interface)# no bfd <cr>    # observed_connections-008097
+(config-router-topo-interface)# no dampening-change <cr>    # observed_connections-008100
+(config-router-topo-interface)# no dampening-interval <cr>    # observed_connections-008103
+(config-router-topo-interface)# no hello-interval <cr>    # observed_connections-008105
+(config-router-topo-interface)# no hold-time <cr>    # observed_connections-008109
+(config-router-topo-interface)# no next-hop-self <cr>    # observed_connections-008113
+(config-router-topo-interface)# no passive-interface <cr>    # observed_connections-008111
+(config-router-topo-interface)# no shutdown <cr>    # observed_connections-008115
+(config-router-topo-interface)# no split-horizon <cr>    # observed_connections-008118
+(config-router-topo-interface)# no test-bandwidth <cr>    # observed_connections-008092
+(config-router-topo-interface)# no test-delay <cr>    # observed_connections-008101
+(config-router-topo-interface)# passive-interface <cr>    # observed_connections-008088
+(config-router-topo-interface)# shutdown <cr>    # observed_connections-008090
+(config-router-topo-interface)# split-horizon <cr>    # observed_connections-008091
+(config-router-topo-interface)# test-bandwidth <number:1..4294967295> <cr>    # observed_connections-008093
+(config-router-topo-interface)# test-delay <?general_to_number_action@555589c03650> <cr>    # observed_connections-008127

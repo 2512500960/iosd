@@ -1,0 +1,397 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-095.md
+
+(config)# restconf ipv4 access-list name <string> <cr>    # path-063141
+(config)# restconf ipv4 access-list name <string> <cr>    # path-063142
+(config)# restconf ipv6 access-list <cr>    # path-063044
+(config)# restconf ipv6 access-list name <cr>    # path-063120
+(config)# restconf ipv6 access-list name <string> <cr>    # path-063143
+(config)# restconf ipv6 access-list name <string> <cr>    # path-063144
+(config)# resume-string <string> <string> <cr>    # path-026697
+(config)# rif <address> <interface> <cr>    # path-060383
+(config)# rif <address> ring-group <number:1..4095> <cr>    # path-028178
+(config)# rif always-forward <cr>    # path-025572
+(config)# rif timeout <number:1..120> <cr>    # path-025437
+(config)# rif validate-age <cr>    # path-025602
+(config)# rif validate-enable <cr>    # path-025588
+(config)# rif validate-route-cache <cr>    # path-025595
+(config)# rif validate-time <number:1..120> <cr>    # path-025435
+(config)# rif xid-explorer <cr>    # path-025566
+(config)# rlogin trusted-localuser-source local <cr>    # path-026482
+(config)# rlogin trusted-localuser-source radius <cr>    # path-026522
+(config)# rlogin trusted-localuser-source tacacs <cr>    # path-026504
+(config)# rlogin trusted-remoteuser-source local <cr>    # path-026457
+(config)# rlogin trusted-remoteuser-source radius <cr>    # path-026505
+(config)# rlogin trusted-remoteuser-source tacacs <cr>    # path-026484
+(config)# rmon alarm <number:1..65535> <string> <number:1..2147483647> delta rising-threshold <signed:-2147483648..2147483647> falling-threshold <signed:-2147483648..2147483647> <cr>    # path-059771
+(config)# rmon alarm <number:1..65535> <string> <number:1..2147483647> delta rising-threshold <signed:-2147483648..2147483647> falling-threshold <signed:-2147483648..2147483647> interface <interface> <cr>    # path-062667
+(config)# rmon event <number:1..65535> <cr>    # path-027170
+(config)# rmon hc-alarms <number:1..65535> <string> <number:1..2147483647> delta rising-threshold <string> falling-threshold <string> <cr>    # path-059758
+(config)# route-map <string> <cr>    # path-025784
+(config)# route-tag list <string> <cr>    # path-026900
+(config)# route-tag notation dotted-decimal <cr>    # path-026813
+(config)# router <?router_action_proc_vpn@5555897abd28> <cr>    # path-062704
+(config)# router eigrp <number:1..65535> <cr>    # path-060382
+(config)# router eigrp <string> <cr>    # path-060385
+(config)# routing-default-optimize <cr>    # path-025456
+(config)# rsh-disable-command <string> <cr>    # path-025709
+(config)# rsh-enable <cr>    # path-025448
+(config)# rsrb remote-peer <number:1..4095> tcp <address> lsap-output-list <number:1..100> <cr>    # path-061853
+(config)# rsrb remote-peer <number:1..4095> tcp <address> lsap-output-list <number:200..299> <cr>    # path-052184
+(config)# rwatch <cr>    # path-025482
+(config)# sampler <string> <cr>    # path-025798
+(config)# sap-priority-list <number:1..10> high <cr>    # path-026571
+(config)# sasl profile <string> <cr>    # path-026500
+(config)# sbfd local-discriminator <address> <cr>    # path-026783
+(config)# sbfd local-discriminator <number:1..4294967294> <cr>    # path-026762
+(config)# sbfd local-discriminator dynamic <cr>    # path-026801
+(config)# sbfd local-discriminator interface <interface> <cr>    # path-060570
+(config)# sbfd remote-target ipv4 <address> remote-discriminator <number:1..4294967294> <cr>    # path-044762
+(config)# sbfd remote-target ipv6 <address> remote-discriminator <number:1..4294967294> <cr>    # path-044803
+(config)# scheduler heapcheck enable <cr>    # path-060430
+(config)# scheduler heapcheck process memory <cr>    # path-060666
+(config)# scheduler interval <cr>    # path-060331
+(config)# scheduler isr-watchdog <cr>    # path-060326
+(config)# scheduler max-sched-time <cr>    # path-060322
+(config)# scheduler max-task-time <cr>    # path-060321
+(config)# scheduler process-watchdog <cr>    # path-060325
+(config)# scheduler run-degraded <cr>    # path-060316
+(config)# scheduler runtime netinput <cr>    # path-060428
+(config)# scheduler timercheck system <cr>    # path-060431
+(config)# scheduler-interval <number:100..2147483647> <cr>    # path-025962
+(config)# scripting tcl encdir <url:dynamic> <cr>    # path-060662
+(config)# scripting tcl init <url:dynamic> <cr>    # path-060661
+(config)# scripting tcl low-memory <number:0..4294967295> <cr>    # path-030670
+(config)# sd-routing <cr>    # path-063008
+(config)# sd-routing <cr>    # path-063011
+(config)# security authentication failure rate <number:2..1024> log <cr>    # path-043904
+(config)# security passwords min-length <number:1..16> <cr>    # path-027884
+(config)# service alignment detection <cr>    # path-026379
+(config)# service call-home <cr>    # path-025633
+(config)# service complete hidden commands <cr>    # path-027975
+(config)# service compress-config <cr>    # path-025554
+(config)# service config <cr>    # path-025496
+(config)# service counters max age <number:0..60> <cr>    # path-034199
+(config)# service dhcp <cr>    # path-025629
+(config)# service disable-ip-fast-frag <cr>    # path-025604
+(config)# service exec-callback <cr>    # path-025498
+(config)# service exec-wait <cr>    # path-025527
+(config)# service finger <cr>    # path-025499
+(config)# service hide-telnet-addresses <cr>    # path-025589
+(config)# service high-power-optics-syslog <cr>    # path-025652
+(config)# service internal <cr>    # path-025538
+(config)# service keepalive-timeout-disable <cr>    # path-025544
+(config)# service linenumber <cr>    # path-025529
+(config)# service log backtrace <cr>    # path-025991
+(config)# service log-hidden <cr>    # path-025543
+(config)# service nagle <cr>    # path-025502
+(config)# service oir-remove-failing-slot <cr>    # path-025518
+(config)# service old-slip-prompts <cr>    # path-025581
+(config)# service optimized-xfsu <cr>    # path-025537
+(config)# service pad <cr>    # path-025521
+(config)# service pad cmns <cr>    # path-026034
+(config)# service pad from-xot <cr>    # path-026026
+(config)# service pad to-xot <cr>    # path-026019
+(config)# service password-encryption <cr>    # path-025523
+(config)# service password-recovery <cr>    # path-025682
+(config)# service performance <cr>    # path-025665
+(config)# service private-config-encryption <cr>    # path-025526
+(config)# service prompt config <cr>    # path-026150
+(config)# service pt-vty-logging <cr>    # path-025596
+(config)# service random seed <string> <cr>    # path-028317
+(config)# service scripting <cr>    # path-025550
+(config)# service sequence-numbers <cr>    # path-025613
+(config)# service single-slot-reload-enable <cr>    # path-025503
+(config)# service slave-coredump <cr>    # path-025510
+(config)# service slave-log <cr>    # path-025509
+(config)# service tcp-keepalives-in <cr>    # path-025515
+(config)# service tcp-keepalives-out <cr>    # path-025519
+(config)# service tcp-small-servers <cr>    # path-025584
+(config)# service telnet-zeroidle <cr>    # path-025514
+(config)# service timestamps <cr>    # path-025532
+(config)# service udp-small-servers <cr>    # path-025576
+(config)# service unsupported-transceiver <cr>    # path-025642
+(config)# service-family external-client listen ipv4 <number:1024..65535> <cr>    # path-034411
+(config)# service-group <number:dynamic> <cr>    # path-060286
+(config)# service-instance mdns-sd service <string> regtype <string> domain <string> <cr>    # path-056770
+(config)# service-list mdns-sd <string> <cr>    # path-026254
+(config)# service-list mdns-sd <string> query <cr>    # path-027979
+(config)# service-policy type control <cr>    # path-026255
+(config)# service-policy type control subscriber <?option@5555890f3838> <cr>    # path-060761
+(config)# service-routing capabilities-manager <cr>    # path-025660
+(config)# service-routing mdns-sd <cr>    # path-025591
+(config)# service-routing xmcp listen <cr>    # path-026604
+(config)# service-routing xmcp listen ipv4 <cr>    # path-060550
+(config)# service-template <string> <cr>    # path-025960
+(config)# shell init file <url:dynamic> <cr>    # path-060503
+(config)# shell map <?option@55558960acd0> <cr>    # path-060367
+(config)# shell map <string> <cr>    # path-026113
+(config)# shell processing <cr>    # path-025516
+(config)# shell trigger <string> <string> <cr>    # path-027862
+(config)# shutdown vlan <number:2..1001> <cr>    # path-026882
+(config)# sna host <string> sdlc <number:1..254> <cr>    # path-034601
+(config)# sna host <string> sdlc <number:1..254> interface <interface> <cr>    # path-061859
+(config)# sna rsrb enable-host <cr>    # path-026230
+(config)# sna vdlc enable-host <cr>    # path-026211
+(config)# snmp autoconfig user <string> auth <number:0..4294967295> <string> <cr>    # path-052865
+(config)# snmp ifmib ifalias long <cr>    # path-029216
+(config)# snmp ifmib ifindex persist <cr>    # path-029187
+(config)# snmp ifmib trap throttle <cr>    # path-029248
+(config)# snmp mib bulkstat object-list <string> <cr>    # path-035803
+(config)# snmp mib bulkstat schema <string> <cr>    # path-035865
+(config)# snmp mib bulkstat transfer <string> <cr>    # path-035935
+(config)# snmp mib cef throttling-interval <number:1..3600> <cr>    # path-035511
+(config)# snmp mib community-map <string> context <string> <cr>    # path-045471
+(config)# snmp mib event object list owner <string> name <string> <number:1..4294967295> <cr>    # path-059737
+(config)# snmp mib event owner <string> name <string> <cr>    # path-052908
+(config)# snmp mib event sample instance maximum <number:0..4294967295> <cr>    # path-053047
+(config)# snmp mib event sample minimum <number:1..2147483647> <cr>    # path-045414
+(config)# snmp mib event trigger owner <string> name <string> <cr>    # path-057194
+(config)# snmp mib expression delta minimum <number:1..600> <cr>    # path-045299
+(config)# snmp mib expression delta wildcard maximum <number:0..4294967295> <cr>    # path-052976
+(config)# snmp mib expression owner <string> name <string> <cr>    # path-052990
+(config)# snmp mib flash cache <cr>    # path-029448
+(config)# snmp mib flowmon alarmhistorysize <number:1..1000000> <cr>    # path-035862
+(config)# snmp mib nhrp <cr>    # path-026969
+(config)# snmp mib notification-log default <cr>    # path-029617
+(config)# snmp mib persist <cr>    # path-026954
+(config)# snmp mib pimstdmib notification-period neighbor-loss <number:dynamic> <cr>    # path-061292
+(config)# snmp mib target list <string> <cr>    # path-035715
+(config)# snmp monitor response <number:1000..10000> <cr>    # path-029198
+(config)# snmp-server accounting commands default <cr>    # path-030396
+(config)# snmp-server cache <cr>    # path-025915
+(config)# snmp-server chassis-id <string> <cr>    # path-027254
+(config)# snmp-server community <string> <cr>    # path-027227
+(config)# snmp-server contact <string> <cr>    # path-027233
+(config)# snmp-server context <string> <cr>    # path-027308
+(config)# snmp-server dbal cache <cr>    # path-027399
+(config)# snmp-server dispatcher-queue-size <cr>    # path-025778
+(config)# snmp-server drop report access <number:1..99> <cr>    # path-036360
+(config)# snmp-server drop unknown-user <cr>    # path-027136
+(config)# snmp-server drop vrf-traffic <cr>    # path-027104
+(config)# snmp-server enable logging getop <cr>    # path-030275
+(config)# snmp-server enable logging setop <cr>    # path-030311
+(config)# snmp-server enable traps ospf rate-limit <number:2..60> <number:0..300> <cr>    # path-053729
+(config)# snmp-server enable traps ospfv3 rate-limit <number:2..60> <number:0..300> <cr>    # path-054515
+(config)# snmp-server enable traps port-security trap-rate <number:0..1000> <cr>    # path-048127
+(config)# snmp-server engineID local <string> <cr>    # path-029299
+(config)# snmp-server file-transfer access-group <number:1..99> <cr>    # path-030389
+(config)# snmp-server forwarder <cr>    # path-025919
+(config)# snmp-server group <string> v1 <cr>    # path-060601
+(config)# snmp-server hc poll <cr>    # path-026939
+(config)# snmp-server host <address> <string> <cr>    # path-030798
+(config)# snmp-server host <string> <interface> <string> <cr>    # path-060928
+(config)# snmp-server ifindex persist <cr>    # path-026981
+(config)# snmp-server inform <cr>    # path-025932
+(config)# snmp-server ip dscp <number:0..63> <cr>    # path-030145
+(config)# snmp-server ip precedence <number:0..7> <cr>    # path-030113
+(config)# snmp-server local-queue-size <cr>    # path-025782
+(config)# snmp-server location <string> <cr>    # path-027200
+(config)# snmp-server manager <cr>    # path-025926
+(config)# snmp-server manager session-timeout <number:10..2147483> <cr>    # path-025923
+(config)# snmp-server packetsize <number:484..17892> <cr>    # path-025460
+(config)# snmp-server password-policy <string> define <cr>    # path-030410
+(config)# snmp-server priority low <cr>    # path-027030
+(config)# snmp-server queue-length <number:1..5000> <cr>    # path-025465
+(config)# snmp-server source-interface informs <interface> <cr>    # path-060618
+(config)# snmp-server sparse-tables <cr>    # path-025846
+(config)# snmp-server subagent cache <cr>    # path-027421
+(config)# snmp-server subagent cache-stats <cr>    # path-027413
+(config)# snmp-server subagent datastage timeout <number:1..100> <cr>    # path-037221
+(config)# snmp-server subagent enable <cr>    # path-027417
+(config)# snmp-server subagent fetch count <number:1..100> <cr>    # path-037258
+(config)# snmp-server system-shutdown <cr>    # path-025874
+(config)# snmp-server tftp-server-list <number:1..99> <cr>    # path-027108
+(config)# snmp-server trap authentication vrf <cr>    # path-029678
+(config)# snmp-server trap link ietf <cr>    # path-029699
+(config)# snmp-server trap retry <number:0..10> <cr>    # path-029778
+(config)# snmp-server trap timeout <number:1..1000> <cr>    # path-029831
+(config)# snmp-server trap timestamp <cr>    # path-027003
+(config)# snmp-server trap-authentication <cr>    # path-025832
+(config)# snmp-server trap-frequency decay <cr>    # path-027300
+(config)# snmp-server trap-source <interface> <cr>    # path-060407
+(config)# snmp-server trap-timeout <number:1..1000> <cr>    # path-027166
+(config)# snmp-server user <string> <string> v1 <cr>    # path-035611
+(config)# snmp-server view <string> <string> included <cr>    # path-035571
+(config)# sntp authenticate <cr>    # path-060318
+(config)# sntp authentication-key <number:1..65535> <cr>    # path-060432
+(config)# sntp broadcast client <cr>    # path-060434
+(config)# sntp logging <cr>    # path-060315
+(config)# sntp multicast client <cr>    # path-060454
+(config)# sntp server <address> <cr>    # path-060445
+(config)# sntp source-interface <cr>    # path-060329
+(config)# sntp trusted-key <number:1..65535> <cr>    # path-060435
+(config)# source template <cr>    # path-025930
+(config)# source template <string> merge <cr>    # path-030528
+(config)# source template interface-ethernet-all <cr>    # path-027378
+(config)# source template interface-ethernet-all <string> merge <cr>    # path-037096
+(config)# source-bridge connection-timeout <number:1..4294967295> <cr>    # path-025451
+(config)# source-bridge cos-enable <cr>    # path-025729
+(config)# source-bridge enable-80d5 <cr>    # path-025628
+(config)# source-bridge explorer-dup-ARE-filter <cr>    # path-025700
+(config)# source-bridge explorer-fastswitch <cr>    # path-025694
+(config)# source-bridge explorer-maxrate <number:100..4294967295> <cr>    # path-026555
+(config)# source-bridge explorerQ-depth <number:1..500> <cr>    # path-026536
+(config)# source-bridge fst-peername <address> <cr>    # path-026666
+(config)# source-bridge keepalive <cr>    # path-025757
+(config)# source-bridge largest-frame <number:1..4095> 516 <cr>    # path-028443
+(config)# source-bridge lnm-preference <cr>    # path-025681
+(config)# source-bridge passthrough <number:1..4095> <cr>    # path-025453
+(config)# source-bridge ping <number:1..4095> <number:1..15> <number:1..4095> vmac <address> <cr>    # path-052212
+(config)# source-bridge proxy-netbios-only <cr>    # path-025650
+(config)# source-bridge qllc-local-ack <cr>    # path-025722
+(config)# source-bridge remote-peer <number:1..4095> interface <interface> <cr>    # path-062781
+(config)# source-bridge remote-peer <number:1..4095> tcp <address> <cr>    # path-034974
+(config)# source-bridge ring-group <cr>    # path-025679
+(config)# source-bridge sap-80d5 <number:0..4294967295> <cr>    # path-026366
+(config)# source-bridge sdllc-local-ack <cr>    # path-025718
+(config)# source-bridge tcp-queue-max <number:1..4096> <cr>    # path-025452
+(config)# source-bridge transparent <number:1..4095> fastswitch <cr>    # path-028286
+(config)# spd enable <cr>    # path-025536
+(config)# spd extended-headroom <number:0..65535> <cr>    # path-025428
+(config)# spd headroom <number:0..65535> <cr>    # path-025429
+(config)# sse instance <string> <cr>    # path-060450
+(config)# sslproxy <cr>    # path-063010
+(config)# sslproxy <cr>    # path-063012
+(config)# stacks scan-lite <cr>    # path-025600
+(config)# standby bfd all-interfaces <cr>    # path-026629
+(config)# standby redirects <cr>    # path-025713
+(config)# standby sso <cr>    # path-025728
+(config)# state-machine <string> <number:0..7> <number:0..255> <number:0..255> transmit <cr>    # path-044334
+(config)# static-ipfrr ipv4-nexthop <interface> <address> backup <interface> <address> <cr>    # path-062853
+(config)# static-ipfrr ipv6-nexthop <interface> <address> backup <interface> <address> <cr>    # path-062855
+(config)# statistics <cr>    # path-025483
+(config)# stun keepalive-count <number:2..10> <cr>    # path-025445
+(config)# stun peer-name <address> <cr>    # path-026491
+(config)# stun poll-interval <number:20..4294967295> <cr>    # path-025439
+(config)# stun primary-pass-through <number:1..4294967295> <cr>    # path-025441
+(config)# stun protocol-group <number:1..255> <string> <cr>    # path-028441
+(config)# stun quick-response <cr>    # path-025693
+(config)# stun remote-peer-keepalive <cr>    # path-025696
+(config)# stun schema <string> offset <number:0..8192> length <number:1..8> format decimal <cr>    # path-058930
+(config)# subscriber access pppoe pre-authorize nas-port-id <cr>    # path-035234
+(config)# subscriber access pppoe unqiue-key circuit-id <cr>    # path-035119
+(config)# subscriber accounting accuracy <cr>    # path-026869
+(config)# subscriber accounting send-encoded-name <cr>    # path-026858
+(config)# subscriber accounting ssg <cr>    # path-026840
+(config)# subscriber authorization enable <cr>    # path-026797
+(config)# subscriber disconnect history-size <number:1..1000> <cr>    # path-028815
+(config)# subscriber dsl-line-info update ancp <cr>    # path-028962
+(config)# subscriber feature lock-path <cr>    # path-026814
+(config)# subscriber feature prepaid default <cr>    # path-028978
+(config)# subscriber per-session debug buffer-size <cr>    # path-029454
+(config)# subscriber per-session debug enable buginf <cr>    # path-035401
+(config)# subscriber per-session debug enable end-code <?option@55558a179748> <cr>    # path-061282
+(config)# subscriber per-session debug enable end-code SESS_DEB_START <cr>    # path-045140
+(config)# subscriber per-session debug enable expected-code <?option@55558a179a80> <cr>    # path-061286
+(config)# subscriber per-session debug enable expected-code SESS_DEB_START <cr>    # path-045186
+(config)# subscriber per-session debug enable session-count <cr>    # path-035779
+(config)# subscriber per-session debug enable start-code <?option@55558a179410> <cr>    # path-061280
+(config)# subscriber per-session debug enable start-code SESS_DEB_START <cr>    # path-045091
+(config)# subscriber per-session debug start <cr>    # path-029247
+(config)# subscriber policy <cr>    # path-025759
+(config)# subscriber policy format_option82_for_cats <cr>    # path-026800
+(config)# subscriber policy recording profile service <cr>    # path-035152
+(config)# subscriber policy recording profile user <cr>    # path-035087
+(config)# subscriber policy recording rules <cr>    # path-029035
+(config)# subscriber policy recording rules limit <number:0..100> <cr>    # path-044763
+(config)# subscriber qos-per-user oversubscription <cr>    # path-026856
+(config)# subscriber service accounting interim-interval <number:1..71582> <cr>    # path-035674
+(config)# subscriber service coa-rfc-compliant <cr>    # path-026827
+(config)# subscriber service ignore concatenated-service <cr>    # path-029463
+(config)# subscriber service multiple-accept <cr>    # path-026914
+(config)# subscriber service nasport <cr>    # path-026930
+(config)# subscriber service password <cr>    # path-026926
+(config)# subscriber service police percent-factor <number:1..100> <cr>    # path-035384
+(config)# subscriber service police percent-factor <number:1..100> <cr>    # path-035385
+(config)# subscriber service session-accounting <cr>    # path-026943
+(config)# subscriber service target-atm-vc <cr>    # path-026860
+(config)# subscriber service vc-ignore-cos <cr>    # path-026887
+(config)# subscriber session auto-service-fail-ignore <cr>    # path-026886
+(config)# subscriber session duration accuracy <cr>    # path-029138
+(config)# subscriber session mib index ifindex <cr>    # path-035283
+(config)# subscriber session set cuid remote-id <cr>    # path-035397
+(config)# subscriber templating <cr>    # path-025748
+(config)# subscriber templating immediate <cr>    # path-026759
+(config)# subscriber test sessions <number:0..70000> key <string> 1-time <cr>    # path-052581
+(config)# subscriber-policy <number:1..100> <cr>    # path-025622
+(config)# svl l2bum optimization <cr>    # path-027570
+(config)# system mode insecure <cr>    # path-025990
+(config)# system mode warning periodicity <number:24..720> <cr>    # path-033978
+(config)# table-map <string> <cr>    # path-025906
+(config)# tacacs server <string> <cr>    # path-026984
+(config)# tacacs-server administration <cr>    # path-025841
+(config)# tacacs-server attribute allow unknown <cr>    # path-029331
+(config)# tacacs-server authenticate enable <cr>    # path-027151
+(config)# tacacs-server cache authentication profile <string> <cr>    # path-036087
+(config)# tacacs-server cache authorization profile <string> <cr>    # path-036155
+(config)# tacacs-server cache expiry <number:0..2147483647> <cr>    # path-030097
+(config)# tacacs-server directed-request <cr>    # path-025818
+(config)# tacacs-server dns-alias-lookup <cr>    # path-025831
+(config)# tacacs-server domain-stripping <cr>    # path-025844
+(config)# tacacs-server extended <cr>    # path-025828
+(config)# tacacs-server host <address> <cr>    # path-026946
+(config)# tacacs-server ignore-acl <cr>    # path-025855
+(config)# tacacs-server key <string> <cr>    # path-027181
+(config)# tacacs-server last-resort password <cr>    # path-026980
+(config)# tacacs-server notify enable <cr>    # path-027164
+(config)# tacacs-server optional-passwords <cr>    # path-025822
+(config)# tacacs-server packet maxsize <number:10240..65536> <cr>    # path-025786
+(config)# tacacs-server retransmit <number:0..100> <cr>    # path-025459
+(config)# tacacs-server timeout <number:1..1000> <cr>    # path-025458
+(config)# telemetry ietf subscription <number:0..2147483647> <cr>    # path-063074
+(config)# telemetry ietf subscription <number:0..2147483647> <cr>    # path-063075
+(config)# telemetry protocol grpc profile <string> <cr>    # path-063139
+(config)# telemetry protocol grpc profile <string> <cr>    # path-063140
+(config)# telemetry receiver protocol <string> <cr>    # path-063076
+(config)# telemetry receiver protocol <string> <cr>    # path-063078
+(config)# telemetry receiver pullmode <string> <cr>    # path-063077
+(config)# telemetry receiver pullmode <string> <cr>    # path-063079
+(config)# telemetry transform <string> <cr>    # path-063032
+(config)# telemetry transform <string> <cr>    # path-063033
+(config)# template <string> <cr>    # path-025611
+(config)# template global <string> <cr>    # path-026247
+(config)# template global <string> built-in modified <cr>    # path-034076
+(config)# tenant-definition <cr>    # path-025479
+(config)# tenant-definition <string> <cr>    # path-060311
+(config)# terminal-queue entry-retry-interval <number:0..255> <cr>    # path-025449
+(config)# tftp-server <url:dynamic> <cr>    # path-060299
+(config)# tftp-server flash <string> <cr>    # path-026977
+(config)# time-range <string> <cr>    # path-060333
+(config)# timezone <string> <signed:-23..23> <cr>    # path-026296
+(config)# track <number:1..32767> <cr>    # path-025639
+(config)# track <number:1..32767> application home-agent <cr>    # path-028089
+(config)# track <number:1..32767> interface <interface> line-protocol <cr>    # path-060762
+(config)# track <number:1..32767> ip route <?ipaddrmask_action@555589766cc0> reachability <cr>    # path-061215
+(config)# track <number:1..32767> ip sla <number:1..2147483647> <cr>    # path-034386
+(config)# track <number:1..32767> ipv6 route <prefix:dynamic> reachability <cr>    # path-061214
+(config)# track <number:1..32767> list boolean and <cr>    # path-034157
+(config)# track <number:1..32767> service <string> <cr>    # path-028186
+(config)# track <number:1..32767> stub-object <cr>    # path-026294
+(config)# track <string> endpoint-tracker <cr>    # path-026274
+(config)# track resolution ip route bgp <number:dynamic> <cr>    # path-061209
+(config)# track resolution ipv6 route bgp <number:dynamic> <cr>    # path-061210
+(config)# track timer interface <number:1..3000> <cr>    # path-028016
+(config)# transport type console <number:0..0> input <cr>    # path-060911
+(config)# transport-map type console <string> <cr>    # path-027939
+(config)# trunk group <?trunk_group_cmd@55558ce58788> <cr>    # path-060453
+(config)# udf <string> <cr>    # path-025982
+(config)# user-name <string> <cr>    # path-025552
+(config)# username <string> <cr>    # path-025685
+(config)# username <string> callback-line <?ttyline_action@5555896ebca0> <cr>    # path-060559
+(config)# vc-class atm <string> <cr>    # path-026256
+(config)# vc-class global default <cr>    # path-026245
+(config)# version <cr>    # path-025424
+(config)# virtual-profile if-needed <cr>    # path-025730
+(config)# virtual-profile virtual-template <number:dynamic> <cr>    # path-060395
+(config)# virtual-service <cr>    # path-025440
+(config)# virtual-service <string> <cr>    # path-025641
+(config)# virtual-template <number:dynamic> pre-clone <cr>    # path-060433
+(config)# virtual-template snmp <cr>    # path-025928
+(config)# virtual-template subinterface <cr>    # path-025924
+(config)# vlan <string> <cr>    # path-025592
+(config)# vlan accounting <cr>    # path-025583
+(config)# vlan accounting input <cr>    # path-026175
+(config)# vlan accounting output <cr>    # path-026189
+(config)# vlan dot1q tag native <cr>    # path-027991

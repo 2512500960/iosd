@@ -1,0 +1,8 @@
+# 模式 evpn-all-active-mh；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evpn-all-active-mh)# default neighbor <cr>    # observed_connections-009761
+(config-evpn-all-active-mh)# exit <cr>    # observed_connections-009759
+(config-evpn-all-active-mh)# neighbor <address> <number:1..4294967295> <interface> <cr>    # observed_connections-009762
+(config-evpn-all-active-mh)# no neighbor <cr>    # observed_connections-009760

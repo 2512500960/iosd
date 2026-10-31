@@ -1,0 +1,8 @@
+# 模式 cent_domain_vrf；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-domain-vrf)# border <cr>    # static_slot_creation_candidates-004538
+(config-domain-vrf)# master hub <cr>    # static_slot_creation_candidates-004540
+(config-domain-vrf)# no border <cr>    # static_slot_creation_candidates-004539
+(config-domain-vrf)# no master hub <cr>    # static_slot_creation_candidates-004541

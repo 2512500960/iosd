@@ -1,0 +1,278 @@
+# 模式 interface；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-003.md
+
+(config-if)# no ip inspect <string> in <cr>    # conditional_registration_candidates-010260
+(config-if)# no ip media-pool <address> <address> <cr>    # conditional_registration_candidates-010257
+(config-if)# no ip mobile arp <cr>    # conditional_registration_candidates-010119
+(config-if)# no ip mobile router-service roam <cr>    # conditional_registration_candidates-010262
+(config-if)# no ip ospf adjacency-sid index <number:0..1048575> <cr>    # conditional_registration_candidates-010331
+(config-if)# no ip ospf affinity flex-algo <cr>    # conditional_registration_candidates-010283
+(config-if)# no ip ospf fast-reroute per-prefix candidate <cr>    # conditional_registration_candidates-010327
+(config-if)# no ip ospf fast-reroute per-prefix protection <cr>    # conditional_registration_candidates-010328
+(config-if)# no ip ospf prefix-attributes n-flag-clear <cr>    # conditional_registration_candidates-010279
+(config-if)# no ipv6 address negotiated <cr>    # conditional_registration_candidates-010167
+(config-if)# no ipv6 crypto map <cr>    # conditional_registration_candidates-010174
+(config-if)# no ipv6 media-address <address> <cr>    # conditional_registration_candidates-010165
+(config-if)# no ipv6 media-pool <address> <address> <cr>    # conditional_registration_candidates-010268
+(config-if)# no isis affinity flex-algo <cr>    # conditional_registration_candidates-010237
+(config-if)# no isis delay normalize interval <number:1..16777215> offset <number:1..16777215> <cr>    # conditional_registration_candidates-010345
+(config-if)# no isis fast-reroute candidate <cr>    # conditional_registration_candidates-010248
+(config-if)# no isis fast-reroute protection <cr>    # conditional_registration_candidates-010246
+(config-if)# no isis fast-reroute tie-break <cr>    # conditional_registration_candidates-010253
+(config-if)# no label <cr>    # conditional_registration_candidates-009753
+(config-if)# no load-balance flow <cr>    # conditional_registration_candidates-010016
+(config-if)# no load-balance flow-label <cr>    # conditional_registration_candidates-010031
+(config-if)# no logging event frame-relay vc-bundle status <cr>    # conditional_registration_candidates-010318
+(config-if)# no member vni <string> <cr>    # conditional_registration_candidates-010141
+(config-if)# no metadata flow <cr>    # conditional_registration_candidates-009789
+(config-if)# no monitor peer bfd <cr>    # conditional_registration_candidates-010218
+(config-if)# no mtu <cr>    # conditional_registration_candidates-009729
+(config-if)# no neighbor <cr>    # conditional_registration_candidates-009721
+(config-if)# no novell access-group <cr>    # conditional_registration_candidates-009934
+(config-if)# no novell access-group in <cr>    # conditional_registration_candidates-010166
+(config-if)# no novell accounting <cr>    # conditional_registration_candidates-010081
+(config-if)# no novell advertise-default-route-only <number:1..4294967294> <cr>    # conditional_registration_candidates-010236
+(config-if)# no novell delay <cr>    # conditional_registration_candidates-009676
+(config-if)# no novell down <number:1..4294967294> <cr>    # conditional_registration_candidates-010190
+(config-if)# no novell encapsulation <cr>    # conditional_registration_candidates-009888
+(config-if)# no novell gns-reply-disable <cr>    # conditional_registration_candidates-009992
+(config-if)# no novell gns-response-delay <cr>    # conditional_registration_candidates-009738
+(config-if)# no novell helper-address <cr>    # conditional_registration_candidates-009917
+(config-if)# no novell helper-list <cr>    # conditional_registration_candidates-009942
+(config-if)# no novell input-network-filter <cr>    # conditional_registration_candidates-009952
+(config-if)# no novell input-sap-filter <cr>    # conditional_registration_candidates-009962
+(config-if)# no novell linkup-request sap <cr>    # conditional_registration_candidates-010233
+(config-if)# no novell network <cr>    # conditional_registration_candidates-010028
+(config-if)# no novell output-ggs-filter <cr>    # conditional_registration_candidates-010011
+(config-if)# no novell output-gns-filter <cr>    # conditional_registration_candidates-010021
+(config-if)# no novell output-network-filter <cr>    # conditional_registration_candidates-009975
+(config-if)# no novell output-sap-delay <cr>    # conditional_registration_candidates-009724
+(config-if)# no novell output-sap-filter <cr>    # conditional_registration_candidates-009998
+(config-if)# no novell pad-process-switched-packets <cr>    # conditional_registration_candidates-010046
+(config-if)# no novell route-cache <cr>    # conditional_registration_candidates-010017
+(config-if)# no novell router-filter <cr>    # conditional_registration_candidates-010041
+(config-if)# no novell router-sap-filter <cr>    # conditional_registration_candidates-010052
+(config-if)# no novell sap-helper <cr>    # conditional_registration_candidates-009931
+(config-if)# no novell sap-interval <cr>    # conditional_registration_candidates-010042
+(config-if)# no novell sap-max-packetsize <cr>    # conditional_registration_candidates-009742
+(config-if)# no novell sap-multiplier <cr>    # conditional_registration_candidates-009731
+(config-if)# no novell spx-idle-time <cr>    # conditional_registration_candidates-009775
+(config-if)# no novell spx-spoof <cr>    # conditional_registration_candidates-010069
+(config-if)# no novell triggered-sap-delay <cr>    # conditional_registration_candidates-009714
+(config-if)# no novell triggered-sap-holddown <cr>    # conditional_registration_candidates-009718
+(config-if)# no novell type-20-propagation <cr>    # conditional_registration_candidates-010035
+(config-if)# no novell update interval sap <cr>    # conditional_registration_candidates-010297
+(config-if)# no novell watchdog filter <cr>    # conditional_registration_candidates-010220
+(config-if)# no novell watchdog-spoof <cr>    # conditional_registration_candidates-010063
+(config-if)# no opendns in <cr>    # conditional_registration_candidates-009786
+(config-if)# no ospfv3 <number:1..65535> cost dynamic <cr>    # conditional_registration_candidates-010284
+(config-if)# no ospfv3 <number:1..65535> manet peering cost threshold <number:0..65535> <cr>    # conditional_registration_candidates-010343
+(config-if)# no ospfv3 <number:1..65535> manet peering link-metrics <cr>    # conditional_registration_candidates-010333
+(config-if)# no otv adjacency-server <cr>    # conditional_registration_candidates-009914
+(config-if)# no otv control-group <cr>    # conditional_registration_candidates-009811
+(config-if)# no otv encapsulation-format <cr>    # conditional_registration_candidates-009890
+(config-if)# no otv filter-fhrp <cr>    # conditional_registration_candidates-009834
+(config-if)# no otv router isis <cr>    # conditional_registration_candidates-010133
+(config-if)# no otv suppress arp-nd <cr>    # conditional_registration_candidates-010142
+(config-if)# no otv use-adjacency-server <cr>    # conditional_registration_candidates-009901
+(config-if)# no otv vpn-name <cr>    # conditional_registration_candidates-009863
+(config-if)# no performance monitor context <cr>    # conditional_registration_candidates-010127
+(config-if)# no port-tagging <cr>    # conditional_registration_candidates-009637
+(config-if)# no preferred-path <cr>    # conditional_registration_candidates-009756
+(config-if)# no pseudowire type <cr>    # conditional_registration_candidates-010036
+(config-if)# no pvc <string> <cr>    # conditional_registration_candidates-010007
+(config-if)# no pvc <string> <cr>    # conditional_registration_candidates-010008
+(config-if)# no range <string> <cr>    # conditional_registration_candidates-009861
+(config-if)# no rpl <string> enable <cr>    # conditional_registration_candidates-010121
+(config-if)# no rpl external-network <number:0..127> <cr>    # conditional_registration_candidates-010111
+(config-if)# no rrr administrative-weight <cr>    # conditional_registration_candidates-009844
+(config-if)# no rrr attribute-flags <cr>    # conditional_registration_candidates-009812
+(config-if)# no rrr enable <cr>    # conditional_registration_candidates-009795
+(config-if)# no rrr flooding-thresholds down <cr>    # conditional_registration_candidates-010140
+(config-if)# no rrr flooding-thresholds up <cr>    # conditional_registration_candidates-010134
+(config-if)# no sbc <cr>    # conditional_registration_candidates-009650
+(config-if)# no sequencing <cr>    # conditional_registration_candidates-009763
+(config-if)# no sequencing resync <cr>    # conditional_registration_candidates-010048
+(config-if)# no signaling protocol <cr>    # conditional_registration_candidates-009950
+(config-if)# no site-manager inside <cr>    # conditional_registration_candidates-009831
+(config-if)# no source-interface <cr>    # conditional_registration_candidates-009649
+(config-if)# no spanning-tree <cr>    # conditional_registration_candidates-009652
+(config-if)# no spanning-tree bpdufilter <cr>    # conditional_registration_candidates-009891
+(config-if)# no spanning-tree bpduguard <cr>    # conditional_registration_candidates-009903
+(config-if)# no spanning-tree cost <cr>    # conditional_registration_candidates-009698
+(config-if)# no spanning-tree link-type <cr>    # conditional_registration_candidates-009899
+(config-if)# no spanning-tree port-priority <cr>    # conditional_registration_candidates-009926
+(config-if)# no spanning-tree portfast <cr>    # conditional_registration_candidates-009876
+(config-if)# no srlg gid <cr>    # conditional_registration_candidates-009783
+(config-if)# no status <cr>    # conditional_registration_candidates-009779
+(config-if)# no status control-plane route-watch <cr>    # conditional_registration_candidates-010221
+(config-if)# no status decoupled <cr>    # conditional_registration_candidates-010065
+(config-if)# no status peer topology dual-homed <cr>    # conditional_registration_candidates-010301
+(config-if)# no status protocol notification static <cr>    # conditional_registration_candidates-010306
+(config-if)# no status redundancy master <cr>    # conditional_registration_candidates-010228
+(config-if)# no status suppress standby <cr>    # conditional_registration_candidates-010232
+(config-if)# no svc <string> <cr>    # conditional_registration_candidates-010032
+(config-if)# no svc <string> <cr>    # conditional_registration_candidates-010033
+(config-if)# no switching tlv <cr>    # conditional_registration_candidates-010070
+(config-if)# no tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # conditional_registration_candidates-010309
+(config-if)# no tlv template <cr>    # conditional_registration_candidates-010083
+(config-if)# no utd enable <cr>    # conditional_registration_candidates-009793
+(config-if)# no vc type <cr>    # conditional_registration_candidates-009980
+(config-if)# no vccv bfd template <cr>    # conditional_registration_candidates-010227
+(config-if)# no vccv control-word <cr>    # conditional_registration_candidates-010075
+(config-if)# no vxlan encapsulation <cr>    # conditional_registration_candidates-009841
+(config-if)# no vxlan source-port-hash <cr>    # conditional_registration_candidates-009821
+(config-if)# no xconnect <cr>    # conditional_registration_candidates-009653
+(config-if)# no zone-member security <string> <cr>    # conditional_registration_candidates-010105
+(config-if)# novell access-group <cr>    # conditional_registration_candidates-010367
+(config-if)# novell access-group <number:800..999> <cr>    # conditional_registration_candidates-009889
+(config-if)# novell access-group <number:800..999> in <cr>    # conditional_registration_candidates-010147
+(config-if)# novell access-group in <cr>    # conditional_registration_candidates-010400
+(config-if)# novell accounting <cr>    # conditional_registration_candidates-009778
+(config-if)# novell accounting <cr>    # conditional_registration_candidates-010391
+(config-if)# novell advertise-default-route-only <number:1..4294967294> <cr>    # conditional_registration_candidates-010096
+(config-if)# novell advertise-default-route-only <number:1..4294967294> <cr>    # conditional_registration_candidates-010417
+(config-if)# novell delay <number:0..65535> <cr>    # conditional_registration_candidates-009615
+(config-if)# novell delay <number:0..65535> <cr>    # conditional_registration_candidates-010350
+(config-if)# novell down <number:1..4294967294> <cr>    # conditional_registration_candidates-009946
+(config-if)# novell down <number:1..4294967294> <cr>    # conditional_registration_candidates-010403
+(config-if)# novell encapsulation <cr>    # conditional_registration_candidates-010364
+(config-if)# novell encapsulation novell-ether <cr>    # conditional_registration_candidates-009907
+(config-if)# novell gns-reply-disable <cr>    # conditional_registration_candidates-009736
+(config-if)# novell gns-reply-disable <cr>    # conditional_registration_candidates-010374
+(config-if)# novell gns-response-delay <number:0..65535> <cr>    # conditional_registration_candidates-009630
+(config-if)# novell gns-response-delay <number:0..65535> <cr>    # conditional_registration_candidates-010355
+(config-if)# novell helper-address <address> <cr>    # conditional_registration_candidates-009911
+(config-if)# novell helper-address <cr>    # conditional_registration_candidates-010365
+(config-if)# novell helper-list <cr>    # conditional_registration_candidates-010369
+(config-if)# novell helper-list <number:800..999> <cr>    # conditional_registration_candidates-009947
+(config-if)# novell input-network-filter <cr>    # conditional_registration_candidates-010370
+(config-if)# novell input-network-filter <number:800..999> <cr>    # conditional_registration_candidates-009954
+(config-if)# novell input-sap-filter <cr>    # conditional_registration_candidates-010371
+(config-if)# novell input-sap-filter <number:1000..1099> <cr>    # conditional_registration_candidates-009968
+(config-if)# novell linkup-request sap <cr>    # conditional_registration_candidates-010090
+(config-if)# novell linkup-request sap <cr>    # conditional_registration_candidates-010416
+(config-if)# novell network <cr>    # conditional_registration_candidates-009764
+(config-if)# novell network <cr>    # conditional_registration_candidates-010381
+(config-if)# novell output-ggs-filter <cr>    # conditional_registration_candidates-010376
+(config-if)# novell output-ggs-filter <number:1000..1099> <cr>    # conditional_registration_candidates-010012
+(config-if)# novell output-gns-filter <cr>    # conditional_registration_candidates-010379
+(config-if)# novell output-gns-filter <number:1000..1099> <cr>    # conditional_registration_candidates-010022
+(config-if)# novell output-network-filter <cr>    # conditional_registration_candidates-010372
+(config-if)# novell output-network-filter <number:800..999> <cr>    # conditional_registration_candidates-009977
+(config-if)# novell output-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-009627
+(config-if)# novell output-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-010353
+(config-if)# novell output-sap-filter <cr>    # conditional_registration_candidates-010375
+(config-if)# novell output-sap-filter <number:1000..1099> <cr>    # conditional_registration_candidates-010003
+(config-if)# novell pad-process-switched-packets <cr>    # conditional_registration_candidates-009765
+(config-if)# novell pad-process-switched-packets <cr>    # conditional_registration_candidates-010387
+(config-if)# novell ppp-client <interface> <cr>    # conditional_registration_candidates-010398
+(config-if)# novell route-cache <cr>    # conditional_registration_candidates-009750
+(config-if)# novell route-cache <cr>    # conditional_registration_candidates-010378
+(config-if)# novell router-filter <cr>    # conditional_registration_candidates-010385
+(config-if)# novell router-filter <number:800..899> <cr>    # conditional_registration_candidates-010043
+(config-if)# novell router-sap-filter <cr>    # conditional_registration_candidates-010388
+(config-if)# novell router-sap-filter <number:1000..1099> <cr>    # conditional_registration_candidates-010055
+(config-if)# novell sap-helper <address> <cr>    # conditional_registration_candidates-009905
+(config-if)# novell sap-helper <cr>    # conditional_registration_candidates-010366
+(config-if)# novell sap-interval <cr>    # conditional_registration_candidates-010386
+(config-if)# novell sap-interval <number:0..2147483647> <cr>    # conditional_registration_candidates-010044
+(config-if)# novell sap-max-packetsize <number:480..4096> <cr>    # conditional_registration_candidates-009631
+(config-if)# novell sap-max-packetsize <number:480..4096> <cr>    # conditional_registration_candidates-010356
+(config-if)# novell sap-multiplier <number:1..1000> <cr>    # conditional_registration_candidates-009629
+(config-if)# novell sap-multiplier <number:1..1000> <cr>    # conditional_registration_candidates-010354
+(config-if)# novell spx-idle-time <number:0..4294967295> <cr>    # conditional_registration_candidates-009633
+(config-if)# novell spx-idle-time <number:0..4294967295> <cr>    # conditional_registration_candidates-010357
+(config-if)# novell spx-spoof <cr>    # conditional_registration_candidates-009772
+(config-if)# novell spx-spoof <cr>    # conditional_registration_candidates-010390
+(config-if)# novell triggered-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-009625
+(config-if)# novell triggered-sap-delay <number:0..4294967295> <cr>    # conditional_registration_candidates-010351
+(config-if)# novell triggered-sap-holddown <number:0..4294967295> <cr>    # conditional_registration_candidates-009626
+(config-if)# novell triggered-sap-holddown <number:0..4294967295> <cr>    # conditional_registration_candidates-010352
+(config-if)# novell type-20-propagation <cr>    # conditional_registration_candidates-009759
+(config-if)# novell type-20-propagation <cr>    # conditional_registration_candidates-010384
+(config-if)# novell update interval sap <cr>    # conditional_registration_candidates-010431
+(config-if)# novell update interval sap changes-only <cr>    # conditional_registration_candidates-010299
+(config-if)# novell watchdog filter <cr>    # conditional_registration_candidates-010062
+(config-if)# novell watchdog filter <cr>    # conditional_registration_candidates-010413
+(config-if)# novell watchdog-spoof <cr>    # conditional_registration_candidates-009770
+(config-if)# novell watchdog-spoof <cr>    # conditional_registration_candidates-010389
+(config-if)# opendns out <cr>    # conditional_registration_candidates-009635
+(config-if)# ospfv3 <number:1..65535> cost dynamic <cr>    # conditional_registration_candidates-010202
+(config-if)# ospfv3 <number:1..65535> manet peering cost threshold <number:0..65535> <cr>    # conditional_registration_candidates-010341
+(config-if)# ospfv3 <number:1..65535> manet peering link-metrics <cr>    # conditional_registration_candidates-010438
+(config-if)# ospfv3 <number:1..65535> network manet <cr>    # conditional_registration_candidates-010191
+(config-if)# ospfv3 cost dynamic <cr>    # conditional_registration_candidates-010443
+(config-if)# ospfv3 manet peering cost threshold <number:0..65535> <cr>    # conditional_registration_candidates-010449
+(config-if)# ospfv3 network manet <cr>    # conditional_registration_candidates-010442
+(config-if)# otv <cr>    # conditional_registration_candidates-010347
+(config-if)# otv adjacency-server unicast-only <cr>    # conditional_registration_candidates-009920
+(config-if)# otv control-group <address> <cr>    # conditional_registration_candidates-009817
+(config-if)# otv data-group <prefix:dynamic> <cr>    # conditional_registration_candidates-010395
+(config-if)# otv encapsulation-format ip gre <cr>    # conditional_registration_candidates-010168
+(config-if)# otv filter-fhrp <cr>    # conditional_registration_candidates-009672
+(config-if)# otv join-interface <interface-type> <string> <cr>    # conditional_registration_candidates-010423
+(config-if)# otv router isis <cr>    # conditional_registration_candidates-009836
+(config-if)# otv suppress arp-nd <cr>    # conditional_registration_candidates-009867
+(config-if)# otv use-adjacency-server <address> unicast-only <cr>    # conditional_registration_candidates-010183
+(config-if)# otv vpn-name <string> <cr>    # conditional_registration_candidates-009870
+(config-if)# performance monitor context <?option@55558bba1fe8> <cr>    # conditional_registration_candidates-010420
+(config-if)# performance monitor context <cr>    # conditional_registration_candidates-009827
+(config-if)# port-tagging <cr>    # conditional_registration_candidates-009607
+(config-if)# preferred-path interface <interface> <cr>    # conditional_registration_candidates-010414
+(config-if)# preferred-path peer <address> <cr>    # conditional_registration_candidates-010078
+(config-if)# pseudowire <address> <number:1..4294967295> encapsulation mpls <cr>    # conditional_registration_candidates-010436
+(config-if)# pseudowire <address> <number:1..4294967295> pw-class <string> <cr>    # conditional_registration_candidates-010277
+(config-if)# pseudowire type <number:1..4097> <cr>    # conditional_registration_candidates-010054
+(config-if)# pvc <number:dynamic> <cr>    # conditional_registration_candidates-010382
+(config-if)# pvc <number:dynamic> <cr>    # conditional_registration_candidates-010383
+(config-if)# pvc <string> <cr>    # conditional_registration_candidates-009745
+(config-if)# pvc <string> <cr>    # conditional_registration_candidates-009746
+(config-if)# range <string> <cr>    # conditional_registration_candidates-009685
+(config-if)# range pvc <number:dynamic> <number:dynamic> <cr>    # conditional_registration_candidates-010444
+(config-if)# rpl <string> enable <cr>    # conditional_registration_candidates-009813
+(config-if)# rpl external-network <number:0..127> <cr>    # conditional_registration_candidates-009797
+(config-if)# rrr administrative-weight <number:0..4294967295> <cr>    # conditional_registration_candidates-009852
+(config-if)# rrr attribute-flags <number:0..4294967295> <cr>    # conditional_registration_candidates-009818
+(config-if)# rrr enable <cr>    # conditional_registration_candidates-009645
+(config-if)# rrr flooding-thresholds down <number:0..100> <cr>    # conditional_registration_candidates-010161
+(config-if)# rrr flooding-thresholds up <number:0..100> <cr>    # conditional_registration_candidates-010154
+(config-if)# sbc interface-id <number:0..65535> <cr>    # conditional_registration_candidates-009806
+(config-if)# sequencing <cr>    # conditional_registration_candidates-009632
+(config-if)# sequencing resync <cr>    # conditional_registration_candidates-009766
+(config-if)# signaling protocol none <cr>    # conditional_registration_candidates-009966
+(config-if)# site-manager inside <cr>    # conditional_registration_candidates-009671
+(config-if)# source-interface <interface> <cr>    # conditional_registration_candidates-010358
+(config-if)# spanning-tree <cr>    # conditional_registration_candidates-009610
+(config-if)# spanning-tree bpdufilter disable <cr>    # conditional_registration_candidates-009886
+(config-if)# spanning-tree bpduguard disable <cr>    # conditional_registration_candidates-009893
+(config-if)# spanning-tree cost <number:1..200000000> <cr>    # conditional_registration_candidates-009622
+(config-if)# spanning-tree link-type point-to-point <cr>    # conditional_registration_candidates-009906
+(config-if)# spanning-tree port-priority <?number_help_func_action@55558b93a9d0> <cr>    # conditional_registration_candidates-010401
+(config-if)# spanning-tree portfast <cr>    # conditional_registration_candidates-009695
+(config-if)# srlg gid <number:1..4294967295> <cr>    # conditional_registration_candidates-009782
+(config-if)# status <cr>    # conditional_registration_candidates-009634
+(config-if)# status control-plane route-watch <cr>    # conditional_registration_candidates-010064
+(config-if)# status decoupled <cr>    # conditional_registration_candidates-009771
+(config-if)# status peer topology dual-homed <cr>    # conditional_registration_candidates-010226
+(config-if)# status protocol notification static <string> <cr>    # conditional_registration_candidates-010308
+(config-if)# status redundancy master <cr>    # conditional_registration_candidates-010082
+(config-if)# status suppress standby <cr>    # conditional_registration_candidates-010089
+(config-if)# svc <string> <cr>    # conditional_registration_candidates-009757
+(config-if)# svc <string> <cr>    # conditional_registration_candidates-009758
+(config-if)# switching tlv <cr>    # conditional_registration_candidates-009773
+(config-if)# tlv <number:1..64> <number:1..255> <number:1..4294967295> <cr>    # conditional_registration_candidates-010245
+(config-if)# tlv <number:1..64> <number:1..255> hexstr <hex-string> <cr>    # conditional_registration_candidates-010439
+(config-if)# tlv template <string> <cr>    # conditional_registration_candidates-010091
+(config-if)# utd enable <cr>    # conditional_registration_candidates-009644
+(config-if)# vc type ethernet <cr>    # conditional_registration_candidates-009990
+(config-if)# vccv bfd status signaling <cr>    # conditional_registration_candidates-010415
+(config-if)# vccv bfd template <string> <cr>    # conditional_registration_candidates-010242
+(config-if)# vccv control-word <cr>    # conditional_registration_candidates-009776
+(config-if)# vxlan encapsulation ipv4 <cr>    # conditional_registration_candidates-009848
+(config-if)# vxlan source-port-hash 3-tuple <cr>    # conditional_registration_candidates-009829
+(config-if)# vxlan source-port-hash 3-tuple-for-fragments <cr>    # conditional_registration_candidates-009847
+(config-if)# vxlan udp port <cr>    # conditional_registration_candidates-010359
+(config-if)# xconnect vfi <string> <cr>    # conditional_registration_candidates-009846
+(config-if)# zone-member security <string> <cr>    # conditional_registration_candidates-009785

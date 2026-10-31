@@ -1,0 +1,98 @@
+# 模式 ipv6-router；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-rtr)# dag-id <address> <cr>    # conditional_registration_candidates-010789
+(config-rtr)# dag-id unnumbered <interface> <cr>    # conditional_registration_candidates-010872
+(config-rtr)# dao delay <number:1..255> <cr>    # conditional_registration_candidates-010851
+(config-rtr)# dao enable <cr>    # conditional_registration_candidates-010808
+(config-rtr)# dao latency <number:20..100> <cr>    # conditional_registration_candidates-010847
+(config-rtr)# default dag-id <cr>    # conditional_registration_candidates-010786
+(config-rtr)# default dao delay <cr>    # conditional_registration_candidates-010853
+(config-rtr)# default dao enable <cr>    # conditional_registration_candidates-010852
+(config-rtr)# default dao latency <cr>    # conditional_registration_candidates-010849
+(config-rtr)# default definition node <cr>    # conditional_registration_candidates-010816
+(config-rtr)# default definition root <cr>    # conditional_registration_candidates-010814
+(config-rtr)# default fast-connect <cr>    # conditional_registration_candidates-010795
+(config-rtr)# default floating <cr>    # conditional_registration_candidates-010794
+(config-rtr)# default global-repair interval <cr>    # conditional_registration_candidates-010828
+(config-rtr)# default instance-id <cr>    # conditional_registration_candidates-010801
+(config-rtr)# default link-check all <cr>    # conditional_registration_candidates-010819
+(config-rtr)# default load-balance <cr>    # conditional_registration_candidates-010798
+(config-rtr)# default manet cache acknowledgement <cr>    # conditional_registration_candidates-010862
+(config-rtr)# default manet cache update <cr>    # conditional_registration_candidates-010858
+(config-rtr)# default manet hello unicast <cr>    # conditional_registration_candidates-010866
+(config-rtr)# default manet peering selective <cr>    # conditional_registration_candidates-010869
+(config-rtr)# default manet timers ackwait <cr>    # conditional_registration_candidates-010864
+(config-rtr)# default manet willingness <cr>    # conditional_registration_candidates-010846
+(config-rtr)# default nsr <cr>    # conditional_registration_candidates-010812
+(config-rtr)# default ocp <cr>    # conditional_registration_candidates-010805
+(config-rtr)# default preference <cr>    # conditional_registration_candidates-010792
+(config-rtr)# default probe count <cr>    # conditional_registration_candidates-010836
+(config-rtr)# default probe interval <cr>    # conditional_registration_candidates-010829
+(config-rtr)# default probe payload <cr>    # conditional_registration_candidates-010842
+(config-rtr)# default rank maximum-increase <cr>    # conditional_registration_candidates-010841
+(config-rtr)# default send-dis <cr>    # conditional_registration_candidates-010803
+(config-rtr)# default step-of-rank <cr>    # conditional_registration_candidates-010809
+(config-rtr)# default timers manet ackwait <cr>    # conditional_registration_candidates-010871
+(config-rtr)# default trickle-timer doubling <cr>    # conditional_registration_candidates-010830
+(config-rtr)# default trickle-timer minimum <cr>    # conditional_registration_candidates-010821
+(config-rtr)# default trickle-timer redundancy-count <cr>    # conditional_registration_candidates-010837
+(config-rtr)# definition node <cr>    # conditional_registration_candidates-010784
+(config-rtr)# definition root <cr>    # conditional_registration_candidates-010783
+(config-rtr)# fast-connect <cr>    # conditional_registration_candidates-010780
+(config-rtr)# floating <cr>    # conditional_registration_candidates-010779
+(config-rtr)# global-repair interval <number:1..255> <cr>    # conditional_registration_candidates-010825
+(config-rtr)# instance-id <number:0..127> <cr>    # conditional_registration_candidates-010804
+(config-rtr)# link-check all <cr>    # conditional_registration_candidates-010793
+(config-rtr)# load-balance mp2p <cr>    # conditional_registration_candidates-010797
+(config-rtr)# manet cache acknowledgement <number:0..4294967295> <cr>    # conditional_registration_candidates-010860
+(config-rtr)# manet cache update <number:0..4294967295> <cr>    # conditional_registration_candidates-010857
+(config-rtr)# manet hello unicast <cr>    # conditional_registration_candidates-010854
+(config-rtr)# manet peering selective <cr>    # conditional_registration_candidates-010855
+(config-rtr)# manet timers ackwait <number:0..10000> <cr>    # conditional_registration_candidates-010863
+(config-rtr)# manet willingness <number:0..255> <cr>    # conditional_registration_candidates-010844
+(config-rtr)# no dag-id <cr>    # conditional_registration_candidates-010785
+(config-rtr)# no dao delay <cr>    # conditional_registration_candidates-010850
+(config-rtr)# no dao enable <cr>    # conditional_registration_candidates-010848
+(config-rtr)# no dao latency <cr>    # conditional_registration_candidates-010845
+(config-rtr)# no definition node <cr>    # conditional_registration_candidates-010815
+(config-rtr)# no definition root <cr>    # conditional_registration_candidates-010813
+(config-rtr)# no fast-connect <cr>    # conditional_registration_candidates-010791
+(config-rtr)# no floating <cr>    # conditional_registration_candidates-010790
+(config-rtr)# no global-repair interval <cr>    # conditional_registration_candidates-010822
+(config-rtr)# no instance-id <cr>    # conditional_registration_candidates-010799
+(config-rtr)# no link-check all <cr>    # conditional_registration_candidates-010817
+(config-rtr)# no load-balance <cr>    # conditional_registration_candidates-010796
+(config-rtr)# no manet cache acknowledgement <cr>    # conditional_registration_candidates-010859
+(config-rtr)# no manet cache update <cr>    # conditional_registration_candidates-010856
+(config-rtr)# no manet hello unicast <cr>    # conditional_registration_candidates-010865
+(config-rtr)# no manet peering selective <cr>    # conditional_registration_candidates-010867
+(config-rtr)# no manet timers ackwait <cr>    # conditional_registration_candidates-010861
+(config-rtr)# no manet willingness <cr>    # conditional_registration_candidates-010843
+(config-rtr)# no nsr <cr>    # conditional_registration_candidates-010811
+(config-rtr)# no ocp <cr>    # conditional_registration_candidates-010802
+(config-rtr)# no preference <cr>    # conditional_registration_candidates-010787
+(config-rtr)# no probe count <cr>    # conditional_registration_candidates-010831
+(config-rtr)# no probe interval <cr>    # conditional_registration_candidates-010823
+(config-rtr)# no probe payload <cr>    # conditional_registration_candidates-010838
+(config-rtr)# no rank maximum-increase <cr>    # conditional_registration_candidates-010835
+(config-rtr)# no send-dis <cr>    # conditional_registration_candidates-010800
+(config-rtr)# no step-of-rank <cr>    # conditional_registration_candidates-010807
+(config-rtr)# no timers manet ackwait <cr>    # conditional_registration_candidates-010868
+(config-rtr)# no trickle-timer doubling <cr>    # conditional_registration_candidates-010824
+(config-rtr)# no trickle-timer minimum <cr>    # conditional_registration_candidates-010818
+(config-rtr)# no trickle-timer redundancy-count <cr>    # conditional_registration_candidates-010832
+(config-rtr)# nsr <cr>    # conditional_registration_candidates-010782
+(config-rtr)# ocp <number:0..1> <cr>    # conditional_registration_candidates-010806
+(config-rtr)# preference <number:0..7> <cr>    # conditional_registration_candidates-010788
+(config-rtr)# probe count <number:1..10> <cr>    # conditional_registration_candidates-010833
+(config-rtr)# probe interval <number:1..60> <cr>    # conditional_registration_candidates-010826
+(config-rtr)# probe payload <number:0..100> <cr>    # conditional_registration_candidates-010840
+(config-rtr)# rank maximum-increase <number:0..64> <cr>    # conditional_registration_candidates-010839
+(config-rtr)# send-dis <cr>    # conditional_registration_candidates-010781
+(config-rtr)# step-of-rank <number:1..16> <cr>    # conditional_registration_candidates-010810
+(config-rtr)# timers manet ackwait <number:0..10000> <cr>    # conditional_registration_candidates-010870
+(config-rtr)# trickle-timer doubling <number:1..26> <cr>    # conditional_registration_candidates-010827
+(config-rtr)# trickle-timer minimum <number:8..26> <cr>    # conditional_registration_candidates-010820
+(config-rtr)# trickle-timer redundancy-count <number:1..64> <cr>    # conditional_registration_candidates-010834

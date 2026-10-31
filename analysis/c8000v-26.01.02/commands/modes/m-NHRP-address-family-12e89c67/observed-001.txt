@@ -1,0 +1,7 @@
+# 模式 NHRP-address-family；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-af)# default import bgp <cr>    # observed_connections-009796
+(config-router-af)# import bgp <number:1..4294967295> <cr>    # observed_connections-009797
+(config-router-af)# no import bgp <cr>    # observed_connections-009795

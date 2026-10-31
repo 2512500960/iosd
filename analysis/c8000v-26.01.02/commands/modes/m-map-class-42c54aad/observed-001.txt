@@ -1,0 +1,128 @@
+# 模式 map-class；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-map-class)# default dialer callback-server <cr>    # observed_connections-006320
+(config-map-class)# default dialer enable-timeout <cr>    # observed_connections-006302
+(config-map-class)# default dialer fast-idle <cr>    # observed_connections-006299
+(config-map-class)# default dialer idle-timeout <cr>    # observed_connections-006296
+(config-map-class)# default dialer isdn <cr>    # observed_connections-006356
+(config-map-class)# default dialer isdn short-hold <cr>    # observed_connections-006370
+(config-map-class)# default dialer outgoing accunet <cr>    # observed_connections-006376
+(config-map-class)# default dialer outgoing megacomm <cr>    # observed_connections-006372
+(config-map-class)# default dialer outgoing sdn <cr>    # observed_connections-006368
+(config-map-class)# default dialer voice-call <cr>    # observed_connections-006317
+(config-map-class)# default dialer wait-for-carrier-time <cr>    # observed_connections-006306
+(config-map-class)# default frame-relay bc <number:300..16000000> <cr>    # observed_connections-006359
+(config-map-class)# default frame-relay bc in <cr>    # observed_connections-006336
+(config-map-class)# default frame-relay bc out <cr>    # observed_connections-006343
+(config-map-class)# default frame-relay be <number:0..16000000> <cr>    # observed_connections-006363
+(config-map-class)# default frame-relay be in <cr>    # observed_connections-006342
+(config-map-class)# default frame-relay be out <cr>    # observed_connections-006349
+(config-map-class)# default frame-relay cir <number:1..45000000> <cr>    # observed_connections-006365
+(config-map-class)# default frame-relay cir in <cr>    # observed_connections-006325
+(config-map-class)# default frame-relay cir out <cr>    # observed_connections-006331
+(config-map-class)# default frame-relay end-to-end keepalive error-threshold recv <cr>    # observed_connections-006401
+(config-map-class)# default frame-relay end-to-end keepalive error-threshold send <cr>    # observed_connections-006396
+(config-map-class)# default frame-relay end-to-end keepalive event-window recv <cr>    # observed_connections-006398
+(config-map-class)# default frame-relay end-to-end keepalive event-window send <cr>    # observed_connections-006392
+(config-map-class)# default frame-relay end-to-end keepalive inject <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-006410
+(config-map-class)# default frame-relay end-to-end keepalive mode bidirectional <cr>    # observed_connections-006407
+(config-map-class)# default frame-relay end-to-end keepalive reject <cr>    # observed_connections-006405
+(config-map-class)# default frame-relay end-to-end keepalive success-events recv <cr>    # observed_connections-006404
+(config-map-class)# default frame-relay end-to-end keepalive success-events send <cr>    # observed_connections-006400
+(config-map-class)# default frame-relay end-to-end keepalive timer recv <cr>    # observed_connections-006394
+(config-map-class)# default frame-relay end-to-end keepalive timer send <cr>    # observed_connections-006389
+(config-map-class)# default frame-relay fecn-create <cr>    # observed_connections-006353
+(config-map-class)# default frame-relay fragment <cr>    # observed_connections-006345
+(config-map-class)# default frame-relay holdq <cr>    # observed_connections-006315
+(config-map-class)# default frame-relay mincir <number:1000..45000000> <cr>    # observed_connections-006361
+(config-map-class)# default frame-relay mincir in <cr>    # observed_connections-006333
+(config-map-class)# default frame-relay mincir out <cr>    # observed_connections-006321
+(config-map-class)# default frame-relay tc <cr>    # observed_connections-006355
+(config-map-class)# default frame-relay traffic-rate <number:600..45000000> <cr>    # observed_connections-006378
+(config-map-class)# default frame-relay voice bandwidth <number:8000..45000000> <cr>    # observed_connections-006386
+(config-map-class)# default service-policy input <cr>    # observed_connections-006326
+(config-map-class)# dialer callback-server <cr>    # observed_connections-006295
+(config-map-class)# dialer enable-timeout <number:1..2147483> <cr>    # observed_connections-006290
+(config-map-class)# dialer fast-idle <number:1..2147483> <cr>    # observed_connections-006289
+(config-map-class)# dialer idle-timeout <number:0..2147483> <cr>    # observed_connections-006288
+(config-map-class)# dialer isdn <cr>    # observed_connections-006314
+(config-map-class)# dialer isdn short-hold <cr>    # observed_connections-006341
+(config-map-class)# dialer outgoing accunet <cr>    # observed_connections-006352
+(config-map-class)# dialer outgoing megacomm <cr>    # observed_connections-006346
+(config-map-class)# dialer outgoing sdn <cr>    # observed_connections-006340
+(config-map-class)# dialer voice-call <cr>    # observed_connections-006293
+(config-map-class)# dialer wait-for-carrier-time <number:1..2147483> <cr>    # observed_connections-006291
+(config-map-class)# exit-class <cr>    # observed_connections-006287
+(config-map-class)# frame-relay bc <number:300..16000000> <cr>    # observed_connections-006329
+(config-map-class)# frame-relay bc in <number:0..16000000> <cr>    # observed_connections-006307
+(config-map-class)# frame-relay bc out <number:300..16000000> <cr>    # observed_connections-006309
+(config-map-class)# frame-relay be <number:0..16000000> <cr>    # observed_connections-006334
+(config-map-class)# frame-relay be in <number:0..16000000> <cr>    # observed_connections-006308
+(config-map-class)# frame-relay be out <number:0..16000000> <cr>    # observed_connections-006311
+(config-map-class)# frame-relay cir <number:1..45000000> <cr>    # observed_connections-006335
+(config-map-class)# frame-relay cir in <number:0..45000000> <cr>    # observed_connections-006301
+(config-map-class)# frame-relay cir out <number:1..45000000> <cr>    # observed_connections-006304
+(config-map-class)# frame-relay end-to-end keepalive error-threshold recv <number:1..32> <cr>    # observed_connections-006382
+(config-map-class)# frame-relay end-to-end keepalive error-threshold send <number:1..32> <cr>    # observed_connections-006379
+(config-map-class)# frame-relay end-to-end keepalive event-window recv <number:1..32> <cr>    # observed_connections-006380
+(config-map-class)# frame-relay end-to-end keepalive event-window send <number:1..32> <cr>    # observed_connections-006375
+(config-map-class)# frame-relay end-to-end keepalive inject <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-006408
+(config-map-class)# frame-relay end-to-end keepalive mode bidirectional <cr>    # observed_connections-006387
+(config-map-class)# frame-relay end-to-end keepalive reject <cr>    # observed_connections-006384
+(config-map-class)# frame-relay end-to-end keepalive success-events recv <number:1..32> <cr>    # observed_connections-006383
+(config-map-class)# frame-relay end-to-end keepalive success-events send <number:1..32> <cr>    # observed_connections-006381
+(config-map-class)# frame-relay end-to-end keepalive timer recv <number:1..10000> <cr>    # observed_connections-006377
+(config-map-class)# frame-relay end-to-end keepalive timer send <number:1..10000> <cr>    # observed_connections-006371
+(config-map-class)# frame-relay fecn-create <cr>    # observed_connections-006313
+(config-map-class)# frame-relay fragment <cr>    # observed_connections-006310
+(config-map-class)# frame-relay holdq <number:1..1024> <cr>    # observed_connections-006292
+(config-map-class)# frame-relay mincir <number:1000..45000000> <cr>    # observed_connections-006330
+(config-map-class)# frame-relay mincir in <number:1000..45000000> <cr>    # observed_connections-006305
+(config-map-class)# frame-relay mincir out <number:1000..45000000> <cr>    # observed_connections-006298
+(config-map-class)# frame-relay tc <number:10..10000> <cr>    # observed_connections-006351
+(config-map-class)# frame-relay traffic-rate <number:600..45000000> <cr>    # observed_connections-006354
+(config-map-class)# frame-relay voice bandwidth <number:8000..45000000> <cr>    # observed_connections-006366
+(config-map-class)# no dialer callback-server <cr>    # observed_connections-006318
+(config-map-class)# no dialer enable-timeout <cr>    # observed_connections-006300
+(config-map-class)# no dialer fast-idle <cr>    # observed_connections-006297
+(config-map-class)# no dialer idle-timeout <cr>    # observed_connections-006294
+(config-map-class)# no dialer isdn <cr>    # observed_connections-006350
+(config-map-class)# no dialer isdn short-hold <cr>    # observed_connections-006367
+(config-map-class)# no dialer outgoing accunet <cr>    # observed_connections-006373
+(config-map-class)# no dialer outgoing megacomm <cr>    # observed_connections-006369
+(config-map-class)# no dialer outgoing sdn <cr>    # observed_connections-006364
+(config-map-class)# no dialer voice-call <cr>    # observed_connections-006316
+(config-map-class)# no dialer wait-for-carrier-time <cr>    # observed_connections-006303
+(config-map-class)# no frame-relay bc <number:300..16000000> <cr>    # observed_connections-006357
+(config-map-class)# no frame-relay bc in <cr>    # observed_connections-006332
+(config-map-class)# no frame-relay bc out <cr>    # observed_connections-006338
+(config-map-class)# no frame-relay be <number:0..16000000> <cr>    # observed_connections-006360
+(config-map-class)# no frame-relay be in <cr>    # observed_connections-006337
+(config-map-class)# no frame-relay be out <cr>    # observed_connections-006344
+(config-map-class)# no frame-relay cir <number:1..45000000> <cr>    # observed_connections-006362
+(config-map-class)# no frame-relay cir in <cr>    # observed_connections-006322
+(config-map-class)# no frame-relay cir out <cr>    # observed_connections-006327
+(config-map-class)# no frame-relay end-to-end keepalive error-threshold recv <cr>    # observed_connections-006399
+(config-map-class)# no frame-relay end-to-end keepalive error-threshold send <cr>    # observed_connections-006393
+(config-map-class)# no frame-relay end-to-end keepalive event-window recv <cr>    # observed_connections-006395
+(config-map-class)# no frame-relay end-to-end keepalive event-window send <cr>    # observed_connections-006390
+(config-map-class)# no frame-relay end-to-end keepalive inject <number:0..4294967295> <number:0..4294967295> <cr>    # observed_connections-006409
+(config-map-class)# no frame-relay end-to-end keepalive mode bidirectional <cr>    # observed_connections-006406
+(config-map-class)# no frame-relay end-to-end keepalive reject <cr>    # observed_connections-006403
+(config-map-class)# no frame-relay end-to-end keepalive success-events recv <cr>    # observed_connections-006402
+(config-map-class)# no frame-relay end-to-end keepalive success-events send <cr>    # observed_connections-006397
+(config-map-class)# no frame-relay end-to-end keepalive timer recv <cr>    # observed_connections-006391
+(config-map-class)# no frame-relay end-to-end keepalive timer send <cr>    # observed_connections-006388
+(config-map-class)# no frame-relay fecn-create <cr>    # observed_connections-006347
+(config-map-class)# no frame-relay fragment <cr>    # observed_connections-006339
+(config-map-class)# no frame-relay holdq <cr>    # observed_connections-006312
+(config-map-class)# no frame-relay mincir <number:1000..45000000> <cr>    # observed_connections-006358
+(config-map-class)# no frame-relay mincir in <cr>    # observed_connections-006328
+(config-map-class)# no frame-relay mincir out <cr>    # observed_connections-006319
+(config-map-class)# no frame-relay tc <cr>    # observed_connections-006348
+(config-map-class)# no frame-relay traffic-rate <number:600..45000000> <cr>    # observed_connections-006374
+(config-map-class)# no frame-relay voice bandwidth <number:8000..45000000> <cr>    # observed_connections-006385
+(config-map-class)# no service-policy input <cr>    # observed_connections-006323
+(config-map-class)# service-policy input <string> <cr>    # observed_connections-006324

@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-002.md
+
+(config)# crypto pki import <string> pkcs12 <url:dynamic> password <string> <cr>    # path-062343
+(config)# crypto pki import <string> pkcs12 terminal password <string> <cr>    # path-057936
+(config)# crypto pki profile enrollment <string> <cr>    # path-037838
+(config)# crypto pki server <string> <cr>    # path-030845
+(config)# crypto pki server <string> rollover <cr>    # path-037766
+(config)# crypto pki server <string> rollover cancel <cr>    # path-047070
+(config)# crypto pki trustpoint <string> <cr>    # path-030774
+(config)# crypto pki trustpool clean <cr>    # path-030807
+(config)# crypto pki trustpool import url <url:dynamic> <cr>    # path-061453
+(config)# crypto pki trustpool policy <cr>    # path-030771
+(config)# crypto provisioning petitioner <cr>    # path-026285
+(config)# crypto provisioning registrar <cr>    # path-026305
+(config)# cts cache enable <cr>    # path-027472
+(config)# cts cache nv-storage <url:dynamic> <cr>    # path-062948
+(config)# cts policy-server device-id <string> <cr>    # path-031084
+(config)# cts policy-server name <string> <cr>    # path-031000
+(config)# cts policy-server order random <cr>    # path-031076
+(config)# cts policy-server username <string> password <string> <cr>    # path-047429
+(config)# cts role-based enforcement <cr>    # path-026874
+(config)# cts role-based enforcement logging-interval <number:5..86400> <cr>    # path-035405
+(config)# cts role-based enforcement vlan-list <cr>    # path-060603
+(config)# cts role-based ipv6-copy <cr>    # path-026764
+(config)# cts role-based l2-vrf <string> vlan-list <cr>    # path-060826
+(config)# cts role-based monitor all <cr>    # path-029053
+(config)# cts role-based monitor permissions default <cr>    # path-060830
+(config)# cts role-based permissions default <cr>    # path-060593
+(config)# cts role-based policy priority-static <cr>    # path-029218
+(config)# cts role-based sgt-caching <cr>    # path-026876
+(config)# cts role-based sgt-caching vlan-list <cr>    # path-060604
+(config)# cts role-based sgt-caching with-enforcement <cr>    # path-029150
+(config)# cts role-based sgt-map <address> sgt <number:2..65521> <cr>    # path-044933
+(config)# cts role-based sgt-map <prefix:dynamic> <cr>    # path-060576
+(config)# cts server load-balance method least-outstanding <cr>    # path-037771
+(config)# cts sxp enable <cr>    # path-027518
+(config)# cts sxp import-list <string> <cr>    # path-031027
+(config)# cts sxp limit export peer-sequence-nodes <number:2..64> <cr>    # path-047360
+(config)# cts sxp node-id <interface> <cr>    # path-060708
+(config)# cwmp agent <cr>    # path-025912
+(config)# default aaa accounting delay-start <cr>    # path-028273
+(config)# default aaa accounting dot1x guarantee-first <cr>    # path-034487
+(config)# default aaa accounting dot1x local <cr>    # path-034486
+(config)# default aaa accounting dot1x visible-keys <cr>    # path-034442
+(config)# default aaa accounting gigawords <cr>    # path-028389
+(config)# default aaa accounting include auth-profile framed-ip-address <cr>    # path-044147
+(config)# default aaa accounting jitter <cr>    # path-028210
+(config)# default aaa accounting nested <cr>    # path-028438
+(config)# default aaa accounting redundancy new-session <cr>    # path-034556
+(config)# default aaa accounting redundancy suppress system-records <cr>    # path-044262
+(config)# default aaa accounting send counters ipv6 <cr>    # path-044059
+(config)# default aaa accounting send stop-record always <cr>    # path-044099
+(config)# default aaa accounting send stop-record authentication failure <cr>    # path-052141
+(config)# default aaa accounting send stop-record authentication success remote-server <cr>    # path-056797
+(config)# default aaa accounting session-duration ntp-adjusted <cr>    # path-034367
+(config)# default aaa accounting suppress attributes vpdn-endpoints <cr>    # path-044170
+(config)# default aaa accounting suppress null-username <cr>    # path-034333
+(config)# default aaa accounting update <cr>    # path-028274
+(config)# default aaa archives enable-data index <number:1..5> <string> <cr>    # path-052046
+(config)# default aaa archives user-data <string> index <number:1..5> <string> <cr>    # path-056769
+(config)# default aaa attribute list <string> <cr>    # path-034142
+(config)# default aaa authentication attempts login <number:1..25> <cr>    # path-044095
+(config)# default aaa authentication banner <cr>    # path-028310
+(config)# default aaa authentication fail-message <cr>    # path-028340
+(config)# default aaa authentication login default <cr>    # path-034287
+(config)# default aaa authentication password-prompt <cr>    # path-028369
+(config)# default aaa authentication rejected <cr>    # path-028507
+(config)# default aaa authentication suppress null-username <cr>    # path-034216
+(config)# default aaa authentication token key <string> <cr>    # path-044427
+(config)# default aaa authorization address-authorization-exec <cr>    # path-028299
+(config)# default aaa authorization config-commands <cr>    # path-028257
+(config)# default aaa authorization console <cr>    # path-028205
+(config)# default aaa authorization network default <cr>    # path-034350
+(config)# default aaa authorization network visible-keys <cr>    # path-034345
+(config)# default aaa authorization suppress null-username <cr>    # path-034267
+(config)# default aaa authorization template <cr>    # path-028329
+(config)# default aaa cache filterserver <cr>    # path-028033
+(config)# default aaa cache profile <string> <cr>    # path-034126
+(config)# default aaa common-criteria policy <string> <cr>    # path-034141
+(config)# default aaa dnis map <string> accounting network <cr>    # path-052319
+(config)# default aaa dnis map <string> authentication ppp <cr>    # path-052299
+(config)# default aaa dnis map <string> authorization network <cr>    # path-052278
+(config)# default aaa dnis map enable <cr>    # path-034263
+(config)# default aaa group server tacacs+ <string> <cr>    # path-044063
+(config)# default aaa local authentication attempts max-fail <cr>    # path-044012
+(config)# default aaa local authentication default authorization default <cr>    # path-052088
+(config)# default aaa new-model <cr>    # path-026179
+(config)# default aaa tools memleak mode manual count <number:2..64> <cr>    # path-056774
+(config)# default aaa user profile <string> <cr>    # path-034170
+(config)# default access-list acl-ace-limit <cr>    # path-026750
+(config)# default access-list acl-limit <cr>    # path-026728
+(config)# default access-list dynamic-extended <cr>    # path-026668
+(config)# default access-list global-ace-limit <cr>    # path-026774
+(config)# default access-list rate-limit <number:100..199> <address> <cr>    # path-034980
+(config)# default access-list template <cr>    # path-026751
+(config)# default access-session accounting attributes filter-spec include list <string> <cr>    # path-057405
+(config)# default access-session accounting interim-disable <cr>    # path-030004
+(config)# default access-session acl ack-timer <cr>    # path-030390
+(config)# default access-session acl default passthrough <cr>    # path-036808
+(config)# default access-session attributes filter-list list <string> <cr>    # path-045715
+(config)# default access-session authentication attributes filter-spec include list <string> <cr>    # path-057361
+(config)# default access-session bridge-mode vm-policy <cr>    # path-027990
+(config)# default access-session cache limit <cr>    # path-030230
+(config)# default access-session cui-enable <cr>    # path-027138
+(config)# default access-session event-logging <cr>    # path-027115
+(config)# default access-session interface-template sticky <cr>    # path-030369
+(config)# default access-session limit profile name <string> <cr>    # path-045948
+(config)# default access-session mac-move deny <cr>    # path-029969
+(config)# default access-session monitor <cr>    # path-027220
+(config)# default access-session passthru-access-group <string> <cr>    # path-030293
+(config)# default access-session pqc-type <cr>    # path-027212
+(config)# default access-session tls-version <cr>    # path-027195
+(config)# default access-session voice skip-data-vlan <cr>    # path-030237
+(config)# default accounting group <string> <cr>    # path-027877
+(config)# default alps circuit <string> <cr>    # path-028290
+(config)# default alps enable-alarms peer <cr>    # path-028266
+(config)# default alps keepalive <cr>    # path-026400
+(config)# default alps local-peer <address> <cr>    # path-028185
+(config)# default alps matip-host-emulation <cr>    # path-026438
+(config)# default alps remote-peer <address> <cr>    # path-028485
+(config)# default alps service-msg-list <number:1..8> number <number:1..8> <string> <cr>    # path-052112
+(config)# default ancp adjacency timer <cr>    # path-028401
+(config)# default ancp atm shaper percent-factor <cr>    # path-034419
+(config)# default ancp atm shaper percent-factor <cr>    # path-034420
+(config)# default ancp enable test-configuration <cr>    # path-028397
+(config)# default ancp neighbor name <string> id <string> <cr>    # path-052280
+(config)# default ancp source-ip <address> <cr>    # path-028414
+(config)# default ancp truncate <cr>    # path-026393
+(config)# default archive <cr>    # path-025965
+(config)# default arp <address> <cr>    # path-026804
+(config)# default arp entries interface-limit <cr>    # path-028943
+(config)# default async-bootp <cr>    # path-025857
+(config)# default authentication command bounce-port ignore <cr>    # path-036289
+(config)# default authentication command disable-port ignore <cr>    # path-036355
+(config)# default authentication convert-to new-style <cr>    # path-029855
+(config)# default authentication convert-to new-style forced <cr>    # path-036007
+(config)# default authentication critical recovery delay <cr>    # path-036322
+(config)# default authentication dis-scale-opt <cr>    # path-027109
+(config)# default authentication logging session-terminate <cr>    # path-030028
+(config)# default authentication logging verbose <cr>    # path-029992
+(config)# default authentication mac-move permit <cr>    # path-029826
+(config)# default autoconf enable <cr>    # path-026152
+(config)# default avc <cr>    # path-025787
+(config)# default avc sd-service <cr>    # path-026968
+(config)# default banner exec <cr>    # path-027263
+(config)# default bba-group pppoe global <cr>    # path-027976
+(config)# default beep channel limit <cr>    # path-028073
+(config)# default bfd fast-timers-on-slow-interface <cr>    # path-026139
+(config)# default bfd l2cos <cr>    # path-026145
+(config)# default bfd l3cos ipv6 <cr>    # path-027951
+(config)# default bfd neighbor multihop-ipv4 <address> <address> <cr>    # path-043950
+(config)# default bfd slow-timers <cr>    # path-026128
+(config)# default bfd snmp traps more <cr>    # path-034031
+(config)# default bfd-template single-hop <string> <cr>    # path-027914
+(config)# default boot bootldr <cr>    # path-026072
+(config)# default boot bootstrap <cr>    # path-026023
+(config)# default boot bootstrap ftp <string> <cr>    # path-034020
+(config)# default boot bootstrap rcp <string> <cr>    # path-034018
+(config)# default boot buffersize <cr>    # path-025507
+(config)# default boot config <cr>    # path-026080
+(config)# default boot-end-marker <cr>    # path-025513
+(config)# default boot-start-marker <cr>    # path-025508
+(config)# default bridge crb <cr>    # path-026288
+(config)# default bridge irb <cr>    # path-026309
+(config)# default bridge mac-address-table limit <cr>    # path-026326
+(config)# default bridge-domain c-mac aging-time <cr>    # path-028108
+(config)# default bridge-domain otv default age-time <cr>    # path-034208
+(config)# default bridge-domain parameterized vlan <cr>    # path-028029
+(config)# default bstun keepalive-count <number:2..10> <cr>    # path-028352
+(config)# default bstun lisnsap <number:0..255> <cr>    # path-028226
+(config)# default bstun peer-name <cr>    # path-026426
+(config)# default bstun protocol-group <number:1..255> <string> <cr>    # path-034330
+(config)# default bstun remote-peer-keepalive <cr>    # path-026474
+(config)# default buffers element permanent <cr>    # path-028106
+(config)# default buffers header permanent <cr>    # path-028194
+(config)# default buffers particle-clone <cr>    # path-026318
+(config)# default buffers tune automatic <cr>    # path-028348
+(config)# default busy-message <string> <cr>    # path-026744
+(config)# default call admission cpu-limit <cr>    # path-028936
+(config)# default call admission cpu-load <cr>    # path-028994
+(config)# default call admission ike <number:0..1000> <number:1..31> <cr>    # path-044912
+(config)# default call admission ip <number:0..1000> <number:1..31> <cr>    # path-044765
+(config)# default call admission limit <cr>    # path-028843
+(config)# default call admission load <cr>    # path-029287
+(config)# default call admission new-model <cr>    # path-029314
+(config)# default call admission padr <cr>    # path-029273
+(config)# default call admission pppoa <cr>    # path-029117
+(config)# default call admission pppoe <cr>    # path-029080
+(config)# default call admission session-limit <cr>    # path-028888
+(config)# default call admission vpdn <cr>    # path-029167
+(config)# default call filter match-list <cr>    # path-029088
+(config)# default call-history-mib max-size <cr>    # path-025983
+(config)# default call-history-mib retain-timer <cr>    # path-025980
+(config)# default carrier-id <cr>    # path-025944
+(config)# default cdp advertise-v2 <cr>    # path-026166
+(config)# default cdp filter-tlv-list <string> <cr>    # path-028157
+(config)# default cdp holdtime <cr>    # path-025578
+(config)# default cdp log mismatch duplex <cr>    # path-034077
+(config)# default cdp run <cr>    # path-026268
+(config)# default cdp source-interface <cr>    # path-026282
+(config)# default cdp timer <cr>    # path-025570
+(config)# default cdp tlv app <cr>    # path-028169
+(config)# default cdp tlv location <cr>    # path-028092
+(config)# default cdp tlv-list <string> <cr>    # path-028124
+(config)# default cef common <cr>    # path-026310
+(config)# default cef table consistency-check IPv4 <cr>    # path-034464
+(config)# default cef table consistency-check IPv4 auto-repair <cr>    # path-044256
+(config)# default cef table consistency-check IPv4 data-checking <cr>    # path-044118
+(config)# default cef table consistency-check IPv4 error-message <cr>    # path-044151
+(config)# default cef table download recursive-dependents <cr>    # path-034497
+(config)# default cef table output-chain build favor <cr>    # path-044192
+(config)# default cef table rate-monitor-period <number:1..60> <cr>    # path-034297
+(config)# default cef table vrf tree ipv4 <cr>    # path-044105
+(config)# default chat-script <string> <cr>    # path-027364
+(config)# default cisp enable <cr>    # path-026407
+(config)# default class-map <string> <cr>    # path-026369
+(config)# default class-map type control <string> <cr>    # path-034688
+(config)# default class-map type control subscriber match-all <string> <cr>    # path-052291
+(config)# default class-map type multicast-flows <string> <cr>    # path-034195
+(config)# default class-map type traffic match-any <string> <cr>    # path-044071
+(config)# default classmap-template <string> <string> <cr>    # path-028682
+(config)# default clns cache-invalidate-delay <cr>    # path-027017
+(config)# default clns configuration-time <cr>    # path-025863
+(config)# default clns filter-expr <string> <cr>    # path-030462
+(config)# default clns filter-set <string> <cr>    # path-030437
+(config)# default clns holding-time <cr>    # path-025871
+(config)# default clns host <string> <cr>    # path-029440
+(config)# default clns net <address> <cr>    # path-030174
+(config)# default clns packet-lifetime <cr>    # path-025889
+(config)# default clns queue-depth <cr>    # path-025896
+(config)# default clns route <address> <cr>    # path-029758
+(config)# default clns routing <cr>    # path-027326
+(config)# default clns template-alias <string> <cr>    # path-030485
+(config)# default clns want-erpdu <cr>    # path-027333
+(config)# default clock calendar-valid <cr>    # path-026277
+(config)# default clock initialize nvram <cr>    # path-028116
+(config)# default clock save interval <cr>    # path-028172
+(config)# default clock summer-time <cr>    # path-026281
+(config)# default config-register <cr>    # path-025607
+(config)# default configuration mode exclusive <cr>    # path-030227
+(config)# default connect <string> <cr>    # path-026789
+(config)# default control-plane <cr>    # path-025856
+(config)# default cops ip dscp ef <cr>    # path-034787
+(config)# default cops listener access-list <cr>    # path-028665
+(config)# default cops tcp window-size <number:516..65535> <cr>    # path-034742
+(config)# default coverage history <cr>    # path-026001
+(config)# default crypto RSA-key-pair <string> <number:0..255> <number:0..4294967295> <cr>    # path-044008
+(config)# default crypto dh lifetime <cr>    # path-028107
+(config)# default crypto dh pregen <cr>    # path-028150
+(config)# default crypto engine accelerator <cr>    # path-028440
+(config)# default crypto engine compliance shield disable <cr>    # path-044027
+(config)# default crypto engine nm <number:0..3> <cr>    # path-034252
+(config)# default crypto engine queue-size <cr>    # path-028148
+(config)# default crypto engine software ipsec <cr>    # path-034134
+(config)# default crypto engine software isakmp <cr>    # path-034164
+(config)# default crypto key decrypt rsa <cr>    # path-034506
+(config)# default crypto key encrypt rsa <cr>    # path-034460
+(config)# default crypto key export ec <string> pem terminal 3des <string> <cr>    # path-059627
+(config)# default crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-059624
+(config)# default crypto key generate ec keysize <number:256..256> <cr>    # path-052111
+(config)# default crypto key generate rsa <cr>    # path-034326
+(config)# default crypto key import ec <string> terminal <cr>    # path-052161
+(config)# default crypto key import rsa <string> terminal <cr>    # path-052229
+(config)# default crypto key move rsa <string> <cr>    # path-044054
+(config)# default crypto key pubkey-chain <cr>    # path-028211
+(config)# default crypto key storage <cr>    # path-028276
+(config)# default crypto key zeroize <cr>    # path-028176
+(config)# default crypto pki authenticate <string> <cr>    # path-037612
+(config)# default crypto pki certificate chain <string> <cr>    # path-047219
+(config)# default crypto pki certificate map <string> <cr>    # path-047288
+(config)# default crypto pki certificate pool <cr>    # path-038005
+(config)# default crypto pki certificate query <cr>    # path-037834
+(config)# default crypto pki certificate self-signed hash <cr>    # path-047380
+(config)# default crypto pki certificate storage <cr>    # path-038112
+(config)# default crypto pki certificate validate <string> <cr>    # path-047234
+(config)# default crypto pki crl cache size <cr>    # path-047285
+(config)# default crypto pki crl download schedule prepublish <number:0..65535> <cr>    # path-057970
+(config)# default crypto pki crl download schedule retries <number:1..15> <cr>    # path-057978
+(config)# default crypto pki crl download trustpoint <string> <cr>    # path-054383
+(config)# default crypto pki crl download url <string> <cr>    # path-054415
+(config)# default crypto pki crl request <string> <cr>    # path-047177
+(config)# default crypto pki enroll <string> <cr>    # path-037720
+(config)# default crypto pki export <string> pem terminal <cr>    # path-054375
+(config)# default crypto pki export <string> pem terminal rollover <cr>    # path-057953
+(config)# default crypto pki export <string> pkcs12 terminal password <string> <cr>    # path-059340
+(config)# default crypto pki http max-buffer-size <cr>    # path-038008
+(config)# default crypto pki import <string> certificate <cr>    # path-047140
+(config)# default crypto pki import <string> pem terminal password <string> <cr>    # path-059343
+(config)# default crypto pki import <string> pkcs12 terminal password <string> <cr>    # path-059341
+(config)# default crypto pki profile enrollment <string> <cr>    # path-047163
+(config)# default crypto pki server <string> <cr>    # path-037721
+(config)# default crypto pki server <string> rollover <cr>    # path-047120
+(config)# default crypto pki server <string> rollover cancel <cr>    # path-054278
+(config)# default crypto pki trustpoint <string> <cr>    # path-037583
+(config)# default crypto pki trustpool clean <cr>    # path-037665
+(config)# default crypto pki trustpool policy <cr>    # path-037575
+(config)# default crypto provisioning petitioner <cr>    # path-028082
+(config)# default crypto provisioning registrar <cr>    # path-028122
+(config)# default cts policy-server device-id <cr>    # path-031101
+(config)# default cts policy-server name <string> <cr>    # path-037987
+(config)# default cts policy-server order random <cr>    # path-038110
+(config)# default cts policy-server username <cr>    # path-031060
+(config)# default cts role-based enforcement <cr>    # path-029234
+(config)# default cts role-based enforcement logging-interval <number:5..86400> <cr>    # path-045012
+(config)# default cts role-based ipv6-copy <cr>    # path-028926
+(config)# default cts role-based monitor all <cr>    # path-035141
+(config)# default cts role-based policy priority-static <cr>    # path-035325
+(config)# default cts role-based sgt-caching <cr>    # path-029238
+(config)# default cts role-based sgt-caching with-enforcement <cr>    # path-035256
+(config)# default cts role-based sgt-map <address> <cr>    # path-035338
+(config)# default cts server load-balance <cr>    # path-030824
+(config)# default cts sgt <cr>    # path-027485
+(config)# default cts sxp enable <cr>    # path-031017
+(config)# default cts sxp import-list <string> <cr>    # path-038023
+(config)# default cts sxp limit export peer-sequence-nodes <number:2..64> <cr>    # path-054433
+(config)# default cwmp agent <cr>    # path-027337
+(config)# default default-value data-character-bits <cr>    # path-025897
+(config)# default default-value exec-character-bits <cr>    # path-025887
+(config)# default default-value special-character-bits <cr>    # path-025894
+(config)# default define interface-range <string> <cr>    # path-028054
+(config)# default device-tracking <cr>    # path-025936
+(config)# default device-tracking export oper-data <cr>    # path-030589
+(config)# default device-tracking full-proxy <cr>    # path-027400
+(config)# default device-tracking history ip disable <cr>    # path-037290
+(config)# default device-tracking history ip length <cr>    # path-037331
+(config)# default device-tracking logging <cr>    # path-027422
+(config)# default device-tracking policy <string> <cr>    # path-030554
+(config)# default device-tracking service-support device-tracking-layer3 <number:0..7> <cr>    # path-037408
+(config)# default device-tracking tdl dhcp-stats <cr>    # path-030610
+(config)# default device-tracking tdl disable dhcp-faults <cr>    # path-037405
+(config)# default device-tracking tracking <cr>    # path-027390
+(config)# default device-tracking tracking auto-source <cr>    # path-030508
+(config)# default device-tracking tracking retry-interval <cr>    # path-030539
+(config)# default device-tracking unit-test bulk-sync <cr>    # path-030477
+(config)# default device-tracking unit-test check-reach vlan <number:0..4096> <address> <cr>    # path-054084
+(config)# default device-tracking unit-test disable-cli-sync <cr>    # path-030989
+(config)# default device-tracking unit-test dna vlan <number:1..4096> <cr>    # path-046932
+(config)# default device-tracking unit-test ha-sync-msg msg-type bt-entry action enable <cr>    # path-057961
+(config)# default device-tracking unit-test ip-dhcp-snooping vlan <number:1..4096> <cr>    # path-046936
+(config)# default device-tracking unit-test lisp-dt vlan <number:1..4096> <cr>    # path-047001
+(config)# default device-tracking unit-test pgm <cr>    # path-030753
+(config)# default device-tracking unit-test profile vlan <number:1..4096> <cr>    # path-046874
+(config)# default device-tracking unit-test reapply-filters vlan <number:1..4096> <cr>    # path-047196
+(config)# default device-tracking unit-test replace-policy vlan <number:1..4096> old <string> new <string> <cr>    # path-059839
+(config)# default device-tracking unit-test upgm <cr>    # path-030770
+(config)# default device-tracking unlock policy <string> <cr>    # path-037384
+(config)# default device-tracking upgrade-cli <cr>    # path-027386
+(config)# default diagnostic cns publish <cr>    # path-031300
+(config)# default diagnostic event-log size <cr>    # path-031157
+(config)# default diagnostic level <cr>    # path-027559
+(config)# default diagnostic monitor global <cr>    # path-031279
+(config)# default diagnostic monitor syslog <cr>    # path-031217
+(config)# default diagnostic soft-error recovery <cr>    # path-031138
+(config)# default diameter attribute list <number:0..99> <cr>    # path-036527
+(config)# default diameter gx retransmit <cr>    # path-030351
+(config)# default diameter gx subscription-id-type <cr>    # path-030391
+(config)# default diameter gx tx-timer <cr>    # path-030368
+(config)# default diameter origin host <cr>    # path-030267
+(config)# default diameter origin realm <cr>    # path-030229
+(config)# default diameter peer <string> <cr>    # path-030278
+(config)# default diameter redundancy <cr>    # path-027205
+(config)# default diameter timer connection <cr>    # path-030188
+(config)# default diameter vendor supported vodafone <cr>    # path-036727
+(config)# default dlsw allroute-netbios <cr>    # path-026917
+(config)# default dlsw allroute-sna <cr>    # path-026891
+(config)# default dlsw bridge-group <number:1..255> <cr>    # path-029320
+(config)# default dlsw cache-ignore-netbios-datagram <cr>    # path-026784
+(config)# default dlsw circuit-keepalives <cr>    # path-026988
+(config)# default dlsw disable <cr>    # path-026944
+(config)# default dlsw duplicate-path-bias <cr>    # path-026617
+(config)# default dlsw explorerQ-depth <number:10..1000> <cr>    # path-029205
+(config)# default dlsw fast-hpr-support <cr>    # path-026514
+(config)# default dlsw group-cache disable <cr>    # path-029819
+(config)# default dlsw group-cache enable <cr>    # path-029881
+(config)# default dlsw group-cache max-entries <cr>    # path-027158
+(config)# default dlsw history-log <cr>    # path-027021
+(config)# default dlsw icanreach mac-exclusive <cr>    # path-028740
+(config)# default dlsw llc2 nornr <cr>    # path-029765
+(config)# default dlsw load-balance <cr>    # path-026661
+(config)# default dlsw local-peer <cr>    # path-026446
+(config)# default dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-044931
+(config)# default dlsw mac-addr <address> ring <number:0..4095> <cr>    # path-044932
+(config)# default dlsw max-multiple-rifs <cr>    # path-025732
+(config)# default dlsw multicast <cr>    # path-027125
+(config)# default dlsw netbios-cache-length <cr>    # path-026473
+(config)# default dlsw netbios-keepalive-filter <cr>    # path-027032
+(config)# default dlsw peer-log-changes <cr>    # path-026775
+(config)# default dlsw peer-on-demand-defaults <cr>    # path-026905
+(config)# default dlsw prom-peer-defaults <cr>    # path-026971
+(config)# default dlsw redundant-rings <cr>    # path-026732
+(config)# default dlsw remote-peer <number:0..4095> tcp <address> <cr>    # path-044551
+(config)# default dlsw rsvp <cr>    # path-026624
+(config)# default dlsw snmp-traps-extended <cr>    # path-026468
+(config)# default dlsw tbridge-maxmtu-4472 <cr>    # path-026742
+(config)# default dlsw timer sna-explorer-timeout <cr>    # path-028531
+(config)# default dlsw tos disable <cr>    # path-029628
+(config)# default dlsw tos map <cr>    # path-029798
+(config)# default dlsw tos-disable <cr>    # path-027063
+(config)# default dlsw touch-timer touch-nb-cache-timeout <cr>    # path-028558
+(config)# default dlsw transparent switch-support <cr>    # path-029873
+(config)# default dlsw udp-disable <cr>    # path-027009
+(config)# default dlsw xid-modify-tws <cr>    # path-026765

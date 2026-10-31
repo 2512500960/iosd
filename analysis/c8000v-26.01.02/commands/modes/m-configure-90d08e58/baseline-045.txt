@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-045.md
+
+(config)# do-exec debug l2tp application <cr>    # path-031169
+(config)# do-exec debug l2tp authentication <cr>    # path-031446
+(config)# do-exec debug l2tp brief <cr>    # path-031190
+(config)# do-exec debug l2tp db error <cr>    # path-038661
+(config)# do-exec debug l2tp db event <cr>    # path-038604
+(config)# do-exec debug l2tp db lookup <cr>    # path-038719
+(config)# do-exec debug l2tp error <cr>    # path-031415
+(config)# do-exec debug l2tp event <cr>    # path-031385
+(config)# do-exec debug l2tp export <cr>    # path-031296
+(config)# do-exec debug l2tp failover <cr>    # path-031460
+(config)# do-exec debug l2tp l2tun <cr>    # path-031364
+(config)# do-exec debug l2tp packet brief <cr>    # path-039113
+(config)# do-exec debug l2tp packet detail <cr>    # path-039056
+(config)# do-exec debug l2tp packet error <cr>    # path-039001
+(config)# do-exec debug l2tp packet event <cr>    # path-038939
+(config)# do-exec debug l2tp route <cr>    # path-031272
+(config)# do-exec debug l2tp seq <cr>    # path-031346
+(config)# do-exec debug l2tp seq brief <cr>    # path-038567
+(config)# do-exec debug l2tp snmp <cr>    # path-031429
+(config)# do-exec debug l2tp timer <cr>    # path-031244
+(config)# do-exec debug l2vpn evpn all-active-mh <cr>    # path-041125
+(config)# do-exec debug l2vpn evpn checkpoint <cr>    # path-041219
+(config)# do-exec debug l2vpn evpn error <cr>    # path-041054
+(config)# do-exec debug l2vpn evpn event <cr>    # path-041075
+(config)# do-exec debug l2vpn evpn event detail <cr>    # path-050126
+(config)# do-exec debug l2vpn evpn event-trace <number:0..10000> <cr>    # path-050234
+(config)# do-exec debug lacp <cr>    # path-027632
+(config)# do-exec debug lacp all <cr>    # path-031989
+(config)# do-exec debug lacp auto <cr>    # path-032017
+(config)# do-exec debug lacp etherchannel <cr>    # path-032042
+(config)# do-exec debug lacp event <cr>    # path-031903
+(config)# do-exec debug lacp fsm <cr>    # path-031959
+(config)# do-exec debug lacp load-balance <cr>    # path-032094
+(config)# do-exec debug lacp load-balance all <cr>    # path-040531
+(config)# do-exec debug lacp load-balance database <cr>    # path-040438
+(config)# do-exec debug lacp load-balance redundancy-group <cr>    # path-040470
+(config)# do-exec debug lacp load-balance vlan <cr>    # path-040497
+(config)# do-exec debug lacp misc <cr>    # path-031976
+(config)# do-exec debug lacp multi-chassis <cr>    # path-032095
+(config)# do-exec debug lacp multi-chassis all <cr>    # path-040534
+(config)# do-exec debug lacp multi-chassis database <cr>    # path-040398
+(config)# do-exec debug lacp multi-chassis lacp-mgr <cr>    # path-040474
+(config)# do-exec debug lacp multi-chassis redundancy-group <cr>    # path-040441
+(config)# do-exec debug lacp multi-chassis user-interface <cr>    # path-040501
+(config)# do-exec debug lacp odm <cr>    # path-031923
+(config)# do-exec debug lacp packet <cr>    # path-031884
+(config)# do-exec debug lacp timer <cr>    # path-032027
+(config)# do-exec debug lacp xfsu <cr>    # path-031938
+(config)# do-exec debug lapb <cr>    # path-027497
+(config)# do-exec debug legacy-entity-drvr errors all <cr>    # path-034979
+(config)# do-exec debug legacy-entity-drvr errors event <cr>    # path-035024
+(config)# do-exec debug legacy-entity-drvr trace all <cr>    # path-034929
+(config)# do-exec debug legacy-entity-drvr trace event <cr>    # path-034991
+(config)# do-exec debug license core event <cr>    # path-042337
+(config)# do-exec debug license errors <cr>    # path-033051
+(config)# do-exec debug license events <cr>    # path-033036
+(config)# do-exec debug license feature cube info <cr>    # path-051007
+(config)# do-exec debug license ipc <cr>    # path-033064
+(config)# do-exec debug list <cr>    # path-026186
+(config)# do-exec debug list <interface> <cr>    # path-060507
+(config)# do-exec debug llc2 dynwind <cr>    # path-033700
+(config)# do-exec debug llc2 errors <cr>    # path-033667
+(config)# do-exec debug llc2 packets <cr>    # path-033686
+(config)# do-exec debug llc2 state <cr>    # path-033654
+(config)# do-exec debug lldp errors <cr>    # path-031514
+(config)# do-exec debug lldp events <cr>    # path-031490
+(config)# do-exec debug lldp packet-decode <cr>    # path-031565
+(config)# do-exec debug lldp packets <cr>    # path-031467
+(config)# do-exec debug lldp states <cr>    # path-031538
+(config)# do-exec debug lnm event <cr>    # path-033708
+(config)# do-exec debug lnm llc <cr>    # path-033721
+(config)# do-exec debug lnm mac <cr>    # path-033731
+(config)# do-exec debug lnx <cr>    # path-027756
+(config)# do-exec debug local-ack errors <cr>    # path-033455
+(config)# do-exec debug local-ack packets <cr>    # path-033468
+(config)# do-exec debug local-ack state <cr>    # path-033478
+(config)# do-exec debug location-mgr errors <cr>    # path-030339
+(config)# do-exec debug location-mgr events <cr>    # path-030310
+(config)# do-exec debug logging system all <cr>    # path-034340
+(config)# do-exec debug logging system error <cr>    # path-034305
+(config)# do-exec debug logging system message <cr>    # path-034268
+(config)# do-exec debug mab all <cr>    # path-031974
+(config)# do-exec debug mab errors <cr>    # path-031920
+(config)# do-exec debug mab events <cr>    # path-031935
+(config)# do-exec debug mab state-machine <cr>    # path-031953
+(config)# do-exec debug mac-table debug-disable <cr>    # path-032419
+(config)# do-exec debug mac-table debug-enable <cr>    # path-032402
+(config)# do-exec debug mac-table display-disable <cr>    # path-032385
+(config)# do-exec debug mac-table display-enable <cr>    # path-032369
+(config)# do-exec debug mac-table lexi-disable <cr>    # path-032458
+(config)# do-exec debug mac-table lexi-enable <cr>    # path-032436
+(config)# do-exec debug macdb all <cr>    # path-031388
+(config)# do-exec debug macdb hardware <interface> <cr>    # path-060983
+(config)# do-exec debug management event mib <cr>    # path-042893
+(config)# do-exec debug management expression evaluator <cr>    # path-042898
+(config)# do-exec debug management expression mib <cr>    # path-042916
+(config)# do-exec debug management expression parser <cr>    # path-042874
+(config)# do-exec debug matm add <cr>    # path-031509
+(config)# do-exec debug matm age <cr>    # path-031603
+(config)# do-exec debug matm all <cr>    # path-031841
+(config)# do-exec debug matm bulkdelete <cr>    # path-031560
+(config)# do-exec debug matm cf <cr>    # path-031806
+(config)# do-exec debug matm create <cr>    # path-031619
+(config)# do-exec debug matm delete <cr>    # path-031533
+(config)# do-exec debug matm error <cr>    # path-031686
+(config)# do-exec debug matm ha <cr>    # path-031764
+(config)# do-exec debug matm message <cr>    # path-031583
+(config)# do-exec debug matm move address <cr>    # path-039612
+(config)# do-exec debug matm move update <cr>    # path-039674
+(config)# do-exec debug matm pm <cr>    # path-031661
+(config)# do-exec debug matm pvlan <cr>    # path-031705
+(config)# do-exec debug matm remove <cr>    # path-031637
+(config)# do-exec debug matm rf <cr>    # path-031787
+(config)# do-exec debug matm rmac <cr>    # path-031824
+(config)# do-exec debug matm traceback <cr>    # path-031721
+(config)# do-exec debug mdns-sd all <cr>    # path-031587
+(config)# do-exec debug mdns-sd api <cr>    # path-031564
+(config)# do-exec debug mdns-sd ctlconn <cr>    # path-031689
+(config)# do-exec debug mdns-sd ctlerror <cr>    # path-031723
+(config)# do-exec debug mdns-sd ctlevent <cr>    # path-031663
+(config)# do-exec debug mdns-sd ctlpacket <cr>    # path-031639
+(config)# do-exec debug mdns-sd ctlverbose <cr>    # path-031707
+(config)# do-exec debug mdns-sd error <cr>    # path-031537
+(config)# do-exec debug mdns-sd event <cr>    # path-031513
+(config)# do-exec debug mdns-sd ha all <cr>    # path-039347
+(config)# do-exec debug mdns-sd ha error <cr>    # path-039293
+(config)# do-exec debug mdns-sd ha verbose <cr>    # path-039245
+(config)# do-exec debug mdns-sd packet <cr>    # path-031489
+(config)# do-exec debug mdns-sd source interface <interface> <cr>    # path-061515
+(config)# do-exec debug mdns-sd source mac-address <address> <cr>    # path-048437
+(config)# do-exec debug mdns-sd verbose <cr>    # path-031466
+(config)# do-exec debug memory <cr>    # path-027733
+(config)# do-exec debug memory dynamic-alloc start <cr>    # path-042528
+(config)# do-exec debug memory dynamic-alloc stop <cr>    # path-042545
+(config)# do-exec debug memory rmi <cr>    # path-033179
+(config)# do-exec debug mfib epoch scope <?option@55558aafef58> <cr>    # path-061650
+(config)# do-exec debug mfib filter table <cr>    # path-040746
+(config)# do-exec debug mfib table <cr>    # path-032222
+(config)# do-exec debug mgmt-traffic control ipv4 info <cr>    # path-051337
+(config)# do-exec debug mka <cr>    # path-027804
+(config)# do-exec debug mka development <cr>    # path-033831
+(config)# do-exec debug mka diagnostics <cr>    # path-033813
+(config)# do-exec debug mka errors <cr>    # path-033751
+(config)# do-exec debug mka events <cr>    # path-033767
+(config)# do-exec debug mka fsm <cr>    # path-033795
+(config)# do-exec debug mka ha <cr>    # path-033818
+(config)# do-exec debug mka ha detail <cr>    # path-043561
+(config)# do-exec debug mka linksec-interface <cr>    # path-033835
+(config)# do-exec debug mka linksec-interface frames <cr>    # path-043588
+(config)# do-exec debug mka macsec-interface <cr>    # path-033838
+(config)# do-exec debug mka packets <cr>    # path-033800
+(config)# do-exec debug mka packets detail <cr>    # path-043535
+(config)# do-exec debug mka snmp <cr>    # path-033778
+(config)# do-exec debug mlrib common error <cr>    # path-039939
+(config)# do-exec debug mlrib common event all <cr>    # path-049025
+(config)# do-exec debug mlrib common event client_api <cr>    # path-049344
+(config)# do-exec debug mlrib common event db <cr>    # path-049451
+(config)# do-exec debug mlrib common event ha <cr>    # path-049126
+(config)# do-exec debug mlrib common event misc <cr>    # path-049502
+(config)# do-exec debug mlrib common event notify <cr>    # path-049080
+(config)# do-exec debug mlrib common event registration <cr>    # path-049400
+(config)# do-exec debug mlrib common event show <cr>    # path-049179
+(config)# do-exec debug mlrib common event srw <cr>    # path-049229
+(config)# do-exec debug mlrib common event utils <cr>    # path-049282
+(config)# do-exec debug mlrib layer2 error <cr>    # path-039989
+(config)# do-exec debug mlrib layer2 event add <cr>    # path-049119
+(config)# do-exec debug mlrib layer2 event all <cr>    # path-049074
+(config)# do-exec debug mlrib layer2 event delete <cr>    # path-049175
+(config)# do-exec debug mlrib layer2 event eor <cr>    # path-049450
+(config)# do-exec debug mlrib layer2 event flush <cr>    # path-049280
+(config)# do-exec debug mlrib layer2 event lookup <cr>    # path-049227
+(config)# do-exec debug mlrib layer2 event notify <cr>    # path-049342
+(config)# do-exec debug mlrib layer2 event redistribute <cr>    # path-049398
+(config)# do-exec debug mlrib layer2 event registration <cr>    # path-049501
+(config)# do-exec debug modem <cr>    # path-026143
+(config)# do-exec debug monitor all <cr>    # path-033350
+(config)# do-exec debug monitor capture <cr>    # path-033341
+(config)# do-exec debug monitor errors <cr>    # path-033230
+(config)# do-exec debug monitor erspan <cr>    # path-033326
+(config)# do-exec debug monitor idb-update <cr>    # path-033238
+(config)# do-exec debug monitor info <cr>    # path-033290
+(config)# do-exec debug monitor list <cr>    # path-033266
+(config)# do-exec debug monitor notifications <cr>    # path-033249
+(config)# do-exec debug monitor platform <cr>    # path-033219
+(config)# do-exec debug monitor redundancy <cr>    # path-033309
+(config)# do-exec debug monitor requests <cr>    # path-033204
+(config)# do-exec debug monitor scp <cr>    # path-033299
+(config)# do-exec debug monitor snmp <cr>    # path-033276
+(config)# do-exec debug mtm control <cr>    # path-033103
+(config)# do-exec debug mtm data <cr>    # path-033111
+(config)# do-exec debug mtm notify <cr>    # path-033123
+(config)# do-exec debug mvpn <cr>    # path-027646
+(config)# do-exec debug mvpn all <cr>    # path-032190
+(config)# do-exec debug mvpn leaf-ad <cr>    # path-032132
+(config)# do-exec debug mvpn mfi <cr>    # path-032147
+(config)# do-exec debug mvpn replication <cr>    # path-032158
+(config)# do-exec debug mvpn srv6-sid-mgr <cr>    # path-032114
+(config)# do-exec debug mvpn verbose <cr>    # path-032098
+(config)# do-exec debug mvr all <cr>    # path-031798
+(config)# do-exec debug mvr events <cr>    # path-031836
+(config)# do-exec debug mvr igmp-snooping <cr>    # path-031846
+(config)# do-exec debug mvr igmp-snooping group <address> <?ipmask_action@555588fb8810> <cr>    # path-062068
+(config)# do-exec debug mvr management <cr>    # path-031872
+(config)# do-exec debug mvr ports <cr>    # path-031858
+(config)# do-exec debug mvrp all <cr>    # path-030406
+(config)# do-exec debug mvrp error <cr>    # path-030336
+(config)# do-exec debug mvrp packet decode <cr>    # path-036882
+(config)# do-exec debug mvrp packet rx <cr>    # path-036917
+(config)# do-exec debug mvrp packet tx <cr>    # path-036962
+(config)# do-exec debug mvrp verbose <cr>    # path-030383
+(config)# do-exec debug nat64 alias all <cr>    # path-037696
+(config)# do-exec debug nat64 alias info <cr>    # path-037848
+(config)# do-exec debug nat64 alias trace <cr>    # path-037798
+(config)# do-exec debug nat64 alias warn <cr>    # path-037743
+(config)# do-exec debug nat64 all <cr>    # path-030621
+(config)# do-exec debug nat64 database detail <cr>    # path-037585
+(config)# do-exec debug nat64 database error <cr>    # path-037627
+(config)# do-exec debug nat64 database event <cr>    # path-037553
+(config)# do-exec debug nat64 ha all <cr>    # path-037788
+(config)# do-exec debug nat64 ha info <cr>    # path-037917
+(config)# do-exec debug nat64 ha trace <cr>    # path-037881
+(config)# do-exec debug nat64 ha warn <cr>    # path-037841
+(config)# do-exec debug nat64 id-manager <cr>    # path-030793
+(config)# do-exec debug nat64 info <cr>    # path-030689
+(config)# do-exec debug nat64 intf-address <cr>    # path-030780
+(config)# do-exec debug nat64 issu all <cr>    # path-037835
+(config)# do-exec debug nat64 issu message <cr>    # path-037915
+(config)# do-exec debug nat64 issu trace <cr>    # path-037876
+(config)# do-exec debug nat64 memory <cr>    # path-030719
+(config)# do-exec debug nat64 packet detail <cr>    # path-037662
+(config)# do-exec debug nat64 packet error <cr>    # path-037707
+(config)# do-exec debug nat64 packet event <cr>    # path-037614
+(config)# do-exec debug nat64 pool-routes <cr>    # path-030768
+(config)# do-exec debug nat64 statistics <cr>    # path-030815
+(config)# do-exec debug nat64 trace <cr>    # path-030671
+(config)# do-exec debug nat64 translation detail <cr>    # path-037620
+(config)# do-exec debug nat64 translation error <cr>    # path-037666
+(config)# do-exec debug nat64 translation event <cr>    # path-037579
+(config)# do-exec debug nat64 warn <cr>    # path-030648
+(config)# do-exec debug nat66 all <cr>    # path-030644
+(config)# do-exec debug nat66 info <cr>    # path-030717
+(config)# do-exec debug nat66 intf-address <cr>    # path-030766
+(config)# do-exec debug nat66 memory <cr>    # path-030746
+(config)# do-exec debug nat66 statistics <cr>    # path-030779
+(config)# do-exec debug nat66 trace <cr>    # path-030687
+(config)# do-exec debug nat66 warn <cr>    # path-030668
+(config)# do-exec debug ncia <cr>    # path-027765
+(config)# do-exec debug netbios-name-cache <cr>    # path-027752
+(config)# do-exec debug netconf all <cr>    # path-033293
+(config)# do-exec debug netconf error <cr>    # path-033281
+(config)# do-exec debug netconf-yang <cr>    # path-027776
+(config)# do-exec debug netconf-yang ssh <cr>    # path-033656
+(config)# do-exec debug network-rf bulk <cr>    # path-029192
+(config)# do-exec debug network-rf cdb <cr>    # path-029260
+(config)# do-exec debug network-rf comms <cr>    # path-029305
+(config)# do-exec debug network-rf conditional <cr>    # path-029339
+(config)# do-exec debug network-rf entity <cr>    # path-029375
+(config)# do-exec debug network-rf error <cr>    # path-029429
+(config)# do-exec debug network-rf hwidb <cr>    # path-029484
+(config)# do-exec debug network-rf platform <cr>    # path-029536
+(config)# do-exec debug network-rf sso <cr>    # path-029592
+(config)# do-exec debug network-rf swidb <cr>    # path-029638
+(config)# do-exec debug nhrp <cr>    # path-027648
+(config)# do-exec debug nhrp attribute <cr>    # path-032172
+(config)# do-exec debug nhrp cache <cr>    # path-032117
+(config)# do-exec debug nhrp condition <cr>    # path-032221
+(config)# do-exec debug nhrp condition interface <interface> <cr>    # path-061652
+(config)# do-exec debug nhrp datapath <cr>    # path-032159
+(config)# do-exec debug nhrp detail <cr>    # path-032076
+(config)# do-exec debug nhrp error <cr>    # path-032135
+(config)# do-exec debug nhrp event <cr>    # path-032187
+(config)# do-exec debug nhrp extension <cr>    # path-032086
+(config)# do-exec debug nhrp group <cr>    # path-032149
+(config)# do-exec debug nhrp packet <cr>    # path-032063
+(config)# do-exec debug nhrp rate <cr>    # path-032102
+(config)# do-exec debug nhrp routing <cr>    # path-032077
+(config)# do-exec debug ntp adjust <cr>    # path-031019
+(config)# do-exec debug ntp all <cr>    # path-030905
+(config)# do-exec debug ntp core <cr>    # path-031031
+(config)# do-exec debug ntp events <cr>    # path-031007
+(config)# do-exec debug ntp packet <cr>    # path-030997
+(config)# do-exec debug ntp packet peer <?match_ipv6_addrinfo_action@555589e400c8> <cr>    # path-061460
+(config)# do-exec debug ntp refclock <cr>    # path-030993
+(config)# do-exec debug nvram <cr>    # path-026102
+(config)# do-exec debug object-group local info <cr>    # path-042828
+(config)# do-exec debug oce all <cr>    # path-030116
+(config)# do-exec debug oce explorer <cr>    # path-030304
+(config)# do-exec debug oce init <cr>    # path-030076
+(config)# do-exec debug oce packet <cr>    # path-030446
+(config)# do-exec debug oce packet adj <cr>    # path-036481
+(config)# do-exec debug oce packet atom <cr>    # path-036782
+(config)# do-exec debug oce packet bundle <cr>    # path-036643
+(config)# do-exec debug oce packet eos <cr>    # path-036742
+(config)# do-exec debug oce packet frr <cr>    # path-036864
+(config)# do-exec debug oce packet gal-check <cr>    # path-036932
+(config)# do-exec debug oce packet label <cr>    # path-036542
+(config)# do-exec debug oce packet loadbalance <cr>    # path-036599
+(config)# do-exec debug oce packet lookup <cr>    # path-036898
+(config)# do-exec debug oce packet marked-only signal <cr>    # path-045775
+(config)# do-exec debug oce packet push-counter <cr>    # path-036979
+(config)# do-exec debug oce packet qos <cr>    # path-036828
+(config)# do-exec debug oce packet special <cr>    # path-036420
+(config)# do-exec debug oce packet tunnel decap <cr>    # path-046076
+(config)# do-exec debug oce set <cr>    # path-030084
+(config)# do-exec debug oce set frr <cr>    # path-036405
+(config)# do-exec debug odb events <cr>    # path-032809
+(config)# do-exec debug oir <cr>    # path-027092
+(config)# do-exec debug onep <cr>    # path-027696
+(config)# do-exec debug onep application session <?option@55558b205f00> <cr>    # path-061747
+(config)# do-exec debug onep application session all <cr>    # path-050738
+(config)# do-exec debug onep server <cr>    # path-033203
+(config)# do-exec debug onep server aaa <cr>    # path-041961
+(config)# do-exec debug onep server appname <string> <cr>    # path-051161
+(config)# do-exec debug onep server certificate <cr>    # path-041989
+(config)# do-exec debug onep server cidb <cr>    # path-042028
+(config)# do-exec debug onep server cli <cr>    # path-042050
+(config)# do-exec debug onep server config <cr>    # path-042010
+(config)# do-exec debug onep server container <cr>    # path-042072
+(config)# do-exec debug onep server cxsc <cr>    # path-042347
+(config)# do-exec debug onep server datapath <cr>    # path-042094
+(config)# do-exec debug onep server dhcp <cr>    # path-042119
+(config)# do-exec debug onep server event <cr>    # path-042137
+(config)# do-exec debug onep server ha <cr>    # path-042157
+(config)# do-exec debug onep server interface <cr>    # path-042175
+(config)# do-exec debug onep server licensing <cr>    # path-042194
+(config)# do-exec debug onep server lisp <cr>    # path-042212
+(config)# do-exec debug onep server location <cr>    # path-042229
+(config)# do-exec debug onep server mediatrace <cr>    # path-042246
+(config)# do-exec debug onep server message <cr>    # path-042269
+(config)# do-exec debug onep server mpss <cr>    # path-042284
+(config)# do-exec debug onep server nat <cr>    # path-042304
+(config)# do-exec debug onep server ntp <cr>    # path-042326
+(config)# do-exec debug onep server pfr <cr>    # path-042387
+(config)# do-exec debug onep server policy <cr>    # path-042360
+(config)# do-exec debug onep server probe <cr>    # path-042375
+(config)# do-exec debug onep server routing <cr>    # path-042404
+(config)# do-exec debug onep server session <?option@55558b20b470> <cr>    # path-061780
+(config)# do-exec debug onep server session-manager <cr>    # path-042417
+(config)# do-exec debug onep server topology <cr>    # path-042437
+(config)# do-exec debug onep server tunnel <cr>    # path-042452
+(config)# do-exec debug onep server utd <cr>    # path-042472
+(config)# do-exec debug onep server util <cr>    # path-042490
+(config)# do-exec debug onep server vty <cr>    # path-042503
+(config)# do-exec debug opflex agent all <cr>    # path-041270
+(config)# do-exec debug ospfv3 adj <cr>    # path-032411
+(config)# do-exec debug ospfv3 authentication <cr>    # path-032727
+(config)# do-exec debug ospfv3 crimson notification <cr>    # path-041695
+(config)# do-exec debug ospfv3 crimson oper <cr>    # path-041671
+(config)# do-exec debug ospfv3 database-timer <cr>    # path-032659
+(config)# do-exec debug ospfv3 database-timer rate-limit <cr>    # path-041598
+(config)# do-exec debug ospfv3 demand-circuit <cr>    # path-032493
+(config)# do-exec debug ospfv3 events <cr>    # path-032514
+(config)# do-exec debug ospfv3 flood <cr>    # path-032578
+(config)# do-exec debug ospfv3 graceful-restart <cr>    # path-032467
+(config)# do-exec debug ospfv3 ha <cr>    # path-032481
+(config)# do-exec debug ospfv3 hello <cr>    # path-032503
+(config)# do-exec debug ospfv3 ipsec <cr>    # path-032356
+(config)# do-exec debug ospfv3 lls <cr>    # path-032702
+(config)# do-exec debug ospfv3 lsa-generation <cr>    # path-032695
+(config)# do-exec debug ospfv3 lsa-maxage <cr>    # path-032692
+(config)# do-exec debug ospfv3 lsdb <cr>    # path-032640
+(config)# do-exec debug ospfv3 memory <cr>    # path-032568
+(config)# do-exec debug ospfv3 monitor <cr>    # path-032540
+(config)# do-exec debug ospfv3 nsr <cr>    # path-032466
+(config)# do-exec debug ospfv3 packet <cr>    # path-032573
+(config)# do-exec debug ospfv3 rib <cr>    # path-032804
+(config)# do-exec debug ospfv3 rib local <cr>    # path-041850
+(config)# do-exec debug ospfv3 rib local <cr>    # path-041878
+(config)# do-exec debug ospfv3 rib local <cr>    # path-041879
+(config)# do-exec debug ospfv3 scheduler hello <cr>    # path-041822
+(config)# do-exec debug ospfv3 scheduler hello input <cr>    # path-050564
+(config)# do-exec debug ospfv3 scheduler hello output <cr>    # path-050583
+(config)# do-exec debug ospfv3 scheduler hello timer <cr>    # path-050536
+(config)# do-exec debug ospfv3 scheduler router <cr>    # path-041851
+(config)# do-exec debug ospfv3 scheduler router event <cr>    # path-050581
+(config)# do-exec debug ospfv3 scheduler router timer <cr>    # path-050560
+(config)# do-exec debug ospfv3 sham-link <cr>    # path-032714
+(config)# do-exec debug ospfv3 snmp <cr>    # path-032412
+(config)# do-exec debug ospfv3 snmp query <cr>    # path-041086
+(config)# do-exec debug ospfv3 snmp trap <cr>    # path-041121
+(config)# do-exec debug ospfv3 spf <cr>    # path-032682
+(config)# do-exec debug ospfv3 spf intra <cr>    # path-041577
+(config)# do-exec debug ospfv3 spf intra <cr>    # path-041606
+(config)# do-exec debug ospfv3 spf intra <cr>    # path-041607
+(config)# do-exec debug ospfv3 spf statistic <cr>    # path-041591
+(config)# do-exec debug ospfv3 traffic-eng <cr>    # path-032428
+(config)# do-exec debug ospfv3 vrf * adj <cr>    # path-061669
+(config)# do-exec debug ospfv3 vrf * authentication <cr>    # path-061733
+(config)# do-exec debug ospfv3 vrf * crimson notification <cr>    # path-062190
+(config)# do-exec debug ospfv3 vrf * crimson oper <cr>    # path-062188
+(config)# do-exec debug ospfv3 vrf * database-timer <cr>    # path-061726
+(config)# do-exec debug ospfv3 vrf * database-timer rate-limit <cr>    # path-062182
+(config)# do-exec debug ospfv3 vrf * demand-circuit <cr>    # path-061687
+(config)# do-exec debug ospfv3 vrf * events <cr>    # path-061691
+(config)# do-exec debug ospfv3 vrf * flood <cr>    # path-061707
+(config)# do-exec debug ospfv3 vrf * graceful-restart <cr>    # path-061681
+(config)# do-exec debug ospfv3 vrf * ha <cr>    # path-061685
+(config)# do-exec debug ospfv3 vrf * hello <cr>    # path-061689
+(config)# do-exec debug ospfv3 vrf * ipsec <cr>    # path-061667
+(config)# do-exec debug ospfv3 vrf * lls <cr>    # path-061730

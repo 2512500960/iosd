@@ -1,0 +1,21 @@
+# 模式 top-af-base；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-af)# default route-replicate from unicast all <cr>    # observed_connections-009172
+(config-af)# default route-replicate recursion-policy destination <cr>    # observed_connections-009166
+(config-af)# default route-replicate-distance from unicast <cr>    # observed_connections-009170
+(config-af)# default topology base <cr>    # observed_connections-009164
+(config-af)# default topology-accounting <cr>    # observed_connections-009160
+(config-af)# exit-global-af <cr>    # observed_connections-009157
+(config-af)# no route-replicate from unicast all <cr>    # observed_connections-009171
+(config-af)# no route-replicate recursion-policy destination <cr>    # observed_connections-009165
+(config-af)# no route-replicate-distance from unicast <cr>    # observed_connections-009167
+(config-af)# no topology base <cr>    # observed_connections-009162
+(config-af)# no topology-accounting <cr>    # observed_connections-009159
+(config-af)# route-replicate from unicast <?router_action_no_proc_vpn@55558955ca78> <cr>    # observed_connections-009173
+(config-af)# route-replicate from unicast all <cr>    # observed_connections-009169
+(config-af)# route-replicate recursion-policy destination <cr>    # observed_connections-009163
+(config-af)# route-replicate-distance from unicast <number:0..255> <cr>    # observed_connections-009168
+(config-af)# topology base <cr>    # observed_connections-009161
+(config-af)# topology-accounting <cr>    # observed_connections-009158

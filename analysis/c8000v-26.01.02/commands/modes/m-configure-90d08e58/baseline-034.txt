@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-034.md
+
+(config)# default ip multicast-routing <cr>    # path-026957
+(config)# default ip name-server <cr>    # path-027148
+(config)# default ip nat create flow-entries <cr>    # path-035685
+(config)# default ip nat dia track-enable <number:1..65534> <cr>    # path-045347
+(config)# default ip nat inside destination list <number:1..2699> pool <string> <cr>    # path-059154
+(config)# default ip nat inside source static <address> <address> <cr>    # path-057603
+(config)# default ip nat log translations <cr>    # path-035783
+(config)# default ip nat name <string> <cr>    # path-036327
+(config)# default ip nat outside source static <address> <address> <cr>    # path-057583
+(config)# default ip nat pool <string> <cr>    # path-036267
+(config)# default ip nat route vrf <string> <address> <address> global <cr>    # path-059104
+(config)# default ip nat service ftp <cr>    # path-036263
+(config)# default ip nat settings central-policy <cr>    # path-035663
+(config)# default ip nat settings cfg-check static-map-removal <cr>    # path-045322
+(config)# default ip nat settings fbd <cr>    # path-036710
+(config)# default ip nat settings gatekeeper-size <cr>    # path-035977
+(config)# default ip nat settings high-performance <cr>    # path-036569
+(config)# default ip nat settings interface-overload block port tcp <number:1024..65535> <cr>    # path-059136
+(config)# default ip nat settings interface-overload port range <cr>    # path-053218
+(config)# default ip nat settings log-destination <cr>    # path-036617
+(config)# default ip nat settings mode <cr>    # path-035840
+(config)# default ip nat settings nonpatdrop <cr>    # path-036205
+(config)# default ip nat settings nonpatlog-disable <cr>    # path-036272
+(config)# default ip nat settings pap <cr>    # path-036054
+(config)# default ip nat settings pool watermark <cr>    # path-045825
+(config)# default ip nat settings preserve-sdwan-ports <cr>    # path-036754
+(config)# default ip nat settings redundancy optimized-data-sync <cr>    # path-045180
+(config)# default ip nat settings reserve-ports <cr>    # path-036661
+(config)# default ip nat settings scale bind <cr>    # path-045931
+(config)# default ip nat settings trans-err-limit <cr>    # path-036455
+(config)# default ip nat switchover replication http <cr>    # path-045259
+(config)# default ip nat translation dns-timeout <cr>    # path-036452
+(config)# default ip nat translation finrst-timeout <cr>    # path-036269
+(config)# default ip nat translation icmp-timeout <cr>    # path-036509
+(config)# default ip nat translation max-entries <number:1..2147483647> <cr>    # path-045953
+(config)# default ip nat translation port-timeout tcp <number:1..65535> <cr>    # path-053426
+(config)# default ip nat translation pptp-timeout <cr>    # path-036203
+(config)# default ip nat translation routemap-entry-timeout <cr>    # path-036508
+(config)# default ip nat translation syn-timeout <cr>    # path-036333
+(config)# default ip nat translation tcp-timeout <cr>    # path-036050
+(config)# default ip nat translation timeout <cr>    # path-035972
+(config)# default ip nat translation udp-timeout <cr>    # path-036202
+(config)# default ip nbar attribute-map <string> <cr>    # path-036013
+(config)# default ip nbar classification auto-learn top-hosts <cr>    # path-045590
+(config)# default ip nbar classification auto-learn top-hosts sample-rate <number:1..8192> <cr>    # path-057246
+(config)# default ip nbar classification dns classify-by-domain <cr>    # path-045623
+(config)# default ip nbar classification dns learning <cr>    # path-045774
+(config)# default ip nbar classification dns learning cache-ttl-zero <cr>    # path-053158
+(config)# default ip nbar classification dns learning domains <cr>    # path-053209
+(config)# default ip nbar classification dns learning guard <cr>    # path-053111
+(config)# default ip nbar classification granularity <cr>    # path-036053
+(config)# default ip nbar classification ip-traffic all-caches <cr>    # path-045346
+(config)# default ip nbar classification multi-vrf <cr>    # path-036181
+(config)# default ip nbar classification tunneled-traffic ipv6inip <cr>    # path-045404
+(config)# default ip nbar disable custom-async <cr>    # path-035766
+(config)# default ip nbar disable encrypted-app <cr>    # path-035705
+(config)# default ip nbar disable sc-hit-vm-handler <cr>    # path-035834
+(config)# default ip nbar http-services <cr>    # path-029608
+(config)# default ip nbar protocol-map <string> <cr>    # path-035658
+(config)# default ip nbar protocol-pack <cr>    # path-029573
+(config)# default ip nsf-converge <cr>    # path-026601
+(config)# default ip options <cr>    # path-026819
+(config)# default ip ospf name-lookup <cr>    # path-028966
+(config)# default ip pim accept-register <cr>    # path-029558
+(config)# default ip pim accept-rp auto-rp <cr>    # path-035220
+(config)# default ip pim allow-rp <cr>    # path-029905
+(config)# default ip pim autorp <cr>    # path-028939
+(config)# default ip pim autorp listener <cr>    # path-034985
+(config)# default ip pim bidir-enable <cr>    # path-028572
+(config)# default ip pim bidir-offer-interval <cr>    # path-028795
+(config)# default ip pim bsr-candidate <cr>    # path-029170
+(config)# default ip pim cache rpf-oif <cr>    # path-034878
+(config)# default ip pim dm-fallback <cr>    # path-028832
+(config)# default ip pim fast-register-stop <cr>    # path-029396
+(config)# default ip pim log-neighbor-changes <cr>    # path-029644
+(config)# default ip pim maximum group-mappings autorp <cr>    # path-045316
+(config)# default ip pim mofrr clone join <address> mask-length <number:0..32> <cr>    # path-058998
+(config)# default ip pim mofrr clone source <address> mask-length <number:0..32> <cr>    # path-058991
+(config)# default ip pim mofrr flow <cr>    # path-034818
+(config)# default ip pim old-register-checksum <cr>    # path-028772
+(config)# default ip pim pfp-sa announce <cr>    # path-035176
+(config)# default ip pim pfp-sa cache <cr>    # path-035276
+(config)# default ip pim pfp-sa timers holdtime <cr>    # path-044903
+(config)# default ip pim pfp-sa timers interval <cr>    # path-044934
+(config)# default ip pim register-rate-limit <cr>    # path-029446
+(config)# default ip pim register-source <cr>    # path-029503
+(config)# default ip pim rp-address <address> <cr>    # path-035078
+(config)# default ip pim rp-announce-filter <cr>    # path-029361
+(config)# default ip pim rp-proxy-join <cr>    # path-028833
+(config)# default ip pim send-rp-announce <address> <cr>    # path-035548
+(config)# default ip pim send-rp-discovery <cr>    # path-029352
+(config)# default ip pim sparse accept-source-reports <cr>    # path-036045
+(config)# default ip pim sparse sg-expiry-timer <cr>    # path-035963
+(config)# default ip pim spt-threshold 0 <cr>    # path-035177
+(config)# default ip pim ssm <cr>    # path-029653
+(config)# default ip pim state-refresh disable <cr>    # path-034833
+(config)# default ip pim v1-rp-reachability <cr>    # path-029738
+(config)# default ip policy-list <string> permit <cr>    # path-034635
+(config)# default ip portbundle <cr>    # path-026547
+(config)# default ip prefix-list <string> <cr>    # path-029865
+(config)# default ip prefix-list sequence-number <cr>    # path-029472
+(config)# default ip rcmd domain-lookup <cr>    # path-028375
+(config)# default ip rcmd rcp-enable <cr>    # path-028457
+(config)# default ip rcmd remote-host <string> <number:1..99> <string> <cr>    # path-052462
+(config)# default ip rcmd remote-username <cr>    # path-028602
+(config)# default ip rcmd rsh-disable-command <string> <cr>    # path-034581
+(config)# default ip rcmd rsh-enable <cr>    # path-028478
+(config)# default ip rcmd source-interface <cr>    # path-028639
+(config)# default ip reflexive-list timeout <cr>    # path-030161
+(config)# default ip rsvp aggregation ip <cr>    # path-035786
+(config)# default ip rsvp aggregation ip level <cr>    # path-045325
+(config)# default ip rsvp aggregation ip map any <cr>    # path-052900
+(config)# default ip rsvp aggregation ip sender service <cr>    # path-052993
+(config)# default ip rsvp authentication <cr>    # path-029813
+(config)# default ip rsvp authentication challenge <cr>    # path-035978
+(config)# default ip rsvp authentication key-chain <cr>    # path-035716
+(config)# default ip rsvp authentication lifetime <cr>    # path-035906
+(config)# default ip rsvp authentication type <cr>    # path-035986
+(config)# default ip rsvp authentication window-size <cr>    # path-035841
+(config)# default ip rsvp listener <address> <number:0..255> <number:0..65535> announce <cr>    # path-057338
+(config)# default ip rsvp metadata <cr>    # path-029711
+(config)# default ip rsvp metadata sender-host <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <cr>    # path-059749
+(config)# default ip rsvp metadata statistics <cr>    # path-035736
+(config)# default ip rsvp msg-pacing <cr>    # path-030133
+(config)# default ip rsvp policy default-reject <cr>    # path-035769
+(config)# default ip rsvp policy identity <string> <cr>    # path-045256
+(config)# default ip rsvp policy local default <cr>    # path-045408
+(config)# default ip rsvp policy preempt <cr>    # path-035898
+(config)# default ip rsvp pq-profile <cr>    # path-029567
+(config)# default ip rsvp qos <cr>    # path-030081
+(config)# default ip rsvp reservation <address> <address> <number:0..255> <number:0..65535> <number:0..65535> wf load <number:1..10000000> <number:1..65535> <cr>    # path-060199
+(config)# default ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..10000000> <number:1..65535> <cr>    # path-060024
+(config)# default ip rsvp sender <address> <address> <number:0..255> <number:0..65535> <number:0..65535> <number:1..10000000> <number:1..65535> <cr>    # path-060029
+(config)# default ip rsvp signalling fast-local-repair notifications <cr>    # path-045930
+(config)# default ip rsvp signalling fast-local-repair rate <cr>    # path-045979
+(config)# default ip rsvp signalling hello <cr>    # path-037040
+(config)# default ip rsvp signalling hello bfd <cr>    # path-046401
+(config)# default ip rsvp signalling hello cleanup-timer <cr>    # path-046358
+(config)# default ip rsvp signalling hello down <cr>    # path-046185
+(config)# default ip rsvp signalling hello graceful-restart dscp <cr>    # path-053972
+(config)# default ip rsvp signalling hello graceful-restart help-neighbor <cr>    # path-054007
+(config)# default ip rsvp signalling hello graceful-restart refresh interval <cr>    # path-057705
+(config)# default ip rsvp signalling hello graceful-restart refresh misses <cr>    # path-057738
+(config)# default ip rsvp signalling hello graceful-restart send recovery-time <cr>    # path-057788
+(config)# default ip rsvp signalling hello graceful-restart send restart-time <cr>    # path-057813
+(config)# default ip rsvp signalling hello queue <number:1..200> <number:1..200> <cr>    # path-057561
+(config)# default ip rsvp signalling hello statistics <cr>    # path-046184
+(config)# default ip rsvp signalling hello timer <number:1..100> <cr>    # path-053670
+(config)# default ip rsvp signalling initial-retransmit-delay <cr>    # path-036659
+(config)# default ip rsvp signalling patherr state-removal <cr>    # path-046024
+(config)# default ip rsvp signalling rate-limit <cr>    # path-036566
+(config)# default ip rsvp signalling refresh interval <cr>    # path-046160
+(config)# default ip rsvp signalling refresh misses <cr>    # path-046204
+(config)# default ip rsvp signalling refresh reduction <cr>    # path-046056
+(config)# default ip rsvp signalling refresh reduction ack-delay <cr>    # path-053558
+(config)# default ip rsvp sso nbr <address> <cr>    # path-045783
+(config)# default ip rsvp transport client <number:1..65535> <cr>    # path-045352
+(config)# default ip rsvp transport statistics <cr>    # path-035763
+(config)# default ip rsvp udp hosts <cr>    # path-035772
+(config)# default ip rsvp udp neighbor <address> <cr>    # path-045432
+(config)# default ip rtcp report interval <cr>    # path-035331
+(config)# default ip rtp coalesce <cr>    # path-029141
+(config)# default ip sap cache-timeout <cr>    # path-029449
+(config)# default ip scp password <cr>    # path-029618
+(config)# default ip scp remote-username <cr>    # path-029510
+(config)# default ip scp server enable <cr>    # path-035542
+(config)# default ip scp username <cr>    # path-029565
+(config)# default ip security eso-info <number:0..255> <cr>    # path-034731
+(config)# default ip sftp password <cr>    # path-029563
+(config)# default ip sftp username <cr>    # path-029507
+(config)# default ip source-route <cr>    # path-026558
+(config)# default ip spd mode <cr>    # path-028997
+(config)# default ip spd queue max-threshold <cr>    # path-035127
+(config)# default ip spd queue min-threshold <cr>    # path-035183
+(config)# default ip ssh authentication-retries <cr>    # path-026973
+(config)# default ip ssh break-string <cr>    # path-029859
+(config)# default ip ssh bulk-mode <cr>    # path-029452
+(config)# default ip ssh client algorithm authentication <cr>    # path-046468
+(config)# default ip ssh client algorithm encryption <cr>    # path-046237
+(config)# default ip ssh client algorithm hostkey <cr>    # path-046418
+(config)# default ip ssh client algorithm kex <cr>    # path-046267
+(config)# default ip ssh client algorithm mac <cr>    # path-046202
+(config)# default ip ssh client algorithm publickey <cr>    # path-046515
+(config)# default ip ssh dh min size <cr>    # path-045823
+(config)# default ip ssh dscp <cr>    # path-030094
+(config)# default ip ssh ec keypair-name <cr>    # path-036049
+(config)# default ip ssh logging events <cr>    # path-036121
+(config)# default ip ssh maxstartups <cr>    # path-029401
+(config)# default ip ssh port <number:2000..10000> <number:2000..10000> <cr>    # path-045351
+(config)# default ip ssh precedence <cr>    # path-030062
+(config)# default ip ssh pubkey-chain <cr>    # path-030165
+(config)# default ip ssh rekey <cr>    # path-030234
+(config)# default ip ssh rekey time <cr>    # path-036707
+(config)# default ip ssh rekey volume <cr>    # path-036751
+(config)# default ip ssh rsa keypair-name <cr>    # path-035971
+(config)# default ip ssh server authenticate user <cr>    # path-046107
+(config)# default ip ssh server certificate profile <cr>    # path-046124
+(config)# default ip ssh server peruser session limit <cr>    # path-053598
+(config)# default ip ssh source-interface <cr>    # path-029710
+(config)# default ip ssh stricthostkeycheck <cr>    # path-030088
+(config)# default ip ssh time-out <cr>    # path-026951
+(config)# default ip ssh version 2 <cr>    # path-036151
+(config)# default ip ssh window-size <cr>    # path-027000
+(config)# default ip sticky-arp <cr>    # path-026682
+(config)# default ip subnet-zero <cr>    # path-026538
+(config)# default ip subscriber l2-roaming <cr>    # path-029974
+(config)# default ip subscriber list <string> <cr>    # path-036217
+(config)# default ip subscriber timer clear-dangling <cr>    # path-036388
+(config)# default ip tcp RST-count <number:2..20> RST-window <number:2000..60000> <cr>    # path-052761
+(config)# default ip tcp ack-tuning <cr>    # path-028801
+(config)# default ip tcp async-mobility server <cr>    # path-035193
+(config)# default ip tcp chunk-size <cr>    # path-026690
+(config)# default ip tcp delayed-ack <cr>    # path-028617
+(config)# default ip tcp ecn <cr>    # path-028515
+(config)# default ip tcp finwait-time <cr>    # path-026777
+(config)# default ip tcp keepalive interval <cr>    # path-028893
+(config)# default ip tcp keepalive retries <cr>    # path-028836
+(config)# default ip tcp mss <cr>    # path-026714
+(config)# default ip tcp path-mtu-discovery <cr>    # path-029181
+(config)# default ip tcp queuemax <cr>    # path-026794
+(config)# default ip tcp selective-ack <cr>    # path-028545
+(config)# default ip tcp synwait-time <cr>    # path-026810
+(config)# default ip tcp timestamp <cr>    # path-028578
+(config)# default ip tcp window-size <cr>    # path-026757
+(config)# default ip tcp winupdate-opt <cr>    # path-028659
+(config)# default ip telnet comport disconnect delay <cr>    # path-044800
+(config)# default ip telnet comport enable <cr>    # path-034970
+(config)# default ip telnet comport flow level <cr>    # path-044713
+(config)# default ip telnet comport receive window <cr>    # path-044758
+(config)# default ip telnet disable <cr>    # path-028831
+(config)# default ip telnet hidden addresses <cr>    # path-034840
+(config)# default ip telnet hidden hostnames <cr>    # path-034790
+(config)# default ip telnet quiet <cr>    # path-028657
+(config)# default ip telnet source-interface <cr>    # path-028636
+(config)# default ip telnet timeout retransmit <cr>    # path-028656
+(config)# default ip telnet tos <cr>    # path-028672
+(config)# default ip tftp arp-glean <cr>    # path-028820
+(config)# default ip tftp blocksize <cr>    # path-029043
+(config)# default ip tftp boot-interface <cr>    # path-029000
+(config)# default ip tftp claim-netascii <cr>    # path-028762
+(config)# default ip tftp source-interface <cr>    # path-028853
+(config)# default ip trigger-authentication <cr>    # path-027082
+(config)# default ip ttl decrement <cr>    # path-028965
+(config)# default ip verify drop-rate compute interval <cr>    # path-044995
+(config)# default ip verify drop-rate compute window <cr>    # path-045040
+(config)# default ip verify drop-rate notify hold-down <cr>    # path-045039
+(config)# default ip visibility global flow monitor sdwan_flow_monitor input <cr>    # path-056993
+(config)# default ip vrf <cr>    # path-026934
+(config)# default ip wccp check acl outbound <cr>    # path-045254
+(config)# default ip wccp check services all <cr>    # path-045204
+(config)# default ip wccp outbound-acl-check <cr>    # path-029556
+(config)# default ip wccp source-interface <cr>    # path-029611
+(config)# default ip wccp variable-timers <cr>    # path-029393
+(config)# default ip wccp version <number:2..2> <cr>    # path-035467
+(config)# default ip wccp web-cache <cr>    # path-030102
+(config)# default ipc buffers max-free <cr>    # path-027970
+(config)# default ipc buffers min-free <cr>    # path-027988
+(config)# default ipc buffers permanent <cr>    # path-028005
+(config)# default ipc cache <cr>    # path-026148
+(config)# default ipc cache slot all <cr>    # path-034040
+(config)# default ipc header-cache permanent <cr>    # path-027959
+(config)# default ipc holdq threshold lower <cr>    # path-034037
+(config)# default ipc holdq threshold upper <cr>    # path-034029
+(config)# default ipc ru-action on <cr>    # path-027918
+(config)# default ipc zone default <cr>    # path-027949
+(config)# default ipv6 access-list <string> <cr>    # path-030093
+(config)# default ipv6 access-list fqdn <string> <cr>    # path-036448
+(config)# default ipv6 access-list log-update threshold <cr>    # path-036502
+(config)# default ipv6 access-list match-local-traffic <cr>    # path-030016
+(config)# default ipv6 access-list role-based <string> <cr>    # path-036331
+(config)# default ipv6 address-validate <cr>    # path-026897
+(config)# default ipv6 alias <address> <cr>    # path-029743
+(config)# default ipv6 cef <cr>    # path-027198
+(config)# default ipv6 cef accounting <cr>    # path-030204
+(config)# default ipv6 cef load-sharing algorithm <cr>    # path-036323
+(config)# default ipv6 cef load-sharing key-control dpi default <cr>    # path-053342
+(config)# default ipv6 cef load-sharing key-control dpi l2vpn-mac <cr>    # path-053387
+(config)# default ipv6 cef load-sharing key-control dpi tunnel-gre <cr>    # path-053471
+(config)# default ipv6 cef load-sharing key-control dpi tunnel-ipinip <cr>    # path-053431
+(config)# default ipv6 cef load-sharing key-control dpi tunnel-ipsec <cr>    # path-053508
+(config)# default ipv6 cef load-sharing key-control dpi tunnel-l2tp <cr>    # path-053596
+(config)# default ipv6 cef load-sharing key-control dpi tunnel-vxlan <cr>    # path-053554
+(config)# default ipv6 cef optimize neighbor resolution <cr>    # path-045442
+(config)# default ipv6 cef traffic-statistics <cr>    # path-030060
+(config)# default ipv6 deny-echo-reply <cr>    # path-026915
+(config)# default ipv6 destination-guard policy <string> <cr>    # path-035629
+(config)# default ipv6 dhcp binding track ppp <cr>    # path-045333
+(config)# default ipv6 dhcp database <string> <cr>    # path-035657
+(config)# default ipv6 dhcp iana-route-add <cr>    # path-029590
+(config)# default ipv6 dhcp iapd-route-add <cr>    # path-029533
+(config)# default ipv6 dhcp monitor statistics start sample-size <number:0..4294967295> <cr>    # path-057150
+(config)# default ipv6 dhcp monitor statistics stop <cr>    # path-045292
+(config)# default ipv6 dhcp ping packets <cr>    # path-035782
+(config)# default ipv6 dhcp pool <string> <cr>    # path-036012
+(config)# default ipv6 dhcp ppp framed-prefix cache <cr>    # path-045445
+(config)# default ipv6 dhcp ppp terminate <cr>    # path-035855
+(config)# default ipv6 dhcp server join all-dhcp-servers <cr>    # path-045491
+(config)# default ipv6 dhcp server vrf enable <cr>    # path-045544
+(config)# default ipv6 dhcp test relay drop peeraddr <cr>    # path-053435
+(config)# default ipv6 dhcp test relay forward add <cr>    # path-053266
+(config)# default ipv6 dhcp test relay notifications <cr>    # path-045738
+(config)# default ipv6 dhcp test relay packet-control <cr>    # path-045805
+(config)# default ipv6 dhcp test relay reply add vsio <cr>    # path-057379
+(config)# default ipv6 dhcp test server add vsio <cr>    # path-053306
+(config)# default ipv6 dhcp-client leasequery <cr>    # path-029624
+(config)# default ipv6 dhcp-client leasequery server <address> <cr>    # path-045330
+(config)# default ipv6 dhcp-relay bulk-lease disable <cr>    # path-035574
+(config)# default ipv6 dhcp-relay bulk-lease retry <number:0..15> <cr>    # path-045396
+(config)# default ipv6 dhcp-relay bulk-lease timeout <number:1..40> <cr>    # path-045171
+(config)# default ipv6 dhcp-relay option client-link-addr <cr>    # path-035683
+(config)# default ipv6 dhcp-relay option vpn <cr>    # path-035621
+(config)# default ipv6 dhcp-relay short-lease <number:60..3600> <cr>    # path-035512
+(config)# default ipv6 dhcp-relay source-interface <cr>    # path-029399
+(config)# default ipv6 dhcp-relay trust-all <cr>    # path-029425
+(config)# default ipv6 first-hop full-proxy <cr>    # path-029561
+(config)# default ipv6 first-hop logging <cr>    # path-029714
+(config)# default ipv6 first-hop service-support punt-acl <number:0..7> <cr>    # path-045274
+(config)# default ipv6 first-hop unit-test bulk-sync <cr>    # path-035572
+(config)# default ipv6 first-hop unit-test check-reach vlan <number:0..4096> <address> <cr>    # path-057202
+(config)# default ipv6 first-hop unit-test disable-cli-sync <cr>    # path-036376
+(config)# default ipv6 first-hop unit-test ha-sync-msg msg-type bt-entry action enable <cr>    # path-059134
+(config)# default ipv6 first-hop unit-test ipdt vlan <number:1..4096> <cr>    # path-053056
+(config)# default ipv6 first-hop unit-test pgm <cr>    # path-036274
+(config)# default ipv6 first-hop unit-test reapply-filters vlan <number:1..4096> <cr>    # path-053231
+(config)# default ipv6 first-hop unit-test upgm <cr>    # path-036271
+(config)# default ipv6 flowset <cr>    # path-026888
+(config)# default ipv6 hop-limit <cr>    # path-026851
+(config)# default ipv6 host <string> <cr>    # path-029319
+(config)# default ipv6 icmp error-interval <cr>    # path-029290
+(config)# default ipv6 icmp od-length enable <cr>    # path-035288
+(config)# default ipv6 icmp od-length test <cr>    # path-035356
+(config)# default ipv6 local policy route-map <cr>    # path-035497
+(config)# default ipv6 local pool <string> <cr>    # path-035387
+(config)# default ipv6 mfib <cr>    # path-026956
+(config)# default ipv6 mfib <cr>    # path-027024
+(config)# default ipv6 mfib hardware-switching <cr>    # path-029718
+(config)# default ipv6 mfib hardware-switching connected <cr>    # path-035747
+(config)# default ipv6 mfib hardware-switching replication-mode ingress <cr>    # path-045338
+(config)# default ipv6 mfib hardware-switching shared-tree <cr>    # path-035633
+(config)# default ipv6 mfib hardware-switching uplink <cr>    # path-035953
+(config)# default ipv6 mfib logging-ttl <cr>    # path-029301
+(config)# default ipv6 mld ssm-map enable <cr>    # path-035619
+(config)# default ipv6 mld ssm-map query dns <cr>    # path-045277
+(config)# default ipv6 mld ssm-map static <number:1..199> <address> <cr>    # path-052936
+(config)# default ipv6 mld state-limit <cr>    # path-029606
+(config)# default ipv6 multicast group-range <cr>    # path-030124
+(config)# default ipv6 multicast limit cost <number:1..199> <cr>    # path-045974
+(config)# default ipv6 multicast limit rate <cr>    # path-036609
+(config)# default ipv6 multicast mib set-enable mgmd <cr>    # path-045670
+(config)# default ipv6 multicast mib set-enable pimstdmib <cr>    # path-045742
+(config)# default ipv6 multicast mpls mldp <cr>    # path-036385
+(config)# default ipv6 multicast mpls source <cr>    # path-036498
+(config)# default ipv6 multicast mpls traffic-eng <cr>    # path-036442
+(config)# default ipv6 multicast multipath <cr>    # path-030018
+(config)# default ipv6 multicast pim-passive-enable <cr>    # path-029838
+(config)# default ipv6 multicast route-limit <cr>    # path-030024
+(config)# default ipv6 multicast rpf backoff <cr>    # path-036612
+(config)# default ipv6 multicast rpf select vrf <string> group-range <number:1..199> <cr>    # path-059196
+(config)# default ipv6 multicast rpf use-bgp <cr>    # path-036222
+(config)# default ipv6 multicast-routing <cr>    # path-027084
+(config)# default ipv6 nd cache expire <cr>    # path-035495
+(config)# default ipv6 nd cache interface-limit <cr>    # path-035443
+(config)# default ipv6 nd dad loopback detect <cr>    # path-045275
+(config)# default ipv6 nd dad time <cr>    # path-029538
+(config)# default ipv6 nd default-route <cr>    # path-029664
+(config)# default ipv6 nd host mode strict <cr>    # path-044966
+(config)# default ipv6 nd ns-interval <cr>    # path-026959
+(config)# default ipv6 nd nsf convergence <cr>    # path-029200
+(config)# default ipv6 nd nsf dad suppress <cr>    # path-035422
+(config)# default ipv6 nd nsf throttle <cr>    # path-029285
+(config)# default ipv6 nd nud <cr>    # path-029357
+(config)# default ipv6 nd ra solicited unicast <cr>    # path-044910
+(config)# default ipv6 nd reachable-time <cr>    # path-026940
+(config)# default ipv6 nd resolution data limit <cr>    # path-035567
+(config)# default ipv6 nd route-owner <cr>    # path-029307
+(config)# default ipv6 neighbor binding <cr>    # path-029670
+(config)# default ipv6 neighbor binding logging <cr>    # path-035587
+(config)# default ipv6 neighbor binding max-entries <cr>    # path-035605
+(config)# default ipv6 neighbor tracking <cr>    # path-029358
+(config)# default ipv6 nsf-converge <cr>    # path-026923
+(config)# default ipv6 ospf name-lookup <cr>    # path-029409
+(config)# default ipv6 pim accept-register <cr>    # path-029650
+(config)# default ipv6 pim allow-rp <cr>    # path-030087
+(config)# default ipv6 pim anycast-rp <address> <address> <cr>    # path-045780
+(config)# default ipv6 pim bsr announced rp <address> <cr>    # path-053722
+(config)# default ipv6 pim bsr candidate bsr <address> <cr>    # path-053724
+(config)# default ipv6 pim bsr candidate rp <address> <cr>    # path-053762
+(config)# default ipv6 pim maximum group-mappings bsr <cr>    # path-045761
+(config)# default ipv6 pim mvpn source-link-local <cr>    # path-036414
+(config)# default ipv6 pim neighbor-filter <cr>    # path-029604
+(config)# default ipv6 pim old-register-checksum <cr>    # path-029891
+(config)# default ipv6 pim pfp-sa announce <cr>    # path-036837
+(config)# default ipv6 pim pfp-sa cache <cr>    # path-036906
+(config)# default ipv6 pim pfp-sa timers holdtime <cr>    # path-046262
+(config)# default ipv6 pim pfp-sa timers interval <cr>    # path-046301
+(config)# default ipv6 pim rp embedded <cr>    # path-035793
+(config)# default ipv6 pim rp-address <address> <cr>    # path-036048
+(config)# default ipv6 pim spt-threshold <cr>    # path-029852
+(config)# default ipv6 prefix-list <string> <cr>    # path-029959
+(config)# default ipv6 prefix-list sequence-number <cr>    # path-029586

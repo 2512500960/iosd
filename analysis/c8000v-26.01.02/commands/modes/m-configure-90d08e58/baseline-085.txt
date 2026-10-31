@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-085.md
+
+(config)# no do-exec show mvr interface <cr>    # path-040568
+(config)# no do-exec show mvr members <cr>    # path-040727
+(config)# no do-exec show mvr receiver-ports <cr>    # path-040626
+(config)# no do-exec show mvr source-ports <cr>    # path-040652
+(config)# no do-exec show nat46 mappings static <cr>    # path-047413
+(config)# no do-exec show nat46 pools <cr>    # path-038278
+(config)# no do-exec show nat46 prefix <cr>    # path-038083
+(config)# no do-exec show nat64 adjacency count <cr>    # path-047357
+(config)# no do-exec show nat64 aliases <cr>    # path-038699
+(config)# no do-exec show nat64 ha status <cr>    # path-047494
+(config)# no do-exec show nat64 limits <cr>    # path-038501
+(config)# no do-exec show nat64 logging <cr>    # path-038314
+(config)# no do-exec show nat64 map-e <cr>    # path-038280
+(config)# no do-exec show nat64 map-t <cr>    # path-038230
+(config)# no do-exec show nat64 mappings dynamic <cr>    # path-047939
+(config)# no do-exec show nat64 pools <cr>    # path-038844
+(config)# no do-exec show nat64 prefix stateful global <cr>    # path-054448
+(config)# no do-exec show nat64 provisioning <cr>    # path-038215
+(config)# no do-exec show nat64 reconciliation <cr>    # path-038363
+(config)# no do-exec show nat64 replications <cr>    # path-038454
+(config)# no do-exec show nat64 routes <cr>    # path-038517
+(config)# no do-exec show nat64 services <cr>    # path-038455
+(config)# no do-exec show nat64 settings <cr>    # path-038415
+(config)# no do-exec show nat64 statistics <cr>    # path-038337
+(config)# no do-exec show nat64 timeouts <cr>    # path-038414
+(config)# no do-exec show nat64 translations <cr>    # path-038886
+(config)# no do-exec show nat66 nd <cr>    # path-038209
+(config)# no do-exec show nat66 prefix <cr>    # path-038167
+(config)# no do-exec show nat66 route-dia <cr>    # path-038258
+(config)# no do-exec show nat66 statistics <cr>    # path-038283
+(config)# no do-exec show ncia circuits <cr>    # path-043572
+(config)# no do-exec show netbios-cache <cr>    # path-033756
+(config)# no do-exec show netconf counters <cr>    # path-043259
+(config)# no do-exec show netconf schema <cr>    # path-043276
+(config)# no do-exec show netconf session <cr>    # path-043241
+(config)# no do-exec show netconf-yang ssh hostkey <cr>    # path-051997
+(config)# no do-exec show netconf-yang status <cr>    # path-043725
+(config)# no do-exec show nhrp cache queue <cr>    # path-050127
+(config)# no do-exec show nhrp debug-condition <cr>    # path-040977
+(config)# no do-exec show nhrp event delayed-queue <cr>    # path-050283
+(config)# no do-exec show nhrp group-map <cr>    # path-041201
+(config)# no do-exec show nhrp interfaces <cr>    # path-041230
+(config)# no do-exec show nhrp multicast queue-snapshot <cr>    # path-050153
+(config)# no do-exec show nhrp stats <cr>    # path-041331
+(config)# no do-exec show nhrp stats performance distribution <cr>    # path-055970
+(config)# no do-exec show nhrp stats performance timers <cr>    # path-055961
+(config)# no do-exec show ntp associations <cr>    # path-038687
+(config)# no do-exec show ntp config <cr>    # path-038569
+(config)# no do-exec show ntp information <cr>    # path-038728
+(config)# no do-exec show ntp packets <cr>    # path-038839
+(config)# no do-exec show ntp status <cr>    # path-038666
+(config)# no do-exec show object-group <cr>    # path-033653
+(config)# no do-exec show object-group acl-client <cr>    # path-043307
+(config)# no do-exec show object-group parent-list <cr>    # path-043331
+(config)# no do-exec show odb client <cr>    # path-042328
+(config)# no do-exec show odb record <number:0..4294967295> <number:0..4294967295> <cr>    # path-056376
+(config)# no do-exec show odb table <cr>    # path-042351
+(config)# no do-exec show odm-format <cr>    # path-033627
+(config)# no do-exec show onep status <cr>    # path-042384
+(config)# no do-exec show opflex agent service vxlan-evpn all <cr>    # path-058732
+(config)# no do-exec show opflex agent service vxlan-evpn concrete-config all <cr>    # path-059583
+(config)# no do-exec show opflex agent service vxlan-evpn tenant <string> <cr>    # path-059580
+(config)# no do-exec show opflex agent session <cr>    # path-050720
+(config)# no do-exec show ospfv3 <cr>    # path-033023
+(config)# no do-exec show ospfv3 bad-checksum <cr>    # path-041685
+(config)# no do-exec show ospfv3 border-routers <cr>    # path-041898
+(config)# no do-exec show ospfv3 database <cr>    # path-042367
+(config)# no do-exec show ospfv3 database database-summary <cr>    # path-051002
+(config)# no do-exec show ospfv3 database database-summary detail <cr>    # path-056373
+(config)# no do-exec show ospfv3 events <cr>    # path-041739
+(config)# no do-exec show ospfv3 flood-list <cr>    # path-042183
+(config)# no do-exec show ospfv3 graceful-restart <cr>    # path-041813
+(config)# no do-exec show ospfv3 interface <cr>    # path-042165
+(config)# no do-exec show ospfv3 internal work-queue <cr>    # path-050915
+(config)# no do-exec show ospfv3 lsdb-radix <cr>    # path-041686
+(config)# no do-exec show ospfv3 max-metric <cr>    # path-041948
+(config)# no do-exec show ospfv3 maxage-list <cr>    # path-041971
+(config)# no do-exec show ospfv3 mpls traffic-eng tunnel interface <cr>    # path-058776
+(config)# no do-exec show ospfv3 mpls traffic-eng tunnel tail <cr>    # path-058765
+(config)# no do-exec show ospfv3 multi-area <cr>    # path-041844
+(config)# no do-exec show ospfv3 multi-area internal <cr>    # path-050591
+(config)# no do-exec show ospfv3 neighbor <cr>    # path-042314
+(config)# no do-exec show ospfv3 request-list <cr>    # path-042251
+(config)# no do-exec show ospfv3 retransmission-list <cr>    # path-042235
+(config)# no do-exec show ospfv3 rib <cr>    # path-042085
+(config)# no do-exec show ospfv3 route-lists <cr>    # path-042015
+(config)# no do-exec show ospfv3 sham-links <cr>    # path-041795
+(config)# no do-exec show ospfv3 statistic <cr>    # path-041956
+(config)# no do-exec show ospfv3 summary-prefix <cr>    # path-041871
+(config)# no do-exec show ospfv3 timers lsa-group <cr>    # path-050610
+(config)# no do-exec show ospfv3 timers rate-limit <cr>    # path-050634
+(config)# no do-exec show ospfv3 traffic <cr>    # path-042186
+(config)# no do-exec show ospfv3 virtual-links <cr>    # path-041764
+(config)# no do-exec show packet-debug pak_debug_tracebuf <cr>    # path-038433
+(config)# no do-exec show parser atomic-config statistics <cr>    # path-044729
+(config)# no do-exec show parser cache <cr>    # path-034861
+(config)# no do-exec show parser cache <number:0..29> <cr>    # path-044530
+(config)# no do-exec show parser csb flags <cr>    # path-044821
+(config)# no do-exec show parser encrypt file status <cr>    # path-052539
+(config)# no do-exec show parser links <cr>    # path-034732
+(config)# no do-exec show parser memory <cr>    # path-034959
+(config)# no do-exec show parser modes <cr>    # path-034766
+(config)# no do-exec show parser statistics <cr>    # path-034852
+(config)# no do-exec show parser unresolved <cr>    # path-034724
+(config)# no do-exec show parser view <cr>    # path-035126
+(config)# no do-exec show passwd encryption status <cr>    # path-048423
+(config)# no do-exec show persistent variable <cr>    # path-035353
+(config)# no do-exec show platform <cr>    # path-028372
+(config)# no do-exec show platform atm-cdvt <cr>    # path-034410
+(config)# no do-exec show platform authentication session all <cr>    # path-052128
+(config)# no do-exec show platform authentication session handle <number:1..4294967295> <cr>    # path-056794
+(config)# no do-exec show platform authentication session mac <address> <cr>    # path-056827
+(config)# no do-exec show platform chassis <number:1..2> R0 <cr>    # path-052183
+(config)# no do-exec show platform chassis active R0 <cr>    # path-052214
+(config)# no do-exec show platform chassis standby R0 <cr>    # path-052239
+(config)# no do-exec show platform conditions <cr>    # path-034289
+(config)# no do-exec show platform conditions internal <cr>    # path-044064
+(config)# no do-exec show platform diag <cr>    # path-034409
+(config)# no do-exec show platform fabric border dhcp snooping ipv4 statistics <cr>    # path-059620
+(config)# no do-exec show platform packet-trace configuration <cr>    # path-044149
+(config)# no do-exec show platform power <cr>    # path-034493
+(config)# no do-exec show platform resources <cr>    # path-034291
+(config)# no do-exec show platform sd status <cr>    # path-044143
+(config)# no do-exec show platform software <cr>    # path-036339
+(config)# no do-exec show platform software access-list template <string> <cr>    # path-057025
+(config)# no do-exec show platform software adjacency counters <cr>    # path-052432
+(config)# no do-exec show platform software adjacency counters tun-qos-ha <cr>    # path-056915
+(config)# no do-exec show platform software adjacency nexthop-ipfrr <cr>    # path-052421
+(config)# no do-exec show platform software adjacency oce <number:1..4294967295> <cr>    # path-056961
+(config)# no do-exec show platform software adjacency oce inlabel <number:1..2147483647> <cr>    # path-058978
+(config)# no do-exec show platform software adjacency tunadj <cr>    # path-052451
+(config)# no do-exec show platform software bfd counters <cr>    # path-052367
+(config)# no do-exec show platform software bfd pending <cr>    # path-052394
+(config)# no do-exec show platform software bfd session <cr>    # path-052331
+(config)# no do-exec show platform software cce statistics <cr>    # path-052916
+(config)# no do-exec show platform software cdna all <cr>    # path-052118
+(config)# no do-exec show platform software cef counters <cr>    # path-052414
+(config)# no do-exec show platform software cef ipv4 <address> <address> feature-all <cr>    # path-059687
+(config)# no do-exec show platform software cli-agent counters <cr>    # path-053358
+(config)# no do-exec show platform software cman statistics <cr>    # path-052132
+(config)# no do-exec show platform software consent-token <cr>    # path-045653
+(config)# no do-exec show platform software consent-token shell-access <cr>    # path-053040
+(config)# no do-exec show platform software crimson lock request-wait-histogram <cr>    # path-057260
+(config)# no do-exec show platform software crimson lock statistics <cr>    # path-057232
+(config)# no do-exec show platform software crimson notification statistics <cr>    # path-057255
+(config)# no do-exec show platform software crimson operational audit <cr>    # path-057317
+(config)# no do-exec show platform software crimson operational audit baseline <cr>    # path-059117
+(config)# no do-exec show platform software crimson operational database <cr>    # path-057264
+(config)# no do-exec show platform software crimson operational offload <cr>    # path-057293
+(config)# no do-exec show platform software crimson operational offload details <cr>    # path-059111
+(config)# no do-exec show platform software crimson operational statistics <cr>    # path-057295
+(config)# no do-exec show platform software crimson operational statistics idb <cr>    # path-059112
+(config)# no do-exec show platform software crimson operational statistics table <cr>    # path-059107
+(config)# no do-exec show platform software dbal ios mqipc-list <cr>    # path-056792
+(config)# no do-exec show platform software dpidb atm pvc <cr>    # path-056966
+(config)# no do-exec show platform software dpidb atm pvp <cr>    # path-056985
+(config)# no do-exec show platform software dpidb database <cr>    # path-052349
+(config)# no do-exec show platform software dpidb database controller <cr>    # path-056830
+(config)# no do-exec show platform software dpidb database l2-vlan <cr>    # path-056872
+(config)# no do-exec show platform software dpidb database legacy <cr>    # path-056815
+(config)# no do-exec show platform software dpidb database qos-template <cr>    # path-056884
+(config)# no do-exec show platform software dpidb database session <cr>    # path-056844
+(config)# no do-exec show platform software dpidb database vfiseg <cr>    # path-056859
+(config)# no do-exec show platform software dpidb ethernet efp <cr>    # path-056933
+(config)# no do-exec show platform software dpidb frame-relay pvc <cr>    # path-056934
+(config)# no do-exec show platform software dpidb index <cr>    # path-052203
+(config)# no do-exec show platform software dpidb l2lisp <number:1..16777214> <cr>    # path-056926
+(config)# no do-exec show platform software dpidb session <cr>    # path-052347
+(config)# no do-exec show platform software dpidb spa <cr>    # path-052253
+(config)# no do-exec show platform software dpidb stats <cr>    # path-052222
+(config)# no do-exec show platform software dpidb swidb <cr>    # path-052321
+(config)# no do-exec show platform software dpidb vlans <cr>    # path-052320
+(config)# no do-exec show platform software epbr statistics <cr>    # path-052578
+(config)# no do-exec show platform software epbr statistics flowspec <cr>    # path-057003
+(config)# no do-exec show platform software epbr track <cr>    # path-052518
+(config)# no do-exec show platform software ethernet efp statistics <cr>    # path-056835
+(config)# no do-exec show platform software fhs statistics <cr>    # path-052471
+(config)# no do-exec show platform software flow monitor name <string> <cr>    # path-059035
+(config)# no do-exec show platform software flow statistics <cr>    # path-052665
+(config)# no do-exec show platform software flow-control identifiers detail <cr>    # path-056857
+(config)# no do-exec show platform software flow-control identifiers pools <cr>    # path-056841
+(config)# no do-exec show platform software icmp statistics <cr>    # path-052684
+(config)# no do-exec show platform software iid all <cr>    # path-052356
+(config)# no do-exec show platform software infrastructure bipc <cr>    # path-053602
+(config)# no do-exec show platform software infrastructure chasfs <cr>    # path-053214
+(config)# no do-exec show platform software infrastructure debug <cr>    # path-053261
+(config)# no do-exec show platform software infrastructure flowctl <cr>    # path-053166
+(config)# no do-exec show platform software infrastructure inject <cr>    # path-053301
+(config)# no do-exec show platform software infrastructure integrated-service l2-switch <cr>    # path-057233
+(config)# no do-exec show platform software infrastructure lfts sar all <cr>    # path-059131
+(config)# no do-exec show platform software infrastructure lfts sar ipv4-addr <address> <cr>    # path-059757
+(config)# no do-exec show platform software infrastructure lfts sar ipv6-addr <address> <cr>    # path-059761
+(config)# no do-exec show platform software infrastructure lfts sar stat <cr>    # path-059121
+(config)# no do-exec show platform software infrastructure lfts stat <cr>    # path-057358
+(config)# no do-exec show platform software infrastructure lfts stat vrf <string> <cr>    # path-059751
+(config)# no do-exec show platform software infrastructure liin <cr>    # path-053215
+(config)# no do-exec show platform software infrastructure lsmpi <cr>    # path-053478
+(config)# no do-exec show platform software infrastructure packet <cr>    # path-053125
+(config)# no do-exec show platform software infrastructure punt-keepalive <cr>    # path-053434
+(config)# no do-exec show platform software infrastructure punt-keepalive statistics esp <cr>    # path-059159
+(config)# no do-exec show platform software infrastructure query <cr>    # path-053175
+(config)# no do-exec show platform software infrastructure query rwatch <cr>    # path-057279
+(config)# no do-exec show platform software infrastructure scheduler <cr>    # path-053130
+(config)# no do-exec show platform software infrastructure scheduler detail <cr>    # path-057256
+(config)# no do-exec show platform software infrastructure session <cr>    # path-053269
+(config)# no do-exec show platform software infrastructure thread <cr>    # path-053310
+(config)# no do-exec show platform software l2fib-iosd bdomain <number:1..65535> v4 stats <cr>    # path-059639
+(config)# no do-exec show platform software l2fib-iosd mac-statistics <cr>    # path-052292
+(config)# no do-exec show platform software l2pt statistics <cr>    # path-052564
+(config)# no do-exec show platform software macsec classify-pattern all <cr>    # path-057250
+(config)# no do-exec show platform software macsec classify-pattern name <string> <cr>    # path-059115
+(config)# no do-exec show platform software macsec secy config-all <cr>    # path-057302
+(config)# no do-exec show platform software mlppp counters <cr>    # path-052287
+(config)# no do-exec show platform software multicast ipv4 mfib-summary <address> <cr>    # path-059014
+(config)# no do-exec show platform software multicast mfib-summary <address> <cr>    # path-057023
+(config)# no do-exec show platform software multicast retry mroute ipv4 <cr>    # path-058971
+(config)# no do-exec show platform software multicast retry mroute ipv6 <cr>    # path-058979
+(config)# no do-exec show platform software multicast stats <cr>    # path-052474
+(config)# no do-exec show platform software nat counters <cr>    # path-052816
+(config)# no do-exec show platform software nat ipalias <cr>    # path-052853
+(config)# no do-exec show platform software nat static-route <cr>    # path-052890
+(config)# no do-exec show platform software nat wlan session <cr>    # path-057156
+(config)# no do-exec show platform software nat64 statistics <cr>    # path-052699
+(config)# no do-exec show platform software nat66 statistics <cr>    # path-052719
+(config)# no do-exec show platform software nbar statistics <cr>    # path-052591
+(config)# no do-exec show platform software netflow statistics <cr>    # path-052733
+(config)# no do-exec show platform software nwpi counters <cr>    # path-052621
+(config)# no do-exec show platform software pfr statistics <cr>    # path-052758
+(config)# no do-exec show platform software pkt-reorder cfg <cr>    # path-053241
+(config)# no do-exec show platform software pkt-reorder ctx sdwan <cr>    # path-057430
+(config)# no do-exec show platform software pkt-reorder ctx sdwan <number:1..512> <cr>    # path-059148
+(config)# no do-exec show platform software pkt-reorder stats <cr>    # path-053292
+(config)# no do-exec show platform software plim qos class-map all <cr>    # path-059164
+(config)# no do-exec show platform software qos class statistics class-group <number:0..4294967294> class <number:0..4294967294> <cr>    # path-060144
+(config)# no do-exec show platform software qos database <cr>    # path-053024
+(config)# no do-exec show platform software qos statistics <cr>    # path-052952
+(config)# no do-exec show platform software qos template <cr>    # path-053096
+(config)# no do-exec show platform software route-map client all <cr>    # path-057103
+(config)# no do-exec show platform software route-map client route-map <string> <cr>    # path-059069
+(config)# no do-exec show platform software route-map counters <cr>    # path-052778
+(config)# no do-exec show platform software shell command connection <cr>    # path-057210
+(config)# no do-exec show platform software shell command package <cr>    # path-057269
+(config)# no do-exec show platform software shell command set <cr>    # path-057196
+(config)# no do-exec show platform software shell command set detail <cr>    # path-059091
+(config)# no do-exec show platform software shell manager statistics <cr>    # path-057185
+(config)# no do-exec show platform software sl-infra all <cr>    # path-052177
+(config)# no do-exec show platform software sl-infra current <cr>    # path-052155
+(config)# no do-exec show platform software sl-infra debug <cr>    # path-052122
+(config)# no do-exec show platform software sl-infra pak-info <cr>    # path-052106
+(config)# no do-exec show platform software sl-infra stored <cr>    # path-052138
+(config)# no do-exec show platform software spi4 headers pools <cr>    # path-056829
+(config)# no do-exec show platform software system all <cr>    # path-053402
+(config)# no do-exec show platform software system boot <cr>    # path-053628
+(config)# no do-exec show platform software system hypervisor <cr>    # path-053591
+(config)# no do-exec show platform software system license <cr>    # path-053687
+(config)# no do-exec show platform software system license metering detail <cr>    # path-059214
+(config)# no do-exec show platform software system license metering report <cr>    # path-059220
+(config)# no do-exec show platform software system license metering status <cr>    # path-059208
+(config)# no do-exec show platform software system memory <cr>    # path-053501
+(config)# no do-exec show platform software system processor <cr>    # path-053454
+(config)# no do-exec show platform software system vnic <cr>    # path-053546
+(config)# no do-exec show platform software timestamp-engine <cr>    # path-044619
+(config)# no do-exec show platform software vmemory info <cr>    # path-053146
+(config)# no do-exec show platform software vnic-if interface-mapping <cr>    # path-053344
+(config)# no do-exec show platform software vrf statistics <cr>    # path-052496
+(config)# no do-exec show platform software vty <cr>    # path-045258
+(config)# no do-exec show platform software wccp <cr>    # path-045441
+(config)# no do-exec show platform software wccp interface counters <cr>    # path-057187
+(config)# no do-exec show platform software wccp interface list <cr>    # path-057208
+(config)# no do-exec show platform software wccp statistics <cr>    # path-052954
+(config)# no do-exec show platform software wccp web-cache counters <cr>    # path-057175
+(config)# no do-exec show platform software wccp web-cache info <cr>    # path-057213
+(config)# no do-exec show platform software wccp web-cache merged-acl <cr>    # path-057192
+(config)# no do-exec show platform usb status <cr>    # path-044178
+(config)# no do-exec show pm vlan <number:1..4095> <cr>    # path-051970
+(config)# no do-exec show pnp all-summary <cr>    # path-043778
+(config)# no do-exec show pnp auto-install-tech-support <cr>    # path-043887
+(config)# no do-exec show pnp beacon-info <cr>    # path-043859
+(config)# no do-exec show pnp bootstrap <cr>    # path-043867
+(config)# no do-exec show pnp capabilities <cr>    # path-043847
+(config)# no do-exec show pnp cco <cr>    # path-043885
+(config)# no do-exec show pnp cert-info <cr>    # path-043839
+(config)# no do-exec show pnp cmd-info <cr>    # path-043837
+(config)# no do-exec show pnp config-info <cr>    # path-043831
+(config)# no do-exec show pnp device-info <cr>    # path-043845
+(config)# no do-exec show pnp diagnostic <cr>    # path-043746
+(config)# no do-exec show pnp dir-info <cr>    # path-043843
+(config)# no do-exec show pnp discovery-info <cr>    # path-043865
+(config)# no do-exec show pnp discovery-summary <cr>    # path-043773
+(config)# no do-exec show pnp dns <cr>    # path-043883
+(config)# no do-exec show pnp error-summary <cr>    # path-043768
+(config)# no do-exec show pnp errors <cr>    # path-043873
+(config)# no do-exec show pnp fs-info <cr>    # path-043841
+(config)# no do-exec show pnp history <cr>    # path-043760
+(config)# no do-exec show pnp idb <cr>    # path-043871
+(config)# no do-exec show pnp image <cr>    # path-043869
+(config)# no do-exec show pnp listener <cr>    # path-043730
+(config)# no do-exec show pnp locks <cr>    # path-043826
+(config)# no do-exec show pnp monitor-info <cr>    # path-043817
+(config)# no do-exec show pnp monitor-logging <cr>    # path-043807
+(config)# no do-exec show pnp profile <cr>    # path-043724
+(config)# no do-exec show pnp reconfig <cr>    # path-043877
+(config)# no do-exec show pnp reload-info <cr>    # path-043797
+(config)# no do-exec show pnp reload-summary <cr>    # path-043765
+(config)# no do-exec show pnp request <cr>    # path-043853
+(config)# no do-exec show pnp schema <cr>    # path-043857
+(config)# no do-exec show pnp script <cr>    # path-043881
+(config)# no do-exec show pnp sdwan-onboarding <cr>    # path-043735
+(config)# no do-exec show pnp services <cr>    # path-043855
+(config)# no do-exec show pnp smu <cr>    # path-043879
+(config)# no do-exec show pnp stack-info <cr>    # path-043860
+(config)# no do-exec show pnp stats <cr>    # path-043863
+(config)# no do-exec show pnp task <cr>    # path-043851
+(config)# no do-exec show pnp tech-support <cr>    # path-043889
+(config)# no do-exec show pnp time <cr>    # path-043875
+(config)# no do-exec show pnp topology <cr>    # path-043849
+(config)# no do-exec show pnp trace <cr>    # path-043726
+(config)# no do-exec show pnp udi <cr>    # path-043783
+(config)# no do-exec show pnp version <cr>    # path-043788
+(config)# no do-exec show pnp webui <cr>    # path-043753
+(config)# no do-exec show policy-manager events <cr>    # path-043096
+(config)# no do-exec show policy-manager policy <cr>    # path-043188
+(config)# no do-exec show policy-manager subsystem <cr>    # path-043171
+(config)# no do-exec show policy-map <cr>    # path-032597
+(config)# no do-exec show policy-map <string> <cr>    # path-041495
+(config)# no do-exec show policy-map <string> class <string> <cr>    # path-056002
+(config)# no do-exec show policy-map application handles <cr>    # path-050173
+(config)# no do-exec show policy-map control <cr>    # path-041026
+(config)# no do-exec show policy-map multipoint <cr>    # path-041398
+(config)# no do-exec show policy-map multipoint input class <string> <cr>    # path-058673
+(config)# no do-exec show policy-map policy-handle <string> <cr>    # path-050170
+(config)# no do-exec show policy-map service <cr>    # path-041065
+(config)# no do-exec show policy-map session <cr>    # path-041461
+(config)# no do-exec show policy-map session brief <cr>    # path-050475
+(config)# no do-exec show policy-map session brief <string> <cr>    # path-056070
+(config)# no do-exec show policy-map session brief <string> timestamp <cr>    # path-058693
+(config)# no do-exec show policy-map session brief <string> vrf <cr>    # path-058696
+(config)# no do-exec show policy-map session brief <string> vrf <string> <cr>    # path-059567
+(config)# no do-exec show policy-map session brief <string> vrf <string> timestamp <cr>    # path-059924
+(config)# no do-exec show policy-map session brief <string> vrf timestamp <cr>    # path-059565
+(config)# no do-exec show policy-map session brief timestamp <cr>    # path-056025
+(config)# no do-exec show policy-map session brief vrfs <cr>    # path-056036
+(config)# no do-exec show policy-map session brief vrfs <string> <cr>    # path-058689
+(config)# no do-exec show policy-map session brief vrfs <string> timestamp <cr>    # path-059562
+(config)# no do-exec show policy-map session brief vrfs timestamp <cr>    # path-058686
+(config)# no do-exec show policy-map session class <string> <cr>    # path-056024
+(config)# no do-exec show policy-map summary <cr>    # path-041161
+(config)# no do-exec show policy-map target <cr>    # path-041583
+(config)# no do-exec show policy-map target sub-interface <cr>    # path-050349
+(config)# no do-exec show policy-map target vrf <string> ipv4 input <cr>    # path-059561
+(config)# no do-exec show policy-map target vrf <string> type nwpi <cr>    # path-059570
+(config)# no do-exec show port-security <cr>    # path-033855
+(config)# no do-exec show power <cr>    # path-030640
+(config)# no do-exec show power detail <cr>    # path-037423
+(config)# no do-exec show power history <cr>    # path-037493
+(config)# no do-exec show power inline <cr>    # path-037607
+(config)# no do-exec show power inline dynamic-priority <cr>    # path-046889
+(config)# no do-exec show power inline meter <cr>    # path-046902
+(config)# no do-exec show power inline police <cr>    # path-046958
+(config)# no do-exec show power inline priority <cr>    # path-046979
+(config)# no do-exec show power inline upoe-plus <cr>    # path-046934
+(config)# no do-exec show power usage <cr>    # path-037357
+(config)# no do-exec show ppp all <cr>    # path-035932
+(config)# no do-exec show ppp bap counters <cr>    # path-046355
+(config)# no do-exec show ppp bap group <cr>    # path-046518
+(config)# no do-exec show ppp bap group <string> <cr>    # path-053820
+(config)# no do-exec show ppp bap queues <cr>    # path-046252
+(config)# no do-exec show ppp disconnect history <cr>    # path-045637
+(config)# no do-exec show ppp disconnect stats <cr>    # path-045495
+(config)# no do-exec show ppp id <number:1..4294967295> <cr>    # path-045605
+(config)# no do-exec show ppp memory <cr>    # path-036656
+(config)# no do-exec show ppp multilink <cr>    # path-037137
+(config)# no do-exec show ppp protocols <cr>    # path-036554
+(config)# no do-exec show ppp queues <cr>    # path-036431
+(config)# no do-exec show ppp statistics <cr>    # path-036450
+(config)# no do-exec show ppp statistics fsm <cr>    # path-045723
+(config)# no do-exec show ppp subscriber statistics <cr>    # path-046035
+(config)# no do-exec show ppp summary <cr>    # path-036240
+(config)# no do-exec show ppp syslog statistics <cr>    # path-045787
+(config)# no do-exec show ppp throttled <cr>    # path-036489
+(config)# no do-exec show pppatm redundancy <cr>    # path-041518
+(config)# no do-exec show pppatm session <cr>    # path-041625
+(config)# no do-exec show pppatm statistics <cr>    # path-041562
+(config)# no do-exec show pppatm summary <cr>    # path-041474
+(config)# no do-exec show pppoe derived group <string> <cr>    # path-054816
+(config)# no do-exec show pppoe statistics <cr>    # path-039409
+(config)# no do-exec show pppoe summary <cr>    # path-039235
+(config)# no do-exec show pppoe vrrs summary <cr>    # path-048476
+(config)# no do-exec show privilege <cr>    # path-028231
+(config)# no do-exec show processes <cr>    # path-030372
+(config)# no do-exec show processes <number:1..2147483647> <cr>    # path-036829
+(config)# no do-exec show processes all-events <cr>    # path-036482
+(config)# no do-exec show processes bootup-init <cr>    # path-036691
+(config)# no do-exec show processes bootup-time <cr>    # path-036644
+(config)# no do-exec show processes cpu <cr>    # path-036946
+(config)# no do-exec show processes cpu autoprofile hog <cr>    # path-053668
+(config)# no do-exec show processes cpu autoprofile process <cr>    # path-053708
+(config)# no do-exec show processes cpu extended <cr>    # path-046416
+(config)# no do-exec show processes cpu extended accounting <cr>    # path-053744
+(config)# no do-exec show processes cpu history <cr>    # path-046200

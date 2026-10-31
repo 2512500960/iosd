@@ -1,0 +1,23 @@
+# 模式 interface-dlci；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-fr-dlci)# bridge-domain <number:dynamic> <cr>    # observed_connections-009192
+(config-fr-dlci)# bridge-domain from-encapsulation <cr>    # observed_connections-009185
+(config-fr-dlci)# class <string> <cr>    # observed_connections-009180
+(config-fr-dlci)# default bridge-domain from-encapsulation <cr>    # observed_connections-009191
+(config-fr-dlci)# default class <cr>    # observed_connections-009181
+(config-fr-dlci)# default exit <cr>    # observed_connections-009177
+(config-fr-dlci)# default vofr <cr>    # observed_connections-009184
+(config-fr-dlci)# default vofr cisco <cr>    # observed_connections-009187
+(config-fr-dlci)# default x25-profile <string> <cr>    # observed_connections-009189
+(config-fr-dlci)# exit <cr>    # observed_connections-009174
+(config-fr-dlci)# no bridge-domain from-encapsulation <cr>    # observed_connections-009190
+(config-fr-dlci)# no class <cr>    # observed_connections-009178
+(config-fr-dlci)# no exit <cr>    # observed_connections-009176
+(config-fr-dlci)# no vofr <cr>    # observed_connections-009182
+(config-fr-dlci)# no vofr cisco <cr>    # observed_connections-009186
+(config-fr-dlci)# no x25-profile <string> <cr>    # observed_connections-009188
+(config-fr-dlci)# vofr <cr>    # observed_connections-009175
+(config-fr-dlci)# vofr cisco <cr>    # observed_connections-009179
+(config-fr-dlci)# x25-profile <string> <cr>    # observed_connections-009183

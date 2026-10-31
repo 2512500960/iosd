@@ -1,0 +1,404 @@
+# 模式 interface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-001.md
+
+(config-if)# aaa connect-info <string> <cr>    # path-064251
+(config-if)# access-expression input <string> <cr>    # path-064786
+(config-if)# access-session closed <cr>    # path-063860
+(config-if)# access-session control-direction both <cr>    # path-065014
+(config-if)# access-session host-mode multi-auth <cr>    # path-064930
+(config-if)# access-session inherit disable service-policy <cr>    # path-066137
+(config-if)# access-session interface-template sticky <cr>    # path-065063
+(config-if)# access-session limit profile-name <string> <cr>    # path-066238
+(config-if)# access-session monitor <cr>    # path-063810
+(config-if)# access-session port-control auto <cr>    # path-064989
+(config-if)# alps ascu <number:33..79> <cr>    # path-065220
+(config-if)# alps ascu <number:65..126> <cr>    # path-065206
+(config-if)# alps host-hld <number:1..65535> host-link <number:1..255> ax25 <cr>    # path-067550
+(config-if)# alps n1 <number:1..30> <cr>    # path-063384
+(config-if)# alps n2 <number:1..30> <cr>    # path-063387
+(config-if)# alps n3 <number:1..10> <cr>    # path-063388
+(config-if)# alps poll-pause <number:10..1000> <cr>    # path-063390
+(config-if)# alps service-msg data-drop config-term  <cr>    # path-067834
+(config-if)# alps service-msg data-drop msg-term <cr>    # path-066624
+(config-if)# alps service-msg format apollo  <cr>    # path-067833
+(config-if)# alps service-msg format sita <cr>    # path-066617
+(config-if)# alps service-msg status-change <cr>    # path-065322
+(config-if)# alps servlim <number:1..512> <cr>    # path-063389
+(config-if)# alps syn-bcc-calc <cr>    # path-064035
+(config-if)# alps t1 <number:1..20> <cr>    # path-063380
+(config-if)# alps t2 <number:1..10> <cr>    # path-063383
+(config-if)# alps translate <string> <address> <cr>    # path-066522
+(config-if)# amt gateway relay-address <address> <cr>    # path-065718
+(config-if)# amt gateway traffic ip <cr>    # path-065672
+(config-if)# amt relay maximum gateway <number:1..65535> <cr>    # path-066777
+(config-if)# amt relay traffic ip <cr>    # path-065686
+(config-if)# ancp enable <cr>    # path-063557
+(config-if)# ancp neighbor name <string> client-id <string> <cr>    # path-067358
+(config-if)# arp arpa <cr>    # path-063566
+(config-if)# arp authorized <cr>    # path-063599
+(config-if)# arp entries interface-limit disable <cr>    # path-065941
+(config-if)# arp frame-relay <cr>    # path-063580
+(config-if)# arp log threshold entries <number:1..2147483647> <cr>    # path-066901
+(config-if)# arp packet-priority enable <cr>    # path-064520
+(config-if)# arp probe interval <number:1..10> count <number:1..60> <cr>    # path-067369
+(config-if)# arp snap <cr>    # path-063591
+(config-if)# arp timeout <number:0..2147483> <cr>    # path-063276
+(config-if)# asp addr-offset <number:0..255> <cr>    # path-064326
+(config-if)# asp assert-dtr <cr>    # path-063540
+(config-if)# asp role secondary <cr>    # path-064310
+(config-if)# asp rx-ift <number:1..1000> <cr>    # path-064377
+(config-if)# async default routing <cr>    # path-064988
+(config-if)# async dynamic address <cr>    # path-065012
+(config-if)# async dynamic routing <cr>    # path-065035
+(config-if)# async mode dedicated <cr>    # path-065053
+(config-if)# async mode interactive <cr>    # path-065070
+(config-if)# atm-dxi interface-dfa <number:0..15> <number:0..63> <cr>    # path-065862
+(config-if)# atm-dxi map <?protoaddr_action@5555899d3e70> <cr>    # path-067757
+(config-if)# atm-dxi pvc <number:0..15> <number:0..63> <cr>    # path-065840
+(config-if)# atm-dxi zap <cr>    # path-063598
+(config-if)# authentication control-direction both <cr>    # path-064964
+(config-if)# authentication event fail action authorize vlan <number:dynamic> <cr>    # path-067900
+(config-if)# authentication event fail action authorize vlan <number:dynamic> <cr>    # path-067901
+(config-if)# authentication event fail action authorize vlan <number:dynamic> <cr>    # path-067902
+(config-if)# authentication event fail action next-method <cr>    # path-067111
+(config-if)# authentication fallback <string> <cr>    # path-064990
+(config-if)# authentication host-mode multi-auth <cr>    # path-064896
+(config-if)# authentication open <cr>    # path-063853
+(config-if)# authentication order <cr>    # path-067732
+(config-if)# authentication order <cr>    # path-067733
+(config-if)# authentication periodic <cr>    # path-063797
+(config-if)# authentication port-control auto <cr>    # path-064926
+(config-if)# authentication timer reauthenticate server <cr>    # path-066169
+(config-if)# authentication timer restart <number:0..65535> <cr>    # path-066215
+(config-if)# authentication violation protect <cr>    # path-064931
+(config-if)# autodetect encapsulation <cr>    # path-063534
+(config-if)# autostate <cr>    # path-063386
+(config-if)# backup active interface <interface> <cr>    # path-067793
+(config-if)# backup delay never never <cr>    # path-065466
+(config-if)# backup interface <interface> <cr>    # path-067734
+(config-if)# backup load never never <cr>    # path-065471
+(config-if)# bandwidth <number:1..200000000> <cr>    # path-063415
+(config-if)# bandwidth inherit <cr>    # path-063417
+(config-if)# bandwidth inherit <number:1..200000000> <cr>    # path-064077
+(config-if)# bandwidth qos-reference <number:1..10000000> <cr>    # path-064082
+(config-if)# bandwidth receive <number:1..200000000> <cr>    # path-064083
+(config-if)# bandwidth receive inherit <cr>    # path-064093
+(config-if)# bandwidth receive inherit <number:1..200000000> <cr>    # path-065465
+(config-if)# bfd echo <cr>    # path-063661
+(config-if)# bfd enable <cr>    # path-063637
+(config-if)# bfd interval <number:50..9999> min_rx <number:50..9999> multiplier <number:3..50> <cr>    # path-067605
+(config-if)# bfd interval <number:50..9999> min_rx <number:dynamic> multiplier <number:3..50> <cr>    # path-067897
+(config-if)# bfd jitter <cr>    # path-063597
+(config-if)# bfd local-address <string> <cr>    # path-064557
+(config-if)# bfd neighbor <address> <cr>    # path-064567
+(config-if)# bfd template <string> <cr>    # path-064519
+(config-if)# bgp-policy accounting <cr>    # path-063616
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> <?params_action_alist@555589b3df80> <?params_action_alist@555589b3e220> <?params_action_alist@555589b3efc0> <?params_action_alist@555589b3f010> <?params_action_alist@555589b3f2b8> <?params_action_alist@555589b3fad0> <?params_action_alist@555589b3fd50> force <cr>    # path-068044
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> <?params_action_alist@555589b3df80> <?params_action_alist@555589b3e220> <?params_action_alist@555589b3efc0> <?params_action_alist@555589b3f010> <?params_action_alist@555589b3f2b8> priority <number:0..255> <cr>    # path-068042
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> <?params_action_alist@555589b3df80> <?params_action_alist@555589b3e220> <?params_action_alist@555589b3efc0> <?params_action_alist@555589b3f010> <?params_action_alist@555589b3f2b8> spanning-disabled <cr>    # path-068043
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> <?params_action_alist@555589b3df80> <?params_action_alist@555589b3e220> input-lat-service-deny <cr>    # path-068040
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> <?params_action_alist@555589b3df80> <?params_action_alist@555589b3e220> lat-compression <cr>    # path-068039
+(config-if)# bridge-group <number:1..255> <?params_action_alist@555589b3da38> path-cost <number:0..65535> <cr>    # path-067780
+(config-if)# bridge-group <number:1..255> <cr>    # path-063812
+(config-if)# bridge-group <number:1..255> circuit-group <number:1..9> <cr>    # path-063848
+(config-if)# bridge-group <number:1..255> subscriber-loop-control <cr>    # path-064876
+(config-if)# bridge-group <number:1..255> subscriber-trunk <cr>    # path-064875
+(config-if)# bsc char-int <cr>    # path-063568
+(config-if)# bsc char-set ebcdic <cr>    # path-064327
+(config-if)# bsc contention <cr>    # path-063558
+(config-if)# bsc dial-contention <cr>    # path-063549
+(config-if)# bsc discard-syns <cr>    # path-063656
+(config-if)# bsc extended-address <number:0..4294967295> <number:0..4294967295> <cr>    # path-065751
+(config-if)# bsc fdx <cr>    # path-063648
+(config-if)# bsc host-timeout <number:30..3000> <cr>    # path-064530
+(config-if)# bsc pause <number:1..1000> <cr>    # path-064581
+(config-if)# bsc poll-timeout <number:1..1000> <cr>    # path-064551
+(config-if)# bsc primary <cr>    # path-063546
+(config-if)# bsc retries <number:1..100> <cr>    # path-064499
+(config-if)# bsc secondary <cr>    # path-063537
+(config-if)# bsc servlim <number:1..100> <cr>    # path-064566
+(config-if)# bsc spec-poll <cr>    # path-063582
+(config-if)# bstun group <number:1..255> <cr>    # path-064287
+(config-if)# bstun route all interface <interface> <cr>    # path-067846
+(config-if)# bstun route all tcp <address> <cr>    # path-066766
+(config-if)# cablelength <number:0..450> <cr>    # path-063609
+(config-if)# carrier-delay <number:0..60> <cr>    # path-063428
+(config-if)# carrier-delay up <number:0..60> <cr>    # path-064120
+(config-if)# cdp enable <cr>    # path-063535
+(config-if)# cdp filter-tlv-list <string> <cr>    # path-064450
+(config-if)# cdp log mismatch duplex <cr>    # path-065730
+(config-if)# cdp tlv app <cr>    # path-064508
+(config-if)# cdp tlv app tlvtype <number:1001..65535> value <string> <cr>    # path-067590
+(config-if)# cdp tlv location <cr>    # path-064432
+(config-if)# cdp tlv server-location <cr>    # path-064452
+(config-if)# channel-group <number:dynamic> <cr>    # path-067728
+(config-if)# channel-group <number:dynamic> mode active <cr>    # path-067805
+(config-if)# clns access-group <string> <cr>    # path-065080
+(config-if)# clns adjacency-filter ES <string> <cr>    # path-066368
+(config-if)# clns checksum <cr>    # path-063715
+(config-if)# clns cluster-alias <cr>    # path-063725
+(config-if)# clns congestion-threshold <number:0..4294967295> <cr>    # path-063310
+(config-if)# clns dec-compatible <cr>    # path-063771
+(config-if)# clns enable <cr>    # path-063756
+(config-if)# clns erpdu-interval <number:0..4294967295> <cr>    # path-063325
+(config-if)# clns es-neighbor <address> <cr>    # path-067779
+(config-if)# clns esct-time <number:0..65535> <cr>    # path-065087
+(config-if)# clns mtu <number:512..4294967295> <cr>    # path-063333
+(config-if)# clns net <address> <cr>    # path-064661
+(config-if)# clns rdpdu-interval <number:0..4294967295> <cr>    # path-063338
+(config-if)# clns route-cache <cr>    # path-063867
+(config-if)# clns router iso-igrp <cr>    # path-064940
+(config-if)# clns send-erpdu <cr>    # path-063862
+(config-if)# clns send-rdpdu <cr>    # path-063873
+(config-if)# clns split-horizon <cr>    # path-063887
+(config-if)# clock auto <cr>    # path-063437
+(config-if)# clock source internal <cr>    # path-064639
+(config-if)# clock source line <cr>    # path-064275
+(config-if)# clockrate <number:1200..8000000> <cr>    # path-063861
+(config-if)# clockrate <number:1576..51840000> <cr>    # path-063828
+(config-if)# clockrate <number:246..8064000> <cr>    # path-063842
+(config-if)# clockrate <number:300..4000000> <cr>    # path-063827
+(config-if)# clockrate <number:300..8000000> <cr>    # path-063798
+(config-if)# clockrate line <number:8000..2048000> <cr>    # path-064927
+(config-if)# clockrate network <number:56000..2048000> <cr>    # path-064893
+(config-if)# clockrate threshold <number:246..8064000> <cr>    # path-064847
+(config-if)# cmns enable <cr>    # path-063606
+(config-if)# compress <cr>    # path-063274
+(config-if)# crc 32 <cr>    # path-063626
+(config-if)# crc bits 5 <cr>    # path-064541
+(config-if)# crc4 <cr>    # path-063291
+(config-if)# cts dot1x <cr>    # path-063980
+(config-if)# cts layer3 ipv4 policy <cr>    # path-066547
+(config-if)# cts layer3 ipv4 trustsec forwarding <cr>    # path-067213
+(config-if)# cts manual <cr>    # path-063985
+(config-if)# cts role-based enforcement <cr>    # path-065258
+(config-if)# cts role-based sgt-cache egress <cr>    # path-066609
+(config-if)# cts role-based sgt-cache ingress <cr>    # path-066595
+(config-if)# cts role-based sgt-map security-group <string> <cr>    # path-067254
+(config-if)# cts role-based sgt-map vlanid <number:1..4094> sgt <number:2..65521> <cr>    # path-067678
+(config-if)# cts sgt inline <cr>    # path-064846
+(config-if)# cwmp wan <cr>    # path-063933
+(config-if)# cwmp wan default <cr>    # path-065089
+(config-if)# dampening <cr>    # path-063247
+(config-if)# dce-terminal-timing-enable <cr>    # path-063314
+(config-if)# default aaa connect-info <string> <cr>    # path-065593
+(config-if)# default access-expression input <cr>    # path-064794
+(config-if)# default access-session closed <cr>    # path-064936
+(config-if)# default access-session control-direction <cr>    # path-065023
+(config-if)# default access-session host-mode <cr>    # path-064907
+(config-if)# default access-session inherit disable service-policy <cr>    # path-067004
+(config-if)# default access-session interface-template sticky <cr>    # path-066358
+(config-if)# default access-session limit <cr>    # path-064942
+(config-if)# default access-session monitor <cr>    # path-064830
+(config-if)# default access-session port-control <cr>    # path-064997
+(config-if)# default alps ascu <number:33..79> <cr>    # path-066535
+(config-if)# default alps ascu <number:65..126> <cr>    # path-066523
+(config-if)# default alps host-hld <number:1..65535> host-link <number:1..255> ax25 <cr>    # path-067674
+(config-if)# default alps n1 <cr>    # path-064017
+(config-if)# default alps n2 <cr>    # path-064021
+(config-if)# default alps n3 <cr>    # path-064032
+(config-if)# default alps poll-pause <cr>    # path-064037
+(config-if)# default alps service-msg data-drop msg-term <cr>    # path-067260
+(config-if)# default alps service-msg format sita <cr>    # path-067257
+(config-if)# default alps service-msg status-change <cr>    # path-066632
+(config-if)# default alps servlim <cr>    # path-064033
+(config-if)# default alps syn-bcc-calc <cr>    # path-065288
+(config-if)# default alps t1 <cr>    # path-063998
+(config-if)# default alps t2 <cr>    # path-064016
+(config-if)# default alps translate <string> <address> <cr>    # path-067212
+(config-if)# default amt gateway relay-address <cr>    # path-065721
+(config-if)# default amt gateway traffic ip <cr>    # path-066746
+(config-if)# default amt relay maximum gateway <cr>    # path-066781
+(config-if)# default amt relay traffic ip <cr>    # path-066749
+(config-if)# default ancp enable <cr>    # path-064353
+(config-if)# default ancp neighbor name <string> client-id <string> <cr>    # path-067589
+(config-if)# default arp arpa <cr>    # path-064410
+(config-if)# default arp authorized <cr>    # path-064475
+(config-if)# default arp entries interface-limit <cr>    # path-065945
+(config-if)# default arp frame-relay <cr>    # path-064438
+(config-if)# default arp log threshold entries <cr>    # path-066906
+(config-if)# default arp packet-priority enable <cr>    # path-065849
+(config-if)# default arp probe <cr>    # path-064443
+(config-if)# default arp snap <cr>    # path-064455
+(config-if)# default arp timeout <cr>    # path-063622
+(config-if)# default asp addr-offset <cr>    # path-064336
+(config-if)# default asp assert-dtr <cr>    # path-064334
+(config-if)# default asp role <cr>    # path-064317
+(config-if)# default asp rx-ift <cr>    # path-064390
+(config-if)# default async default routing <cr>    # path-066283
+(config-if)# default async dynamic address <cr>    # path-066305
+(config-if)# default async dynamic routing <cr>    # path-066328
+(config-if)# default async mode <cr>    # path-065060
+(config-if)# default atm-dxi interface-dfa <number:0..15> <number:0..63> <cr>    # path-066863
+(config-if)# default atm-dxi pvc <number:0..15> <number:0..63> <cr>    # path-066851
+(config-if)# default atm-dxi zap <cr>    # path-064474
+(config-if)# default authentication control-direction <cr>    # path-064969
+(config-if)# default authentication event fail <cr>    # path-066338
+(config-if)# default authentication event fail action authorize vlan <cr>    # path-067662
+(config-if)# default authentication event fail action authorize vlan <cr>    # path-067664
+(config-if)# default authentication event fail action authorize vlan <cr>    # path-067666
+(config-if)# default authentication fallback <cr>    # path-064998
+(config-if)# default authentication host-mode <cr>    # path-064877
+(config-if)# default authentication open <cr>    # path-064900
+(config-if)# default authentication order <cr>    # path-064833
+(config-if)# default authentication periodic <cr>    # path-064812
+(config-if)# default authentication port-control <cr>    # path-064943
+(config-if)# default authentication priority <cr>    # path-064854
+(config-if)# default authentication timer reauthenticate <cr>    # path-066176
+(config-if)# default authentication timer restart <cr>    # path-066227
+(config-if)# default authentication violation <cr>    # path-064908
+(config-if)# default autodetect encapsulation <cr>    # path-064290
+(config-if)# default autostate <cr>    # path-064020
+(config-if)# default backup active interface <cr>    # path-065476
+(config-if)# default backup delay <cr>    # path-064088
+(config-if)# default backup interface <cr>    # path-064095
+(config-if)# default backup load <cr>    # path-064100
+(config-if)# default bandwidth <cr>    # path-063416
+(config-if)# default bandwidth inherit <cr>    # path-064078
+(config-if)# default bandwidth qos-reference <cr>    # path-064085
+(config-if)# default bandwidth receive <cr>    # path-064081
+(config-if)# default bandwidth receive inherit <cr>    # path-065462
+(config-if)# default bfd echo <cr>    # path-064589
+(config-if)# default bfd enable <cr>    # path-064547
+(config-if)# default bfd interval <cr>    # path-064532
+(config-if)# default bfd jitter <cr>    # path-064469
+(config-if)# default bfd local-address <string> <cr>    # path-065895
+(config-if)# default bfd neighbor <address> <cr>    # path-065906
+(config-if)# default bfd template <string> <cr>    # path-065848
+(config-if)# default bgp-policy accounting <cr>    # path-064512
+(config-if)# default bridge-group <number:1..255> <cr>    # path-064836
+(config-if)# default bridge-group <number:1..255> circuit-group <cr>    # path-064889
+(config-if)# default bridge-group <number:1..255> subscriber-loop-control <cr>    # path-066201
+(config-if)# default bridge-group <number:1..255> subscriber-trunk <cr>    # path-066200
+(config-if)# default bsc char-int <cr>    # path-064419
+(config-if)# default bsc char-set <cr>    # path-064316
+(config-if)# default bsc contention <cr>    # path-064395
+(config-if)# default bsc dial-contention <cr>    # path-064360
+(config-if)# default bsc discard-syns <cr>    # path-064580
+(config-if)# default bsc extended-address <number:0..4294967295> <number:0..4294967295> <cr>    # path-066788
+(config-if)# default bsc fdx <cr>    # path-064564
+(config-if)# default bsc host-timeout <number:30..3000> <cr>    # path-065858
+(config-if)# default bsc pause <number:1..1000> <cr>    # path-065929
+(config-if)# default bsc poll-timeout <number:1..1000> <cr>    # path-065885
+(config-if)# default bsc primary <cr>    # path-064350
+(config-if)# default bsc retries <number:1..100> <cr>    # path-065827
+(config-if)# default bsc secondary <cr>    # path-064329
+(config-if)# default bsc servlim <number:1..100> <cr>    # path-065904
+(config-if)# default bsc spec-poll <cr>    # path-064441
+(config-if)# default bstun group <number:1..255> <cr>    # path-065656
+(config-if)# default bstun route all tcp <address> <cr>    # path-067357
+(config-if)# default cablelength <cr>    # path-063614
+(config-if)# default carrier-delay <cr>    # path-063427
+(config-if)# default carrier-delay up <cr>    # path-064123
+(config-if)# default cdp enable <cr>    # path-064323
+(config-if)# default cdp filter-tlv-list <string> <cr>    # path-065790
+(config-if)# default cdp log mismatch duplex <cr>    # path-066774
+(config-if)# default cdp tlv app <cr>    # path-065836
+(config-if)# default cdp tlv app tlvtype <number:1001..65535> value <string> <cr>    # path-067689
+(config-if)# default cdp tlv location <cr>    # path-065772
+(config-if)# default cdp tlv server-location <cr>    # path-065792
+(config-if)# default channel-group <cr>    # path-063543
+(config-if)# default clns access-group <cr>    # path-065103
+(config-if)# default clns adjacency-filter ES <cr>    # path-066375
+(config-if)# default clns checksum <cr>    # path-064662
+(config-if)# default clns cluster-alias <cr>    # path-064678
+(config-if)# default clns congestion-threshold <cr>    # path-063747
+(config-if)# default clns dec-compatible <cr>    # path-064745
+(config-if)# default clns enable <cr>    # path-064727
+(config-if)# default clns erpdu-interval <cr>    # path-063788
+(config-if)# default clns es-neighbor <address> <cr>    # path-066156
+(config-if)# default clns esct-time <cr>    # path-065096
+(config-if)# default clns mtu <cr>    # path-063822
+(config-if)# default clns net <address> <cr>    # path-066010
+(config-if)# default clns rdpdu-interval <cr>    # path-063840
+(config-if)# default clns route-cache <cr>    # path-064945
+(config-if)# default clns router iso-igrp <cr>    # path-066252
+(config-if)# default clns send-erpdu <cr>    # path-064937
+(config-if)# default clns send-rdpdu <cr>    # path-064968
+(config-if)# default clns split-horizon <cr>    # path-065017
+(config-if)# default clock <cr>    # path-063689
+(config-if)# default clock auto <cr>    # path-064152
+(config-if)# default clock source <cr>    # path-064268
+(config-if)# default clockrate <cr>    # path-063804
+(config-if)# default clockrate <cr>    # path-063820
+(config-if)# default clockrate <cr>    # path-063838
+(config-if)# default clockrate <cr>    # path-063850
+(config-if)# default clockrate <cr>    # path-063871
+(config-if)# default clockrate threshold <cr>    # path-064860
+(config-if)# default cmns enable <cr>    # path-064493
+(config-if)# default compress <cr>    # path-063530
+(config-if)# default crc 32 <cr>    # path-064523
+(config-if)# default crc bits <cr>    # path-064552
+(config-if)# default crc4 <cr>    # path-063687
+(config-if)# default cts dot1x <cr>    # path-065184
+(config-if)# default cts layer3 ipv4 policy <cr>    # path-067233
+(config-if)# default cts layer3 ipv4 trustsec forwarding <cr>    # path-067547
+(config-if)# default cts manual <cr>    # path-065196
+(config-if)# default cts role-based enforcement <cr>    # path-066579
+(config-if)# default cts role-based sgt-cache egress <cr>    # path-067255
+(config-if)# default cts role-based sgt-cache ingress <cr>    # path-067249
+(config-if)# default cts role-based sgt-map <cr>    # path-066640
+(config-if)# default cts role-based sgt-map vlanid <number:1..4094> <cr>    # path-067554
+(config-if)# default cts sgt inline <cr>    # path-066166
+(config-if)# default cwmp wan <cr>    # path-065109
+(config-if)# default cwmp wan default <cr>    # path-066385
+(config-if)# default dampening <cr>    # path-063399
+(config-if)# default dce-terminal-timing-enable <cr>    # path-063758
+(config-if)# default delay <cr>    # path-063253
+(config-if)# default description <cr>    # path-063395
+(config-if)# default device-tracking attach-policy <string> <cr>    # path-065467
+(config-if)# default dhcp-border-relay <cr>    # path-063419
+(config-if)# default dhcp-server-tracking <cr>    # path-063918
+(config-if)# default dialer <cr>    # path-063563
+(config-if)# default dialer aaa <cr>    # path-064950
+(config-if)# default dialer callback-secure <cr>    # path-064856
+(config-if)# default dialer called <string> <cr>    # path-065964
+(config-if)# default dialer caller <string> <cr>    # path-065985
+(config-if)# default dialer congestion-threshold <number:0..64000> <cr>    # path-066266
+(config-if)# default dialer disable-multiencaps <cr>    # path-064533
+(config-if)# default dialer dns <cr>    # path-064880
+(config-if)# default dialer down-with-vInterface <cr>    # path-064736
+(config-if)# default dialer dtr <cr>    # path-064338
+(config-if)# default dialer enable-timeout <cr>    # path-063631
+(config-if)# default dialer extsig <cr>    # path-065000
+(config-if)# default dialer fast-idle <cr>    # path-063590
+(config-if)# default dialer hold-queue <cr>    # path-064659
+(config-if)# default dialer idle-timeout <cr>    # path-064463
+(config-if)# default dialer in-band <cr>    # path-064365
+(config-if)# default dialer leased <cr>    # path-064503
+(config-if)# default dialer load-threshold <cr>    # path-064718
+(config-if)# default dialer max-call <cr>    # path-063741
+(config-if)# default dialer mult-map-same-name <cr>    # path-064504
+(config-if)# default dialer order <cr>    # path-064516
+(config-if)# default dialer persistent <cr>    # path-064782
+(config-if)# default dialer pool <number:1..255> <cr>    # path-065702
+(config-if)# default dialer pool-member <number:1..255> <cr>    # path-065720
+(config-if)# default dialer pppoe-client-vlan-cos <number:0..7> <cr>    # path-066102
+(config-if)# default dialer priority <cr>    # path-063714
+(config-if)# default dialer redial <cr>    # path-064885
+(config-if)# default dialer remote-name <cr>    # path-064428
+(config-if)# default dialer reserved-links <number:0..64000> <number:0..64000> <cr>    # path-067082
+(config-if)# default dialer rotary-group <number:0..255> <cr>    # path-066004
+(config-if)# default dialer rotor <cr>    # path-064513
+(config-if)# default dialer snapshot <cr>    # path-064912
+(config-if)# default dialer string <string> <cr>    # path-065990
+(config-if)# default dialer suffix <cr>    # path-064981
+(config-if)# default dialer vpdn <cr>    # path-064751
+(config-if)# default dialer wait-for-carrier-time <cr>    # path-063654
+(config-if)# default dialer wait-for-line-protocol <cr>    # path-063644
+(config-if)# default dialer watch-disable <cr>    # path-064914
+(config-if)# default dialer watch-group <number:1..255> <cr>    # path-066242
+(config-if)# default dialer-group <cr>    # path-063531
+(config-if)# default dlsw llc2-peer listen-sap <number:0..255> <cr>    # path-066799
+(config-if)# default dlsw transparent map local-mac <address> remote-mac <address> <cr>    # path-067691
+(config-if)# default dlsw transparent redundancy-enable <cr>    # path-065831
+(config-if)# default dlsw transparent timers netbios <number:100..900> <cr>    # path-067381
+(config-if)# default dot1q tunneling ethertype <cr>    # path-065967
+(config-if)# default dot1x auth-fail vlan <cr>    # path-066611
+(config-if)# default dot1x authenticator eap profile <cr>    # path-067226
+(config-if)# default dot1x control-direction <cr>    # path-065344
+(config-if)# default dot1x credentials <cr>    # path-065343
+(config-if)# default dot1x critical <cr>    # path-065313
+(config-if)# default dot1x critical vlan <cr>    # path-066610
+(config-if)# default dot1x default <cr>    # path-065185

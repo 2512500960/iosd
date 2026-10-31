@@ -1,0 +1,353 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-024.md
+
+(exec)# do-exec pnpa service correlator-check <number:0..1> <cr>    # path-019736
+(exec)# do-exec pnpa service device-id-cert <number:0..1> <cr>    # path-019722
+(exec)# do-exec pnpa service diag <number:0..1> <cr>    # path-020034
+(exec)# do-exec pnpa service discovery abort-autoinstall <cr>    # path-020202
+(exec)# do-exec pnpa service discovery bypass-auto-install <number:0..1> <cr>    # path-023086
+(exec)# do-exec pnpa service discovery bypass-cellular-check <number:0..1> <cr>    # path-023083
+(exec)# do-exec pnpa service discovery bypass-connectivity-check <number:0..1> <cr>    # path-023080
+(exec)# do-exec pnpa service discovery bypass-disc-summary <number:0..1> <cr>    # path-023077
+(exec)# do-exec pnpa service discovery bypass-dns-check <number:0..1> <cr>    # path-023076
+(exec)# do-exec pnpa service discovery bypass-https-enforcement <number:0..1> <cr>    # path-023070
+(exec)# do-exec pnpa service discovery bypass-napp-check <number:0..1> <cr>    # path-023065
+(exec)# do-exec pnpa service discovery bypass-startup-config <number:0..1> <cr>    # path-023060
+(exec)# do-exec pnpa service discovery bypass-webui-check <number:0..1> <cr>    # path-023054
+(exec)# do-exec pnpa service discovery bypass-wizard-input <number:0..1> <cr>    # path-023049
+(exec)# do-exec pnpa service discovery clear <cr>    # path-020135
+(exec)# do-exec pnpa service discovery dhcp ipv4 <string> <cr>    # path-024501
+(exec)# do-exec pnpa service discovery dhcp ipv6 <string> <cr>    # path-024495
+(exec)# do-exec pnpa service discovery dns-clear <cr>    # path-020120
+(exec)# do-exec pnpa service discovery dns-set <string> <cr>    # path-023041
+(exec)# do-exec pnpa service discovery method-disable <number:0..15> <cr>    # path-023039
+(exec)# do-exec pnpa service discovery method-enable <number:0..15> <cr>    # path-023036
+(exec)# do-exec pnpa service discovery method-show <cr>    # path-020103
+(exec)# do-exec pnpa service discovery no-shutdown <cr>    # path-020094
+(exec)# do-exec pnpa service discovery server-credential <number:0..1> <cr>    # path-023016
+(exec)# do-exec pnpa service discovery setup-abort <cr>    # path-020076
+(exec)# do-exec pnpa service discovery shutdown <cr>    # path-020070
+(exec)# do-exec pnpa service discovery start <cr>    # path-020058
+(exec)# do-exec pnpa service discovery stop <cr>    # path-020047
+(exec)# do-exec pnpa service discovery terminate <number:0..11> <number:0..14> <cr>    # path-024467
+(exec)# do-exec pnpa service discovery wait-for-stop <number:0..7200> <cr>    # path-022984
+(exec)# do-exec pnpa service do-change-mode <string> <cr>    # path-020021
+(exec)# do-exec pnpa service do-write-erase <cr>    # path-015826
+(exec)# do-exec pnpa service do-write-memory <cr>    # path-015816
+(exec)# do-exec pnpa service eem-proxy <number:0..1> <cr>    # path-019709
+(exec)# do-exec pnpa service event-notify <number:0..29> <string> <string> <cr>    # path-024442
+(exec)# do-exec pnpa service fault-control <number:0..1> <cr>    # path-019684
+(exec)# do-exec pnpa service hello <string> <string> <string> <number:0..65535> <cr>    # path-024900
+(exec)# do-exec pnpa service image-install <string> <cr>    # path-019960
+(exec)# do-exec pnpa service image-install-commit <cr>    # path-015736
+(exec)# do-exec pnpa service image-remove-inactive <cr>    # path-015744
+(exec)# do-exec pnpa service internal <number:0..1> <cr>    # path-017839
+(exec)# do-exec pnpa service location-tag <number:0..1> <string> <cr>    # path-022795
+(exec)# do-exec pnpa service lock-bypass <number:0..1> <cr>    # path-019670
+(exec)# do-exec pnpa service lock-config <cr>    # path-015359
+(exec)# do-exec pnpa service lock-exec <cr>    # path-015347
+(exec)# do-exec pnpa service monvar-diag <string> <cr>    # path-019643
+(exec)# do-exec pnpa service must-ignore-config-reg <number:0..1> <cr>    # path-019605
+(exec)# do-exec pnpa service must-ignore-config-rollback <number:0..1> <cr>    # path-019618
+(exec)# do-exec pnpa service must-ignore-dir-walk <number:0..1> <cr>    # path-019592
+(exec)# do-exec pnpa service must-ignore-ifs-walk <number:0..1> <cr>    # path-019578
+(exec)# do-exec pnpa service must-ignore-image-signature <number:0..1> <cr>    # path-019564
+(exec)# do-exec pnpa service must-ignore-reload-info <number:0..1> <cr>    # path-019548
+(exec)# do-exec pnpa service must-ignore-reload-info <number:0..1> <cr>    # path-019629
+(exec)# do-exec pnpa service must-ignore-save-tech <number:0..1> <cr>    # path-019539
+(exec)# do-exec pnpa service must-ignore-terminate-now <number:0..1> <cr>    # path-019528
+(exec)# do-exec pnpa service must-keep-backup <number:0..1> <cr>    # path-019515
+(exec)# do-exec pnpa service napp-client <number:0..1> <cr>    # path-019521
+(exec)# do-exec pnpa service napp-connect <string> <cr>    # path-019504
+(exec)# do-exec pnpa service napp-http-server <cr>    # path-015135
+(exec)# do-exec pnpa service napp-server <number:0..2> <cr>    # path-019487
+(exec)# do-exec pnpa service napp-show <cr>    # path-015086
+(exec)# do-exec pnpa service napp-tag <string> <cr>    # path-019468
+(exec)# do-exec pnpa service notify-now <string> <cr>    # path-019901
+(exec)# do-exec pnpa service notify-service <string> <string> <string> <number:0..1> <cr>    # path-024896
+(exec)# do-exec pnpa service notify-state <string> <cr>    # path-019880
+(exec)# do-exec pnpa service post-reload-priv <number:0..1> <cr>    # path-019436
+(exec)# do-exec pnpa service proxy-control <number:0..1> <cr>    # path-019440
+(exec)# do-exec pnpa service python-listener <number:0..1> <cr>    # path-019416
+(exec)# do-exec pnpa service query-to-client <string> <string> <string> configlet <string> <cr>    # path-025072
+(exec)# do-exec pnpa service query-to-server <string> <string> <string> <cr>    # path-024309
+(exec)# do-exec pnpa service redirect-backup <string> <number:0..65535> <cr>    # path-022880
+(exec)# do-exec pnpa service redirect-primary <string> <number:0..65535> <cr>    # path-022874
+(exec)# do-exec pnpa service reload cancel <cr>    # path-019892
+(exec)# do-exec pnpa service reset <cr>    # path-015452
+(exec)# do-exec pnpa service resolve-discovery <string> <cr>    # path-019381
+(exec)# do-exec pnpa service resolve-dns <number:0..4> <cr>    # path-019365
+(exec)# do-exec pnpa service resolve-hostname <string> <cr>    # path-019373
+(exec)# do-exec pnpa service save-tech <cr>    # path-015643
+(exec)# do-exec pnpa service script <string> <cr>    # path-019850
+(exec)# do-exec pnpa service sdwan-ready <cr>    # path-015782
+(exec)# do-exec pnpa service sdwan-start <number:0..4294967295> <cr>    # path-019996
+(exec)# do-exec pnpa service sdwan-stop <cr>    # path-015791
+(exec)# do-exec pnpa service security-ending-max <number:1..4294967295> <cr>    # path-019328
+(exec)# do-exec pnpa service security-enforcement <number:0..1> <cr>    # path-019318
+(exec)# do-exec pnpa service server-identity-check <number:0..1> <cr>    # path-019194
+(exec)# do-exec pnpa service show-file <string> <cr>    # path-019288
+(exec)# do-exec pnpa service show-running-config <cr>    # path-014927
+(exec)# do-exec pnpa service show-startup-config <cr>    # path-014913
+(exec)# do-exec pnpa service sid auth-only <number:0..1> <cr>    # path-022554
+(exec)# do-exec pnpa service sid must-renew <number:0..1> <cr>    # path-022527
+(exec)# do-exec pnpa service sid must-validate <number:0..1> <cr>    # path-022543
+(exec)# do-exec pnpa service sid update <string> <string> <cr>    # path-024276
+(exec)# do-exec pnpa service sid validation <number:0..1> <cr>    # path-022482
+(exec)# do-exec pnpa service sleep-for <number:1..3600> <cr>    # path-019164
+(exec)# do-exec pnpa service smu-task-activate <string> <cr>    # path-019148
+(exec)# do-exec pnpa service smu-task-add <string> <string> <cr>    # path-022432
+(exec)# do-exec pnpa service smu-task-clear-all <cr>    # path-014835
+(exec)# do-exec pnpa service smu-task-commit <cr>    # path-014816
+(exec)# do-exec pnpa service smu-task-deactivate <string> <cr>    # path-019046
+(exec)# do-exec pnpa service smu-task-remove <string> <cr>    # path-019014
+(exec)# do-exec pnpa service smu-task-run <cr>    # path-014767
+(exec)# do-exec pnpa service smu-task-show <cr>    # path-014753
+(exec)# do-exec pnpa service smu-verify <string> <cr>    # path-018954
+(exec)# do-exec pnpa service snmp <string> <cr>    # path-018863
+(exec)# do-exec pnpa service snooping <number:0..1> <number:0..4094> <string> <cr>    # path-024151
+(exec)# do-exec pnpa service stack-renumber <number:1..9> <cr>    # path-018767
+(exec)# do-exec pnpa service stack-reorder <number:1..9> <cr>    # path-018805
+(exec)# do-exec pnpa service tls-tunnel-notify <string> <cr>    # path-019981
+(exec)# do-exec pnpa service token-auth-set <string> <cr>    # path-018738
+(exec)# do-exec pnpa service trustpoint-install <string> <string> <cr>    # path-021944
+(exec)# do-exec pnpa service trustpoint-uninstall <string> <cr>    # path-018221
+(exec)# do-exec pnpa service trustpool-install <string> <cr>    # path-018233
+(exec)# do-exec pnpa service trustpool-uninstall <cr>    # path-014233
+(exec)# do-exec pnpa service udi-checking <number:0..1> <cr>    # path-018709
+(exec)# do-exec pnpa service udi-refresh <cr>    # path-014609
+(exec)# do-exec pnpa service unlock-config <cr>    # path-014583
+(exec)# do-exec pnpa service unlock-exec <cr>    # path-014564
+(exec)# do-exec pnpa service use-ntp-server <string> <cr>    # path-018602
+(exec)# do-exec pnpa service use-src-intf <string> <cr>    # path-018574
+(exec)# do-exec pnpa service use-unix-disk <number:0..1> <cr>    # path-018551
+(exec)# do-exec pnpa service use-vrf <string> <cr>    # path-018526
+(exec)# do-exec pnpa service validate <string> <cr>    # path-018197
+(exec)# do-exec pnpa service verbose <number:0..1> <cr>    # path-017849
+(exec)# do-exec pnpa service verify <string> <cr>    # path-018184
+(exec)# do-exec pnpa service wait-time <number:0..100> <cr>    # path-018163
+(exec)# do-exec pnpa service wakeup <cr>    # path-014496
+(exec)# do-exec pnpa service watch-ack-notifications <cr>    # path-014161
+(exec)# do-exec pnpa service watch-all <cr>    # path-014149
+(exec)# do-exec pnpa service watch-clear <cr>    # path-014135
+(exec)# do-exec pnpa service watch-config <cr>    # path-014122
+(exec)# do-exec pnpa service watch-default-action <string> <cr>    # path-018043
+(exec)# do-exec pnpa service watch-disable <string> <string> <cr>    # path-021860
+(exec)# do-exec pnpa service watch-enable <string> <string> <string> <number:0..4294967295> <string> <cr>    # path-025042
+(exec)# do-exec pnpa service watch-pnp-profile <cr>    # path-014063
+(exec)# do-exec pnpa service watch-pnp-server <cr>    # path-014041
+(exec)# do-exec pnpa service watch-pnp-service <cr>    # path-014025
+(exec)# do-exec pnpa service watch-pnp-state <cr>    # path-014009
+(exec)# do-exec pnpa service watch-system <cr>    # path-013988
+(exec)# do-exec pnpa service watch-tls-tunnel <cr>    # path-013970
+(exec)# do-exec pnpa service webui set <cr>    # path-017900
+(exec)# do-exec pnpa service webui start <cr>    # path-017883
+(exec)# do-exec pnpa service webui stop <cr>    # path-017864
+(exec)# do-exec pnpa service xep-clear <cr>    # path-014454
+(exec)# do-exec pnpa service xep-ignore-disconnect <number:0..1> <cr>    # path-018447
+(exec)# do-exec pnpa service xep-show <cr>    # path-014417
+(exec)# do-exec pnpa service xep-tracking <number:0..4> <cr>    # path-018395
+(exec)# do-exec pnpa service xml-clear <cr>    # path-014387
+(exec)# do-exec pnpa service xml-process <string> <cr>    # path-018346
+(exec)# do-exec pnpa service xml-profile <string> <string> <string> <string> <number:0..65535> <cr>    # path-025053
+(exec)# do-exec pnpa service xml-replay <cr>    # path-014337
+(exec)# do-exec pnpa service xml-udi <string> <cr>    # path-018271
+(exec)# do-exec pnpa service xml-usr <string> <string> <cr>    # path-021954
+(exec)# do-exec pnpa summary <cr>    # path-012540
+(exec)# do-exec processes cpu pid <number:1..4294967295> autoprofile threshold <number:50..400> <cr>    # path-024550
+(exec)# do-exec processes cpu pid <number:1..4294967295> priority low <cr>    # path-023331
+(exec)# do-exec processes cpu pid <number:1..4294967295> quantum <number:20..200> <cr>    # path-023340
+(exec)# do-exec profile hogs <cr>    # path-012289
+(exec)# do-exec profile start <cr>    # path-012282
+(exec)# do-exec profile stop <cr>    # path-012286
+(exec)# do-exec pwd <cr>    # path-012268
+(exec)# do-exec redundancy application reload group <number:1..2> peer <cr>    # path-023394
+(exec)# do-exec redundancy application reload group <number:1..2> self <cr>    # path-023408
+(exec)# do-exec redundancy application test-client disable <cr>    # path-016996
+(exec)# do-exec redundancy application test-client enable <cr>    # path-016972
+(exec)# do-exec redundancy force-switchover <cr>    # path-012419
+(exec)# do-exec redundancy keepalive enable <cr>    # path-013049
+(exec)# do-exec redundancy reload peer <cr>    # path-013015
+(exec)# do-exec redundancy reload shelf <cr>    # path-013087
+(exec)# do-exec redundancy switch-activity <cr>    # path-012379
+(exec)# do-exec reload <cr>    # path-012238
+(exec)# do-exec request consent-token generate-challenge shell-access <cr>    # path-016725
+(exec)# do-exec request license new-udi <cr>    # path-012839
+(exec)# do-exec request platform software netconf-yang key generate rsa <cr>    # path-024534
+(exec)# do-exec request tech-support <cr>    # path-012294
+(exec)# do-exec restart <cr>    # path-012249
+(exec)# do-exec routing-context vrf global <cr>    # path-013278
+(exec)# do-exec rsh <string> <string> <cr>    # path-013185
+(exec)# do-exec set memory debug incremental starting-time <cr>    # path-020740
+(exec)# do-exec setup <cr>    # path-012228
+(exec)# do-exec show <cr>    # path-012218
+(exec)# do-exec show aaa acct-stop-cache <cr>    # path-016370
+(exec)# do-exec show aaa attributes <cr>    # path-016241
+(exec)# do-exec show aaa cache filterserver acl <cr>    # path-023122
+(exec)# do-exec show aaa cache filterserver pending <cr>    # path-023130
+(exec)# do-exec show aaa cache group <string> all <cr>    # path-024522
+(exec)# do-exec show aaa clients <cr>    # path-016308
+(exec)# do-exec show aaa command handler <cr>    # path-020424
+(exec)# do-exec show aaa common-criteria policy all <cr>    # path-023138
+(exec)# do-exec show aaa counters <cr>    # path-016197
+(exec)# do-exec show aaa dead-criteria radius <address> <cr>    # path-023184
+(exec)# do-exec show aaa fqdn <cr>    # path-016444
+(exec)# do-exec show aaa hash <cr>    # path-016279
+(exec)# do-exec show aaa idmgr <cr>    # path-016167
+(exec)# do-exec show aaa ipv6 tacacs source-interface global <cr>    # path-024526
+(exec)# do-exec show aaa local admin_user all <cr>    # path-023128
+(exec)# do-exec show aaa local statistics <cr>    # path-020304
+(exec)# do-exec show aaa local user blocked <cr>    # path-023125
+(exec)# do-exec show aaa local user lockout <cr>    # path-023114
+(exec)# do-exec show aaa memory <cr>    # path-016409
+(exec)# do-exec show aaa memory stats all <cr>    # path-023195
+(exec)# do-exec show aaa method-lists authentication <cr>    # path-020337
+(exec)# do-exec show aaa requests statistics <cr>    # path-020363
+(exec)# do-exec show aaa server-private <cr>    # path-016339
+(exec)# do-exec show aaa servers <cr>    # path-016357
+(exec)# do-exec show aaa service-profiles <cr>    # path-016365
+(exec)# do-exec show aaa sessions <cr>    # path-016347
+(exec)# do-exec show aaa sp-cache all-list <cr>    # path-020476
+(exec)# do-exec show aaa subscriber profile <cr>    # path-020325
+(exec)# do-exec show aaa tools memleak statistics <cr>    # path-023118
+(exec)# do-exec show aaa tracebacks <cr>    # path-016276
+(exec)# do-exec show aaa user <number:1..4294967295> <cr>    # path-020347
+(exec)# do-exec show access-expression <cr>    # path-012767
+(exec)# do-exec show access-lists <cr>    # path-012428
+(exec)# do-exec show access-lists acl-limit <cr>    # path-013221
+(exec)# do-exec show access-lists fqdn client <cr>    # path-017075
+(exec)# do-exec show access-lists fqdn pending-mappings <cr>    # path-017054
+(exec)# do-exec show access-lists fqdn statistics <cr>    # path-017085
+(exec)# do-exec show access-lists ipc <cr>    # path-013158
+(exec)# do-exec show access-lists rate-limit <cr>    # path-013226
+(exec)# do-exec show access-lists template summary <cr>    # path-017080
+(exec)# do-exec show access-session limit profile details <cr>    # path-022695
+(exec)# do-exec show accounting group <cr>    # path-015493
+(exec)# do-exec show accounting group <string> <cr>    # path-019731
+(exec)# do-exec show accounting session <cr>    # path-015514
+(exec)# do-exec show accounting session <number:1..100000> <cr>    # path-019743
+(exec)# do-exec show acm rules <cr>    # path-013031
+(exec)# do-exec show adjacency <cr>    # path-012545
+(exec)# do-exec show adjacency connid-mgr <cr>    # path-013798
+(exec)# do-exec show adjacency summary <cr>    # path-013853
+(exec)# do-exec show alg sip <cr>    # path-013963
+(exec)# do-exec show alignment <cr>    # path-012461
+(exec)# do-exec show alps circuits <cr>    # path-016493
+(exec)# do-exec show alps peers <cr>    # path-016472
+(exec)# do-exec show ancp an-port summary <cr>    # path-017820
+(exec)# do-exec show ancp neighbor <cr>    # path-013927
+(exec)# do-exec show ancp neighbor brief <cr>    # path-017773
+(exec)# do-exec show ancp port <cr>    # path-013857
+(exec)# do-exec show ancp session <cr>    # path-013856
+(exec)# do-exec show ancp statistics <cr>    # path-013819
+(exec)# do-exec show application ha statistics <cr>    # path-019934
+(exec)# do-exec show application summary <cr>    # path-015634
+(exec)# do-exec show archive <cr>    # path-012753
+(exec)# do-exec show archive config rollback timer <cr>    # path-023146
+(exec)# do-exec show archive log config all persistent <cr>    # path-024523
+(exec)# do-exec show archive log config statistics <cr>    # path-023142
+(exec)# do-exec show asp <cr>    # path-012818
+(exec)# do-exec show async bootp <cr>    # path-015352
+(exec)# do-exec show async status <cr>    # path-015369
+(exec)# do-exec show auto install status <cr>    # path-016726
+(exec)# do-exec show auto install tech-support <cr>    # path-016737
+(exec)# do-exec show auto install trace <cr>    # path-016743
+(exec)# do-exec show auto secure config <cr>    # path-016717
+(exec)# do-exec show autoip status <cr>    # path-015717
+(exec)# do-exec show autoip status detail <cr>    # path-019886
+(exec)# do-exec show avc <cr>    # path-012624
+(exec)# do-exec show avc sd-service info cmds <cr>    # path-022622
+(exec)# do-exec show avc sd-service info cmds config <cr>    # path-024301
+(exec)# do-exec show avc sd-service info cmds status <cr>    # path-024296
+(exec)# do-exec show avc sd-service info detailed <cr>    # path-022600
+(exec)# do-exec show avc sd-service info ent <cr>    # path-022734
+(exec)# do-exec show avc sd-service info ent config <cr>    # path-024341
+(exec)# do-exec show avc sd-service info ent device-health db <cr>    # path-024877
+(exec)# do-exec show avc sd-service info ent device-health export last <cr>    # path-025077
+(exec)# do-exec show avc sd-service info ent device-health export stats <cr>    # path-025076
+(exec)# do-exec show avc sd-service info ent device-health interfaces <cr>    # path-024879
+(exec)# do-exec show avc sd-service info ent export <cr>    # path-024372
+(exec)# do-exec show avc sd-service info ent export current <cr>    # path-024874
+(exec)# do-exec show avc sd-service info ent export keys-db <cr>    # path-024878
+(exec)# do-exec show avc sd-service info ent export last <cr>    # path-024875
+(exec)# do-exec show avc sd-service info ent fields-db <cr>    # path-024348
+(exec)# do-exec show avc sd-service info ent symbol-table <cr>    # path-024355
+(exec)# do-exec show avc sd-service info export flow-counters <cr>    # path-024336
+(exec)# do-exec show avc sd-service info export l3-cache <cr>    # path-024337
+(exec)# do-exec show avc sd-service info export npc-info <cr>    # path-024333
+(exec)# do-exec show avc sd-service info export socket-cache <cr>    # path-024352
+(exec)# do-exec show avc sd-service info import dump <cr>    # path-024329
+(exec)# do-exec show avc sd-service info import dump l3-rules <cr>    # path-024865
+(exec)# do-exec show avc sd-service info import dump l4-rules <cr>    # path-024868
+(exec)# do-exec show avc sd-service info tls-fp clear-db <cr>    # path-024343
+(exec)# do-exec show avc sd-service info tls-fp clear-stats <cr>    # path-024361
+(exec)# do-exec show avc sd-service info tls-fp dump-db <cr>    # path-024345
+(exec)# do-exec show avc sd-service info tls-fp dump-db detail <cr>    # path-024869
+(exec)# do-exec show avc sd-service info tls-fp fingerprint-db dump <cr>    # path-024876
+(exec)# do-exec show avc sd-service info tls-fp fingerprint-db dump detail <cr>    # path-025075
+(exec)# do-exec show avc sd-service info tls-fp fingerprint-db info <cr>    # path-024873
+(exec)# do-exec show avc sd-service info tls-fp show-stats <cr>    # path-024350
+(exec)# do-exec show backup <cr>    # path-012466
+(exec)# do-exec show banner login <cr>    # path-012996
+(exec)# do-exec show beep blocked <cr>    # path-015831
+(exec)# do-exec show beep session <cr>    # path-015846
+(exec)# do-exec show bfd clients <cr>    # path-014566
+(exec)# do-exec show bfd drops <cr>    # path-014578
+(exec)# do-exec show bfd fast-timers-on-slow-int <cr>    # path-014661
+(exec)# do-exec show bfd hardware <cr>    # path-014587
+(exec)# do-exec show bfd idbs <cr>    # path-014627
+(exec)# do-exec show bfd interface <cr>    # path-014603
+(exec)# do-exec show bfd internal <cr>    # path-014531
+(exec)# do-exec show bfd map <cr>    # path-014663
+(exec)# do-exec show bfd summary <cr>    # path-014520
+(exec)# do-exec show bfd target-identifier all <cr>    # path-018802
+(exec)# do-exec show bfd target-identifier interface <cr>    # path-018908
+(exec)# do-exec show bfd target-identifier local <cr>    # path-018842
+(exec)# do-exec show bfd target-identifier remote <cr>    # path-018870
+(exec)# do-exec show bgp memory <cr>    # path-014929
+(exec)# do-exec show bgp sr-color <cr>    # path-014932
+(exec)# do-exec show bootvar <cr>    # path-012497
+(exec)# do-exec show bootvar config-file <cr>    # path-013603
+(exec)# do-exec show bootvar system <cr>    # path-013617
+(exec)# do-exec show bridge circuit-group <cr>    # path-016399
+(exec)# do-exec show bridge group <cr>    # path-016383
+(exec)# do-exec show bridge-domain <cr>    # path-012548
+(exec)# do-exec show bridge-domain c-mac <cr>    # path-013952
+(exec)# do-exec show bridge-domain external-ports <cr>    # path-013918
+(exec)# do-exec show bridge-domain route stats <cr>    # path-017802
+(exec)# do-exec show bsc <cr>    # path-012796
+(exec)# do-exec show bstun <cr>    # path-012798
+(exec)# do-exec show buffers <cr>    # path-012769
+(exec)# do-exec show buffers failures <cr>    # path-016328
+(exec)# do-exec show buffers leak <cr>    # path-016455
+(exec)# do-exec show buffers leak resource user <cr>    # path-023202
+(exec)# do-exec show buffers tune <cr>    # path-016453
+(exec)# do-exec show buffers usage <cr>    # path-016443
+(exec)# do-exec show buffers usage pool <string> <cr>    # path-023200
+(exec)# do-exec show bulkstat data-group <cr>    # path-016610
+(exec)# do-exec show bulkstat data-group <string> process <cr>    # path-023288
+(exec)# do-exec show bulkstat pre-defined <cr>    # path-016618
+(exec)# do-exec show bulkstat pre-defined data <cr>    # path-020674
+(exec)# do-exec show bulkstat pre-defined data-group <cr>    # path-020677
+(exec)# do-exec show bulkstat pre-defined instance <cr>    # path-020680
+(exec)# do-exec show bulkstat profile <cr>    # path-016611
+(exec)# do-exec show calendar <cr>    # path-012498
+(exec)# do-exec show call admission <cr>    # path-015844
+(exec)# do-exec show call filter component <cr>    # path-020035
+(exec)# do-exec show call filter match-list <cr>    # path-020040
+(exec)# do-exec show call filter match-list <number:1..16> <cr>    # path-022983
+(exec)# do-exec show call-home <cr>    # path-012549
+(exec)# do-exec show call-home alert-group <cr>    # path-013864
+(exec)# do-exec show call-home detail <cr>    # path-013842
+(exec)# do-exec show call-home diagnostic-signature <cr>    # path-014047
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> <cr>    # path-018048
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> actions <cr>    # path-021837
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> events <cr>    # path-021832
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> prerequisite <cr>    # path-021852
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> prompt <cr>    # path-021844
+(exec)# do-exec show call-home diagnostic-signature <number:1..99999999> variables <cr>    # path-021870
+(exec)# do-exec show call-home diagnostic-signature failure <cr>    # path-017934
+(exec)# do-exec show call-home diagnostic-signature info <cr>    # path-017901
+(exec)# do-exec show call-home diagnostic-signature register <cr>    # path-017915
+(exec)# do-exec show call-home diagnostic-signature statistics <cr>    # path-017963

@@ -1,0 +1,16 @@
+# 模式 srte-policy；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-srte-policy)# autoroute <cr>    # static_slot_creation_candidates-004499
+(config-srte-policy)# candidate-paths <cr>    # static_slot_creation_candidates-004501
+(config-srte-policy)# default autoroute <cr>    # static_slot_creation_candidates-004506
+(config-srte-policy)# default candidate-paths <cr>    # static_slot_creation_candidates-004508
+(config-srte-policy)# default performance-measurement <cr>    # static_slot_creation_candidates-004510
+(config-srte-policy)# default steering <cr>    # static_slot_creation_candidates-004507
+(config-srte-policy)# no autoroute <cr>    # static_slot_creation_candidates-004503
+(config-srte-policy)# no candidate-paths <cr>    # static_slot_creation_candidates-004505
+(config-srte-policy)# no performance-measurement <cr>    # static_slot_creation_candidates-004509
+(config-srte-policy)# no steering <cr>    # static_slot_creation_candidates-004504
+(config-srte-policy)# performance-measurement <cr>    # static_slot_creation_candidates-004502
+(config-srte-policy)# steering <cr>    # static_slot_creation_candidates-004500

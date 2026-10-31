@@ -1,0 +1,281 @@
+# 模式 configure；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config)# atm max-sig-events <number:1..500> <cr>    # static_slot_creation_candidates-000035
+(config)# atm signalling mode conformance <cr>    # static_slot_creation_candidates-000113
+(config)# atm svc-drain-count <number:1..500> <cr>    # static_slot_creation_candidates-000001
+(config)# atm svc-max-conn-pending <number:1..800> <cr>    # static_slot_creation_candidates-000002
+(config)# crypto autovpn <string> <cr>    # static_slot_creation_candidates-000047
+(config)# crypto gkm group <string> <cr>    # static_slot_creation_candidates-000158
+(config)# crypto ikev2 client flexvpn <string> <cr>    # static_slot_creation_candidates-002716
+(config)# crypto ikev2 cluster <cr>    # static_slot_creation_candidates-000088
+(config)# crypto ipsec profile <cr>    # static_slot_creation_candidates-000080
+(config)# crypto logging ikev2 <cr>    # static_slot_creation_candidates-000052
+(config)# crypto map <string> <number:1..65535> <cr>    # static_slot_creation_candidates-000205
+(config)# crypto map <string> client configuration address initiate <cr>    # static_slot_creation_candidates-001868
+(config)# crypto map <string> gdoi fail-close <cr>    # static_slot_creation_candidates-000495
+(config)# crypto map <string> isakmp-profile <string> <cr>    # static_slot_creation_candidates-000558
+(config)# crypto map <string> local-address <interface> <cr>    # static_slot_creation_candidates-002621
+(config)# crypto map <string> redundancy replay-interval inbound <number:0..1000> outbound <number:1000..100000> <cr>    # static_slot_creation_candidates-002483
+(config)# default atm max-sig-events <cr>    # static_slot_creation_candidates-000036
+(config)# default atm signalling mode conformance <cr>    # static_slot_creation_candidates-000311
+(config)# default atm svc-drain-count <number:1..500> <cr>    # static_slot_creation_candidates-000008
+(config)# default atm svc-max-conn-pending <number:1..800> <cr>    # static_slot_creation_candidates-000010
+(config)# default crypto autovpn <cr>    # static_slot_creation_candidates-000053
+(config)# default crypto gkm group <string> <cr>    # static_slot_creation_candidates-000353
+(config)# default crypto ikev2 cluster <cr>    # static_slot_creation_candidates-000223
+(config)# default crypto ipsec profile <cr>    # static_slot_creation_candidates-000196
+(config)# default crypto logging ikev2 <cr>    # static_slot_creation_candidates-000140
+(config)# default crypto map <string> client authentication list <cr>    # static_slot_creation_candidates-001888
+(config)# default crypto map <string> gdoi fail-close <cr>    # static_slot_creation_candidates-001115
+(config)# default crypto map <string> isakmp-profile <cr>    # static_slot_creation_candidates-000570
+(config)# default crypto map <string> local-address <cr>    # static_slot_creation_candidates-000483
+(config)# default crypto map <string> redundancy replay-interval inbound <number:0..1000> outbound <number:1000..100000> <cr>    # static_slot_creation_candidates-002539
+(config)# default dial-peer cor custom <cr>    # static_slot_creation_candidates-000301
+(config)# default dial-peer cor list <cr>    # static_slot_creation_candidates-000303
+(config)# default dial-peer group <cr>    # static_slot_creation_candidates-000109
+(config)# default do-exec clear crypto ikev2 client flexvpn <cr>    # static_slot_creation_candidates-001843
+(config)# default do-exec clear crypto ikev2 client flexvpn <string> <cr>    # static_slot_creation_candidates-002305
+(config)# default do-exec clear dapr border-router statistics <cr>    # static_slot_creation_candidates-000914
+(config)# default do-exec clear dapr route-manager border-router <address> <cr>    # static_slot_creation_candidates-001777
+(config)# default do-exec clear dapr route-manager statistics <cr>    # static_slot_creation_candidates-000922
+(config)# default do-exec clear domain default border channel smart-probe statistics <cr>    # static_slot_creation_candidates-002466
+(config)# default do-exec clear domain default border statistics <cr>    # static_slot_creation_candidates-001793
+(config)# default do-exec clear domain default master site-prefix <address> <number:1..32> <cr>    # static_slot_creation_candidates-002465
+(config)# default do-exec clear domain default master statistics <cr>    # static_slot_creation_candidates-001782
+(config)# default do-exec clear domain default master traffic-classes <cr>    # static_slot_creation_candidates-001792
+(config)# default do-exec clear otv isis lspfull <cr>    # static_slot_creation_candidates-000930
+(config)# default do-exec clear otv isis neighbors <cr>    # static_slot_creation_candidates-000975
+(config)# default do-exec clear otv isis rib redistribution <cr>    # static_slot_creation_candidates-001827
+(config)# default do-exec clear sbc <string> sbe blacklist <cr>    # static_slot_creation_candidates-001845
+(config)# default do-exec clear sbc <string> sbe blacklist ipv4 <address> <cr>    # static_slot_creation_candidates-002472
+(config)# default do-exec clear sbc <string> sbe blacklist ipv4 <address> TCP <number:0..65535> <cr>    # static_slot_creation_candidates-002559
+(config)# default do-exec clear sbc <string> sbe blacklist ipv4 <address> UDP <number:0..65535> <cr>    # static_slot_creation_candidates-002563
+(config)# default do-exec clear sbc <string> sbe blacklist ipv6 <address> <cr>    # static_slot_creation_candidates-002474
+(config)# default do-exec clear sbc <string> sbe blacklist ipv6 <address> TCP <number:0..65535> <cr>    # static_slot_creation_candidates-002562
+(config)# default do-exec clear sbc <string> sbe blacklist ipv6 <address> UDP <number:0..65535> <cr>    # static_slot_creation_candidates-002565
+(config)# default do-exec clear sbc <string> sbe cac-policy-set-stats <cr>    # static_slot_creation_candidates-001847
+(config)# default do-exec clear sbc <string> sbe call <number:0..2147483647> <cr>    # static_slot_creation_candidates-002315
+(config)# default do-exec clear sbc <string> sbe call-policy-set-stats <cr>    # static_slot_creation_candidates-001861
+(config)# default do-exec clear sbc <string> sbe call-rate-stats <cr>    # static_slot_creation_candidates-001801
+(config)# default do-exec clear sbc <string> sbe call-stats <cr>    # static_slot_creation_candidates-001867
+(config)# default do-exec clear sbc <string> sbe call-stats reject-threshold memory <cr>    # static_slot_creation_candidates-002467
+(config)# default do-exec clear sbc <string> sbe li cc <cr>    # static_slot_creation_candidates-002319
+(config)# default do-exec clear sbc <string> sbe li intercept standby <cr>    # static_slot_creation_candidates-002487
+(config)# default do-exec clear sbc <string> sbe radius-client authentication radius-server-stats <string> <cr>    # static_slot_creation_candidates-002540
+(config)# default do-exec clear sbc <string> sbe radius-client-stats accounting <string> <cr>    # static_slot_creation_candidates-002477
+(config)# default do-exec clear sbc <string> sbe radius-client-stats authentication <cr>    # static_slot_creation_candidates-002312
+(config)# default do-exec clear sbc <string> sbe script-set-stats <number:1..2147483647> <cr>    # static_slot_creation_candidates-002303
+(config)# default do-exec clear sbc <string> sbe script-set-stats <number:1..2147483647> editor-stats <string> <cr>    # static_slot_creation_candidates-002528
+(config)# default do-exec clear sbc <string> sbe sip statistics <cr>    # static_slot_creation_candidates-002316
+(config)# default do-exec clear sbc <string> sbe sip subscriber aor <string> <cr>    # static_slot_creation_candidates-002535
+(config)# default do-exec clear sbc <string> sbe transcoding-stats <cr>    # static_slot_creation_candidates-001909
+(config)# default do-exec clear sbc h248 bac call-contexts <cr>    # static_slot_creation_candidates-001787
+(config)# default do-exec clear sbc h248 bac call-contexts correlator <number:1..4294967295> <cr>    # static_slot_creation_candidates-002461
+(config)# default do-exec clear sbc h248 bac iad-sessions <cr>    # static_slot_creation_candidates-001774
+(config)# default do-exec clear sbc h248 bac iad-sessions correlator <number:0..4294967295> <cr>    # static_slot_creation_candidates-002459
+(config)# default do-exec clear sbc h248 bac transaction-sessions <cr>    # static_slot_creation_candidates-001773
+(config)# default do-exec clear voice accounting method <cr>    # static_slot_creation_candidates-000925
+(config)# default do-exec clear voice dsp error <cr>    # static_slot_creation_candidates-000920
+(config)# default do-exec clear voice fac statistics <cr>    # static_slot_creation_candidates-000919
+(config)# default do-exec clear voice lpcor statistics <cr>    # static_slot_creation_candidates-000909
+(config)# default do-exec clear voice moh-group statistics <cr>    # static_slot_creation_candidates-000910
+(config)# default do-exec clear voice phone-proxy all-sessions <cr>    # static_slot_creation_candidates-000911
+(config)# default do-exec clear voice register attempted-registrations <cr>    # static_slot_creation_candidates-000933
+(config)# default do-exec clear voice register attempted-registrations ip <address> <cr>    # static_slot_creation_candidates-002289
+(config)# default do-exec clear voice register attempted-registrations mac <address> <cr>    # static_slot_creation_candidates-002285
+(config)# default do-exec clear voice shared-line call all <cr>    # static_slot_creation_candidates-001766
+(config)# default do-exec clear voice shared-line call line <string> <cr>    # static_slot_creation_candidates-002290
+(config)# default do-exec clear voice statistics <cr>    # static_slot_creation_candidates-000359
+(config)# default do-exec debug atm bundle adjacency events <cr>    # static_slot_creation_candidates-001897
+(config)# default do-exec debug atm bundle errors <cr>    # static_slot_creation_candidates-001128
+(config)# default do-exec debug atm bundle events <cr>    # static_slot_creation_candidates-001116
+(config)# default do-exec debug atm bundle inarp <cr>    # static_slot_creation_candidates-001157
+(config)# default do-exec debug crypto ikev2 client flexvpn <cr>    # static_slot_creation_candidates-001929
+(config)# default do-exec debug crypto ikev2 cluster <cr>    # static_slot_creation_candidates-001384
+(config)# default do-exec debug dapr border-router all <cr>    # static_slot_creation_candidates-001070
+(config)# default do-exec debug dapr border-router events <cr>    # static_slot_creation_candidates-001086
+(config)# default do-exec debug dapr border-router events detail <cr>    # static_slot_creation_candidates-001831
+(config)# default do-exec debug dapr border-router events error <cr>    # static_slot_creation_candidates-001840
+(config)# default do-exec debug dapr border-router flow-export <cr>    # static_slot_creation_candidates-000977
+(config)# default do-exec debug dapr border-router flow-export detail <cr>    # static_slot_creation_candidates-001791
+(config)# default do-exec debug dapr border-router flow-export error <cr>    # static_slot_creation_candidates-001781
+(config)# default do-exec debug dapr border-router flow-route <cr>    # static_slot_creation_candidates-001055
+(config)# default do-exec debug dapr border-router flow-route detail <cr>    # static_slot_creation_candidates-001820
+(config)# default do-exec debug dapr border-router flow-route error <cr>    # static_slot_creation_candidates-001807
+(config)# default do-exec debug dapr border-router inter-br <cr>    # static_slot_creation_candidates-001004
+(config)# default do-exec debug dapr border-router inter-br detail <cr>    # static_slot_creation_candidates-001800
+(config)# default do-exec debug dapr border-router inter-br error <cr>    # static_slot_creation_candidates-001789
+(config)# default do-exec debug dapr border-router rib <cr>    # static_slot_creation_candidates-001072
+(config)# default do-exec debug dapr border-router rib detail <cr>    # static_slot_creation_candidates-001833
+(config)# default do-exec debug dapr border-router rib error <cr>    # static_slot_creation_candidates-001818
+(config)# default do-exec debug dapr border-router wan-metric <cr>    # static_slot_creation_candidates-001030
+(config)# default do-exec debug dapr border-router wan-metric detail <cr>    # static_slot_creation_candidates-001810
+(config)# default do-exec debug dapr border-router wan-metric error <cr>    # static_slot_creation_candidates-001798
+(config)# default do-exec debug dapr route-manager all <cr>    # static_slot_creation_candidates-001051
+(config)# default do-exec debug dapr route-manager condition unmatched <cr>    # static_slot_creation_candidates-001851
+(config)# default do-exec debug dapr route-manager events <cr>    # static_slot_creation_candidates-001088
+(config)# default do-exec debug dapr route-manager events detail <cr>    # static_slot_creation_candidates-001832
+(config)# default do-exec debug dapr route-manager events error <cr>    # static_slot_creation_candidates-001817
+(config)# default do-exec debug dapr route-manager events verbose <cr>    # static_slot_creation_candidates-001841
+(config)# default do-exec debug dapr route-manager flow-collector <cr>    # static_slot_creation_candidates-001029
+(config)# default do-exec debug dapr route-manager flow-collector detail <cr>    # static_slot_creation_candidates-001809
+(config)# default do-exec debug dapr route-manager flow-collector error <cr>    # static_slot_creation_candidates-001797
+(config)# default do-exec debug dapr route-manager rib <cr>    # static_slot_creation_candidates-001033
+(config)# default do-exec debug dapr route-manager rib detail <cr>    # static_slot_creation_candidates-001799
+(config)# default do-exec debug dapr route-manager rib error <cr>    # static_slot_creation_candidates-001788
+(config)# default do-exec debug dapr route-manager rib verbose <cr>    # static_slot_creation_candidates-001811
+(config)# default do-exec debug dapr route-manager route-compute <cr>    # static_slot_creation_candidates-001074
+(config)# default do-exec debug dapr route-manager route-compute detail <cr>    # static_slot_creation_candidates-001819
+(config)# default do-exec debug dapr route-manager route-compute error <cr>    # static_slot_creation_candidates-001806
+(config)# default do-exec debug dapr route-manager route-compute internal <cr>    # static_slot_creation_candidates-001834
+(config)# default do-exec debug domain master all <cr>    # static_slot_creation_candidates-000937
+(config)# default do-exec debug domain master auto-tunnel <cr>    # static_slot_creation_candidates-001201
+(config)# default do-exec debug domain master capability <cr>    # static_slot_creation_candidates-001496
+(config)# default do-exec debug domain master channel-health-db add <cr>    # static_slot_creation_candidates-001963
+(config)# default do-exec debug domain master channel-health-db delete <cr>    # static_slot_creation_candidates-001993
+(config)# default do-exec debug domain master channel-health-db general <cr>    # static_slot_creation_candidates-001940
+(config)# default do-exec debug domain master channel-health-db ode <cr>    # static_slot_creation_candidates-002023
+(config)# default do-exec debug domain master channel-health-db perf-tca <cr>    # static_slot_creation_candidates-002005
+(config)# default do-exec debug domain master channel-health-db unreach <cr>    # static_slot_creation_candidates-002012
+(config)# default do-exec debug domain master channel-health-db update <cr>    # static_slot_creation_candidates-001979
+(config)# default do-exec debug domain master collector <cr>    # static_slot_creation_candidates-001068
+(config)# default do-exec debug domain master communication <cr>    # static_slot_creation_candidates-001052
+(config)# default do-exec debug domain master database prefix <cr>    # static_slot_creation_candidates-002100
+(config)# default do-exec debug domain master database route-control <cr>    # static_slot_creation_candidates-002129
+(config)# default do-exec debug domain master database route-import <cr>    # static_slot_creation_candidates-002125
+(config)# default do-exec debug domain master database system <cr>    # static_slot_creation_candidates-002143
+(config)# default do-exec debug domain master dca <cr>    # static_slot_creation_candidates-001649
+(config)# default do-exec debug domain master dp-probe <cr>    # static_slot_creation_candidates-001108
+(config)# default do-exec debug domain master error <cr>    # static_slot_creation_candidates-001433
+(config)# default do-exec debug domain master exporter <cr>    # static_slot_creation_candidates-001239
+(config)# default do-exec debug domain master ipc <cr>    # static_slot_creation_candidates-001493
+(config)# default do-exec debug domain master load-balance <cr>    # static_slot_creation_candidates-001098
+(config)# default do-exec debug domain master mhop-exporter <cr>    # static_slot_creation_candidates-001457
+(config)# default do-exec debug domain master multi-hop feature <cr>    # static_slot_creation_candidates-001976
+(config)# default do-exec debug domain master multi-hop pdp <cr>    # static_slot_creation_candidates-001959
+(config)# default do-exec debug domain master pdp path-preference <cr>    # static_slot_creation_candidates-002007
+(config)# default do-exec debug domain master pdp path-probe-reduction <cr>    # static_slot_creation_candidates-002025
+(config)# default do-exec debug domain master pdp path-selection <cr>    # static_slot_creation_candidates-002014
+(config)# default do-exec debug domain master peering <cr>    # static_slot_creation_candidates-001024
+(config)# default do-exec debug domain master pmi <cr>    # static_slot_creation_candidates-001001
+(config)# default do-exec debug domain master policy <cr>    # static_slot_creation_candidates-001379
+(config)# default do-exec debug domain master probe <cr>    # static_slot_creation_candidates-001109
+(config)# default do-exec debug domain master process <cr>    # static_slot_creation_candidates-001163
+(config)# default do-exec debug domain master route-control <cr>    # static_slot_creation_candidates-001134
+(config)# default do-exec debug domain master route-import <cr>    # static_slot_creation_candidates-001165
+(config)# default do-exec debug domain master service-overlay <cr>    # static_slot_creation_candidates-001514
+(config)# default do-exec debug domain master smp-profile cp <cr>    # static_slot_creation_candidates-002089
+(config)# default do-exec debug domain master smp-profile dp cp <cr>    # static_slot_creation_candidates-002382
+(config)# default do-exec debug domain master smp-profile dp timer active <cr>    # static_slot_creation_candidates-002517
+(config)# default do-exec debug domain master smp-profile dp timer burst <cr>    # static_slot_creation_candidates-002513
+(config)# default do-exec debug domain master smp-profile dp timer rx-unreach <cr>    # static_slot_creation_candidates-002520
+(config)# default do-exec debug domain master smp-profile dp timer tx-unreach <cr>    # static_slot_creation_candidates-002519
+(config)# default do-exec debug domain master spa all <cr>    # static_slot_creation_candidates-002199
+(config)# default do-exec debug domain master spa client <cr>    # static_slot_creation_candidates-002157
+(config)# default do-exec debug domain master spa dca-app <cr>    # static_slot_creation_candidates-002178
+(config)# default do-exec debug domain master spa dca-interface <cr>    # static_slot_creation_candidates-002169
+(config)# default do-exec debug domain master spa ipsla-probe <cr>    # static_slot_creation_candidates-002184
+(config)# default do-exec debug domain master spa proc <cr>    # static_slot_creation_candidates-002141
+(config)# default do-exec debug domain master spa-interact <cr>    # static_slot_creation_candidates-001629
+(config)# default do-exec debug domain master tca <cr>    # static_slot_creation_candidates-001003
+(config)# default do-exec debug domain master timer <cr>    # static_slot_creation_candidates-001550
+(config)# default do-exec debug domain master zero-sla <cr>    # static_slot_creation_candidates-001451
+(config)# default do-exec debug ipv6 mobile packets <cr>    # static_slot_creation_candidates-000973
+(config)# default do-exec debug performance monitor context error <cr>    # static_slot_creation_candidates-001779
+(config)# default do-exec debug performance monitor context info <cr>    # static_slot_creation_candidates-001771
+(config)# default do-exec debug performance monitor producer performance-monitor <cr>    # static_slot_creation_candidates-001931
+(config)# default do-exec debug performance monitor producer performance-monitor all <cr>    # static_slot_creation_candidates-002328
+(config)# default do-exec debug performance monitor producer performance-monitor error <cr>    # static_slot_creation_candidates-002317
+(config)# default do-exec debug performance monitor producer performance-monitor info <cr>    # static_slot_creation_candidates-002323
+(config)# default do-exec debug performance monitor producer performance-monitor metering <cr>    # static_slot_creation_candidates-002320
+(config)# default do-exec debug performance monitor profile error <cr>    # static_slot_creation_candidates-001784
+(config)# default do-exec debug performance monitor profile info <cr>    # static_slot_creation_candidates-001776
+(config)# default do-exec debug site-manager master all <cr>    # static_slot_creation_candidates-000938
+(config)# default do-exec debug site-manager master auto-tunnel <cr>    # static_slot_creation_candidates-001085
+(config)# default do-exec debug site-manager master capability <cr>    # static_slot_creation_candidates-001133
+(config)# default do-exec debug site-manager master communication <cr>    # static_slot_creation_candidates-001025
+(config)# default do-exec debug site-manager master dca <cr>    # static_slot_creation_candidates-001240
+(config)# default do-exec debug site-manager master dia <cr>    # static_slot_creation_candidates-001278
+(config)# default do-exec debug site-manager master error <cr>    # static_slot_creation_candidates-001123
+(config)# default do-exec debug site-manager master ipc <cr>    # static_slot_creation_candidates-001164
+(config)# default do-exec debug site-manager master pdp path-preference <cr>    # static_slot_creation_candidates-001849
+(config)# default do-exec debug site-manager master pdp path-selection <cr>    # static_slot_creation_candidates-001859
+(config)# default do-exec debug site-manager master peering <cr>    # static_slot_creation_candidates-001002
+(config)# default do-exec debug site-manager master policy <cr>    # static_slot_creation_candidates-001097
+(config)# default do-exec debug site-manager master process <cr>    # static_slot_creation_candidates-001069
+(config)# default do-exec debug site-manager master route-control <cr>    # static_slot_creation_candidates-001053
+(config)# default do-exec debug site-manager master spa all <cr>    # static_slot_creation_candidates-002013
+(config)# default do-exec debug site-manager master spa client <cr>    # static_slot_creation_candidates-001944
+(config)# default do-exec debug site-manager master spa dca-app <cr>    # static_slot_creation_candidates-001981
+(config)# default do-exec debug site-manager master spa dca-interface <cr>    # static_slot_creation_candidates-001966
+(config)# default do-exec debug site-manager master spa dia-class <cr>    # static_slot_creation_candidates-002006
+(config)# default do-exec debug site-manager master spa ipsla-probe <cr>    # static_slot_creation_candidates-001996
+(config)# default do-exec debug site-manager master spa proc <cr>    # static_slot_creation_candidates-001917
+(config)# default do-exec debug site-manager master spa-interact <cr>    # static_slot_creation_candidates-001202
+(config)# default do-exec debug site-manager master tca <cr>    # static_slot_creation_candidates-000974
+(config)# default do-exec debug vfi checkpoint <cr>    # static_slot_creation_candidates-000330
+(config)# default do-exec debug voip aaa <cr>    # static_slot_creation_candidates-000408
+(config)# default do-exec debug voip aaa asnl <cr>    # static_slot_creation_candidates-000968
+(config)# default do-exec debug voip application <cr>    # static_slot_creation_candidates-000870
+(config)# default do-exec debug voip application accounting <cr>    # static_slot_creation_candidates-001606
+(config)# default do-exec debug voip application all <cr>    # static_slot_creation_candidates-001628
+(config)# default do-exec debug voip application auth <cr>    # static_slot_creation_candidates-001432
+(config)# default do-exec debug voip application callfeature <cr>    # static_slot_creation_candidates-001237
+(config)# default do-exec debug voip application callindependss <cr>    # static_slot_creation_candidates-001492
+(config)# default do-exec debug voip application callsetup <cr>    # static_slot_creation_candidates-001277
+(config)# default do-exec debug voip application core <cr>    # static_slot_creation_candidates-001161
+(config)# default do-exec debug voip application datastruct <cr>    # static_slot_creation_candidates-001581
+(config)# default do-exec debug voip application digitcollect <cr>    # static_slot_creation_candidates-001199
+(config)# default do-exec debug voip application error <cr>    # static_slot_creation_candidates-001061
+(config)# default do-exec debug voip application kadis_toggle <cr>    # static_slot_creation_candidates-000983
+(config)# default do-exec debug voip application linking <cr>    # static_slot_creation_candidates-001549
+(config)# default do-exec debug voip application lpcor <cr>    # static_slot_creation_candidates-001404
+(config)# default do-exec debug voip application media <cr>    # static_slot_creation_candidates-001207
+(config)# default do-exec debug voip application media forking <cr>    # static_slot_creation_candidates-001887
+(config)# default do-exec debug voip application media negotiation <cr>    # static_slot_creation_candidates-001874
+(config)# default do-exec debug voip application media packet <cr>    # static_slot_creation_candidates-001866
+(config)# default do-exec debug voip application media state <cr>    # static_slot_creation_candidates-001855
+(config)# default do-exec debug voip application mlpp <cr>    # static_slot_creation_candidates-001473
+(config)# default do-exec debug voip application mwi <cr>    # static_slot_creation_candidates-001450
+(config)# default do-exec debug voip application oodrefer <cr>    # static_slot_creation_candidates-001347
+(config)# default do-exec debug voip application park-pickup <cr>    # static_slot_creation_candidates-001314
+(config)# default do-exec debug voip application redirect <cr>    # static_slot_creation_candidates-001041
+(config)# default do-exec debug voip application script <cr>    # static_slot_creation_candidates-001121
+(config)# default do-exec debug voip application session <cr>    # static_slot_creation_candidates-001513
+(config)# default do-exec debug voip application settlement <cr>    # static_slot_creation_candidates-001092
+(config)# default do-exec debug voip application states <cr>    # static_slot_creation_candidates-001079
+(config)# default do-exec debug voip application supplementary-service <cr>    # static_slot_creation_candidates-001012
+(config)# default do-exec debug voip application tclcommands <cr>    # static_slot_creation_candidates-001130
+(config)# default do-exec debug voip application translate <cr>    # static_slot_creation_candidates-001378
+(config)# default do-exec debug voip avlist <cr>    # static_slot_creation_candidates-000475
+(config)# default do-exec debug voip avlist all <cr>    # static_slot_creation_candidates-000966
+(config)# default do-exec debug voip avlist default <cr>    # static_slot_creation_candidates-000997
+(config)# default do-exec debug voip avlist detail <cr>    # static_slot_creation_candidates-001022
+(config)# default do-exec debug voip avlist error <cr>    # static_slot_creation_candidates-001099
+(config)# default do-exec debug voip avlist inout <cr>    # static_slot_creation_candidates-001049
+(config)# default do-exec debug voip dialpeer <cr>    # static_slot_creation_candidates-000502
+(config)# default do-exec debug voip dialpeer all <cr>    # static_slot_creation_candidates-000965
+(config)# default do-exec debug voip dialpeer config <cr>    # static_slot_creation_candidates-001067
+(config)# default do-exec debug voip dialpeer default <cr>    # static_slot_creation_candidates-000996
+(config)# default do-exec debug voip dialpeer detail <cr>    # static_slot_creation_candidates-001048
+(config)# default do-exec debug voip dialpeer error <cr>    # static_slot_creation_candidates-001135
+(config)# default do-exec debug voip dialpeer function <cr>    # static_slot_creation_candidates-001096
+(config)# default do-exec debug voip dialpeer inout <cr>    # static_slot_creation_candidates-001021
+(config)# default do-exec debug voip dialpeer translation <cr>    # static_slot_creation_candidates-001083
+(config)# default do-exec debug voip dsm dsp <cr>    # static_slot_creation_candidates-000964
+(config)# default do-exec debug voip dsmp <cr>    # static_slot_creation_candidates-000666
+(config)# default do-exec debug voip dsmp all <cr>    # static_slot_creation_candidates-000995
+(config)# default do-exec debug voip dsmp rtp from-dsp payload all <cr>    # static_slot_creation_candidates-002498
+(config)# default do-exec debug voip dsmp udp <cr>    # static_slot_creation_candidates-001413
+(config)# default do-exec debug voip dsmp udp from-dsp <number:0..10000000> <cr>    # static_slot_creation_candidates-002341
+(config)# default do-exec debug voip dsmp vofr subframe <number:0..5> <cr>    # static_slot_creation_candidates-002348
+(config)# default do-exec debug voip dsp crash-dump <cr>    # static_slot_creation_candidates-001075
+(config)# default do-exec debug voip dsp crash-dump detail <cr>    # static_slot_creation_candidates-001795
+(config)# default do-exec debug voip dsp crash-dump error <cr>    # static_slot_creation_candidates-001835
+(config)# default do-exec debug voip dsp crash-dump jtag <cr>    # static_slot_creation_candidates-001821
+(config)# default do-exec debug voip dsp crash-dump keepalive <cr>    # static_slot_creation_candidates-001808
+(config)# default do-exec debug voip em-profile <cr>    # static_slot_creation_candidates-000382
+(config)# default do-exec debug voip enum detail <cr>    # static_slot_creation_candidates-000959
+(config)# default do-exec debug voip enum summary <cr>    # static_slot_creation_candidates-000989

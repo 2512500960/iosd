@@ -1,0 +1,20 @@
+# 模式 pm-loss-profile-intf-adv；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-pm-lm-intf-adv)# anomaly-check <cr>    # observed_connections-009070
+(config-pm-lm-intf-adv)# anomaly-check lower-bound <?fixed_number_action@55558c319278> <cr>    # observed_connections-009080
+(config-pm-lm-intf-adv)# default <cr>    # observed_connections-009069
+(config-pm-lm-intf-adv)# default anomaly-check <cr>    # observed_connections-009074
+(config-pm-lm-intf-adv)# default periodic <cr>    # observed_connections-009073
+(config-pm-lm-intf-adv)# default periodic interval <number:30..3600> <cr>    # observed_connections-009077
+(config-pm-lm-intf-adv)# exit <cr>    # observed_connections-009066
+(config-pm-lm-intf-adv)# no <cr>    # observed_connections-009067
+(config-pm-lm-intf-adv)# no anomaly-check <cr>    # observed_connections-009072
+(config-pm-lm-intf-adv)# no periodic <cr>    # observed_connections-009071
+(config-pm-lm-intf-adv)# no periodic interval <number:30..3600> <cr>    # observed_connections-009076
+(config-pm-lm-intf-adv)# periodic <cr>    # observed_connections-009068
+(config-pm-lm-intf-adv)# periodic interval <number:30..3600> <cr>    # observed_connections-009075
+(config-pm-lm-intf-adv)# periodic minimum-change <?fixed_number_action@55558c3189d0> <cr>    # observed_connections-009079
+(config-pm-lm-intf-adv)# periodic threshold <?fixed_number_action@55558c3186d8> <cr>    # observed_connections-009078
+(config-pm-lm-intf-adv)# <cr>    # observed_connections-009065

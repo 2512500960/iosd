@@ -1,0 +1,309 @@
+# 模式 ipv6-router；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-rtr)# address-family ipv6 vrf <string> <cr>    # observed_connections-004221
+(config-rtr)# adjacency stagger none disable <cr>    # observed_connections-004244
+(config-rtr)# area <address> <cr>    # observed_connections-004294
+(config-rtr)# area <address> authentication key-chain <cr>    # observed_connections-004305
+(config-rtr)# area <address> default-cost <cr>    # observed_connections-004297
+(config-rtr)# area <address> encryption ipsec spi <number:256..4294967295> <cr>    # observed_connections-004312
+(config-rtr)# area <address> filter-list prefix <string> in <cr>    # observed_connections-004313
+(config-rtr)# area <address> mpls <cr>    # observed_connections-004303
+(config-rtr)# area <address> no-transit <cr>    # observed_connections-004296
+(config-rtr)# area <address> normal <cr>    # observed_connections-004300
+(config-rtr)# area <address> nssa <cr>    # observed_connections-004304
+(config-rtr)# area <address> packet-size <cr>    # observed_connections-004298
+(config-rtr)# area <address> sham-link <address> <address> <cr>    # observed_connections-004311
+(config-rtr)# area <address> stub <cr>    # observed_connections-004301
+(config-rtr)# area <address> virtual-link <address> <cr>    # observed_connections-004307
+(config-rtr)# area <number:0..4294967295> authentication null <cr>    # observed_connections-004232
+(config-rtr)# area <number:0..4294967295> default-cost <number:0..16777214> <cr>    # observed_connections-004226
+(config-rtr)# area <number:0..4294967295> filter-list prefix <string> in <cr>    # observed_connections-004277
+(config-rtr)# area <number:0..4294967295> mpls <cr>    # observed_connections-004200
+(config-rtr)# area <number:0..4294967295> mpls traffic-engineering tunnel-tail ipv6 <interface> <cr>    # observed_connections-004314
+(config-rtr)# area <number:0..4294967295> no-transit <cr>    # observed_connections-004160
+(config-rtr)# area <number:0..4294967295> normal <cr>    # observed_connections-004178
+(config-rtr)# area <number:0..4294967295> nssa <cr>    # observed_connections-004202
+(config-rtr)# area <number:0..4294967295> packet-size <number:576..10000> <cr>    # observed_connections-004227
+(config-rtr)# area <number:0..4294967295> range <address> <address> <cr>    # observed_connections-004263
+(config-rtr)# area <number:0..4294967295> range <prefix:dynamic> <cr>    # observed_connections-004306
+(config-rtr)# area <number:0..4294967295> sham-link <address> <address> <cr>    # observed_connections-004266
+(config-rtr)# area <number:0..4294967295> stub <cr>    # observed_connections-004187
+(config-rtr)# area <number:0..4294967295> virtual-link <address> <cr>    # observed_connections-004250
+(config-rtr)# authentication mode strict <cr>    # observed_connections-004213
+(config-rtr)# auto-cost <cr>    # observed_connections-004030
+(config-rtr)# bfd all-interfaces <cr>    # observed_connections-004077
+(config-rtr)# capability vrf-lite <cr>    # observed_connections-004130
+(config-rtr)# compatible rfc1583 <cr>    # observed_connections-004064
+(config-rtr)# compatible rfc1587 <cr>    # observed_connections-004068
+(config-rtr)# compatible rfc5243 <cr>    # observed_connections-004075
+(config-rtr)# context <string> <cr>    # observed_connections-004047
+(config-rtr)# default address-family ipv6 vrf <string> <cr>    # observed_connections-004257
+(config-rtr)# default adjacency stagger <cr>    # observed_connections-004191
+(config-rtr)# default area <number:0..4294967295> <cr>    # observed_connections-004204
+(config-rtr)# default area <number:0..4294967295> authentication key-chain <cr>    # observed_connections-004259
+(config-rtr)# default area <number:0..4294967295> default-cost <cr>    # observed_connections-004229
+(config-rtr)# default area <number:0..4294967295> encryption ipsec spi <number:256..4294967295> <cr>    # observed_connections-004282
+(config-rtr)# default area <number:0..4294967295> filter-list prefix <string> in <cr>    # observed_connections-004284
+(config-rtr)# default area <number:0..4294967295> mpls <cr>    # observed_connections-004247
+(config-rtr)# default area <number:0..4294967295> no-transit <cr>    # observed_connections-004228
+(config-rtr)# default area <number:0..4294967295> normal <cr>    # observed_connections-004235
+(config-rtr)# default area <number:0..4294967295> nssa <cr>    # observed_connections-004248
+(config-rtr)# default area <number:0..4294967295> packet-size <cr>    # observed_connections-004230
+(config-rtr)# default area <number:0..4294967295> range <address> <address> <cr>    # observed_connections-004276
+(config-rtr)# default area <number:0..4294967295> sham-link <address> <address> <cr>    # observed_connections-004279
+(config-rtr)# default area <number:0..4294967295> stub <cr>    # observed_connections-004240
+(config-rtr)# default area <number:0..4294967295> virtual-link <address> <cr>    # observed_connections-004268
+(config-rtr)# default authentication mode strict <cr>    # observed_connections-004251
+(config-rtr)# default auto-cost <cr>    # observed_connections-004119
+(config-rtr)# default bfd all-interfaces <cr>    # observed_connections-004169
+(config-rtr)# default capability vrf-lite <cr>    # observed_connections-004211
+(config-rtr)# default compatible rfc1583 <cr>    # observed_connections-004152
+(config-rtr)# default compatible rfc1587 <cr>    # observed_connections-004156
+(config-rtr)# default compatible rfc5243 <cr>    # observed_connections-004167
+(config-rtr)# default context <cr>    # observed_connections-004045
+(config-rtr)# default default-information originate <cr>    # observed_connections-004148
+(config-rtr)# default default-metric <cr>    # observed_connections-004060
+(config-rtr)# default default-metric <cr>    # observed_connections-004132
+(config-rtr)# default discard-route external <cr>    # observed_connections-004197
+(config-rtr)# default distance <cr>    # observed_connections-004080
+(config-rtr)# default distance eigrp <cr>    # observed_connections-004151
+(config-rtr)# default distance ospf <cr>    # observed_connections-004192
+(config-rtr)# default distribute-list prefix-list <string> in <cr>    # observed_connections-004261
+(config-rtr)# default distribute-list route-map <string> in <cr>    # observed_connections-004256
+(config-rtr)# default domain-id <cr>    # observed_connections-004067
+(config-rtr)# default eigrp graceful-restart <cr>    # observed_connections-004209
+(config-rtr)# default eigrp upgrade-cli <string> <cr>    # observed_connections-004253
+(config-rtr)# default event-log <cr>    # observed_connections-004117
+(config-rtr)# default event-log-size <cr>    # observed_connections-004121
+(config-rtr)# default event-logging <cr>    # observed_connections-004114
+(config-rtr)# default graceful-restart <cr>    # observed_connections-004143
+(config-rtr)# default graceful-restart helper <cr>    # observed_connections-004219
+(config-rtr)# default ignore lsa mospf <cr>    # observed_connections-004237
+(config-rtr)# default interface-id snmp-if-index <cr>    # observed_connections-004165
+(config-rtr)# default kill-everyone <cr>    # observed_connections-004093
+(config-rtr)# default limit retransmissions <cr>    # observed_connections-004215
+(config-rtr)# default local-rib-criteria <cr>    # observed_connections-004140
+(config-rtr)# default log-adjacency-changes <cr>    # observed_connections-004108
+(config-rtr)# default log-event-type <cr>    # observed_connections-004115
+(config-rtr)# default log-neighbor-changes <cr>    # observed_connections-004098
+(config-rtr)# default log-neighbor-warnings <cr>    # observed_connections-004109
+(config-rtr)# default max-lsa <cr>    # observed_connections-004124
+(config-rtr)# default max-metric <cr>    # observed_connections-004054
+(config-rtr)# default max-metric intra-area <cr>    # observed_connections-004053
+(config-rtr)# default maximum-paths <cr>    # observed_connections-004061
+(config-rtr)# default maximum-paths <cr>    # observed_connections-004099
+(config-rtr)# default maximum-paths per-prefix-distribution <cr>    # observed_connections-004186
+(config-rtr)# default metric maximum-hops <cr>    # observed_connections-004161
+(config-rtr)# default metric weights <cr>    # observed_connections-004170
+(config-rtr)# default omp-route-tag <cr>    # observed_connections-004048
+(config-rtr)# default packet-size <cr>    # observed_connections-004034
+(config-rtr)# default passive-interface default <cr>    # observed_connections-004166
+(config-rtr)# default passive-interface default <cr>    # observed_connections-004181
+(config-rtr)# default poison-reverse <cr>    # observed_connections-004052
+(config-rtr)# default port <cr>    # observed_connections-004079
+(config-rtr)# default prefix-suppression <cr>    # observed_connections-004071
+(config-rtr)# default process-min-time percent <cr>    # observed_connections-004136
+(config-rtr)# default queue-depth hello <cr>    # observed_connections-004173
+(config-rtr)# default queue-depth update <cr>    # observed_connections-004179
+(config-rtr)# default redistribute maximum-prefix <cr>    # observed_connections-004185
+(config-rtr)# default redistribute maximum-prefix <cr>    # observed_connections-004212
+(config-rtr)# default router-id <cr>    # observed_connections-004046
+(config-rtr)# default router-id <cr>    # observed_connections-004088
+(config-rtr)# default shutdown <cr>    # observed_connections-004059
+(config-rtr)# default shutdown <cr>    # observed_connections-004139
+(config-rtr)# default snmp context <cr>    # observed_connections-004171
+(config-rtr)# default snmp context <string> community <string> <cr>    # observed_connections-004273
+(config-rtr)# default snmp context <string> user <string> <cr>    # observed_connections-004272
+(config-rtr)# default split-horizon <cr>    # observed_connections-004043
+(config-rtr)# default statistics rib-timings <cr>    # observed_connections-004210
+(config-rtr)# default stub <cr>    # observed_connections-004095
+(config-rtr)# default table-map <cr>    # observed_connections-004065
+(config-rtr)# default timers <cr>    # observed_connections-004090
+(config-rtr)# default timers active-time <cr>    # observed_connections-004146
+(config-rtr)# default timers lsa arrival <cr>    # observed_connections-004182
+(config-rtr)# default timers lsa-arrival <cr>    # observed_connections-004104
+(config-rtr)# default timers lsa-group-pacing <cr>    # observed_connections-004096
+(config-rtr)# default timers lsa-interval <cr>    # observed_connections-004105
+(config-rtr)# default timers pacing flood <cr>    # observed_connections-004198
+(config-rtr)# default timers pacing lsa-group <cr>    # observed_connections-004194
+(config-rtr)# default timers pacing retransmission <cr>    # observed_connections-004201
+(config-rtr)# default timers throttle lsa <cr>    # observed_connections-004243
+(config-rtr)# default timers throttle spf <cr>    # observed_connections-004241
+(config-rtr)# default variance <cr>    # observed_connections-004128
+(config-rtr)# default-information originate <cr>    # observed_connections-004056
+(config-rtr)# default-metric <number:1..16777214> <cr>    # observed_connections-004069
+(config-rtr)# default-metric <number:1..4294967295> <number:0..4294967295> <number:0..255> <number:1..255> <number:1..65535> <cr>    # observed_connections-004280
+(config-rtr)# discard-route external <cr>    # observed_connections-004112
+(config-rtr)# distance <cr>    # observed_connections-004019
+(config-rtr)# distance <number:1..254> <prefix:dynamic> <cr>    # observed_connections-004302
+(config-rtr)# distance eigrp <number:1..255> <number:1..255> <cr>    # observed_connections-004222
+(config-rtr)# distance ospf <cr>    # observed_connections-004123
+(config-rtr)# distribute-list prefix-list <string> in <cr>    # observed_connections-004236
+(config-rtr)# distribute-list prefix-list <string> in <interface> <cr>    # observed_connections-004310
+(config-rtr)# distribute-list route-map <string> in <cr>    # observed_connections-004220
+(config-rtr)# distribute-list route-map <string> in <interface> <cr>    # observed_connections-004309
+(config-rtr)# domain-id type 0005 value <hex-string> <cr>    # observed_connections-004308
+(config-rtr)# eigrp graceful-restart <cr>    # observed_connections-004127
+(config-rtr)# eigrp upgrade-cli <string> <cr>    # observed_connections-004216
+(config-rtr)# event-log <cr>    # observed_connections-004029
+(config-rtr)# event-log-size <number:dynamic> <cr>    # observed_connections-004293
+(config-rtr)# event-logging <cr>    # observed_connections-004027
+(config-rtr)# exit <cr>    # observed_connections-004012
+(config-rtr)# graceful-restart <cr>    # observed_connections-004038
+(config-rtr)# graceful-restart helper <cr>    # observed_connections-004142
+(config-rtr)# ignore lsa mospf <cr>    # observed_connections-004180
+(config-rtr)# interface-id snmp-if-index <cr>    # observed_connections-004073
+(config-rtr)# kill-everyone <cr>    # observed_connections-004020
+(config-rtr)# limit retransmissions <cr>    # observed_connections-004133
+(config-rtr)# local-rib-criteria <cr>    # observed_connections-004037
+(config-rtr)# log-adjacency-changes <cr>    # observed_connections-004026
+(config-rtr)# log-event-type <cr>    # observed_connections-004031
+(config-rtr)# log-neighbor-changes <cr>    # observed_connections-004022
+(config-rtr)# log-neighbor-warnings <cr>    # observed_connections-004028
+(config-rtr)# max-lsa <number:1..4294967294> <cr>    # observed_connections-004134
+(config-rtr)# max-metric intra-area <number:1..16777214> <cr>    # observed_connections-004016
+(config-rtr)# max-metric router-lsa <cr>    # observed_connections-004081
+(config-rtr)# maximum-paths <cr>    # observed_connections-004023
+(config-rtr)# maximum-paths <number:dynamic> <cr>    # observed_connections-004289
+(config-rtr)# maximum-paths per-prefix-distribution <cr>    # observed_connections-004092
+(config-rtr)# metric maximum-hops <number:1..255> <cr>    # observed_connections-004155
+(config-rtr)# metric weights <number:0..8> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <number:0..255> <cr>    # observed_connections-004285
+(config-rtr)# neighbor <address> <interface> <cr>    # observed_connections-004299
+(config-rtr)# no address-family ipv6 vrf <string> <cr>    # observed_connections-004255
+(config-rtr)# no adjacency stagger <cr>    # observed_connections-004188
+(config-rtr)# no area <number:0..4294967295> <cr>    # observed_connections-004203
+(config-rtr)# no area <number:0..4294967295> authentication key-chain <cr>    # observed_connections-004258
+(config-rtr)# no area <number:0..4294967295> default-cost <cr>    # observed_connections-004224
+(config-rtr)# no area <number:0..4294967295> encryption ipsec spi <number:256..4294967295> <cr>    # observed_connections-004281
+(config-rtr)# no area <number:0..4294967295> filter-list prefix <string> in <cr>    # observed_connections-004283
+(config-rtr)# no area <number:0..4294967295> mpls <cr>    # observed_connections-004245
+(config-rtr)# no area <number:0..4294967295> no-transit <cr>    # observed_connections-004223
+(config-rtr)# no area <number:0..4294967295> normal <cr>    # observed_connections-004233
+(config-rtr)# no area <number:0..4294967295> nssa <cr>    # observed_connections-004246
+(config-rtr)# no area <number:0..4294967295> packet-size <cr>    # observed_connections-004225
+(config-rtr)# no area <number:0..4294967295> range <address> <address> <cr>    # observed_connections-004275
+(config-rtr)# no area <number:0..4294967295> sham-link <address> <address> <cr>    # observed_connections-004278
+(config-rtr)# no area <number:0..4294967295> stub <cr>    # observed_connections-004238
+(config-rtr)# no area <number:0..4294967295> virtual-link <address> <cr>    # observed_connections-004267
+(config-rtr)# no authentication mode strict <cr>    # observed_connections-004249
+(config-rtr)# no auto-cost <cr>    # observed_connections-004116
+(config-rtr)# no bfd all-interfaces <cr>    # observed_connections-004162
+(config-rtr)# no capability vrf-lite <cr>    # observed_connections-004207
+(config-rtr)# no compatible rfc1583 <cr>    # observed_connections-004150
+(config-rtr)# no compatible rfc1587 <cr>    # observed_connections-004153
+(config-rtr)# no compatible rfc5243 <cr>    # observed_connections-004159
+(config-rtr)# no context <cr>    # observed_connections-004040
+(config-rtr)# no default-information originate <cr>    # observed_connections-004147
+(config-rtr)# no default-metric <cr>    # observed_connections-004057
+(config-rtr)# no default-metric <cr>    # observed_connections-004131
+(config-rtr)# no discard-route external <cr>    # observed_connections-004193
+(config-rtr)# no distance <cr>    # observed_connections-004076
+(config-rtr)# no distance eigrp <cr>    # observed_connections-004149
+(config-rtr)# no distance ospf <cr>    # observed_connections-004189
+(config-rtr)# no distribute-list prefix-list <string> in <cr>    # observed_connections-004260
+(config-rtr)# no distribute-list route-map <string> in <cr>    # observed_connections-004254
+(config-rtr)# no domain-id <cr>    # observed_connections-004063
+(config-rtr)# no eigrp graceful-restart <cr>    # observed_connections-004205
+(config-rtr)# no eigrp upgrade-cli <string> <cr>    # observed_connections-004252
+(config-rtr)# no event-log <cr>    # observed_connections-004111
+(config-rtr)# no event-log-size <cr>    # observed_connections-004120
+(config-rtr)# no event-logging <cr>    # observed_connections-004107
+(config-rtr)# no graceful-restart <cr>    # observed_connections-004141
+(config-rtr)# no graceful-restart helper <cr>    # observed_connections-004218
+(config-rtr)# no ignore lsa mospf <cr>    # observed_connections-004234
+(config-rtr)# no interface-id snmp-if-index <cr>    # observed_connections-004157
+(config-rtr)# no kill-everyone <cr>    # observed_connections-004087
+(config-rtr)# no limit retransmissions <cr>    # observed_connections-004214
+(config-rtr)# no local-rib-criteria <cr>    # observed_connections-004138
+(config-rtr)# no log-adjacency-changes <cr>    # observed_connections-004102
+(config-rtr)# no log-event-type <cr>    # observed_connections-004110
+(config-rtr)# no log-neighbor-changes <cr>    # observed_connections-004094
+(config-rtr)# no log-neighbor-warnings <cr>    # observed_connections-004103
+(config-rtr)# no max-lsa <cr>    # observed_connections-004122
+(config-rtr)# no max-metric <cr>    # observed_connections-004051
+(config-rtr)# no max-metric intra-area <cr>    # observed_connections-004050
+(config-rtr)# no maximum-paths <cr>    # observed_connections-004058
+(config-rtr)# no maximum-paths <cr>    # observed_connections-004097
+(config-rtr)# no maximum-paths per-prefix-distribution <cr>    # observed_connections-004184
+(config-rtr)# no metric maximum-hops <cr>    # observed_connections-004154
+(config-rtr)# no metric weights <cr>    # observed_connections-004163
+(config-rtr)# no omp-route-tag <cr>    # observed_connections-004044
+(config-rtr)# no packet-size <cr>    # observed_connections-004033
+(config-rtr)# no passive-interface default <cr>    # observed_connections-004158
+(config-rtr)# no passive-interface default <cr>    # observed_connections-004176
+(config-rtr)# no poison-reverse <cr>    # observed_connections-004049
+(config-rtr)# no port <cr>    # observed_connections-004072
+(config-rtr)# no prefix-suppression <cr>    # observed_connections-004066
+(config-rtr)# no process-min-time percent <cr>    # observed_connections-004135
+(config-rtr)# no queue-depth hello <cr>    # observed_connections-004168
+(config-rtr)# no queue-depth update <cr>    # observed_connections-004174
+(config-rtr)# no redistribute maximum-prefix <cr>    # observed_connections-004183
+(config-rtr)# no redistribute maximum-prefix <cr>    # observed_connections-004208
+(config-rtr)# no router-id <cr>    # observed_connections-004041
+(config-rtr)# no router-id <cr>    # observed_connections-004082
+(config-rtr)# no shutdown <cr>    # observed_connections-004055
+(config-rtr)# no shutdown <cr>    # observed_connections-004137
+(config-rtr)# no snmp context <cr>    # observed_connections-004164
+(config-rtr)# no snmp context <string> community <string> <cr>    # observed_connections-004270
+(config-rtr)# no snmp context <string> user <string> <cr>    # observed_connections-004269
+(config-rtr)# no split-horizon <cr>    # observed_connections-004039
+(config-rtr)# no statistics rib-timings <cr>    # observed_connections-004206
+(config-rtr)# no stub <cr>    # observed_connections-004089
+(config-rtr)# no table-map <cr>    # observed_connections-004062
+(config-rtr)# no timers <cr>    # observed_connections-004083
+(config-rtr)# no timers active-time <cr>    # observed_connections-004144
+(config-rtr)# no timers lsa arrival <cr>    # observed_connections-004177
+(config-rtr)# no timers lsa-arrival <cr>    # observed_connections-004100
+(config-rtr)# no timers lsa-group-pacing <cr>    # observed_connections-004091
+(config-rtr)# no timers lsa-interval <cr>    # observed_connections-004101
+(config-rtr)# no timers pacing flood <cr>    # observed_connections-004195
+(config-rtr)# no timers pacing lsa-group <cr>    # observed_connections-004190
+(config-rtr)# no timers pacing retransmission <cr>    # observed_connections-004199
+(config-rtr)# no timers throttle lsa <cr>    # observed_connections-004242
+(config-rtr)# no timers throttle spf <cr>    # observed_connections-004239
+(config-rtr)# no variance <cr>    # observed_connections-004125
+(config-rtr)# omp-route-tag <cr>    # observed_connections-004014
+(config-rtr)# packet-size <number:576..10000> <cr>    # observed_connections-004011
+(config-rtr)# passive-interface <interface> <cr>    # observed_connections-004290
+(config-rtr)# passive-interface <interface> <cr>    # observed_connections-004291
+(config-rtr)# passive-interface default <cr>    # observed_connections-004074
+(config-rtr)# passive-interface default <cr>    # observed_connections-004085
+(config-rtr)# poison-reverse <cr>    # observed_connections-004015
+(config-rtr)# port <number:1..65535> multicast-group <address> <cr>    # observed_connections-004231
+(config-rtr)# prefix-suppression <cr>    # observed_connections-004018
+(config-rtr)# process-min-time percent <number:1..100> <cr>    # observed_connections-004035
+(config-rtr)# queue-depth hello unlimited <cr>    # observed_connections-004172
+(config-rtr)# queue-depth update unlimited <cr>    # observed_connections-004175
+(config-rtr)# redistribute <?ipv6_router_action@55558a9c4dc0> <cr>    # observed_connections-004295
+(config-rtr)# redistribute <?ipv6_router_action@55558aadef30> level-1 into level-1 distribute-list <string> <cr>    # observed_connections-004315
+(config-rtr)# redistribute <?ipv6_router_action@55558aae02c0> <cr>    # observed_connections-004292
+(config-rtr)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-004196
+(config-rtr)# redistribute maximum-prefix <number:1..4294967295> <cr>    # observed_connections-004217
+(config-rtr)# router-id <address> <cr>    # observed_connections-004042
+(config-rtr)# router-id <address> <cr>    # observed_connections-004084
+(config-rtr)# shutdown <cr>    # observed_connections-004017
+(config-rtr)# shutdown <cr>    # observed_connections-004036
+(config-rtr)# snmp context <cr>    # observed_connections-004078
+(config-rtr)# snmp context <string> community <string> <cr>    # observed_connections-004265
+(config-rtr)# snmp context <string> user <string> <cr>    # observed_connections-004264
+(config-rtr)# split-horizon <cr>    # observed_connections-004013
+(config-rtr)# statistics rib-timings <cr>    # observed_connections-004129
+(config-rtr)# stub <cr>    # observed_connections-004032
+(config-rtr)# summary-metric <prefix:dynamic> <cr>    # observed_connections-004286
+(config-rtr)# summary-prefix <prefix:dynamic> <cr>    # observed_connections-004287
+(config-rtr)# summary-prefix <prefix:dynamic> <cr>    # observed_connections-004288
+(config-rtr)# table-map <string> <cr>    # observed_connections-004070
+(config-rtr)# timers <number:5..65535> <number:1..65535> <number:0..65535> <number:1..65535> <cr>    # observed_connections-004262
+(config-rtr)# timers active-time disabled <cr>    # observed_connections-004145
+(config-rtr)# timers lsa arrival <number:0..600000> <cr>    # observed_connections-004086
+(config-rtr)# timers lsa-arrival <number:0..600> <cr>    # observed_connections-004024
+(config-rtr)# timers lsa-group-pacing <number:10..1800> <cr>    # observed_connections-004021
+(config-rtr)# timers lsa-interval <number:0..600> <cr>    # observed_connections-004025
+(config-rtr)# timers pacing flood <number:5..100> <cr>    # observed_connections-004113
+(config-rtr)# timers pacing lsa-group <number:10..1800> <cr>    # observed_connections-004106
+(config-rtr)# timers pacing retransmission <number:5..200> <cr>    # observed_connections-004118
+(config-rtr)# timers throttle lsa <number:0..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-004274
+(config-rtr)# timers throttle spf <number:1..600000> <number:1..600000> <number:1..600000> <cr>    # observed_connections-004271
+(config-rtr)# variance <number:1..128> <cr>    # observed_connections-004126

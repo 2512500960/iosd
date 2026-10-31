@@ -1,0 +1,7 @@
+# 模式 voice-service-h323；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(conf-serv-h323)# default h450 h450-2 timeout T1 <cr>    # static_slot_creation_candidates-004622
+(conf-serv-h323)# h450 h450-2 timeout T1 <number:500..60000> <cr>    # static_slot_creation_candidates-004621
+(conf-serv-h323)# no h450 h450-2 timeout T1 <cr>    # static_slot_creation_candidates-004620

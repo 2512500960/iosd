@@ -1,0 +1,19 @@
+# 模式 if-vnet；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-if-vnet)# default ip ospf adjacency-sid index <number:0..1048575> <cr>    # conditional_registration_candidates-011091
+(config-if-vnet)# default ip ospf affinity flex-algo <cr>    # conditional_registration_candidates-011082
+(config-if-vnet)# default ip ospf fast-reroute per-prefix candidate <cr>    # conditional_registration_candidates-011088
+(config-if-vnet)# default ip ospf fast-reroute per-prefix protection <cr>    # conditional_registration_candidates-011089
+(config-if-vnet)# default ip ospf prefix-attributes n-flag-clear <cr>    # conditional_registration_candidates-011080
+(config-if-vnet)# ip ospf adjacency-sid index <number:0..1048575> <cr>    # conditional_registration_candidates-011085
+(config-if-vnet)# ip ospf affinity flex-algo <cr>    # conditional_registration_candidates-011078
+(config-if-vnet)# ip ospf fast-reroute per-prefix candidate <cr>    # conditional_registration_candidates-011083
+(config-if-vnet)# ip ospf fast-reroute per-prefix protection <cr>    # conditional_registration_candidates-011084
+(config-if-vnet)# ip ospf prefix-attributes n-flag-clear <cr>    # conditional_registration_candidates-011077
+(config-if-vnet)# no ip ospf adjacency-sid index <number:0..1048575> <cr>    # conditional_registration_candidates-011090
+(config-if-vnet)# no ip ospf affinity flex-algo <cr>    # conditional_registration_candidates-011081
+(config-if-vnet)# no ip ospf fast-reroute per-prefix candidate <cr>    # conditional_registration_candidates-011086
+(config-if-vnet)# no ip ospf fast-reroute per-prefix protection <cr>    # conditional_registration_candidates-011087
+(config-if-vnet)# no ip ospf prefix-attributes n-flag-clear <cr>    # conditional_registration_candidates-011079

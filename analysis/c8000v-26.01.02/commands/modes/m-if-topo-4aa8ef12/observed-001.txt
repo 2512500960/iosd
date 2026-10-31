@@ -1,0 +1,29 @@
+# 模式 if-topo；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-if-topology)# default ip ospf cost <cr>    # observed_connections-008816
+(config-if-topology)# default ip ospf topology disable <cr>    # observed_connections-008834
+(config-if-topology)# default isis advertise prefix <cr>    # observed_connections-008829
+(config-if-topology)# default isis metric <cr>    # observed_connections-008822
+(config-if-topology)# default isis prefix-attributes n-flag-clear <cr>    # observed_connections-008832
+(config-if-topology)# default isis tag <number:1..4294967295> <cr>    # observed_connections-008825
+(config-if-topology)# default isis te-metric flex-algo <number:1..16777214> <cr>    # observed_connections-008836
+(config-if-topology)# default isis topology disable <cr>    # observed_connections-008828
+(config-if-topology)# exit-if-topo <cr>    # observed_connections-008812
+(config-if-topology)# ip ospf cost <number:1..65535> <cr>    # observed_connections-008813
+(config-if-topology)# ip ospf topology disable <cr>    # observed_connections-008824
+(config-if-topology)# isis advertise prefix <cr>    # observed_connections-008818
+(config-if-topology)# isis metric <number:1..16777214> <cr>    # observed_connections-008819
+(config-if-topology)# isis prefix-attributes n-flag-clear <cr>    # observed_connections-008821
+(config-if-topology)# isis tag <number:1..4294967295> <cr>    # observed_connections-008814
+(config-if-topology)# isis te-metric flex-algo <number:1..16777214> <cr>    # observed_connections-008830
+(config-if-topology)# isis topology disable <cr>    # observed_connections-008817
+(config-if-topology)# no ip ospf cost <cr>    # observed_connections-008815
+(config-if-topology)# no ip ospf topology disable <cr>    # observed_connections-008833
+(config-if-topology)# no isis advertise prefix <cr>    # observed_connections-008827
+(config-if-topology)# no isis metric <cr>    # observed_connections-008820
+(config-if-topology)# no isis prefix-attributes n-flag-clear <cr>    # observed_connections-008831
+(config-if-topology)# no isis tag <number:1..4294967295> <cr>    # observed_connections-008823
+(config-if-topology)# no isis te-metric flex-algo <number:1..16777214> <cr>    # observed_connections-008835
+(config-if-topology)# no isis topology disable <cr>    # observed_connections-008826

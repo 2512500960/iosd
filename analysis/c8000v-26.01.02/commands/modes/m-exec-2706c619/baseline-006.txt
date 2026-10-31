@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-006.md
+
+(exec)# debug hw-module all oir plugin <cr>    # path-008785
+(exec)# debug hw-module all oir redundancy <cr>    # path-008772
+(exec)# debug hw-module all oir state-machine <cr>    # path-008736
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all environment <cr>    # path-021449
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all errors <cr>    # path-021435
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all ipcshim <number:0..15> <number:0..255> <cr>    # path-024678
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir entity <cr>    # path-023717
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir error <cr>    # path-023718
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir failure <cr>    # path-023735
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir message <cr>    # path-023694
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir plugin <cr>    # path-023749
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir redundancy <cr>    # path-023736
+(exec)# debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir state-machine <cr>    # path-023693
+(exec)# debug icm all <cr>    # path-002368
+(exec)# debug idbgroup <cr>    # path-000471
+(exec)# debug identity <cr>    # path-000420
+(exec)# debug idmgr core <cr>    # path-003135
+(exec)# debug idmgr data <cr>    # path-003090
+(exec)# debug idmgr db <cr>    # path-003109
+(exec)# debug idmgr elog <cr>    # path-003169
+(exec)# debug idmgr flow local <cr>    # path-007167
+(exec)# debug if-mgr errors acp <cr>    # path-004765
+(exec)# debug if-mgr errors all <cr>    # path-004724
+(exec)# debug if-mgr errors caim <cr>    # path-004977
+(exec)# debug if-mgr errors client <cr>    # path-004813
+(exec)# debug if-mgr errors db <cr>    # path-004747
+(exec)# debug if-mgr errors driver <cr>    # path-004782
+(exec)# debug if-mgr errors efp-ext <cr>    # path-005035
+(exec)# debug if-mgr errors enet-ext <cr>    # path-004844
+(exec)# debug if-mgr errors event <cr>    # path-004941
+(exec)# debug if-mgr errors extension <cr>    # path-004796
+(exec)# debug if-mgr errors ifIndex <cr>    # path-004828
+(exec)# debug if-mgr errors legacy <cr>    # path-005077
+(exec)# debug if-mgr errors otn-ext <cr>    # path-005017
+(exec)# debug if-mgr errors port-channel-ext <cr>    # path-004880
+(exec)# debug if-mgr errors sig <cr>    # path-004905
+(exec)# debug if-mgr errors stack <cr>    # path-004926
+(exec)# debug if-mgr errors table-db <cr>    # path-004962
+(exec)# debug if-mgr errors tunnel-ext <cr>    # path-005000
+(exec)# debug if-mgr errors vlan-ext <cr>    # path-004858
+(exec)# debug if-mgr trace acp <cr>    # path-004750
+(exec)# debug if-mgr trace all <cr>    # path-004705
+(exec)# debug if-mgr trace caim <cr>    # path-004963
+(exec)# debug if-mgr trace client <cr>    # path-004797
+(exec)# debug if-mgr trace db <cr>    # path-004730
+(exec)# debug if-mgr trace driver <cr>    # path-004766
+(exec)# debug if-mgr trace efp-ext <cr>    # path-005018
+(exec)# debug if-mgr trace enet-ext <cr>    # path-004829
+(exec)# debug if-mgr trace event <cr>    # path-004927
+(exec)# debug if-mgr trace extension <cr>    # path-004783
+(exec)# debug if-mgr trace ifIndex <cr>    # path-004814
+(exec)# debug if-mgr trace legacy <cr>    # path-005082
+(exec)# debug if-mgr trace legacy pkts <cr>    # path-008719
+(exec)# debug if-mgr trace otn-ext <cr>    # path-005001
+(exec)# debug if-mgr trace port-channel-ext <cr>    # path-004859
+(exec)# debug if-mgr trace sig <cr>    # path-004881
+(exec)# debug if-mgr trace stack <cr>    # path-004906
+(exec)# debug if-mgr trace table-db <cr>    # path-004942
+(exec)# debug if-mgr trace tunnel-ext <cr>    # path-004978
+(exec)# debug if-mgr trace vlan-ext <cr>    # path-004845
+(exec)# debug ifs agent <cr>    # path-003581
+(exec)# debug ifs agent detail <cr>    # path-007501
+(exec)# debug ifs file <cr>    # path-003552
+(exec)# debug ifs fs <cr>    # path-003541
+(exec)# debug ifs image <cr>    # path-003588
+(exec)# debug ifs rfs <cr>    # path-003578
+(exec)# debug ifs verbose <cr>    # path-003560
+(exec)# debug ilpower ILP <cr>    # path-001264
+(exec)# debug ilpower cdp <cr>    # path-001237
+(exec)# debug ilpower controller <cr>    # path-001211
+(exec)# debug ilpower event <cr>    # path-001226
+(exec)# debug ilpower ha <cr>    # path-001265
+(exec)# debug ilpower ipc <cr>    # path-001341
+(exec)# debug ilpower police <cr>    # path-001318
+(exec)# debug ilpower port <cr>    # path-001178
+(exec)# debug ilpower powerman <cr>    # path-001294
+(exec)# debug ilpower registries <cr>    # path-001163
+(exec)# debug ilpower scp <cr>    # path-001195
+(exec)# debug ilpower sense <cr>    # path-001325
+(exec)# debug ilpower upoe <cr>    # path-001352
+(exec)# debug inform_feature_msg <cr>    # path-000099
+(exec)# debug interface <interface> <cr>    # path-012733
+(exec)# debug interface <interface> vc <?number_func_nows_action@5555896bf580> <number:dynamic> <cr>    # path-025408
+(exec)# debug interface <interface> vc all <cr>    # path-020200
+(exec)# debug interface counters exceptions <cr>    # path-007529
+(exec)# debug interface counters protocol memory <cr>    # path-010230
+(exec)# debug interface management etherchannel <cr>    # path-007533
+(exec)# debug interface management iif <cr>    # path-007559
+(exec)# debug interface management private-vlan <cr>    # path-007545
+(exec)# debug interface management provision <cr>    # path-007567
+(exec)# debug interface management snmp <cr>    # path-007539
+(exec)# debug interface management switchport layer-2 <cr>    # path-010239
+(exec)# debug interface management switchport layer-3 <cr>    # path-010244
+(exec)# debug interface management vlan <cr>    # path-007552
+(exec)# debug interface states <cr>    # path-003604
+(exec)# debug interface subif-deleted <cr>    # path-003611
+(exec)# debug iosp-server <cr>    # path-000404
+(exec)# debug ip access-list compiled <cr>    # path-005546
+(exec)# debug ip access-list compiled context deletions <cr>    # path-011071
+(exec)# debug ip access-list compiled reuse all <cr>    # path-011075
+(exec)# debug ip access-list compiled reuse backpointers <cr>    # path-011068
+(exec)# debug ip access-list compiled reuse eligibility all <cr>    # path-011784
+(exec)# debug ip access-list compiled reuse eligibility frees <cr>    # path-011796
+(exec)# debug ip access-list compiled reuse eligibility lost <cr>    # path-011792
+(exec)# debug ip access-list compiled reuse eligibility missing <cr>    # path-011787
+(exec)# debug ip access-list compiled reuse memory failures all <cr>    # path-012026
+(exec)# debug ip access-list compiled reuse memory failures back-pointer <cr>    # path-012027
+(exec)# debug ip access-list compiled reuse memory failures deferred entry <cr>    # path-012121
+(exec)# debug ip access-list compiled reuse memory failures deferred row <cr>    # path-012119
+(exec)# debug ip access-list compiled reuse selection all <cr>    # path-011790
+(exec)# debug ip access-list compiled reuse selection errors <cr>    # path-011801
+(exec)# debug ip access-list compiled reuse selection rows <cr>    # path-011798
+(exec)# debug ip access-list compiled reuse selection throttling <cr>    # path-011794
+(exec)# debug ip access-list compiled reuse unallocated <cr>    # path-011062
+(exec)# debug ip access-list compiled update all <cr>    # path-011066
+(exec)# debug ip access-list compiled update compilations <cr>    # path-011078
+(exec)# debug ip access-list compiled update entries all <cr>    # path-011789
+(exec)# debug ip access-list compiled update entries available <cr>    # path-011797
+(exec)# debug ip access-list compiled update entries unavailable <cr>    # path-011793
+(exec)# debug ip access-list compiled update instance <cr>    # path-011073
+(exec)# debug ip access-list compiled update rows all <cr>    # path-011786
+(exec)# debug ip access-list compiled update rows available <cr>    # path-011804
+(exec)# debug ip access-list compiled update rows discard <cr>    # path-011802
+(exec)# debug ip access-list compiled update rows ignored <cr>    # path-011799
+(exec)# debug ip access-list compiled update rows requeue <cr>    # path-011795
+(exec)# debug ip access-list compiled update rows unavailable <cr>    # path-011791
+(exec)# debug ip access-list dynamic <cr>    # path-005458
+(exec)# debug ip access-list fqdn all <cr>    # path-009029
+(exec)# debug ip access-list fqdn errors <cr>    # path-009038
+(exec)# debug ip access-list fqdn events <cr>    # path-009043
+(exec)# debug ip access-list fqdn verbose <cr>    # path-009050
+(exec)# debug ip access-list hash-generation <cr>    # path-005433
+(exec)# debug ip access-list internal <cr>    # path-005459
+(exec)# debug ip access-list intstats <cr>    # path-005477
+(exec)# debug ip access-list ipc <cr>    # path-005470
+(exec)# debug ip access-list peruser <cr>    # path-005423
+(exec)# debug ip access-list template <cr>    # path-005512
+(exec)# debug ip access-list template CRC <cr>    # path-009070
+(exec)# debug ip address <cr>    # path-001518
+(exec)# debug ip admission all <cr>    # path-005612
+(exec)# debug ip amt gateway event <cr>    # path-009116
+(exec)# debug ip amt gateway packet <cr>    # path-009119
+(exec)# debug ip amt relay event <cr>    # path-009110
+(exec)# debug ip amt relay packet <cr>    # path-009112
+(exec)# debug ip bgp <address> updates <cr>    # path-009275
+(exec)# debug ip bgp <cr>    # path-002061
+(exec)# debug ip bgp <cr>    # path-002168
+(exec)# debug ip bgp <cr>    # path-002217
+(exec)# debug ip bgp addpath <cr>    # path-005580
+(exec)# debug ip bgp autordrt <cr>    # path-005558
+(exec)# debug ip bgp csc <cr>    # path-005974
+(exec)# debug ip bgp dampening <cr>    # path-005979
+(exec)# debug ip bgp dampening <cr>    # path-006049
+(exec)# debug ip bgp diversepath <cr>    # path-005561
+(exec)# debug ip bgp events <cr>    # path-006051
+(exec)# debug ip bgp events api <cr>    # path-009206
+(exec)# debug ip bgp events crimson emulation address-family route <cr>    # path-012038
+(exec)# debug ip bgp events crimson emulation address-family summary <cr>    # path-012036
+(exec)# debug ip bgp events crimson emulation neighbor <cr>    # path-011836
+(exec)# debug ip bgp events encap <cr>    # path-009236
+(exec)# debug ip bgp events nexthop <cr>    # path-009198
+(exec)# debug ip bgp events overlay <cr>    # path-009252
+(exec)# debug ip bgp events rpki <cr>    # path-009266
+(exec)# debug ip bgp events rpki detail <cr>    # path-011129
+(exec)# debug ip bgp events update-source <cr>    # path-009220
+(exec)# debug ip bgp events va <cr>    # path-009213
+(exec)# debug ip bgp evi <cr>    # path-005752
+(exec)# debug ip bgp evi context <cr>    # path-009150
+(exec)# debug ip bgp gr <cr>    # path-005827
+(exec)# debug ip bgp groups <cr>    # path-005977
+(exec)# debug ip bgp igp-metric ignore <cr>    # path-014215
+(exec)# debug ip bgp import events <cr>    # path-009155
+(exec)# debug ip bgp import updates <cr>    # path-009182
+(exec)# debug ip bgp internal <cr>    # path-005826
+(exec)# debug ip bgp iosp <cr>    # path-005575
+(exec)# debug ip bgp keepalives <cr>    # path-005685
+(exec)# debug ip bgp labelmode <cr>    # path-005997
+(exec)# debug ip bgp mpls <cr>    # path-005874
+(exec)# debug ip bgp nhrp <cr>    # path-005627
+(exec)# debug ip bgp nve <cr>    # path-005751
+(exec)# debug ip bgp range <cr>    # path-005738
+(exec)# debug ip bgp range indepth <cr>    # path-009137
+(exec)# debug ip bgp rib-filter <cr>    # path-005852
+(exec)# debug ip bgp sso events <cr>    # path-009247
+(exec)# debug ip bgp sso scale <cr>    # path-009255
+(exec)# debug ip bgp sso transactions <cr>    # path-009265
+(exec)# debug ip bgp topology * <cr>    # path-018012
+(exec)# debug ip bgp topology <string> <cr>    # path-009100
+(exec)# debug ip bgp trace <number:1..65535> <cr>    # path-009125
+(exec)# debug ip bgp updates <cr>    # path-005954
+(exec)# debug ip bgp updates <cr>    # path-006177
+(exec)# debug ip bgp updates events <cr>    # path-009177
+(exec)# debug ip bgp updates events <cr>    # path-009282
+(exec)# debug ip cache <cr>    # path-001729
+(exec)# debug ip casa affinities <cr>    # path-006034
+(exec)# debug ip casa errors <cr>    # path-006110
+(exec)# debug ip casa interest-timeouts <cr>    # path-006156
+(exec)# debug ip casa packets <cr>    # path-006087
+(exec)# debug ip casa plevel <cr>    # path-006137
+(exec)# debug ip casa wildcards <cr>    # path-006060
+(exec)# debug ip cca <cr>    # path-001533
+(exec)# debug ip cgmp <cr>    # path-001780
+(exec)# debug ip ddns update <cr>    # path-006103
+(exec)# debug ip dfp agent <cr>    # path-006009
+(exec)# debug ip dhcp server binding-store <cr>    # path-009536
+(exec)# debug ip dhcp server class <cr>    # path-009469
+(exec)# debug ip dhcp server events <cr>    # path-009403
+(exec)# debug ip dhcp server linkage <cr>    # path-009446
+(exec)# debug ip dhcp server packet <cr>    # path-009456
+(exec)# debug ip dhcp server packet detail <cr>    # path-011223
+(exec)# debug ip dhcp server redundancy <cr>    # path-009518
+(exec)# debug ip dhcp server snmp <cr>    # path-009512
+(exec)# debug ip dhcp sip all <cr>    # path-009534
+(exec)# debug ip dhcp sip api <cr>    # path-009509
+(exec)# debug ip dhcp sip error <cr>    # path-009464
+(exec)# debug ip dhcp sip event <cr>    # path-009440
+(exec)# debug ip dhcp sip redundancy <cr>    # path-009489
+(exec)# debug ip dhcp snooping <address> <cr>    # path-009491
+(exec)# debug ip dhcp snooping agent <cr>    # path-009468
+(exec)# debug ip dhcp snooping event <cr>    # path-009421
+(exec)# debug ip dhcp snooping packet <cr>    # path-009444
+(exec)# debug ip dns name-list <cr>    # path-005691
+(exec)# debug ip dns view <cr>    # path-005711
+(exec)# debug ip dns view-list <cr>    # path-005745
+(exec)# debug ip domain <cr>    # path-002010
+(exec)# debug ip domain <number:0..6> <cr>    # path-014326
+(exec)# debug ip drp <cr>    # path-001658
+(exec)# debug ip eigrp <cr>    # path-002145
+(exec)# debug ip elog <cr>    # path-001572
+(exec)# debug ip error <cr>    # path-001511
+(exec)# debug ip forwarding accounting non-recursive <cr>    # path-009486
+(exec)# debug ip forwarding drops <cr>    # path-006588
+(exec)# debug ip forwarding drops rpf <cr>    # path-009538
+(exec)# debug ip forwarding events <cr>    # path-006351
+(exec)# debug ip forwarding ipc <cr>    # path-006241
+(exec)# debug ip forwarding local <cr>    # path-006387
+(exec)# debug ip forwarding packet <cr>    # path-006586
+(exec)# debug ip forwarding packet <interface> <cr>    # path-019184
+(exec)# debug ip forwarding receive <cr>    # path-006430
+(exec)# debug ip forwarding redirect <cr>    # path-006422
+(exec)# debug ip forwarding subblock <cr>    # path-006297
+(exec)# debug ip ftp <cr>    # path-001890
+(exec)# debug ip html forms <cr>    # path-005709
+(exec)# debug ip html pages <cr>    # path-005726
+(exec)# debug ip html ssi <cr>    # path-005744
+(exec)# debug ip html tokens <cr>    # path-005763
+(exec)# debug ip http all <cr>    # path-005768
+(exec)# debug ip http appdetail <cr>    # path-005851
+(exec)# debug ip http appinout <cr>    # path-005825
+(exec)# debug ip http authentication <cr>    # path-005586
+(exec)# debug ip http client all <cr>    # path-009246
+(exec)# debug ip http client api <cr>    # path-009174
+(exec)# debug ip http client cache <cr>    # path-009189
+(exec)# debug ip http client error <cr>    # path-009199
+(exec)# debug ip http client main <cr>    # path-009221
+(exec)# debug ip http client msg <cr>    # path-009214
+(exec)# debug ip http client socket <cr>    # path-009237
+(exec)# debug ip http error <cr>    # path-005732
+(exec)# debug ip http ezsetup <cr>    # path-005617
+(exec)# debug ip http session <cr>    # path-005665
+(exec)# debug ip http ssi <cr>    # path-005717
+(exec)# debug ip http ssl error <cr>    # path-009154
+(exec)# debug ip http tokens <cr>    # path-005641
+(exec)# debug ip http tps error <cr>    # path-009231
+(exec)# debug ip http tps trace <cr>    # path-009243
+(exec)# debug ip http transactions <cr>    # path-005682
+(exec)# debug ip http url <cr>    # path-005698
+(exec)# debug ip http wsman <cr>    # path-005948
+(exec)# debug ip icmp <cr>    # path-001441
+(exec)# debug ip igmp <cr>    # path-001818
+(exec)# debug ip igmp filter <cr>    # path-005556
+(exec)# debug ip igmp snooping <address> <cr>    # path-009126
+(exec)# debug ip igmp snooping <cr>    # path-005705
+(exec)# debug ip igmp snooping filter <cr>    # path-009120
+(exec)# debug ip igmp snooping group <cr>    # path-009098
+(exec)# debug ip igmp snooping management <cr>    # path-009111
+(exec)# debug ip igmp snooping querier <cr>    # path-009138
+(exec)# debug ip igmp snooping redundancy <cr>    # path-009132
+(exec)# debug ip igmp snooping router <cr>    # path-009107
+(exec)# debug ip igmp snooping timer <cr>    # path-009118
+(exec)# debug ip igmp timer <cr>    # path-005543
+(exec)# debug ip interface route-cache <cr>    # path-005388
+(exec)# debug ip mcache <cr>    # path-001830
+(exec)# debug ip mfib init <cr>    # path-006012
+(exec)# debug ip mfib vrf <?option@55558ab07890> pak <cr>    # path-022265
+(exec)# debug ip mhbeat <cr>    # path-001839
+(exec)# debug ip mib <cr>    # path-001551
+(exec)# debug ip mpacket <cr>    # path-001896
+(exec)# debug ip mpacket fastswitch <cr>    # path-005600
+(exec)# debug ip mrib bundle <cr>    # path-006319
+(exec)# debug ip mrib client <cr>    # path-006161
+(exec)# debug ip mrib filter <cr>    # path-006256
+(exec)# debug ip mrib io <cr>    # path-006221
+(exec)# debug ip mrib issu <cr>    # path-006141
+(exec)# debug ip mrib malloc <cr>    # path-006347
+(exec)# debug ip mrib proxy <cr>    # path-006090
+(exec)# debug ip mrib route <address> <cr>    # path-009333
+(exec)# debug ip mrib route <cr>    # path-006172
+(exec)# debug ip mrib table <cr>    # path-006197
+(exec)# debug ip mrib test <cr>    # path-006115
+(exec)# debug ip mrib timer <cr>    # path-006292
+(exec)# debug ip mrib trans <address> <cr>    # path-009319
+(exec)# debug ip mrib trans <cr>    # path-006146
+(exec)# debug ip mrm events <cr>    # path-005780
+(exec)# debug ip mrm packets <cr>    # path-005812
+(exec)# debug ip mrouting <address> <cr>    # path-014235
+(exec)# debug ip mrouting <cr>    # path-001857
+(exec)# debug ip mrouting limits <cr>    # path-005578
+(exec)# debug ip mrouting rpf-events <cr>    # path-005542
+(exec)# debug ip mrouting rsvp <cr>    # path-005577
+(exec)# debug ip mrouting timers <cr>    # path-005599
+(exec)# debug ip msdp detail <cr>    # path-005572
+(exec)# debug ip msdp peer <cr>    # path-005555
+(exec)# debug ip msdp resets <cr>    # path-005536
+(exec)# debug ip msdp routes <cr>    # path-005596
+(exec)# debug ip mtrie leaf add <cr>    # path-009424
+(exec)# debug ip mtrie leaf bucket-walk <cr>    # path-009402
+(exec)# debug ip mtrie leaf lock <cr>    # path-009445
+(exec)# debug ip multicast bt <cr>    # path-005535
+(exec)# debug ip multicast gir <cr>    # path-005649
+(exec)# debug ip multicast redundancy <cr>    # path-005720
+(exec)# debug ip multicast redundancy verbose <cr>    # path-009136
+(exec)# debug ip multicast rpf tracked <cr>    # path-009083
+(exec)# debug ip multicast topology <cr>    # path-005595
+(exec)# debug ip multicast trace-point <address> <cr>    # path-018161
+(exec)# debug ip multicast trace-point <cr>    # path-005602
+(exec)# debug ip nat <cr>    # path-002312
+(exec)# debug ip nat <cr>    # path-002366
+(exec)# debug ip nat alg <cr>    # path-006068
+(exec)# debug ip nat bind <cr>    # path-006383
+(exec)# debug ip nat detailed <cr>    # path-006223
+(exec)# debug ip nat drop <cr>    # path-006076
+(exec)# debug ip nat h323 <cr>    # path-006222
+(exec)# debug ip nat ha <cr>    # path-005952
+(exec)# debug ip nat ha event <cr>    # path-009216
+(exec)# debug ip nat ha issu <cr>    # path-009233
+(exec)# debug ip nat ha-sso detail <cr>    # path-009407
+(exec)# debug ip nat ha-sso error <cr>    # path-009425
+(exec)# debug ip nat ipsec <cr>    # path-006092
+(exec)# debug ip nat limit <cr>    # path-006487
+(exec)# debug ip nat mapping <cr>    # path-006415
+(exec)# debug ip nat pap <cr>    # path-006022
+(exec)# debug ip nat pool <cr>    # path-006294
+(exec)# debug ip nat port <cr>    # path-005943
+(exec)# debug ip nat pptp <cr>    # path-005995
+(exec)# debug ip nat route <cr>    # path-006069
+(exec)# debug ip nat route-map <cr>    # path-006384
+(exec)# debug ip nat session <cr>    # path-006321
+(exec)# debug ip nat sg <cr>    # path-006166
+(exec)# debug ip nat sip <cr>    # path-006295
+(exec)# debug ip nat skinny <cr>    # path-006258
+(exec)# debug ip nat timeout <cr>    # path-006488
+(exec)# debug ip nat vrf <cr>    # path-006167
+(exec)# debug ip nat wlan-nat <cr>    # path-006538
+(exec)# debug ip nat-route all <cr>    # path-005806
+(exec)# debug ip nbar control-plane low <cr>    # path-009105
+(exec)# debug ip omp adjacency <cr>    # path-005914
+(exec)# debug ip omp all <cr>    # path-005971
+(exec)# debug ip omp forwarding <cr>    # path-005844
+(exec)# debug ip omp gw-tracking <cr>    # path-005975
+(exec)# debug ip omp gw-tracking detail <cr>    # path-009240
+(exec)# debug ip omp multi-tenant <cr>    # path-005820
+(exec)# debug ip omp multicast <cr>    # path-005894
+(exec)# debug ip omp network <cr>    # path-005787
+(exec)# debug ip omp redistribute <cr>    # path-005794
+(exec)# debug ip omp redistribute detail <cr>    # path-009166
+(exec)# debug ip omp routes <cr>    # path-005769
+(exec)# debug ip omp routes detail <cr>    # path-009152
+(exec)# debug ip omp rwatch <cr>    # path-005871
+(exec)# debug ip ospf adj <cr>    # path-005761
+(exec)# debug ip ospf capability advertisements <cr>    # path-009335
+(exec)# debug ip ospf crimson notification <cr>    # path-009188
+(exec)# debug ip ospf crimson oper <cr>    # path-009194
+(exec)# debug ip ospf database-timer <cr>    # path-006123
+(exec)# debug ip ospf database-timer rate-limit <cr>    # path-009346
+(exec)# debug ip ospf demand-circuit <cr>    # path-005947
+(exec)# debug ip ospf events <cr>    # path-005972
+(exec)# debug ip ospf fast-reroute rib <cr>    # path-009495
+(exec)# debug ip ospf fast-reroute spf <cr>    # path-009455
+(exec)# debug ip ospf fast-reroute ti-lfa rib <cr>    # path-011283
+(exec)# debug ip ospf fast-reroute ti-lfa spf <cr>    # path-011284
+(exec)# debug ip ospf flex-algo <cr>    # path-006523
+(exec)# debug ip ospf flood <cr>    # path-006079
+(exec)# debug ip ospf ha <cr>    # path-005920
+(exec)# debug ip ospf hello <cr>    # path-005915
+(exec)# debug ip ospf lsa-generation <cr>    # path-006229
+(exec)# debug ip ospf lsa-maxage <cr>    # path-006266
+(exec)# debug ip ospf monitor <cr>    # path-006099
+(exec)# debug ip ospf mpls traffic-eng <cr>    # path-009363
+(exec)# debug ip ospf mpls traffic-eng advertisements <cr>    # path-011189
+(exec)# debug ip ospf mpls traffic-eng signaling <cr>    # path-011167
+(exec)# debug ip ospf nsf <cr>    # path-005897
+(exec)# debug ip ospf nsr <cr>    # path-005875
+(exec)# debug ip ospf packet <cr>    # path-006077
+(exec)# debug ip ospf performance-measurement <cr>    # path-006460
+(exec)# debug ip ospf rib <cr>    # path-006465
+(exec)# debug ip ospf rib <cr>    # path-006496
+(exec)# debug ip ospf rib <cr>    # path-006524
+(exec)# debug ip ospf rib <cr>    # path-006525
+(exec)# debug ip ospf scheduler hello <cr>    # path-009434

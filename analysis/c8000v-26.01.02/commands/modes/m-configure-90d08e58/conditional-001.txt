@@ -1,0 +1,274 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config)# aaa session-mib disconnect <cr>    # conditional_registration_candidates-000292
+(config)# aaa session-mib populate start <cr>    # conditional_registration_candidates-000698
+(config)# access-list <number:300..399> deny <address> <address> <cr>    # conditional_registration_candidates-003955
+(config)# access-list <number:300..399> deny <address> <address> neq <cr>    # conditional_registration_candidates-009334
+(config)# appfw policy-name <string> <cr>    # conditional_registration_candidates-000224
+(config)# appletalk alternate-addressing <cr>    # conditional_registration_candidates-000156
+(config)# appletalk arp interval <number:33..4294967295> <cr>    # conditional_registration_candidates-001751
+(config)# appletalk checksum <cr>    # conditional_registration_candidates-000147
+(config)# appletalk event-logging <cr>    # conditional_registration_candidates-000077
+(config)# appletalk event-logging interface <interface> <cr>    # conditional_registration_candidates-009105
+(config)# appletalk ignore-verify-errors <cr>    # conditional_registration_candidates-000149
+(config)# appletalk local-routing <cr>    # conditional_registration_candidates-000152
+(config)# appletalk lookup-type <string> <cr>    # conditional_registration_candidates-000498
+(config)# appletalk maximum-paths <number:1..16> <cr>    # conditional_registration_candidates-000222
+(config)# appletalk name-lookup-interval <number:0..4294967295> <cr>    # conditional_registration_candidates-000033
+(config)# appletalk permit-partial-zones <cr>    # conditional_registration_candidates-000155
+(config)# appletalk proxy-nbp <number:1..65279> <string> <cr>    # conditional_registration_candidates-001742
+(config)# appletalk require-route-zones <cr>    # conditional_registration_candidates-000159
+(config)# appletalk route-redistribution <cr>    # conditional_registration_candidates-000076
+(config)# appletalk routing <cr>    # conditional_registration_candidates-000054
+(config)# appletalk rtmp jitter <number:0..100> <cr>    # conditional_registration_candidates-001712
+(config)# appletalk rtmp-bandwidth <number:0..4294967295> <cr>    # conditional_registration_candidates-000263
+(config)# appletalk static cable-range <number:0..65279> - <number:0..65279> to <address> <cr>    # conditional_registration_candidates-009466
+(config)# appletalk static network <number:1..65279> to <address> zone <string> <cr>    # conditional_registration_candidates-008126
+(config)# appletalk strict-rtmp-checking <cr>    # conditional_registration_candidates-000157
+(config)# appletalk testtool-compatible <cr>    # conditional_registration_candidates-000150
+(config)# appletalk timers <number:0..4294967295> <number:0..4294967295> <number:0..4294967295> <cr>    # conditional_registration_candidates-004007
+(config)# appletalk virtual-net <number:1..65279> <string> <cr>    # conditional_registration_candidates-000663
+(config)# appletalk zip-query-interval <number:1..4294967295> <cr>    # conditional_registration_candidates-000487
+(config)# application <cr>    # conditional_registration_candidates-000003
+(config)# aqm-register-fnf <cr>    # conditional_registration_candidates-000001
+(config)# call accounting-template voice <string> <string> <cr>    # conditional_registration_candidates-003898
+(config)# call-manager-fallback <cr>    # conditional_registration_candidates-000042
+(config)# capf-server <cr>    # conditional_registration_candidates-000005
+(config)# cc-mode <cr>    # conditional_registration_candidates-000040
+(config)# ccm-manager music-on-hold <cr>    # conditional_registration_candidates-000164
+(config)# ccm-manager music-on-hold bind <interface> <cr>    # conditional_registration_candidates-009129
+(config)# cns inventory <cr>    # conditional_registration_candidates-009093
+(config)# codec profile <number:1..1000000> <cr>    # conditional_registration_candidates-009098
+(config)# codec profile aacld <cr>    # conditional_registration_candidates-000505
+(config)# control-plane host <cr>    # conditional_registration_candidates-000153
+(config)# credentials <cr>    # conditional_registration_candidates-000038
+(config)# crypto call admission limit all in-negotiation-sa <number:10..99999> <cr>    # conditional_registration_candidates-006555
+(config)# crypto call admission limit ike in-negotiation-sa <number:10..99999> <cr>    # conditional_registration_candidates-006513
+(config)# crypto call admission limit ike sa <number:0..99999> <cr>    # conditional_registration_candidates-006478
+(config)# crypto call admission limit ipsec sa <number:0..99999> <cr>    # conditional_registration_candidates-006512
+(config)# crypto dynamic-map <string> <number:1..65535> <cr>    # conditional_registration_candidates-000943
+(config)# crypto identity <string> <cr>    # conditional_registration_candidates-000339
+(config)# crypto ikev2 authorization policy <cr>    # conditional_registration_candidates-000691
+(config)# crypto ikev2 keyring <string> <cr>    # conditional_registration_candidates-000747
+(config)# crypto ikev2 name-mangler <string> <cr>    # conditional_registration_candidates-000646
+(config)# crypto ikev2 ppk <string> <cr>    # conditional_registration_candidates-000826
+(config)# crypto ikev2 profile <string> <cr>    # conditional_registration_candidates-000791
+(config)# crypto ikev2 proposal <cr>    # conditional_registration_candidates-000321
+(config)# crypto ipsec df-bit copy <cr>    # conditional_registration_candidates-000974
+(config)# crypto ipsec exclude peer-list ipv4 <address> <cr>    # conditional_registration_candidates-004306
+(config)# crypto ipsec fragmentation after-encryption <cr>    # conditional_registration_candidates-000948
+(config)# crypto ipsec ike sa-strength-enforcement <cr>    # conditional_registration_candidates-001047
+(config)# crypto ipsec ipv4-deny drop <cr>    # conditional_registration_candidates-000997
+(config)# crypto ipsec nat-transparency spi-matching <cr>    # conditional_registration_candidates-000996
+(config)# crypto ipsec optional <cr>    # conditional_registration_candidates-000338
+(config)# crypto ipsec optional retry <number:60..86400> <cr>    # conditional_registration_candidates-002016
+(config)# crypto ipsec security-association dummy pps <number:0..25> <cr>    # conditional_registration_candidates-004664
+(config)# crypto ipsec security-association dummy pps <number:0..25> <cr>    # conditional_registration_candidates-004665
+(config)# crypto ipsec security-association ecn discard <cr>    # conditional_registration_candidates-002451
+(config)# crypto ipsec security-association ecn discard <cr>    # conditional_registration_candidates-002452
+(config)# crypto ipsec security-association idle-time <number:60..86400> <cr>    # conditional_registration_candidates-002296
+(config)# crypto ipsec security-association idle-time <number:60..86400> <cr>    # conditional_registration_candidates-002354
+(config)# crypto ipsec security-association lifetime seconds <number:120..2592000> <cr>    # conditional_registration_candidates-004550
+(config)# crypto ipsec security-association lifetime seconds <number:120..2592000> <cr>    # conditional_registration_candidates-004551
+(config)# crypto ipsec security-association multi-sn <cr>    # conditional_registration_candidates-001030
+(config)# crypto ipsec security-association replay disable <cr>    # conditional_registration_candidates-002228
+(config)# crypto ipsec security-association replay disable <cr>    # conditional_registration_candidates-002229
+(config)# crypto ipsec security-association replay window-size 64 <cr>    # conditional_registration_candidates-004668
+(config)# crypto ipsec security-association replay window-size 64 <cr>    # conditional_registration_candidates-004669
+(config)# crypto ipsec transform-set <cr>    # conditional_registration_candidates-000360
+(config)# crypto ipsec transform-set <string> ah-sha-hmac <cr>    # conditional_registration_candidates-009152
+(config)# crypto isakmp diagnose error <cr>    # conditional_registration_candidates-000823
+(config)# crypto isakmp enable <cr>    # conditional_registration_candidates-000322
+(config)# crypto isakmp key <?parser_passwd_action@55558be25ed0> <string> hostname <string> <cr>    # conditional_registration_candidates-009360
+(config)# crypto isakmp policy <number:1..10000> <cr>    # conditional_registration_candidates-000909
+(config)# crypto keyring <string> <cr>    # conditional_registration_candidates-000296
+(config)# crypto logging ezvpn <cr>    # conditional_registration_candidates-000319
+(config)# crypto logging session <cr>    # conditional_registration_candidates-000291
+(config)# crypto mib ipsec flowmib history failure size <number:2..200> <cr>    # conditional_registration_candidates-007836
+(config)# crypto mib ipsec flowmib history tunnel size <number:2..200> <cr>    # conditional_registration_candidates-007818
+(config)# crypto session stats history <number:0..5000> <cr>    # conditional_registration_candidates-002362
+(config)# crypto skip-client <string> <cr>    # conditional_registration_candidates-000288
+(config)# crypto ssl authorization policy <cr>    # conditional_registration_candidates-000692
+(config)# crypto ssl diagnose error <number:1..1000> <cr>    # conditional_registration_candidates-001940
+(config)# crypto ssl policy <cr>    # conditional_registration_candidates-000309
+(config)# crypto ssl profile <string> <cr>    # conditional_registration_candidates-000717
+(config)# crypto ssl proposal <string> <cr>    # conditional_registration_candidates-000667
+(config)# crypto tls-tunnel <string> <cr>    # conditional_registration_candidates-000287
+(config)# crypto vpn anyconnect <string> <cr>    # conditional_registration_candidates-000729
+(config)# crypto vpn anyconnect profile <string> <string> <cr>    # conditional_registration_candidates-004281
+(config)# crypto vpn csd <string> <cr>    # conditional_registration_candidates-000700
+(config)# crypto xauth <interface> <cr>    # conditional_registration_candidates-009096
+(config)# ctl-client <cr>    # conditional_registration_candidates-000006
+(config)# dapr default <cr>    # conditional_registration_candidates-000067
+(config)# decnet accounting transits <number:0..65536> <cr>    # conditional_registration_candidates-000749
+(config)# decnet area-max-cost <number:1..1022> <cr>    # conditional_registration_candidates-000009
+(config)# decnet area-max-hops <number:1..30> <cr>    # conditional_registration_candidates-000011
+(config)# decnet attach override <cr>    # conditional_registration_candidates-000434
+(config)# decnet cluster-alias update <cr>    # conditional_registration_candidates-000441
+(config)# decnet host <string> <address> <cr>    # conditional_registration_candidates-001521
+(config)# decnet max-address <number:1..1023> <cr>    # conditional_registration_candidates-000014
+(config)# decnet max-area <number:1..63> <cr>    # conditional_registration_candidates-000016
+(config)# decnet max-cost <number:1..1022> <cr>    # conditional_registration_candidates-000019
+(config)# decnet max-hops <number:1..30> <cr>    # conditional_registration_candidates-000021
+(config)# decnet max-paths <number:1..31> <cr>    # conditional_registration_candidates-000023
+(config)# decnet max-visits <number:1..63> <cr>    # conditional_registration_candidates-000025
+(config)# decnet node-type area <cr>    # conditional_registration_candidates-000325
+(config)# decnet path-split-mode normal <cr>    # conditional_registration_candidates-000345
+(config)# decnet propagate static <cr>    # conditional_registration_candidates-000447
+(config)# decnet route <address> discard <cr>    # conditional_registration_candidates-001662
+(config)# decnet route default discard <cr>    # conditional_registration_candidates-009125
+(config)# decnet routing <address> <cr>    # conditional_registration_candidates-000363
+(config)# default aaa session-mib disconnect <cr>    # conditional_registration_candidates-000678
+(config)# default aaa session-mib populate start <cr>    # conditional_registration_candidates-001926
+(config)# default access-list <number:300..399> <cr>    # conditional_registration_candidates-000465
+(config)# default appfw policy-name <string> <cr>    # conditional_registration_candidates-000594
+(config)# default appletalk alternate-addressing <cr>    # conditional_registration_candidates-000457
+(config)# default appletalk arp <cr>    # conditional_registration_candidates-000525
+(config)# default appletalk checksum <cr>    # conditional_registration_candidates-000429
+(config)# default appletalk event-logging <cr>    # conditional_registration_candidates-000259
+(config)# default appletalk ignore-verify-errors <cr>    # conditional_registration_candidates-000435
+(config)# default appletalk local-routing <cr>    # conditional_registration_candidates-000448
+(config)# default appletalk lookup-type <string> <cr>    # conditional_registration_candidates-001743
+(config)# default appletalk maximum-paths <number:1..16> <cr>    # conditional_registration_candidates-000588
+(config)# default appletalk name-lookup-interval <cr>    # conditional_registration_candidates-000162
+(config)# default appletalk permit-partial-zones <cr>    # conditional_registration_candidates-000454
+(config)# default appletalk proxy-nbp <number:1..65279> <cr>    # conditional_registration_candidates-001748
+(config)# default appletalk require-route-zones <cr>    # conditional_registration_candidates-000467
+(config)# default appletalk route-redistribution <cr>    # conditional_registration_candidates-000257
+(config)# default appletalk routing <cr>    # conditional_registration_candidates-000215
+(config)# default appletalk rtmp jitter <cr>    # conditional_registration_candidates-001717
+(config)# default appletalk rtmp-bandwidth <cr>    # conditional_registration_candidates-000267
+(config)# default appletalk static network <number:1..65279> to <address> <cr>    # conditional_registration_candidates-007194
+(config)# default appletalk strict-rtmp-checking <cr>    # conditional_registration_candidates-000463
+(config)# default appletalk testtool-compatible <cr>    # conditional_registration_candidates-000442
+(config)# default appletalk timers <cr>    # conditional_registration_candidates-000484
+(config)# default appletalk virtual-net <number:1..65279> <cr>    # conditional_registration_candidates-000671
+(config)# default appletalk zip-query-interval <cr>    # conditional_registration_candidates-000491
+(config)# default aqm-register-fnf <cr>    # conditional_registration_candidates-000047
+(config)# default call accounting-template voice <string> <cr>    # conditional_registration_candidates-003918
+(config)# default call-manager-fallback <cr>    # conditional_registration_candidates-000190
+(config)# default capf-server <cr>    # conditional_registration_candidates-000061
+(config)# default cc-mode <cr>    # conditional_registration_candidates-000184
+(config)# default ccm-manager music-on-hold <cr>    # conditional_registration_candidates-000477
+(config)# default codec profile <cr>    # conditional_registration_candidates-000508
+(config)# default control-plane host <cr>    # conditional_registration_candidates-000450
+(config)# default credentials <cr>    # conditional_registration_candidates-000179
+(config)# default crypto call admission limit all in-negotiation-sa <cr>    # conditional_registration_candidates-006561
+(config)# default crypto call admission limit ike in-negotiation-sa <cr>    # conditional_registration_candidates-006525
+(config)# default crypto call admission limit ike sa <cr>    # conditional_registration_candidates-006489
+(config)# default crypto call admission limit ipsec sa <cr>    # conditional_registration_candidates-006523
+(config)# default crypto dynamic-map <string> <cr>    # conditional_registration_candidates-001013
+(config)# default crypto identity <string> <cr>    # conditional_registration_candidates-000794
+(config)# default crypto ikev2 authorization policy <cr>    # conditional_registration_candidates-001923
+(config)# default crypto ikev2 keyring <string> <cr>    # conditional_registration_candidates-001979
+(config)# default crypto ikev2 name-mangler <string> <cr>    # conditional_registration_candidates-001902
+(config)# default crypto ikev2 ppk <string> <cr>    # conditional_registration_candidates-002100
+(config)# default crypto ikev2 profile <string> <cr>    # conditional_registration_candidates-002034
+(config)# default crypto ikev2 proposal <cr>    # conditional_registration_candidates-000730
+(config)# default crypto ipsec df-bit <cr>    # conditional_registration_candidates-000990
+(config)# default crypto ipsec exclude peer-list ipv4 <address> <cr>    # conditional_registration_candidates-006367
+(config)# default crypto ipsec fragmentation <cr>    # conditional_registration_candidates-000969
+(config)# default crypto ipsec ike sa-strength-enforcement <cr>    # conditional_registration_candidates-002539
+(config)# default crypto ipsec ipv4-deny <cr>    # conditional_registration_candidates-001012
+(config)# default crypto ipsec nat-transparency spi-matching <cr>    # conditional_registration_candidates-002423
+(config)# default crypto ipsec optional <cr>    # conditional_registration_candidates-000792
+(config)# default crypto ipsec optional retry <cr>    # conditional_registration_candidates-002033
+(config)# default crypto ipsec security-association dummy <cr>    # conditional_registration_candidates-002405
+(config)# default crypto ipsec security-association dummy <cr>    # conditional_registration_candidates-002406
+(config)# default crypto ipsec security-association ecn <cr>    # conditional_registration_candidates-002458
+(config)# default crypto ipsec security-association ecn <cr>    # conditional_registration_candidates-002459
+(config)# default crypto ipsec security-association idle-time <cr>    # conditional_registration_candidates-002300
+(config)# default crypto ipsec security-association idle-time <cr>    # conditional_registration_candidates-002359
+(config)# default crypto ipsec security-association lifetime seconds <cr>    # conditional_registration_candidates-004556
+(config)# default crypto ipsec security-association lifetime seconds <cr>    # conditional_registration_candidates-004557
+(config)# default crypto ipsec security-association multi-sn <cr>    # conditional_registration_candidates-002500
+(config)# default crypto ipsec security-association replay disable <cr>    # conditional_registration_candidates-004491
+(config)# default crypto ipsec security-association replay disable <cr>    # conditional_registration_candidates-004492
+(config)# default crypto ipsec security-association replay window-size <cr>    # conditional_registration_candidates-004674
+(config)# default crypto ipsec security-association replay window-size <cr>    # conditional_registration_candidates-004675
+(config)# default crypto ipsec transform-set <cr>    # conditional_registration_candidates-000936
+(config)# default crypto isakmp diagnose error <cr>    # conditional_registration_candidates-002095
+(config)# default crypto isakmp enable <cr>    # conditional_registration_candidates-000733
+(config)# default crypto isakmp identity <cr>    # conditional_registration_candidates-001026
+(config)# default crypto keyring <string> <cr>    # conditional_registration_candidates-000686
+(config)# default crypto logging ezvpn <cr>    # conditional_registration_candidates-000728
+(config)# default crypto logging session <cr>    # conditional_registration_candidates-000676
+(config)# default crypto map <string> <cr>    # conditional_registration_candidates-001101
+(config)# default crypto mib ipsec flowmib history failure size <cr>    # conditional_registration_candidates-007837
+(config)# default crypto mib ipsec flowmib history tunnel size <cr>    # conditional_registration_candidates-007821
+(config)# default crypto session stats history <number:0..5000> <cr>    # conditional_registration_candidates-004619
+(config)# default crypto skip-client <string> <cr>    # conditional_registration_candidates-000670
+(config)# default crypto ssl authorization policy <cr>    # conditional_registration_candidates-001924
+(config)# default crypto ssl diagnose error <cr>    # conditional_registration_candidates-001941
+(config)# default crypto ssl policy <cr>    # conditional_registration_candidates-000712
+(config)# default crypto ssl profile <string> <cr>    # conditional_registration_candidates-001933
+(config)# default crypto ssl proposal <string> <cr>    # conditional_registration_candidates-001916
+(config)# default crypto tls-tunnel <string> <cr>    # conditional_registration_candidates-000669
+(config)# default crypto vpn anyconnect <string> <cr>    # conditional_registration_candidates-001934
+(config)# default crypto vpn anyconnect profile <string> <cr>    # conditional_registration_candidates-004282
+(config)# default crypto vpn csd <cr>    # conditional_registration_candidates-000707
+(config)# default ctl-client <cr>    # conditional_registration_candidates-000062
+(config)# default dapr default <cr>    # conditional_registration_candidates-000245
+(config)# default decnet accounting transits <number:0..65536> <cr>    # conditional_registration_candidates-001988
+(config)# default decnet area-max-cost <cr>    # conditional_registration_candidates-000073
+(config)# default decnet area-max-hops <cr>    # conditional_registration_candidates-000080
+(config)# default decnet attach override <cr>    # conditional_registration_candidates-001522
+(config)# default decnet cluster-alias update <cr>    # conditional_registration_candidates-001553
+(config)# default decnet host <string> <cr>    # conditional_registration_candidates-001539
+(config)# default decnet max-address <cr>    # conditional_registration_candidates-000087
+(config)# default decnet max-area <cr>    # conditional_registration_candidates-000095
+(config)# default decnet max-cost <cr>    # conditional_registration_candidates-000101
+(config)# default decnet max-hops <cr>    # conditional_registration_candidates-000107
+(config)# default decnet max-paths <cr>    # conditional_registration_candidates-000112
+(config)# default decnet max-visits <cr>    # conditional_registration_candidates-000118
+(config)# default decnet node-type area <cr>    # conditional_registration_candidates-000745
+(config)# default decnet path-split-mode <cr>    # conditional_registration_candidates-000349
+(config)# default decnet propagate static <cr>    # conditional_registration_candidates-001582
+(config)# default decnet route <address> discard <cr>    # conditional_registration_candidates-003863
+(config)# default decnet routing <cr>    # conditional_registration_candidates-000356
+(config)# default dial-control-mib retain-timer <cr>    # conditional_registration_candidates-000049
+(config)# default dial-peer hunt <cr>    # conditional_registration_candidates-000516
+(config)# default dial-peer inbound selection creation-order <cr>    # conditional_registration_candidates-004152
+(config)# default dial-peer inbound selection sip-trunk <cr>    # conditional_registration_candidates-004144
+(config)# default dial-peer no-match disconnect-cause <cr>    # conditional_registration_candidates-001774
+(config)# default dial-peer no-match isdn disconnect-cause <cr>    # conditional_registration_candidates-004163
+(config)# default dial-peer outbound status-check pots <cr>    # conditional_registration_candidates-004143
+(config)# default dial-peer search type <cr>    # conditional_registration_candidates-001777
+(config)# default dial-peer terminator <cr>    # conditional_registration_candidates-000524
+(config)# default dial-peer voice <cr>    # conditional_registration_candidates-000518
+(config)# default do-exec audio-prompt load <string> <cr>    # conditional_registration_candidates-002240
+(config)# default do-exec ccm-manager config-download check-configuration reset <cr>    # conditional_registration_candidates-004615
+(config)# default do-exec ccm-manager config-download check-configuration restart <cr>    # conditional_registration_candidates-004694
+(config)# default do-exec ccm-manager config-download reset-version-id <cr>    # conditional_registration_candidates-002420
+(config)# default do-exec ccm-manager switchover-to-backup <cr>    # conditional_registration_candidates-000942
+(config)# default do-exec ccm-manager test <number:1..3> <cr>    # conditional_registration_candidates-002490
+(config)# default do-exec clear appfw dns cache name <string> <cr>    # conditional_registration_candidates-007772
+(config)# default do-exec clear appletalk arp <cr>    # conditional_registration_candidates-002029
+(config)# default do-exec clear appletalk nbp <cr>    # conditional_registration_candidates-002163
+(config)# default do-exec clear appletalk neighbor all <cr>    # conditional_registration_candidates-004549
+(config)# default do-exec clear appletalk route <number:1..65535> <cr>    # conditional_registration_candidates-004460
+(config)# default do-exec clear appletalk route-cache <cr>    # conditional_registration_candidates-002289
+(config)# default do-exec clear appletalk traffic <cr>    # conditional_registration_candidates-002347
+(config)# default do-exec clear call application interface <cr>    # conditional_registration_candidates-005179
+(config)# default do-exec clear call application stats <cr>    # conditional_registration_candidates-004591
+(config)# default do-exec clear callmon dead-memory <cr>    # conditional_registration_candidates-002018
+(config)# default do-exec clear callmon trace <cr>    # conditional_registration_candidates-002090
+(config)# default do-exec clear crypto ace mace <cr>    # conditional_registration_candidates-004480
+(config)# default do-exec clear crypto ace slot <number:1..16> invspi <cr>    # conditional_registration_candidates-007801
+(config)# default do-exec clear crypto ace slot <number:1..16> stats <cr>    # conditional_registration_candidates-007791
+(config)# default do-exec clear crypto call admission statistics <cr>    # conditional_registration_candidates-006535
+(config)# default do-exec clear crypto dh <cr>    # conditional_registration_candidates-002288
+(config)# default do-exec clear crypto gkm <cr>    # conditional_registration_candidates-002548
+(config)# default do-exec clear crypto gkm dataplane counters <cr>    # conditional_registration_candidates-006615
+(config)# default do-exec clear crypto gkm diagnose errors <cr>    # conditional_registration_candidates-006580
+(config)# default do-exec clear crypto gkm diagnose events <cr>    # conditional_registration_candidates-006622
+(config)# default do-exec clear crypto gkm ks coop counter <cr>    # conditional_registration_candidates-007785
+(config)# default do-exec clear crypto gkm ks coop role <cr>    # conditional_registration_candidates-007799
+(config)# default do-exec clear crypto gkm ks members <cr>    # conditional_registration_candidates-006563
+(config)# default do-exec clear crypto gkm ks members counters <cr>    # conditional_registration_candidates-007797
+(config)# default do-exec clear crypto gkm ks members now <cr>    # conditional_registration_candidates-007817
+(config)# default do-exec clear crypto gkm ks multi-list <cr>    # conditional_registration_candidates-006514
+(config)# default do-exec clear crypto gkm p2p counter <cr>    # conditional_registration_candidates-006547
+(config)# default do-exec clear crypto gkm performance <cr>    # conditional_registration_candidates-004762

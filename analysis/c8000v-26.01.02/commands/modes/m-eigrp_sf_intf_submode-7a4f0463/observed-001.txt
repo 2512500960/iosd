@@ -1,0 +1,39 @@
+# 模式 eigrp_sf_intf_submode；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-router-sf-interface)# authentication key-chain <string> <cr>    # observed_connections-008639
+(config-router-sf-interface)# authentication mode hmac-sha-256 <string> <cr>    # observed_connections-008641
+(config-router-sf-interface)# authentication mode md5 <cr>    # observed_connections-008636
+(config-router-sf-interface)# bandwidth-percent <number:1..999999> <cr>    # observed_connections-008617
+(config-router-sf-interface)# dampening-change <cr>    # observed_connections-008609
+(config-router-sf-interface)# dampening-interval <cr>    # observed_connections-008610
+(config-router-sf-interface)# default authentication key-chain <cr>    # observed_connections-008640
+(config-router-sf-interface)# default authentication mode <cr>    # observed_connections-008637
+(config-router-sf-interface)# default bandwidth-percent <cr>    # observed_connections-008618
+(config-router-sf-interface)# default dampening-change <cr>    # observed_connections-008621
+(config-router-sf-interface)# default dampening-interval <cr>    # observed_connections-008625
+(config-router-sf-interface)# default hello-interval <cr>    # observed_connections-008628
+(config-router-sf-interface)# default hold-time <cr>    # observed_connections-008633
+(config-router-sf-interface)# default shutdown <cr>    # observed_connections-008631
+(config-router-sf-interface)# default split-horizon <cr>    # observed_connections-008634
+(config-router-sf-interface)# default test-bandwidth <cr>    # observed_connections-008615
+(config-router-sf-interface)# default test-delay <cr>    # observed_connections-008623
+(config-router-sf-interface)# exit-sf-interface <cr>    # observed_connections-008608
+(config-router-sf-interface)# hello-interval <number:1..65535> <cr>    # observed_connections-008626
+(config-router-sf-interface)# hold-time <number:1..65535> <cr>    # observed_connections-008630
+(config-router-sf-interface)# no authentication key-chain <cr>    # observed_connections-008638
+(config-router-sf-interface)# no authentication mode <cr>    # observed_connections-008635
+(config-router-sf-interface)# no bandwidth-percent <cr>    # observed_connections-008616
+(config-router-sf-interface)# no dampening-change <cr>    # observed_connections-008619
+(config-router-sf-interface)# no dampening-interval <cr>    # observed_connections-008622
+(config-router-sf-interface)# no hello-interval <cr>    # observed_connections-008624
+(config-router-sf-interface)# no hold-time <cr>    # observed_connections-008629
+(config-router-sf-interface)# no shutdown <cr>    # observed_connections-008627
+(config-router-sf-interface)# no split-horizon <cr>    # observed_connections-008632
+(config-router-sf-interface)# no test-bandwidth <cr>    # observed_connections-008613
+(config-router-sf-interface)# no test-delay <cr>    # observed_connections-008620
+(config-router-sf-interface)# shutdown <cr>    # observed_connections-008611
+(config-router-sf-interface)# split-horizon <cr>    # observed_connections-008612
+(config-router-sf-interface)# test-bandwidth <number:1..4294967295> <cr>    # observed_connections-008614
+(config-router-sf-interface)# test-delay <?general_to_number_action@555589bfb270> <cr>    # observed_connections-008642

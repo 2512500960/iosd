@@ -1,0 +1,84 @@
+# 模式 atm-range-pvc-config；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(cfg-if-atm-range-pvc)# aaa connect-info <string> <cr>    # static_slot_creation_candidates-003411
+(cfg-if-atm-range-pvc)# abr <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003434
+(cfg-if-atm-range-pvc)# ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003417
+(cfg-if-atm-range-pvc)# bridge-vlan <number:dynamic> <cr>    # static_slot_creation_candidates-003426
+(cfg-if-atm-range-pvc)# broadcast <cr>    # static_slot_creation_candidates-003358
+(cfg-if-atm-range-pvc)# cbr <number:dynamic> <cr>    # static_slot_creation_candidates-003428
+(cfg-if-atm-range-pvc)# cdvt <number:dynamic> <cr>    # static_slot_creation_candidates-003420
+(cfg-if-atm-range-pvc)# class-vc <string> <cr>    # static_slot_creation_candidates-003373
+(cfg-if-atm-range-pvc)# dbs enable <cr>    # static_slot_creation_candidates-003389
+(cfg-if-atm-range-pvc)# default aaa connect-info <cr>    # static_slot_creation_candidates-003412
+(cfg-if-atm-range-pvc)# default ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003419
+(cfg-if-atm-range-pvc)# default bridge-vlan <cr>    # static_slot_creation_candidates-003398
+(cfg-if-atm-range-pvc)# default broadcast <cr>    # static_slot_creation_candidates-003374
+(cfg-if-atm-range-pvc)# default cbr <cr>    # static_slot_creation_candidates-003403
+(cfg-if-atm-range-pvc)# default cdvt <cr>    # static_slot_creation_candidates-003366
+(cfg-if-atm-range-pvc)# default class-vc <string> <cr>    # static_slot_creation_candidates-003407
+(cfg-if-atm-range-pvc)# default dbs enable <cr>    # static_slot_creation_candidates-003414
+(cfg-if-atm-range-pvc)# default encapsulation <cr>    # static_slot_creation_candidates-003379
+(cfg-if-atm-range-pvc)# default idle-timeout <cr>    # static_slot_creation_candidates-003386
+(cfg-if-atm-range-pvc)# default ilmi manage <cr>    # static_slot_creation_candidates-003410
+(cfg-if-atm-range-pvc)# default inarp <cr>    # static_slot_creation_candidates-003378
+(cfg-if-atm-range-pvc)# default oam retry <cr>    # static_slot_creation_candidates-003416
+(cfg-if-atm-range-pvc)# default oam-pvc <cr>    # static_slot_creation_candidates-003387
+(cfg-if-atm-range-pvc)# default pppoe max-sessions <cr>    # static_slot_creation_candidates-003405
+(cfg-if-atm-range-pvc)# default queue-depth <cr>    # static_slot_creation_candidates-003371
+(cfg-if-atm-range-pvc)# default rx-speed <cr>    # static_slot_creation_candidates-003368
+(cfg-if-atm-range-pvc)# default shutdown <cr>    # static_slot_creation_candidates-003385
+(cfg-if-atm-range-pvc)# default tx-ring-limit <cr>    # static_slot_creation_candidates-003388
+(cfg-if-atm-range-pvc)# default ubr <cr>    # static_slot_creation_candidates-003396
+(cfg-if-atm-range-pvc)# default ubr+ <cr>    # static_slot_creation_candidates-003393
+(cfg-if-atm-range-pvc)# default vbr-nrt <cr>    # static_slot_creation_candidates-003399
+(cfg-if-atm-range-pvc)# default vbr-rt <cr>    # static_slot_creation_candidates-003401
+(cfg-if-atm-range-pvc)# default weight <cr>    # static_slot_creation_candidates-003369
+(cfg-if-atm-range-pvc)# encapsulation aal5mux <?protoname_action@5555899422d0> <cr>    # static_slot_creation_candidates-003430
+(cfg-if-atm-range-pvc)# encapsulation aal5snap <cr>    # static_slot_creation_candidates-003380
+(cfg-if-atm-range-pvc)# idle-timeout <number:0..2000000> <cr>    # static_slot_creation_candidates-003390
+(cfg-if-atm-range-pvc)# idle-timeout <number:0..2000000> <number:dynamic> <cr>    # static_slot_creation_candidates-003431
+(cfg-if-atm-range-pvc)# ilmi manage <cr>    # static_slot_creation_candidates-003377
+(cfg-if-atm-range-pvc)# inarp <cr>    # static_slot_creation_candidates-003359
+(cfg-if-atm-range-pvc)# no aaa connect-info <cr>    # static_slot_creation_candidates-003409
+(cfg-if-atm-range-pvc)# no ancp neighbor name <string> id <string> client-id <string> <cr>    # static_slot_creation_candidates-003418
+(cfg-if-atm-range-pvc)# no bridge-vlan <cr>    # static_slot_creation_candidates-003395
+(cfg-if-atm-range-pvc)# no broadcast <cr>    # static_slot_creation_candidates-003372
+(cfg-if-atm-range-pvc)# no cbr <cr>    # static_slot_creation_candidates-003402
+(cfg-if-atm-range-pvc)# no cdvt <cr>    # static_slot_creation_candidates-003364
+(cfg-if-atm-range-pvc)# no class-vc <string> <cr>    # static_slot_creation_candidates-003406
+(cfg-if-atm-range-pvc)# no dbs enable <cr>    # static_slot_creation_candidates-003413
+(cfg-if-atm-range-pvc)# no encapsulation <cr>    # static_slot_creation_candidates-003376
+(cfg-if-atm-range-pvc)# no idle-timeout <cr>    # static_slot_creation_candidates-003382
+(cfg-if-atm-range-pvc)# no ilmi manage <cr>    # static_slot_creation_candidates-003408
+(cfg-if-atm-range-pvc)# no inarp <cr>    # static_slot_creation_candidates-003375
+(cfg-if-atm-range-pvc)# no oam retry <cr>    # static_slot_creation_candidates-003415
+(cfg-if-atm-range-pvc)# no oam-pvc <cr>    # static_slot_creation_candidates-003383
+(cfg-if-atm-range-pvc)# no pppoe max-sessions <cr>    # static_slot_creation_candidates-003404
+(cfg-if-atm-range-pvc)# no queue-depth <cr>    # static_slot_creation_candidates-003370
+(cfg-if-atm-range-pvc)# no rx-speed <cr>    # static_slot_creation_candidates-003365
+(cfg-if-atm-range-pvc)# no shutdown <cr>    # static_slot_creation_candidates-003381
+(cfg-if-atm-range-pvc)# no tx-ring-limit <cr>    # static_slot_creation_candidates-003384
+(cfg-if-atm-range-pvc)# no ubr <cr>    # static_slot_creation_candidates-003394
+(cfg-if-atm-range-pvc)# no ubr+ <cr>    # static_slot_creation_candidates-003392
+(cfg-if-atm-range-pvc)# no vbr-nrt <cr>    # static_slot_creation_candidates-003397
+(cfg-if-atm-range-pvc)# no vbr-rt <cr>    # static_slot_creation_candidates-003400
+(cfg-if-atm-range-pvc)# no weight <cr>    # static_slot_creation_candidates-003367
+(cfg-if-atm-range-pvc)# oam retry <cr>    # static_slot_creation_candidates-003391
+(cfg-if-atm-range-pvc)# oam-pvc <cr>    # static_slot_creation_candidates-003361
+(cfg-if-atm-range-pvc)# pppoe max-sessions <number:dynamic> <cr>    # static_slot_creation_candidates-003429
+(cfg-if-atm-range-pvc)# protocol <?protoname_action@555589941858> <cr>    # static_slot_creation_candidates-003423
+(cfg-if-atm-range-pvc)# protocol <?protoname_action@555589941858> <cr>    # static_slot_creation_candidates-003424
+(cfg-if-atm-range-pvc)# queue-depth <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003432
+(cfg-if-atm-range-pvc)# rx-speed <number:dynamic> <cr>    # static_slot_creation_candidates-003422
+(cfg-if-atm-range-pvc)# service-policy input <string> <cr>    # static_slot_creation_candidates-003437
+(cfg-if-atm-range-pvc)# shutdown <cr>    # static_slot_creation_candidates-003360
+(cfg-if-atm-range-pvc)# tx-ring-limit <cr>    # static_slot_creation_candidates-003362
+(cfg-if-atm-range-pvc)# tx-ring-limit <number:dynamic> <cr>    # static_slot_creation_candidates-003425
+(cfg-if-atm-range-pvc)# ubr <cr>    # static_slot_creation_candidates-003363
+(cfg-if-atm-range-pvc)# ubr <number:dynamic> <cr>    # static_slot_creation_candidates-003427
+(cfg-if-atm-range-pvc)# ubr+ <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003433
+(cfg-if-atm-range-pvc)# vbr-nrt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003435
+(cfg-if-atm-range-pvc)# vbr-rt <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003436
+(cfg-if-atm-range-pvc)# weight <number:dynamic> <cr>    # static_slot_creation_candidates-003421

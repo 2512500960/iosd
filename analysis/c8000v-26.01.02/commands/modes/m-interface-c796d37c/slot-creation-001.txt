@@ -1,0 +1,57 @@
+# 模式 interface；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-if)# atm mcpt-timers <cr>    # static_slot_creation_candidates-003749
+(config-if)# atm mcpt-timers <number:dynamic> <number:dynamic> <number:dynamic> <cr>    # static_slot_creation_candidates-003798
+(config-if)# atm pppatm link reset <cr>    # static_slot_creation_candidates-003785
+(config-if)# atm pppatm passive <cr>    # static_slot_creation_candidates-003757
+(config-if)# crypto ipsec df-bit copy <cr>    # static_slot_creation_candidates-003759
+(config-if)# crypto ipsec fragmentation after-encryption <cr>    # static_slot_creation_candidates-003762
+(config-if)# default atm pppatm link reset <cr>    # static_slot_creation_candidates-003793
+(config-if)# default atm pppatm passive <cr>    # static_slot_creation_candidates-003784
+(config-if)# default crypto ipsec df-bit <cr>    # static_slot_creation_candidates-003760
+(config-if)# default crypto ipsec fragmentation <cr>    # static_slot_creation_candidates-003763
+(config-if)# default otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-003797
+(config-if)# default otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-003795
+(config-if)# default otv isis authentication send-only <cr>    # static_slot_creation_candidates-003791
+(config-if)# default otv isis bfd <cr>    # static_slot_creation_candidates-003772
+(config-if)# default otv isis csnp-interval <cr>    # static_slot_creation_candidates-003780
+(config-if)# default otv isis hello padding <cr>    # static_slot_creation_candidates-003787
+(config-if)# default otv isis hello-interval <cr>    # static_slot_creation_candidates-003773
+(config-if)# default otv isis hello-multiplier <cr>    # static_slot_creation_candidates-003768
+(config-if)# default otv isis lsp-interval <cr>    # static_slot_creation_candidates-003756
+(config-if)# default otv isis metric <cr>    # static_slot_creation_candidates-003782
+(config-if)# default otv isis priority <cr>    # static_slot_creation_candidates-003776
+(config-if)# default otv isis retransmit-interval <cr>    # static_slot_creation_candidates-003754
+(config-if)# default otv isis retransmit-throttle-interval <cr>    # static_slot_creation_candidates-003752
+(config-if)# no atm pppatm link reset <cr>    # static_slot_creation_candidates-003792
+(config-if)# no atm pppatm passive <cr>    # static_slot_creation_candidates-003783
+(config-if)# no crypto ipsec df-bit <cr>    # static_slot_creation_candidates-003758
+(config-if)# no crypto ipsec fragmentation <cr>    # static_slot_creation_candidates-003761
+(config-if)# no otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-003796
+(config-if)# no otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-003794
+(config-if)# no otv isis authentication send-only <cr>    # static_slot_creation_candidates-003790
+(config-if)# no otv isis bfd <cr>    # static_slot_creation_candidates-003769
+(config-if)# no otv isis csnp-interval <cr>    # static_slot_creation_candidates-003779
+(config-if)# no otv isis hello padding <cr>    # static_slot_creation_candidates-003786
+(config-if)# no otv isis hello-interval <cr>    # static_slot_creation_candidates-003770
+(config-if)# no otv isis hello-multiplier <cr>    # static_slot_creation_candidates-003766
+(config-if)# no otv isis lsp-interval <cr>    # static_slot_creation_candidates-003755
+(config-if)# no otv isis metric <cr>    # static_slot_creation_candidates-003781
+(config-if)# no otv isis priority <cr>    # static_slot_creation_candidates-003775
+(config-if)# no otv isis retransmit-interval <cr>    # static_slot_creation_candidates-003753
+(config-if)# no otv isis retransmit-throttle-interval <cr>    # static_slot_creation_candidates-003751
+(config-if)# otv isis authentication key-chain <string> <cr>    # static_slot_creation_candidates-003789
+(config-if)# otv isis authentication mode md5 <cr>    # static_slot_creation_candidates-003788
+(config-if)# otv isis authentication send-only <cr>    # static_slot_creation_candidates-003774
+(config-if)# otv isis bfd <cr>    # static_slot_creation_candidates-003750
+(config-if)# otv isis csnp-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003777
+(config-if)# otv isis hello padding <cr>    # static_slot_creation_candidates-003767
+(config-if)# otv isis hello-interval <number:1..65535> <cr>    # static_slot_creation_candidates-003765
+(config-if)# otv isis hello-multiplier <number:3..1000> <cr>    # static_slot_creation_candidates-003764
+(config-if)# otv isis lsp-interval <number:1..4294967295> <cr>    # static_slot_creation_candidates-003748
+(config-if)# otv isis metric <number:1..16777214> <cr>    # static_slot_creation_candidates-003778
+(config-if)# otv isis priority <number:0..127> <cr>    # static_slot_creation_candidates-003771
+(config-if)# otv isis retransmit-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003747
+(config-if)# otv isis retransmit-throttle-interval <number:0..65535> <cr>    # static_slot_creation_candidates-003746

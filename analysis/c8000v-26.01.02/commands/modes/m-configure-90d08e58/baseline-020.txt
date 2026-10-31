@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-020.md
+
+(config)# default do-exec show resource notification owner all user all <cr>    # path-059086
+(config)# default do-exec show resource owner all user-type all <cr>    # path-057147
+(config)# default do-exec show resource policy all <cr>    # path-045207
+(config)# default do-exec show resource relationship user-type all <cr>    # path-052902
+(config)# default do-exec show resource user-type all <cr>    # path-045216
+(config)# default do-exec show resource-group <cr>    # path-033529
+(config)# default do-exec show resource-group memory <cr>    # path-043071
+(config)# default do-exec show rfs issu endpoints <cr>    # path-051260
+(config)# default do-exec show rhosts <cr>    # path-031014
+(config)# default do-exec show rib application <cr>    # path-041057
+(config)# default do-exec show rib client <cr>    # path-040976
+(config)# default do-exec show rib gr <cr>    # path-041056
+(config)# default do-exec show rib ut <cr>    # path-041164
+(config)# default do-exec show rif <cr>    # path-029897
+(config)# default do-exec show rmon <cr>    # path-033214
+(config)# default do-exec show romvar <cr>    # path-030261
+(config)# default do-exec show route-map <cr>    # path-032036
+(config)# default do-exec show route-map all <cr>    # path-040206
+(config)# default do-exec show route-map dynamic <cr>    # path-040430
+(config)# default do-exec show route-map dynamic application <cr>    # path-049408
+(config)# default do-exec show route-map ipc <cr>    # path-040377
+(config)# default do-exec show route-tag <cr>    # path-031981
+(config)# default do-exec show rsh-disable-commands <cr>    # path-031037
+(config)# default do-exec show rudpv1 failures <cr>    # path-041862
+(config)# default do-exec show rudpv1 parameters <cr>    # path-041888
+(config)# default do-exec show rudpv1 statistics <cr>    # path-041829
+(config)# default do-exec show running-config <cr>    # path-029963
+(config)# default do-exec show running-config aaa <cr>    # path-037087
+(config)# default do-exec show running-config bridge-domain parameterized vlan <cr>    # path-052911
+(config)# default do-exec show running-config class-map <cr>    # path-036062
+(config)# default do-exec show running-config cts <cr>    # path-036718
+(config)# default do-exec show running-config eap method profiles <cr>    # path-053268
+(config)# default do-exec show running-config eap profiles <cr>    # path-045703
+(config)# default do-exec show running-config ethernet cfm <cr>    # path-046117
+(config)# default do-exec show running-config flow exporter <cr>    # path-045266
+(config)# default do-exec show running-config flow monitor <cr>    # path-045487
+(config)# default do-exec show running-config flow record <cr>    # path-045440
+(config)# default do-exec show running-config identity policy <cr>    # path-045650
+(config)# default do-exec show running-config ip dhcp pool <cr>    # path-053264
+(config)# default do-exec show running-config ipv6 dhcp pool <cr>    # path-053304
+(config)# default do-exec show running-config map-class <cr>    # path-036058
+(config)# default do-exec show running-config mdns-sd <cr>    # path-036669
+(config)# default do-exec show running-config nat <cr>    # path-035187
+(config)# default do-exec show running-config nve <cr>    # path-034968
+(config)# default do-exec show running-config service-group <cr>    # path-035662
+(config)# default do-exec show running-config switchport <cr>    # path-036134
+(config)# default do-exec show running-config vc-class <cr>    # path-036139
+(config)# default do-exec show running-config vlan <cr>    # path-036137
+(config)# default do-exec show running-config vrf <cr>    # path-034915
+(config)# default do-exec show rwatch <cr>    # path-033170
+(config)# default do-exec show sampler <cr>    # path-030800
+(config)# default do-exec show sampler broker <cr>    # path-037687
+(config)# default do-exec show sasl all <cr>    # path-043794
+(config)# default do-exec show sasl context <cr>    # path-043823
+(config)# default do-exec show sasl mechanisms <cr>    # path-043811
+(config)# default do-exec show sasl profile <string> <cr>    # path-052030
+(config)# default do-exec show sasl profile all <cr>    # path-052027
+(config)# default do-exec show scalable-queue statistics <cr>    # path-036351
+(config)# default do-exec show sd-card summary <cr>    # path-043683
+(config)# default do-exec show sdb <cr>    # path-033379
+(config)# default do-exec show sdllc <cr>    # path-033746
+(config)# default do-exec show self-diagnostics <cr>    # path-033840
+(config)# default do-exec show sensor-mgr db <cr>    # path-035194
+(config)# default do-exec show service-group all <cr>    # path-037773
+(config)# default do-exec show service-overlay applications registered <cr>    # path-050180
+(config)# default do-exec show service-overlay internal <cr>    # path-041218
+(config)# default do-exec show service-overlay stats <cr>    # path-041155
+(config)# default do-exec show service-overlay summary <cr>    # path-041185
+(config)# default do-exec show service-routing capabilities-manager <cr>    # path-041545
+(config)# default do-exec show service-routing database <cr>    # path-041449
+(config)# default do-exec show service-routing parser <cr>    # path-041427
+(config)# default do-exec show service-routing plugins <cr>    # path-041458
+(config)# default do-exec show service-routing registered <cr>    # path-041450
+(config)# default do-exec show service-routing registered detail <cr>    # path-050353
+(config)# default do-exec show service-routing subscriptions <cr>    # path-041491
+(config)# default do-exec show service-routing subscriptions detail <cr>    # path-050372
+(config)# default do-exec show service-routing tech-support <cr>    # path-041419
+(config)# default do-exec show service-routing xmcp clients <cr>    # path-050449
+(config)# default do-exec show service-routing xmcp server <cr>    # path-050413
+(config)# default do-exec show service-routing xmcp timers <cr>    # path-050430
+(config)# default do-exec show service-template <cr>    # path-033268
+(config)# default do-exec show sessions <cr>    # path-028934
+(config)# default do-exec show shell data-path <cr>    # path-034227
+(config)# default do-exec show shell environment <cr>    # path-034166
+(config)# default do-exec show shell functions brief <cr>    # path-043977
+(config)# default do-exec show shell triggers <cr>    # path-034229
+(config)# default do-exec show shell-exec status <cr>    # path-042478
+(config)# default do-exec show slip <cr>    # path-032497
+(config)# default do-exec show smds addresses <cr>    # path-038761
+(config)# default do-exec show smds map <cr>    # path-038815
+(config)# default do-exec show smds traffic <cr>    # path-038866
+(config)# default do-exec show smf <cr>    # path-032123
+(config)# default do-exec show sna <cr>    # path-032696
+(config)# default do-exec show snapshot <cr>    # path-033032
+(config)# default do-exec show snmp <cr>    # path-032469
+(config)# default do-exec show snmp chassis <cr>    # path-041031
+(config)# default do-exec show snmp community <cr>    # path-041071
+(config)# default do-exec show snmp contact <cr>    # path-040954
+(config)# default do-exec show snmp context <cr>    # path-040808
+(config)# default do-exec show snmp context mapping <cr>    # path-049926
+(config)# default do-exec show snmp cpu-stats <cr>    # path-040749
+(config)# default do-exec show snmp engineID <cr>    # path-040800
+(config)# default do-exec show snmp group <cr>    # path-040861
+(config)# default do-exec show snmp host <cr>    # path-040921
+(config)# default do-exec show snmp location <cr>    # path-040989
+(config)# default do-exec show snmp mib <cr>    # path-040874
+(config)# default do-exec show snmp mib bulkstat transfer <cr>    # path-055819
+(config)# default do-exec show snmp mib bulkstat transfer <string> <cr>    # path-058587
+(config)# default do-exec show snmp mib context <cr>    # path-049975
+(config)# default do-exec show snmp mib ifmib ifindex <cr>    # path-055841
+(config)# default do-exec show snmp mib ifmib ifindex free-list <cr>    # path-058602
+(config)# default do-exec show snmp mib ifmib traps <cr>    # path-055779
+(config)# default do-exec show snmp mib nhrp status <cr>    # path-055772
+(config)# default do-exec show snmp mib notification-log <cr>    # path-050009
+(config)# default do-exec show snmp mib notification-log all <cr>    # path-055771
+(config)# default do-exec show snmp mib notification-log default <cr>    # path-055797
+(config)# default do-exec show snmp notify <cr>    # path-040828
+(config)# default do-exec show snmp pending <cr>    # path-041346
+(config)# default do-exec show snmp sa cache-stat <cr>    # path-050322
+(config)# default do-exec show snmp sessions <cr>    # path-041350
+(config)# default do-exec show snmp slot-mapping <cr>    # path-041225
+(config)# default do-exec show snmp stats hosts <cr>    # path-050253
+(config)# default do-exec show snmp stats oid <cr>    # path-050225
+(config)# default do-exec show snmp user <cr>    # path-040930
+(config)# default do-exec show snmp view <cr>    # path-041102
+(config)# default do-exec show sntp <cr>    # path-030817
+(config)# default do-exec show sockets <cr>    # path-032206
+(config)# default do-exec show sockets <number:1..4294967295> <cr>    # path-040840
+(config)# default do-exec show sockets <number:1..4294967295> events <cr>    # path-049929
+(config)# default do-exec show software authenticity keys <cr>    # path-051909
+(config)# default do-exec show source-bridge <cr>    # path-033758
+(config)# default do-exec show spanning-tree <cr>    # path-033706
+(config)# default do-exec show spanning-tree blockedports <cr>    # path-043298
+(config)# default do-exec show spanning-tree bridge <cr>    # path-043420
+(config)# default do-exec show spanning-tree bridge address <cr>    # path-051673
+(config)# default do-exec show spanning-tree bridge forward-time <cr>    # path-051689
+(config)# default do-exec show spanning-tree bridge hello-time <cr>    # path-051700
+(config)# default do-exec show spanning-tree bridge id <cr>    # path-051752
+(config)# default do-exec show spanning-tree bridge max-age <cr>    # path-051710
+(config)# default do-exec show spanning-tree bridge priority <cr>    # path-051740
+(config)# default do-exec show spanning-tree bridge priority system-id <cr>    # path-056644
+(config)# default do-exec show spanning-tree bridge protocol <cr>    # path-051737
+(config)# default do-exec show spanning-tree inconsistentports <cr>    # path-043357
+(config)# default do-exec show spanning-tree instances <cr>    # path-043340
+(config)# default do-exec show spanning-tree platform <cr>    # path-043319
+(config)# default do-exec show spanning-tree root <cr>    # path-043457
+(config)# default do-exec show spanning-tree root address <cr>    # path-051686
+(config)# default do-exec show spanning-tree root cost <cr>    # path-051698
+(config)# default do-exec show spanning-tree root forward-time <cr>    # path-051708
+(config)# default do-exec show spanning-tree root hello-time <cr>    # path-051720
+(config)# default do-exec show spanning-tree root id <cr>    # path-051781
+(config)# default do-exec show spanning-tree root max-age <cr>    # path-051735
+(config)# default do-exec show spanning-tree root port <cr>    # path-051750
+(config)# default do-exec show spanning-tree root priority <cr>    # path-051782
+(config)# default do-exec show spanning-tree root priority system-id <cr>    # path-056653
+(config)# default do-exec show spanning-tree summary <cr>    # path-043400
+(config)# default do-exec show sse all <cr>    # path-040633
+(config)# default do-exec show ssm cdb <cr>    # path-038655
+(config)# default do-exec show ssm group <cr>    # path-039142
+(config)# default do-exec show ssm id <cr>    # path-039039
+(config)# default do-exec show ssm id all <cr>    # path-047827
+(config)# default do-exec show ssm memory <cr>    # path-039031
+(config)# default do-exec show ssm memory chunk variable feature <cr>    # path-058119
+(config)# default do-exec show ssm memory chunk variable queue <cr>    # path-058141
+(config)# default do-exec show ssm memory chunk variable segment <cr>    # path-058128
+(config)# default do-exec show ssm stats <cr>    # path-038965
+(config)# default do-exec show stacks <cr>    # path-030027
+(config)# default do-exec show standby <cr>    # path-031259
+(config)# default do-exec show standby capability <cr>    # path-038189
+(config)# default do-exec show standby delay <cr>    # path-038331
+(config)# default do-exec show standby internal <cr>    # path-038334
+(config)# default do-exec show standby internal summary <cr>    # path-047387
+(config)# default do-exec show standby neighbors <cr>    # path-038151
+(config)# default do-exec show standby redirect <cr>    # path-038385
+(config)# default do-exec show starting-keyword <string> <cr>    # path-034794
+(config)# default do-exec show startup-config <cr>    # path-028796
+(config)# default do-exec show stun <cr>    # path-033802
+(config)# default do-exec show subscriber circuits <cr>    # path-039122
+(config)# default do-exec show subscriber coa statistics <cr>    # path-048035
+(config)# default do-exec show subscriber default-session <cr>    # path-039222
+(config)# default do-exec show subscriber disconnect history <cr>    # path-048237
+(config)# default do-exec show subscriber disconnect stats <cr>    # path-048119
+(config)# default do-exec show subscriber lite-session <cr>    # path-039172
+(config)# default do-exec show subscriber log ip <address> <cr>    # path-054884
+(config)# default do-exec show subscriber log mac-address <string> <cr>    # path-054817
+(config)# default do-exec show subscriber log vrf <string> ip <address> <cr>    # path-059438
+(config)# default do-exec show subscriber memory <cr>    # path-038976
+(config)# default do-exec show subscriber per-session debug sessions-hit end-code <cr>    # path-058188
+(config)# default do-exec show subscriber per-session debug sessions-hit start-code <cr>    # path-058173
+(config)# default do-exec show subscriber per-session debug sessions-hit unexpected-disconnect <cr>    # path-058202
+(config)# default do-exec show subscriber per-session debug statistics <cr>    # path-054833
+(config)# default do-exec show subscriber policy conditions <cr>    # path-048263
+(config)# default do-exec show subscriber policy pACLs <cr>    # path-048354
+(config)# default do-exec show subscriber policy pClasses <cr>    # path-048400
+(config)# default do-exec show subscriber policy peer all <cr>    # path-055020
+(config)# default do-exec show subscriber policy ppm-shim-db <cr>    # path-048305
+(config)# default do-exec show subscriber policy preauth handle <number:0..4294967295> <cr>    # path-058144
+(config)# default do-exec show subscriber policy profile <cr>    # path-048178
+(config)# default do-exec show subscriber policy rules <cr>    # path-048223
+(config)# default do-exec show subscriber service <cr>    # path-039240
+(config)# default do-exec show subscriber session <cr>    # path-039829
+(config)# default do-exec show subscriber session queuing display <cr>    # path-054819
+(config)# default do-exec show subscriber session queuing enable <number:0..4294967295> <cr>    # path-058213
+(config)# default do-exec show subscriber statistics <cr>    # path-039144
+(config)# default do-exec show subscriber tech-support <cr>    # path-038958
+(config)# default do-exec show subscriber template <cr>    # path-039284
+(config)# default do-exec show subscriber template active <cr>    # path-048130
+(config)# default do-exec show subscriber template id <number:1..30500> <cr>    # path-054750
+(config)# default do-exec show subscriber template key tmpl_id <number:1..30500> <cr>    # path-058132
+(config)# default do-exec show subscriber template state <cr>    # path-048175
+(config)# default do-exec show subscriber-policy <cr>    # path-033563
+(config)# default do-exec show subsys <cr>    # path-033498
+(config)# default do-exec show subsys boottime <cr>    # path-043046
+(config)# default do-exec show subsys boottime class <cr>    # path-051486
+(config)# default do-exec show subsys boottime init <cr>    # path-051460
+(config)# default do-exec show subsys class kernel <cr>    # path-051482
+(config)# default do-exec show subsys memory <cr>    # path-043084
+(config)# default do-exec show subsys memory class <cr>    # path-051524
+(config)# default do-exec show subsys memory init <cr>    # path-051500
+(config)# default do-exec show subsys name <string> <cr>    # path-051437
+(config)# default do-exec show sum <cr>    # path-028304
+(config)# default do-exec show system insecure configuration <cr>    # path-050782
+(config)# default do-exec show system insecure profile <cr>    # path-050806
+(config)# default do-exec show system security mode <cr>    # path-050804
+(config)# default do-exec show table-map <cr>    # path-032646
+(config)# default do-exec show table-map <cr>    # path-032662
+(config)# default do-exec show table-map enabled <cr>    # path-041580
+(config)# default do-exec show tableid ha statistics <cr>    # path-049485
+(config)# default do-exec show tacacs <cr>    # path-032916
+(config)# default do-exec show tcl mem <cr>    # path-042286
+(config)# default do-exec show tcl mem contents <cr>    # path-050954
+(config)# default do-exec show tcp statistics <cr>    # path-040386
+(config)# default do-exec show tcp statistics ingress <cr>    # path-049431
+(config)# default do-exec show tdm connections aim <number:0..4294967295> <cr>    # path-053234
+(config)# default do-exec show tech-support <cr>    # path-033400
+(config)# default do-exec show tech-support mfib ipv4 <cr>    # path-051860
+(config)# default do-exec show tech-support mfib ipv6 <cr>    # path-051854
+(config)# default do-exec show tech-support vrrp ipv4 <cr>    # path-051822
+(config)# default do-exec show tech-support vrrp ipv6 <cr>    # path-051831
+(config)# default do-exec show template <cr>    # path-032977
+(config)# default do-exec show template binding target interface_global <cr>    # path-056261
+(config)# default do-exec show template brief <cr>    # path-042049
+(config)# default do-exec show template detail <cr>    # path-042101
+(config)# default do-exec show template global <cr>    # path-042149
+(config)# default do-exec show template global all <cr>    # path-050750
+(config)# default do-exec show template global binding all <cr>    # path-056242
+(config)# default do-exec show template global brief <cr>    # path-050727
+(config)# default do-exec show template global detail <cr>    # path-050840
+(config)# default do-exec show template global source built-in all <cr>    # path-058760
+(config)# default do-exec show template global source built-in original all <cr>    # path-059592
+(config)# default do-exec show template global source user all <cr>    # path-058749
+(config)# default do-exec show template interface all <cr>    # path-050810
+(config)# default do-exec show template interface binding all <cr>    # path-056230
+(config)# default do-exec show template interface binding target interface_global <cr>    # path-058740
+(config)# default do-exec show template interface brief <cr>    # path-050768
+(config)# default do-exec show template interface source built-in Original all <cr>    # path-059591
+(config)# default do-exec show template interface source built-in all <cr>    # path-058777
+(config)# default do-exec show template interface source user all <cr>    # path-058757
+(config)# default do-exec show template service all <cr>    # path-050789
+(config)# default do-exec show template service brief <cr>    # path-050831
+(config)# default do-exec show template service source aaa all <cr>    # path-058747
+(config)# default do-exec show template service source built-in all <cr>    # path-058768
+(config)# default do-exec show template service source user all <cr>    # path-058758
+(config)# default do-exec show tenant all <cr>    # path-041704
+(config)# default do-exec show tenant mapping table <cr>    # path-050537
+(config)# default do-exec show terminal <cr>    # path-033922
+(config)# default do-exec show test_rib_access get_all_ipv4_protos <cr>    # path-042553
+(config)# default do-exec show test_rib_access get_proto_pdb <string> <number:1..2> <number:0..1> <string> <cr>    # path-059613
+(config)# default do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> exact <cr>    # path-060209
+(config)# default do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> long <cr>    # path-060212
+(config)# default do-exec show test_rib_access get_route <address> <number:0..6> <number:0..128> <string> <number:0..2> <number:0..65535> <number:0..65535> long del_nh <cr>    # path-060227
+(config)# default do-exec show test_rib_access walk_rib <number:0..7> <string> <cr>    # path-056476
+(config)# default do-exec show time-range <cr>    # path-032939
+(config)# default do-exec show time-range ipc <cr>    # path-042022
+(config)# default do-exec show timers <cr>    # path-028841
+(config)# default do-exec show topology <cr>    # path-031371
+(config)# default do-exec show topology <cr>    # path-031372
+(config)# default do-exec show topology clients <cr>    # path-038545
+(config)# default do-exec show topology ha <cr>    # path-038631
+(config)# default do-exec show track <cr>    # path-031577
+(config)# default do-exec show track <number:1..32767> map <cr>    # path-048039
+(config)# default do-exec show track map <cr>    # path-038583
+(config)# default do-exec show track resolution <cr>    # path-038645
+(config)# default do-exec show track summary <cr>    # path-038492
+(config)# default do-exec show track timers <cr>    # path-038442
+(config)# default do-exec show traffic-shape <cr>    # path-030573
+(config)# default do-exec show traffic-shape queue <cr>    # path-037172
+(config)# default do-exec show traffic-shape statistics <cr>    # path-037175
+(config)# default do-exec show transport-map all <cr>    # path-035507
+(config)# default do-exec show transport-map name <string> <cr>    # path-045125
+(config)# default do-exec show transport-map type console <cr>    # path-045230
+(config)# default do-exec show tunnel 6rd <cr>    # path-043484
+(config)# default do-exec show tunnel bgp host-addr <cr>    # path-051821
+(config)# default do-exec show tunnel capabilities feature gre-checksum <cr>    # path-056683
+(config)# default do-exec show tunnel capabilities mode uninitialized <cr>    # path-056680
+(config)# default do-exec show tunnel endpoints <cr>    # path-043454
+(config)# default do-exec show tunnel groups <cr>    # path-043494
+(config)# default do-exec show tunnel interface <cr>    # path-043455
+(config)# default do-exec show tunnel source tracking <cr>    # path-051835
+(config)# default do-exec show tunnel tunnel-to <cr>    # path-043651
+(config)# default do-exec show udf <cr>    # path-033652
+(config)# default do-exec show udp <cr>    # path-030946
+(config)# default do-exec show uidp statistics <cr>    # path-043634
+(config)# default do-exec show usb-devices summary <cr>    # path-043661
+(config)# default do-exec show users <cr>    # path-029295
+(config)# default do-exec show vasi pair status <cr>    # path-048409
+(config)# default do-exec show vasi pair status <number:1..2000> <cr>    # path-054814
+(config)# default do-exec show version <cr>    # path-029171
+(config)# default do-exec show virtual-service <cr>    # path-033933
+(config)# default do-exec show virtual-service detail <cr>    # path-043756
+(config)# default do-exec show virtual-service list <cr>    # path-043749
+(config)# default do-exec show virtual-service profile name <string> <cr>    # path-056754
+(config)# default do-exec show virtual-service storage pool list <cr>    # path-056759
+(config)# default do-exec show virtual-service storage volume detail volume-name <string> <cr>    # path-059615
+(config)# default do-exec show virtual-service storage volume list <cr>    # path-056762
+(config)# default do-exec show virtual-service tech-support <cr>    # path-043776
+(config)# default do-exec show virtual-service trace message <cr>    # path-052022
+(config)# default do-exec show virtual-service utilization name <string> <cr>    # path-056752
+(config)# default do-exec show virtual-service utilization statistics CPU <cr>    # path-056757
+(config)# default do-exec show virtual-service version installed <cr>    # path-052021
+(config)# default do-exec show vlan <cr>    # path-032059
+(config)# default do-exec show vlan brief <cr>    # path-040039
+(config)# default do-exec show vlan counters <cr>    # path-040216
+(config)# default do-exec show vlan dot1q tag native <cr>    # path-055622
+(config)# default do-exec show vlan group <cr>    # path-040543
+(config)# default do-exec show vlan group group-name <string> <cr>    # path-055636
+(config)# default do-exec show vlan group group-name <string> user-count <cr>    # path-058481
+(config)# default do-exec show vlan id <string> <cr>    # path-049569
+(config)# default do-exec show vlan id <string> counters <cr>    # path-055437
+(config)# default do-exec show vlan ifindex <cr>    # path-040378
+(config)# default do-exec show vlan internal usage <cr>    # path-049700
+(config)# default do-exec show vlan mtu <cr>    # path-040082
+(config)# default do-exec show vlan name <string> <cr>    # path-049471
+(config)# default do-exec show vlan private-vlan <cr>    # path-040349
+(config)# default do-exec show vlan remote-span <cr>    # path-040333
+(config)# default do-exec show vlan summary <cr>    # path-040446
+(config)# default do-exec show vlan uni-vlan <cr>    # path-040419
+(config)# default do-exec show vlan-autoconfig access-interface <cr>    # path-039165
+(config)# default do-exec show vlan-autoconfig error-history <cr>    # path-039054
+(config)# default do-exec show vlan-autoconfig statistics <cr>    # path-039111
+(config)# default do-exec show vlan-autoconfig summary <cr>    # path-038998
+(config)# default do-exec show vlan-autoconfig vlan-interface <cr>    # path-039383
+(config)# default do-exec show vlan-autoconfig vlan-interface detailed <cr>    # path-048205
+(config)# default do-exec show vlan-range <cr>    # path-031608
+(config)# default do-exec show vlans <cr>    # path-031694
+(config)# default do-exec show vlans dot1q <cr>    # path-039715
+(config)# default do-exec show vlans dot1q <cr>    # path-039828
+(config)# default do-exec show vlans summary <cr>    # path-039252
+(config)# default do-exec show vlans tokenring <cr>    # path-039299
+(config)# default do-exec show vlans tr-isl <cr>    # path-039353
+(config)# default do-exec show vnet <cr>    # path-032887
+(config)# default do-exec show vpdn dead-cache all <cr>    # path-050657
+(config)# default do-exec show vpdn dead-cache group <string> <cr>    # path-056154
+(config)# default do-exec show vpdn domain <cr>    # path-041731
+(config)# default do-exec show vpdn group <cr>    # path-041738
+(config)# default do-exec show vpdn group <string> <cr>    # path-050576
+(config)# default do-exec show vpdn group <string> domain <cr>    # path-056092
+(config)# default do-exec show vpdn group <string> endpoint <cr>    # path-056075
+(config)# default do-exec show vpdn group-select Default <cr>    # path-050697
+(config)# default do-exec show vpdn group-select Summary <cr>    # path-050670
+(config)# default do-exec show vpdn group-select keys hostname <string> source-ip <address> <cr>    # path-059927
+(config)# default do-exec show vpdn history failure <cr>    # path-050528
+(config)# default do-exec show vpdn history fsm <cr>    # path-050523
+(config)# default do-exec show vpdn lsg all <cr>    # path-050676
+(config)# default do-exec show vpdn lsg group <string> <cr>    # path-056170
+(config)# default do-exec show vpdn multilink <cr>    # path-041788
+(config)# default do-exec show vpdn redirect <cr>    # path-041762
+(config)# default do-exec show vpdn redundancy <cr>    # path-042001
+(config)# default do-exec show vpdn redundancy all <cr>    # path-050696
+(config)# default do-exec show vpdn scalability <cr>    # path-041812
+(config)# default do-exec show vpdn statistics call fsm <cr>    # path-056037
+(config)# default do-exec show vpdn statistics mgr fsm <cr>    # path-056050
+(config)# default do-exec show vpdn subscriber statistics fsm <cr>    # path-056048
+(config)# default do-exec show vrf <cr>    # path-032128
+(config)# default do-exec show vrf list <cr>    # path-040786
+(config)# default do-exec show vrf select <cr>    # path-040649
+(config)# default do-exec show vrrp <cr>    # path-032023
+(config)# default do-exec show vrrs accounting <cr>    # path-038550
+(config)# default do-exec show vrrs client <cr>    # path-040071
+(config)# default do-exec show vrrs clients <cr>    # path-038530
+(config)# default do-exec show vrrs group <cr>    # path-038556
+(config)# default do-exec show vrrs internal <cr>    # path-038640
+(config)# default do-exec show vrrs pathway <cr>    # path-040155
+(config)# default do-exec show vrrs pathway address <cr>    # path-049128
+(config)# default do-exec show vrrs plugin database <cr>    # path-044323
+(config)# default do-exec show vrrs server <cr>    # path-040157
+(config)# default do-exec show vrrs summary <cr>    # path-038432
+(config)# default do-exec show vrrs tag <cr>    # path-039917
+(config)# default do-exec show vtemplate <cr>    # path-033045
+(config)# default do-exec show vtemplate queue <cr>    # path-042248
+(config)# default do-exec show vtp counters <cr>    # path-040087
+(config)# default do-exec show vtp devices <cr>    # path-040191
+(config)# default do-exec show vtp devices conflicts <cr>    # path-049160
+(config)# default do-exec show vtp interface <cr>    # path-040153
+(config)# default do-exec show vtp password <cr>    # path-040179
+(config)# default do-exec show vtp status <cr>    # path-040063
+(config)# default do-exec show vtp trunks <cr>    # path-040277
+(config)# default do-exec show vtp trunks all <cr>    # path-049264
+(config)# default do-exec show wccp <cr>    # path-031629
+(config)# default do-exec show wccp capabilities <cr>    # path-039182

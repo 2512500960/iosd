@@ -1,0 +1,285 @@
+# 模式 configure；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-034.md
+
+(config)# no do-exec test platform software infrastructure tlscd_if <number:0..5> create_session <cr>    # conditional_registration_candidates-008691
+(config)# no do-exec test platform software infrastructure tlscd_if <number:0..5> delete_session <cr>    # conditional_registration_candidates-008696
+(config)# no do-exec test platform software infrastructure tlscd_if <number:0..5> down <cr>    # conditional_registration_candidates-008726
+(config)# no do-exec test platform software infrastructure tlscd_if <number:0..5> send_packet <cr>    # conditional_registration_candidates-008705
+(config)# no do-exec test platform software infrastructure tlscd_if <number:0..5> up <cr>    # conditional_registration_candidates-008715
+(config)# no do-exec test platform software infrastructure tlscd_if launch <cr>    # conditional_registration_candidates-007900
+(config)# no do-exec test platform software infrastructure tlscd_if unlaunch <cr>    # conditional_registration_candidates-007924
+(config)# no do-exec test platform software mst efp-stp-state <number:0..65535> <number:0..4294967295> disabled <cr>    # conditional_registration_candidates-008900
+(config)# no do-exec test platform software mst mac-flush <number:1..4096> <cr>    # conditional_registration_candidates-007873
+(config)# no do-exec test platform software otv bd-efp <number:1..4294967295> <number:1..65535> <cr>    # conditional_registration_candidates-008687
+(config)# no do-exec test platform software otv bd-efp <number:1..4294967295> <number:1..65535> delete <cr>    # conditional_registration_candidates-008903
+(config)# no do-exec test platform software otv site <number:1..4294967295> <cr>    # conditional_registration_candidates-007894
+(config)# no do-exec test platform software otv site <number:1..4294967295> delete <cr>    # conditional_registration_candidates-008668
+(config)# no do-exec test rpl enable-config-cli <cr>    # conditional_registration_candidates-002294
+(config)# no do-exec test sbc alarm-info <cr>    # conditional_registration_candidates-003169
+(config)# no do-exec test sbc flow-rate-reduction-factor <number:0..65535> <cr>    # conditional_registration_candidates-004446
+(config)# no do-exec test sbc issd-cac-enhancement <cr>    # conditional_registration_candidates-002996
+(config)# no do-exec test sbc issd-flex-med-routing <cr>    # conditional_registration_candidates-003082
+(config)# no do-exec test sbc issd-ims-rf <cr>    # conditional_registration_candidates-003520
+(config)# no do-exec test sbc issd-lru <cr>    # conditional_registration_candidates-002827
+(config)# no do-exec test sbc issd-media-address-preserve-init-negotiation <cr>    # conditional_registration_candidates-003438
+(config)# no do-exec test sbc issd-media-bypass-nattaggen <cr>    # conditional_registration_candidates-003259
+(config)# no do-exec test sbc issd-mep <cr>    # conditional_registration_candidates-002479
+(config)# no do-exec test sbc issd-qos-dem <cr>    # conditional_registration_candidates-002601
+(config)# no do-exec test sbc issd-sdp-sme <cr>    # conditional_registration_candidates-002909
+(config)# no do-exec test sbc issd-sipsh323 <cr>    # conditional_registration_candidates-002526
+(config)# no do-exec test sbc issd-subscriber_tcp <cr>    # conditional_registration_candidates-003604
+(config)# no do-exec test sbc issd-via-passthrough <cr>    # conditional_registration_candidates-003346
+(config)# no do-exec test sbc load-lua <string> <cr>    # conditional_registration_candidates-004691
+(config)# no do-exec test sbc mpf-harness <address> <number:0..65535> <cr>    # conditional_registration_candidates-006569
+(config)# no do-exec test sbc pmi-buf-size <number:0..10000> <cr>    # conditional_registration_candidates-004510
+(config)# no do-exec test sbc profile-to-editor sip method-profile <string> <cr>    # conditional_registration_candidates-008124
+(config)# no do-exec test sgbp dial-bids <cr>    # conditional_registration_candidates-002547
+(config)# no do-exec test srv6 create-vpn-demo-topo hostname <string> <cr>    # conditional_registration_candidates-006728
+(config)# no do-exec test srv6 enable <cr>    # conditional_registration_candidates-002264
+(config)# no do-exec test srv6 entry sid define <string> <address> <cr>    # conditional_registration_candidates-008681
+(config)# no do-exec test srv6 fib find-egress-vpn-sid <address> <cr>    # conditional_registration_candidates-006811
+(config)# no do-exec test srv6 fib gen-srh-str <number:16777216..33554431> insert-max-buf-len <number:0..256> <cr>    # conditional_registration_candidates-008746
+(config)# no do-exec test srv6 fib mvpn-adj display <cr>    # conditional_registration_candidates-007242
+(config)# no do-exec test srv6 fib platform-capability max-sid <number:1..16> <cr>    # conditional_registration_candidates-008053
+(config)# no do-exec test srv6 fib send-pkt ipv4 src-addr <address> dst-addr <address> vrf <string> <cr>    # conditional_registration_candidates-009044
+(config)# no do-exec test srv6 fib sid add_modify <address> sid-behaviour <number:0..256> prefix-len <number:0..128> block-len <number:0..128> node-len <number:0..128> function-len <number:0..128> <cr>    # conditional_registration_candidates-009071
+(config)# no do-exec test srv6 fib sr-stream del <number:25165856..33554431> <cr>    # conditional_registration_candidates-008162
+(config)# no do-exec test srv6 fib test-packet <number:0..24> <cr>    # conditional_registration_candidates-006896
+(config)# no do-exec test srv6 pfp show <cr>    # conditional_registration_candidates-004829
+(config)# no do-exec test srv6 pfp tos <number:0..255> <number:0..7> <cr>    # conditional_registration_candidates-007935
+(config)# no do-exec test srv6 pmtu headend enable <cr>    # conditional_registration_candidates-006784
+(config)# no do-exec test srv6 pmtu headend-local enable <cr>    # conditional_registration_candidates-006816
+(config)# no do-exec test srv6 pmtu max-punt-queue <number:0..1000> <cr>    # conditional_registration_candidates-006851
+(config)# no do-exec test srv6 pmtu transit enable <cr>    # conditional_registration_candidates-006754
+(config)# no do-exec test srv6 policy-manager <cr>    # conditional_registration_candidates-002498
+(config)# no do-exec test srv6 print-policies <cr>    # conditional_registration_candidates-002525
+(config)# no do-exec test srv6 sid-manager sid request <string> dynamic behavior <number:0..100> addr <address> <cr>    # conditional_registration_candidates-009041
+(config)# no do-exec test srv6 te-policy telemetry enable <cr>    # conditional_registration_candidates-006781
+(config)# no do-exec test translate pad <cr>    # conditional_registration_candidates-002230
+(config)# no do-exec test translate parameter string <cr>    # conditional_registration_candidates-004509
+(config)# no do-exec test translation-rule <number:1..2147483647> <string> <cr>    # conditional_registration_candidates-004817
+(config)# no do-exec test translation-rule <number:1..2147483647> <string> unknown <cr>    # conditional_registration_candidates-006485
+(config)# no do-exec test tunnel l3vpn nexthop add <address> <cr>    # conditional_registration_candidates-007896
+(config)# no do-exec test tunnel mudp create <address> <number:0..65535> <cr>    # conditional_registration_candidates-007954
+(config)# no do-exec test tunnel sessions enable <cr>    # conditional_registration_candidates-004778
+(config)# no do-exec test tunnel udp create <address> forwarding-vrf <number:0..65535> <number:0..65535> <cr>    # conditional_registration_candidates-008905
+(config)# no do-exec test vpdn call client disconnect <cr>    # conditional_registration_candidates-006498
+(config)# no do-exec test vpdn call request <cr>    # conditional_registration_candidates-004547
+(config)# no do-exec test vpdn call request disconnect <cr>    # conditional_registration_candidates-006461
+(config)# no do-exec test vpdn call server disconnect <cr>    # conditional_registration_candidates-006541
+(config)# no do-exec test vpdn l2tp disconnect cause inject <number:0..65535> <cr>    # conditional_registration_candidates-008648
+(config)# no do-exec test vpdn l2tp disconnect cause inject none <cr>    # conditional_registration_candidates-008656
+(config)# no do-exec test vpdn l2tp reset sequence <number:0..65535> <cr>    # conditional_registration_candidates-007845
+(config)# no do-exec test vpdn mgr disconnect <cr>    # conditional_registration_candidates-004582
+(config)# no do-exec test vpdn mgr request <cr>    # conditional_registration_candidates-004673
+(config)# no do-exec test vpdn mgr request disconnect <cr>    # conditional_registration_candidates-006495
+(config)# no do-exec test vpdn scalability cancel <cr>    # conditional_registration_candidates-004629
+(config)# no do-exec test vpdn scalability domain <string> session <number:1..32000> <cr>    # conditional_registration_candidates-008677
+(config)# no do-exec test vpn author request <cr>    # conditional_registration_candidates-004489
+(config)# no do-exec test vpn author request cancel <cr>    # conditional_registration_candidates-006426
+(config)# no do-exec test vsp <cr>    # conditional_registration_candidates-000859
+(config)# no do-exec test xdr buffer set default <cr>    # conditional_registration_candidates-006670
+(config)# no do-exec test xdr buffer test <cr>    # conditional_registration_candidates-004739
+(config)# no do-exec test xdr notify-oos <cr>    # conditional_registration_candidates-002433
+(config)# no do-exec test xdr state-change disabled <cr>    # conditional_registration_candidates-004781
+(config)# no do-exec traceroute mpls <cr>    # conditional_registration_candidates-001544
+(config)# no do-exec utd connectivity threat-inspection <cr>    # conditional_registration_candidates-002469
+(config)# no do-exec utd process stop dns <cr>    # conditional_registration_candidates-004731
+(config)# no do-exec utd signature update <cr>    # conditional_registration_candidates-002544
+(config)# no do-exec utd threat-inspection custom-signature apply global <cr>    # conditional_registration_candidates-006666
+(config)# no do-exec utd threat-inspection custom-signature load global <cr>    # conditional_registration_candidates-006662
+(config)# no do-exec utd web-filter database update <cr>    # conditional_registration_candidates-004616
+(config)# no do-exec xconnect backup force-switchover peer <address> <number:1..4294967295> <cr>    # conditional_registration_candidates-007795
+(config)# no domain default <cr>    # conditional_registration_candidates-000229
+(config)# no dsapp line <cr>    # conditional_registration_candidates-000235
+(config)# no dsapp line call-control mode feature <cr>    # conditional_registration_candidates-004265
+(config)# no dsapp line call-control mode standard <cr>    # conditional_registration_candidates-004260
+(config)# no dsapp line feature access-code <cr>    # conditional_registration_candidates-001852
+(config)# no dsapp line feature callback <cr>    # conditional_registration_candidates-001859
+(config)# no dsapp line feature voice-mail <cr>    # conditional_registration_candidates-001873
+(config)# no ephone-type <cr>    # conditional_registration_candidates-000195
+(config)# no et-analytics <cr>    # conditional_registration_candidates-000059
+(config)# no flow file-export default <cr>    # conditional_registration_candidates-000591
+(config)# no flow-sampler-map <string> <cr>    # conditional_registration_candidates-000203
+(config)# no gateway <cr>    # conditional_registration_candidates-000176
+(config)# no geo database <cr>    # conditional_registration_candidates-000217
+(config)# no gw-accounting aaa <cr>    # conditional_registration_candidates-000277
+(config)# no gw-accounting file <cr>    # conditional_registration_candidates-000312
+(config)# no gw-accounting h323 <cr>    # conditional_registration_candidates-000297
+(config)# no gw-accounting h323 resolve <cr>    # conditional_registration_candidates-000704
+(config)# no gw-accounting h323 upd-inbound-callinfo <cr>    # conditional_registration_candidates-000716
+(config)# no gw-accounting h323 vsa <cr>    # conditional_registration_candidates-000681
+(config)# no gw-accounting syslog <cr>    # conditional_registration_candidates-000313
+(config)# no gw-accounting voip <cr>    # conditional_registration_candidates-000273
+(config)# no http client cache memory file <cr>    # conditional_registration_candidates-004270
+(config)# no http client cache memory pool <cr>    # conditional_registration_candidates-004262
+(config)# no http client cache query <cr>    # conditional_registration_candidates-001853
+(config)# no http client cache refresh <cr>    # conditional_registration_candidates-001874
+(config)# no http client connection idle <cr>    # conditional_registration_candidates-001884
+(config)# no http client connection persistent <cr>    # conditional_registration_candidates-001856
+(config)# no http client connection timeout <cr>    # conditional_registration_candidates-001886
+(config)# no http client cookie <cr>    # conditional_registration_candidates-000569
+(config)# no http client post-multipart content-disposition filename no-quote <cr>    # conditional_registration_candidates-006347
+(config)# no http client response timeout <cr>    # conditional_registration_candidates-001898
+(config)# no http client source interface <cr>    # conditional_registration_candidates-001911
+(config)# no ip explicit-path identifier <number:1..65535> <cr>    # conditional_registration_candidates-002999
+(config)# no ip export destination <address> <number:1..65535> <cr>    # conditional_registration_candidates-005320
+(config)# no ip export template options export-stats <cr>    # conditional_registration_candidates-005246
+(config)# no ip export template options refresh-rate <cr>    # conditional_registration_candidates-005516
+(config)# no ip export template options sampler <cr>    # conditional_registration_candidates-005416
+(config)# no ip export template options timeout-rate <cr>    # conditional_registration_candidates-005415
+(config)# no ip export template refresh-rate <cr>    # conditional_registration_candidates-003365
+(config)# no ip export template timeout-rate <cr>    # conditional_registration_candidates-003276
+(config)# no ip export version <cr>    # conditional_registration_candidates-001356
+(config)# no ip flow-aggregation cache as <cr>    # conditional_registration_candidates-002950
+(config)# no ip flow-cache active-timeout <cr>    # conditional_registration_candidates-001024
+(config)# no ip flow-cache entries <cr>    # conditional_registration_candidates-001027
+(config)# no ip flow-cache mpls label-positions <cr>    # conditional_registration_candidates-002835
+(config)# no ip flow-cache timeout active <cr>    # conditional_registration_candidates-002540
+(config)# no ip flow-cache timeout inactive <cr>    # conditional_registration_candidates-002496
+(config)# no ip flow-capture fragment-offset <cr>    # conditional_registration_candidates-001224
+(config)# no ip flow-egress input-interface <cr>    # conditional_registration_candidates-000910
+(config)# no ip flow-export source <cr>    # conditional_registration_candidates-001355
+(config)# no ip flow-export version <cr>    # conditional_registration_candidates-001405
+(config)# no ip flow-top-talkers <cr>    # conditional_registration_candidates-000408
+(config)# no ip inspect <cr>    # conditional_registration_candidates-000427
+(config)# no ip inspect alert-off <cr>    # conditional_registration_candidates-001099
+(config)# no ip inspect audit-trail <cr>    # conditional_registration_candidates-001028
+(config)# no ip inspect dns-timeout <cr>    # conditional_registration_candidates-001363
+(config)# no ip inspect fast <cr>    # conditional_registration_candidates-000944
+(config)# no ip inspect hashtable-size <cr>    # conditional_registration_candidates-001251
+(config)# no ip inspect log drop-pkt <cr>    # conditional_registration_candidates-002239
+(config)# no ip inspect max-incomplete high <cr>    # conditional_registration_candidates-002841
+(config)# no ip inspect max-incomplete low <cr>    # conditional_registration_candidates-002765
+(config)# no ip inspect name <string> fragment <cr>    # conditional_registration_candidates-005757
+(config)# no ip inspect name <string> ftp <cr>    # conditional_registration_candidates-005324
+(config)# no ip inspect one-minute high <cr>    # conditional_registration_candidates-002918
+(config)# no ip inspect one-minute low <cr>    # conditional_registration_candidates-002840
+(config)# no ip inspect tcp block-non-session <cr>    # conditional_registration_candidates-003370
+(config)# no ip inspect tcp finwait-time <cr>    # conditional_registration_candidates-003290
+(config)# no ip inspect tcp idle-time <cr>    # conditional_registration_candidates-003196
+(config)# no ip inspect tcp max-incomplete <cr>    # conditional_registration_candidates-003542
+(config)# no ip inspect tcp synwait-time <cr>    # conditional_registration_candidates-003380
+(config)# no ip inspect udp idle-time <cr>    # conditional_registration_candidates-002916
+(config)# no ip mobile mobile-map <string> <cr>    # conditional_registration_candidates-003926
+(config)# no ip mobile router <cr>    # conditional_registration_candidates-001613
+(config)# no ip multicast netflow output-counters <cr>    # conditional_registration_candidates-002363
+(config)# no ip multicast netflow rpf-failure <cr>    # conditional_registration_candidates-002491
+(config)# no ip route-cache flow <cr>    # conditional_registration_candidates-001357
+(config)# no ip rsvp high-availability send-count <cr>    # conditional_registration_candidates-003266
+(config)# no ip rsvp high-availability send-timer <cr>    # conditional_registration_candidates-003177
+(config)# no ip udptn source-interface <cr>    # conditional_registration_candidates-000718
+(config)# no ivr asr-server <cr>    # conditional_registration_candidates-000269
+(config)# no ivr autoload <cr>    # conditional_registration_candidates-000218
+(config)# no ivr contact-center <cr>    # conditional_registration_candidates-000204
+(config)# no ivr language link <cr>    # conditional_registration_candidates-000673
+(config)# no ivr prompt buffers <cr>    # conditional_registration_candidates-000632
+(config)# no ivr prompt cutoff-threshold <cr>    # conditional_registration_candidates-000643
+(config)# no ivr prompt memory <cr>    # conditional_registration_candidates-000616
+(config)# no ivr prompt streamed <cr>    # conditional_registration_candidates-000657
+(config)# no ivr record cpu flash <cr>    # conditional_registration_candidates-001909
+(config)# no ivr record jitter <string> <cr>    # conditional_registration_candidates-001894
+(config)# no ivr record memory session <cr>    # conditional_registration_candidates-001899
+(config)# no ivr record memory system <cr>    # conditional_registration_candidates-001885
+(config)# no ivr tts-server <cr>    # conditional_registration_candidates-000280
+(config)# no l2 pseudowire routing <cr>    # conditional_registration_candidates-000677
+(config)# no l2 router-id <cr>    # conditional_registration_candidates-000299
+(config)# no l2vpn <cr>    # conditional_registration_candidates-000074
+(config)# no l2vpn sdwan instance <number:1..65531> <cr>    # conditional_registration_candidates-001866
+(config)# no l2vpn vfi context <string> <cr>    # conditional_registration_candidates-001858
+(config)# no l2vpn xconnect context <string> <cr>    # conditional_registration_candidates-003391
+(config)# no l3vpn encapsulation ip <string> <cr>    # conditional_registration_candidates-002370
+(config)# no menu <string> <cr>    # conditional_registration_candidates-000431
+(config)# no metadata flow <cr>    # conditional_registration_candidates-000233
+(config)# no metadata flow transmit <cr>    # conditional_registration_candidates-000567
+(config)# no mgcp <cr>    # conditional_registration_candidates-000198
+(config)# no mgcp behavior <string> <string> <cr>    # conditional_registration_candidates-003858
+(config)# no mgcp bind control <cr>    # conditional_registration_candidates-001701
+(config)# no mgcp block-newcalls <cr>    # conditional_registration_candidates-000482
+(config)# no mgcp call-agent <cr>    # conditional_registration_candidates-000503
+(config)# no mgcp codec <cr>    # conditional_registration_candidates-000550
+(config)# no mgcp crypto rfc-preferred <cr>    # conditional_registration_candidates-001844
+(config)# no mgcp debug-header <cr>    # conditional_registration_candidates-000533
+(config)# no mgcp digitmap <cr>    # conditional_registration_candidates-000483
+(config)# no mgcp disconnect-delay <cr>    # conditional_registration_candidates-000563
+(config)# no mgcp dns stale threshold <cr>    # conditional_registration_candidates-004215
+(config)# no mgcp dtmf-relay voip <cr>    # conditional_registration_candidates-001760
+(config)# no mgcp echo-cancel endpoint <cr>    # conditional_registration_candidates-001815
+(config)# no mgcp echo-cancel mode <cr>    # conditional_registration_candidates-001805
+(config)# no mgcp echo-cancel stat <cr>    # conditional_registration_candidates-001811
+(config)# no mgcp endpoint offset <cr>    # conditional_registration_candidates-001797
+(config)# no mgcp explicit hookstate <cr>    # conditional_registration_candidates-001807
+(config)# no mgcp fallback <cr>    # conditional_registration_candidates-000561
+(config)# no mgcp fax rate <cr>    # conditional_registration_candidates-001725
+(config)# no mgcp fax t38 ecm <cr>    # conditional_registration_candidates-003932
+(config)# no mgcp fax-relay ans-disable <cr>    # conditional_registration_candidates-001727
+(config)# no mgcp fax-relay sg3-to-g3 <cr>    # conditional_registration_candidates-001711
+(config)# no mgcp ip qos dscp default media <cr>    # conditional_registration_candidates-007529
+(config)# no mgcp ip-tos high-reliability <cr>    # conditional_registration_candidates-001780
+(config)# no mgcp lawful-intercept <cr>    # conditional_registration_candidates-000528
+(config)# no mgcp max-waiting-delay <cr>    # conditional_registration_candidates-000507
+(config)# no mgcp modem passthrough voip <cr>    # conditional_registration_candidates-004213
+(config)# no mgcp modem relay voip latency <cr>    # conditional_registration_candidates-006344
+(config)# no mgcp package-capability mdste-package <cr>    # conditional_registration_candidates-001786
+(config)# no mgcp persistent offhook <cr>    # conditional_registration_candidates-001810
+(config)# no mgcp piggyback message <cr>    # conditional_registration_candidates-001793
+(config)# no mgcp playout adaptive <cr>    # conditional_registration_candidates-001791
+(config)# no mgcp profile default <cr>    # conditional_registration_candidates-001831
+(config)# no mgcp quality-threshold hwm-jitter-buffer <cr>    # conditional_registration_candidates-001784
+(config)# no mgcp quarantine mode <cr>    # conditional_registration_candidates-001818
+(config)# no mgcp quarantine persistent-event <cr>    # conditional_registration_candidates-001820
+(config)# no mgcp request retries <cr>    # conditional_registration_candidates-001747
+(config)# no mgcp request timeout <cr>    # conditional_registration_candidates-001756
+(config)# no mgcp restart-delay <cr>    # conditional_registration_candidates-000523
+(config)# no mgcp rtp icmp timeout <cr>    # conditional_registration_candidates-004206
+(config)# no mgcp rtp payload-type g726r16 <cr>    # conditional_registration_candidates-004202
+(config)# no mgcp rtrcac <cr>    # conditional_registration_candidates-000541
+(config)# no mgcp sched-time <cr>    # conditional_registration_candidates-000515
+(config)# no mgcp sdp mdcx-ack <cr>    # conditional_registration_candidates-001801
+(config)# no mgcp sdp notation <cr>    # conditional_registration_candidates-001802
+(config)# no mgcp sdp simple <cr>    # conditional_registration_candidates-001790
+(config)# no mgcp sdp xpc-codec <cr>    # conditional_registration_candidates-001794
+(config)# no mgcp sgcp restart notify <cr>    # conditional_registration_candidates-004205
+(config)# no mgcp src-cac <cr>    # conditional_registration_candidates-000545
+(config)# no mgcp timer keep-alive <cr>    # conditional_registration_candidates-001845
+(config)# no mgcp timer net-cont-test <cr>    # conditional_registration_candidates-001841
+(config)# no mgcp timer nse-response t38 <cr>    # conditional_registration_candidates-004220
+(config)# no mgcp timer receive-rtcp <cr>    # conditional_registration_candidates-001830
+(config)# no mgcp timer toh-time <cr>    # conditional_registration_candidates-001836
+(config)# no mgcp tse payload <cr>    # conditional_registration_candidates-001827
+(config)# no mgcp vad <cr>    # conditional_registration_candidates-000538
+(config)# no mgcp validate call-agent source-ipaddr <cr>    # conditional_registration_candidates-004210
+(config)# no mgcp validate domain-name <cr>    # conditional_registration_candidates-001824
+(config)# no mgcp voaal2 lco-codec ignore <cr>    # conditional_registration_candidates-004214
+(config)# no mgcp voice-quality-stats <cr>    # conditional_registration_candidates-000534
+(config)# no novell accounting-list <cr>    # conditional_registration_candidates-000382
+(config)# no novell accounting-threshold <cr>    # conditional_registration_candidates-000130
+(config)# no novell accounting-transits <cr>    # conditional_registration_candidates-000132
+(config)# no novell advertise-to-lost-route <cr>    # conditional_registration_candidates-000397
+(config)# no novell algorithms <cr>    # conditional_registration_candidates-000324
+(config)# no novell backup-server-query-interval <cr>    # conditional_registration_candidates-000119
+(config)# no novell broadcast-fastswitching <cr>    # conditional_registration_candidates-000365
+(config)# no novell default-output-sap-delay <cr>    # conditional_registration_candidates-000097
+(config)# no novell default-route <cr>    # conditional_registration_candidates-000380
+(config)# no novell default-triggered-sap-delay <cr>    # conditional_registration_candidates-000102
+(config)# no novell default-triggered-sap-holddown <cr>    # conditional_registration_candidates-000088
+(config)# no novell gns-response-delay <cr>    # conditional_registration_candidates-000108
+(config)# no novell gns-round-robin <cr>    # conditional_registration_candidates-000311
+(config)# no novell internal-network <cr>    # conditional_registration_candidates-000343
+(config)# no novell maximum-hops <cr>    # conditional_registration_candidates-000135
+(config)# no novell maximum-paths <cr>    # conditional_registration_candidates-000055
+(config)# no novell netbios-socket-input-checks <cr>    # conditional_registration_candidates-000341
+(config)# no novell per-host-load-share <cr>    # conditional_registration_candidates-000407
+(config)# no novell ping-default cisco <cr>    # conditional_registration_candidates-001225
+(config)# no novell route default <cr>    # conditional_registration_candidates-001566
+(config)# no novell route-cache inactivity-timeout <cr>    # conditional_registration_candidates-001435
+(config)# no novell route-cache max-size <cr>    # conditional_registration_candidates-001507
+(config)# no novell route-cache update-timeout <cr>    # conditional_registration_candidates-001474
+(config)# no novell routing <cr>    # conditional_registration_candidates-000234
+(config)# no novell sap <number:0..65535> <string> <cr>    # conditional_registration_candidates-003675
+(config)# no novell sap follow-route-path <cr>    # conditional_registration_candidates-001488
+(config)# no novell sap-queue-maximum <cr>    # conditional_registration_candidates-000261
+(config)# no novell sap-update-queue-maximum <cr>    # conditional_registration_candidates-000270
+(config)# no novell sap-uses-routing-info <cr>    # conditional_registration_candidates-000337
+(config)# no novell server-split-horizon-on-server-paths <cr>    # conditional_registration_candidates-000384

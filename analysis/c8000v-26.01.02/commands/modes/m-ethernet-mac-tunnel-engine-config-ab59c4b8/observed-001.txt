@@ -1,0 +1,11 @@
+# 模式 ethernet-mac-tunnel-engine-config；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-tunnel-eng)# default exit <cr>    # observed_connections-009537
+(config-tunnel-eng)# default mac-address source <address> <cr>    # observed_connections-009540
+(config-tunnel-eng)# exit <cr>    # observed_connections-009535
+(config-tunnel-eng)# mac-address source <address> <cr>    # observed_connections-009538
+(config-tunnel-eng)# mac-address source <address> interface <interface> <cr>    # observed_connections-009541
+(config-tunnel-eng)# no exit <cr>    # observed_connections-009536
+(config-tunnel-eng)# no mac-address source <address> <cr>    # observed_connections-009539

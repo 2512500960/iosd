@@ -1,0 +1,13 @@
+# 模式 bdomain-glob-mode；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-bdomain)# default member pseudowire <number:1..100000> <cr>    # conditional_registration_candidates-011097
+(config-bdomain)# default member sdwan-instance <number:1..65531> vc-id <number:1..4294967295> single-homing <cr>    # conditional_registration_candidates-011100
+(config-bdomain)# default member vfi <string> <cr>    # conditional_registration_candidates-011095
+(config-bdomain)# member pseudowire <number:1..100000> <cr>    # conditional_registration_candidates-011093
+(config-bdomain)# member sdwan-instance <number:1..65531> vc-id <number:1..4294967295> single-homing <cr>    # conditional_registration_candidates-011098
+(config-bdomain)# member vfi <string> <cr>    # conditional_registration_candidates-011092
+(config-bdomain)# no member pseudowire <number:1..100000> <cr>    # conditional_registration_candidates-011096
+(config-bdomain)# no member sdwan-instance <number:1..65531> vc-id <number:1..4294967295> single-homing <cr>    # conditional_registration_candidates-011099
+(config-bdomain)# no member vfi <string> <cr>    # conditional_registration_candidates-011094

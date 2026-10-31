@@ -1,0 +1,13 @@
+# 模式 ethernet-evc-config；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-evc)# default exit <cr>    # observed_connections-009528
+(config-evc)# default oam protocol <cr>    # observed_connections-009531
+(config-evc)# default uni count <cr>    # observed_connections-009532
+(config-evc)# exit <cr>    # observed_connections-009526
+(config-evc)# no exit <cr>    # observed_connections-009527
+(config-evc)# no oam protocol <cr>    # observed_connections-009529
+(config-evc)# no uni count <cr>    # observed_connections-009530
+(config-evc)# oam protocol ldp <cr>    # observed_connections-009533
+(config-evc)# uni count <number:2..1024> <cr>    # observed_connections-009534

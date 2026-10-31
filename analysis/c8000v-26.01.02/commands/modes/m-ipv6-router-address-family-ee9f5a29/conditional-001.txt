@@ -1,0 +1,7 @@
+# 模式 ipv6-router-address-family；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-ipv6-rtr-af)# default timers manet ackwait <cr>    # conditional_registration_candidates-011138
+(config-ipv6-rtr-af)# no timers manet ackwait <cr>    # conditional_registration_candidates-011136
+(config-ipv6-rtr-af)# timers manet ackwait <number:0..10000> <cr>    # conditional_registration_candidates-011137

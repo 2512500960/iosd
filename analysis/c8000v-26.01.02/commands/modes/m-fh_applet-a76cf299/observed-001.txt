@@ -1,0 +1,102 @@
+# 模式 fh_applet；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-applet)# action <string> add <string> <string> <cr>    # observed_connections-005842
+(config-applet)# action <string> append <string> <cr>    # observed_connections-005837
+(config-applet)# action <string> break <cr>    # observed_connections-005822
+(config-applet)# action <string> cli <cr>    # observed_connections-005826
+(config-applet)# action <string> comment <string> <cr>    # observed_connections-005832
+(config-applet)# action <string> context save <cr>    # observed_connections-005838
+(config-applet)# action <string> continue <cr>    # observed_connections-005823
+(config-applet)# action <string> decrement <string> <cr>    # observed_connections-005831
+(config-applet)# action <string> else <cr>    # observed_connections-005818
+(config-applet)# action <string> exit <cr>    # observed_connections-005824
+(config-applet)# action <string> file close <string> <cr>    # observed_connections-005843
+(config-applet)# action <string> foreach <string> <string> <cr>    # observed_connections-005840
+(config-applet)# action <string> gets <string> <cr>    # observed_connections-005834
+(config-applet)# action <string> handle-error <cr>    # observed_connections-005825
+(config-applet)# action <string> increment <string> <cr>    # observed_connections-005830
+(config-applet)# action <string> mail <cr>    # observed_connections-005844
+(config-applet)# action <string> puts <string> <cr>    # observed_connections-005835
+(config-applet)# action <string> regexp <string> <string> <cr>    # observed_connections-005841
+(config-applet)# action <string> reload <cr>    # observed_connections-005798
+(config-applet)# action <string> snmp-object-value <cr>    # observed_connections-005802
+(config-applet)# action <string> string compare <cr>    # observed_connections-005836
+(config-applet)# action <string> syslog <cr>    # observed_connections-005806
+(config-applet)# description <string> <cr>    # observed_connections-005773
+(config-applet)# event application <cr>    # observed_connections-005780
+(config-applet)# event application maxrun <number:0..31536000> . <?match_subsec_action@55558a8ff140> <cr>    # observed_connections-005852
+(config-applet)# event cli <cr>    # observed_connections-005791
+(config-applet)# event cli maxrun <number:0..31536000> . <?match_subsec_action@55558a8dba38> <cr>    # observed_connections-005862
+(config-applet)# event config <cr>    # observed_connections-005793
+(config-applet)# event config maxrun <number:0..31536000> . <?match_subsec_action@555588ee9cf0> <cr>    # observed_connections-005864
+(config-applet)# event counter <cr>    # observed_connections-005790
+(config-applet)# event counter maxrun <number:0..31536000> . <?match_subsec_action@55558a8dfcc8> <cr>    # observed_connections-005861
+(config-applet)# event env severity major <cr>    # observed_connections-005833
+(config-applet)# event env severity major maxrun <number:0..31536000> . <?match_subsec_action@555588eeb288> <cr>    # observed_connections-005867
+(config-applet)# event gold <cr>    # observed_connections-005792
+(config-applet)# event gold maxrun <number:0..4294967295> . <?match_subsec_action@555588eecc70> <cr>    # observed_connections-005863
+(config-applet)# event interface <cr>    # observed_connections-005788
+(config-applet)# event interface name <interface> <cr>    # observed_connections-005848
+(config-applet)# event ioswdsysmon <cr>    # observed_connections-005789
+(config-applet)# event ioswdsysmon maxrun <number:0..31536000> . <?match_subsec_action@55558a8e6758> <cr>    # observed_connections-005859
+(config-applet)# event mat <cr>    # observed_connections-005778
+(config-applet)# event mat interface <interface> <cr>    # observed_connections-005846
+(config-applet)# event neighbor-discovery <cr>    # observed_connections-005777
+(config-applet)# event neighbor-discovery interface <interface> <cr>    # observed_connections-005845
+(config-applet)# event none <cr>    # observed_connections-005787
+(config-applet)# event none default <number:0..4294967295> . <?match_subsec_action@55558a8ea460> <cr>    # observed_connections-005860
+(config-applet)# event oir <cr>    # observed_connections-005786
+(config-applet)# event oir maxrun <number:0..31536000> . <?match_subsec_action@55558a8ec548> <cr>    # observed_connections-005858
+(config-applet)# event resource <cr>    # observed_connections-005776
+(config-applet)# event resource maxrun <number:0..31536000> . <?match_subsec_action@55558a96aa08> <cr>    # observed_connections-005851
+(config-applet)# event rf <cr>    # observed_connections-005785
+(config-applet)# event rf maxrun <number:0..31536000> . <?match_subsec_action@55558a8edd08> <cr>    # observed_connections-005857
+(config-applet)# event routing <cr>    # observed_connections-005779
+(config-applet)# event routing network <prefix:dynamic> <cr>    # observed_connections-005847
+(config-applet)# event rpc <cr>    # observed_connections-005775
+(config-applet)# event rpc default <number:0..4294967295> . <?match_subsec_action@555588ef10b0> <cr>    # observed_connections-005850
+(config-applet)# event snmp <cr>    # observed_connections-005784
+(config-applet)# event snmp maxrun <number:0..31536000> . <?match_subsec_action@55558a8ef928> <cr>    # observed_connections-005856
+(config-applet)# event snmp-notification <cr>    # observed_connections-005782
+(config-applet)# event snmp-notification maxrun <number:0..31536000> . <?match_subsec_action@55558a8f5220> <cr>    # observed_connections-005854
+(config-applet)# event snmp-object <cr>    # observed_connections-005783
+(config-applet)# event snmp-object maxrun <number:0..31536000> . <?match_subsec_action@55558a8f2b80> <cr>    # observed_connections-005855
+(config-applet)# event syslog <cr>    # observed_connections-005781
+(config-applet)# event syslog maxrun <number:0..31536000> . <?match_subsec_action@55558a8f7928> <cr>    # observed_connections-005853
+(config-applet)# event timer watchdog cron-entry <string> <cr>    # observed_connections-005839
+(config-applet)# event timer watchdog time <number:1..2085978494> . <?match_subsec_action@55558a8fd5d0> <cr>    # observed_connections-005866
+(config-applet)# event track <number:1..32767> <cr>    # observed_connections-005801
+(config-applet)# event track <number:1..32767> maxrun <number:0..31536000> . <?match_subsec_action@55558a96c870> <cr>    # observed_connections-005865
+(config-applet)# exit <cr>    # observed_connections-005770
+(config-applet)# no action <string> <cr>    # observed_connections-005794
+(config-applet)# no description <cr>    # observed_connections-005774
+(config-applet)# no event application <cr>    # observed_connections-005805
+(config-applet)# no event cli <cr>    # observed_connections-005817
+(config-applet)# no event config <cr>    # observed_connections-005821
+(config-applet)# no event counter <cr>    # observed_connections-005815
+(config-applet)# no event env <cr>    # observed_connections-005820
+(config-applet)# no event gold <cr>    # observed_connections-005819
+(config-applet)# no event interface <cr>    # observed_connections-005816
+(config-applet)# no event ioswdsysmon <cr>    # observed_connections-005814
+(config-applet)# no event mat <cr>    # observed_connections-005803
+(config-applet)# no event neighbor-discovery <cr>    # observed_connections-005800
+(config-applet)# no event none <cr>    # observed_connections-005813
+(config-applet)# no event oir <cr>    # observed_connections-005812
+(config-applet)# no event resource <cr>    # observed_connections-005799
+(config-applet)# no event rf <cr>    # observed_connections-005811
+(config-applet)# no event routing <cr>    # observed_connections-005804
+(config-applet)# no event rpc <cr>    # observed_connections-005795
+(config-applet)# no event snmp <cr>    # observed_connections-005810
+(config-applet)# no event snmp-notification <cr>    # observed_connections-005808
+(config-applet)# no event snmp-object <cr>    # observed_connections-005809
+(config-applet)# no event syslog <cr>    # observed_connections-005807
+(config-applet)# no event tag <string> <cr>    # observed_connections-005827
+(config-applet)# no event timer watchdog <cr>    # observed_connections-005829
+(config-applet)# no event track <cr>    # observed_connections-005797
+(config-applet)# no set <string> <cr>    # observed_connections-005796
+(config-applet)# no trigger <cr>    # observed_connections-005772
+(config-applet)# set <string> <string> <string> <cr>    # observed_connections-005828
+(config-applet)# trigger <cr>    # observed_connections-005771
+(config-applet)# trigger period <number:0..4294967295> . <?match_subsec_action@555588f04c88> <cr>    # observed_connections-005849

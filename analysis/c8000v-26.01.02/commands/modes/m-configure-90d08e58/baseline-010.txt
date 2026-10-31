@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-010.md
+
+(config)# default do-exec debug nat66 memory <cr>    # path-037531
+(config)# default do-exec debug nat66 statistics <cr>    # path-037592
+(config)# default do-exec debug nat66 trace <cr>    # path-037447
+(config)# default do-exec debug nat66 warn <cr>    # path-037415
+(config)# default do-exec debug ncia <cr>    # path-033579
+(config)# default do-exec debug netbios-name-cache <cr>    # path-033450
+(config)# default do-exec debug netconf all <cr>    # path-042711
+(config)# default do-exec debug netconf error <cr>    # path-042687
+(config)# default do-exec debug netconf-yang <cr>    # path-033680
+(config)# default do-exec debug netconf-yang ssh <cr>    # path-043364
+(config)# default do-exec debug network-rf bulk <cr>    # path-035299
+(config)# default do-exec debug network-rf cdb <cr>    # path-035362
+(config)# default do-exec debug network-rf comms <cr>    # path-035426
+(config)# default do-exec debug network-rf conditional <cr>    # path-035478
+(config)# default do-exec debug network-rf entity <cr>    # path-035530
+(config)# default do-exec debug network-rf error <cr>    # path-035588
+(config)# default do-exec debug network-rf hwidb <cr>    # path-035645
+(config)# default do-exec debug network-rf platform <cr>    # path-035697
+(config)# default do-exec debug network-rf sso <cr>    # path-035756
+(config)# default do-exec debug network-rf swidb <cr>    # path-035824
+(config)# default do-exec debug nhrp <cr>    # path-032223
+(config)# default do-exec debug nhrp attribute <cr>    # path-040714
+(config)# default do-exec debug nhrp cache <cr>    # path-040618
+(config)# default do-exec debug nhrp condition <cr>    # path-040810
+(config)# default do-exec debug nhrp datapath <cr>    # path-040683
+(config)# default do-exec debug nhrp detail <cr>    # path-040529
+(config)# default do-exec debug nhrp error <cr>    # path-040643
+(config)# default do-exec debug nhrp event <cr>    # path-040743
+(config)# default do-exec debug nhrp extension <cr>    # path-040556
+(config)# default do-exec debug nhrp group <cr>    # path-040666
+(config)# default do-exec debug nhrp packet <cr>    # path-040496
+(config)# default do-exec debug nhrp rate <cr>    # path-040589
+(config)# default do-exec debug nhrp routing <cr>    # path-040530
+(config)# default do-exec debug ntp adjust <cr>    # path-038006
+(config)# default do-exec debug ntp all <cr>    # path-037837
+(config)# default do-exec debug ntp core <cr>    # path-038034
+(config)# default do-exec debug ntp events <cr>    # path-037998
+(config)# default do-exec debug ntp packet <cr>    # path-037975
+(config)# default do-exec debug ntp refclock <cr>    # path-037968
+(config)# default do-exec debug nvram <cr>    # path-027906
+(config)# default do-exec debug object-group local info <cr>    # path-051343
+(config)# default do-exec debug oce all <cr>    # path-036547
+(config)# default do-exec debug oce explorer <cr>    # path-036801
+(config)# default do-exec debug oce init <cr>    # path-036483
+(config)# default do-exec debug oce packet <cr>    # path-037041
+(config)# default do-exec debug oce packet adj <cr>    # path-045906
+(config)# default do-exec debug oce packet atom <cr>    # path-046197
+(config)# default do-exec debug oce packet bundle <cr>    # path-046050
+(config)# default do-exec debug oce packet eos <cr>    # path-046150
+(config)# default do-exec debug oce packet frr <cr>    # path-046258
+(config)# default do-exec debug oce packet gal-check <cr>    # path-046345
+(config)# default do-exec debug oce packet label <cr>    # path-045960
+(config)# default do-exec debug oce packet loadbalance <cr>    # path-046009
+(config)# default do-exec debug oce packet lookup <cr>    # path-046297
+(config)# default do-exec debug oce packet marked-only signal <cr>    # path-053272
+(config)# default do-exec debug oce packet push-counter <cr>    # path-046406
+(config)# default do-exec debug oce packet qos <cr>    # path-046230
+(config)# default do-exec debug oce packet special <cr>    # path-045854
+(config)# default do-exec debug oce packet tunnel decap <cr>    # path-053526
+(config)# default do-exec debug oce set <cr>    # path-036497
+(config)# default do-exec debug oce set frr <cr>    # path-045838
+(config)# default do-exec debug odb events <cr>    # path-041861
+(config)# default do-exec debug oir <cr>    # path-029791
+(config)# default do-exec debug onep <cr>    # path-032885
+(config)# default do-exec debug onep application session all <cr>    # path-056211
+(config)# default do-exec debug onep server <cr>    # path-042561
+(config)# default do-exec debug onep server aaa <cr>    # path-050711
+(config)# default do-exec debug onep server certificate <cr>    # path-050733
+(config)# default do-exec debug onep server cidb <cr>    # path-050773
+(config)# default do-exec debug onep server cli <cr>    # path-050795
+(config)# default do-exec debug onep server config <cr>    # path-050754
+(config)# default do-exec debug onep server container <cr>    # path-050814
+(config)# default do-exec debug onep server cxsc <cr>    # path-051034
+(config)# default do-exec debug onep server datapath <cr>    # path-050834
+(config)# default do-exec debug onep server dhcp <cr>    # path-050851
+(config)# default do-exec debug onep server event <cr>    # path-050864
+(config)# default do-exec debug onep server ha <cr>    # path-050880
+(config)# default do-exec debug onep server interface <cr>    # path-050893
+(config)# default do-exec debug onep server licensing <cr>    # path-050904
+(config)# default do-exec debug onep server lisp <cr>    # path-050922
+(config)# default do-exec debug onep server location <cr>    # path-050936
+(config)# default do-exec debug onep server mediatrace <cr>    # path-050950
+(config)# default do-exec debug onep server message <cr>    # path-050966
+(config)# default do-exec debug onep server mpss <cr>    # path-050979
+(config)# default do-exec debug onep server nat <cr>    # path-050997
+(config)# default do-exec debug onep server ntp <cr>    # path-051019
+(config)# default do-exec debug onep server pfr <cr>    # path-051055
+(config)# default do-exec debug onep server policy <cr>    # path-051044
+(config)# default do-exec debug onep server probe <cr>    # path-051048
+(config)# default do-exec debug onep server routing <cr>    # path-051062
+(config)# default do-exec debug onep server session <cr>    # path-051155
+(config)# default do-exec debug onep server session-manager <cr>    # path-051069
+(config)# default do-exec debug onep server topology <cr>    # path-051081
+(config)# default do-exec debug onep server tunnel <cr>    # path-051096
+(config)# default do-exec debug onep server utd <cr>    # path-051110
+(config)# default do-exec debug onep server util <cr>    # path-051125
+(config)# default do-exec debug onep server vty <cr>    # path-051135
+(config)# default do-exec debug opflex agent all <cr>    # path-050297
+(config)# default do-exec debug ospfv3 adj <cr>    # path-041165
+(config)# default do-exec debug ospfv3 authentication <cr>    # path-041713
+(config)# default do-exec debug ospfv3 crimson notification <cr>    # path-050508
+(config)# default do-exec debug ospfv3 crimson oper <cr>    # path-050490
+(config)# default do-exec debug ospfv3 database-timer <cr>    # path-041604
+(config)# default do-exec debug ospfv3 database-timer rate-limit <cr>    # path-050448
+(config)# default do-exec debug ospfv3 demand-circuit <cr>    # path-041311
+(config)# default do-exec debug ospfv3 events <cr>    # path-041345
+(config)# default do-exec debug ospfv3 flood <cr>    # path-041459
+(config)# default do-exec debug ospfv3 graceful-restart <cr>    # path-041262
+(config)# default do-exec debug ospfv3 ha <cr>    # path-041292
+(config)# default do-exec debug ospfv3 hello <cr>    # path-041322
+(config)# default do-exec debug ospfv3 ipsec <cr>    # path-041066
+(config)# default do-exec debug ospfv3 lls <cr>    # path-041667
+(config)# default do-exec debug ospfv3 lsa-generation <cr>    # path-041655
+(config)# default do-exec debug ospfv3 lsa-maxage <cr>    # path-041653
+(config)# default do-exec debug ospfv3 lsdb <cr>    # path-041575
+(config)# default do-exec debug ospfv3 memory <cr>    # path-041446
+(config)# default do-exec debug ospfv3 monitor <cr>    # path-041389
+(config)# default do-exec debug ospfv3 nsr <cr>    # path-041261
+(config)# default do-exec debug ospfv3 packet <cr>    # path-041453
+(config)# default do-exec debug ospfv3 rib <cr>    # path-041852
+(config)# default do-exec debug ospfv3 rib local <cr>    # path-050624
+(config)# default do-exec debug ospfv3 rib local <cr>    # path-050645
+(config)# default do-exec debug ospfv3 rib local <cr>    # path-050646
+(config)# default do-exec debug ospfv3 scheduler hello <cr>    # path-050602
+(config)# default do-exec debug ospfv3 scheduler hello input <cr>    # path-056105
+(config)# default do-exec debug ospfv3 scheduler hello output <cr>    # path-056117
+(config)# default do-exec debug ospfv3 scheduler hello timer <cr>    # path-056091
+(config)# default do-exec debug ospfv3 scheduler router <cr>    # path-050625
+(config)# default do-exec debug ospfv3 scheduler router event <cr>    # path-056116
+(config)# default do-exec debug ospfv3 scheduler router timer <cr>    # path-056104
+(config)# default do-exec debug ospfv3 sham-link <cr>    # path-041692
+(config)# default do-exec debug ospfv3 snmp <cr>    # path-041166
+(config)# default do-exec debug ospfv3 snmp query <cr>    # path-050182
+(config)# default do-exec debug ospfv3 snmp trap <cr>    # path-050211
+(config)# default do-exec debug ospfv3 spf <cr>    # path-041635
+(config)# default do-exec debug ospfv3 spf intra <cr>    # path-050434
+(config)# default do-exec debug ospfv3 spf intra <cr>    # path-050450
+(config)# default do-exec debug ospfv3 spf intra <cr>    # path-050451
+(config)# default do-exec debug ospfv3 spf statistic <cr>    # path-050446
+(config)# default do-exec debug ospfv3 traffic-eng <cr>    # path-041197
+(config)# default do-exec debug packet <cr>    # path-027957
+(config)# default do-exec debug packet-debug ipv4 <address> <cr>    # path-047064
+(config)# default do-exec debug pad <cr>    # path-032121
+(config)# default do-exec debug pae <cr>    # path-032871
+(config)# default do-exec debug pakdbg-infra flag <cr>    # path-037581
+(config)# default do-exec debug parser alias <cr>    # path-034257
+(config)# default do-exec debug parser ambiguity <cr>    # path-034285
+(config)# default do-exec debug parser cache <cr>    # path-034536
+(config)# default do-exec debug parser cli-recon <cr>    # path-034622
+(config)# default do-exec debug parser config before-after <cr>    # path-044039
+(config)# default do-exec debug parser config show-diff <cr>    # path-044100
+(config)# default do-exec debug parser config test <cr>    # path-044074
+(config)# default do-exec debug parser config-db <cr>    # path-034654
+(config)# default do-exec debug parser dump <cr>    # path-034566
+(config)# default do-exec debug parser eci <cr>    # path-035449
+(config)# default do-exec debug parser file-encrypt <cr>    # path-034168
+(config)# default do-exec debug parser fuzz <cr>    # path-034592
+(config)# default do-exec debug parser help <cr>    # path-034316
+(config)# default do-exec debug parser http <cr>    # path-034348
+(config)# default do-exec debug parser if-else-stack <cr>    # path-034730
+(config)# default do-exec debug parser interface-range <cr>    # path-034448
+(config)# default do-exec debug parser key <cr>    # path-034817
+(config)# default do-exec debug parser mode <cr>    # path-034377
+(config)# default do-exec debug parser ngios-meta <cr>    # path-034689
+(config)# default do-exec debug parser nvgen <cr>    # path-034202
+(config)# default do-exec debug parser partition <cr>    # path-034911
+(config)# default do-exec debug parser privilege <cr>    # path-034492
+(config)# default do-exec debug parser rc <cr>    # path-034139
+(config)# default do-exec debug parser shell <cr>    # path-034632
+(config)# default do-exec debug parser shell conditional <cr>    # path-044278
+(config)# default do-exec debug parser shell display <cr>    # path-044369
+(config)# default do-exec debug parser shell issu <cr>    # path-044204
+(config)# default do-exec debug parser shell lookup <cr>    # path-044242
+(config)# default do-exec debug parser shell scanner <cr>    # path-044312
+(config)# default do-exec debug parser shell table <cr>    # path-044340
+(config)# default do-exec debug parser variable usage <cr>    # path-044640
+(config)# default do-exec debug parser view <cr>    # path-034859
+(config)# default do-exec debug parser yaml <cr>    # path-034771
+(config)# default do-exec debug passwd <cr>    # path-031327
+(config)# default do-exec debug passwd error <cr>    # path-038528
+(config)# default do-exec debug passwd event <cr>    # path-038476
+(config)# default do-exec debug pcm-tracer <cr>    # path-032860
+(config)# default do-exec debug persistent variable all <cr>    # path-044291
+(config)# default do-exec debug platform all <cr>    # path-043583
+(config)# default do-exec debug platform condition egress <cr>    # path-044135
+(config)# default do-exec debug platform condition feature acl controlplane acl name <string> <cr>    # path-059948
+(config)# default do-exec debug platform condition feature acl dataplane level verbose <cr>    # path-059629
+(config)# default do-exec debug platform condition feature alg controlplane <cr>    # path-056796
+(config)# default do-exec debug platform condition feature atm controlplane level verbose <cr>    # path-059647
+(config)# default do-exec debug platform condition feature cft controlplane level verbose <cr>    # path-059643
+(config)# default do-exec debug platform condition feature eoam condition offload domain <string> service <string> <cr>    # path-060193
+(config)# default do-exec debug platform condition feature eoam controlplane submode cfm level verbose <cr>    # path-060117
+(config)# default do-exec debug platform condition feature epbr dataplane submode bgpfs level verbose <cr>    # path-060118
+(config)# default do-exec debug platform condition feature evc controlplane level verbose <cr>    # path-059616
+(config)# default do-exec debug platform condition feature fnf controlplane submode level verbose <cr>    # path-059949
+(config)# default do-exec debug platform condition feature lisp dataplane <cr>    # path-056779
+(config)# default do-exec debug platform condition feature multicast controlplane level verbose <cr>    # path-059618
+(config)# default do-exec debug platform condition feature nat dataplane submode <cr>    # path-058942
+(config)# default do-exec debug platform condition feature nat64 controlplane level verbose <cr>    # path-059632
+(config)# default do-exec debug platform condition feature nat66 controlplane level verbose <cr>    # path-059634
+(config)# default do-exec debug platform condition feature nbar controlplane level verbose <cr>    # path-059623
+(config)# default do-exec debug platform condition feature qos controlplane submode all level verbose <cr>    # path-060126
+(config)# default do-exec debug platform condition feature qos dataplane submode level verbose <cr>    # path-059959
+(config)# default do-exec debug platform condition feature sgacl dataplane level verbose <cr>    # path-059628
+(config)# default do-exec debug platform condition feature tcp dataplane submode api level verbose <cr>    # path-060119
+(config)# default do-exec debug platform condition feature vasi controlplane level verbose <cr>    # path-059617
+(config)# default do-exec debug platform condition feature vpls controlplane vfi neighbor <address> vcid <number:1..4294967295> egress <cr>    # path-060213
+(config)# default do-exec debug platform condition feature wccp dataplane submode <cr>    # path-058936
+(config)# default do-exec debug platform condition start <cr>    # path-043944
+(config)# default do-exec debug platform dot1x initialization <cr>    # path-043918
+(config)# default do-exec debug platform dot1x interface-configuration <cr>    # path-043910
+(config)# default do-exec debug platform dot1x mda <cr>    # path-043924
+(config)# default do-exec debug platform dot1x voice <cr>    # path-043931
+(config)# default do-exec debug platform dummy <cr>    # path-034026
+(config)# default do-exec debug platform hardware <cr>    # path-034028
+(config)# default do-exec debug platform packet-trace copy packet input <cr>    # path-056776
+(config)# default do-exec debug platform packet-trace drop <cr>    # path-043973
+(config)# default do-exec debug platform packet-trace inject <cr>    # path-044010
+(config)# default do-exec debug platform packet-trace packet <number:16..8192> <cr>    # path-052058
+(config)# default do-exec debug platform packet-trace punt <cr>    # path-043991
+(config)# default do-exec debug platform packet-trace simulation start <cr>    # path-052072
+(config)# default do-exec debug platform packet-trace start <cr>    # path-043987
+(config)# default do-exec debug platform packet-trace statistics <cr>    # path-043943
+(config)# default do-exec debug platform packet-trace stop <cr>    # path-044006
+(config)# default do-exec debug platform qnq all <cr>    # path-043915
+(config)# default do-exec debug platform qnq error <cr>    # path-043922
+(config)# default do-exec debug platform qnq verbose <cr>    # path-043930
+(config)# default do-exec debug platform software <cr>    # path-034036
+(config)# default do-exec debug platform software acl config <cr>    # path-052823
+(config)# default do-exec debug platform software acl interface <cr>    # path-052794
+(config)# default do-exec debug platform software acl statistics <cr>    # path-052858
+(config)# default do-exec debug platform software acl template error <cr>    # path-057173
+(config)# default do-exec debug platform software acl template events <cr>    # path-057142
+(config)# default do-exec debug platform software acl template trace <cr>    # path-057159
+(config)# default do-exec debug platform software adjacency <cr>    # path-044526
+(config)# default do-exec debug platform software adjacency add <cr>    # path-052359
+(config)# default do-exec debug platform software adjacency brief <cr>    # path-052454
+(config)# default do-exec debug platform software adjacency delete <cr>    # path-052392
+(config)# default do-exec debug platform software adjacency nexthop-ipfrr <cr>    # path-052425
+(config)# default do-exec debug platform software alg configuration all <cr>    # path-057114
+(config)# default do-exec debug platform software avc detail <cr>    # path-052070
+(config)# default do-exec debug platform software avc error <cr>    # path-052062
+(config)# default do-exec debug platform software avc terse <cr>    # path-052077
+(config)# default do-exec debug platform software bfd <cr>    # path-044315
+(config)# default do-exec debug platform software cce binding <cr>    # path-053282
+(config)# default do-exec debug platform software cce class <cr>    # path-053330
+(config)# default do-exec debug platform software cce trace <cr>    # path-053473
+(config)# default do-exec debug platform software cce trace stats <cr>    # path-057445
+(config)# default do-exec debug platform software cce transaction <cr>    # path-053373
+(config)# default do-exec debug platform software cef all <cr>    # path-052575
+(config)# default do-exec debug platform software cef fib entry <cr>    # path-056965
+(config)# default do-exec debug platform software cef fib entry add <cr>    # path-058951
+(config)# default do-exec debug platform software cef fib entry delete <cr>    # path-058958
+(config)# default do-exec debug platform software cef fib table <cr>    # path-056964
+(config)# default do-exec debug platform software cef fib table add <cr>    # path-058957
+(config)# default do-exec debug platform software cef fib table delete <cr>    # path-058965
+(config)# default do-exec debug platform software cef hash-algorithm <cr>    # path-052482
+(config)# default do-exec debug platform software cef lbmap <cr>    # path-052452
+(config)# default do-exec debug platform software cef loadinfo <cr>    # path-052422
+(config)# default do-exec debug platform software cef push-counter <cr>    # path-052507
+(config)# default do-exec debug platform software cef signal <cr>    # path-052533
+(config)# default do-exec debug platform software cef statistics <cr>    # path-052553
+(config)# default do-exec debug platform software cman <cr>    # path-044055
+(config)# default do-exec debug platform software cman detail <cr>    # path-052079
+(config)# default do-exec debug platform software cman env <cr>    # path-052100
+(config)# default do-exec debug platform software cman env monitor polling <cr>    # path-058888
+(config)# default do-exec debug platform software cman inv <cr>    # path-052086
+(config)# default do-exec debug platform software cman pem <cr>    # path-052099
+(config)# default do-exec debug platform software cond-debug error <cr>    # path-052153
+(config)# default do-exec debug platform software cond-debug events <cr>    # path-052135
+(config)# default do-exec debug platform software cond-debug ha <cr>    # path-052200
+(config)# default do-exec debug platform software cond-debug verbose <cr>    # path-052175
+(config)# default do-exec debug platform software configuration notify all <cr>    # path-057144
+(config)# default do-exec debug platform software configuration notify banner <cr>    # path-057121
+(config)# default do-exec debug platform software configuration notify binary <cr>    # path-057241
+(config)# default do-exec debug platform software configuration notify console <cr>    # path-057130
+(config)# default do-exec debug platform software configuration notify generic <cr>    # path-057044
+(config)# default do-exec debug platform software configuration notify issu <cr>    # path-057105
+(config)# default do-exec debug platform software configuration notify logger <cr>    # path-057090
+(config)# default do-exec debug platform software configuration notify prompt <cr>    # path-057096
+(config)# default do-exec debug platform software configuration notify service <cr>    # path-057080
+(config)# default do-exec debug platform software configuration notify ssh <cr>    # path-057214
+(config)# default do-exec debug platform software configuration notify telnet <cr>    # path-057073
+(config)# default do-exec debug platform software configuration notify users <cr>    # path-057061
+(config)# default do-exec debug platform software configuration notify webui <cr>    # path-057193
+(config)# default do-exec debug platform software consent-token <cr>    # path-046205
+(config)# default do-exec debug platform software consent-token all <cr>    # path-053578
+(config)# default do-exec debug platform software consent-token errors <cr>    # path-053530
+(config)# default do-exec debug platform software crimson configuration all <cr>    # path-057574
+(config)# default do-exec debug platform software crimson configuration debug <cr>    # path-057529
+(config)# default do-exec debug platform software crimson configuration errors <cr>    # path-057504
+(config)# default do-exec debug platform software crimson configuration info <cr>    # path-057548
+(config)# default do-exec debug platform software crimson operational all <cr>    # path-057577
+(config)# default do-exec debug platform software crimson operational capabilities all <cr>    # path-059232
+(config)# default do-exec debug platform software crimson operational capabilities debug <cr>    # path-059225
+(config)# default do-exec debug platform software crimson operational capabilities errors <cr>    # path-059217
+(config)# default do-exec debug platform software crimson operational emulation <cr>    # path-057617
+(config)# default do-exec debug platform software crimson operational emulation onchange all <cr>    # path-059805
+(config)# default do-exec debug platform software crimson operational emulation onchange debug <cr>    # path-059800
+(config)# default do-exec debug platform software crimson operational emulation onchange errors <cr>    # path-059795
+(config)# default do-exec debug platform software crimson operational errors <cr>    # path-057511
+(config)# default do-exec debug platform software crimson operational memory <cr>    # path-057533
+(config)# default do-exec debug platform software crimson operational offload <cr>    # path-057582
+(config)# default do-exec debug platform software crimson operational offload all <cr>    # path-059205
+(config)# default do-exec debug platform software crimson operational offload errors <cr>    # path-059199
+(config)# default do-exec debug platform software crimson operational redo <cr>    # path-057551
+(config)# default do-exec debug platform software cxsc-lic licence <cr>    # path-052050
+(config)# default do-exec debug platform software database <cr>    # path-044026
+(config)# default do-exec debug platform software dbal <cr>    # path-044007
+(config)# default do-exec debug platform software dblm <cr>    # path-046270
+(config)# default do-exec debug platform software dblm all <cr>    # path-053611
+(config)# default do-exec debug platform software dblm errors <cr>    # path-053572
+(config)# default do-exec debug platform software dblm session-lock <cr>    # path-053646
+(config)# default do-exec debug platform software dbnm <cr>    # path-046269
+(config)# default do-exec debug platform software dbnm all <cr>    # path-053643
+(config)# default do-exec debug platform software dbnm errors <cr>    # path-053607
+(config)# default do-exec debug platform software dhcpsn all <cr>    # path-053807
+(config)# default do-exec debug platform software dhcpsn packet <cr>    # path-053912
+(config)# default do-exec debug platform software dhcpsn pd-shim <cr>    # path-053854
+(config)# default do-exec debug platform software dpidb all <cr>    # path-052178
+(config)# default do-exec debug platform software dpidb ha <cr>    # path-052139
+(config)# default do-exec debug platform software dpidb index <cr>    # path-052109
+(config)# default do-exec debug platform software dpidb msg <cr>    # path-052123
+(config)# default do-exec debug platform software dpidb shim <cr>    # path-052156
+(config)# default do-exec debug platform software dvlan event <cr>    # path-052520
+(config)# default do-exec debug platform software entity alarm-mib <cr>    # path-053780
+(config)# default do-exec debug platform software entity all <cr>    # path-054144
+(config)# default do-exec debug platform software entity entity-mib <cr>    # path-053739
+(config)# default do-exec debug platform software entity envmon-mib <cr>    # path-054101
+(config)# default do-exec debug platform software entity ether-mib <cr>    # path-054119
+(config)# default do-exec debug platform software entity flash-mib <cr>    # path-053916
+(config)# default do-exec debug platform software entity fru-mib <cr>    # path-053815
+(config)# default do-exec debug platform software entity perf-mib <cr>    # path-054077
+(config)# default do-exec debug platform software entity process-mib <cr>    # path-053968
+(config)# default do-exec debug platform software entity qfp-mib <cr>    # path-054012
+(config)# default do-exec debug platform software entity sensor-mib <cr>    # path-053860
+(config)# default do-exec debug platform software entity state-mib <cr>    # path-054049
+(config)# default do-exec debug platform software eoam cfm <cr>    # path-052623
+(config)# default do-exec debug platform software eoam linkoam <cr>    # path-052672
+(config)# default do-exec debug platform software eoam packets <cr>    # path-052649
+(config)# default do-exec debug platform software epbr <cr>    # path-045001
+(config)# default do-exec debug platform software epbr bgpfs-feature <cr>    # path-052724
+(config)# default do-exec debug platform software epbr feature-object <cr>    # path-052741
+(config)# default do-exec debug platform software epbr stats-update <cr>    # path-052701
+(config)# default do-exec debug platform software ether-dplb error <cr>    # path-052196
+(config)# default do-exec debug platform software ether-dplb events <cr>    # path-052170
+(config)# default do-exec debug platform software ether-dplb verbose <cr>    # path-052223
+(config)# default do-exec debug platform software ethernet bridge-domain backend <cr>    # path-056793
+(config)# default do-exec debug platform software ethernet bridge-domain configuration <cr>    # path-056808
+(config)# default do-exec debug platform software ethernet bridge-domain mstp <cr>    # path-056818
+(config)# default do-exec debug platform software ethernet efp configuration <cr>    # path-056805
+(config)# default do-exec debug platform software ethernet efp l2tunnel error <cr>    # path-058924
+(config)# default do-exec debug platform software ethernet efp l2tunnel info <cr>    # path-058920
+(config)# default do-exec debug platform software ethernet efp statistics <cr>    # path-056817
+(config)# default do-exec debug platform software fhs all <cr>    # path-052675
+(config)# default do-exec debug platform software fhs configuration <cr>    # path-052546
+(config)# default do-exec debug platform software fhs detail <cr>    # path-052655
+(config)# default do-exec debug platform software fhs notify <cr>    # path-052603
+(config)# default do-exec debug platform software fhs packet <cr>    # path-052570
+(config)# default do-exec debug platform software fhs warnings <cr>    # path-052631
+(config)# default do-exec debug platform software file-transfer <cr>    # path-045919
+(config)# default do-exec debug platform software fpm cce <cr>    # path-052481
+(config)# default do-exec debug platform software fpm event <cr>    # path-052417
+(config)# default do-exec debug platform software fpm stats <cr>    # path-052449
+(config)# default do-exec debug platform software icmp configuration <cr>    # path-052846
+(config)# default do-exec debug platform software icmp statistics <cr>    # path-052886
+(config)# default do-exec debug platform software idbman init <cr>    # path-052593
+(config)# default do-exec debug platform software idbman mac <cr>    # path-052653
+(config)# default do-exec debug platform software idbman pm <cr>    # path-052626
+(config)# default do-exec debug platform software idbman svi <cr>    # path-052673
+(config)# default do-exec debug platform software igmpsn error <cr>    # path-052669
+(config)# default do-exec debug platform software igmpsn flwctrl <cr>    # path-052689
+(config)# default do-exec debug platform software igmpsn msg <cr>    # path-052709
+(config)# default do-exec debug platform software igmpsn packet <cr>    # path-052647
+(config)# default do-exec debug platform software igmpsn rib <cr>    # path-052745
+(config)# default do-exec debug platform software igmpsn rx <cr>    # path-052727
+(config)# default do-exec debug platform software infrastructure bipc <cr>    # path-053595
+(config)# default do-exec debug platform software infrastructure bipc detailed <cr>    # path-057506
+(config)# default do-exec debug platform software infrastructure chasfs <cr>    # path-053683
+(config)# default do-exec debug platform software infrastructure cmnipc <cr>    # path-053656
+(config)# default do-exec debug platform software infrastructure dns <cr>    # path-053754
+(config)# default do-exec debug platform software infrastructure flowctl <cr>    # path-053717
+(config)# default do-exec debug platform software infrastructure ifs <cr>    # path-053716
+(config)# default do-exec debug platform software infrastructure inject <cr>    # path-054083
+(config)# default do-exec debug platform software infrastructure inject adjacency <cr>    # path-057613
+(config)# default do-exec debug platform software infrastructure inject all <cr>    # path-057507
+(config)# default do-exec debug platform software infrastructure inject brief <cr>    # path-057531
+(config)# default do-exec debug platform software infrastructure inject cpp_simulation <cr>    # path-057762
+(config)# default do-exec debug platform software infrastructure inject dhcp <cr>    # path-057812
+(config)# default do-exec debug platform software infrastructure inject err_packet <cr>    # path-057576
+(config)# default do-exec debug platform software infrastructure inject ipv4-addr <cr>    # path-057649
+(config)# default do-exec debug platform software infrastructure inject ipv6-addr <cr>    # path-057675
+(config)# default do-exec debug platform software infrastructure inject openflow <cr>    # path-057703
+(config)# default do-exec debug platform software infrastructure inject p2mp <cr>    # path-057787
+(config)# default do-exec debug platform software infrastructure inject packet <cr>    # path-057550
+(config)# default do-exec debug platform software infrastructure inject sbc <cr>    # path-057669
+(config)# default do-exec debug platform software infrastructure inject sslvpn <cr>    # path-057737
+(config)# default do-exec debug platform software infrastructure inject trace <cr>    # path-057598
+(config)# default do-exec debug platform software infrastructure integrated-service <cr>    # path-053589
+(config)# default do-exec debug platform software infrastructure intercept <cr>    # path-053755

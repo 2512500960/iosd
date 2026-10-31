@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-077.md
+
+(config)# netconf-yang cisco-ia init-sync disabled <cr>    # path-063130
+(config)# netconf-yang cisco-ia intelligent-sync <cr>    # path-063058
+(config)# netconf-yang cisco-ia intelligent-sync <cr>    # path-063059
+(config)# netconf-yang cisco-ia logging ciaauthd-log-level <cr>    # path-063133
+(config)# netconf-yang cisco-ia logging ciaauthd-log-level none <cr>    # path-063170
+(config)# netconf-yang cisco-ia logging ciaauthd-log-level none <cr>    # path-063171
+(config)# netconf-yang cisco-ia logging confd-log-level <cr>    # path-063137
+(config)# netconf-yang cisco-ia logging confd-log-level emergency <cr>    # path-063172
+(config)# netconf-yang cisco-ia logging confd-log-level emergency <cr>    # path-063173
+(config)# netconf-yang cisco-ia logging nes-log-level <cr>    # path-063134
+(config)# netconf-yang cisco-ia logging nes-log-level none <cr>    # path-063174
+(config)# netconf-yang cisco-ia logging nes-log-level none <cr>    # path-063175
+(config)# netconf-yang cisco-ia logging odm-log-level <cr>    # path-063135
+(config)# netconf-yang cisco-ia logging odm-log-level none <cr>    # path-063176
+(config)# netconf-yang cisco-ia logging odm-log-level none <cr>    # path-063177
+(config)# netconf-yang cisco-ia logging onep-log-level <cr>    # path-063138
+(config)# netconf-yang cisco-ia logging onep-log-level none <cr>    # path-063178
+(config)# netconf-yang cisco-ia logging onep-log-level none <cr>    # path-063179
+(config)# netconf-yang cisco-ia logging sync-log-level <cr>    # path-063136
+(config)# netconf-yang cisco-ia logging sync-log-level none <cr>    # path-063180
+(config)# netconf-yang cisco-ia logging sync-log-level none <cr>    # path-063181
+(config)# netconf-yang cisco-ia max-diag-messages-saved <cr>    # path-063063
+(config)# netconf-yang cisco-ia max-diag-messages-saved <number:0..199> <cr>    # path-063096
+(config)# netconf-yang cisco-ia max-diag-messages-saved <number:0..199> <cr>    # path-063097
+(config)# netconf-yang cisco-ia message-diag-level <cr>    # path-063064
+(config)# netconf-yang cisco-ia message-diag-level <number:0..3> <cr>    # path-063100
+(config)# netconf-yang cisco-ia message-diag-level <number:0..3> <cr>    # path-063101
+(config)# netconf-yang cisco-ia missing-prc-method <cr>    # path-063067
+(config)# netconf-yang cisco-ia missing-prc-method blacklist <cr>    # path-063131
+(config)# netconf-yang cisco-ia missing-prc-method blacklist <cr>    # path-063132
+(config)# netconf-yang cisco-ia post-sync-acl-process <cr>    # path-063065
+(config)# netconf-yang cisco-ia post-sync-acl-process <cr>    # path-063066
+(config)# netconf-yang cisco-ia preserve-ned-path <string> <cr>    # path-063102
+(config)# netconf-yang cisco-ia preserve-ned-path <string> <cr>    # path-063103
+(config)# netconf-yang cisco-ia preserve-paths-enabled <cr>    # path-063068
+(config)# netconf-yang cisco-ia preserve-paths-enabled <cr>    # path-063069
+(config)# netconf-yang cisco-ia process-missing-prc <cr>    # path-063070
+(config)# netconf-yang cisco-ia process-missing-prc <cr>    # path-063071
+(config)# netconf-yang cisco-ia snmp-community-string <cr>    # path-063072
+(config)# netconf-yang cisco-ia snmp-community-string <string> <cr>    # path-063104
+(config)# netconf-yang cisco-ia snmp-community-string <string> <cr>    # path-063105
+(config)# netconf-yang cisco-ia snmp-trap-control global-forwarding <cr>    # path-063111
+(config)# netconf-yang cisco-ia snmp-trap-control global-forwarding <cr>    # path-063112
+(config)# netconf-yang cisco-ia snmp-trap-control trap-list <string> <cr>    # path-063149
+(config)# netconf-yang cisco-ia snmp-trap-control trap-list <string> <cr>    # path-063154
+(config)# netconf-yang cisco-odm actions <string> <cr>    # path-063088
+(config)# netconf-yang cisco-odm actions <string> <cr>    # path-063091
+(config)# netconf-yang cisco-odm on-demand-default-time <cr>    # path-063049
+(config)# netconf-yang cisco-odm on-demand-default-time <number:500..4294967295> <cr>    # path-063081
+(config)# netconf-yang cisco-odm on-demand-default-time <number:500..4294967295> <cr>    # path-063082
+(config)# netconf-yang cisco-odm on-demand-enable <cr>    # path-063047
+(config)# netconf-yang cisco-odm on-demand-enable <cr>    # path-063048
+(config)# netconf-yang cisco-odm polling-enable <cr>    # path-063052
+(config)# netconf-yang cisco-odm polling-enable <cr>    # path-063053
+(config)# netconf-yang feature candidate-datastore <cr>    # path-063045
+(config)# netconf-yang feature candidate-datastore <cr>    # path-063046
+(config)# netconf-yang feature side-effect-sync <cr>    # path-063050
+(config)# netconf-yang feature side-effect-sync <cr>    # path-063051
+(config)# netconf-yang feature turbocli <cr>    # path-063055
+(config)# netconf-yang feature turbocli <cr>    # path-063056
+(config)# netconf-yang ssh ipv4 access-list <cr>    # path-063124
+(config)# netconf-yang ssh ipv4 access-list name <cr>    # path-063167
+(config)# netconf-yang ssh ipv4 access-list name <string> <cr>    # path-063182
+(config)# netconf-yang ssh ipv4 access-list name <string> <cr>    # path-063183
+(config)# netconf-yang ssh ipv6 access-list <cr>    # path-063126
+(config)# netconf-yang ssh ipv6 access-list name <cr>    # path-063168
+(config)# netconf-yang ssh ipv6 access-list name <string> <cr>    # path-063186
+(config)# netconf-yang ssh ipv6 access-list name <string> <cr>    # path-063187
+(config)# netconf-yang ssh local-vrf guestshell enable <cr>    # path-063165
+(config)# netconf-yang ssh local-vrf guestshell enable <cr>    # path-063166
+(config)# netconf-yang ssh local-vrf guestshell port <cr>    # path-063169
+(config)# netconf-yang ssh local-vrf guestshell port <number:1..65535> <cr>    # path-063184
+(config)# netconf-yang ssh local-vrf guestshell port <number:1..65535> <cr>    # path-063185
+(config)# netconf-yang ssh port <cr>    # path-063060
+(config)# netconf-yang ssh port <number:1..65535> <cr>    # path-063094
+(config)# netconf-yang ssh port <number:1..65535> <cr>    # path-063095
+(config)# netconf-yang ssh port disable <cr>    # path-063127
+(config)# netconf-yang ssh port disable <cr>    # path-063128
+(config)# netconf-yang ssh server algorithm encryption aes128-cbc <cr>    # path-063188
+(config)# netconf-yang ssh server algorithm encryption aes128-cbc <cr>    # path-063191
+(config)# netconf-yang ssh server algorithm encryption aes128-cbc <cr>    # path-063192
+(config)# netconf-yang ssh server algorithm encryption aes128-ctr <cr>    # path-063190
+(config)# netconf-yang ssh server algorithm encryption aes128-ctr <cr>    # path-063198
+(config)# netconf-yang ssh server algorithm encryption aes128-ctr <cr>    # path-063199
+(config)# netconf-yang ssh server algorithm encryption aes192-ctr <cr>    # path-063195
+(config)# netconf-yang ssh server algorithm encryption aes192-ctr <cr>    # path-063208
+(config)# netconf-yang ssh server algorithm encryption aes192-ctr <cr>    # path-063209
+(config)# netconf-yang ssh server algorithm encryption aes256-cbc <cr>    # path-063203
+(config)# netconf-yang ssh server algorithm encryption aes256-cbc <cr>    # path-063219
+(config)# netconf-yang ssh server algorithm encryption aes256-cbc <cr>    # path-063220
+(config)# netconf-yang ssh server algorithm encryption aes256-ctr <cr>    # path-063212
+(config)# netconf-yang ssh server algorithm encryption aes256-ctr <cr>    # path-063227
+(config)# netconf-yang ssh server algorithm encryption aes256-ctr <cr>    # path-063228
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-256 <cr>    # path-063189
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-256 <cr>    # path-063196
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-256 <cr>    # path-063197
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-512 <cr>    # path-063194
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-512 <cr>    # path-063206
+(config)# netconf-yang ssh server algorithm hostkey rsa-sha2-512 <cr>    # path-063207
+(config)# netconf-yang ssh server algorithm hostkey ssh-rsa <cr>    # path-063202
+(config)# netconf-yang ssh server algorithm hostkey ssh-rsa <cr>    # path-063217
+(config)# netconf-yang ssh server algorithm hostkey ssh-rsa <cr>    # path-063218
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha1 <cr>    # path-063193
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha1 <cr>    # path-063204
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha1 <cr>    # path-063205
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha256 <cr>    # path-063201
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha256 <cr>    # path-063215
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group14-sha256 <cr>    # path-063216
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group16-sha512 <cr>    # path-063211
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group16-sha512 <cr>    # path-063225
+(config)# netconf-yang ssh server algorithm kex diffie-hellman-group16-sha512 <cr>    # path-063226
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp256 <cr>    # path-063222
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp256 <cr>    # path-063232
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp256 <cr>    # path-063233
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp384 <cr>    # path-063229
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp384 <cr>    # path-063235
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp384 <cr>    # path-063236
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp521 <cr>    # path-063234
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp521 <cr>    # path-063237
+(config)# netconf-yang ssh server algorithm kex ecdh-sha2-nistp521 <cr>    # path-063238
+(config)# netconf-yang ssh server algorithm mac hmac-sha1 <cr>    # path-063200
+(config)# netconf-yang ssh server algorithm mac hmac-sha1 <cr>    # path-063213
+(config)# netconf-yang ssh server algorithm mac hmac-sha1 <cr>    # path-063214
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-256 <cr>    # path-063210
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-256 <cr>    # path-063223
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-256 <cr>    # path-063224
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-512 <cr>    # path-063221
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-512 <cr>    # path-063230
+(config)# netconf-yang ssh server algorithm mac hmac-sha2-512 <cr>    # path-063231
+(config)# netconf-yang ssh trustpoint <cr>    # path-063061
+(config)# netconf-yang ssh trustpoint <string> <cr>    # path-063098
+(config)# netconf-yang ssh trustpoint <string> <cr>    # path-063099
+(config)# nhrp cache limit <number:1..2147483646> fifo <cr>    # path-062791
+(config)# nhrp debug-trace <cr>    # path-062708
+(config)# nhrp limit packet age <number:1..3600> <cr>    # path-062722
+(config)# nhrp limit packet retransmit-count <cr>    # path-062753
+(config)# nhrp limit packet retransmit-count <number:0..10> permit <number:1..10> <cr>    # path-062792
+(config)# nhrp limit packet threshold <number:1..100000> <cr>    # path-062723
+(config)# nhrp multicast queue size <cr>    # path-062751
+(config)# no aaa accounting delay-start <cr>    # path-028238
+(config)# no aaa accounting dot1x guarantee-first <cr>    # path-034445
+(config)# no aaa accounting dot1x local <cr>    # path-034444
+(config)# no aaa accounting dot1x visible-keys <cr>    # path-034407
+(config)# no aaa accounting gigawords <cr>    # path-028359
+(config)# no aaa accounting include auth-profile framed-ip-address <cr>    # path-044119
+(config)# no aaa accounting jitter <cr>    # path-028189
+(config)# no aaa accounting nested <cr>    # path-028404
+(config)# no aaa accounting redundancy new-session <cr>    # path-034526
+(config)# no aaa accounting redundancy suppress system-records <cr>    # path-044232
+(config)# no aaa accounting send counters ipv6 <cr>    # path-044036
+(config)# no aaa accounting send stop-record always <cr>    # path-044078
+(config)# no aaa accounting send stop-record authentication failure <cr>    # path-052124
+(config)# no aaa accounting send stop-record authentication success remote-server <cr>    # path-056788
+(config)# no aaa accounting session-duration ntp-adjusted <cr>    # path-034334
+(config)# no aaa accounting suppress attributes vpdn-endpoints <cr>    # path-044140
+(config)# no aaa accounting suppress null-username <cr>    # path-034300
+(config)# no aaa accounting update <cr>    # path-028239
+(config)# no aaa archives enable-data index <number:1..5> <string> <cr>    # path-052045
+(config)# no aaa archives user-data <string> index <number:1..5> <string> <cr>    # path-056768
+(config)# no aaa attribute list <string> <cr>    # path-034124
+(config)# no aaa authentication attempts login <number:1..25> <cr>    # path-044067
+(config)# no aaa authentication banner <cr>    # path-028275
+(config)# no aaa authentication fail-message <cr>    # path-028311
+(config)# no aaa authentication login default <cr>    # path-034260
+(config)# no aaa authentication password-prompt <cr>    # path-028341
+(config)# no aaa authentication rejected <cr>    # path-028480
+(config)# no aaa authentication suppress null-username <cr>    # path-034187
+(config)# no aaa authentication token key <string> <cr>    # path-044399
+(config)# no aaa authorization address-authorization-exec <cr>    # path-028259
+(config)# no aaa authorization config-commands <cr>    # path-028227
+(config)# no aaa authorization console <cr>    # path-028180
+(config)# no aaa authorization network default <cr>    # path-034318
+(config)# no aaa authorization network visible-keys <cr>    # path-034313
+(config)# no aaa authorization suppress null-username <cr>    # path-034243
+(config)# no aaa authorization template <cr>    # path-028300
+(config)# no aaa cache filterserver <cr>    # path-028013
+(config)# no aaa cache profile <string> <cr>    # path-034110
+(config)# no aaa common-criteria policy <string> <cr>    # path-034123
+(config)# no aaa dnis map <string> accounting network <cr>    # path-052300
+(config)# no aaa dnis map <string> authentication ppp <cr>    # path-052279
+(config)# no aaa dnis map <string> authorization network <cr>    # path-052255
+(config)# no aaa dnis map enable <cr>    # path-034237
+(config)# no aaa group server tacacs+ <string> <cr>    # path-044040
+(config)# no aaa local authentication attempts max-fail <cr>    # path-043993
+(config)# no aaa local authentication default authorization default <cr>    # path-052083
+(config)# no aaa new-model <cr>    # path-026170
+(config)# no aaa tools memleak mode manual count <number:2..64> <cr>    # path-056771
+(config)# no aaa user profile <string> <cr>    # path-034147
+(config)# no access-list acl-ace-limit <cr>    # path-026729
+(config)# no access-list acl-limit <cr>    # path-026712
+(config)# no access-list dynamic-extended <cr>    # path-026652
+(config)# no access-list global-ace-limit <cr>    # path-026752
+(config)# no access-list rate-limit <number:100..199> <address> <cr>    # path-034932
+(config)# no access-list template <cr>    # path-026730
+(config)# no access-session accounting attributes filter-spec include list <string> <cr>    # path-057380
+(config)# no access-session accounting interim-disable <cr>    # path-029965
+(config)# no access-session acl ack-timer <cr>    # path-030370
+(config)# no access-session acl default passthrough <cr>    # path-036760
+(config)# no access-session attributes filter-list list <string> <cr>    # path-045657
+(config)# no access-session authentication attributes filter-spec include list <string> <cr>    # path-057336
+(config)# no access-session bridge-mode vm-policy <cr>    # path-027972
+(config)# no access-session cache limit <cr>    # path-030196
+(config)# no access-session cui-enable <cr>    # path-027110
+(config)# no access-session event-logging <cr>    # path-027093
+(config)# no access-session interface-template sticky <cr>    # path-030354
+(config)# no access-session limit profile name <string> <cr>    # path-045895
+(config)# no access-session mac-move deny <cr>    # path-029924
+(config)# no access-session monitor <cr>    # path-027206
+(config)# no access-session passthru-access-group <string> <cr>    # path-030264
+(config)# no access-session pqc-type <cr>    # path-027196
+(config)# no access-session tls-version <cr>    # path-027186
+(config)# no access-session voice skip-data-vlan <cr>    # path-030201
+(config)# no accounting group <string> <cr>    # path-027872
+(config)# no alps circuit <string> <cr>    # path-028250
+(config)# no alps enable-alarms peer <cr>    # path-028234
+(config)# no alps keepalive <cr>    # path-026382
+(config)# no alps local-peer <address> <cr>    # path-028166
+(config)# no alps matip-host-emulation <cr>    # path-026414
+(config)# no alps remote-peer <address> <cr>    # path-028466
+(config)# no alps service-msg-list <number:1..8> number <number:1..8> <string> <cr>    # path-052102
+(config)# no ancp adjacency timer <cr>    # path-028367
+(config)# no ancp atm shaper percent-factor <cr>    # path-034381
+(config)# no ancp atm shaper percent-factor <cr>    # path-034382
+(config)# no ancp enable test-configuration <cr>    # path-028363
+(config)# no ancp neighbor name <string> id <string> <cr>    # path-052257
+(config)# no ancp source-ip <address> <cr>    # path-028381
+(config)# no ancp truncate <cr>    # path-026377
+(config)# no archive <cr>    # path-025963
+(config)# no arp <address> <cr>    # path-026787
+(config)# no arp entries interface-limit <cr>    # path-028897
+(config)# no async-bootp <cr>    # path-025851
+(config)# no authentication command bounce-port ignore <cr>    # path-036225
+(config)# no authentication command disable-port ignore <cr>    # path-036290
+(config)# no authentication convert-to new-style <cr>    # path-029795
+(config)# no authentication convert-to new-style forced <cr>    # path-035933
+(config)# no authentication critical recovery delay <cr>    # path-036255
+(config)# no authentication dis-scale-opt <cr>    # path-027089
+(config)# no authentication logging session-terminate <cr>    # path-029994
+(config)# no authentication logging verbose <cr>    # path-029950
+(config)# no authentication mac-move permit <cr>    # path-029771
+(config)# no autoconf enable <cr>    # path-026135
+(config)# no avc <cr>    # path-025780
+(config)# no avc sd-service <cr>    # path-026945
+(config)# no banner exec <cr>    # path-027243
+(config)# no bba-group pppoe global <cr>    # path-027962
+(config)# no beep channel limit <cr>    # path-028056
+(config)# no bfd fast-timers-on-slow-interface <cr>    # path-026121
+(config)# no bfd l2cos <cr>    # path-026129
+(config)# no bfd l3cos ipv6 <cr>    # path-027936
+(config)# no bfd neighbor multihop-ipv4 <address> <address> <cr>    # path-043940
+(config)# no bfd slow-timers <cr>    # path-026111
+(config)# no bfd snmp traps more <cr>    # path-034022
+(config)# no bfd-template single-hop <string> <cr>    # path-027897
+(config)# no boot bootldr <cr>    # path-026066
+(config)# no boot bootstrap <cr>    # path-026018
+(config)# no boot bootstrap ftp <string> <cr>    # path-034019
+(config)# no boot bootstrap rcp <string> <cr>    # path-034015
+(config)# no boot buffersize <cr>    # path-025504
+(config)# no boot config <cr>    # path-026073
+(config)# no boot-end-marker <cr>    # path-025511
+(config)# no boot-start-marker <cr>    # path-025506
+(config)# no bridge crb <cr>    # path-026273
+(config)# no bridge irb <cr>    # path-026291
+(config)# no bridge mac-address-table limit <cr>    # path-026312
+(config)# no bridge-domain c-mac aging-time <cr>    # path-028076
+(config)# no bridge-domain otv default age-time <cr>    # path-034181
+(config)# no bridge-domain parameterized vlan <cr>    # path-028008
+(config)# no bstun keepalive-count <number:2..10> <cr>    # path-028323
+(config)# no bstun lisnsap <number:0..255> <cr>    # path-028202
+(config)# no bstun peer-name <cr>    # path-026396
+(config)# no bstun protocol-group <number:1..255> <string> <cr>    # path-034295
+(config)# no bstun remote-peer-keepalive <cr>    # path-026451
+(config)# no buffers element permanent <cr>    # path-028074
+(config)# no buffers header permanent <cr>    # path-028175
+(config)# no buffers particle-clone <cr>    # path-026300
+(config)# no buffers tune automatic <cr>    # path-028320
+(config)# no busy-message <string> <cr>    # path-026726
+(config)# no call admission cpu-limit <cr>    # path-028889
+(config)# no call admission cpu-load <cr>    # path-028937
+(config)# no call admission ike <number:0..1000> <number:1..31> <cr>    # path-044882
+(config)# no call admission ip <number:0..1000> <number:1..31> <cr>    # path-044719
+(config)# no call admission limit <cr>    # path-028789
+(config)# no call admission load <cr>    # path-029223
+(config)# no call admission new-model <cr>    # path-029274
+(config)# no call admission padr <cr>    # path-029211
+(config)# no call admission pppoa <cr>    # path-029081
+(config)# no call admission pppoe <cr>    # path-029041
+(config)# no call admission session-limit <cr>    # path-028844
+(config)# no call admission vpdn <cr>    # path-029118
+(config)# no call filter match-list <cr>    # path-029050
+(config)# no call-history-mib max-size <cr>    # path-025981
+(config)# no call-history-mib retain-timer <cr>    # path-025978
+(config)# no carrier-id <cr>    # path-025939
+(config)# no cdp advertise-v2 <cr>    # path-026153
+(config)# no cdp filter-tlv-list <string> <cr>    # path-028125
+(config)# no cdp holdtime <cr>    # path-025571
+(config)# no cdp log mismatch duplex <cr>    # path-034064
+(config)# no cdp run <cr>    # path-026249
+(config)# no cdp source-interface <cr>    # path-026271
+(config)# no cdp timer <cr>    # path-025565
+(config)# no cdp tlv app <cr>    # path-028146
+(config)# no cdp tlv location <cr>    # path-028066
+(config)# no cdp tlv-list <string> <cr>    # path-028093
+(config)# no cef common <cr>    # path-026292
+(config)# no cef table consistency-check IPv4 <cr>    # path-034424
+(config)# no cef table consistency-check IPv4 auto-repair <cr>    # path-044223
+(config)# no cef table consistency-check IPv4 data-checking <cr>    # path-044094
+(config)# no cef table consistency-check IPv4 error-message <cr>    # path-044123
+(config)# no cef table download recursive-dependents <cr>    # path-034454
+(config)# no cef table output-chain build favor <cr>    # path-044158
+(config)# no cef table rate-monitor-period <number:1..60> <cr>    # path-034266
+(config)# no cef table vrf tree ipv4 <cr>    # path-044081
+(config)# no chat-script <string> <cr>    # path-027354
+(config)# no cisp enable <cr>    # path-026384
+(config)# no class-map <string> <cr>    # path-026351
+(config)# no class-map type control <string> <cr>    # path-034653
+(config)# no class-map type control subscriber match-all <string> <cr>    # path-052273
+(config)# no class-map type multicast-flows <string> <cr>    # path-034165
+(config)# no class-map type traffic match-any <string> <cr>    # path-044047
+(config)# no classmap-template <string> <string> <cr>    # path-028645
+(config)# no clns cache-invalidate-delay <cr>    # path-026991
+(config)# no clns configuration-time <cr>    # path-025860
+(config)# no clns filter-expr <string> <cr>    # path-030438
+(config)# no clns filter-set <string> <cr>    # path-030412
+(config)# no clns holding-time <cr>    # path-025867
+(config)# no clns host <string> <cr>    # path-029388
+(config)# no clns net <address> <cr>    # path-030138
+(config)# no clns packet-lifetime <cr>    # path-025884
+(config)# no clns queue-depth <cr>    # path-025890
+(config)# no clns route <address> <cr>    # path-029715
+(config)# no clns routing <cr>    # path-027316
+(config)# no clns template-alias <string> <cr>    # path-030463
+(config)# no clns want-erpdu <cr>    # path-027323
+(config)# no clock calendar-valid <cr>    # path-026259
+(config)# no clock initialize nvram <cr>    # path-028083
+(config)# no clock save interval <cr>    # path-028149
+(config)# no clock summer-time <cr>    # path-026270
+(config)# no config-register <cr>    # path-025598
+(config)# no configuration mode exclusive <cr>    # path-030193
+(config)# no connect <string> <cr>    # path-026773
+(config)# no control-plane <cr>    # path-025849
+(config)# no cops ip dscp ef <cr>    # path-034743
+(config)# no cops listener access-list <cr>    # path-028632
+(config)# no cops tcp window-size <number:516..65535> <cr>    # path-034703
+(config)# no coverage history <cr>    # path-025998
+(config)# no crypto RSA-key-pair <string> <number:0..255> <number:0..4294967295> <cr>    # path-043989
+(config)# no crypto dh lifetime <cr>    # path-028075
+(config)# no crypto dh pregen <cr>    # path-028111
+(config)# no crypto engine accelerator <cr>    # path-028406
+(config)# no crypto engine compliance shield disable <cr>    # path-044009
+(config)# no crypto engine nm <number:0..3> <cr>    # path-034221
+(config)# no crypto engine queue-size <cr>    # path-028109
+(config)# no crypto engine software ipsec <cr>    # path-034120
+(config)# no crypto engine software isakmp <cr>    # path-034143
+(config)# no crypto key decrypt rsa <cr>    # path-034461
+(config)# no crypto key encrypt rsa <cr>    # path-034423
+(config)# no crypto key export ec <string> pem terminal 3des <string> <cr>    # path-059625
+(config)# no crypto key export rsa <string> pem terminal 3des <string> <cr>    # path-059621
+(config)# no crypto key generate ec keysize <number:256..256> <cr>    # path-052101
+(config)# no crypto key generate rsa <cr>    # path-034293
+(config)# no crypto key import ec <string> terminal <cr>    # path-052142
+(config)# no crypto key import rsa <string> terminal <cr>    # path-052204
+(config)# no crypto key move rsa <string> <cr>    # path-044031
+(config)# no crypto key pubkey-chain <cr>    # path-028190
+(config)# no crypto key storage <cr>    # path-028240
+(config)# no crypto key zeroize <cr>    # path-028152
+(config)# no crypto pki authenticate <string> <cr>    # path-037576
+(config)# no crypto pki certificate chain <string> <cr>    # path-047198
+(config)# no crypto pki certificate map <string> <cr>    # path-047251
+(config)# no crypto pki certificate pool <cr>    # path-037969
+(config)# no crypto pki certificate query <cr>    # path-037786
+(config)# no crypto pki certificate self-signed hash <cr>    # path-047351
+(config)# no crypto pki certificate storage <cr>    # path-038075
+(config)# no crypto pki certificate validate <string> <cr>    # path-047213
+(config)# no crypto pki crl cache size <cr>    # path-047249
+(config)# no crypto pki crl download schedule prepublish <number:0..65535> <cr>    # path-057966
+(config)# no crypto pki crl download schedule retries <number:1..15> <cr>    # path-057971
+(config)# no crypto pki crl download trustpoint <string> <cr>    # path-054364
+(config)# no crypto pki crl download url <string> <cr>    # path-054394
+(config)# no crypto pki crl request <string> <cr>    # path-047158
+(config)# no crypto pki enroll <string> <cr>    # path-037682
+(config)# no crypto pki export <string> pem terminal <cr>    # path-054356
+(config)# no crypto pki export <string> pem terminal rollover <cr>    # path-057946
+(config)# no crypto pki export <string> pkcs12 terminal password <string> <cr>    # path-059336
+(config)# no crypto pki http max-buffer-size <cr>    # path-037974
+(config)# no crypto pki import <string> certificate <cr>    # path-047110
+(config)# no crypto pki import <string> pem terminal password <string> <cr>    # path-059342
+(config)# no crypto pki import <string> pkcs12 terminal password <string> <cr>    # path-059337
+(config)# no crypto pki profile enrollment <string> <cr>    # path-047136
+(config)# no crypto pki server <string> <cr>    # path-037683
+(config)# no crypto pki server <string> rollover <cr>    # path-047092
+(config)# no crypto pki server <string> rollover cancel <cr>    # path-054268
+(config)# no crypto pki trustpoint <string> <cr>    # path-037557
+(config)# no crypto pki trustpool clean <cr>    # path-037625
+(config)# no crypto pki trustpool policy <cr>    # path-037549
+(config)# no crypto provisioning petitioner <cr>    # path-028060
+(config)# no crypto provisioning registrar <cr>    # path-028090
+(config)# no cts policy-server device-id <cr>    # path-031078
+(config)# no cts policy-server name <string> <cr>    # path-037944
+(config)# no cts policy-server order random <cr>    # path-038072

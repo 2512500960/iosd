@@ -1,0 +1,142 @@
+# 模式 vrf；补充模式入口与历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：observed-001.md
+
+(config-vrf)# address-family <?option@55558956ae50> <cr>    # observed_connections-005765
+(config-vrf)# bgp next-hop <cr>    # observed_connections-005658
+(config-vrf)# context <cr>    # observed_connections-005637
+(config-vrf)# default bgp next-hop <cr>    # observed_connections-005686
+(config-vrf)# default context <cr>    # observed_connections-005653
+(config-vrf)# default description <cr>    # observed_connections-005640
+(config-vrf)# default exit <cr>    # observed_connections-005648
+(config-vrf)# default exit-address-family <cr>    # observed_connections-005651
+(config-vrf)# default export map <string> <cr>    # observed_connections-005711
+(config-vrf)# default help <cr>    # observed_connections-005645
+(config-vrf)# default import map <string> <cr>    # observed_connections-005712
+(config-vrf)# default inter-as-hybrid <cr>    # observed_connections-005660
+(config-vrf)# default ipv4 multicast multitopology <cr>    # observed_connections-005703
+(config-vrf)# default ipv6 multicast multitopology <cr>    # observed_connections-005705
+(config-vrf)# default maximum routes <cr>    # observed_connections-005683
+(config-vrf)# default mdt auto-discovery pim <cr>    # observed_connections-005739
+(config-vrf)# default mdt auto-discovery receiver-site <cr>    # observed_connections-005734
+(config-vrf)# default mdt data <address> <address> <cr>    # observed_connections-005755
+(config-vrf)# default mdt data <cr>    # observed_connections-005700
+(config-vrf)# default mdt data threshold <number:1..4294967> <cr>    # observed_connections-005754
+(config-vrf)# default mdt default <address> <cr>    # observed_connections-005718
+(config-vrf)# default mdt default bier <cr>    # observed_connections-005725
+(config-vrf)# default mdt default ingress-replication <cr>    # observed_connections-005727
+(config-vrf)# default mdt default mpls mldp <address> <cr>    # observed_connections-005763
+(config-vrf)# default mdt default mpls mldp p2mp <cr>    # observed_connections-005761
+(config-vrf)# default mdt direct <cr>    # observed_connections-005681
+(config-vrf)# default mdt log-reuse <cr>    # observed_connections-005695
+(config-vrf)# default mdt mode gre <cr>    # observed_connections-005724
+(config-vrf)# default mdt mtu <cr>    # observed_connections-005682
+(config-vrf)# default mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-005749
+(config-vrf)# default mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-005752
+(config-vrf)# default mdt overlay use-bgp <cr>    # observed_connections-005731
+(config-vrf)# default mdt partitioned ingress-replication <cr>    # observed_connections-005726
+(config-vrf)# default mdt partitioned mldp p2mp <cr>    # observed_connections-005745
+(config-vrf)# default mdt preference pim <cr>    # observed_connections-005729
+(config-vrf)# default mdt strict-rpf interface <cr>    # observed_connections-005716
+(config-vrf)# default protection local-prefixes <cr>    # observed_connections-005692
+(config-vrf)# default rd-auto <cr>    # observed_connections-005644
+(config-vrf)# default route-replicate from unicast all <cr>    # observed_connections-005741
+(config-vrf)# default route-replicate recursion-policy destination <cr>    # observed_connections-005707
+(config-vrf)# default route-replicate-distance from unicast <cr>    # observed_connections-005714
+(config-vrf)# default snmp context <cr>    # observed_connections-005680
+(config-vrf)# default snmp context <string> community <string> <cr>    # observed_connections-005759
+(config-vrf)# default snmp context <string> user <string> <cr>    # observed_connections-005758
+(config-vrf)# default vnet tag <cr>    # observed_connections-005667
+(config-vrf)# default vnid <number:1..2147483647> <cr>    # observed_connections-005671
+(config-vrf)# default vpn id <cr>    # observed_connections-005669
+(config-vrf)# description <cr>    # observed_connections-005632
+(config-vrf)# evpn-mcast <?ipv4orv6_addr_action@555589cd5678> <cr>    # observed_connections-005767
+(config-vrf)# exit <cr>    # observed_connections-005635
+(config-vrf)# exit-address-family <cr>    # observed_connections-005636
+(config-vrf)# export map <string> <cr>    # observed_connections-005675
+(config-vrf)# help <cr>    # observed_connections-005634
+(config-vrf)# import map <string> <cr>    # observed_connections-005676
+(config-vrf)# inter-as-hybrid <cr>    # observed_connections-005638
+(config-vrf)# ipv4 multicast multitopology <cr>    # observed_connections-005664
+(config-vrf)# ipv6 multicast multitopology <cr>    # observed_connections-005665
+(config-vrf)# maximum routes <cr>    # observed_connections-005657
+(config-vrf)# mdt auto-discovery pim <cr>    # observed_connections-005701
+(config-vrf)# mdt auto-discovery receiver-site <cr>    # observed_connections-005698
+(config-vrf)# mdt data <address> <address> <cr>    # observed_connections-005737
+(config-vrf)# mdt data <cr>    # observed_connections-005663
+(config-vrf)# mdt data threshold <number:1..4294967> <cr>    # observed_connections-005736
+(config-vrf)# mdt default <address> <cr>    # observed_connections-005687
+(config-vrf)# mdt default bier <cr>    # observed_connections-005690
+(config-vrf)# mdt default ingress-replication <cr>    # observed_connections-005694
+(config-vrf)# mdt default mpls mldp <address> <cr>    # observed_connections-005747
+(config-vrf)# mdt default mpls mldp p2mp <cr>    # observed_connections-005746
+(config-vrf)# mdt default vxlan <?ipv4orv6_addr_action@555589cd7878> <cr>    # observed_connections-005769
+(config-vrf)# mdt direct <cr>    # observed_connections-005655
+(config-vrf)# mdt log-reuse <cr>    # observed_connections-005662
+(config-vrf)# mdt mode gre <cr>    # observed_connections-005689
+(config-vrf)# mdt mtu <cr>    # observed_connections-005656
+(config-vrf)# mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-005733
+(config-vrf)# mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-005735
+(config-vrf)# mdt overlay use-bgp <cr>    # observed_connections-005697
+(config-vrf)# mdt partitioned ingress-replication <cr>    # observed_connections-005693
+(config-vrf)# mdt partitioned mldp p2mp <cr>    # observed_connections-005721
+(config-vrf)# mdt preference pim <cr>    # observed_connections-005696
+(config-vrf)# mdt strict-rpf interface <cr>    # observed_connections-005685
+(config-vrf)# no bgp next-hop <cr>    # observed_connections-005684
+(config-vrf)# no context <cr>    # observed_connections-005652
+(config-vrf)# no description <cr>    # observed_connections-005639
+(config-vrf)# no exit <cr>    # observed_connections-005647
+(config-vrf)# no exit-address-family <cr>    # observed_connections-005650
+(config-vrf)# no export map <string> <cr>    # observed_connections-005708
+(config-vrf)# no help <cr>    # observed_connections-005643
+(config-vrf)# no import map <string> <cr>    # observed_connections-005709
+(config-vrf)# no inter-as-hybrid <cr>    # observed_connections-005659
+(config-vrf)# no ipv4 multicast multitopology <cr>    # observed_connections-005702
+(config-vrf)# no ipv6 multicast multitopology <cr>    # observed_connections-005704
+(config-vrf)# no maximum routes <cr>    # observed_connections-005678
+(config-vrf)# no mdt auto-discovery pim <cr>    # observed_connections-005738
+(config-vrf)# no mdt auto-discovery receiver-site <cr>    # observed_connections-005732
+(config-vrf)# no mdt data <address> <address> <cr>    # observed_connections-005753
+(config-vrf)# no mdt data <cr>    # observed_connections-005699
+(config-vrf)# no mdt data threshold <number:1..4294967> <cr>    # observed_connections-005751
+(config-vrf)# no mdt default <address> <cr>    # observed_connections-005717
+(config-vrf)# no mdt default bier <cr>    # observed_connections-005720
+(config-vrf)# no mdt default ingress-replication <cr>    # observed_connections-005723
+(config-vrf)# no mdt default mpls mldp <address> <cr>    # observed_connections-005762
+(config-vrf)# no mdt default mpls mldp p2mp <cr>    # observed_connections-005760
+(config-vrf)# no mdt direct <cr>    # observed_connections-005674
+(config-vrf)# no mdt log-reuse <cr>    # observed_connections-005691
+(config-vrf)# no mdt mode gre <cr>    # observed_connections-005719
+(config-vrf)# no mdt mtu <cr>    # observed_connections-005677
+(config-vrf)# no mdt overlay bgp shared-tree-prune-delay <cr>    # observed_connections-005748
+(config-vrf)# no mdt overlay bgp source-tree-prune-delay <cr>    # observed_connections-005750
+(config-vrf)# no mdt overlay use-bgp <cr>    # observed_connections-005730
+(config-vrf)# no mdt partitioned ingress-replication <cr>    # observed_connections-005722
+(config-vrf)# no mdt partitioned mldp p2mp <cr>    # observed_connections-005744
+(config-vrf)# no mdt preference pim <cr>    # observed_connections-005728
+(config-vrf)# no mdt strict-rpf interface <cr>    # observed_connections-005715
+(config-vrf)# no protection local-prefixes <cr>    # observed_connections-005688
+(config-vrf)# no rd-auto <cr>    # observed_connections-005642
+(config-vrf)# no route-replicate from unicast all <cr>    # observed_connections-005740
+(config-vrf)# no route-replicate recursion-policy destination <cr>    # observed_connections-005706
+(config-vrf)# no route-replicate-distance from unicast <cr>    # observed_connections-005710
+(config-vrf)# no snmp context <cr>    # observed_connections-005673
+(config-vrf)# no snmp context <string> community <string> <cr>    # observed_connections-005757
+(config-vrf)# no snmp context <string> user <string> <cr>    # observed_connections-005756
+(config-vrf)# no vnet tag <cr>    # observed_connections-005666
+(config-vrf)# no vnid <number:1..2147483647> <cr>    # observed_connections-005670
+(config-vrf)# no vpn id <cr>    # observed_connections-005668
+(config-vrf)# protection local-prefixes <cr>    # observed_connections-005661
+(config-vrf)# rd <?vrf_rd_action@55558956c0e8> <cr>    # observed_connections-005764
+(config-vrf)# rd-auto <cr>    # observed_connections-005633
+(config-vrf)# route-replicate from unicast all <cr>    # observed_connections-005713
+(config-vrf)# route-replicate recursion-policy destination <cr>    # observed_connections-005672
+(config-vrf)# route-replicate-distance from unicast <cr>    # observed_connections-005679
+(config-vrf)# route-target <?bgp_extcomm_action@555589568bc0> <cr>    # observed_connections-005766
+(config-vrf)# route-target <?bgp_extcomm_action@555589568bc0> stitching <cr>    # observed_connections-005768
+(config-vrf)# snmp context <cr>    # observed_connections-005654
+(config-vrf)# snmp context <string> community <string> <cr>    # observed_connections-005743
+(config-vrf)# snmp context <string> user <string> <cr>    # observed_connections-005742
+(config-vrf)# vnet tag <cr>    # observed_connections-005641
+(config-vrf)# vnid <number:1..2147483647> <cr>    # observed_connections-005649
+(config-vrf)# vpn id <cr>    # observed_connections-005646

@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-042.md
+
+(config)# do-exec debug epm plugin linksec all <cr>    # path-049444
+(config)# do-exec debug epm plugin linksec errors <cr>    # path-049326
+(config)# do-exec debug epm plugin linksec events <cr>    # path-049389
+(config)# do-exec debug epm plugin redirect all <cr>    # path-049180
+(config)# do-exec debug epm plugin redirect detail <cr>    # path-049127
+(config)# do-exec debug epm plugin redirect error <cr>    # path-049026
+(config)# do-exec debug epm plugin redirect event <cr>    # path-049081
+(config)# do-exec debug epm plugin template all <cr>    # path-049226
+(config)# do-exec debug epm plugin template errors <cr>    # path-049115
+(config)# do-exec debug epm plugin template events <cr>    # path-049172
+(config)# do-exec debug epm plugin tunnel errors <cr>    # path-049435
+(config)# do-exec debug epm plugin tunnel events <cr>    # path-049493
+(config)# do-exec debug epm plugin vlan-group all <cr>    # path-049335
+(config)# do-exec debug epm plugin vlan-group error <cr>    # path-049272
+(config)# do-exec debug epm plugin vlan-group event <cr>    # path-049214
+(config)# do-exec debug epm plugin voice-vlan all <cr>    # path-049394
+(config)# do-exec debug epm plugin voice-vlan error <cr>    # path-049331
+(config)# do-exec debug epm plugin voice-vlan event <cr>    # path-049265
+(config)# do-exec debug ethernet cfm ipc <cr>    # path-034842
+(config)# do-exec debug ethernet cfm pm diagnostic <cr>    # path-044569
+(config)# do-exec debug ethernet etherchannel events <cr>    # path-034666
+(config)# do-exec debug ethernet etherchannel misc <cr>    # path-034715
+(config)# do-exec debug ethernet interface <cr>    # path-028961
+(config)# do-exec debug ethernet interface device <cr>    # path-034904
+(config)# do-exec debug ethernet interface error <cr>    # path-034674
+(config)# do-exec debug ethernet interface oir <cr>    # path-034765
+(config)# do-exec debug ethernet interface periodic <cr>    # path-034851
+(config)# do-exec debug ethernet interface plugin <cr>    # path-034636
+(config)# do-exec debug ethernet interface ptp error <cr>    # path-044787
+(config)# do-exec debug ethernet interface ptp events <cr>    # path-044683
+(config)# do-exec debug ethernet interface ptp stats <cr>    # path-044736
+(config)# do-exec debug ethernet interface recovery <cr>    # path-034958
+(config)# do-exec debug ethernet interface show <cr>    # path-034808
+(config)# do-exec debug ethernet interface trace <cr>    # path-034721
+(config)# do-exec debug ethernet lb events <cr>    # path-034835
+(config)# do-exec debug ethernet lmi ha <cr>    # path-034774
+(config)# do-exec debug ethernet lmi ha interface <interface> <cr>    # path-061862
+(config)# do-exec debug ethernet oam all <cr>    # path-035072
+(config)# do-exec debug ethernet oam assert <cr>    # path-035001
+(config)# do-exec debug ethernet oam config <cr>    # path-034705
+(config)# do-exec debug ethernet oam ha <cr>    # path-034756
+(config)# do-exec debug ethernet oam link-monitor <cr>    # path-034846
+(config)# do-exec debug ethernet oam loopback <cr>    # path-034801
+(config)# do-exec debug ethernet oam packet decode <cr>    # path-044598
+(config)# do-exec debug ethernet oam packet rx <cr>    # path-044645
+(config)# do-exec debug ethernet oam packet tx <cr>    # path-044700
+(config)# do-exec debug ethernet oam rfi <cr>    # path-035035
+(config)# do-exec debug ethernet oam sm <cr>    # path-034955
+(config)# do-exec debug ethernet service evc <cr>    # path-039754
+(config)# do-exec debug ethernet service ipc errors <cr>    # path-048694
+(config)# do-exec debug ethernet service l2ctrl errors <cr>    # path-045984
+(config)# do-exec debug ethernet service port interface <interface> <cr>    # path-062069
+(config)# do-exec debug event manager action cli <cr>    # path-051745
+(config)# do-exec debug event manager action cns <cr>    # path-051730
+(config)# do-exec debug event manager action mail <cr>    # path-051762
+(config)# do-exec debug event manager all <cr>    # path-043356
+(config)# do-exec debug event manager api calls <cr>    # path-051645
+(config)# do-exec debug event manager api errors <cr>    # path-051658
+(config)# do-exec debug event manager common <cr>    # path-043226
+(config)# do-exec debug event manager detector all <cr>    # path-051695
+(config)# do-exec debug event manager detector application <cr>    # path-051811
+(config)# do-exec debug event manager detector cli <cr>    # path-051920
+(config)# do-exec debug event manager detector config <cr>    # path-051939
+(config)# do-exec debug event manager detector counter <cr>    # path-051915
+(config)# do-exec debug event manager detector env <cr>    # path-051931
+(config)# do-exec debug event manager detector generic <cr>    # path-051834
+(config)# do-exec debug event manager detector gold <cr>    # path-051930
+(config)# do-exec debug event manager detector interface <cr>    # path-051908
+(config)# do-exec debug event manager detector ioswdsysmon <cr>    # path-051901
+(config)# do-exec debug event manager detector mat <cr>    # path-051792
+(config)# do-exec debug event manager detector neighbor-discovery <cr>    # path-051780
+(config)# do-exec debug event manager detector nhrp <cr>    # path-051826
+(config)# do-exec debug event manager detector none <cr>    # path-051894
+(config)# do-exec debug event manager detector oir <cr>    # path-051886
+(config)# do-exec debug event manager detector resource <cr>    # path-051765
+(config)# do-exec debug event manager detector rf <cr>    # path-051877
+(config)# do-exec debug event manager detector routing <cr>    # path-051802
+(config)# do-exec debug event manager detector rpc <cr>    # path-051733
+(config)# do-exec debug event manager detector snmp <cr>    # path-051870
+(config)# do-exec debug event manager detector snmp-notification <cr>    # path-051849
+(config)# do-exec debug event manager detector snmp-object <cr>    # path-051859
+(config)# do-exec debug event manager detector syslog <cr>    # path-051842
+(config)# do-exec debug event manager detector test <cr>    # path-051946
+(config)# do-exec debug event manager detector timer <cr>    # path-051820
+(config)# do-exec debug event manager detector track <cr>    # path-051748
+(config)# do-exec debug event manager multi-lang action <cr>    # path-051758
+(config)# do-exec debug event manager multi-lang cli <cr>    # path-051775
+(config)# do-exec debug event manager multi-lang common <cr>    # path-051810
+(config)# do-exec debug event manager multi-lang event <cr>    # path-051789
+(config)# do-exec debug event manager multi-lang msg <cr>    # path-051800
+(config)# do-exec debug event manager policydir <cr>    # path-043279
+(config)# do-exec debug event manager server ISSU <cr>    # path-051687
+(config)# do-exec debug event manager server events <cr>    # path-051672
+(config)# do-exec debug event manager server scheduling <cr>    # path-051656
+(config)# do-exec debug event manager tcl cli_library <cr>    # path-051773
+(config)# do-exec debug event manager tcl commands <cr>    # path-051798
+(config)# do-exec debug event manager tcl smtp_library <cr>    # path-051787
+(config)# do-exec debug event manager xml parser <cr>    # path-051684
+(config)# do-exec debug event-manager <cr>    # path-027666
+(config)# do-exec debug facility-alarm <cr>    # path-026423
+(config)# do-exec debug facility-alarm telcordia <cr>    # path-028251
+(config)# do-exec debug fastblk <cr>    # path-027685
+(config)# do-exec debug fh_fd_rpc all <cr>    # path-033026
+(config)# do-exec debug fh_fd_rpc error <cr>    # path-033015
+(config)# do-exec debug fhrp all <cr>    # path-031366
+(config)# do-exec debug fhrp interface <interface> <cr>    # path-060984
+(config)# do-exec debug filesystem <url:dynamic> <cr>    # path-060740
+(config)# do-exec debug flow exporter <?option@555588f37ef0> <cr>    # path-060904
+(config)# do-exec debug flow exporter <cr>    # path-030420
+(config)# do-exec debug flow monitor <?option@555588f424f0> <cr>    # path-062794
+(config)# do-exec debug flow monitor <cr>    # path-030469
+(config)# do-exec debug flow record <cr>    # path-030356
+(config)# do-exec debug flow record <cr>    # path-060656
+(config)# do-exec debug flow rpc <cr>    # path-030345
+(config)# do-exec debug flowspec all <cr>    # path-033561
+(config)# do-exec debug flowspec error <cr>    # path-033550
+(config)# do-exec debug flowspec event <cr>    # path-033541
+(config)# do-exec debug flowspec internal client <cr>    # path-043264
+(config)# do-exec debug flowspec internal config <cr>    # path-043249
+(config)# do-exec debug flowspec internal ha <cr>    # path-043233
+(config)# do-exec debug flowspec internal ipc <cr>    # path-043218
+(config)# do-exec debug flowspec internal policy-client <cr>    # path-043196
+(config)# do-exec debug flowspec internal route-target <cr>    # path-043179
+(config)# do-exec debug flowspec internal ui <cr>    # path-043159
+(config)# do-exec debug flowspec internal xos <cr>    # path-043141
+(config)# do-exec debug flowspec table <cr>    # path-033520
+(config)# do-exec debug fmm errors all <cr>    # path-034930
+(config)# do-exec debug fmm errors db <cr>    # path-034992
+(config)# do-exec debug fmm trace all <cr>    # path-034873
+(config)# do-exec debug fmm trace db <cr>    # path-034939
+(config)# do-exec debug format all <cr>    # path-033318
+(config)# do-exec debug format error <cr>    # path-033302
+(config)# do-exec debug fpm event <cr>    # path-028350
+(config)# do-exec debug fqdn all <cr>    # path-032510
+(config)# do-exec debug fqdn error <cr>    # path-032472
+(config)# do-exec debug fqdn event <cr>    # path-032452
+(config)# do-exec debug fqdn packet <cr>    # path-032489
+(config)# do-exec debug fqdn verbose <cr>    # path-032431
+(config)# do-exec debug frame-relay adjacency pvc <cr>    # path-040723
+(config)# do-exec debug frame-relay cllm <cr>    # path-032043
+(config)# do-exec debug frame-relay dlsw <cr>    # path-031940
+(config)# do-exec debug frame-relay end-to-end keepalive events <cr>    # path-049526
+(config)# do-exec debug frame-relay end-to-end keepalive packet <cr>    # path-049638
+(config)# do-exec debug frame-relay end-to-end keepalive packet interface <interface> <cr>    # path-062414
+(config)# do-exec debug frame-relay events <cr>    # path-031855
+(config)# do-exec debug frame-relay fast-restart <cr>    # path-032119
+(config)# do-exec debug frame-relay foresight <cr>    # path-032029
+(config)# do-exec debug frame-relay fragment event <cr>    # path-040522
+(config)# do-exec debug frame-relay fragment packet <cr>    # path-040594
+(config)# do-exec debug frame-relay fragment packet interface <interface> <number:16..1007> <cr>    # path-062416
+(config)# do-exec debug frame-relay hpr <cr>    # path-031905
+(config)# do-exec debug frame-relay ip tcp <cr>    # path-040343
+(config)# do-exec debug frame-relay ipc <cr>    # path-032030
+(config)# do-exec debug frame-relay llc2 <cr>    # path-031924
+(config)# do-exec debug frame-relay lmi <cr>    # path-031893
+(config)# do-exec debug frame-relay lmi interface <interface> <cr>    # path-061557
+(config)# do-exec debug frame-relay multilink <cr>    # path-032122
+(config)# do-exec debug frame-relay multilink control <cr>    # path-040650
+(config)# do-exec debug frame-relay multilink control <interface> <cr>    # path-061624
+(config)# do-exec debug frame-relay packet <cr>    # path-031910
+(config)# do-exec debug frame-relay packet interface <interface> <cr>    # path-061565
+(config)# do-exec debug frame-relay ppp <cr>    # path-032068
+(config)# do-exec debug frame-relay redundancy <cr>    # path-032136
+(config)# do-exec debug frame-relay rsrb <cr>    # path-031961
+(config)# do-exec debug frame-relay switching interface <interface> <number:16..1007> <cr>    # path-062126
+(config)# do-exec debug frame-relay verbose <cr>    # path-031832
+(config)# do-exec debug fras error <cr>    # path-033723
+(config)# do-exec debug fras message <cr>    # path-033699
+(config)# do-exec debug fras state <cr>    # path-033711
+(config)# do-exec debug fras-host activation <cr>    # path-032245
+(config)# do-exec debug fras-host error <cr>    # path-032226
+(config)# do-exec debug fras-host packet <cr>    # path-032286
+(config)# do-exec debug fras-host snmp <cr>    # path-032263
+(config)# do-exec debug gbic <cr>    # path-027015
+(config)# do-exec debug gbic all <cr>    # path-029466
+(config)# do-exec debug glbp <cr>    # path-027636
+(config)# do-exec debug glbp errors <cr>    # path-032065
+(config)# do-exec debug glbp events <cr>    # path-032210
+(config)# do-exec debug glbp events all <cr>    # path-061041
+(config)# do-exec debug glbp internal <cr>    # path-032124
+(config)# do-exec debug glbp internal verbose <cr>    # path-061020
+(config)# do-exec debug glbp packets <cr>    # path-032143
+(config)# do-exec debug glbp packets all <cr>    # path-061026
+(config)# do-exec debug glbp terse <cr>    # path-060722
+(config)# do-exec debug gssapi <cr>    # path-027663
+(config)# do-exec debug gx-monitoring-DB detail <cr>    # path-031453
+(config)# do-exec debug gx-monitoring-DB error <cr>    # path-031441
+(config)# do-exec debug gx-monitoring-DB event <cr>    # path-031420
+(config)# do-exec debug ha-infra <?option@555589243bd0> <?option@555589243c10> <cr>    # path-062782
+(config)# do-exec debug ha-infra <?option@555589243bd0> prefix-str <string> <cr>    # path-061268
+(config)# do-exec debug hqf <cr>    # path-027659
+(config)# do-exec debug hqf admission-control <cr>    # path-032312
+(config)# do-exec debug hqf admission-control error <cr>    # path-040882
+(config)# do-exec debug hqf admission-control event <cr>    # path-040852
+(config)# do-exec debug hqf client <cr>    # path-032288
+(config)# do-exec debug hqf development <cr>    # path-032305
+(config)# do-exec debug hqf dp <cr>    # path-032322
+(config)# do-exec debug hqf feature bandwidth <cr>    # path-040935
+(config)# do-exec debug hqf feature bandwidth error <cr>    # path-049996
+(config)# do-exec debug hqf feature bandwidth event <cr>    # path-049965
+(config)# do-exec debug hqf feature priority <cr>    # path-040903
+(config)# do-exec debug hqf feature priority error <cr>    # path-049969
+(config)# do-exec debug hqf feature priority event <cr>    # path-049943
+(config)# do-exec debug hqf feature queue-limit <cr>    # path-040871
+(config)# do-exec debug hqf feature queue-limit error <cr>    # path-049950
+(config)# do-exec debug hqf feature queue-limit event <cr>    # path-049924
+(config)# do-exec debug hqf feature wred <cr>    # path-041007
+(config)# do-exec debug hqf feature wred detail <cr>    # path-050020
+(config)# do-exec debug hqf feature wred error <cr>    # path-050042
+(config)# do-exec debug hqf feature wred event <cr>    # path-049992
+(config)# do-exec debug hqf infra hierarchy <cr>    # path-041080
+(config)# do-exec debug hqf infra hierarchy error <cr>    # path-050098
+(config)# do-exec debug hqf infra hierarchy event <cr>    # path-050059
+(config)# do-exec debug hqf infra internal <cr>    # path-040983
+(config)# do-exec debug hqf infra registry <cr>    # path-040879
+(config)# do-exec debug hqf infra timer <cr>    # path-040911
+(config)# do-exec debug hqf queuing-api <cr>    # path-032330
+(config)# do-exec debug hqf queuing-api create <cr>    # path-040817
+(config)# do-exec debug hqf queuing-api remove <cr>    # path-040884
+(config)# do-exec debug hqf queuing-api reparent <cr>    # path-040914
+(config)# do-exec debug hqf queuing-api update <cr>    # path-040855
+(config)# do-exec debug hqf service-group <cr>    # path-032273
+(config)# do-exec debug hqf service-group error <cr>    # path-040820
+(config)# do-exec debug hqf service-group event <cr>    # path-040790
+(config)# do-exec debug hqf target Cable-BG <cr>    # path-040824
+(config)# do-exec debug hqf target dialer <cr>    # path-040858
+(config)# do-exec debug hqf target dynamic <cr>    # path-040839
+(config)# do-exec debug hqf target dynamic error <cr>    # path-049928
+(config)# do-exec debug hqf target dynamic event <cr>    # path-049902
+(config)# do-exec debug hqf target gec <cr>    # path-040889
+(config)# do-exec debug hqf target l2vpn-pw <cr>    # path-040795
+(config)# do-exec debug hqf target tunnel <cr>    # path-040767
+(config)# do-exec debug hw-module all environment <cr>    # path-036694
+(config)# do-exec debug hw-module all errors <cr>    # path-036655
+(config)# do-exec debug hw-module all errors <cr>    # path-062793
+(config)# do-exec debug hw-module all ipcshim <number:0..15> <number:0..255> <cr>    # path-053565
+(config)# do-exec debug hw-module all oir entity <cr>    # path-046138
+(config)# do-exec debug hw-module all oir error <cr>    # path-046139
+(config)# do-exec debug hw-module all oir failure <cr>    # path-046188
+(config)# do-exec debug hw-module all oir message <cr>    # path-046084
+(config)# do-exec debug hw-module all oir plugin <cr>    # path-046225
+(config)# do-exec debug hw-module all oir redundancy <cr>    # path-046189
+(config)# do-exec debug hw-module all oir state-machine <cr>    # path-046083
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all environment <cr>    # path-061932
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all errors <cr>    # path-061929
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all ipcshim <number:0..15> <number:0..255> <cr>    # path-062502
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir entity <cr>    # path-062304
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir error <cr>    # path-062305
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir failure <cr>    # path-062307
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir message <cr>    # path-062300
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir plugin <cr>    # path-062309
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir redundancy <cr>    # path-062308
+(config)# do-exec debug hw-module subslot <?slotcard_func_action@5555899c1038> all oir state-machine <cr>    # path-062299
+(config)# do-exec debug icm all <cr>    # path-031776
+(config)# do-exec debug idbgroup <cr>    # path-027771
+(config)# do-exec debug identity <cr>    # path-027720
+(config)# do-exec debug idmgr core <cr>    # path-032628
+(config)# do-exec debug idmgr data <cr>    # path-032580
+(config)# do-exec debug idmgr db <cr>    # path-032600
+(config)# do-exec debug idmgr elog <cr>    # path-032668
+(config)# do-exec debug idmgr flow local <cr>    # path-041585
+(config)# do-exec debug if-mgr errors acp <cr>    # path-035582
+(config)# do-exec debug if-mgr errors all <cr>    # path-035452
+(config)# do-exec debug if-mgr errors caim <cr>    # path-036378
+(config)# do-exec debug if-mgr errors client <cr>    # path-035753
+(config)# do-exec debug if-mgr errors db <cr>    # path-035514
+(config)# do-exec debug if-mgr errors driver <cr>    # path-035641
+(config)# do-exec debug if-mgr errors efp-ext <cr>    # path-036557
+(config)# do-exec debug if-mgr errors enet-ext <cr>    # path-035885
+(config)# do-exec debug if-mgr errors event <cr>    # path-036245
+(config)# do-exec debug if-mgr errors extension <cr>    # path-035694
+(config)# do-exec debug if-mgr errors ifIndex <cr>    # path-035822
+(config)# do-exec debug if-mgr errors legacy <cr>    # path-036696
+(config)# do-exec debug if-mgr errors otn-ext <cr>    # path-036492
+(config)# do-exec debug if-mgr errors port-channel-ext <cr>    # path-036032
+(config)# do-exec debug if-mgr errors sig <cr>    # path-036112
+(config)# do-exec debug if-mgr errors stack <cr>    # path-036184
+(config)# do-exec debug if-mgr errors table-db <cr>    # path-036315
+(config)# do-exec debug if-mgr errors tunnel-ext <cr>    # path-036436
+(config)# do-exec debug if-mgr errors vlan-ext <cr>    # path-035954
+(config)# do-exec debug if-mgr trace acp <cr>    # path-035521
+(config)# do-exec debug if-mgr trace all <cr>    # path-035399
+(config)# do-exec debug if-mgr trace caim <cr>    # path-036316
+(config)# do-exec debug if-mgr trace client <cr>    # path-035695
+(config)# do-exec debug if-mgr trace db <cr>    # path-035463
+(config)# do-exec debug if-mgr trace driver <cr>    # path-035585
+(config)# do-exec debug if-mgr trace efp-ext <cr>    # path-036493
+(config)# do-exec debug if-mgr trace enet-ext <cr>    # path-035823
+(config)# do-exec debug if-mgr trace event <cr>    # path-036185
+(config)# do-exec debug if-mgr trace extension <cr>    # path-035642
+(config)# do-exec debug if-mgr trace ifIndex <cr>    # path-035755
+(config)# do-exec debug if-mgr trace legacy <cr>    # path-036704
+(config)# do-exec debug if-mgr trace legacy pkts <cr>    # path-046037
+(config)# do-exec debug if-mgr trace otn-ext <cr>    # path-036437
+(config)# do-exec debug if-mgr trace port-channel-ext <cr>    # path-035955
+(config)# do-exec debug if-mgr trace sig <cr>    # path-036033
+(config)# do-exec debug if-mgr trace stack <cr>    # path-036113
+(config)# do-exec debug if-mgr trace table-db <cr>    # path-036246
+(config)# do-exec debug if-mgr trace tunnel-ext <cr>    # path-036379
+(config)# do-exec debug if-mgr trace vlan-ext <cr>    # path-035886
+(config)# do-exec debug ifs agent <cr>    # path-033152
+(config)# do-exec debug ifs agent detail <cr>    # path-042442
+(config)# do-exec debug ifs file <cr>    # path-033122
+(config)# do-exec debug ifs fs <cr>    # path-033110
+(config)# do-exec debug ifs image <cr>    # path-033160
+(config)# do-exec debug ifs rfs <cr>    # path-033149
+(config)# do-exec debug ifs verbose <cr>    # path-033130
+(config)# do-exec debug ilpower ILP <cr>    # path-030117
+(config)# do-exec debug ilpower cdp <cr>    # path-030047
+(config)# do-exec debug ilpower controller <cr>    # path-029975
+(config)# do-exec debug ilpower event <cr>    # path-030014
+(config)# do-exec debug ilpower ha <cr>    # path-030118
+(config)# do-exec debug ilpower ipc <cr>    # path-030321
+(config)# do-exec debug ilpower police <cr>    # path-030258
+(config)# do-exec debug ilpower port <cr>    # path-029883
+(config)# do-exec debug ilpower powerman <cr>    # path-030182
+(config)# do-exec debug ilpower registries <cr>    # path-029822
+(config)# do-exec debug ilpower scp <cr>    # path-029930
+(config)# do-exec debug ilpower sense <cr>    # path-030287
+(config)# do-exec debug ilpower upoe <cr>    # path-030347
+(config)# do-exec debug inform_feature_msg <cr>    # path-026418
+(config)# do-exec debug interface <interface> <cr>    # path-060741
+(config)# do-exec debug interface <interface> vc <?number_func_nows_action@5555896bf580> <number:dynamic> <cr>    # path-062984
+(config)# do-exec debug interface <interface> vc all <cr>    # path-061781
+(config)# do-exec debug interface counters exceptions <cr>    # path-042506
+(config)# do-exec debug interface counters protocol memory <cr>    # path-051148
+(config)# do-exec debug interface management etherchannel <cr>    # path-042514
+(config)# do-exec debug interface management iif <cr>    # path-042601
+(config)# do-exec debug interface management private-vlan <cr>    # path-042547
+(config)# do-exec debug interface management provision <cr>    # path-042619
+(config)# do-exec debug interface management snmp <cr>    # path-042530
+(config)# do-exec debug interface management switchport layer-2 <cr>    # path-051178
+(config)# do-exec debug interface management switchport layer-3 <cr>    # path-051187
+(config)# do-exec debug interface management vlan <cr>    # path-042583
+(config)# do-exec debug interface states <cr>    # path-033180
+(config)# do-exec debug interface subif-deleted <cr>    # path-033187
+(config)# do-exec debug iosp-server <cr>    # path-027704
+(config)# do-exec debug ip access-list compiled <cr>    # path-038116
+(config)# do-exec debug ip access-list compiled context deletions <cr>    # path-054402
+(config)# do-exec debug ip access-list compiled reuse all <cr>    # path-054406
+(config)# do-exec debug ip access-list compiled reuse backpointers <cr>    # path-054382
+(config)# do-exec debug ip access-list compiled reuse eligibility all <cr>    # path-058001
+(config)# do-exec debug ip access-list compiled reuse eligibility frees <cr>    # path-058020
+(config)# do-exec debug ip access-list compiled reuse eligibility lost <cr>    # path-058015
+(config)# do-exec debug ip access-list compiled reuse eligibility missing <cr>    # path-058009
+(config)# do-exec debug ip access-list compiled reuse memory failures all <cr>    # path-059351
+(config)# do-exec debug ip access-list compiled reuse memory failures back-pointer <cr>    # path-059358
+(config)# do-exec debug ip access-list compiled reuse memory failures deferred entry <cr>    # path-059857
+(config)# do-exec debug ip access-list compiled reuse memory failures deferred row <cr>    # path-059854
+(config)# do-exec debug ip access-list compiled reuse selection all <cr>    # path-058013
+(config)# do-exec debug ip access-list compiled reuse selection errors <cr>    # path-058032
+(config)# do-exec debug ip access-list compiled reuse selection rows <cr>    # path-058026
+(config)# do-exec debug ip access-list compiled reuse selection throttling <cr>    # path-058018
+(config)# do-exec debug ip access-list compiled reuse unallocated <cr>    # path-054359
+(config)# do-exec debug ip access-list compiled update all <cr>    # path-054380
+(config)# do-exec debug ip access-list compiled update compilations <cr>    # path-054423
+(config)# do-exec debug ip access-list compiled update entries all <cr>    # path-058012
+(config)# do-exec debug ip access-list compiled update entries available <cr>    # path-058025
+(config)# do-exec debug ip access-list compiled update entries unavailable <cr>    # path-058017
+(config)# do-exec debug ip access-list compiled update instance <cr>    # path-054404
+(config)# do-exec debug ip access-list compiled update rows all <cr>    # path-058008
+(config)# do-exec debug ip access-list compiled update rows available <cr>    # path-058037
+(config)# do-exec debug ip access-list compiled update rows discard <cr>    # path-058033
+(config)# do-exec debug ip access-list compiled update rows ignored <cr>    # path-058027
+(config)# do-exec debug ip access-list compiled update rows requeue <cr>    # path-058019
+(config)# do-exec debug ip access-list compiled update rows unavailable <cr>    # path-058014
+(config)# do-exec debug ip access-list dynamic <cr>    # path-037851
+(config)# do-exec debug ip access-list fqdn all <cr>    # path-047037
+(config)# do-exec debug ip access-list fqdn errors <cr>    # path-047081
+(config)# do-exec debug ip access-list fqdn events <cr>    # path-047111
+(config)# do-exec debug ip access-list fqdn verbose <cr>    # path-047144
+(config)# do-exec debug ip access-list hash-generation <cr>    # path-037748
+(config)# do-exec debug ip access-list internal <cr>    # path-037852
+(config)# do-exec debug ip access-list intstats <cr>    # path-037922
+(config)# do-exec debug ip access-list ipc <cr>    # path-037886
+(config)# do-exec debug ip access-list peruser <cr>    # path-037705
+(config)# do-exec debug ip access-list template <cr>    # path-038043
+(config)# do-exec debug ip access-list template CRC <cr>    # path-047238
+(config)# do-exec debug ip address <cr>    # path-030674
+(config)# do-exec debug ip admission all <cr>    # path-038242
+(config)# do-exec debug ip amt gateway event <cr>    # path-047459
+(config)# do-exec debug ip amt gateway packet <cr>    # path-047480
+(config)# do-exec debug ip amt relay event <cr>    # path-047420
+(config)# do-exec debug ip amt relay packet <cr>    # path-047437
+(config)# do-exec debug ip bgp <address> updates <cr>    # path-048156
+(config)# do-exec debug ip bgp <cr>    # path-031437
+(config)# do-exec debug ip bgp <cr>    # path-031557
+(config)# do-exec debug ip bgp <cr>    # path-031613
+(config)# do-exec debug ip bgp addpath <cr>    # path-038191
+(config)# do-exec debug ip bgp autordrt <cr>    # path-038137
+(config)# do-exec debug ip bgp csc <cr>    # path-039026
+(config)# do-exec debug ip bgp dampening <cr>    # path-039036
+(config)# do-exec debug ip bgp dampening <cr>    # path-039188
+(config)# do-exec debug ip bgp diversepath <cr>    # path-038150
+(config)# do-exec debug ip bgp events <cr>    # path-039194
+(config)# do-exec debug ip bgp events api <cr>    # path-047859
+(config)# do-exec debug ip bgp events crimson emulation address-family route <cr>    # path-059433
+(config)# do-exec debug ip bgp events crimson emulation address-family summary <cr>    # path-059430
+(config)# do-exec debug ip bgp events crimson emulation neighbor <cr>    # path-058134
+(config)# do-exec debug ip bgp events encap <cr>    # path-047967

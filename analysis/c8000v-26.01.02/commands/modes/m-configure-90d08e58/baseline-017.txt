@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-017.md
+
+(config)# default do-exec show ip multicast mpls mrib-client ipv4 <cr>    # path-058183
+(config)# default do-exec show ip multicast mpls mrib-client ipv6 <cr>    # path-058199
+(config)# default do-exec show ip multicast mpls vif <cr>    # path-054864
+(config)# default do-exec show ip multicast overlay-mapping lisp <address> <cr>    # path-058300
+(config)# default do-exec show ip multicast redundancy ole <cr>    # path-055422
+(config)# default do-exec show ip multicast redundancy reachability summary <cr>    # path-058384
+(config)# default do-exec show ip multicast redundancy state <cr>    # path-055238
+(config)# default do-exec show ip multicast redundancy statistics <cr>    # path-055231
+(config)# default do-exec show ip multicast rpf monitored <cr>    # path-054786
+(config)# default do-exec show ip multicast snooping limit vlan <number:1..4095> <cr>    # path-059464
+(config)# default do-exec show ip multicast snooping summary <cr>    # path-055209
+(config)# default do-exec show ip multicast snooping summary vlan <number:1..4095> <cr>    # path-059472
+(config)# default do-exec show ip multicast timer <cr>    # path-048669
+(config)# default do-exec show ip multicast topology <cr>    # path-048818
+(config)# default do-exec show ip name-servers <cr>    # path-038274
+(config)# default do-exec show ip nat aggregation top-100-allocator <cr>    # path-055465
+(config)# default do-exec show ip nat alias-usecount <cr>    # path-049716
+(config)# default do-exec show ip nat bpa <cr>    # path-049346
+(config)# default do-exec show ip nat dia track <cr>    # path-055580
+(config)# default do-exec show ip nat entry-static <cr>    # path-049673
+(config)# default do-exec show ip nat ha <cr>    # path-049794
+(config)# default do-exec show ip nat ha inside destination <cr>    # path-058501
+(config)# default do-exec show ip nat ha inside destination list <number:1..2699> <cr>    # path-059909
+(config)# default do-exec show ip nat ha inside source <cr>    # path-058493
+(config)# default do-exec show ip nat ha inside source <cr>    # path-058516
+(config)# default do-exec show ip nat ha inside source static <address> <address> <cr>    # path-060103
+(config)# default do-exec show ip nat ha mappings <cr>    # path-055660
+(config)# default do-exec show ip nat ha outside source <cr>    # path-058522
+(config)# default do-exec show ip nat ha outside source list <number:1..2699> <cr>    # path-059911
+(config)# default do-exec show ip nat ha outside source static <address> <address> <cr>    # path-060101
+(config)# default do-exec show ip nat ha pool <cr>    # path-055591
+(config)# default do-exec show ip nat ha pool <string> <cr>    # path-058466
+(config)# default do-exec show ip nat limits all-host <cr>    # path-055513
+(config)# default do-exec show ip nat map <cr>    # path-049552
+(config)# default do-exec show ip nat platform <cr>    # path-049195
+(config)# default do-exec show ip nat pool platform <cr>    # path-055495
+(config)# default do-exec show ip nat portblock pat <cr>    # path-055387
+(config)# default do-exec show ip nat route-dia <cr>    # path-049592
+(config)# default do-exec show ip nat statistics <cr>    # path-049303
+(config)# default do-exec show ip nat status <cr>    # path-049899
+(config)# default do-exec show ip nat translations <cr>    # path-049697
+(config)# default do-exec show ip nbar attribute <cr>    # path-048805
+(config)# default do-exec show ip nbar attribute-custom <cr>    # path-049055
+(config)# default do-exec show ip nbar attribute-map <cr>    # path-049064
+(config)# default do-exec show ip nbar attribute-map <string> <cr>    # path-055189
+(config)# default do-exec show ip nbar classification cache sync export format table <cr>    # path-060093
+(config)# default do-exec show ip nbar classification cache sync import last <cr>    # path-059890
+(config)# default do-exec show ip nbar classification dns learning <cr>    # path-058283
+(config)# default do-exec show ip nbar classification dns learning cache <number:1..100000> <cr>    # path-059893
+(config)# default do-exec show ip nbar classification dns learning cache <number:1..100000> unclassified <cr>    # path-060086
+(config)# default do-exec show ip nbar classification dns learning cache clients-servers <number:1..100000> <cr>    # path-060089
+(config)# default do-exec show ip nbar classification dns learning cache ip-address <address> <cr>    # path-060088
+(config)# default do-exec show ip nbar classification dns learning stats <cr>    # path-059452
+(config)# default do-exec show ip nbar classification granularity <cr>    # path-054983
+(config)# default do-exec show ip nbar classification granularity protocol <cr>    # path-058249
+(config)# default do-exec show ip nbar classification socket-cache <number:1..100000> <cr>    # path-058274
+(config)# default do-exec show ip nbar classification socket-cache pl-sockets <cr>    # path-058315
+(config)# default do-exec show ip nbar control-plane <cr>    # path-048433
+(config)# default do-exec show ip nbar function <string> <cr>    # path-055016
+(config)# default do-exec show ip nbar link-age <cr>    # path-048944
+(config)# default do-exec show ip nbar npc detail <cr>    # path-054909
+(config)# default do-exec show ip nbar npc summary <cr>    # path-054942
+(config)# default do-exec show ip nbar parameter extraction <cr>    # path-055089
+(config)# default do-exec show ip nbar parameter extraction activated <cr>    # path-058276
+(config)# default do-exec show ip nbar parameter subclassification <cr>    # path-055128
+(config)# default do-exec show ip nbar parameter subclassification activated <cr>    # path-058290
+(config)# default do-exec show ip nbar protocol-attribute <cr>    # path-048874
+(config)# default do-exec show ip nbar protocol-discovery <cr>    # path-049770
+(config)# default do-exec show ip nbar protocol-id <cr>    # path-049193
+(config)# default do-exec show ip nbar protocol-pack <string> <cr>    # path-055424
+(config)# default do-exec show ip nbar protocol-pack <string> detail <cr>    # path-058400
+(config)# default do-exec show ip nbar protocol-pack <string> taxonomy <cr>    # path-058414
+(config)# default do-exec show ip nbar protocol-pack active <cr>    # path-055279
+(config)# default do-exec show ip nbar protocol-pack active detail <cr>    # path-058334
+(config)# default do-exec show ip nbar protocol-pack active taxonomy <cr>    # path-058353
+(config)# default do-exec show ip nbar protocol-pack inactive <cr>    # path-055312
+(config)# default do-exec show ip nbar protocol-pack inactive detail <cr>    # path-058348
+(config)# default do-exec show ip nbar protocol-pack inactive taxonomy <cr>    # path-058392
+(config)# default do-exec show ip nbar protocol-pack inactive taxonomy <string> <cr>    # path-059479
+(config)# default do-exec show ip nbar protocol-pack loaded <cr>    # path-055352
+(config)# default do-exec show ip nbar protocol-pack loaded detail <cr>    # path-058367
+(config)# default do-exec show ip nbar protocol-pack loaded taxonomy <cr>    # path-058407
+(config)# default do-exec show ip nbar protocol-pack loaded taxonomy <string> <cr>    # path-059484
+(config)# default do-exec show ip nbar resources <cr>    # path-049361
+(config)# default do-exec show ip nbar resources flow <cr>    # path-055399
+(config)# default do-exec show ip nbar resources status <cr>    # path-055512
+(config)# default do-exec show ip nbar resources status <number:10..86400> <cr>    # path-058452
+(config)# default do-exec show ip nbar resources status <number:10..86400> <number:1..50> <cr>    # path-059501
+(config)# default do-exec show ip nbar resources status fadebucket <cr>    # path-058443
+(config)# default do-exec show ip nbar resources status fadebucket <number:1..50> <cr>    # path-059496
+(config)# default do-exec show ip nbar resources status freebucket <cr>    # path-058431
+(config)# default do-exec show ip nbar resources status freebucket <number:1..50> <cr>    # path-059494
+(config)# default do-exec show ip nbar statistics <cr>    # path-049139
+(config)# default do-exec show ip nbar version <cr>    # path-049056
+(config)# default do-exec show ip nhrp <cr>    # path-040876
+(config)# default do-exec show ip nhrp attribute <cr>    # path-049399
+(config)# default do-exec show ip nhrp instances <cr>    # path-049511
+(config)# default do-exec show ip nhrp map <cr>    # path-049469
+(config)# default do-exec show ip nhrp multicast <cr>    # path-049566
+(config)# default do-exec show ip nhrp nhs <cr>    # path-049476
+(config)# default do-exec show ip nhrp nhs redundancy <cr>    # path-055575
+(config)# default do-exec show ip nhrp nhs redundancy cluster <number:0..10> <cr>    # path-059502
+(config)# default do-exec show ip nhrp nhs redundancy preempted <cr>    # path-058455
+(config)# default do-exec show ip nhrp nhs redundancy running <cr>    # path-058439
+(config)# default do-exec show ip nhrp nhs redundancy waiting <cr>    # path-058462
+(config)# default do-exec show ip nhrp purge <cr>    # path-049178
+(config)# default do-exec show ip nhrp redirect <cr>    # path-049683
+(config)# default do-exec show ip nhrp redirect statistics <cr>    # path-055579
+(config)# default do-exec show ip nhrp shortcut <cr>    # path-049672
+(config)# default do-exec show ip nhrp stats <cr>    # path-049482
+(config)# default do-exec show ip nhrp traffic <cr>    # path-049249
+(config)# default do-exec show ip ospf <cr>    # path-040877
+(config)# default do-exec show ip ospf bad-checksum <cr>    # path-048841
+(config)# default do-exec show ip ospf border-routers <cr>    # path-049474
+(config)# default do-exec show ip ospf database <cr>    # path-050125
+(config)# default do-exec show ip ospf database database-summary <cr>    # path-055823
+(config)# default do-exec show ip ospf database database-summary detail <cr>    # path-058613
+(config)# default do-exec show ip ospf delete-list <cr>    # path-049731
+(config)# default do-exec show ip ospf events <cr>    # path-049008
+(config)# default do-exec show ip ospf flood-list <cr>    # path-049918
+(config)# default do-exec show ip ospf interface <cr>    # path-049941
+(config)# default do-exec show ip ospf internal forwarding-addresses <cr>    # path-055800
+(config)# default do-exec show ip ospf internal memory cache <cr>    # path-058572
+(config)# default do-exec show ip ospf max-metric <cr>    # path-049557
+(config)# default do-exec show ip ospf maxage-list <cr>    # path-049504
+(config)# default do-exec show ip ospf mpls traffic-eng link <cr>    # path-058517
+(config)# default do-exec show ip ospf multi-area <cr>    # path-049136
+(config)# default do-exec show ip ospf neighbor <cr>    # path-050090
+(config)# default do-exec show ip ospf nsf <cr>    # path-049192
+(config)# default do-exec show ip ospf nsr <cr>    # path-049762
+(config)# default do-exec show ip ospf nsr objects <cr>    # path-055601
+(config)# default do-exec show ip ospf nsr statistics <cr>    # path-055629
+(config)# default do-exec show ip ospf request-list <cr>    # path-050013
+(config)# default do-exec show ip ospf retransmission-list <cr>    # path-049986
+(config)# default do-exec show ip ospf rib <cr>    # path-049651
+(config)# default do-exec show ip ospf rib <cr>    # path-049652
+(config)# default do-exec show ip ospf sham-links <cr>    # path-049050
+(config)# default do-exec show ip ospf statistics <cr>    # path-049562
+(config)# default do-exec show ip ospf summary-address <cr>    # path-049366
+(config)# default do-exec show ip ospf timers lsa-group <cr>    # path-055330
+(config)# default do-exec show ip ospf timers rate-limit <cr>    # path-055372
+(config)# default do-exec show ip ospf topology-info <cr>    # path-049647
+(config)# default do-exec show ip ospf traffic <cr>    # path-049920
+(config)# default do-exec show ip ospf virtual-links <cr>    # path-049107
+(config)# default do-exec show ip pim autorp <cr>    # path-048783
+(config)# default do-exec show ip pim bfd neighbor inactive <cr>    # path-058470
+(config)# default do-exec show ip pim bsr-router <cr>    # path-048850
+(config)# default do-exec show ip pim drlb gdr-candidates <cr>    # path-055311
+(config)# default do-exec show ip pim gir <cr>    # path-049351
+(config)# default do-exec show ip pim interface <cr>    # path-049617
+(config)# default do-exec show ip pim interface bfd <cr>    # path-055639
+(config)# default do-exec show ip pim interface detail <cr>    # path-055443
+(config)# default do-exec show ip pim interface traffic <cr>    # path-055410
+(config)# default do-exec show ip pim mdt <cr>    # path-049818
+(config)# default do-exec show ip pim mdt bgp <cr>    # path-055714
+(config)# default do-exec show ip pim mdt bgp c-mroutes <cr>    # path-058513
+(config)# default do-exec show ip pim mdt history interval <number:1..71582> <cr>    # path-059507
+(config)# default do-exec show ip pim mdt internal bier <cr>    # path-058518
+(config)# default do-exec show ip pim mdt internal crt <cr>    # path-058546
+(config)# default do-exec show ip pim mdt internal gre <cr>    # path-058511
+(config)# default do-exec show ip pim mdt internal ir <cr>    # path-058523
+(config)# default do-exec show ip pim mdt internal leaf-ad <cr>    # path-058529
+(config)# default do-exec show ip pim mdt internal mldp <cr>    # path-058536
+(config)# default do-exec show ip pim mdt internal pe <cr>    # path-058583
+(config)# default do-exec show ip pim mdt internal pe all <cr>    # path-059526
+(config)# default do-exec show ip pim mdt internal replication <cr>    # path-058556
+(config)# default do-exec show ip pim mdt internal tdb <cr>    # path-058580
+(config)# default do-exec show ip pim mdt internal vxlan <cr>    # path-058499
+(config)# default do-exec show ip pim mdt receive <cr>    # path-055615
+(config)# default do-exec show ip pim mdt receive detail <cr>    # path-058475
+(config)# default do-exec show ip pim mdt send <cr>    # path-055569
+(config)# default do-exec show ip pim mvpn <cr>    # path-049321
+(config)# default do-exec show ip pim mvpn bier <cr>    # path-055344
+(config)# default do-exec show ip pim mvpn crt <cr>    # path-055115
+(config)# default do-exec show ip pim mvpn gre <cr>    # path-055306
+(config)# default do-exec show ip pim mvpn ir <cr>    # path-055273
+(config)# default do-exec show ip pim mvpn leaf-ad <cr>    # path-055202
+(config)# default do-exec show ip pim mvpn mldp <cr>    # path-055035
+(config)# default do-exec show ip pim mvpn pe <cr>    # path-055075
+(config)# default do-exec show ip pim mvpn replication <cr>    # path-055158
+(config)# default do-exec show ip pim mvpn srv6 <cr>    # path-055236
+(config)# default do-exec show ip pim mvpn tdb <cr>    # path-055383
+(config)# default do-exec show ip pim mvpn vxlan <cr>    # path-054993
+(config)# default do-exec show ip pim neighbor <cr>    # path-048952
+(config)# default do-exec show ip pim pfp-sa announcements <cr>    # path-055188
+(config)# default do-exec show ip pim pfp-sa cache <cr>    # path-055269
+(config)# default do-exec show ip pim pfp-sa originator <cr>    # path-055230
+(config)# default do-exec show ip pim rp <cr>    # path-049317
+(config)# default do-exec show ip pim rp-hash <address> <cr>    # path-055293
+(config)# default do-exec show ip pim tunnel <cr>    # path-049314
+(config)# default do-exec show ip policy <cr>    # path-040149
+(config)# default do-exec show ip policy adj-subblock <cr>    # path-049117
+(config)# default do-exec show ip policy-list <cr>    # path-039239
+(config)# default do-exec show ip portbundle ip <address> bundle <number:1..65535> <cr>    # path-059417
+(config)# default do-exec show ip portbundle status <cr>    # path-047983
+(config)# default do-exec show ip portbundle status free <cr>    # path-054610
+(config)# default do-exec show ip ports all <cr>    # path-048090
+(config)# default do-exec show ip ports ephemeral-max <cr>    # path-048041
+(config)# default do-exec show ip ports reservation <cr>    # path-048135
+(config)# default do-exec show ip prefix-list <cr>    # path-040630
+(config)# default do-exec show ip prefix-list <string> seq <number:1..4294967295> <cr>    # path-058509
+(config)# default do-exec show ip prefix-list detail <cr>    # path-049754
+(config)# default do-exec show ip prefix-list summary <cr>    # path-049721
+(config)# default do-exec show ip protocols <cr>    # path-039285
+(config)# default do-exec show ip protocols summary <cr>    # path-048224
+(config)# default do-exec show ip redirects <cr>    # path-038105
+(config)# default do-exec show ip rib database <cr>    # path-048276
+(config)# default do-exec show ip rip database <cr>    # path-049365
+(config)# default do-exec show ip rip neighbors <cr>    # path-049341
+(config)# default do-exec show ip rip timers <cr>    # path-049168
+(config)# default do-exec show ip route list <number:1..199> <cr>    # path-054823
+(config)# default do-exec show ip route omp-tag <number:0..4294967295> <cr>    # path-054886
+(config)# default do-exec show ip route tag <number:0..4294967295> <cr>    # path-054885
+(config)# default do-exec show ip route tree <address> <address> <cr>    # path-058184
+(config)# default do-exec show ip route tree <cr>    # path-048418
+(config)# default do-exec show ip route tree summary <cr>    # path-054797
+(config)# default do-exec show ip rpf queued <cr>    # path-048566
+(config)# default do-exec show ip rsvp <cr>    # path-040973
+(config)# default do-exec show ip rsvp aggregation ip <cr>    # path-055574
+(config)# default do-exec show ip rsvp aggregation ip endpoints <cr>    # path-058507
+(config)# default do-exec show ip rsvp aggregation ip interface <cr>    # path-058479
+(config)# default do-exec show ip rsvp aggregation ip map <cr>    # path-058449
+(config)# default do-exec show ip rsvp aggregation ip reservation <cr>    # path-058457
+(config)# default do-exec show ip rsvp atm-peak-rate-limit <cr>    # path-049985
+(config)# default do-exec show ip rsvp authentication <cr>    # path-049559
+(config)# default do-exec show ip rsvp counters <cr>    # path-050124
+(config)# default do-exec show ip rsvp handles <cr>    # path-049917
+(config)# default do-exec show ip rsvp hello <cr>    # path-050178
+(config)# default do-exec show ip rsvp hello bfd nbr <cr>    # path-058655
+(config)# default do-exec show ip rsvp hello bfd nbr detail <cr>    # path-059551
+(config)# default do-exec show ip rsvp hello client lsp detail <cr>    # path-059557
+(config)# default do-exec show ip rsvp hello client lsp summary <cr>    # path-059556
+(config)# default do-exec show ip rsvp hello client nbr <cr>    # path-058662
+(config)# default do-exec show ip rsvp hello client nbr detail <cr>    # path-059554
+(config)# default do-exec show ip rsvp hello graceful-restart <cr>    # path-055929
+(config)# default do-exec show ip rsvp hello instance internal <cr>    # path-058626
+(config)# default do-exec show ip rsvp hello instance summary <cr>    # path-058636
+(config)# default do-exec show ip rsvp hello statistics <cr>    # path-055874
+(config)# default do-exec show ip rsvp host receivers <cr>    # path-055882
+(config)# default do-exec show ip rsvp host senders <cr>    # path-055860
+(config)# default do-exec show ip rsvp installed <cr>    # path-049963
+(config)# default do-exec show ip rsvp interface <cr>    # path-049921
+(config)# default do-exec show ip rsvp listeners <address> <cr>    # path-055884
+(config)# default do-exec show ip rsvp listeners <address> <number:0..255> <cr>    # path-058615
+(config)# default do-exec show ip rsvp listeners <address> <number:0..255> <number:0..65535> <cr>    # path-059527
+(config)# default do-exec show ip rsvp listeners <cr>    # path-050034
+(config)# default do-exec show ip rsvp metadata <cr>    # path-049792
+(config)# default do-exec show ip rsvp neighbor <cr>    # path-049736
+(config)# default do-exec show ip rsvp neighbor queues <cr>    # path-055612
+(config)# default do-exec show ip rsvp nsr counters <cr>    # path-055463
+(config)# default do-exec show ip rsvp p2mp counters <cr>    # path-055869
+(config)# default do-exec show ip rsvp policy <cr>    # path-049520
+(config)# default do-exec show ip rsvp policy cops <cr>    # path-055547
+(config)# default do-exec show ip rsvp policy identity <cr>    # path-055480
+(config)# default do-exec show ip rsvp policy local <cr>    # path-055703
+(config)# default do-exec show ip rsvp precedence <cr>    # path-049919
+(config)# default do-exec show ip rsvp sbm <cr>    # path-049648
+(config)# default do-exec show ip rsvp sender <cr>    # path-049796
+(config)# default do-exec show ip rsvp signalling blockade <cr>    # path-055967
+(config)# default do-exec show ip rsvp signalling fast-local-repair <cr>    # path-055857
+(config)# default do-exec show ip rsvp signalling rate-limit <cr>    # path-055846
+(config)# default do-exec show ip rsvp signalling refresh interval <cr>    # path-058644
+(config)# default do-exec show ip rsvp signalling refresh misses <cr>    # path-058651
+(config)# default do-exec show ip rsvp signalling refresh reduction <cr>    # path-058633
+(config)# default do-exec show ip rsvp signalling session-timers <cr>    # path-055875
+(config)# default do-exec show ip rsvp transport clients <cr>    # path-055584
+(config)# default do-exec show ip rtp header-compression <cr>    # path-047771
+(config)# default do-exec show ip sctp association list <cr>    # path-055076
+(config)# default do-exec show ip sctp association parameters <number:0..4294967295> <cr>    # path-058270
+(config)# default do-exec show ip sctp association statistics <number:0..4294967295> <cr>    # path-058252
+(config)# default do-exec show ip sctp errors <cr>    # path-048602
+(config)# default do-exec show ip sctp instances <cr>    # path-048714
+(config)# default do-exec show ip sctp statistics <cr>    # path-048535
+(config)# default do-exec show ip sdr <cr>    # path-039545
+(config)# default do-exec show ip sla application <cr>    # path-050139
+(config)# default do-exec show ip sla authentication <cr>    # path-049827
+(config)# default do-exec show ip sla auto discovery <cr>    # path-055833
+(config)# default do-exec show ip sla auto group <cr>    # path-055824
+(config)# default do-exec show ip sla auto schedule <cr>    # path-055821
+(config)# default do-exec show ip sla auto summary-statistics group type ip <string> <cr>    # path-060106
+(config)# default do-exec show ip sla auto summary-statistics group type ip <string> ip-address <address> port <number:0..64000> <cr>    # path-060239
+(config)# default do-exec show ip sla auto summary-statistics group type ip <string> ip-address <cr>    # path-060181
+(config)# default do-exec show ip sla auto template <cr>    # path-055859
+(config)# default do-exec show ip sla collection-statistics <cr>    # path-050030
+(config)# default do-exec show ip sla configuration <cr>    # path-049872
+(config)# default do-exec show ip sla distribution-statistics <cr>    # path-050146
+(config)# default do-exec show ip sla distribution-statistics full <cr>    # path-055873
+(config)# default do-exec show ip sla distribution-statistics raw <cr>    # path-055845
+(config)# default do-exec show ip sla distribution-statistics tabular <cr>    # path-055896
+(config)# default do-exec show ip sla endpoint-list <cr>    # path-050259
+(config)# default do-exec show ip sla enhanced-history distribution-statistics <cr>    # path-055879
+(config)# default do-exec show ip sla ethernet-monitor configuration <cr>    # path-055837
+(config)# default do-exec show ip sla ethernet-monitor responder <cr>    # path-055794
+(config)# default do-exec show ip sla event-publisher <cr>    # path-049892
+(config)# default do-exec show ip sla event-publisher detail <cr>    # path-055728
+(config)# default do-exec show ip sla group schedule <cr>    # path-055808
+(config)# default do-exec show ip sla group schedule details <cr>    # path-058575
+(config)# default do-exec show ip sla history <cr>    # path-050218
+(config)# default do-exec show ip sla history full <cr>    # path-055911
+(config)# default do-exec show ip sla history interval-statistics <cr>    # path-055939
+(config)# default do-exec show ip sla history raw <cr>    # path-055892
+(config)# default do-exec show ip sla history tabular <cr>    # path-055926
+(config)# default do-exec show ip sla operational-state <cr>    # path-049978
+(config)# default do-exec show ip sla reaction-configuration <cr>    # path-050215
+(config)# default do-exec show ip sla reaction-trigger <cr>    # path-050194
+(config)# default do-exec show ip sla responder <cr>    # path-049887
+(config)# default do-exec show ip sla statistics <cr>    # path-050199
+(config)# default do-exec show ip sla statistics aggregated <cr>    # path-055933
+(config)# default do-exec show ip sla statistics aggregated details <cr>    # path-058643
+(config)# default do-exec show ip sla statistics details <cr>    # path-055925
+(config)# default do-exec show ip sla summary <cr>    # path-049891
+(config)# default do-exec show ip sla totals-statistics <cr>    # path-050005
+(config)# default do-exec show ip sla twamp connection requests <cr>    # path-058597
+(config)# default do-exec show ip sla twamp session <cr>    # path-055788
+(config)# default do-exec show ip sla twamp standards <cr>    # path-055760
+(config)# default do-exec show ip sla twamp-light session <cr>    # path-055809
+(config)# default do-exec show ip sockets <cr>    # path-038149
+(config)# default do-exec show ip source binding <cr>    # path-050015
+(config)# default do-exec show ip spd <cr>    # path-038136
+(config)# default do-exec show ip ssh <cr>    # path-040452
+(config)# default do-exec show ip static route bfd <cr>    # path-055390
+(config)# default do-exec show ip static route rwatch-rib <cr>    # path-055235
+(config)# default do-exec show ip static route sr-polices <cr>    # path-055305
+(config)# default do-exec show ip static route summary <cr>    # path-055151
+(config)# default do-exec show ip subscriber <cr>    # path-040730
+(config)# default do-exec show ip tcp header-compression <cr>    # path-047818
+(config)# default do-exec show ip telnet status <cr>    # path-048123
+(config)# default do-exec show ip traffic <cr>    # path-038282
+(config)# default do-exec show ip traffic topology base <cr>    # path-054441
+(config)# default do-exec show ip trigger-authentication <cr>    # path-040229
+(config)# default do-exec show ip virtual-reassembly <cr>    # path-040655
+(config)# default do-exec show ipam counts <cr>    # path-037929
+(config)# default do-exec show ipam pool <cr>    # path-037910
+(config)# default do-exec show ipam queues <cr>    # path-037949
+(config)# default do-exec show ipam status <cr>    # path-037996
+(config)# default do-exec show ipc all <cr>    # path-035613
+(config)# default do-exec show ipc app <cr>    # path-036186
+(config)# default do-exec show ipc buffer <cr>    # path-036247
+(config)# default do-exec show ipc cli <number:0..4294967295> <string> <cr>    # path-052837
+(config)# default do-exec show ipc delayed <cr>    # path-036034
+(config)# default do-exec show ipc fc <cr>    # path-035425
+(config)# default do-exec show ipc fragment <cr>    # path-036212
+(config)# default do-exec show ipc hog-info <cr>    # path-035887
+(config)# default do-exec show ipc keepalive tx <cr>    # path-045892
+(config)# default do-exec show ipc mcast appclass <cr>    # path-045214
+(config)# default do-exec show ipc mcast groups <cr>    # path-045329
+(config)# default do-exec show ipc mcast groups <number:1..4294967295> <cr>    # path-052878
+(config)# default do-exec show ipc mcast sessions <cr>    # path-045486
+(config)# default do-exec show ipc mcast sessions verbose <cr>    # path-053016
+(config)# default do-exec show ipc mcast status <cr>    # path-045162
+(config)# default do-exec show ipc nodes <cr>    # path-035726
+(config)# default do-exec show ipc nodes capabilities <cr>    # path-045369
+(config)# default do-exec show ipc nodes issu <cr>    # path-045310
+(config)# default do-exec show ipc nodes verbose <cr>    # path-045370
+(config)# default do-exec show ipc ports <cr>    # path-035991
+(config)# default do-exec show ipc ports verbose <cr>    # path-045421
+(config)# default do-exec show ipc queue <cr>    # path-035361
+(config)# default do-exec show ipc rmi all <cr>    # path-045164
+(config)# default do-exec show ipc rmi thresholds ru <string> <cr>    # path-057124
+(config)# default do-exec show ipc rpc <cr>    # path-036714
+(config)# default do-exec show ipc sess-ack <cr>    # path-036380
+(config)# default do-exec show ipc session all <cr>    # path-045481
+(config)# default do-exec show ipc session all verbose <cr>    # path-053009
+(config)# default do-exec show ipc session tx <cr>    # path-045540
+(config)# default do-exec show ipc session tx verbose <cr>    # path-053049
+(config)# default do-exec show ipc status <cr>    # path-036138
+(config)# default do-exec show ipc thread-stats <cr>    # path-036317
+(config)# default do-exec show ipc trace <number:1..3> <cr>    # path-045554
+(config)# default do-exec show ipc util <cr>    # path-036607
+(config)# default do-exec show ipc watermark <cr>    # path-036438
+(config)# default do-exec show ipc zones <cr>    # path-035644
+(config)# default do-exec show ipv6 access-list <cr>    # path-040571
+(config)# default do-exec show ipv6 access-list <string> dump-og-database <cr>    # path-055653
+(config)# default do-exec show ipv6 alias <cr>    # path-040689
+(config)# default do-exec show ipv6 cef <cr>    # path-041547
+(config)# default do-exec show ipv6 cef events <cr>    # path-050263
+(config)# default do-exec show ipv6 cef neighbor discovery throttling <cr>    # path-058593
+(config)# default do-exec show ipv6 cef protocol-discard <cr>    # path-049885
+(config)# default do-exec show ipv6 cef summary <cr>    # path-049935
+(config)# default do-exec show ipv6 cef switching statistics <cr>    # path-055878
+(config)# default do-exec show ipv6 cef traffic prefix-length <cr>    # path-055889
+(config)# default do-exec show ipv6 cef tree <cr>    # path-050031
+(config)# default do-exec show ipv6 destination-guard policy <cr>    # path-049547
+(config)# default do-exec show ipv6 dhcp <cr>    # path-040429
+(config)# default do-exec show ipv6 dhcp binding <cr>    # path-049789
+(config)# default do-exec show ipv6 dhcp conflict <cr>    # path-049832
+(config)# default do-exec show ipv6 dhcp database <cr>    # path-049682
+(config)# default do-exec show ipv6 dhcp interface <cr>    # path-049516
+(config)# default do-exec show ipv6 dhcp mac-hash-table dump pool <string> <cr>    # path-059519
+(config)# default do-exec show ipv6 dhcp mac-hash-table dump pool <string> <number:0..255> <number:0..255> <cr>    # path-060099
+(config)# default do-exec show ipv6 dhcp packet statistics <cr>    # path-055675
+(config)# default do-exec show ipv6 dhcp pool <cr>    # path-049788
+(config)# default do-exec show ipv6 dhcp relay binding <cr>    # path-055590
+(config)# default do-exec show ipv6 dhcp route <address> <cr>    # path-055658
+(config)# default do-exec show ipv6 dhcp statistics <cr>    # path-049440
+(config)# default do-exec show ipv6 eigrp accounting <cr>    # path-049452
+(config)# default do-exec show ipv6 eigrp interfaces <cr>    # path-049420
+(config)# default do-exec show ipv6 eigrp neighbors <cr>    # path-049480
+(config)# default do-exec show ipv6 eigrp sia-event <cr>    # path-049553
+(config)# default do-exec show ipv6 eigrp sia-statistics <cr>    # path-049645

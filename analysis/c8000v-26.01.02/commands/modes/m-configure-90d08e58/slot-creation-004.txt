@@ -1,0 +1,282 @@
+# 模式 configure；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-004.md
+
+(config)# default do-exec undebug voip application supplementary-service <cr>    # static_slot_creation_candidates-001218
+(config)# default do-exec undebug voip application tclcommands <cr>    # static_slot_creation_candidates-001444
+(config)# default do-exec undebug voip application translate <cr>    # static_slot_creation_candidates-001626
+(config)# default do-exec undebug voip avlist <cr>    # static_slot_creation_candidates-000665
+(config)# default do-exec undebug voip avlist all <cr>    # static_slot_creation_candidates-001151
+(config)# default do-exec undebug voip avlist default <cr>    # static_slot_creation_candidates-001191
+(config)# default do-exec undebug voip avlist detail <cr>    # static_slot_creation_candidates-001229
+(config)# default do-exec undebug voip avlist error <cr>    # static_slot_creation_candidates-001383
+(config)# default do-exec undebug voip avlist inout <cr>    # static_slot_creation_candidates-001270
+(config)# default do-exec undebug voip dialpeer <cr>    # static_slot_creation_candidates-000721
+(config)# default do-exec undebug voip dialpeer all <cr>    # static_slot_creation_candidates-001150
+(config)# default do-exec undebug voip dialpeer config <cr>    # static_slot_creation_candidates-001309
+(config)# default do-exec undebug voip dialpeer default <cr>    # static_slot_creation_candidates-001190
+(config)# default do-exec undebug voip dialpeer detail <cr>    # static_slot_creation_candidates-001269
+(config)# default do-exec undebug voip dialpeer error <cr>    # static_slot_creation_candidates-001456
+(config)# default do-exec undebug voip dialpeer function <cr>    # static_slot_creation_candidates-001376
+(config)# default do-exec undebug voip dialpeer inout <cr>    # static_slot_creation_candidates-001228
+(config)# default do-exec undebug voip dialpeer translation <cr>    # static_slot_creation_candidates-001343
+(config)# default do-exec undebug voip dsm dsp <cr>    # static_slot_creation_candidates-001149
+(config)# default do-exec undebug voip dsmp <cr>    # static_slot_creation_candidates-000841
+(config)# default do-exec undebug voip dsmp all <cr>    # static_slot_creation_candidates-001189
+(config)# default do-exec undebug voip dsmp rtp from-dsp payload all <cr>    # static_slot_creation_candidates-002511
+(config)# default do-exec undebug voip dsmp udp <cr>    # static_slot_creation_candidates-001657
+(config)# default do-exec undebug voip dsmp udp from-dsp <number:0..10000000> <cr>    # static_slot_creation_candidates-002366
+(config)# default do-exec undebug voip dsmp vofr subframe <number:0..5> <cr>    # static_slot_creation_candidates-002387
+(config)# default do-exec undebug voip dsp crash-dump <cr>    # static_slot_creation_candidates-001327
+(config)# default do-exec undebug voip dsp crash-dump detail <cr>    # static_slot_creation_candidates-001876
+(config)# default do-exec undebug voip dsp crash-dump error <cr>    # static_slot_creation_candidates-001951
+(config)# default do-exec undebug voip dsp crash-dump jtag <cr>    # static_slot_creation_candidates-001922
+(config)# default do-exec undebug voip dsp crash-dump keepalive <cr>    # static_slot_creation_candidates-001902
+(config)# default do-exec undebug voip em-profile <cr>    # static_slot_creation_candidates-000528
+(config)# default do-exec undebug voip enum detail <cr>    # static_slot_creation_candidates-001144
+(config)# default do-exec undebug voip enum summary <cr>    # static_slot_creation_candidates-001183
+(config)# default do-exec undebug voip fileacct <cr>    # static_slot_creation_candidates-000527
+(config)# default do-exec undebug voip flowproc <cr>    # static_slot_creation_candidates-000684
+(config)# default do-exec undebug voip high-availability <cr>    # static_slot_creation_candidates-000789
+(config)# default do-exec undebug voip high-availability all <cr>    # static_slot_creation_candidates-001193
+(config)# default do-exec undebug voip iptrust <cr>    # static_slot_creation_candidates-000566
+(config)# default do-exec undebug voip iptrust detail <cr>    # static_slot_creation_candidates-001152
+(config)# default do-exec undebug voip ivr <cr>    # static_slot_creation_candidates-000807
+(config)# default do-exec undebug voip ivr all <cr>    # static_slot_creation_candidates-001510
+(config)# default do-exec undebug voip ivr applib <cr>    # static_slot_creation_candidates-001446
+(config)# default do-exec undebug voip ivr callsetup <cr>    # static_slot_creation_candidates-001489
+(config)# default do-exec undebug voip ivr digitcollect <cr>    # static_slot_creation_candidates-001469
+(config)# default do-exec undebug voip ivr dynamic <cr>    # static_slot_creation_candidates-001375
+(config)# default do-exec undebug voip ivr error <cr>    # static_slot_creation_candidates-001266
+(config)# default do-exec undebug voip ivr kadis_toggle <cr>    # static_slot_creation_candidates-001143
+(config)# default do-exec undebug voip ivr redirect <cr>    # static_slot_creation_candidates-001223
+(config)# default do-exec undebug voip ivr script <cr>    # static_slot_creation_candidates-001401
+(config)# default do-exec undebug voip ivr settlement <cr>    # static_slot_creation_candidates-001342
+(config)# default do-exec undebug voip ivr states <cr>    # static_slot_creation_candidates-001306
+(config)# default do-exec undebug voip ivr supplementary-service <cr>    # static_slot_creation_candidates-001182
+(config)# default do-exec undebug voip ivr tclcommands <cr>    # static_slot_creation_candidates-001429
+(config)# default do-exec undebug voip lpcor <cr>    # static_slot_creation_candidates-000682
+(config)# default do-exec undebug voip lpcor all <cr>    # static_slot_creation_candidates-001145
+(config)# default do-exec undebug voip lpcor default <cr>    # static_slot_creation_candidates-001184
+(config)# default do-exec undebug voip lpcor detail <cr>    # static_slot_creation_candidates-001267
+(config)# default do-exec undebug voip lpcor error <cr>    # static_slot_creation_candidates-001409
+(config)# default do-exec undebug voip lpcor function <cr>    # static_slot_creation_candidates-001307
+(config)# default do-exec undebug voip lpcor inout <cr>    # static_slot_creation_candidates-001224
+(config)# default do-exec undebug voip mlpp <cr>    # static_slot_creation_candidates-000683
+(config)# default do-exec undebug voip mlpp all <cr>    # static_slot_creation_candidates-001146
+(config)# default do-exec undebug voip mlpp default <cr>    # static_slot_creation_candidates-001185
+(config)# default do-exec undebug voip mlpp detail <cr>    # static_slot_creation_candidates-001268
+(config)# default do-exec undebug voip mlpp error <cr>    # static_slot_creation_candidates-001410
+(config)# default do-exec undebug voip mlpp function <cr>    # static_slot_creation_candidates-001308
+(config)# default do-exec undebug voip mlpp inout <cr>    # static_slot_creation_candidates-001225
+(config)# default do-exec undebug voip msm <cr>    # static_slot_creation_candidates-000722
+(config)# default do-exec undebug voip msm all <cr>    # static_slot_creation_candidates-001192
+(config)# default do-exec undebug voip register errors <cr>    # static_slot_creation_candidates-001226
+(config)# default do-exec undebug voip register events <cr>    # static_slot_creation_candidates-001186
+(config)# default do-exec undebug voip register session-server <cr>    # static_slot_creation_candidates-001147
+(config)# default do-exec undebug voip rtcp error <cr>    # static_slot_creation_candidates-001219
+(config)# default do-exec undebug voip rtcp packet <cr>    # static_slot_creation_candidates-001262
+(config)# default do-exec undebug voip rtcp recvfail <cr>    # static_slot_creation_candidates-001340
+(config)# default do-exec undebug voip rtcp sendfail <cr>    # static_slot_creation_candidates-001373
+(config)# default do-exec undebug voip rtcp session <cr>    # static_slot_creation_candidates-001177
+(config)# default do-exec undebug voip rtcp sub-rtcp <cr>    # static_slot_creation_candidates-001304
+(config)# default do-exec undebug voip rtp <cr>    # static_slot_creation_candidates-000788
+(config)# default do-exec undebug voip rtp all <cr>    # static_slot_creation_candidates-001230
+(config)# default do-exec undebug voip rtp error <cr>    # static_slot_creation_candidates-001321
+(config)# default do-exec undebug voip rtp error call <cr>    # static_slot_creation_candidates-001953
+(config)# default do-exec undebug voip rtp error call informational <cr>    # static_slot_creation_candidates-002333
+(config)# default do-exec undebug voip rtp error individual <number:1..103> <cr>    # static_slot_creation_candidates-002339
+(config)# default do-exec undebug voip rtp error software <cr>    # static_slot_creation_candidates-001928
+(config)# default do-exec undebug voip rtp error software informational <cr>    # static_slot_creation_candidates-002326
+(config)# default do-exec undebug voip rtp function <cr>    # static_slot_creation_candidates-001344
+(config)# default do-exec undebug voip rtp high-availability <cr>    # static_slot_creation_candidates-001402
+(config)# default do-exec undebug voip rtp individual <number:1..3> <cr>    # static_slot_creation_candidates-002003
+(config)# default do-exec undebug voip rtp inout <cr>    # static_slot_creation_candidates-001271
+(config)# default do-exec undebug voip rtp packet <cr>    # static_slot_creation_candidates-001497
+(config)# default do-exec undebug voip rtp packet callid <number:1..2147483647> <cr>    # static_slot_creation_candidates-002357
+(config)# default do-exec undebug voip rtp packet callid <number:1..2147483647> <number:10..100> <cr>    # static_slot_creation_candidates-002499
+(config)# default do-exec undebug voip rtp packet remote-ip <address> remote-port <number:1..65536> <cr>    # static_slot_creation_candidates-002551
+(config)# default do-exec undebug voip rtp packet remote-ip <address> remote-port <number:1..65536> <number:10..100> <cr>    # static_slot_creation_candidates-002569
+(config)# default do-exec undebug voip rtp recvfail <number:0..2> <cr>    # static_slot_creation_candidates-002026
+(config)# default do-exec undebug voip rtp sendfail <number:0..2> <cr>    # static_slot_creation_candidates-002038
+(config)# default do-exec undebug voip rtp session <cr>    # static_slot_creation_candidates-001415
+(config)# default do-exec undebug voip rtp session conference <cr>    # static_slot_creation_candidates-001952
+(config)# default do-exec undebug voip rtp session dtmf-relay <cr>    # static_slot_creation_candidates-001983
+(config)# default do-exec undebug voip rtp session event <cr>    # static_slot_creation_candidates-001877
+(config)# default do-exec undebug voip rtp session multicast <cr>    # static_slot_creation_candidates-001968
+(config)# default do-exec undebug voip rtp session named-event <cr>    # static_slot_creation_candidates-001930
+(config)# default do-exec undebug voip rtp session named-event <number:98..117> <cr>    # static_slot_creation_candidates-002327
+(config)# default do-exec undebug voip rtp session nse <cr>    # static_slot_creation_candidates-001923
+(config)# default do-exec undebug voip rtp session text-relay <cr>    # static_slot_creation_candidates-001997
+(config)# default do-exec undebug voip rtp statistics <cr>    # static_slot_creation_candidates-001447
+(config)# default do-exec undebug voip source-group <cr>    # static_slot_creation_candidates-000529
+(config)# default do-exec undebug voip sprt checksum <cr>    # static_slot_creation_candidates-001333
+(config)# default do-exec undebug voip sprt packet <cr>    # static_slot_creation_candidates-001293
+(config)# default do-exec undebug voip srtcp <cr>    # static_slot_creation_candidates-000681
+(config)# default do-exec undebug voip srtcp error <cr>    # static_slot_creation_candidates-001297
+(config)# default do-exec undebug voip srtcp packet <cr>    # static_slot_creation_candidates-001335
+(config)# default do-exec undebug voip srtcp session <cr>    # static_slot_creation_candidates-001250
+(config)# default do-exec undebug voip srtp <cr>    # static_slot_creation_candidates-000664
+(config)# default do-exec undebug voip srtp error <cr>    # static_slot_creation_candidates-001254
+(config)# default do-exec undebug voip srtp packet <cr>    # static_slot_creation_candidates-001301
+(config)# default do-exec undebug voip srtp session <cr>    # static_slot_creation_candidates-001212
+(config)# default do-exec undebug voip statistics accounting <cr>    # static_slot_creation_candidates-001148
+(config)# default do-exec undebug voip statistics core <cr>    # static_slot_creation_candidates-001227
+(config)# default do-exec undebug voip statistics csr <cr>    # static_slot_creation_candidates-001187
+(config)# default do-exec undebug voip translation <cr>    # static_slot_creation_candidates-000526
+(config)# default do-exec undebug voip uri <cr>    # static_slot_creation_candidates-000530
+(config)# default do-exec undebug voip vtsp <cr>    # static_slot_creation_candidates-000744
+(config)# default do-exec undebug voip vtsp all <cr>    # static_slot_creation_candidates-001188
+(config)# default do-exec voice class e164-pattern-map load <number:1..10000> <cr>    # static_slot_creation_candidates-001814
+(config)# default do-exec voice class e164-translation load <number:1..10000> <cr>    # static_slot_creation_candidates-001828
+(config)# default do-exec voice dnis-map load <string> <cr>    # static_slot_creation_candidates-000978
+(config)# default group-policy server name <string> <cr>    # static_slot_creation_candidates-000706
+(config)# default group-policy server order random <cr>    # static_slot_creation_candidates-000773
+(config)# default group-policy server username <cr>    # static_slot_creation_candidates-000261
+(config)# default group-policy traffic-steering transport TLS <cr>    # static_slot_creation_candidates-000779
+(config)# default l2 vfi <string> <cr>    # static_slot_creation_candidates-000149
+(config)# default l2vpn evpn <cr>    # static_slot_creation_candidates-000031
+(config)# default l2vpn evpn logging vc-state <cr>    # static_slot_creation_candidates-000308
+(config)# default l2vpn pseudowire static-oam class <string> <cr>    # static_slot_creation_candidates-000901
+(config)# default l2vpn pseudowire tlv template <string> <cr>    # static_slot_creation_candidates-000902
+(config)# default l2vpn sdwan <cr>    # static_slot_creation_candidates-000027
+(config)# default otv isis site <cr>    # static_slot_creation_candidates-000123
+(config)# default otv site-identifier <cr>    # static_slot_creation_candidates-000039
+(config)# default performance monitor apply <cr>    # static_slot_creation_candidates-000119
+(config)# default performance monitor context <string> <cr>    # static_slot_creation_candidates-000312
+(config)# default performance monitor observation-point encrypted-text <cr>    # static_slot_creation_candidates-000306
+(config)# default performance monitor per-vpn-metric <cr>    # static_slot_creation_candidates-000115
+(config)# default performance monitor sampling-rate <cr>    # static_slot_creation_candidates-000121
+(config)# default sbc h248 bac <cr>    # static_slot_creation_candidates-000292
+(config)# default segment-routing srv6 <cr>    # static_slot_creation_candidates-000082
+(config)# default segment-routing srv6 <cr>    # static_slot_creation_candidates-000083
+(config)# default segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000076
+(config)# default segment-routing traffic-eng <cr>    # static_slot_creation_candidates-000077
+(config)# default voice cause-code <cr>    # static_slot_creation_candidates-000043
+(config)# default voice class aaa <cr>    # static_slot_creation_candidates-000235
+(config)# default voice class busyout <cr>    # static_slot_creation_candidates-000208
+(config)# default voice class called number inbound <cr>    # static_slot_creation_candidates-001556
+(config)# default voice class called number outbound <cr>    # static_slot_creation_candidates-001588
+(config)# default voice class called number pool <cr>    # static_slot_creation_candidates-001613
+(config)# default voice class cause-code <number:1..64> <cr>    # static_slot_creation_candidates-000535
+(config)# default voice class codec <cr>    # static_slot_creation_candidates-000170
+(config)# default voice class dial-peer provision-policy <cr>    # static_slot_creation_candidates-000760
+(config)# default voice class dpg <cr>    # static_slot_creation_candidates-000247
+(config)# default voice class dscp-profile <cr>    # static_slot_creation_candidates-000222
+(config)# default voice class dualtone-detect-params <cr>    # static_slot_creation_candidates-000217
+(config)# default voice class e164-pattern-map <cr>    # static_slot_creation_candidates-000236
+(config)# default voice class e164-translation <cr>    # static_slot_creation_candidates-000241
+(config)# default voice class h323 <cr>    # static_slot_creation_candidates-000187
+(config)# default voice class media <cr>    # static_slot_creation_candidates-000161
+(config)# default voice class mlpp <cr>    # static_slot_creation_candidates-000273
+(config)# default voice class permanent <cr>    # static_slot_creation_candidates-000183
+(config)# default voice class resource-group <cr>    # static_slot_creation_candidates-000176
+(config)# default voice class route-string <cr>    # static_slot_creation_candidates-000155
+(config)# default voice class saf <cr>    # static_slot_creation_candidates-000281
+(config)# default voice class server-group <cr>    # static_slot_creation_candidates-000251
+(config)# default voice class sip-copylist <cr>    # static_slot_creation_candidates-000203
+(config)# default voice class sip-event-list <cr>    # static_slot_creation_candidates-000191
+(config)# default voice class sip-hdr-passthrulist <cr>    # static_slot_creation_candidates-000198
+(config)# default voice class sip-options-keepalive <cr>    # static_slot_creation_candidates-000258
+(config)# default voice class sip-profiles <cr>    # static_slot_creation_candidates-000194
+(config)# default voice class srtp-crypto <cr>    # static_slot_creation_candidates-000290
+(config)# default voice class stun-usage <cr>    # static_slot_creation_candidates-000182
+(config)# default voice class tenant <cr>    # static_slot_creation_candidates-000286
+(config)# default voice class tls-cipher <cr>    # static_slot_creation_candidates-000293
+(config)# default voice class tls-profile <cr>    # static_slot_creation_candidates-000296
+(config)# default voice class uri <cr>    # static_slot_creation_candidates-000163
+(config)# default voice class uri sip preference <cr>    # static_slot_creation_candidates-000942
+(config)# default voice dnis-map <string> <cr>    # static_slot_creation_candidates-000137
+(config)# default voice dsp crash-dump destination <cr>    # static_slot_creation_candidates-000357
+(config)# default voice dsp crash-dump file-limit <cr>    # static_slot_creation_candidates-000342
+(config)# default voice emergency response location <cr>    # static_slot_creation_candidates-000347
+(config)# default voice emergency response settings <cr>    # static_slot_creation_candidates-000318
+(config)# default voice emergency response zone <cr>    # static_slot_creation_candidates-000360
+(config)# default voice enum-match-table <number:1..15> <cr>    # static_slot_creation_candidates-000133
+(config)# default voice logout-profile <number:1..2000> <cr>    # static_slot_creation_candidates-000016
+(config)# default voice lpcor call-block cause <cr>    # static_slot_creation_candidates-000326
+(config)# default voice lpcor custom <cr>    # static_slot_creation_candidates-000147
+(config)# default voice lpcor enable <cr>    # static_slot_creation_candidates-000139
+(config)# default voice lpcor ip-phone mobility incoming <cr>    # static_slot_creation_candidates-000976
+(config)# default voice lpcor ip-phone subnet incoming <cr>    # static_slot_creation_candidates-000950
+(config)# default voice lpcor ip-trunk subnet incoming <cr>    # static_slot_creation_candidates-000940
+(config)# default voice lpcor policy <string> <cr>    # static_slot_creation_candidates-000339
+(config)# default voice mlpp <cr>    # static_slot_creation_candidates-000054
+(config)# default voice moh-group <cr>    # static_slot_creation_candidates-000061
+(config)# default voice register global <cr>    # static_slot_creation_candidates-000125
+(config)# default voice register pool-type <cr>    # static_slot_creation_candidates-000157
+(config)# default voice source-group <string> <cr>    # static_slot_creation_candidates-000136
+(config)# default voice statistics accounting method <string> <cr>    # static_slot_creation_candidates-000916
+(config)# default voice statistics display-format separator <cr>    # static_slot_creation_candidates-000355
+(config)# default voice statistics field-params lost-packet <cr>    # static_slot_creation_candidates-000385
+(config)# default voice statistics field-params mcd <cr>    # static_slot_creation_candidates-000363
+(config)# default voice statistics field-params packet-jitter <cr>    # static_slot_creation_candidates-000427
+(config)# default voice statistics field-params packet-latency <cr>    # static_slot_creation_candidates-000410
+(config)# default voice statistics max-storage-duration <cr>    # static_slot_creation_candidates-000153
+(config)# default voice statistics push ftp max-file-size <cr>    # static_slot_creation_candidates-001032
+(config)# default voice statistics push ftp url <string> <cr>    # static_slot_creation_candidates-001790
+(config)# default voice statistics push syslog <cr>    # static_slot_creation_candidates-000409
+(config)# default voice statistics time-range periodic <cr>    # static_slot_creation_candidates-000358
+(config)# default voice statistics time-range since-reset <cr>    # static_slot_creation_candidates-000324
+(config)# default voice statistics time-range specific <cr>    # static_slot_creation_candidates-000343
+(config)# default voice statistics type iec <cr>    # static_slot_creation_candidates-000325
+(config)# default voice translation-profile <string> <cr>    # static_slot_creation_candidates-000134
+(config)# default voice translation-rule <number:1..1073741823> <cr>    # static_slot_creation_candidates-000135
+(config)# default voice user-profile <number:1..6000> <cr>    # static_slot_creation_candidates-000017
+(config)# default voice vad-time <cr>    # static_slot_creation_candidates-000018
+(config)# default voip trunk group <cr>    # static_slot_creation_candidates-000280
+(config)# default voip-incoming translation-profile <cr>    # static_slot_creation_candidates-000032
+(config)# default vxlan route-profile <string> <cr>    # static_slot_creation_candidates-000239
+(config)# default vxlan static-route <cr>    # static_slot_creation_candidates-000096
+(config)# default vxlan static-route accounting-policing bind p2p-tunnel <cr>    # static_slot_creation_candidates-001387
+(config)# default vxlan static-route auto-tunnel range <cr>    # static_slot_creation_candidates-000736
+(config)# default vxlan static-route policy output <cr>    # static_slot_creation_candidates-000686
+(config)# dial-peer cor custom <cr>    # static_slot_creation_candidates-000106
+(config)# dial-peer cor list <?voip_dp_cor_list_cmd@55558c59cf58> <cr>    # static_slot_creation_candidates-002615
+(config)# dial-peer cor list <cr>    # static_slot_creation_candidates-000107
+(config)# dial-peer group <number:1..20> <cr>    # static_slot_creation_candidates-002578
+(config)# dial-peer group pots <cr>    # static_slot_creation_candidates-000110
+(config)# do-exec clear crypto ikev2 client flexvpn <cr>    # static_slot_creation_candidates-001071
+(config)# do-exec clear crypto ikev2 client flexvpn <string> <cr>    # static_slot_creation_candidates-001829
+(config)# do-exec clear dapr border-router statistics <cr>    # static_slot_creation_candidates-000323
+(config)# do-exec clear dapr route-manager border-router <address> <cr>    # static_slot_creation_candidates-000928
+(config)# do-exec clear dapr route-manager flow-groups dscp <?common_dscp_value_action@55558c3afef8> <cr>    # static_slot_creation_candidates-002677
+(config)# do-exec clear dapr route-manager statistics <cr>    # static_slot_creation_candidates-000329
+(config)# do-exec clear domain default border channel smart-probe statistics <cr>    # static_slot_creation_candidates-002294
+(config)# do-exec clear domain default border statistics <cr>    # static_slot_creation_candidates-000948
+(config)# do-exec clear domain default master site-prefix <address> <number:1..32> <cr>    # static_slot_creation_candidates-002293
+(config)# do-exec clear domain default master statistics <cr>    # static_slot_creation_candidates-000935
+(config)# do-exec clear domain default master traffic-classes <cr>    # static_slot_creation_candidates-000947
+(config)# do-exec clear otv isis * <cr>    # static_slot_creation_candidates-002620
+(config)# do-exec clear otv isis <interface> neighbors <cr>    # static_slot_creation_candidates-002717
+(config)# do-exec clear otv isis lspfull <cr>    # static_slot_creation_candidates-000337
+(config)# do-exec clear otv isis neighbors <cr>    # static_slot_creation_candidates-000379
+(config)# do-exec clear otv isis rib redistribution * <cr>    # static_slot_creation_candidates-002676
+(config)# do-exec clear otv isis rib redistribution <cr>    # static_slot_creation_candidates-001031
+(config)# do-exec clear sbc <string> sbe blacklist <cr>    # static_slot_creation_candidates-001076
+(config)# do-exec clear sbc <string> sbe blacklist ipv4 <address> <cr>    # static_slot_creation_candidates-002304
+(config)# do-exec clear sbc <string> sbe blacklist ipv4 <address> TCP <number:0..65535> <cr>    # static_slot_creation_candidates-002529
+(config)# do-exec clear sbc <string> sbe blacklist ipv4 <address> UDP <number:0..65535> <cr>    # static_slot_creation_candidates-002531
+(config)# do-exec clear sbc <string> sbe blacklist ipv6 <address> <cr>    # static_slot_creation_candidates-002307
+(config)# do-exec clear sbc <string> sbe blacklist ipv6 <address> TCP <number:0..65535> <cr>    # static_slot_creation_candidates-002530
+(config)# do-exec clear sbc <string> sbe blacklist ipv6 <address> UDP <number:0..65535> <cr>    # static_slot_creation_candidates-002533
+(config)# do-exec clear sbc <string> sbe cac-policy-set-stats <cr>    # static_slot_creation_candidates-001087
+(config)# do-exec clear sbc <string> sbe call <number:0..2147483647> <cr>    # static_slot_creation_candidates-001857
+(config)# do-exec clear sbc <string> sbe call-policy-set-stats <cr>    # static_slot_creation_candidates-001112
+(config)# do-exec clear sbc <string> sbe call-rate-stats <cr>    # static_slot_creation_candidates-000972
+(config)# do-exec clear sbc <string> sbe call-stats <cr>    # static_slot_creation_candidates-001124
+(config)# do-exec clear sbc <string> sbe call-stats reject-threshold memory <cr>    # static_slot_creation_candidates-002295
+(config)# do-exec clear sbc <string> sbe li cc <cr>    # static_slot_creation_candidates-001871
+(config)# do-exec clear sbc <string> sbe li intercept standby <cr>    # static_slot_creation_candidates-002322
+(config)# do-exec clear sbc <string> sbe radius-client authentication radius-server-stats <string> <cr>    # static_slot_creation_candidates-002484
+(config)# do-exec clear sbc <string> sbe radius-client-stats accounting <string> <cr>    # static_slot_creation_candidates-002308
+(config)# do-exec clear sbc <string> sbe radius-client-stats authentication <cr>    # static_slot_creation_candidates-001850
+(config)# do-exec clear sbc <string> sbe script-set-stats <number:1..2147483647> <cr>    # static_slot_creation_candidates-001824
+(config)# do-exec clear sbc <string> sbe script-set-stats <number:1..2147483647> editor-stats <string> <cr>    # static_slot_creation_candidates-002469
+(config)# do-exec clear sbc <string> sbe sip statistics <cr>    # static_slot_creation_candidates-001860
+(config)# do-exec clear sbc <string> sbe sip subscriber aor <string> <cr>    # static_slot_creation_candidates-002476
+(config)# do-exec clear sbc <string> sbe transcoding-stats <cr>    # static_slot_creation_candidates-001206
+(config)# do-exec clear sbc h248 bac call-contexts <cr>    # static_slot_creation_candidates-000939
+(config)# do-exec clear sbc h248 bac call-contexts correlator <number:1..4294967295> <cr>    # static_slot_creation_candidates-002291
+(config)# do-exec clear sbc h248 bac iad-sessions <cr>    # static_slot_creation_candidates-000924
+(config)# do-exec clear sbc h248 bac iad-sessions correlator <number:0..4294967295> <cr>    # static_slot_creation_candidates-002288

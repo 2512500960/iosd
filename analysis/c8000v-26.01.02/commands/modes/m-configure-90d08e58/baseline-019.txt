@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-019.md
+
+(config)# default do-exec show object-group parent-list <cr>    # path-043349
+(config)# default do-exec show odb client <cr>    # path-042349
+(config)# default do-exec show odb record <number:0..4294967295> <number:0..4294967295> <cr>    # path-056384
+(config)# default do-exec show odb table <cr>    # path-042362
+(config)# default do-exec show odm-format <cr>    # path-033641
+(config)# default do-exec show onep status <cr>    # path-042399
+(config)# default do-exec show opflex agent service vxlan-evpn all <cr>    # path-058737
+(config)# default do-exec show opflex agent service vxlan-evpn concrete-config all <cr>    # path-059586
+(config)# default do-exec show opflex agent service vxlan-evpn tenant <string> <cr>    # path-059582
+(config)# default do-exec show opflex agent session <cr>    # path-050739
+(config)# default do-exec show ospfv3 <cr>    # path-033034
+(config)# default do-exec show ospfv3 bad-checksum <cr>    # path-041709
+(config)# default do-exec show ospfv3 border-routers <cr>    # path-041923
+(config)# default do-exec show ospfv3 database <cr>    # path-042380
+(config)# default do-exec show ospfv3 database database-summary <cr>    # path-051023
+(config)# default do-exec show ospfv3 database database-summary detail <cr>    # path-056381
+(config)# default do-exec show ospfv3 events <cr>    # path-041770
+(config)# default do-exec show ospfv3 flood-list <cr>    # path-042200
+(config)# default do-exec show ospfv3 graceful-restart <cr>    # path-041840
+(config)# default do-exec show ospfv3 interface <cr>    # path-042185
+(config)# default do-exec show ospfv3 internal work-queue <cr>    # path-050929
+(config)# default do-exec show ospfv3 lsdb-radix <cr>    # path-041710
+(config)# default do-exec show ospfv3 max-metric <cr>    # path-041970
+(config)# default do-exec show ospfv3 maxage-list <cr>    # path-041993
+(config)# default do-exec show ospfv3 mpls traffic-eng tunnel interface <cr>    # path-058783
+(config)# default do-exec show ospfv3 mpls traffic-eng tunnel tail <cr>    # path-058774
+(config)# default do-exec show ospfv3 multi-area <cr>    # path-041874
+(config)# default do-exec show ospfv3 multi-area internal <cr>    # path-050609
+(config)# default do-exec show ospfv3 neighbor <cr>    # path-042335
+(config)# default do-exec show ospfv3 request-list <cr>    # path-042273
+(config)# default do-exec show ospfv3 retransmission-list <cr>    # path-042250
+(config)# default do-exec show ospfv3 rib <cr>    # path-042107
+(config)# default do-exec show ospfv3 route-lists <cr>    # path-042033
+(config)# default do-exec show ospfv3 sham-links <cr>    # path-041817
+(config)# default do-exec show ospfv3 statistic <cr>    # path-041979
+(config)# default do-exec show ospfv3 summary-prefix <cr>    # path-041897
+(config)# default do-exec show ospfv3 timers lsa-group <cr>    # path-050631
+(config)# default do-exec show ospfv3 timers rate-limit <cr>    # path-050656
+(config)# default do-exec show ospfv3 traffic <cr>    # path-042201
+(config)# default do-exec show ospfv3 virtual-links <cr>    # path-041789
+(config)# default do-exec show packet-debug pak_debug_tracebuf <cr>    # path-038474
+(config)# default do-exec show parser atomic-config statistics <cr>    # path-044776
+(config)# default do-exec show parser cache <cr>    # path-034917
+(config)# default do-exec show parser cache <number:0..29> <cr>    # path-044561
+(config)# default do-exec show parser csb flags <cr>    # path-044858
+(config)# default do-exec show parser encrypt file status <cr>    # path-052560
+(config)# default do-exec show parser links <cr>    # path-034775
+(config)# default do-exec show parser memory <cr>    # path-035003
+(config)# default do-exec show parser modes <cr>    # path-034806
+(config)# default do-exec show parser statistics <cr>    # path-034903
+(config)# default do-exec show parser unresolved <cr>    # path-034763
+(config)# default do-exec show parser view <cr>    # path-035181
+(config)# default do-exec show passwd encryption status <cr>    # path-048471
+(config)# default do-exec show persistent variable <cr>    # path-035409
+(config)# default do-exec show platform <cr>    # path-028409
+(config)# default do-exec show platform atm-cdvt <cr>    # path-034450
+(config)# default do-exec show platform authentication session all <cr>    # path-052144
+(config)# default do-exec show platform authentication session handle <number:1..4294967295> <cr>    # path-056804
+(config)# default do-exec show platform authentication session mac <address> <cr>    # path-056838
+(config)# default do-exec show platform chassis <number:1..2> R0 <cr>    # path-052211
+(config)# default do-exec show platform chassis active R0 <cr>    # path-052238
+(config)# default do-exec show platform chassis standby R0 <cr>    # path-052267
+(config)# default do-exec show platform conditions <cr>    # path-034320
+(config)# default do-exec show platform conditions internal <cr>    # path-044090
+(config)# default do-exec show platform diag <cr>    # path-034449
+(config)# default do-exec show platform fabric border dhcp snooping ipv4 statistics <cr>    # path-059622
+(config)# default do-exec show platform packet-trace configuration <cr>    # path-044185
+(config)# default do-exec show platform power <cr>    # path-034537
+(config)# default do-exec show platform resources <cr>    # path-034324
+(config)# default do-exec show platform sd status <cr>    # path-044177
+(config)# default do-exec show platform software <cr>    # path-036400
+(config)# default do-exec show platform software access-list template <string> <cr>    # path-057032
+(config)# default do-exec show platform software adjacency counters <cr>    # path-052461
+(config)# default do-exec show platform software adjacency counters tun-qos-ha <cr>    # path-056923
+(config)# default do-exec show platform software adjacency nexthop-ipfrr <cr>    # path-052447
+(config)# default do-exec show platform software adjacency oce <number:1..4294967295> <cr>    # path-056974
+(config)# default do-exec show platform software adjacency oce inlabel <number:1..2147483647> <cr>    # path-058988
+(config)# default do-exec show platform software adjacency tunadj <cr>    # path-052479
+(config)# default do-exec show platform software bfd counters <cr>    # path-052389
+(config)# default do-exec show platform software bfd pending <cr>    # path-052423
+(config)# default do-exec show platform software bfd session <cr>    # path-052354
+(config)# default do-exec show platform software cce statistics <cr>    # path-052940
+(config)# default do-exec show platform software cdna all <cr>    # path-052131
+(config)# default do-exec show platform software cef counters <cr>    # path-052442
+(config)# default do-exec show platform software cef ipv4 <address> <address> feature-all <cr>    # path-059691
+(config)# default do-exec show platform software cli-agent counters <cr>    # path-053401
+(config)# default do-exec show platform software cman statistics <cr>    # path-052148
+(config)# default do-exec show platform software consent-token <cr>    # path-045707
+(config)# default do-exec show platform software consent-token shell-access <cr>    # path-053081
+(config)# default do-exec show platform software crimson lock request-wait-histogram <cr>    # path-057284
+(config)# default do-exec show platform software crimson lock statistics <cr>    # path-057253
+(config)# default do-exec show platform software crimson notification statistics <cr>    # path-057277
+(config)# default do-exec show platform software crimson operational audit <cr>    # path-057335
+(config)# default do-exec show platform software crimson operational audit baseline <cr>    # path-059123
+(config)# default do-exec show platform software crimson operational database <cr>    # path-057288
+(config)# default do-exec show platform software crimson operational offload <cr>    # path-057316
+(config)# default do-exec show platform software crimson operational offload details <cr>    # path-059116
+(config)# default do-exec show platform software crimson operational statistics <cr>    # path-057318
+(config)# default do-exec show platform software crimson operational statistics idb <cr>    # path-059118
+(config)# default do-exec show platform software crimson operational statistics table <cr>    # path-059110
+(config)# default do-exec show platform software dbal ios mqipc-list <cr>    # path-056802
+(config)# default do-exec show platform software dpidb atm pvc <cr>    # path-056984
+(config)# default do-exec show platform software dpidb atm pvp <cr>    # path-056999
+(config)# default do-exec show platform software dpidb database <cr>    # path-052380
+(config)# default do-exec show platform software dpidb database controller <cr>    # path-056842
+(config)# default do-exec show platform software dpidb database l2-vlan <cr>    # path-056883
+(config)# default do-exec show platform software dpidb database legacy <cr>    # path-056825
+(config)# default do-exec show platform software dpidb database qos-template <cr>    # path-056898
+(config)# default do-exec show platform software dpidb database session <cr>    # path-056858
+(config)# default do-exec show platform software dpidb database vfiseg <cr>    # path-056871
+(config)# default do-exec show platform software dpidb ethernet efp <cr>    # path-056947
+(config)# default do-exec show platform software dpidb frame-relay pvc <cr>    # path-056949
+(config)# default do-exec show platform software dpidb index <cr>    # path-052227
+(config)# default do-exec show platform software dpidb l2lisp <number:1..16777214> <cr>    # path-056940
+(config)# default do-exec show platform software dpidb session <cr>    # path-052378
+(config)# default do-exec show platform software dpidb spa <cr>    # path-052276
+(config)# default do-exec show platform software dpidb stats <cr>    # path-052250
+(config)# default do-exec show platform software dpidb swidb <cr>    # path-052348
+(config)# default do-exec show platform software dpidb vlans <cr>    # path-052346
+(config)# default do-exec show platform software epbr statistics <cr>    # path-052613
+(config)# default do-exec show platform software epbr statistics flowspec <cr>    # path-057009
+(config)# default do-exec show platform software epbr track <cr>    # path-052545
+(config)# default do-exec show platform software ethernet efp statistics <cr>    # path-056850
+(config)# default do-exec show platform software fhs statistics <cr>    # path-052495
+(config)# default do-exec show platform software flow monitor name <string> <cr>    # path-059040
+(config)# default do-exec show platform software flow statistics <cr>    # path-052683
+(config)# default do-exec show platform software flow-control identifiers detail <cr>    # path-056870
+(config)# default do-exec show platform software flow-control identifiers pools <cr>    # path-056855
+(config)# default do-exec show platform software icmp statistics <cr>    # path-052698
+(config)# default do-exec show platform software iid all <cr>    # path-052385
+(config)# default do-exec show platform software infrastructure bipc <cr>    # path-053630
+(config)# default do-exec show platform software infrastructure chasfs <cr>    # path-053259
+(config)# default do-exec show platform software infrastructure debug <cr>    # path-053300
+(config)# default do-exec show platform software infrastructure flowctl <cr>    # path-053213
+(config)# default do-exec show platform software infrastructure inject <cr>    # path-053340
+(config)# default do-exec show platform software infrastructure integrated-service l2-switch <cr>    # path-057254
+(config)# default do-exec show platform software infrastructure lfts sar all <cr>    # path-059138
+(config)# default do-exec show platform software infrastructure lfts sar ipv4-addr <address> <cr>    # path-059760
+(config)# default do-exec show platform software infrastructure lfts sar ipv6-addr <address> <cr>    # path-059765
+(config)# default do-exec show platform software infrastructure lfts sar stat <cr>    # path-059128
+(config)# default do-exec show platform software infrastructure lfts stat <cr>    # path-057377
+(config)# default do-exec show platform software infrastructure lfts stat vrf <string> <cr>    # path-059753
+(config)# default do-exec show platform software infrastructure liin <cr>    # path-053260
+(config)# default do-exec show platform software infrastructure lsmpi <cr>    # path-053514
+(config)# default do-exec show platform software infrastructure packet <cr>    # path-053165
+(config)# default do-exec show platform software infrastructure punt-keepalive <cr>    # path-053475
+(config)# default do-exec show platform software infrastructure punt-keepalive statistics esp <cr>    # path-059170
+(config)# default do-exec show platform software infrastructure query <cr>    # path-053224
+(config)# default do-exec show platform software infrastructure query rwatch <cr>    # path-057306
+(config)# default do-exec show platform software infrastructure scheduler <cr>    # path-053174
+(config)# default do-exec show platform software infrastructure scheduler detail <cr>    # path-057278
+(config)# default do-exec show platform software infrastructure session <cr>    # path-053308
+(config)# default do-exec show platform software infrastructure thread <cr>    # path-053349
+(config)# default do-exec show platform software l2fib-iosd bdomain <number:1..65535> v4 stats <cr>    # path-059642
+(config)# default do-exec show platform software l2fib-iosd mac-statistics <cr>    # path-052316
+(config)# default do-exec show platform software l2pt statistics <cr>    # path-052590
+(config)# default do-exec show platform software macsec classify-pattern all <cr>    # path-057274
+(config)# default do-exec show platform software macsec classify-pattern name <string> <cr>    # path-059122
+(config)# default do-exec show platform software macsec secy config-all <cr>    # path-057325
+(config)# default do-exec show platform software mlppp counters <cr>    # path-052309
+(config)# default do-exec show platform software multicast ipv4 mfib-summary <address> <cr>    # path-059019
+(config)# default do-exec show platform software multicast mfib-summary <address> <cr>    # path-057030
+(config)# default do-exec show platform software multicast retry mroute ipv4 <cr>    # path-058975
+(config)# default do-exec show platform software multicast retry mroute ipv6 <cr>    # path-058989
+(config)# default do-exec show platform software multicast stats <cr>    # path-052500
+(config)# default do-exec show platform software nat counters <cr>    # path-052844
+(config)# default do-exec show platform software nat ipalias <cr>    # path-052884
+(config)# default do-exec show platform software nat static-route <cr>    # path-052926
+(config)# default do-exec show platform software nat wlan session <cr>    # path-057168
+(config)# default do-exec show platform software nat64 statistics <cr>    # path-052718
+(config)# default do-exec show platform software nat66 statistics <cr>    # path-052732
+(config)# default do-exec show platform software nbar statistics <cr>    # path-052620
+(config)# default do-exec show platform software netflow statistics <cr>    # path-052757
+(config)# default do-exec show platform software nwpi counters <cr>    # path-052646
+(config)# default do-exec show platform software pfr statistics <cr>    # path-052777
+(config)# default do-exec show platform software pkt-reorder cfg <cr>    # path-053280
+(config)# default do-exec show platform software pkt-reorder ctx sdwan <cr>    # path-057460
+(config)# default do-exec show platform software pkt-reorder ctx sdwan <number:1..512> <cr>    # path-059158
+(config)# default do-exec show platform software pkt-reorder stats <cr>    # path-053328
+(config)# default do-exec show platform software plim qos class-map all <cr>    # path-059174
+(config)# default do-exec show platform software qos class statistics class-group <number:0..4294967294> class <number:0..4294967294> <cr>    # path-060145
+(config)# default do-exec show platform software qos database <cr>    # path-053059
+(config)# default do-exec show platform software qos statistics <cr>    # path-052985
+(config)# default do-exec show platform software qos template <cr>    # path-053132
+(config)# default do-exec show platform software route-map client all <cr>    # path-057116
+(config)# default do-exec show platform software route-map client route-map <string> <cr>    # path-059073
+(config)# default do-exec show platform software route-map counters <cr>    # path-052792
+(config)# default do-exec show platform software shell command connection <cr>    # path-057238
+(config)# default do-exec show platform software shell command package <cr>    # path-057296
+(config)# default do-exec show platform software shell command set <cr>    # path-057216
+(config)# default do-exec show platform software shell command set detail <cr>    # path-059099
+(config)# default do-exec show platform software shell manager statistics <cr>    # path-057204
+(config)# default do-exec show platform software sl-infra all <cr>    # path-052201
+(config)# default do-exec show platform software sl-infra current <cr>    # path-052176
+(config)# default do-exec show platform software sl-infra debug <cr>    # path-052137
+(config)# default do-exec show platform software sl-infra pak-info <cr>    # path-052117
+(config)# default do-exec show platform software sl-infra stored <cr>    # path-052154
+(config)# default do-exec show platform software spi4 headers pools <cr>    # path-056840
+(config)# default do-exec show platform software system all <cr>    # path-053448
+(config)# default do-exec show platform software system boot <cr>    # path-053655
+(config)# default do-exec show platform software system hypervisor <cr>    # path-053624
+(config)# default do-exec show platform software system license <cr>    # path-053721
+(config)# default do-exec show platform software system license metering detail <cr>    # path-059219
+(config)# default do-exec show platform software system license metering report <cr>    # path-059227
+(config)# default do-exec show platform software system license metering status <cr>    # path-059212
+(config)# default do-exec show platform software system memory <cr>    # path-053544
+(config)# default do-exec show platform software system processor <cr>    # path-053498
+(config)# default do-exec show platform software system vnic <cr>    # path-053587
+(config)# default do-exec show platform software timestamp-engine <cr>    # path-044659
+(config)# default do-exec show platform software vmemory info <cr>    # path-053193
+(config)# default do-exec show platform software vnic-if interface-mapping <cr>    # path-053385
+(config)# default do-exec show platform software vrf statistics <cr>    # path-052516
+(config)# default do-exec show platform software vty <cr>    # path-045320
+(config)# default do-exec show platform software wccp <cr>    # path-045489
+(config)# default do-exec show platform software wccp interface counters <cr>    # path-057207
+(config)# default do-exec show platform software wccp interface list <cr>    # path-057237
+(config)# default do-exec show platform software wccp statistics <cr>    # path-052988
+(config)# default do-exec show platform software wccp web-cache counters <cr>    # path-057191
+(config)# default do-exec show platform software wccp web-cache info <cr>    # path-057240
+(config)# default do-exec show platform software wccp web-cache merged-acl <cr>    # path-057212
+(config)# default do-exec show platform usb status <cr>    # path-044205
+(config)# default do-exec show pm vlan <number:1..4095> <cr>    # path-051978
+(config)# default do-exec show pnp all-summary <cr>    # path-043782
+(config)# default do-exec show pnp auto-install-tech-support <cr>    # path-043888
+(config)# default do-exec show pnp beacon-info <cr>    # path-043861
+(config)# default do-exec show pnp bootstrap <cr>    # path-043868
+(config)# default do-exec show pnp capabilities <cr>    # path-043848
+(config)# default do-exec show pnp cco <cr>    # path-043886
+(config)# default do-exec show pnp cert-info <cr>    # path-043840
+(config)# default do-exec show pnp cmd-info <cr>    # path-043838
+(config)# default do-exec show pnp config-info <cr>    # path-043836
+(config)# default do-exec show pnp device-info <cr>    # path-043846
+(config)# default do-exec show pnp diagnostic <cr>    # path-043752
+(config)# default do-exec show pnp dir-info <cr>    # path-043844
+(config)# default do-exec show pnp discovery-info <cr>    # path-043866
+(config)# default do-exec show pnp discovery-summary <cr>    # path-043777
+(config)# default do-exec show pnp dns <cr>    # path-043884
+(config)# default do-exec show pnp error-summary <cr>    # path-043771
+(config)# default do-exec show pnp errors <cr>    # path-043874
+(config)# default do-exec show pnp fs-info <cr>    # path-043842
+(config)# default do-exec show pnp history <cr>    # path-043764
+(config)# default do-exec show pnp idb <cr>    # path-043872
+(config)# default do-exec show pnp image <cr>    # path-043870
+(config)# default do-exec show pnp listener <cr>    # path-043738
+(config)# default do-exec show pnp locks <cr>    # path-043830
+(config)# default do-exec show pnp monitor-info <cr>    # path-043825
+(config)# default do-exec show pnp monitor-logging <cr>    # path-043816
+(config)# default do-exec show pnp profile <cr>    # path-043729
+(config)# default do-exec show pnp reconfig <cr>    # path-043878
+(config)# default do-exec show pnp reload-info <cr>    # path-043806
+(config)# default do-exec show pnp reload-summary <cr>    # path-043767
+(config)# default do-exec show pnp request <cr>    # path-043854
+(config)# default do-exec show pnp schema <cr>    # path-043858
+(config)# default do-exec show pnp script <cr>    # path-043882
+(config)# default do-exec show pnp sdwan-onboarding <cr>    # path-043744
+(config)# default do-exec show pnp services <cr>    # path-043856
+(config)# default do-exec show pnp smu <cr>    # path-043880
+(config)# default do-exec show pnp stack-info <cr>    # path-043862
+(config)# default do-exec show pnp stats <cr>    # path-043864
+(config)# default do-exec show pnp task <cr>    # path-043852
+(config)# default do-exec show pnp tech-support <cr>    # path-043890
+(config)# default do-exec show pnp time <cr>    # path-043876
+(config)# default do-exec show pnp topology <cr>    # path-043850
+(config)# default do-exec show pnp trace <cr>    # path-043734
+(config)# default do-exec show pnp udi <cr>    # path-043787
+(config)# default do-exec show pnp version <cr>    # path-043796
+(config)# default do-exec show pnp webui <cr>    # path-043758
+(config)# default do-exec show policy-manager events <cr>    # path-043114
+(config)# default do-exec show policy-manager policy <cr>    # path-043204
+(config)# default do-exec show policy-manager subsystem <cr>    # path-043186
+(config)# default do-exec show policy-map <cr>    # path-032622
+(config)# default do-exec show policy-map <string> <cr>    # path-041539
+(config)# default do-exec show policy-map <string> class <string> <cr>    # path-056009
+(config)# default do-exec show policy-map application handles <cr>    # path-050196
+(config)# default do-exec show policy-map control <cr>    # path-041062
+(config)# default do-exec show policy-map multipoint <cr>    # path-041429
+(config)# default do-exec show policy-map multipoint input class <string> <cr>    # path-058674
+(config)# default do-exec show policy-map policy-handle <string> <cr>    # path-050192
+(config)# default do-exec show policy-map service <cr>    # path-041099
+(config)# default do-exec show policy-map session <cr>    # path-041501
+(config)# default do-exec show policy-map session brief <cr>    # path-050492
+(config)# default do-exec show policy-map session brief <string> <cr>    # path-056085
+(config)# default do-exec show policy-map session brief <string> timestamp <cr>    # path-058694
+(config)# default do-exec show policy-map session brief <string> vrf <cr>    # path-058700
+(config)# default do-exec show policy-map session brief <string> vrf <string> <cr>    # path-059569
+(config)# default do-exec show policy-map session brief <string> vrf <string> timestamp <cr>    # path-059925
+(config)# default do-exec show policy-map session brief <string> vrf timestamp <cr>    # path-059566
+(config)# default do-exec show policy-map session brief timestamp <cr>    # path-056028
+(config)# default do-exec show policy-map session brief vrfs <cr>    # path-056046
+(config)# default do-exec show policy-map session brief vrfs <string> <cr>    # path-058692
+(config)# default do-exec show policy-map session brief vrfs <string> timestamp <cr>    # path-059564
+(config)# default do-exec show policy-map session brief vrfs timestamp <cr>    # path-058688
+(config)# default do-exec show policy-map session class <string> <cr>    # path-056027
+(config)# default do-exec show policy-map summary <cr>    # path-041191
+(config)# default do-exec show policy-map target <cr>    # path-041611
+(config)# default do-exec show policy-map target sub-interface <cr>    # path-050365
+(config)# default do-exec show policy-map target vrf <string> ipv4 input <cr>    # path-059563
+(config)# default do-exec show policy-map target vrf <string> type nwpi <cr>    # path-059572
+(config)# default do-exec show port-security <cr>    # path-033859
+(config)# default do-exec show power <cr>    # path-030664
+(config)# default do-exec show power detail <cr>    # path-037454
+(config)# default do-exec show power history <cr>    # path-037535
+(config)# default do-exec show power inline <cr>    # path-037651
+(config)# default do-exec show power inline dynamic-priority <cr>    # path-046919
+(config)# default do-exec show power inline meter <cr>    # path-046933
+(config)# default do-exec show power inline police <cr>    # path-046978
+(config)# default do-exec show power inline priority <cr>    # path-047003
+(config)# default do-exec show power inline upoe-plus <cr>    # path-046957
+(config)# default do-exec show power usage <cr>    # path-037395
+(config)# default do-exec show ppp all <cr>    # path-036006
+(config)# default do-exec show ppp bap counters <cr>    # path-046412
+(config)# default do-exec show ppp bap group <cr>    # path-046571
+(config)# default do-exec show ppp bap group <string> <cr>    # path-053862
+(config)# default do-exec show ppp bap queues <cr>    # path-046287
+(config)# default do-exec show ppp disconnect history <cr>    # path-045695
+(config)# default do-exec show ppp disconnect stats <cr>    # path-045546
+(config)# default do-exec show ppp id <number:1..4294967295> <cr>    # path-045660
+(config)# default do-exec show ppp memory <cr>    # path-036703
+(config)# default do-exec show ppp multilink <cr>    # path-037178
+(config)# default do-exec show ppp protocols <cr>    # path-036605
+(config)# default do-exec show ppp queues <cr>    # path-036488
+(config)# default do-exec show ppp statistics <cr>    # path-036507
+(config)# default do-exec show ppp statistics fsm <cr>    # path-045786
+(config)# default do-exec show ppp subscriber statistics <cr>    # path-046078
+(config)# default do-exec show ppp summary <cr>    # path-036307
+(config)# default do-exec show ppp syslog statistics <cr>    # path-045844
+(config)# default do-exec show ppp throttled <cr>    # path-036553
+(config)# default do-exec show pppatm redundancy <cr>    # path-041558
+(config)# default do-exec show pppatm session <cr>    # path-041650
+(config)# default do-exec show pppatm statistics <cr>    # path-041592
+(config)# default do-exec show pppatm summary <cr>    # path-041514
+(config)# default do-exec show pppoe derived group <string> <cr>    # path-054848
+(config)# default do-exec show pppoe statistics <cr>    # path-039473
+(config)# default do-exec show pppoe summary <cr>    # path-039275
+(config)# default do-exec show pppoe vrrs summary <cr>    # path-048531
+(config)# default do-exec show privilege <cr>    # path-028262
+(config)# default do-exec show processes <cr>    # path-030395
+(config)# default do-exec show processes <number:1..2147483647> <cr>    # path-036863
+(config)# default do-exec show processes all-events <cr>    # path-036541
+(config)# default do-exec show processes bootup-init <cr>    # path-036741
+(config)# default do-exec show processes bootup-time <cr>    # path-036690
+(config)# default do-exec show processes cpu <cr>    # path-036997
+(config)# default do-exec show processes cpu autoprofile hog <cr>    # path-053700
+(config)# default do-exec show processes cpu autoprofile process <cr>    # path-053742
+(config)# default do-exec show processes cpu extended <cr>    # path-046466
+(config)# default do-exec show processes cpu extended accounting <cr>    # path-053777
+(config)# default do-exec show processes cpu history <cr>    # path-046235
+(config)# default do-exec show processes cpu history table <cr>    # path-053604
+(config)# default do-exec show processes cpu monitor <cr>    # path-046264
+(config)# default do-exec show processes cpu sorted <cr>    # path-046302
+(config)# default do-exec show processes events <cr>    # path-036653
+(config)# default do-exec show processes heapcheck <cr>    # path-036417
+(config)# default do-exec show processes history <cr>    # path-036827
+(config)# default do-exec show processes memory <cr>    # path-036844
+(config)# default do-exec show processes memory old-header <cr>    # path-046187
+(config)# default do-exec show processes memory sorted <cr>    # path-046201
+(config)# default do-exec show processes timercheck <cr>    # path-036479
+(config)# default do-exec show profile <cr>    # path-033462
+(config)# default do-exec show protocols <cr>    # path-031993
+(config)# default do-exec show qbm client <cr>    # path-037056
+(config)# default do-exec show qbm pool <cr>    # path-037163
+(config)# default do-exec show qfp drops thresholds <cr>    # path-046032
+(config)# default do-exec show qfp utilization monitor <cr>    # path-045985
+(config)# default do-exec show qllc <cr>    # path-033828
+(config)# default do-exec show qos adaptive db <cr>    # path-047568
+(config)# default do-exec show qos adaptive multipoint <cr>    # path-047615
+(config)# default do-exec show qos event <cr>    # path-038460
+(config)# default do-exec show qos trace <cr>    # path-038649
+(config)# default do-exec show qos trace error <cr>    # path-047656
+(config)# default do-exec show qos trace event <cr>    # path-047589
+(config)# default do-exec show qos trace warning <cr>    # path-047628
+(config)# default do-exec show radius server-group all <cr>    # path-050927
+(config)# default do-exec show radius statistics <cr>    # path-042209
+(config)# default do-exec show radius table attributes <cr>    # path-050928
+(config)# default do-exec show radius-proxy client <address> <cr>    # path-048234
+(config)# default do-exec show radius-proxy session id <number:1..4294967295> <cr>    # path-054766
+(config)# default do-exec show radius-proxy statistics <cr>    # path-039256
+(config)# default do-exec show rbscp state <cr>    # path-041293
+(config)# default do-exec show redirect group <cr>    # path-039132
+(config)# default do-exec show redirect translations <cr>    # path-039333
+(config)# default do-exec show redundancy <cr>    # path-030550
+(config)# default do-exec show redundancy application group <cr>    # path-046818
+(config)# default do-exec show redundancy clients <cr>    # path-036878
+(config)# default do-exec show redundancy cloud provider <cr>    # path-046788
+(config)# default do-exec show redundancy history monitor <cr>    # path-046507
+(config)# default do-exec show redundancy idb-sync-history <cr>    # path-036942
+(config)# default do-exec show redundancy interchassis <cr>    # path-037289
+(config)# default do-exec show redundancy rii <cr>    # path-037210
+(config)# default do-exec show redundancy rii <number:1..65535> <cr>    # path-046586
+(config)# default do-exec show redundancy switchover history <cr>    # path-046562
+(config)# default do-exec show redundancy trace main <cr>    # path-046665
+(config)# default do-exec show refuse-message <cr>    # path-031991
+(config)# default do-exec show region <cr>    # path-033431
+(config)# default do-exec show registry <cr>    # path-033530
+(config)# default do-exec show registry calls <cr>    # path-043043
+(config)# default do-exec show reload <cr>    # path-029124
+(config)# default do-exec show reload history <cr>    # path-035147
+(config)# default do-exec show remote-management status <cr>    # path-043769
+(config)# default do-exec show resource database <cr>    # path-035549
+(config)# default do-exec show resource monitor all <cr>    # path-045317

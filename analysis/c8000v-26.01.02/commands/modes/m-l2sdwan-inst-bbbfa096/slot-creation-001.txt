@@ -1,0 +1,19 @@
+# 模式 l2sdwan-inst；依赖静态建槽的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：slot-creation-001.md
+
+(config-l2sdwan-sdi)# active-election wait-time <number:1..3600> <cr>    # static_slot_creation_candidates-004417
+(config-l2sdwan-sdi)# default active-election wait-time <cr>    # static_slot_creation_candidates-004418
+(config-l2sdwan-sdi)# default flooding-suppression <cr>    # static_slot_creation_candidates-004408
+(config-l2sdwan-sdi)# default ip local-learning <cr>    # static_slot_creation_candidates-004415
+(config-l2sdwan-sdi)# default l2protocol forward <cr>    # static_slot_creation_candidates-004420
+(config-l2sdwan-sdi)# default redundancy <cr>    # static_slot_creation_candidates-004411
+(config-l2sdwan-sdi)# flooding-suppression enable <cr>    # static_slot_creation_candidates-004407
+(config-l2sdwan-sdi)# ip local-learning enable <cr>    # static_slot_creation_candidates-004414
+(config-l2sdwan-sdi)# l2protocol forward <cr>    # static_slot_creation_candidates-004412
+(config-l2sdwan-sdi)# no active-election wait-time <cr>    # static_slot_creation_candidates-004416
+(config-l2sdwan-sdi)# no flooding-suppression <cr>    # static_slot_creation_candidates-004406
+(config-l2sdwan-sdi)# no ip local-learning <cr>    # static_slot_creation_candidates-004413
+(config-l2sdwan-sdi)# no l2protocol forward <cr>    # static_slot_creation_candidates-004419
+(config-l2sdwan-sdi)# no redundancy <cr>    # static_slot_creation_candidates-004409
+(config-l2sdwan-sdi)# redundancy all-active <cr>    # static_slot_creation_candidates-004410

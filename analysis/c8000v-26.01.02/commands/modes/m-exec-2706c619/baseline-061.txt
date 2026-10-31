@@ -1,0 +1,404 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-061.md
+
+(exec)# undebug ip socket <cr>    # path-002086
+(exec)# undebug ip socket api <cr>    # path-005842
+(exec)# undebug ip socket dumpl2raw <number:1..255> <cr>    # path-009164
+(exec)# undebug ip socket error <cr>    # path-005816
+(exec)# undebug ip socket event <cr>    # path-005869
+(exec)# undebug ip socket l2raw <cr>    # path-005785
+(exec)# undebug ip ssh <cr>    # path-002448
+(exec)# undebug ip ssh client <cr>    # path-006369
+(exec)# undebug ip ssh detail <cr>    # path-006403
+(exec)# undebug ip ssh packet <cr>    # path-006441
+(exec)# undebug ip subscriber all <cr>    # path-006513
+(exec)# undebug ip subscriber error <cr>    # path-006443
+(exec)# undebug ip subscriber event <cr>    # path-006405
+(exec)# undebug ip subscriber fsm <cr>    # path-006332
+(exec)# undebug ip subscriber packet <cr>    # path-006372
+(exec)# undebug ip subscriber redundancy <cr>    # path-006477
+(exec)# undebug ip tcp CEF <cr>    # path-005611
+(exec)# undebug ip tcp Winscale <cr>    # path-005731
+(exec)# undebug ip tcp adjust-mss <cr>    # path-005704
+(exec)# undebug ip tcp congestion <cr>    # path-005637
+(exec)# undebug ip tcp driver <cr>    # path-005681
+(exec)# undebug ip tcp driver-pak <cr>    # path-005697
+(exec)# undebug ip tcp ecn <cr>    # path-005792
+(exec)# undebug ip tcp ha event <cr>    # path-009254
+(exec)# undebug ip tcp ha transactions <cr>    # path-009264
+(exec)# undebug ip tcp header-compression <cr>    # path-005767
+(exec)# undebug ip tcp mkt <cr>    # path-005824
+(exec)# undebug ip tcp rcmd <cr>    # path-005973
+(exec)# undebug ip tcp sack <cr>    # path-005749
+(exec)# undebug ip tcp throughput <cr>    # path-005850
+(exec)# undebug ip tempacl <cr>    # path-001655
+(exec)# undebug ip trigger-authentication <cr>    # path-002309
+(exec)# undebug ip trigger-authentication verbose <cr>    # path-006184
+(exec)# undebug ip udp <cr>    # path-002492
+(exec)# undebug ip urd <cr>    # path-001943
+(exec)# undebug ip virtual-reassembly <cr>    # path-002428
+(exec)# undebug ipam address <cr>    # path-001561
+(exec)# undebug ipam detailed aaa <cr>    # path-005365
+(exec)# undebug ipam detailed all <cr>    # path-005378
+(exec)# undebug ipam detailed dhcp <cr>    # path-005394
+(exec)# undebug ipam detailed event <cr>    # path-005412
+(exec)# undebug ipam detailed message <cr>    # path-005426
+(exec)# undebug ipam dhcp <cr>    # path-001591
+(exec)# undebug ipam error <cr>    # path-001601
+(exec)# undebug ipam event <cr>    # path-001616
+(exec)# undebug ipam ipc <cr>    # path-001656
+(exec)# undebug ipam message <cr>    # path-001675
+(exec)# undebug ipam odap <cr>    # path-001696
+(exec)# undebug ipam pools <cr>    # path-001711
+(exec)# undebug ipam redundancy <cr>    # path-001634
+(exec)# undebug ipc all <cr>    # path-001242
+(exec)# undebug ipc app <cr>    # path-001203
+(exec)# undebug ipc backpressure <cr>    # path-001041
+(exec)# undebug ipc buffer <cr>    # path-001142
+(exec)# undebug ipc bundle seat <cr>    # path-004727
+(exec)# undebug ipc bundle session <cr>    # path-004749
+(exec)# undebug ipc delayed-init <cr>    # path-001169
+(exec)# undebug ipc driver <cr>    # path-000897
+(exec)# undebug ipc errors <cr>    # path-000956
+(exec)# undebug ipc errors driver <cr>    # path-004662
+(exec)# undebug ipc errors sequence <cr>    # path-004644
+(exec)# undebug ipc events <cr>    # path-000985
+(exec)# undebug ipc events flushes <cr>    # path-004671
+(exec)# undebug ipc events retries <cr>    # path-004680
+(exec)# undebug ipc events timeout <cr>    # path-004657
+(exec)# undebug ipc issu events <cr>    # path-004835
+(exec)# undebug ipc issu messages <cr>    # path-004883
+(exec)# undebug ipc keepalive <cr>    # path-001089
+(exec)# undebug ipc mcast appclass <cr>    # path-004995
+(exec)# undebug ipc mcast errors <cr>    # path-005013
+(exec)# undebug ipc mcast events <cr>    # path-005032
+(exec)# undebug ipc mcast groups <cr>    # path-004952
+(exec)# undebug ipc mcast member-sessions <cr>    # path-005061
+(exec)# undebug ipc mcast ports <cr>    # path-004970
+(exec)# undebug ipc mcast sessions <cr>    # path-005049
+(exec)# undebug ipc notifications <cr>    # path-001115
+(exec)# undebug ipc packets <cr>    # path-000820
+(exec)# undebug ipc ports <cr>    # path-000979
+(exec)# undebug ipc priority <cr>    # path-001231
+(exec)# undebug ipc rmi <cr>    # path-001075
+(exec)# undebug ipc seats <cr>    # path-000964
+(exec)# undebug ipc sessions <cr>    # path-001061
+(exec)# undebug ipc stateful <cr>    # path-001102
+(exec)# undebug ipc thread <cr>    # path-001190
+(exec)# undebug ipc thread errors <cr>    # path-004898
+(exec)# undebug ipc thread events <cr>    # path-004871
+(exec)# undebug ipc udp <cr>    # path-001188
+(exec)# undebug ipc window <cr>    # path-000998
+(exec)# undebug ipc window-error <cr>    # path-001012
+(exec)# undebug ipc zones <cr>    # path-000949
+(exec)# undebug iphc ipc <cr>    # path-001643
+(exec)# undebug iphc ipc events <cr>    # path-005383
+(exec)# undebug iphc ipc statistics <cr>    # path-005406
+(exec)# undebug iphc process <cr>    # path-001589
+(exec)# undebug ipv6 access-list <cr>    # path-002435
+(exec)# undebug ipv6 address <cr>    # path-002431
+(exec)# undebug ipv6 cef drop <cr>    # path-006628
+(exec)# undebug ipv6 cef drop rpf <cr>    # path-009544
+(exec)# undebug ipv6 cef events <cr>    # path-006548
+(exec)# undebug ipv6 cef packet <cr>    # path-006626
+(exec)# undebug ipv6 cef receive <cr>    # path-006698
+(exec)# undebug ipv6 cef table background <cr>    # path-009598
+(exec)# undebug ipv6 dhcp <cr>    # path-002343
+(exec)# undebug ipv6 dhcp database <cr>    # path-006409
+(exec)# undebug ipv6 dhcp leasequery <cr>    # path-006207
+(exec)# undebug ipv6 dhcp redundancy <cr>    # path-006492
+(exec)# undebug ipv6 dhcp relay <cr>    # path-006421
+(exec)# undebug ipv6 dhcp relay bulk-lease <cr>    # path-009461
+(exec)# undebug ipv6 eigrp <cr>    # path-002348
+(exec)# undebug ipv6 feature <cr>    # path-002182
+(exec)# undebug ipv6 fragment <cr>    # path-002154
+(exec)# undebug ipv6 icmp <cr>    # path-002094
+(exec)# undebug ipv6 interface <cr>    # path-002494
+(exec)# undebug ipv6 mfib init <cr>    # path-006057
+(exec)# undebug ipv6 mib <cr>    # path-002159
+(exec)# undebug ipv6 mld <cr>    # path-002347
+(exec)# undebug ipv6 mld events <cr>    # path-006216
+(exec)# undebug ipv6 mld explicit <address> <cr>    # path-009315
+(exec)# undebug ipv6 mld explicit <cr>    # path-006144
+(exec)# undebug ipv6 mld group <address> <cr>    # path-009349
+(exec)# undebug ipv6 mld timer-wheel <cr>    # path-006191
+(exec)# undebug ipv6 mrib bundle <cr>    # path-006346
+(exec)# undebug ipv6 mrib client <cr>    # path-006195
+(exec)# undebug ipv6 mrib filter <cr>    # path-006291
+(exec)# undebug ipv6 mrib io <cr>    # path-006255
+(exec)# undebug ipv6 mrib issu <cr>    # path-006157
+(exec)# undebug ipv6 mrib malloc <cr>    # path-006381
+(exec)# undebug ipv6 mrib proxy <cr>    # path-006111
+(exec)# undebug ipv6 mrib route <address> <cr>    # path-009351
+(exec)# undebug ipv6 mrib route <cr>    # path-006200
+(exec)# undebug ipv6 mrib table <cr>    # path-006218
+(exec)# undebug ipv6 mrib test <cr>    # path-006138
+(exec)# undebug ipv6 mrib timer <cr>    # path-006318
+(exec)# undebug ipv6 mrib trans <address> <cr>    # path-009331
+(exec)# undebug ipv6 mrib trans <cr>    # path-006169
+(exec)# undebug ipv6 multicast aaa detail <cr>    # path-009506
+(exec)# undebug ipv6 multicast aaa error <cr>    # path-009482
+(exec)# undebug ipv6 multicast aaa verbose <cr>    # path-009532
+(exec)# undebug ipv6 multicast gir <cr>    # path-006574
+(exec)# undebug ipv6 multicast rpf <cr>    # path-006534
+(exec)# undebug ipv6 multicast rwatch <cr>    # path-006512
+(exec)# undebug ipv6 nd <cr>    # path-002162
+(exec)# undebug ipv6 nd ha <cr>    # path-006026
+(exec)# undebug ipv6 packet <cr>    # path-002138
+(exec)# undebug ipv6 pim <cr>    # path-002478
+(exec)# undebug ipv6 pim bfd <cr>    # path-006649
+(exec)# undebug ipv6 pim bsr <cr>    # path-006622
+(exec)# undebug ipv6 pim bsr <cr>    # path-006623
+(exec)# undebug ipv6 pim crimson <cr>    # path-006483
+(exec)# undebug ipv6 pim df-election <cr>    # path-006299
+(exec)# undebug ipv6 pim drlb <cr>    # path-006251
+(exec)# undebug ipv6 pim events <cr>    # path-006449
+(exec)# undebug ipv6 pim group <address> <cr>    # path-009422
+(exec)# undebug ipv6 pim limit <address> <cr>    # path-009441
+(exec)# undebug ipv6 pim limit <cr>    # path-006389
+(exec)# undebug ipv6 pim neighbor <cr>    # path-006461
+(exec)# undebug ipv6 pim pfp-sa <cr>    # path-006690
+(exec)# undebug ipv6 pim pfp-sa <cr>    # path-006691
+(exec)# undebug ipv6 pim timer-wheel <cr>    # path-006412
+(exec)# undebug ipv6 policy <cr>    # path-002446
+(exec)# undebug ipv6 pool <cr>    # path-002397
+(exec)# undebug ipv6 rip <cr>    # path-002328
+(exec)# undebug ipv6 routemap-api <cr>    # path-002340
+(exec)# undebug ipv6 routeviafib <cr>    # path-002115
+(exec)# undebug ipv6 rpf <cr>    # path-002266
+(exec)# undebug ipv6 static <cr>    # path-002116
+(exec)# undebug isdn all <cr>    # path-003556
+(exec)# undebug isdn api <cr>    # path-003596
+(exec)# undebug isdn cc <cr>    # path-003517
+(exec)# undebug isdn code <cr>    # path-003557
+(exec)# undebug isdn error <cr>    # path-003540
+(exec)# undebug isdn events <cr>    # path-003488
+(exec)# undebug isdn experimental <cr>    # path-003550
+(exec)# undebug isdn mgmnt <cr>    # path-003508
+(exec)# undebug isdn q921 <cr>    # path-003500
+(exec)# undebug isdn q931 <cr>    # path-003509
+(exec)# undebug isdn raw <cr>    # path-003564
+(exec)# undebug isdn standard <cr>    # path-003571
+(exec)# undebug isdn tgrm <cr>    # path-003533
+(exec)# undebug isis adj-packets <cr>    # path-002930
+(exec)# undebug isis adj-stagger <cr>    # path-003326
+(exec)# undebug isis authentication information <cr>    # path-007078
+(exec)# undebug isis bfd <cr>    # path-002915
+(exec)# undebug isis cache <cr>    # path-003312
+(exec)# undebug isis checksum-errors <cr>    # path-002959
+(exec)# undebug isis cold-restart <cr>    # path-003338
+(exec)# undebug isis crimson <cr>    # path-003299
+(exec)# undebug isis distribute-ls <cr>    # path-003413
+(exec)# undebug isis dr dampening <cr>    # path-007108
+(exec)# undebug isis fast-reroute path-selection <cr>    # path-007294
+(exec)# undebug isis fast-reroute ti-lfa <cr>    # path-007304
+(exec)# undebug isis fast-reroute trigger <cr>    # path-007224
+(exec)# undebug isis flex-algo <number:128..255> <cr>    # path-007237
+(exec)# undebug isis flood-speed <cr>    # path-003346
+(exec)# undebug isis geninfo <cr>    # path-002979
+(exec)# undebug isis graceful-reload <cr>    # path-003355
+(exec)# undebug isis local-updates <cr>    # path-003008
+(exec)# undebug isis lsp dampening <cr>    # path-007097
+(exec)# undebug isis lsp generation <cr>    # path-007109
+(exec)# undebug isis mfi <cr>    # path-003381
+(exec)# undebug isis microloop <cr>    # path-003330
+(exec)# undebug isis mpls traffic-eng advertisements <cr>    # path-010132
+(exec)# undebug isis mpls traffic-eng events <cr>    # path-010140
+(exec)# undebug isis mtr <cr>    # path-003222
+(exec)# undebug isis notifications <cr>    # path-003120
+(exec)# undebug isis nsf <cr>    # path-003177
+(exec)# undebug isis nsf cisco <cr>    # path-007157
+(exec)# undebug isis nsf ietf <cr>    # path-007170
+(exec)# undebug isis prc dampening <cr>    # path-007126
+(exec)# undebug isis private <cr>    # path-003125
+(exec)# undebug isis private detail <cr>    # path-007135
+(exec)# undebug isis protocol-errors <cr>    # path-002943
+(exec)# undebug isis rib global <cr>    # path-007244
+(exec)# undebug isis rib local <cr>    # path-007246
+(exec)# undebug isis rib redistribution <cr>    # path-007284
+(exec)# undebug isis segment-routing <cr>    # path-003415
+(exec)# undebug isis segment-routing mapping-server <cr>    # path-007396
+(exec)# undebug isis snp-packets <cr>    # path-002926
+(exec)# undebug isis spf-events <cr>    # path-003303
+(exec)# undebug isis spf-statistics <cr>    # path-003258
+(exec)# undebug isis spf-triggers <cr>    # path-003274
+(exec)# undebug isis spt dampening <cr>    # path-007115
+(exec)# undebug isis srv6 <cr>    # path-003390
+(exec)# undebug isis teapp <cr>    # path-003363
+(exec)# undebug isis test <cr>    # path-003373
+(exec)# undebug isis update-packets <cr>    # path-003027
+(exec)# undebug issu all <cr>    # path-003642
+(exec)# undebug issu client event <cr>    # path-007554
+(exec)# undebug issu client event clientID <number:1..8035> <cr>    # path-011569
+(exec)# undebug issu client event clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-012067
+(exec)# undebug issu client event clientID <number:1..8035> entityID <number:1..4294967295> MsgType <number:0..4294967294> <cr>    # path-012179
+(exec)# undebug issu client event peerUID <number:1..4294967295> <cr>    # path-011571
+(exec)# undebug issu client event peerUID <number:1..4294967295> clientID <number:1..8035> <cr>    # path-012069
+(exec)# undebug issu client event peerUID <number:1..4294967295> clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-012181
+(exec)# undebug issu erp <cr>    # path-003643
+(exec)# undebug issu image-version compatibility <cr>    # path-007543
+(exec)# undebug issu infra event <cr>    # path-007550
+(exec)# undebug issu infra event clientID <number:1..8035> <cr>    # path-011568
+(exec)# undebug issu infra event clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-012066
+(exec)# undebug issu infra event clientID <number:1..8035> entityID <number:1..4294967295> MsgType <number:0..4294967294> <cr>    # path-012178
+(exec)# undebug issu infra event peerUID <number:1..4294967295> <cr>    # path-011570
+(exec)# undebug issu infra event peerUID <number:1..4294967295> clientID <number:1..8035> <cr>    # path-012068
+(exec)# undebug issu infra event peerUID <number:1..4294967295> clientID <number:1..8035> entityID <number:1..4294967295> <cr>    # path-012180
+(exec)# undebug issu process <cr>    # path-003631
+(exec)# undebug kerberos <cr>    # path-000245
+(exec)# undebug kerberos packet <cr>    # path-001424
+(exec)# undebug keystore <cr>    # path-000203
+(exec)# undebug keystore ae46c1 <cr>    # path-001050
+(exec)# undebug keystore api <cr>    # path-001068
+(exec)# undebug keystore ha <cr>    # path-001097
+(exec)# undebug keystore sw <cr>    # path-001083
+(exec)# undebug kron all <cr>    # path-003832
+(exec)# undebug kron exec-cli <cr>    # path-003821
+(exec)# undebug kron info <cr>    # path-003811
+(exec)# undebug kron major <cr>    # path-003801
+(exec)# undebug l2ctrl all <cr>    # path-003585
+(exec)# undebug l2ctrl evc <cr>    # path-003570
+(exec)# undebug l2ctrl evc stp <cr>    # path-007491
+(exec)# undebug l2ctrl pm <cr>    # path-003580
+(exec)# undebug l2ctrl pm stp <cr>    # path-007500
+(exec)# undebug l2ctrl registry <cr>    # path-003575
+(exec)# undebug l2fib addr multicast <cr>    # path-005435
+(exec)# undebug l2fib addr multicast detail <cr>    # path-009036
+(exec)# undebug l2fib addr unicast <cr>    # path-005448
+(exec)# undebug l2fib addr unicast detail <cr>    # path-009041
+(exec)# undebug l2fib all <cr>    # path-001714
+(exec)# undebug l2fib bridge-domain <cr>    # path-001700
+(exec)# undebug l2fib bridge-domain detail <cr>    # path-005442
+(exec)# undebug l2fib bridge-domain port <cr>    # path-005447
+(exec)# undebug l2fib bridge-domain port detail <cr>    # path-009040
+(exec)# undebug l2fib error <cr>    # path-001455
+(exec)# undebug l2fib event <cr>    # path-001481
+(exec)# undebug l2fib event detail <cr>    # path-005275
+(exec)# undebug l2fib evpn encap <cr>    # path-005461
+(exec)# undebug l2fib evpn encap detail <cr>    # path-009047
+(exec)# undebug l2fib ha <cr>    # path-001510
+(exec)# undebug l2fib ha detail <cr>    # path-005310
+(exec)# undebug l2fib l2port <cr>    # path-001517
+(exec)# undebug l2fib l2rib <cr>    # path-001716
+(exec)# undebug l2fib l2rib detail <cr>    # path-005454
+(exec)# undebug l2fib lisp decap <cr>    # path-005356
+(exec)# undebug l2fib lisp encap <cr>    # path-005370
+(exec)# undebug l2fib mlrib <cr>    # path-001521
+(exec)# undebug l2fib mlrib detail <cr>    # path-005323
+(exec)# undebug l2fib olist <cr>    # path-001624
+(exec)# undebug l2fib olist detail <cr>    # path-005387
+(exec)# undebug l2fib otv tunnel decap <cr>    # path-008994
+(exec)# undebug l2fib otv tunnel encap <cr>    # path-009006
+(exec)# undebug l2fib pathlist <cr>    # path-001642
+(exec)# undebug l2fib pathlist detail <cr>    # path-005405
+(exec)# undebug l2fib pd <cr>    # path-001492
+(exec)# undebug l2fib pd detail <cr>    # path-005293
+(exec)# undebug l2fib trunk <cr>    # path-001532
+(exec)# undebug l2fib vxlan <cr>    # path-001610
+(exec)# undebug l2fib vxlan decap detail <cr>    # path-009011
+(exec)# undebug l2fib vxlan encap detail <cr>    # path-009018
+(exec)# undebug l2fib vxlan-cp <cr>    # path-001597
+(exec)# undebug l2protocol-tunnel <cr>    # path-000483
+(exec)# undebug l2protocol-tunnel error <cr>    # path-004017
+(exec)# undebug l2protocol-tunnel event <cr>    # path-004006
+(exec)# undebug l2protocol-tunnel misc <cr>    # path-004027
+(exec)# undebug l2protocol-tunnel packet <cr>    # path-003994
+(exec)# undebug l2rib error <cr>    # path-002090
+(exec)# undebug l2rib event <cr>    # path-002100
+(exec)# undebug l2rib event detail <cr>    # path-005901
+(exec)# undebug l2rib internal <cr>    # path-002112
+(exec)# undebug l2rib test <cr>    # path-002133
+(exec)# undebug l2tp all <cr>    # path-002066
+(exec)# undebug l2tp application <cr>    # path-002032
+(exec)# undebug l2tp authentication <cr>    # path-002242
+(exec)# undebug l2tp brief <cr>    # path-002047
+(exec)# undebug l2tp db error <cr>    # path-006035
+(exec)# undebug l2tp db event <cr>    # path-006004
+(exec)# undebug l2tp db lookup <cr>    # path-006061
+(exec)# undebug l2tp error <cr>    # path-002212
+(exec)# undebug l2tp event <cr>    # path-002197
+(exec)# undebug l2tp export <cr>    # path-002117
+(exec)# undebug l2tp failover <cr>    # path-002267
+(exec)# undebug l2tp l2tun <cr>    # path-002178
+(exec)# undebug l2tp packet brief <cr>    # path-006282
+(exec)# undebug l2tp packet detail <cr>    # path-006243
+(exec)# undebug l2tp packet error <cr>    # path-006211
+(exec)# undebug l2tp packet event <cr>    # path-006180
+(exec)# undebug l2tp route <cr>    # path-002096
+(exec)# undebug l2tp seq <cr>    # path-002160
+(exec)# undebug l2tp seq brief <cr>    # path-005982
+(exec)# undebug l2tp snmp <cr>    # path-002224
+(exec)# undebug l2tp timer <cr>    # path-002077
+(exec)# undebug l2vpn evpn all-active-mh <cr>    # path-007119
+(exec)# undebug l2vpn evpn checkpoint <cr>    # path-007152
+(exec)# undebug l2vpn evpn error <cr>    # path-007100
+(exec)# undebug l2vpn evpn event <cr>    # path-007105
+(exec)# undebug l2vpn evpn event detail <cr>    # path-009974
+(exec)# undebug l2vpn evpn event-trace <number:0..10000> <cr>    # path-009985
+(exec)# undebug lacp <cr>    # path-000345
+(exec)# undebug lacp all <cr>    # path-002670
+(exec)# undebug lacp auto <cr>    # path-002695
+(exec)# undebug lacp etherchannel <cr>    # path-002716
+(exec)# undebug lacp event <cr>    # path-002610
+(exec)# undebug lacp fsm <cr>    # path-002643
+(exec)# undebug lacp load-balance <cr>    # path-002776
+(exec)# undebug lacp load-balance all <cr>    # path-006902
+(exec)# undebug lacp load-balance database <cr>    # path-006864
+(exec)# undebug lacp load-balance redundancy-group <cr>    # path-006876
+(exec)# undebug lacp load-balance vlan <cr>    # path-006892
+(exec)# undebug lacp misc <cr>    # path-002658
+(exec)# undebug lacp multi-chassis <cr>    # path-002777
+(exec)# undebug lacp multi-chassis all <cr>    # path-006903
+(exec)# undebug lacp multi-chassis database <cr>    # path-006854
+(exec)# undebug lacp multi-chassis lacp-mgr <cr>    # path-006877
+(exec)# undebug lacp multi-chassis redundancy-group <cr>    # path-006866
+(exec)# undebug lacp multi-chassis user-interface <cr>    # path-006893
+(exec)# undebug lacp odm <cr>    # path-002621
+(exec)# undebug lacp packet <cr>    # path-002598
+(exec)# undebug lacp timer <cr>    # path-002704
+(exec)# undebug lacp xfsu <cr>    # path-002634
+(exec)# undebug lapb <cr>    # path-000281
+(exec)# undebug legacy-entity-drvr errors all <cr>    # path-004723
+(exec)# undebug legacy-entity-drvr errors event <cr>    # path-004746
+(exec)# undebug legacy-entity-drvr trace all <cr>    # path-004704
+(exec)# undebug legacy-entity-drvr trace event <cr>    # path-004729
+(exec)# undebug license core event <cr>    # path-007523
+(exec)# undebug license errors <cr>    # path-003577
+(exec)# undebug license events <cr>    # path-003567
+(exec)# undebug license feature cube info <cr>    # path-010214
+(exec)# undebug license ipc <cr>    # path-003587
+(exec)# undebug list <cr>    # path-000082
+(exec)# undebug llc2 dynwind <cr>    # path-004125
+(exec)# undebug llc2 errors <cr>    # path-004109
+(exec)# undebug llc2 packets <cr>    # path-004117
+(exec)# undebug llc2 state <cr>    # path-004099
+(exec)# undebug lldp errors <cr>    # path-002317
+(exec)# undebug lldp events <cr>    # path-002298
+(exec)# undebug lldp packet-decode <cr>    # path-002356
+(exec)# undebug lldp packets <cr>    # path-002277
+(exec)# undebug lldp states <cr>    # path-002339
+(exec)# undebug lnm event <cr>    # path-004130
+(exec)# undebug lnm llc <cr>    # path-004141
+(exec)# undebug lnm mac <cr>    # path-004148
+(exec)# undebug lnx <cr>    # path-000469
+(exec)# undebug local-ack errors <cr>    # path-003936
+(exec)# undebug local-ack packets <cr>    # path-003948
+(exec)# undebug local-ack state <cr>    # path-003953
+(exec)# undebug location-mgr errors <cr>    # path-001466
+(exec)# undebug location-mgr events <cr>    # path-001452
+(exec)# undebug logging system all <cr>    # path-004479
+(exec)# undebug logging system error <cr>    # path-004461
+(exec)# undebug logging system message <cr>    # path-004442
+(exec)# undebug mab all <cr>    # path-002655
+(exec)# undebug mab errors <cr>    # path-002617
+(exec)# undebug mab events <cr>    # path-002628
+(exec)# undebug mab state-machine <cr>    # path-002639
+(exec)# undebug mac-table debug-disable <cr>    # path-003093
+(exec)# undebug mac-table debug-enable <cr>    # path-003074
+(exec)# undebug mac-table display-disable <cr>    # path-003058
+(exec)# undebug mac-table display-enable <cr>    # path-003045
+(exec)# undebug mac-table lexi-disable <cr>    # path-003138
+(exec)# undebug mac-table lexi-enable <cr>    # path-003113
+(exec)# undebug macdb all <cr>    # path-002199
+(exec)# undebug management event mib <cr>    # path-007785

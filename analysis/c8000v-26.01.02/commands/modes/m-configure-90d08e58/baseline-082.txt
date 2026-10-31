@@ -1,0 +1,404 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-082.md
+
+(config)# no do-exec show dwnld_mgr profiles all <cr>    # path-047933
+(config)# no do-exec show dxi map <cr>    # path-038475
+(config)# no do-exec show dxi pvc <cr>    # path-038592
+(config)# no do-exec show eigrp address-family ipv4 accounting <cr>    # path-056081
+(config)# no do-exec show eigrp address-family ipv4 interfaces <cr>    # path-056072
+(config)# no do-exec show eigrp address-family ipv4 neighbors <cr>    # path-056089
+(config)# no do-exec show eigrp address-family ipv4 perf-stats <cr>    # path-056131
+(config)# no do-exec show eigrp address-family ipv4 sia-event <cr>    # path-056111
+(config)# no do-exec show eigrp address-family ipv4 sia-statistics <cr>    # path-056137
+(config)# no do-exec show eigrp address-family ipv4 timers <cr>    # path-056044
+(config)# no do-exec show eigrp address-family ipv4 topology <cr>    # path-056225
+(config)# no do-exec show eigrp address-family ipv4 traffic <cr>    # path-056055
+(config)# no do-exec show eigrp address-family ipv6 accounting <cr>    # path-056056
+(config)# no do-exec show eigrp address-family ipv6 interfaces <cr>    # path-056047
+(config)# no do-exec show eigrp address-family ipv6 neighbors <cr>    # path-056059
+(config)# no do-exec show eigrp address-family ipv6 perf-stats <cr>    # path-056108
+(config)# no do-exec show eigrp address-family ipv6 sia-event <cr>    # path-056083
+(config)# no do-exec show eigrp address-family ipv6 sia-statistics <cr>    # path-056113
+(config)# no do-exec show eigrp address-family ipv6 timers <cr>    # path-056029
+(config)# no do-exec show eigrp address-family ipv6 topology <cr>    # path-056180
+(config)# no do-exec show eigrp address-family ipv6 traffic <cr>    # path-056035
+(config)# no do-exec show eigrp parser <cr>    # path-041296
+(config)# no do-exec show eigrp plugins <cr>    # path-041327
+(config)# no do-exec show eigrp protocols <cr>    # path-041290
+(config)# no do-exec show eigrp service-family external-client <cr>    # path-050403
+(config)# no do-exec show eigrp service-family ipv4 accounting <cr>    # path-056066
+(config)# no do-exec show eigrp service-family ipv4 clients <cr>    # path-056135
+(config)# no do-exec show eigrp service-family ipv4 clients detail <cr>    # path-058704
+(config)# no do-exec show eigrp service-family ipv4 interfaces <cr>    # path-056058
+(config)# no do-exec show eigrp service-family ipv4 neighbors <cr>    # path-056074
+(config)# no do-exec show eigrp service-family ipv4 sia-event <cr>    # path-056098
+(config)# no do-exec show eigrp service-family ipv4 sia-statistics <cr>    # path-056125
+(config)# no do-exec show eigrp service-family ipv4 subscriptions <cr>    # path-056150
+(config)# no do-exec show eigrp service-family ipv4 subscriptions detail <cr>    # path-058709
+(config)# no do-exec show eigrp service-family ipv4 timers <cr>    # path-056034
+(config)# no do-exec show eigrp service-family ipv4 topology <cr>    # path-056192
+(config)# no do-exec show eigrp service-family ipv4 traffic <cr>    # path-056043
+(config)# no do-exec show eigrp service-family ipv6 accounting <cr>    # path-056095
+(config)# no do-exec show eigrp service-family ipv6 clients <cr>    # path-056166
+(config)# no do-exec show eigrp service-family ipv6 clients detail <cr>    # path-058713
+(config)# no do-exec show eigrp service-family ipv6 interfaces <cr>    # path-056086
+(config)# no do-exec show eigrp service-family ipv6 neighbors <cr>    # path-056101
+(config)# no do-exec show eigrp service-family ipv6 sia-event <cr>    # path-056122
+(config)# no do-exec show eigrp service-family ipv6 sia-statistics <cr>    # path-056151
+(config)# no do-exec show eigrp service-family ipv6 subscriptions <cr>    # path-056179
+(config)# no do-exec show eigrp service-family ipv6 subscriptions detail <cr>    # path-058718
+(config)# no do-exec show eigrp service-family ipv6 timers <cr>    # path-056052
+(config)# no do-exec show eigrp service-family ipv6 topology <cr>    # path-056203
+(config)# no do-exec show eigrp service-family ipv6 traffic <cr>    # path-056063
+(config)# no do-exec show eigrp tech-support <cr>    # path-041320
+(config)# no do-exec show end-user-license-agreement <cr>    # path-029172
+(config)# no do-exec show endpoint-tracker <cr>    # path-032280
+(config)# no do-exec show endpoint-tracker dns-probe <cr>    # path-040583
+(config)# no do-exec show endpoint-tracker history <cr>    # path-040612
+(config)# no do-exec show endpoint-tracker records <cr>    # path-040778
+(config)# no do-exec show endpoint-tracker sla-mode <cr>    # path-040711
+(config)# no do-exec show endpoint-tracker sla-profile <cr>    # path-040681
+(config)# no do-exec show endpoint-tracker sla-statistics <cr>    # path-040639
+(config)# no do-exec show endpoint-tracker sla-status <cr>    # path-040663
+(config)# no do-exec show endpoint-tracker static-route <cr>    # path-040805
+(config)# no do-exec show endpoint-tracker tracker-group <cr>    # path-040740
+(config)# no do-exec show entry <cr>    # path-030818
+(config)# no do-exec show environment <cr>    # path-033601
+(config)# no do-exec show environment all <cr>    # path-043129
+(config)# no do-exec show environment chassis <number:1..2> R0 <cr>    # path-056622
+(config)# no do-exec show environment chassis active R0 <cr>    # path-056626
+(config)# no do-exec show environment chassis standby R0 <cr>    # path-056632
+(config)# no do-exec show environment counters <cr>    # path-043220
+(config)# no do-exec show environment history <string> <cr>    # path-051583
+(config)# no do-exec show environment location <string> <cr>    # path-051592
+(config)# no do-exec show environment sensor <string> <cr>    # path-051615
+(config)# no do-exec show environment table <string> <cr>    # path-051604
+(config)# no do-exec show eobc <cr>    # path-030393
+(config)# no do-exec show eobc controller <cr>    # path-036853
+(config)# no do-exec show eobc interface <cr>    # path-036890
+(config)# no do-exec show errdisable detect <cr>    # path-043709
+(config)# no do-exec show errdisable flap-values <cr>    # path-043717
+(config)# no do-exec show errdisable recovery <cr>    # path-043698
+(config)# no do-exec show etherchannel load-balancing <cr>    # path-037098
+(config)# no do-exec show etherchannel summary <cr>    # path-037195
+(config)# no do-exec show ethernet cfm capabilities <cr>    # path-046111
+(config)# no do-exec show ethernet cfm ccm-learning-database <cr>    # path-046423
+(config)# no do-exec show ethernet cfm domain <cr>    # path-046115
+(config)# no do-exec show ethernet cfm efd meps <cr>    # path-053490
+(config)# no do-exec show ethernet cfm errors <cr>    # path-045936
+(config)# no do-exec show ethernet cfm errors configuration <cr>    # path-053334
+(config)# no do-exec show ethernet cfm fast-timeout database interfaces <cr>    # path-057545
+(config)# no do-exec show ethernet cfm fast-timeout database remote-meps <cr>    # path-057581
+(config)# no do-exec show ethernet cfm fast-timeout statistics <cr>    # path-053609
+(config)# no do-exec show ethernet cfm internal counters packet <cr>    # path-057564
+(config)# no do-exec show ethernet cfm internal database crosscheck-meps <cr>    # path-057743
+(config)# no do-exec show ethernet cfm internal database domains <cr>    # path-057650
+(config)# no do-exec show ethernet cfm internal database interfaces <cr>    # path-057841
+(config)# no do-exec show ethernet cfm internal database mac-learning <cr>    # path-057876
+(config)# no do-exec show ethernet cfm internal database meps <cr>    # path-057792
+(config)# no do-exec show ethernet cfm internal database mips <cr>    # path-057679
+(config)# no do-exec show ethernet cfm internal database oir-config crosscheck-meps <cr>    # path-059291
+(config)# no do-exec show ethernet cfm internal database oir-config interfaces <cr>    # path-059276
+(config)# no do-exec show ethernet cfm internal database oir-config meps <cr>    # path-059286
+(config)# no do-exec show ethernet cfm internal database ports <cr>    # path-057858
+(config)# no do-exec show ethernet cfm internal database remote-meps <cr>    # path-057829
+(config)# no do-exec show ethernet cfm internal database services <cr>    # path-057681
+(config)# no do-exec show ethernet cfm internal database transports <cr>    # path-057828
+(config)# no do-exec show ethernet cfm maintenance-points database <cr>    # path-053202
+(config)# no do-exec show ethernet cfm maintenance-points local <cr>    # path-053438
+(config)# no do-exec show ethernet cfm maintenance-points remote <cr>    # path-053348
+(config)# no do-exec show ethernet cfm maintenance-points remote crosscheck <cr>    # path-057436
+(config)# no do-exec show ethernet cfm maintenance-points remote detail <cr>    # path-057404
+(config)# no do-exec show ethernet cfm mpdb <cr>    # path-045770
+(config)# no do-exec show ethernet cfm pm <cr>    # path-045768
+(config)# no do-exec show ethernet cfm pm slm responder <cr>    # path-057378
+(config)# no do-exec show ethernet cfm smep <cr>    # path-046061
+(config)# no do-exec show ethernet cfm statistics <cr>    # path-045827
+(config)# no do-exec show ethernet cfm traceroute-cache <cr>    # path-046067
+(config)# no do-exec show ethernet dot1ad <cr>    # path-037461
+(config)# no do-exec show ethernet l2ctrl vlan <cr>    # path-045587
+(config)# no do-exec show ethernet lmi evc <cr>    # path-045651
+(config)# no do-exec show ethernet lmi evc detail <cr>    # path-053171
+(config)# no do-exec show ethernet lmi parameters <cr>    # path-045533
+(config)# no do-exec show ethernet lmi statistics <cr>    # path-045472
+(config)# no do-exec show ethernet lmi uni map <cr>    # path-053169
+(config)# no do-exec show ethernet oam debug link-monitor <cr>    # path-053384
+(config)# no do-exec show ethernet oam debug loopback <cr>    # path-053364
+(config)# no do-exec show ethernet oam discovery <cr>    # path-045531
+(config)# no do-exec show ethernet oam runtime <cr>    # path-045591
+(config)# no do-exec show ethernet oam statistics <cr>    # path-045701
+(config)# no do-exec show ethernet oam status <cr>    # path-045641
+(config)# no do-exec show ethernet oam summary <cr>    # path-045686
+(config)# no do-exec show ethernet service evc <cr>    # path-049764
+(config)# no do-exec show ethernet service instance <cr>    # path-049901
+(config)# no do-exec show ethernet service instance policy-map <cr>    # path-055576
+(config)# no do-exec show ethernet service interface <cr>    # path-049816
+(config)# no do-exec show ethernet service internal back-trace <cr>    # path-055686
+(config)# no do-exec show ethernet service internal db global <cr>    # path-058520
+(config)# no do-exec show ethernet service internal db vport all <cr>    # path-059512
+(config)# no do-exec show ethernet service ipc statistics <cr>    # path-055648
+(config)# no do-exec show ethernet service mac-tunnel summary <cr>    # path-055654
+(config)# no do-exec show event manager directory user policy <cr>    # path-058872
+(config)# no do-exec show event manager environment <cr>    # path-051976
+(config)# no do-exec show event manager history events <cr>    # path-056735
+(config)# no do-exec show event manager history traps <cr>    # path-056743
+(config)# no do-exec show event manager policy pending <cr>    # path-056736
+(config)# no do-exec show event manager scheduler thread <cr>    # path-056746
+(config)# no do-exec show event manager session cli username <cr>    # path-058874
+(config)# no do-exec show event manager statistics server <cr>    # path-056742
+(config)# no do-exec show event manager trace <cr>    # path-051988
+(config)# no do-exec show event manager version <cr>    # path-051984
+(config)# no do-exec show event-manager consumers <cr>    # path-041939
+(config)# no do-exec show exception <cr>    # path-028197
+(config)# no do-exec show exception dumpfile <cr>    # path-034167
+(config)# no do-exec show exception dumphost <cr>    # path-034138
+(config)# no do-exec show facility-ains card <cr>    # path-035251
+(config)# no do-exec show facility-ains ports <cr>    # path-035312
+(config)# no do-exec show facility-ains status <cr>    # path-035195
+(config)# no do-exec show facility-ains transceiver <cr>    # path-035372
+(config)# no do-exec show facility-alarm relay minor <cr>    # path-044921
+(config)# no do-exec show facility-alarm status <cr>    # path-035228
+(config)# no do-exec show facility-condition status <cr>    # path-035298
+(config)# no do-exec show facility-protocols status <cr>    # path-035410
+(config)# no do-exec show fallback profile <cr>    # path-042627
+(config)# no do-exec show fast-reroute database <cr>    # path-040078
+(config)# no do-exec show fastblk <cr>    # path-033042
+(config)# no do-exec show fhrp <cr>    # path-031830
+(config)# no do-exec show file descriptors <cr>    # path-042718
+(config)# no do-exec show file systems <cr>    # path-042667
+(config)# no do-exec show flooding-suppression <cr>    # path-032789
+(config)# no do-exec show flow config log <cr>    # path-047167
+(config)# no do-exec show flow config transactions <cr>    # path-047104
+(config)# no do-exec show flow exporter <cr>    # path-037904
+(config)# no do-exec show flow exporter broker <cr>    # path-047124
+(config)# no do-exec show flow exporter option application engines <cr>    # path-057948
+(config)# no do-exec show flow exporter option application table <cr>    # path-057939
+(config)# no do-exec show flow exporter statistics <cr>    # path-047087
+(config)# no do-exec show flow exporter templates <cr>    # path-047151
+(config)# no do-exec show flow exporter templates details <cr>    # path-054289
+(config)# no do-exec show flow interface <cr>    # path-037731
+(config)# no do-exec show flow internal <cr>    # path-037571
+(config)# no do-exec show flow monitor <cr>    # path-038013
+(config)# no do-exec show flow monitor all <cr>    # path-047075
+(config)# no do-exec show flow monitor broker <cr>    # path-047287
+(config)# no do-exec show flow record <cr>    # path-037870
+(config)# no do-exec show flow record broker <cr>    # path-047095
+(config)# no do-exec show flowcontrol <cr>    # path-033887
+(config)# no do-exec show flowspec afi-all <cr>    # path-043705
+(config)# no do-exec show flowspec client <cr>    # path-043626
+(config)# no do-exec show flowspec summary <cr>    # path-043635
+(config)# no do-exec show fmm db alarm <cr>    # path-045966
+(config)# no do-exec show fmm db condition conditions <cr>    # path-053326
+(config)# no do-exec show fmm db condition profiles <cr>    # path-053278
+(config)# no do-exec show fmm db flow data basic <cr>    # path-057321
+(config)# no do-exec show fmm db flow data ip <cr>    # path-057371
+(config)# no do-exec show fmm db flow data l2vlan <cr>    # path-057346
+(config)# no do-exec show fmm db flow data rtp <cr>    # path-057455
+(config)# no do-exec show fmm db flow data tcp <cr>    # path-057425
+(config)# no do-exec show fmm db flow data udp <cr>    # path-057398
+(config)# no do-exec show fmm db flow metrics common <cr>    # path-057342
+(config)# no do-exec show fmm db flow metrics ipcbr <cr>    # path-057424
+(config)# no do-exec show fmm db flow metrics mdi <cr>    # path-057368
+(config)# no do-exec show fmm db flow metrics rtp <cr>    # path-057396
+(config)# no do-exec show fmm db groups <cr>    # path-045864
+(config)# no do-exec show fmm db interval common <cr>    # path-053235
+(config)# no do-exec show fmm db interval ipcbr <cr>    # path-053375
+(config)# no do-exec show fmm db interval mdi <cr>    # path-053288
+(config)# no do-exec show fmm db interval rtp <cr>    # path-053333
+(config)# no do-exec show fmm db monitor <cr>    # path-045602
+(config)# no do-exec show fmm db set flows <cr>    # path-053407
+(config)# no do-exec show fmm db set sets <cr>    # path-053355
+(config)# no do-exec show format <cr>    # path-033681
+(config)# no do-exec show format validate <cr>    # path-043306
+(config)# no do-exec show fqdn <cr>    # path-032886
+(config)# no do-exec show frame-relay end-to-end keepalive <cr>    # path-050084
+(config)# no do-exec show frame-relay fragment <cr>    # path-041044
+(config)# no do-exec show frame-relay ip rtp header-compression <cr>    # path-055920
+(config)# no do-exec show frame-relay ip tcp header-compression <cr>    # path-055904
+(config)# no do-exec show frame-relay lmi <cr>    # path-040725
+(config)# no do-exec show frame-relay map <cr>    # path-040654
+(config)# no do-exec show frame-relay multilink <cr>    # path-041082
+(config)# no do-exec show frame-relay pvc <cr>    # path-040759
+(config)# no do-exec show frame-relay qos-autosense <cr>    # path-040754
+(config)# no do-exec show frame-relay route <cr>    # path-040741
+(config)# no do-exec show frame-relay traffic <cr>    # path-040585
+(config)# no do-exec show frame-relay vofr <cr>    # path-040696
+(config)# no do-exec show fras <cr>    # path-033909
+(config)# no do-exec show fras-host <cr>    # path-032720
+(config)# no do-exec show glbp <cr>    # path-032532
+(config)# no do-exec show glbp capability <cr>    # path-041043
+(config)# no do-exec show glbp internal <cr>    # path-041004
+(config)# no do-exec show hardware <cr>    # path-028991
+(config)# no do-exec show hdd-devices summary <cr>    # path-043662
+(config)# no do-exec show history <cr>    # path-028567
+(config)# no do-exec show history all <cr>    # path-034579
+(config)# no do-exec show hosts summary <cr>    # path-040888
+(config)# no do-exec show hqf full-qos <cr>    # path-041478
+(config)# no do-exec show hqf interface <cr>    # path-041498
+(config)# no do-exec show hqf size <cr>    # path-041377
+(config)# no do-exec show hqf sub-interface <cr>    # path-041488
+(config)# no do-exec show hqf sub-interface <string> dlci <number:16..1007> <cr>    # path-058680
+(config)# no do-exec show hqf sub-interface <string> vcd <number:0..8191> <cr>    # path-058683
+(config)# no do-exec show html module command <string> <cr>    # path-055888
+(config)# no do-exec show html module count <cr>    # path-050071
+(config)# no do-exec show html module names <cr>    # path-050041
+(config)# no do-exec show html module options <cr>    # path-049991
+(config)# no do-exec show html module ports <cr>    # path-050048
+(config)# no do-exec show html port command <string> <cr>    # path-055937
+(config)# no do-exec show html port count <cr>    # path-050167
+(config)# no do-exec show html port names <cr>    # path-050106
+(config)# no do-exec show html port options <cr>    # path-050073
+(config)# no do-exec show html port shortnames <cr>    # path-050138
+(config)# no do-exec show hw-module all attribute <cr>    # path-046864
+(config)# no do-exec show hw-module all entity <cr>    # path-046924
+(config)# no do-exec show hw-module all module <cr>    # path-046923
+(config)# no do-exec show hw-module all oir <cr>    # path-047033
+(config)# no do-exec show hw-module all sensors <cr>    # path-047093
+(config)# no do-exec show hw-module all subblock <cr>    # path-046975
+(config)# no do-exec show hw-module all tech-support <cr>    # path-047029
+(config)# no do-exec show icm stats <cr>    # path-040495
+(config)# no do-exec show id-manager traceback <cr>    # path-043094
+(config)# no do-exec show idb <cr>    # path-033497
+(config)# no do-exec show idb bits <cr>    # path-043225
+(config)# no do-exec show idb ifnum <cr>    # path-043117
+(config)# no do-exec show idb pointers <cr>    # path-043121
+(config)# no do-exec show identity policy <cr>    # path-042628
+(config)# no do-exec show identity profile <cr>    # path-042629
+(config)# no do-exec show idmgr memory <cr>    # path-042215
+(config)# no do-exec show idmgr statistics <cr>    # path-042113
+(config)# no do-exec show if-mgr <cr>    # path-030443
+(config)# no do-exec show if-mgr db ifStack <cr>    # path-046390
+(config)# no do-exec show if-mgr db interface brief <cr>    # path-053731
+(config)# no do-exec show if-mgr db interface ifIndex <number:0..4294967295> <cr>    # path-057672
+(config)# no do-exec show if-mgr db interface ifIndex <number:0..4294967295> ifStack <cr>    # path-059229
+(config)# no do-exec show if-mgr db interface ifName <cr>    # path-053869
+(config)# no do-exec show if-mgr db interface ifName <string> <cr>    # path-057658
+(config)# no do-exec show if-mgr hash <cr>    # path-037032
+(config)# no do-exec show if-mgr hash brief <cr>    # path-046385
+(config)# no do-exec show ifnum list <cr>    # path-034395
+(config)# no do-exec show ifnum statistics <cr>    # path-034437
+(config)# no do-exec show interfaces counters protocol status <cr>    # path-052514
+(config)# no do-exec show interfaces dampening <cr>    # path-034312
+(config)# no do-exec show interfaces flowcontrol <cr>    # path-034698
+(config)# no do-exec show interfaces history <cr>    # path-035013
+(config)# no do-exec show inventory <cr>    # path-033453
+(config)# no do-exec show iosp-server status <cr>    # path-042445
+(config)# no do-exec show iox-service <cr>    # path-033900
+(config)# no do-exec show iox-service detail <cr>    # path-043733
+(config)# no do-exec show ip access-lists <cr>    # path-038803
+(config)# no do-exec show ip access-lists <number:1..199> dump-og-database <cr>    # path-054585
+(config)# no do-exec show ip access-lists <number:1..199> dump-reflexive <cr>    # path-054619
+(config)# no do-exec show ip access-lists <number:1..199> expanded <cr>    # path-054555
+(config)# no do-exec show ip accounting <cr>    # path-040697
+(config)# no do-exec show ip aliases <cr>    # path-039879
+(config)# no do-exec show ip amt tunnel <cr>    # path-048492
+(config)# no do-exec show ip arp <address> <cr>    # path-047435
+(config)# no do-exec show ip arp <address> <cr>    # path-047521
+(config)# no do-exec show ip arp <cr>    # path-038338
+(config)# no do-exec show ip arp garpretry <cr>    # path-047373
+(config)# no do-exec show ip arp incomplete <cr>    # path-047341
+(config)# no do-exec show ip arp poll <cr>    # path-047248
+(config)# no do-exec show ip arp summary <cr>    # path-047242
+(config)# no do-exec show ip as-path-access-list <cr>    # path-039380
+(config)# no do-exec show ip cache <cr>    # path-038987
+(config)# no do-exec show ip cache flow <cr>    # path-048110
+(config)# no do-exec show ip cache policy <cr>    # path-047843
+(config)# no do-exec show ip casa oper <cr>    # path-049385
+(config)# no do-exec show ip casa wildcard <cr>    # path-049686
+(config)# no do-exec show ip cef <cr>    # path-041505
+(config)# no do-exec show ip cef events <cr>    # path-050219
+(config)# no do-exec show ip cef inconsistency <cr>    # path-050082
+(config)# no do-exec show ip cef label-table <cr>    # path-050120
+(config)# no do-exec show ip cef protocol-discard <cr>    # path-049845
+(config)# no do-exec show ip cef summary <cr>    # path-049886
+(config)# no do-exec show ip cef switching statistics <cr>    # path-055820
+(config)# no do-exec show ip cef traffic prefix-length <cr>    # path-055868
+(config)# no do-exec show ip cef tree <cr>    # path-049984
+(config)# no do-exec show ip community-list <cr>    # path-039441
+(config)# no do-exec show ip ddns update <cr>    # path-049790
+(config)# no do-exec show ip ddns update method <cr>    # path-055614
+(config)# no do-exec show ip default-gateway <cr>    # path-038218
+(config)# no do-exec show ip dfp <cr>    # path-040426
+(config)# no do-exec show ip dhcp binding <address> <cr>    # path-055900
+(config)# no do-exec show ip dhcp binding <cr>    # path-050123
+(config)# no do-exec show ip dhcp conflict <cr>    # path-050050
+(config)# no do-exec show ip dhcp database <cr>    # path-049916
+(config)# no do-exec show ip dhcp database <string> <cr>    # path-055735
+(config)# no do-exec show ip dhcp excluded-addresses all <cr>    # path-055727
+(config)# no do-exec show ip dhcp excluded-addresses pool <string> <cr>    # path-058552
+(config)# no do-exec show ip dhcp excluded-addresses vrf <string> <cr>    # path-058543
+(config)# no do-exec show ip dhcp hash global dump <cr>    # path-058671
+(config)# no do-exec show ip dhcp hash global statistics <cr>    # path-058669
+(config)# no do-exec show ip dhcp import <cr>    # path-050075
+(config)# no do-exec show ip dhcp limit lease <cr>    # path-055949
+(config)# no do-exec show ip dhcp packet statistics <cr>    # path-055842
+(config)# no do-exec show ip dhcp pool <cr>    # path-050171
+(config)# no do-exec show ip dhcp relay information trusted-sources <cr>    # path-058527
+(config)# no do-exec show ip dhcp server odap-statistics <cr>    # path-055910
+(config)# no do-exec show ip dhcp server statistics <cr>    # path-055932
+(config)# no do-exec show ip dhcp sip session <cr>    # path-055883
+(config)# no do-exec show ip dhcp sip statistics <cr>    # path-055901
+(config)# no do-exec show ip dhcp snooping <cr>    # path-050086
+(config)# no do-exec show ip dhcp snooping binding <cr>    # path-055951
+(config)# no do-exec show ip dhcp snooping database <cr>    # path-055880
+(config)# no do-exec show ip dhcp snooping multi-chassis <cr>    # path-055853
+(config)# no do-exec show ip dhcp snooping statistics <cr>    # path-055881
+(config)# no do-exec show ip dhcp snooping track host <cr>    # path-058595
+(config)# no do-exec show ip dhcp vrf <string> binding <address> <cr>    # path-059547
+(config)# no do-exec show ip dhcp vrf <string> binding assigned <cr>    # path-059530
+(config)# no do-exec show ip dns name-list <cr>    # path-048801
+(config)# no do-exec show ip dns primary <cr>    # path-048870
+(config)# no do-exec show ip dns servers <cr>    # path-048924
+(config)# no do-exec show ip dns statistics <cr>    # path-048851
+(config)# no do-exec show ip dns view <cr>    # path-048887
+(config)# no do-exec show ip dns view-list <cr>    # path-048737
+(config)# no do-exec show ip domain-name <cr>    # path-038267
+(config)# no do-exec show ip drp <cr>    # path-038682
+(config)# no do-exec show ip eigrp accounting <cr>    # path-049404
+(config)# no do-exec show ip eigrp interfaces <cr>    # path-049371
+(config)# no do-exec show ip eigrp neighbors <cr>    # path-049428
+(config)# no do-exec show ip eigrp sia-event <cr>    # path-049515
+(config)# no do-exec show ip eigrp sia-statistics <cr>    # path-049603
+(config)# no do-exec show ip eigrp timers <cr>    # path-049237
+(config)# no do-exec show ip eigrp topology <cr>    # path-049820
+(config)# no do-exec show ip eigrp traffic <cr>    # path-049293
+(config)# no do-exec show ip extcommunity-list <cr>    # path-039280
+(config)# no do-exec show ip ftp-password <cr>    # path-039647
+(config)# no do-exec show ip ftp-username <cr>    # path-039585
+(config)# no do-exec show ip helper-address <cr>    # path-038426
+(config)# no do-exec show ip host-list <cr>    # path-040544
+(config)# no do-exec show ip http client all <cr>    # path-054975
+(config)# no do-exec show ip http client cache <cr>    # path-055125
+(config)# no do-exec show ip http client cache brief <cr>    # path-058287
+(config)# no do-exec show ip http client connection <cr>    # path-055048
+(config)# no do-exec show ip http client cookie summary <cr>    # path-058359
+(config)# no do-exec show ip http client cookie summary domain <string> <cr>    # path-059900
+(config)# no do-exec show ip http client cookie summary name <string> <cr>    # path-059904
+(config)# no do-exec show ip http client cookie summary session <string> <cr>    # path-059895
+(config)# no do-exec show ip http client history <cr>    # path-054943
+(config)# no do-exec show ip http client secure status <cr>    # path-058350
+(config)# no do-exec show ip http client session-module <cr>    # path-054910
+(config)# no do-exec show ip http client statistics <cr>    # path-055008
+(config)# no do-exec show ip http server all <cr>    # path-054882
+(config)# no do-exec show ip http server connection <cr>    # path-055010
+(config)# no do-exec show ip http server external registration <cr>    # path-058284
+(config)# no do-exec show ip http server external registration <string> <cr>    # path-059447
+(config)# no do-exec show ip http server external statistics data <cr>    # path-059463
+(config)# no do-exec show ip http server external statistics registration <cr>    # path-059457
+(config)# no do-exec show ip http server external statistics summary <cr>    # path-059451
+(config)# no do-exec show ip http server help-path <cr>    # path-055121
+(config)# no do-exec show ip http server history <cr>    # path-055086
+(config)# no do-exec show ip http server secure status <cr>    # path-058351
+(config)# no do-exec show ip http server session-module <cr>    # path-055019
+(config)# no do-exec show ip http server session-module <string> <cr>    # path-058226
+(config)# no do-exec show ip http server statistics <cr>    # path-055050
+(config)# no do-exec show ip http server status <cr>    # path-054917
+(config)# no do-exec show ip icmp rate-limit <cr>    # path-047317
+(config)# no do-exec show ip igmp filter <cr>    # path-048997
+(config)# no do-exec show ip igmp gir <cr>    # path-048725
+(config)# no do-exec show ip igmp groups <cr>    # path-048635
+(config)# no do-exec show ip igmp groups detail <cr>    # path-054953
+(config)# no do-exec show ip igmp interface <cr>    # path-048417
+(config)# no do-exec show ip igmp membership <cr>    # path-048750
+(config)# no do-exec show ip igmp profile <cr>    # path-049015

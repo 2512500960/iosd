@@ -1,0 +1,7 @@
+# 模式 vrf；已捕获槽位上的条件安装
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：conditional-001.md
+
+(config-vrf)# default srv6-mcast ingress-replication partitioned <cr>    # conditional_registration_candidates-011128
+(config-vrf)# no srv6-mcast ingress-replication partitioned <cr>    # conditional_registration_candidates-011127
+(config-vrf)# srv6-mcast ingress-replication partitioned <cr>    # conditional_registration_candidates-011126

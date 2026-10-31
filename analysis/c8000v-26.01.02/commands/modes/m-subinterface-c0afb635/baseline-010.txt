@@ -1,0 +1,404 @@
+# 模式 subinterface；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-010.md
+
+(config-subif)# no ipv6 nd ra lifetime <cr>    # path-071997
+(config-subif)# no ipv6 nd ra mtu suppress <cr>    # path-072338
+(config-subif)# no ipv6 nd ra solicited unicast <cr>    # path-072343
+(config-subif)# no ipv6 nd ra suppress <cr>    # path-071987
+(config-subif)# no ipv6 nd ra-interval <cr>    # path-071086
+(config-subif)# no ipv6 nd ra-lifetime <cr>    # path-071107
+(config-subif)# no ipv6 nd reachable-time <cr>    # path-069477
+(config-subif)# no ipv6 nd router-preference <cr>    # path-071208
+(config-subif)# no ipv6 nd suppress <cr>    # path-070920
+(config-subif)# no ipv6 nd suppress-ra <cr>    # path-071119
+(config-subif)# no ipv6 next-hop-self eigrp <number:1..65535> <cr>    # path-071893
+(config-subif)# no ipv6 pim <cr>    # path-069792
+(config-subif)# no ipv6 pim bfd <cr>    # path-071189
+(config-subif)# no ipv6 pim bsr border <cr>    # path-071911
+(config-subif)# no ipv6 pim dr-priority <cr>    # path-069817
+(config-subif)# no ipv6 pim drlb <cr>    # path-071128
+(config-subif)# no ipv6 pim hello-interval <cr>    # path-069762
+(config-subif)# no ipv6 pim join-prune-interval <cr>    # path-069693
+(config-subif)# no ipv6 pim lisp core-group-range <cr>    # path-071913
+(config-subif)# no ipv6 pim lisp transport <cr>    # path-071897
+(config-subif)# no ipv6 pim non-dr-join <cr>    # path-071027
+(config-subif)# no ipv6 pim passive <cr>    # path-071026
+(config-subif)# no ipv6 pim pfp-sa border <cr>    # path-071940
+(config-subif)# no ipv6 pim redundancy <string> <cr>    # path-071930
+(config-subif)# no ipv6 policy route-map <cr>    # path-071009
+(config-subif)# no ipv6 reassembly <cr>    # path-069626
+(config-subif)# no ipv6 redirects <cr>    # path-069637
+(config-subif)# no ipv6 rip <string> default-information originate <cr>    # path-072308
+(config-subif)# no ipv6 rip <string> enable <cr>    # path-071834
+(config-subif)# no ipv6 rip <string> metric-offset <cr>    # path-071896
+(config-subif)# no ipv6 router isis <cr>    # path-071078
+(config-subif)# no ipv6 snooping attach-policy <string> <cr>    # path-071779
+(config-subif)# no ipv6 source-guard <cr>    # path-069610
+(config-subif)# no ipv6 split-horizon eigrp <number:1..65535> <cr>    # path-071886
+(config-subif)# no ipv6 tcp adjust-mss <cr>    # path-070896
+(config-subif)# no ipv6 traffic-filter in <cr>    # path-070930
+(config-subif)# no ipv6 unnumbered <cr>    # path-069545
+(config-subif)# no ipv6 unreachables <cr>    # path-069657
+(config-subif)# no ipv6 verify unicast <cr>    # path-071060
+(config-subif)# no ipv6 virtual-reassembly percentage <number:1..100> precedence <number:0..7> <cr>    # path-072474
+(config-subif)# no isdn N200 <cr>    # path-070183
+(config-subif)# no isdn T-Activate <cr>    # path-070166
+(config-subif)# no isdn T200 <cr>    # path-070186
+(config-subif)# no isdn T203 <cr>    # path-070190
+(config-subif)# no isdn T303 <cr>    # path-070179
+(config-subif)# no isdn T306 <cr>    # path-070193
+(config-subif)# no isdn T307 <cr>    # path-070204
+(config-subif)# no isdn T309 <cr>    # path-070175
+(config-subif)# no isdn T309-enable <cr>    # path-070130
+(config-subif)# no isdn T310 <cr>    # path-070196
+(config-subif)# no isdn T321 <cr>    # path-070172
+(config-subif)# no isdn T3OOS <cr>    # path-070169
+(config-subif)# no isdn answer1 <cr>    # path-070073
+(config-subif)# no isdn answer2 <cr>    # path-070089
+(config-subif)# no isdn autodetect <cr>    # path-070067
+(config-subif)# no isdn bcac service audit <cr>    # path-072093
+(config-subif)# no isdn bcac service audit interface <cr>    # path-072373
+(config-subif)# no isdn bcac service audit trigger <number:1..6> <cr>    # path-072490
+(config-subif)# no isdn bcac service retry in-serv-on-fail <cr>    # path-072364
+(config-subif)# no isdn bcac service retry max <cr>    # path-072365
+(config-subif)# no isdn bcac service timer <cr>    # path-072087
+(config-subif)# no isdn bcac service update linkup <cr>    # path-072363
+(config-subif)# no isdn bcac service update provision <cr>    # path-072369
+(config-subif)# no isdn bchan-number-order <cr>    # path-070223
+(config-subif)# no isdn bind-l3 q931 <cr>    # path-071469
+(config-subif)# no isdn busy b_channel <number:0..24> - <number:0..24> <cr>    # path-072492
+(config-subif)# no isdn caller <string> <cr>    # path-071345
+(config-subif)# no isdn calling-number <cr>    # path-070111
+(config-subif)# no isdn calling-party-num <cr>    # path-070132
+(config-subif)# no isdn cause-location <cr>    # path-070213
+(config-subif)# no isdn cc-pattern <cr>    # path-070236
+(config-subif)# no isdn channel-id invert extend-bit <cr>    # path-072098
+(config-subif)# no isdn datetime <cr>    # path-070240
+(config-subif)# no isdn disconnect-cause <cr>    # path-070218
+(config-subif)# no isdn fast-rollover-delay <cr>    # path-068796
+(config-subif)# no isdn flip-chan-flag <cr>    # path-070177
+(config-subif)# no isdn guard-timer <cr>    # path-070053
+(config-subif)# no isdn incoming alerting add-PI <cr>    # path-072095
+(config-subif)# no isdn incoming ie channel-id accept-qsig-variant <cr>    # path-072377
+(config-subif)# no isdn incoming progress <cr>    # path-071474
+(config-subif)# no isdn incoming-voice data <cr>    # path-071356
+(config-subif)# no isdn incoming-voice modem <cr>    # path-071379
+(config-subif)# no isdn incoming-voice voice <cr>    # path-071389
+(config-subif)# no isdn k <number:1..7> <cr>    # path-071463
+(config-subif)# no isdn layer1-emulate <cr>    # path-070074
+(config-subif)# no isdn layer2-flap STATUS-ENQ <cr>    # path-071479
+(config-subif)# no isdn map address <cr>    # path-071445
+(config-subif)# no isdn max-restart-tries <cr>    # path-070214
+(config-subif)# no isdn negotiate-bchan <cr>    # path-070211
+(config-subif)# no isdn network <cr>    # path-070161
+(config-subif)# no isdn nfas-channel_id <cr>    # path-070228
+(config-subif)# no isdn nfas-order <cr>    # path-070222
+(config-subif)# no isdn not-end-to-end <cr>    # path-069984
+(config-subif)# no isdn nsf-service <cr>    # path-070246
+(config-subif)# no isdn number called enbloc <cr>    # path-072068
+(config-subif)# no isdn number called setup <cr>    # path-072072
+(config-subif)# no isdn outgoing display-ie <cr>    # path-071471
+(config-subif)# no isdn overlap-receiving <cr>    # path-069973
+(config-subif)# no isdn overlap-receiving T302 <number:500..20000> <cr>    # path-071962
+(config-subif)# no isdn point-to-point-setup <cr>    # path-070040
+(config-subif)# no isdn protocol-emulate <cr>    # path-070007
+(config-subif)# no isdn reject v110 <cr>    # path-071473
+(config-subif)# no isdn reverse-charging-indicator <cr>    # path-070230
+(config-subif)# no isdn send-alerting <cr>    # path-070208
+(config-subif)# no isdn send-status-enquiry <cr>    # path-070203
+(config-subif)# no isdn sending-complete <cr>    # path-070234
+(config-subif)# no isdn service b_channel <number:0..24> - <number:0..24> state <number:0..2> <cr>    # path-072520
+(config-subif)# no isdn setup-delay-timer <cr>    # path-070060
+(config-subif)# no isdn skip-async-callerid-check <cr>    # path-070221
+(config-subif)# no isdn skipsend-idverify <cr>    # path-070256
+(config-subif)# no isdn snmp busyout b-channel <cr>    # path-071947
+(config-subif)# no isdn spc <cr>    # path-070250
+(config-subif)# no isdn spc deactivate <cr>    # path-070243
+(config-subif)# no isdn spc reactivate <cr>    # path-070245
+(config-subif)# no isdn spid1 <cr>    # path-070061
+(config-subif)# no isdn spid2 <cr>    # path-070075
+(config-subif)# no isdn spoofing <cr>    # path-070248
+(config-subif)# no isdn static-tei <cr>    # path-068864
+(config-subif)# no isdn supp-service callRerouteing <cr>    # path-071458
+(config-subif)# no isdn switch-type <cr>    # path-069943
+(config-subif)# no isdn tei-negotiation <cr>    # path-070077
+(config-subif)# no isdn timeout-signaling <cr>    # path-070251
+(config-subif)# no isdn timer T-Activate <cr>    # path-071370
+(config-subif)# no isdn timer T200 <cr>    # path-071244
+(config-subif)# no isdn timer T203 <cr>    # path-071261
+(config-subif)# no isdn timer T301 <cr>    # path-071282
+(config-subif)# no isdn timer T303 <cr>    # path-071300
+(config-subif)# no isdn timer T306 <cr>    # path-071310
+(config-subif)# no isdn timer T307 <cr>    # path-071337
+(config-subif)# no isdn timer T309 <cr>    # path-071336
+(config-subif)# no isdn timer T310 <cr>    # path-071349
+(config-subif)# no isdn timer T321 <cr>    # path-071359
+(config-subif)# no isdn timer T3OOS <cr>    # path-071381
+(config-subif)# no isdn transition-delay <cr>    # path-068763
+(config-subif)# no isdn twait-disable <cr>    # path-069993
+(config-subif)# no isis adjacency-filter <cr>    # path-069930
+(config-subif)# no isis advertise prefix <cr>    # path-071003
+(config-subif)# no isis authentication key-chain <string> <cr>    # path-071845
+(config-subif)# no isis authentication mode md5 <cr>    # path-071832
+(config-subif)# no isis authentication send-only <cr>    # path-071043
+(config-subif)# no isis bfd <cr>    # path-069958
+(config-subif)# no isis campus-lisp <string> <cr>    # path-070906
+(config-subif)# no isis circuit-type <cr>    # path-069493
+(config-subif)# no isis csnp-interval <cr>    # path-069922
+(config-subif)# no isis hello padding <cr>    # path-071102
+(config-subif)# no isis hello-interval <cr>    # path-069838
+(config-subif)# no isis hello-multiplier <cr>    # path-069791
+(config-subif)# no isis ipv6 bfd <cr>    # path-071323
+(config-subif)# no isis ipv6 metric <cr>    # path-071361
+(config-subif)# no isis ipv6 tag <cr>    # path-071335
+(config-subif)# no isis lsp-interval <cr>    # path-068721
+(config-subif)# no isis mesh-group <cr>    # path-069917
+(config-subif)# no isis metric <cr>    # path-069730
+(config-subif)# no isis network point-to-point <cr>    # path-070848
+(config-subif)# no isis password <string> <cr>    # path-071016
+(config-subif)# no isis prefix-attributes n-flag-clear <cr>    # path-071109
+(config-subif)# no isis priority <cr>    # path-069763
+(config-subif)# no isis protocol shutdown <cr>    # path-071213
+(config-subif)# no isis remote-psnp-delay <cr>    # path-069945
+(config-subif)# no isis retransmit-interval <cr>    # path-068711
+(config-subif)# no isis retransmit-throttle-interval <cr>    # path-068701
+(config-subif)# no isis tag <number:1..4294967295> <cr>    # path-071095
+(config-subif)# no isis te-metric flex-algo <number:1..16777214> <cr>    # path-071815
+(config-subif)# no isis three-way-handshake <cr>    # path-069783
+(config-subif)# no iso-igrp adjacency-filter <cr>    # path-069520
+(config-subif)# no itu channel <cr>    # path-068977
+(config-subif)# no keepalive <cr>    # path-068322
+(config-subif)# no l2protocol forward <cr>    # path-070198
+(config-subif)# no l2protocol forward drop-threshold <cr>    # path-071467
+(config-subif)# no l2protocol forward shutdown-threshold <cr>    # path-071465
+(config-subif)# no l2protocol-tunnel <cr>    # path-068851
+(config-subif)# no l2protocol-tunnel drop-threshold <cr>    # path-070153
+(config-subif)# no l2protocol-tunnel shutdown-threshold <cr>    # path-070145
+(config-subif)# no lacp device-id <cr>    # path-069854
+(config-subif)# no lacp direct-loadswap <cr>    # path-069808
+(config-subif)# no lacp failover non-revertive <cr>    # path-070997
+(config-subif)# no lacp fast-switchover <cr>    # path-069712
+(config-subif)# no lacp fast-switchover dampening <cr>    # path-069675
+(config-subif)# no lacp max-bundle <cr>    # path-069780
+(config-subif)# no lacp min-bundle <cr>    # path-069834
+(config-subif)# no lacp port-priority <cr>    # path-069664
+(config-subif)# no lacp rate <cr>    # path-069719
+(config-subif)# no lan-name <cr>    # path-068377
+(config-subif)# no lapb N1 <cr>    # path-069390
+(config-subif)# no lapb N2 <cr>    # path-068449
+(config-subif)# no lapb T1 <cr>    # path-068390
+(config-subif)# no lapb T2 <cr>    # path-068399
+(config-subif)# no lapb T4 <cr>    # path-068425
+(config-subif)# no lapb interface-outage <cr>    # path-068409
+(config-subif)# no lapb k <cr>    # path-068459
+(config-subif)# no lapb modulo <cr>    # path-069266
+(config-subif)# no link <cr>    # path-068810
+(config-subif)# no link debounce <cr>    # path-070057
+(config-subif)# no linksec-shim <cr>    # path-068497
+(config-subif)# no llc2 N2 <cr>    # path-068719
+(config-subif)# no llc2 ack-delay-time <cr>    # path-068690
+(config-subif)# no llc2 ack-max <cr>    # path-068674
+(config-subif)# no llc2 adm-timer-value <cr>    # path-068766
+(config-subif)# no llc2 akdelay-time <cr>    # path-068684
+(config-subif)# no llc2 akmax <cr>    # path-068661
+(config-subif)# no llc2 dynwind <cr>    # path-070022
+(config-subif)# no llc2 idle-time <cr>    # path-068699
+(config-subif)# no llc2 local-window <cr>    # path-068709
+(config-subif)# no llc2 t1-time <cr>    # path-068728
+(config-subif)# no llc2 tbusy-time <cr>    # path-068736
+(config-subif)# no llc2 tpf-time <cr>    # path-068748
+(config-subif)# no llc2 trej-time <cr>    # path-068743
+(config-subif)# no llc2 txq-max <cr>    # path-068773
+(config-subif)# no llc2 xid-neg-val-time <cr>    # path-068752
+(config-subif)# no llc2 xid-retry-time <cr>    # path-068759
+(config-subif)# no lldp med-tlv-select network-policy <cr>    # path-070778
+(config-subif)# no lldp receive <cr>    # path-069349
+(config-subif)# no lldp tlv-select power-management <cr>    # path-070700
+(config-subif)# no lldp transmit <cr>    # path-069327
+(config-subif)# no lldp ucs-chassis-tlv rack-id <number:1..255> <cr>    # path-071719
+(config-subif)# no llp nhrp map multicast dynamic <cr>    # path-072303
+(config-subif)# no lnm alternate <cr>    # path-069885
+(config-subif)# no lnm crs <cr>    # path-069881
+(config-subif)# no lnm express-buffer <cr>    # path-069942
+(config-subif)# no lnm loss-threshold <cr>    # path-069916
+(config-subif)# no lnm password <cr>    # path-069937
+(config-subif)# no lnm rem <cr>    # path-069936
+(config-subif)# no lnm ring-number-mismatch-allowed <cr>    # path-069996
+(config-subif)# no lnm rps <cr>    # path-069970
+(config-subif)# no lnm softerr <cr>    # path-069998
+(config-subif)# no load-balance-hash-algo <cr>    # path-068315
+(config-subif)# no load-balancing <cr>    # path-068319
+(config-subif)# no load-interval <cr>    # path-068056
+(config-subif)# no locaddr-priority <cr>    # path-068136
+(config-subif)# no location additional-location-information <cr>    # path-068876
+(config-subif)# no location civic-location-id none <cr>    # path-070260
+(config-subif)# no location custom-location-id none <cr>    # path-070263
+(config-subif)# no location elin-location-id <string> <cr>    # path-070259
+(config-subif)# no location geo-location-id none <cr>    # path-070265
+(config-subif)# no logging event dlci-status-change <cr>    # path-070309
+(config-subif)# no logging event frame-relay dlci <cr>    # path-071504
+(config-subif)# no logging event link-status <cr>    # path-070275
+(config-subif)# no logging event link-status <cr>    # path-070283
+(config-subif)# no loopback <cr>    # path-068238
+(config-subif)# no loopback <cr>    # path-068256
+(config-subif)# no loopback <cr>    # path-068380
+(config-subif)# no loopback dte <cr>    # path-068954
+(config-subif)# no loopback line <cr>    # path-068966
+(config-subif)# no loopback remote <cr>    # path-068972
+(config-subif)# no mab <cr>    # path-068609
+(config-subif)# no mab eap <cr>    # path-069594
+(config-subif)# no mac-address <cr>    # path-068212
+(config-subif)# no macsec <cr>    # path-068362
+(config-subif)# no macsec access-control <cr>    # path-069268
+(config-subif)# no macsec disable-sci <cr>    # path-069185
+(config-subif)# no macsec dot1q-in-clear <cr>    # path-069232
+(config-subif)# no macsec replay-protection window-size <cr>    # path-070571
+(config-subif)# no map-group <string> <cr>    # path-069051
+(config-subif)# no mdns-sd gateway <cr>    # path-069428
+(config-subif)# no media-type <cr>    # path-068263
+(config-subif)# no medium p2p <cr>    # path-069063
+(config-subif)# no mka policy <cr>    # path-070096
+(config-subif)# no mka pre-shared-key key-chain <string> <cr>    # path-072065
+(config-subif)# no mka pre-shared-key key-chain <string> fallback-key-chain <string> <cr>    # path-072481
+(config-subif)# no mlacp interchassis group <cr>    # path-069673
+(config-subif)# no mlacp lag-priority <cr>    # path-068637
+(config-subif)# no mlacp mac mstp-tcn <cr>    # path-071093
+(config-subif)# no mlacp mode active-active <cr>    # path-071045
+(config-subif)# no mtu <cr>    # path-068210
+(config-subif)# no multilink load-threshold <cr>    # path-069539
+(config-subif)# no multilink max-fragments <cr>    # path-069555
+(config-subif)# no multilink max-links <cr>    # path-069459
+(config-subif)# no multilink min-links <cr>    # path-069489
+(config-subif)# no multilink-group <cr>    # path-068525
+(config-subif)# no multiring trcrf-vlan <cr>    # path-069192
+(config-subif)# no mvr immediate <cr>    # path-069490
+(config-subif)# no mvr type <cr>    # path-069498
+(config-subif)# no nat64 enable <cr>    # path-069153
+(config-subif)# no nat64 prefix stateful <cr>    # path-070636
+(config-subif)# no nat64 settings mtu minimum <cr>    # path-071631
+(config-subif)# no nat66 inside <cr>    # path-069179
+(config-subif)# no nat66 outside <cr>    # path-069217
+(config-subif)# no national bit <cr>    # path-069230
+(config-subif)# no negotiation auto <cr>    # path-069036
+(config-subif)# no netbios enable-name-cache <cr>    # path-069154
+(config-subif)# no netbios input-access-filter host <string> <cr>    # path-071569
+(config-subif)# no nrzi-encoding <cr>    # path-068524
+(config-subif)# no ntp broadcast <cr>    # path-069404
+(config-subif)# no ntp broadcast client <cr>    # path-070669
+(config-subif)# no ntp disable <cr>    # path-069342
+(config-subif)# no ntp multicast <cr>    # path-069426
+(config-subif)# no ntp multicast client <cr>    # path-070737
+(config-subif)# no onep application openflow exclusive <cr>    # path-071932
+(config-subif)# no ospfv3 <number:1..65535> adjacency stagger <cr>    # path-072075
+(config-subif)# no ospfv3 <number:1..65535> area <address> <cr>    # path-071966
+(config-subif)# no ospfv3 <number:1..65535> authentication null <cr>    # path-071972
+(config-subif)# no ospfv3 <number:1..65535> bfd <cr>    # path-071444
+(config-subif)# no ospfv3 <number:1..65535> cost <cr>    # path-071312
+(config-subif)# no ospfv3 <number:1..65535> database-filter <cr>    # path-071422
+(config-subif)# no ospfv3 <number:1..65535> dead-interval <cr>    # path-069989
+(config-subif)# no ospfv3 <number:1..65535> demand-circuit <cr>    # path-071400
+(config-subif)# no ospfv3 <number:1..65535> flood-reduction <cr>    # path-071391
+(config-subif)# no ospfv3 <number:1..65535> hello-interval <cr>    # path-069975
+(config-subif)# no ospfv3 <number:1..65535> interface-retry <cr>    # path-069961
+(config-subif)# no ospfv3 <number:1..65535> mpls traffic-eng autoroute announce area <address> <cr>    # path-072518
+(config-subif)# no ospfv3 <number:1..65535> mpls traffic-eng autoroute metric <cr>    # path-072482
+(config-subif)# no ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj area <address> <cr>    # path-072510
+(config-subif)# no ospfv3 <number:1..65535> mpls traffic-eng forwarding-adj interface-id <cr>    # path-072486
+(config-subif)# no ospfv3 <number:1..65535> mtu-ignore <cr>    # path-071412
+(config-subif)# no ospfv3 <number:1..65535> multi-area <address> <cr>    # path-072089
+(config-subif)# no ospfv3 <number:1..65535> multi-area <address> cost <cr>    # path-072080
+(config-subif)# no ospfv3 <number:1..65535> neighbor <address> <cr>    # path-072083
+(config-subif)# no ospfv3 <number:1..65535> network <cr>    # path-071264
+(config-subif)# no ospfv3 <number:1..65535> packet-size <cr>    # path-070011
+(config-subif)# no ospfv3 <number:1..65535> prefix-suppression <cr>    # path-071436
+(config-subif)# no ospfv3 <number:1..65535> priority <cr>    # path-070000
+(config-subif)# no ospfv3 <number:1..65535> retransmit-interval <cr>    # path-070024
+(config-subif)# no ospfv3 <number:1..65535> shutdown <cr>    # path-071453
+(config-subif)# no ospfv3 <number:1..65535> transmit-delay <cr>    # path-070035
+(config-subif)# no peer default ip address <cr>    # path-071654
+(config-subif)# no peer default ipv6 pool <string> <cr>    # path-072219
+(config-subif)# no peer ip address forced <cr>    # path-071565
+(config-subif)# no peer match aaa-pools <cr>    # path-070537
+(config-subif)# no peer neighbor-route <cr>    # path-069222
+(config-subif)# no peer pool backup <cr>    # path-070577
+(config-subif)# no peer pool static <cr>    # path-070595
+(config-subif)# no phymode <cr>    # path-068828
+(config-subif)# no physical-layer <cr>    # path-068206
+(config-subif)# no plim ethernet vlan filter disable <cr>    # path-072156
+(config-subif)# no plim min-frame-length 68byte <cr>    # path-070544
+(config-subif)# no plim qos input weight <cr>    # path-071622
+(config-subif)# no pnp startup-vlan <cr>    # path-070100
+(config-subif)# no port <cr>    # path-068317
+(config-subif)# no port-channel bfd destination ipv4 <address> <string> <cr>    # path-072443
+(config-subif)# no port-channel bfd destination ipv6 <address> <string> <cr>    # path-072442
+(config-subif)# no port-settings <cr>    # path-068280
+(config-subif)# no power inline consumption <cr>    # path-070364
+(config-subif)# no power inline delay shutdown <cr>    # path-071539
+(config-subif)# no ppp accm <cr>    # path-069160
+(config-subif)# no ppp accounting <cr>    # path-069606
+(config-subif)# no ppp acfc local <cr>    # path-070718
+(config-subif)# no ppp acfc remote <cr>    # path-070742
+(config-subif)# no ppp authentication <cr>    # path-069564
+(config-subif)# no ppp authorization <cr>    # path-069584
+(config-subif)# no ppp bap call request <cr>    # path-071982
+(config-subif)# no ppp bap callback accept <cr>    # path-071980
+(config-subif)# no ppp bap drop accept <cr>    # path-071991
+(config-subif)# no ppp bap max dial-attempts <cr>    # path-072024
+(config-subif)# no ppp bap monitor load <cr>    # path-072030
+(config-subif)# no ppp bap number default <cr>    # path-071971
+(config-subif)# no ppp bap number format <cr>    # path-072042
+(config-subif)# no ppp bap timeout pending <cr>    # path-072012
+(config-subif)# no ppp bcp tagged-frame <cr>    # path-071133
+(config-subif)# no ppp bridge appletalk <cr>    # path-070818
+(config-subif)# no ppp callback <cr>    # path-069464
+(config-subif)# no ppp caller name <cr>    # path-070873
+(config-subif)# no ppp chap challenge-length <cr>    # path-071013
+(config-subif)# no ppp chap hostname <cr>    # path-070964
+(config-subif)# no ppp chap ignoreus <cr>    # path-070958
+(config-subif)# no ppp chap matchnames <cr>    # path-071076
+(config-subif)# no ppp chap password <cr>    # path-071039
+(config-subif)# no ppp chap refuse <cr>    # path-071066
+(config-subif)# no ppp chap splitnames <cr>    # path-071055
+(config-subif)# no ppp chap wait <cr>    # path-071028
+(config-subif)# no ppp direction <cr>    # path-069755
+(config-subif)# no ppp disconnect-cause keepalive <cr>    # path-070854
+(config-subif)# no ppp dnis <cr>    # path-069496
+(config-subif)# no ppp eap identity <cr>    # path-070950
+(config-subif)# no ppp eap local <cr>    # path-070981
+(config-subif)# no ppp eap password <cr>    # path-070965
+(config-subif)# no ppp eap refuse <cr>    # path-070990
+(config-subif)# no ppp eap wait <cr>    # path-070959
+(config-subif)# no ppp encrypt mppe <cr>    # path-070823
+(config-subif)# no ppp hostname unique <cr>    # path-070974
+(config-subif)# no ppp ignore-loopback <cr>    # path-069369
+(config-subif)# no ppp ipcp accept-address <cr>    # path-071046
+(config-subif)# no ppp ipcp address accept <cr>    # path-071983
+(config-subif)# no ppp ipcp address no-ip send-ack <cr>    # path-072350
+(config-subif)# no ppp ipcp address proxy <cr>    # path-071975
+(config-subif)# no ppp ipcp address request ignore <cr>    # path-072346
+(config-subif)# no ppp ipcp address required <cr>    # path-071957
+(config-subif)# no ppp ipcp address unique <cr>    # path-071964
+(config-subif)# no ppp ipcp dns <cr>    # path-071146
+(config-subif)# no ppp ipcp header-compression ack <cr>    # path-071873
+(config-subif)# no ppp ipcp ignore-map <cr>    # path-071160
+(config-subif)# no ppp ipcp mask <cr>    # path-071183
+(config-subif)# no ppp ipcp no-renegotiation <cr>    # path-071267
+(config-subif)# no ppp ipcp predictive <cr>    # path-071188
+(config-subif)# no ppp ipcp route default <cr>    # path-071925
+(config-subif)# no ppp ipcp unique-address <cr>    # path-071200
+(config-subif)# no ppp ipcp username unique <cr>    # path-071950
+(config-subif)# no ppp ipcp wins <cr>    # path-071169
+(config-subif)# no ppp iphc max-header <cr>    # path-070815
+(config-subif)# no ppp iphc max-period <cr>    # path-070793
+(config-subif)# no ppp iphc max-time <cr>    # path-070806
+(config-subif)# no ppp ipv6cp address unique <cr>    # path-071872
+(config-subif)# no ppp ipv6cp proxy <cr>    # path-071145
+(config-subif)# no ppp lcp delay <cr>    # path-070752
+(config-subif)# no ppp lcp echo mru verify <cr>    # path-072241
+(config-subif)# no ppp lcp fast-start <cr>    # path-070687
+(config-subif)# no ppp lcp predictive <cr>    # path-070656
+(config-subif)# no ppp leased_line_option <cr>    # path-068350
+(config-subif)# no ppp link reorders <cr>    # path-071113
+(config-subif)# no ppp link reset <cr>    # path-071135
+(config-subif)# no ppp link trap <cr>    # path-071159

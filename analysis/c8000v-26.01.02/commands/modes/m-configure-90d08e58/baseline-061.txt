@@ -1,0 +1,372 @@
+# 模式 configure；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-061.md
+
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table stdby-drh <address> remove <cr>    # path-062295
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table stdby-drh <address> remove <cr>    # path-062301
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table subblock add prefix <address> <address> <cr>    # path-062601
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table subblock add prefix <prefix:dynamic> <cr>    # path-062913
+(config)# do-exec test cef <?dumper_command_func@555588cac488> table trigger delete-all <cr>    # path-061916
+(config)# do-exec test cef <?dumper_command_func@555588cac488> walks background disable <cr>    # path-061913
+(config)# do-exec test cef <?dumper_command_func@555588cac488> walks background enable <cr>    # path-061912
+(config)# do-exec test cef assert fail <?option@555588cac098> fatal <cr>    # path-061895
+(config)# do-exec test cef crimson-oper-db add <cr>    # path-035477
+(config)# do-exec test cef crimson-oper-db del <cr>    # path-035529
+(config)# do-exec test cef crimson-oper-db disable <cr>    # path-035359
+(config)# do-exec test cef crimson-oper-db enable <cr>    # path-035294
+(config)# do-exec test cef crimson-oper-db oc-nh-grp-db IPv4 <cr>    # path-045116
+(config)# do-exec test cef crimson-oper-db oc-nh-grp-db IPv4 vrf <?option@555588ca5c48> <cr>    # path-062261
+(config)# do-exec test cef enable <cr>    # path-028821
+(config)# do-exec test cef event-trace IPv4 <string> <cr>    # path-045123
+(config)# do-exec test cef ext-lb disable <cr>    # path-035418
+(config)# do-exec test cef ext-lb enable <cr>    # path-035417
+(config)# do-exec test cef get-nexthop-adj IPv4 <address> <cr>    # path-045465
+(config)# do-exec test cef get-nexthop-adj IPv4 vrf <?option@555588ca9d48> <address> <cr>    # path-062274
+(config)# do-exec test cef hw-api fail <?option@555588cac4c8> fatal <cr>    # path-061899
+(config)# do-exec test cef idb consistency <cr>    # path-035577
+(config)# do-exec test cef idb decap <interface> <address> add lisp <cr>    # path-062486
+(config)# do-exec test cef idb stats IPv4 tx <interface> <cr>    # path-062265
+(config)# do-exec test cef lisp authc IPv4 <prefix:dynamic> enable <cr>    # path-062264
+(config)# do-exec test cef lisp l2instance create <number:0..65520> <number:0..65520> <number:1..4094> <cr>    # path-059039
+(config)# do-exec test cef lisp map-req IPv4 <address> <address> r-eid <cr>    # path-059055
+(config)# do-exec test cef lisp map-req IPv4 vrf <?option@555588ca2a88> <address> <address> r-eid <cr>    # path-062638
+(config)# do-exec test cef lisp stats IPv4 clear <cr>    # path-052762
+(config)# do-exec test cef lisp sw-fw eid-detection enable <cr>    # path-052804
+(config)# do-exec test cef lisp unnum-if top-id <number:0..65520> clear-v4 <cr>    # path-057089
+(config)# do-exec test cef lisp unnum-if top-id <number:0..65520> set-v4 <interface> <cr>    # path-062479
+(config)# do-exec test cef lisp_samecable <address> <cr>    # path-035093
+(config)# do-exec test cef lisp_samecable <prefix:dynamic> <cr>    # path-060811
+(config)# do-exec test cef malloc fail <?option@555588cabbc8> fatal <cr>    # path-061893
+(config)# do-exec test cef oce-explore IPv4 <address> <cr>    # path-045420
+(config)# do-exec test cef oce-explore IPv4 vrf <?option@555588ca9660> <address> <cr>    # path-062271
+(config)# do-exec test cef offset <cr>    # path-028984
+(config)# do-exec test cef register-interest IPv4 <?option@555588ca9088> <address> <number:0..32> <cr>    # path-062273
+(config)# do-exec test cef register-interest show <cr>    # path-035625
+(config)# do-exec test cef rmi <interface> IPv4 <address> add <cr>    # path-062263
+(config)# do-exec test cef rmi <interface> IPv4 <address> remove <cr>    # path-062266
+(config)# do-exec test cef route-active IPv4 <prefix:dynamic> <cr>    # path-061275
+(config)# do-exec test cef sadr-oce <address> <cr>    # path-035454
+(config)# do-exec test cef signal-oce IPv4 <prefix:dynamic> insert <cr>    # path-061879
+(config)# do-exec test cef subtree context test add IPv4 <?option@555588cab548> <address> <number:0..32> <number:0..1000> <cr>    # path-062660
+(config)# do-exec test cef switching IPv4 clear <cr>    # path-044833
+(config)# do-exec test cef track-destination IPv4 local-label <cr>    # path-045643
+(config)# do-exec test cef track-destination IPv4 vrf <?option@555588caa480> local-label <cr>    # path-062278
+(config)# do-exec test cef user-command <number:1..255> <cr>    # path-035962
+(config)# do-exec test cellular <interface> cdma rev-a enable <cr>    # path-061880
+(config)# do-exec test cellular <interface> cnm-process-enqueue messages <number:0..5> <cr>    # path-061883
+(config)# do-exec test cellular <interface> geofence-gps-periodic-timer-val <number:2..10> <cr>    # path-061252
+(config)# do-exec test cellular <interface> gps-clear <cr>    # path-060819
+(config)# do-exec test cellular <interface> gps-port GPS <cr>    # path-061273
+(config)# do-exec test cellular <interface> ims-service bind-subscription <cr>    # path-061278
+(config)# do-exec test cellular <interface> modem-at-all-admin-tech <cr>    # path-060786
+(config)# do-exec test cellular <interface> modem-at-command <string> <cr>    # path-061249
+(config)# do-exec test cellular <interface> modem-dmlog disable <cr>    # path-061261
+(config)# do-exec test cellular <interface> modem-error-clear <cr>    # path-060801
+(config)# do-exec test cellular <interface> modem-power-cycle <cr>    # path-060807
+(config)# do-exec test cellular <interface> modem-power-off <cr>    # path-060823
+(config)# do-exec test cellular <interface> modem-power-on <cr>    # path-060821
+(config)# do-exec test cellular <interface> modem-reset <cr>    # path-060796
+(config)# do-exec test cellular <interface> radio-power on <cr>    # path-061274
+(config)# do-exec test cellular <interface> rsrp <number:0..150> <cr>    # path-061260
+(config)# do-exec test cellular <interface> rsrq <number:0..20> <cr>    # path-061263
+(config)# do-exec test cellular <interface> ursp-get-td <cr>    # path-060784
+(config)# do-exec test cellular <interface> ursp-route-clear <cr>    # path-060788
+(config)# do-exec test checkpoint add <cr>    # path-028680
+(config)# do-exec test cisp disable <cr>    # path-029061
+(config)# do-exec test cisp enable <cr>    # path-029062
+(config)# do-exec test cisp intf <interface> client add mac <address> <cr>    # path-062480
+(config)# do-exec test cisp intf <interface> stop <cr>    # path-061276
+(config)# do-exec test cisp intf <interface> user add name <string> <cr>    # path-062482
+(config)# do-exec test clear-nvram local-lock <cr>    # path-031508
+(config)# do-exec test cli-agent config-accounting test-mode disable <cr>    # path-044389
+(config)# do-exec test cli-agent config-accounting test-mode enable <cr>    # path-044348
+(config)# do-exec test cns history <cr>    # path-031655
+(config)# do-exec test cns inventory <cr>    # path-031701
+(config)# do-exec test cns summary <cr>    # path-031681
+(config)# do-exec test config_notify_cb <interface> open_access <cr>    # path-060936
+(config)# do-exec test cops start-listen <address> <number:0..65535> <cr>    # path-046620
+(config)# do-exec test cops stop-listen <address> <number:0..65535> <cr>    # path-046668
+(config)# do-exec test cot loop-on <?controller_action@55558b45eaa8> : <number:0..29> <cr>    # path-061865
+(config)# do-exec test cot set def-params <cr>    # path-035277
+(config)# do-exec test cpuaccounting debug dump <cr>    # path-034359
+(config)# do-exec test cpurmi hog complex <cr>    # path-034250
+(config)# do-exec test cpurmi hog simple <number:1..5000> <cr>    # path-044032
+(config)# do-exec test crash <cr>    # path-026613
+(config)# do-exec test crypto kgs-test perf controller <number:1..300> <number:1..300> <number:1..10000> <number:1..300> <cr>    # path-059872
+(config)# do-exec test crypto modexp perf-test <cr>    # path-038806
+(config)# do-exec test crypto modexp self-test <cr>    # path-038860
+(config)# do-exec test crypto nist-tests cfb8 <cr>    # path-038974
+(config)# do-exec test crypto pki api <string> <cr>    # path-048506
+(config)# do-exec test crypto pki benchmark rsa <cr>    # path-048197
+(config)# do-exec test crypto pki benchmark validate-peer <string> <cr>    # path-054764
+(config)# do-exec test crypto pki benchmark validate-router <string> <cr>    # path-054744
+(config)# do-exec test crypto pki cache on <cr>    # path-048249
+(config)# do-exec test crypto pki cert-attributes <cr>    # path-038871
+(config)# do-exec test crypto pki config-update-notify <string> <cr>    # path-047702
+(config)# do-exec test crypto pki crl request <string> <cr>    # path-054557
+(config)# do-exec test crypto pki csr <string> nb <cr>    # path-054706
+(config)# do-exec test crypto pki enrollment-proxy-api <cr>    # path-039591
+(config)# do-exec test crypto pki expiry-alerts reset <cr>    # path-048442
+(config)# do-exec test crypto pki expiry-alerts shrink-periodicity <cr>    # path-048378
+(config)# do-exec test crypto pki new-cert <string> <cr>    # path-048036
+(config)# do-exec test crypto pki ocsp-get-staple <string> chain blocking-test <cr>    # path-058090
+(config)# do-exec test crypto pki openssl <cr>    # path-039177
+(config)# do-exec test crypto pki pkcs7verify <cr>    # path-038723
+(config)# do-exec test crypto pki safemode on <cr>    # path-048207
+(config)# do-exec test crypto pki self-signed-certificate <cr>    # path-038967
+(config)# do-exec test crypto pki session <number:1..60> <cr>    # path-048288
+(config)# do-exec test crypto pki trustpool remove <cr>    # path-048386
+(config)# do-exec test crypto pki trustpool reset <cr>    # path-048330
+(config)# do-exec test crypto pki verify-certificate <cr>    # path-038909
+(config)# do-exec test crypto replay <number:1..4294967295> <cr>    # path-038764
+(config)# do-exec test crypto replay time <number:1..42949672> <cr>    # path-047858
+(config)# do-exec test crypto rng-tests <cr>    # path-031360
+(config)# do-exec test crypto self-test <cr>    # path-031411
+(config)# do-exec test crypto wui tti petitioner <cr>    # path-047734
+(config)# do-exec test cts enable <cr>    # path-031424
+(config)# do-exec test cts event trace enable <cr>    # path-048159
+(config)# do-exec test cts role-based cgc qlist sort <cr>    # path-055138
+(config)# do-exec test cts role-based counters from <number:2..65521> to <number:2..65521> hw <cr>    # path-059907
+(config)# do-exec test cts role-based dump ipsgt <address> <cr>    # path-055018
+(config)# do-exec test cts role-based dump ipsgt <prefix:dynamic> <cr>    # path-062056
+(config)# do-exec test cts role-based dump permissions <cr>    # path-048957
+(config)# do-exec test cts role-based dump policy dynamic <cr>    # path-055176
+(config)# do-exec test cts role-based dump sg-info <cr>    # path-048817
+(config)# do-exec test cts role-based echo cli <string> <cr>    # path-055404
+(config)# do-exec test cts role-based enforcement enable <cr>    # path-049202
+(config)# do-exec test cts role-based ipm <interface> stop <cr>    # path-062053
+(config)# do-exec test cts role-based ipsgt add <prefix:dynamic> <cr>    # path-062073
+(config)# do-exec test cts role-based ipsgt refresh <cr>    # path-048885
+(config)# do-exec test cts role-based ping <cr>    # path-039826
+(config)# do-exec test cts role-based policy close <cr>    # path-049199
+(config)# do-exec test cts role-based rbacl save <cr>    # path-049198
+(config)# do-exec test cts role-based sgacl-log <cr>    # path-039660
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055126
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055174
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055216
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055248
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055286
+(config)# do-exec test cts role-based snmp mapping first <cr>    # path-055319
+(config)# do-exec test cts role-based snmp mapping first <prefix:dynamic> <cr>    # path-062372
+(config)# do-exec test cts role-based sw-dp enable <cr>    # path-049069
+(config)# do-exec test cts role-based sw-dp feature ipv4 in punt <?number_help_func_action@55558b25ae78> add <cr>    # path-062647
+(config)# do-exec test cts role-based sync <number:1..2147483647> <cr>    # path-048373
+(config)# do-exec test cts sap enable <cr>    # path-039096
+(config)# do-exec test cts slist_mib del ste <cr>    # path-048188
+(config)# do-exec test cts snmp pacinfo <hex-string> <cr>    # path-061506
+(config)# do-exec test cts sxp ipsgt action <number:0..2> <cr>    # path-054851
+(config)# do-exec test cwoir incr_sync on <cr>    # path-034983
+(config)# do-exec test cwoir insert <number:1..13> <number:1..99> <cr>    # path-044461
+(config)# do-exec test cwoir iosrunning <number:1..13> <number:0..1> <number:1..99> <cr>    # path-052490
+(config)# do-exec test cwoir ipcready <number:1..13> <number:0..1> <number:0..3> <cr>    # path-052466
+(config)# do-exec test cwoir read <cr>    # path-028768
+(config)# do-exec test cwoir remove <number:1..13> <cr>    # path-034831
+(config)# do-exec test cwoir show <cr>    # path-028829
+(config)# do-exec test data-descriptor <cr>    # path-027589
+(config)# do-exec test dhcp nonblocking <interface> <cr>    # path-060981
+(config)# do-exec test dhcp ns <cr>    # path-031426
+(config)# do-exec test dhcp release <cr>    # path-031391
+(config)# do-exec test diagnostic simulation failure slot <?option@5555898db9d0> test <?number_help_func_action@555589917be8> <cr>    # path-062995
+(config)# do-exec test dmtm <number:0..64> cmd <cr>    # path-037472
+(config)# do-exec test dtp switch crash <number:0..3> <cr>    # path-045886
+(config)# do-exec test dwnld_mgr <string> <cr>    # path-029792
+(config)# do-exec test eci add <string> <cr>    # path-034549
+(config)# do-exec test eci delete <string> <cr>    # path-034510
+(config)# do-exec test eci scan <cr>    # path-028533
+(config)# do-exec test eci set timeout <number:0..1000> <cr>    # path-044378
+(config)# do-exec test eci show <cr>    # path-028595
+(config)# do-exec test eem <cr>    # path-027609
+(config)# do-exec test eigrp SIA <cr>    # path-030826
+(config)# do-exec test eigrp SIA fast <cr>    # path-060933
+(config)# do-exec test eigrp address-family ipv4 ack <cr>    # path-047145
+(config)# do-exec test eigrp address-family ipv4 error-percent <number:0..100> <cr>    # path-054464
+(config)# do-exec test eigrp address-family ipv4 error-percent <number:0..100> <interface> <cr>    # path-062356
+(config)# do-exec test eigrp address-family ipv6 ack <cr>    # path-047115
+(config)# do-exec test eigrp address-family ipv6 error-percent <number:0..100> <cr>    # path-054453
+(config)# do-exec test eigrp address-family ipv6 error-percent <number:0..100> <interface> <cr>    # path-062354
+(config)# do-exec test eigrp address-family ipv6 topology <prefix:dynamic> ack <cr>    # path-062335
+(config)# do-exec test eigrp crimson <cr>    # path-030690
+(config)# do-exec test eigrp neighbor <interface> <address> <cr>    # path-061433
+(config)# do-exec test ethernet errdisable recovery-timer unit second <cr>    # path-053798
+(config)# do-exec test ethernet l2ctrl safe-iteration vports <interface> <cr>    # path-061873
+(config)# do-exec test ethernet mirp-rcv isid <number:1..16777215> <cr>    # path-046313
+(config)# do-exec test ethernet mlacp unknown interface <interface> <cr>    # path-061955
+(config)# do-exec test ethernet mstp-tcn-enable <interface> <number:0..1> <cr>    # path-061370
+(config)# do-exec test ethernet populate-statistics interface <interface> <number:1..16384> <cr>    # path-061951
+(config)# do-exec test ethernet safe-iteration <number:0..5> <cr>    # path-036761
+(config)# do-exec test ethernet stp-fwdstate <number:1..16384> <interface> disable <cr>    # path-061974
+(config)# do-exec test ethernet stp-fwdstate <number:1..16384> <interface> forwarding <cr>    # path-061975
+(config)# do-exec test event manager ged define <cr>    # path-047446
+(config)# do-exec test event manager ged publish <cr>    # path-047498
+(config)# do-exec test event manager ged subscribe <cr>    # path-047544
+(config)# do-exec test event manager ged unsubscribe <number:0..2147483647> <cr>    # path-054485
+(config)# do-exec test flowspec client stop <cr>    # path-039730
+(config)# do-exec test flowspec client xos <cr>    # path-039608
+(config)# do-exec test flowspec rt-dump <cr>    # path-031828
+(config)# do-exec test flowspec txlist-dump <cr>    # path-031801
+(config)# do-exec test flowspec xtf <cr>    # path-031850
+(config)# do-exec test flowspec xtf print <cr>    # path-039667
+(config)# do-exec test fqdn <number:0..14> <cr>    # path-030998
+(config)# do-exec test garp_retry add <address> <cr>    # path-035494
+(config)# do-exec test garp_retry add <address> <interface> <number:0..2> <cr>    # path-061884
+(config)# do-exec test glbp redundancy events enable <cr>    # path-046477
+(config)# do-exec test glbp transport <interface> <number:0..1023> ipv6 <address> <cr>    # path-062323
+(config)# do-exec test gsi httpc <number:0..9> debug off <cr>    # path-054995
+(config)# do-exec test gsi httpc <number:0..9> show <cr>    # path-048604
+(config)# do-exec test gsi httpc <number:0..9> start <string> post <cr>    # path-058235
+(config)# do-exec test gsi httpc <number:0..9> xml-header <cr>    # path-048717
+(config)# do-exec test gsi httpc stop <cr>    # path-039561
+(config)# do-exec test gsi https <number:0..9> debug off <cr>    # path-054964
+(config)# do-exec test gsi https <number:0..9> show <cr>    # path-048545
+(config)# do-exec test gsi https <number:0..9> start <string> encrypt post <cr>    # path-059442
+(config)# do-exec test gsi https <number:0..9> xml-header <cr>    # path-048661
+(config)# do-exec test gsi https stop <cr>    # path-039508
+(config)# do-exec test gsi sshc <number:0..9> debug off <cr>    # path-054934
+(config)# do-exec test gsi sshc <number:0..9> show <cr>    # path-048487
+(config)# do-exec test gsi sshc <number:0..9> start <string> wsma <cr>    # path-058212
+(config)# do-exec test gsi sshc <number:0..9> xml-header <cr>    # path-048609
+(config)# do-exec test gsi sshc stop <cr>    # path-039457
+(config)# do-exec test gssapi init_sec_context <string> <cr>    # path-038015
+(config)# do-exec test gssapi token_exchange no_wrap <address> <string> <cr>    # path-054418
+(config)# do-exec test gx access-accept service <string> <cr>    # path-049582
+(config)# do-exec test gx access-reject <cr>    # path-032039
+(config)# do-exec test gx create-session ip <address> mac <hex-data> vrf <string> vlan-id <string> <interface> client-handle <number:1000..2000> <cr>    # path-062941
+(config)# do-exec test gx delete-session ip <address> <cr>    # path-049535
+(config)# do-exec test gx delete-session mac <hex-data> client-handle <number:1000..2000> <cr>    # path-062407
+(config)# do-exec test gx enable <cr>    # path-031952
+(config)# do-exec test gx rar-sb session-id <number:1..4294967295> install-service <string> <cr>    # path-058504
+(config)# do-exec test gx update-session id ip <address> data <interface> client-handle <number:1000..2000> <cr>    # path-062648
+(config)# do-exec test hsrp ha sync mac enable <cr>    # path-052773
+(config)# do-exec test hw-module subslot <?slotcard_func_action@5555899c11b0> all async loopback enable <cr>    # path-062478
+(config)# do-exec test hw-module subslot <?slotcard_func_action@5555899c11b0> all cwan message gsm-profile-get <cr>    # path-062483
+(config)# do-exec test idmgr init <cr>    # path-031108
+(config)# do-exec test idmgr req-type session-assert key-list <string> data-list <cr>    # path-058028
+(config)# do-exec test ifs appn read <address> <string> <cr>    # path-054621
+(config)# do-exec test ifs appn write <address> <string> <cr>    # path-054635
+(config)# do-exec test ifs boot <string> <cr>    # path-038889
+(config)# do-exec test ifs defaults <cr>    # path-031469
+(config)# do-exec test ifs disk cluster <string> <cr>    # path-048160
+(config)# do-exec test ifs disk modes <string> <cr>    # path-048203
+(config)# do-exec test ifs disk rdwr <string> <cr>    # path-048115
+(config)# do-exec test ifs show hidden <cr>    # path-039044
+(config)# do-exec test ifs slot <string> <cr>    # path-039214
+(config)# do-exec test install <string> <url:dynamic> <?url_prefix_action@55558b337468> <cr>    # path-062850
+(config)# do-exec test interfaces <cr>    # path-026625
+(config)# do-exec test interfaces <interface> <cr>    # path-060545
+(config)# do-exec test ip access-list dynamic delete <number:100..199> <number:1..262144> <cr>    # path-057112
+(config)# do-exec test ip access-list dynamic empty <number:100..199> <cr>    # path-052749
+(config)# do-exec test ip access-list dynamic match <number:100..199> <number:1..5> <number:100..199> <interface> <cr>    # path-062599
+(config)# do-exec test ip access-list register <cr>    # path-035357
+(config)# do-exec test ip dhcp api pool <string> <string> add network <address> <?ipmask_action@55558932b668> <cr>    # path-062661
+(config)# do-exec test ip dhcp api pool <string> <string> create <cr>    # path-059126
+(config)# do-exec test ip dhcp query <address> <cr>    # path-045739
+(config)# do-exec test ip dhcp terminate <address> <cr>    # path-045610
+(config)# do-exec test ip domain apis <address> <string> <cr>    # path-053069
+(config)# do-exec test ip domain default-domain <cr>    # path-035744
+(config)# do-exec test ip domain get-ipv4-server <number:0..25> <cr>    # path-045449
+(config)# do-exec test ip domain get-server <number:0..25> <cr>    # path-045395
+(config)# do-exec test ip domain lookup <address> <cr>    # path-045832
+(config)# do-exec test ip domain mcast-lookup <address> <cr>    # path-045694
+(config)# do-exec test ip domain name-delete <string> <number:1..255> <number:1..4194304> <cr>    # path-057182
+(config)# do-exec test ip multicast sync resume <cr>    # path-045183
+(config)# do-exec test ip multicast sync suspend <cr>    # path-045128
+(config)# do-exec test ip nat clear translations <cr>    # path-045494
+(config)# do-exec test ip nat dump <cr>    # path-036309
+(config)# do-exec test ip nat portmap trans_report <cr>    # path-045674
+(config)# do-exec test ip nat show pool <string> <cr>    # path-053119
+(config)# do-exec test ip nat show pool all <cr>    # path-053028
+(config)# do-exec test ip nat show rule <string> <cr>    # path-053159
+(config)# do-exec test ip nat show rule all <cr>    # path-053070
+(config)# do-exec test ip nat-route database <cr>    # path-035940
+(config)# do-exec test ip nat-route route inside <prefix:dynamic> <cr>    # path-061902
+(config)# do-exec test ip nbar batch-config end <cr>    # path-045512
+(config)# do-exec test ip nbar batch-config start <cr>    # path-045451
+(config)# do-exec test ip nbar byte-count-window disable <cr>    # path-045566
+(config)# do-exec test ip nbar caches clear <cr>    # path-045196
+(config)# do-exec test ip nbar caches export <string> <cr>    # path-052839
+(config)# do-exec test ip nbar caches import <string> <cr>    # path-052807
+(config)# do-exec test ip nbar caches show <cr>    # path-045246
+(config)# do-exec test ip nbar cedge-simulation disable <cr>    # path-045615
+(config)# do-exec test ip nbar cedge-simulation enable <cr>    # path-045553
+(config)# do-exec test ip nbar config-mode async <cr>    # path-045224
+(config)# do-exec test ip nbar config-mode sync <cr>    # path-045296
+(config)# do-exec test ip nbar dataplane-info-monitor memory-thresholds low <number:1..100> <cr>    # path-057357
+(config)# do-exec test ip nbar dataplane-info-monitor traffic-over-subscription-state false <cr>    # path-053198
+(config)# do-exec test ip nbar dataplane-info-monitor traffic-over-subscription-state true <cr>    # path-053138
+(config)# do-exec test ip nbar field-extraction disable <string> <string> <interface> <cr>    # path-062490
+(config)# do-exec test ip nbar field-extraction enable <string> <string> <interface> <cr>    # path-062489
+(config)# do-exec test ip nbar function <string> <cr>    # path-045374
+(config)# do-exec test ip nbar npc disable <cr>    # path-045181
+(config)# do-exec test ip nbar npc enable <string> <cr>    # path-052896
+(config)# do-exec test ip nbar npc pack-mode allow <cr>    # path-052938
+(config)# do-exec test ip nbar npc pack-mode disallow <cr>    # path-052973
+(config)# do-exec test ip nbar npc save <cr>    # path-045239
+(config)# do-exec test ip nbar per-txn disable <string> <interface> <cr>    # path-062275
+(config)# do-exec test ip nbar per-txn enable <string> <interface> <cr>    # path-062272
+(config)# do-exec test ip nbar resources flow max-session <number:dynamic> <cr>    # path-062296
+(config)# do-exec test ip nbar resources protocol <number:1..100000000> <?option@55558a7af308> <cr>    # path-062302
+(config)# do-exec test ip nbar set-max-protocol-id-no-cloud_ext <number:0..32767> <cr>    # path-045663
+(config)# do-exec test ip nbar set-protocol-feature-support <number:0..255> <number:0..255> <cr>    # path-053232
+(config)# do-exec test ip nbar show-features-activation <cr>    # path-036435
+(config)# do-exec test ip nbar show-fib-ad-info <cr>    # path-036377
+(config)# do-exec test ip nbar track-ip disable <cr>    # path-045229
+(config)# do-exec test ip nbar track-ip enable <string> port <number:0..4294967295> vrf-id <number:0..4294967295> l4-proto <number:0..255> memory-size <number:0..20000> <cr>    # path-060230
+(config)# do-exec test ip nbar track-ip flush <cr>    # path-045302
+(config)# do-exec test ip nbar track-ip status <cr>    # path-045364
+(config)# do-exec test ip omp flush <cr>    # path-035985
+(config)# do-exec test ip omp route <prefix:dynamic> <cr>    # path-061303
+(config)# do-exec test ip pbr enqueue <interface> <cr>    # path-061283
+(config)# do-exec test ip pbr ipv6 attach <cr>    # path-045009
+(config)# do-exec test ip pbr map <string> <cr>    # path-044968
+(config)# do-exec test ip rib api iprib_get_route <?ipaddrmask_action@55558978f690> exact_match <cr>    # path-062269
+(config)# do-exec test ip rib api iprib_geteachroute <cr>    # path-045362
+(config)# do-exec test ip rib api iprib_rtlookup <?ipaddrmask_action@55558978fa30> <cr>    # path-061889
+(config)# do-exec test ip rmap <cr>    # path-029815
+(config)# do-exec test ip rmap associate <string> <interface> <cr>    # path-061892
+(config)# do-exec test ip rmap associate <string> local <cr>    # path-053128
+(config)# do-exec test ip rmap batch-commit <string> <number:0..2147483647> <cr>    # path-052809
+(config)# do-exec test ip rmap create <number:0..2147483647> <string> <cr>    # path-052898
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> <cr>    # path-053062
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> match acl <string> <cr>    # path-059738
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> match destination tag <number:0..1000> <cr>    # path-060013
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> match length <number:0..2147483647> <number:0..2147483647> <cr>    # path-060008
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> match source tag <number:0..1000> <cr>    # path-060011
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> match vrf <string> <cr>    # path-059744
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set color red <cr>    # path-059799
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set def-global-nh <address> <cr>    # path-059754
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set def-next-hop <address> <cr>    # path-059762
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set def-nh-verify <cr>    # path-059166
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set def-vrf-nh <string> <address> <cr>    # path-060027
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set default-interface <interface> <cr>    # path-062608
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set df <number:0..65535> <cr>    # path-059781
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set gateway <address> <cr>    # path-059740
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set global <cr>    # path-059201
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set gw-vrf <string> <address> <cr>    # path-060010
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set interface <interface> <cr>    # path-062609
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set ip-global-nh <address> <cr>    # path-059748
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set ip-vrf-nh <string> <address> <cr>    # path-060019
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set next-hop <address> <cr>    # path-059742
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set nh-verify <cr>    # path-059119
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set oce <?general_pointer_number_action@55558978d3d8> next-hop <address> interface <interface> <cr>    # path-062939
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set precedence <number:0..65535> <cr>    # path-059775
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set tos <number:0..65535> <cr>    # path-059769
+(config)# do-exec test ip rmap delete <string> <number:0..4294967295> set vrf <string> <cr>    # path-059785
+(config)# do-exec test ip rmap delete <string> permit <cr>    # path-053021
+(config)# do-exec test ip rmap register <number:0..2147483647> <cr>    # path-045005
+(config)# do-exec test ip rmap remove <string> <number:0..2147483647> <cr>    # path-052869
+(config)# do-exec test ip static-route add <?ipaddrmask_action@5555897e2690> <cr>    # path-061322
+(config)# do-exec test ip subscriber create-session ip <address> mac <hex-data> vrf <string> <interface> routed <cr>    # path-062934
+(config)# do-exec test ip subscriber enable <cr>    # path-036168
+(config)# do-exec test ip subscriber interface association disable <cr>    # path-053286
+(config)# do-exec test ip subscriber interface association enable <cr>    # path-053285
+(config)# do-exec test ipam pool local alloc <cr>    # path-045166
+(config)# do-exec test ipam pool local alloc <interface> <cr>    # path-061885
+(config)# do-exec test ipc FC <number:1..5> <number:0..50000> <cr>    # path-047942
+(config)# do-exec test ipc ack-drop <number:1..10000> <cr>    # path-038763
+(config)# do-exec test ipc ack-pending <number:1..10000> <cr>    # path-038810
+(config)# do-exec test ipc ack-timer <number:0..50000> <cr>    # path-039944
+(config)# do-exec test ipc api <cr>    # path-031456
+(config)# do-exec test ipc app-send <cr>    # path-031729
+(config)# do-exec test ipc app-send default domain <number:1..1000000> <cr>    # path-061516
+(config)# do-exec test ipc bundle mode seat on <cr>    # path-055181
+(config)# do-exec test ipc bundle mode session on <cr>    # path-055135

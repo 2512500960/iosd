@@ -1,0 +1,386 @@
+# 模式 exec；六个基础模式的历史连接
+# 每行一条路径见证；末尾编号对应同名 Markdown 页。
+# 详细参数、handler、条件和缺口：baseline-027.md
+
+(exec)# do-exec show ip nbar resources status <number:10..86400> <cr>    # path-024280
+(exec)# do-exec show ip nbar resources status <number:10..86400> <number:1..50> <cr>    # path-024859
+(exec)# do-exec show ip nbar resources status fadebucket <cr>    # path-024275
+(exec)# do-exec show ip nbar resources status fadebucket <number:1..50> <cr>    # path-024855
+(exec)# do-exec show ip nbar resources status freebucket <cr>    # path-024270
+(exec)# do-exec show ip nbar resources status freebucket <number:1..50> <cr>    # path-024853
+(exec)# do-exec show ip nbar statistics <cr>    # path-019105
+(exec)# do-exec show ip nbar version <cr>    # path-019061
+(exec)# do-exec show ip nhrp attribute <cr>    # path-019225
+(exec)# do-exec show ip nhrp instances <cr>    # path-019277
+(exec)# do-exec show ip nhrp purge <cr>    # path-019123
+(exec)# do-exec show ip nhrp redirect <cr>    # path-019355
+(exec)# do-exec show ip nhrp redirect statistics <cr>    # path-022567
+(exec)# do-exec show ip nhrp shortcut <cr>    # path-019348
+(exec)# do-exec show ip nhrp traffic <cr>    # path-019159
+(exec)# do-exec show ip ospf <cr>    # path-015154
+(exec)# do-exec show ip ospf bad-checksum <cr>    # path-018938
+(exec)# do-exec show ip ospf border-routers <cr>    # path-019262
+(exec)# do-exec show ip ospf database <cr>    # path-019562
+(exec)# do-exec show ip ospf database database-summary <cr>    # path-022708
+(exec)# do-exec show ip ospf database database-summary detail <cr>    # path-024360
+(exec)# do-exec show ip ospf delete-list <cr>    # path-019377
+(exec)# do-exec show ip ospf internal forwarding-addresses <cr>    # path-022699
+(exec)# do-exec show ip ospf internal memory cache <cr>    # path-024339
+(exec)# do-exec show ip ospf max-metric <cr>    # path-019306
+(exec)# do-exec show ip ospf maxage-list <cr>    # path-019271
+(exec)# do-exec show ip ospf mpls traffic-eng link <cr>    # path-024315
+(exec)# do-exec show ip ospf multi-area <cr>    # path-019102
+(exec)# do-exec show ip ospf nsf <cr>    # path-019134
+(exec)# do-exec show ip ospf nsr <cr>    # path-019389
+(exec)# do-exec show ip ospf nsr objects <cr>    # path-022580
+(exec)# do-exec show ip ospf nsr statistics <cr>    # path-022602
+(exec)# do-exec show ip ospf rib <cr>    # path-019341
+(exec)# do-exec show ip ospf rib <cr>    # path-019342
+(exec)# do-exec show ip ospf sham-links <cr>    # path-019055
+(exec)# do-exec show ip ospf statistics <cr>    # path-019311
+(exec)# do-exec show ip ospf summary-address <cr>    # path-019213
+(exec)# do-exec show ip ospf timers lsa-group <cr>    # path-022398
+(exec)# do-exec show ip ospf timers rate-limit <cr>    # path-022422
+(exec)# do-exec show ip ospf topology-info <cr>    # path-019340
+(exec)# do-exec show ip ospf virtual-links <cr>    # path-019087
+(exec)# do-exec show ip pim autorp <cr>    # path-018909
+(exec)# do-exec show ip pim bsr-router <cr>    # path-018944
+(exec)# do-exec show ip pim gir <cr>    # path-019202
+(exec)# do-exec show ip pim mdt <cr>    # path-019415
+(exec)# do-exec show ip pim mdt bgp <cr>    # path-022654
+(exec)# do-exec show ip pim mdt bgp c-mroutes <cr>    # path-024312
+(exec)# do-exec show ip pim mdt history interval <number:1..71582> <cr>    # path-024862
+(exec)# do-exec show ip pim mdt internal bier <cr>    # path-024316
+(exec)# do-exec show ip pim mdt internal crt <cr>    # path-024328
+(exec)# do-exec show ip pim mdt internal gre <cr>    # path-024311
+(exec)# do-exec show ip pim mdt internal ir <cr>    # path-024319
+(exec)# do-exec show ip pim mdt internal leaf-ad <cr>    # path-024321
+(exec)# do-exec show ip pim mdt internal mldp <cr>    # path-024324
+(exec)# do-exec show ip pim mdt internal pe <cr>    # path-024346
+(exec)# do-exec show ip pim mdt internal pe all <cr>    # path-024870
+(exec)# do-exec show ip pim mdt internal replication <cr>    # path-024334
+(exec)# do-exec show ip pim mdt internal tdb <cr>    # path-024344
+(exec)# do-exec show ip pim mdt internal vxlan <cr>    # path-024304
+(exec)# do-exec show ip pim mdt receive <cr>    # path-022591
+(exec)# do-exec show ip pim mdt receive detail <cr>    # path-024293
+(exec)# do-exec show ip pim mdt send <cr>    # path-022561
+(exec)# do-exec show ip pim mvpn <cr>    # path-019189
+(exec)# do-exec show ip pim mvpn bier <cr>    # path-022408
+(exec)# do-exec show ip pim mvpn crt <cr>    # path-022285
+(exec)# do-exec show ip pim mvpn gre <cr>    # path-022387
+(exec)# do-exec show ip pim mvpn ir <cr>    # path-022371
+(exec)# do-exec show ip pim mvpn leaf-ad <cr>    # path-022331
+(exec)# do-exec show ip pim mvpn mldp <cr>    # path-022231
+(exec)# do-exec show ip pim mvpn pe <cr>    # path-022254
+(exec)# do-exec show ip pim mvpn replication <cr>    # path-022308
+(exec)# do-exec show ip pim mvpn srv6 <cr>    # path-022353
+(exec)# do-exec show ip pim mvpn tdb <cr>    # path-022431
+(exec)# do-exec show ip pim mvpn vxlan <cr>    # path-022209
+(exec)# do-exec show ip pim pfp-sa announcements <cr>    # path-022324
+(exec)# do-exec show ip pim pfp-sa cache <cr>    # path-022369
+(exec)# do-exec show ip pim pfp-sa originator <cr>    # path-022349
+(exec)# do-exec show ip pim rp <cr>    # path-019186
+(exec)# do-exec show ip pim rp-hash <address> <cr>    # path-022378
+(exec)# do-exec show ip policy <cr>    # path-014850
+(exec)# do-exec show ip policy adj-subblock <cr>    # path-019094
+(exec)# do-exec show ip policy-list <cr>    # path-014537
+(exec)# do-exec show ip portbundle ip <address> bundle <number:1..65535> <cr>    # path-024820
+(exec)# do-exec show ip portbundle status <cr>    # path-018438
+(exec)# do-exec show ip portbundle status free <cr>    # path-021993
+(exec)# do-exec show ip ports all <cr>    # path-018504
+(exec)# do-exec show ip ports ephemeral-max <cr>    # path-018477
+(exec)# do-exec show ip ports reservation <cr>    # path-018532
+(exec)# do-exec show ip prefix-list <cr>    # path-015023
+(exec)# do-exec show ip prefix-list <string> seq <number:1..4294967295> <cr>    # path-024310
+(exec)# do-exec show ip prefix-list detail <cr>    # path-019385
+(exec)# do-exec show ip prefix-list summary <cr>    # path-019374
+(exec)# do-exec show ip protocols <cr>    # path-014554
+(exec)# do-exec show ip protocols summary <cr>    # path-018584
+(exec)# do-exec show ip redirects <cr>    # path-014123
+(exec)# do-exec show ip rib database <cr>    # path-018616
+(exec)# do-exec show ip rip database <cr>    # path-019212
+(exec)# do-exec show ip rip neighbors <cr>    # path-019198
+(exec)# do-exec show ip rip timers <cr>    # path-019119
+(exec)# do-exec show ip route list <number:1..199> <cr>    # path-022119
+(exec)# do-exec show ip route omp-tag <number:0..4294967295> <cr>    # path-022156
+(exec)# do-exec show ip route tag <number:0..4294967295> <cr>    # path-022155
+(exec)# do-exec show ip route tree <address> <address> <cr>    # path-024102
+(exec)# do-exec show ip route tree <cr>    # path-018698
+(exec)# do-exec show ip route tree summary <cr>    # path-022105
+(exec)# do-exec show ip rpf queued <cr>    # path-018789
+(exec)# do-exec show ip rsvp <cr>    # path-015208
+(exec)# do-exec show ip rsvp aggregation ip <cr>    # path-022565
+(exec)# do-exec show ip rsvp aggregation ip endpoints <cr>    # path-024307
+(exec)# do-exec show ip rsvp aggregation ip map <cr>    # path-024278
+(exec)# do-exec show ip rsvp aggregation ip reservation <cr>    # path-024284
+(exec)# do-exec show ip rsvp authentication <cr>    # path-019310
+(exec)# do-exec show ip rsvp counters <cr>    # path-019561
+(exec)# do-exec show ip rsvp handles <cr>    # path-019469
+(exec)# do-exec show ip rsvp hello <cr>    # path-019587
+(exec)# do-exec show ip rsvp hello bfd nbr <cr>    # path-024378
+(exec)# do-exec show ip rsvp hello bfd nbr detail <cr>    # path-024881
+(exec)# do-exec show ip rsvp hello client lsp detail <cr>    # path-024884
+(exec)# do-exec show ip rsvp hello client lsp summary <cr>    # path-024883
+(exec)# do-exec show ip rsvp hello client nbr <cr>    # path-024381
+(exec)# do-exec show ip rsvp hello client nbr detail <cr>    # path-024882
+(exec)# do-exec show ip rsvp hello graceful-restart <cr>    # path-022757
+(exec)# do-exec show ip rsvp hello instance internal <cr>    # path-024366
+(exec)# do-exec show ip rsvp hello instance summary <cr>    # path-024370
+(exec)# do-exec show ip rsvp hello statistics <cr>    # path-022727
+(exec)# do-exec show ip rsvp host receivers <cr>    # path-022732
+(exec)# do-exec show ip rsvp host senders <cr>    # path-022721
+(exec)# do-exec show ip rsvp listeners <address> <cr>    # path-022733
+(exec)# do-exec show ip rsvp listeners <address> <number:0..255> <cr>    # path-024362
+(exec)# do-exec show ip rsvp listeners <address> <number:0..255> <number:0..65535> <cr>    # path-024871
+(exec)# do-exec show ip rsvp listeners <cr>    # path-019526
+(exec)# do-exec show ip rsvp metadata <cr>    # path-019402
+(exec)# do-exec show ip rsvp neighbor <cr>    # path-019378
+(exec)# do-exec show ip rsvp neighbor queues <cr>    # path-022589
+(exec)# do-exec show ip rsvp nsr counters <cr>    # path-022486
+(exec)# do-exec show ip rsvp p2mp counters <cr>    # path-022725
+(exec)# do-exec show ip rsvp policy <cr>    # path-019282
+(exec)# do-exec show ip rsvp policy cops <cr>    # path-022548
+(exec)# do-exec show ip rsvp policy identity <cr>    # path-022498
+(exec)# do-exec show ip rsvp sender <cr>    # path-019405
+(exec)# do-exec show ip rsvp signalling blockade <cr>    # path-022782
+(exec)# do-exec show ip rsvp signalling fast-local-repair <cr>    # path-022719
+(exec)# do-exec show ip rsvp signalling rate-limit <cr>    # path-022716
+(exec)# do-exec show ip rsvp signalling refresh interval <cr>    # path-024374
+(exec)# do-exec show ip rsvp signalling refresh misses <cr>    # path-024376
+(exec)# do-exec show ip rsvp signalling refresh reduction <cr>    # path-024369
+(exec)# do-exec show ip rsvp signalling session-timers <cr>    # path-022728
+(exec)# do-exec show ip rsvp transport clients <cr>    # path-022571
+(exec)# do-exec show ip rtp header-compression <cr>    # path-018313
+(exec)# do-exec show ip sctp association list <cr>    # path-022255
+(exec)# do-exec show ip sctp association parameters <number:0..4294967295> <cr>    # path-024162
+(exec)# do-exec show ip sctp association statistics <number:0..4294967295> <cr>    # path-024152
+(exec)# do-exec show ip sctp errors <cr>    # path-018810
+(exec)# do-exec show ip sctp instances <cr>    # path-018871
+(exec)# do-exec show ip sctp statistics <cr>    # path-018766
+(exec)# do-exec show ip sdr <cr>    # path-014650
+(exec)# do-exec show ip sla application <cr>    # path-019570
+(exec)# do-exec show ip sla authentication <cr>    # path-019418
+(exec)# do-exec show ip sla auto discovery <cr>    # path-022711
+(exec)# do-exec show ip sla auto group <cr>    # path-022709
+(exec)# do-exec show ip sla auto schedule <cr>    # path-022707
+(exec)# do-exec show ip sla auto summary-statistics group type ip <string> <cr>    # path-025171
+(exec)# do-exec show ip sla auto summary-statistics group type ip <string> ip-address <address> port <number:0..64000> <cr>    # path-025253
+(exec)# do-exec show ip sla auto summary-statistics group type ip <string> ip-address <cr>    # path-025216
+(exec)# do-exec show ip sla auto template <cr>    # path-022720
+(exec)# do-exec show ip sla collection-statistics <cr>    # path-019523
+(exec)# do-exec show ip sla configuration <cr>    # path-019441
+(exec)# do-exec show ip sla distribution-statistics <cr>    # path-019573
+(exec)# do-exec show ip sla distribution-statistics full <cr>    # path-022726
+(exec)# do-exec show ip sla distribution-statistics raw <cr>    # path-022715
+(exec)# do-exec show ip sla distribution-statistics tabular <cr>    # path-022739
+(exec)# do-exec show ip sla endpoint-list <cr>    # path-019638
+(exec)# do-exec show ip sla enhanced-history distribution-statistics <cr>    # path-022731
+(exec)# do-exec show ip sla ethernet-monitor configuration <cr>    # path-022713
+(exec)# do-exec show ip sla ethernet-monitor responder <cr>    # path-022694
+(exec)# do-exec show ip sla event-publisher <cr>    # path-019454
+(exec)# do-exec show ip sla event-publisher detail <cr>    # path-022665
+(exec)# do-exec show ip sla group schedule <cr>    # path-022701
+(exec)# do-exec show ip sla group schedule details <cr>    # path-024342
+(exec)# do-exec show ip sla history <cr>    # path-019612
+(exec)# do-exec show ip sla history full <cr>    # path-022748
+(exec)# do-exec show ip sla history interval-statistics <cr>    # path-022763
+(exec)# do-exec show ip sla history raw <cr>    # path-022738
+(exec)# do-exec show ip sla history tabular <cr>    # path-022756
+(exec)# do-exec show ip sla operational-state <cr>    # path-019494
+(exec)# do-exec show ip sla reaction-configuration <cr>    # path-019610
+(exec)# do-exec show ip sla reaction-trigger <cr>    # path-019599
+(exec)# do-exec show ip sla responder <cr>    # path-019451
+(exec)# do-exec show ip sla statistics <cr>    # path-019601
+(exec)# do-exec show ip sla statistics aggregated <cr>    # path-022759
+(exec)# do-exec show ip sla statistics aggregated details <cr>    # path-024373
+(exec)# do-exec show ip sla statistics details <cr>    # path-022755
+(exec)# do-exec show ip sla summary <cr>    # path-019453
+(exec)# do-exec show ip sla totals-statistics <cr>    # path-019506
+(exec)# do-exec show ip sla twamp connection requests <cr>    # path-024353
+(exec)# do-exec show ip sla twamp session <cr>    # path-022691
+(exec)# do-exec show ip sla twamp standards <cr>    # path-022680
+(exec)# do-exec show ip sla twamp-light session <cr>    # path-022702
+(exec)# do-exec show ip sockets <cr>    # path-014138
+(exec)# do-exec show ip source binding <cr>    # path-019511
+(exec)# do-exec show ip spd <cr>    # path-014132
+(exec)# do-exec show ip ssh <cr>    # path-014949
+(exec)# do-exec show ip static route rwatch-rib <cr>    # path-022352
+(exec)# do-exec show ip static route sr-polices <cr>    # path-022386
+(exec)# do-exec show ip static route summary <cr>    # path-022302
+(exec)# do-exec show ip subscriber <cr>    # path-015075
+(exec)# do-exec show ip tcp header-compression <cr>    # path-018343
+(exec)# do-exec show ip telnet status <cr>    # path-018525
+(exec)# do-exec show ip traffic <cr>    # path-014179
+(exec)# do-exec show ip traffic topology base <cr>    # path-021889
+(exec)# do-exec show ip trigger-authentication <cr>    # path-014881
+(exec)# do-exec show ipam counts <cr>    # path-014045
+(exec)# do-exec show ipam pool <cr>    # path-014036
+(exec)# do-exec show ipam queues <cr>    # path-014055
+(exec)# do-exec show ipam status <cr>    # path-014082
+(exec)# do-exec show ipc all <cr>    # path-013342
+(exec)# do-exec show ipc app <cr>    # path-013471
+(exec)# do-exec show ipc buffer <cr>    # path-013488
+(exec)# do-exec show ipc cli <number:0..4294967295> <string> <cr>    # path-021172
+(exec)# do-exec show ipc delayed <cr>    # path-013435
+(exec)# do-exec show ipc fc <cr>    # path-013281
+(exec)# do-exec show ipc fragment <cr>    # path-013478
+(exec)# do-exec show ipc hog-info <cr>    # path-013411
+(exec)# do-exec show ipc keepalive tx <cr>    # path-017441
+(exec)# do-exec show ipc mcast appclass <cr>    # path-017207
+(exec)# do-exec show ipc mcast groups <cr>    # path-017237
+(exec)# do-exec show ipc mcast groups <number:1..4294967295> <cr>    # path-021190
+(exec)# do-exec show ipc mcast sessions <cr>    # path-017285
+(exec)# do-exec show ipc mcast sessions verbose <cr>    # path-021247
+(exec)# do-exec show ipc mcast status <cr>    # path-017189
+(exec)# do-exec show ipc nodes <cr>    # path-013372
+(exec)# do-exec show ipc nodes capabilities <cr>    # path-017246
+(exec)# do-exec show ipc nodes issu <cr>    # path-017231
+(exec)# do-exec show ipc nodes verbose <cr>    # path-017247
+(exec)# do-exec show ipc ports <cr>    # path-013428
+(exec)# do-exec show ipc ports verbose <cr>    # path-017263
+(exec)# do-exec show ipc queue <cr>    # path-013264
+(exec)# do-exec show ipc rmi all <cr>    # path-017190
+(exec)# do-exec show ipc rmi thresholds ru <string> <cr>    # path-023479
+(exec)# do-exec show ipc rpc <cr>    # path-013610
+(exec)# do-exec show ipc sess-ack <cr>    # path-013522
+(exec)# do-exec show ipc session all <cr>    # path-017282
+(exec)# do-exec show ipc session all verbose <cr>    # path-021244
+(exec)# do-exec show ipc session tx <cr>    # path-017306
+(exec)# do-exec show ipc session tx verbose <cr>    # path-021259
+(exec)# do-exec show ipc status <cr>    # path-013458
+(exec)# do-exec show ipc thread-stats <cr>    # path-013507
+(exec)# do-exec show ipc trace <number:1..3> <cr>    # path-017314
+(exec)# do-exec show ipc util <cr>    # path-013581
+(exec)# do-exec show ipc watermark <cr>    # path-013535
+(exec)# do-exec show ipc zones <cr>    # path-013346
+(exec)# do-exec show ipv6 access-list <cr>    # path-014994
+(exec)# do-exec show ipv6 access-list <string> dump-og-database <cr>    # path-022614
+(exec)# do-exec show ipv6 alias <cr>    # path-015055
+(exec)# do-exec show ipv6 cef events <cr>    # path-019640
+(exec)# do-exec show ipv6 cef neighbor discovery throttling <cr>    # path-024351
+(exec)# do-exec show ipv6 cef protocol-discard <cr>    # path-019450
+(exec)# do-exec show ipv6 cef summary <cr>    # path-019477
+(exec)# do-exec show ipv6 cef switching statistics <cr>    # path-022730
+(exec)# do-exec show ipv6 cef traffic prefix-length <cr>    # path-022735
+(exec)# do-exec show ipv6 cef tree <cr>    # path-019524
+(exec)# do-exec show ipv6 destination-guard policy <cr>    # path-019300
+(exec)# do-exec show ipv6 dhcp <cr>    # path-014940
+(exec)# do-exec show ipv6 dhcp binding <cr>    # path-019400
+(exec)# do-exec show ipv6 dhcp conflict <cr>    # path-019422
+(exec)# do-exec show ipv6 dhcp database <cr>    # path-019354
+(exec)# do-exec show ipv6 dhcp mac-hash-table dump pool <string> <cr>    # path-024867
+(exec)# do-exec show ipv6 dhcp mac-hash-table dump pool <string> <number:0..255> <number:0..255> <cr>    # path-025168
+(exec)# do-exec show ipv6 dhcp packet statistics <cr>    # path-022625
+(exec)# do-exec show ipv6 dhcp pool <cr>    # path-019399
+(exec)# do-exec show ipv6 dhcp relay binding <cr>    # path-022575
+(exec)# do-exec show ipv6 dhcp statistics <cr>    # path-019243
+(exec)# do-exec show ipv6 eigrp accounting <cr>    # path-019248
+(exec)# do-exec show ipv6 eigrp sia-event <cr>    # path-019302
+(exec)# do-exec show ipv6 eigrp sia-statistics <cr>    # path-019338
+(exec)# do-exec show ipv6 eigrp timers <cr>    # path-019170
+(exec)# do-exec show ipv6 eigrp traffic <cr>    # path-019200
+(exec)# do-exec show ipv6 enablement <cr>    # path-015070
+(exec)# do-exec show ipv6 errors-internal <cr>    # path-014586
+(exec)# do-exec show ipv6 features global <cr>    # path-018735
+(exec)# do-exec show ipv6 general-prefix <cr>    # path-015044
+(exec)# do-exec show ipv6 local pool <cr>    # path-018966
+(exec)# do-exec show ipv6 mfib <cr>    # path-015076
+(exec)# do-exec show ipv6 mfib cable <cr>    # path-019161
+(exec)# do-exec show ipv6 mfib interface <cr>    # path-019215
+(exec)# do-exec show ipv6 mfib internal fibidb <cr>    # path-022344
+(exec)# do-exec show ipv6 mfib internal mem <cr>    # path-022502
+(exec)# do-exec show ipv6 mfib rate-list <cr>    # path-019249
+(exec)# do-exec show ipv6 mfib status <cr>    # path-019080
+(exec)# do-exec show ipv6 mld acl-db <cr>    # path-019226
+(exec)# do-exec show ipv6 mld all-vrfs traffic <cr>    # path-022418
+(exec)# do-exec show ipv6 mld gir <cr>    # path-019294
+(exec)# do-exec show ipv6 mld ssm-map <cr>    # path-019234
+(exec)# do-exec show ipv6 mld traffic <cr>    # path-019167
+(exec)# do-exec show ipv6 mrib client <cr>    # path-019111
+(exec)# do-exec show ipv6 mrib route <cr>    # path-019217
+(exec)# do-exec show ipv6 mrib route summary <cr>    # path-022323
+(exec)# do-exec show ipv6 mroute <cr>    # path-014970
+(exec)# do-exec show ipv6 mroute active <cr>    # path-019388
+(exec)# do-exec show ipv6 mroute count <cr>    # path-019325
+(exec)# do-exec show ipv6 mtu <cr>    # path-014686
+(exec)# do-exec show ipv6 multicast <cr>    # path-014905
+(exec)# do-exec show ipv6 multicast overlay-mapping lisp <address> <cr>    # path-024281
+(exec)# do-exec show ipv6 multicast rpf monitored <cr>    # path-022517
+(exec)# do-exec show ipv6 multicast snooping limit vlan <number:1..4095> <cr>    # path-024839
+(exec)# do-exec show ipv6 multicast snooping summary <cr>    # path-022312
+(exec)# do-exec show ipv6 multicast snooping summary vlan <number:1..4095> <cr>    # path-024842
+(exec)# do-exec show ipv6 nd suppress <cr>    # path-018958
+(exec)# do-exec show ipv6 neighbors ha <cr>    # path-018967
+(exec)# do-exec show ipv6 nhrp attribute <cr>    # path-019293
+(exec)# do-exec show ipv6 nhrp instances <cr>    # path-019336
+(exec)# do-exec show ipv6 nhrp purge <cr>    # path-019196
+(exec)# do-exec show ipv6 nhrp redirect <cr>    # path-019368
+(exec)# do-exec show ipv6 nhrp traffic <cr>    # path-019238
+(exec)# do-exec show ipv6 pim all-vrfs traffic <cr>    # path-022441
+(exec)# do-exec show ipv6 pim anycast-rp <cr>    # path-019443
+(exec)# do-exec show ipv6 pim bsr candidate-rp <cr>    # path-022688
+(exec)# do-exec show ipv6 pim bsr election <cr>    # path-022705
+(exec)# do-exec show ipv6 pim bsr rp-cache <cr>    # path-022698
+(exec)# do-exec show ipv6 pim gir <cr>    # path-019438
+(exec)# do-exec show ipv6 pim lisp-rloc-state <cr>    # path-019332
+(exec)# do-exec show ipv6 pim mdt <cr>    # path-019546
+(exec)# do-exec show ipv6 pim mdt bgp <cr>    # path-022745
+(exec)# do-exec show ipv6 pim mdt bgp c-mroutes <cr>    # path-024364
+(exec)# do-exec show ipv6 pim mdt history interval <number:1..71582> <cr>    # path-024872
+(exec)# do-exec show ipv6 pim mdt internal bier <cr>    # path-024367
+(exec)# do-exec show ipv6 pim mdt internal crt <cr>    # path-024380
+(exec)# do-exec show ipv6 pim mdt internal gre <cr>    # path-024363
+(exec)# do-exec show ipv6 pim mdt internal ir <cr>    # path-024371
+(exec)# do-exec show ipv6 pim mdt internal leaf-ad <cr>    # path-024375
+(exec)# do-exec show ipv6 pim mdt internal mldp <cr>    # path-024377
+(exec)# do-exec show ipv6 pim mdt internal pe <cr>    # path-024385
+(exec)# do-exec show ipv6 pim mdt internal pe all <cr>    # path-024885
+(exec)# do-exec show ipv6 pim mdt internal replication <cr>    # path-024382
+(exec)# do-exec show ipv6 pim mdt internal tdb <cr>    # path-024384
+(exec)# do-exec show ipv6 pim mdt internal vxlan <cr>    # path-024359
+(exec)# do-exec show ipv6 pim mdt receive <cr>    # path-022700
+(exec)# do-exec show ipv6 pim mdt receive detail <cr>    # path-024340
+(exec)# do-exec show ipv6 pim mdt send <cr>    # path-022678
+(exec)# do-exec show ipv6 pim pfp-sa announcements <cr>    # path-022613
+(exec)# do-exec show ipv6 pim pfp-sa cache <cr>    # path-022638
+(exec)# do-exec show ipv6 pim pfp-sa originator <cr>    # path-022627
+(exec)# do-exec show ipv6 pim range-list <cr>    # path-019327
+(exec)# do-exec show ipv6 pim topology <cr>    # path-019261
+(exec)# do-exec show ipv6 pim topology route-count <cr>    # path-022478
+(exec)# do-exec show ipv6 pim traffic <cr>    # path-019383
+(exec)# do-exec show ipv6 policy <cr>    # path-015020
+(exec)# do-exec show ipv6 prefix-list <cr>    # path-015008
+(exec)# do-exec show ipv6 prefix-list <string> seq <number:1..4294967295> <cr>    # path-024303
+(exec)# do-exec show ipv6 prefix-list detail <cr>    # path-019375
+(exec)# do-exec show ipv6 prefix-list summary <cr>    # path-019353
+(exec)# do-exec show ipv6 protocols <cr>    # path-014705
+(exec)# do-exec show ipv6 rip <cr>    # path-014952
+(exec)# do-exec show ipv6 rip database <cr>    # path-019224
+(exec)# do-exec show ipv6 rip next-hops <cr>    # path-019246
+(exec)# do-exec show ipv6 rpf <address> <cr>    # path-019442
+(exec)# do-exec show ipv6 rpf select <cr>    # path-019410
+(exec)# do-exec show ipv6 snooping events <cr>    # path-019347
+(exec)# do-exec show ipv6 snooping features <cr>    # path-019382
+(exec)# do-exec show ipv6 snooping internal counters <cr>    # path-022656
+(exec)# do-exec show ipv6 snooping messages <cr>    # path-019386
+(exec)# do-exec show ipv6 snooping policy <cr>    # path-019387
+(exec)# do-exec show ipv6 source-guard policy <cr>    # path-019324
+(exec)# do-exec show ipv6 spd <cr>    # path-014992
+(exec)# do-exec show ipv6 traffic <cr>    # path-014701
+(exec)# do-exec show ipv6 tunnel <cr>    # path-014741
+(exec)# do-exec show isis database <cr>    # path-015568
+(exec)# do-exec show isis hostname <cr>    # path-015485
+(exec)# do-exec show isis lsp-log <cr>    # path-015511
+(exec)# do-exec show isis lspgen tlv neighbor <cr>    # path-022846
+(exec)# do-exec show isis mpls <cr>    # path-015605
+(exec)# do-exec show isis mpls ldp igp-shortcuts <cr>    # path-022844
+(exec)# do-exec show isis mpls traffic-eng adjacency-log <cr>    # path-022834
+(exec)# do-exec show isis mpls traffic-eng advertisements <cr>    # path-022828
+(exec)# do-exec show isis mpls traffic-eng downstream-tree <string> <cr>    # path-024399
+(exec)# do-exec show isis mpls traffic-eng tunnel <cr>    # path-022852
+(exec)# do-exec show isis neighbors <cr>    # path-015495
+(exec)# do-exec show isis node <cr>    # path-015645
+(exec)# do-exec show isis private <cr>    # path-015530
+(exec)# do-exec show isis timers <cr>    # path-015486
+(exec)# do-exec show isis tree <cr>    # path-015554
+(exec)# do-exec show issu FSM <cr>    # path-016198
